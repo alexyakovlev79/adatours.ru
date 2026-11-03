@@ -75,166 +75,22 @@
     {
       "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b021",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "04a0d7035b752e688ed9f84c8faef846be1c8a7685bf4490e8a95be0f32a08ff",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-935f-translator",
-        "token": "ada-en-935f-bxatc0v89fh-mw180til",
-        "claimedAt": "2026-11-03T21:55:21.504Z",
-        "expiresAt": "2026-11-03T23:25:21.504Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-b021-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-935f-translator",
-        "token": "ada-en-935f-bxatc0v89fh-mw180til",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b021",
-          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "04a0d7035b752e688ed9f84c8faef846be1c8a7685bf4490e8a95be0f32a08ff",
-          "blocks": [
-            {
-              "blockId": "tour:media_hover:c2d884f35a1d78d1",
-              "field": "media.hover",
-              "sourceTextSha256": "4cb697ec07b3ecfba6d0c6655e208eb8f97530fcccadb86c8d5e5b6a5ca0db05",
-              "text": "Puerto Natales: waterfront houses, waves and mountains beneath a cloudy sky",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-935f-translator",
-                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:359c7c25395d1837",
-              "field": "itinerary.title",
-              "sourceTextSha256": "4e8f7c6129caf872a2ead42a2f94d96ce8563c12fb62a092c0f1d3e47ed51411",
-              "text": "San Rafael Glacier – Exploradores Valley",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p136",
-                    "textSha256": "68b8afe0371ab7ec63a4774e591704673da0d0a0a21fdc274c07072d3c3ae3ba"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose the day heading from the glacier and valley named in the exact Word day paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
-              "field": "itinerary.text",
-              "sourceTextSha256": "435b8965b33280e7cb6239d84833860c7223037c3e0bb3c6af929f7a33399783",
-              "text": "8 January. An early departure through the Exploradores Valley to the bay, followed by a boat excursion to Laguna San Rafael. The programme runs approximately 08:00–18:00. Return to Puerto Río Tranquilo in the afternoon. Sailing is subject to weather conditions.\n\nAccommodation: Mallin Colorado Ecolodge or similar, Cabana Coigüe, breakfast (BB)",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-935f-translator",
-                "wordAbsenceReason": "Word paragraphs 136–137 cover the excursion and accommodation but omit the RU calendar date, afternoon return and specific sailing caveat. Translate the complete current RU block, preserving all these details."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:ee09fef6b1193f30",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2bcb3e19d83c4cba1d16f0cb73102d0c334b4b161f06b6ba156b40f8ea18ce84",
-              "text": "Puerto Río Tranquilo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p195",
-                    "textSha256": "c68744724179f2c71cf89e20164605827e32cfd0eb972b4823aaeb629fd2490f"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "EXACT"
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:dadc52e055e4d25a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "954656520655cd56d5945d22b55541ee93f3abbb260f5e21a093ca4d4a69e1b2",
-              "text": "Exploradores Valley",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p136",
-                    "textSha256": "68b8afe0371ab7ec63a4774e591704673da0d0a0a21fdc274c07072d3c3ae3ba"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f177def0aac5e557",
-              "field": "itinerary.label",
-              "sourceTextSha256": "b7010392a8e76f4b1d1b778cbfd815e7b622bf64c9c9d37e701305e319ad6308",
-              "text": "Exploradores Bay",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p136",
-                    "textSha256": "68b8afe0371ab7ec63a4774e591704673da0d0a0a21fdc274c07072d3c3ae3ba"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:3aefe86d64240724",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e6e494f410ffb4eaec51ba4ffd85cb79a8543b1e3de3089db9f7a4b22963ce5d",
-              "text": "San Rafael National Park",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-935f-translator",
-                "wordAbsenceReason": "The verified Word paragraph 136 names Laguna San Rafael and the glacier, but not the national park label; translate the current RU place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4d1cc1cb3ccce2a0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c35802742692df6ad768c86b4f214cfdd06c2b1041750eae0d9fa93aea967d4f",
-              "text": "San Rafael Glacier",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p136",
-                    "textSha256": "68b8afe0371ab7ec63a4774e591704673da0d0a0a21fdc274c07072d3c3ae3ba"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:56:20.605Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-935f-5",
+        "blobSha": "593a35d750f89248b0e6593949d56968d3b98da5",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_bolivia_chile_hidden_treasures_16_days_b021/sub-935f-5.json",
+        "at": "2026-11-03T21:56:24.527Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

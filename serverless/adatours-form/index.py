@@ -130,7 +130,8 @@ def _valid_page_url(value: str) -> bool:
         return True
 
     if host == "alexyakovlev79.github.io":
-        return parsed.path == "/adatours.ru" or parsed.path.startswith("/adatours.ru/")
+        return (parsed.path == "/adatours.ru" or parsed.path.startswith("/adatours.ru/")
+                or parsed.path == "/adatours-en/en" or parsed.path.startswith("/adatours-en/en/"))
 
     return False
 

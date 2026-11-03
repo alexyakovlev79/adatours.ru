@@ -245,7 +245,91 @@
         "claimedAt": "2026-11-03T23:16:15.709Z",
         "expiresAt": "2026-11-04T00:46:15.709Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "en:bulk:tour:tour_brazil_gems_14d:b005:cp4:821a3075",
+        "format": "inline-v1",
+        "ownerId": "ada-en-821a3075e51e-worker",
+        "token": "ada-en-821a3075e51e-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b005",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7b9f409ac498ff906290f46de21ac51105deeb4a1d1c3b3840bb9f0a96c5e076",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[37]",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3dbb598a85e5b6d2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "374e8eaf7052e9a6ec6d718e7cce6728c5c8d482c6929a5874441302d9187ba2",
+              "text": "Corcovado",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[38]",
+                    "textSha256": "b0dfa8a0d95f025d0bbd5fbfa5a88b43f08d5c53d650bef4cfc8ffb7e9805416"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the Corcovado place name from the exact Word heading for the corresponding itinerary location."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:615eaea339ede4b9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "21f46b8ec047bab4c066136eab21526012e247b693a2fc209cc4b18c6b40d271",
+              "text": "Tijuca",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[79]",
+                    "textSha256": "31820b4e4765a4de486362eb3c897c0278af8ca39707934a6e2b2b90fa37e227"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the Tijuca place name from Tijuca Forest in the exact corresponding Word day narrative."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:21beee965a5abf06",
+              "field": "media.alt",
+              "sourceTextSha256": "cfc6bee144dc4dfc892b50953a6535015e02ab2ba382d72233898f9fc3a740b2",
+              "text": "A game of beach volleyball by the ocean in Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The assigned Word document has no text describing this website image or its beach-volleyball alt caption."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:19:00.621Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

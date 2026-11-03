@@ -374,7 +374,79 @@
         "claimedAt": "2026-11-03T22:17:10.266Z",
         "expiresAt": "2026-11-03T23:47:10.266Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-c88c62-en:bulk:tour:tour_brazil_dunes_13d:b003-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-c88c62b5175a",
+        "token": "ada-en-c88c62b5175a-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b003",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "0ea489f3a08a5ac3b78533053bb632f998337c7b87f81e96b62752a7237ff4ab",
+          "blocks": [
+            {
+              "blockId": "tour:notIncluded:5aef6dbd0cf353fb",
+              "field": "notIncluded",
+              "sourceTextSha256": "a255749699ce7cf1cf4c5d0937d039911908b4a02844550c73ee9635ec6c1f73",
+              "text": "Food and drinks during transfers",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-c88c62b5175a",
+                "wordAbsenceReason": "The verified Word 2027 exclusions at paragraphs 194–198 do not contain the separate RU exclusion for food and drinks during transfers."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:c111f6ab8aec4a91",
+              "field": "notIncluded",
+              "sourceTextSha256": "0a97cb4868c9bf4ced266637159577b7d23e1e76c40241d1da3ee4942edbadda",
+              "text": "International flights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p195",
+                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Removed only the decorative dash and spacing from the exact Word 2027 exclusion item."
+              }
+            },
+            {
+              "blockId": "tour:note:d96f78c9265cf8a6",
+              "field": "note",
+              "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
+              "text": "If necessary, Ada Tours may replace hotels with others of the same category.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-c88c62b5175a",
+                "wordAbsenceReason": "The verified Word 2027 document lists similar hotels at paragraph 164 but has no matching clause about Ada Tours replacing hotels of the same category."
+              }
+            },
+            {
+              "blockId": "tour:note:aad34780a245497e",
+              "field": "note",
+              "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+              "text": "The order of excursions may change while the tour programme is maintained.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-c88c62b5175a",
+                "wordAbsenceReason": "The complete verified Word 2027 document has no matching clause about changing the order of excursions while retaining the tour programme."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:18:29.717Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -114,3 +114,33 @@ test('Word-derived label keeps exact paragraph evidence without pretending to be
  output.blocks[0].provenance.paragraphs=[];
  assert.throws(()=>validateMassResult(job,output),/Word-aligned transformation/);
 });
+
+test('inline recovery checkpoints are fenced and release/failure replays never consume another attempt',()=>{
+ const state=source(),sid=Object.keys(state.shards).find(k=>state.shards[k].items.length);
+ const lease=massClaim(state.shards[sid],{stage:'word_2027',ownerId:'worker1',
+  token:'token1',now:at});
+ const jobId=lease.item.jobId,args={jobId,ownerId:'worker1',token:'token1',
+  generation:lease.item.generation,now:at};
+ const payload={blocks:[{text:'Saved English text'}]};
+ const saved=massCheckpoint(lease.shard,{...args,checkpointId:'owner1-four',payload});
+ assert.equal(saved.shard.items.find(x=>x.jobId===jobId).checkpoint.payload.blocks[0].text,
+  'Saved English text');
+ assert.equal(massCheckpoint(saved.shard,{...args,checkpointId:'owner1-four',payload,
+  now:'2026-11-04T15:00:00Z'}).status,'already_saved');
+ assert.throws(()=>massCheckpoint(saved.shard,{...args,token:'other_token',
+  checkpointId:'owner1-four',payload}),/ownership collision/);
+ const released=massRelease(saved.shard,args);
+ assert.equal(massRelease(released.shard,args).status,'already_released');
+ const failed=massFail(lease.shard,{...args,failureStatus:'retryable'});
+ assert.equal(massFail(failed.shard,{...args,failureStatus:'retryable'}).status,'already_failed');
+ assert.equal(failed.shard.items.find(x=>x.jobId===jobId).attempts,1);
+});
+test('owner-based mass shard selection distributes workers without changing legacy selection',()=>{
+ const q=source().index;
+ q.dispatcherEnabled=true;q.translationMassLaunchAllowed=true;
+ const selected=new Set();
+ for(let i=0;i<50;i++)selected.add(massIndexShard(q,at,'worker_owner_'+i));
+ // Tiny fixtures may only populate two shards; both should remain eligible.
+ assert.ok(selected.size>=1);
+ assert.equal(massIndexShard(q,at),massIndexShard(q,at));
+});

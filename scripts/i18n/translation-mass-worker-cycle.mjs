@@ -14,6 +14,16 @@ export async function runEnMassWorkerCycle(tools,core,remote,args={}){
  if(!ID_OK.test(ownerId||'')||!ID_OK.test(token||''))
   throw Error('A stable per-chat ownerId and token are required');
  const call=data=>remote(tools,core,data);
+ const withContentionRetry=async data=>{
+  let out=await call(data);
+  // Repeat exactly the same idempotent operation after a bounded pause.
+  // Rate-limit responses are deliberately not retried here.
+  if(out.status==='cas_contention'){
+   await new Promise(resolve=>setTimeout(resolve,out.retryAfterMs||3000));
+   out=await call(data);
+  }
+  return out;
+ };
  const inspect=async()=>{
   const snapshot=await call({action:'status',ownerId,token});
   if(snapshot.status!=='snapshot')return{blocked:snapshot};
@@ -30,14 +40,15 @@ export async function runEnMassWorkerCycle(tools,core,remote,args={}){
   const completed=progress.completed;
   if(completed>=MAX_AUTOMATIC_CYCLES)
    return{status:'cycle_limit_reached',completed,limit:MAX_AUTOMATIC_CYCLES};
-  const claimed=await call({action:'claim',ownerId,token});
+  const claimed=await withContentionRetry({action:'claim',ownerId,token});
   if(!['claimed','resumed'].includes(claimed.status))
    return{status:'next_unavailable',completed,limit:MAX_AUTOMATIC_CYCLES,
     reason:claimed};
   return{status:'next_claimed',completed,limit:MAX_AUTOMATIC_CYCLES,
    next:{jobId:claimed.jobId,source:claimed.source,
     generation:claimed.generation,lease:claimed.lease,
-    commit:claimed.commit||null,resumed:claimed.status==='resumed'}};
+    commit:claimed.commit||null,resumed:claimed.status==='resumed',
+    checkpoint:claimed.checkpoint||null}};
  };
  if(action==='status'){
   const progress=await inspect();
@@ -48,7 +59,7 @@ export async function runEnMassWorkerCycle(tools,core,remote,args={}){
  if(action==='start')return takeNext();
  // Only a persisted submit receipt (including an idempotent replay) permits
  // another claim. A transient failure after that receipt must never conceal it.
- const saved=await call({...args,action:'submit'});
+ const saved=await withContentionRetry({...args,action:'submit'});
  if(!SAVED.has(saved.status))return{status:'submit_not_confirmed',submission:saved};
  try{
   const followUp=await takeNext();

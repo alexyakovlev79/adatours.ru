@@ -43,3 +43,45 @@ test('bulk owner status exposes only verified progress for the matching stable t
  const mismatch=await runEnMassTranslation(tools,{}, {action:'status',ownerId:'worker_1',token:'wrong_token'});
  assert.equal(mismatch.status,'owner_token_conflict');
 });
+
+test('checkpoint survives a lost GitHub reply via one-file shard CAS, without rewriting global index',async()=>{
+ const {massShard,massCheckpoint}=await import('../../scripts/i18n/translation-mass-core.mjs');
+ const jobId='en:bulk:tour:test:b001',sid=massShard(jobId);
+ const ownerId='worker_local',token='stable_token',time='2026-11-03T21:00:00Z';
+ const item={jobId,stage:'word_2027',status:'leased',sourceFingerprint:'test-fingerprint',
+  generation:1,attempts:0,lease:{ownerId,token,claimedAt:time,
+   expiresAt:'2026-11-03T22:30:00Z'}};
+ const index={schemaVersion:2,pilotOnly:false,publicationEnabled:false,
+  dispatcherEnabled:true,translationMassLaunchAllowed:true,stage:'word_2027',
+  maxJobsPerOwner:60,ownerAssignments:{[ownerId]:{token,jobIds:[jobId],completedJobIds:[]}},
+  activeOwners:{[ownerId]:{jobId,token,expiresAt:item.lease.expiresAt,generation:1}},
+  counts:{leased:1},shards:{}};
+ let stateText=JSON.stringify({schemaVersion:2,shardId:sid,items:[item]});
+ let stateSha='a'.repeat(40),writes=0,treeWrites=0;
+ const mock={
+  mcp__GitHub__fetch:async()=>({result:{content:JSON.stringify({object:{sha:'b'.repeat(40)}})}}),
+  mcp__GitHub__fetch_file:async({path})=>{
+   if(path.endsWith('/index.json'))return{result:{content:JSON.stringify(index),sha:'c'.repeat(40)}};
+   if(path.endsWith('/state/'+sid+'.json'))return{result:{content:stateText,sha:stateSha}};
+   if(path.endsWith('/jobs/'+sid+'.json'))return{result:{content:JSON.stringify({
+    shardId:sid,jobs:[{jobId,sourceFingerprint:item.sourceFingerprint,
+     source:{contentPath:'src/content/tours/test.md',sourceBlobSha:'d'.repeat(40)}}]})}};
+   return{result:{content:'RU',sha:'d'.repeat(40)}};
+  },
+  mcp__GitHub__create_tree:async()=>{treeWrites++;throw Error('Tree writes forbidden for checkpoints')},
+  mcp__GitHub__update_file:async({path,sha,content,branch})=>{
+   assert.equal(path,'data/i18n/translation-mass/v2/state/'+sid+'.json');
+   assert.equal(branch,'i18n/translation-mass-staging');
+   assert.equal(sha,stateSha);
+   writes++;stateText=content;stateSha='e'.repeat(40);
+   throw Error('409 Conflict: response lost after successful file update');
+  }
+ };
+ const result=await runEnMassTranslation(mock,{massShard,massCheckpoint},
+  {action:'checkpoint',ownerId,token,jobId,generation:1,
+   checkpointId:'local-four',checkpoint:{blocks:[{text:'Recovered'}]},now:time});
+ assert.equal(result.status,'already_saved');
+ assert.equal(writes,1);
+ assert.equal(treeWrites,0);
+ assert.equal(JSON.parse(stateText).items[0].checkpoint.payload.blocks[0].text,'Recovered');
+});

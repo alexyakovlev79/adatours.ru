@@ -17,7 +17,7 @@ export function massShard(jobId){
  for(let i=0;i<jobId.length;i++){h^=jobId.charCodeAt(i);h=Math.imul(h,16777619)}
  return ((h>>>0)%32).toString(16).padStart(2,'0');
 }
-export function massIndexShard(index,now){
+export function massIndexShard(index,now,ownerId=null){
  check(index?.schemaVersion===2&&index.dispatcherEnabled===true&&
   index.translationMassLaunchAllowed===true&&
   index.publicationEnabled===false&&!index.pilotOnly,'gate closed');
@@ -29,8 +29,17 @@ export function massIndexShard(index,now){
   return c.queued>0||(c.leased>0&&v.earliestExpiryAt&&date(v.earliestExpiryAt)<=nowMs)||
    (c.retryable>0&&v.earliestRetryAt&&date(v.earliestRetryAt)<=nowMs);
  });
- return options.sort((a,b)=>b[1].stages[stage].queued-a[1].stages[stage].queued||
-  a[0].localeCompare(b[0]))[0]?.[0]??null;
+ const ranked=options.sort((a,b)=>b[1].stages[stage].queued-a[1].stages[stage].queued||
+  a[0].localeCompare(b[0]));
+ if(ownerId&&valid(ownerId)&&ranked.length){
+  // Spread simultaneous workers over the available CAS shards.
+  let hash=2166136261;
+  for(let i=0;i<ownerId.length;i++){
+   hash^=ownerId.charCodeAt(i);hash=Math.imul(hash,16777619);
+  }
+  return ranked[(hash>>>0)%ranked.length][0];
+ }
+ return ranked[0]?.[0]??null;
 }
 export function massShardSummary(shard){
  check(shard?.schemaVersion===2&&Array.isArray(shard.items),'bad shard');
@@ -102,14 +111,34 @@ export function massRenew(shard,args){
  return{shard:out,status:'renewed',expiresAt:item.lease.expiresAt};
 }
 export function massCheckpoint(shard,args){
- check(valid(args.checkpointId)&&/^[a-f0-9]{40}$/.test(args.blobSha),
-  'invalid checkpoint receipt');
- const out=copy(shard),item=owned(out,args);
+ check(valid(args.checkpointId),'invalid checkpoint ID');
+ const legacy=typeof args.blobSha==='string'&&/^[a-f0-9]{40}$/.test(args.blobSha);
+ const inline=args.payload!==undefined&&args.payload!==null&&
+  typeof args.payload==='object'&&!Array.isArray(args.payload);
+ check(legacy!==inline,'exactly one checkpoint representation required');
+ const out=copy(shard),item=out.items.find(x=>x.jobId===args.jobId);
+ check(item,'unknown job');
  if(item.checkpoint?.id===args.checkpointId){
-  check(item.checkpoint.blobSha===args.blobSha,'checkpoint hash collision');
+  // An acknowledged checkpoint may be replayed after the lease expired,
+  // but only by the same owner, token and generation.
+  const previous=item.checkpoint;
+  if(previous.format==='inline-v1'){
+   check(previous.ownerId===args.ownerId&&previous.token===args.token&&
+    previous.generation===args.generation,'checkpoint ownership collision');
+   check(inline&&JSON.stringify(previous.payload)===JSON.stringify(args.payload),
+    'checkpoint payload collision');
+  }else{
+   owned(out,args); // legacy receipts have no owner metadata
+   check(legacy&&previous.blobSha===args.blobSha,'checkpoint hash collision');
+  }
   return{shard:out,status:'already_saved'};
  }
- item.checkpoint={id:args.checkpointId,blobSha:args.blobSha,at:args.now};
+ owned(out,args);
+ item.checkpoint=inline
+  ?{id:args.checkpointId,format:'inline-v1',ownerId:args.ownerId,
+    token:args.token,generation:args.generation,
+    payload:copy(args.payload),at:args.now}
+  :{id:args.checkpointId,blobSha:args.blobSha,at:args.now};
  return{shard:out,status:'checkpoint_saved'};
 }
 export function validateMassResult(job,result){
@@ -173,6 +202,9 @@ export function massSubmit(shard,args){
  check(item.sourceFingerprint===args.job.sourceFingerprint,'changed source');
  validateMassResult(args.job,args.result);
  item.status='review';item.lease=null;
+ // The immutable result supersedes the bulky in-shard recovery draft.
+ if(item.checkpoint?.format==='inline-v1')
+  item.checkpoint={id:item.checkpoint.id,format:'submitted-v1',at:item.checkpoint.at};
  item.submission={id:args.submissionId,blobSha:args.blobSha,
   resultPath:args.resultPath,at:args.now};
  return{shard:out,status:'saved_for_review'};
@@ -188,13 +220,28 @@ export function massApprove(shard,args){
  return{shard:out,status:'ready'};
 }
 export function massRelease(shard,args){
- const out=copy(shard),item=owned(out,args);item.status='queued';item.lease=null;
+ const out=copy(shard),item=out.items.find(x=>x.jobId===args.jobId);
+ check(item,'unknown job');
+ const prior=item.lastRelease;
+ if(prior?.ownerId===args.ownerId&&prior.token===args.token&&
+    prior.generation===args.generation)return{shard:out,status:'already_released'};
+ owned(out,args);item.status='queued';item.lease=null;
+ item.lastRelease={ownerId:args.ownerId,token:args.token,
+  generation:args.generation,at:args.now};
  return{shard:out,status:'released'};
 }
 export function massFail(shard,args){
  check(['retryable','blocked_external','stale_source','failed_final'].includes(args.failureStatus),
   'invalid failure status');
- const out=copy(shard),item=owned(out,args);item.lease=null;item.attempts++;
+ const out=copy(shard),item=out.items.find(x=>x.jobId===args.jobId);
+ check(item,'unknown job');
+ const prior=item.lastFailure;
+ if(prior?.ownerId===args.ownerId&&prior.token===args.token&&
+  prior.generation===args.generation&&prior.failureStatus===args.failureStatus)
+  return{shard:out,status:'already_failed'};
+ owned(out,args);item.lease=null;item.attempts++;
+ item.lastFailure={ownerId:args.ownerId,token:args.token,
+  generation:args.generation,failureStatus:args.failureStatus,at:args.now};
  item.status=args.failureStatus==='retryable'&&item.attempts>=MAX_ATTEMPTS?
   'failed_final':args.failureStatus;
  item.nextAttemptAt=item.status==='retryable'?

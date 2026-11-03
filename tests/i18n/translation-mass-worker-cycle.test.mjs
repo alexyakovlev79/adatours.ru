@@ -92,3 +92,20 @@ test('owner mismatch fails closed before claiming',async()=>{
  assert.equal(v.status,'next_blocked');
  assert.equal(f.state.claimCount,0);
 });
+
+test('bounded cycle retry uses identical submissionId on CAS contention',async()=>{
+ const f=fake();
+ const first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
+ let collisions=0;
+ const runner=async(tools,core,args)=>{
+  if(args.action==='submit'&&collisions++===0)return{status:'cas_contention',retryAfterMs:1};
+  return f.runner(tools,core,args);
+ };
+ const out=await runEnMassWorkerCycle({}, {},runner,{
+  action:'finish',...identity,jobId:first.next.jobId,generation:1,
+  submissionId:'stable_submission_1',result:{blocks:[{text:'A translation'}]}});
+ assert.equal(out.submission.status,'saved_for_review');
+ assert.equal(f.state.submitCount,1);
+ assert.equal(f.state.claimCount,2);
+ assert.equal(collisions,2);
+});

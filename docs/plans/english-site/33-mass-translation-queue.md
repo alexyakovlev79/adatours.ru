@@ -27,7 +27,7 @@ fileId и SHA только во время работы. Готовые 5 пил
 348 канонических Excursion с отдельными владельцами — следующий
 тип заданий, а не 348 копий в разных турах.
 
-Один рабочий чат может последовательно выполнить до 60 пакетов;
+Технический предел владельца в диспетчере — 60 пакетов; действующий\nworker-cycle ограничивает один запуск 10 подтвержденными пакетами.
 три тура не являются ограничением массового процесса. Период
 резерва 90 минут, renew/checkpoint каждые 20 минут.
 
@@ -74,3 +74,14 @@ immutable review blobs, the matching source and all QA checks, and rejects
 self-approval by the worker. No public publish action exists in that API.
 The reaper runs every 30 minutes on main after merge and only updates expired
 leases and eligible retries in the staging branch with a non-force push.
+
+## Исправление параллельных записей (03.11.2026)
+
+Сохранение draft после каждых 4 блоков теперь выполняется одной
+операцией по CAS-blob SHA отдельного state shard, без записи
+глобального index. Диспетчер распределяет новый claim по eligible
+shards на основе устойчивого ownerId. Продление, сдача и освобождение
+остаются атомарными изменениями index + state с bounded retry/backoff.
+Потерянные ответы `checkpoint`, `submit`, `release` и `fail`
+не должны приводить к повторному эффекту при тех же идентификаторах.
+Общая ветка и ранее сохраненные review/QA результаты неизменны.

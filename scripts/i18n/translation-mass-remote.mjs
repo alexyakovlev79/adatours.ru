@@ -4,13 +4,14 @@
  */
 const REPO='alexyakovlev79/adatours.ru';
 const BRANCH='i18n/translation-mass-staging';
-const ROOT='data/i18n/translation-mass/v2',LIMIT=3;
+const ROOT='data/i18n/translation-mass/v2',LIMIT=8;
 const clean=x=>JSON.stringify(x,null,2)+'\n';
 const unwrap=r=>{if(r?.isError)throw Error(JSON.stringify(r));return r?.result||r?.structuredContent||r};
 const valid=s=>typeof s==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(s);
 const restricted=/rate.?limit|429|retry.?after|secondary limit|too many requests/i;
 const conflict=/non.fast.forward|expected.sha|409|422|reference|conflict|mismatch|changed/i;
 const safe=s=>s.replace(/[^A-Za-z0-9_.-]/g,'_').slice(0,190);
+const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const nowValue=s=>{if(!Number.isFinite(Date.parse(s)))throw Error('Exact UTC timestamp required');return s};
 async function getHead(tools){
  const x=JSON.parse(unwrap(await tools.mcp__GitHub__fetch({
@@ -97,13 +98,16 @@ export async function runEnMassTranslation(tools,core,args={}){
     if(!valid(args.jobId))throw Error('Unsafe explicit jobId');
     sid=core.massShard(args.jobId);
    }else if(action==='claim'||action==='reap'){
-    sid=core.massIndexShard(index,time);
+    sid=core.massIndexShard(index,time,action==='claim'?args.ownerId:null);
    }else{
     if(!valid(args.jobId))throw Error('Exact jobId required');
     sid=core.massShard(args.jobId);
    }
    if(!sid)return{status:'busy_or_empty',head,counts:index.counts};
-   const shard=await read(tools,ROOT+'/state/'+sid+'.json',head);
+   const statePath=ROOT+'/state/'+sid+'.json';
+   const stateFile=unwrap(await tools.mcp__GitHub__fetch_file({
+    repository_full_name:REPO,path:statePath,ref:head}));
+   const shard=JSON.parse(stateFile.content);
    const sourcePackets=action==='reap'?null:
     await read(tools,ROOT+'/jobs/'+sid+'.json',head);
    if(shard.shardId!==sid||sourcePackets&&sourcePackets.shardId!==sid)
@@ -131,7 +135,8 @@ export async function runEnMassTranslation(tools,core,args={}){
       throw Error('Job source fingerprint drift');
      if(transition.status==='resumed'&&!transition.restored)
       return{status:'resumed',head,jobId:job.jobId,source:job,
-       lease:transition.item.lease,generation:transition.item.generation};
+       lease:transition.item.lease,generation:transition.item.generation,
+       checkpoint:transition.item.checkpoint||null};
      if(!(await currentRu(tools,job))){
       const f=core.massFail(transition.shard,{
        jobId:job.jobId,ownerId:args.ownerId,token:args.token,
@@ -162,10 +167,10 @@ export async function runEnMassTranslation(tools,core,args={}){
      if(!valid(args.checkpointId)||typeof args.checkpoint!=='object'||
         JSON.stringify(args.checkpoint).length>80000)
       throw Error('Invalid checkpoint / size');
-     const sha=await createReceipt(tools,args.checkpoint);
-     transition=core.massCheckpoint(shard,{...common,checkpointId:args.checkpointId,blobSha:sha});
-     if(transition.status==='checkpoint_saved')extra={path:ROOT+'/checkpoints/'+safe(job.jobId)+
-       '/'+safe(args.checkpointId)+'.json',sha};
+     // Checkpoints are self-contained in their shard. Avoid the hot global
+     // index and multi-step tree/commit/ref sequence on each four blocks.
+     transition=core.massCheckpoint(shard,{...common,
+      checkpointId:args.checkpointId,payload:args.checkpoint});
     }
     if(action==='submit'){
      if(!valid(args.submissionId)||!args.result||
@@ -186,7 +191,19 @@ export async function runEnMassTranslation(tools,core,args={}){
        nextIndex.activeOwners[args.ownerId]?.jobId===job.jobId)
      delete nextIndex.activeOwners[args.ownerId];
    }
-   if(transition.status==='already_saved')return{status:'already_saved',head,jobId:args.jobId};
+   if(['already_saved','already_released','already_failed'].includes(transition.status))
+    return{status:transition.status,head,jobId:args.jobId};
+   if(action==='checkpoint'){
+    const written=unwrap(await tools.mcp__GitHub__update_file({
+     repository_full_name:REPO,path:statePath,branch:BRANCH,sha:stateFile.sha,
+     content:clean(transition.shard),
+     message:'i18n: checkpoint '+job.jobId+' (shard CAS) [skip ci]'}));
+    if(!written.commit_sha)throw Error('Checkpoint CAS commit not confirmed');
+    return{status:'checkpoint_saved',commit:written.commit_sha,
+     branch:BRANCH,jobId:job.jobId,checkpointPath:statePath,
+     checkpointId:args.checkpointId,checkpointStorage:'inline-v1',
+     counts:index.counts};
+   }
    const next=core.massRebuildIndex(nextIndex,sid,transition.shard,time);
    const updates=[{path:ROOT+'/index.json',data:next},
     {path:ROOT+'/state/'+sid+'.json',data:transition.shard}];
@@ -200,7 +217,12 @@ export async function runEnMassTranslation(tools,core,args={}){
   }catch(e){
    if(restricted.test(String(e)))return{status:'rate_limited',retryAfterMs:60000,
     reason:String(e).slice(0,180)};
-   if(attempt===LIMIT-1||!conflict.test(String(e)))throw e;
+   if(!conflict.test(String(e)))throw e;
+   if(attempt===LIMIT-1)
+    return{status:'cas_contention',action,jobId:args.jobId||null,
+     retryable:true,retryAfterMs:3000,
+     reason:String(e).slice(0,250)};
+   await delay(Math.min(250*2**attempt,2500)+Math.floor(Math.random()*200));
   }
  }
 }

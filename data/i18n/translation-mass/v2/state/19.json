@@ -286,139 +286,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b009",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "ffbc4d081aa0c2ce3d4f1e9909deda1c81cf3435fecd149c68fd139b3d553cc3",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f4e636b296c4",
-        "token": "ada-en-f4e636b296c4-20261104",
-        "claimedAt": "2026-11-03T22:33:16.023Z",
-        "expiresAt": "2026-11-04T00:03:16.023Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f4e636b296c4-004-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f4e636b296c4",
-        "token": "ada-en-f4e636b296c4-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b009",
-          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "ffbc4d081aa0c2ce3d4f1e9909deda1c81cf3435fecd149c68fd139b3d553cc3",
-          "sourceConflicts": [
-            {
-              "blockId": "tour:contentBlock_text:1fe86620531b47a8",
-              "ru": "Appendix pricing basis unspecified",
-              "word": "USD250 per person, p237; min3, p238",
-              "resolution": "Current RU caveat retained for independent review; no price modification."
-            }
-          ],
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:b04d5d61d358e759",
-              "field": "itinerary.text",
-              "sourceTextSha256": "bbad4b9b2a3d23e365a5a1a2594fd095f02db4a1fbd4467e8672ab64ef1260ab",
-              "text": "Breakfast. Explore the Brazilian side of Iguazu Falls with an English-speaking guide. Viewpoints in the national park overlook the cascades and forested banks. The name Iguazu means “big water”: the calm river above the falls gives way to torrents plunging into the gorge.\n\nYou can add the Macuco Safari, Bird Park or a helicopter flight at an additional cost. Prices differ between the day description and the appendix; the final rate is confirmed before payment.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word Day5 p91 gives the activity but lacks this full RU restructured block and price-clarification caveat; service language follows owner instruction."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8e423711fb104e1d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-              "text": "Foz do Iguaçu",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word uses Foz do Iguaçu in place listings; this standalone itinerary label is translated from RU."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:aafcea3ba572f1a2",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "bbad4b9b2a3d23e365a5a1a2594fd095f02db4a1fbd4467e8672ab64ef1260ab",
-              "text": "Breakfast. Explore the Brazilian side of Iguazu Falls with an English-speaking guide. Viewpoints in the national park overlook the cascades and forested banks. The name Iguazu means “big water”: the calm river above the falls gives way to torrents plunging into the gorge.\n\nYou can add the Macuco Safari, Bird Park or a helicopter flight at an additional cost. Prices differ between the day description and the appendix; the final rate is confirmed before payment.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word Day5 p91 gives the activity but lacks this full RU restructured block and price-clarification caveat; service language follows owner instruction."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:4ce99f2ad2ede6c2",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "ea836e91341013084b7f8c68f1f70d9d87d5a5147b460f1f5d7508493525ab56",
-              "text": "The Brazilian side of the falls with an English-speaking guide is included in this Carnival tour.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word Day5 p91 gives the activity but lacks this full RU restructured block and price-clarification caveat; service language follows owner instruction."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:d602d4800ec848bc",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "f95f54d61e3038bc0285c8b47eb2bb98a2e9894e120bfbfdfa27b22a9185885d",
-              "text": "The Macuco Safari is optional on this tour: $135 per person in the day programme and $130 per person in the appendix. Travel about 3 km through the jungle in an open jeep with a guide, then continue on foot and by motorboat close to the falls. The current rate is confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word day and appendix describe this optional service, but no exact complete equivalent of this RU composite price, service and booking-confirmation note exists."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:682793463dcc9814",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "4048bba0087ad18d38261437426479300c01650295fa20e21d67ac7d58b534e7",
-              "text": "The Bird Park is optional on this tour: $65 per person in the day programme and $55 per person in the appendix. Walk through large aviaries in the tropical forest; the visit can be added to the Brazilian falls tour. The rate is confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word day and appendix describe this optional service, but no exact complete equivalent of this RU composite price, service and booking-confirmation note exists."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:1fe86620531b47a8",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "181ff521ab298e0e33b21b25255cd9372ff33ffb03f15cdb846653a471cabc13",
-              "text": "Optional: $170 per person in the day programme; the appendix gives $250 for a 10-minute flight with a minimum of 3 people, without specifying the pricing basis. The cost and minimum number of participants are confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word p91 and appendix p235–239 give different prices, but lack this complete RU editorial caveat; appendix p237 now explicitly says per person, flagged as source conflict."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:b532beb559145ba9",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "aea435e389353a6f1f9d27327b79f6a5049cb5d4c7672de996a282567fe751d4",
-              "text": "Optional: Rafain Grill Place and a Latin American show, $95 per person. A buffet with meat dishes, vegetables, fruit and desserts; drinks cost extra.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word day and appendix describe this optional service, but no exact complete equivalent of this RU composite price, service and booking-confirmation note exists."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:02:20.546Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f4e636b296c4-004",
+        "blobSha": "281bbe428c74f42e972d76899d0065265d8aad42",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b009/ada-en-f4e636b296c4-004.json",
+        "at": "2026-11-03T23:03:35.650Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

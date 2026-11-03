@@ -185,191 +185,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "12de98b9177a2f0f5bf12800216503f84bf15a5de686a89c4d692d271806e8eb",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-40d0e44eb57848bf",
-        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
-        "claimedAt": "2026-11-03T23:03:24.620Z",
-        "expiresAt": "2026-11-04T00:33:24.620Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-40d0e44e-004-08",
-        "format": "inline-v1",
-        "ownerId": "ada-en-40d0e44eb57848bf",
-        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
-        "generation": 2,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b004",
-          "sourceFingerprint": "12de98b9177a2f0f5bf12800216503f84bf15a5de686a89c4d692d271806e8eb",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "table:1:r0:c0:p1",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:6d260908f7e1e7c9",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6bd9c9bdf78249ddedfce16a21e31ea680bc435d97b101570c48662cb29177b0",
-              "text": "Tijuca Rainforest",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "p:25",
-                    "textSha256": "2f5533b1d70b2b135a2bbfd2ca009554217f3210b14af415fccaaa56dae79964"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the Word's 'Tijuca rainforest' as the natural English place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:414302ad85ede9fd",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
-              "text": "Corcovado",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "p:24",
-                    "textSha256": "46cd6d0366323a016d0154471f6176288226504a207dcf44826393e8652bb95b"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:fefb297ce23dc5ed",
-              "field": "media.alt",
-              "sourceTextSha256": "e4151dd4cc22725c56258aba76b318ef8337f47c1d448e7df3860290dc212f8c",
-              "text": "View of Rio de Janeiro and Corcovado",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "table:1:r0:c0:p1",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  },
-                  {
-                    "ref": "p:26",
-                    "textSha256": "dde5859fc9d7762c10e90222bf68b86431adf3300b4a164359a9797be9407e8f"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose a descriptive image alt label from the Word's named city and Corcovado summit panorama."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:c4561055c6747266",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "table:1:r0:c0:p1",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7fb63f7324f0249e",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6bd9c9bdf78249ddedfce16a21e31ea680bc435d97b101570c48662cb29177b0",
-              "text": "Tijuca Rainforest",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "p:25",
-                    "textSha256": "2f5533b1d70b2b135a2bbfd2ca009554217f3210b14af415fccaaa56dae79964"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the Word's 'Tijuca rainforest' as the natural English place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:0ebf1daa4dd25c34",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
-              "text": "Corcovado",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "p:24",
-                    "textSha256": "46cd6d0366323a016d0154471f6176288226504a207dcf44826393e8652bb95b"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
-              "field": "itinerary.title",
-              "sourceTextSha256": "06985de654fefbfb49d5924d22bae4373123d52635098e83372dfac227cec377",
-              "text": "Sugar Loaf Mountain and Urca Hill",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                "paragraphs": [
-                  {
-                    "ref": "p:34",
-                    "textSha256": "6fb1ec40cbd1808d33b595da4f800015c60e4ca6c42eb7d1e6046a654e7a0089"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Combine the Word's Sugar Loaf Mountain and Urca Hill names in the itinerary title."
-              }
-            }
-          ],
-          "stableId": "tour_brazil_best_rio_express_six_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "recoveredDraft": {
-            "checkpointId": "checkpoint-20261104-b004-8",
-            "previousOwnerId": "ada-en-20261104-k77x2vp9",
-            "previousGeneration": 1,
-            "checkpointAt": "2026-11-03T21:17:19.443Z",
-            "recoveryGeneration": 2,
-            "method": "Dispatcher returned existing immutable-source draft under a new lawful lease. Original texts and provenance preserved."
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:04:28.328Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-40d0e44e-004",
+        "blobSha": "970f7663471ec22d66e3740c7e3983c45877679b",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_best_rio_express_six_days_b004/sub-40d0e44e-004.json",
+        "at": "2026-11-03T23:04:50.189Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2378,
-    "leased": 4,
+    "queued": 2377,
+    "leased": 5,
     "review": 27,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2378,
-      "leased": 4,
+      "queued": 2377,
+      "leased": 5,
       "review": 27,
       "ready": 1,
       "retryable": 0,
@@ -763,24 +763,41 @@
       "count": 135,
       "stages": {
         "word_2027": {
-          "queued": 78,
           "held": 0,
-          "leased": 0,
-          "retryable": 0
+          "queued": 77,
+          "leased": 1,
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "word_2026": {
-          "queued": 0,
           "held": 17,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "ai_only": {
-          "queued": 0,
           "held": 40,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         }
-      }
+      },
+      "earliestExpiryAt": "2026-11-03T22:47:42.180Z",
+      "earliestRetryAt": null
     },
     "0e": {
       "count": 129,
@@ -1059,6 +1076,12 @@
       "token": "tok-ddc12b513de4-20261104",
       "expiresAt": "2026-11-03T22:46:57.639Z",
       "generation": 1
+    },
+    "ada-en-20261104-07fb7ebf72b9": {
+      "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b012",
+      "token": "bbe17f6c889c405385518d328159f001",
+      "expiresAt": "2026-11-03T22:47:42.180Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -1191,7 +1214,8 @@
       "token": "bbe17f6c889c405385518d328159f001",
       "jobIds": [
         "en:bulk:tour:tour_argentina_best_14_days:b010",
-        "en:bulk:tour:tour_argentina_agricultural_11_days:b007"
+        "en:bulk:tour:tour_argentina_agricultural_11_days:b007",
+        "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b012"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_argentina_best_14_days:b010",
@@ -1207,5 +1231,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T21:16:57.639Z"
+  "updatedAt": "2026-11-03T21:17:42.180Z"
 }

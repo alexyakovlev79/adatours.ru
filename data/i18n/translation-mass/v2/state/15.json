@@ -422,7 +422,112 @@
         "claimedAt": "2026-11-03T23:04:57.458Z",
         "expiresAt": "2026-11-04T00:34:57.458Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-40d0e44e-005-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-40d0e44eb57848bf",
+        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b002",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "5d77d0d91f50b94642d69d4bc5c542b104567962211a22c83926a6712356f143",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:76aa895a43d4eb29",
+              "field": "itinerary.label",
+              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+              "text": "San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p32",
+                    "textSha256": "068536606ec5c4e9432f56d81b24e860108d0d68ac7e7791a0a16715d18efedf"
+                  },
+                  {
+                    "ref": "word/document.xml:p33",
+                    "textSha256": "50bd0698bfe11b77b4e45d786e81cc180c6c6d2a619104e8674f966364b754b2"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract San Pedro de Atacama as the exact place label from the corresponding Word arrival and transfer paragraphs."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3f00e4eabe0a2630",
+              "field": "itinerary.label",
+              "sourceTextSha256": "29058068de0f108a0cf59abe7bfa54064797f2a596935ef20182981160cf4cb8",
+              "text": "Puerto Natales and Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p42",
+                    "textSha256": "c3138bd6e1c585eaef49772fab38deac46d1b817ef8af8ea80adc65504ef5742"
+                  },
+                  {
+                    "ref": "word/document.xml:p50",
+                    "textSha256": "a3a0dee72ba7efba54cc50af6a25b30321609a8a030f3127fdf8cc2f2d2c591b"
+                  },
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "ad2983b1098ec92c0df799311912cf64075066522b201d5b2c33d0e1c071f4e1"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the Word's Puerto Natales and Torres del Paine names to preserve this two-place route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:9b3f87db07393c2f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+              "text": "El Calafate",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p48",
+                    "textSha256": "5bd305e5df33aa7c881cd5f97e11998e0072601b8e157bbcb4fdcba029acad87"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the El Calafate destination name from the corresponding Word day heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:d528ae90267ce1e5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+              "text": "Mendoza",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p58",
+                    "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the Mendoza destination name from the corresponding Word day heading."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:05:56.701Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -88,7 +88,7 @@
         "expiresAt": "2026-11-03T23:39:40.743Z"
       },
       "checkpoint": {
-        "id": "04dd2e-grand-b011-4",
+        "id": "04dd2e-grand-b011-8",
         "format": "inline-v1",
         "ownerId": "ada-en-04dd2e696333-20261104",
         "token": "ada-en-04dd2e696333-a7f39d12",
@@ -171,10 +171,76 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact departure city name from the Word day-route heading."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:26a28d4e9a446499",
+              "field": "itinerary.label",
+              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+              "text": "Mendoza",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:36",
+                    "textSha256": "f92b8e3cdb6078e591a13d1c1a2a793d68983bfb037082624e6c8cf818d721c0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact destination city name from the Word day-route heading."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:d48765b1243cfafb",
+              "field": "media.alt",
+              "sourceTextSha256": "e142cd10ed2e7d050abae4a80ba9315c1e005c4e50eec5271646ce71db6f1d59",
+              "text": "A mountain valley with rocky slopes and a snow-covered peak near Mendoza, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The selected Word contains no image-alt passage for this Mendoza mountain photograph; translate the exact RU visual description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:f1696b81bddef6d7",
+              "field": "media.hover",
+              "sourceTextSha256": "e50dd3205f5f590494d1591bbf61b8a13fac14710632e63bb08e57b62c7c7160",
+              "text": "The Andes near Mendoza: a trail leads into a valley between dry mountain slopes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The selected Word contains no matching image hover caption; translate the frozen RU description without changing the media."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "373c4526861686089f6186337e22c7e28cafd4fc36cae8404199c5d6499fc0b4",
+              "text": "Wineries of Luján de Cuyo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:38",
+                    "textSha256": "997a0e16f7168fce4063797039892c4d43471aab7b29c41128a249d41aea6366"
+                  },
+                  {
+                    "ref": "word/document.xml:p:39",
+                    "textSha256": "fb9384a85ce8dfc9e96cd6f53172fc60979fbcda04aadf933c443556f985142e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the concise winery-visit title using the exact Luján de Cuyo destination and winery activity in the Word heading and paragraph."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:10:37.529Z"
+        "at": "2026-11-03T22:10:45.606Z"
       },
       "submission": null,
       "review": null,

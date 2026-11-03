@@ -51,7 +51,7 @@
         "expiresAt": "2026-11-03T22:49:14.374Z"
       },
       "checkpoint": {
-        "id": "sub-ddc12b513de4-tour_argentina_experience_6_days-b008-cp4",
+        "id": "sub-ddc12b513de4-tour_argentina_experience_6_days-b008-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-ddc12b513de4",
         "token": "tok-ddc12b513de4-20261104",
@@ -127,11 +127,78 @@
                   "transformation": "contextual_label",
                   "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+                "field": "itinerary.title",
+                "sourceTextSha256": "eb67f94116d2c0188eb4b02e4d2286d7017daba39d0499d45603546fe7a43f4a",
+                "text": "Colonia del Sacramento, Uruguay",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p21",
+                      "textSha256": "a82be26ee07db0b3b26b5299560ad50618aaa05b079faf6864233fdb0a05b588"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:ec46e3209ab74818",
+                "field": "itinerary.text",
+                "sourceTextSha256": "8c6a271fd5b10bd03726710c9f2fb6486d18dcf88cb4ad6e4fe753b4144813a0",
+                "text": "Today you will cross the Río de la Plata for a full-day excursion to Colonia del Sacramento in Uruguay. Transfers and ferry tickets are included, allowing you to explore this UNESCO World Heritage town known for its cobblestone streets, colonial architecture, and charming historic center. In the evening, dinner will be served at the hotel.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p23",
+                      "textSha256": "1e5cbbf1a6579ff10a2e1052bc2c88a26a3f9ff1a872899dbcbac14ea3cf9d8c"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:2ac997c5efa5cf13",
+                "field": "itinerary.label",
+                "sourceTextSha256": "8afb5880f11dcd25e4ec87ffa8a805185cb28b05dd7958b2bcd3533e5092f9e7",
+                "text": "Colonia del Sacramento",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p21",
+                      "textSha256": "a82be26ee07db0b3b26b5299560ad50618aaa05b079faf6864233fdb0a05b588"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:ef578518087206e8",
+                "field": "media.alt",
+                "sourceTextSha256": "15302f6f4b33a28f58674d28adf4cbd953cc2b783e385230fc42f6c3a1e52cb3",
+                "text": "Wooden door of a historic house among flowering plants, Colonia del Sacramento, Uruguay",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "The Word itinerary has no corresponding image alt or hover caption; translated the frozen RU image description."
+                }
               }
             ]
           }
         },
-        "at": "2026-11-03T21:20:04.443Z"
+        "at": "2026-11-03T21:20:08.788Z"
       },
       "submission": null,
       "review": null,

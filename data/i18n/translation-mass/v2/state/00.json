@@ -41,7 +41,126 @@
         "claimedAt": "2026-11-03T21:12:46.661Z",
         "expiresAt": "2026-11-03T22:42:46.661Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "en:bulk:tour:tour_argentina_best_14_days:b010:cp04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-07fb7ebf72b9",
+        "token": "bbe17f6c889c405385518d328159f001",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_best_14_days:b010",
+          "stableId": "tour_argentina_best_14_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "cc81c58a2f6ed0530e7ffd0da2dad0c80b4a8bb637013d48967e85002c015029",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "fca21c204f461862563864f65d54e827beaf841bcdd97b61aea1b40d81076b58",
+              "text": "El Calafate → Ushuaia",
+              "provenance": {
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "verifiedSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "expectedModifiedTime": "2026-10-20T19:43:30.596Z",
+                "observedModifiedTime": "2026-10-30T13:38:49.607Z",
+                "metadataNote": "modifiedTime differs; downloaded DOCX binary SHA-256 exactly matches the frozen selectedWord SHA.",
+                "paragraphNumbering": "Zero-based .//w:p in word/document.xml (including empty paragraphs).",
+                "kind": "word_aligned",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p[76]",
+                    "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+                  },
+                  {
+                    "ref": "word/document.xml#p[90]",
+                    "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the exact Word place labels in the current route title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "c3a5dd7925b1f96feed4dcc497d06b4a3001eb5e7434bae2b1959e6f198644f7",
+              "text": "Transfer to El Calafate airport for your flight to Ushuaia. On arrival, transfer to the hotel.",
+              "provenance": {
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "verifiedSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "expectedModifiedTime": "2026-10-20T19:43:30.596Z",
+                "observedModifiedTime": "2026-10-30T13:38:49.607Z",
+                "metadataNote": "modifiedTime differs; downloaded DOCX binary SHA-256 exactly matches the frozen selectedWord SHA.",
+                "paragraphNumbering": "Zero-based .//w:p in word/document.xml (including empty paragraphs).",
+                "kind": "word_aligned",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p[91]",
+                    "textSha256": "3cbda56a359dbfb858c0a399f53856ca72268b6cd35f018e3b3c4cb827363df5"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word day marker to fit the current itinerary text field; hotel fields remain unchanged."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4bd82be0e9f89208",
+              "field": "itinerary.label",
+              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+              "text": "El Calafate",
+              "provenance": {
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "verifiedSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "expectedModifiedTime": "2026-10-20T19:43:30.596Z",
+                "observedModifiedTime": "2026-10-30T13:38:49.607Z",
+                "metadataNote": "modifiedTime differs; downloaded DOCX binary SHA-256 exactly matches the frozen selectedWord SHA.",
+                "paragraphNumbering": "Zero-based .//w:p in word/document.xml (including empty paragraphs).",
+                "kind": "word_exact",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p[76]",
+                    "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5dfd2dfb75550881",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+              "text": "Ushuaia",
+              "provenance": {
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "verifiedSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "expectedModifiedTime": "2026-10-20T19:43:30.596Z",
+                "observedModifiedTime": "2026-10-30T13:38:49.607Z",
+                "metadataNote": "modifiedTime differs; downloaded DOCX binary SHA-256 exactly matches the frozen selectedWord SHA.",
+                "paragraphNumbering": "Zero-based .//w:p in word/document.xml (including empty paragraphs).",
+                "kind": "word_exact",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p[90]",
+                    "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+                  }
+                ]
+              }
+            }
+          ],
+          "unresolvedConflicts": [
+            {
+              "type": "word_ru_programme_difference",
+              "note": "Word has Ushuaia on days 6–7; current RU map places corresponding segment at itinerary indices 12–13. Use the confirmed matching source for EN text without changing itinerary ordering, hotels or commercial fields."
+            }
+          ]
+        },
+        "at": "2026-11-03T21:14:17.794Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

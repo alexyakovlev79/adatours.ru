@@ -18,180 +18,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "48fa0ec823a8ed86dd3c516fa8b0274c6a6c8edd0347b4ead940f6f6956ee76f",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-935f-translator",
-        "token": "ada-en-935f-bxatc0v89fh-mw180til",
-        "claimedAt": "2026-11-03T21:58:58.784Z",
-        "expiresAt": "2026-11-03T23:28:58.784Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-b002-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-935f-translator",
-        "token": "ada-en-935f-bxatc0v89fh-mw180til",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b002",
-          "stableId": "tour_argentina_agricultural_11_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "48fa0ec823a8ed86dd3c516fa8b0274c6a6c8edd0347b4ead940f6f6956ee76f",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:bfb5dc95aab7200c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "843faac5a44494db03fc854c56438586278d013f190ea40f2f4e3e33a5fe2cdb",
-              "text": "Sierra de la Ventana",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p2",
-                    "textSha256": "b6ac57f330d528533cfac73d58120e3e4a9b63fc804370fae5d8381152fdcbfe"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:15155ffb5ee28c24",
-              "field": "itinerary.label",
-              "sourceTextSha256": "bba75a5ad1e40ea775c585182b9d69fdd1fa3d086afb2e4eb34b186d044e5b6f",
-              "text": "Tres Arroyos",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p92",
-                    "textSha256": "e37b2b8c310cd596546db4164168d20c8635030f6aa6ae9ce8b2c024aab49379"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4968ff711766b022",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c8e3c079cc71af8ca754de687e4749d84e091b2a89873851c8ad791c3789fc09",
-              "text": "Mar del Plata",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p2",
-                    "textSha256": "b6ac57f330d528533cfac73d58120e3e4a9b63fc804370fae5d8381152fdcbfe"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a8a800819f7887ec",
-              "field": "itinerary.label",
-              "sourceTextSha256": "5c84057a1a9570394b371e939a2d38d343276390816f77d753dd840817a9b8cf",
-              "text": "Balcarce",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p106",
-                    "textSha256": "83a2c5a93884223069e11604cd6a6d028d91b7fff5ed07ae1b4a5d52dfedecdb"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:baf4a32c564902b5:2",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p2",
-                    "textSha256": "b6ac57f330d528533cfac73d58120e3e4a9b63fc804370fae5d8381152fdcbfe"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:note:c286a144e0dda28c",
-              "field": "note",
-              "sourceTextSha256": "5417beae5265f88da2a87937152b62564ee3cd82dfed857d4b7e9088ebcf5a75",
-              "text": "24 November – 4 December 2026",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p4",
-                    "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "EXACT"
-              }
-            },
-            {
-              "blockId": "tour:included:606ccfe450bfeefd",
-              "field": "included",
-              "sourceTextSha256": "0e351fe8d8a39292c3cfe289fb51e9fb7880677422b54e75de5079eae1675978",
-              "text": "–  Hotel accommodation throughout the programme.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p130",
-                    "textSha256": "6f13cac3d7c0066c864a9b2467b27eaf8ee456a4fc1008b5fb8eaaddab1fda41"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "EXACT"
-              }
-            },
-            {
-              "blockId": "tour:included:4ef8b608b1bc9df5",
-              "field": "included",
-              "sourceTextSha256": "74b52d4d4b9392319d9a6c784ff0e5d3c2242b747741b082f479bfd95784a779",
-              "text": "Breakfast, lunch and dinner",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-935f-translator",
-                "wordAbsenceReason": "The verified Word paragraph 131 combines the meal inclusion and spirits exclusion; translate the current RU meal-only item, leaving the separate exclusion unchanged."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:59:34.234Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-935f-8",
+        "blobSha": "dff42025ebf6a02c5f1c2ec122bacc2d42c05fb0",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_agricultural_11_days_b002/sub-935f-8.json",
+        "at": "2026-11-03T21:59:49.594Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

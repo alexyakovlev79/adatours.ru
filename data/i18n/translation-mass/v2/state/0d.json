@@ -270,7 +270,7 @@
         "expiresAt": "2026-11-03T23:47:49.047Z"
       },
       "checkpoint": {
-        "id": "cp-cd92-guatemala-b004-4",
+        "id": "cp-cd92-guatemala-b004-8",
         "format": "inline-v1",
         "ownerId": "ada-en-cd92-cd348eff6f82",
         "token": "tok-8076a0338bc468337a1c14a9ef98",
@@ -483,6 +483,92 @@
                 "transformation": "strip_list_marker",
                 "rationale": "Remove only the leading list marker from the verified Word optional-excursions condition."
               }
+            },
+            {
+              "blockId": "tour:note:0687ffb417453db6",
+              "field": "note",
+              "sourceTextSha256": "bd504715b15c768b2c9024065724e85036b6e2afdf2eed011da4553480b8023c",
+              "text": "Not included\n–   International flights\n–   Optional excursions\n–   Meals not specified\n–   Personal expenses",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p148",
+                    "textSha256": "b665bfc292d96e31d6fbb0b28ee03bd36c8266b1e7d0d61f999a874ac093d4d0"
+                  },
+                  {
+                    "ref": "word/document.xml:p149",
+                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+                  },
+                  {
+                    "ref": "word/document.xml:p150",
+                    "textSha256": "2f6be32eb10f897da0ecfed24140c8d7f0f27f710569bc5282b94ea8d0358463"
+                  },
+                  {
+                    "ref": "word/document.xml:p151",
+                    "textSha256": "de9a52d1dee37d133fb95bc18478b6bfb8c56cc11833cbc97f7133995a14f475"
+                  },
+                  {
+                    "ref": "word/document.xml:p152",
+                    "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "fb514ec4c5dcb55f57ddb701828a151f6f6f4d8d1ee1888151c53140e6e92cd3",
+              "text": "Day 1 (Saturday) · Arrival at Guatemala City airport",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p67",
+                    "textSha256": "c78ca427926e184e1431d85bea58fc19fd9edef63fc0831fb1e83902b2a1c800"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the Word day marker and arrival destination as a concise itinerary heading; retain the complete paragraph separately in itinerary.text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "795d21baf067fe9a7f70759e9c554e755d3d815d48a4fe6a1e059f90adfbd822",
+              "text": "Day 1 (Saturday) · Arrival at Guatemala City airport and transfer to your hotel. Overnight at Hyatt Centric Guatemala City.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p67",
+                    "textSha256": "c78ca427926e184e1431d85bea58fc19fd9edef63fc0831fb1e83902b2a1c800"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3a44e89961d0ffdf",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c4487ded86c59c5a5a35f2eb03cf6f8fe9bdc4e5fd50c082ae37ac54eab748db",
+              "text": "Guatemala City",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "a34373238ef981bcb43ddb65bfe8848b44e8674361c33e484f1ba43525dc1776"
+                  }
+                ]
+              }
             }
           ],
           "sourceObservations": [
@@ -500,7 +586,7 @@
             }
           ]
         },
-        "at": "2026-11-03T22:19:13.880Z"
+        "at": "2026-11-03T22:19:36.580Z"
       },
       "submission": null,
       "review": null,

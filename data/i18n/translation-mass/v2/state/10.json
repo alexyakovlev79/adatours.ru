@@ -341,7 +341,90 @@
         "claimedAt": "2026-11-03T22:18:42.262Z",
         "expiresAt": "2026-11-03T23:48:42.262Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-7226-3-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-7226a7c037aa-20261104",
+        "token": "tok-7226a7c037aa-en-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b004",
+          "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "8f5a0ccaf5b6045dfe8604b4e2852c3149e7d0c1c640265f1d085d8bafc3a9a2",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:58874b33ad07b7d9",
+              "field": "media.alt",
+              "sourceTextSha256": "1a209d3c610fbdc050cb0aafa660e8f52b8f7411510f679c301add65ee030d74",
+              "text": "A golden menorah inside a synagogue beside a curtain bearing the Star of David",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "run-7226-rio-jewish-b004",
+                "wordAbsenceReason": "The verified complete Word has no caption or alternative text describing this specific photograph; translate the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:ed94aed2d2078523",
+              "field": "media.hover",
+              "sourceTextSha256": "bfcf7398b0346f5ee692d3e04ee588448c280c5a1102c9c30fbdf444fe313070",
+              "text": "A menorah against the wooden interior and large windows of a synagogue",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "run-7226-rio-jewish-b004",
+                "wordAbsenceReason": "The verified complete Word has no caption or alternative text describing this specific photograph; translate the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:0da14e746cf2ffed",
+              "field": "highlight.title",
+              "sourceTextSha256": "f348625432e795737f9db13ee9093782d2d99fc3ac55e87ae940979ee49ffc13",
+              "text": "Both sides of Iguazu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "p:98",
+                    "textSha256": "78dd8aac5dfae4a2698c24e21a6c75824ac64169cf643a01d136cebcb8878208"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the cited Word narrative to compose the corresponding short title or highlight."
+              }
+            },
+            {
+              "blockId": "tour:highlight_text:ab436f815acac86e",
+              "field": "highlight.text",
+              "sourceTextSha256": "c62b90c959e5e5254c1efbb02cc97a3cbf75b604c9e2936c3746bb5228ff6b8a",
+              "text": "A panoramic walk in Brazil and a train ride to the Devil’s Throat on the Argentine side.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "p:102",
+                    "textSha256": "f84e835c1bed88dc33ba5b23bb0f2fb187b757c012d9518bf9cfb3f1f7714484"
+                  },
+                  {
+                    "ref": "p:103",
+                    "textSha256": "9d24f60f6b1350594380cf7a3aa2758df75fd7f6ed637707f2f818d3072be981"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the cited Word narrative to compose the corresponding short title or highlight."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:19:21.220Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

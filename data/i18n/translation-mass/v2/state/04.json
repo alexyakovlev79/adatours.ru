@@ -50,7 +50,89 @@
         "claimedAt": "2026-11-03T21:19:14.374Z",
         "expiresAt": "2026-11-03T22:49:14.374Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ddc12b513de4-tour_argentina_experience_6_days-b008-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ddc12b513de4",
+        "token": "tok-ddc12b513de4-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ddc12b513de4-tour_argentina_experience_6_days-b008",
+          "result": {
+            "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b008",
+            "stableId": "tour_argentina_experience_6_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "9e47f6b7c60ccfe2334cfe90725985a2d33fe56d47d54575df4d1b306151cd41",
+            "blocks": [
+              {
+                "blockId": "tour:media_alt:6a0d3e66c5cf52d7",
+                "field": "media.alt",
+                "sourceTextSha256": "90fcc2d1ad7e76b89d939f65534e7ffe460b64598bdf18e894f6acf17fafec45",
+                "text": "Building with a tower and half-timbered façades beside a lawn and palm trees, Tigre, Argentina",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "The Word itinerary has no corresponding image alt or hover caption; translated the frozen RU image description."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:f2068a13fb0fedf4",
+                "field": "media.hover",
+                "sourceTextSha256": "2236e8ba62acd2792efafb83661b77aaebfb9ea6c8b1b1b958d528364464c10c",
+                "text": "Tigre, Argentina: a façade with a tower beyond a green lawn",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "The Word itinerary has no corresponding image alt or hover caption; translated the frozen RU image description."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:046be559a0d315e4",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+                "text": "Buenos Aires",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p15",
+                      "textSha256": "58eb2c2f45cfa79dfc8cc5bbed0bac7bd0936301ff5172fae2d41d31ac4f9566"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:fc3c8a80425de1dc",
+                "field": "itinerary.label",
+                "sourceTextSha256": "439dfdc2a7dd325b9a1ee456e3e2daa3ba41457aa1490abfd67c8656d4d53c6c",
+                "text": "Tigre",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p18",
+                      "textSha256": "e6c1272bce908043f47e7b50422c151f185183f48dc3d9fe1e4b3fcffd6fa675"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T21:20:04.443Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -199,7 +199,135 @@
         "claimedAt": "2026-11-03T22:23:43.757Z",
         "expiresAt": "2026-11-03T23:53:43.757Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ada-en-20261104-2b52b0aa-6-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-2b52b0aa",
+        "token": "tok-2b52b0aa-1135-ada-en",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ada-en-20261104-2b52b0aa-6",
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b006",
+            "stableId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "b3e526aca4a7ad6119cbaf1a610bbc64a16f894c57956b7d443e3181abe6426c",
+            "blocks": [
+              {
+                "blockId": "tour:notIncluded:c6bb5bb3fc6ea0b2",
+                "field": "notIncluded",
+                "sourceTextSha256": "5c5945fefc862756dbe36f3a00350c357ca453fbbc51bc5004c53575be409a82",
+                "text": "Visa fees (if applicable)",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                  "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[56]",
+                      "textSha256": "25c596a0a6e5014d110b0bc4b9bde098c57d51dc79ad3626cf342e1405aeaf05"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Selects the corresponding Visa fees item from the Word exclusions paragraph and removes its bullet separator."
+                }
+              },
+              {
+                "blockId": "tour:notIncluded:7d4199bb6447ce2d",
+                "field": "notIncluded",
+                "sourceTextSha256": "78351ed3bd4439c737a4b25739daa65bb74c3a561e7f134cafe8b5fbfddf1824",
+                "text": "Tips and gratuities",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                  "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[56]",
+                      "textSha256": "25c596a0a6e5014d110b0bc4b9bde098c57d51dc79ad3626cf342e1405aeaf05"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Selects the corresponding Tips and gratuities item from the Word exclusions paragraph and removes its bullet separator."
+                }
+              },
+              {
+                "blockId": "tour:notIncluded:81d0395f218f5f0d",
+                "field": "notIncluded",
+                "sourceTextSha256": "37c1c17a9e3b207ad0e317755702e828e7ad5abc0a399d0e1d1d59812be5261c",
+                "text": "Early check-in or late check-out unless specified",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                  "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[56]",
+                      "textSha256": "25c596a0a6e5014d110b0bc4b9bde098c57d51dc79ad3626cf342e1405aeaf05"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Selects the corresponding early check-in or late check-out item from the Word exclusions paragraph and removes its bullet separator."
+                }
+              },
+              {
+                "blockId": "tour:note:db8f22dedb40f394",
+                "field": "note",
+                "sourceTextSha256": "e9384f2b2111a349431eb221cce6b83896f3274dbe32a99fc5c9ebbbafcadbc4",
+                "text": "The programme is based on 40 participants + 1 FOC: one complimentary place. Rates are per person in USD for Batch 1.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                  "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[5]",
+                      "textSha256": "dd619701eab1f254b36340c374354ea7b5e2cf6e0c846f2c09a26075f95f43f1"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[6]",
+                      "textSha256": "da961370d94934885a3c6c1d0ba52a835be634e7af0ca279bf8383b75a85eb27"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Combines the Word group size, one FOC place, Batch 1 and per-pax USD basis as a tariff note without changing any price."
+                }
+              }
+            ],
+            "sourceEvidence": {
+              "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+              "sha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+              "yearFolder": 2027,
+              "editionYear": null,
+              "modifiedTime": "2026-03-05T15:40:37.487Z",
+              "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+              "observedModifiedTime": "2026-03-05T15:40:37.487Z",
+              "ooxmlPath": "ada-en-session/word6-paragraphs.json",
+              "commercialTable": {
+                "currency": "USD",
+                "basis": "per pax",
+                "group": "40 + 1 FOC",
+                "batch": 1,
+                "SGL": 7140,
+                "DBL": 4640,
+                "package": "5* Hotels + Services",
+                "refs": [
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  11,
+                  12
+                ]
+              }
+            }
+          }
+        },
+        "at": "2026-11-03T22:24:56.558Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

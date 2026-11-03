@@ -28,7 +28,308 @@
         "claimedAt": "2026-11-03T21:21:14.656Z",
         "expiresAt": "2026-11-03T22:51:14.656Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ddc12b513de4-tour_argentina_best_14_days-b001-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ddc12b513de4",
+        "token": "tok-ddc12b513de4-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ddc12b513de4-tour_argentina_best_14_days-b001",
+          "result": {
+            "jobId": "en:bulk:tour:tour_argentina_best_14_days:b001",
+            "stableId": "tour_argentina_best_14_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "945dc7a52326cab717f6b05ad1b0d7c5173c6401c11eb5c88ccb843ee86c8b08",
+            "blocks": [
+              {
+                "blockId": "tour:title:aaf2320646108059",
+                "field": "title",
+                "sourceTextSha256": "573fd4d19ec775667b2a779c52bd466ba3481fd32c1ef895a0b0c75d522ce846",
+                "text": "Best of Argentina: 14 days with Bariloche and Iguazú",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p2",
+                      "textSha256": "76687958986ea584a0f20e773f2b2560a837c2f9f828536d18f11c9df71d5911"
+                    },
+                    {
+                      "ref": "word/document.xml:p6",
+                      "textSha256": "591b58650e09fc8599d88684293fc45cfb15f2cfd520ec4a43cc9746350c264e"
+                    },
+                    {
+                      "ref": "word/document.xml:p7",
+                      "textSha256": "fb5cadb9060945e39aa68a48bdc557914dcc030ce93d880ea5bf93f45dd184d5"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Composed the field label from the exact Word title, duration, itinerary or service-format context."
+                }
+              },
+              {
+                "blockId": "tour:lead:e3456bc1f4d270f4",
+                "field": "lead",
+                "sourceTextSha256": "623ddb2aa9c9e023de66a968a7f4d3ce9f1a93678ae25cff5d5d322f79a0f02a",
+                "text": "Buenos Aires and tango, the Perito Moreno Glacier, the forests of Tierra del Fuego, the lakes of Bariloche and Iguazú Falls on both sides of the border. In 14 days, the route connects the capital, southern Patagonia and the northern cascades. The programme includes 13 nights in 4-star hotels with breakfast, private transfers and guided excursions.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word paragraph 17 and inclusion paragraphs describe these elements separately; translated the frozen RU lead rather than presenting a composite as a verbatim Word paragraph."
+                }
+              },
+              {
+                "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+                "field": "priceNote",
+                "sourceTextSha256": "c7febd0660568a4283c383c006381bef14599561e7647db25c835c776725aa2c",
+                "text": "2026 programme rates: from $5,096 per person for three travellers sharing a triple room (TRL). For two travellers sharing a double room (DBL), the rate is $5,506 per person. All flights are paid separately; the final price is confirmed when booking.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word 2027 rates differ from the frozen RU 2026 commercial note. Preserved all RU amounts and year under worker no-price-change restriction; separate structured amendment sent to commercial master."
+                }
+              },
+              {
+                "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+                "field": "formatLabel",
+                "sourceTextSha256": "9972a7e16d1d746c694813219b6620e002639d24bb55cc4754a02d394c408956",
+                "text": "Mixed",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p30",
+                      "textSha256": "7e80c6d1bb52226bfa82c2e86714879cb5765043edd1ea5d5694f9d6f4df8edd"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Composed the field label from the exact Word title, duration, itinerary or service-format context."
+                }
+              }
+            ],
+            "priceAmendments": [
+              {
+                "status": "pending_commercial_master",
+                "stableId": "tour_argentina_best_14_days",
+                "sourceFileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "sourceSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "currency": "USD",
+                "basis": "per_person",
+                "editionYear": 2027,
+                "rates": [
+                  {
+                    "travellers": 1,
+                    "occupancy": "SGL",
+                    "amount": 11664
+                  },
+                  {
+                    "travellers": 2,
+                    "occupancy": "SGL",
+                    "amount": 8198
+                  },
+                  {
+                    "travellers": 2,
+                    "occupancy": "DBL",
+                    "amount": 6267
+                  },
+                  {
+                    "travellers": 3,
+                    "occupancy": "SGL",
+                    "amount": 7874
+                  },
+                  {
+                    "travellers": 3,
+                    "occupancy": "DBL",
+                    "amount": 5943
+                  },
+                  {
+                    "travellers": 3,
+                    "occupancy": "TRP",
+                    "amount": 5859
+                  }
+                ],
+                "evidenceParagraphs": [
+                  {
+                    "ref": "word/document.xml:p159",
+                    "text": "Prices per person (USD)",
+                    "textSha256": "2e2c0f8e0c1d58d78e81d97e7dfe8fc9c18e0350656e6f566062956216c66e66"
+                  },
+                  {
+                    "ref": "word/document.xml:p161",
+                    "text": "1 GUEST",
+                    "textSha256": "67c22176986006c6ce293db7666a0e493ea0c74ea44031d10245c96626eb71e8"
+                  },
+                  {
+                    "ref": "word/document.xml:p162",
+                    "text": "2 GUESTS",
+                    "textSha256": "3bffd8f959c7d2154157926d38d727bca5be8c94e31cad1204859c3c09b9bea3"
+                  },
+                  {
+                    "ref": "word/document.xml:p163",
+                    "text": "3 GUESTS",
+                    "textSha256": "93d96d67675fa797c37bd4ef0cba5ba460231e3a38fc662825a611114056cf5a"
+                  },
+                  {
+                    "ref": "word/document.xml:p165",
+                    "text": "SGL",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p166",
+                    "text": "SGL",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p167",
+                    "text": "DBL",
+                    "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                  },
+                  {
+                    "ref": "word/document.xml:p168",
+                    "text": "SGL",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p169",
+                    "text": "DBL",
+                    "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                  },
+                  {
+                    "ref": "word/document.xml:p170",
+                    "text": "TRP",
+                    "textSha256": "299f4d5312ff948181be18fc1a928cc62a2c4a0d55907ac3d15b31f0a20bf033"
+                  },
+                  {
+                    "ref": "word/document.xml:p171",
+                    "text": "Hotels + services",
+                    "textSha256": "0378202ea34e268901c85c93ee7b747c2cebcd769278fc81a2cd0223fbf2fc83"
+                  },
+                  {
+                    "ref": "word/document.xml:p172",
+                    "text": "$ 11,664",
+                    "textSha256": "19c6c78218b70c52bdc27b88eafcec96458899cd2a7e64564c5adb270bb066bc"
+                  },
+                  {
+                    "ref": "word/document.xml:p173",
+                    "text": "$ 8,198",
+                    "textSha256": "a152bece4da6a9fd2877bad908b786e8c55020369d42f2effc37715aff297462"
+                  },
+                  {
+                    "ref": "word/document.xml:p174",
+                    "text": "$ 6,267",
+                    "textSha256": "e6f8f5c0149f6926617ba8f7e4170941d71d0a121da97b7ea13d0c8060e94603"
+                  },
+                  {
+                    "ref": "word/document.xml:p175",
+                    "text": "$ 7,874",
+                    "textSha256": "650ca11914bbeddf117c666caf175edcb4e48dd3075112ebf5ae72badd358720"
+                  },
+                  {
+                    "ref": "word/document.xml:p176",
+                    "text": "$ 5,943",
+                    "textSha256": "57a46c72f6b1e04690fde454d5845b81f7c54fbbe1c8f748baea351e06da99ae"
+                  },
+                  {
+                    "ref": "word/document.xml:p177",
+                    "text": "$ 5,859",
+                    "textSha256": "69e2c68c23ba1c456cda47a441d3c1302dd568f7d0907dad033f1fcd41c9c2b6"
+                  },
+                  {
+                    "ref": "word/document.xml:p178",
+                    "text": "Prices per person, by number of travellers, including hotels with breakfast and services as per programme.",
+                    "textSha256": "12c86b279f1d29d08125913099b1a7ff8dd9d60fc04bb27317fa5d850db65e50"
+                  },
+                  {
+                    "ref": "word/document.xml:p179",
+                    "text": "Prices   Per person in USD",
+                    "textSha256": "ab68f8b2580ce658d3ecf594bf2318136b1c5e442a099c206f9bb40f5fe7f985"
+                  },
+                  {
+                    "ref": "word/document.xml:p181",
+                    "text": "PROGRAMME PRICE  ·  PER PERSON  ·  USD",
+                    "textSha256": "f80aeb821a2d1e9d240ecb26cc1c89eb38518873493828529d91f9e71df73f98"
+                  },
+                  {
+                    "ref": "word/document.xml:p182",
+                    "text": "From $ 5,859",
+                    "textSha256": "e8fe9be01b55ed29fcd03e89cef76fb57e8f6b1bbf4023b7c0c3a9a9faea4ae1"
+                  },
+                  {
+                    "ref": "word/document.xml:p183",
+                    "text": "Per person, 4★ hotels, 3 travellers sharing a triple room. Includes hotels with breakfast and services as described.",
+                    "textSha256": "c93658d51c45b3f97cdece95bbcb3be6b036d6152485cc4e6588c809aa72533c"
+                  },
+                  {
+                    "ref": "word/document.xml:p185",
+                    "text": "CONDITIONS",
+                    "textSha256": "0bad33e27107687ce9ed6814354915a6e42d00483e3e6c3f3e25f5a2193f9c0c"
+                  },
+                  {
+                    "ref": "word/document.xml:p186",
+                    "text": "Currency",
+                    "textSha256": "3ac1a9ec4fa7a9fa612a30803f3d88fa479a45431f644190ebcc18d3eaafdb3a"
+                  },
+                  {
+                    "ref": "word/document.xml:p187",
+                    "text": "USD",
+                    "textSha256": "a26cdf3a6e709124385d4d7eb9bff6b897a58ed5597fbab779b89849dbe81b21"
+                  },
+                  {
+                    "ref": "word/document.xml:p188",
+                    "text": "Year",
+                    "textSha256": "89f6832560dec0b7f8721d1fe3ba0b5036a5d1464ce4339bb16c3e1485bfec34"
+                  },
+                  {
+                    "ref": "word/document.xml:p189",
+                    "text": "2027",
+                    "textSha256": "5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e"
+                  },
+                  {
+                    "ref": "word/document.xml:p190",
+                    "text": "Flights",
+                    "textSha256": "f8f5aa2b57ba8689fe0b4a9e6dd4a2b5636120556a549d4e5fbcfc6bfc7552f9"
+                  },
+                  {
+                    "ref": "word/document.xml:p191",
+                    "text": "Not included",
+                    "textSha256": "b665bfc292d96e31d6fbb0b28ee03bd36c8266b1e7d0d61f999a874ac093d4d0"
+                  },
+                  {
+                    "ref": "word/document.xml:p193",
+                    "text": "Important information",
+                    "textSha256": "ce20f737bb0ecaf0cd885c796320393108ba8996089ffd6a0516651a1aa53106"
+                  },
+                  {
+                    "ref": "word/document.xml:p194",
+                    "text": "–   Subject to change without prior notice and to availability at the time of booking.",
+                    "textSha256": "955db165dc32b5b0ee082cec89e9ded161f3a80b252c6e6a316d6cf6bba8dcf7"
+                  },
+                  {
+                    "ref": "word/document.xml:p195",
+                    "text": "–   Domestic and international flights are not included.",
+                    "textSha256": "528ae1452dc71e6461ddc38bc7d74e7a033ef7ca9227349a23b0aee5284190d5"
+                  },
+                  {
+                    "ref": "word/document.xml:p196",
+                    "text": "–   Tours are scheduled according to the seasons and weather conditions. A 10% tip is customary in restaurants.",
+                    "textSha256": "4e135325cc11c58c9a16aa2849cf67b17678d13a75dda08f31106435685e4172"
+                  }
+                ],
+                "reason": "Frozen RU note still quotes 2026 USD5096/5506. No common price, RU source or publication was changed."
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T21:21:45.775Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

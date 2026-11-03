@@ -12,14 +12,20 @@ import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import { countLabel } from '../../lib/interest-model.mjs';
+import { countInEnglish } from '../../lib/i18n/messages.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { mainTourCountries, tourPath } from '../../lib/routes';
 import { withBase } from '../../lib/paths';
 import { selectVipTours, vipTourPriceLabel } from '../../lib/vip-tours.mjs';
 import VipFilters from '../../components/catalog/VipFilters.astro';
 
+const uiLocale = sharedUiLocale();
 const allTours = await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
 const allCountries = await getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
+const countryDisplayNames = uiLocale === 'en'
+  ? new Map(allCountries.map(({ data }) => [data.id, data.name]))
+  : new Map<string, string>();
 const vipSelection = selectVipTours(allTours);
 const vipTours = vipSelection.entries;
 if (!vipTours.length) throw new Error('VIP page requires at least one qualifying active tour');
@@ -128,12 +134,12 @@ const listSchema = {
       <div id="catalog-items" data-catalog-items>
         {visibleTours.map((entry, index) => {
           const data = entry.data;
-          const countries = mainTourCountries(data).map((country) => country.name).join(' + ');
+          const countries = mainTourCountries(data).map((country) => countryDisplayNames.get(country.id) ?? country.name).join(' + ');
           const meta = [
             countries,
-            data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
+            data.durationDays ? uiLocale === 'en' ? countInEnglish(data.durationDays, 'day', 'days') : countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
             vipTourPriceLabel(data),
-            data.format,
+            data._i18n?.formatLabel ?? data.format,
           ].filter(Boolean).join(' · ');
           return (
             <div data-catalog-item={data.id}>
@@ -197,4 +203,5 @@ const listSchema = {
     max-width: 780px; margin: 0; color: color-mix(in srgb, var(--color-ink) 72%, transparent); font-size: var(--text-lg);
   }
 </style>
+
 

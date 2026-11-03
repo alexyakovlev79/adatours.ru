@@ -1,5 +1,6 @@
 ---
 import { createHash } from 'node:crypto';
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
@@ -15,6 +16,8 @@ import destinationCatalog from '../../data/catalog/destinations.json';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { mainTourCountries, tourPath } from '../../lib/routes';
 import { countLabel } from '../../lib/interest-model.mjs';
+import { countInEnglish } from '../../lib/i18n/messages.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 import { withBase } from '../../lib/paths';
 
 export async function getStaticPaths() {
@@ -38,6 +41,10 @@ const {
   entries, pagination, catalogVersion, slugs, comboCountries,
   hero, seoMeta, theme, catalogId,
 } = Astro.props;
+const uiLocale = sharedUiLocale();
+const countryDisplayNames = uiLocale === 'en'
+  ? new Map((await getCollection('countries', ({ data }) => data.locale === 'ru')).map(({ data }) => [data.id, data.name]))
+  : new Map<string, string>();
 const names = comboCountries.map((country) => country.name);
 // Page titles always use the canonical alphabetical country order.
 const countriesText = names.length ? formatMultiCountryNames(names) : 'Несколько стран';
@@ -121,13 +128,14 @@ const itemList = {
       <div id="catalog-items" data-catalog-items>
         {entries.map((entry, index) => {
           const data = entry.data;
-          const countryLabel = formatMultiCountryNames(mainTourCountries(data)
+          const countryNames = mainTourCountries(data)
             .sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
-            .map((country) => country.name));
+            .map((country) => countryDisplayNames.get(country.id) ?? country.name);
+          const countryLabel = uiLocale === 'en' ? countryNames.join(' + ') : formatMultiCountryNames(countryNames);
           const meta = [
             countryLabel,
-            data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
-            data.format,
+            data.durationDays ? uiLocale === 'en' ? countInEnglish(data.durationDays, 'day', 'days') : countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
+            data._i18n?.formatLabel ?? data.format,
           ].filter(Boolean).join(' · ');
           return (
             <div data-catalog-item={data.id}>
@@ -174,3 +182,4 @@ const itemList = {
   .combination-tours__back { padding: 16px 0 30px; }
   .combination-tours__back a { color: var(--color-ink); text-underline-offset: 4px; }
 </style>
+

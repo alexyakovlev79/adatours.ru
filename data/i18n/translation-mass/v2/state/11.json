@@ -86,7 +86,7 @@
         "expiresAt": "2026-11-04T00:34:07.157Z"
       },
       "checkpoint": {
-        "id": "ada_en_87f8c5a90488-s006-c004",
+        "id": "ada_en_87f8c5a90488-s006-c008",
         "format": "inline-v1",
         "ownerId": "ada-en-f0410042e63344c3",
         "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
@@ -163,10 +163,102 @@
                 "transformation": "contextual_label",
                 "rationale": "Uses the exact Word tariff heading's group-tour designation as the structured tour format label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:8a2490c091d79367",
+              "field": "itinerary.label",
+              "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+              "text": "Rio de Janeiro, 3 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  },
+                  {
+                    "ref": "word/document.xml:p125",
+                    "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c8ffbd6fc38d01b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e571875ec720a5ede2d4198bb255ac215b15ee7139d2cb36d3e04b709cb2383d",
+              "text": "Foz do Iguaçu, 2 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p129",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  },
+                  {
+                    "ref": "word/document.xml:p130",
+                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8711a253902b9244",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c37dce1a30398fdcd836fc1554d450d0496e66b89d03885de1a27a2e194a9d8b",
+              "text": "Buenos Aires, 2 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p134",
+                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                  },
+                  {
+                    "ref": "word/document.xml:p135",
+                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:eba01720f03465d0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0df9632536cc03cad907920e98f41950bdd370cd8f5c2d55f3e2efdc388ceff1",
+              "text": "Santiago de Chile, 2 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p139",
+                    "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+                  },
+                  {
+                    "ref": "word/document.xml:p140",
+                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:05:09.842Z"
+        "at": "2026-11-03T23:05:29.967Z"
       },
       "submission": null,
       "review": null,

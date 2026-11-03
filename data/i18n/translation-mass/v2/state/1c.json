@@ -53,155 +53,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b012",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "ea744d85e7ee4265de7d7760365485ba0340c4775598723f5289357c66a7f2ce",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-7963199f582c",
-        "token": "ada-en-20261104-7963199f582c-stable",
-        "claimedAt": "2026-11-03T21:59:42.093Z",
-        "expiresAt": "2026-11-03T23:29:42.093Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "agro-b012-8-v1",
-        "format": "inline-v1",
-        "ownerId": "ada-en-7963199f582c",
-        "token": "ada-en-20261104-7963199f582c-stable",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b012",
-            "stableId": "tour_brazil_agribusiness_14_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "ea744d85e7ee4265de7d7760365485ba0340c4775598723f5289357c66a7f2ce",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
-                "field": "itinerary.text",
-                "sourceTextSha256": "054c245587469ef244307f78630c37af9be8cad0485e3445400e5f0dc71454af",
-                "text": "After breakfast, you will cross the river and the border via the Tancredo Neves Bridge and visit the Argentine side of the falls. The walkways and viewing platforms bring you closer to the cascades and offer views of the Devil’s Throat. The tour is accompanied by a guide.\n\nCrossing the border requires a valid passport and compliance with Argentina’s entry requirements. The entrance tickets included will be confirmed when your trip is priced.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "Verified Word paragraph 87 describes the Argentine-side visit, but does not include the current RU passport/entry-conditions paragraph or the qualification that ticket coverage is confirmed during pricing. Translate the complete current RU block rather than drop those conditions."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:ee31582f181bf61e",
-                "field": "itinerary.label",
-                "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
-                "text": "Puerto Iguazú",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "The verified Word has Foz do Iguaçu in the Day 12 heading and describes the Argentine-side falls, but contains no Puerto Iguazú place label; translate the exact frozen RU label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:7f75760da7e5f72b",
-                "field": "media.alt",
-                "sourceTextSha256": "ac2147c5f5e8deb868353990fc35385f0f12b5734c61694622b7b03394eb1a26",
-                "text": "Powerful Iguazú cascades among rocks and greenery, Argentina",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "The complete verified Word contains no photograph alternative text corresponding to this Argentine waterfalls image; translate the frozen RU media.alt."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:ab181b6663208ccf",
-                "field": "media.hover",
-                "sourceTextSha256": "6488796c9c196a67c53a0d98ce62fc2e0cf3b967db6a596e0fd21cf3870ebecb",
-                "text": "Iguazú: broad streams of water over rocks covered in dense vegetation",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "The complete verified Word contains no photograph hover caption for this waterfall image; translate the frozen RU media.hover."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
-                "field": "itinerary.title",
-                "sourceTextSha256": "ad97dc4a1e5fdc6659d604122dd46cd62a80a1b2186ad83941e7579d59e53d52",
-                "text": "Foz do Iguaçu — São Paulo",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p91",
-                      "textSha256": "c0c8c526940a63356a61089051b4ecc9758b6c010e2a6d0e23c617560f7d14f5"
-                    }
-                  ],
-                  "transformation": "compose_route_label",
-                  "rationale": "Remove the day number from the verified Day 13 heading and format its unchanged route with an em dash."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:173cf987634ed90a",
-                "field": "itinerary.text",
-                "sourceTextSha256": "fd9716c19a3778df932a0c0a33ae523cd5e459093d529c5dad184035a2f42672",
-                "text": "After breakfast, transfer to the airport for your flight to São Paulo. On arrival, transfer to the hotel and check in.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "Verified Word paragraph 92 contains breakfast and both transfers but omits the explicit hotel check-in in this current RU block; translate the complete current RU wording without adding flight inclusion."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:2e9aae17d0a7d02c",
-                "field": "itinerary.label",
-                "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-                "text": "Foz do Iguaçu",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p91",
-                      "textSha256": "c0c8c526940a63356a61089051b4ecc9758b6c010e2a6d0e23c617560f7d14f5"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the exact departure city from the verified Day 13 route heading."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:48a726eca2626128",
-                "field": "itinerary.label",
-                "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
-                "text": "São Paulo",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p91",
-                      "textSha256": "c0c8c526940a63356a61089051b4ecc9758b6c010e2a6d0e23c617560f7d14f5"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the exact arrival city from the verified Day 13 route heading."
-                }
-              }
-            ]
-          },
-          "submissionId": "ada-en-7963199f582c-agro-b012-v1"
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:00:52.225Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-7963199f582c-agro-b012-v1",
+        "blobSha": "2c2fc5ca9dba2e90a8d9c0d16cb9388be9e8b4df",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b012/ada-en-7963199f582c-agro-b012-v1.json",
+        "at": "2026-11-03T22:11:33.995Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

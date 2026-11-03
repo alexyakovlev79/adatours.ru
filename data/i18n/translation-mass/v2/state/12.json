@@ -129,7 +129,84 @@
         "claimedAt": "2026-11-03T22:27:28.551Z",
         "expiresAt": "2026-11-03T23:57:28.551Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-6b8358141bab-01-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-6b8358141bab",
+        "token": "tkn-6b8358141bab-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "62b85b5a802dc52308a90632c2e9053dd7a8c0af32f4f6456d1df7e9b46acb24",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:6979b1706243a588",
+              "field": "media.alt",
+              "sourceTextSha256": "43dac6acf5a2896f0ec8a08d3bec1a06ddb509c01f3368c924ae60e921de069d",
+              "text": "A person at the edge of a blue lagoon among white sand dunes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-6b8358141bab",
+                "wordAbsenceReason": "The verified Word has no image-specific alt text; translated the exact RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:e6fafd653b753aba",
+              "field": "media.hover",
+              "sourceTextSha256": "47ec3874fe0609c1f750a6f8c9ca452e736746d7d59e0379e5c51035eb44cd9a",
+              "text": "White dunes, deep blue water and a person by the shore",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-6b8358141bab",
+                "wordAbsenceReason": "The verified Word has no image-specific hover caption; translated the exact RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:359c7c25395d1837",
+              "field": "itinerary.title",
+              "sourceTextSha256": "4b2678f59ff3b67caf706b69eae50a8491e5591b1181e24d04396045fb0f9c81",
+              "text": "São Luís – Natal",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p120",
+                    "textSha256": "975b1feeed0091a20326acf462aff767a494f53ebc1448bf63bd4559d3e7121c"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "The corresponding Word 2027 day section names the route São Luís – Natal."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+              "field": "itinerary.text",
+              "sourceTextSha256": "9d69237bca9dc7cd3bf099422fed3da25c6f27322e9ae2dc9063b7395754b1cb",
+              "text": "Breakfast and, at the appointed time, transfer to the airport for your flight to Natal; on arrival, transfer to your hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "e6f8875fb517da8379620a32f0ca41af2717d8b966d6d6eda513692f9c23520c"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:28:35.831Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

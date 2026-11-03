@@ -94,7 +94,7 @@ jobs:
           node --test tests/i18n/en-staging-site.test.mjs
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
-          node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs
+          node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/stage-en-translations.test.mjs
           npx astro build
           npx pagefind --site dist
           node scripts/i18n/verify-en-pages-site.mjs dist

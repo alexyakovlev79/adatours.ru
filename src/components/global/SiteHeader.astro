@@ -11,7 +11,7 @@ import { countryPath, themePath, mainTourCountries } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { pilotCatalogUrl,PILOT_ROOT_PATH } from '../../lib/i18n/pilot-html.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
-import { uiText } from '../../lib/i18n/messages.mjs';
+import { uiText,localizedNavigation } from '../../lib/i18n/messages.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
 import { buildInterestIndex } from '../../lib/interest-model.mjs';
 import { getVipCountryIndex } from '../../lib/vip-catalog';
@@ -27,14 +27,11 @@ interface NavChild {
 }
 
 const { theme = 'light', privatePreview = false } = Astro.props;
-const previewNav=[
-  {href:pilotCatalogUrl(),label:uiText('en','nav.tours')},
-  {href:PILOT_ROOT_PATH+'tours-ru/',label:'Full catalogue (RU)'},
-  {href:privateRouteForId('country_brazil'),label:'Brazil'},
-  {href:privateRouteForId('country_chile'),label:'Chile'},
-  {href:privateRouteForId('country_colombia'),label:'Colombia'},
-  {href:privateRouteForId('destination_chile_ostrov_pashi'),label:'Easter Island'},
-];
+const enNavLabels=new Map(localizedNavigation('en').primary.map(item=>[item.href,item.label]));
+// One navigation hierarchy in both languages; an unlocalized destination
+// remains available at its canonical RU-derived EN fallback route.
+const previewNav=NAV_LINKS.map(item=>({href:PILOT_ROOT_PATH+item.href.slice(1),
+ label:enNavLabels.get(item.href)??item.label}));
 const activeNav=privatePreview?previewNav:NAV_LINKS;
 const logoWhite = withBase('/brand/adatours-logo-white.svg');
 const logoBlack = withBase('/brand/adatours-logo-black.svg');
@@ -135,7 +132,7 @@ const nestedGroups = activeNav
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header data-ada-preview-header={privatePreview ? 'true' : undefined}>
   <div class="site-header__inner">
-    <a class="brand" href={privatePreview ? withBase(pilotCatalogUrl()) : withBase('/')} aria-label={privatePreview ? uiText('en','nav.homeAria') : 'Ada Tours, на главную'}>
+    <a class="brand" href={privatePreview ? withBase(PILOT_ROOT_PATH) : withBase('/')} aria-label={privatePreview ? uiText('en','nav.homeAria') : 'Ada Tours, на главную'}>
       <img class="brand__logo brand__logo--white" src={logoWhite} width="553" height="184" alt="" aria-hidden="true" />
       <img class="brand__logo brand__logo--black" src={logoBlack} width="553" height="184" alt="" aria-hidden="true" />
     </a>

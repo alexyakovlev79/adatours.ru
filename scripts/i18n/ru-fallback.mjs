@@ -5,6 +5,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {parse,serialize} from 'parse5';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
+import ui from '../../src/data/i18n/ui-copy.json' with {type:'json'};
+import {localizedNavigation,uiText} from '../../src/lib/i18n/messages.mjs';
 const ROBOTS='noindex,nofollow,noarchive,nosnippet';
 const fail=m=>{throw Error('EN Russian fallback: '+m)};
 const get=(n,k)=>n?.attrs?.find(x=>x.name===k)?.value??null;
@@ -14,6 +16,60 @@ const prune=(n,p)=>{for(const c of [...(n.childNodes??[])]){if(p(c))n.childNodes
 // Redirect aliases are real RU output but must not be advertised as EN pages.
 // Reject an unexpected redirect later in the renderer if this preflight misses one.
 const isSourceRedirect=html=>/<meta\b[^>]*\bhttp-equiv\s*=\s*(?:"refresh"|'refresh'|refresh)(?=[\s/>])/i.test(html);
+
+const literalShellUi=new Map(Object.entries(ui.messages)
+ .filter(([key,row])=>/^(?:nav|footer|cta|search)\./.test(key)&&
+  typeof row.ru==='string'&&typeof row.en==='string')
+ .map(([,row])=>[row.ru,row.en]));
+const navigationLabels=new Map([
+ ...localizedNavigation('en').primary.map(x=>[x.href,x.label]),
+ ...localizedNavigation('en').about.map(x=>[x.href,x.label]),
+ ...localizedNavigation('en').dmc.map(x=>[x.href,x.label]),
+ ...localizedNavigation('en').mice.map(x=>[x.href,x.label]),
+ ['/places/',uiText('en','nav.places')],
+ ['/excursions/',uiText('en','nav.excursions')],
+ ['/privacy/',uiText('en','footer.privacy')],
+ ['/personal-data/',uiText('en','footer.personalData')],
+]);
+const firstText=n=>{let result=null;walk(n,x=>{
+ if(result===null&&x.nodeName==='#text'&&typeof x.value==='string'&&/[\u0400-\u052f]/u.test(x.value))
+  result=x;
+});return result};
+const setVisible=(n,label)=>{const t=firstText(n);if(t)t.value=t.value.replace(t.value.trim(),label)};
+function localizeSharedChrome(doc,translatedNames){
+ // Only the existing header/footer DOM is localized; page narratives and
+ // unapproved entity descriptions keep their original Russian source.
+ const regions=walk(doc,n=>n.tagName==='header'||n.tagName==='footer');
+ for(const region of regions){
+  const isHeader=region.tagName==='header';
+  for(const node of walk(region,n=>n.nodeName==='#text'&&typeof n.value==='string')){
+   const replacement=literalShellUi.get(node.value.trim());
+   if(replacement)node.value=node.value.replace(node.value.trim(),replacement);
+  }
+  for(const a of walk(region,n=>n.tagName==='a')){
+   const href=get(a,'href');
+   const prefix=EN_STAGING_BASE+'en/';
+   if(!href?.startsWith(prefix))continue;
+   const canonical='/'+href.slice(prefix.length).split(/[?#]/,1)[0];
+   const label=translatedNames.get('/en'+canonical)||navigationLabels.get(canonical);
+   if(label&&isHeader&&a.parentNode?.tagName==='nav')setVisible(a,label);
+   else if(label&&(a.parentNode?.tagName==='nav'||a.parentNode?.parentNode?.tagName==='nav'))setVisible(a,label);
+  }
+  if(isHeader){
+   for(const a of walk(region,n=>n.tagName==='a'&&typeof get(n,'aria-label')==='string')){
+    if(get(a,'class')?.split(/\s+/).includes('brand'))set(a,'aria-label',uiText('en','nav.homeAria'));
+   }
+   for(const b of walk(region,n=>n.tagName==='button'&&get(n,'data-menu-toggle')!==null))
+    set(b,'aria-label',uiText('en','nav.openMenu'));
+   for(const nav of walk(region,n=>n.tagName==='nav')){
+    const aria=get(nav,'aria-label');
+    if(aria==='Основная навигация')set(nav,'aria-label',uiText('en','nav.mainAria'));
+    if(aria==='Мобильная навигация')set(nav,'aria-label',uiText('en','nav.mobileAria'));
+   }
+  }
+ }
+}
+
 const normal=s=>{if(!s||s==='/')return '/';const p=s.split('/').filter(Boolean);if(p.some(x=>x==='.'||x==='..'||x.includes('\\')||x.includes('%')))fail('Unsafe route '+s);return '/'+p.join('/')+'/'};
 export function discoverRussianPages(root){
  const pages=[];
@@ -29,7 +85,7 @@ export function discoverRussianPages(root){
  return pages.sort((a,b)=>a.route.localeCompare(b.route,'en'));
 }
 /** Build a full visual mirror without translation labels or live submissions. */
-export function russianFallbackHtml(source,route,known){
+export function russianFallbackHtml(source,route,known,{translatedNames=new Map()}={}){
  if(typeof source!=='string'||!source.includes('<html')||!known?.has(route))fail('Unknown source route '+route);
  const doc=parse(source),root=walk(doc,n=>n.tagName==='html')[0],
   head=walk(doc,n=>n.tagName==='head')[0];
@@ -94,13 +150,14 @@ export function russianFallbackHtml(source,route,known){
    const href=get(n,key);if(href?.startsWith('/')&&!href.startsWith('//'))set(n,key,linkTo(href));
   }
  }
+ localizeSharedChrome(doc,translatedNames);
  const out=serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
  if(!out.includes('data-ada-ru-fallback')||!out.includes(ROBOTS))fail('Unsafe transformed output');
  if(/data-ada-translation-notice|This page is currently available in Russian/i.test(out))fail('Unrequested translation notice');
  return out;
 }
 
-export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000_000}={}){
+export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000_000,translatedNames=new Map()}={}){
  const root=path.resolve(dist),target=path.resolve(output);
  if(root===target||target.startsWith(root+path.sep))fail('Unsafe output');
  const pages=discoverRussianPages(root);
@@ -119,7 +176,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
   if(aliasRoutes.has(row.route)){redirects++;continue}
   const filename=path.join(target,'en',row.route.slice(1),'index.html');
   if(fs.existsSync(filename)){existing++;continue}
-  const rendered=russianFallbackHtml(fs.readFileSync(row.file,'utf8'),row.route,known);
+  const rendered=russianFallbackHtml(fs.readFileSync(row.file,'utf8'),row.route,known,{translatedNames});
   if(rendered===null)fail('Unclassified RU redirect alias: '+row.route);
   fs.mkdirSync(path.dirname(filename),{recursive:true});fs.writeFileSync(filename,rendered);
   added++;bytes+=Buffer.byteLength(rendered);
@@ -135,7 +192,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
   fs.mkdirSync(outShared,{recursive:true});
   for(const item of fs.readdirSync(sourceShared,{withFileTypes:true})){
    if(!item.isFile()||!/^site-shell-[a-f0-9]+\.html$/.test(item.name))continue;
-   const rendered=russianFallbackHtml(fs.readFileSync(path.join(sourceShared,item.name),'utf8'),'/',known);
+   const rendered=russianFallbackHtml(fs.readFileSync(path.join(sourceShared,item.name),'utf8'),'/',known,{translatedNames});
    if(!rendered)fail('Invalid shared HTML fragment '+item.name);
    fs.writeFileSync(path.join(outShared,item.name),rendered);
    sharedFragments++;bytes+=Buffer.byteLength(rendered);
@@ -148,7 +205,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  if(sourceTours&&nativeTourCatalogue){
   const alias=path.join(target,'en/tours-ru/index.html');
   if(fs.existsSync(alias))fail('Full RU Tour catalogue alias already exists');
-  const content=russianFallbackHtml(fs.readFileSync(sourceTours.file,'utf8'),'/tours/',known);
+  const content=russianFallbackHtml(fs.readFileSync(sourceTours.file,'utf8'),'/tours/',known,{translatedNames});
   if(!content)fail('Invalid full Russian catalogue');
   fs.mkdirSync(path.dirname(alias),{recursive:true});fs.writeFileSync(alias,content);
   fullCatalogueAlias=1;bytes+=Buffer.byteLength(content);

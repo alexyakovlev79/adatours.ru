@@ -7,12 +7,15 @@ import path from 'node:path';
 import {parse} from 'parse5';
 import {enStagingSiteEnabled,EN_STAGING_BASE,EN_STAGING_ROUTE} from '../../src/lib/i18n/en-staging-site.mjs';
 import {privatePilotRouteIndex} from '../../src/lib/i18n/locale-entity-routes.mjs';
+import {localizedNavigation} from '../../src/lib/i18n/messages.mjs';
 const fail=msg=>{throw Error('EN GitHub Pages check: '+msg)};
 if(!enStagingSiteEnabled(process.env))fail('Wrong Pages target or release gates');
 const root=path.resolve(process.argv[2]||'dist');
 const expected=[EN_STAGING_ROUTE+'tours/',...privatePilotRouteIndex.entries().map(x=>x.path)];
 if(expected.length!==22||new Set(expected).size!==22)fail('Incomplete EN entity routes');
-const allowed=new Set([...expected.map(x=>EN_STAGING_BASE.slice(0,-1)+x),EN_STAGING_BASE+'en/tours-ru/']);
+const allowed=new Set([...expected.map(x=>EN_STAGING_BASE.slice(0,-1)+x),
+ EN_STAGING_BASE+'en/tours-ru/',EN_STAGING_BASE+'en/',
+ ...localizedNavigation('en').primary.map(x=>EN_STAGING_BASE+'en'+x.href)]);
 const find=(n,p)=>{const items=[];const walk=x=>{if(p(x))items.push(x);for(const y of x.childNodes??[])walk(y)};walk(n);return items};
 const attr=(n,k)=>n?.attrs?.find(x=>x.name===k)?.value??null;
 const textOf=n=>{const walk=x=>x.nodeName==='#text'?x.value:

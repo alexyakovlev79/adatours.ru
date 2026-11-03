@@ -324,7 +324,108 @@
         "claimedAt": "2026-11-03T23:26:43.591Z",
         "expiresAt": "2026-11-04T00:56:43.591Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-40d0e44e-010-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-40d0e44eb57848bf",
+        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b008",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "628afe653409dd817e1bbfceb1feeeb35496a73f90148fd8d1d243fcbe8e0a30",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "152e02273c96f284a66381468d517213d809d7c336a0da03a356bd9e1370d35f",
+              "text": "Foz do Iguaçu – São Luís",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+                  },
+                  {
+                    "ref": "word/document.xml:p106",
+                    "textSha256": "032649aa528492a7dbd54dc5ec86de66fc23607644910d406eff431b6c8f0f94"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Condense the Word section heading and the stated Foz do Iguaçu to São Luís flight into this route title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "1722e388f64d13db058b2e0ae6218f8799f0e7ffe1e7f3c33299763a9ef7e542",
+              "text": "Breakfast at the hotel. Transfer to the airport and flight to São Luís do Maranhão. On arrival, you will be met and transferred to your hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "Word p103 combines the transfer with extensive São Luís city description and does not include the exact breakfast-led RU transfer block. Translate the current RU-only block without adding the unrelated Word city prose."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0f8f1524af76a74c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Foz do Iguaçu name from the corresponding Word route heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0941729886e9a4dc",
+              "field": "itinerary.label",
+              "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+              "text": "São Luís",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p43",
+                    "textSha256": "596e5276fb7f990fd0eb42abf59f5c449cb55a59128b8a6a8b19744d920364c6"
+                  },
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact São Luís place name from the Word highlights and itinerary heading."
+              }
+            }
+          ],
+          "unresolvedConflicts": [
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "kind": "ru_word_duration_discrepancy",
+              "detail": "Current RU transfer São Luís–Barreirinhas says about 3.5 hours; verified selected Word p104 says about 4 hours. RU-derived EN retains 3.5 hours; requires independent review or master decision."
+            }
+          ]
+        },
+        "at": "2026-11-03T23:27:50.688Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

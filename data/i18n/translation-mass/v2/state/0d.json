@@ -98,7 +98,87 @@
         "claimedAt": "2026-11-03T22:00:15.597Z",
         "expiresAt": "2026-11-03T23:30:15.597Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "eaeb-b006-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-eaeb603e-translator",
+        "token": "tok-eaeb603e-20261104-831c",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-en-eaeb603e-01",
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b006",
+            "stableId": "tour_brazil_little_mix_ten_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "e5d22a762dcc8774c011d8ece12d5c1a1da74e23683bd1be606737f75c9fa84d",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:e08afe98d79d6ffa",
+                "field": "itinerary.label",
+                "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
+                "text": "Corcovado",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "ddd49b9e6878abb4ed88290dcd007e557dea1e2a556222113f60542e57dfa655"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the exact geographic name for the itinerary place label from the cited Word paragraph."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:45e55aa7c72082d5",
+                "field": "media.alt",
+                "sourceTextSha256": "a4ba45ddd6478651074607d648c8f1182f8ef9e9c7b529807dd6109cc297aed2",
+                "text": "Boats and yachts in the bay at sunset, Rio de Janeiro, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-eaeb603e-01",
+                  "wordAbsenceReason": "The exact Word 2027 programme contains no image alt or hover captions; translated the current RU image caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:8e88e9f8f9974007",
+                "field": "media.hover",
+                "sourceTextSha256": "32a10cdd389918e9fe59ab69fa57c4a981850993a7a5d14e32f04e3485fd0f95",
+                "text": "Rio de Janeiro, Brazil: sunset over the bay with yachts",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-eaeb603e-01",
+                  "wordAbsenceReason": "The exact Word 2027 programme contains no image alt or hover captions; translated the current RU image caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:c4561055c6747266",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p136",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T22:01:16.118Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

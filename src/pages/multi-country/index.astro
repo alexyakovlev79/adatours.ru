@@ -16,10 +16,13 @@ import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import { countLabel } from '../../lib/interest-model.mjs';
+import { countInEnglish } from '../../lib/i18n/messages.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { countryPath, mainTourCountries, tourPath } from '../../lib/routes';
 
+const uiLocale = sharedUiLocale();
 const [tourEntries, countryEntries] = await Promise.all([
   getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
   getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
@@ -170,13 +173,14 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
         <div id="catalog-items" data-catalog-items>
           {visibleTours.map((entry, index) => {
             const data = entry.data;
-            const countries = formatMultiCountryNames(mainTourCountries(data)
+            const countryNames = mainTourCountries(data)
               .sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
-              .map((country) => country.name));
+              .map((country) => uiLocale === 'en' ? countryEntryById.get(country.id)?.data.name ?? country.name : country.name);
+            const countries = uiLocale === 'en' ? countryNames.join(' + ') : formatMultiCountryNames(countryNames);
             const meta = [
               countries,
-              data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
-              data.format,
+              data.durationDays ? uiLocale === 'en' ? countInEnglish(data.durationDays, 'day', 'days') : countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
+              data._i18n?.formatLabel ?? data.format,
             ].filter(Boolean).join(' · ');
             return (
               <div data-catalog-item={data.id}>
@@ -318,3 +322,4 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
   .all-country-combinations nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 26px; max-height: 520px; overflow-y: auto; padding-top: 28px; }
   .all-country-combinations a { color: var(--color-ink); text-underline-offset: 3px; }
 </style>
+

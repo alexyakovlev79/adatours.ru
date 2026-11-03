@@ -5,7 +5,7 @@ import { sharedUiLocale, translateUiText } from '../lib/i18n/shared-ui-locale.mj
 import catalogHeroOverrides from '../data/media/catalog-hero-overrides.json';
 import { countLabel, countryMembership } from '../lib/interest-model.mjs';
 import { seoPaginatedTitle } from '../lib/seo-page.mjs';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import { formatMultiCountryNames } from '../lib/multi-country-combinations.mjs';
 import Hero from '../components/editorial/Hero.astro';
@@ -51,6 +51,10 @@ interface Props {
 const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero: defaultHero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
 const uiLocale = sharedUiLocale();
 const translate = (text: string) => translateUiText(text,uiLocale);
+const countryDisplayNames = uiLocale === 'en'
+  ? new Map((await getCollection('countries', ({ data }) => data.locale === 'ru')).map(({ data }) => [data.id, data.name]))
+  : new Map<string, string>();
+const displayCountryName = (country: { id: string; name: string }) => countryDisplayNames.get(country.id) ?? country.name;
 // Catalogue covers are page-specific, including pagination, and never alter card images.
 const heroOverrides: Record<string, { src: string }> = catalogHeroOverrides.covers;
 const hero = heroOverrides[canonical]?.src ?? defaultHero;
@@ -65,13 +69,13 @@ const multiCountryPageCountries = variant === 'multi-country-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
   : [];
 const multiCountryCountryText = multiCountryPageCountries.length
-  ? `${multiCountryPageCountries.slice(0, 6).map((country) => country.name).join(', ')}${multiCountryPageCountries.length > 6 ? ' и другие' : ''}`
+  ? `${multiCountryPageCountries.slice(0, 6).map(displayCountryName).join(', ')}${multiCountryPageCountries.length > 6 ? ' и другие' : ''}`
   : 'Латинская Америка';
 const vipPageCountries = variant === 'vip-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
   : [];
 const vipCountryText = vipPageCountries.length
-  ? `${vipPageCountries.slice(0, 6).map((country) => country.name).join(', ')}${vipPageCountries.length > 6 ? ' и другие' : ''}`
+  ? `${vipPageCountries.slice(0, 6).map(displayCountryName).join(', ')}${vipPageCountries.length > 6 ? ' и другие' : ''}`
   : 'Латинская Америка';
 const sourceMetaTitle = variant === 'multi-country-tours' || variant === 'vip-tours'
   ? `${title} — страница ${p.currentPage} из ${p.totalPages}`
@@ -132,6 +136,11 @@ const cards = entries.map((entry) => {
   if (kind === 'tour') {
     const d = (entry as CollectionEntry<'tours'>).data;
     const curatedTour = variant === 'multi-country-tours' || isVipCatalog;
+    const multiCountryNames = variant === 'multi-country-tours'
+      ? mainTourCountries(d)
+        .sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
+        .map(displayCountryName)
+      : [];
     return {
       data: d,
       title: d.title,
@@ -140,9 +149,8 @@ const cards = entries.map((entry) => {
       meta: [
         curatedTour
           ? variant === 'multi-country-tours'
-            ? formatMultiCountryNames(mainTourCountries(d)
-                .sort((a, b) => a.slug.localeCompare(b.slug, 'en')).map((country) => country.name))
-            : mainTourCountries(d).map((country) => country.name).join(' + ')
+            ? uiLocale === 'en' ? multiCountryNames.join(' + ') : formatMultiCountryNames(multiCountryNames)
+            : mainTourCountries(d).map(displayCountryName).join(' + ')
           : '',
         d.durationDays ? uiLocale === 'en' ? countInEnglish(d.durationDays,'day','days') : countLabel(d.durationDays, ['день', 'дня', 'дней']) : '',
         isVipCatalog ? vipTourPriceLabel(d) : '',
@@ -156,7 +164,7 @@ const cards = entries.map((entry) => {
     return { data: d, title: d.title, text: d.lead, href: excursionPath(d), meta: [d.duration, d._i18n?.formatLabel ?? d.format].filter(Boolean).join(' · ') };
   }
   const d = (entry as CollectionEntry<'destinations'>).data;
-  return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: [variant === 'global-places' ? countryRoute(d.countryId).name : '', destinationTypeLabel(d.destinationType)].filter(Boolean).join(' · ') };
+  return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: [variant === 'global-places' ? displayCountryName(countryRoute(d.countryId)) : '', destinationTypeLabel(d.destinationType)].filter(Boolean).join(' · ') };
 });
 const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
 const listSchema = {

@@ -513,7 +513,88 @@
         "claimedAt": "2026-11-03T23:10:29.103Z",
         "expiresAt": "2026-11-04T00:40:29.103Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f4e636b296c4-008-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f4e636b296c4",
+        "token": "ada-en-f4e636b296c4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_cano_cristales_8_days:b005",
+          "stableId": "tour_colombia_cano_cristales_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "2d6ea03f617d3cb8da5931adf0c81a23b83f3839cbee3d0ca16d2ae22801c727",
+          "sourceConflicts": [
+            {
+              "blockId": "tour:note:87f4ccfaecfbd8de",
+              "kind": "guide_language",
+              "ru": "Some group sightseeing services may use a professional Spanish-speaking guide.",
+              "word": "p80 all activities with English-speaking guide; p159 English-speaking guide.",
+              "resolution": "Retain RU caveat as ai_translation, independent review required."
+            },
+            {
+              "blockId": "tour:note:4f78ad2c14e50beb",
+              "kind": "sunscreen",
+              "ru": "All sunscreen prohibited",
+              "word": "p58 chemical sunscreen prohibited",
+              "resolution": "Retain RU-derived prohibition; independent review required."
+            }
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:note:4cb4e3ee6a03ada3",
+              "field": "note",
+              "sourceTextSha256": "88bb54802692421ba5cb048a38d15c811273ebbeeaaf9e870fc125a580afa823",
+              "text": "Hotel check-in is from 15:00 and check-out is by 13:00. Hotels and services are subject to availability; accommodation of a similar category may be provided if necessary.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word p116,149,151 contain separate check-in/availability clauses, but no exact equivalent of this complete combined RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:4f78ad2c14e50beb",
+              "field": "note",
+              "sourceTextSha256": "5fbc9f4aaf8fd8fee3954564c8a4e24f0ff285db5021fc88d3b50cdc39ea37a7",
+              "text": "Do not drink water from natural sources in Caño Cristales. Alcohol, cigarettes, insect repellent and sunscreen may not be brought into the protected area.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word p58 has a longer general advisory and specifies chemical sunscreen; the complete standalone RU protected-area prohibition is not a verbatim Word block."
+              }
+            },
+            {
+              "blockId": "tour:note:924e9a0449018f00",
+              "field": "note",
+              "sourceTextSha256": "4835078c04a80de08d02eb71d6889d2d91a155c26be6da9da9e28c5d35f7d442",
+              "text": "We recommend a hat that covers your neck, sunglasses, swimwear and a fully charged camera.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word p56 combines climate and a longer packing list; this standalone RU four-item recommendation is not present verbatim."
+              }
+            },
+            {
+              "blockId": "tour:note:25ede6455b7a134a",
+              "field": "note",
+              "sourceTextSha256": "bc8bc8100868137425949a42fac65fdfbcef5c4255648f304942a57683816b83",
+              "text": "A yellow fever vaccination certificate or supporting document is required for the trip. Tell us about illnesses, allergies, dietary requirements and your fitness level when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word p58 and150 contain separate vaccination and health statements but lack this complete RU note and its supporting-document alternative."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:11:13.002Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

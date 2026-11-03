@@ -196,7 +196,7 @@
         "expiresAt": "2026-11-04T00:02:23.619Z"
       },
       "checkpoint": {
-        "id": "04dd2e-chile-b004-4",
+        "id": "04dd2e-chile-b004-8",
         "format": "inline-v1",
         "ownerId": "ada-en-04dd2e696333-20261104",
         "token": "ada-en-04dd2e696333-a7f39d12",
@@ -256,10 +256,72 @@
                 "runId": "ada-en-04dd2e696333-20261104",
                 "wordAbsenceReason": "Word describes the sunset excursion and afternoon flight but contains no explicit scheduling-reconciliation note. Translate the exact current RU clarification without resolving the timing by assumption."
               }
+            },
+            {
+              "blockId": "tour:note:7b5d495927c022fc",
+              "field": "note",
+              "sourceTextSha256": "4e85b10f4a3226b26a275d3ef2f69fd602083661a708b5fde5c9db7fdf804f5b",
+              "text": "Optional extras: a helicopter tour in Torres del Paine ($800–1200 per hour); at Perito Moreno, a helicopter tour, private glacier trekking or fishing; at Iguazu, access before the park opens and a helicopter tour. Permits, availability and prices are confirmed separately.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The Word lists these optional activities in separate day paragraphs but lacks the combined RU note and its final permits/availability/price confirmation. Translate the complete frozen RU note and preserve the stated $800–1200 hourly range."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "a9f0ee18f999e0879359139836be17fafe7ee3fde7fc5b5f03bc97bded565267",
+              "text": "Santiago | Arrival",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:5",
+                    "textSha256": "fb571b27e2bf5ac8384164fa2bc664cec1d3c0e6c09941eac9b8cccf94e8a8e3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Remove only the Day 01 prefix from the exact Word arrival-day heading for the standalone itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "7886488a8461d2f71899ff13994cff4d7645174cb5f00934305228a024deabda",
+              "text": "Meet at Santiago Airport. Transfer to your hotel by helicopter or executive private car; your chosen option will be confirmed when you book. After check-in, take a panoramic tour of the historic centre: Plaza de Armas, the Main Post Office, the Municipality, La Moneda and Santa Lucía Hill, followed by the modern residential and business districts in the east of the city. Overnight at The Singular Santiago, Lastarria Room. Breakfast is included in your accommodation (BB).",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word's arrival section lacks the explicit booking confirmation for the selected helicopter/car option and this block's BB statement. Translate the complete RU itinerary field, retaining the hotel and room category and all service conditions."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1fa62c13fcc2747b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:5",
+                    "textSha256": "fb571b27e2bf5ac8384164fa2bc664cec1d3c0e6c09941eac9b8cccf94e8a8e3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Santiago place name from the Word arrival-day heading for its standalone city label."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:33:19.841Z"
+        "at": "2026-11-03T22:33:28.479Z"
       },
       "submission": null,
       "review": null,

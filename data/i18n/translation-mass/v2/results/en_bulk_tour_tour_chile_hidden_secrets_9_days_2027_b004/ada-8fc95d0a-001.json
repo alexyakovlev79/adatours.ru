@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b004",
+  "stableId": "tour_chile_hidden_secrets_9_days_2027",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f6a5c2abeabaafb641ae85d138648a28433e3c4c09911affe9266da634d89718",
+  "blocks": [
+    {
+      "text": "Travel insurance",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p209",
+            "text": "–   Travel insurance",
+            "textSha256": "2c66236199ace23bc61ebde0382dceed1dc069bb211377c93dc5ba7d37a04d94"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the selected Word 2027 exclusion."
+      },
+      "blockId": "tour:notIncluded:b029e613df6fa973",
+      "field": "notIncluded",
+      "sourceTextSha256": "895486bc17c215bdf19693c8441fd24d2e3a06b7ac6e824a344319dcee1e7c61"
+    },
+    {
+      "text": "Tips (recommended: USD 5 per person for half-day tours, USD 10 for full-day tours)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p210",
+            "text": "–   Tips (recommended: USD 5 per person for half-day tours, USD 10 for full-day tours)",
+            "textSha256": "e5adf6e340aea3300807cfb1b79f0917079f46392a4eebe84e950d69ccfaa60d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the selected Word 2027 exclusion."
+      },
+      "blockId": "tour:notIncluded:ca7f4579768adf87",
+      "field": "notIncluded",
+      "sourceTextSha256": "e90371f555dc83bc97061e347bbdba5cf69ce653cf454f288136568144d1788e"
+    },
+    {
+      "text": "Bank fees: incoming transfer fees or a 5% credit card payment fee",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p211",
+            "text": "–   Bank fees: incoming transfer fees or a 5% credit card payment fee",
+            "textSha256": "9d403a6c81c391608d380c51fdea6d0f12f0f8cfbe45cde2f9ff6eb045b56a78"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the selected Word 2027 exclusion."
+      },
+      "blockId": "tour:notIncluded:0dc9a4d221281ba3",
+      "field": "notIncluded",
+      "sourceTextSha256": "634abc586dabbf40fdc11b213ec29216bbae4adee6850f15d1d0a2c7b757f8b1"
+    },
+    {
+      "text": "2027 programme, 9 days / 8 nights. Your travel dates will be agreed to fit the DAP regional flight schedule.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-8fc95d0a-20261104",
+        "wordAbsenceReason": "The Word confirms 2027, 9D / 8N and that Day 7 must be a DAP operating day (paragraphs 2, 7, 192), but contains no standalone equivalent of this booking-date note; translate the current RU note."
+      },
+      "blockId": "tour:note:0a7869b30b65297f",
+      "field": "note",
+      "sourceTextSha256": "acd9298cac3616a82827273c6057598f9515355c12186a33bd6aa1477f36b705"
+    },
+    {
+      "text": "Airfare is not included, including the Calama – Santiago flight.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p93",
+            "text": "Not included: Flight Calama – Santiago",
+            "textSha256": "76b4a73df49b5a76a733306a88b538d2bf4470c80e10b94d12a45541d2ab5350"
+          },
+          {
+            "ref": "word/document.xml:p207",
+            "text": "–   Airfare, including the DAP flight Balmaceda – Punta Arenas",
+            "textSha256": "82f3ef986c0c4968357ffc6e25baafb02942428ead2c451344f073587bd5ec96"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The selected Word 2027 explicitly excludes the Day 4 Calama–Santiago flight and airfare generally; replace the older RU contradiction note with the controlling Word exclusion."
+      },
+      "blockId": "tour:note:c38f56982a1828df",
+      "field": "note",
+      "sourceTextSha256": "68094b20e50134828b298dbbf0957a27ff4c7addfcfe5f16cadac3b1be025692"
+    },
+    {
+      "text": "DAP Airlines: April–November — Tuesdays; December–February — Tuesdays and Thursdays. During this period, flights depart Punta Arenas at 13:30 and Balmaceda at 15:30. Schedules may change; small regional airlines apply strict baggage limits.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-8fc95d0a-20261104",
+        "wordAbsenceReason": "Word paragraphs 162–171 confirm operating days and paragraph 192 confirms baggage restrictions, but departure times and the reverse-route detail are absent from Word; translate this current RU schedule note."
+      },
+      "blockId": "tour:note:4e525000acb50e73",
+      "field": "note",
+      "sourceTextSha256": "6651f6d1d41ec4f599cf6d0fc9b5bd6cb693cf97b670a391f8b48f0627fd6508"
+    },
+    {
+      "text": "The overall package includes guided tours in groups. The boat trip to the Marble Caves and the final transfer from Puerto Natales are private. The language of guided tours will be confirmed when you book.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-8fc95d0a-20261104",
+        "wordAbsenceReason": "The Word confirms group tours and the private Marble Caves boat and final transfer (paragraphs 113, 123, 126); it has no equivalent of the RU booking-time language-confirmation note, so translate the complete current RU note."
+      },
+      "blockId": "tour:note:d51a87510465922d",
+      "field": "note",
+      "sourceTextSha256": "d323b0a68df67942c86d7ab8fb16059808bb21da8668eb60abee043e50f1a2de"
+    },
+    {
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p136",
+            "text": "Santiago",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ]
+      },
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf"
+    }
+  ]
+}

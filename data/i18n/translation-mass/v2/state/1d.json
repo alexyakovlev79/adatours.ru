@@ -75,181 +75,22 @@
     {
       "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b013",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "38980cebb57899e1841b1c603ad1987f216c14c3d9852e2c85b9f58a9ab6d230",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f8019ad86757-translator-20261104",
-        "token": "ada-en-f8019ad86757-6c94a20bf812",
-        "claimedAt": "2026-11-03T23:35:04.735Z",
-        "expiresAt": "2026-11-04T01:05:04.735Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f8019ad86757-10-b013-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f8019ad86757-translator-20261104",
-        "token": "ada-en-f8019ad86757-6c94a20bf812",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b013",
-          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "38980cebb57899e1841b1c603ad1987f216c14c3d9852e2c85b9f58a9ab6d230",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
-              "field": "itinerary.text",
-              "sourceTextSha256": "271bb98510320c1d421923fb3b59f28f323afe963fab5c92dcbf26ced8245aea",
-              "text": "Day 6 · Breakfast and transfer to Calama Airport for the flight to Santiago (about 2 hours). On arrival, transfer to the hotel by minivan (Mercedes Vito, about 30 minutes).\n\nAccommodation: Mandarin Oriental Santiago, Club Room, breakfast",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[113]",
-                    "textSha256": "776070984de5d4ef79b58c9f752a8bb0c6f89f07ef1468ddbc69afb285abacfa"
-                  },
-                  {
-                    "ref": "word/document.xml:p[115]",
-                    "textSha256": "1fc28b97ae89ebf2e4d847ad8b141efb7a92cbe3c7d4a45390de786a2d38c2b7"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:9d6b58a8d8d41b90",
-              "field": "itinerary.label",
-              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
-              "text": "San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[181]",
-                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f686a837408dfc08",
-              "field": "itinerary.label",
-              "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
-              "text": "Calama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[113]",
-                    "textSha256": "776070984de5d4ef79b58c9f752a8bb0c6f89f07ef1468ddbc69afb285abacfa"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the unchanged Calama destination name from the verified Calama Airport transfer passage."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:635a93bbe37ad2df",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
-              "text": "Santiago",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[112]",
-                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:2316047c4ea2f21f",
-              "field": "media.alt",
-              "sourceTextSha256": "84d6bfafac9186bc150c61ff6a9ab2739603bc9019045bb747aa10b9385126c8",
-              "text": "Santiago's city lights beneath a red sunset sky and mountain silhouettes, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f8019ad86757",
-                "wordAbsenceReason": "The complete selected Word contains no matching Santiago sunset photograph alt/hover caption; translated the exact current RU image description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:8cb4e51b5caddece",
-              "field": "media.hover",
-              "sourceTextSha256": "55e944310c45740caddf3759736699912498f127982f84764e33fa55a9432faf",
-              "text": "Santiago at sunset: city lights beside dark mountains",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f8019ad86757",
-                "wordAbsenceReason": "The complete selected Word contains no matching Santiago sunset photograph alt/hover caption; translated the exact current RU image description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
-              "field": "itinerary.title",
-              "sourceTextSha256": "dacf1f249c640d9b9abed05fa0c757d2630775d6b05e8827555a646f73c324c5",
-              "text": "Santiago — city tour",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[110]",
-                    "textSha256": "2766d7a921ef70dda3e5ce180560de4000ea2523f49a938a48ebeee1d76d1d20"
-                  },
-                  {
-                    "ref": "word/document.xml:p[112]",
-                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
-                  },
-                  {
-                    "ref": "word/document.xml:p[114]",
-                    "textSha256": "017ce75b884c82046e634e71b7f9be269aed9a666ac157c2b56759f69733e942"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combine the approved Santiago destination heading with the city tour activity stated for Day 7."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:2e780f63f4172747",
-              "field": "itinerary.text",
-              "sourceTextSha256": "3ded3c71270b8f1664636d6b4208867cc93522ececcae794db2f531da5f86b46",
-              "text": "Day 7 · In the afternoon, a city tour: the historic centre, the Plaza de Armas, the Main Post Office, the Municipality, La Moneda Palace and Santa Lucía Hill, then the modern residential neighbourhoods and new shopping districts in the east of the city.\n\nAccommodation: Mandarin Oriental Santiago, Club Room, breakfast",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[114]",
-                    "textSha256": "017ce75b884c82046e634e71b7f9be269aed9a666ac157c2b56759f69733e942"
-                  },
-                  {
-                    "ref": "word/document.xml:p[115]",
-                    "textSha256": "1fc28b97ae89ebf2e4d847ad8b141efb7a92cbe3c7d4a45390de786a2d38c2b7"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:36:06.197Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f8019ad86757-10-b013-v1",
+        "blobSha": "cb15f5e76620fb857021a5964fcf517fbdc4d171",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_bolivia_chile_hidden_treasures_16_days_b013/ada-en-f8019ad86757-10-b013-v1.json",
+        "at": "2026-11-03T23:36:28.061Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

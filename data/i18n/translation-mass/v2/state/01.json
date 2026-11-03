@@ -320,7 +320,48 @@
         "claimedAt": "2026-11-03T22:28:31.296Z",
         "expiresAt": "2026-11-03T23:58:31.296Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-0912f3ac-b002-2",
+        "format": "inline-v1",
+        "ownerId": "ada-en-0912f3ac98f14197",
+        "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b008",
+          "stableId": "tour_brazil_best_rio_express_six_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "cae6ea48b2eb4062bed96d712e539e2bfc9b8c0de6825a2b6a611440edea5dd1",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:77871c8f58bdcbc6",
+              "field": "media.hover",
+              "sourceTextSha256": "185890b2dd42ca52092d3cb84a67fb0a5448b712dbf3464822dc71be19137eb7",
+              "text": "Lopes Mendes Beach on Ilha Grande and the Atlantic Forest — illustration",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The verified Word has no image-hover caption for Lopes Mendes Beach and the Atlantic Forest; this field is specific to the current RU website media."
+              }
+            },
+            {
+              "blockId": "tour:body:47f6c11f40afc686",
+              "field": "body",
+              "sourceTextSha256": "e9838717bcb440535396488bdb900b2a8f372b59a21e9199b015ebfa5999c4f8",
+              "text": "\n## Hotels and prices for 2027\n\nPrices are in USD per person for the 6-day / 5-night programme. All options include 5 nights in Rio de Janeiro, breakfast (BB) and the services listed in the programme. A hotel of a similar category may be used.\n\n| Category | Hotel and room | SGL | DBL | TRP |\n| --- | --- | ---: | ---: | ---: |\n| 3* | B&B Copacabana, Superior Room + BB + Services | $3225 | $1886 | $1564 |\n| 4* | Arena Leme, Standard Room + BB + Services | $3775 | $2055 | $2010 |\n| 5* | Miramar by Windsor, Standard Room BB + Services | $4344 | $2374 | $2049 |\n\n## Rio from above and from the water\n\nA train through the Tijuca Forest takes you up to Christ the Redeemer, while a cable car connects Urca and Sugar Loaf. From the two summits, you can see the beaches, city neighbourhoods and Guanabara Bay. A separate day is set aside for the island trip: the city streets give way to the water and green shores of Angra dos Reis and Ilha Grande.\n\nAfter three days of excursions, you have a free day in Rio. You can spend it by the ocean, walking around the city or relaxing at the hotel.\n",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The verified Word contains matching hotel and tariff cells at p100–149 and itinerary material at p76–98, but no counterpart to this complete website body block combining its introductory pricing explanation, Markdown table and two original RU summary paragraphs. Translated the current RU body as one immutable block, preserving all hotels, prices, currency, occupancy columns and duration."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:29:47.841Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

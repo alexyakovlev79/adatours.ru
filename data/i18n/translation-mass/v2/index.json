@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2286,
-    "leased": 19,
+    "queued": 2285,
+    "leased": 20,
     "review": 105,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2286,
-      "leased": 19,
+      "queued": 2285,
+      "leased": 20,
       "review": 105,
       "ready": 1,
       "retryable": 0,
@@ -968,8 +968,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 8,
           "ready": 0,
           "retryable": 0,
@@ -1000,7 +1000,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:47:49.047Z",
       "earliestRetryAt": null
     },
     "0e": {
@@ -1408,6 +1408,12 @@
       "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b002",
       "token": "token-e9fc69e2bbe6-20261104",
       "expiresAt": "2026-11-03T23:47:39.231Z",
+      "generation": 1
+    },
+    "ada-en-cd92-cd348eff6f82": {
+      "jobId": "en:bulk:tour:tour_guatemala_discover_8_days:b004",
+      "token": "tok-8076a0338bc468337a1c14a9ef98",
+      "expiresAt": "2026-11-03T23:47:49.047Z",
       "generation": 1
     }
   },
@@ -1834,7 +1840,8 @@
     "ada-en-cd92-cd348eff6f82": {
       "token": "tok-8076a0338bc468337a1c14a9ef98",
       "jobIds": [
-        "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b002"
+        "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b002",
+        "en:bulk:tour:tour_guatemala_discover_8_days:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b002"
@@ -1899,5 +1906,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:17:39.231Z"
+  "updatedAt": "2026-11-03T22:17:49.047Z"
 }

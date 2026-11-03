@@ -313,7 +313,89 @@
         "claimedAt": "2026-11-03T22:21:38.128Z",
         "expiresAt": "2026-11-03T23:51:38.128Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "en:bulk:tour:tour_brazil_little_mix_ten_days:b007:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-9f352bc9-20261104",
+        "token": "ada-en-token-9f352bc9f677-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b007",
+          "stableId": "tour_brazil_little_mix_ten_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "3542fb2b91b192ded3304b3bdea40cff3e39fe28c11bb4bcd0693e1354ff0336",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:484fbed46cb3c3a6",
+              "field": "media.hover",
+              "sourceTextSha256": "871b49ee1cde7f4b82cd4a842952f65c70f397425b646eaf1fbbb0291e1301aa",
+              "text": "Copacabana in Rio de Janeiro: a patterned promenade, palm trees and the sea in golden light",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-9f352bc9-20261104",
+                "wordAbsenceReason": "The exact Word document contains itinerary and commercial text but no website image alt text or hover caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1b662179d39eb578",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p137",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "9aac2f1ac1f1b167b978912f419db0349c80f18e1597d34869d6a88a872d7b31",
+              "text": "Rio de Janeiro → Salvador",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p103",
+                    "textSha256": "9ce10bec076e94ba9a1b7be1e92d1e354fc0c227109bd0a6a0950736817f2bf0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the destination or activity label from the exact itinerary passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "e7a9ce05ffc42952ee03436b3b293d96a344413b9afeb1b040c59a1d923f25e0",
+              "text": "Day 6 · Breakfast at the hotel and, at the scheduled time, transfer to the airport for your flight to Salvador, where you are welcomed and taken to your hotel. Known as the African soul of Brazil, Salvador is a city where African, Portuguese and Brazilian influences have come together to create a unique cultural identity, felt in its music and dance, cuisine, traditions and celebrations. The rest of the day is at leisure.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p107",
+                    "textSha256": "dc8c11bfb5185f19a67f149fb3a074790377ef65a2e29796a09de0dcdea06224"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:22:28.681Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

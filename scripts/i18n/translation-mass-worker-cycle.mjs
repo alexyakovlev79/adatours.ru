@@ -40,7 +40,15 @@ export async function runEnMassWorkerCycle(tools,core,remote,args={}){
   const completed=progress.completed;
   if(completed>=MAX_AUTOMATIC_CYCLES)
    return{status:'cycle_limit_reached',completed,limit:MAX_AUTOMATIC_CYCLES};
-  const claimed=await withContentionRetry({action:'claim',ownerId,token});
+  // After an interrupted or released lease, recover the same unfinished
+  // packet first. Fall back to normal selection if another worker owns it.
+  const candidate=progress.snapshot.owner.resumeCandidateJobId;
+  let claimed=candidate
+   ?await withContentionRetry({action:'claim',ownerId,token,jobId:candidate})
+   :await withContentionRetry({action:'claim',ownerId,token});
+  if(candidate&&['busy_or_empty','requested_job_not_available','stale_source']
+     .includes(claimed.status))
+   claimed=await withContentionRetry({action:'claim',ownerId,token});
   if(!['claimed','resumed'].includes(claimed.status))
    return{status:'next_unavailable',completed,limit:MAX_AUTOMATIC_CYCLES,
     reason:claimed};

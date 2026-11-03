@@ -109,3 +109,31 @@ test('bounded cycle retry uses identical submissionId on CAS contention',async()
  assert.equal(f.state.claimCount,2);
  assert.equal(collisions,2);
 });
+
+test('start reclaims the same unfinished assigned packet and exposes its saved checkpoint',async()=>{
+ const f=fake(),first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
+ assert.equal(first.next.jobId,'job_1');
+ f.state.active=null; // old lease was released, no completed submission
+ let targeted=null;
+ const runner=async(t,c,a)=>{
+  if(a.action==='status'){
+   const s=await f.runner(t,c,a);
+   s.owner.resumeCandidateJobId='job_1';
+   return s;
+  }
+  if(a.action==='claim'&&a.jobId==='job_1'){
+   targeted=a.jobId;
+   return{status:'claimed',jobId:'job_1',generation:2,
+    source:{jobId:'job_1',blocks:[{text:'RU'}]},
+    lease:{expiresAt:'2099-01-01T00:00:00Z'},
+    checkpoint:{id:'four',format:'inline-v1',payload:{blocks:[{text:'partial EN'}]}}};
+  }
+  return f.runner(t,c,a);
+ };
+ const resumed=await runEnMassWorkerCycle({}, {},runner,{action:'start',...identity});
+ assert.equal(targeted,'job_1');
+ assert.equal(resumed.next.jobId,'job_1');
+ assert.equal(resumed.next.generation,2);
+ assert.equal(resumed.next.checkpoint.payload.blocks[0].text,'partial EN');
+ assert.equal(f.state.claimCount,1);
+});

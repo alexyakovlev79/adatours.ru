@@ -68,9 +68,12 @@ export async function runEnMassTranslation(tools,core,args={}){
      const assigned=index.ownerAssignments?.[args.ownerId];
      if(assigned&&assigned.token!==args.token)
       return{status:'owner_token_conflict',head};
-     owner={completed:assigned?.completedJobIds?.length||0,
+     const completed=new Set(assigned?.completedJobIds||[]);
+     const unfinished=(assigned?.jobIds||[]).filter(id=>!completed.has(id));
+     owner={completed:completed.size,
       assigned:assigned?.jobIds?.length||0,
       activeJobId:index.activeOwners?.[args.ownerId]?.jobId||null,
+      resumeCandidateJobId:unfinished.at(-1)||null,
       maxJobsPerOwner:index.maxJobsPerOwner};
     }
     return{status:'snapshot',head,branch:BRANCH,
@@ -213,7 +216,9 @@ export async function runEnMassTranslation(tools,core,args={}){
    return{status:transition.status,commit,branch:BRANCH,
     jobId:job?.jobId||args.jobId||null,
     lease:transition.item?.lease||null,generation:transition.item?.generation,
-    source:action==='claim'&&job?job:null,counts:next.counts};
+    source:action==='claim'&&job?job:null,
+    checkpoint:action==='claim'&&transition.item?transition.item.checkpoint||null:null,
+    counts:next.counts};
   }catch(e){
    if(restricted.test(String(e)))return{status:'rate_limited',retryAfterMs:60000,
     reason:String(e).slice(0,180)};

@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_gems_14d:b005",
+  "stableId": "tour_brazil_gems_14d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7b9f409ac498ff906290f46de21ac51105deeb4a1d1c3b3840bb9f0a96c5e076",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[37]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3dbb598a85e5b6d2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "374e8eaf7052e9a6ec6d718e7cce6728c5c8d482c6929a5874441302d9187ba2",
+      "text": "Corcovado",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[38]",
+            "textSha256": "b0dfa8a0d95f025d0bbd5fbfa5a88b43f08d5c53d650bef4cfc8ffb7e9805416"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Corcovado place name from the exact Word heading for the corresponding itinerary location."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:615eaea339ede4b9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "21f46b8ec047bab4c066136eab21526012e247b693a2fc209cc4b18c6b40d271",
+      "text": "Tijuca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[79]",
+            "textSha256": "31820b4e4765a4de486362eb3c897c0278af8ca39707934a6e2b2b90fa37e227"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Tijuca place name from Tijuca Forest in the exact corresponding Word day narrative."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:21beee965a5abf06",
+      "field": "media.alt",
+      "sourceTextSha256": "cfc6bee144dc4dfc892b50953a6535015e02ab2ba382d72233898f9fc3a740b2",
+      "text": "A game of beach volleyball by the ocean in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-821a3075e51e-worker",
+        "wordAbsenceReason": "The assigned Word document has no text describing this website image or its beach-volleyball alt caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:397280d43e917380",
+      "field": "media.hover",
+      "sourceTextSha256": "85b1233a1eab69092686acfa881560ecb9492a18c4447be9a56cb46e950638f9",
+      "text": "Rio de Janeiro: a volleyball court on the sand beside green mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-821a3075e51e-worker",
+        "wordAbsenceReason": "The exact assigned Word document has no caption for this beach-volleyball photograph or the website hover text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c12824af46fcca25c27e09ae170ca466e9b624957f98b4769678f96435b26e78",
+      "text": "Rio de Janeiro – Petrópolis – Ouro Preto",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[86]",
+            "textSha256": "42eff331c99a2202f0d9a4ad36589a0bfc89ee1b9b7c3b2b97f36c02376553fb"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Remove the DAY BY DAY section prefix and restore title case for the matching three-place route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c568be9fa68989f964887b38d1c5c4ab7f4e4be604591f6e8197f788f28abb59",
+      "text": "After breakfast, leave Rio de Janeiro for Petrópolis, a historic mountain town about 60 km from the city. Known as the Imperial City, Petrópolis was chosen by Emperor Pedro II as the summer residence of the imperial family, a cooler retreat from Rio’s tropical climate.\n\nOn a guided visit, explore the Imperial Museum, housed in the former summer palace, with its remarkable collection of royal furnishings, personal belongings and precious objects, including the imperial crown, and the beautiful Gothic cathedral, where members of the imperial family are buried. Then continue to Minas Gerais and the historic town of Ouro Preto, where you spend the night.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[90]",
+            "textSha256": "ed3e5aac9f4c2dab68534c2e626b7e720cb81ac1eb6c9547d7a604ce811406a7"
+          },
+          {
+            "ref": "word/document.xml:p[91]",
+            "textSha256": "1c75e4a94a5d259121c13f2fec92c10d26a95e617ba358c6c1e3b1cc595fe6df"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[37]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    }
+  ]
+}

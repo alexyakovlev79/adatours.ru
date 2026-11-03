@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2281,
-    "leased": 22,
-    "review": 107,
+    "leased": 21,
+    "review": 108,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 0,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2281,
-      "leased": 22,
-      "review": 107,
+      "leased": 21,
+      "review": 108,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 0,
@@ -489,8 +489,8 @@
         "word_2027": {
           "held": 0,
           "queued": 77,
-          "leased": 1,
-          "review": 1,
+          "leased": 0,
+          "review": 2,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -520,7 +520,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-03T23:46:55.731Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "02": {
@@ -1374,12 +1374,6 @@
       "expiresAt": "2026-11-03T23:46:12.841Z",
       "generation": 1
     },
-    "ada-en-d492a933acd8-20261104": {
-      "jobId": "en:bulk:tour:tour_argentina_best_14_days:b008",
-      "token": "ada-d492a933acd8-fixed-20261104",
-      "expiresAt": "2026-11-03T23:46:55.731Z",
-      "generation": 1
-    },
     "ada-en-f4e636b296c4": {
       "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b003",
       "token": "ada-en-f4e636b296c4-20261104",
@@ -1838,7 +1832,8 @@
         "en:bulk:tour:tour_argentina_best_14_days:b008"
       ],
       "completedJobIds": [
-        "en:bulk:tour:tour_argentina_agricultural_11_days:b013"
+        "en:bulk:tour:tour_argentina_agricultural_11_days:b013",
+        "en:bulk:tour:tour_argentina_best_14_days:b008"
       ]
     },
     "ada-en-08f6156f-e882dc059107": {
@@ -1924,5 +1919,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:18:50.152Z"
+  "updatedAt": "2026-11-03T22:19:02.410Z"
 }

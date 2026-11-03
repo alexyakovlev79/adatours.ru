@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2194,
-    "leased": 23,
+    "queued": 2193,
+    "leased": 24,
     "review": 192,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2194,
-      "leased": 23,
+      "queued": 2193,
+      "leased": 24,
       "review": 192,
       "ready": 1,
       "retryable": 0,
@@ -1224,24 +1224,41 @@
       "count": 104,
       "stages": {
         "word_2027": {
-          "queued": 59,
           "held": 0,
-          "leased": 0,
-          "retryable": 0
+          "queued": 58,
+          "leased": 1,
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "word_2026": {
-          "queued": 0,
           "held": 12,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "ai_only": {
-          "queued": 0,
           "held": 33,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         }
-      }
+      },
+      "earliestExpiryAt": "2026-11-04T00:47:39.354Z",
+      "earliestRetryAt": null
     },
     "1e": {
       "count": 114,
@@ -1461,6 +1478,12 @@
       "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b020",
       "token": "ada8fc95d0ae0c7-20261104-fixed",
       "expiresAt": "2026-11-04T00:47:14.212Z",
+      "generation": 1
+    },
+    "ada-en-f0410042e63344c3": {
+      "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b004",
+      "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
+      "expiresAt": "2026-11-04T00:47:39.354Z",
       "generation": 1
     }
   },
@@ -2153,7 +2176,8 @@
         "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b002",
         "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b001",
         "en:bulk:tour:tour_brazil_gems_14d:b002",
-        "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b016"
+        "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b016",
+        "en:bulk:tour:tour_argentina_agricultural_11_days:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b009",
@@ -2205,5 +2229,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T23:17:33.154Z"
+  "updatedAt": "2026-11-03T23:17:39.354Z"
 }

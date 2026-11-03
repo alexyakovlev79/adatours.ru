@@ -711,7 +711,7 @@
         "expiresAt": "2026-11-04T00:38:02.777Z"
       },
       "checkpoint": {
-        "id": "ada-en-9457ab67-n4-cp4",
+        "id": "ada-en-9457ab67-n4-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-9457ab67-20261104",
         "token": "ada-en-token-9457ab67-20261104",
@@ -816,10 +816,74 @@
                 "runId": "ada-en-9457ab67-20261104",
                 "wordAbsenceReason": "No image-specific alt text for Casa Rosada in the verified Word; paragraph100 names it as a city-tour stop. Translated the current RU alt text."
               }
+            },
+            {
+              "blockId": "tour:media_hover:913b170a51528fbb",
+              "field": "media.hover",
+              "sourceTextSha256": "05afe20b952e8f1856079461e27e2faa9ca6069f46185e58c957b8a5a51e180c",
+              "text": "Buenos Aires: the façade of Casa Rosada with flowers in the foreground",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No image-hover caption for Casa Rosada exists in the verified Word. Translated the exact current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "e7e4c8761d4ae283fc089e181c52b83ca7a238808371fb48f63798d736103415",
+              "text": "Buenos Aires – Santiago de Chile",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p102",
+                    "textSha256": "014bbfc93651c3c26cf8e2b8d41f191011c47df4690490965efac9138f712af5"
+                  },
+                  {
+                    "ref": "word/document.xml#p103",
+                    "textSha256": "d72c8bbef993327bab6df310c88742db3f18df81a59bdf5cbcf739fbf8d3c0b4"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Composed the itinerary travel heading using the exact Word departure and arrival city names in the Day8 flight and included-services paragraphs."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "793500022e6e07b53fde1742ff946e695102e94f3a91f92cdb064d557c754b00",
+              "text": "After breakfast, transfer to the airport.\n\nOn the way, you will see Avenida 9 de Julio and the Obelisk once more and, depending on the transfer route, Puerto Madero with its brick docks, towers and waterfronts.\n\nFly to Santiago. On arrival, you will be met and transferred to your hotel.\n\nSantiago has a more restrained feel than Rio and Buenos Aires. On a clear day, the Andes are visible above the city. The rest of the day is free.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "Word paragraph102 gives only breakfast, the airport transfer, flight and arrival transfer. It does not contain the current RU transfer-route impressions, comparison of cities, Andes visibility or free-afternoon wording; translated the current RU block without claiming exact Word evidence."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ffe3d969b9d1dcee",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p99",
+                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:09:32.312Z"
+        "at": "2026-11-03T23:09:36.217Z"
       },
       "submission": null,
       "review": null,

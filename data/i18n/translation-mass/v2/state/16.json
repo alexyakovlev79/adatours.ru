@@ -395,7 +395,84 @@
         "claimedAt": "2026-11-03T22:26:44.442Z",
         "expiresAt": "2026-11-03T23:56:44.442Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-8fc95d0a-003-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-8fc95d0a-20261104",
+        "token": "ada8fc95d0ae0c7-20261104-fixed",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b007",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "af142ca619a64a512206996edec228bc9e6639731d0b9687569bb7b848db44d7",
+          "blocks": [
+            {
+              "text": "Orongo",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p19",
+                    "text": "A private charter flight carries you thousands of kilometers into the Pacific Ocean — to the most remote island on the itinerary. Upon arrival — meet and greet, a private car to the hotel, and the first excursion: an ascent up the slopes of Rano Kau volcano to the crater-rim viewpoint, overlooking a picturesque lake with distinctive vegetation, followed by the ceremonial village of Orongo, where once a year the island's clans competed for the right of one of them to become Tangata Manu — the birdman, chosen as chief for the year.",
+                    "textSha256": "970be83b143899eb7d0f478057d8bcbdbc8721d58defa9417eee4b9613760e9e"
+                  }
+                ]
+              },
+              "blockId": "tour:itinerary_label:c51cab98d01dcb68",
+              "field": "itinerary.label",
+              "sourceTextSha256": "b1f5ec7f4e633dc938ffc3e2158e1977ace62823de66c7cadbe3cfd91f59e048"
+            },
+            {
+              "text": "Hanga Roa",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p24",
+                    "text": "A full day journeying through the history of Rapa Nui culture — from its origins and flourishing to its deepest crises. The route along the coast leads to Ahu Akahanga, then to Rano Raraku volcano, on whose slopes most of the moai statues were carved and where the largest number of them still stand today. Lunch outdoors. Next — Ahu Tongariki, the island's largest platform with fifteen restored moai, and the Poike peninsula with a stop at Ahu Te Pito Kura, home to the largest statue ever moved from the quarry — the island's energy center. The day concludes at Anakena Beach, with its warm turquoise water, white sand, palm trees and the Ahu Nau Nau platform — time to swim and relax before returning to the village of Hanga Roa through the island's interior.",
+                    "textSha256": "8d203eb3c502b8b776924a23d5d22f0e285eb9187cda719746a478c14e0fb6d7"
+                  }
+                ]
+              },
+              "blockId": "tour:itinerary_label:01ab8e4a91e60b41",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8a8632303d4ada5814a6937ede88d0b20967b7a5bdbfaaf5125c23a15e8d5769"
+            },
+            {
+              "text": "A lake overgrown with vegetation inside the Rano Kau crater by the ocean coast, Easter Island, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-8fc95d0a-20261104",
+                "wordAbsenceReason": "Word paragraph 19 describes Rano Kau but contains no image-specific alt text for this media field; translate the current RU image description."
+              },
+              "blockId": "tour:media_alt:5f8bb5d53a31d141",
+              "field": "media.alt",
+              "sourceTextSha256": "11d6fafdfcb646e37755a6efd18c6b3705f77c92edb1bdc6b78eb733f9536c69"
+            },
+            {
+              "text": "Rano Kau on Easter Island: a crater lake and the ocean beyond the slope",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-8fc95d0a-20261104",
+                "wordAbsenceReason": "The selected Word has no image-specific hover caption matching this media field; translate the current RU caption without changing the photograph."
+              },
+              "blockId": "tour:media_hover:b7e467440af14bba",
+              "field": "media.hover",
+              "sourceTextSha256": "945bc6d21bdd36aef949381306d1b0bc96e4dd0b91c7aab370685acc0695aa1c"
+            }
+          ]
+        },
+        "at": "2026-11-03T22:27:33.026Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

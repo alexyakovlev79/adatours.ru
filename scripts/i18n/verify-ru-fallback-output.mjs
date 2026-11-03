@@ -64,8 +64,10 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
     const forms=find(dom,x=>x.tagName==='form'&&attr(x,'data-lead-form')!==null);
     if(forms.length!==1||find(forms[0],x=>x.tagName==='input'&&attr(x,'name')==='phone_country').length!==1)
       fail('EN lost its one active shared lead form '+name);
+    // Some pages have no inline CTA: their canonical header CTA lives in
+    // the single shared site-shell fragment, checked separately below.
     const modalLinks=find(dom,x=>x.tagName==='a'&&attr(x,'data-lead-modal')==='true');
-    if(!modalLinks.length||modalLinks.some(x=>attr(x,'href')!=='#request'))
+    if(modalLinks.some(x=>attr(x,'href')!=='#request'))
       fail('EN modal CTA incorrectly routed away from shared form '+name);
   }
   const id=attr(html,'data-ada-entity-id'),item=translated.get(id);
@@ -156,6 +158,9 @@ if(!sharedHtml.includes('data-search-overlay')||!sharedHtml.includes('data-searc
    !sharedHtml.includes('data-search-base="'+EN_STAGING_BASE+'en/"'))fail('Shared navigation/search missing');
 if(sharedContent && (!sharedHtml.includes('Travel interests') || !sharedHtml.includes('Send an enquiry')))
  fail('Shared interface reverted to Russian');
+if(sharedContent && (!sharedHtml.includes('data-lead-modal="true"') ||
+   !sharedHtml.includes('href="#request"') || sharedHtml.includes('mailto:info@adatours.ru')))
+ fail('Shared header modal CTA was not preserved');
 if(/data-lazy-src=|data-lazy-srcset=|data-lazy-style=/.test(homepage))fail('Staged homepage retains image placeholders');
 if(!homepage.includes('https://img.adatours.ru/media/'))fail('Shared CDN assets missing');
 if(/data-ada-translation-notice|This page is currently available in Russian/i.test(homepage))fail('Unrequested translation banner');

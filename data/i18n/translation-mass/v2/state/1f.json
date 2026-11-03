@@ -28,7 +28,93 @@
         "claimedAt": "2026-11-03T22:14:54.037Z",
         "expiresAt": "2026-11-03T23:44:54.037Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-7226-2-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-7226a7c037aa-20261104",
+        "token": "tok-7226a7c037aa-en-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_best_14_days:b015",
+          "stableId": "tour_argentina_best_14_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "1eb4e6d09a3dd254692694ff11a75e794c4315f4bb7d92c47ea5f0927371bab0",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:e9d0e805d05b1a9c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "780ead8cf21de66585697dbccfd21be12693e18791895484e9e746b836aca2d1",
+              "text": "Lake Nahuel Huapi",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "p:103",
+                    "textSha256": "3c1a321cbdebc9f44779c973c1a65e52e1122b83dbe9d5db431d026f59f92ccf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the corresponding place name from the cited Word route description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8925c960aff4f6b8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "70e0b8d94d14bbfa360a6ce8e42ee41ad26b8cd98b9fdd902c038613dfbf06ba",
+              "text": "Victoria Island (Lake Nahuel Huapi)",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "p:105",
+                    "textSha256": "ac1876d826c6ebb39d103dea563fed8ea5053d4b42c6582b5f1e803bc8ed01b9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the corresponding place name from the cited Word route description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fa739878122838ea",
+              "field": "itinerary.label",
+              "sourceTextSha256": "cd9bd1a5e93d05de66a4ddbf30e9367e8537fd74d8bd43c78a0c43948400971a",
+              "text": "Arrayanes Forest",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "p:105",
+                    "textSha256": "ac1876d826c6ebb39d103dea563fed8ea5053d4b42c6582b5f1e803bc8ed01b9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the corresponding place name from the cited Word route description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "41ebd6ccf295f0271547c8634c1f73440c6de93d7dbd992d2cdad8f267291342",
+              "text": "Bariloche → Foz do Iguaçu",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "run-7226-argentina-b015",
+                "wordAbsenceReason": "Verified Word names Puerto Iguazú rather than Foz do Iguaçu and lacks the RU routing/hotel border clarification. Translate the current RU field without resolving this discrepancy."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:15:49.802Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

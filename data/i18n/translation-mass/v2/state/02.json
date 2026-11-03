@@ -97,171 +97,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d130b2048fb173f8cb878653bf78757e69c6e2352ca7ab96756488edb7e33182",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "claimedAt": "2026-11-03T21:23:26.610Z",
-        "expiresAt": "2026-11-03T22:53:26.610Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "generation": 1,
-        "payload": {
-          "submissionId": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010",
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b010",
-            "stableId": "tour_brazil_agribusiness_14_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "d130b2048fb173f8cb878653bf78757e69c6e2352ca7ab96756488edb7e33182",
-            "blocks": [
-              {
-                "blockId": "tour:media_hover:5c2211839f7369cc",
-                "field": "media.hover",
-                "sourceTextSha256": "1f4f8df83d56600321eab9d07cc4389b7c6bfe73d159afd7302bf7b54995703f",
-                "text": "Panoramic view of Rio from the Sugarloaf Mountain viewpoint",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "Word contains no corresponding image hover or alt caption; translated the frozen RU media description."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-                "field": "itinerary.title",
-                "sourceTextSha256": "73d2700c49434a76bbd5dab861311e233c4a632dbac881232c5ca7678f93f7e1",
-                "text": "Corcovado and a flight over Rio",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p65",
-                      "textSha256": "b7b1a306aa47c2836fff18114deee5875b5c9c16124c3601e9627e1620ba7270"
-                    },
-                    {
-                      "ref": "word/document.xml:p72",
-                      "textSha256": "15b9abb03382c2e0587f7d5b46419db0d0b49a96de4f40ce92766b54dfbc4a4e"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the route or composed the heading using the exact corresponding Word passages."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-                "field": "itinerary.text",
-                "sourceTextSha256": "760c4a1156f73a422a52bbec32a18661f67d8f4ee76e5aee388a6c9589c54365",
-                "text": "After breakfast, a 4-hour excursion to Corcovado, taking the train through the Tijuca Forest to the Christ the Redeemer statue. From the viewing platform, you can see Guanabara Bay, the Niterói Bridge, the Botanical Garden, Maracanã Stadium and Sugarloaf Mountain.\n\nThe programme then lists a **30-minute helicopter flight** over Rio, with a briefing and views of the city, the Christ statue and the beaches. The departure point is listed as Sugarloaf Mountain or Lagoa. The price, whether the flight is included in the quotation and the selected departure point are confirmed when booking.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "Word paragraphs 65–66 and 72 describe the activities but omit the frozen RU briefing and booking-confirmation conditions; translated the RU summary while preserving flight duration, conditional inclusion and departure alternatives."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:99c0d88290b06bf7",
-                "field": "itinerary.label",
-                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-                "text": "Rio de Janeiro",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p64",
-                      "textSha256": "8f84c354dde0e7084eff6125ebf580de6ff5cbd5f0db9d20622f8312cd889c02"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the route or composed the heading using the exact corresponding Word passages."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:cb706626bb0814b2",
-                "field": "itinerary.label",
-                "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
-                "text": "Tijuca National Park",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "Word paragraph 66 names Tijuca Rainforest but has no equivalent national-park label; translated the exact frozen RU place label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:de9c412b439489f5",
-                "field": "media.alt",
-                "sourceTextSha256": "06161bc81b2716a0436a69d60151c0687175cf4a0339d0a0b14e1462ddc35d22",
-                "text": "View of Rio de Janeiro from above",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "Word contains no corresponding image hover or alt caption; translated the frozen RU media description."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:f76823f601bc2496",
-                "field": "itinerary.title",
-                "sourceTextSha256": "49c22ce9ed4f6cb824d329dbd4ecd0c59a6d8ecf2ce3332111f90ac54e04c326",
-                "text": "Rio de Janeiro — Foz do Iguaçu",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p74",
-                      "textSha256": "fcfa04cbd546368bd2960a5a7902f7872882d33550a50eb17a0ba822bdd96c77"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the route or composed the heading using the exact corresponding Word passages."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
-                "field": "itinerary.text",
-                "sourceTextSha256": "3ab12d672b716bd8642475ae4093cd05245a00b870e5126baa80c2f2993cf942",
-                "text": "Transfer to the airport for your flight to Foz do Iguaçu. Upon arrival, transfer to your hotel.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p75",
-                      "textSha256": "2b5e2d26a3fc565d1720277d9479d711fc6cba1f4cc8b3a1f64beafaac02ee2e"
-                    }
-                  ]
-                }
-              }
-            ],
-            "sourceNotes": [
-              {
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "sha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "note": "Used the exact assigned Word in yearFolder 2027; document heading states Agribusiness Program 2026. Matching was not repeated and no edition year or commercial facts were changed."
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:24:34.551Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010",
+        "blobSha": "84429f98e67700a0091ed337a3b197f56b842976",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b010/sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010.json",
+        "at": "2026-11-03T21:24:38.924Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

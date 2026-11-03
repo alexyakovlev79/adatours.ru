@@ -88,175 +88,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "8f999a358fd9c13d1072b65fa3c7c23d7411eafc0de5a20d2448e7669fb4706b",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-d492a933acd8-20261104",
-        "token": "ada-d492a933acd8-fixed-20261104",
-        "claimedAt": "2026-11-03T22:22:04.116Z",
-        "expiresAt": "2026-11-03T23:52:04.116Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-d492-grand-b004-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-d492a933acd8-20261104",
-        "token": "ada-d492a933acd8-fixed-20261104",
-        "generation": 1,
-        "payload": {
-          "submissionId": "ada-d492-grand-b004-v1",
-          "result": {
-            "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b004",
-            "stableId": "tour_argentina_grand_tour_15_days_2027",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "8f999a358fd9c13d1072b65fa3c7c23d7411eafc0de5a20d2448e7669fb4706b",
-            "blocks": [
-              {
-                "blockId": "tour:note:40313515be7b6bfd",
-                "field": "note",
-                "sourceTextSha256": "17dac01c2f5ca76fdfe3adbf662e54b6144aed668623180be03d43bd1e933706",
-                "text": "The net price is per person, based on 2 travellers. A complete consolidated list of included and excluded services is not provided.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-d492a933acd8-20261104",
-                  "wordAbsenceReason": "The approved DOCX p69 states the net per-person basis for 2 travelers, but contains no standalone explanatory note about the absence of a consolidated services list. Translate the current RU note."
-                }
-              },
-              {
-                "blockId": "tour:note:02fd161bfed24055",
-                "field": "note",
-                "sourceTextSha256": "2abb0273c9d41ad67fb0ec4b50daa592e69fff409fff6ce0e5deb2e0b6a7ea5a",
-                "text": "Day 6 is headed “Cafayate — Guachipas”, while the description covers Cachi, ending in Salta.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-d492a933acd8-20261104",
-                  "wordAbsenceReason": "The approved DOCX p22 and p24 contain the inconsistent day heading and route description, but no explanatory note. Translate the current RU note without resolving the source inconsistency."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-                "field": "itinerary.title",
-                "sourceTextSha256": "117a370fac494437ac78377830449f53e765b96c09f360bca90e03fa9760fc49",
-                "text": "Arrival in Buenos Aires",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p7",
-                      "textSha256": "ee7b0b500cf49e5cf5d55b18a4d677b0f6c358324a058a54cc52ab1991bd2a2f"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the approved arrival sentence as a concise itinerary heading without changing the activity."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:5a4836cca1208c95",
-                "field": "itinerary.text",
-                "sourceTextSha256": "ccd457f20b8c52a3f95cc8d709e7b1d354dd4d59f00ce55d8c2b0d0bf3b9a658",
-                "text": "Arrival in Buenos Aires. Private transfer from the airport to the hotel with an English-speaking guide. Check-in at the Four Seasons Buenos Aires (City View Room), free evening.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p7",
-                      "textSha256": "ee7b0b500cf49e5cf5d55b18a4d677b0f6c358324a058a54cc52ab1991bd2a2f"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:086c00a2bb054f75",
-                "field": "itinerary.label",
-                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-                "text": "Buenos Aires",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p6",
-                      "textSha256": "fc832b698dd31f078ec1c7cc546eb1db701bcc9f1f3ce16d1f42418fbf885bd4"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the approved city name from the day heading for the existing place label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:759b0bf2dd6f5766",
-                "field": "media.alt",
-                "sourceTextSha256": "5c51e8aff29673aeb7bb205e39f41686393bb37dc65a893a3fe981fc3537fe98",
-                "text": "The Argentine National Congress building behind a fountain and monument in Buenos Aires",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-d492a933acd8-20261104",
-                  "wordAbsenceReason": "No alt caption for this current RU image exists in the approved DOCX; translate the exact supplied RU media.alt without inferring additional image details."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:2ab6cacaffe9fc5e",
-                "field": "media.hover",
-                "sourceTextSha256": "6f9bcdf129069c26e0063e025be7a427d9f912ce5ecc5dc3377e85d055ca70c5",
-                "text": "Buenos Aires in the evening: the illuminated Congress building and a fountain in the square",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-d492a933acd8-20261104",
-                  "wordAbsenceReason": "The approved DOCX has no hover caption for this RU media field; translate the existing caption without altering the image or adding facts."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-                "field": "itinerary.title",
-                "sourceTextSha256": "57e79225a3e114461118d96cba2e128b246e6ad2a57e7cc8609bb1c201f14d32",
-                "text": "Buenos Aires and a tango evening",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p9",
-                      "textSha256": "c6fa36c6d4cead82beb2e9e41592d832d262fe67b889d87b670d584c9237a7b0"
-                    },
-                    {
-                      "ref": "word/document.xml:p11",
-                      "textSha256": "9a4ad10008dd3a4a26309bdebda3b4383f5a90efc92e9223248b576506b12939"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Combine the approved city heading with the explicitly scheduled evening tango show to label the same itinerary day."
-                }
-              }
-            ],
-            "sourceVerification": {
-              "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-              "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-              "modifiedTime": "2026-09-30T13:49:31.141Z",
-              "yearFolder": 2027,
-              "editionYear": 2027,
-              "verification": "Exact downloaded DOCX binary SHA256 and modifiedTime match frozen job source. All 69 OOXML paragraphs read, including hotel list and net programme price."
-            },
-            "integrationNotes": [
-              "Existing Day 6 Word heading Cafayate — Guachipas conflicts with the paragraph describing Cachi with drop-off in Salta. The current RU note is translated; no source text or route data changed."
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:23:34.500Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-d492-grand-b004-v1",
+        "blobSha": "b109050de403165aac5aa856bb2ac2a5743ced2f",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_grand_tour_15_days_2027_b004/ada-d492-grand-b004-v1.json",
+        "at": "2026-11-03T22:24:44.104Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

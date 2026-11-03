@@ -18,176 +18,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b001",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "340692e6bbe93a8f27472cee5b9ba339686a1d383798156d571e9437bf2d2305",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-e9fc69e2bbe6",
-        "token": "token-e9fc69e2bbe6-20261104",
-        "claimedAt": "2026-11-03T22:13:55.630Z",
-        "expiresAt": "2026-11-03T23:43:55.630Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ck-e9fc-arg-b001-08",
-        "format": "inline-v1",
-        "ownerId": "ada-en-e9fc69e2bbe6",
-        "token": "token-e9fc69e2bbe6-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b001",
-          "stableId": "tour_argentina_agricultural_11_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "340692e6bbe93a8f27472cee5b9ba339686a1d383798156d571e9437bf2d2305",
-          "blocks": [
-            {
-              "blockId": "tour:title:aaf2320646108059",
-              "field": "title",
-              "sourceTextSha256": "14ffd3e99ddeaf5d6a8969096714a5f91eee16f17d95b626fefd92b37afc16ca",
-              "text": "Argentina · No-Till Farming & Agricultural Innovation",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p1",
-                    "textSha256": "38c3b5612d487358a4bb804d7d389d4c0fcc7dd15955e999845af4a92eedd85c"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:lead:e3456bc1f4d270f4",
-              "field": "lead",
-              "sourceTextSha256": "3456038b29b96d41414e99972888fd4b2a6a6a1429b1a81ac143c8518d827a7e",
-              "text": "An in-depth agricultural study journey exploring Argentine no-till practices, precision farming, crop management, grain storage, research and professional training. Technical visits are complemented by cultural activities and countryside travel.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p8",
-                    "textSha256": "6da5eaf699e0aca2ad10a29d3fc3740bbfbc3199acf261d9780c75c1fff3fb8a"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
-              "field": "priceNote",
-              "sourceTextSha256": "91f9522a636a58bbaa8a524e05d513bfa99fc59092b73c3fb59638f7864ca120",
-              "text": "We will calculate the cost for your group and agree on the programme of professional visits.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-e9fc69e2bbe6",
-                "wordAbsenceReason": "The verified selected Word document (edition 2026 in the 2027 catalogue) contains no quotation-request or price-note wording and no commercial price table; this RU-only call to request a group quote is translated without changing prices."
-              }
-            },
-            {
-              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
-              "field": "formatLabel",
-              "sourceTextSha256": "2ede307f2e4e2b5eb39cf74858064dd5615970757c26f403a1660b3f0a19fff5",
-              "text": "Industry delegation of up to 12 participants",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p129",
-                    "textSha256": "4f9cc153f931aa61dc9663264e629ee79869249c9fb73ee1371e4f6904bc5701"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Paragraph 129 confirms a maximum group size of 12; express that verified group-size condition as the existing delegation-format label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:baf4a32c564902b5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p2",
-                    "textSha256": "b6ac57f330d528533cfac73d58120e3e4a9b63fc804370fae5d8381152fdcbfe"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact place name from the verified Word route or overnight paragraph for this single-location route field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:2e44d06da73018f6",
-              "field": "itinerary.label",
-              "sourceTextSha256": "ff613e91502819738a94c64faee688853a12ceed638bf954915e9fb34b742d48",
-              "text": "Pergamino",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p2",
-                    "textSha256": "b6ac57f330d528533cfac73d58120e3e4a9b63fc804370fae5d8381152fdcbfe"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact place name from the verified Word route or overnight paragraph for this single-location route field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:082e54bf73f5f2d0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "172ef114e459320b9c63364e337795f1852a598a137d92f62a2be41446f67991",
-              "text": "Venado Tuerto",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p2",
-                    "textSha256": "b6ac57f330d528533cfac73d58120e3e4a9b63fc804370fae5d8381152fdcbfe"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact place name from the verified Word route or overnight paragraph for this single-location route field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:80afa079a2d783b1",
-              "field": "itinerary.label",
-              "sourceTextSha256": "147553dd2e7096254044641e1a2da00602a3f8a7c6276240ba95a28d9edd60b0",
-              "text": "Trenque Lauquen",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p55",
-                    "textSha256": "b4f2f4da33127a38197385823c74a6d0a2a7cb76992aadb0c20cc75aa77872f6"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact place name from the verified Word route or overnight paragraph for this single-location route field."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:15:45.745Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-e9fc-arg-b001-002",
+        "blobSha": "d2b516ddab636ed362aefbf0c71d483a23a79672",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_agricultural_11_days_b001/sub-e9fc-arg-b001-002.json",
+        "at": "2026-11-03T22:17:31.602Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

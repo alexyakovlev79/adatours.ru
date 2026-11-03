@@ -55,7 +55,7 @@
         "expiresAt": "2026-11-03T23:20:34.650Z"
       },
       "checkpoint": {
-        "id": "cp-868ef48d-01-04",
+        "id": "cp-868ef48d-01-08",
         "format": "inline-v1",
         "ownerId": "ada-en-868ef48df4c8-20261104",
         "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
@@ -154,10 +154,75 @@
                 "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
                 "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2"
               }
+            },
+            {
+              "blockId": "tour:notIncluded:498830ff3cac7041",
+              "field": "notIncluded",
+              "sourceTextSha256": "e2bb9d431aaca60cc97db986b0fa06a22ad6cbefb39a4e5b60a9e6fe27d20882",
+              "text": "Late check-out and/or early check-in",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p250",
+                    "textSha256": "5895e445316bfac109d1521422d2a92ba4a6423cc57b7d62ee7a5a36887d7057"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Removes only the dash and spacing from the Word hotel check-in/check-out exclusion."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:0d00f54032adbac1",
+              "field": "notIncluded",
+              "sourceTextSha256": "4b6866e8bbbb3e6861e55c7f6363745a4c00301e502afcd84c418d0b6448c20d",
+              "text": "Personal expenses.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The verified Word exclusion list at paragraphs 245–250 contains no separate personal-expenses item; translated the current RU item."
+              }
+            },
+            {
+              "blockId": "tour:note:4809f727e8913b1d",
+              "field": "note",
+              "sourceTextSha256": "68a86c88ab29212bac7a84c9c8ca0c9dc92482d981fe2310df653cb3f4e29fcd",
+              "text": "The programme and rates are for 2026. Prices and availability for other dates are confirmed separately.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "This RU-specific edition warning is absent from the selected Word 2027 brochure; preserved the current RU note and flagged the edition conflict for master review."
+              }
+            },
+            {
+              "blockId": "tour:note:af6fff89d3126b61",
+              "field": "note",
+              "sourceTextSha256": "1a820f2751adc7ceec1d377e267406ee134cce39c2363ba5a66600ddb320feae",
+              "text": "The route name specifies Foz do Iguaçu, while the hotel table lists Mercure Iguazu; the country of accommodation in the Iguazu region and cross-border transfers require confirmation. The Day 13 flight is listed as departing from Argentina’s IGR airport.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The selected Word 2027 brochure does not contain this RU-specific accommodation/border clarification; translated the current RU warning without resolving its factual uncertainty."
+              }
+            }
+          ],
+          "unresolvedConflicts": [
+            {
+              "blockId": "tour:note:4809f727e8913b1d",
+              "reason": "RU note says 2026, selected Word is 2027. RU preserved; edition decision belongs to master."
+            },
+            {
+              "blockId": "tour:note:af6fff89d3126b61",
+              "reason": "RU requests confirmation of Iguazu hotel country and border transfers. Word lists Puerto Iguazú and Mercure Iguazú Hotel Irú; current RU warning retained for review."
             }
           ]
         },
-        "at": "2026-11-03T21:51:52.918Z"
+        "at": "2026-11-03T21:52:18.911Z"
       },
       "submission": null,
       "review": null,

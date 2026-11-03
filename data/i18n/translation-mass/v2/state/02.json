@@ -141,167 +141,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b015",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b6d17994f22a001ad2ac21f582cd0533d0923f365efa589b9734c13bf4d966e8",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-e1125a853692",
-        "token": "ada-en-e1125a853692-20261104",
-        "claimedAt": "2026-11-03T22:03:36.826Z",
-        "expiresAt": "2026-11-03T23:33:36.826Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-e1125a853692-b015-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-e1125a853692",
-        "token": "ada-en-e1125a853692-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b015",
-          "stableId": "tour_brazil_argentina_peru_14d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b6d17994f22a001ad2ac21f582cd0533d0923f365efa589b9734c13bf4d966e8",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
-              "field": "itinerary.text",
-              "sourceTextSha256": "677068c95a811eeaeee183cd03d588d488edaa4771ca13f66b23251082dec75f",
-              "text": "Day 12 · Breakfast and transfer to the bus station for the scenic journey from Cusco to Puno, with stops at cultural sites such as Pikillaqta, the baroque church of Andahuaylillas and the Temple of Wiracocha at Raqchi, and lunch in Sicuani. The bus then climbs to the high pass of La Raya, at more than 4,300 metres, where the scenery changes dramatically. Arrival in Puno, reception and transfer to the hotel.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p156",
-                    "textSha256": "1a844f96bfe16232fba36af0f89429c7956233c92c65b32221c0729c449f74a0"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:bcbffe1c4a6509cb",
-              "field": "itinerary.label",
-              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
-              "text": "Cusco",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p191",
-                    "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:07dc1c1d1e7f403b",
-              "field": "itinerary.label",
-              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
-              "text": "Puno",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p196",
-                    "textSha256": "eaa2b06926bcdcab6d01ec90c9eefd7a4cf618005067226766455ed2570f7b01"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:8d8e7317ef4b07bc",
-              "field": "media.alt",
-              "sourceTextSha256": "0dff2d797b28a6888ceaa400fd2b797145d2766e44eb20e3168a2f6aac7b2c8d",
-              "text": "Stone ruins of Machu Picchu and a mountain peak seen through an opening in an ancient wall, Peru",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6.1",
-                "runId": "ada-en-e1125a853692",
-                "wordAbsenceReason": "Word has no text describing this specific photograph or its alt field; translated from the frozen RU media caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:a29337b436d50136",
-              "field": "media.hover",
-              "sourceTextSha256": "18f7f9c631bc15fd72015c698e3a8db01e95172bae8a3909378a13a4383a0fe4",
-              "text": "Machu Picchu: terraces and mountains seen through a stone window",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6.1",
-                "runId": "ada-en-e1125a853692",
-                "wordAbsenceReason": "Word has no text for this photograph hover caption; translated from the frozen RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
-              "field": "itinerary.title",
-              "sourceTextSha256": "ede0eccf968f3d73dbe4d336f0442c2b141f34d68163905b97f777348943d0da",
-              "text": "Lake Titicaca, Uros and Taquile",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p155",
-                    "textSha256": "c5fcb2ab783fae42bfb14a3ea436b668e9a795f313a252e2983ed947a4126cd6"
-                  },
-                  {
-                    "ref": "word/document.xml:p52",
-                    "textSha256": "18b852c0def23bd527805c8dc16dff5423a0dcb7862f1808ab6b010905e1aac7"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combine the Word Lake Titicaca heading and Uros and Taquile island names into the itinerary heading."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:173cf987634ed90a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "873cd910eac7cae1d5c529c734e720141067d4f21833d033e07dbb444e1533e8",
-              "text": "Day 13 · In the morning, a short boat ride takes you to the Uros Islands, the famous floating islands of Lake Titicaca, made entirely of totora reeds, the same material the Uros people use to build their boats and which they even eat; although fishing is still important, handicrafts and tourism are today a major source of income. Continue to Taquile Island, known for the kindness of its residents, their ancestral weaving skills, its pre-Columbian constructions and lovely countryside. Then transfer to Juliaca airport for your flight to Lima; arrival and transfer to the hotel.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p157",
-                    "textSha256": "343c0bf58368da7d12182294ba7862933d8b949b5aa7eac58fa644fe51a20dd2"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:40bc8cf0ccdcd402",
-              "field": "itinerary.label",
-              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
-              "text": "Puno",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p196",
-                    "textSha256": "eaa2b06926bcdcab6d01ec90c9eefd7a4cf618005067226766455ed2570f7b01"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:05:22.522Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-e1125a853692-b015-v1",
+        "blobSha": "cbf20dffed9a9b0a3fa4d05878e448998a7f8dcc",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_peru_14d_b015/ada-en-e1125a853692-b015-v1.json",
+        "at": "2026-11-03T22:19:42.252Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -1,0 +1,168 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b008",
+  "stableId": "tour_brazil_dunes_13d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "628afe653409dd817e1bbfceb1feeeb35496a73f90148fd8d1d243fcbe8e0a30",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "152e02273c96f284a66381468d517213d809d7c336a0da03a356bd9e1370d35f",
+      "text": "Foz do Iguaçu – São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+        "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p99",
+            "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+          },
+          {
+            "ref": "word/document.xml:p106",
+            "textSha256": "032649aa528492a7dbd54dc5ec86de66fc23607644910d406eff431b6c8f0f94"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Condense the Word section heading and the stated Foz do Iguaçu to São Luís flight into this route title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1722e388f64d13db058b2e0ae6218f8799f0e7ffe1e7f3c33299763a9ef7e542",
+      "text": "Breakfast at the hotel. Transfer to the airport and flight to São Luís do Maranhão. On arrival, you will be met and transferred to your hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "Word p103 combines the transfer with extensive São Luís city description and does not include the exact breakfast-led RU transfer block. Translate the current RU-only block without adding the unrelated Word city prose."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0f8f1524af76a74c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+        "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p99",
+            "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Foz do Iguaçu name from the corresponding Word route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0941729886e9a4dc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+      "text": "São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+        "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "596e5276fb7f990fd0eb42abf59f5c449cb55a59128b8a6a8b19744d920364c6"
+          },
+          {
+            "ref": "word/document.xml:p99",
+            "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact São Luís place name from the Word highlights and itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7e422e528d566f9c",
+      "field": "media.alt",
+      "sourceTextSha256": "1405f6298d88cb3410e3be59ecad6677de24ea686ebae3dac98457fef8a52069",
+      "text": "Journey from Iguazu to São Luís",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "The verified Word has no corresponding image-specific ALT caption describing the journey from Iguazu to São Luís."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3ce1dbef55470fc5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+      "text": "São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+        "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "596e5276fb7f990fd0eb42abf59f5c449cb55a59128b8a6a8b19744d920364c6"
+          },
+          {
+            "ref": "word/document.xml:p99",
+            "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact São Luís place name from the Word highlights and itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "59098011da46b6f58a938371079efe10cf78b9f5648ee2ae1a9d6c7adb075775",
+      "text": "São Luís – Barreirinhas and Lençóis Maranhenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+        "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p99",
+            "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+          },
+          {
+            "ref": "word/document.xml:p102",
+            "textSha256": "a3a853d45ec8943ea352fae043f67fce06f36073099173bf9c2a47abd7e00411"
+          },
+          {
+            "ref": "word/document.xml:p104",
+            "textSha256": "dabe8900323886750f6b833dffab611128cd2c14c8ed75e9a4cd5d63ce94286d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word São Luís, Barreirinhas and Lençóis Maranhenses destination names into the same route heading as RU."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a0a7754ee5dbc2e9ac2b8246096049604afa35b10b7ada062e44a690152c95b3",
+      "text": "After breakfast, travel to Barreirinhas, a journey of around 3.5 hours. On arrival, you will set out with an English-speaking guide for Lençóis Maranhenses National Park.\n\nLençóis Maranhenses National Park covers around 1,000 square kilometres. Its white sand dunes reach 40 metres in height, with clear freshwater lakes between them. At first glance, the landscape resembles a desert, although it receives considerably more rainfall. After the rains, water collects between the dunes, forming blue-green lagoons. The white sand and water create a landscape unlike almost any other part of Brazil. This scenery has earned Lençóis Maranhenses the name “Sheets of Maranhão”.\n\nThe sense of space here is unusual: the line of dunes constantly changes, individual ridges hide the horizon, and new lagoons appear unexpectedly beyond them. On a sunny day, the water contrasts sharply with the white sand, so even a short walk in the park offers a completely different view of the country after Rio and Iguazu.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "Word p104 has a different transfer duration (about 4 hours), fixed departure times and a shorter park description. It lacks the RU 1,000 square kilometres, 40-metre dunes and final landscape paragraphs. Translate current RU exactly in scope and flag the duration discrepancy for independent review; do not silently replace RU facts."
+      }
+    }
+  ],
+  "unresolvedConflicts": [
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "kind": "ru_word_duration_discrepancy",
+      "detail": "Current RU transfer São Luís–Barreirinhas says about 3.5 hours; verified selected Word p104 says about 4 hours. RU-derived EN retains 3.5 hours; requires independent review or master decision."
+    }
+  ]
+}

@@ -167,173 +167,22 @@
     {
       "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "dc621dd468b580eb333a0f8f5c72f65c774394d934c7ba30055bbf4c032853b7",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-b3a5215d42b7",
-        "token": "ada-en-b3a5215d42b7-20261104",
-        "claimedAt": "2026-11-03T22:08:55.241Z",
-        "expiresAt": "2026-11-03T23:38:55.241Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-b3a5215d42b7-001-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-b3a5215d42b7",
-        "token": "ada-en-b3a5215d42b7-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b008",
-          "stableId": "tour_chile_hidden_secrets_9_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "dc621dd468b580eb333a0f8f5c72f65c774394d934c7ba30055bbf4c032853b7",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:78801086eab36d28",
-              "field": "itinerary.label",
-              "sourceTextSha256": "3ba381c163d89c247295ecc330bbf77bce1b7f5174ba90d48beeef863a730c1f",
-              "text": "Atacama Salt Flat",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:77",
-                    "textSha256": "39d71f46f65c04574c575fafabdfe3b96f39ad6441b2da45e1ad7b9825818906"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:476cfdf83cd0033d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "083a75f1a20ac40215d7267c4ad71d81523c1621f770a0cc18dceb6f673d992a",
-              "text": "Chaxa Lagoon",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:77",
-                    "textSha256": "39d71f46f65c04574c575fafabdfe3b96f39ad6441b2da45e1ad7b9825818906"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:14963ac3c308e60d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "fdeb82224988222216997ad3f9bb33fec8fabac5ec01fc60d0072d64c4fb9d8f",
-              "text": "Los Flamencos National Reserve",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:67",
-                    "textSha256": "bf5b1342d02ce26b4dfbfb163a7da5125a0bd499d8acbbd2a73b6d82ebfbdb50"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:82fef3ff7f060f1f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "180c1017c1b8c39d523f1462202848ae02f0a4e834e5f2994447da27125a3fea",
-              "text": "Toconao",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:78",
-                    "textSha256": "b0a7997e39f68dd7e15f85b3743ead35f50f20bbfb063bfc870ac11d38568e18"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5e6f380dbc2a895a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c20fdd4de8a05ec5b1b42927f7f97a550ac0ffeb3f5549f0c4de6905c919815a",
-              "text": "Church of San Lucas and Toconao Bell Tower",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:78",
-                    "textSha256": "b0a7997e39f68dd7e15f85b3743ead35f50f20bbfb063bfc870ac11d38568e18"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:b0b8f01574d3a037",
-              "field": "media.alt",
-              "sourceTextSha256": "efe10526ac7ed2aa1ad3e71028bbbb8779aa9945a57b742aef319f1ce77118f1",
-              "text": "The blue Miñiques Lagoon amid arid mountain slopes, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-b3a5215d42b7-b008",
-                "wordAbsenceReason": "Verified DOCX contains itinerary prose but no corresponding image alt or hover caption; translated this current RU image description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:1d4ad3a525cd8ad6",
-              "field": "media.hover",
-              "sourceTextSha256": "b6ff6a333ef900e857a347e1d4f5aa004cd2fdfaf029e604b330c3b79f741273",
-              "text": "Miñiques in Chile: a lake below mountains with a snow-covered summit",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-b3a5215d42b7-b008",
-                "wordAbsenceReason": "Verified DOCX contains itinerary prose but no corresponding image alt or hover caption; translated this current RU image description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
-              "text": "San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:140",
-                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:10:09.798Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-b3a5215d42b7-001",
+        "blobSha": "8fe48470c51c9cf679a00c2985af37aedf5d3d2b",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_hidden_secrets_9_days_2027_b008/submit-b3a5215d42b7-001.json",
+        "at": "2026-11-03T22:16:44.161Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

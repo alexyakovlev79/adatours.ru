@@ -53,187 +53,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "8a7de587e43180bde7a00a9097626b2f3a5b2902664ff13dd9fdd1087a9e3ac5",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f0410042e63344c3",
-        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
-        "claimedAt": "2026-11-03T22:32:30.271Z",
-        "expiresAt": "2026-11-04T00:31:04.459Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_87f8c5a90488-s003-c008",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f0410042e63344c3",
-        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b002",
-          "stableId": "tour_brazil_agribusiness_14_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "8a7de587e43180bde7a00a9097626b2f3a5b2902664ff13dd9fdd1087a9e3ac5",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:b4a101a4607d4777",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-              "text": "Foz do Iguaçu",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p76",
-                    "textSha256": "2b5e2d26a3fc565d1720277d9479d711fc6cba1f4cc8b3a1f64beafaac02ee2e"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:682bc978fc6cd924",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1c26f0bb98450328b796ed86b80cf94bdfa4e9a3ea498b27d81a725f0acd0e9e",
-              "text": "Argentinian side of the falls",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p87",
-                    "textSha256": "9492d77354e4fd1460bb537447f5d6975745cdb4e12e89602cdf039a9a947c98"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b90436eb8118147b:2",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
-              "text": "São Paulo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p6",
-                    "textSha256": "aa4323749e8e1bb32b2594e643f41b2db2d8b93ab32ac71aa28fa0d0ab75500e"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:included:eaf04b510c463501",
-              "field": "included",
-              "sourceTextSha256": "4e828b20b85dcf72cc9aaa8fe61d0a924e34850c09e2ed2d578892b91b3054b8",
-              "text": "13 nights in hotels and an Amazon lodge along the route, with breakfast.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p3",
-                    "textSha256": "2f1d3b2871f933c1eb419ddf45dd5bc66436a4cf1987d1fb475b60af8b1a018f"
-                  },
-                  {
-                    "ref": "word/document.xml:p35",
-                    "textSha256": "e890546d03db07088116d8ebc2f42b26f059c9be125244759fcda3ef1252783d"
-                  },
-                  {
-                    "ref": "word/document.xml:p99",
-                    "textSha256": "75108350ffd8701c5be1fd5aaa53ccd6effc73cbb31abe731b41b8c882f734c6"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Combines the exact document duration, lodge description and breakfast inclusion into the accommodation service label."
-              }
-            },
-            {
-              "blockId": "tour:included:925c07774be4dfe3",
-              "field": "included",
-              "sourceTextSha256": "8bf885554361da93facf51c85b9be7af22deb1a2a2c07ceaacd2d54f2896b1cd",
-              "text": "Transfers with a driver as per the itinerary",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p100",
-                    "textSha256": "298c517504260ded3e9b04107835405ee57c405d363fe354542bb7074bc21dcd"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:included:a478012448a5ad9e",
-              "field": "included",
-              "sourceTextSha256": "b24b761621f302da88ae3d047b5f36875ad0bc6db703f376a7d721a0b3bafdbc",
-              "text": "Private guided tours in São Paulo, Iguaçu, and Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p101",
-                    "textSha256": "0fd44370a456de67971cd28b4591fbc498154425a70f32e0bdbd91e3c600c419"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:included:c084f53badfe4bbd",
-              "field": "included",
-              "sourceTextSha256": "d1b5e7e3526c694c2853f2c97458daa3d5920293772fa509d59b57675180fbfc",
-              "text": "Group tours with an English-speaking guide in Manaus",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p102",
-                    "textSha256": "2df3018154210cb5788d3b8131a7a5bbc2c8c8a84b858e3bdcf685216c4b92d3"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:included:bd1a71c82e2ecceb",
-              "field": "included",
-              "sourceTextSha256": "fc5d432942a40ff0aa1fe850c85fa0f5a889c02b55d3581a246cc4a737ccc0bd",
-              "text": "Dinner and an evening programme on arrival at the Amazon lodge, Day 5.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p34",
-                    "textSha256": "fcd09fb8bc8de9984704e638004432c60249a4285f657b695aed5bad2f0bb0c8"
-                  },
-                  {
-                    "ref": "word/document.xml:p35",
-                    "textSha256": "e890546d03db07088116d8ebc2f42b26f059c9be125244759fcda3ef1252783d"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Restates the explicitly included Day 5 dinner and evening programme from the arrival narrative as a concise service label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:01:11.349Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_87f8c5a90488-s003",
+        "blobSha": "82d29b7d2927f64af2c1941f31a0923654dd1b96",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b002/ada_en_87f8c5a90488-s003.json",
+        "at": "2026-11-03T23:01:15.783Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

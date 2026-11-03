@@ -142,7 +142,99 @@
         "claimedAt": "2026-11-03T23:33:51.650Z",
         "expiresAt": "2026-11-04T01:03:51.650Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a104-da0b8743c7e9:tour_brazil_argentina_chile_new_year_11_days_2027_b007:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-a104-da0b8743c7e9",
+        "token": "c0d02798bb754ec6a8504ed642bc5ea4",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b007",
+            "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "7ab5509e109ad6303f429f36bc44fc0c7f4fe755df3d99ef7856faf00b8a1481",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+                "field": "itinerary.title",
+                "sourceTextSha256": "3013c8db4f1bb34030427ed51ca001ac92425c2ccb963b1a6aeb95ca9b3b4545",
+                "text": "2 January 2027: free day in Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                  "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p4",
+                      "textSha256": "b47dd9dfd7aeb04588ab40f56f87afb35393b706cd860e726c514509695b549b"
+                    },
+                    {
+                      "ref": "word/document.xml:p53",
+                      "textSha256": "b3b469fe9d1a1e49f3598259ff694729dd79d7efb3a0a7364eb234e0d5e5db4d"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Separates the date and free-day title from the exact Word Day 4 paragraph; the year is supplied by the document departure-date range."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:ec46e3209ab74818",
+                "field": "itinerary.text",
+                "sourceTextSha256": "cc84071fd4549711ed445414035e545b30cdb8e01af7d57d8859213e7bc01971",
+                "text": "Free day in Rio de Janeiro. Enjoy the beaches, explore the city at your own pace, or take an optional excursion.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                  "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p53",
+                      "textSha256": "b3b469fe9d1a1e49f3598259ff694729dd79d7efb3a0a7364eb234e0d5e5db4d"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the complete unchanged free-day description from the Word paragraph after its day, date and city prefix."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                  "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p133",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:media_alt:f335a51f9392f79b",
+                "field": "media.alt",
+                "sourceTextSha256": "bb63eef057fd22a3c980a665e5a82cf08304c7db08425fb4236287e3fc21aa9c",
+                "text": "Copacabana's mosaic promenade and beach with palm trees in golden light, Rio de Janeiro, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-a104-da0b8743c7e9",
+                  "wordAbsenceReason": "The selected Word describes Copacabana but has no matching image-specific alternative text for the palms and golden-light photograph; translated the current RU alt text."
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "submissionId": "ada-en-a104-da0b8743c7e9:tour_brazil_argentina_chile_new_year_11_days_2027_b007"
+        },
+        "at": "2026-11-03T23:35:13.445Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

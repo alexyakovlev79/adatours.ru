@@ -41,7 +41,87 @@
         "claimedAt": "2026-11-03T21:15:31.520Z",
         "expiresAt": "2026-11-03T22:45:31.520Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ddc12b513de4-tour_argentina_best_14_days-b016-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ddc12b513de4",
+        "token": "tok-ddc12b513de4-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ddc12b513de4-tour_argentina_best_14_days-b016",
+          "result": {
+            "jobId": "en:bulk:tour:tour_argentina_best_14_days:b016",
+            "stableId": "tour_argentina_best_14_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "9f4d891193de9c764e1b91d7d28c83c52ef91d8d24ab3e9b5fdaa5cbbed6c999",
+            "blocks": [
+              {
+                "blockId": "tour:media_alt:d1acfaffd39773ed",
+                "field": "media.alt",
+                "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
+                "text": "Iguazú Falls from the Brazilian side",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word contains no corresponding image alt or hover text; translated the frozen RU media caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:359c7c25395d1837",
+                "field": "itinerary.title",
+                "sourceTextSha256": "4aa5907f5889baf74d5ddf99cb895ae33da42c105f56a18f054d2447d40b670b",
+                "text": "Iguazú: Argentine side",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p110",
+                      "textSha256": "0bbd96e4f5851da4f76f2e334b63f106b3a290387fbd7604cb93faa9e440c1a6"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Contextual heading or place label extracted from the corresponding Word itinerary."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+                "field": "itinerary.text",
+                "sourceTextSha256": "be9e9b687a66da88f3c5d8d9ae8e3a6531df20b2fa4ba22727aee3d3dc28039c",
+                "text": "Breakfast at the hotel. Full-day private excursion to the Argentine side of the falls with an English-speaking guide. The Ecological Jungle Train, viewpoints, Upper and Lower Circuits and the Devil’s Throat. Entrance fees for the main programme are included.\n\nOptional Great Adventure at $100 per person: approximately 8 km through the jungle in an all-terrain vehicle along the Yacaratí trail to Puerto Macuco, followed by approximately 6 km along the Iguazú River in a semi-rigid boat. The exact disembarkation points and boat route depend on park operating conditions and are confirmed when booking. Overnight at a hotel in the Iguazú region.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word paragraphs 114–115 and 118 cover the main excursion but omit the RU Great Adventure option, its USD 100 price and route conditions; translated the full frozen RU summary, applying the agreed English guide language."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:51dd03be73520c36",
+                "field": "itinerary.label",
+                "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+                "text": "Foz do Iguaçu",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "The corresponding Word day does not name Foz do Iguaçu; translated the exact frozen RU place label."
+                }
+              }
+            ]
+          },
+          "wordSourceVerified": {
+            "sha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+            "actualModifiedTime": "2026-10-30T13:38:49.607Z",
+            "note": "Drive metadata changed; downloaded bytes SHA remains identical to frozen packet; 2027 confirmed within document."
+          }
+        },
+        "at": "2026-11-03T21:16:41.001Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

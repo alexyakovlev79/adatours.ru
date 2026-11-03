@@ -20,16 +20,19 @@ test('EN uses a wider shared header breakpoint while RU retains 1240px',()=>{
 });
 test('EN has no artificial US default and retries IP lookup while RU remains +7',()=>{
  const source=fs.readFileSync('src/components/forms/PhoneField.astro','utf8');
- assert.match(source,/const isEnglishPhone = sharedUiLocale\\(\\) === 'en'/);
- assert.match(source,/isEnglishPhone \\? 'Country' : defaultCountry\\.dial/);
- assert.match(source,/value=\\{isEnglishPhone \\? '' : defaultCountry\\.iso2\\}/);
- assert.match(source,/readonly=\\{isEnglishPhone\\}/);
- assert.match(source,/https:\\/\\/ipapi\\.co\\/json\\//);
- assert.match(source,/https:\\/\\/ipwho\\.is\\//);
- assert.match(source,/https:\\/\\/api\\.country\\.is\\//);
- assert.match(source,/manuallySelected \\|\\| input\\.value\\.trim\\(\\)/);
- assert.match(source,/field\\.dataset\\.phoneGeo = 'unavailable'/);
- assert.match(source,/document\\.documentElement\\.dataset\\.adaSharedLocale === 'en'/);
+ const checks=[
+   "const isEnglishPhone = sharedUiLocale() === 'en';",
+   "isEnglishPhone ? 'Country' : defaultCountry.dial",
+   "value={isEnglishPhone ? '' : defaultCountry.iso2}",
+   "readonly={isEnglishPhone}",
+   'https://ipapi.co/json/',
+   'https://ipwho.is/',
+   'https://api.country.is/',
+   'manuallySelected || input.value.trim()',
+   "field.dataset.phoneGeo = 'unavailable'",
+   "document.documentElement.dataset.adaSharedLocale === 'en'",
+ ];
+ for (const text of checks) assert.ok(source.includes(text),text);
 });
 test('backend allows EN staging project without accepting unrelated GitHub sites',()=>{
  const source=fs.readFileSync('serverless/adatours-form/index.py','utf8');

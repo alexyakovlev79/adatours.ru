@@ -134,7 +134,7 @@ const { introHeadingHtml, descriptionHtml } = splitTourIntroHtml(tourBodyHtml);
 const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
-<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : b2b ? "Рассчитать программу для нашей группы" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={metaDescription} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : b2b ? "Рассчитать программу для нашей группы" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={d._i18n ? d.title : seoTourTitle(d)} description={d._i18n ? d.lead : metaDescription} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}

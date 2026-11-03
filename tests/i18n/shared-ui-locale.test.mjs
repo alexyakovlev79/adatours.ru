@@ -20,6 +20,8 @@ test('existing copy is used and unknown content keeps its Russian fallback', () 
   assert.equal(translateUiText('  Оставить заявку\n','en'),'  Send an enquiry\n');
   assert.equal(translateUiText('Содержательная программа ещё не переведена','en'),'Содержательная программа ещё не переведена');
   assert.equal(translateUiText('от непереведённого содержательного текста','en'),'от непереведённого содержательного текста');
+  assert.equal(translateUiText('Маршрут путешествия','en'),'Маршрут путешествия');
+  assert.equal(translateUiText('Описание путешествия','en'),'Описание путешествия');
   assert.equal(translateUiText('Туры','ru'),'Туры');
 });
 

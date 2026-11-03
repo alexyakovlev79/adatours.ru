@@ -1,5 +1,6 @@
 ---
 import {withBase} from '../../lib/paths';
+import {sharedUiLocale,translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface Props {
   data: any;
@@ -9,6 +10,8 @@ interface Props {
   showHeading?: boolean;
 }
 const {data, title = 'Маршрут на карте', locale = 'ru', entityType = 'tour', showHeading = true} = Astro.props;
+const uiLocale = sharedUiLocale();
+const t = (text: string) => translateUiText(text,uiLocale);
 const yandexKey = import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY || '';
 const googleKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '';
 const googleMapId = import.meta.env.PUBLIC_GOOGLE_MAP_ID || '';
@@ -39,29 +42,29 @@ const payload = data ? {
     data-google-key={googleKey}
     data-google-map-id={googleMapId}
     data-geo-map-payload={JSON.stringify(payload)}
-    aria-label={title}>
+    aria-label={t(title)}>
     {showHeading && (
       <div class="geo-map__heading">
-        <p class="geo-map__eyebrow">{entityType === 'excursion' ? 'География экскурсии' : entityType === 'destination' ? 'География места' : 'География путешествия'}</p>
-        <h2>{title}</h2>
+        <p class="geo-map__eyebrow">{t(entityType === 'excursion' ? 'География экскурсии' : entityType === 'destination' ? 'География места' : 'География путешествия')}</p>
+        <h2>{t(title)}</h2>
       </div>
     )}
     <div class="geo-map__viewport">
-      <div class="geo-map__canvas" data-geo-map-canvas aria-label="Интерактивная карта"></div>
-      <p class="geo-map__status" data-geo-map-status aria-live="polite">Карта загрузится, когда появится на экране.</p>
-      <button class="geo-map__retry" data-geo-map-retry type="button" hidden>Повторить загрузку</button>
+      <div class="geo-map__canvas" data-geo-map-canvas aria-label={t('Интерактивная карта')}></div>
+      <p class="geo-map__status" data-geo-map-status aria-live="polite">{t('Карта загрузится, когда появится на экране.')}</p>
+      <button class="geo-map__retry" data-geo-map-retry type="button" hidden>{t('Повторить загрузку')}</button>
       <article class="geo-map__card" data-geo-card hidden>
-        <button class="geo-map__card-close" data-geo-card-close type="button" aria-label="Закрыть описание">×</button>
+        <button class="geo-map__card-close" data-geo-card-close type="button" aria-label={t('Закрыть описание')}>×</button>
         <img data-geo-card-photo alt="" loading="lazy" hidden />
         <div class="geo-map__card-copy">
           <h3 data-geo-card-title></h3>
           <p data-geo-card-summary></p>
-          <a data-geo-card-link href="#">Подробнее о месте →</a>
+          <a data-geo-card-link href="#">{t('Подробнее о месте')} →</a>
         </div>
       </article>
     </div>
     <details class="geo-map__legend">
-      <summary>{entityType === 'excursion' ? 'Все точки экскурсии' : entityType === 'destination' ? 'Места на карте' : 'Все точки маршрута'} ({payload.points.length})</summary>
+      <summary>{t(entityType === 'excursion' ? 'Все точки экскурсии' : entityType === 'destination' ? 'Места на карте' : 'Все точки маршрута')} ({payload.points.length})</summary>
       <ol>
         {payload.points.map((point: any) => (
           <li>
@@ -129,3 +132,4 @@ const payload = data ? {
     .geo-map__legend ol { columns:1; }
   }
 </style>
+

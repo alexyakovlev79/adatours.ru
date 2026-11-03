@@ -139,8 +139,8 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 <BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={archived ? "Подобрать другую поездку" : `Заказать экскурсию: ${d.title}`} leadEntityId={archived ? "" : d.id}
   headerTheme={archived ? 'dark' : 'light'}
   noindex={archived}
-  title={seoExcursionTitle(d,geography.country.id,d.destination,destinationName,archived ? undefined : relatedTours.length)}
-  description={archived ? d.lead : seoRelatedToursDescription(d.lead,relatedTours.length,'excursion')}
+  title={d._i18n ? d.title : seoExcursionTitle(d,geography.country.id,d.destination,destinationName,archived ? undefined : relatedTours.length)}
+  description={d._i18n || archived ? d.lead : seoRelatedToursDescription(d.lead,relatedTours.length,'excursion')}
   image={d.hero?.src}
   canonical={excursionPath(d)}
   pageSchema={archived ? undefined : excursionSchema}

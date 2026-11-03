@@ -48,7 +48,7 @@ function approved(entry=fixture()) {
 const digest=value=>createHash('sha256').update(value).digest('hex');
 const gitBlob=bytes=>createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
 function acceptedMassFixture(source=fixture()) {
-  const sourceBytes=Buffer.from('canonical source bytes');
+  const sourceBytes=Buffer.from('---\n'+JSON.stringify(source.data)+'\n---\n'+source.body);
   const block=approved(source).overlay.blocks.find(block=>block.field==='title');
   const job={schemaVersion:2,jobId:'en:bulk:tour:'+source.data.id+':b001',stableId:source.data.id,
     entityType:'tour',locale:'en',stage:'word_2027',sourceFingerprint:'a'.repeat(64),
@@ -130,6 +130,27 @@ test('media refreshes and day order changes keep stable translated text and curr
   assert.equal(result.entry.data.itinerary[0].title,originalProjection.entry.data.itinerary[2].title);
 });
 
+test('Astro boundary trimming uses exact canonical body evidence without relaxing stale-text checks',()=>{
+  const source=fixture();source.body='\n'+source.body+'\n\n';
+  const prepared={...approved(source),canonicalBody:source.body};
+  const stored={...source,body:source.body.trim()};
+  const approvalBefore=JSON.stringify(prepared.overlay);
+  const result=projectSharedEnglishEntry(stored,'tours',prepared);
+  assert.equal(result.status,'translated');assert.deepEqual(result.missing,[]);
+  assert.equal(result.entry.body,'## Prices\n\nFrom USD 1,255.');
+  assert.equal(result.applied,prepared.map.paths.length);
+  // Even whitespace changes in the actual source keep their exact hashes.
+  for(const currentBody of [source.body+'\n',source.body.replace('1255','1400')]) {
+    const changed=projectSharedEnglishEntry({...source,body:currentBody.trim()},'tours',
+      {...prepared,canonicalBody:currentBody});
+    assert.equal(changed.status,'partial');assert.deepEqual(changed.missing,['/__body']);
+    assert.equal(changed.entry.body,currentBody);
+  }
+  const mismatch=projectSharedEnglishEntry({...stored,body:'Другое содержание'},'tours',prepared);
+  assert.equal(mismatch.status,'stale');assert.equal(mismatch.reason,'canonical_body_store_mismatch');
+  assert.equal(JSON.stringify(prepared.overlay),approvalBefore,'approved source hashes are never rewritten');
+});
+
 test('missing or unapproved slots remain Russian and absent translations preserve the original object',()=>{
   const source=fixture(),prepared=approved(source);
   prepared.overlay.blocks=prepared.overlay.blocks.filter(block=>block.field!=='lead');
@@ -199,18 +220,18 @@ test('changed canonical source skips only the accepted mass packet',()=>{
   assert.equal(result.status,'translated');
 });
 
-test('glob wrapper recompiles translated Markdown and records the actual canonical source receipt',async()=>{
+test('glob wrapper restores raw-body evidence after Astro trim and recompiles translated Markdown',async()=>{
   const root=await mkdtemp(join(tmpdir(),'ada-en-loader-'));
   try {
-    const original=fixture(),prepared=approved(original);
+    const original=fixture();original.body='\n'+original.body+'\n\n';
+    const prepared=approved(original),mass=acceptedMassFixture(original);
     const put=async(path,value)=>{const file=join(root,path);await mkdir(dirname(file),{recursive:true});
       await writeFile(file,typeof value==='string'?value:JSON.stringify(value));};
-    await put(original.filePath,'canonical source bytes');
+    await put(original.filePath,mass.sourceBytes.toString());
     await put('data/i18n/pilot-previews/v1/summary.json',{phase:'approved_nonpublishing_pilot',publicationAuthorized:false,
       reports:[{entityId:original.data.id,approved:true,state:'ready',issues:0}],failures:[]});
     await put('data/i18n/block-maps/tours/'+original.data.id+'.json',{...prepared.map,sourceContentPath:original.filePath});
     await put('data/i18n/pilot-previews/v1/overlays/'+original.data.id+'.json',prepared.overlay);
-    const mass=acceptedMassFixture(original);
     await put('data/i18n/pilot-previews/v1/word-sources/'+original.data.id+'.json',mass.wordSources);
     await put('data/i18n/pilot-excursions/v1/manifest.json',{schemaVersion:1,locale:'en',publicationAuthorized:false,status:'prepared_for_private_preview',entries:[]});
     await put('data/i18n/pilot-geography/v1/manifest.json',{schemaVersion:1,locale:'en',publicationAuthorized:false,status:'prepared_for_private_visual_pilot',items:[]});
@@ -222,7 +243,8 @@ test('glob wrapper recompiles translated Markdown and records the actual canonic
     await put('accepted/'+mass.row.submission.resultPath,mass.resultBytes.toString());
     const records=new Map(),rendered=[];
     const store={values:()=>records.values(),set:entry=>{records.set(entry.id,entry);return true;}};
-    const loader={name:'glob',async load(){store.set(structuredClone(original));}};
+    // Actual Astro 7.3.4 markdownContentEntryType.getEntryInfo stores this trim.
+    const loader={name:'glob',async load(){store.set({...structuredClone(original),body:original.body.trim()});}};
     await withSharedEnglishContent(loader,'tours',{env:{...env,EN_ACCEPTED_TRANSLATIONS_ROOT:'accepted'},root}).load({store,config:{root:pathToFileURL(root+'/')},
       parseData:async({data})=>data,generateDigest:JSON.stringify,
       async renderMarkdown(body,options){rendered.push({body,options});return {html:'<p>English Markdown rendered</p>'};}});
@@ -236,6 +258,8 @@ test('glob wrapper recompiles translated Markdown and records the actual canonic
     const receipt=JSON.parse(await readFile(join(root,'.astro/ada-en-shared-content.json'),'utf8'));
     assert.equal(receipt.canonicalSourceSha,env.ADA_CANONICAL_SHA);
     assert.equal(receipt.counts.translated,1);
+    assert.equal(receipt.counts.partial,0);
+    assert.equal(receipt.counts.translatedFields,prepared.map.paths.length);
     assert.equal(receipt.entries[0].sourceId,original.data.id);
     assert.equal(receipt.acceptedMassSnapshot.sha,ACCEPTED_MASS_SNAPSHOT_SHA);
     assert.equal(receipt.entries[0].acceptedMass[0].appliedBlocks,1);

@@ -26,7 +26,8 @@ for (const row of Object.values(catalog.messages)) {
   for (const match of row.ru.matchAll(/\{([a-zA-Z][a-zA-Z0-9]*)\}/g)) {
     expression += escape(row.ru.slice(offset, match.index));
     expression += ['count','max','from','to','total','page','position'].includes(match[1])
-      ? '([0-9][0-9 ,.–-]*)' : match[1] === 'price'
+      ? '([0-9][0-9 ,.–-]*)' : match[1] === 'days'
+        ? '(\\d+\\s+(?:день|дня|дней))' : match[1] === 'price'
         ? '([0-9$€£¥₽][0-9\\s.,$€£¥₽A-Z]*)' : '([^<>\\n]+?)';
     offset = match.index + match[0].length;
   }

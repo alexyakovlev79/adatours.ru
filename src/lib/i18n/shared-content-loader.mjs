@@ -31,6 +31,14 @@ const readJson = async path => JSON.parse(await readFile(path,'utf8'));
 const allowedSource = (path,collection) => new RegExp('^src/content/'+collection+'/[a-z0-9][a-z0-9-]*\\.md$').test(path);
 const fail = message => {throw new Error('Shared EN content: '+message);};
 
+// Approved source evidence hashes the exact text following the frontmatter,
+// including its boundary newlines. Astro 7.3.4's markdown getEntryInfo instead
+// stores parsed.content.trim(). Keep that parser detail outside hash checking.
+function canonicalMarkdownBody(contents) {
+  const match=/^\uFEFF?---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)([\s\S]*)$/u.exec(contents);
+  return match?.[1];
+}
+
 export function sharedEnglishContentEnabled(env=process.env) {
   return env?.EN_SHARED_CONTENT === '1' && enStagingSiteEnabled(env);
 }
@@ -130,9 +138,16 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   const sourceId=entry.data.id;
   const sourceFingerprint=prepared.sourceFingerprint ?? '';
   if(prepared.stale) return {entry,applied:0,status:'stale',sourceId,sourceFingerprint,reason:prepared.reason};
-  const root=structuredClone({...entry.data,__body:entry.body??''});
+  // Use the body read from the current canonical file, never a translated or
+  // historical snapshot. Accept only Astro's documented boundary trim; any
+  // substantive store/file disagreement must not inherit the file's evidence.
+  const canonicalBody=prepared.canonicalBody;
+  if(typeof canonicalBody==='string' && entry.body!==canonicalBody && entry.body!==canonicalBody.trim())
+    return {entry,applied:0,status:'stale',sourceId,sourceFingerprint,reason:'canonical_body_store_mismatch'};
+  const sourceEntry=typeof canonicalBody==='string'?{...entry,body:canonicalBody}:entry;
+  const root=structuredClone({...sourceEntry.data,__body:sourceEntry.body??''});
   delete root._i18n;
-  const slots=visibleLocalizationSlots(entry,type);
+  const slots=visibleLocalizationSlots(sourceEntry,type);
   const metadata={contentLanguage:'ru',translatedFields:0,sourceId,sourceFingerprint,
     sourceName:entry.data.name??entry.data.title??''};
   let translated=0;
@@ -144,8 +159,8 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
     // change or one changed text slot without invalidating every translation.
     let map,source,assessment;
     try {
-      map=createStableBlockMap(entry,type);
-      source=sourceFromContentEntry(entry,type,map);
+      map=createStableBlockMap(sourceEntry,type);
+      source=sourceFromContentEntry(sourceEntry,type,map);
       assessment=assessOverlay(source,prepared.overlay,{wordSources:prepared.wordSources??{}});
     } catch(error) {
       return {entry,applied:0,status:'stale',sourceId,sourceFingerprint,reason:'source_block_map_changed: '+error.message};
@@ -174,8 +189,8 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   }
   const acceptedMass=[];
   if(prepared.acceptedMass?.length) {
-    const current=new Map(createStableBlockMap(entry,type).paths.map(slot=>[slot.blockId,slot]));
-    const raw={...entry.data,__body:entry.body??''};
+    const current=new Map(createStableBlockMap(sourceEntry,type).paths.map(slot=>[slot.blockId,slot]));
+    const raw={...sourceEntry.data,__body:sourceEntry.body??''};
     for(const packet of prepared.acceptedMass) {
       if(packet.status!=='ready' || packet.receipt?.snapshotSha!==ACCEPTED_MASS_SNAPSHOT_SHA)continue;
       let appliedBlocks=0,changedTexts=0;
@@ -228,11 +243,16 @@ async function readPreparedEnglish(root,env) {
          overlay.entityId!==id || overlay.entityType!=='tour' || overlay.locale!=='en')fail('Invalid Tour source identity '+id);
       // Full-source SHA remains useful in the receipt. Eligibility is checked
       // per block against the *current* Astro entry inside the pure projector.
-      let sourceFingerprint;
-      try {sourceFingerprint='sha256:'+sha256(await readFile(join(base,map.sourceContentPath)));}
+      let sourceFingerprint,canonicalBody;
+      try {
+        const sourceBytes=await readFile(join(base,map.sourceContentPath));
+        sourceFingerprint='sha256:'+sha256(sourceBytes);
+        canonicalBody=canonicalMarkdownBody(sourceBytes.toString('utf8'));
+      }
       catch(error) {if(error.code!=='ENOENT')throw error; sourceFingerprint='missing';}
-      records.set(id,{entityId:id,entityType:'tour',overlay,wordSources,sourceFingerprint,
-        ...(sourceFingerprint==='missing'?{stale:true,reason:'canonical_source_missing'}:{})});
+      records.set(id,{entityId:id,entityType:'tour',overlay,wordSources,sourceFingerprint,canonicalBody,
+        ...(sourceFingerprint==='missing'?{stale:true,reason:'canonical_source_missing'}:
+          canonicalBody===undefined?{stale:true,reason:'canonical_source_frontmatter_missing'}:{})});
     }
     for(const [collection,manifestPath,property,status] of [
       ['excursions','data/i18n/pilot-excursions/v1/manifest.json','entries','prepared_for_private_preview'],

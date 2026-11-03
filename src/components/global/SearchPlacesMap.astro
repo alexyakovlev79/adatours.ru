@@ -1,19 +1,22 @@
 ---
 import {withBase} from '../../lib/paths';
+import {sharedUiLocale,translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
+const uiLocale=sharedUiLocale();
+const t=(text: string)=>translateUiText(text,uiLocale);
 const yandexKey=import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY||'';
 const googleKey=import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY||'';
 const googleMapId=import.meta.env.PUBLIC_GOOGLE_MAP_ID||'';
 const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN||'https://img.adatours.ru';
 ---
-<section class="search-places-map" aria-label="Найденные места на карте"
+<section class="search-places-map" aria-label={t('Найденные места на карте')}
   data-search-places-map data-yandex-key={yandexKey}
   data-google-key={googleKey} data-google-map-id={googleMapId}
   data-geo-url={withBase('/search-geo-places.json')}
   data-media-origin={mediaOrigin} hidden>
   <div class="search-places-map__canvas" data-search-map-canvas
-    role="group" aria-label="Карта результатов поиска"></div>
+    role="group" aria-label={t('Карта результатов поиска')}></div>
   <p class="search-places-map__status" data-search-map-status aria-live="polite">
-    Введите хотя бы 2 символа, чтобы увидеть места на карте.
+    {t('Введите хотя бы 2 символа, чтобы увидеть места на карте.')}
   </p>
   <article class="search-places-map__card" data-search-map-card hidden>
     <img data-search-map-photo alt="" loading="eager" hidden />
@@ -21,10 +24,10 @@ const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN
       <div class="search-places-map__card-heading">
         <h3 data-search-map-title></h3>
         <button type="button" class="search-places-map__close"
-          data-search-map-card-close aria-label="Закрыть описание места">×</button>
+          data-search-map-card-close aria-label={t('Закрыть описание места')}>×</button>
       </div>
       <p data-search-map-description></p>
-      <a href="#" data-search-map-link>Подробнее о месте →</a>
+      <a href="#" data-search-map-link>{t('Подробнее о месте')} →</a>
     </div>
   </article>
 </section>
@@ -108,3 +111,4 @@ const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN
     .search-places-map__card h3{font-size:18px}
   }
 </style>
+

@@ -3,8 +3,11 @@
 import {indexSearchGeoPlaces,searchGeoPoints}
   from '../lib/search-geo-place-matches.mjs';
 import {loadProviderScript} from './geo-map-client.mjs';
+import {translateUiText} from '../lib/i18n/shared-ui-locale.mjs';
 
 export function createSearchPlacesMap(root) {
+  const locale=document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
+  const t=text=>translateUiText(text,locale);
   const canvas=root.querySelector('[data-search-map-canvas]');
   const status=root.querySelector('[data-search-map-status]');
   const card=root.querySelector('[data-search-map-card]');
@@ -19,7 +22,7 @@ export function createSearchPlacesMap(root) {
   const DEFAULT_CENTER=[-62,-15];
   const showStatus=message=>{
     if(!status||!active)return;
-    status.textContent=message;status.hidden=false;
+    status.textContent=t(message);status.hidden=false;
   };
   const hideCard=()=>{
     ++photoRequestId;
@@ -65,7 +68,7 @@ export function createSearchPlacesMap(root) {
     const button=document.createElement('button');
     button.type='button';button.className='search-places-map__pin';
     button.textContent=String(point.position);button.title=point.name;
-    button.setAttribute('aria-label',point.name+': показать место');
+    button.setAttribute('aria-label',t(point.name+': показать место'));
     button.addEventListener('click',e=>{
       e.preventDefault();e.stopPropagation();onSelect(point);
     });
@@ -160,3 +163,4 @@ export function createSearchPlacesMap(root) {
     suspend(){++generation;redraw([]);hideCard();},
   };
 }
+

@@ -98,6 +98,16 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
   for(const key of ['data-href','data-root-href','data-current-root-href']){
    const href=get(n,key);if(href?.startsWith('/')&&!href.startsWith('//'))set(n,key,linkTo(href));
   }
+  // Pop-up links are assigned from the same canonical route-map JSON at
+  // runtime. Rebase only hrefs, preserving shared coordinates/media/data.
+  const encoded=get(n,'data-geo-map-payload');
+  if(encoded!==null){
+   let payload;
+   try{payload=JSON.parse(encoded)}catch{fail('Invalid route-map payload '+route)}
+   if(!Array.isArray(payload?.points))fail('Missing route-map points '+route);
+   for(const point of payload.points)if(typeof point?.href==='string')point.href=linkTo(point.href);
+   set(n,'data-geo-map-payload',JSON.stringify(payload));
+  }
  }
  const out=serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
  if(!(out.includes('data-ada-ru-fallback')||out.includes('data-ada-en-content'))||!out.includes(ROBOTS))fail('Unsafe transformed output');

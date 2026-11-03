@@ -102,8 +102,8 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 ---
 
 <BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
-  title={seoDestinationTitle(d.name,d.countryId,relatedExcursions.length,allRelatedTourEntries.length)}
-  description={seoRelatedToursDescription(`Достопримечательности и экскурсии: ${d.name}. ${d.summary}`,allRelatedTourEntries.length,'destination')}
+  title={d._i18n ? d.name : seoDestinationTitle(d.name,d.countryId,relatedExcursions.length,allRelatedTourEntries.length)}
+  description={d._i18n ? d.summary : seoRelatedToursDescription(`Достопримечательности и экскурсии: ${d.name}. ${d.summary}`,allRelatedTourEntries.length,'destination')}
   image={d.hero?.src}
   canonical={destinationPath(d)}
   pageSchema={destinationSchema}

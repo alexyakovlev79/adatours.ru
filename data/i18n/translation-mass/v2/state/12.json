@@ -53,199 +53,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "8280ea16f03633b353a634dc2a7cb4526f3cd9ee0228aa0a82b91493d85d733a",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f4e636b296c4",
-        "token": "ada-en-f4e636b296c4-20261104",
-        "claimedAt": "2026-11-03T22:01:33.948Z",
-        "expiresAt": "2026-11-03T23:31:33.948Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f4e636b296c4-001-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f4e636b296c4",
-        "token": "ada-en-f4e636b296c4-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b002",
-          "stableId": "tour_argentina_experience_6_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "8280ea16f03633b353a634dc2a7cb4526f3cd9ee0228aa0a82b91493d85d733a",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:baf4a32c564902b5:2",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p2",
-                    "textSha256": "95d2134517549c3c7715366dbbdf69cc245e22b9aa67e386c8f661f546427641"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact Buenos Aires destination from the Word route heading, excluding duration."
-              }
-            },
-            {
-              "blockId": "tour:included:44843be7ebf5c256",
-              "field": "included",
-              "sourceTextSha256": "cee6b50e18c29c84381ae169f9dfec2797704d7cf18ad434ecab1cad4c0b5b53",
-              "text": "Transfer IN (airport–hotel) in Buenos Aires with English-speaking guide",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p31",
-                    "textSha256": "d21c37154cbe6e18bcd21e225c040ca568fd09d225475ab8ed196ab7357a08d1"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract this exact list item from its OOXML paragraph and remove only the bullet marker."
-              }
-            },
-            {
-              "blockId": "tour:included:da230fb3506161e1",
-              "field": "included",
-              "sourceTextSha256": "506b7e47eb165f63051073d8c11bfd252972ea91cecadea2d32eea7b8f9c583a",
-              "text": "Transfer OUT (hotel–airport) in Buenos Aires with English-speaking guide",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p31",
-                    "textSha256": "d21c37154cbe6e18bcd21e225c040ca568fd09d225475ab8ed196ab7357a08d1"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract this exact list item from its OOXML paragraph and remove only the bullet marker."
-              }
-            },
-            {
-              "blockId": "tour:included:151dd7b0024b2d7e",
-              "field": "included",
-              "sourceTextSha256": "f438f8e97e2b079645371590aee230ffc0489acddeb17084db104225d02762f5",
-              "text": "All transfers required for tours and activities as per itinerary",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p31",
-                    "textSha256": "d21c37154cbe6e18bcd21e225c040ca568fd09d225475ab8ed196ab7357a08d1"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract this exact list item from its OOXML paragraph and remove only the bullet marker."
-              }
-            },
-            {
-              "blockId": "tour:included:f64e530e28a85e7c",
-              "field": "included",
-              "sourceTextSha256": "60e5616f3b3c53cbc92e9238fbe6fd3b974228890c608dcff781c2033d203ba1",
-              "text": "Half-day Buenos Aires City Tour (tickets included), with English-speaking guide",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p32",
-                    "textSha256": "9c54f921c2cba6eab3f8afbbfd938e75d2152452fb7244e45fbb76455c82d86f"
-                  },
-                  {
-                    "ref": "word/document.xml:p33",
-                    "textSha256": "bd65c41881bd5f9769d17aa5f4e22167f89c6c140333cd37d28dc7a9eeec980b"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Combine the exact activity list item with its governing English-speaking guide heading; remove the bullet marker."
-              }
-            },
-            {
-              "blockId": "tour:included:f2c896fe3f8ee32a",
-              "field": "included",
-              "sourceTextSha256": "4d291a14debb2a3596b44025188ac79d87009c3bb54c3ff098ee6182aad56fac",
-              "text": "Tango show with dinner at Michelangelo (transfers included)",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p33",
-                    "textSha256": "bd65c41881bd5f9769d17aa5f4e22167f89c6c140333cd37d28dc7a9eeec980b"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract this exact list item from its OOXML paragraph and remove only the bullet marker."
-              }
-            },
-            {
-              "blockId": "tour:included:7a45dc0fb156adec",
-              "field": "included",
-              "sourceTextSha256": "e3795d7f87dd74b5c288124156fd2e95be69c4bc4d7affbdfd30a6c4aaae9a20",
-              "text": "Half-day Tigre & Paraná Delta excursion (tickets included), with English-speaking guide",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p32",
-                    "textSha256": "9c54f921c2cba6eab3f8afbbfd938e75d2152452fb7244e45fbb76455c82d86f"
-                  },
-                  {
-                    "ref": "word/document.xml:p33",
-                    "textSha256": "bd65c41881bd5f9769d17aa5f4e22167f89c6c140333cd37d28dc7a9eeec980b"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Combine the exact activity list item with its governing English-speaking guide heading; remove the bullet marker."
-              }
-            },
-            {
-              "blockId": "tour:included:081d49a756864056",
-              "field": "included",
-              "sourceTextSha256": "6a5139457b7a5dfa04ff65ab3be3539e975c6aad3cc9f26850a94c198ee1831a",
-              "text": "Full-day excursion to Colonia del Sacramento, Uruguay (ferry tickets and transfers included), with English-speaking guide",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p32",
-                    "textSha256": "9c54f921c2cba6eab3f8afbbfd938e75d2152452fb7244e45fbb76455c82d86f"
-                  },
-                  {
-                    "ref": "word/document.xml:p33",
-                    "textSha256": "bd65c41881bd5f9769d17aa5f4e22167f89c6c140333cd37d28dc7a9eeec980b"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Combine the exact activity list item with its governing English-speaking guide heading; remove the bullet marker."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:02:43.250Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f4e636b296c4-001",
+        "blobSha": "54ee9a881ddb2e455c5750dc98d5d78782ef82dc",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_experience_6_days_b002/ada-en-f4e636b296c4-001.json",
+        "at": "2026-11-03T22:15:14.312Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

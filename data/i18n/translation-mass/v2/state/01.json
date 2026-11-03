@@ -355,7 +355,82 @@
         "claimedAt": "2026-11-03T23:05:22.253Z",
         "expiresAt": "2026-11-04T00:35:22.253Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f4e636b296c4-006-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f4e636b296c4",
+        "token": "ada-en-f4e636b296c4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b010",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "ba1a6bbe8e73eaafb22d1ccfb1991d2b5262155c84a988a59655ff4c35249ef4",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:5876550dbf14d84f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+              "text": "Praia do Forte",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p125",
+                    "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:0eee95d2d8b88e78",
+              "field": "media.alt",
+              "sourceTextSha256": "f2ae2beb0bd3590d17e6f68edd9eda439e064c4f4c1525721451bc6b23603071",
+              "text": "A sea turtle in a clear pool at the turtle conservation centre in Praia do Forte, Bahia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word has no corresponding exact image alt/hover caption; translate only the existing RU caption, without changing media."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:0bf7b5a64d202afa",
+              "field": "media.hover",
+              "sourceTextSha256": "bd2b667f2c7690a5e7dc3747bce5248ad857269e71dc17828d150b59ff1ce769",
+              "text": "Praia do Forte in Bahia: a turtle in the turquoise water of a pool",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word has no corresponding exact image alt/hover caption; translate only the existing RU caption, without changing media."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+              "text": "Praia do Forte",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p125",
+                    "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:06:10.346Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

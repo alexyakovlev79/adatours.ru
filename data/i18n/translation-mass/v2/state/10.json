@@ -76,7 +76,77 @@
         "claimedAt": "2026-11-03T21:58:28.683Z",
         "expiresAt": "2026-11-03T23:28:28.683Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-868ef48d-04-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-868ef48df4c8-20261104",
+        "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b013",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "08700c2cc0881b287b7ee3f4bc7819dee88aa60d101b6973a9e0194f883ecd82",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:0c9152284b018617",
+              "field": "media.alt",
+              "sourceTextSha256": "9c4efd7587ef7f8b24a47a7220bf18265fa28a02106ab39a1f0795d4a7a48513",
+              "text": "High-rise buildings in Lima above the rocky Pacific coast at sunset, Peru",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The selected Word contains no matching image-specific alt text; translated the current RU description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:5141f6f375892822",
+              "field": "media.hover",
+              "sourceTextSha256": "c34640dc62e6d98153320f3955bb18b54c1524fb5130a0f256ebf08cc895b958",
+              "text": "Lima: ocean waves below the high urban cliffs in the evening light",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The selected Word contains no matching image-hover caption; translated the current RU description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "41ca43edd35560018a5de9c73a8ab2f20ceba9899018d2e64f3542845a2a9bd3",
+              "text": "Cusco & Sacsayhuamán",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p132",
+                    "textSha256": "9056e7c3f4de1c015755fd5a398024eb1c7a33ca0b29a5cc692ff42962af37b1"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "d5df448654825bd7364c4481a755edc101170d8980edd066a8ea2496801a4364",
+              "text": "After breakfast, transfer to the airport for your flight to Cusco. On arrival, meet your representative and transfer to your hotel.\n\nCusco is at an altitude of around 3,400 m, so allow time to acclimatise after your flight.\n\nIn the afternoon, visit the Archaeological Park of Sacsayhuamán with an English-speaking guide.\n\nFirst, visit Tambomachay, known for its sacred fountains. Continue to Q’enqo, the ancient Temple of the Puma, with a stone sacrificial altar in the lower part of the complex.\n\nThe main stop is Sacsayhuamán. Its stone blocks reach around 4 m in height and weigh tens of tonnes. They are fitted together with remarkable precision, without mortar. From the open terraces, you can see Cusco.\n\nThe last stop is Puka Pukara, a former watchtower.\n\nOvernight in Cusco.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "Word paragraphs 133–134 cover the route but omit RU-specific acclimatisation, 4-metre stone blocks and their weight; retained those current RU details in an attributed translation. Service language follows the owner's 03.11.2026 English adaptation."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:59:10.228Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

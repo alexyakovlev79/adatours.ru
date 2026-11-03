@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2381,
-    "leased": 5,
-    "review": 24,
+    "leased": 4,
+    "review": 25,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 0,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2381,
-      "leased": 5,
-      "review": 24,
+      "leased": 4,
+      "review": 25,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 0,
@@ -330,8 +330,8 @@
         "word_2027": {
           "held": 0,
           "queued": 77,
-          "leased": 1,
-          "review": 0,
+          "leased": 0,
+          "review": 1,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -361,7 +361,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-03T22:42:46.661Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "01": {
@@ -1003,12 +1003,6 @@
       "expiresAt": "2026-11-03T22:42:26.607Z",
       "generation": 1
     },
-    "ada-en-20261104-07fb7ebf72b9": {
-      "jobId": "en:bulk:tour:tour_argentina_best_14_days:b010",
-      "token": "bbe17f6c889c405385518d328159f001",
-      "expiresAt": "2026-11-03T22:42:46.661Z",
-      "generation": 1
-    },
     "ada-en-20261104-k77x2vp9": {
       "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b004",
       "token": "enlease-20261104-c41mns60",
@@ -1144,7 +1138,9 @@
       "jobIds": [
         "en:bulk:tour:tour_argentina_best_14_days:b010"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_argentina_best_14_days:b010"
+      ]
     },
     "ada-en-20261104-k77x2vp9": {
       "token": "enlease-20261104-c41mns60",
@@ -1155,5 +1151,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T21:14:28.364Z"
+  "updatedAt": "2026-11-03T21:14:57.002Z"
 }

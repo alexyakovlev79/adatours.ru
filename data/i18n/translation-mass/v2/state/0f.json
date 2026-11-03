@@ -250,7 +250,7 @@
         "expiresAt": "2026-11-04T00:59:02.131Z"
       },
       "checkpoint": {
-        "id": "ada-en-a104-da0b8743c7e9:tour_colombia_cano_cristales_8_days_b004:cp4",
+        "id": "ada-en-a104-da0b8743c7e9:tour_colombia_cano_cristales_8_days_b004:cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-a104-da0b8743c7e9",
         "token": "c0d02798bb754ec6a8504ed642bc5ea4",
@@ -343,13 +343,75 @@
                   "transformation": "contextual_label",
                   "rationale": "Extracts the complete trail-allocation condition from the mixed Word practical-information paragraph for its dedicated note."
                 }
+              },
+              {
+                "blockId": "tour:note:8db68ed9d2e81de4",
+                "field": "note",
+                "sourceTextSha256": "b9237a0875751c89db4d6d6366f573b133be09f6011b0ed20304346d57c9a865",
+                "text": "The Gold Museum is closed on Mondays, and the Casa de la Moneda and Botero Donation on Tuesdays.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                  "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p68",
+                      "textSha256": "ac52652b425f1fcad47a4bf9967dae34c9f60d1981276c3e9c5c576f4ff9e983"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the Word paragraph final museum-closing note without repeating the full city-tour itinerary."
+                }
+              },
+              {
+                "blockId": "tour:note:b8ce6c351faebb75",
+                "field": "note",
+                "sourceTextSha256": "5bee1820944a3f9824e5077909b32a6de89e9d3fdd26300ee34ebc475f417fe4",
+                "text": "Chicaque: entry hours under this programme are 08:00–16:30; we recommend an early departure. Uneven trails are not suitable for people with reduced mobility.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-a104-da0b8743c7e9",
+                  "wordAbsenceReason": "The Word Chicaque paragraph confirms the uneven-terrain mobility restriction but omits the RU entry hours08:00–16:30 and early-departure recommendation; translated the complete current RU practical note."
+                }
+              },
+              {
+                "blockId": "tour:note:8f4296826d213a37",
+                "field": "note",
+                "sourceTextSha256": "b12f0e3b92f53b726b9f62e6f35edbaaf2129e6f5bda74028b2dc42b81b8d5de",
+                "text": "La Macarena has no currency exchange facilities, so bring Colombian pesos. The mobile operator is Claro. Local banking options include Banco Agrario and a Bancolombia ATM, which may run out of cash during the tourist season.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-a104-da0b8743c7e9",
+                  "wordAbsenceReason": "Word paragraph58 confirms the lack of currency exchange and the Claro network but omits Banco Agrario, the Bancolombia ATM and seasonal cash shortages; translated the complete current RU note in direct company voice."
+                }
+              },
+              {
+                "blockId": "tour:note:1b36ea14ed066cec",
+                "field": "note",
+                "sourceTextSha256": "010f32fb569e530cdc40b312b4222ef2b54304e94d7ffea603d9ea28bbaba443",
+                "text": "Accommodation at the lodge is basic but comfortable, clean and quiet.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                  "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p58",
+                      "textSha256": "c1cfda5e5af592d5695ec0eaf5b5d21d4d08f6b08032d09658b5252536dcb45f"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the exact accommodation sentence from the Word practical-information paragraph for the dedicated lodging note."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "submissionId": "ada-en-a104-da0b8743c7e9:tour_colombia_cano_cristales_8_days_b004"
         },
-        "at": "2026-11-03T23:30:20.492Z"
+        "at": "2026-11-03T23:30:24.568Z"
       },
       "submission": null,
       "review": null,

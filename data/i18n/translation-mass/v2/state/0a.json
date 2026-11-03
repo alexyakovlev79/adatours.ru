@@ -18,182 +18,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "24f88dfd28973b4c44503a8145ce920c1001c0650709f7db254935df16d66146",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-935f-translator",
-        "token": "ada-en-935f-bxatc0v89fh-mw180til",
-        "claimedAt": "2026-11-03T21:54:50.346Z",
-        "expiresAt": "2026-11-03T23:24:50.346Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-b005-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-935f-translator",
-        "token": "ada-en-935f-bxatc0v89fh-mw180til",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b005",
-          "stableId": "tour_argentina_agricultural_11_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "24f88dfd28973b4c44503a8145ce920c1001c0650709f7db254935df16d66146",
-          "blocks": [
-            {
-              "blockId": "tour:highlight_text:1d9336a9e61c110f",
-              "field": "highlight.text",
-              "sourceTextSha256": "f65e4098e81fac742501b3e6db02340bfb248dfa3059db088ace5da452d75f21",
-              "text": "Two English-speaking coordinators accompany you throughout the journey. Technical meetings are interpreted by a specialist with extensive experience in agriculture.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-935f-translator",
-                "wordAbsenceReason": "Word paragraphs 132 and 135 contain separate services, not this combined highlight. Translate the current RU highlight and apply the owner's 03 November English service-language adaptation; do not claim word_exact."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:65b59280159fca8c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "26d9080ae942b4e118b8272967916c70fccb5b345221c3fc82b76b256a4062b3",
-              "text": "24 November 2026",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p4",
-                    "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
-                  },
-                  {
-                    "ref": "word/document.xml#p26",
-                    "textSha256": "5fe74c9c925600b47520ecf7b3a57c0352207c5d1101acd07f67989efaa145c6"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Expand the day/month itinerary label using the exact programme year in Word paragraph 4."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "005b52754bd3cc76c51c99eaaa633b7e0a6e14fe770acf441a9cc2368e0a3194",
-              "text": "Evening arrival in Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p28",
-                    "textSha256": "e30ae1c264c9c8e4fc8d398ee4fec4083f1d61c9552e8c71500ad2a3648b6cd8"
-                  },
-                  {
-                    "ref": "word/document.xml#p29",
-                    "textSha256": "a1329f4b7eaccf31d4f34150b1402578c80d18ef4d54567d5507c52aafda1377"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose the itinerary heading from the stated 22:25 arrival and Buenos Aires arrival paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:086c00a2bb054f75",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p29",
-                    "textSha256": "a1329f4b7eaccf31d4f34150b1402578c80d18ef4d54567d5507c52aafda1377"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:306ea45b6ed1038b",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "91eb8daab5e14b7585e7a4dc5f05663efe476b505ec5c1eda4240d8bea7d3ff3",
-              "text": "We meet you after your evening arrival in Buenos Aires, arrange your hotel transfer and late check-in. You spend the first night in the capital before setting off for Argentina's agricultural regions.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-935f-translator",
-                "wordAbsenceReason": "Word paragraphs 28–31 contain the timetable and transfer, but not this introductory paragraph; translate the current RU without adding facts."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:f55489fd6f05903d",
-              "field": "media.alt",
-              "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
-              "text": "Buenos Aires, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-935f-translator",
-                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:e1e9c81f5e1160a1",
-              "field": "itinerary.label",
-              "sourceTextSha256": "694fc01f405e67c41ef15f73f2d58563a93fb32c179232e74d5b0053808d2fb6",
-              "text": "25 November 2026",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p4",
-                    "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
-                  },
-                  {
-                    "ref": "word/document.xml#p32",
-                    "textSha256": "572b575ab414432d0f658fb7d1e45d8db9a3f7c92e62f0ce3671b76436771469"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Expand the day/month itinerary label using the exact programme year in Word paragraph 4."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-              "field": "itinerary.title",
-              "sourceTextSha256": "fed7e1c8f21c92d64a2b8a41a7b9437dd374c0c4b0f3de4e68754aa29b13b76f",
-              "text": "Pergamino: ACA and INTA agricultural research",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p10",
-                    "textSha256": "35d73c0ef1f0b6c8fa6ea3b9a18a915c15bb582aa033b11976152ef6b0b69b9b"
-                  },
-                  {
-                    "ref": "word/document.xml#p41",
-                    "textSha256": "147baf6f1b931cb077ff9e4175a8cc6103455c3833da2963c14acdef95f86ea5"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose a concise heading for the same Pergamino ACA and INTA programme, preserving the named institutions."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:55:09.523Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-935f-4",
+        "blobSha": "66fc6f95f4e4319f559d78714d3ceacfa0275fa6",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_agricultural_11_days_b005/sub-935f-4.json",
+        "at": "2026-11-03T21:55:13.352Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

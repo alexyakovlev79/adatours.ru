@@ -1,0 +1,145 @@
+{
+  "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b008",
+  "stableId": "tour_colombia_highlights_7_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "830c4685de05c2bf491def9993d7f8621ceee149f1c32123ac7fe1a68eef4392",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:51ab5b547e975bc8",
+      "field": "media.hover",
+      "sourceTextSha256": "9b40af4a7959f735b2eb13b2d7d8e45241a04278f7520cd96afae0fb1da60b28",
+      "text": "Guatapé, Colombia: green islets amid turquoise water",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-33c6be7dc0f7453f",
+        "wordAbsenceReason": "The verified Word describes Guatapé but has no matching image hover caption; translate this RU visual description without inferring anything from the photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "034377a984ecbe9891b12f5271bbfcc1f01990c401353cdc8a4982fdb9ae7c75",
+      "text": "Medellín → Cartagena: the colonial city and fortress",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p100",
+            "textSha256": "12d963353bebdce6dfc993ab6103f626241f352f3e06cf6835e49af6843b00cd"
+          },
+          {
+            "ref": "word/document.xml:p103",
+            "textSha256": "5f9340e96138a5166959739f486cddd798c367938338b853d6dc39ca20adc12f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the existing day heading from the verified Medellín–Cartagena flight, colonial city and San Felipe de Barajas Castle."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "67d0a0b92400e7cadd501ae1e303152ee4c3c1b07a024eff94a71f9878ab5ee3",
+      "text": "Breakfast at the hotel. Private transfer to the airport with your driver for your flight to Cartagena de Indias. The domestic flight is not included. Upon arrival at Rafael Núñez International Airport, you will be welcomed by your private English-speaking guide, who will accompany you throughout your stay in Cartagena. In the afternoon, visit the colonial city, La Popa Monastery and San Felipe de Barajas Castle. The walking route through the historic centre to Las Bóvedas is described below. Return to the hotel. Overnight in Cartagena.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-33c6be7dc0f7453f",
+        "wordAbsenceReason": "Word paragraphs 100–103 contain the complete Cartagena day, including the detailed walking tour owned by canonical excursion_source_siti_tur_po_kartakhene. Word has no separate connective Tour overview matching the current RU split. Translate that RU overview, retaining Word names and guide language, without duplicating the independent excursion.",
+        "wordEvidence": {
+          "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+          "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml:p100",
+              "textSha256": "12d963353bebdce6dfc993ab6103f626241f352f3e06cf6835e49af6843b00cd"
+            },
+            {
+              "ref": "word/document.xml:p101",
+              "textSha256": "5e3eceea27a1d3fa9e69d08e84d563507c0dca21e0394aae8aed37df318120f7"
+            },
+            {
+              "ref": "word/document.xml:p103",
+              "textSha256": "5f9340e96138a5166959739f486cddd798c367938338b853d6dc39ca20adc12f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:236cbd9627418ae1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:83478908471f1b24",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+      "text": "Cartagena",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:bbcd913feb9912f5",
+      "field": "media.alt",
+      "sourceTextSha256": "b542111453e27cb3681135041540356f8314a91ce0dc56292672e6e5a43634e5",
+      "text": "A broad cobbled square with arcaded galleries and palm trees in Cartagena, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-33c6be7dc0f7453f",
+        "wordAbsenceReason": "No equivalent image alt description exists in the verified Word; translate the exact existing RU caption without changing or interpreting the photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:15ae13e031fe2a88",
+      "field": "media.hover",
+      "sourceTextSha256": "b4b0841f317e82e3b1a03b6ddceb655abc51bfa29dda10afb408f334b84897ca",
+      "text": "Cartagena: a square in front of a long arcaded building",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-33c6be7dc0f7453f",
+        "wordAbsenceReason": "The verified Word has itinerary descriptions but no matching hover caption for this image; translate the RU caption as provided."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a47bbd169a4d6f96e26254e0fd18ddfb508c384834a1921103ef9cf3273f80e5",
+      "text": "Rosario Islands: a day at San Pedro de Majagua",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-33c6be7dc0f7453f",
+        "wordAbsenceReason": "The Word labels the day as Isla Majagua and A day in the Caribbean but does not supply this specific San Pedro de Majagua day heading. Translate the current RU heading, retaining the existing named resort and Rosario Islands."
+      }
+    }
+  ]
+}

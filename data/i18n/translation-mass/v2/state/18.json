@@ -72,7 +72,86 @@
         "claimedAt": "2026-11-03T22:06:53.025Z",
         "expiresAt": "2026-11-03T23:36:53.025Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-b014-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-935f-translator",
+        "token": "ada-en-935f-bxatc0v89fh-mw180til",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b014",
+          "stableId": "tour_argentina_grand_tour_15_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "3412002d953e02a50b7739a3778ec4399ef59407cc634d1a7a7ac42b96eae665",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:720252177b016d6d",
+              "field": "media.alt",
+              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+              "text": "El Calafate",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+              "field": "itinerary.title",
+              "sourceTextSha256": "b87c150eb4050fec267f540aaac1a09eae4cb6cf6f739cbb2e5f24ed797913de",
+              "text": "Perito Moreno Glacier",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p49",
+                    "textSha256": "8329cc4bf2b9fe9038f6d67d1ec30746563a4384133d43aa4c1fba5450c2860a"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:173cf987634ed90a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "f75a23941024b47f29d3cc03d8aa9517426bfe961aa96e64265aed2aca08109f",
+              "text": "An excursion to the Perito Moreno Glacier with an English-speaking guide, admission to Los Glaciares National Park and a boat safari in a shared group. Overnight at EOLO, Corner Room.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "Word paragraph 49 describes the excursion but not this condensed block with overnight accommodation; translate the complete current RU, applying the owner's English service-language adaptation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:294cc25a4eafe564",
+              "field": "itinerary.label",
+              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+              "text": "El Calafate",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p44",
+                    "textSha256": "6c779242f5117a6e16a501282e835ecab047606115add4d6157e6327af967dad"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:07:40.118Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

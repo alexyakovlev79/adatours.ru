@@ -210,7 +210,129 @@
         "claimedAt": "2026-11-03T23:08:31.604Z",
         "expiresAt": "2026-11-04T00:38:31.604Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-4406908c67fe-1104-p9-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-4406908c67fe-1104",
+        "token": "ada-en-token-4406908c67fe",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b011",
+            "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "dbf1b8bd062b0d88365ab73cf78fcbdf0def62f71bd7310f9f9391e9fe8a0c49",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_title:f76823f601bc2496",
+                "field": "itinerary.title",
+                "sourceTextSha256": "fd3d1e8dab2f10b5df054891423bd6c1eb20ab61b2616845262f3872991f70b2",
+                "text": "8 January 2027: Santiago and an optional visit to the Maipo Valley",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The current RU heading includes Maipo and its optional status, absent as a day heading in Word.",
+                  "wordEvidence": {
+                    "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                    "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p111",
+                        "textSha256": "5198481239d1036120783a7ca13d837ed5be9a9dea4b62b9209792117f0a3af5"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+                "field": "itinerary.text",
+                "sourceTextSha256": "fc85329c4b91ec3ffdcfdc7fafa39766bd806726f60cb2c4d650ee93ead5e24b",
+                "text": "Breakfast at the hotel. Join a group city tour of Santiago with an English-speaking guide, visiting the historic centre, Santa Lucía Hill and modern neighbourhoods.\n\nFor an additional charge, you can visit wineries in the Maipo Valley with a tasting. The cost is $230 per person, with a minimum of 2 participants.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word day112 does not include the current RU Maipo option price of $230 or the two-participant minimum. Translate the complete current RU block retaining these existing terms and apply English service-language rule.",
+                  "wordEvidence": {
+                    "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                    "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p112",
+                        "textSha256": "185d67ce26587d7e6754447ff924883cc7dc5b5f91f33df6e05ff6d9a86fe5d5"
+                      },
+                      {
+                        "ref": "word/document.xml:p115",
+                        "textSha256": "ceaafb26073aa7ff3188a12dcac7594bb8f9e5fe9d6036b7f3135802b6bb357a"
+                      },
+                      {
+                        "ref": "word/document.xml:p116",
+                        "textSha256": "207c535960a24c55d6c6db8466c4b3f6919042f16ea1877d68d77c130f9b0d23"
+                      },
+                      {
+                        "ref": "word/document.xml:p117",
+                        "textSha256": "ee1f63ff5765ba6dcecd135dede5a24b2e31dcfbadac0f31652582a077da87d8"
+                      },
+                      {
+                        "ref": "word/document.xml:p186",
+                        "textSha256": "53857d510d2df1d5e75af02f48fb40b8483b1a08d07f2ab62ad31e8c8cb62e88"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:7777e8ab1e54532c",
+                "field": "itinerary.label",
+                "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf",
+                "text": "Santiago",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                  "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p148",
+                      "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:7082f52c114bbb59",
+                "field": "itinerary.label",
+                "sourceTextSha256": "330e123d73e592ba460a34bbea90dfb2b996f50878ce5b7931b1765e3ab00f53",
+                "text": "Maipo Valley (optional)",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word option names Santa Rita Vineyard rather than this current RU Maipo Valley location label.",
+                  "wordEvidence": {
+                    "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                    "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p116",
+                        "textSha256": "207c535960a24c55d6c6db8466c4b3f6919042f16ea1877d68d77c130f9b0d23"
+                      },
+                      {
+                        "ref": "word/document.xml:p117",
+                        "textSha256": "ee1f63ff5765ba6dcecd135dede5a24b2e31dcfbadac0f31652582a077da87d8"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T23:09:24.348Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

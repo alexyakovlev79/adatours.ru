@@ -98,7 +98,84 @@
         "claimedAt": "2026-11-03T21:56:56.549Z",
         "expiresAt": "2026-11-03T23:26:56.549Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-868ef48d-03-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-868ef48df4c8-20261104",
+        "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b010",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "69fc7fea9d5b327f9ac0adc0230414f914188daf9a93e58ec56c5e3c1105d83b",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:8e423711fb104e1d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p177",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:ea1c1c3e1ab97b9f",
+              "field": "media.alt",
+              "sourceTextSha256": "79e3fdd38bb9c0aaea79240db01c80ac4b1a80905d673de909f3af7b609a9b96",
+              "text": "Panoramic view of Iguazu Falls surrounded by forest on the Brazilian side",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The Word brochure has no image-specific alt text matching this current RU image description; translated the RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:267210dc49ea3852",
+              "field": "media.hover",
+              "sourceTextSha256": "4d98a4c7ddc2500a52e7eb885a2db8737d141aec3506927937174a4d2e6e9ac4",
+              "text": "The Brazilian side of Iguazu: waterfalls and spray in a forested gorge",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The Word brochure has no matching image-hover caption; translated the current RU caption without adding visual details."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "6de05f681f31b6aa7accc4eb9a67c6de61026c8227ec91bf8b6cbd474d340b76",
+              "text": "The Argentine side of Iguazu – Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p97",
+                    "textSha256": "4c6e7b44a941764e6ad3c845bb18f582ec867bb25932a12bbef5a4e6b254a74f"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Condenses the existing Word day heading to the established itinerary title, retaining the Argentine side and Buenos Aires transfer."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:57:47.712Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -754,7 +754,84 @@
         "claimedAt": "2026-11-03T23:28:05.724Z",
         "expiresAt": "2026-11-04T00:58:05.724Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-9457ab67-n10-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-9457ab67-20261104",
+        "token": "ada-en-token-9457ab67-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b009",
+          "stableId": "tour_source_5_stran_latinskoj_ameriki",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c2f932a4a9bb81731d9a68b9498a9e866aa7637f24fbc36e60ef27a4c50a0c87",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:2bd135e75a6d4efc",
+              "field": "media.alt",
+              "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+              "text": "Iguazu Falls and a rainbow above the river, surrounded by tropical forest, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No image-specific alt text appears in the verified Word. Translated the current RU description of the falls image."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "eefa4c79e12d85f26e721152aaa4c5fbe3f75c31a3e41af99c3da2fcb113ebf4",
+              "text": "Brazilian side of Iguazu Falls",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p79",
+                    "textSha256": "d551ef79f08a2c54293f09c50b35cdde04e4f08e9f928768a85551b7c518ef40"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the destination and side of the falls from the verified Word Day5 heading sentence."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b04d5d61d358e759",
+              "field": "itinerary.text",
+              "sourceTextSha256": "be57fa6754f998427a64fe8f27efe5d80253be0faa54cc94893e8084de65649b",
+              "text": "After breakfast, take a guided tour with an English-speaking guide.\n\nThe route follows walkways along the cascades. The falls comprise 275 streams dropping approximately 60–80 m. The name Iguazu means “big water” in Guarani.\n\nFrom the viewing platforms, you can see the calm river above the falls and the turbulent water below. Moisture hangs in the air, and rainbows appear above the gorge.\n\nOptional visits are available to the Bird Park — USD 50 per person — or the Macuco Safari — USD 130 per person. The Macuco Safari includes about 3 km through the jungle in an open vehicle with a guide, a walk down to the river and a motorboat ride to the falls.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "Word paragraphs79–80 and272–279 contain the main visit and optional services, but no exact counterpart of the current RU multi-paragraph block, including breakfast and the viewing-platform description. Translated the current RU block, retaining both prices and applying the owner-approved English guide-language adaptation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8e423711fb104e1d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p162",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:29:07.621Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

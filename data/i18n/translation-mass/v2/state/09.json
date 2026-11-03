@@ -94,7 +94,93 @@
         "claimedAt": "2026-11-03T22:04:49.656Z",
         "expiresAt": "2026-11-03T23:34:49.656Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "04dd2e-jewish-b007-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-04dd2e696333-20261104",
+        "token": "ada-en-04dd2e696333-a7f39d12",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b007",
+          "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c22d72ebd8ac9937099324551b26e65e53d81a5d0cec9f66192125aedc1ac77c",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:f335a51f9392f79b",
+              "field": "media.alt",
+              "sourceTextSha256": "bb63eef057fd22a3c980a665e5a82cf08304c7db08425fb4236287e3fc21aa9c",
+              "text": "Copacabana’s mosaic promenade and beach with palm trees in golden light, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The selected Word does not contain this photograph's alt caption; translate the frozen RU visual description without adding photographic details."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:462ec9428b244b36",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:62",
+                    "textSha256": "91f712745250e85e1c0796a68926711c5deab1204211a4d1d21567d6b8f55e0d"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Rio de Janeiro place name from the day heading, using normal place-name capitalisation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8c14609295b1c4e0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:62",
+                    "textSha256": "91f712745250e85e1c0796a68926711c5deab1204211a4d1d21567d6b8f55e0d"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Rio de Janeiro place name from the day heading, using normal place-name capitalisation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3d82f3ce11c68317",
+              "field": "itinerary.label",
+              "sourceTextSha256": "12d621777b87f0bfe306a9404f7199572a8453c779f7dc3a00231954e04ad7c4",
+              "text": "Itacuruçá",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:171",
+                    "textSha256": "b95df170c0162f585bbd756ad0c3d823686b1953ee3941c21362502653351050"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Itacuruçá village name from the tropical-islands excursion paragraph, preserving Portuguese diacritics."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:05:53.715Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

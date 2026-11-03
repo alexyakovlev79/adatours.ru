@@ -267,7 +267,82 @@
         "claimedAt": "2026-11-03T23:29:35.817Z",
         "expiresAt": "2026-11-04T00:59:35.817Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f8019ad86757-07-b007-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-translator-20261104",
+        "token": "ada-en-f8019ad86757-6c94a20bf812",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b007",
+          "stableId": "tour_brazil_recife_porto_noronha_10d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7d8606ee4b113f24cdd0d9a1140ba7da8e2373d49996169edb22980322181d10",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:2775ec1f8d2e0ac3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+              "text": "Recife",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[37]",
+                    "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cc86dc888d4e0157",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6948857dfda4a3f606faa37d8295561a1ffb5d4cdf47de03763d5d5d4c52af92",
+              "text": "Porto de Galinhas",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[43]",
+                    "textSha256": "660462991187fe099319662bccd0418970a8ad3aade279bfff8b658fa960fbc5"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:f43cd08a35cda29e",
+              "field": "media.alt",
+              "sourceTextSha256": "c112b8f6d167750e5297174dc58fffc9f3f0edaa349adc8000562a5d577a8130",
+              "text": "Boats with colourful sails in the shallow waters of Porto de Galinhas, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "Verified the complete selected Word; this specific colourful-sails photograph caption is absent, so translated the exact current RU alt/hover text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:de53326c68aba451",
+              "field": "media.hover",
+              "sourceTextSha256": "a03e728507bf30eee79a777fdfdcf3f41c13ab78f151386cf316e1b51be103df",
+              "text": "Porto de Galinhas, Brazil: bright sails over clear water",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "Verified the complete selected Word; this specific colourful-sails photograph caption is absent, so translated the exact current RU alt/hover text."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:30:41.551Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

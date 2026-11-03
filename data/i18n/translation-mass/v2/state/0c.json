@@ -121,7 +121,7 @@
         "expiresAt": "2026-11-03T23:30:10.299Z"
       },
       "checkpoint": {
-        "id": "cp-b004-4",
+        "id": "cp-b004-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-935f-translator",
         "token": "ada-en-935f-bxatc0v89fh-mw180til",
@@ -181,10 +181,65 @@
                 "runId": "ada-en-20261104-935f-translator",
                 "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
               }
+            },
+            {
+              "blockId": "tour:highlight_title:9497dcf0fd47b6e4",
+              "field": "highlight.title",
+              "sourceTextSha256": "c7d61a709bb774a23f8030189e793d2f7a1068c5f75012ce8dc35148f3f0004d",
+              "text": "Buenos Aires and tango",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p108",
+                    "textSha256": "466527da6fae99c11ac16a4459683176dc9aa5279072d678bab07229baeb7d65"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Retain the exact Word heading meaning while expressing its ampersand naturally as 'and'."
+              }
+            },
+            {
+              "blockId": "tour:highlight_text:c9ee87a90d063b32",
+              "field": "highlight.text",
+              "sourceTextSha256": "5cb4c3467bb434974aaecf67fb05e00e48075b860540b853a9b05148ac91ba79",
+              "text": "La Boca, San Telmo, Plaza de Mayo, Recoleta and Puerto Madero reveal several different sides of Argentina's capital in a single day. In the evening, the city's story continues with a tango show featuring live music, dinner and Argentine wine.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "Word paragraphs 109–110 describe the city tour and tango evening, but not this concise highlight or its Argentine-wine detail; translate the complete current RU summary."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e2d2fd3b0a1a5367",
+              "field": "media.alt",
+              "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
+              "text": "Buenos Aires, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:d3c7bc8adc5a276e",
+              "field": "highlight.title",
+              "sourceTextSha256": "1b7389cd6f5c2bce9064ea634259042278e5d94bb6259785fd252f4b7105c3f7",
+              "text": "Lima on the Pacific",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word has a Lima city section, but no corresponding Pacific-coast highlight title; translate the current RU title."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:00:45.673Z"
+        "at": "2026-11-03T22:00:49.872Z"
       },
       "submission": null,
       "review": null,

@@ -288,7 +288,7 @@
         "expiresAt": "2026-11-04T00:36:00.658Z"
       },
       "checkpoint": {
-        "id": "cp-0912f3ac-b003-4",
+        "id": "cp-0912f3ac-b003-8",
         "format": "inline-v1",
         "ownerId": "ada-en-0912f3ac98f14197",
         "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
@@ -366,10 +366,63 @@
                 "transformation": "strip_list_marker",
                 "rationale": "Removed only the leading Day 10 bullet label because the website itinerary node owns the day heading; preserved the Word departure sentences verbatim."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:a238c0623fdde42b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+              "text": "Praia do Forte",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p116",
+                    "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:eed2dc4acdf6c3a2",
+              "field": "media.alt",
+              "sourceTextSha256": "729da9e6886593ef672f60b4acf6f2df580c7b58e2fdc5299294f04ce6856e2a",
+              "text": "A paved street with low-rise houses, flowers and palm trees in Praia do Forte, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete verified Word contains itinerary prose but no corresponding website image alt/hover caption describing this exact photograph; translated the immutable RU media description without changing the image."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:77923f522ecd1746",
+              "field": "media.hover",
+              "sourceTextSha256": "c697e4d92464c6b0a87f8e158cdfc4fa175ce08a7727991b1b24d75b12038879",
+              "text": "Praia do Forte: a quiet street among palm trees and flower-covered façades",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete verified Word contains itinerary prose but no corresponding website image alt/hover caption describing this exact photograph; translated the immutable RU media description without changing the image."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "9997bd0b44f0551c0ea2f5428ea1408b82273993942f3bd91a5e01283a2bef62",
+              "text": "A shaded pavement and a busy street among the high-rise buildings of São Paulo, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete verified Word contains itinerary prose but no corresponding website image alt/hover caption describing this exact photograph; translated the immutable RU media description without changing the image."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:07:16.488Z"
+        "at": "2026-11-03T23:07:29.350Z"
       },
       "submission": null,
       "review": null,

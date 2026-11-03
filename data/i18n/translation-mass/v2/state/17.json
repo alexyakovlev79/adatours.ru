@@ -5,16 +5,11 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "blocked_external",
       "sourceFingerprint": "64915a6563a142b6ff4e806171d9ed9d3b8ad46a24ae28677ffdd5dd83c2042d",
       "generation": 1,
-      "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-b02e6f-2fa7f9c9aaf0",
-        "token": "tok-2fa7f9c9aaf049e1a7e4ad6097949a9a",
-        "claimedAt": "2026-11-03T21:12:26.607Z",
-        "expiresAt": "2026-11-03T22:42:26.607Z"
-      },
+      "attempts": 1,
+      "lease": null,
       "checkpoint": {
         "id": "sub-en-bulk-tour-tour_argentina_agricultural_11_days-b006-ada-en-b02e6f-2fa7f9c9aaf0-cp8",
         "format": "inline-v1",
@@ -218,7 +213,14 @@
       },
       "submission": null,
       "review": null,
-      "nextAttemptAt": null
+      "nextAttemptAt": null,
+      "lastFailure": {
+        "ownerId": "ada-en-b02e6f-2fa7f9c9aaf0",
+        "token": "tok-2fa7f9c9aaf049e1a7e4ad6097949a9a",
+        "generation": 1,
+        "failureStatus": "blocked_external",
+        "at": "2026-11-03T21:15:24.069Z"
+      }
     },
     {
       "jobId": "en:bulk:tour:tour_argentina_brazil_pipa_11d:b006",

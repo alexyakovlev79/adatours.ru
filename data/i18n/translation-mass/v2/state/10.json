@@ -54,7 +54,111 @@
         "claimedAt": "2026-11-03T21:50:34.650Z",
         "expiresAt": "2026-11-03T23:20:34.650Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-868ef48d-01-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-868ef48df4c8-20261104",
+        "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_best_14_days:b003",
+          "stableId": "tour_argentina_best_14_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "cd07bac4bd77d0cd8357658bbcf62eec93857b921fd98a4401d0dbfb5b2e4b4e",
+          "sourceVerification": {
+            "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+            "expectedSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+            "actualSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+            "actualModifiedTime": "2026-10-30T13:38:49.607Z",
+            "modifiedTimeDiffersButBinaryIdentical": true
+          },
+          "blocks": [
+            {
+              "blockId": "tour:included:68237873ca89915c",
+              "field": "included",
+              "sourceTextSha256": "69caf106477315d0de91bf4cafbf42f8e4441375102a7737928db53dd73df292",
+              "text": "Tango show with dinner and wine in Buenos Aires.",
+              "provenance": {
+                "kind": "word_aligned",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p69",
+                    "textSha256": "54cfa8c7cb4c0b76c311ec59907e9d7797d1b6d9c7a685c3142b4b33e87c1a28"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Condenses the verified tango dinner paragraph to the existing inclusion label, preserving dinner, wine and Buenos Aires context.",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2"
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:2e35d82dac87e01a",
+              "field": "notIncluded",
+              "sourceTextSha256": "44780746e9b4004045f57cf66842347dc3d0e03f06329e885084ff51821c527d",
+              "text": "Optional tours",
+              "provenance": {
+                "kind": "word_aligned",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p249",
+                    "textSha256": "c0d2eea779a57140dc38bf1ac96277ad88ef386777dcb0e18c1894342e3cd27b"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Removes only the dash and spacing from the standalone Word exclusion.",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2"
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:e9519820d5063f8b",
+              "field": "notIncluded",
+              "sourceTextSha256": "c4776bd4eda9d5588075b76ef4a2bb6135d0b6a9d082002ca1ff5b5c7242b0eb",
+              "text": "International and domestic flights",
+              "provenance": {
+                "kind": "word_aligned",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p246",
+                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+                  },
+                  {
+                    "ref": "word/document.xml:p247",
+                    "textSha256": "a633e20a37722435099619fee738b727158bf6143101937cf84ef20d0e2310d3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combines the two adjacent Word flight exclusions into the single existing field without changing either category.",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2"
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:5f7004d708c653a3",
+              "field": "notIncluded",
+              "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+              "text": "Tips",
+              "provenance": {
+                "kind": "word_aligned",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p248",
+                    "textSha256": "24794f5344f2549c0d4ed6f854a52adb1d37bc862de582ed39226849a44b2d3c"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Removes only the dash and spacing from the standalone Word exclusion.",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2"
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:51:52.918Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

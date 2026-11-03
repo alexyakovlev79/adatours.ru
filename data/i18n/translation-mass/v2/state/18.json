@@ -16,7 +16,7 @@
         "expiresAt": "2026-11-03T23:23:55.163Z"
       },
       "checkpoint": {
-        "id": "cp-b003-4",
+        "id": "cp-b003-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-935f-translator",
         "token": "ada-en-935f-bxatc0v89fh-mw180til",
@@ -104,10 +104,65 @@
                 "transformation": "contextual_label",
                 "rationale": "EXACT"
               }
+            },
+            {
+              "blockId": "tour:included:cbecd7f4fb9b26a5",
+              "field": "included",
+              "sourceTextSha256": "f8da6da870a796c82d363e880fa5081b78191b71e17829e4953d7998c645e21e",
+              "text": "A guided nature excursion in Ernesto Tornquist Park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word describes guided walks in Tornquist National Park in paragraph 78 but has no corresponding included-service item; translate the RU item without changing its inclusion."
+              }
+            },
+            {
+              "blockId": "tour:included:e573b20684cb98f8",
+              "field": "included",
+              "sourceTextSha256": "d3f4f2bc056a15bf110e760b8627ecdab9154592894440501a454cc411d46fe4",
+              "text": "Buenos Aires city tour and tango show",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word describes this activity in paragraphs 119–120 but has no separate included-service item; translate the current RU inclusion."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:60e4c4eb995025e9",
+              "field": "notIncluded",
+              "sourceTextSha256": "9fbf918a7a36d3015b61306320d6a90f100384869f5b8effef4122471e8d040e",
+              "text": "Spirits",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The exclusion occurs within a combined meal paragraph 131 in Word, with no separate exclusion item; translate this RU notIncluded item."
+              }
+            },
+            {
+              "blockId": "tour:note:51ca737b0bbb5891",
+              "field": "note",
+              "sourceTextSha256": "f85716ddff3d75729629fff3101cfa10c80ccfe20b3105cc5dd3b7f351bf72b5",
+              "text": "Group size: maximum 12 participants.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p129",
+                    "textSha256": "4f9cc153f931aa61dc9663264e629ee79869249c9fb73ee1371e4f6904bc5701"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "EXACT"
+              }
             }
           ]
         },
-        "at": "2026-11-03T21:54:31.961Z"
+        "at": "2026-11-03T21:54:36.190Z"
       },
       "submission": null,
       "review": null,

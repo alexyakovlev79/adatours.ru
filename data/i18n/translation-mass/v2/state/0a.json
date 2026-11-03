@@ -28,7 +28,101 @@
         "claimedAt": "2026-11-03T21:54:50.346Z",
         "expiresAt": "2026-11-03T23:24:50.346Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-b005-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-935f-translator",
+        "token": "ada-en-935f-bxatc0v89fh-mw180til",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b005",
+          "stableId": "tour_argentina_agricultural_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "24f88dfd28973b4c44503a8145ce920c1001c0650709f7db254935df16d66146",
+          "blocks": [
+            {
+              "blockId": "tour:highlight_text:1d9336a9e61c110f",
+              "field": "highlight.text",
+              "sourceTextSha256": "f65e4098e81fac742501b3e6db02340bfb248dfa3059db088ace5da452d75f21",
+              "text": "Two English-speaking coordinators accompany you throughout the journey. Technical meetings are interpreted by a specialist with extensive experience in agriculture.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "Word paragraphs 132 and 135 contain separate services, not this combined highlight. Translate the current RU highlight and apply the owner's 03 November English service-language adaptation; do not claim word_exact."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:65b59280159fca8c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "26d9080ae942b4e118b8272967916c70fccb5b345221c3fc82b76b256a4062b3",
+              "text": "24 November 2026",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p4",
+                    "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
+                  },
+                  {
+                    "ref": "word/document.xml#p26",
+                    "textSha256": "5fe74c9c925600b47520ecf7b3a57c0352207c5d1101acd07f67989efaa145c6"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Expand the day/month itinerary label using the exact programme year in Word paragraph 4."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "005b52754bd3cc76c51c99eaaa633b7e0a6e14fe770acf441a9cc2368e0a3194",
+              "text": "Evening arrival in Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p28",
+                    "textSha256": "e30ae1c264c9c8e4fc8d398ee4fec4083f1d61c9552e8c71500ad2a3648b6cd8"
+                  },
+                  {
+                    "ref": "word/document.xml#p29",
+                    "textSha256": "a1329f4b7eaccf31d4f34150b1402578c80d18ef4d54567d5507c52aafda1377"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the itinerary heading from the stated 22:25 arrival and Buenos Aires arrival paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:086c00a2bb054f75",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p29",
+                    "textSha256": "a1329f4b7eaccf31d4f34150b1402578c80d18ef4d54567d5507c52aafda1377"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:55:04.957Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

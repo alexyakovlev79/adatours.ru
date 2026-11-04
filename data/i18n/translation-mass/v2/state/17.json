@@ -390,7 +390,92 @@
         "claimedAt": "2026-11-04T06:45:53.439Z",
         "expiresAt": "2026-11-04T08:15:53.439Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_8c4fca0d2a61:b009:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_8c4fca0d2a61",
+        "token": "token_8c4fca0d2a61_c1970ba9",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b009",
+          "stableId": "tour_colombia_complete_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c09d6568531bb413a46cc517eac948fe271d219d3933cb4a5af3fe8d5eceaf07",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:d2d3c9f6d6a80a55",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+              "text": "Pereira",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p88",
+                    "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:83478908471f1b24",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+              "text": "Cartagena",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p161",
+                    "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:1e2a4e391e9d56e1",
+              "field": "media.alt",
+              "sourceTextSha256": "916bc17de99ee8f0e6ecf48fdb8b69a7f28c7568075b92788e489f2d24a1c4f2",
+              "text": "Cartagena street with red and yellow façades, wooden balconies and flowering greenery, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific alt text describing this Cartagena street photograph.",
+                "wordEvidence": {
+                  "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                  "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:02f3377974128d7e",
+              "field": "media.hover",
+              "sourceTextSha256": "8fb2150761bf603e882c41ae17287354742f4ab843029885fb973a17d14852ea",
+              "text": "Cartagena: a colonial street lined with colourful façades",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific hover text for this colonial street photograph.",
+                "wordEvidence": {
+                  "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                  "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:46:27.421Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

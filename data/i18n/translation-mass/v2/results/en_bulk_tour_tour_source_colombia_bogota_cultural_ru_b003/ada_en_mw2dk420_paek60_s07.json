@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_source_colombia_bogota_cultural_ru:b003",
+  "stableId": "tour_source_colombia_bogota_cultural_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "34d30a12f7431df0066238bace65410f177067c7b3eead7990683c89a4b2623b",
+  "blocks": [
+    {
+      "blockId": "tour:included:1909ee453fc7935a",
+      "field": "included",
+      "sourceTextSha256": "b6359a61b0f769a9890ae5a1915dfca991ab4406ae731a510c43878b1d32822f",
+      "text": "Airport – hotel – airport and internal transfers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:179",
+            "textSha256": "993dbc7f3c7dbab98562503fd50e663a40adb2bd0a2c1ea10a349044ddb25362"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone service item."
+      }
+    },
+    {
+      "blockId": "tour:included:6edc88c26cc415b6",
+      "field": "included",
+      "sourceTextSha256": "944ddf7bc07249a2272500b66cda24572d8b90090ae76dec33f322365d285128",
+      "text": "Local medical assistance card",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:185",
+            "textSha256": "9112046dcfc443e71f4deb8d035e00d113ccb1760439f0ba383e361036d36564"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the medical assistance card clause for its separate included-service field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:0a5ed96178ba57c1",
+      "field": "notIncluded",
+      "sourceTextSha256": "2f63e551168c5a8d81bb422f6cee9dcb0c4d15f588d4f734e654987de906604e",
+      "text": "Services not specified",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:189",
+            "textSha256": "c7b71ed17f3e32efe5d53917a561ffc3231021a027e28f0cb86184ce88591397"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the services clause from the combined Word services-and-meals exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:b742235ac4279690",
+      "field": "notIncluded",
+      "sourceTextSha256": "70fa0f7eb5b1a7a855efc13c691a29eef1accf530191852d3ff5f6f14b54c6be",
+      "text": "Meals not specified",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:189",
+            "textSha256": "c7b71ed17f3e32efe5d53917a561ffc3231021a027e28f0cb86184ce88591397"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the meals clause from the combined Word services-and-meals exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ed0583ecd8f702f3",
+      "field": "notIncluded",
+      "sourceTextSha256": "29522f271d69ca93b254cb3d42313cfa5520f1828a00900bdb10eea6a5837c65",
+      "text": "Voluntary gratuities (guides, drivers)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:190",
+            "textSha256": "02be8ce8df206a3f11c44a5f1b4925c006b7e9748d6c4bd967a8fd4d5ab6a7b6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:85fb77ebbf35c151",
+      "field": "notIncluded",
+      "sourceTextSha256": "4c36825dcaff5bcbc5ddd12bbe37b4e65083395ec0c92815d3d0685cb85dca92",
+      "text": "Personal expenses (telephone, laundry, room service…)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:191",
+            "textSha256": "ddbf5bc74ed43740b94c3c256e0897f692b55ac83449abc8b287ece467991502"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:39d172d81d07b053",
+      "field": "notIncluded",
+      "sourceTextSha256": "ad7252741de9ec26382f0ade8251f77b76019b9ac33d8cf8115809e1a8d406d8",
+      "text": "Visa or consular fees (when required)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:192",
+            "textSha256": "74b98b8fdbb8e971695d8bb34bd821444bbfff1d16b06a9b03a69223a73ad75b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5b217e896861cc82",
+      "field": "notIncluded",
+      "sourceTextSha256": "cc9b94ec3927ee93feaedd9bfe345169d201b189463446935169e6b30203d66d",
+      "text": "Dock taxes and other unspecified taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:193",
+            "textSha256": "47ff03a31bcb40422989d5f323b115b2686a3b3f06c8723863edb6f4b7a87d44"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone service item."
+      }
+    }
+  ]
+}

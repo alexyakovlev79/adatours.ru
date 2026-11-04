@@ -465,181 +465,22 @@
     {
       "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "38e6177b8b2bef66a761dab70bf9ca9434f9001a9500c48588ac3943966deb99",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "claimedAt": "2026-11-04T07:44:03.579Z",
-        "expiresAt": "2026-11-04T09:14:03.579Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_4c0a9bc31e22_b010_cp8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b005",
-          "stableId": "tour_sao_paulo_rio_october_11_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "38e6177b8b2bef66a761dab70bf9ca9434f9001a9500c48588ac3943966deb99",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
-              "field": "itinerary.title",
-              "sourceTextSha256": "670b2cb08cd0c601cccdeea160a2ebc55710222efdd621b23fab4b75763a43ea",
-              "text": "São Paulo's historic centre",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The exact Word p:32/p:34 is a narrative about historic São Paulo, while the service table image16.jpg names H.D Historical São Paulo 4h; there is no equivalent standalone historic-centre title. Translated the current RU title with the source city unchanged.",
-                "checkedWord": {
-                  "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                  "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                  "modifiedTime": "2026-10-01T19:32:29.213Z",
-                  "rateTable": "word/media/image16.jpg at OOXML p:68 rId80",
-                  "tableObserved": "22.10 São Paulo H.D Historical São Paulo 4h / English-speaking guide; 23.10 Day at leisure"
-                }
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "3def1c69a13d71562e31a2eb25c59bda7424f21f7c137f8e80daf3fef3fa6c02",
-              "text": "22 October: a four-hour tour of São Paulo's historic centre with an English-speaking guide is included in the programme. Breakfast at the hotel.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The selected Word p:32/p:34 provides a historical-centre narrative but no equivalent dated operational sentence. The Word service table image16.jpg explicitly confirms 22.10, historical São Paulo, four hours and an English-speaking guide; p:74 confirms daily breakfast. Translated this current RU service summary without altering the Word narrative.",
-                "checkedWord": {
-                  "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                  "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                  "modifiedTime": "2026-10-01T19:32:29.213Z",
-                  "rateTable": "word/media/image16.jpg at OOXML p:68 rId80",
-                  "tableObserved": "22.10 São Paulo H.D Historical São Paulo 4h / English-speaking guide; 23.10 Day at leisure"
-                }
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7f7c6df0a6bc1dcb",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
-              "text": "São Paulo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                "paragraphs": [
-                  {
-                    "ref": "p:7",
-                    "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:19b5dd491b2bd743",
-              "field": "media.alt",
-              "sourceTextSha256": "9997bd0b44f0551c0ea2f5428ea1408b82273993942f3bd91a5e01283a2bef62",
-              "text": "A shaded pavement and a busy street among the high-rise buildings of São Paulo, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The exact Word contains São Paulo photographs and itinerary narratives but no photo-specific alt text describing this shaded pavement and busy street among high-rise buildings; translated the current RU alt text.",
-                "checkedWord": {
-                  "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                  "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                  "modifiedTime": "2026-10-01T19:32:29.213Z",
-                  "rateTable": "word/media/image16.jpg at OOXML p:68 rId80",
-                  "tableObserved": "22.10 São Paulo H.D Historical São Paulo 4h / English-speaking guide; 23.10 Day at leisure"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_hover:d3c02aaad23b1cfb",
-              "field": "media.hover",
-              "sourceTextSha256": "43c56eddcc86cd59a19f17d476f2dbd9e396fcc37e526f44eb7fcff023caf64a",
-              "text": "São Paulo: trees, pedestrians and cars among the city's high-rises",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The exact Word has no photograph-specific hover caption of trees, pedestrians and cars by São Paulo high-rises; translated the current RU image caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b3f52ccc45acdbfe",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
-              "text": "São Paulo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                "paragraphs": [
-                  {
-                    "ref": "p:7",
-                    "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "5c76aa02e81cc385ef7142bf444455c64e4602b3b8c4eb407e6f9e72778cfa0d",
-              "text": "A free day in São Paulo",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The selected Word p:37 contains the free-day narrative and its service-table image16.jpg lists 23.10 Day at leisure, but there is no equivalent standalone itinerary heading; translated the current RU free-day title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceTextSha256": "ab2eb3c0ac559e4573669f95cfd6dd1d38cd6e1e8f027c84ec77379f95cf500f",
-              "text": "23 October.\n\nA day that belongs entirely to you. Wander the sophisticated galleries of Jardins, lose yourself in the lush greenery of Ibirapuera Park, or surrender to one of the world's great culinary scenes. A great option is the Municipal Market, home to the legendary mortadella sandwich beneath its famous stained-glass windows. In São Paulo, even the free hours taste extraordinary",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "Word p:37 supplies the entire approved English narrative verbatim, but its extracted paragraph has no date prefix; the date 23 October is present in the current RU field and confirmed by the exact Word service-table image16.jpg row 23.10 Day at leisure. Kept the Word narrative unchanged and translated only the RU date prefix; the mixed block is not labelled word_exact.",
-                "preservedWordPassages": [
-                  {
-                    "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                    "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                    "ref": "p:37",
-                    "textSha256": "cef9c83267471f219f2946bd622f2fd83be390de4a21fcf4cd317d4aa02cb22a"
-                  }
-                ],
-                "dateEvidence": "word/media/image16.jpg, OOXML p:68 rId80, row23.10"
-              }
-            }
-          ],
-          "sourceNotes": [
-            {
-              "kind": "edition_label",
-              "note": "Selected source is assigned yearFolder2027, editionYear null; its exact filename contains OUT2026. No explicit year in itinerary text; dates 20–30 October and assignments retained."
-            },
-            {
-              "kind": "commercial_table_checked",
-              "note": "Word price table is raster image16.jpg (not OOXML w:tbl). Visually read: 22 PAX basis, per-person net totals USD1642 SGL / USD1122 DBL. No price fields in this packet and no shared prices changed."
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:47:09.714Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_4c0a9bc31e22_b010",
+        "blobSha": "d522332ff18ff3177f1a99a3e07d93ae22795629",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_sao_paulo_rio_october_11_days_b005/ada_en_4c0a9bc31e22_b010.json",
+        "at": "2026-11-04T07:48:28.946Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2151,
-    "leased": 2,
+    "queued": 2150,
+    "leased": 3,
     "review": 256,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2151,
-      "leased": 2,
+      "queued": 2150,
+      "leased": 3,
       "review": 256,
       "ready": 1,
       "retryable": 0,
@@ -1105,8 +1105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 65,
-          "leased": 0,
+          "queued": 64,
+          "leased": 1,
           "review": 10,
           "ready": 1,
           "retryable": 0,
@@ -1137,7 +1137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:13:03.192Z",
       "earliestRetryAt": null
     },
     "1b": {
@@ -1353,6 +1353,12 @@
       "token": "ada_en_token_abf469133bbf_20261104",
       "expiresAt": "2026-11-04T07:12:50.785Z",
       "generation": 1
+    },
+    "ada_en_4c0a9bc31e22": {
+      "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b012",
+      "token": "ada_en_4c0a9bc31e22_token_20261104",
+      "expiresAt": "2026-11-04T07:13:03.192Z",
+      "generation": 2
     }
   },
   "ownerAssignments": {
@@ -2255,8 +2261,15 @@
         "en:bulk:tour:tour_colombia_complete_11_days:b013"
       ],
       "completedJobIds": []
+    },
+    "ada_en_4c0a9bc31e22": {
+      "token": "ada_en_4c0a9bc31e22_token_20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b012"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:42:57.130Z"
+  "updatedAt": "2026-11-04T05:43:03.192Z"
 }

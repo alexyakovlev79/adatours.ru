@@ -367,7 +367,7 @@
         "expiresAt": "2026-11-04T07:40:57.714Z"
       },
       "checkpoint": {
-        "id": "ada-en-884b0cfde5f5-s10-c4",
+        "id": "ada-en-884b0cfde5f5-s10-c8",
         "format": "inline-v1",
         "ownerId": "ada-en-884b0cfde5f5",
         "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
@@ -481,10 +481,72 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact Rano Kau volcano name from the Word excursion paragraph for the itinerary place label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:fafd9bfeb0b751d7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "b1f5ec7f4e633dc938ffc3e2158e1977ace62823de66c7cadbe3cfd91f59e048",
+              "text": "Orongo",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:39",
+                    "textSha256": "61676c2a3242d027ea8e8935e6680ea5989c527114b8e948be140e5645e53305"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:07b31541fe338e70",
+              "field": "media.alt",
+              "sourceTextSha256": "11d6fafdfcb646e37755a6efd18c6b3705f77c92edb1bdc6b78eb733f9536c69",
+              "text": "An overgrown lake inside the Rano Kau crater by the ocean coast, Easter Island, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-884b0cfde5f5",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The complete verified Word 2027 contains no equivalent photograph-specific alt or hover field; translated the current RU visual description.",
+                "wordDocumentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:35dfbcfc2c1e08c1",
+              "field": "media.hover",
+              "sourceTextSha256": "945bc6d21bdd36aef949381306d1b0bc96e4dd0b91c7aab370685acc0695aa1c",
+              "text": "Rano Kau on Easter Island: a crater lake with the ocean beyond the slope",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-884b0cfde5f5",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The complete verified Word 2027 contains no equivalent photograph-specific alt or hover field; translated the current RU visual description.",
+                "wordDocumentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:d98ad7ba8f55882b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "ada676e29ceb6215648564c4636844940795d622f07e0b917d67184e81849dc3",
+              "text": "Ahu Vaihu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:75",
+                    "textSha256": "c4377f627ebda9c58e68c2e9506af813ea7e71c2f550b316584a797d802623bb"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Ahu Vaihu platform name from the verified Word day-two itinerary paragraph for this place label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:12:25.902Z"
+        "at": "2026-11-04T06:12:30.013Z"
       },
       "submission": null,
       "review": null,

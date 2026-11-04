@@ -437,7 +437,7 @@
         "expiresAt": "2026-11-04T07:44:14.001Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-39fb6759e90b-b008-4",
+        "id": "ada-en-20261104-39fb6759e90b-b008-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-39fb6759e90b",
         "token": "tok-39fb6759e90b-20261104-a7c3",
@@ -531,10 +531,72 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the confirmed Word city name for the existing linked place label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:fa1ddaed8488e8fe",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3e4ef6d3fa13090c609d0faf6539e626f78a65ae519e2f83fe8f4ffc8f3fa8c0",
+              "text": "Xochimilco",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p48",
+                    "textSha256": "3ed291fcc8b0414b52b870bf61b3393b16d71a9c5ab92ea6362008e9ae27bc81"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the confirmed Word place name for the existing linked place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:2f725188c930b8f0",
+              "field": "media.alt",
+              "sourceTextSha256": "457e37590e7204cb69eab8a5fe1c9584789343d15f1c0dbc0ca775924e83cf8b",
+              "text": "Illuminated city streets and buildings seen from above at night, Mexico City, Mexico",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "The exact Word document has no matching photo alternative text; translate the current RU media.alt."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:605e9043cbfd0d1d",
+              "field": "media.hover",
+              "sourceTextSha256": "34602d2cc65499e125cbf042e85e748e1e72f4adeae9c13b7a2f12eaf6e7744a",
+              "text": "Mexico City, Mexico: illuminated city streets and buildings seen from above at night",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "The exact Word document has no matching photo hover caption; translate the current RU media.hover."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e93b4ceb5da5b013",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
+              "text": "Mexico City",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p14",
+                    "textSha256": "ccc06574af3ecb1da2573ebf9aeb19ba1c872c0ca5dfcff4a3289a30151d47ab"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the confirmed Word city name for the existing linked place label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:14:58.588Z"
+        "at": "2026-11-04T06:15:07.932Z"
       },
       "submission": null,
       "review": null,

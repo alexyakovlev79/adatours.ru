@@ -611,175 +611,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b011",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "44ba3c0ef98b6651660258f2edcd084b4101b239d2d3c9c7d8a04612a7093966",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_2478a2a40c1c",
-        "token": "ada_en_2478a2a40c1c_20261104",
-        "claimedAt": "2026-11-04T07:49:57.356Z",
-        "expiresAt": "2026-11-04T09:19:57.356Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_2478a2a40c1c_s09_c08",
-        "format": "inline-v1",
-        "ownerId": "ada_en_2478a2a40c1c",
-        "token": "ada_en_2478a2a40c1c_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b011",
-          "stableId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "44ba3c0ef98b6651660258f2edcd084b4101b239d2d3c9c7d8a04612a7093966",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:c35324564100f5b0",
-              "field": "media.alt",
-              "sourceTextSha256": "0a5dc33fb1757773939efea667efa37f364c0152dc7feb7b65a55c5bf83c6593",
-              "text": "Square with palm trees and a church in Calama, with dry mountains in the background, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_2478a2a40c1c_s09",
-                "wordAbsenceReason": "The checked Word has Calama in the flight itinerary but no matching image-specific alt text; translate the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:3bc0555c55482890",
-              "field": "media.hover",
-              "sourceTextSha256": "21327013d806476f15e0c54ccd6c15cac42569bcb5c153747a1441d01b6263bc",
-              "text": "Calama: a green square amid city buildings and desert slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_2478a2a40c1c_s09",
-                "wordAbsenceReason": "The checked Word has no matching image-specific hover caption; translate the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:00e84f051819d88e",
-              "field": "itinerary.label",
-              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
-              "text": "San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p161",
-                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:359c7c25395d1837",
-              "field": "itinerary.title",
-              "sourceTextSha256": "81920d80c4b218847b3b7f149fabab3ea1123b0b0c16045447418351db629e15",
-              "text": "Bolivia by 4x4",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p103",
-                    "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the country and confirmed 4x4 expedition format to label the current itinerary leg."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
-              "field": "itinerary.text",
-              "sourceTextSha256": "540aae63f6f8126aa5cb948f28fc6b2c572d06f86842b6ca0501e235c2179533",
-              "text": "Day 11 · Transfer to the Bolivian border and start of the 4x4 expedition: Laguna Verde beneath the Licancabur volcano, the Dalí Desert and its stone sculptures, the Polques hot springs, the Sol de Mañana geysers and Laguna Colorada, at about 4,300 m, the red lagoon where James’s flamingos feed. Overnight in an expedition-style desert hotel.\n\nAt Laguna Verde, wind and light change the colour of the water, surrounded by an open plain and volcanic formations. In the Dalí Desert, stone shapes are scattered across the landscape. At the Polques hot springs, cold air mixes with warm steam. You can hear the Sol de Mañana geysers before you reach them: the ground hisses, jets of steam rise, and hot mud moves in grey pools.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_2478a2a40c1c_s09",
-                "wordAbsenceReason": "Word 2027 p103 covers the approved route, flamingos and overnight accommodation but omits the current RU descriptive details of water colour, open volcanic terrain, scattered rocks, steam and bubbling mud. Preserve p103 verbatim and translate only those additional RU passages.",
-                "wordEvidence": {
-                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p103",
-                      "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
-                    }
-                  ]
-                },
-                "composition": "Verbatim Word Day 11 paragraph plus current RU-only descriptions of the same stops."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:bb9931a062b2ed22",
-              "field": "itinerary.label",
-              "sourceTextSha256": "74f2893f4c7859605ce1e1795d0443cc6e335542a7afcf1a66a37852ed1f4bb5",
-              "text": "Laguna Verde",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p103",
-                    "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the lagoon name unchanged from the approved Word expedition passage."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f54fb5c7f60bec8d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "b7d20c31559806989abc34c3d9a9b5fd780d10a79d04583fc0548fcbb3f56ad5",
-              "text": "Dalí Desert",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p103",
-                    "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the desert name unchanged from the approved Word expedition passage."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:384392faa9bbbded",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7fadc62d04f941fe742fccb6bbea3e830542b53a1190d20ca79a58653c355624",
-              "text": "Polques hot springs",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p103",
-                    "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the hot-springs name unchanged from the approved Word expedition passage."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:51:23.822Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_2478a2a40c1c_s09",
+        "blobSha": "2a7356e2a2744b277338912cdb900522ce2cec31",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala_b011/ada_en_2478a2a40c1c_s09.json",
+        "at": "2026-11-04T07:51:46.488Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

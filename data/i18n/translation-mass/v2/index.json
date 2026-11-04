@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2164,
-    "leased": 4,
+    "queued": 2163,
+    "leased": 5,
     "review": 241,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2164,
-      "leased": 4,
+      "queued": 2163,
+      "leased": 5,
       "review": 241,
       "ready": 1,
       "retryable": 0,
@@ -665,8 +665,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 77,
-          "leased": 0,
+          "queued": 76,
+          "leased": 1,
           "review": 5,
           "ready": 0,
           "retryable": 0,
@@ -697,7 +697,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:06:33.718Z",
       "earliestRetryAt": null
     },
     "06": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b001",
       "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
       "expiresAt": "2026-11-04T07:06:08.848Z",
+      "generation": 1
+    },
+    "adaen-mw1ojnf0-zzzsf540": {
+      "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b001",
+      "token": "tok-lnsxlpgwcpa92vym3bnf36",
+      "expiresAt": "2026-11-04T07:06:33.718Z",
       "generation": 1
     }
   },
@@ -2197,7 +2203,8 @@
       "token": "tok-lnsxlpgwcpa92vym3bnf36",
       "jobIds": [
         "en:bulk:tour:tour_brazil_dunes_13d:b010",
-        "en:bulk:tour:tour_brazil_gems_14d:b013"
+        "en:bulk:tour:tour_brazil_gems_14d:b013",
+        "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_dunes_13d:b010",
@@ -2236,5 +2243,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:36:25.843Z"
+  "updatedAt": "2026-11-04T05:36:33.718Z"
 }

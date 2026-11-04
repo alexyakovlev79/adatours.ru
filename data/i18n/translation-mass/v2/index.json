@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1910,
-    "leased": 22,
+    "queued": 1909,
+    "leased": 23,
     "review": 477,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1910,
-      "leased": 22,
+      "queued": 1909,
+      "leased": 23,
       "review": 477,
       "ready": 1,
       "retryable": 0,
@@ -985,8 +985,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 61,
-          "leased": 0,
+          "queued": 60,
+          "leased": 1,
           "review": 17,
           "ready": 0,
           "retryable": 0,
@@ -1017,7 +1017,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T09:24:01.316Z",
       "earliestRetryAt": null
     },
     "0e": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-2a369c57df19": {
-      "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b007",
-      "token": "token-2a369c57df19-20261104",
-      "expiresAt": "2026-11-04T07:53:39.061Z",
-      "generation": 1
-    },
     "ada-en-8bef02de80ab": {
       "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b003",
       "token": "token-30217b135a0c46859c454246bc72f9a9",
@@ -1460,6 +1454,12 @@
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b002",
       "token": "tok-9a69348b6e00-20261104-a1",
       "expiresAt": "2026-11-04T09:23:10.224Z",
+      "generation": 1
+    },
+    "ada-en-20261104-8526ba7437bc": {
+      "jobId": "en:bulk:tour:tour_source_braziliya_s_vodopadami_na_novyj_god:b008",
+      "token": "ada-en-token-8526ba7437bc",
+      "expiresAt": "2026-11-04T09:24:01.316Z",
       "generation": 1
     }
   },
@@ -2838,7 +2838,8 @@
         "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b002",
         "en:bulk:tour:tour_panama_mice_7_days:b004",
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b002",
-        "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b010"
+        "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b010",
+        "en:bulk:tour:tour_source_braziliya_s_vodopadami_na_novyj_god:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_colombia_complete_11_days:b004",
@@ -3044,5 +3045,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T07:53:34.765Z"
+  "updatedAt": "2026-11-04T07:54:01.316Z"
 }

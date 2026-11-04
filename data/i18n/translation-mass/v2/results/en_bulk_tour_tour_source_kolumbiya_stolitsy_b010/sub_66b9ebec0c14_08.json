@@ -1,0 +1,56 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_stolitsy:b010",
+  "stableId": "tour_source_kolumbiya_stolitsy",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f9c2fd5650f11e99bd6042588fd9a77482a079ce8a2583d583ace0eba85f896e",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "1ea271553c3d8b9c52ff62ab4c90baa43cc0f709acbbe7925846a5061d28495a",
+      "text": "A viewing platform with white BOGOTA lettering, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching alt text for this photograph of the BOGOTA sign on a viewing platform."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "199183f2f882be592b93ae87d8303abc934abd917a0031146b7c86f323bc443f",
+      "text": "Bogotá, Colombia: visitors beside the city-name sign on a viewing platform",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching hover caption for the city-name sign and visitors on the platform."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "5765eff334cf595b79e046392f7b134f8a366cbd73c62dde56e1f16816906daf",
+      "text": "\n\n## What you will see\n\nIn Bogotá, you will walk through La Candelaria, visit the Gold Museum, Casa de la Moneda and the Botero Museum, and see Plaza de Bolívar, the Cathedral, the presidential residence and the Palace of Justice.\n\nMedellín reveals the country's modern history through its different neighbourhoods. The route first takes you through Pueblito Paisa, the city centre and the administrative districts, then through El Poblado. A separate walking tour focuses on Comuna 13, its street art and urban transformation.\n\nThe following day takes you beyond Medellín. You will travel to La Piedra del Peñol and Guatapé, see the reservoir and brightly coloured façades with zócalos, and have the option to add a climb up the rock or a boat ride.\n\nIn Cartagena, the route takes you to La Popa, San Felipe de Barajas Castle, Las Bóvedas and the historic centre. For your free day, the programme recommends an optional trip to San Pedro de Majagua in the Rosario Islands.\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no equivalent route-summary section and differs from RU: Pueblito Paisa and El Poblado visits are absent, the Bogotá landmark list differs, and the Rosario Islands day is included in Word rather than optional. The current RU summary is translated with these source differences flagged."
+      }
+    }
+  ],
+  "unresolvedConflicts": [
+    {
+      "field": "body",
+      "detail": "RU summary includes Pueblito Paisa and El Poblado and a different Bogotá landmark list from Word paragraphs 67 and 78–81."
+    },
+    {
+      "field": "body",
+      "detail": "RU describes a free day with an optional San Pedro de Majagua excursion; Word paragraphs 110–113 and 179 include a Rosario Islands day. Preserve RU pending independent review."
+    }
+  ]
+}

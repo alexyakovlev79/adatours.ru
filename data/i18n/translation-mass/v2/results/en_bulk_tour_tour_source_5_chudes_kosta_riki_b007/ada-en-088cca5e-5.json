@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_chudes_kosta_riki:b007",
+  "stableId": "tour_source_5_chudes_kosta_riki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "fe393d6aa02053a89fc180db69ffd273e2805a6f5a2210dba5ecc5abf583a5dd",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9bb0e9d28ad66686dc3c54232dc0c9e2e7a640e455697653acecd286299c70e8",
+      "text": "Arenal – Monteverde",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "43f190b605baf4844222b4993844b69ba2f4ea5ac1628f8d70a3644accab0505"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the relevant service or place label from the confirmed Word passage for this field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "34e443fbbe45bc560c1379d98fcfd2e2d1fd58da5c77d5aba8d7fd4a64d08207",
+      "text": "Day 6 · Cross Lake Arenal by boat on the way to Monteverde, home to a unique community founded by Quakers alongside Costa Rican families. Enjoy an exciting canopy tour, flying above the treetops of the cloud forest; with luck, you may spot the resplendent quetzal, the bird revered by the ancient Maya and Aztecs. Overnight at El Establo Mountain Resort. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "43f190b605baf4844222b4993844b69ba2f4ea5ac1628f8d70a3644accab0505"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f889a55757fc6e5a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e58a965a100dff871e1bc0dab50f95e60b21e1f3af8eb0c348457bc8758e7a48",
+      "text": "La Fortuna & Arenal Volcano",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word names Arenal but does not give the combined La Fortuna and Arenal Volcano destination label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6cde06c5b6381c35",
+      "field": "itinerary.label",
+      "sourceTextSha256": "54c9493deba9d6d92f641995c66d71c7c417e81ee66df96dd5d4352863af77e0",
+      "text": "Monteverde & Santa Elena",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word names Monteverde but does not contain the combined Monteverde and Santa Elena destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:00b84ac2c31d8bbe",
+      "field": "media.alt",
+      "sourceTextSha256": "4aff6c1d58f2d477d26a6967dd27a662152614148a7afcf954e4e94bfdd0b498",
+      "text": "Boats on the lake below Arenal Volcano, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no image-specific alternative text for this lake and volcano photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8b07961dfb0b7970",
+      "field": "media.hover",
+      "sourceTextSha256": "9b2626c2d560003fd42d82872028ff9ef68e766ba54b2b23130a4fb7dd4a7f02",
+      "text": "Arenal, Costa Rica: boats by a green shore below the volcano",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no corresponding image hover caption; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6bba7c567986c3cbdb0f6eece0af207fba65b0fc134c65fae16bf3a72d5187d9",
+      "text": "Monteverde – Pacific coast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "c99b831dc668a5d55533941e5bc3bad8ec944a603f8a4b9bbb66c73bfd71d4b4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the relevant service or place label from the confirmed Word passage for this field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c0341f239971c9e7c3c0584eb09b3befbc343e575867055ebfb0ddf905707a25",
+      "text": "Days 7–8 · Transfer to the Pacific coast for two days of rest and free time on the beach. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "546f3a5eac46e1c372bddd1df00e10825f329acaf070bc3914ca45f9fd9fe288"
+          }
+        ]
+      }
+    }
+  ]
+}

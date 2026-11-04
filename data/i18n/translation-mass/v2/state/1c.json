@@ -234,7 +234,82 @@
         "claimedAt": "2026-11-04T05:42:50.785Z",
         "expiresAt": "2026-11-04T07:12:50.785Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_abf469133bbf:b013:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_abf469133bbf",
+        "token": "ada_en_token_abf469133bbf_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b013",
+          "stableId": "tour_colombia_complete_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "74cf87f73498294f9162b40cbc69d074660b9c406966f0db403fe39a0946ea81",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+              "field": "itinerary.text",
+              "sourceTextSha256": "14f05d2d19d8bfc9f4168818c5d229654557655685805379770fa50262010006",
+              "text": "Day 11 · Breakfast at the hotel. Depending on the international flight schedule, enjoy some final free time in Medellín. Private transfer to José María Córdova International Airport for the departure flight.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:138",
+                    "textSha256": "0f1234663008340654dabc3aa8b69ce99439b45bac04ede6ad098f9f2b656397"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7f83b6f6dd46aa2b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+              "text": "Medellín",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:122",
+                    "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:d50f6c3574ce1582",
+              "field": "media.alt",
+              "sourceTextSha256": "b7a9c7593ae748cc955c2b3a42183b7923f66da0c1cf023b80da653aa7d432b2",
+              "text": "Metro train beside a covered station platform in Medellín, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_abf469133bbf",
+                "wordAbsenceReason": "The checked Word contains no exact caption for this specific metro photograph."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "a23c68a72d113d4b298cdc51fa4ea0bc13e505a1c912064b9d7f8ec2456a3470",
+              "text": "Turquoise bay with palm trees on San Andrés, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_abf469133bbf",
+                "wordAbsenceReason": "The checked Word contains no exact caption for this specific hero photograph."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:44:26.056Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

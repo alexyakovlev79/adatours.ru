@@ -493,7 +493,7 @@
         "expiresAt": "2026-11-04T09:14:18.629Z"
       },
       "checkpoint": {
-        "id": "cp-9a69348b6e00-05-4",
+        "id": "cp-9a69348b6e00-05-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9a69348b6e00",
         "token": "tok-9a69348b6e00-20261104-a1",
@@ -582,10 +582,84 @@
                   "transformation": "strip_list_marker",
                   "rationale": "Removes only the leading dash and spaces from the approved not-included list item."
                 }
+              },
+              {
+                "blockId": "tour:notIncluded:f33169ed00481ef7",
+                "field": "notIncluded",
+                "sourceTextSha256": "e924e89bb68f57d6240bb579908e80ea7e2e006d184c0b9f4343977ff62b9a77",
+                "text": "Laundry service",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p241",
+                      "textSha256": "b7fcda89c06a53f4fbe2016e1a71b961f1aaf675de235fe4f75a5a0c8bb69984"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading list marker and spacing from the approved Word clause."
+                }
+              },
+              {
+                "blockId": "tour:note:5aa2c628beab8b85",
+                "field": "note",
+                "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+                "text": "Hotels may be replaced by others of the same category",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p222",
+                      "textSha256": "a1ca8a71a1317707b0f06593986c7a5783ca54fa4d772d4ee76d5e5e9756a177"
+                    }
+                  ],
+                  "excerpt": true
+                }
+              },
+              {
+                "blockId": "tour:note:f0ee8356c726de03",
+                "field": "note",
+                "sourceTextSha256": "cf1826c3b08df8cb85635d8369fe2482d418156c449e8e48338dc596aca322f9",
+                "text": "the order of excursions may be changed while the full programme is maintained.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p222",
+                      "textSha256": "a1ca8a71a1317707b0f06593986c7a5783ca54fa4d772d4ee76d5e5e9756a177"
+                    }
+                  ],
+                  "excerpt": true
+                }
+              },
+              {
+                "blockId": "tour:note:116ab96902d7828a",
+                "field": "note",
+                "sourceTextSha256": "e78bdc0d130871fcc2469eac9068ffa9c50b44768324e4a1f7beea7b41c41c9f",
+                "text": "We are not responsible for hotel breakfasts missed because of early-morning flights or excursions.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p224",
+                      "textSha256": "ab4b459af8c6589d11164cbb22935b67de667ef22ea8fd9b6f3b1363e553a891"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading list marker and spacing from the approved Word clause."
+                }
               }
             ]
           },
-          "completedBlockCount": 4,
+          "completedBlockCount": 8,
           "wordSourceVerified": {
             "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
             "sha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
@@ -593,7 +667,7 @@
             "localPath": "/workspace/scratch/9a69348b6e00/ada_word/five_carnival.docx"
           }
         },
-        "at": "2026-11-04T07:45:34.471Z"
+        "at": "2026-11-04T07:45:54.748Z"
       },
       "submission": null,
       "review": null,

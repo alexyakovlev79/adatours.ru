@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1078,
-    "leased": 9,
+    "queued": 1077,
+    "leased": 10,
     "review": 1293,
     "ready": 27,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1078,
-      "leased": 9,
+      "queued": 1077,
+      "leased": 10,
       "review": 1293,
       "ready": 27,
       "retryable": 0,
@@ -1305,8 +1305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 31,
-          "leased": 0,
+          "queued": 30,
+          "leased": 1,
           "review": 40,
           "ready": 0,
           "retryable": 0,
@@ -1337,7 +1337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T00:46:19.882Z",
       "earliestRetryAt": null
     }
   },
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_manyashchaya_kolumbiya:b004",
       "token": "adaen-w2-20261105-0007-token-a",
       "expiresAt": "2026-11-05T00:45:28.693Z",
+      "generation": 1
+    },
+    "ada-chat-3of5-20261105-0209-B": {
+      "jobId": "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b022",
+      "token": "ada-chat-3of5-20261105-0209-B-token",
+      "expiresAt": "2026-11-05T00:46:19.882Z",
       "generation": 1
     }
   },
@@ -5723,7 +5729,8 @@
       "token": "ada-chat-3of5-20261105-0209-B-token",
       "jobIds": [
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b008",
-        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b003"
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b003",
+        "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b022"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b008",
@@ -5732,5 +5739,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T23:15:58.717Z"
+  "updatedAt": "2026-11-04T23:16:19.882Z"
 }

@@ -430,156 +430,22 @@
     {
       "jobId": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "6341eef1980fc20860bf1398aedc144e22f6e457901369ece3ae914bfd0b9be8",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-3f45d665-translator",
-        "token": "ada-en-token-3f45d665-20261104",
-        "claimedAt": "2026-11-04T06:57:43.653Z",
-        "expiresAt": "2026-11-04T08:27:43.653Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-3f45d665-job-05-c8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-3f45d665-translator",
-        "token": "ada-en-token-3f45d665-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b006",
-          "stableId": "tour_guatemala_belize_maya_world_12_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "6341eef1980fc20860bf1398aedc144e22f6e457901369ece3ae914bfd0b9be8",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "338d11e39674c3c9210a5dc88f2050d5653cde45d7847c90f7feeb98e66bc59e",
-              "text": "Arrival in the heart of Central America",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-3f45d665-translator",
-                "wordAbsenceReason": "The exact Word source provides the arrival narrative in p67 but has no separate equivalent of this RU day title; translate the existing title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a4836cca1208c95",
-              "field": "itinerary.text",
-              "sourceTextSha256": "c59777318d7fbe889022a3e187203f615a9b3762900dcabeb9836947f55e2e3f",
-              "text": "Day 1 · Reception at the airport and transfer to our hotel in Guatemala City. Overnight stay.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
-                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p67",
-                    "textSha256": "5069c1bbe65d4fe547bb0366655fadfb8b4121cfb423f3439fbb807777717d28"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:3a44e89961d0ffdf",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c4487ded86c59c5a5a35f2eb03cf6f8fe9bdc4e5fd50c082ae37ac54eab748db",
-              "text": "Guatemala City",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
-                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p137",
-                    "textSha256": "a34373238ef981bcb43ddb65bfe8848b44e8674361c33e484f1ba43525dc1776"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:b9da2083a1cf0801",
-              "field": "media.alt",
-              "sourceTextSha256": "ebafc39ace70a5875fa8d023e6a487630ed212de9e95ca86c3b5ebf54f0fce5e",
-              "text": "A yellow arch with a clock tower over a cobbled street between low-rise buildings",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-3f45d665-translator",
-                "wordAbsenceReason": "The Word has no alt text describing this specific website photograph of the yellow clock arch and cobbled street; translate current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:a4dcf17d0457a3f1",
-              "field": "media.hover",
-              "sourceTextSha256": "8092ce632e50d5467a5e053ae57037722a4f18f5efd136c0c090cabaf05c2fae",
-              "text": "A historic street beneath a yellow arch with a clock",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-3f45d665-translator",
-                "wordAbsenceReason": "The Word has no image-specific hover caption matching the website photograph; translate the current RU hover caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-              "field": "itinerary.title",
-              "sourceTextSha256": "96a4a261a6ba0d5593efd420dd912964981fb9a3c3d4b3a38e7a628bbfaeee36",
-              "text": "Markets, corn & the lake",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
-                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p66",
-                    "textSha256": "0f6ec1bbfd61d3170d6dec5a9f47cfd2cc6c09f6bd261438c73374216ba7271a"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:569e72e117968fcc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "918faa0b8fe0020acc172ffa7d720bcc558c3b2439e2d19ef8b7f3040ef4cf6d",
-              "text": "Day 2 · Breakfast. We head to the Guatemalan highlands, to the town of Chichicastenango, home to one of the most famous indigenous markets in all of Latin America. Today includes an immersive activity: a corn workshop with local women, exploring Guatemala's staple food. After the workshop, we continue toward Lake Atitlán, considered by Aldous Huxley to be the most beautiful lake in the world. Overnight stay.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
-                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p68",
-                    "textSha256": "abc68a9c9a1f0a7388390827460409ab1015f87e095fe31e6b95e69bc99f5385"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a9c7a26c8f86d35f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7d02a0ccaf3d5c979d283f8d7c1b6567140b21465d7137eba0ada7f6ab3869cf",
-              "text": "Chichicastenango",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
-                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p37",
-                    "textSha256": "1d518a08dcc09e614bfc135f390da213fe74f09f561f3153f140c992004bf332"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:58:48.627Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-3f45d665-job-05",
+        "blobSha": "5def4fcab095552e9c1f2467ccd6fbb2d5f6bfb1",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_guatemala_belize_maya_world_12_days_b006/ada-en-3f45d665-job-05.json",
+        "at": "2026-11-04T06:59:08.851Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

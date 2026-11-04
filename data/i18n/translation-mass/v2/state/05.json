@@ -499,7 +499,7 @@
         "expiresAt": "2026-11-04T08:23:22.223Z"
       },
       "checkpoint": {
-        "id": "ada-en-1d528bec4ff4-b07-cp4",
+        "id": "ada-en-1d528bec4ff4-b07-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-1d528bec4ff4",
         "token": "ada-en-token-1d528bec4ff4-20261104",
@@ -604,6 +604,68 @@
                   "transformation": "contextual_label",
                   "rationale": "Extract the matching Miraflores place name from the verified Word day heading."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:42061da774b4b387",
+                "field": "itinerary.label",
+                "sourceTextSha256": "4cd16db4fc830c0be15b8584897d342df6fd1b934ec43533065467c59b89bd67",
+                "text": "Biomuseo",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                  "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p44",
+                      "textSha256": "3287bbd220c4ff7e5ab668ebe0bda855ce8ac97e22a8d0ba5a9b1037e2f527e4"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the matching place name from the verified Word day passage as the itinerary label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:3c42577e41c21bde",
+                "field": "itinerary.label",
+                "sourceTextSha256": "31371be2fdddcaeb8b5620478863bb733fa9d80497659080397a76a3a8bbbed3",
+                "text": "Casco Viejo",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                  "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p39",
+                      "textSha256": "7a3038a7e2754a1b3cba5a24234ee0da84264baa5cfa193f172d3ab647c863d2"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the matching place name from the verified Word day passage as the itinerary label."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:b06a3b5e6ac802ff",
+                "field": "media.alt",
+                "sourceTextSha256": "5dde82daae876fb919f94d0973d9193c33c9ece22cab1f53ec4ccc763191131c",
+                "text": "White historic building with balconies and an arched entrance in Panama City, Panama",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The complete verified Word 2027 programme has no corresponding alt or hover description of this white historic building with arches and balconies in Panama City; translate the current RU image metadata."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:6ff921b9fd9bc1cc",
+                "field": "media.hover",
+                "sourceTextSha256": "171e0685baac6d6b94c2043cd37121bc80861b0a742575ad1a4327c6380336a4",
+                "text": "Panama City: a white façade with arches and balcony railings",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The complete verified Word 2027 programme has no corresponding alt or hover description of this white historic building with arches and balconies in Panama City; translate the current RU image metadata."
+                }
               }
             ],
             "wordSourceVerification": {
@@ -675,9 +737,9 @@
             "priceAmendments": []
           },
           "submissionId": "ada-en-1d528bec4ff4-b07",
-          "preparedBlocks": 4
+          "preparedBlocks": 8
         },
-        "at": "2026-11-04T06:54:30.997Z"
+        "at": "2026-11-04T06:55:03.551Z"
       },
       "submission": null,
       "review": null,

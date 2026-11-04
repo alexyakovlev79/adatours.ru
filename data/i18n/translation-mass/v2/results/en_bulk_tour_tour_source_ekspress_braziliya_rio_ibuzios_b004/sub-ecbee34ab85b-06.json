@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekspress_braziliya_rio_ibuzios:b004",
+  "stableId": "tour_source_ekspress_braziliya_rio_ibuzios",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0c3efa9f9fb7df73af29d47e3570da850b97eb773e7d200ba82ed9e10d53d838",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aCfUof3lkdtQfBCwO9Ba-h50KrdB7lwo",
+        "documentSha256": "01f91d9a62e5de0bcd5f5a154fdb15b5d496d64f5365cc0c63d02c707a5b7767",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:65",
+            "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact city name from the Word arrival heading for the assigned itinerary title or place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "16537e3480831ec6d636d607a65c0f226320ef90abbc5f074f58c996cc1e84d6",
+      "text": "After breakfast, a half-day excursion (4 hours) to one of Rio’s most famous landmarks. A cable car takes you to Sugar Loaf, stopping first at Urca Hill before continuing to the summit, with spectacular panoramic views of Guanabara Bay, Copacabana Beach, the surrounding mountains, the islands along the coast, the Rio–Niterói Bridge and Christ the Redeemer in the distance. The excursion continues through the historic centre, with its colonial buildings, churches, monasteries and the impressive Metropolitan Cathedral.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aCfUof3lkdtQfBCwO9Ba-h50KrdB7lwo",
+        "documentSha256": "01f91d9a62e5de0bcd5f5a154fdb15b5d496d64f5365cc0c63d02c707a5b7767",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:76",
+            "textSha256": "1fafe3a05993dbcec8e88f39b483fbb27c32f6e64514107718919e43fcba065c"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day-number prefix because the canonical itinerary stores its own day heading; preserve all remaining approved wording."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aCfUof3lkdtQfBCwO9Ba-h50KrdB7lwo",
+        "documentSha256": "01f91d9a62e5de0bcd5f5a154fdb15b5d496d64f5365cc0c63d02c707a5b7767",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:65",
+            "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact city name from the Word arrival heading for the assigned itinerary title or place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b45eae09fd307668",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "Shaded street with trees and café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete verified Word contains no image-specific alt text for this shaded street with café tables; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7d79c315121388be",
+      "field": "media.hover",
+      "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+      "text": "Rio de Janeiro: a pavement café beneath the trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete verified Word has no hover caption for this pavement café beneath trees; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "3f15dbdd6d405e148f60f9704276c764497c9a5cdac9bf7ab8eb0505c5d73370",
+      "text": "Rio de Janeiro – Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aCfUof3lkdtQfBCwO9Ba-h50KrdB7lwo",
+        "documentSha256": "01f91d9a62e5de0bcd5f5a154fdb15b5d496d64f5365cc0c63d02c707a5b7767",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "ed1a888697e7af704d19cb3b37c0716ba0f6b1518154d81b80d1f22171eae340"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the assigned transfer-day route label from the two destination names in the exact Word destination line."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6c6c6f7b9b4ceda8b8a8bcb17f588df3fc5160d2427270aeb9d5aff774bd29b4",
+      "text": "Day 4 · After breakfast, private transfer by road from Rio de Janeiro to Búzios. Check in at your hotel and enjoy the rest of the day at leisure. Once a charming fishing village, Búzios is now one of Brazil’s most captivating coastal destinations, renowned for its beautiful beaches, crystal-clear water and picturesque landscapes, with charming streets, boutiques and excellent restaurants that give the town a relaxed yet sophisticated atmosphere.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aCfUof3lkdtQfBCwO9Ba-h50KrdB7lwo",
+        "documentSha256": "01f91d9a62e5de0bcd5f5a154fdb15b5d496d64f5365cc0c63d02c707a5b7767",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:85",
+            "textSha256": "7ec4fe5e5b43c380fb11270c609bcf2ad5d82aa89800931ebc46be15e94237cf"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aCfUof3lkdtQfBCwO9Ba-h50KrdB7lwo",
+        "documentSha256": "01f91d9a62e5de0bcd5f5a154fdb15b5d496d64f5365cc0c63d02c707a5b7767",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:65",
+            "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact city name from the Word arrival heading for the assigned itinerary title or place label."
+      }
+    }
+  ]
+}

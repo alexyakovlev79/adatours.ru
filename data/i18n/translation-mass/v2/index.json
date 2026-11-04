@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1249,
-    "leased": 11,
+    "queued": 1248,
+    "leased": 12,
     "review": 1129,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1249,
-      "leased": 11,
+      "queued": 1248,
+      "leased": 12,
       "review": 1129,
       "ready": 20,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 48,
-          "leased": 0,
+          "queued": 47,
+          "leased": 1,
           "review": 32,
           "ready": 0,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T22:33:07.187Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_source_kolumbiya_stolitsy:b002",
       "token": "ada-en-token-mw2lprq7-translator",
       "expiresAt": "2026-11-04T22:32:51.377Z",
+      "generation": 1
+    },
+    "ada-en-mw2lom3y-amanda": {
+      "jobId": "en:bulk:tour:tour_source_ekspress_braziliya_rio_ibuzios:b003",
+      "token": "ada-token-mw2lom3y-k5n43nl4vp",
+      "expiresAt": "2026-11-04T22:33:07.187Z",
       "generation": 1
     }
   },
@@ -5165,7 +5171,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_chili_argentina:b012",
         "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b006",
-        "en:bulk:tour:tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu:b004"
+        "en:bulk:tour:tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu:b004",
+        "en:bulk:tour:tour_source_ekspress_braziliya_rio_ibuzios:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_chili_argentina:b012",
@@ -5219,5 +5226,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T21:02:58.799Z"
+  "updatedAt": "2026-11-04T21:03:07.187Z"
 }

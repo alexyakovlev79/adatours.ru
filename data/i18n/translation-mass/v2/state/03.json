@@ -830,7 +830,114 @@
         "claimedAt": "2026-11-04T06:22:54.961Z",
         "expiresAt": "2026-11-04T07:52:54.961Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2ee259e72fda-001-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2ee259e72fda-20261104",
+        "token": "ada-en-2ee259e72fda-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b007",
+          "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c1ea3384f5749a17b2a359f3a2e0587ddd19b11dac52bb3293557a1525283d89",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "eefa4c79e12d85f26e721152aaa4c5fbe3f75c31a3e41af99c3da2fcb113ebf4",
+              "text": "Brazilian side of Iguazu Falls",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p89",
+                    "textSha256": "c2d2dcbca614bb805121a922902d0c9e04e5092167b62ba69b7d105d2fa99d24"
+                  },
+                  {
+                    "ref": "word/document.xml:p91",
+                    "textSha256": "c66bf9f2f958587e773f43d1c3847a9db3e4115df7860400cfb19ede0fc288e6"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Day 5 explicitly identifies the Brazilian side; the label is adapted to the RU day heading without changing the place."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "87be7ee141afeab678630339b243093030193d0034efeb714c96208b9ac1a20d",
+              "text": "After breakfast, visit the falls with an English-speaking guide.\n\nThe trail on the Brazilian side starts in the forest. Individual cascades appear between the trees, before an increasingly wide panorama opens up.\n\nMist hangs over the forest. As you approach the main section of the falls, the roar grows louder. The route ends at the Devil’s Throat, where the calm flow of the river suddenly becomes a powerful torrent.\n\n**Macuco Safari at Iguazu Falls in Brazil**\n\nOptional\n\n**Price:** USD 130 per person.\n\n**Bird Park in Iguazu**\n\nOptional\n\n**Price:** USD 50 per person.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word p91 describes the Brazilian falls with different prose and conflicting optional rates (Macuco USD 135; Bird Park USD 65; table p227/p232 USD 130/USD 55). The current RU forest-trail narrative and USD 50 bird-park rate are not present verbatim. Translate current RU, preserve its prices, and adapt the service language under editorial 4.1; price conflicts are referred to the commercial master.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fccd262c357ba0de",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p129",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:7f1ec1e69fece7da",
+              "field": "media.alt",
+              "sourceTextSha256": "119cb54629974c492034fd39c09dc135e671824f9b3a08bb8b0f206021da32fe",
+              "text": "Tourists on a long walkway in front of the broad cascades of Iguazu Falls",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word itinerary and commercial tables contain no equivalent photograph alt text for this current RU image description.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            }
+          ],
+          "commercialAmendments": [
+            {
+              "field": "optionalExcursions",
+              "currency": "USD",
+              "basis": "per_person",
+              "items": [
+                {
+                  "service": "Macuco Safari",
+                  "currentRu": 130,
+                  "word2027Narrative": 135,
+                  "word2027Table": 130
+                },
+                {
+                  "service": "Bird Park",
+                  "currentRu": 50,
+                  "word2027Narrative": 65,
+                  "word2027Table": 55
+                }
+              ],
+              "decision": "commercial_master_review_required; no prices modified"
+            }
+          ]
+        },
+        "at": "2026-11-04T06:24:14.106Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

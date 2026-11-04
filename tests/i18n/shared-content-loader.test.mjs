@@ -267,3 +267,23 @@ test('glob wrapper restores raw-body evidence after Astro trim and recompiles tr
     assert.equal(before,mass.resultBytes.toString(),'reading the snapshot never rewrites worker output');
   } finally {await rm(root,{recursive:true,force:true});}
 });
+
+
+test('submitted review previews display only source-hash-matched text and keep canonical facts',()=>{
+  const source=fixture(),slot=createStableBlockMap(source,'tour').paths.find(s=>s.path==='/title');
+  const sha='e'.repeat(40);
+  const prepared={entityId:source.data.id,entityType:'tour',sourceFingerprint:'preview',
+    massSnapshotSha:sha,previewMass:[{status:'preview_review',blocks:[{
+      blockId:slot.blockId,field:slot.field,sourceTextSha256:digest(source.data.title),
+      text:'Preview English title'}],receipt:{snapshotSha:sha,pendingIndependentQA:true,jobId:'test:b001'}}]};
+  const projected=projectSharedEnglishEntry(source,'tours',prepared);
+  assert.equal(projected.entry.data.title,'Preview English title');
+  assert.equal(projected.previewMass[0].pendingIndependentQA,true);
+  assert.equal(projected.acceptedMass,undefined);
+  assert.equal(projected.entry.data.priceFrom,source.data.priceFrom);
+  assert.equal(projected.entry.data.hero.src,source.data.hero.src);
+  const changed=structuredClone(source);changed.data.title='Измененный заголовок';
+  const rejected=projectSharedEnglishEntry(changed,'tours',prepared);
+  assert.equal(rejected.entry.data.title,changed.data.title);
+  assert.equal(rejected.applied,0);
+});

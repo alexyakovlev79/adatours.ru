@@ -424,3 +424,26 @@ caller `adatours-en/main`
 Новые массовые результаты и их публикация остаются отдельной операцией
 по существующим immutable receipts и source hashes.
 
+
+
+## 04.11.2026 — прямое поручение показывать все сохраненные переводы на EN staging
+
+По новой прямой команде владельца публично доступная, но **noindex** EN staging
+временно выводит как независимо принятые `ready`, так и сохраненные
+`review` пакеты из одного закрепленного при сборке SHA ветки
+`i18n/translation-mass-staging`. Это **предварительный показ**, а не
+редакторская приемка. `publicationEnabled=false`, `releaseEligible=false`
+для черновиков, статусы очереди и все независимые QA-receipts сохраняются.
+
+Каждый результат имеет проверенный immutable Git blob SHA, форму
+`validateMassResult`, неизменные stable ID и поле, а показанный перевод
+сверяется с **текущим** RU sourceTextSha256. Несовпавшее поле выводится
+на русском; пакет с `sourceIssues` или `unresolvedConflicts` пропускается.
+Цены, медиа, идентичность, маршрут, отношения, основной RU build не меняются.
+В `translation-receipt.json` отдельные `massReviewPreviewSnapshot` и
+`previewMass` подтверждают именно предварительный показ, не `acceptedMass`.
+
+Отдельная независимая проверка 6 критериев по `translation-mass-qa.mjs`
+по-прежнему требуется для перевода `review → ready` и будущей production
+EN-публикации; этот режим действует только при `EN_REVIEW_TRANSLATIONS_PREVIEW=1`,
+`PUBLIC_EN_RELEASE=0` и строгом EN Pages staging gate.

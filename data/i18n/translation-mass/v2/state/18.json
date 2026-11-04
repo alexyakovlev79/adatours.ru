@@ -625,7 +625,82 @@
         "claimedAt": "2026-11-04T06:50:36.776Z",
         "expiresAt": "2026-11-04T08:20:36.776Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-3f45d665-job-03-c4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-3f45d665-translator",
+        "token": "ada-en-token-3f45d665-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b010",
+          "stableId": "tour_colombia_explorer_9_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "3ba7bdd3c165cf2e25e358226dfaf3811d4b48b877ffb25e0780a9246dc46e9a",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:236cbd9627418ae1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+              "text": "Medellín",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:a5972a4c48a1d406",
+              "field": "media.alt",
+              "sourceTextSha256": "91951a6510c8a1b1e609559207836a9ce186a6c570938437bb8d6baa62d68849",
+              "text": "A cobbled square with a white church and colourful houses in Medellín, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The exact Word document has no photo-specific alt text describing this cobbled square and church; translate the current RU media caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:859175e79950c87b",
+              "field": "media.hover",
+              "sourceTextSha256": "19665e9180f76cce35583682b0a537ffdde1cf9586c4829a16bd9213bab69281",
+              "text": "Medellín: a church, fountain and colourful houses around a small square",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The exact Word document has no hover caption for this specific website image of the square and fountain; translate the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6b47ab6ea135ef41",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+              "text": "Pereira",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p88",
+                    "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:51:35.630Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

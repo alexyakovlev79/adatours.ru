@@ -499,165 +499,22 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b18f524aacfee57cccb0a080a01b1125b098b980d3dc248865bc7f155c1b6000",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "claimedAt": "2026-11-04T06:48:23.231Z",
-        "expiresAt": "2026-11-04T08:18:23.231Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_4c0a9bc31e22_b008_cp8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b004",
-          "stableId": "tour_colombia_essential_5_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b18f524aacfee57cccb0a080a01b1125b098b980d3dc248865bc7f155c1b6000",
-          "blocks": [
-            {
-              "blockId": "tour:note:1833ff620471a903",
-              "field": "note",
-              "sourceTextSha256": "0fee5f0c035a3878548a91f9b47a144f4dbc8cd6332cb0f6d31bc0ac7e0a82e9",
-              "text": "The order of excursions may be modified due to operational requirements, weather or force majeure, while respecting the content of the programme.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
-                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
-                "paragraphs": [
-                  {
-                    "ref": "p:143",
-                    "textSha256": "8359f79f893c1035faf443c37df8ad6cf58cb129d85dd8ae14a6967b94364617"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading dash and spaces from the exact approved Word note because the existing notes field supplies its own list markup."
-              }
-            },
-            {
-              "blockId": "tour:note:828228da6078e79a",
-              "field": "note",
-              "sourceTextSha256": "ef9dfea142143e321312019458ab855c7c62cce45749b188bdf722c61220aa62",
-              "text": "For early-morning departures, hotels may not be able to provide breakfast; no compensation is offered in such cases.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
-                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
-                "paragraphs": [
-                  {
-                    "ref": "p:144",
-                    "textSha256": "7d3b8773b0d7d3479957682bafb5f7c987712b6f576632b15ea8632e769d7270"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading dash and spaces from the exact approved Word note because the existing notes field supplies its own list markup."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:2b7a8bc5ae06d536",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
-              "text": "Bogotá",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
-                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
-                "paragraphs": [
-                  {
-                    "ref": "p:65",
-                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:5d8f893e246c798d",
-              "field": "media.alt",
-              "sourceTextSha256": "3deff5df98425c41840019c469e2435311216da8e219a977a4d7fc48ae77e45d",
-              "text": "A red Volkswagen Beetle on a street lined with brick houses in Bogotá, Colombia",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The selected Word contains Bogotá sightseeing but no photograph-specific description of a red Volkswagen Beetle and brick houses; translated the current RU image alt text."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:1b3fec59042a18eb",
-              "field": "media.hover",
-              "sourceTextSha256": "349a927e56419be1d2d6d8509c3d35b5cae0644ef34503703a7b2e6b05e95429",
-              "text": "Bogotá: a red car on a quiet, tree-lined street",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The exact Word has no image-specific hover caption describing a red car on a quiet tree-lined Bogotá street; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:d9c35578f29b8796",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
-              "text": "Bogotá",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
-                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
-                "paragraphs": [
-                  {
-                    "ref": "p:65",
-                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:883cfdc63622d98d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c30b0bf8d13409d044851be2a29a0c3abcd9caac81ac4600045f57f4a3424e88",
-              "text": "Lake Guatavita",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
-                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
-                "paragraphs": [
-                  {
-                    "ref": "p:39",
-                    "textSha256": "89ba10ac1c25e9ce46859fd47dc3bad69e4fe3a5d4aef3a9b295b37844deef25"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:413d3f130786a6da",
-              "field": "itinerary.label",
-              "sourceTextSha256": "92a0e3b8e4cb6b7bbcbc37bc5072cad2414e729ac62652abeea09edcbf0ad82e",
-              "text": "Guatavita",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
-                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
-                "paragraphs": [
-                  {
-                    "ref": "p:68",
-                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:49:23.582Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_4c0a9bc31e22_b008",
+        "blobSha": "baf484d0b1f5222b51cd71f38e464f9cc6a50ba1",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_essential_5_days_b004/ada_en_4c0a9bc31e22_b008.json",
+        "at": "2026-11-04T06:55:43.866Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

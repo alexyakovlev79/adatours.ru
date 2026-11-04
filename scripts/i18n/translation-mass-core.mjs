@@ -29,7 +29,15 @@ export function massIndexShard(index,now,ownerId=null){
   return c.queued>0||(c.leased>0&&v.earliestExpiryAt&&date(v.earliestExpiryAt)<=nowMs)||
    (c.retryable>0&&v.earliestRetryAt&&date(v.earliestRetryAt)<=nowMs);
  });
- const ranked=options.sort((a,b)=>b[1].stages[stage].queued-a[1].stages[stage].queued||
+ // Prefer shards whose expired leases or due retries can be recovered now.
+ // Otherwise a continuously full queue can starve recovery indefinitely.
+ const overdue=options.filter(([,v])=>{
+  const c=v.stages[stage];
+  return (c.leased>0&&v.earliestExpiryAt&&date(v.earliestExpiryAt)<=nowMs)||
+   (c.retryable>0&&v.earliestRetryAt&&date(v.earliestRetryAt)<=nowMs);
+ });
+ const ranked=(overdue.length?overdue:options).sort((a,b)=>
+  b[1].stages[stage].queued-a[1].stages[stage].queued||
   a[0].localeCompare(b[0]));
  if(ownerId&&valid(ownerId)&&ranked.length){
   // Spread simultaneous workers over the available CAS shards.

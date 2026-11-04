@@ -144,3 +144,22 @@ test('owner-based mass shard selection distributes workers without changing lega
  assert.ok(selected.size>=1);
  assert.equal(massIndexShard(q,at),massIndexShard(q,at));
 });
+
+test('claim selection recovers expired shards even with unrelated queued work',()=>{
+ const q=source();
+ q.index.dispatcherEnabled=true;q.index.translationMassLaunchAllowed=true;
+ const sid=Object.keys(q.shards).find(k=>q.shards[k].items.length);
+ const first=massClaim(q.shards[sid],{stage:'word_2027',
+  ownerId:'old_worker',token:'old_token',now:at});
+ q.index=massRebuildIndex(q.index,sid,first.shard,at);
+ // Other shards still contain ordinary queued work.
+ const atExpiry='2026-11-02T21:31:00Z';
+ assert.equal(massIndexShard(q.index,atExpiry),sid);
+ for(const owner of ['new_worker','another_worker','worker_10'])
+  assert.equal(massIndexShard(q.index,atExpiry,owner),sid);
+ const reaped=massReap(first.shard,atExpiry);
+ assert.equal(reaped.restored,1);
+ const refreshed=massRebuildIndex(q.index,sid,reaped.shard,atExpiry);
+ assert.equal(refreshed.counts.leased,0);
+ assert.equal(refreshed.counts.queued,q.index.counts.queued+1);
+});

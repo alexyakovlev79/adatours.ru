@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1900,
-    "leased": 13,
+    "queued": 1899,
+    "leased": 14,
     "review": 496,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1900,
-      "leased": 13,
+      "queued": 1899,
+      "leased": 14,
       "review": 496,
       "ready": 1,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 60,
-          "leased": 0,
+          "queued": 59,
+          "leased": 1,
           "review": 18,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T10:31:22.983Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_mexico_religious_journey:b009",
       "token": "ada-token-52870a61-8d39-45ab-bf16",
       "expiresAt": "2026-11-04T10:31:08.858Z",
+      "generation": 1
+    },
+    "ada-en-e5835a329b8c": {
+      "jobId": "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b006",
+      "token": "ada-en-token-e5835a329b8c",
+      "expiresAt": "2026-11-04T10:31:22.983Z",
       "generation": 1
     }
   },
@@ -3006,7 +3012,8 @@
     "ada-en-e5835a329b8c": {
       "token": "ada-en-token-e5835a329b8c",
       "jobIds": [
-        "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b002"
+        "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b002",
+        "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b006"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b002"
@@ -3014,5 +3021,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T09:01:16.106Z"
+  "updatedAt": "2026-11-04T09:01:22.983Z"
 }

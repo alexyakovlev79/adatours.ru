@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_metropoliten:b001",
+  "stableId": "tour_source_kolumbiya_metropoliten",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7fb1498daa9c017a58c302ad8a96ec0330c98c8e22006d2bf57ea3c95171fe4f",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "a401b225daacc692bc5c677fecb82b54f987d3d6255a2d239f1036cb2a61588e",
+      "text": "Metropolitan Colombia",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "119h6E4cigYSA0G15WLgA0gAfdynPz3sC",
+        "documentSha256": "e76b4978a7a7812588c152650e6d95aac967d7667af2d7622c4fb401dbf4840c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:3",
+            "textSha256": "4cc5773759e22f0b5320c677f733cdf791f364d8649e770280d80a390091e290"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a5fbac95dcdfb907a84a13c4ea54246957d490306b9e5cdd10ad6ef6d8ee3f12",
+      "text": "Six days between Colombia’s two great Andean cities: the historic centre of Bogotá, the Gold Museum, Monserrate and the Salt Cathedral of Zipaquirá; then Medellín, the “city of eternal spring”, its transformed Comuna 13, and the colourful town of Guatapé beneath the Piedra del Peñol.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "119h6E4cigYSA0G15WLgA0gAfdynPz3sC",
+        "documentSha256": "e76b4978a7a7812588c152650e6d95aac967d7667af2d7622c4fb401dbf4840c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:18",
+            "textSha256": "e5d182e4e172fb0a6eddbba59f7c9beb6009b77422eafdeaffe63fde92902250"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "d92ee2ab55cee49de146b24a7d776a6ed3a5ed1ab312b2ef497d447e9bd35adf",
+      "text": "$1156",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The current RU price note $1156 has no matching amount in the 2027 Word tariff table (which starts at $1,424); preserve the assigned RU commercial value unchanged because tariff updates belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:74d81c18ef32e157",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "119h6E4cigYSA0G15WLgA0gAfdynPz3sC",
+        "documentSha256": "e76b4978a7a7812588c152650e6d95aac967d7667af2d7622c4fb401dbf4840c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:8",
+            "textSha256": "1d57b041b8d9e275703e36ff6527ea10fcb90604dd07d95a45372d43afd40285"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract Bogotá from the approved Word route for the first route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:991e17d2ef70ddb6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "119h6E4cigYSA0G15WLgA0gAfdynPz3sC",
+        "documentSha256": "e76b4978a7a7812588c152650e6d95aac967d7667af2d7622c4fb401dbf4840c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:78",
+            "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:527b187249819529",
+      "field": "included",
+      "sourceTextSha256": "26baf9e903c7d4733bd3e386a1e8eb163b3710b23b780951ecab5dc2ebd2d878",
+      "text": "3 nights in Bogotá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "119h6E4cigYSA0G15WLgA0gAfdynPz3sC",
+        "documentSha256": "e76b4978a7a7812588c152650e6d95aac967d7667af2d7622c4fb401dbf4840c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:171",
+            "textSha256": "fb4191b02d73fa03ead2d83f001f53a0637c637e326c08ab8a52976f7c5be039"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the combined accommodation inclusion into its existing Bogotá-specific block."
+      }
+    },
+    {
+      "blockId": "tour:included:f75b54958cdc30fe",
+      "field": "included",
+      "sourceTextSha256": "098120b9cfa13e616e9aaa2d58061b7a9268069f69f17fbbc23125b5bd4f3066",
+      "text": "2 nights in Medellín",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "119h6E4cigYSA0G15WLgA0gAfdynPz3sC",
+        "documentSha256": "e76b4978a7a7812588c152650e6d95aac967d7667af2d7622c4fb401dbf4840c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:171",
+            "textSha256": "fb4191b02d73fa03ead2d83f001f53a0637c637e326c08ab8a52976f7c5be039"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the combined accommodation inclusion into its existing Medellín-specific block."
+      }
+    },
+    {
+      "blockId": "tour:included:27c5fa8393078479",
+      "field": "included",
+      "sourceTextSha256": "07a330722f2920b987bd35b8fe46d6e28886dfb7fc0fb5c6a8d920e15c7980a4",
+      "text": "Daily breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "119h6E4cigYSA0G15WLgA0gAfdynPz3sC",
+        "documentSha256": "e76b4978a7a7812588c152650e6d95aac967d7667af2d7622c4fb401dbf4840c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:25",
+            "textSha256": "85ee45b1489ec12ff275e15ca04a443657fab0a9d15098a4d6caceaa8d393d78"
+          },
+          {
+            "ref": "word/document.xml:p:171",
+            "textSha256": "fb4191b02d73fa03ead2d83f001f53a0637c637e326c08ab8a52976f7c5be039"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the breakfast service from the meals and accommodation inclusions for this separate block."
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kongress_v_rio_de_zhanejro:b001",
+  "stableId": "tour_source_kongress_v_rio_de_zhanejro",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1803becb986fe96d9519a88754fc6487396b99f813ae71396d94c684280abbbd",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "9e766b5e7b59ce64a0962e67efe7956f09b4eb3a67b71245b7acb0366ba247bd",
+      "text": "5-Day Corporate Tour in Rio de Janeiro",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word title is Congress in Rio de Janeiro and gives five days separately; it has no equivalent standalone corporate-tour title. The RU title is translated with the confirmed duration."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "ce41293ca41106a3779e28141ecf9fd17579bba9c4deb7d88a26f513204cd17c",
+      "text": "This five-day programme combines a congress in Rio de Janeiro with visits to the city's main sights and group dinners. Mornings on several days are devoted to business sessions. Afterwards, the group visits Corcovado and Sugar Loaf, explores the city and chooses one of the optional programmes for Day 4.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 15 gives a shorter overview; the combined RU lead, including five days, business mornings and the specific Day 4 choice, has no corresponding single passage. The RU summary is translated using the verified Word place names."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "005800ce6545c225c47a2a22f0b65270bda9b069a6d90f64107dd88aadfdf3a4",
+      "text": "Price to be confirmed",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word provides individual service rates and an on-request Day 4 activity, but no total programme price. The current RU total-price status is retained as text without assigning any amount."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14nRX0wYh8xtWOCRYW3YxthdOeZdCM3Xh",
+        "documentSha256": "cd871686a1930b3d4ded4d5adada17af9400a6a7b6009d6dbf3af08dadb18c42",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p11",
+            "textSha256": "cec3e3be02ca636997e6e309f0f0f7be5ad0c689b054bc1506b0aad24c38157e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extracted the exact Rio de Janeiro place name from the Word base-and-destination line as the tour route label."
+      }
+    },
+    {
+      "blockId": "tour:included:ba3d3d788c728535",
+      "field": "included",
+      "sourceTextSha256": "b7fe07106bbbefa74245bcfa9802d6f10cb6489e565b7d3647bbdb4f1abca8ea",
+      "text": "Accommodation on a bed-and-breakfast basis, with breakfast included.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions hotels and breakfasts in the daily programme but has no corresponding blanket BB accommodation inclusion. The current RU inclusion is translated."
+      }
+    },
+    {
+      "blockId": "tour:included:31a7bfcc55c1bd09",
+      "field": "included",
+      "sourceTextSha256": "6ded1082df21738841f08f2c60d02701769227a2e8116accb0eb576e7a957a6c",
+      "text": "All transfers along the route.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lists individual transfers across the itinerary and rate table but has no corresponding blanket all-route-transfers inclusion. The current RU inclusion is translated."
+      }
+    },
+    {
+      "blockId": "tour:included:9a75e826d258b030",
+      "field": "included",
+      "sourceTextSha256": "91a780358e59a78143875e983cb0ca37b47444edc0a5e6b097d412f1d72f3834",
+      "text": "Guide services during excursions.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary and rate table mention guides for individual services but have no matching standalone guide-services inclusion. The current RU scope is retained."
+      }
+    },
+    {
+      "blockId": "tour:included:92111e77c708be49",
+      "field": "included",
+      "sourceTextSha256": "9ced452a651c92fb81066303552d8ad85dc2497c57081bdcbefdf7bb28f86297",
+      "text": "Entrance tickets to the sites visited.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lists a Corcovado entrance fee in the rates but has no matching blanket all-visited-sites entrance-ticket inclusion. The current RU inclusion is translated."
+      }
+    }
+  ]
+}

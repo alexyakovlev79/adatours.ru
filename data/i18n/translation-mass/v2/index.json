@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1678,
-    "leased": 15,
+    "queued": 1677,
+    "leased": 16,
     "review": 716,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1678,
-      "leased": 15,
+      "queued": 1677,
+      "leased": 16,
       "review": 716,
       "ready": 1,
       "retryable": 0,
@@ -105,8 +105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 42,
-          "leased": 0,
+          "queued": 41,
+          "leased": 1,
           "review": 20,
           "ready": 0,
           "retryable": 0,
@@ -137,7 +137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T15:09:19.657Z",
       "earliestRetryAt": null
     },
     "12": {
@@ -1430,6 +1430,12 @@
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b009",
       "token": "tok_7ff9b877_mw25ua0j",
       "expiresAt": "2026-11-04T15:08:57.612Z",
+      "generation": 1
+    },
+    "ada_en_b4a6770a839e": {
+      "jobId": "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b006",
+      "token": "ada_token_b4a6770a839e_20261104",
+      "expiresAt": "2026-11-04T15:09:19.657Z",
       "generation": 1
     }
   },
@@ -3797,7 +3803,8 @@
     "ada_en_b4a6770a839e": {
       "token": "ada_token_b4a6770a839e_20261104",
       "jobIds": [
-        "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b008"
+        "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b008",
+        "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b006"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b008"
@@ -3866,5 +3873,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T13:39:11.229Z"
+  "updatedAt": "2026-11-04T13:39:19.657Z"
 }

@@ -572,7 +572,7 @@
         "expiresAt": "2026-11-04T09:24:01.316Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-8526ba7437bc-b008-cp4-tour_source_braziliya_s_vodopadami_na_novyj_god",
+        "id": "ada-en-20261104-8526ba7437bc-b008-cp8-tour_source_braziliya_s_vodopadami_na_novyj_god",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-8526ba7437bc",
         "token": "ada-en-token-8526ba7437bc",
@@ -643,10 +643,65 @@
                 "runId": "ada-en-20261104-8526ba7437bc",
                 "wordAbsenceReason": "Word paragraph 85 has a generic breakfast-and-airport transfer sentence, without the RU scheduled-time wording or named airport. Translated the full current RU field to retain those details."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:25c6390c55f06880",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1P7SLkPXu84-MEeyE5_Xr1jFTBFuE7j8K",
+                "documentSha256": "5a55ecf52dc3e5beb83a5b5be766ce30daab8bc1c731f9f3b3a63fac3804c080",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p84",
+                    "textSha256": "c1eee295ad05d89d7fc9d9bf018488a64f4b6bb80ad6bed9872190b056f9839f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact city name from the Word departure-day heading for this separate place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:2ff43d4dd9ef8e4a",
+              "field": "media.alt",
+              "sourceTextSha256": "6d451d0fe976aad1db39e4883012ab7bda5d9e3b69f05a59b2b271605ae6f215",
+              "text": "Pictured: an aerial view of the waterfalls at Foz do Iguaçu",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The Word contains no equivalent image alt caption for this aerial photograph; translated the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "fa4bac45c46323f66a252da18f7f560a29a028bc7b26d1cba348b7198975fa8b",
+              "text": "Three women in white beside the waves under New Year’s fireworks on Copacabana Beach, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The Word describes New Year celebrations but has no matching alt description of this specific image with three women; translated the current RU description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:77871c8f58bdcbc6",
+              "field": "media.hover",
+              "sourceTextSha256": "fd735c51d80c263980845755ac03987a2b97f9d1e54871050f5873e944d90597",
+              "text": "Copacabana: red fireworks above women by the sea at night",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The Word contains no matching hover caption for this specific New Year image; translated the current RU caption."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:55:24.739Z"
+        "at": "2026-11-04T07:55:43.369Z"
       },
       "submission": null,
       "review": null,

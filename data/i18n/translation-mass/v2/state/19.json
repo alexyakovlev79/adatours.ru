@@ -335,7 +335,102 @@
         "claimedAt": "2026-11-04T06:09:59.963Z",
         "expiresAt": "2026-11-04T07:39:59.963Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_abf469133bbf:b007:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_abf469133bbf",
+        "token": "ada_en_token_abf469133bbf_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b007",
+          "stableId": "tour_colombia_complete_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "4aab540094b3364ca21c23c1b3f0d766b06cfa93bc8c4be1dc611a3a67ff5166",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "d6343a3481e38fff6681026a2acf5ac2d66c2c3174778295f161c82288e06c37",
+              "text": "Cocora Valley, Salento and a coffee farm",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:74",
+                    "textSha256": "f19c459706c11b2c55a18d9ea38705a426f2f7257348cb23bbb380c454efed12"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word day heading as the activity title, omitting only the Day 3 prefix and spacing."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "d45458b72842018682d5613d967278a937f473adc2ad375afbfba73792275e82",
+              "text": "Day 3 · After breakfast at the hotel, private transfer to El Dorado International Airport with your driver for your flight to Pereira, gateway to Colombia’s renowned Coffee Region. Upon arrival at Matecaña International Airport, you will be welcomed by your private English-speaking guide, who will accompany you throughout your stay in Pereira. Salento & Cocora Valley · Begin with the spectacular Cocora Valley, renowned for its dramatic Andean landscapes and iconic wax palms, Colombia’s national tree. Enjoy a traditional canelazo before exploring the valley with your specialised eco-guide. Follow scenic trails through the lush landscape towards the Wax Palm Forest, followed by the traditional Quindío Wax Palm Ritual and a symbolic tree-planting activity.\n\nContinue to Salento, one of the most charming towns in Colombia’s Coffee Region. Stroll through its colourful streets, discover local artisan workshops and enjoy panoramic views of the surrounding landscape. Coffee Experience · Continue to El Ocaso Coffee Farm, located on the slopes of the Central Andes. Accompanied by a local coffee expert, discover the different stages of coffee production, from cultivation and hand-picking to drying, processing and roasting.\n\nThe experience concludes with a traditional coffee tasting and a refreshing coffee lemonade at the farm’s main house, while enjoying panoramic views across the Coffee Region. Return to your hotel in Pereira.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:77",
+                    "textSha256": "9660e084995a81f03f7316ea95f33b2d80ef7a0ab042c86a0291f5aa7ecff525"
+                  },
+                  {
+                    "ref": "word/document.xml:p:78",
+                    "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
+                  },
+                  {
+                    "ref": "word/document.xml:p:79",
+                    "textSha256": "6bd409bacb651cc5697fa703218ca7d1f875390ee838b231072d2ed47a9573bd"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:592d9bf6f24904d0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+              "text": "Bogotá",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:65",
+                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:764177b192039f83",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+              "text": "Pereira",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:87",
+                    "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:10:27.316Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -1,0 +1,161 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii:b006",
+  "stableId": "tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c400fed351e9dd7ba259d39396f155686923ed9fbd9135bf0a6645b9f1bed589",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fbaf4fea66e0573d14e47bc3e2d9e2976c19c3206fb2f03f63c85209e58bd642",
+      "text": "After breakfast, visit the Brazilian side of Iguazu Falls with an English-speaking guide. In Guaraní, Iguazu means “big water”: some 275 cascades plunge into the Devil’s Throat gorge, creating a dramatic contrast with the calm river above. View the falls from the walkways and enjoy the panorama of the entire system.\n\n**Optional excursions (additional cost)**\n\n**Macuco Safari — USD 130 per person.** Travel about 3 km through the jungle in an open jeep, walk to the river and take a speedboat ride close to the falls.\n\n**Bird Park — USD 50 per person.** Explore large rainforest aviaries where brightly coloured birds fly freely.\n\n**Helicopter over Iguazu Falls — USD 3,666 per helicopter (1–5 people).** A private 35-minute flight over the falls and national park.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "docx:day5:brazilian-falls",
+            "textSha256": "439f2698462129937aeed2a5625e8237464f79ce8edcfcf86b67982686fb5ba6"
+          },
+          {
+            "ref": "docx:optional:macuco",
+            "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+          },
+          {
+            "ref": "docx:optional:macuco-price",
+            "textSha256": "9d3e95b9731c3520314d71c397e4a347006e30cfb1227f2aaf422b3861d6e494"
+          },
+          {
+            "ref": "docx:optional:bird-price",
+            "textSha256": "27a54269204a3f6219a03eabf42df0e845aac925e2b5482e3050164eff3c670e"
+          },
+          {
+            "ref": "docx:optional:helicopter-price",
+            "textSha256": "5dbccc516f92eabf1b750911d9fe0d76622d4c065d5d526622ffbf99999a8440"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combine the approved Day 5 English programme and the three Word 2027 optional-tour descriptions, preserving the 130, 50 and 3,666 USD tariffs and optional status."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "docx:day4:foz",
+            "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination from the approved Day 4 transfer paragraph and use it as an itinerary location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:37caf0df102e52c2",
+      "field": "media.alt",
+      "sourceTextSha256": "00ad24b89f7b0d9df661cb18093bc92953a0448199c3da935eb2ca0d654823f4",
+      "text": "Iguazu Falls photographed from the Brazilian side",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-3of5-20261105-0150-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word 2027 describes the Brazilian falls but contains no image-specific caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1c26f0bb98450328b796ed86b80cf94bdfa4e9a3ea498b27d81a725f0acd0e9e",
+      "text": "Argentine Side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "docx:day6:argentine",
+            "textSha256": "b9842e578e85bb997c59dc043d79e75dc8d060c0775d090cdceef2b47624b792"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Adapt the approved Day 6 heading and destination into a concise itinerary title without altering the excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "29054297a95b782306585cd55a5aff5935ac9d47c43383d1b3b71281628f20e4",
+      "text": "Travel across the Tancredo Neves Bridge for a guided excursion to the Argentine side of Iguazu Falls. Walkways lead through the national park directly above and below the cascades, with spectacular views of the Devil’s Throat and the rainforest-framed falls. From the viewing platforms, see the water plunge into the gorge and rainbows form above the spray. The Argentine-side trails offer a close-up perspective that complements the sweeping panoramic views from the Brazilian side.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "docx:day6:argentine",
+            "textSha256": "b9842e578e85bb997c59dc043d79e75dc8d060c0775d090cdceef2b47624b792"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Paraphrase the approved 2027 Day 6 itinerary into visitor-facing English, retaining the bridge, guided visit, walkways, Devil’s Throat and rainbows."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:60417d6735d09d06",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-3of5-20261105-0150-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word refers to the Argentine side of Iguazu Falls but does not name Puerto Iguazú as an itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c9697fd52b6e558d",
+      "field": "media.alt",
+      "sourceTextSha256": "00ad24b89f7b0d9df661cb18093bc92953a0448199c3da935eb2ca0d654823f4",
+      "text": "Photo: Iguazu Falls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-3of5-20261105-0150-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word contains the Iguazu Falls itinerary but no alternative-text caption for this particular photo."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "86ed580da4b81d8683b6736d9a0123cd95c27e5a1356962aebc71956f177b4ed",
+      "text": "Foz do Iguaçu – Manaus – Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "docx:day7:manaus",
+            "textSha256": "a7fedf6904993d183ba6f0a6bdef1efe6484e9e1757e1de37dc81308965c99c7"
+          },
+          {
+            "ref": "docx:heading:amazon",
+            "textSha256": "336b7a8f378318e64b27502026297091388b9f21cf6e0b2b12d5ce6308908ab0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the Day 7 itinerary heading from the documented Foz-to-Manaus flight and subsequent Amazon lodge transfer, without adding other stops."
+      }
+    }
+  ]
+}

@@ -222,7 +222,7 @@
         "expiresAt": "2026-11-04T07:09:26.173Z"
       },
       "checkpoint": {
-        "id": "cp-ada-en-befca8d88a7c-03-4",
+        "id": "cp-ada-en-befca8d88a7c-03-8",
         "format": "inline-v1",
         "ownerId": "ada-en-befca8d88a7c",
         "token": "ca9d19d3a2444d3eb27e82c408f2b400",
@@ -306,10 +306,72 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the named destination as a standalone itinerary label, retaining the approved Word spelling."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:d9cfe133970a2cb6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "42cfcf2a25511dbf38cda5eb029037ba4b47f70d14f04cf21528a1635b80c543",
+              "text": "Itaimbezinho Canyon",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p84",
+                    "textSha256": "614370570ede1a2e0833cd7f9f1fff8dbc88cb4c16bdcaab565cf8fae5f15fa5"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named destination as a standalone itinerary label, retaining the approved Word spelling."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:0eb20c430077bbb8",
+              "field": "media.alt",
+              "sourceTextSha256": "096cf1044084d4bbdbce4f576787871cdaf4d107207346d1a699f46b32f69c27",
+              "text": "The sheer walls of Itaimbezinho Canyon above a forested gorge, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word describes the canyon, but contains no image-specific alt caption matching this RU field."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:3361f9572e0d4841",
+              "field": "media.hover",
+              "sourceTextSha256": "30fd91635c84c628092a5514a606213c3059ef1134f08a59d295ef099ebed203",
+              "text": "Itaimbezinho in Brazil: a deep green gorge between rock walls",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific hover caption; translated the exact current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f60ccaf902463edc",
+              "field": "itinerary.label",
+              "sourceTextSha256": "42cfcf2a25511dbf38cda5eb029037ba4b47f70d14f04cf21528a1635b80c543",
+              "text": "Itaimbezinho Canyon",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p84",
+                    "textSha256": "614370570ede1a2e0833cd7f9f1fff8dbc88cb4c16bdcaab565cf8fae5f15fa5"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named destination as a standalone itinerary label, retaining the approved Word spelling."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:40:18.470Z"
+        "at": "2026-11-04T05:40:33.583Z"
       },
       "submission": null,
       "review": null,

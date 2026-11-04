@@ -243,7 +243,112 @@
         "claimedAt": "2026-11-04T05:39:31.824Z",
         "expiresAt": "2026-11-04T07:09:31.824Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f801-r2-03-b004-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-run2-20261104",
+        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b004",
+          "stableId": "tour_colombia_highlights_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "e6fb5ef32f1af3d91aa7019f35bb928c285323e854a88cff982d827c30f10330",
+          "blocks": [
+            {
+              "blockId": "tour:notIncluded:4df43aad41bd1872",
+              "field": "notIncluded",
+              "sourceTextSha256": "5bdc95ce5d682d243528dfcddd4ad32049fdcf9f7b4b24806301f59319c9c4f7",
+              "text": "Optional tours and activities, including a private boat to the Rosario Islands",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[184]",
+                    "textSha256": "4b57e1534c6943a0668f637d4ad32e9c7f9490a3af9ea875217f9dd20318c36c"
+                  },
+                  {
+                    "ref": "word/document.xml:p[58]",
+                    "textSha256": "16a9007749e72c6d88cc0776582a7a1b699f8dfcb67ad794df71a0c18f5d7d94"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the optional activities exclusion and exact private-boat upgrade context from the selected Word."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:7a4035bf14f67904",
+              "field": "notIncluded",
+              "sourceTextSha256": "47f15e56937002d7b9be83fc9392d4765a50f5396fb341166d88454b33ee2c37",
+              "text": "Lunches other than the included lunch in the Rosario Islands, dinners and beverages not mentioned in the programme",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[185]",
+                    "textSha256": "fc887b4d0253caa2e36a0bd1b8dffe633c2b57f24d86b1ca42faa462dbec1b0a"
+                  },
+                  {
+                    "ref": "word/document.xml:p[111]",
+                    "textSha256": "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Clarify the Word meals exclusion with the expressly included Rosario Islands lunch."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:dd8eb2ee319d9d99",
+              "field": "notIncluded",
+              "sourceTextSha256": "553adac15a3b9f4eaffe367eca8e74e5842744575c9ef03832f2957e930a261f",
+              "text": "   Gratuities for guides, drivers and service staff",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[186]",
+                    "textSha256": "77a53e997d554b4a2e9f11216085d68775d2bc99ce01911c24ee1528d4530680"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:0fccea3600e3021d",
+              "field": "notIncluded",
+              "sourceTextSha256": "bd9e4de32114f4c7ffb1258dc62b88785e03de93e2dfac84e50cc312864e0ce5",
+              "text": "Personal expenses and any services not mentioned in the programme",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[187]",
+                    "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+                  },
+                  {
+                    "ref": "word/document.xml:p[185]",
+                    "textSha256": "fc887b4d0253caa2e36a0bd1b8dffe633c2b57f24d86b1ca42faa462dbec1b0a"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the Word personal-expenses exclusion and services-not-mentioned exclusion for this list item."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:40:33.405Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

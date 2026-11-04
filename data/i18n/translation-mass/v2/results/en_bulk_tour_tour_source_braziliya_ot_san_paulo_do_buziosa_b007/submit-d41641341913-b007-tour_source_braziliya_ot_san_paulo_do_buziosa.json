@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_ot_san_paulo_do_buziosa:b007",
+  "stableId": "tour_source_braziliya_ot_san_paulo_do_buziosa",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9a2e3506d55d5374afbf31b441f2df678d65674fe039cff42c4fe16e8a9d1f37",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:31416ee0d00bcea4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[89]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3e1e336d549d3e7c",
+      "field": "media.alt",
+      "sourceTextSha256": "e3e5c3de6350a96c8c0a9bf8cfab7a97371edcb4fe92404c413775aaaa69e222",
+      "text": "Christ the Redeemer above the lagoon and racecourse in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no image alt description of the statue above the lagoon and racecourse; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:da5c2b70c0b43450",
+      "field": "media.hover",
+      "sourceTextSha256": "9d554deacfe22e1ee2649067520b38e1156f28cde448e5a00f471388078e0588",
+      "text": "Corcovado: the statue and viewing platform above the city and ocean",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This photo-specific hover caption is absent from the verified Word and is translated from RU."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d773059f88cdeab22a12bb1c4deda5cd7e959210de8e7984f81fb9a5f821c90f",
+      "text": "Rio de Janeiro: Corcovado and Christ the Redeemer",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[89]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p[45]",
+            "textSha256": "d44cde7e9bb9962980f8f0a4fda52309caf2b6e2221b49d25de2dd0720a10807"
+          },
+          {
+            "ref": "word/document.xml:p[46]",
+            "textSha256": "671fd02d2b149be762b11bc8738f736350dab17e85496ae860a9082b66c10d09"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the itinerary heading from the confirmed Word city name and its Corcovado and Christ the Redeemer highlights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b95defa0ee2853992871709abe85495b40184bf04e4d7cf0da3a9188027a2084",
+      "text": "Breakfast at the hotel. Then set off on a 4-hour tour to Corcovado with an English-speaking guide.\n\nAn open, eco-friendly train runs from the station to the summit through the jungle. On either side of the track is Tijuca Forest, home to monkeys, birds and other wildlife.\n\nAt 700 m above sea level stands the 38 m statue of Christ the Redeemer, built in 1931. From the viewing platform, you can see the Niterói Bridge, Guanabara Bay, the Botanical Garden, Maracanã Stadium, Sugar Loaf Mountain and other parts of Rio.\n\n**Optional excursion: Helicopter flight over Rio de Janeiro**\n\nA helicopter flight over Rio can be booked at an additional cost; price on request.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 7 is a differently scoped paragraph and states 710 m; it lacks the RU four-hour duration and this expanded structure. Preserve the immutable RU 700 m and all assigned facts, adapting the guide's service language to English; do not label the modified passage word_exact."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f82a47102d58c1a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[89]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:718a32a3c2d59d41",
+      "field": "media.alt",
+      "sourceTextSha256": "a4ba45ddd6478651074607d648c8f1182f8ef9e9c7b529807dd6109cc297aed2",
+      "text": "Boats and yachts in the bay at sunset in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme has no matching image alt caption for the sunset boats and yachts; translated from RU."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:ac35e5bc08998556",
+      "field": "media.hover",
+      "sourceTextSha256": "32a10cdd389918e9fe59ab69fa57c4a981850993a7a5d14e32f04e3485fd0f95",
+      "text": "Rio de Janeiro, Brazil: sunset over the bay with yachts",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme contains no equivalent sunset photo hover caption; translated from RU."
+      }
+    }
+  ]
+}

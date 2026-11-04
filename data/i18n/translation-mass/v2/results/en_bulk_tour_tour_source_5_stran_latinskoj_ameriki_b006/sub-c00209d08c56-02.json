@@ -1,0 +1,184 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b006",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9f6ea444e5cb163d0dd8afde2a849b48132f737fa77182d6eea2f77dd5e6531f",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:b7ee13e15b86238b",
+      "field": "notIncluded",
+      "sourceTextSha256": "06ac16d526cbc3e462dfc62e8fd8ba2dbf04b6547c22b8a8b93d6ed957bba60f",
+      "text": "Optional excursions: Bird Park — USD 50; Macuco Safari — USD 130; Maipo Valley — USD 230 per person with a minimum of two participants; astronomical tour in Atacama — USD 150 per person.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p272",
+            "textSha256": "88c842f0ae9ba9e38bbfb19849822d9a14f1b162e5ccb0827494bd4b66a02fce"
+          },
+          {
+            "ref": "word/document.xml:p274",
+            "textSha256": "27a54269204a3f6219a03eabf42df0e845aac925e2b5482e3050164eff3c670e"
+          },
+          {
+            "ref": "word/document.xml:p276",
+            "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+          },
+          {
+            "ref": "word/document.xml:p278",
+            "textSha256": "9d3e95b9731c3520314d71c397e4a347006e30cfb1227f2aaf422b3861d6e494"
+          },
+          {
+            "ref": "word/document.xml:p280",
+            "textSha256": "3a84c1c7087e1fa7e7230c58cb10f079afaef5bb2630b89a47f03a1fbee01960"
+          },
+          {
+            "ref": "word/document.xml:p282",
+            "textSha256": "3dd84812e6daa3ebb4be487859f667d16bbf5803e4b7340bf98fd70d5276bf7c"
+          },
+          {
+            "ref": "word/document.xml:p283",
+            "textSha256": "105d6f89ff1556458c2f05c2bfae419eb13a0c92ecaad57c97de1ff2a3956b0d"
+          },
+          {
+            "ref": "word/document.xml:p285",
+            "textSha256": "29f51e7bd55b274086121ff090bface30044f0c979745ed278fa772bb4dc9d1e"
+          },
+          {
+            "ref": "word/document.xml:p286",
+            "textSha256": "a1c551d0d5cd0c878072a85e4cf58101803a714bdb17e1b9e635dd58305816c1"
+          },
+          {
+            "ref": "word/document.xml:p287",
+            "textSha256": "e7a925fca4e62608d55a4e31127e33cc48fb8e7a38425cfd51917dfd67c27d6d"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Compose one optional-services summary from the corresponding Word table rows, preserving the assigned amounts and conditions."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1fdf66ab9d674bce",
+      "field": "notIncluded",
+      "sourceTextSha256": "43969d427cb391c6a225b9c08ef534e8bc8da4e82f7c1308eae52c3e95db8b90",
+      "text": "Food and drinks not specified in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p308",
+            "textSha256": "b21abaa21d9d7ee3fec368a1b13c6898715e51af6b129709e37e3ef944041bc0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker to fit the existing notIncluded item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:be709821b36ad05d",
+      "field": "notIncluded",
+      "sourceTextSha256": "0770b68575073fae33591d85c9443853c2c1e7d1bc5b17dc3aea25b8e60cfc43",
+      "text": "Tips and personal expenses.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-c00209d08c56",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified full Word 2027 document lists Tips in paragraph 309 but does not include the assigned personal-expenses wording; translate this RU item without changing its scope."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:f33169ed00481ef7",
+      "field": "notIncluded",
+      "sourceTextSha256": "e924e89bb68f57d6240bb579908e80ea7e2e006d184c0b9f4343977ff62b9a77",
+      "text": "Laundry service",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p310",
+            "textSha256": "b7fcda89c06a53f4fbe2016e1a71b961f1aaf675de235fe4f75a5a0c8bb69984"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker to fit the existing notIncluded item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:9bde40031a611c47",
+      "field": "notIncluded",
+      "sourceTextSha256": "f75f59855e98d8bd2101503e08721835c4e4326a18403c20b28b210038b761f1",
+      "text": "Supplement for an English-speaking guide in Uyuni, at Lake Titicaca and at Machu Picchu, if requested.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-c00209d08c56",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word 2027 document has no corresponding guide-supplement exclusion for these three locations; translate the assigned RU gap and apply the owner's 03 November service-language adaptation."
+      }
+    },
+    {
+      "blockId": "tour:note:5aa2c628beab8b85",
+      "field": "note",
+      "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+      "text": "Hotels may be replaced by others of the same category.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p263",
+            "textSha256": "a1ca8a71a1317707b0f06593986c7a5783ca54fa4d772d4ee76d5e5e9756a177"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the hotel-substitution clause from the combined Word condition for this existing single-purpose note."
+      }
+    },
+    {
+      "blockId": "tour:note:eeb2832b5b22895b",
+      "field": "note",
+      "sourceTextSha256": "05c7ec663a3193acbebd1bc1bd009ffff1b5c7055788a0c60dc32eddf5f368c5",
+      "text": "The order of excursions may be changed while the full programme is maintained.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p263",
+            "textSha256": "a1ca8a71a1317707b0f06593986c7a5783ca54fa4d772d4ee76d5e5e9756a177"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the excursion-order clause from the combined Word condition for this existing single-purpose note."
+      }
+    },
+    {
+      "blockId": "tour:note:116ab96902d7828a",
+      "field": "note",
+      "sourceTextSha256": "e78bdc0d130871fcc2469eac9068ffa9c50b44768324e4a1f7beea7b41c41c9f",
+      "text": "We are not responsible for hotel breakfasts missed because of early-morning flights or excursions.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p265",
+            "textSha256": "ab4b459af8c6589d11164cbb22935b67de667ef22ea8fd9b6f3b1363e553a891"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker to fit the existing note."
+      }
+    }
+  ]
+}

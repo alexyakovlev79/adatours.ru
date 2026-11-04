@@ -1,0 +1,124 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_brazilii:b003",
+  "stableId": "tour_source_nezabyvaemyj_novyj_god_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ecf5ac48f0a44e2718cb3e6cda30f4be04f683ec8a52f4f3886f9d24227af3b5",
+  "blocks": [
+    {
+      "blockId": "tour:note:5a68bbfc8a20dca0",
+      "field": "note",
+      "sourceTextSha256": "fab155a27b5f58a7bb025ac3452cea80951d8b5264eb04bf74815438c990eccd",
+      "text": "Ada Tours may replace the specified hotel with another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word document does not contain this hotel-substitution note."
+      }
+    },
+    {
+      "blockId": "tour:note:80d2ed11276533ef",
+      "field": "note",
+      "sourceTextSha256": "55379aed07b2e9467f3a3ba4b6a6e3596d1440d48c9760ca43042defa76c4e16",
+      "text": "Ada Tours may change the order of excursions while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The English Word programme omits this operational note about excursion order."
+      }
+    },
+    {
+      "blockId": "tour:note:a6ee24da085098e0",
+      "field": "note",
+      "sourceTextSha256": "39acd0d02295319996150571b8c5fe8260e65f4d9603ea80a1c310482f1be309",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed because of an early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word programme does not contain the Russian breakfast-liability note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4b5cd1a7cee2a8d23196f71d5f65c3bcc7fac33077800271ada0830c6453a5b5",
+      "text": "30 December. Arrival in Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C5tNZtAea96Jz3Gf3OcetOPNp6mpGdvV",
+        "documentSha256": "b74a215cbc3582edd334965291943e2859b79d147b0aa16484f2c0eed893a7b0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:15",
+            "textSha256": "9f2d79f94f83c52dba8f5db827489872bf05d4c6a42f22e394bc3046107d28ad"
+          },
+          {
+            "ref": "docx:paragraph:16",
+            "textSha256": "623a1479e03b49389873460c222e6833a77e8e799a6134c130404682311bc6d1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The approved Word Day 1 heading gives 30 December in Rio and the next line identifies arrival and transfer; joined as a concise itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8e9f4ea6632a3f8a37fa9dcea10e955f4b877758f4167a147ac7884ea7bd6f44",
+      "text": "On arrival at the airport, you will be met and transferred to your hotel.\n\nEven on the way, you will notice how Rio is preparing for New Year. Stages, lights, screens and loudspeakers are being installed on Copacabana Beach. More and more people wear white, and waterfront stalls sell white dresses and shirts, candles and flowers for New Year’s Eve.\n\nAfter checking in, take a walk along Copacabana and the oceanfront. Its black-and-white mosaic promenade, neighbouring Ipanema and the warm Atlantic Ocean set the mood for the trip.\n\nRestaurants in Ipanema and Leblon take bookings for New Year’s Eve well in advance. The city grows livelier, but your first evening is free: rest after the flight, enjoy a fresh juice or caipirinha and watch Rio prepare for the festivities.\n\nThe holiday spirit is already everywhere. In Ipanema and Leblon, waiters prepare special menus and coastal vendors display even more white clothing, flowers and candles. For Rio residents, preparations begin long before 31 December, so you become part of the celebrations before New Year’s Eve itself.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The English Word Day 1 narrative describes arrival and Copacabana but omits the extensive New Year preparations, white clothing, vendors and Ipanema/Leblon restaurant details present in current Russian copy."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C5tNZtAea96Jz3Gf3OcetOPNp6mpGdvV",
+        "documentSha256": "b74a215cbc3582edd334965291943e2859b79d147b0aa16484f2c0eed893a7b0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:15",
+            "textSha256": "9f2d79f94f83c52dba8f5db827489872bf05d4c6a42f22e394bc3046107d28ad"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The Word Day 1 heading identifies Rio de Janeiro; removing the date leaves the exact English city name for the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ecb17672bf383923",
+      "field": "media.alt",
+      "sourceTextSha256": "18840d3547fea2c5b99f9d2c83fd7d93cbdea9f1b6ca02339a9dee0269e0f318",
+      "text": "Courtyard arcades beneath the forested slope of Corcovado, Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No photo alt description for this courtyard appears in the approved Word document."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:44aee5e291fe14d0",
+      "field": "media.hover",
+      "sourceTextSha256": "c3235a895c2eed6b84cad0b83a7de319cea16bef94bbacf65c622bbdf012035e",
+      "text": "Rio de Janeiro: courtyard arcades below the green slopes of Corcovado",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No image hover caption for the courtyard scene appears in the Word programme."
+      }
+    }
+  ]
+}

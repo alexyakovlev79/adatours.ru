@@ -493,11 +493,16 @@
     {
       "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b011",
       "stage": "word_2027",
-      "status": "queued",
+      "status": "leased",
       "sourceFingerprint": "74f5fbef082a66e97a53521aa40e27d1d1425a3b45308a93bfeef3f6ea5923c8",
-      "generation": 1,
+      "generation": 2,
       "attempts": 1,
-      "lease": null,
+      "lease": {
+        "ownerId": "ada-en-701c2338f1e2",
+        "token": "ada-en-701c2338f1e2-20261104",
+        "claimedAt": "2026-11-04T10:36:26.988Z",
+        "expiresAt": "2026-11-04T12:06:26.988Z"
+      },
       "checkpoint": {
         "id": "sub-9c9ff2214505-en-bulk-tour-tour_sao_paulo_rio_october_11_days-b011-cp8",
         "format": "inline-v1",

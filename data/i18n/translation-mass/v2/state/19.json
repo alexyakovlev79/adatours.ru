@@ -449,7 +449,84 @@
         "claimedAt": "2026-11-04T07:02:42.081Z",
         "expiresAt": "2026-11-04T08:32:42.081Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a40ee2cc-p03-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-a40ee2cc",
+        "token": "ada-en-token-a40ee2cc-71df-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_panama_city_gamboa_6_days:b001",
+          "stableId": "tour_panama_city_gamboa_6_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7cfa522c4888de89c715dead6335101754752af52ecd17d8cf033184a9fff954",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "961e2494d367de887505bdd9c4a4763d4c7e4dd134d5e1c90ccae17405f8539d",
+              "text": "Panama City & Gamboa",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:13",
+                    "textSha256": "fd8a81acc5294c3ca5c31600af5dec8155d21a7d3cf24a166940e3bed4f58cfb"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the English tour name from the heading, omitting year, duration and guide-language metadata."
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "317fe048991c81ccd04086bbb71c5e0be956a62b8ce17c1424b434e764c7ef48",
+              "text": "Panama City & Gamboa offer a remarkable combination of modern city life, colonial heritage, the engineering legacy of the Panama Canal and the extraordinary biodiversity of the surrounding rainforest. This six-day program combines the essential highlights of the capital with an authentic Emberá cultural experience and excursions into the tropical landscapes of Soberanía and Gamboa..",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:5",
+                    "textSha256": "40ee1a44891f0e5de27dc0ba6b7e44ad0a4bc51cf02b855ccf8292066ac49f8c"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "27d6ccd0844b2cc343ac43dafb1eee7547058427b7e0c774699356fc3b14916f",
+              "text": "Per person: 4* SGL USD 3,607 / DBL USD 1,915 / TRP USD 1,783; 5* SGL USD 3,832 / DBL USD 2,027 / TRP USD 1,896. Five nights, breakfast and services as per the itinerary; dates and guide language are agreed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The Word rate table confirms all listed amounts and occupancy rows, but no complete note contains the RU booking-date and language qualifier; translated the current RU note with the checked rates unchanged."
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "e5ae0a61ed1d925fa1d5ab875e0fb6b4cf36f7ab1aa9153d93cb7a009df6d6a0",
+              "text": "Transfers",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word 2027 has descriptions of airport transfers but no equivalent product-format label; translated the current RU label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:03:06.526Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ikonicheskaya_kolumbiya:b004",
+  "stableId": "tour_source_ikonicheskaya_kolumbiya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f6c818c770c0b99e3ba085059f41d5324996ad55ca759c94007b324169304d81",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9478abb2f6217579bdcccad8d4c634e6329e37049e3afbfe15a3913e79a42a75",
+      "text": "Breakfast, then a private city tour of La Candelaria, Bogotá’s historic centre (6 hours) with an English-speaking guide: the Gold Museum, with about 34,000 pieces of pre-Hispanic goldwork and thousands of other pre-Columbian objects; the Casa de la Moneda and the Botero Donation, with works by the renowned Colombian artist Fernando Botero; a panoramic tour of Bolívar Square, with the Primatial Cathedral, the Casa de Nariño (the presidential palace), the Liévano Palace (City Hall) and the Palace of Justice; and the ascent to Monserrate. Note: the Gold Museum is closed on Mondays, and the Casa de la Moneda and Botero Donation on Tuesdays.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "text:Day 2 · Breakfast, then a private city tour of La Candelaria, Bogotá’s historic centre (6 hours) with an English-speaking guide: the Gold Museum, with about 34,000 pieces of pre-Hispanic goldwork and thousands of other pre-Columbian objects; the Casa de la Moneda and the Botero Donation, with works by the renowned Colombian artist Fernando Botero; a panoramic tour of Bolívar Square, with the Primatial Cathedral, the Casa de Nariño (the presidential palace), the Liévano Palace (City Hall) and the Palace of Justice; and the ascent to Monserrate. Note: the Gold Museum is closed on Mondays, and the Casa de la Moneda and Botero Donation on Tuesdays.",
+            "textSha256": "9a4772ef5283cc7f1526635fc329ccb912f8ff4f2670008e8f20230699d78a2a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day prefix, retaining the approved city-tour prose and museum closure conditions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d9c35578f29b8796",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "text:Bogotá",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5deec20678622571",
+      "field": "media.alt",
+      "sourceTextSha256": "ca8dfa9d6906b68e2997291bfd7b4bd8fc7fc33d595526940923438680df17cd",
+      "text": "Dense rows of colourful buses on a street in Bogotá, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 contains no photo-specific alternative text describing the rows of buses in this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:683487398e2777aa",
+      "field": "media.hover",
+      "sourceTextSha256": "fb15ba802ad063345643e5b4b4e144b5616f27e6fdf91acb4dee9d08e176079d",
+      "text": "Bogotá: red, white and yellow buses on a busy street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme does not provide a hover caption describing the colours and street scene in this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2a369878dc3a9f946de8b449b0fc436c71cb836be8209233d66a8c5c4d33106e",
+      "text": "Bogotá – Zipaquirá – Guatavita",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "text:Day 3 · Breakfast, then a private full-day circuit (10 hours) with an English-speaking guide across the Bogotá savannah. First, the Salt Cathedral of Zipaquirá, one of Colombia’s main attractions, voted the first of the country’s seven wonders, built some 180 metres underground inside a salt mine. Then the Sacred Lagoon of Guatavita, famous worldwide for the legend of El Dorado. Typical lunch included.",
+            "textSha256": "a0da853d11081cbd37746cdcd251be754dc0370ee83eec472f7ce5d943b7f8f2"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route heading follows the departure area and two visits in the approved Word Day 3 paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "73835ba416e0cb3e22d855317cdb040e4cd081fd033f2974134193eb0598e30c",
+      "text": "Breakfast, then a private full-day circuit (10 hours) with an English-speaking guide across the Bogotá savannah. First, the Salt Cathedral of Zipaquirá, one of Colombia’s main attractions, voted the first of the country’s seven wonders, built some 180 metres underground inside a salt mine. Then the Sacred Lagoon of Guatavita, famous worldwide for the legend of El Dorado. Typical lunch included.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "text:Day 3 · Breakfast, then a private full-day circuit (10 hours) with an English-speaking guide across the Bogotá savannah. First, the Salt Cathedral of Zipaquirá, one of Colombia’s main attractions, voted the first of the country’s seven wonders, built some 180 metres underground inside a salt mine. Then the Sacred Lagoon of Guatavita, famous worldwide for the legend of El Dorado. Typical lunch included.",
+            "textSha256": "a0da853d11081cbd37746cdcd251be754dc0370ee83eec472f7ce5d943b7f8f2"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day marker, since the itinerary field already provides its day number and heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:592d9bf6f24904d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "text:Bogotá",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6c3919a06689c7e3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e1f321c4e2a3350b055cb01775ad7309ca31bcc7f91f76d9289f4ef0e1b5144e",
+      "text": "Zipaquirá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "text:Zipaquirá",
+            "textSha256": "3bec2523f5feb1dd3868c4f56b42c0d59d8fedfb6d93a991dbe0afa50911a73c"
+          }
+        ]
+      }
+    }
+  ]
+}

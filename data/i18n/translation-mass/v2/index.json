@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1608,
-    "leased": 7,
+    "queued": 1607,
+    "leased": 8,
     "review": 794,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1608,
-      "leased": 7,
+      "queued": 1607,
+      "leased": 8,
       "review": 794,
       "ready": 1,
       "retryable": 0,
@@ -1145,8 +1145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 74,
-          "leased": 0,
+          "queued": 73,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -1177,7 +1177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:03:00.811Z",
       "earliestRetryAt": null
     },
     "1c": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_kosta_rika_dlya_lyubitelej_prirody:b006",
       "token": "token-93c2be53-dku0ot58vy",
       "expiresAt": "2026-11-04T18:02:43.262Z",
+      "generation": 1
+    },
+    "ada-en-20261104-1730-3923": {
+      "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b010",
+      "token": "ada-en-token-3923da49a5c5",
+      "expiresAt": "2026-11-04T18:03:00.811Z",
       "generation": 1
     }
   },
@@ -4063,8 +4069,15 @@
         "en:bulk:tour:tour_source_kosta_rika_dlya_lyubitelej_prirody:b006"
       ],
       "completedJobIds": []
+    },
+    "ada-en-20261104-1730-3923": {
+      "token": "ada-en-token-3923da49a5c5",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b010"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:32:43.262Z"
+  "updatedAt": "2026-11-04T16:33:00.811Z"
 }

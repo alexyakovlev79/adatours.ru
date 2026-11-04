@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2067,
-    "leased": 12,
+    "queued": 2066,
+    "leased": 13,
     "review": 330,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2067,
-      "leased": 12,
+      "queued": 2066,
+      "leased": 13,
       "review": 330,
       "ready": 1,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 10,
           "ready": 0,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:42:51.049Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1413,6 +1413,12 @@
       "token": "lease-da131c3d187149a7b813992c83ea721b",
       "expiresAt": "2026-11-04T07:42:34.024Z",
       "generation": 1
+    },
+    "ada-en-2a369c57df19": {
+      "jobId": "en:bulk:tour:tour_chile_easter_island_3_days_2027:b002",
+      "token": "token-2a369c57df19-20261104",
+      "expiresAt": "2026-11-04T07:42:51.049Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2552,7 +2558,8 @@
         "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b008",
         "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b010",
         "en:bulk:tour:tour_brazil_rio_four_days:b003",
-        "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b011"
+        "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b011",
+        "en:bulk:tour:tour_chile_easter_island_3_days_2027:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b008",
@@ -2575,5 +2582,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:12:34.024Z"
+  "updatedAt": "2026-11-04T06:12:51.049Z"
 }

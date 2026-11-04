@@ -409,7 +409,7 @@
         "expiresAt": "2026-11-04T08:17:00.502Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-f15fc6575170-s03-cp4",
+        "id": "ada-en-20261104-f15fc6575170-s03-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-f15fc6575170",
         "token": "tok-a6c7288eaf078ffcfbb24346ad",
@@ -500,6 +500,68 @@
                   ]
                 }
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:651d57a9ed029c42",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0e801e9e2e470ea660a0a181930ed8b69373772b809a46cc7a180a39242979cc",
+              "text": "Chapada dos Guimarães National Park",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p33",
+                    "textSha256": "822ace6ed3256d8bbcd9d6626a2b88f0f93b4bd74c03c480326a7ad0cdd11352"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the same named park or waterfall from the verified Word day paragraph as a concise place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1d5eaf77a4158adb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e900878c81ece5b25c0cb4eb9bad32b4c53e7bb3f083a3ffb283a01b4b6d1864",
+              "text": "Bridal Veil Waterfall",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p33",
+                    "textSha256": "822ace6ed3256d8bbcd9d6626a2b88f0f93b4bd74c03c480326a7ad0cdd11352"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the same named park or waterfall from the verified Word day paragraph as a concise place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:d49274e587520d66",
+              "field": "media.alt",
+              "sourceTextSha256": "063b5721596b37b1a7527ded43fc14ced2b4d67fb53afda2cfbbeefb8c6a3418",
+              "text": "A narrow waterfall in a green rocky gorge, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-f15fc6575170",
+                "wordAbsenceReason": "The complete verified DOCX contains itinerary paragraphs and tariffs, but no image-specific alt or hover text for this current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:507f31551642d3ad",
+              "field": "media.hover",
+              "sourceTextSha256": "c549ce42b4e2e58d6d108d12cf237efeb86b0c14e78f5d8d787645d222588473",
+              "text": "A stream of water between mossy rocks and dense forest",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-f15fc6575170",
+                "wordAbsenceReason": "The complete verified DOCX contains itinerary paragraphs and tariffs, but no image-specific alt or hover text for this current RU caption."
+              }
             }
           ],
           "sourceNotes": [
@@ -509,7 +571,7 @@
             }
           ]
         },
-        "at": "2026-11-04T06:48:08.950Z"
+        "at": "2026-11-04T06:48:29.612Z"
       },
       "submission": null,
       "review": null,

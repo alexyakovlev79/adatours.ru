@@ -397,7 +397,7 @@
         "expiresAt": "2026-11-04T08:17:06.243Z"
       },
       "checkpoint": {
-        "id": "cp-9a69348b6e00-02-4",
+        "id": "cp-9a69348b6e00-02-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9a69348b6e00",
         "token": "tok-9a69348b6e00-20261104-a1",
@@ -458,10 +458,82 @@
                   "runId": "ada-en-20261104-9a69348b6e00",
                   "wordAbsenceReason": "The Word conditions and inclusions contain no liability clause for breakfasts missed because of early departures."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+                "field": "itinerary.title",
+                "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+                "text": "San José",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                  "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p104",
+                      "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:5a4836cca1208c95",
+                "field": "itinerary.text",
+                "sourceTextSha256": "f073b4a196ccae01dd72f17db4eee1909bdd971a0244ef6b9226f1d0b03d05e5",
+                "text": "Day 1 · Arrival at Juan Santamaría International Airport, where you are met for the transfer to your hotel. Overnight at Hotel Palma Real.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                  "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p67",
+                      "textSha256": "c5fa6704841e83313c9898bef6d54bcbffd11d3aca3e7f8609584c20a21aded9"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:0fa333293e1d31c2",
+                "field": "itinerary.label",
+                "sourceTextSha256": "ecf1d4aaf87efa0e77b1e87aa624616c6ff82b4b7a23f4960dea213038d53667",
+                "text": "San José",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                  "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p104",
+                      "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:media_alt:db9a5f02b4833863",
+                "field": "media.alt",
+                "sourceTextSha256": "f995c88dac49d8cbb0b78d5ea2569902e4e1f6073f1285561d679e2b94dd4375",
+                "text": "An illuminated historic building behind a fountain in the evening in San José, Costa Rica",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The DOCX supplies no photograph alt text describing the illuminated historic building and fountain in San José."
+                }
+              }
+            ],
+            "sourceDifferences": [
+              {
+                "field": "itinerary.text",
+                "blockId": "tour:itinerary_text:5a4836cca1208c95",
+                "word2027": "Hotel Palma Real",
+                "currentRu": "Barceló San Jose Palacio",
+                "handling": "Approved Word 2027 Day 1 is retained verbatim in the EN review result under editorial contract §1.5–1.6; no canonical RU or hotel data is modified."
               }
             ]
           },
-          "completedBlockCount": 4,
+          "completedBlockCount": 8,
           "wordSourceVerified": {
             "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
             "sha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
@@ -469,7 +541,7 @@
             "localPath": "/workspace/scratch/9a69348b6e00/ada_word/costarica.docx"
           }
         },
-        "at": "2026-11-04T06:48:13.874Z"
+        "at": "2026-11-04T06:48:34.586Z"
       },
       "submission": null,
       "review": null,

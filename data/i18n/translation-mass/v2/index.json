@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1723,
-    "leased": 14,
+    "queued": 1722,
+    "leased": 15,
     "review": 672,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1723,
-      "leased": 14,
+      "queued": 1722,
+      "leased": 15,
       "review": 672,
       "ready": 1,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 52,
-          "leased": 0,
+          "queued": 51,
+          "leased": 1,
           "review": 23,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T14:07:04.531Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1424,6 +1424,12 @@
       "jobId": "en:bulk:tour:tour_source_ekvador_zhivaya_priroda:b005",
       "token": "token-mw23ks7y-amanda",
       "expiresAt": "2026-11-04T14:06:47.136Z",
+      "generation": 1
+    },
+    "ada-en-d1c0ddaf-20261104": {
+      "jobId": "en:bulk:tour:tour_source_braziliya_s_detmi:b001",
+      "token": "ada-en-d1c0ddaf-mw23jdlp",
+      "expiresAt": "2026-11-04T14:07:04.531Z",
       "generation": 1
     }
   },
@@ -3603,7 +3609,8 @@
       "token": "ada-en-d1c0ddaf-mw23jdlp",
       "jobIds": [
         "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b008",
-        "en:bulk:tour:tour_source_braziliya_argentina_gruppovoj_tur:b010"
+        "en:bulk:tour:tour_source_braziliya_argentina_gruppovoj_tur:b010",
+        "en:bulk:tour:tour_source_braziliya_s_detmi:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b008",
@@ -3699,5 +3706,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T12:36:56.895Z"
+  "updatedAt": "2026-11-04T12:37:04.531Z"
 }

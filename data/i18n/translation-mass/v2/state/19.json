@@ -336,7 +336,7 @@
         "expiresAt": "2026-11-04T07:39:59.963Z"
       },
       "checkpoint": {
-        "id": "ada_en_abf469133bbf:b007:cp4",
+        "id": "ada_en_abf469133bbf:b007:cp8",
         "format": "inline-v1",
         "ownerId": "ada_en_abf469133bbf",
         "token": "ada_en_token_abf469133bbf_20261104",
@@ -426,10 +426,77 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:ccb262aba1bca738",
+              "field": "itinerary.label",
+              "sourceTextSha256": "bf8cba7476ef70f7569cf75f53af0d18024f196022eb783173bd448ecb770348",
+              "text": "Cocora Valley",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:42",
+                    "textSha256": "d1c4215f34af51b3613b116ec785531c5bb3d76fbf2fe9c0ba0bfd3c9f915635"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e5eb47b3ed09402f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2ddfb00db2ab9c93e5c2d1e4c29d29ef3e1fecaf08864ae854b32d00f3997249",
+              "text": "Salento",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:78",
+                    "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact place name Salento from the verified Word programme paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0f05db2b3f4f6520",
+              "field": "itinerary.label",
+              "sourceTextSha256": "776bc4849d26fa0e84efe400cb20469509ac3ef66b4f63c069edf6875e31f5f1",
+              "text": "El Ocaso Coffee Farm",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:78",
+                    "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact name El Ocaso Coffee Farm from the verified Word programme paragraph."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:98f78729c2405457",
+              "field": "media.alt",
+              "sourceTextSha256": "c16a5b64acd11b49ffc6c97f4c4cf759044d80f05d9aad6e3ade9641dd19022f",
+              "text": "Tall wax palms above the green hills of the Cocora Valley, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_abf469133bbf",
+                "wordAbsenceReason": "The verified Word has no exact alt caption describing this specific photograph of tall palms above green Cocora Valley hills."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:10:27.316Z"
+        "at": "2026-11-04T06:10:35.927Z"
       },
       "submission": null,
       "review": null,

@@ -213,7 +213,7 @@
         "expiresAt": "2026-11-04T07:21:41.225Z"
       },
       "checkpoint": {
-        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-004-04",
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-004-08",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
         "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
@@ -319,10 +319,139 @@
                   ]
                 }
               }
+            },
+            {
+              "blockId": "tour:note:19dea510bf0fe508",
+              "field": "note",
+              "sourceTextSha256": "213186184fcd21b79fd90654ad76284a670a1acbab6b03708772cb3677486f24",
+              "text": "Accommodation along the route: 1 night in Bento Gonçalves (Spa do Vinho), 1 night in Gramado, 3 nights in Cambará do Sul and 1 night in Florianópolis. The names of the other hotels and room categories are confirmed at booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word accommodation table supplies the 1/1/3/1 night allocation, Spa do Vinho and Hotel to be confirmed entries, but no exact combined sentence or the RU booking-time category clarification; translate the current RU note.",
+                "wordSource": {
+                  "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                  "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p108",
+                      "textSha256": "00d046331a4f26e2a099e6292056ff3baf061334264460f5172b31749db89c33"
+                    },
+                    {
+                      "ref": "word/document.xml#p110",
+                      "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+                    },
+                    {
+                      "ref": "word/document.xml#p111",
+                      "textSha256": "5f6f95c9ba5da412a664bd33f9934392209111614e835779f6eaacc5fdfa6e93"
+                    },
+                    {
+                      "ref": "word/document.xml#p113",
+                      "textSha256": "f4209122bfaf4ca1674d722a2231a5d74b393c78ca9be4b25aeeb51693b2a039"
+                    },
+                    {
+                      "ref": "word/document.xml#p115",
+                      "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+                    },
+                    {
+                      "ref": "word/document.xml#p116",
+                      "textSha256": "7f05085c31b80ff55458438ea29dd2f07155bfba95eeb1b4f8841aafd3382929"
+                    },
+                    {
+                      "ref": "word/document.xml#p118",
+                      "textSha256": "78ebc7d26b001809693e6812bfc5f6ccffddbd6738be014c4907ddd95e42c85c"
+                    },
+                    {
+                      "ref": "word/document.xml#p120",
+                      "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+                    },
+                    {
+                      "ref": "word/document.xml#p121",
+                      "textSha256": "7f05085c31b80ff55458438ea29dd2f07155bfba95eeb1b4f8841aafd3382929"
+                    },
+                    {
+                      "ref": "word/document.xml#p123",
+                      "textSha256": "35b757f7bc7167a2ebc19a605b56abae1b4372bafd056029adbcd9774658c481"
+                    },
+                    {
+                      "ref": "word/document.xml#p125",
+                      "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+                    },
+                    {
+                      "ref": "word/document.xml#p126",
+                      "textSha256": "7f05085c31b80ff55458438ea29dd2f07155bfba95eeb1b4f8841aafd3382929"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:note:b47988fa6559f709",
+              "field": "note",
+              "sourceTextSha256": "3655c767f27a72c2059fa6b44f929477ba2c65a6fd93ea567ab1c06201b9e50a",
+              "text": "Hotels may be substituted by others of a similar category and standard whenever necessary.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p149",
+                    "textSha256": "c616f1b0af5f56bbc0d654ea485e4de1504034a7a029bcc416f1f861efc51113"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the exact Word hotel-substitution condition."
+              }
+            },
+            {
+              "blockId": "tour:note:2aaf545f434353eb",
+              "field": "note",
+              "sourceTextSha256": "a8d68d871fdc2b07fb6f8e984d63bd748ecf06ae2b393787c04a1465e9f47b16",
+              "text": "The order of excursions and visits may change for operational reasons, while retaining the full content of the programme.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word combines the operational-order condition with a separate weather caveat for the balloon and helicopter; the current RU block contains only the order/content condition. Translate that current RU clause without importing the separate weather condition into this field.",
+                "wordSource": {
+                  "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                  "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p150",
+                      "textSha256": "539d7df9148c17b34bd0ec76cc257cb2c0fad272a910edfec2ffcfd493320cee"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:note:712744ab65e6f00d",
+              "field": "note",
+              "sourceTextSha256": "7bf0930b7be91087c0176863052d3397827aa610b9acb3a095c33c6c15fe6532",
+              "text": "If you leave the hotel early for a flight or excursion, an unused breakfast is non-refundable and no compensation is provided.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word states that unused breakfasts due to early departures are non-refundable, but has no exact expanded sentence mentioning flights, excursions and compensation; translate this current RU note.",
+                "wordSource": {
+                  "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                  "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p151",
+                      "textSha256": "278a7de848ed4edfb90d3f8837a0bfe8a4ba3def60e4cdfd0a1781a060143b0e"
+                    }
+                  ]
+                }
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:52:15.256Z"
+        "at": "2026-11-04T05:52:19.589Z"
       },
       "submission": null,
       "review": null,

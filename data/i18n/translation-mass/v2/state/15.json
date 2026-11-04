@@ -555,7 +555,7 @@
         "expiresAt": "2026-11-04T08:33:23.688Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-39fb6759e90b-b001-4",
+        "id": "ada-en-20261104-39fb6759e90b-b001-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-39fb6759e90b",
         "token": "tok-39fb6759e90b-20261104-a7c3",
@@ -624,6 +624,83 @@
                 "model": "GPT-6",
                 "runId": "ada-en-20261104-39fb6759e90b",
                 "wordAbsenceReason": "Confirmed Word2027 allocates3nights to Rio, not the frozen RU4nights. Preserve the frozen RU quantity under the worker's no-duration-change rule; flag the exact Word/RU conflict for the master."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c8ffbd6fc38d01b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e571875ec720a5ede2d4198bb255ac215b15ee7139d2cb36d3e04b709cb2383d",
+              "text": "Foz do Iguaçu, 2 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p129",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  },
+                  {
+                    "ref": "word/document.xml:p130",
+                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the exact Word accommodation-table city and night-count cells for the existing route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:710e3aef7b5379c2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "9560cce6cd8665492f67be0c56e8efef93fc0d4ced596b54778ffcc05b3dccda",
+              "text": "Buenos Aires, 3 nights",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "Confirmed Word2027 allocates2nights to Buenos Aires, not the frozen RU3nights. Preserve the frozen RU quantity under the worker's no-duration-change rule; flag the exact Word/RU conflict for the master."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:eba01720f03465d0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0df9632536cc03cad907920e98f41950bdd370cd8f5c2d55f3e2efdc388ceff1",
+              "text": "Santiago de Chile, 2 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p139",
+                    "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+                  },
+                  {
+                    "ref": "word/document.xml:p140",
+                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the exact Word accommodation-table city and night-count cells for the existing route label."
+              }
+            },
+            {
+              "blockId": "tour:included:636dccb3fb9a00fa",
+              "field": "included",
+              "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+              "text": "Accommodation in the selected hotels, with breakfast",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p266",
+                    "textSha256": "d5886c2273504f228151d1e87a839dddeb3704cf7c1ffeb598e9cfb5fceeec3a"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the decorative list marker from the exact Word accommodation-inclusion item."
               }
             }
           ],
@@ -809,7 +886,7 @@
             }
           ]
         },
-        "at": "2026-11-04T07:04:45.903Z"
+        "at": "2026-11-04T07:04:51.279Z"
       },
       "submission": null,
       "review": null,

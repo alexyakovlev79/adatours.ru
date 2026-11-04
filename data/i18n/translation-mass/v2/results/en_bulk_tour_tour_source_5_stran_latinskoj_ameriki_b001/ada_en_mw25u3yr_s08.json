@@ -1,0 +1,205 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b001",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "35b0b996154cb4dad05aa31848bd6687f17792614e25824df816fe125eb2dc19",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "a4e17df1fec00f6eea4daf6669c2b6986da6a5c760b4f5e35a54c631cbc32b3c",
+      "text": "5 Countries in Latin America in 18 Days: Brazil, Argentina, Chile, Bolivia and Peru",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "2cde0d10a3a8ebf61e7091ba3802d2cf22ffb12f2290ab962dc4ea1d27678ea1"
+          },
+          {
+            "ref": "word/document.xml:p:6",
+            "textSha256": "eee7a34fd56b63dadab004e98c09c008b4406fea69dbb1ede4887f46701b7b47"
+          },
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "b125b73a005205429cc97e679e3d20bf4faefc08fdbda3a9ff6aa9602f503e15"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the confirmed tour title, eighteen-day duration and five-country destination line in the assigned page title."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "1cfbd15a7423bbd9b151ee7486558e3367422919998e86c8b469e9a85fc90833",
+      "text": "This extensive group journey travels through Brazil, Argentina, Chile, Bolivia and Peru. Over 18 days, you will see Rio de Janeiro and Iguazu, Buenos Aires, Santiago and the Atacama Desert, high-altitude lagoons and the Uyuni Salt Flat, La Paz and Lake Titicaca, Cusco, Machu Picchu and Lima.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview paragraph does not enumerate the full RU city-by-city route, including Santiago, La Paz, Cusco and Lima; translate the assigned lead while retaining the confirmed itinerary names."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "68eb4bd9cc704b21031d518c78681f2908ff5de8e2e145932fdf72d3f66cd009",
+      "text": "USD 8,945 per person: 2 travellers, double occupancy, 4★ option; domestic flights included.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:207",
+            "textSha256": "2e2c0f8e0c1d58d78e81d97e7dfe8fc9c18e0350656e6f566062956216c66e66"
+          },
+          {
+            "ref": "word/document.xml:p:210",
+            "textSha256": "3bffd8f959c7d2154157926d38d727bca5be8c94e31cad1204859c3c09b9bea3"
+          },
+          {
+            "ref": "word/document.xml:p:215",
+            "textSha256": "3c39b438782466e6f226a66ce82b20c02de507b99df91c5e23422688b6d1c630"
+          },
+          {
+            "ref": "word/document.xml:p:219",
+            "textSha256": "4f351e71ed47534be12b42a9d39eed7872d61163be0bd476ffbd7f87af5c43d0"
+          },
+          {
+            "ref": "word/document.xml:p:222",
+            "textSha256": "a874827471e2670690a4599d4f239bad78bce84bf2d7eafe824a9e9683d4cf6c"
+          },
+          {
+            "ref": "word/document.xml:p:233",
+            "textSha256": "c9369747adf945a3e319d5df750b11ebffe039ed04561890f65f6873d587776d"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Compose the tariff note from the verified 4-star row, two-traveller double-occupancy column and USD-per-person/domestic-flight conditions; preserve 8,945 unchanged."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
+      "text": "Group tour",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:30",
+            "textSha256": "eaf0073df7383e0ee32d3986c63e83a361415cad728a9d52196c0e3707a679cb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:921550c0ba9188f7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0455e3cd30e6d0a60b5a0ce674b15bdf61bba3b025bcc6d5255b2196067c764d",
+      "text": "Brazil, Rio and Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "b125b73a005205429cc97e679e3d20bf4faefc08fdbda3a9ff6aa9602f503e15"
+          },
+          {
+            "ref": "word/document.xml:p:36",
+            "textSha256": "5cca52adaccf176b3ebe9ad2da96f4fde28f33ec4ddaabd12657da60769f8c07"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the confirmed country name with its Rio-and-Iguazu highlight label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9037f69bd00f8209",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7821d91d4b599052bf41f15e0dbe75ab806dfc63f8036fdab04e6674163a4c25",
+      "text": "Argentina, Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "b125b73a005205429cc97e679e3d20bf4faefc08fdbda3a9ff6aa9602f503e15"
+          },
+          {
+            "ref": "word/document.xml:p:39",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the confirmed country name with its Buenos Aires destination label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:30436701e9e838c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "08efc5c489d8d3a8e0c332047a9dc51bcfca90273c0ec4199cce455c08a1c7d3",
+      "text": "Chile, Santiago and the Atacama",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:95",
+            "textSha256": "e6d9f64ab0f7d7f7d65d3398648b77361598bec4f748fd5f99ed4415083767e2"
+          },
+          {
+            "ref": "word/document.xml:p:98",
+            "textSha256": "fc4a0ccf62e4e1333eec3c5637a37da64233edcadd099d5bd412b8929a094112"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the confirmed Chile country heading with its Santiago-and-Atacama destination heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5c89c5e6d58b2eae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5db6f5ddff173d6fd6e6210c0674e821317f16ad88e771949de7ec59f7ec8d85",
+      "text": "Bolivia, Uyuni, La Paz and Lake Titicaca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:106",
+            "textSha256": "c055c3f25b230a07a4ff0bbcc9a6e1d227c0ab66bb63d1a7a9ff5024868160fd"
+          },
+          {
+            "ref": "word/document.xml:p:109",
+            "textSha256": "18bf5583e8a1e1b3afc91fc6549011bf99b7afe383e71257c082f50daa4bb887"
+          },
+          {
+            "ref": "word/document.xml:p:117",
+            "textSha256": "0400a7aa71f434691452a32da43b4c68a1a0a28d3550863a36902bbf5a16673e"
+          },
+          {
+            "ref": "word/document.xml:p:120",
+            "textSha256": "a3a224ef6ded19946383784faa4a3844d31bc9a376294177d3356cfb05f43d85"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the assigned Bolivia route label from confirmed Uyuni, La Paz and Lake Titicaca headings."
+      }
+    }
+  ]
+}

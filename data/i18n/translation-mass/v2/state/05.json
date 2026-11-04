@@ -485,7 +485,7 @@
         "expiresAt": "2026-11-04T07:32:42.000Z"
       },
       "checkpoint": {
-        "id": "cp-5d56534e-02-4",
+        "id": "cp-5d56534e-02-8",
         "format": "inline-v1",
         "ownerId": "ada-en-5d56534e4493",
         "token": "lease-da131c3d187149a7b813992c83ea721b",
@@ -603,17 +603,96 @@
                   "transformation": "contextual_label",
                   "rationale": "Use the group tour product format explicitly stated in the Word tariff heading as the short format label."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:8a2490c091d79367",
+                "field": "itinerary.label",
+                "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+                "text": "Rio de Janeiro, 3 nights",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p23",
+                      "textSha256": "73b10847e97803dbf1f69fe68615ecf35ba5620c988782726931ee3a9a61fa35"
+                    },
+                    {
+                      "ref": "word/document.xml:p104",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    },
+                    {
+                      "ref": "word/document.xml:p105",
+                      "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combine the exact Word destination name and three-night count into the current route label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:fd49b6e3a4cf7579",
+                "field": "itinerary.label",
+                "sourceTextSha256": "fba49ae8aeca7ce4b5905b0e9b2de29c210a41a6569b6dd3d7f9de824e23934f",
+                "text": "Angra dos Reis, 6 nights",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p109",
+                      "textSha256": "3f72316d71435f62c745e51639955f8e2b53f6d037a9fb2b5cb0b9eebd81f0e6"
+                    },
+                    {
+                      "ref": "word/document.xml:p110",
+                      "textSha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combine the exact Word destination name and six-night count into the current route label."
+                }
+              },
+              {
+                "blockId": "tour:note:ac201634430df085",
+                "field": "note",
+                "sourceTextSha256": "54be4489e7cf39f9d89be356ea82d19f308690a07834e6e2bfd402d060dc326b",
+                "text": "12 – 21 February 2027",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p21",
+                      "textSha256": "0b1212252f252e3aa27531ea46f97a61de99516c5e0dacebd2b76fa1f001f518"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:763d4ce6c5ce6177",
+                "field": "included",
+                "sourceTextSha256": "6ce9b4b81e8c264127750f90556f8682890da001f2811a298b34ac44484fc6ad",
+                "text": "Accommodation for 3 nights in Rio de Janeiro with breakfast and 6 nights in Angra dos Reis on an all-inclusive basis, in the hotel category selected for your rate.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraph 149 gives the accommodation and meal plan but not this complete RU sentence with explicit three/six nights and the selected tariff category. Translate this current RU included field; Word hotel table paragraphs 104–112 corroborates the nights and meal plans."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "wordEvidence": {
             "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
             "sha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
             "modifiedTime": "2026-10-26T13:05:52.351Z"
           }
         },
-        "at": "2026-11-04T06:04:13.455Z"
+        "at": "2026-11-04T06:04:19.147Z"
       },
       "submission": null,
       "review": null,

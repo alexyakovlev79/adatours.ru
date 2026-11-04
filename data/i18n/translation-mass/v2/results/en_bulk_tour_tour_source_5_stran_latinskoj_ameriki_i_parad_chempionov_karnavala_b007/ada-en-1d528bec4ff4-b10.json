@@ -1,0 +1,213 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b007",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b882054b0659e12a144df567794cd9c08b9ddfce3340fcbf1779d7d3b14f7b46",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "afd7f730011297519de167d998c55641d39e04c94992f550adf632494341f137",
+      "text": "Rio de Janeiro – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p59",
+            "textSha256": "c36fcaee6f3df85600cba23a16a6c4ab5a84e36a2ebefa675cff0f94b9e426db"
+          },
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "1feda769d2ad84f8c36324ebeb05cdcc908edb0ec7f728a2528cb57982628df7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day transfer route label from the verified Word flight sequence Rio–Iguazu and the exact Day4 arrival city Foz do Iguaçu."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3b98144d35b86c0545e3d2dfc12e1ffe247431899fcd6e98ef08f730c3da2fb8",
+      "text": "Day 4 · Breakfast, transfer to the airport and flight to Foz do Iguaçu. Meeting and transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "1feda769d2ad84f8c36324ebeb05cdcc908edb0ec7f728a2528cb57982628df7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p145",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2bd135e75a6d4efc",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguaçu Falls and a rainbow above the river, surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-1d528bec4ff4",
+        "wordAbsenceReason": "The complete verified Word 2027 programme has no corresponding image alt description of the rainbow, river and surrounding forest at Iguaçu Falls; translate the current RU image metadata."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "eefa4c79e12d85f26e721152aaa4c5fbe3f75c31a3e41af99c3da2fcb113ebf4",
+      "text": "Brazilian side of the falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "24ee80893949a335408974ead65fa16bf34b1d8ba2c4c5e0dda6731f8e803d13"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified Word description of the Brazilian side of the falls as the concise day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "bac1ce11b7f18636ffa5df3c9db9650604eb72936b767517009191e2af202401",
+      "text": "Day 5 · Breakfast, then the Brazilian side of the falls with an English-speaking guide. On the border of Brazil, Argentina and Paraguay, the Iguazu River, calm above the falls, plunges down some 275 cascades into the Devil’s Throat gorge, up to about 80 m deep. Optional: the Bird Park (USD 50 per person) and the Macuco Safari (USD 130 per person), by open jeep through the jungle and by motorboat right up to the falls.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "24ee80893949a335408974ead65fa16bf34b1d8ba2c4c5e0dda6731f8e803d13"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p145",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ea34b2f73008e04d",
+      "field": "media.alt",
+      "sourceTextSha256": "6f5e2e13ca03d7a9db0f6aaf75867354ad17f87cded378ce76cb2db724f9573e",
+      "text": "Visitors on a viewing footbridge amid the Iguaçu Falls",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-1d528bec4ff4",
+        "wordAbsenceReason": "The complete verified Word 2027 programme has no corresponding alt description of visitors on this viewing footbridge among Iguaçu Falls; translate the current RU image metadata."
+      }
+    }
+  ],
+  "wordSourceVerification": {
+    "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+    "sha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+    "modifiedTime": "2026-10-23T19:10:33.819Z",
+    "editionYear": 2027,
+    "folderYear": 2027,
+    "paragraphConvention": "zero-based w:p traversal in word/document.xml; concatenated w:t text",
+    "commercialTableEvidence": [
+      {
+        "ref": "word/document.xml:p191",
+        "textSha256": "79237040970de271da39bba4b27b357fc5e113ea367f946dff6768d281fb2e87"
+      },
+      {
+        "ref": "word/document.xml:p193",
+        "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+      },
+      {
+        "ref": "word/document.xml:p194",
+        "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+      },
+      {
+        "ref": "word/document.xml:p195",
+        "textSha256": "8871b1c03f7a3f8fbdfc4a746b0a03b9c7de2313465c5f3b554f2b77b8a324ae"
+      },
+      {
+        "ref": "word/document.xml:p196",
+        "textSha256": "d1b64ae7214d18b69a226f3d8291bc99940e4c69be6d2f87e2cf327f649b58d9"
+      },
+      {
+        "ref": "word/document.xml:p197",
+        "textSha256": "e90a49183a1c56f2c43e7e23cc885ec454ad15f9fa96e8d874d28f62d95b46a6"
+      },
+      {
+        "ref": "word/document.xml:p198",
+        "textSha256": "7c3706a53a0051b211a97aa01dc9d0b49b4160fa53b396560ae50d7a87f6b0c1"
+      },
+      {
+        "ref": "word/document.xml:p199",
+        "textSha256": "e62d4634b9765d869b94235eb7a46caf0a5198195160a4107c6ba451285c1218"
+      },
+      {
+        "ref": "word/document.xml:p200",
+        "textSha256": "b56b9888cc9e3c99cc305fe48604c8eca8fe30901368e2a164d2c066ac7daac9"
+      },
+      {
+        "ref": "word/document.xml:p201",
+        "textSha256": "957574f8d379fddb2525b4ee9d36d3a435c0efc9bc177cd9f4e5534ad9d8d98f"
+      },
+      {
+        "ref": "word/document.xml:p202",
+        "textSha256": "b773bd8ad431089a756d0f146c7494da5a0b8e407713cd2f6a0c833c1539db26"
+      },
+      {
+        "ref": "word/document.xml:p203",
+        "textSha256": "b414bc2965ef256b3c9a20ba108eb5af95e2cf1dbb3def07baa965e5161ce3d1"
+      },
+      {
+        "ref": "word/document.xml:p204",
+        "textSha256": "35a030c37fe43fd6dac4813d59db157a964c845787e890931ad5999049ef22b4"
+      }
+    ],
+    "optionalExcursionRatesEvidence": [
+      {
+        "ref": "word/document.xml:p77",
+        "textSha256": "24ee80893949a335408974ead65fa16bf34b1d8ba2c4c5e0dda6731f8e803d13"
+      }
+    ]
+  },
+  "priceAmendments": []
+}

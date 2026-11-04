@@ -221,7 +221,100 @@
         "claimedAt": "2026-11-04T05:50:42.131Z",
         "expiresAt": "2026-11-04T07:20:42.131Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_abf469133bbf:b005:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_abf469133bbf",
+        "token": "ada_en_token_abf469133bbf_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b005",
+          "stableId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "efd8747cce207e13dd5b8cc1cc3fa63236eaa1605858ef3a83446958ac5467d8",
+          "blocks": [
+            {
+              "blockId": "tour:included:fa2b7c9b2104c1b7",
+              "field": "included",
+              "sourceTextSha256": "3650207f1635ebb2b6ea8f3eb6f9ede3ac85e358b595ba18072ce6eae1b0f907",
+              "text": "English-speaking guide during transfers and tours as mentioned",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:53",
+                    "textSha256": "1aab95b10c3daab1ec0ea1b1e732ca8eb6ebfa0f6ce0806216ffd155ab5f831c"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Extract this exact item from the shared Word bullet paragraph and remove only the bullet/list separator."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:cbd0e797c4473d67",
+              "field": "notIncluded",
+              "sourceTextSha256": "ed1ca26fbdbf2e93f13cdd6329d036f2862a668e090f0b296ec7ae572a5fdcf2",
+              "text": "International flights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:55",
+                    "textSha256": "25c596a0a6e5014d110b0bc4b9bde098c57d51dc79ad3626cf342e1405aeaf05"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Extract this exact item from the shared Word bullet paragraph and remove only the bullet/list separator."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:9e108a13576546fd",
+              "field": "notIncluded",
+              "sourceTextSha256": "637089c32c93532fd2b724ff912a07102ad21d96d088460a6a89b29b82fc72e1",
+              "text": "Domestic flights between destinations",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:55",
+                    "textSha256": "25c596a0a6e5014d110b0bc4b9bde098c57d51dc79ad3626cf342e1405aeaf05"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Extract this exact item from the shared Word bullet paragraph and remove only the bullet/list separator."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:a3581a1ca22414dc",
+              "field": "notIncluded",
+              "sourceTextSha256": "cfa977d46d949823de9b303ced91a6c49deef9c38c0b7d48bff5fb6e83296e00",
+              "text": "Accommodation (unless quoted separately)",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:55",
+                    "textSha256": "25c596a0a6e5014d110b0bc4b9bde098c57d51dc79ad3626cf342e1405aeaf05"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Extract this exact item from the shared Word bullet paragraph and remove only the bullet/list separator."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:51:54.202Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

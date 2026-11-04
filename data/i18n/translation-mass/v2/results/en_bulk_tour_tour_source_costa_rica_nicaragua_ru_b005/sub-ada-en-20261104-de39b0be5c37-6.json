@@ -1,0 +1,138 @@
+{
+  "jobId": "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b005",
+  "stableId": "tour_source_costa_rica_nicaragua_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b1854de5307e17ac1d89ae53cd9f12002ec395b87b547f9e3a29925972430edc",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1c7985ec0225e313965a4623bd08519aba275aa1762abd24d8023566b3bcc324",
+      "text": "San José – Tortuguero",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:65",
+            "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+          },
+          {
+            "ref": "word/document.xml#p:76",
+            "textSha256": "4733e2e2987f2fb3a5891cc54fb26fac6423552478fef954e9b399b49fe3aca2"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified San José and Tortuguero destination names in the current itinerary route order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9813848da683d6d8f969715d9c87d6985f81ec0626a3181d870e3a47680d099b",
+      "text": "Early departure from San José for Tortuguero National Park.\n\nBreakfast is provided along the way.\n\nThe route passes through tropical cloud forest on the slopes of Braulio Carrillo National Park. Further on, on the way to the Caño Blanco dock, you will stop at a banana plantation.\n\nAt the dock, board a boat and continue along the Parismina River and Tortuguero's natural canals to your hotel.\n\nAfter lunch, take a walk through Tortuguero village. You can visit the Green Turtle Museum here.\n\nReturn to your hotel.\n\n**Overnight:** Pachira Lodge Tortuguero.  \n**Meals:** breakfast, lunch, dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word day 3 lacks the Parismina River and Green Turtle Museum wording and describes passing plantations rather than a plantation stop; the current RU block is translated with its own hotel and meal labels."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c7d61d4f3f99f87c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ecf1d4aaf87efa0e77b1e87aa624616c6ff82b4b7a23f4960dea213038d53667",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:65",
+            "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1145bb2af19c4058",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f12c66a75784fb21b256437f0db6da432416d7c9d5e676b5c1685d4c9cb8e1f3",
+      "text": "Tortuguero",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:76",
+            "textSha256": "4733e2e2987f2fb3a5891cc54fb26fac6423552478fef954e9b399b49fe3aca2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:542700466a85e05e",
+      "field": "media.alt",
+      "sourceTextSha256": "5a6d25ed086246f65f12106830c2173a8d64ab616a2f80afbf5b18118a17288e",
+      "text": "City square with palm trees and red taxis in San José, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no photograph-specific caption about palms and red taxis in a San José square."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b8301805958b0b21",
+      "field": "media.hover",
+      "sourceTextSha256": "b46e4d7d0561a9ceb72be58bed5314c244e3079debe62f6cfc06849a9dea2009",
+      "text": "San José: a busy crossroads beside a leafy square",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no image-hover caption about a busy crossroads beside a leafy square."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c8061dca8f3a2e466ff6a7939b7ea820c78499c39c2c52089f12a6d54bcd64ad",
+      "text": "Tortuguero – Arenal",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:76",
+            "textSha256": "4733e2e2987f2fb3a5891cc54fb26fac6423552478fef954e9b399b49fe3aca2"
+          },
+          {
+            "ref": "word/document.xml#p:42",
+            "textSha256": "c0b467f48120bd24e67d608f088faf9f0019681e53228a0f773a02b364061f49"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the Tortuguero to Arenal route heading from the verified destination names."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "75549325e73df37e6f5e5cf57ac1e49e6c08e6022b43b5243a2d1ae314a3a461",
+      "text": "At dawn, take a boat trip along the canals of Tortuguero National Park.\n\nDuring the tour, you can observe birds and other rainforest wildlife. This area is known as the \"Costa Rican Amazon\".\n\nAfter breakfast, the journey continues to the northern foot of Arenal Volcano and the town of La Fortuna.\n\nOn arrival, relax in the hot springs.\n\n**Overnight:** Arenal Paraíso Resort & SPA.  \n**Meals:** breakfast, lunch.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word day 4 omits the Costa Rican Amazon wording and lists breakfast only, while current RU specifies breakfast and lunch; translate current RU and retain the meal discrepancy explicitly for independent review."
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_gvatemale:b012",
+  "stableId": "tour_source_luchshee_v_gvatemale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ec09f2458e3a8635eb8d03729fb759b08207d1ee7b68789257550b2d3caa27d9",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f83d71df0b43c8566971f441586dfd50505e1dfc0d3fb4b59916c8d9f3712ed6",
+      "text": "Day 10 · Transfer to Izabal and the Río Dulce, Guatemala’s most picturesque river, in a region of karst hills and caves, rivers, lakes and wetlands rich in birds and wildlife. A boat journey between the sheer walls of the river canyon, past hot springs and tropical jungle, leads to Livingston, reachable only by water: home of the Garifuna people, whose culture blends African, Caribbean and Indigenous roots, with palm trees, music and seafood; try tapado, a seafood soup cooked in coconut milk. Overnight at Hotel Villa Caribe. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0099",
+            "textSha256": "983c39902e5e62537e4a0d9325a59fef3bc70b27bd9e49d6f6166217f719fcdf"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b8c202c1472d0b1f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9a7fc7d30092e3d837ebf67109ce02c78e6492b3745eaa441e485e93f795af36",
+      "text": "Tikal & Flores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0098",
+            "textSha256": "5132cca362dad9d47c056a3ae63b4887a26562398ea53c48dd23e7f1740dcae4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing route label using the two places named in the corresponding Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e1c1d8abbdacc237",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2b9bb9cfdd5b644017e4b08f9a608245f405d1d8019bf6711aad20158da80859",
+      "text": "Río Dulce",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0099",
+            "textSha256": "983c39902e5e62537e4a0d9325a59fef3bc70b27bd9e49d6f6166217f719fcdf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual label based on the corresponding confirmed Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:15a064be79ce0544",
+      "field": "itinerary.label",
+      "sourceTextSha256": "15a99b986fb74d68644fb214e78dc0256e19dc1d948a1243b9edd26621b3cffb",
+      "text": "Livingston",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0099",
+            "textSha256": "983c39902e5e62537e4a0d9325a59fef3bc70b27bd9e49d6f6166217f719fcdf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual label based on the corresponding confirmed Word passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ccb02134a033dd14",
+      "field": "media.alt",
+      "sourceTextSha256": "79ba857944f70646563a5dab7ec23b91ee51ce4e0c0e82beed5b5d2eed687435",
+      "text": "Wide yellow-and-white staircase leading to a church in Flores, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mj91p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary has no alt description of the church photograph in Flores."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:34f205409bed33b8",
+      "field": "media.hover",
+      "sourceTextSha256": "aaffcdddced05422089e93c5b2975c4d795d9205d81d651d2c9bd96cceee4665",
+      "text": "Flores: white-edged steps and colourful flags in front of the church",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mj91p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary has no hover caption for the church photograph in Flores."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "15a99b986fb74d68644fb214e78dc0256e19dc1d948a1243b9edd26621b3cffb",
+      "text": "Livingston",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0099",
+            "textSha256": "983c39902e5e62537e4a0d9325a59fef3bc70b27bd9e49d6f6166217f719fcdf"
+          },
+          {
+            "ref": "word/document.xml#p0100",
+            "textSha256": "305013228d026ffea3c76d09cc5b86b52eb647ca192545e4867af8bebed9bd76"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual label based on the corresponding confirmed Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "31b473f817c0e46889ac1f7dd8859e3e090ffde6ee5db9624eaac390d5b6c465",
+      "text": "Day 11 · An excursion to Playa Blanca, a white-sand beach on the Caribbean coast near Livingston (programme details to be confirmed). Overnight at Hotel Villa Caribe. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0100",
+            "textSha256": "305013228d026ffea3c76d09cc5b86b52eb647ca192545e4867af8bebed9bd76"
+          }
+        ]
+      }
+    }
+  ]
+}

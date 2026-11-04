@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_zagadki_chelovechestva:b005",
+  "stableId": "tour_source_chili_zagadki_chelovechestva",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "19993bc36845882dcaa312d7cca443c97f27266a1fd1c4dc17247821f155b16b",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f10031daeb1cfd3c29c90fe47702fb7660966cf00cd55d5b79af9bd53a4a0bb5",
+      "text": "Santiago – Easter Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:65",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          },
+          {
+            "ref": "word/document.xml:p:89",
+            "textSha256": "82acd933d9a86d48a13194e9fe1f19467c515033fd067dfc021f91e880939abb"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the assigned transfer-day route label from the exact Santiago and Easter Island headings in the verified Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "cbb4a07b3e8b91dc406bca17bb8541b65daf0b9331e981a5d14be7907d3870a6",
+      "text": "Day 4 · Breakfast and transfer to the airport for your flight to Easter Island. On arrival, transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:90",
+            "textSha256": "10e80ed23605119df22ee28ead5a13dae4680d8382d3dea832de381576e8dbfd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3669ed589096ecdf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:65",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bbb5291764e99d0d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e41062add057645e926bf42391b44b831d40619296fa430b370f4633481e7939",
+      "text": "Easter Island",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:89",
+            "textSha256": "82acd933d9a86d48a13194e9fe1f19467c515033fd067dfc021f91e880939abb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b714be21d7bb3b9d",
+      "field": "media.alt",
+      "sourceTextSha256": "8889c901c63cfcd7d53d72fa0825d74a53a32572a8e128a9cd87758a63035e6f",
+      "text": "A long row of stone moai on a platform on Easter Island under a cloudy sky, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The verified complete Word describes Moai but contains no image-specific caption for this long row under a cloudy sky; translated from the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f5bcdc0137fa3d94",
+      "field": "media.hover",
+      "sourceTextSha256": "a4e613d9baae5cd91e3d9a5b056387172247a21dd8d7a360c519cdcdffbbe5f6",
+      "text": "Easter Island: a row of moai on a stone platform",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The verified complete Word has no hover caption for this particular row of moai on a stone platform; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:722d42e7ce05246d",
+      "field": "media.alt",
+      "sourceTextSha256": "a6a53591c1e86dbc8f0a14ebf847b340adc648c543c698ce54092d9ee56271a7",
+      "text": "Historic corner building and television tower among modern buildings in Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The verified complete Word contains no caption for this specific corner building and television tower; translated from the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6cd27621fb922690",
+      "field": "media.hover",
+      "sourceTextSha256": "cc7003370a791b870193edd8003556cb7396fe2f3a86c6c9c2713365677f61f2",
+      "text": "Santiago: historic architecture beside glass buildings and a tower",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The verified complete Word contains no hover caption contrasting historic architecture, glass buildings and the tower in this image; translated from the assigned RU text."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1793,
-    "leased": 11,
+    "queued": 1792,
+    "leased": 12,
     "review": 605,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1793,
-      "leased": 11,
+      "queued": 1792,
+      "leased": 12,
       "review": 605,
       "ready": 1,
       "retryable": 0,
@@ -785,8 +785,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 67,
-          "leased": 0,
+          "queued": 66,
+          "leased": 1,
           "review": 16,
           "ready": 0,
           "retryable": 0,
@@ -817,7 +817,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T13:29:10.703Z",
       "earliestRetryAt": null
     },
     "09": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_source_argentina_bariloche_i_buenos_ajres:b007",
       "token": "ada-en-token-20261104-75b022",
       "expiresAt": "2026-11-04T13:29:02.299Z",
+      "generation": 1
+    },
+    "ada-en-e3304ab61ca8-20261104": {
+      "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b005",
+      "token": "ada-en-token-e3304ab61ca8-f5ac98715a5f",
+      "expiresAt": "2026-11-04T13:29:10.703Z",
       "generation": 1
     }
   },
@@ -3439,8 +3445,15 @@
         "en:bulk:tour:tour_guatemala_discover_8_days:b006"
       ],
       "completedJobIds": []
+    },
+    "ada-en-e3304ab61ca8-20261104": {
+      "token": "ada-en-token-e3304ab61ca8-f5ac98715a5f",
+      "jobIds": [
+        "en:bulk:tour:tour_nicaragua_best_10_days:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T11:59:02.299Z"
+  "updatedAt": "2026-11-04T11:59:10.703Z"
 }

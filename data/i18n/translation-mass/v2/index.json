@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1726,
-    "leased": 14,
+    "queued": 1725,
+    "leased": 15,
     "review": 669,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1726,
-      "leased": 14,
+      "queued": 1725,
+      "leased": 15,
       "review": 669,
       "ready": 1,
       "retryable": 0,
@@ -465,8 +465,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 55,
-          "leased": 0,
+          "queued": 54,
+          "leased": 1,
           "review": 23,
           "ready": 0,
           "retryable": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T14:06:17.167Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1424,6 +1424,12 @@
       "jobId": "en:bulk:tour:tour_source_braziliya_argentina_gruppovoj_tur:b010",
       "token": "ada-en-d1c0ddaf-mw23jdlp",
       "expiresAt": "2026-11-04T14:05:55.967Z",
+      "generation": 1
+    },
+    "ada-en-mw23jrbu": {
+      "jobId": "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b004",
+      "token": "token-mw23jrbu-a92b8e",
+      "expiresAt": "2026-11-04T14:06:17.167Z",
       "generation": 1
     }
   },
@@ -3623,7 +3629,8 @@
       "token": "token-mw23jrbu-a92b8e",
       "jobIds": [
         "en:bulk:tour:tour_source_ekvador_i_galapagosskie_ostrova_v_iyule:b009",
-        "en:bulk:tour:tour_source_braziliya_argentina_gruppovoj_tur:b001"
+        "en:bulk:tour:tour_source_braziliya_argentina_gruppovoj_tur:b001",
+        "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ekvador_i_galapagosskie_ostrova_v_iyule:b009",
@@ -3692,5 +3699,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T12:36:07.663Z"
+  "updatedAt": "2026-11-04T12:36:17.167Z"
 }

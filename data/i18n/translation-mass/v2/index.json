@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1636,
-    "leased": 9,
-    "review": 764,
+    "leased": 8,
+    "review": 765,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1636,
-      "leased": 9,
-      "review": 764,
+      "leased": 8,
+      "review": 765,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -586,8 +586,8 @@
         "word_2027": {
           "held": 0,
           "queued": 41,
-          "leased": 1,
-          "review": 31,
+          "leased": 0,
+          "review": 32,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T16:35:08.403Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "04": {
@@ -1359,12 +1359,6 @@
       "token": "ada_token_174f9ef24ff_20261104",
       "expiresAt": "2026-11-04T15:13:05.274Z",
       "generation": 1
-    },
-    "ada-en-mw290bap-cblnx4": {
-      "jobId": "en:bulk:tour:tour_source_braziliya_s_detmi:b003",
-      "token": "tok-h3x490lwol5mw290bap",
-      "expiresAt": "2026-11-04T16:35:08.403Z",
-      "generation": 2
     },
     "ada_en_482d6f19c011": {
       "jobId": "en:bulk:tour:tour_source_braziliya_argentina_chili_peru_ru:b008",
@@ -3921,7 +3915,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_braziliya_s_detmi:b003"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_braziliya_s_detmi:b003"
+      ]
     },
     "ada-en-50ba62c4c346": {
       "token": "ada-en-50ba62c4c346-token-20261104",
@@ -3969,5 +3965,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T15:07:51.831Z"
+  "updatedAt": "2026-11-04T15:08:04.337Z"
 }

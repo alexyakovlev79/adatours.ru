@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {planTourTranslation,createMassTranslationState,massShard as plannerShard} from '../../src/lib/i18n/translation-mass-plan.mjs';
 import {massShard,massIndexShard,massClaim,massReap,massRebuildIndex,massRenew,
- massCheckpoint,massSubmit,massApprove,massRelease,massFail,validateMassResult}
+ massCheckpoint,massSubmit,massApprove,massQaReject,massRelease,massFail,validateMassResult}
  from '../../scripts/i18n/translation-mass-core.mjs';
 const sha=s=>createHash('sha256').update(s).digest('hex'),git='a'.repeat(40);
 const at='2026-11-02T20:00:00Z';
@@ -162,4 +162,22 @@ test('claim selection recovers expired shards even with unrelated queued work',(
  const refreshed=massRebuildIndex(q.index,sid,reaped.shard,atExpiry);
  assert.equal(refreshed.counts.leased,0);
  assert.equal(refreshed.counts.queued,q.index.counts.queued+1);
+});
+
+test('independent QA rejection is an audit-preserving retry, not a fake ready',()=>{
+ const sha='a'.repeat(40),jobId='en:bulk:tour:example:b001';
+ const shard={schemaVersion:2,shardId:'00',items:[{jobId,stage:'word_2027',status:'review',generation:1,
+  attempts:0,lease:null,sourceFingerprint:'source:1',submission:{id:'sub-1',blobSha:sha,
+   resultPath:'data/i18n/translation-mass/v2/results/sub-1.json',at:'2026-11-04T18:00:00Z'},
+   nextAttemptAt:null,review:null}]};
+ const r=massQaReject(shard,{jobId,blobSha:sha,reviewerId:'qa-other-agent',
+  failureStatus:'retryable',confidence:83,reason:'Evidence confirms a fixable semantic mismatch in the original EN body.',
+  now:'2026-11-04T18:01:00Z'});
+ assert.equal(r.status,'retryable');
+ assert.equal(r.shard.items[0].status,'retryable');
+ assert.equal(r.shard.items[0].qaDecisions[0].previousSubmission.blobSha,sha);
+ assert.equal(shard.items[0].status,'review');
+ assert.throws(()=>massQaReject(shard,{jobId,blobSha:'b'.repeat(40),reviewerId:'qa-other-agent',
+  failureStatus:'retryable',confidence:82,reason:'Same evidence reason a sufficiently long explanation.',
+  now:'2026-11-04T18:01:00Z'}),/exact unapproved receipt/);
 });

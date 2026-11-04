@@ -7,3 +7,8 @@ test('QA cannot publish or approve without exact identity',async()=>{
  await assert.rejects(runEnMassQa({}, {},{action:'approve',jobId:'wrong id'}),
   /Exact jobId required/);
 });
+
+test('independent QA rejects unsupported decisions before touching Github',async()=>{
+ await assert.rejects(runEnMassQa({}, {},{action:'revise_and_approve',jobId:'invalid id'}),/Exact jobId required/);
+ await assert.rejects(runEnMassQa({}, {},{action:'reject',jobId:'invalid id'}),/Exact jobId required/);
+});

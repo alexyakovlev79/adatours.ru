@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b009",
+  "stableId": "tour_source_ekzoticheskij_novyj_god_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b886fd34cc9539a220eb8403f2d2e2ddab0efcc5d5e0696ea6d82bdd8259a3ac",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:79273addc60bbab3",
+      "field": "media.hover",
+      "sourceTextSha256": "52bfd5084a51d290c7a64289e6ff1d5bb953a67a9d9c595b5cca79e7f28aaeb3",
+      "text": "Iguazu: a viewing deck beside powerful cascades",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no image-specific hover caption for the viewing deck beside the cascades."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ecb36656e3d825744fb521c7ea54bbda2295ecd2b7fa7719ff3e12ad84a7708d",
+      "text": "6 January 2027 · Foz do Iguaçu – Manaus – Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:69",
+            "textSha256": "9d8b431e1754a6fb263951fc3500d3dd541b7ad6a5ad501a3ba81fd4233660d1"
+          },
+          {
+            "ref": "word/document.xml:p:71",
+            "textSha256": "82ebdb085a17898b955d029e3f04e6c51a1af84c19cb69aeba64c02d26ad4170"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The confirmed dated flight heading and onward jungle-lodge transfer form the complete route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "115d26b45244360d82c89be165ebd03d0f401e5e003f1a4185d6c96b3460adff",
+      "text": "Breakfast in the hotel. Transfer to the airport for your flight to Manaus.\n\nArrival at Manaus airport. Transfer to the city of Manaus, You will be taken to Eco Lodge Evolution on a speedboat. Eco Lodge Evolution is a jungle hotel for eco-tourism lovers who prefer to relax in close contact with the natural beauty of the Amazon jungle.\n\nCheck in at the lodge, followed by dinner and an evening programme. At night, you can join a safari to look for caimans.\n\nFor the included transfer, you must arrive in Manaus before 16:00. Later arrivals require a private transfer at an additional cost.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p70–71 supplies the flight and lodge transfer paragraphs, retained verbatim. Dinner, evening activities, caiman safari and the before-16:00 shared-transfer condition are absent from the Word and translated from the assigned RU gap.",
+        "wordPassages": {
+          "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+          "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml:p:70",
+              "textSha256": "5693dc8a7e0e796abba5d3b8413c2bf4770dda41e1aacc406a1a9984607a42af"
+            },
+            {
+              "ref": "word/document.xml:p:71",
+              "textSha256": "82ebdb085a17898b955d029e3f04e6c51a1af84c19cb69aeba64c02d26ad4170"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:25c6390c55f06880",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:69",
+            "textSha256": "9d8b431e1754a6fb263951fc3500d3dd541b7ad6a5ad501a3ba81fd4233660d1"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The exact departure city is extracted from the approved dated route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0097cdc0078a6e4a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:71",
+            "textSha256": "82ebdb085a17898b955d029e3f04e6c51a1af84c19cb69aeba64c02d26ad4170"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The arrival city and the Amazon jungle setting are combined into the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:6cc95d74bbcbb079",
+      "field": "media.alt",
+      "sourceTextSha256": "1bb67df6f921550e0dd2b297cd90c094ef1926224a5619b846c2a38c86872da5",
+      "text": "Calm river water with floating vegetation beside a forested bank in the Amazon, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no alternative text describing this river-water and floating-vegetation photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7354e126eb9c9b3b",
+      "field": "media.hover",
+      "sourceTextSha256": "6ce91422156b6948daf50ce89c903c17fa4a95f4d023caffe5a5d576f138eb53",
+      "text": "Amazon: clouds and forest reflected in the water in the evening light",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no hover caption for the evening reflections photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "56691b858d4dacf63e36ebd4b57753df8b69208af69b24bfa40fc41c84219546",
+      "text": "7 January 2027 · Manaus",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:74",
+            "textSha256": "c6390752413aa9522f65f3302ea04a6ffe5eea8040bfcf98311318a0480a8435"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word day heading takes precedence over the old RU title mentioning a Caboclo village, which is absent from the corresponding Word day."
+      }
+    }
+  ]
+}

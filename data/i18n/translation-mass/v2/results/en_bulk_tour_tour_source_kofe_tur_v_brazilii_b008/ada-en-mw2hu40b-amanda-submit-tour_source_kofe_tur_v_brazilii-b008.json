@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kofe_tur_v_brazilii:b008",
+  "stableId": "tour_source_kofe_tur_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "47ed8e2d77f51fd5057a610dba787c4035dccf9233b2c5b94097b804c42680ae",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:b3fa1c7421024279",
+      "field": "media.alt",
+      "sourceTextSha256": "f2bdc56c6e9d873f0b62fa759f526f5e27bb3b0d55587ce15fc2700549b3cc2e",
+      "text": "The Selarón Steps with colourful tiles in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu40b-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word 2027 has no caption describing this specific Selarón Steps photograph. Translate only the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:a6cfb18f6e2da008",
+      "field": "media.hover",
+      "sourceTextSha256": "0888884ddf14d0b495038802772bc6a692af5ad743babdb4a87d096dfdfbd32c",
+      "text": "Rio de Janeiro: the brightly coloured Selarón Steps between red walls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu40b-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word 2027 has no caption describing this specific Selarón Steps photograph. Translate only the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "8237c0019c69ae49c052382e232bd68e3b642fd81019c7ca3f66d8bad3967167",
+      "text": "Rio de Janeiro – Coffee Valley – Visconde de Mauá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "drive:text:line:26",
+            "textSha256": "65e213856826c811707aeca6027001ec130747d776edd02c6d184e62b5e787d1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing route heading with the approved Word place names, including Rio de Janeiro as departure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f82a47102d58c1a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "drive:text:line:27",
+            "textSha256": "00ff65dd0031235d64c75600f76d49de029aa89c766b1a50cc9d274896068811"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named place or service as the label for this existing RU field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:03062b3e76f21438",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eb189057949d6f59c226dc9647a96ecf7a6a1954ce74923caf8cac123f09dd54",
+      "text": "Visconde de Mauá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "drive:text:line:82",
+            "textSha256": "843123c88a54a1cc58c3384ca49413bd0f15f739b922149f4aa36bd53c937438"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8b23a593d8e2ffb5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ab6f8c9b15657c3f42b1ecb1e8deacc702102e988f6b0bee970147f6b7f6f03b",
+      "text": "Coffee Valley (Rio de Janeiro)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "drive:text:line:28",
+            "textSha256": "d0536e5cdc57d87ff2690365d16ccbf645c7ef1205d1798a171d5cc72285bb85"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named place or service as the label for this existing RU field."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:1bd6307f65727852",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "7225b0e87216735ae08e6b9885fff8a9e69c0c48dd1553d8c66f2d0a19fc9f3e",
+      "text": "After breakfast, we set off for the Coffee Valley in the state of Rio de Janeiro. The drive takes about 3 hours.\n\nWe spend most of the day in the Rio das Flores area, where historic coffee plantations have survived.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu40b-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word coffee-valley narrative does not name Rio das Flores or provide this separate connecting block. Translate the unique RU connector without duplicating the full fazenda excursion."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_title:4d7562dfabde2781",
+      "field": "contentBlock.title",
+      "sourceTextSha256": "6b21165835d202200667b060e39d0ff9ea3e9ce943d3fbe81cd8541e6149f41f",
+      "text": "Fazenda Ponte Alta",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu40b-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes an unnamed historic coffee fazenda but does not name Ponte Alta. Translate the existing RU content-block heading without inventing a Word match."
+      }
+    }
+  ]
+}

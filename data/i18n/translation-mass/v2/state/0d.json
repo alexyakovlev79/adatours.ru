@@ -777,7 +777,7 @@
         "expiresAt": "2026-11-04T08:31:13.492Z"
       },
       "checkpoint": {
-        "id": "ada_en_91a5d7c2e8b4_cp007_4",
+        "id": "ada_en_91a5d7c2e8b4_cp007_8",
         "format": "inline-v1",
         "ownerId": "ada_en_91a5d7c2e8b4",
         "token": "ada-en-token-91a5d7c2e8b4-20261104",
@@ -874,6 +874,68 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:5655a43edcb50d70",
+              "field": "itinerary.label",
+              "sourceTextSha256": "832e77c5b0c4e0c74296c334a94b4e4cdbc2f8874f4896c6d7fba4604bd4dd64",
+              "text": "Punta Arenas",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+                "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p24",
+                    "textSha256": "885ba09375f2b4a6c1d7c1953d0c83f41952c3fcc969dedd2e24787b38e3d379"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the verified Punta Arenas heading for the existing route-place label, changing uppercase heading presentation only."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:53a9e254d608ed0e",
+              "field": "media.alt",
+              "sourceTextSha256": "aacf62084497267be9507a29d6eb78b20d6f6f18ecdcf5bee77f4d25b3154446",
+              "text": "Rooftops of Punta Arenas with the sea beyond, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "The verified Word has no photograph-specific alt text describing the Punta Arenas city rooftops; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:070f6aac295d836b",
+              "field": "media.hover",
+              "sourceTextSha256": "4432c65e15e85d494c7cd7ab166cb19e05663dc8f6a7bb2b5f9fc6dcc8b7f770",
+              "text": "Punta Arenas, Chile: a city panorama with colourful rooftops and the sea on the horizon",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "The verified Word has no equivalent photograph-specific hover caption for this Punta Arenas panorama; translate the existing RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "0053ed74bc4710179fdf85967a8b782d50f5ce6414f31f7bee67574c2b18f464",
+              "text": "Antarctica",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+                "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p4",
+                    "textSha256": "7ebc1f10f03c6224f0b883c4a9473772433701d6c40b0be92735240b38a470f0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Antarctic destination name from the Word programme title as the existing itinerary-day heading."
+              }
             }
           ],
           "unresolvedConflicts": [
@@ -885,7 +947,7 @@
             }
           ]
         },
-        "at": "2026-11-04T07:02:32.724Z"
+        "at": "2026-11-04T07:02:56.065Z"
       },
       "submission": null,
       "review": null,

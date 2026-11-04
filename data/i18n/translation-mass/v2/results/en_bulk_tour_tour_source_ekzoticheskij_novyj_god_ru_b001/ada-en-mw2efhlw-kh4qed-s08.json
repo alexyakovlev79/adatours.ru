@@ -1,0 +1,173 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b001",
+  "stableId": "tour_source_ekzoticheskij_novyj_god_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "86e579e8b092e85de4afa899c0c02ddd64c93ad00cda41804ea42445e53e86da",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "83d780089323301b779b08e68b1417e2d5380247734b8ae14d2aaecefc7c1a1e",
+      "text": "Exotic New Year In Brazil 2027",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:0",
+            "textSha256": "212306fef9dac175d543d3611c0f48e34a927c8da0d515fe07459d311cfac400"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "abc2a44c5889f27eda85ae5f8fc125b59b504dd61bdf0f3b0e7beeb8692218f6",
+      "text": "Celebrate New Year on Copacabana, visit both sides of the Iguazu Falls, spend two days at a lodge in the Amazon jungle and unwind in Búzios. This group tour runs from 30 December 2026 to 10 January 2027: 12 days and 11 nights. English-speaking guides lead the excursions in Rio and Iguazu, and an English-speaking guide accompanies you in the Amazon.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2efhlw-kh4qed",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 contains the route and dates in separate fields but no corresponding standalone lead; translate the assigned current RU lead and adapt service language under the owner's 3 November 2026 decision."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2ae97986ffb7f9a9569e0ff5046bb01e67c648e974791959d921fe5a916c6fe8",
+      "text": "From $5,846 per person sharing a triple room in 4-star hotels. Double occupancy from $6,401.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:13",
+            "textSha256": "aba9098fde5d7a88da0be3a5448a1469eec4a0b90ce1bdb3425663e545016605"
+          },
+          {
+            "ref": "word/document.xml:p:14",
+            "textSha256": "0fb628a6762c9d0af70d4954420f0f623baccccab86829b3b77517645a4f10b7"
+          },
+          {
+            "ref": "word/document.xml:p:15",
+            "textSha256": "10fb58cbf9d01b492d583adcf03f5f682959555002daa5ac1f65092a3c0213b5"
+          },
+          {
+            "ref": "word/document.xml:p:17",
+            "textSha256": "535ab1e1c346e76a8f97dc5232d335062965eb39f1991ee714ed39892c5d35a2"
+          },
+          {
+            "ref": "word/document.xml:p:18",
+            "textSha256": "2ff3b4b0a94264f205c12305c402f642bb2af551e0ba5f2d3c37154e674c4a91"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Summarise the confirmed 4-star double and triple per-person tariff cells without changing either price."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
+      "text": "Group tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:3",
+            "textSha256": "20126f2e6c107c5d73b7865ae3ce8e9542d315543a6f06747dbfd864ab97e2c0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Trim surrounding Word whitespace to provide the existing format label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c165ecc8a1f423b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2beea3e23ac67357d0e86010c3d4e796815ee4cfa2abf0bc3401c20beb043e45",
+      "text": "Rio de Janeiro, 4 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:4",
+            "textSha256": "d020a6a41eab085156708848794c28ad5e3e467f46bc6cab67a75ba8034605a8"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed Word passage to form the existing standalone field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2ea525be472a2d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1547c5be459c238ce24fba7ad04f3707a6710e57e115932a0bda5bd24eb8dabb",
+      "text": "Foz do Iguaçu, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:4",
+            "textSha256": "d020a6a41eab085156708848794c28ad5e3e467f46bc6cab67a75ba8034605a8"
+          },
+          {
+            "ref": "word/document.xml:p:55",
+            "textSha256": "d4be7cc9844add02301c4a753e8f9a871352863bff156a028cf808f910f34005"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed Word passage to form the existing standalone field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:91920a32a7bb8fb4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ca507fafd0546412f64058eb92875a80d2ee0f16ba61e8a1093715326ba706f1",
+      "text": "Amazon jungle, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:5",
+            "textSha256": "0a0b2fd25f3a8d4d80aa716776ea653af4eef5ad1903837c431f5c99ed3908bd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed Word passage to form the existing standalone field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:370c1ac7e6ec6b50",
+      "field": "itinerary.label",
+      "sourceTextSha256": "20139304db450e760da07a8b27a2c2a1f6aff17a94d5f3fa1ac3f7cf51aad76a",
+      "text": "Búzios, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:5",
+            "textSha256": "0a0b2fd25f3a8d4d80aa716776ea653af4eef5ad1903837c431f5c99ed3908bd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed Word passage to form the existing standalone field."
+      }
+    }
+  ]
+}

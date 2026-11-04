@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2057,
-    "leased": 12,
+    "queued": 2056,
+    "leased": 13,
     "review": 340,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2057,
-      "leased": 12,
+      "queued": 2056,
+      "leased": 13,
       "review": 340,
       "ready": 1,
       "retryable": 0,
@@ -305,8 +305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 64,
-          "leased": 0,
+          "queued": 63,
+          "leased": 1,
           "review": 13,
           "ready": 0,
           "retryable": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:46:32.484Z",
       "earliestRetryAt": null
     },
     "17": {
@@ -1412,6 +1412,12 @@
       "jobId": "en:bulk:tour:tour_mexico_religious_journey:b014",
       "token": "ada-en-150b76fa3667-20261104",
       "expiresAt": "2026-11-04T07:46:25.816Z",
+      "generation": 1
+    },
+    "ada-en-24807b62-20261104": {
+      "jobId": "en:bulk:tour:tour_iguazu_incentive_3_days:b006",
+      "token": "ada-en-24807b62-token-c83715b9",
+      "expiresAt": "2026-11-04T07:46:32.484Z",
       "generation": 1
     }
   },
@@ -2605,8 +2611,15 @@
         "en:bulk:tour:tour_colombia_complete_11_days:b012"
       ],
       "completedJobIds": []
+    },
+    "ada-en-24807b62-20261104": {
+      "token": "ada-en-24807b62-token-c83715b9",
+      "jobIds": [
+        "en:bulk:tour:tour_iguazu_incentive_3_days:b006"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:16:25.816Z"
+  "updatedAt": "2026-11-04T06:16:32.484Z"
 }

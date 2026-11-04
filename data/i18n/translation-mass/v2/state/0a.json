@@ -233,156 +233,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b003",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "f546a62f9c514559c9a0b9a6be141917e2b6254db0fa413b681de5a07792a20d",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-150b76fa3667",
-        "token": "ada-en-150b76fa3667-20261104",
-        "claimedAt": "2026-11-04T06:52:19.783Z",
-        "expiresAt": "2026-11-04T08:22:19.783Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-150b76fa3667-006-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-150b76fa3667",
-        "token": "ada-en-150b76fa3667-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b003",
-          "stableId": "tour_brazil_recife_porto_noronha_10d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "f546a62f9c514559c9a0b9a6be141917e2b6254db0fa413b681de5a07792a20d",
-          "blocks": [
-            {
-              "blockId": "tour:note:d11c7693ebb71fbd",
-              "field": "note",
-              "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
-              "text": "If necessary, we may replace your hotel with another of the same category.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraph 129 says similar hotels, but contains no complete hotel-substitution policy note; translate the explicit current RU condition in Ada Tours' voice.",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-              }
-            },
-            {
-              "blockId": "tour:note:aad34780a245497e",
-              "field": "note",
-              "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
-              "text": "The order of excursions may change while the tour programme is maintained.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "The verified Word 2027 has no matching excursion-order condition in paragraphs 149–152 or the service sections; retain the current RU condition.",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-              }
-            },
-            {
-              "blockId": "tour:note:64d02759479179f7",
-              "field": "note",
-              "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
-              "text": "We are not responsible for missed hotel breakfasts when you check out early for an early flight or excursion.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "The verified Word 2027 includes breakfast in programme and hotel sections but has no condition about missed breakfasts due to early departures; translate the current RU condition without changing its scope.",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-              }
-            },
-            {
-              "blockId": "tour:highlight_title:f9b489069eced7f2",
-              "field": "highlight.title",
-              "sourceTextSha256": "16c0178e2a979266322e2696a5a69ac727cc9b4c4d17e8920ab5a5c9a422b4d5",
-              "text": "Recife and Olinda",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p66",
-                    "textSha256": "6cfe6c8badd3287f0026145fa170775a84065b914977c92590e2157cd7ab11ae"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:highlight_text:84769250b22fa41a",
-              "field": "highlight.text",
-              "sourceTextSha256": "f755c3108259edc5422d578f755aa5161ad1166670048014a1c657baa484e316",
-              "text": "Day 2 · After breakfast, a full-day tour of Recife and Olinda. Discover the three districts of the centre, Recife, Santo Antônio and Boa Vista: the Maurício de Nassau Bridge, the Praça da República, surrounded by the Governor’s Palace, the Santa Isabel Theatre and the Palace of Justice, and the Casa da Cultura, a 19th-century former prison that is now a centre of regional culture with craft and food shops. Then Olinda, a charming town of colourful houses, artists’ studios and history, once known as “little Lisbon” and a UNESCO World Heritage Site since 1982: the Church of Mercy, the São Bento Monastery and the Cathedral of the Sé on the Alto da Sé hill, with stunning views over the coast. Olinda is also famous for its Carnival and its Giant Puppets (Bonecos Gigantes).",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p68",
-                    "textSha256": "fc57611971bd91e6e8199e13048eab19e7fdea561a7fd216551adfe9bcd7b7f7"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:d9caa82a352a47c0",
-              "field": "media.alt",
-              "sourceTextSha256": "ac907bce80266f115061a4e19c68c1d1bd768aa4224779dc5baa15e33afaf079",
-              "text": "Tiled-roof houses and church towers in Olinda overlooking Recife, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraphs 67–68 describe the two cities but contain no image-specific alt caption; translate the current RU image description.",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-              }
-            },
-            {
-              "blockId": "tour:media_hover:ffcf49b26b89d036",
-              "field": "media.hover",
-              "sourceTextSha256": "c51dd11c3da5daeb4910571961e4cbf67cac096f088b46d9beb0657250a1a707",
-              "text": "Olinda, Brazil: colonial buildings and the distant high-rise buildings of Recife",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraphs 67–68 contain no image-specific hover caption; translate the current RU caption without adding photographic details.",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-              }
-            },
-            {
-              "blockId": "tour:highlight_title:63ec515a838cb89e",
-              "field": "highlight.title",
-              "sourceTextSha256": "6948857dfda4a3f606faa37d8295561a1ffb5d4cdf47de03763d5d5d4c52af92",
-              "text": "Porto de Galinhas",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p43",
-                    "textSha256": "660462991187fe099319662bccd0418970a8ad3aade279bfff8b658fa960fbc5"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:53:16.713Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-150b76fa3667-006",
+        "blobSha": "c8eb51f1f60ff3cd46cf0e214259901295bfd192",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_recife_porto_noronha_10d_b003/ada-en-150b76fa3667-006.json",
+        "at": "2026-11-04T07:03:46.510Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

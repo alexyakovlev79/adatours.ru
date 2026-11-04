@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b003",
+  "stableId": "tour_source_costa_rica_nicaragua_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "dd631b2c64fce6c03fda130ca7664b5132c305b0646a60060dd8f11b7883c98a",
+  "blocks": [
+    {
+      "blockId": "tour:included:05dc94600b7d4ebd",
+      "field": "included",
+      "sourceTextSha256": "10c0bb020ae6ba98a2b1a04cc0a41ac9504976fd2ef4f9dd2f736b765e397149",
+      "text": "Lodging and local taxes.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "docx:p:65",
+            "textSha256": "ce453d68ff2560cdc4498054d812d86d7f384ca4de55c9b49c10f92ec18ff6d2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Isolate the lodging-tax inclusion from the approved Word paragraph that combines accommodation with local taxes."
+      }
+    },
+    {
+      "blockId": "tour:included:0aa320842931ed9e",
+      "field": "included",
+      "sourceTextSha256": "43ddb26b444a1919828e9fe816c9ffd55dcb2b7f6bc3f5ce1ddcde30175b3a61",
+      "text": "Meals according to the itinerary: breakfast, lunch and dinner on the specified days.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0229-b-costa-nicaragua-b003",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word mentions daily breakfast, three lunches and full board in Tortuguero separately, but no exact single Word statement matches this RU summary."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e108efe42c53b26f",
+      "field": "notIncluded",
+      "sourceTextSha256": "1aa6a6c04fa59bc92a10d18cfb641acec481751eeb4e25c6015a7db23528b7d4",
+      "text": "Optional activities.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "docx:p:69",
+            "textSha256": "54d8c3eefa6066b72cdca1db5af9f5b2e7abf4b1dde7ac273dfe66dbc96489d0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the optional activities exclusion from the combined approved Word important-information paragraph."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a63f7db631fd9cfe",
+      "field": "notIncluded",
+      "sourceTextSha256": "12932711f01b0a067b20ebe512aeefa8352e78bd4cbbc799a39a72f830fd0f95",
+      "text": "Tortuguero National Park entrance fee (USD 17 per person)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "docx:p:29",
+            "textSha256": "fc00b5d6235fd43ca7e62e23e7ab8ed269c177b69b82ac7013f5479146cdd9e1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove the not-included prefix from the approved Word per-person Tortuguero National Park entry-fee exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:958b4928cdac91ce",
+      "field": "notIncluded",
+      "sourceTextSha256": "5f643bf3aafa15a57d4439aa82f9e657ca26fb44eb411b340da962bbff4a811f",
+      "text": "Arrival and departure taxes.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "docx:p:69",
+            "textSha256": "54d8c3eefa6066b72cdca1db5af9f5b2e7abf4b1dde7ac273dfe66dbc96489d0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the precise approved Word arrival and departure taxes exclusion for the airport-tax category."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:7b98eb143299528e",
+      "field": "notIncluded",
+      "sourceTextSha256": "7012bb6c11b4a55737305354a2774be2e8797d3bea597dea2ed6a5bc77a37c7b",
+      "text": "Personal expenses.\n\nAda Tours may replace the listed hotels with others of the same category if necessary.\n\nAda Tours may alter the order of excursions when necessary, while keeping the tour programme unchanged.\n\nAda Tours is not responsible for hotel breakfasts missed due to early departure for a flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0229-b-costa-nicaragua-b003",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved 2027 Word excludes hotel extras but does not contain the complete RU combination of personal expenses, hotel substitutions, excursion-order changes and missed-breakfast conditions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "docx:p:15",
+            "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "5222bfd2995f2e6b872b4e290ccd4bfa685a5bf6f85ca8e57d954fd21c21506a",
+      "text": "Day 1 · Arrival at Juan Santamaría International Airport, where you are met for the transfer to your hotel. Overnight at Hotel Palma Real.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "docx:p:16",
+            "textSha256": "c5fa6704841e83313c9898bef6d54bcbffd11d3aca3e7f8609584c20a21aded9"
+          }
+        ]
+      }
+    }
+  ]
+}

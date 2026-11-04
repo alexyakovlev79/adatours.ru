@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1208,
-    "leased": 10,
+    "queued": 1207,
+    "leased": 11,
     "review": 1170,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1208,
-      "leased": 10,
+      "queued": 1207,
+      "leased": 11,
       "review": 1170,
       "ready": 20,
       "retryable": 0,
@@ -545,8 +545,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 31,
-          "leased": 0,
+          "queued": 30,
+          "leased": 1,
           "review": 48,
           "ready": 0,
           "retryable": 0,
@@ -577,7 +577,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T22:56:08.068Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -1400,6 +1400,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_rio_iguasu_buzios:b009",
       "token": "tok-mw2mj91p-yrt4tyal93",
       "expiresAt": "2026-11-04T22:55:44.685Z",
+      "generation": 1
+    },
+    "ada-en-mw2miydv-amanda": {
+      "jobId": "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro_dlya_mice:b002",
+      "token": "ada-token-mw2miydv-z80h303p6q",
+      "expiresAt": "2026-11-04T22:56:08.068Z",
       "generation": 1
     }
   },
@@ -5306,7 +5312,8 @@
     "ada-en-mw2miydv-amanda": {
       "token": "ada-token-mw2miydv-z80h303p6q",
       "jobIds": [
-        "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b011"
+        "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b011",
+        "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro_dlya_mice:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b011"
@@ -5348,5 +5355,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T21:26:00.480Z"
+  "updatedAt": "2026-11-04T21:26:08.068Z"
 }

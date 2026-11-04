@@ -412,7 +412,66 @@
         "claimedAt": "2026-11-04T06:59:00.782Z",
         "expiresAt": "2026-11-04T08:29:00.782Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2ee259e72fda-004-03",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2ee259e72fda-20261104",
+        "token": "ada-en-2ee259e72fda-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b015",
+          "stableId": "tour_colombia_explorer_9_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "f204fc15675f70ee911ca710322911ca70f9181b385a5062652cf316004d4989",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "20debe58ba63499d95b793a04efec3dc1eef35e6b745adba834ebc5f976f322e",
+              "text": "A street in Cartagena with arched doorways and wooden balconies, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word contains Cartagena programme text but no matching image alt caption describing arched entrances and wooden balconies.",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:77871c8f58bdcbc6",
+              "field": "media.hover",
+              "sourceTextSha256": "8b24d51e6fed0f9c0dc433b73e1ab3c74dca2ce5b45994b39096c5806399a110",
+              "text": "Cartagena: historic houses with balconies along a city street",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word has no corresponding media hover caption for this current RU streetscape description.",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3"
+              }
+            },
+            {
+              "blockId": "tour:body:47f6c11f40afc686",
+              "field": "body",
+              "sourceTextSha256": "3266234fceb88340724e484703ad86508f0b5ebe5419af3f95469ea22ae8492a",
+              "text": "Start in Bogotá with the colonial streets of La Candelaria, gold artefacts from pre-Columbian civilisations and the view from Monserrate. The next day, the city’s museums give way to a walk by Lake Guatavita and the underground chambers of the Salt Cathedral.\n\nIn the Coffee Region, Cocora’s wax palms rise above a green valley, and at El Ocaso farm you can follow the journey from bean to cup. After ziplining and a horseback ride, continue to Medellín to see the murals of Comuna 13 and the colourful façades of Guatapé. Spend the final 2 nights in Cartagena, with its colonial city, San Felipe fortress and a day by the Caribbean Sea in the Rosario Islands.\n\n## Accommodation and prices\n\nPrices are in USD per person. The programme includes 2 nights in each of the 4 cities.\n\n| Category | Bogotá | Pereira | Medellín | Cartagena | SGL | DBL | TRP |\n|---|---|---|---|---|---:|---:|---:|\n| 4★ | Best Western Plus 93 Park Hotel | Hotel Sonesta Pereira | Poblado Plaza | Dann Cartagena | $7830 | $4058 | $4041 |\n| 5★ | Bogota Marriott Hotel | Movich Hotel | Medellin Marriott Hotel | Hyatt Regency Cartagena | $8913 | $4836 | $4399 |\n\nSGL: single occupancy; DBL: double occupancy; TRP: triple occupancy.\n\nServices are based on English-speaking guides; assistance in another language can be arranged on request. International and domestic flights are charged separately. The applicability of rates and exact travel dates in 2027 are confirmed at the time of booking.\n",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word describes all route activities separately, and its hotel/rate tables p150–184 confirm all RU hotels, two-night stays and USD rates. It does not contain this current RU overview/body as an equivalent complete passage, the occupancy definitions, or the request/booking confirmation sentence. Translate this composite RU body, preserving the exact current RU commercial values and table cells; no prices or hotels amended.",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3"
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:59:56.924Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

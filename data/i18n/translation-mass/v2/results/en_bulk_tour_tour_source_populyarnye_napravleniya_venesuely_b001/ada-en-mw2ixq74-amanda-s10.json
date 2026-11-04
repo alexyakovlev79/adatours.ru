@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_source_populyarnye_napravleniya_venesuely:b001",
+  "stableId": "tour_source_populyarnye_napravleniya_venesuely",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8afe2d240be0161b9043d7a0cc2aaa69b0e728b6aef51f5b5b1970d33210929f",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "31a0226fd6561d3d5454db45e19d88c74bb428253672f1c5319672c2a52ceb81",
+      "text": "Popular Destinations of Venezuela with Tour Operator Ada Tours",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2ixq74-amanda",
+        "wordAbsenceReason": "Word's title has the tour name, year and duration but no Ada Tours operator attribution matching the pinned RU title; translated the complete RU title."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "b41fb1353fbb0c99156ba29cdf068b4627797d513f780cfb99549286ab3ab3e7",
+      "text": "You will get acquainted with the capital of Venezuela — Caracas,\ntake a cable car ride to Ávila National Park and visit the historic Humboldt Hotel,\ntravel to the German settlement Colonia Tovar,\nvisit the Santa Teresa rum estate, famous for producing the best Venezuelan rum,\nexplore Canaima National Park and the world’s highest waterfall — Angel Falls,\nand finish your journey relaxing on the Caribbean island of Margarita.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:9",
+            "textSha256": "46f325bb9932f97eab2db0faa7507c33eb583f79a713f322bc94114a1ed67ebc"
+          },
+          {
+            "ref": "word/document.xml:p:10",
+            "textSha256": "35a6228e50fde8f19d6cfc1d5806f74f5514458d9125e08ac814a39d6efab855"
+          },
+          {
+            "ref": "word/document.xml:p:11",
+            "textSha256": "3d31a376729f0dc860899c35cfe8a1da702ec657f4ef4023065b82d9b3497c34"
+          },
+          {
+            "ref": "word/document.xml:p:12",
+            "textSha256": "32b9cb4f2cb24ed4cd2db1febfc332a55e88d8f47c14eb1db988ce599aae13d8"
+          },
+          {
+            "ref": "word/document.xml:p:13",
+            "textSha256": "abe38a6c89147bbd0d424d7351856b23534e19768fea8d9c2885817c79a8e5bd"
+          },
+          {
+            "ref": "word/document.xml:p:14",
+            "textSha256": "f1090150615dc5706df49813577f28efab99dff68225ddfc7c3f516299653509"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "86a574bce3da4c1b6e5f8a97857eb7e2711a5b3e07f10e1a1b805ec9c491f0a0",
+      "text": "$4744",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:85",
+            "textSha256": "d683f55e866def99378ebada44ffab423c7fefef60998d9a30b859e30fb4bd31"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Preserved the pinned RU price note exactly; the Word tariff confirms the same 4744 USD amount without changing common price data."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:047ec44b6925b863",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "text": "Caracas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:17",
+            "textSha256": "90f4635cad593f86367f8f678cccb7eb3a787e6674e8e96d9437630c24c9ebf0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the city name from the exact Word Day 1 heading for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:79815585793871ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bd23ed5f395598ef73eb9332381b2e6f7dd43673524cefea2bbf16b8d3f86726",
+      "text": "Canaima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:33",
+            "textSha256": "83577082cc11b9d9fafde0bbc5dd355972c4919a7d304c212f2e299a4aa16959"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the destination name from the exact Word Day 4 heading for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fe6c83017a4967e5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "78f4b59398936aef3d95db692cb960f8caae5620933aee5c6692fc780d6d11c5",
+      "text": "Margarita Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:60",
+            "textSha256": "cfad691a6e681543a7ac4c982af114fb6e84352edbfd8e16c5d3e32ba6965520"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Day 7 prefix from the exact Word heading for the route label."
+      }
+    },
+    {
+      "blockId": "tour:included:62b86bd66760560b",
+      "field": "included",
+      "sourceTextSha256": "477dbeeeacf2f7a9b25854965eab8001ccc3382c878ba2aba524b87c5f8afb8c",
+      "text": "Accommodation in 4-star hotels and camps.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2ixq74-amanda",
+        "wordAbsenceReason": "Word's inclusion paragraph additionally specifies twin accommodation and a posada. It has no exact wording matching the assigned RU hotel-and-camp inclusion; translated RU to preserve its accommodation scope."
+      }
+    },
+    {
+      "blockId": "tour:included:c74e0904bb51497b",
+      "field": "included",
+      "sourceTextSha256": "f5a14375a53851b7b491c511c38c28f04f97667196ab22c286331b28ae19ccd6",
+      "text": "Private transfers and shared transfers in Canaima.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2ixq74-amanda",
+        "wordAbsenceReason": "Word includes transportation according to the itinerary but does not state the pinned RU distinction between private transfers and shared transfers in Canaima."
+      }
+    }
+  ]
+}

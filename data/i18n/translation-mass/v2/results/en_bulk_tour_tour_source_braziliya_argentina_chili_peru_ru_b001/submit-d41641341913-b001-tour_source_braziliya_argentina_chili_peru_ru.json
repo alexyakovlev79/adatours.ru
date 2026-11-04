@@ -1,0 +1,178 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_argentina_chili_peru_ru:b001",
+  "stableId": "tour_source_braziliya_argentina_chili_peru_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6266c84515e792e44496e73e79f1de2a4036d3f538cfc21fc61dd0b594e0c091",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "294fc851183fd7df5e7951195bf03a9b2b6d1e4d5b3bb7eac6055f857a5e0040",
+      "text": "Brazil, Argentina, Chile & Peru: 15-Day Tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[2]",
+            "textSha256": "34fa4318aacc8b517569bc38f3e69b5675070231f7a7e290a0cfe12613c279c2"
+          },
+          {
+            "ref": "word/document.xml:p[6]",
+            "textSha256": "24d94e1a9765b264be482ec632202a27548377888523b2a81fa33fae0db8db3a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word destination title and confirmed 15-day duration for the page title."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "eddae6532bc3b6af358f4fe79dd360805f949a9af7abe8732b13b15fa44efc51",
+      "text": "This 15-day journey takes you through Brazil, Argentina, Chile and Peru. Begin in Rio de Janeiro with its beaches, Corcovado, Christ the Redeemer and Sugar Loaf Mountain. Then travel to Iguazu to see the falls first from Brazil and then from Argentina.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has a different overview covering later destinations; this exact RU introduction is absent, so its scope and sequence are translated from RU."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "17e880cdb783bd6c870e533549c61c46e364cfb887195ad150a9eacdcba967ea",
+      "text": "USD 6,851 per person sharing a double room in 4★ hotels, at 2027 rates. Domestic flights are charged separately, from USD 2,000 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The current RU price note is absent from Word: Word lists USD 7,042 DBL and flights from USD 1,800. Preserve the assigned RU amounts USD 6,851 and USD 2,000; commercial reconciliation belongs to the master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a2490c091d79367",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+      "text": "Rio de Janeiro, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[65]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p[66]",
+            "textSha256": "86d3e6ad3ec42b8b574b24658626de8e8cf16ef6e367400fb889beefdd40294a"
+          },
+          {
+            "ref": "word/document.xml:p[68]",
+            "textSha256": "fb3db4588311fe12a9d1c5242f35e19070c089b06267c489cae68413ceb4cd1a"
+          },
+          {
+            "ref": "word/document.xml:p[69]",
+            "textSha256": "51be772609e13e0030397938d62607a9ca06542913b26f257ec6d408ac50e49c"
+          },
+          {
+            "ref": "word/document.xml:p[77]",
+            "textSha256": "53c956e64e8651deef845256b730b9a9ad8ab717dc26372f1a153908fc98040d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route label from the Word destination and the three nights between arrival on Day 1 and departure on Day 4."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a8c44c221a7f5e28",
+      "field": "itinerary.label",
+      "sourceTextSha256": "42065d70b768c9d05060e7b7ead1d823feb0c43e27c1df8eb25b1aa6b36700ed",
+      "text": "Iguazu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[76]",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p[77]",
+            "textSha256": "53c956e64e8651deef845256b730b9a9ad8ab717dc26372f1a153908fc98040d"
+          },
+          {
+            "ref": "word/document.xml:p[79]",
+            "textSha256": "a8194611cd4a348f27bde1639a7917d1e79d15ec9809cb868974ec664ef1e08e"
+          },
+          {
+            "ref": "word/document.xml:p[92]",
+            "textSha256": "382ff7c22326f436030554d8755068966a51532ea4924b73611c110539812690"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route label from the Word destination and two nights from Day 4 until departure on Day 6."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:710e3aef7b5379c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9560cce6cd8665492f67be0c56e8efef93fc0d4ced596b54778ffcc05b3dccda",
+      "text": "Buenos Aires, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[92]",
+            "textSha256": "382ff7c22326f436030554d8755068966a51532ea4924b73611c110539812690"
+          },
+          {
+            "ref": "word/document.xml:p[101]",
+            "textSha256": "70302a20f585cfdf242214dd212ba986c2e52979b5401c9bf532083375fa3607"
+          },
+          {
+            "ref": "word/document.xml:p[103]",
+            "textSha256": "343f72ed6581855371c313adc150c6f1b354415ec9947b7062c81b5e1a136447"
+          },
+          {
+            "ref": "word/document.xml:p[114]",
+            "textSha256": "567d6ddc72e7020b50e490aafbf840f25a69ec7bf3d0292505c0fc69f12f419c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the Word city label with three nights from arrival on Day 6 to departure on Day 9."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:eba01720f03465d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0df9632536cc03cad907920e98f41950bdd370cd8f5c2d55f3e2efdc388ceff1",
+      "text": "Santiago de Chile, 2 nights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word names Santiago de Chile, but does not supply this exact route-and-night label. Translate the immutable RU route label without changing its two-night duration."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:10c681d1df58e9a1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fdf962c8117189a4433232aa0717e78acf57723b5b6fde31ee4e16c9e277644f",
+      "text": "Sacred Valley, 2 nights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word names the Sacred Valley but does not supply this exact route-and-night label; preserve the two nights in the assigned RU route."
+      }
+    }
+  ]
+}

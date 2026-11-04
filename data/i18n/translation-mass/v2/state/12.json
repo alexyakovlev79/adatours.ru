@@ -437,7 +437,151 @@
         "claimedAt": "2026-11-04T06:02:06.391Z",
         "expiresAt": "2026-11-04T07:32:06.391Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-1d528bec4ff4-b02-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-1d528bec4ff4",
+        "token": "ada-en-token-1d528bec4ff4-20261104",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b002",
+            "stableId": "tour_colombia_complete_11_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "95a4ebfaa40ed98aa58d9631776bcefd430746511740f0ff43e23f95fde527b9",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:26f04027f1753bee",
+                "field": "itinerary.label",
+                "sourceTextSha256": "bf8cba7476ef70f7569cf75f53af0d18024f196022eb783173bd448ecb770348",
+                "text": "Cocora Valley",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                  "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p42",
+                      "textSha256": "d1c4215f34af51b3613b116ec785531c5bb3d76fbf2fe9c0ba0bfd3c9f915635"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:52e3bac962a72651",
+                "field": "itinerary.label",
+                "sourceTextSha256": "2ddfb00db2ab9c93e5c2d1e4c29d29ef3e1fecaf08864ae854b32d00f3997249",
+                "text": "Salento",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                  "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p78",
+                      "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the matching place name from the verified Word passage as the itinerary label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:8a6fd263d50b334d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "776bc4849d26fa0e84efe400cb20469509ac3ef66b4f63c069edf6875e31f5f1",
+                "text": "El Ocaso Coffee Farm",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                  "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p78",
+                      "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the matching place name from the verified Word passage as the itinerary label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:56c1b3c0126fce8f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+                "text": "Cartagena",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                  "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p160",
+                      "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+                    }
+                  ]
+                }
+              }
+            ],
+            "wordSourceVerification": {
+              "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+              "sha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+              "modifiedTime": "2026-10-26T17:58:24.563Z",
+              "editionYear": 2027,
+              "folderYear": 2027,
+              "paragraphConvention": "zero-based w:p traversal in word/document.xml",
+              "commercialTableEvidence": [
+                {
+                  "ref": "word/document.xml:p176",
+                  "textSha256": "136f3683049d48717f3172750448ecd1d814b9b3e36c740045abc28d99545b9f"
+                },
+                {
+                  "ref": "word/document.xml:p181",
+                  "textSha256": "4f351e71ed47534be12b42a9d39eed7872d61163be0bd476ffbd7f87af5c43d0"
+                },
+                {
+                  "ref": "word/document.xml:p182",
+                  "textSha256": "42908a9248acbc48d8c1995d536195e910f5f7c1e6089c9c978e6e2d26b743ce"
+                },
+                {
+                  "ref": "word/document.xml:p183",
+                  "textSha256": "8045eab641fbfb0dd3d696ac20fc4eaef8e67cd61e8043eb602db560041ad317"
+                },
+                {
+                  "ref": "word/document.xml:p184",
+                  "textSha256": "ad507032e82b3fcad3af667a29da36d864e9b38584d3269fe92e84f81528571c"
+                },
+                {
+                  "ref": "word/document.xml:p185",
+                  "textSha256": "c589a298060d33ee40dbc0ca083bcb364d4f33de900c185345e331306fd0c32c"
+                },
+                {
+                  "ref": "word/document.xml:p186",
+                  "textSha256": "54fa99e93a1a5fd3e0a39ce351fc6777c896000c3091fa1b60d5c02884f121b8"
+                },
+                {
+                  "ref": "word/document.xml:p187",
+                  "textSha256": "8596854d69eb9783bee882a251f1ae2a3cd5cae5ebc969da4972a9f1cee8462e"
+                },
+                {
+                  "ref": "word/document.xml:p188",
+                  "textSha256": "a41d1d15b70c77605ed410fb46dcf838edda27c244c433f31cdd54807696dbb6"
+                },
+                {
+                  "ref": "word/document.xml:p189",
+                  "textSha256": "ac93aedc1e7567fcf29323995dbdee1afa4d3779e303a3dc3bec0519db64724c"
+                }
+              ]
+            },
+            "priceAmendments": []
+          },
+          "submissionId": "ada-en-1d528bec4ff4-b02",
+          "preparedBlocks": 4
+        },
+        "at": "2026-11-04T06:03:05.474Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

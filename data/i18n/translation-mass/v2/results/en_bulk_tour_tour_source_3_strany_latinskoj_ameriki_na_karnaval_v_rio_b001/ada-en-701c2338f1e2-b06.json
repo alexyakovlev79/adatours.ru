@@ -1,0 +1,326 @@
+{
+  "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b001",
+  "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6d96dd25d0df789bd9d84898beedf8757fbef0e796b0588cf2d10d6e17d855bd",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "f09c3b52cefa43335b732b23b53fd7137d7b9a78384fd4bbd658f76da286910f",
+      "text": "Sun, Tango & Wine",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+        "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "dc5a32e7bcfada1cc74b8cf870daafdef5f2ba17f50c243e191a81dbaab0faeb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "fd19e72cc44ee86684b84fef2ffbd9bff73665aa8a7b29bea214e551af452e52",
+      "text": "Ten days across three countries: the Carnival’s grand finale in Rio de Janeiro, the Parade of Champions, with Sugar Loaf and Christ the Redeemer; the Iguazu Falls from both the Brazilian and Argentine sides; Buenos Aires and its tango; and Santiago de Chile at the foot of the Andes, with an optional visit to the wineries of the Maipo Valley.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+        "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "0d2ac254b8f562adf32d909c6c6a7bdd70b4e68574729fcff26dc1f47aa356d5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "c309ba8bd6bfcea4cb88e35c4226e33e054b45714b97bcad86ea0c9235875e31",
+      "text": "$4638",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-39fb6759e90b",
+        "wordAbsenceReason": "The confirmed Word2027 tariff table contains no USD4638 rate. Preserve the frozen RU numeric price exactly under the worker's no-price-change rule; submit all Word rates separately as a structured commercial-master amendment."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c165ecc8a1f423b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2beea3e23ac67357d0e86010c3d4e796815ee4cfa2abf0bc3401c20beb043e45",
+      "text": "Rio de Janeiro, 4 nights",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-39fb6759e90b",
+        "wordAbsenceReason": "Confirmed Word2027 allocates3nights to Rio, not the frozen RU4nights. Preserve the frozen RU quantity under the worker's no-duration-change rule; flag the exact Word/RU conflict for the master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c8ffbd6fc38d01b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e571875ec720a5ede2d4198bb255ac215b15ee7139d2cb36d3e04b709cb2383d",
+      "text": "Foz do Iguaçu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+        "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p129",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p130",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the exact Word accommodation-table city and night-count cells for the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:710e3aef7b5379c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9560cce6cd8665492f67be0c56e8efef93fc0d4ced596b54778ffcc05b3dccda",
+      "text": "Buenos Aires, 3 nights",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-39fb6759e90b",
+        "wordAbsenceReason": "Confirmed Word2027 allocates2nights to Buenos Aires, not the frozen RU3nights. Preserve the frozen RU quantity under the worker's no-duration-change rule; flag the exact Word/RU conflict for the master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:eba01720f03465d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0df9632536cc03cad907920e98f41950bdd370cd8f5c2d55f3e2efdc388ceff1",
+      "text": "Santiago de Chile, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+        "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p139",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          },
+          {
+            "ref": "word/document.xml:p140",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the exact Word accommodation-table city and night-count cells for the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:included:636dccb3fb9a00fa",
+      "field": "included",
+      "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+      "text": "Accommodation in the selected hotels, with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+        "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p266",
+            "textSha256": "d5886c2273504f228151d1e87a839dddeb3704cf7c1ffeb598e9cfb5fceeec3a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the decorative list marker from the exact Word accommodation-inclusion item."
+      }
+    }
+  ],
+  "priceAmendments": [
+    {
+      "kind": "structured_price_amendment",
+      "status": "master_review_required",
+      "applyToSharedPrices": false,
+      "currency": "USD",
+      "basis": "per_person",
+      "currentRuPriceNote": "$4638",
+      "wordFrom": {
+        "amount": 5208,
+        "category": "3_star",
+        "occupancy": "TPL",
+        "basis": "per_person"
+      },
+      "tariffs": [
+        {
+          "category": "3_star",
+          "occupancy": "SGL",
+          "amount": 6680
+        },
+        {
+          "category": "3_star",
+          "occupancy": "DBL",
+          "amount": 5215
+        },
+        {
+          "category": "3_star",
+          "occupancy": "TPL",
+          "amount": 5208
+        },
+        {
+          "category": "4_star",
+          "occupancy": "SGL",
+          "amount": 7550
+        },
+        {
+          "category": "4_star",
+          "occupancy": "DBL",
+          "amount": 5590
+        },
+        {
+          "category": "4_star",
+          "occupancy": "TPL",
+          "amount": 5335
+        },
+        {
+          "category": "5_star",
+          "occupancy": "SGL",
+          "amount": 8980
+        },
+        {
+          "category": "5_star",
+          "occupancy": "DBL",
+          "amount": 6470
+        },
+        {
+          "category": "5_star",
+          "occupancy": "TPL",
+          "amount": 6065
+        }
+      ],
+      "conditions": "Per person, group tour,12–21February2027. Word includes flights Rio–Iguazu–Buenos Aires–Santiago, Champions Parade ticket and transfers; international flights excluded.",
+      "evidence": [
+        {
+          "ref": "word/document.xml:p145",
+          "textSha256": "ee74053323bff31a52c98db3ae13d5dbc0b33bb4765d0d73df53a960df924593",
+          "text": "Prices per person (USD) · group tour"
+        },
+        {
+          "ref": "word/document.xml:p147",
+          "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718",
+          "text": "SGL"
+        },
+        {
+          "ref": "word/document.xml:p148",
+          "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0",
+          "text": "DBL"
+        },
+        {
+          "ref": "word/document.xml:p149",
+          "textSha256": "8871b1c03f7a3f8fbdfc4a746b0a03b9c7de2313465c5f3b554f2b77b8a324ae",
+          "text": "TPL"
+        },
+        {
+          "ref": "word/document.xml:p150",
+          "textSha256": "d348c2351993ff154cbb0913d7cb37295364a378694cc534c3ae3da8cd2eca08",
+          "text": "Hotels 3★"
+        },
+        {
+          "ref": "word/document.xml:p151",
+          "textSha256": "a9de19733df8b624fb554a604ec4c1196c53d2c23eab34d28855a091a8a067d5",
+          "text": "$ 6,680"
+        },
+        {
+          "ref": "word/document.xml:p152",
+          "textSha256": "2708b82ef3d4ad5b3cc51ae6a198579c6318a0b1b503bcdfd1de94817188248c",
+          "text": "$ 5,215"
+        },
+        {
+          "ref": "word/document.xml:p153",
+          "textSha256": "39718ec5d5bd99f0a637af82eb1dfc69608a899bb1fa7597a6e75ae7316a664c",
+          "text": "$ 5,208"
+        },
+        {
+          "ref": "word/document.xml:p154",
+          "textSha256": "d1b64ae7214d18b69a226f3d8291bc99940e4c69be6d2f87e2cf327f649b58d9",
+          "text": "Hotels 4★"
+        },
+        {
+          "ref": "word/document.xml:p155",
+          "textSha256": "84568b097ab60d48ef150789c17186476949a792a1e2aa47cd8478de9cac8d86",
+          "text": "$ 7,550"
+        },
+        {
+          "ref": "word/document.xml:p156",
+          "textSha256": "ba5b6f26ea11aff0dc6355f8e52a321f689279bf23ab4ca73cadb739bcab765e",
+          "text": "$ 5,590"
+        },
+        {
+          "ref": "word/document.xml:p157",
+          "textSha256": "39dc01a480b5bf176d04e3bd42c4f30f2c622077c44ef0455a0d77e27d78ed6d",
+          "text": "$ 5,335"
+        },
+        {
+          "ref": "word/document.xml:p158",
+          "textSha256": "b56b9888cc9e3c99cc305fe48604c8eca8fe30901368e2a164d2c066ac7daac9",
+          "text": "Hotels 5★"
+        },
+        {
+          "ref": "word/document.xml:p159",
+          "textSha256": "e62d4634b9765d869b94235eb7a46caf0a5198195160a4107c6ba451285c1218",
+          "text": "$ 8,980"
+        },
+        {
+          "ref": "word/document.xml:p160",
+          "textSha256": "cec113cc4a82f37032c10824c88108bc1e544f26e259f495165a1e06de1b06fd",
+          "text": "$ 6,470"
+        },
+        {
+          "ref": "word/document.xml:p161",
+          "textSha256": "f34594b2f575e4846546029cfbba4462a43c19d75c40af047e539c52404dc007",
+          "text": "$ 6,065"
+        },
+        {
+          "ref": "word/document.xml:p162",
+          "textSha256": "2ce73ced8cba90c388d7f3008e671cb6aa23f051a678efe32a27c6905689a5e0",
+          "text": "Rates per person, including domestic flights, the Champions Parade ticket and transfers."
+        },
+        {
+          "ref": "word/document.xml:p165",
+          "textSha256": "e29be0d323d8d59976e5a144dc124ae5730875a75696cac18f73e9035499c10e",
+          "text": "From $ 5,208"
+        },
+        {
+          "ref": "word/document.xml:p166",
+          "textSha256": "4d3496b445530beb6302be28583f57d9b3088ae675c6e0c252bca60fe468044b",
+          "text": "Per person, 3★ hotels, triple room. Includes domestic flights and the Champions Parade ticket."
+        },
+        {
+          "ref": "word/document.xml:p172",
+          "textSha256": "c31ebc2111aa30fe16b15c4c34354152890e2ace5cd487536a5c80fd48243294",
+          "text": "12–21 Feb 2027"
+        }
+      ]
+    }
+  ],
+  "sourceNotes": [
+    {
+      "kind": "word_ru_duration_conflict",
+      "detail": "Confirmed Word2027 is10days/9nights, Rio3/Iguazu2/Buenos Aires2/Santiago2. Frozen RU route labels are4/2/3/2nights (11nights). The approved Word title and lead are retained; RU-derived route labels preserve frozen numeric quantities under the worker no-duration-change rule. Master must reconcile this discrepancy before integration; releaseEligible remains false.",
+      "paragraphRefs": [
+        "word/document.xml:p7",
+        "word/document.xml:p18",
+        "word/document.xml:p23",
+        "word/document.xml:p124",
+        "word/document.xml:p125",
+        "word/document.xml:p134",
+        "word/document.xml:p135"
+      ]
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1613,
-    "leased": 4,
+    "queued": 1612,
+    "leased": 5,
     "review": 792,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1613,
-      "leased": 4,
+      "queued": 1612,
+      "leased": 5,
       "review": 792,
       "ready": 1,
       "retryable": 0,
@@ -465,8 +465,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 50,
-          "leased": 0,
+          "queued": 49,
+          "leased": 1,
           "review": 28,
           "ready": 0,
           "retryable": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:01:26.452Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_source_chili_argentina:b004",
       "token": "tk-ecbee34ab85b-20261104",
       "expiresAt": "2026-11-04T18:01:03.403Z",
+      "generation": 1
+    },
+    "ada_en_20261104_mw2bzxhu": {
+      "jobId": "en:bulk:tour:tour_source_buenos_ajres_salta_iguasu:b004",
+      "token": "tok_s1xu6zzgricmw2bzxhu",
+      "expiresAt": "2026-11-04T18:01:26.452Z",
       "generation": 1
     }
   },
@@ -4003,7 +4009,8 @@
       "token": "tok_s1xu6zzgricmw2bzxhu",
       "jobIds": [
         "en:bulk:tour:tour_source_braziliya_ot_san_paulo_do_buziosa:b003",
-        "en:bulk:tour:tour_source_braziliya_s_plyazhami:b004"
+        "en:bulk:tour:tour_source_braziliya_s_plyazhami:b004",
+        "en:bulk:tour:tour_source_buenos_ajres_salta_iguasu:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_braziliya_ot_san_paulo_do_buziosa:b003",
@@ -4029,5 +4036,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:31:18.815Z"
+  "updatedAt": "2026-11-04T16:31:26.452Z"
 }

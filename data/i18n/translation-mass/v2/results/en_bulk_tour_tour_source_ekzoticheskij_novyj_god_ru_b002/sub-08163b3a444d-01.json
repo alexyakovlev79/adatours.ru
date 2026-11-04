@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b002",
+  "stableId": "tour_source_ekzoticheskij_novyj_god_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5272d6db2135def6d5bf4a15469fe18557761023318f58ebacea6dec954add77",
+  "blocks": [
+    {
+      "blockId": "tour:note:79d00a2bf4ce7207",
+      "field": "note",
+      "sourceTextSha256": "e0cfcf688c57611b61b66ad71e539b3686cd02dd92f0f0d1ed920a5d1b56c89e",
+      "text": "30.12.2026 – 10.01.2027",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:1",
+            "textSha256": "e0cfcf688c57611b61b66ad71e539b3686cd02dd92f0f0d1ed920a5d1b56c89e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:9d56eaeb2f12cf43",
+      "field": "included",
+      "sourceTextSha256": "06d0e24b1cab162e4cc3b171db23380e667a7f2319b80b8272826e0eae188713",
+      "text": "Accommodation according to the programme: 4 nights in Rio, 3 in Foz do Iguaçu, 2 at an Amazon lodge and 2 in Búzios.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:96",
+            "textSha256": "32a27fcbf12755cdae9a8dd7ab500b5156e96bc25863c1d7ad9461c005744b12"
+          },
+          {
+            "ref": "word/document.xml:p:4",
+            "textSha256": "d020a6a41eab085156708848794c28ad5e3e467f46bc6cab67a75ba8034605a8"
+          },
+          {
+            "ref": "word/document.xml:p:5",
+            "textSha256": "0a0b2fd25f3a8d4d80aa716776ea653af4eef5ad1903837c431f5c99ed3908bd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The hotel inclusion and route night counts are combined into this accommodation field without changing the duration."
+      }
+    },
+    {
+      "blockId": "tour:included:0218d8107ebccc7c",
+      "field": "included",
+      "sourceTextSha256": "8ecbc6ac6f9eea97cdb865e808f382eea4d3415f7791e4adf878a500f649701e",
+      "text": "Group tours according to the programme with an English-speaking guide in Rio and Iguazu.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p98 gives a general English-guide inclusion, but has no separate field specifying group tours and the Rio/Iguazu breakdown; this RU-derived detail uses the agreed service-language adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:ce9f3fe13f1ffc8a",
+      "field": "included",
+      "sourceTextSha256": "67a2cb6ba6ab3fbf0497fd883841aac26891e7525c0fb47098b1ba954f303a8e",
+      "text": "English-speaking guide in Manaus.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p98 gives the general guide inclusion; no separate Manaus guide-language inclusion is present in the document."
+      }
+    },
+    {
+      "blockId": "tour:included:1ae30ec67d92cae9",
+      "field": "included",
+      "sourceTextSha256": "a391a0b025e926bd81c78dee8bb6c134625701e485c61d5f3548805f5b5cd890",
+      "text": "Group transfers with a driver.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p97 includes transfers generally, but has no standalone group-transfer-with-driver inclusion; the assigned RU detail is retained."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:019bb714e694242b",
+      "field": "notIncluded",
+      "sourceTextSha256": "909c12ee5d5bebd7e72266ef6a6d1a2762f4e2a134ac3ab90da8b13fc1566984",
+      "text": "International flight",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:101",
+            "textSha256": "d95e7c18e431e80e25b49936e93548da534aeded0af26f75c85091aff266fd37"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:bd8001d0c3a66692",
+      "field": "notIncluded",
+      "sourceTextSha256": "e2d8400acbd5f7509255459a58b8b1aa82aebba0d433f7e7428f2a4f998e8d76",
+      "text": "Domestic flights.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p104 gives a route and indicative airfare, but no standalone price-free domestic-flights exclusion matching this field; no fare is added or changed."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:102",
+            "textSha256": "9fac777fd8c0a41fa92f95282f516f02c3378b8e74a1a7ae073a056e295f10f3"
+          }
+        ]
+      }
+    }
+  ]
+}

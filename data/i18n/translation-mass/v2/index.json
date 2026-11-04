@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1535,
-    "leased": 14,
+    "queued": 1534,
+    "leased": 15,
     "review": 860,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1535,
-      "leased": 14,
+      "queued": 1534,
+      "leased": 15,
       "review": 860,
       "ready": 1,
       "retryable": 0,
@@ -585,8 +585,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 35,
-          "leased": 0,
+          "queued": 34,
+          "leased": 1,
           "review": 38,
           "ready": 0,
           "retryable": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:27:31.425Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -1424,6 +1424,12 @@
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b018",
       "token": "ada_token_6dc15d525f9644af8db04390f50de557",
       "expiresAt": "2026-11-04T18:27:23.918Z",
+      "generation": 1
+    },
+    "ada_en_66b9ebec0c14": {
+      "jobId": "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro_vodopady:b005",
+      "token": "ada_token_66b9ebec0c14_20261104",
+      "expiresAt": "2026-11-04T18:27:31.425Z",
       "generation": 1
     }
   },
@@ -4312,8 +4318,15 @@
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b018"
       ],
       "completedJobIds": []
+    },
+    "ada_en_66b9ebec0c14": {
+      "token": "ada_token_66b9ebec0c14_20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro_vodopady:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:57:23.918Z"
+  "updatedAt": "2026-11-04T16:57:31.425Z"
 }

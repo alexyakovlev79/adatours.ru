@@ -1,0 +1,167 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b007",
+  "stableId": "tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "edec28747f6f1b256a301796548abb71518a6772de46c302d4555c1080a6adb4",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2cd14c236705f53a4815a7b1f9eaaa2d68e8f3ba82405cc77b100cd7c8e54cc4",
+      "text": "We start our trip  in the morning from San Jose. You will be traveling through Braulio Carrillo National Park, where you have the opportunity to see beautiful views and abundant vegetation. On the way we will have breakfast. After breakfast we will  continue our trip to Caño Blanco deck driving by banana plantations. At Caño Blanco, you will board the covered boat to the lodge, passing the Tortuguero canals. In the afternoon you will visit the Turtle Museum of the C.C.C. (Caribbean Conservation Corporation) and to the colorful   Tortuguero town. You will return to the hotel. (Meals: B,L,D)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:23",
+            "textSha256": "fbecf42a39239fa69a3f391f217f6d088ee083c445b05f101bf8a5a93786a65f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:af4900e6f7392535",
+      "field": "itinerary.label",
+      "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:22",
+            "textSha256": "6f5ef2aaf856c8d147a472109b297fb74ced83da63e957b8b2931587cc88f520"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the departure city from the approved Day 3 heading for the places label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:42c14d1d84016c0e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e50420e7935a08a4b1c1b669de14f6ec0a6da38c7a699388c93393ee450e93d5",
+      "text": "Tortuguero",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:22",
+            "textSha256": "6f5ef2aaf856c8d147a472109b297fb74ced83da63e957b8b2931587cc88f520"
+          },
+          {
+            "ref": "word/document.xml:p:23",
+            "textSha256": "fbecf42a39239fa69a3f391f217f6d088ee083c445b05f101bf8a5a93786a65f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the national park destination from the approved Day 3 programme."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:da72d22986bfe72f",
+      "field": "media.alt",
+      "sourceTextSha256": "a7c4f98afd3eb738ef07bc66efdca3b2bb863f3849eb2b90accaa3a66d6fa5d9",
+      "text": "Head of a crocodile with its jaws slightly open in Tortuguero, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The confirmed Word programme has no photograph alt or hover caption describing the crocodile; translate the assigned RU caption while preserving the existing photo."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:0e164fa6d7d8707b",
+      "field": "media.hover",
+      "sourceTextSha256": "5394f7ea5ae1f422530f036197304b1d46b1ae849ddc4d00df9e664b6e6f038c",
+      "text": "Tortuguero: close-up of a crocodile's teeth and scales",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The confirmed Word programme has no photograph alt or hover caption describing the crocodile; translate the assigned RU caption while preserving the existing photo."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f0ea1bb1cc2ceda6b92528e765d206bae0f34ab5299f60c8ece1e7290ba97fa1",
+      "text": "Tortuguero canals – Arenal – Tabacón",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:25",
+            "textSha256": "3b00e16fa0229b397368f3f528beea315f2076b1f9a7667be7c6fd28482147df"
+          },
+          {
+            "ref": "word/document.xml:p:26",
+            "textSha256": "25b536619a8c4fdd511abf04267e6eff07d245aaef9df48bce6785e57c7e9c68"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing day heading from the canals, Arenal and Tabacón named in the approved Day 4 programme."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0d82f9e7c2e868bbf96a4e1315fd6b330af205269c72d6d486ab48912c0dea4a",
+      "text": "After breakfast, you will enjoy a boat ride through the canals of the Tortuguero National Park, one of the most beautiful corners of nature, which we popularly call the \"Costa Rican Amazon\". Explore the natural beauty and protected wildlife of Costa Rica’s Tortuguero National Park. Cruise through freshwater rivers on a boat — the only way to access the inner reaches of this beautiful nature reserve. Learn about the park’s incredible biodiversity and visit a green sea turtle nesting site. Continue to the northern lowlands of Arenal Volcano and La Fortuna town. In the evening, visit the Tabacón thermal springs (the best thermal spas in the country), where you can take hot and relaxing baths in natural waters, observing, under favorable conditions, the volcanic emissions of the Arenal; dinner at Tabacón (Ave del Paraíso\n\n (Meals: B,D)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:26",
+            "textSha256": "25b536619a8c4fdd511abf04267e6eff07d245aaef9df48bce6785e57c7e9c68"
+          },
+          {
+            "ref": "word/document.xml:p:27",
+            "textSha256": "c09be98bccdb79bef3961bb6dc26faef12d5ca820adfa204be3677c0f72e335c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:74f3fec88df2630c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e50420e7935a08a4b1c1b669de14f6ec0a6da38c7a699388c93393ee450e93d5",
+      "text": "Tortuguero",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:25",
+            "textSha256": "3b00e16fa0229b397368f3f528beea315f2076b1f9a7667be7c6fd28482147df"
+          },
+          {
+            "ref": "word/document.xml:p:26",
+            "textSha256": "25b536619a8c4fdd511abf04267e6eff07d245aaef9df48bce6785e57c7e9c68"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the national park destination from the approved Day 4 programme."
+      }
+    }
+  ],
+  "sourceIssues": [
+    {
+      "field": "itinerary.text",
+      "paragraphRef": "word/document.xml:p:26",
+      "issue": "The approved Word paragraph ends at '(Ave del Paraíso' without a closing continuation; preserved verbatim for independent review."
+    }
+  ]
+}

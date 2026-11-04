@@ -1,0 +1,128 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b003",
+  "stableId": "tour_source_ekzoticheskij_novyj_god_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "81d76c58bf53dd9898fb7c70bb5a146ae2d06691f237f055284baec7d75f1a65",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:5ab414d008490dcf",
+      "field": "notIncluded",
+      "sourceTextSha256": "4d652078553d67b18a7ede529e0458dc7158005a73e39b465b94ae197e3cae84",
+      "text": "Food and drinks not mentioned in the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p:88:excluded-meals",
+            "textSha256": "6ed29e7da9cf9155ea0a6c6915ff4830a072483189518305091a6447e68e1abd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5f7004d708c653a3",
+      "field": "notIncluded",
+      "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+      "text": "Tips",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p:90:tips",
+            "textSha256": "3838a4d8cb8c5ccc1debd26cf99bfbf617f13305a755eb437e5d860bebae696a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:f33169ed00481ef7",
+      "field": "notIncluded",
+      "sourceTextSha256": "e924e89bb68f57d6240bb579908e80ea7e2e006d184c0b9f4343977ff62b9a77",
+      "text": "Laundry service",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p:91:laundry",
+            "textSha256": "3f75c95072cd2c8967ee25c534588fa7e597be20da507159cfe783a3ca4c26c2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:5aa2c628beab8b85",
+      "field": "note",
+      "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+      "text": "Hotels can be changed for other of the same category.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p:94:conditions",
+            "textSha256": "b3faa89473082f7d8c8136280cb5167614efb9252e489d54ccc5a1a2e9ab5ac8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The first sentence of the verified English Word hotel-conditions paragraph is reproduced after removing its decorative asterisks; the additional caveats in that paragraph belong elsewhere."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change, while the tour programme remains unchanged.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "gpt6-chat1-20261105-0000",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word allows changes due to unexpected circumstances but does not contain the narrower RU clause allowing a change in excursion order while retaining the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:5eefb2125af81757",
+      "field": "note",
+      "sourceTextSha256": "1581ef93986b76903fb6fb9ef1b4c97cd52cd0da146135d93290081765dcbb47",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed due to early check-out, a morning flight or an early excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "gpt6-chat1-20261105-0000",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved 2027 English Word document does not include the specific RU disclaimer about hotel breakfasts missed due to early check-out, flights or excursions."
+      }
+    },
+    {
+      "blockId": "tour:note:371a174b9d07247c",
+      "field": "note",
+      "sourceTextSha256": "27a52fea873b9d471e3d4dac3305f57e3ae7908b91a1b7d4a4321e9101ff110e",
+      "text": "Prices are subject to change. The final cost is quoted after all services have been confirmed and flight prices checked for the booking date.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "gpt6-chat1-20261105-0000",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved 2027 English Word programme does not contain this specific RU note on final quotation after checking flight prices on the date of booking."
+      }
+    },
+    {
+      "blockId": "tour:note:609d2742c71b0797",
+      "field": "note",
+      "sourceTextSha256": "8d1d73c094694b9460d9c89fd5a76637aac54387f4aaca1d62c753856cc830de",
+      "text": "If a traveller booked in a single room takes a different flight from the other participants, a supplement for an individual transfer may apply.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "gpt6-chat1-20261105-0000",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved 2027 English Word programme does not mention the specific single-room traveller flight mismatch and possible individual-transfer supplement."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1159,
-    "leased": 9,
+    "queued": 1158,
+    "leased": 10,
     "review": 1220,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1159,
-      "leased": 9,
+      "queued": 1158,
+      "leased": 10,
       "review": 1220,
       "ready": 20,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 33,
-          "leased": 0,
+          "queued": 32,
+          "leased": 1,
           "review": 42,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T23:24:14.370Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b005",
       "token": "ada-en-mw2nm8n6-amanda-token-1kqqulpmoa8",
       "expiresAt": "2026-11-04T23:24:06.020Z",
+      "generation": 1
+    },
+    "ada-en-mw2nm9rl-amanda": {
+      "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_za_9_dnej:b001",
+      "token": "tok-mw2nm9rl-8gdepv0xgvh",
+      "expiresAt": "2026-11-04T23:24:14.370Z",
       "generation": 1
     }
   },
@@ -5474,8 +5480,15 @@
         "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b005"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw2nm9rl-amanda": {
+      "token": "tok-mw2nm9rl-8gdepv0xgvh",
+      "jobIds": [
+        "en:bulk:tour:tour_source_luchshee_v_brazilii_za_9_dnej:b001"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T21:54:06.020Z"
+  "updatedAt": "2026-11-04T21:54:14.370Z"
 }

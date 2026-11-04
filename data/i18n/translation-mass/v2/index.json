@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1621,
-    "leased": 0,
+    "queued": 1620,
+    "leased": 1,
     "review": 788,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1621,
-      "leased": 0,
+      "queued": 1620,
+      "leased": 1,
       "review": 788,
       "ready": 1,
       "retryable": 0,
@@ -1105,8 +1105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 40,
-          "leased": 0,
+          "queued": 39,
+          "leased": 1,
           "review": 35,
           "ready": 1,
           "retryable": 0,
@@ -1137,7 +1137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T17:58:32.065Z",
       "earliestRetryAt": null
     },
     "1b": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-e8f6bc176576": {
+      "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002",
+      "token": "ada-en-e8f6bc176576-token-20261104",
+      "expiresAt": "2026-11-04T17:58:32.065Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -3956,8 +3963,15 @@
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_rio_four_days:b006"
       ]
+    },
+    "ada-en-e8f6bc176576": {
+      "token": "ada-en-e8f6bc176576-token-20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T15:32:44.900Z"
+  "updatedAt": "2026-11-04T16:28:32.065Z"
 }

@@ -427,7 +427,109 @@
         "claimedAt": "2026-11-04T05:57:03.625Z",
         "expiresAt": "2026-11-04T07:27:03.625Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2661932f-20261104-s01-cp04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2661932f-20261104",
+        "token": "ada-en-token-2661932f-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-en-2661932f-20261104-s01",
+          "result": {
+            "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b005",
+            "stableId": "tour_mexico_lindo_eight_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "699f7e7f3cd90564179f663b345369761232cc8fde45442241aa71e7d24210ee",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+                "field": "itinerary.title",
+                "sourceTextSha256": "1b72f42129cc622f3875ee71e577016a5b34e876cb77b80f898adb9adc0b9479",
+                "text": "Arrival in Mexico City",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "modifiedTime": "2026-10-08T14:01:21.046Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p11",
+                      "textSha256": "310821baa0029fe95a6fbd740b3e46f84cc27f86d3c492d744ad82b6ba676a4b"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the exact Word arrival heading without its day-number prefix for the separate itinerary title field."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:5a4836cca1208c95",
+                "field": "itinerary.text",
+                "sourceTextSha256": "a02af34ac043b83d0663df73e6342d5e7923328bef1968ed3726767529c3ba4a",
+                "text": "Upon landing at Mexico City International Airport, a friendly bilingual host will be waiting to welcome you, holding a sign with your name. From the moment you arrive, you’ll be greeted with warm hospitality and guided comfortably to your hotel located in the heart of Mexico City.\n\nOnce you’ve checked in, the remainder of the day is free for you to enjoy at your own pace. You may wish to relax after your journey, take a gentle walk through nearby plazas, or discover the city’s lively atmosphere for the first time. Perhaps enjoy a drink on a rooftop terrace at sunset or explore the neighborhood around your hotel—however you choose to begin, Mexico City offers a memorable start to your adventure.\n\nIncluded:• Private arrival transfer• Overnight stay in Mexico City\n\nOptional:• Early check-in• Evening experience (ask for available options)",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "modifiedTime": "2026-10-08T14:01:21.046Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p14",
+                      "textSha256": "ccc06574af3ecb1da2573ebf9aeb19ba1c872c0ca5dfcff4a3289a30151d47ab"
+                    },
+                    {
+                      "ref": "word/document.xml:p15",
+                      "textSha256": "6f783c05613bdfa5d4b869c730ff9c99980a5078ffc99b7bf7f6a0f2e74b34fb"
+                    },
+                    {
+                      "ref": "word/document.xml:p16",
+                      "textSha256": "046478c74cacf8438956d32dd78792f4f1a4637d15e2389a741eba3d1354c109"
+                    },
+                    {
+                      "ref": "word/document.xml:p17",
+                      "textSha256": "a5a46f6eb817c76e5b790af93031eb057a332f313ad30d6ab2d7fd86645ebc6f"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:e4645fc6631631c6",
+                "field": "itinerary.label",
+                "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
+                "text": "Mexico City",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "modifiedTime": "2026-10-08T14:01:21.046Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p11",
+                      "textSha256": "310821baa0029fe95a6fbd740b3e46f84cc27f86d3c492d744ad82b6ba676a4b"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the destination name explicitly present in the Word arrival heading as the itinerary place label."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:4b5e49c00db51850",
+                "field": "media.alt",
+                "sourceTextSha256": "04f30e40fcc580d05dd80063a61fdeceed0c7d770244062b960ffcefbdd311ca",
+                "text": "Yellow Volkswagen Beetle taxi on a street in Mexico City, Mexico",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word has no caption for the specific existing website taxi image; translate the frozen RU media description."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-04T05:58:47.384Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

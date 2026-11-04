@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1997,
-    "leased": 22,
+    "queued": 1996,
+    "leased": 23,
     "review": 390,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1997,
-      "leased": 22,
+      "queued": 1996,
+      "leased": 23,
       "review": 390,
       "ready": 1,
       "retryable": 0,
@@ -625,8 +625,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 63,
-          "leased": 0,
+          "queued": 62,
+          "leased": 1,
           "review": 15,
           "ready": 0,
           "retryable": 0,
@@ -657,7 +657,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T08:19:47.700Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -1472,6 +1472,12 @@
       "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b004",
       "token": "ada_en_4c0a9bc31e22_token_20261104",
       "expiresAt": "2026-11-04T08:18:23.231Z",
+      "generation": 1
+    },
+    "ada_en_7d6c4f36ac68": {
+      "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b014",
+      "token": "tok_7d6c4f36ac68_20261104",
+      "expiresAt": "2026-11-04T08:19:47.700Z",
       "generation": 1
     }
   },
@@ -2801,7 +2807,8 @@
     "ada_en_7d6c4f36ac68": {
       "token": "tok_7d6c4f36ac68_20261104",
       "jobIds": [
-        "en:bulk:tour:tour_colombia_complete_11_days:b008"
+        "en:bulk:tour:tour_colombia_complete_11_days:b008",
+        "en:bulk:tour:tour_colombia_explorer_9_days:b014"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_colombia_complete_11_days:b008"
@@ -2879,5 +2886,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:49:41.447Z"
+  "updatedAt": "2026-11-04T06:49:47.700Z"
 }

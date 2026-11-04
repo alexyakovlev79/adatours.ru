@@ -107,3 +107,44 @@ RU blob `30ba0233d75ec9be38d1f1a1dc3b61f849d60487`; Word fileId `1KbvQKYTq3UYSQu
 CAS: https://github.com/alexyakovlev79/adatours.ru/commit/2e2566af595bb0b846bf0cfad044507287e405c6. Immutable result blob `7b0bb921fdb62971c62a249caeabefd803aeb45a`.
 RU blob `c7f72884bcd690f8891a46f87260fd934f0fc1ca`; Word fileId `1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9`; Word SHA-256 pinned `8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b`; modifiedTime `2026-09-30T20:16:32.777Z`.
 Проверены blockId: `tour:itinerary_label:c96b72d103cdc28c`, `tour:itinerary_label:4a0f5e36e3378ce9`, `tour:itinerary_label:446e9df03f1c2e9c`, `tour:itinerary_label:e78c032dbb6001ab`, `tour:itinerary_label:35eb3eb99adb4095`, `tour:itinerary_label:d001266e30ed580a`, `tour:itinerary_label:d9729e7cbc24071f`, `tour:media_alt:d7e7bf0a3c730c72`.
+
+
+## Независимый QA — дополнительный проход 04.11.2026, 23:58:21 (МСК)
+
+Проверила 4 ранее сданных `review` из **точного** `state/00.json`/`jobs/00.json`; исключены все `ready`. Для каждого открыты immutable result (SHA совпал с receipt), frozen RU (все блоки), текущий RU из `main` (blob SHA совпал с pinned), англоязычный Word по `selectedWord.fileId` и Google Drive `modifiedTime` (совпал с frozen). Шесть предметных проверок (`word`, `meaning`, `facts`, `voice`, `structure`, `relations`) выполнены до вызова штатного CAS `approve`. Указанные ниже SHA-256 Word — **закрепленные job fingerprints**, а не утверждение о новом независимом хешировании бинарного DOCX; проверен тот же exact fileId и тот же Drive modifiedTime, просмотрен текст Word. `publicationEnabled=false`; RU, Word, цены и медиа не изменялись. Непроверенных из-за технического сбоя в этом проходе: 0.
+
+### `en:bulk:tour:tour_source_chili_argentina:b013` — ready (CAS approve)
+
+Три RU-derived подписи изображений корректно переведены по RU; SEO/body сохраняет географический порядок Santiago → Puerto Natales/Torres del Paine → El Calafate/Perito Moreno → Bariloche → Iguaçu (включая Macuco и полёт над водопадами) → Buenos Aires. Exact Word 2027 14D/13N подтверждает состав программы, верные включения/исключения перелётов; дополнительный редакционный абзац отсутствует в Word и честно обозначен `ai_translation`. Ни экскурсия с гидом на русском, ни новые коммерческие обязательства в этих четырёх блоках не добавлены. Уверенность 98%.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/da239407e0dad8aaec9597e50a53b3583534c968; accepted immutable blob `a4fc28413e6e6a5206495de57b784f69fc91109b`.
+- RU source: `src/content/tours/chili-argentina.md`; Git blob `7e318fe74df1edd91ff5ab8366977ef2eef39183`; sourceFingerprint `c71897dd58ffb42a635604c04773864a41f333d8285a76c824777ab35138f3df`.
+- Exact Word: fileId `1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR`; pinned SHA-256 `cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae`; frozen/observed modifiedTime `2026-10-20T19:54:21.814Z`.
+- Frozen blocks (4): `tour:media_hover:5a56a17e253e54c2`, `tour:media_alt:68ebdd10346d3d20`, `tour:media_hover:77871c8f58bdcbc6`, `tour:body:47f6c11f40afc686`.
+
+### `en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b025` — ready (CAS approve)
+
+Точные Word-привязки Cachapoal Valley, Millahue Valley, Vik Winery, Santiago de Chile и Valparaíso/Viña del Mar сверены с днём 13–14; кабины канатной дороги даны только RU-derived image captions. Расхождение заголовка файла `15d14n` с программой и RU разрешено по содержимому Word (внутри 16D/15N, Days 1–16), RU и маршруту: принимаем 16D/15N без добавления даты года и цены; уверенность 98%. Фактов о бронировании/полётах новые подписи не добавляют.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/af4fa5aba4865d0b60b450db0b5a503a320bee2b; accepted immutable blob `db56bc697e632524538176debefd6e53dee1cb4c`.
+- RU source: `src/content/tours/bolivia-chile-hidden-treasures-16-days.md`; Git blob `882ec10fb84fc4858c88051e57e238bf747bd9d4`; sourceFingerprint `59a3f412abbc94d04c437a66629883d02e71e6c067b60da66c46effd83899ed0`.
+- Exact Word: fileId `1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw`; pinned SHA-256 `b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009`; frozen/observed modifiedTime `2026-10-22T14:05:36.417Z`.
+- Frozen blocks (8): `tour:itinerary_label:4986fdcfdc640867`, `tour:media_alt:10a3d9e6a51f0d50`, `tour:media_hover:0be2c28ad1d12e86`, `tour:itinerary_label:d62b56b4c22fba29`, `tour:itinerary_label:24d4a10a40ffaf16`, `tour:itinerary_label:088a55611083d65b`, `tour:itinerary_label:2c4cab80ad373eef`, `tour:itinerary_title:d514d6f2e1b0214a`.
+
+### `en:bulk:tour:tour_colombia_essential_5_days:b006` — ready (CAS approve)
+
+Word 2027 5D/4N подтверждает Bogotá → Cartagena → Rosario Islands, содержание тура, транспорт shared speedboat и английских гидов; `Cartagena` действительно присутствует в Word и сохранена дословно. Word называет остров `Isla Majagua`, а текущий RU имеет независимые подписи `Исла-Гранде` и `Сан-Педро-де-Махагуа`; не смешивала их и не маркировала как Word exact: сохранены точные названия RU-derived как подписи мест. Вероятность корректности выбранной трактовки местных подписей 95%, при этом она не подтверждает конкретное место высадки или включение дополнительной лодки. Пять описаний изображений сверены с замороженными RU; цены не содержатся в этом пакете.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/8928481ceff96bd8b76459dd5a8f1903fb1be6e4; accepted immutable blob `f8136cded8513c00684b418c94706968be8595a5`.
+- RU source: `src/content/tours/colombia-essential-5-days.md`; Git blob `86bff21d6a1838df290dfff81f517ea88dad78f4`; sourceFingerprint `fef6c5128751d8c1b72f4ba3ef356bb6c0dd721198bca7bbe5474ad9a0cc8cd2`.
+- Exact Word: fileId `1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa`; pinned SHA-256 `40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335`; frozen/observed modifiedTime `2026-10-26T18:00:11.436Z`.
+- Frozen blocks (8): `tour:itinerary_label:1f7e609143e8315d`, `tour:itinerary_label:15957acb079c4f52`, `tour:media_alt:3dfab1ec2fa7482a`, `tour:media_hover:92f2bc6f2faab61d`, `tour:itinerary_label:83478908471f1b24`, `tour:media_alt:189d61d44cbd26aa`, `tour:media_hover:608e4884135b1f61`, `tour:media_alt:68ebdd10346d3d20`.
+
+### `en:bulk:tour:tour_source_5_chudes_kosta_riki:b008` — ready (CAS approve)
+
+Word 2027 9D/8N совпадает с `word_exact` днём 7–8: `Days 7–8 · Transfer to the Pacific coast for two days of rest and free time on the beach. (B)`; сохранено дословно, не заменяла сокращённым старым RU `Свободный день... Ночь в Wyndham Tamarindo`. В Word отель указано как `Wyndham Tamarindo or Pasatiempo Hotel (to be confirmed)` — EN-сегмент не делает ложной гарантии конкретного отеля. `Pacific coast`, `Liberia` подтверждены Word, Monteverde/Santa Elena и картинки с белкой и пляжем — RU-derived; 9 дней и маршрут сохранены. Уверенность 99%.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/697016ef31753f634558960cb97ea5a9da8a040f; accepted immutable blob `cb5635a65d01514e1368f35de660e2471c01aeea`.
+- RU source: `src/content/tours/5-chudes-kosta-riki.md`; Git blob `17d83addbdb104a5e9d46b0f2ba0f65206d832fa`; sourceFingerprint `ca5027777251353b7685f5944d2f85c452903324169536afda228a8aef6575f0`.
+- Exact Word: fileId `1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj`; pinned SHA-256 `6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2`; frozen/observed modifiedTime `2026-10-26T18:16:01.279Z`.
+- Frozen blocks (8): `tour:itinerary_label:dd77013a13a1a441`, `tour:media_alt:fa9b5aac40559803`, `tour:media_hover:d2292332edfee0f8`, `tour:itinerary_title:2fb5525f94c7ffcd`, `tour:itinerary_text:fb5db666cae6efb7`, `tour:media_alt:ae025c1050ee7c5b`, `tour:media_hover:c899fca26f8f6b0d`, `tour:itinerary_title:ab3fd6cac362f6b0`.

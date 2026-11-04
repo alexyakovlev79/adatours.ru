@@ -1,0 +1,128 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_s_detmi:b008",
+  "stableId": "tour_source_braziliya_s_detmi",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "59dfcc4e8bb262f106cef935f021e72c1a660b0f1d0ee49e5bd3c1e287981e13",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:2301d971ead14606",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1E-247rYLeM0LW2o8EXezGL6SYp5TNFRI",
+        "documentSha256": "db1c0a0768c5c5eaf3c5c4605b74b956a0f10dd2160fbeb984f8bf997b6added",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:100",
+            "textSha256": "6d4e61b69cb82b6bfd6e0d393f43650abbf4edf468a98e9efd5a2579671678cd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose a Manaus and the Amazon place label from the verified route heading, omitting the preceding Iguazu stop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5e4a559f1db2ad84",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1E-247rYLeM0LW2o8EXezGL6SYp5TNFRI",
+        "documentSha256": "db1c0a0768c5c5eaf3c5c4605b74b956a0f10dd2160fbeb984f8bf997b6added",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:51",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:75285924320a12cc",
+      "field": "media.alt",
+      "sourceTextSha256": "fd5f7fa5898d806d808a3d68d38d0845a8ee13a1e90a4af88f7ec3905e81e438",
+      "text": "Boats in the bay and the stone waterfront promenade lined with palm trees in Búzios, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no image-specific caption describing boats, a stone promenade and palm trees."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:dbc22b9550670146",
+      "field": "media.hover",
+      "sourceTextSha256": "582833eb76e29b1df4b695394a3387704aa5904f335af843fe2e22df149551d9",
+      "text": "Búzios: a waterfront promenade beside a bay with boats",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no photograph-hover caption describing a bay-side promenade with boats."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1E-247rYLeM0LW2o8EXezGL6SYp5TNFRI",
+        "documentSha256": "db1c0a0768c5c5eaf3c5c4605b74b956a0f10dd2160fbeb984f8bf997b6added",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:116",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c64b8490570539b4f7983a2276ba0aedd89f97187b9f283e119a6b9d2d526b77",
+      "text": "2 free days on the coast.\n\nBúzios lies approximately 177 km north of Rio. Once a fishing village, it is now a popular resort with many beaches.\n\nYou can go surfing, snorkelling, kayaking or water-skiing, or simply relax by the sea. Tropical fish and sea turtles inhabit the waters, and whales can be seen at certain times of year.\n\nIn the evening, restaurants and bars open, and the cobbled streets of the resort centre fill with holidaymakers. After Rio, Iguazu and the Amazon, these days give your family a chance to end the trip peacefully by the ocean.\n\nThe beaches of Búzios differ from one another. Some are better suited to swimming, while others have waves and more opportunities for active pursuits. You can choose a boat trip with local fishermen and observe underwater life in the clear water.\n\nIn this programme, Búzios provides a relaxed ending. After busy journeys and excursions, there is no need to rush from sight to sight: choose a beach to suit the weather, change your plans during the day and simply spend time together by the sea.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 118 does not contain the RU beach-choice and flexible-family-ending passages and differs on distance/direction (170 km east versus current RU 177 km north); retain current RU facts for independent review rather than claiming word_exact."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cab21dc886360ea3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1E-247rYLeM0LW2o8EXezGL6SYp5TNFRI",
+        "documentSha256": "db1c0a0768c5c5eaf3c5c4605b74b956a0f10dd2160fbeb984f8bf997b6added",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:116",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7f6bf1a6c2b78b80",
+      "field": "media.alt",
+      "sourceTextSha256": "533db610ded58e18307a6ef4d8a98a1b315979b6d6d92f93b29d9a779b062523",
+      "text": "Small beach pavilion with a thatched roof beside the ocean in Búzios, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No description of a small thatched beach pavilion appears in the verified Word."
+      }
+    }
+  ]
+}

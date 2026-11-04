@@ -314,7 +314,7 @@
         "expiresAt": "2026-11-04T07:49:29.413Z"
       },
       "checkpoint": {
-        "id": "ada-en-24807b62-20261104:s02:cp4",
+        "id": "ada-en-24807b62-20261104:s02:cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-24807b62-20261104",
         "token": "ada-en-24807b62-token-c83715b9",
@@ -409,13 +409,75 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:4648c8e568707115",
+                "field": "itinerary.label",
+                "sourceTextSha256": "05d92f3bebf288eb6c22e3e97b0e93e3f135d6ed83eb81be9b6418a078bc8b4d",
+                "text": "Araras Eco Lodge",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:45",
+                      "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the exact destination or lodge name from the verified itinerary as this place label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:956a1ccf634fcd4f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "a2104752adf834a1a84e1c3eb73ec14edff7fd60b562acf7dd8f95b9a3498e57",
+                "text": "Cuiabá",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:53",
+                      "textSha256": "5f757d2159721a073504c1a51ff2f89f5f8c6dedb7ef582783ff88ef84fbe211"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the established Cuiabá place name from the verified airport departure heading."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:e7a3c80603290907",
+                "field": "media.alt",
+                "sourceTextSha256": "780bda18481c3c47c3f035b2ec71844fb8721c7fd0d60c6be659ae7494273413",
+                "text": "Large round water lily leaves and a white flower in the Pantanal, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-24807b62-20261104",
+                  "wordAbsenceReason": "The complete SHA-verified DOCX contains itinerary prose but no matching water-lily image accessibility text; translated the exact current RU alt without altering media."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:c3f37ee684261ac6",
+                "field": "media.hover",
+                "sourceTextSha256": "60e70dba93af611e604c95287953552bf8a76bc34ad6443c6005f9ccbda90e63",
+                "text": "Pantanal: floating water lily leaves against green hills",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-24807b62-20261104",
+                  "wordAbsenceReason": "The complete SHA-verified DOCX contains no corresponding photo hover caption for water lilies and green hills; translated the current RU caption."
+                }
               }
             ]
           },
           "submissionId": "ada-en-24807b62-20261104:s02",
           "mainSha": "1926fdca8929ebf54d61fc6b977e841423ff67b1"
         },
-        "at": "2026-11-04T06:20:26.374Z"
+        "at": "2026-11-04T06:20:32.567Z"
       },
       "submission": null,
       "review": null,

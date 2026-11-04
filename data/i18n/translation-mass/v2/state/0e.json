@@ -494,7 +494,7 @@
         "expiresAt": "2026-11-04T08:33:17.020Z"
       },
       "checkpoint": {
-        "id": "cp-5d56534e-06-4",
+        "id": "cp-5d56534e-06-8",
         "format": "inline-v1",
         "ownerId": "ada-en-5d56534e4493",
         "token": "lease-da131c3d187149a7b813992c83ea721b",
@@ -584,6 +584,65 @@
                   "transformation": "contextual_label",
                   "rationale": "Extract Mombacho Volcano from the verified Word day heading and excursion passage."
                 }
+              },
+              {
+                "blockId": "tour:media_alt:406edcd287032d13",
+                "field": "media.alt",
+                "sourceTextSha256": "60d20e76b7606a2da082eefa93a2518a3f1109bcfb9c390a40ba876a893c8d8b",
+                "text": "A misty forest path among ferns on Mombacho, Nicaragua",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The exact Word has no alt caption for this fern-lined misty path on Mombacho. Translate the current RU media.alt."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:f8627f3e52e16853",
+                "field": "media.hover",
+                "sourceTextSha256": "df4eaa84d2c4d1112d5dcb32a2549885630402e424d124670c709b0b1134b7d7",
+                "text": "Mombacho, Nicaragua: a narrow path through humid cloud forest",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The exact Word has no photo hover caption for a narrow cloud-forest path on Mombacho. Translate the current RU media.hover."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+                "field": "itinerary.title",
+                "sourceTextSha256": "9de557000b65825997b5bfb5b53cbb14df3971452e50cc80feee4133ab4c166b",
+                "text": "Ferry to Ometepe and Ojo de Agua",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p24",
+                      "textSha256": "9445ac60345619fd3f71e6e836d23fa63c08ce4d7d00f19b7bfd92c6e41cd7ab"
+                    },
+                    {
+                      "ref": "word/document.xml:p25",
+                      "textSha256": "5cab3fffa129cda480d4b4f98b5c13a6d2548716b6696ea2a0b07bf52a3fb2c6"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combine Ometepe, the stated ferry transfer and Ojo de Agua from the exact Word day heading and paragraph into the current short title."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:b04d5d61d358e759",
+                "field": "itinerary.text",
+                "sourceTextSha256": "2e40106b035561f0115ebe3314196e1a13bdbefb36bf36ca26b7db451e9abe4b",
+                "text": "Transfer to San Jorge and take the ferry to Ometepe. On arrival, visit Ojo de Agua, pools of clear water fed by a natural underground spring.\n\nOvernight at Villa Colonial or Villa Paraiso; the final hotel and overnight location will be confirmed before booking. Meals: breakfast.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraph 25 names Villa Colonial but the Day 5 hotel table paragraphs 56–57 names Villa Paraiso. No single exact Word passage contains the current RU clarification retaining both alternatives and requiring final hotel/location confirmation before booking. Translate that current clarification unchanged in meaning."
+                }
               }
             ],
             "unresolvedConflicts": [
@@ -610,14 +669,14 @@
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "wordEvidence": {
             "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
             "sha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
             "modifiedTime": "2026-10-05T20:38:46.318Z"
           }
         },
-        "at": "2026-11-04T07:04:32.354Z"
+        "at": "2026-11-04T07:04:38.844Z"
       },
       "submission": null,
       "review": null,

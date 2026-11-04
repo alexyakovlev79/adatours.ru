@@ -1,0 +1,118 @@
+{
+  "jobId": "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b003",
+  "stableId": "tour_source_bolshie_meksikanskie_kanikuly",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9dc3c16b6ce2f7af6ea9104af4f569d2dc718f92971377099a55d9700c3ead5a",
+  "blocks": [
+    {
+      "blockId": "tour:included:8ee9f805d88d7504",
+      "field": "included",
+      "sourceTextSha256": "0498b02ad39a923bcbd55ae568bc4e635345a3ad35c8d2f0eba5f3b2fa268480",
+      "text": "Airport-to-hotel transfer in Mexico City on the first day of the tour for flights between 07:00 and 20:00, with a driver only.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-scheduled-20261104-mw2l56so",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected English Word does not specify the 07:00–20:00 flight window for the arrival transfer."
+      }
+    },
+    {
+      "blockId": "tour:included:194a4982306142d5",
+      "field": "included",
+      "sourceTextSha256": "f4cd8d5cad06f659b2fd3a7376b7df0c88738f8c3f4bbfda01a07560993f4243",
+      "text": "Group transfers allow up to 2.5 hours of waiting at the airport from the time the plane lands. Because immigration clearance may take longer, a private transfer is recommended.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-scheduled-20261104-mw2l56so",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word does not state the group transfer waiting limit or the immigration-delay advice."
+      }
+    },
+    {
+      "blockId": "tour:included:197117c597148c56",
+      "field": "included",
+      "sourceTextSha256": "b9068450abbf24e161d3f607b57c7edd44b691f0a79fbbb76203119db61111c5",
+      "text": "Transfer service for Mexico City Benito Juárez International Airport (AICM, airport code MEX).",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-scheduled-20261104-mw2l56so",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary mentions Mexico City airport without the specific AICM/MEX airport identification."
+      }
+    },
+    {
+      "blockId": "tour:included:1ad7cdccd2ff36fa",
+      "field": "included",
+      "sourceTextSha256": "6eea00ac58c05e2df498c95d2317679f7a64c383e0a21e32d0379e47da94dc01",
+      "text": "Entrance fees to sites visited as detailed in the itinerary.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0070",
+            "textSha256": "fbb380e4baf64308e65218c2de9bccf3dd3ce181ccd066564a9bbc5f83b8ff33"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the source list marker while retaining the exact scope of included entrance fees."
+      }
+    },
+    {
+      "blockId": "tour:included:88ffe2c62a25c272",
+      "field": "included",
+      "sourceTextSha256": "701a542fe6127297f88298d80e2e3822deec1cf8172038ebee87c18a055d9f97",
+      "text": "Transfer to Cancun/Riviera Maya. Check-in at your hotel according to your reservation.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "5a17c070ef7fd5f52ac688a3266a0933f982e49619479ba0efa779864dd2de2a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:98607a4834ad93b4",
+      "field": "included",
+      "sourceTextSha256": "cd66aa711a0db676273e183f080e29ba55fc0f10f6fa5229a6ef24a790c2af50",
+      "text": "Transfer from your hotel in Cancun or Riviera Maya to Cancun Airport.\n\nOptional early check-in at your Mexico City hotel starts at $100 per DBL or SGL room per night, including breakfast. Transfers to other airports are available on request.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-scheduled-20261104-mw2l56so",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word covers the main itinerary but not these separate outbound airport transfers, early check-in tariff or other-airport options."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e193cbccb19d5ad0",
+      "field": "notIncluded",
+      "sourceTextSha256": "a4d638b66985cf2a4c921d71de629ece6b46054b27857762e1d598f48ec50962",
+      "text": "Accommodation after the end of the tour.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-scheduled-20261104-mw2l56so",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The English Word says the tour ends at hotel check-in but does not explicitly list post-tour accommodation as excluded."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:881de37c241706bf",
+      "field": "notIncluded",
+      "sourceTextSha256": "46ecbaa1b310bd6ad4353bf36b1f5200888d8d9b93a86a53daf5b4cec03842f5",
+      "text": "Mexico City–Villahermosa flight, from $170.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-scheduled-20261104-mw2l56so",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions the flight to Villahermosa but does not provide this specific $170 starting fare."
+      }
+    }
+  ]
+}

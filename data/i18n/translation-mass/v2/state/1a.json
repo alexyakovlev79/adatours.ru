@@ -879,7 +879,7 @@
         "expiresAt": "2026-11-04T09:16:25.286Z"
       },
       "checkpoint": {
-        "id": "ada-en-150b76fa3667-010-cp4",
+        "id": "ada-en-150b76fa3667-010-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-150b76fa3667",
         "token": "ada-en-150b76fa3667-20261104",
@@ -955,10 +955,87 @@
                 "transformation": "compose_route_label",
                 "rationale": "Use the two exact city names from the approved day-two paragraph as the existing heading without adding destinations."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "aec872a74de8bdb91275900804c4ae06779474aa419ef8ed3d3c13040c12ee81",
+              "text": "Day 2 · Breakfast, then an 8–9-hour group excursion with an English-speaking guide to the coast. Valparaíso, “Valpo” to its people, is a bohemian port city of colourful hills: not wealthy, a little dishevelled, but full of charm and proud of its past and present, often compared to a blend of Sorrento, old Lisbon and San Francisco. Its prosperous neighbour, Viña del Mar, makes a more orderly impression: the two cities complement each other perfectly.\n\nLunch (at an extra charge) at one of the coast’s renowned fish restaurants. Return to Santiago.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p68",
+                    "textSha256": "a54faa1b49de5c8229fcf1dd7e1c874030790a2a72d33ba69ffd3dfe10369837"
+                  },
+                  {
+                    "ref": "word/document.xml#p69",
+                    "textSha256": "5e01d36e7326e7917b286e562ac0452f83859c2787fbb4f97f45a3d3ccb97bd3"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:64a59c99ac2fc504",
+              "field": "itinerary.label",
+              "sourceTextSha256": "87fe574bd51f17d5205651d78ebdd2145a78f6fd10f8d39d01b4fadbc57f4cb6",
+              "text": "Valparaíso and Viña del Mar",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p68",
+                    "textSha256": "a54faa1b49de5c8229fcf1dd7e1c874030790a2a72d33ba69ffd3dfe10369837"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Use the same exact pair of city names from the day-two paragraph for the existing composite place label; do not remap the entity."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:708a77c16b2cda9b",
+              "field": "media.alt",
+              "sourceTextSha256": "3daa370ce2666faaa6ea90c202e97b250cd87de2c6a61ba10b525bf5addb5568",
+              "text": "A narrow stairway between hillside houses in Valparaíso, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 68 describes Valparaíso but contains no alt text for this stairway photograph; translate the current RU image description.",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "142a6092038921d6e84584e76322a878510151cd25c167e5b9afc2b13da4d4af",
+              "text": "Santiago – San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p67",
+                    "textSha256": "601e0348e52577e00d935dfdb4294f364efd6e337bc5d43d1a4876f6c4ff98f8"
+                  },
+                  {
+                    "ref": "word/document.xml#p80",
+                    "textSha256": "eba9c95664be8d36cbbc3fe0c1cbc736bfdcf91e5e9c0224c6c819422c7308ff"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the day-three transfer heading from the Santiago origin and the exact San Pedro de Atacama destination in the approved programme."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:47:18.863Z"
+        "at": "2026-11-04T07:47:32.593Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b005",
+  "stableId": "tour_source_kontinentalnyj_ekvador_amazoniya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "97fad95188d77d3318ffc3863d4731ab5c691cc1a01ff227346386c43ab2ed22",
+  "blocks": [
+    {
+      "blockId": "tour:note:fa518fb6ca5d16fd",
+      "field": "note",
+      "sourceTextSha256": "2253b56f9414ebc35c617a262388d8d97ba730a60451e62473bc3e9b007aa674",
+      "text": "Hotels as listed or similar category.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "p:127",
+            "textSha256": "d40bd8723f2b3411bd0f31685bdbb36ef2ba1bbcc3313484b67525bddba17d69"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme is maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no corresponding note about changing the order of excursions; use the RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:3c34a92961638e94",
+      "field": "note",
+      "sourceTextSha256": "55a2524b2aa85b02b16eb7333aae90899d4830cdae2f85e5c9f01c0667a8c5e2",
+      "text": "Itinerary at Sacha Lodge may change depending on weather, interests and physical condition of guests.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "p:151",
+            "textSha256": "27af48a9d02de3d251a4bf49b89f3286b7039e9b8b6a9031561e10920d038c9b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the list dash from the exact Word condition for this standalone note."
+      }
+    },
+    {
+      "blockId": "tour:note:59dc68b46ef570ce",
+      "field": "note",
+      "sourceTextSha256": "57a185902c9259a0a09b986156842175a99595d74dc93a1ecc5f36a02f4805ee",
+      "text": "There are no arrivals or departures at Sacha Lodge on Sundays.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "p:47",
+            "textSha256": "af45c09258d9a4f8ffbfc361c6873681bd2287e6d5a28adc8c27aa0fd3859fe7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:3670f5220b986812",
+      "field": "note",
+      "sourceTextSha256": "5eb0f22193424f992cfe0645a0be307b443f925f13e5ef4368ae2d144cfa0426",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed because of early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word contains no clause on missed hotel breakfasts; translate the existing RU condition."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "66ebd240c42ee345ffdcea49539edfe62d01824025cd3cde53923f253a55bba6",
+      "text": "Arrival in Quito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "p:52",
+            "textSha256": "0ef26ad3a124ab7ca7f28d3ab98b0053449ebb07df576cd96588e56167667d3f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the arrival destination in the Word day-one paragraph as a short itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e4ebc9d288cec8a0da683205b0063858a68b54d2e13381cce9cf8d6622881983",
+      "text": "The tour can start on any day, subject to availability on excursions and at hotels.\n\nArrival at Mariscal Sucre International Airport, meet your guide and transfer to your hotel (about one hour). Overnight at Patio Andaluz 4★.\n\nHotel check-in is from 14:00.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word day one supplies the arrival, transfer and hotel wording, retained verbatim after removing its day marker. It omits the RU any-day start condition and 14:00 check-in time; those gaps are translated from RU."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:79839c21403ba526",
+      "field": "media.alt",
+      "sourceTextSha256": "008d0c0b4a1d9dc5b2bdaa43e61b8e222f8c4fdfeafb1e3c34d84d25198c8ee9",
+      "text": "Churches and rooftops in the historic centre against a backdrop of hills and mountains, Quito, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no caption for this particular image; translate the RU alt text."
+      }
+    }
+  ]
+}

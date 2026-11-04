@@ -492,7 +492,133 @@
         "claimedAt": "2026-11-04T06:48:18.156Z",
         "expiresAt": "2026-11-04T08:18:18.156Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2661932f-20261104-s06-cp04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2661932f-20261104",
+        "token": "ada-en-token-2661932f-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-en-2661932f-20261104-s06",
+          "result": {
+            "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b002",
+            "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "5649abbb8ac7aeb193c4aa4d795f054a4e91cec9660564d3e8e1ae302a56fde5",
+            "blocks": [
+              {
+                "blockId": "tour:included:72313a9ce968f4c4",
+                "field": "included",
+                "sourceTextSha256": "85734878e17d7bac73da3ee797cd671b1f78cbf6e75bea3f336c989a9d9ed45e",
+                "text": "Excursions as per the programme with an English-speaking guide",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "modifiedTime": "2026-10-26T13:04:31.565Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p268",
+                      "textSha256": "3990a8f102b3bdf7022e9efd1ebe8d14e7970415e72dbb3154e8d82246a22bbc"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the Word list marker because the website stores this passage as an individual structured list item."
+                }
+              },
+              {
+                "blockId": "tour:included:9aec19c4aff846fa",
+                "field": "included",
+                "sourceTextSha256": "b27ecccc9c77f8c7daf6e372513d3f7819595cb6b650b0261c98b62ca174901a",
+                "text": "English-speaking (group)",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "modifiedTime": "2026-10-26T13:04:31.565Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p29",
+                      "textSha256": "28ddbe6c3da979950bb6ed9b3bf576d13586e0439b3c6d165adc9da1751b98df"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:d8122bf6fa169c16",
+                "field": "included",
+                "sourceTextSha256": "af64d41527fddfec032104f7c11ec01cd1fe85339d4f8ee03c860eeada499b7b",
+                "text": "Transfers as per the programme",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "modifiedTime": "2026-10-26T13:04:31.565Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p269",
+                      "textSha256": "2bc2808a303189f994e8b0ff96649c86256648fe285733d01454b1ed4a80f80e"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the Word list marker because the website stores this passage as an individual structured list item."
+                }
+              },
+              {
+                "blockId": "tour:included:c46da9b38928201c",
+                "field": "included",
+                "sourceTextSha256": "1fbd1d707970f38e2f434bd4f45ee30fc545b1552058307f9c0a499b1caea2be",
+                "text": "Champions Parade ticket",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "modifiedTime": "2026-10-26T13:04:31.565Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p270",
+                      "textSha256": "39b53c588628fdce2cb7d98f5b5ec04eadd008f1004114c68eb3bdb98a38768d"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the Word list marker because the website stores this passage as an individual structured list item."
+                }
+              }
+            ],
+            "structuralAmendments": [
+              {
+                "kind": "move_inclusion",
+                "blockId": "tour:notIncluded:231a6dbf7d21ffe6",
+                "frozenPath": "/notIncluded/1",
+                "frozenField": "notIncluded",
+                "requiredField": "included",
+                "reason": "Selected Word2027 explicitly includes Rio–Iguazu–Buenos Aires–Santiago flights, while the frozen RU packet assigns them to notIncluded. Preserve approved Word meaning and relocate the EN list item before any release; worker does not alter RU, prices or published content.",
+                "wordEvidence": {
+                  "kind": "word_exact",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "modifiedTime": "2026-10-26T13:04:31.565Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p60",
+                      "textSha256": "50a29f2b140b08b074ee5fc167d3f09bcb606e98ab8a1ee207fb9f9e75b710dc"
+                    },
+                    {
+                      "ref": "word/document.xml:p267",
+                      "textSha256": "c16295852164ea19b765434137120e2481b07c7fb27bed136a74cd2a81248b29"
+                    }
+                  ]
+                },
+                "releaseBlocker": true,
+                "owner": "commercial-master"
+              }
+            ]
+          }
+        },
+        "at": "2026-11-04T06:50:04.489Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

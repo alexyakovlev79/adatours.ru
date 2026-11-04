@@ -442,7 +442,7 @@
         "expiresAt": "2026-11-04T09:16:34.368Z"
       },
       "checkpoint": {
-        "id": "ada_en_2478a2a40c1c_s08_c04",
+        "id": "ada_en_2478a2a40c1c_s08_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_2478a2a40c1c",
         "token": "ada_en_2478a2a40c1c_20261104",
@@ -545,10 +545,72 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the destination name unchanged from the approved Word description."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:2a4d301762893bbf",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8eb06e66e716cfe6a2c6e75acee7badd41aadf7bc1a1e7196e8d726b8119cac3",
+              "text": "Uxmal",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p68",
+                    "textSha256": "14925bc4619a01abdfa982be6f8359c13359207423c015dc0fcc7e408f331454"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the site name unchanged from the approved Word visit description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:bdd0f861b9a7b0df",
+              "field": "itinerary.label",
+              "sourceTextSha256": "90c95eecf3e890e06f862a877a206a36c7488fa214ed7a76793ec3f6f9772a23",
+              "text": "Kabah",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p69",
+                    "textSha256": "16f69df231e3dde656aeff1bcadf9c1a5deafb12c295168c4005caa26af70dfd"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the site name unchanged from the approved Word visit description."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:17b6b6655c024793",
+              "field": "media.alt",
+              "sourceTextSha256": "f8229031bc6ddb9b9b55e460b0a522bd3478f152e380c5add160007af71ab4a8",
+              "text": "Façade of the Kabah ruins with rows of stone masks, Yucatán, Mexico",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s08",
+                "wordAbsenceReason": "The checked Word describes Kabah's masks but has no matching image-specific alt text; translate the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:ec3aed13552f0752",
+              "field": "media.hover",
+              "sourceTextSha256": "c47d94ca895e80a5ee76b5b6a633a9cc7c7906d3c20ecbbc78d473d1e279f411",
+              "text": "Kabah, Mexico: carved masks on an ancient stone façade",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s08",
+                "wordAbsenceReason": "The checked Word describes the site but has no matching image-specific hover caption; translate the current RU caption."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:48:03.631Z"
+        "at": "2026-11-04T07:48:08.188Z"
       },
       "submission": null,
       "review": null,

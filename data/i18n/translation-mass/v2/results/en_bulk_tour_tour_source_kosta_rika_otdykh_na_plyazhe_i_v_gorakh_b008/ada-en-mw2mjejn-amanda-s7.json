@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh:b008",
+  "stableId": "tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f08158eede03a0b6c642aad094198f2de33ed587979b214ff2b5060978d5481a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6664ea2f0625ea7bbf6cd7c826b8a1a4d4fbb6817615278416209e0666b66285",
+      "text": "Monteverde – North Pacific coast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "p:70",
+            "textSha256": "9d26a81a50ca66703bc4d9a3d650afa31ea78a8d91a83489948a7fc049df8529"
+          },
+          {
+            "ref": "p:71",
+            "textSha256": "03479f1cfc107b7cc49f62c8333e17769e74ab23d5f7c534642df185bc7b4eeb"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route heading from the Word overnight location and next-day coastal transfer."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2ddee2eaa3fc4da9db9d3165d88e14edab9f42356f98607f7cd53a2af2ff0160",
+      "text": "After breakfast, transfer to the North Pacific coast. Overnight at Hotel Pasatiempo. (B)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "p:71",
+            "textSha256": "03479f1cfc107b7cc49f62c8333e17769e74ab23d5f7c534642df185bc7b4eeb"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day or list marker for the standalone translated field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dd77013a13a1a441",
+      "field": "itinerary.label",
+      "sourceTextSha256": "54c9493deba9d6d92f641995c66d71c7c417e81ee66df96dd5d4352863af77e0",
+      "text": "Monteverde & Santa Elena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "p:70",
+            "textSha256": "9d26a81a50ca66703bc4d9a3d650afa31ea78a8d91a83489948a7fc049df8529"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the two places explicitly named together in the Word Monteverde paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fa9b5aac40559803",
+      "field": "media.alt",
+      "sourceTextSha256": "2d44e25ed9aea76d15f4b5e0fc104a63df01d6f345004bef4966784306b552a0",
+      "text": "Squirrel with a reddish belly sitting on a branch",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no caption or description for this squirrel image; translate the supplied RU alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d2292332edfee0f8",
+      "field": "media.hover",
+      "sourceTextSha256": "2d44e25ed9aea76d15f4b5e0fc104a63df01d6f345004bef4966784306b552a0",
+      "text": "Squirrel with a reddish belly sitting on a branch",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no hover text for this squirrel image; translate the supplied RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "dec8654f54fed8327dde4404706a4e8e0d23fdc422d6aaf0f193146909f9a6a3",
+      "text": "North Pacific coast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "p:71",
+            "textSha256": "03479f1cfc107b7cc49f62c8333e17769e74ab23d5f7c534642df185bc7b4eeb"
+          },
+          {
+            "ref": "p:72",
+            "textSha256": "4582ca50a46c0e8e9083395ac65dba3f10b7f051c4c7757cd2f3d3de26b6b696"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the coastal destination named in the Word transfer paragraph for this free-day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "78b20bb2b3d8f9cdcf311b235ee8bf5b30a8a894a5f05d4217a373683cf49591",
+      "text": "A free day on the beach. Overnight at Hotel Pasatiempo. (B)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "p:72",
+            "textSha256": "4582ca50a46c0e8e9083395ac65dba3f10b7f051c4c7757cd2f3d3de26b6b696"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day or list marker for the standalone translated field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:49056f2a754b2711",
+      "field": "media.alt",
+      "sourceTextSha256": "86ea94b8a1d7a83a0f09c6f3bca2468bffe713bad0cb95af95541104c3bc2b48",
+      "text": "Orange sunset over the surf and a sandy beach on Costa Rica’s Pacific coast",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no description of this particular sunset image; translate the RU alt text."
+      }
+    }
+  ]
+}

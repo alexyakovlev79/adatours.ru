@@ -340,171 +340,22 @@
     {
       "jobId": "en:bulk:tour:tour_iguazu_incentive_3_days:b001",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "8c45dd3d7e0f2e89c7511d0a876bf431da17bf50a70d9052b76604079e9f4596",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-9c9ff2214505",
-        "token": "token-9c9ff2214505-20261104",
-        "claimedAt": "2026-11-04T06:50:00.706Z",
-        "expiresAt": "2026-11-04T08:20:00.706Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-9c9ff2214505-en-bulk-tour-tour_iguazu_incentive_3_days-b001-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-9c9ff2214505",
-        "token": "token-9c9ff2214505-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_iguazu_incentive_3_days:b001",
-          "stableId": "tour_iguazu_incentive_3_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "8c45dd3d7e0f2e89c7511d0a876bf431da17bf50a70d9052b76604079e9f4596",
-          "blocks": [
-            {
-              "blockId": "tour:title:aaf2320646108059",
-              "field": "title",
-              "sourceTextSha256": "7441fb0db478082951fd54200b62054f4d8a5e5314286986d324f4ba899c939e",
-              "text": "Great Incentive to the Widest Waterfall on Earth",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
-                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p1",
-                    "textSha256": "07869390ca7abb9a7bb246efaec544e9c9d74b2c5fbfec81f0a486cc47820525"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:lead:e3456bc1f4d270f4",
-              "field": "lead",
-              "sourceTextSha256": "00fcef0a6a18fb64554796146595f67c88a8a01c2a269c62da9aea8191b864a1",
-              "text": "Panoramic trails above the cascades, a boat ride towards the falling water and a walk among tropical birds. In 3 days, you will see the Brazilian and Argentine sides of Iguazu, enjoy the Rafain show and discover Argentine asado.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-9c9ff2214505",
-                "wordAbsenceReason": "The verified Word has individual day descriptions but no equivalent concise overview lead; translate the current RU lead using its existing facts."
-              }
-            },
-            {
-              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
-              "field": "priceNote",
-              "sourceTextSha256": "a9541adb80e2036da052449da0f6ceaf67c00057a08d768064ae455d2f6c8826",
-              "text": "Prices are available on request. Your hotel, travel dates and group size will be agreed when booking.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-9c9ff2214505",
-                "wordAbsenceReason": "The verified Word lists included services but contains no price-on-request note or booking-basis summary; translate the current RU commercial note without changing prices."
-              }
-            },
-            {
-              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
-              "field": "formatLabel",
-              "sourceTextSha256": "2ee53527865d4b0e71c7c4bd9b385e9a73486364ed9654eefc3692076a7d7c5a",
-              "text": "Incentive",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
-                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p1",
-                    "textSha256": "07869390ca7abb9a7bb246efaec544e9c9d74b2c5fbfec81f0a486cc47820525"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b4a101a4607d4777",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-              "text": "Foz de Iguaçu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
-                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p5",
-                    "textSha256": "0dd9e392d4803bc64b2da12071a85bb422c29feb2f4e736ce679e36bf2d4bb1f"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4325adcc6be4f180",
-              "field": "itinerary.label",
-              "sourceTextSha256": "eefa4c79e12d85f26e721152aaa4c5fbe3f75c31a3e41af99c3da2fcb113ebf4",
-              "text": "Brazilian side of Iguazu Falls",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
-                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p15",
-                    "textSha256": "05d0a1f1a754a2ef5b51fec07ee642b4fe902071950ae35b39898f649b098042"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:bcc67de6657c1609",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2008bac9f64031472352cb8f832c79f08457fe75fa9f99804af02dda410bd9fb",
-              "text": "Bird Park",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
-                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p26",
-                    "textSha256": "4058162f8b97ba65740ca1ef6d03ccce16ae9e01315799158f6a7698f477bf3d"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:682bc978fc6cd924",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1c26f0bb98450328b796ed86b80cf94bdfa4e9a3ea498b27d81a725f0acd0e9e",
-              "text": "Argentine side of Iguazu Falls",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
-                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p43",
-                    "textSha256": "e555446eeedc66ce094140895e7896e5388d3c8369cef2185a843b166cb56ea4"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:50:58.139Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-9c9ff2214505-en-bulk-tour-tour_iguazu_incentive_3_days-b001",
+        "blobSha": "721bcfb97fca73aa401f802940f47e1eb6251894",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_iguazu_incentive_3_days_b001/sub-9c9ff2214505-en-bulk-tour-tour_iguazu_incentive_3_days-b001.json",
+        "at": "2026-11-04T06:54:40.938Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

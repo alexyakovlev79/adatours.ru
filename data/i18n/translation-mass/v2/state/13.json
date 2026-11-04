@@ -440,7 +440,101 @@
         "claimedAt": "2026-11-04T07:56:47.958Z",
         "expiresAt": "2026-11-04T09:26:47.958Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-5d56534e-10-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-5d56534e4493",
+        "token": "lease-da131c3d187149a7b813992c83ea721b",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_luxury_brazil_11d:b010",
+            "stableId": "tour_luxury_brazil_11d",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "221866acf94949947b041fb4331deb717c38d64e98e83e6c222fdb4563858ac6",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:3fa8c2af53ae2e7a",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p137",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:2deac72961a68de2",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+                "text": "Búzios",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p119",
+                      "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:media_alt:15e3aedc74aaf2f1",
+                "field": "media.alt",
+                "sourceTextSha256": "6ff42f6d17aaa76bf33d4df442ad0c849267b8718655387034c896b182e5e054",
+                "text": "A narrow passage between brightly coloured houses overlooking the sea in Búzios, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The exact Word contains no image-specific alt caption for this narrow passage between colourful houses with a sea view in Buzios. Translate the current RU media.alt."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+                "field": "itinerary.title",
+                "sourceTextSha256": "ea9eb761664f845138bf22bb06931a989b80d7c2e70fc455263acdb77fe616f2",
+                "text": "Búzios beaches",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p119",
+                      "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+                    },
+                    {
+                      "ref": "word/document.xml:p121",
+                      "textSha256": "74308fe68297bcffa02824861dd18376480bea3f0cb2704e8f9e2ca895a282c7"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Combine the exact Word destination name with the beaches activity in the verified free-days paragraph to form the current short day title."
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "wordEvidence": {
+            "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+            "sha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+            "modifiedTime": "2026-10-21T20:49:36.876Z"
+          }
+        },
+        "at": "2026-11-04T07:58:20.373Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

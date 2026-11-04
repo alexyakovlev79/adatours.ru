@@ -546,7 +546,7 @@
         "expiresAt": "2026-11-04T09:17:23.486Z"
       },
       "checkpoint": {
-        "id": "ada-en-a40ee2cc-p07-cp4",
+        "id": "ada-en-a40ee2cc-p07-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-a40ee2cc",
         "token": "ada-en-token-a40ee2cc-71df-20261104",
@@ -620,10 +620,76 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracts the exact Rio de Janeiro destination name from the cover title and city heading."
               }
+            },
+            {
+              "blockId": "tour:media_alt:d8413f7c64170577",
+              "field": "media.alt",
+              "sourceTextSha256": "a4e6348b70ff959a9e817d107fc3d6349371dda4406ad17cf56fac83219f943b",
+              "text": "Sugarloaf Mountain above the bay and city neighbourhoods of Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word contains no equivalent ALT text for the specific Sugarloaf photograph; translated the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:ae1ad201c567714a",
+              "field": "media.hover",
+              "sourceTextSha256": "8e47e8502e1773d1f152569b0a90e9bb2efb7d52aa8be10275cd2888a1a27c10",
+              "text": "Rio from above: the bay, islands and Sugarloaf Mountain",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word contains no matching hover caption for this photograph; translated the current RU media caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6bdd4c3542770908",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:1",
+                    "textSha256": "bd9434cec955f070fbb6ccf9979c6c9a6c8f7591b98aa8af898c68e2ebb25d55"
+                  },
+                  {
+                    "ref": "word/document.xml:p:9",
+                    "textSha256": "a73353d1badf71dc6ec7c27a3e1499d3518be1f76f0fd084745b116de60e0807"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the exact Rio de Janeiro destination name from the approved cover title and city heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f35cd3f82e7ba910ba0998a2d732df9338fe0ab19b244381d56ed0117d095eeb",
+              "text": "Corcovado and Christ the Redeemer",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:51",
+                    "textSha256": "876a939d35faf0d9e2ddc0d0c927908a7c221419ec6614ab593076dc1983312b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combines the exact mountain and statue names from the approved Corcovado paragraph as the itinerary title."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:49:16.789Z"
+        "at": "2026-11-04T07:49:38.129Z"
       },
       "submission": null,
       "review": null,

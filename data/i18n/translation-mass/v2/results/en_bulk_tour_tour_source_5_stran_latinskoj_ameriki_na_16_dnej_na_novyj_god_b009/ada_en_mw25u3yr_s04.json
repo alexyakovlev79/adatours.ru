@@ -1,0 +1,138 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b009",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "02ee4d57d8538cf3f234296c8c68682a5ff58f7595693ae3ce76092de8740aba",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:5a1c6edb450a48de",
+      "field": "media.alt",
+      "sourceTextSha256": "260fbcd2272616ef56120e7d4cb5d746847a2a2d98862fbbc2bd42aaa4c27250",
+      "text": "The pink Casa Rosada building beyond a flower bed in Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no image alt caption describing the Casa Rosada behind a flower bed; translate the assigned RU visual caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "26c0b4048e4324c8050f1fc6484e4851a0b1237c9a02705f71e981fb61c93dec",
+      "text": "7 January. Buenos Aires – Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "186a70de415f3849aaca6e0ed96a46286d4731c2173668bd5c7826f006d643c4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed route and date in an unambiguous English date format, omitting the Word day number from the page heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "60f9e6efb5202758d68f11d781354e16f3dcc9998657d2cb4fdc795b2af14ee3",
+      "text": "After breakfast, transfer to the airport for your flight to Santiago. A driver will meet you at the airport and take you to your hotel.\n\nSantiago lies beside the Andes. In clear weather, the mountains are visible from the city, beyond its streets, glass towers and residential neighbourhoods. It is a modern business capital with wide avenues, parks, cafés and museums, where old buildings stand alongside high-rises.\n\nIn central Chile, January is usually hot and dry, at around 28–32 °C, with almost no rain.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word arrival text does not contain the RU Andes cityscape, modern-city details or January temperature range of 28–32 °C; translate the complete assigned RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7991947c43aeb0de",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "186a70de415f3849aaca6e0ed96a46286d4731c2173668bd5c7826f006d643c4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed destination name from the Word arrival route heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d1259d70718732b2",
+      "field": "media.alt",
+      "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
+      "text": "Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not contain this standalone image alt caption; translate the assigned RU caption without correcting its placement."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "86a75856ad2ac562622bfcc1e6df1f71ea92b6b072c6a13bdd956c6403ad3ada",
+      "text": "8 January. Santiago city tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:106",
+            "textSha256": "5198481239d1036120783a7ca13d837ed5be9a9dea4b62b9209792117f0a3af5"
+          },
+          {
+            "ref": "word/document.xml:p:107",
+            "textSha256": "185d67ce26587d7e6754447ff924883cc7dc5b5f91f33df6e05ff6d9a86fe5d5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the dated city-tour heading from the confirmed Word date and following city-tour paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fcd332336ad20075f85280dc945c89193bc2e19389193f6e0d1ba99c04daff2d",
+      "text": "After breakfast, your city tour begins with an English-speaking guide. You will see La Moneda Palace, which was originally a mint and later became the seat of government. Plaza de Armas is the historic centre, with the cathedral and the former Royal Audiencia.\n\nYou will then climb Santa Lucía Hill. From the top, you can see the rooftops and avenues, with the Andes on the horizon when visibility is good. The route then continues through the modern districts of Vitacura, Las Condes and Providencia, past glass towers, hotels, restaurants and business areas, and alongside the Mapocho River.\n\nFor an additional fee, you can visit wineries in the Maipo Valley for a Cabernet Sauvignon tasting. Price: **USD 230 per person, minimum 2 people**.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word city-tour paragraph lacks the RU Royal Audiencia reference, named modern districts, Mapocho River and exact USD 230/minimum-two optional service; translate RU with the agreed guide-language adaptation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a807dfee0c6eab0a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:106",
+            "textSha256": "5198481239d1036120783a7ca13d837ed5be9a9dea4b62b9209792117f0a3af5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed city name from the Word day-ten heading."
+      }
+    }
+  ]
+}

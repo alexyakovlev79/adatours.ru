@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2079,
-    "leased": 15,
+    "queued": 2078,
+    "leased": 16,
     "review": 315,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2079,
-      "leased": 15,
+      "queued": 2078,
+      "leased": 16,
       "review": 315,
       "ready": 1,
       "retryable": 0,
@@ -505,8 +505,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:38:14.151Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1430,6 +1430,12 @@
       "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b002",
       "token": "token_8c4fca0d2a61_c1970ba9",
       "expiresAt": "2026-11-04T07:38:09.201Z",
+      "generation": 1
+    },
+    "ada-en-2a369c57df19": {
+      "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b011",
+      "token": "token-2a369c57df19-20261104",
+      "expiresAt": "2026-11-04T07:38:14.151Z",
       "generation": 1
     }
   },
@@ -2546,7 +2552,8 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b008",
         "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b010",
-        "en:bulk:tour:tour_brazil_rio_four_days:b003"
+        "en:bulk:tour:tour_brazil_rio_four_days:b003",
+        "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b011"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b008",
@@ -2566,5 +2573,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:08:09.201Z"
+  "updatedAt": "2026-11-04T06:08:14.151Z"
 }

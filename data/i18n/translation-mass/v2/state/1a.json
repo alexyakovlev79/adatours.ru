@@ -479,7 +479,112 @@
         "claimedAt": "2026-11-04T06:42:14.671Z",
         "expiresAt": "2026-11-04T08:12:14.671Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_8c4fca0d2a61:b006:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_8c4fca0d2a61",
+        "token": "token_8c4fca0d2a61_c1970ba9",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_panama_mice_7_days:b006",
+          "stableId": "tour_panama_mice_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "9805ec9bfb10626a521b687e87ca86220b3049afa10460f2fa6a484abd8ef84c",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "6ecea40f1408a10148b1e868f731029284d7cc97117dd78e6bff8a42421d50bc",
+              "text": "Four-hour guided walking tour of historic Casco Viejo with English-speaking guides. Assistance and coordination throughout the visit, transfers and restaurant stop.\n\nOne-hour guided tasting of three Geisha coffees produced using different processing methods. Introduction to Panamanian Geisha coffee, its history, origin, aromas, flavours, processing techniques and the characteristics of selected desserts paired with Geisha coffee.\n\nGroup lunch at Mahalo Cocina y Jardín, in a clandestine room and lobby setting. Three-course special menu with appetizer, main course, lentil/dal option and beverages including assorted sodas, still water and natural juices (orange, passion fruit or lemonade).\n\nChevrolet Suburban premium SUVs available for up to 10 hours, 09:00–19:00, including scheduled airport pick-up and individual transportation requirements. Additional Mercedes-Benz Sprinter at disposal for up to 10 hours, with a 12:30 departure for lunch and subsequent Casco Viejo standby and return transfer.\n\nEnglish-speaking transportation coordinator, English-to-Spanish translator available for four hours, bottled water (three bottles per person per day) and additional restaurant consumption on request.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p40",
+                    "textSha256": "86bd2ac3b3999cd9cb2d0c012ab1982da02f09b173b0b20d337f706f857cd47a"
+                  },
+                  {
+                    "ref": "word/document.xml:p38",
+                    "textSha256": "4b1e19a35ebe847099cd202692ea04796ccf2d8782c867dc6d316462c6eb2015"
+                  },
+                  {
+                    "ref": "word/document.xml:p36",
+                    "textSha256": "211021dd18ccb1652395de4eb821baba22f9e9a82a4d719f4073762ead276362"
+                  },
+                  {
+                    "ref": "word/document.xml:p34",
+                    "textSha256": "ebe68d094f3932483b680bea70a359160083c6e6b2f54af3c837963be4fded0e"
+                  },
+                  {
+                    "ref": "word/document.xml:p42",
+                    "textSha256": "59d75663061639d97c0b66b6c92f7311b06302c3d63dcf64431a2fc6fedfa618"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:989340d35ffd9714",
+              "field": "itinerary.label",
+              "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
+              "text": "Panama City",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "f52912b132d3659fef717d407a825b8713d5ab24f9b76b38bbb8b77924149ecc"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact city name from the verified Word subtitle."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:b06a3b5e6ac802ff",
+              "field": "media.alt",
+              "sourceTextSha256": "5dde82daae876fb919f94d0973d9193c33c9ece22cab1f53ec4ccc763191131c",
+              "text": "White historic building with balconies and an arched entrance in Panama City, Panama",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific alt text for the historic white building photograph.",
+                "wordEvidence": {
+                  "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                  "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:35a942d062c2dd28",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31371be2fdddcaeb8b5620478863bb733fa9d80497659080397a76a3a8bbbed3",
+              "text": "Casco Viejo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p39",
+                    "textSha256": "29a7e3b487ba242f5558f154d346019a9aae233843377fb07ec0ede4681371bb"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact district name from the verified walking-tour heading."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:42:50.113Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -294,7 +294,7 @@
         "expiresAt": "2026-11-04T07:55:19.266Z"
       },
       "checkpoint": {
-        "id": "cp-9c9ff2214505-colombia-b002-4",
+        "id": "cp-9c9ff2214505-colombia-b002-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9c9ff2214505",
         "token": "token-9c9ff2214505-20261104",
@@ -376,10 +376,75 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:56c1b3c0126fce8f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+              "text": "Cartagena",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p49",
+                    "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fa5b882edffaed38",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2c71183f80becb0100c9d0ca6f975661a7dcb2d992668d01ecc41d188da02003",
+              "text": "Rosario Islands",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p110",
+                    "textSha256": "9c149a1bb3d6f1acb64565cded9c00f7d25cbde71946ff290738ced9d8a391ac"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the destination name from the approved Word paragraph for this route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8920d0172da76cda",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3584a22b6edcb23ea2752efb0353fa1a2343497fd54a1b35ba595b9acc52b1c5",
+              "text": "Isla Grande",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-9c9ff2214505",
+                "wordAbsenceReason": "The verified Word 2027 document names Isla Majagua for Day 6 and does not name Isla Grande. This existing RU route label is translated without changing the shared route."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:56c1b3c0126fce8f:2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+              "text": "Cartagena",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p49",
+                    "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:40:12.083Z"
+        "at": "2026-11-04T06:40:22.119Z"
       },
       "submission": null,
       "review": null,

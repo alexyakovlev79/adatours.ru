@@ -695,7 +695,7 @@
         "expiresAt": "2026-11-04T08:37:35.300Z"
       },
       "checkpoint": {
-        "id": "ada-en-2bf7b149bb51-five-countries-b015-v1-cp04",
+        "id": "ada-en-2bf7b149bb51-five-countries-b015-v1-cp08",
         "format": "inline-v1",
         "ownerId": "ada-en-2bf7b149bb51",
         "token": "ada-en-2bf7b149bb51-20261104",
@@ -776,10 +776,70 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the exact Word departure date and route as a concise heading, spelling out January to avoid numeric date ambiguity."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:99d4ebb0270da8fa",
+              "field": "itinerary.text",
+              "sourceTextSha256": "d2df086d532f2d65339c4c312b224b67e4ec9be85d9b3909e04b7cf6565adcb9",
+              "text": "In the morning at 06 am, we take a short boat ride to visit the Uros Islands, the fames floating reed islands of Lake Titicaca. A unique feature of this part of the lake is the traditional settlement of Uros people on floating islands made entirely of reeds-the same material they use to build their canoes. The islanders also use totora reeds to make boats, and even as food. Although fishing is still an important activity, nowadays the inhabitants earn their living mainly through selling handicrafts to tourists. After the tour private transfer to the bus station for your bus trip to Cusco (incl. buffet lunch). During the bus trip visit the Pucara site museum, Wiracocha temple & Andahuaylillas chapel. Arrival in Cusco and transfer to your hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p149",
+                    "textSha256": "acdaf625d80488b620928b6146a18790b9f74b9bc167fe24e98bae4ce2d47f82"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:688744f2755aed84",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f3f8271b7057814652b7c95024db8d45bfee06711e081d0f1b250c713efddbae",
+              "text": "Andahuaylillas",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p149",
+                    "textSha256": "acdaf625d80488b620928b6146a18790b9f74b9bc167fe24e98bae4ce2d47f82"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the destination name from the exact Word Andahuaylillas chapel reference."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ee279364bb1e4d67",
+              "field": "itinerary.label",
+              "sourceTextSha256": "924310c5f84949abf949d3bdd269c1d30dd020b628405bc541fe3d3b59336cf6",
+              "text": "Raqchi",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2bf7b149bb51",
+                "wordAbsenceReason": "The complete OOXML paragraphs of this exact Word document do not name Raqchi; p149 mentions only Wiracocha temple. Transliterate the explicit current RU place label without adding facts."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6460390f88679bd8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0bd59c3cfc743507203ec75d5a619eab6d2ba2c72eb60c4873aebeff0efdd3a5",
+              "text": "Sicuani",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2bf7b149bb51",
+                "wordAbsenceReason": "The complete exact Word document does not name Sicuani; p149 describes a buffet lunch without naming that town. Transliterate the assigned RU place label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:08:52.978Z"
+        "at": "2026-11-04T07:09:17.770Z"
       },
       "submission": null,
       "review": null,

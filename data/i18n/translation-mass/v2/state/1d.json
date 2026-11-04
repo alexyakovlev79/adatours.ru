@@ -142,7 +142,121 @@
         "claimedAt": "2026-11-04T06:42:39.949Z",
         "expiresAt": "2026-11-04T08:12:39.949Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-009-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b005",
+          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "b68391759588bc8669d51aee39af29f007566ab708562516e2b08a869fe96f22",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p123",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:471bc7f7691d6e1a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c20fa275ecbe6a0d6c918b2133e0ffc8929360be9e40d9e18c29cdf8fd581bcf",
+              "text": "Sugar Loaf",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p67",
+                    "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact Sugar Loaf place name from the Word Day 2 programme."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:085b1b7f766af312",
+              "field": "itinerary.label",
+              "sourceTextSha256": "51f922eedb678ab10929d498388dfed9f8943023e72b708a075900215096c5ff",
+              "text": "Urca",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p194",
+                    "textSha256": "159d98dbea4a7d0cd686d8cf8e89a9d1a5d2cfcbbdd1f2e3dabe3586c4899675"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact Urca place name from the selected Word's Rio place-name list."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:4afd7d3c152238f8",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "7df4b4c568ac56e3261c77553527ea747ac1d96ab2dff62b7ac6b7821073e77a",
+              "text": "Breakfast at the hotel. A 4-hour tour of Sugar Loaf and Rio’s historic centre with an English-speaking guide. The first panoramic stop is on Urca Hill, followed by the ascent to Sugar Loaf. From the top, you can see Copacabana, the bay, islands, surrounding mountains, the bridge to Niterói and the statue of Christ the Redeemer. After enjoying the views, discover the old churches, monasteries, main cathedral and colonial architecture of the centre.\n\nAfter the tour, there is time to rest before an evening at the Sambadrome. The Parade of Champions continues through the night, with samba schools, costumes and moving floats. The programme includes a Carnival ticket and hotel — Sambadrome — hotel transfers. The sector and transfer time are confirmed at booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word 2027 covers Sugar Loaf, old Rio and the parade but lacks the full current RU block, including sector/transfer confirmation and the explicit guide sentence. Translate the current RU additions and preserve all inclusions; the RU-derived guide-language wording is adapted to English under the owner's 3 November 2026 rule.",
+                "wordSource": {
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p28",
+                      "textSha256": "28ddbe6c3da979950bb6ed9b3bf576d13586e0439b3c6d165adc9da1751b98df"
+                    },
+                    {
+                      "ref": "word/document.xml#p67",
+                      "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
+                    },
+                    {
+                      "ref": "word/document.xml#p68",
+                      "textSha256": "3c32c738943f94f1bee1984f6fc735d78388232a4d0672379c0f52a64f965e98"
+                    },
+                    {
+                      "ref": "word/document.xml#p69",
+                      "textSha256": "22f2664015af94fcdd2f2fe4f68db67d17671056a30f32099faea5a1eec7d1e0"
+                    },
+                    {
+                      "ref": "word/document.xml#p269",
+                      "textSha256": "39b53c588628fdce2cb7d98f5b5ec04eadd008f1004114c68eb3bdb98a38768d"
+                    },
+                    {
+                      "ref": "word/document.xml#p270",
+                      "textSha256": "3bdbb5d33cbfb25cb8f7dec508af823cc0265743a7899468d522f75c7eb63036"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:43:48.028Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

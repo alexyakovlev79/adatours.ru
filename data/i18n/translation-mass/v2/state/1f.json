@@ -235,7 +235,7 @@
         "expiresAt": "2026-11-04T07:55:56.043Z"
       },
       "checkpoint": {
-        "id": "cp-9a69348b6e00-01-4",
+        "id": "cp-9a69348b6e00-01-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9a69348b6e00",
         "token": "tok-9a69348b6e00-20261104-a1",
@@ -303,10 +303,79 @@
                   "runId": "ada-en-20261104-9a69348b6e00",
                   "wordAbsenceReason": "The DOCX Day 5 transfer paragraph does not provide a separate flight title for this itinerary field."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_text:b04d5d61d358e759",
+                "field": "itinerary.text",
+                "sourceTextSha256": "03998bee51408d01e9175344005bbaad3a2b0581d3d163f025693cc438c22758",
+                "text": "Day 5 · Transfer to Recife airport for your flight to Fernando de Noronha; you are welcomed and transferred to the hotel. The rest of the day is free.\n\nThe archipelago lies about 350 km from the mainland. One of its best-known beaches is Sancho, which was named the most beautiful beach in the world for 2 years. The water around the islands ranges from deep blue to clear emerald, and rays can be seen near the shore.\n\nBaía dos Golfinhos is known for its dolphins. In the mornings they come closer to the shore, and from the viewpoints you can sometimes see many dorsal fins at once.\n\nFernando de Noronha is also considered one of Brazil’s best diving destinations. Visibility is high and the underwater terrain is clearly defined, making dives interesting for both experienced divers and beginners. The island’s coastline is very different from the resort coast of Pernambuco: dark cliffs meet the water, with small sandy coves between them and the open Atlantic Ocean immediately beyond.\n\nAugust to December is considered the best time to visit: there is less rain, the ocean is calmer and underwater visibility is good.\n\nYour first day on the archipelago is free after the flight. You can use this time for a short walk, your first visit to the ocean and a gentle introduction to the island without a major excursion.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "Approved Word paragraph 88 supplies the exact Day 5 transfer sentence, retained unchanged. The free-day detail, 350 km distance, two-year beach distinction, rays, dolphin-viewing detail, coastal description and August–December season are absent from that Word block and are translated from current RU.",
+                  "retainedWordPassages": [
+                    {
+                      "ref": "word/document.xml:p88",
+                      "textSha256": "b53d04a20da1ae8394e6a6d5737efc025c9530bd6e0b8757bdf1342a61f14f4b"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:5e240dd89ff326c7",
+                "field": "itinerary.label",
+                "sourceTextSha256": "6948857dfda4a3f606faa37d8295561a1ffb5d4cdf47de03763d5d5d4c52af92",
+                "text": "Porto de Galinhas",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p43",
+                      "textSha256": "660462991187fe099319662bccd0418970a8ad3aade279bfff8b658fa960fbc5"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:4e18a157367079f0",
+                "field": "itinerary.label",
+                "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+                "text": "Recife",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:e8734120724b36be",
+                "field": "itinerary.label",
+                "sourceTextSha256": "e1b0799fc24e5b2a2379ff305ed058aba1636d2804d6f4a5429f233ae13cc7de",
+                "text": "Fernando de Noronha",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p87",
+                      "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
+                    }
+                  ]
+                }
               }
             ]
           },
-          "completedBlockCount": 4,
+          "completedBlockCount": 8,
           "wordSourceVerified": {
             "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
             "sha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
@@ -315,7 +384,7 @@
             "localPath": "/workspace/scratch/9a69348b6e00/ada_word/recife.docx"
           }
         },
-        "at": "2026-11-04T06:40:02.656Z"
+        "at": "2026-11-04T06:40:17.951Z"
       },
       "submission": null,
       "review": null,

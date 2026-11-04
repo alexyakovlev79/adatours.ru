@@ -358,7 +358,7 @@
         "expiresAt": "2026-11-04T07:48:06.735Z"
       },
       "checkpoint": {
-        "id": "cp-ada-en-befca8d88a7c-10-4",
+        "id": "cp-ada-en-befca8d88a7c-10-8",
         "format": "inline-v1",
         "ownerId": "ada-en-befca8d88a7c",
         "token": "ca9d19d3a2444d3eb27e82c408f2b400",
@@ -440,10 +440,70 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:media_alt:e7c2b68955722393",
+              "field": "media.alt",
+              "sourceTextSha256": "b542111453e27cb3681135041540356f8314a91ce0dc56292672e6e5a43634e5",
+              "text": "A wide paved square with arcaded galleries and palm trees in Cartagena, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover caption corresponding to this field; translated only the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:659db2cb53aa744c",
+              "field": "media.hover",
+              "sourceTextSha256": "b4b0841f317e82e3b1a03b6ddceb655abc51bfa29dda10afb408f334b84897ca",
+              "text": "Cartagena: a square in front of a long building with an arcade",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover caption corresponding to this field; translated only the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:22e15402a8b7fe1f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+              "text": "Cartagena",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cc8bd019f8870051",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2c71183f80becb0100c9d0ca6f975661a7dcb2d992668d01ecc41d188da02003",
+              "text": "Rosario Islands",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p53",
+                    "textSha256": "7e00cec41f8aa8c0c9f011297061a2487ebb8b50efd8bf6a7bb7e87a43e9ef61"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the approved place name from the Word programme as a standalone itinerary label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:19:00.021Z"
+        "at": "2026-11-04T06:19:13.976Z"
       },
       "submission": null,
       "review": null,

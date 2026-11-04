@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b003",
+  "stableId": "tour_source_mechty_sbyvayutsya_na_karnaval",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0e8698cad96e87b1ca94f1067994c268be3a1d7debf08770147be90b9f861768",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:d4ffe644b05015e8",
+      "field": "notIncluded",
+      "sourceTextSha256": "48f4af3bc26e8e30b8d978a182113f9a5abbeff9360c916e3348abb7d9c9b42f",
+      "text": "Montevideo, as a group or private excursion depending on the option selected.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p50",
+            "textSha256": "ec96ca02489b94a332598699a0332eb1f89f5e1b58b25bafdd840ed7045749b4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Condense approved Day 9 Montevideo group and private excursion options without modifying fares."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:88507c7d96452cc9",
+      "field": "notIncluded",
+      "sourceTextSha256": "821eba1a56cb99066e2ee3842fd23960d6da64300483462a286f9270aae54fb4",
+      "text": "Fiesta Gaucha (group excursion), USD 250 per person.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p50",
+            "textSha256": "ec96ca02489b94a332598699a0332eb1f89f5e1b58b25bafdd840ed7045749b4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved Fiesta Gaucha excursion and its USD 250 per-person rate."
+      }
+    },
+    {
+      "blockId": "tour:note:7273202bd58ef807",
+      "field": "note",
+      "sourceTextSha256": "aa0f517a69bb6125a62d76fac63158be14b2160fe554ff21bdc819b78bf2bf7f",
+      "text": "Hotel names are subject to confirmation; hotels may be replaced with others of the corresponding category.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p56",
+            "textSha256": "567c1747de833779677672b6088414c91bb0dd5f12ad95eeb79ba4480c882d84"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retain the approved hotel substitution policy, expressed as a complete English note."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the overall tour programme is maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word allows programme changes for reasons beyond our control, but does not specifically guarantee preserving all excursions when their order changes."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts due to early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word does not state the Russian-source disclaimer about missed hotel breakfasts after early check-out for flights or excursions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "727286c5046da7a820085cd3e627a3af5ee5307eeec1f06296fd1732460aecda",
+      "text": "Arrival in Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p16",
+            "textSha256": "7a50e5106fc9fd64614ca26989c74a3d9bd632c0b07fe5962f8177176fa11907"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the arrival destination and event from the approved English Day 1 itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a23442ff34cceec767c1d22fcf31b429e30a20285063806756ab14655ec9ecf0",
+      "text": "Arrival at Rio de Janeiro Airport, meeting with your driver and transfer to the hotel. Free time. Rio is all about green hills, blue skies, rocky peaks, coves, islands and beautiful beaches: Brazil’s second-largest city, after São Paulo, and one of the most beautiful in the world. Copacabana, Ipanema and Leblon line the ocean with their famous black-and-white mosaic promenades, where football and volleyball are played on the sand from morning until late at night, and beach kiosks serve cold coconut water and freshly squeezed juices.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p16",
+            "textSha256": "7a50e5106fc9fd64614ca26989c74a3d9bd632c0b07fe5962f8177176fa11907"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved Day 1 wording verbatim after removing the preceding day-number list marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p16",
+            "textSha256": "7a50e5106fc9fd64614ca26989c74a3d9bd632c0b07fe5962f8177176fa11907"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination city named in the approved Day 1 itinerary as the place label."
+      }
+    }
+  ]
+}

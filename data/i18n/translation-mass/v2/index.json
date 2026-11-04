@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1259,
-    "leased": 7,
+    "queued": 1258,
+    "leased": 8,
     "review": 1123,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1259,
-      "leased": 7,
+      "queued": 1258,
+      "leased": 8,
       "review": 1123,
       "ready": 20,
       "retryable": 0,
@@ -145,8 +145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 42,
-          "leased": 0,
+          "queued": 41,
+          "leased": 1,
           "review": 35,
           "ready": 0,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T22:30:08.969Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_chili_argentina:b012",
       "token": "ada-token-mw2lom3y-k5n43nl4vp",
       "expiresAt": "2026-11-04T22:29:57.552Z",
+      "generation": 1
+    },
+    "ada-en-mw2loux3-amanda": {
+      "jobId": "en:bulk:tour:tour_source_klassicheskaya_programma_po_gvatemale:b005",
+      "token": "token-mw2loux3-7xffdwin7n6",
+      "expiresAt": "2026-11-04T22:30:08.969Z",
       "generation": 1
     }
   },
@@ -5142,8 +5148,15 @@
         "en:bulk:tour:tour_source_chili_argentina:b012"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw2loux3-amanda": {
+      "token": "token-mw2loux3-7xffdwin7n6",
+      "jobIds": [
+        "en:bulk:tour:tour_source_klassicheskaya_programma_po_gvatemale:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T20:59:57.552Z"
+  "updatedAt": "2026-11-04T21:00:08.969Z"
 }

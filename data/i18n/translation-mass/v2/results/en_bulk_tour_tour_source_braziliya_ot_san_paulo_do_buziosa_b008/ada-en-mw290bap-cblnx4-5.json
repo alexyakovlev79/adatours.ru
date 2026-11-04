@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_ot_san_paulo_do_buziosa:b008",
+  "stableId": "tour_source_braziliya_ot_san_paulo_do_buziosa",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7e3ac157054ae63b686102ed6141fc8c319178693a7302e5253b8fd94f56a885",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "3f15dbdd6d405e148f60f9704276c764497c9a5cdac9bf7ab8eb0505c5d73370",
+      "text": "Rio de Janeiro – Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Join the confirmed Word destination headings for the existing transfer route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8b6a2f374bfbe3cca8e1d6e8e8271a4f599769d66a3ab6d05128c4824a293bce",
+      "text": "Breakfast and transfer to Búzios, about 170 km (105 miles) from Rio; check-in at your hotel on the tropical coast.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p102",
+            "textSha256": "9402a76bf40319a370f5d6aec547744003891c166c29b7aeb85d79d4fef5797c"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word's day-number prefix because the host itinerary supplies its own day heading; retain the English passage verbatim."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3fa8c2af53ae2e7a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2deac72961a68de2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:979530c01f6dd897",
+      "field": "media.alt",
+      "sourceTextSha256": "ad7dfb3d76146a2f862a8bd0ff060e0e8cf3df4d222ac21360c45be77a608248",
+      "text": "Turquoise bay in Búzios beneath an overhanging tree branch, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word has no alt caption for this specific existing photograph of the bay beneath a tree branch; translate the assigned RU caption.",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:9738392f4f39b907",
+      "field": "media.hover",
+      "sourceTextSha256": "b5a05cc7d7a0659a9a4fbc42ef7b9adbe73ee941384d7b5a2ef0b5146c5f5ca3",
+      "text": "Búzios: clear water beside a sandy shore and green hills",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "No corresponding image-hover caption exists in the selected Word document; translate the current RU caption.",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "54ebe9f9f21b24784df8ba88c173e3d28c3a3a87b64a4f3d514e02d458cf2165",
+      "text": "Time to relax on the coast and explore at your own pace.\n\nBúzios is about **176 km north of Rio de Janeiro**. The former fishing village became a well-known resort thanks to its unusual coastline, tropical vegetation and numerous beaches with clear turquoise water.\n\nAfter the busy sightseeing programme in São Paulo, Iguazu and Rio, these 2 days are set aside for quiet time by the sea, walks and your own plans.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word p103 covers free beach days but has no equivalent of the RU concluding paragraph and its 176 km north location statement. Preserve the assigned RU distance and two-day duration; the Word p102 distance of about 170 km is recorded separately as a review conflict.",
+        "fileId": "13AKhwji9Spyf_8KwRoQoSsQ2D-C2R_yz",
+        "documentSha256": "dbe9115b9df8640131c45ef83c78fbef1a15e44e1cf69c7c5420f8d05e44d2ad"
+      }
+    }
+  ],
+  "unresolvedConflicts": [
+    {
+      "field": "itinerary.text",
+      "reason": "RU free-time block states 176 km north of Rio; Word transfer block p102 states about 170 km from Rio. Word transfer wording is retained; RU-derived free-time block preserves its protected distance for review."
+    }
+  ]
+}

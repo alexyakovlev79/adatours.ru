@@ -1,0 +1,133 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_brazilii_argentiny_i_chili:b006",
+  "stableId": "tour_source_luchshee_brazilii_argentiny_i_chili",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ab28e5a2d75daea6a90e260f69c169f2ea7dbacafaa03f4df8b4b13b5b7b31a9",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:3b556675d234b737",
+      "field": "media.alt",
+      "sourceTextSha256": "f2bdc56c6e9d873f0b62fa759f526f5e27bb3b0d55587ce15fc2700549b3cc2e",
+      "text": "Selarón Steps with colourful tiles in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no description of this particular Selarón Steps image; translate the supplied RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f4e4ade6419e3ade",
+      "field": "media.hover",
+      "sourceTextSha256": "0888884ddf14d0b495038802772bc6a692af5ad743babdb4a87d096dfdfbd32c",
+      "text": "Rio de Janeiro: the brightly coloured Selarón Steps between red walls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no hover caption for this Selarón Steps image; translate the RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6de05f681f31b6aa7accc4eb9a67c6de61026c8227ec91bf8b6cbd474d340b76",
+      "text": "Argentine side of Iguazu Falls – Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:59",
+            "textSha256": "19408f7eaa15a8fb6174a90672aac3c08196f22a44e5e20e18ada8aa9f4a4cc1"
+          },
+          {
+            "ref": "p:62",
+            "textSha256": "ae246b0933726f17ed4417ab148c1c8ff898df4886f55397d7134cb9c98e4997"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route heading from the Word Iguazu Falls visit on the Argentine side and onward flight to Buenos Aires."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "de2c9e711333667c1600cdd53c10b1c56c6153ab0edf59bcfa43d9cf22fd1ae8",
+      "text": "After breakfast, drive to the Argentine side of the falls, where numerous viewpoints and walkways bring you face to face with the sheer power of the water, in a rainforest home to butterflies, monkeys and colourful birds. Then transfer to the airport for your flight to Buenos Aires.\n\nThe vibrant capital of Argentina combines European elegance with Latin American zest: colourful neighbourhoods, a passion for dance, juicy steaks in the city’s renowned parrillas and a glass of Malbec, the country’s signature wine.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:62",
+            "textSha256": "ae246b0933726f17ed4417ab148c1c8ff898df4886f55397d7134cb9c98e4997"
+          },
+          {
+            "ref": "p:68",
+            "textSha256": "79e7c4787303c397388744f5d3153b4f063ff8bf396def1ecf456ebd6f73f102"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day marker; retain the exact day-four programme followed by the unchanged Buenos Aires overview."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:613aad58a04287f8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:67",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b4af8d3ee5a70df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word identifies the Argentine side of Iguazu Falls but has no standalone Puerto Iguazu place label; translate the stable RU place name without substituting Foz do Iguacu."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:74ed8c23a404ed32",
+      "field": "media.alt",
+      "sourceTextSha256": "13ff273f4479cd33482ae3608444faa65be5f61939a33d524c38d3cf0bc8c9ea",
+      "text": "High-rise buildings beside the water in Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no alt text for this waterfront image; translate the supplied RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cac198dc344f289a",
+      "field": "media.hover",
+      "sourceTextSha256": "742ced94c3a4ba8216bd07f8c45f7e28520fa3d3073e486184e486179c034e1b",
+      "text": "Buenos Aires: towers and their reflections along the waterfront",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no hover caption for this particular waterfront image; translate the RU caption."
+      }
+    }
+  ]
+}

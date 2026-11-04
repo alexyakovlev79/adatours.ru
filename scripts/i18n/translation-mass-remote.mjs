@@ -1,167 +1,155 @@
-/** GitHub CAS dispatcher for the NEW v2 EN bulk queue.
- * Worker namespace cannot approve, publish or touch main. Every source file
- * is rechecked against canonical main before a claim/submit.
+/** Ada Tours EN translations: the same short claim -> finish -> next cycle as SEO/GEO.
+ * One existing queue, one atomic Git commit per claim/finish. No worker cap,
+ * extra routing, parallel queues, or edits to published content.
  */
 const REPO='alexyakovlev79/adatours.ru';
 const BRANCH='i18n/translation-mass-staging';
-const ROOT='data/i18n/translation-mass/v2',LIMIT=8;
+const ROOT='data/i18n/translation-mass/v2';
+const CAS_ATTEMPTS=2;
 const clean=x=>JSON.stringify(x,null,2)+'\n';
-const unwrap=r=>{if(r?.isError)throw Error(JSON.stringify(r));return r?.result||r?.structuredContent||r};
-const valid=s=>typeof s==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(s);
-const restricted=/rate.?limit|429|retry.?after|secondary limit|too many requests/i;
-const denied=/\b40[13]\b|forbidden|permission denied|unauthori[sz]ed|bad credentials/i;
+const un=r=>{if(r?.isError)throw Error(JSON.stringify(r));return r?.result||r?.structuredContent||r};
+const valid=x=>typeof x==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(x);
+const limited=/rate.?limit|429|retry.?after|secondary limit|too many requests|resource.exhausted/i;
 const conflict=/non.fast.forward|expected.sha|409|422|reference|conflict|mismatch|changed/i;
-// Connector GraphQL failures and lost replies are transport failures, not
-// evidence that Word/Drive is unavailable. Never turn them into job failures.
 const transient=/GithubGraphQLAPIError|RemoteProtocolError|Server disconnected|Transport closed|internal (?:server )?error|something went wrong|bad gateway|service unavailable|gateway timeout|\b50[0234]\b|ECONNRESET|ETIMEDOUT|fetch failed|network error|response lost/i;
-const safe=s=>s.replace(/[^A-Za-z0-9_.-]/g,'_').slice(0,190);
-const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
-const nowValue=s=>{if(!Number.isFinite(Date.parse(s)))throw Error('Exact UTC timestamp required');return s};
-async function getHead(tools){
- const x=JSON.parse(unwrap(await tools.mcp__GitHub__fetch({
-  url:'https://api.github.com/repos/'+REPO+'/git/ref/heads/'+BRANCH})).content);
- return x.object.sha;
+const safe=x=>x.replace(/[^A-Za-z0-9_.-]/g,'_').slice(0,190);
+const currentTime=x=>{const s=x||new Date().toISOString();if(!Number.isFinite(Date.parse(s)))throw Error('Invalid timestamp');return s};
+const statusOfOwner=(index,ownerId)=>{
+ const a=index.ownerAssignments?.[ownerId];
+ const completed=new Set(a?.completedJobIds||[]);
+ return{completed:completed.size,assigned:a?.jobIds?.length||0,
+  activeJobId:index.activeOwners?.[ownerId]?.jobId||null,
+  resumeCandidateJobId:(a?.jobIds||[]).filter(id=>!completed.has(id)).at(-1)||null,
+  maxJobsPerOwner:index.maxJobsPerOwner};
+};
+const read=async(tools,path,ref)=>un(await tools.mcp__GitHub__fetch_file({
+ repository_full_name:REPO,path,ref}));
+async function head(tools){
+ const x=un(await tools.mcp__GitHub__fetch({
+  url:`https://api.github.com/repos/${REPO}/git/ref/heads/${BRANCH}`}));
+ return JSON.parse(x.content).object.sha;
 }
-async function read(tools,path,sha){
- return JSON.parse(unwrap(await tools.mcp__GitHub__fetch_file({
-  repository_full_name:REPO,path,ref:sha})).content);
+async function currentRu(tools,job){
+ const p=job?.source?.contentPath;
+ if(!p?.startsWith('src/content/tours/')&&!p?.startsWith('src/content/excursions/'))return false;
+ const f=await read(tools,p,'main');
+ return f.sha===job.source.sourceBlobSha;
 }
-async function createReceipt(tools,data){
- return unwrap(await tools.mcp__GitHub__create_blob({
-  repository_full_name:REPO,content:clean(data),encoding:'utf-8'})).sha;
-}
-async function commitCas(tools,head,files,message){
- const parent=JSON.parse(unwrap(await tools.mcp__GitHub__fetch({
-  url:'https://api.github.com/repos/'+REPO+'/git/commits/'+head})).content);
- const tree=unwrap(await tools.mcp__GitHub__create_tree({
-  repository_full_name:REPO,base_tree_sha:parent.tree.sha,
-  tree_elements:files.map(f=>({path:f.path,type:'blob',mode:'100644',
+async function commit(tools,headSha,files,message){
+ const info=JSON.parse(un(await tools.mcp__GitHub__fetch({
+  url:`https://api.github.com/repos/${REPO}/git/commits/${headSha}`})).content);
+ const tree=un(await tools.mcp__GitHub__create_tree({repository_full_name:REPO,
+  base_tree_sha:info.tree.sha,tree_elements:files.map(f=>({
+   path:f.path,mode:'100644',type:'blob',
    ...(f.sha?{sha:f.sha}:{content:clean(f.data)})}))})).sha;
- const next=unwrap(await tools.mcp__GitHub__create_commit({
-  repository_full_name:REPO,parent_sha:head,tree_sha:tree,message})).sha;
+ const next=un(await tools.mcp__GitHub__create_commit({repository_full_name:REPO,
+  parent_sha:headSha,tree_sha:tree,message})).sha;
  try{
-  const updated=unwrap(await tools.mcp__GitHub__update_ref({
-   repository_full_name:REPO,branch_name:BRANCH,expected_sha:head,sha:next,force:false}));
-  if(!updated.success)throw Error('Branch CAS move was not confirmed: response lost');
- }catch(error){
-  // A mutation can have succeeded even when its response is lost. Confirm
-  // the head before attempting another CAS; later descendants are reconciled
-  // by replaying the same operation against its immutable receipt.
-  if(!restricted.test(String(error))&&transient.test(String(error))&&
-     await getHead(tools)===next)return next;
-  throw error;
+  const updated=un(await tools.mcp__GitHub__update_ref({repository_full_name:REPO,
+   branch_name:BRANCH,expected_sha:headSha,sha:next,force:false}));
+  if(!updated.success)throw Error('Unconfirmed CAS ref update');
+ }catch(e){
+  // Exactly one read on uncertain acknowledgement. Never make a second effect
+  // until the original SHA is resolved.
+  if(!limited.test(String(e))&&transient.test(String(e))&&await head(tools)===next)
+   return next;
+  throw e;
  }
  return next;
 }
-async function currentRu(tools,job){
- if(!job?.source?.contentPath?.startsWith('src/content/tours/'))return false;
- const f=unwrap(await tools.mcp__GitHub__fetch_file({
-  repository_full_name:REPO,path:job.source.contentPath,ref:'main'}));
- return f.sha===job.source.sourceBlobSha;
-}
+const resultFor=(index,ownerId)=>({owner:statusOfOwner(index,ownerId)});
 export async function runEnMassTranslation(tools,core,args={}){
  const action=args.action;
  if(!['status','claim','renew','checkpoint','submit','release','fail','reap'].includes(action))
   throw Error('Unsupported worker action');
  if(action!=='status'&&(!valid(args.ownerId)||!valid(args.token)))
   throw Error('Stable ownerId/token required');
- for(let attempt=0;attempt<LIMIT;attempt++){
-  const time=nowValue(args.now||new Date().toISOString());
+ for(let attempt=0;attempt<CAS_ATTEMPTS;attempt++){
+  const now=currentTime(args.now);
   try{
-   const head=await getHead(tools);
-   const index=await read(tools,ROOT+'/index.json',head);
+   const base=await head(tools);
+   const index=JSON.parse((await read(tools,ROOT+'/index.json',base)).content);
    if(index.schemaVersion!==2||index.pilotOnly!==false||index.publicationEnabled!==false)
-    throw Error('Unexpected bulk queue publication gate');
+    throw Error('Unexpected translation queue gate');
+   const assigned=index.ownerAssignments?.[args.ownerId];
    if(action==='status'){
-    let owner=null;
-    // The worker needs its own confirmed Git progress to enforce a 10-job
-    // chain after a successful submit, including on a replay after timeout.
     if(args.ownerId!==undefined||args.token!==undefined){
-     if(!valid(args.ownerId)||!valid(args.token))throw Error('Stable ownerId/token required');
-     const assigned=index.ownerAssignments?.[args.ownerId];
-     if(assigned&&assigned.token!==args.token)
-      return{status:'owner_token_conflict',head};
-     const completed=new Set(assigned?.completedJobIds||[]);
-     const unfinished=(assigned?.jobIds||[]).filter(id=>!completed.has(id));
-     owner={completed:completed.size,
-      assigned:assigned?.jobIds?.length||0,
-      activeJobId:index.activeOwners?.[args.ownerId]?.jobId||null,
-      resumeCandidateJobId:unfinished.at(-1)||null,
-      maxJobsPerOwner:index.maxJobsPerOwner};
+     if(!valid(args.ownerId)||!valid(args.token))throw Error('Invalid owner credentials');
+     if(assigned&&assigned.token!==args.token)return{status:'owner_token_conflict',head:base};
     }
-    return{status:'snapshot',head,branch:BRANCH,
-     stage:index.stage,enabled:index.dispatcherEnabled,
-     translationMassLaunchAllowed:index.translationMassLaunchAllowed,
-     counts:index.counts,stageCounts:index.stageCounts,
+    return{status:'snapshot',head:base,branch:BRANCH,stage:index.stage,
+     enabled:index.dispatcherEnabled,translationMassLaunchAllowed:index.translationMassLaunchAllowed,
+     counts:index.counts,stageCounts:index.stageCounts,jobCount:index.jobCount,
      activeOwners:Object.keys(index.activeOwners||{}).length,
-     jobCount:index.jobCount,tourCount:index.tourCount,
-     sourceCommit:index.sourceCommit,...(owner?{owner}:{})};
+     ...(args.ownerId?resultFor(index,args.ownerId):{})};
    }
-   if(index.dispatcherEnabled!==true||index.translationMassLaunchAllowed!==true)
-    return{status:'gate_closed',branch:BRANCH,head,stage:index.stage};
-   const assignments=index.ownerAssignments||{};
-   const mine=assignments[args.ownerId];
-   if(mine&&mine.token!==args.token)return{status:'owner_token_conflict',head};
-   const owners=index.activeOwners||{};
-   const active=owners[args.ownerId],nowMs=Date.parse(time);
-   if(action==='claim'&&!active&&(mine?.completedJobIds?.length||0)>=index.maxJobsPerOwner)
-    return{status:'owner_quota_reached',head,completed:mine.completedJobIds.length};
+   if(!index.dispatcherEnabled||!index.translationMassLaunchAllowed)
+    return{status:'gate_closed',head:base,stage:index.stage};
+   if(assigned&&assigned.token!==args.token)return{status:'owner_token_conflict',head:base};
+   const active=index.activeOwners?.[args.ownerId];
+   const activeValid=active&&Date.parse(active.expiresAt)>Date.parse(now);
+   const owner=statusOfOwner(index,args.ownerId);
+   if(action==='claim'&&!activeValid&&owner.completed>=10)
+    return{status:'cycle_limit_reached',completed:owner.completed,owner,head:base};
+   if(action==='claim'&&!activeValid&&owner.completed>=index.maxJobsPerOwner)
+    return{status:'owner_quota_reached',completed:owner.completed,owner,head:base};
+   const requested=action==='claim'?(activeValid?active.jobId:
+    args.jobId||(args.skipResume?null:owner.resumeCandidateJobId)):null;
    let sid;
-   if(action==='claim'&&active&&Date.parse(active.expiresAt)>nowMs){
-    if(active.token!==args.token)return{status:'owner_token_conflict',head};
-    sid=core.massShard(active.jobId);
-   }else if(action==='claim'&&args.jobId){
-    if(!valid(args.jobId))throw Error('Unsafe explicit jobId');
-    sid=core.massShard(args.jobId);
-   }else if(action==='claim'||action==='reap'){
-    sid=core.massIndexShard(index,time,action==='claim'?args.ownerId:null);
-   }else{
+   if(action==='claim'&&requested){
+    if(!valid(requested))throw Error('Unsafe target jobId');
+    sid=core.massShard(requested);
+   }else if(action==='claim'||action==='reap')sid=core.massIndexShard(index,now,
+    action==='claim'?args.ownerId:null);
+   else{
     if(!valid(args.jobId))throw Error('Exact jobId required');
     sid=core.massShard(args.jobId);
    }
-   if(!sid)return{status:'busy_or_empty',head,counts:index.counts,
-    stageCounts:index.stageCounts?.[index.stage]};
-   const statePath=ROOT+'/state/'+sid+'.json';
-   const stateFile=unwrap(await tools.mcp__GitHub__fetch_file({
-    repository_full_name:REPO,path:statePath,ref:head}));
+   if(!sid)return{status:'busy_or_empty',head:base,
+    counts:index.counts,stageCounts:index.stageCounts?.[index.stage],owner};
+   const statePath=`${ROOT}/state/${sid}.json`;
+   const stateFile=await read(tools,statePath,base);
    const shard=JSON.parse(stateFile.content);
-   const sourcePackets=action==='reap'?null:
-    await read(tools,ROOT+'/jobs/'+sid+'.json',head);
-   if(shard.shardId!==sid||sourcePackets&&sourcePackets.shardId!==sid)
-    throw Error('Mixed shard snapshots');
+   if(shard.shardId!==sid)throw Error('Wrong state shard');
+   const needJob=['claim','submit','fail'].includes(action);
+   const packets=needJob?JSON.parse((await read(tools,`${ROOT}/jobs/${sid}.json`,base)).content):null;
+   if(packets&&packets.shardId!==sid)throw Error('Wrong job shard');
+   const jobFor=id=>packets?.jobs.find(j=>j.jobId===id);
+   let transition,job=null,extra=null;
    const nextIndex=JSON.parse(JSON.stringify(index));
    nextIndex.activeOwners=nextIndex.activeOwners||{};
    nextIndex.ownerAssignments=nextIndex.ownerAssignments||{};
-   for(const [owner,v] of Object.entries(nextIndex.activeOwners))
-    if(Date.parse(v.expiresAt)<=nowMs)delete nextIndex.activeOwners[owner];
-   let transition,job=null,extra=null;
+   for(const [id,lease] of Object.entries(nextIndex.activeOwners))
+    if(Date.parse(lease.expiresAt)<=Date.parse(now))delete nextIndex.activeOwners[id];
    if(action==='reap'){
-    const value=core.massReap(shard,time);
-    if(!value.restored)return{status:'nothing_to_reap',head};
-    transition={shard:value.shard,status:'reaped',restored:value.restored};
+    const outcome=core.massReap(shard,now);
+    if(!outcome.restored)return{status:'nothing_to_reap',head:base};
+    transition={shard:outcome.shard,status:'reaped',restored:outcome.restored};
    }else if(action==='claim'){
-    transition=core.massClaim(shard,{ownerId:args.ownerId,token:args.token,
-     now:time,stage:index.stage,jobId:args.jobId||null});
-    if(transition.item&&args.jobId&&transition.item.jobId!==args.jobId)
-     return{status:'requested_job_not_available',head};
+    transition=core.massClaim(shard,{stage:index.stage,ownerId:args.ownerId,
+     token:args.token,now,jobId:requested||null});
+    if(transition.item&&requested&&transition.item.jobId!==requested)
+     return{status:'requested_job_not_available',head:base,owner};
     if(!transition.item){
-     if(args.jobId&&!transition.restored)
-      return{status:'requested_job_not_available',head,jobId:args.jobId};
-     if(!transition.restored)return{status:'busy_or_empty',head,counts:index.counts,
-      stageCounts:index.stageCounts?.[index.stage]};
+     if(requested&&!transition.restored)
+      return{status:'requested_job_not_available',head:base,jobId:requested,owner};
+     if(!transition.restored)return{status:'busy_or_empty',head:base,
+      stageCounts:index.stageCounts?.[index.stage],owner};
     }else{
-     job=sourcePackets.jobs.find(j=>j.jobId===transition.item.jobId);
+     job=jobFor(transition.item.jobId);
      if(!job||job.sourceFingerprint!==transition.item.sourceFingerprint)
-      throw Error('Job source fingerprint drift');
-     if(transition.status==='resumed'&&!transition.restored)
-      return{status:'resumed',head,jobId:job.jobId,source:job,
+      throw Error('Immutable source mismatch');
+     if(transition.status==='resumed'&&!transition.restored){
+      if(!(await currentRu(tools,job)))return{status:'stale_source',head:base,jobId:job.jobId};
+      return{status:'resumed',head:base,jobId:job.jobId,source:job,
        lease:transition.item.lease,generation:transition.item.generation,
-       checkpoint:transition.item.checkpoint||null};
+       checkpoint:transition.item.checkpoint||null,owner};
+     }
      if(!(await currentRu(tools,job))){
-      const f=core.massFail(transition.shard,{
-       jobId:job.jobId,ownerId:args.ownerId,token:args.token,
-       generation:transition.item.generation,now:time,failureStatus:'stale_source'});
-      transition={...f,status:'stale_source'};
+      const bad=core.massFail(transition.shard,{jobId:job.jobId,ownerId:args.ownerId,
+       token:args.token,generation:transition.item.generation,now,
+       failureStatus:'stale_source'});
+      transition={...bad,status:'stale_source'};
      }else{
       nextIndex.activeOwners[args.ownerId]={jobId:job.jobId,token:args.token,
        expiresAt:transition.item.lease.expiresAt,generation:transition.item.generation};
@@ -172,84 +160,91 @@ export async function runEnMassTranslation(tools,core,args={}){
      }
     }
    }else{
-    job=sourcePackets.jobs.find(j=>j.jobId===args.jobId);
-    if(!job||shard.items.find(j=>j.jobId===job.jobId)?.sourceFingerprint!==
-     job.sourceFingerprint)throw Error('Missing or modified immutable job');
-    if(action!=='release'&&!(await currentRu(tools,job)))
-     return{status:'stale_source',head,jobId:job.jobId};
-    const common={jobId:job.jobId,ownerId:args.ownerId,token:args.token,
-     generation:args.generation,now:time};
+    const item=shard.items.find(row=>row.jobId===args.jobId);
+    if(!item)throw Error('Unknown jobId');
+    job=jobFor(args.jobId);
+    if(job&&job.sourceFingerprint!==item.sourceFingerprint)
+     throw Error('Immutable source mismatch');
+    const common={jobId:args.jobId,ownerId:args.ownerId,token:args.token,
+     generation:args.generation,now};
+    if(action==='submit'&&item.submission?.id===args.submissionId){
+     if(!assigned?.jobIds?.includes(args.jobId))throw Error('Unowned stored result');
+     const saved=await read(tools,item.submission.resultPath,base);
+     if(clean(JSON.parse(saved.content))!==clean(args.result))
+      throw Error('Submission ID payload collision');
+     return{status:'already_saved',head:base,jobId:args.jobId,owner,
+      receipt:{resultPath:item.submission.resultPath,blobSha:item.submission.blobSha}};
+    }
     if(action==='renew')transition=core.massRenew(shard,common);
+    if(action==='checkpoint'){
+     if(!valid(args.checkpointId)||!args.checkpoint||
+        JSON.stringify(args.checkpoint).length>80000)throw Error('Invalid checkpoint');
+     transition=core.massCheckpoint(shard,{...common,checkpointId:args.checkpointId,
+      payload:args.checkpoint});
+    }
     if(action==='release')transition=core.massRelease(shard,common);
     if(action==='fail')transition=core.massFail(shard,{
      ...common,failureStatus:args.failureStatus});
-    if(action==='checkpoint'){
-     if(!valid(args.checkpointId)||typeof args.checkpoint!=='object'||
-        JSON.stringify(args.checkpoint).length>80000)
-      throw Error('Invalid checkpoint / size');
-     // Checkpoints are self-contained in their shard. Avoid the hot global
-     // index and multi-step tree/commit/ref sequence on each four blocks.
-     transition=core.massCheckpoint(shard,{...common,
-      checkpointId:args.checkpointId,payload:args.checkpoint});
-    }
     if(action==='submit'){
      if(!valid(args.submissionId)||!args.result||
-       JSON.stringify(args.result).length>130000)throw Error('Invalid submission');
-     const sha=await createReceipt(tools,args.result);
+        JSON.stringify(args.result).length>130000||!job)
+      throw Error('Invalid result');
+     core.massRenew(shard,common); // validation only: no remote side effect
+     core.validateMassResult(job,args.result);
+     if(!(await currentRu(tools,job)))return{status:'stale_source',head:base,jobId:job.jobId};
+     const blob=un(await tools.mcp__GitHub__create_blob({
+      repository_full_name:REPO,content:clean(args.result),encoding:'utf-8'})).sha;
+     const resultPath=`${ROOT}/results/${safe(job.jobId)}/${safe(args.submissionId)}.json`;
      transition=core.massSubmit(shard,{...common,job,result:args.result,
-      submissionId:args.submissionId,blobSha:sha,
-      resultPath:ROOT+'/results/'+safe(job.jobId)+'/'+safe(args.submissionId)+'.json'});
+      submissionId:args.submissionId,blobSha:blob,resultPath});
      if(transition.status==='saved_for_review'){
-      extra={path:ROOT+'/results/'+safe(job.jobId)+'/'+safe(args.submissionId)+'.json',sha};
-      const a=nextIndex.ownerAssignments[args.ownerId];
-      if(a&&!a.completedJobIds.includes(job.jobId))a.completedJobIds.push(job.jobId);
+      extra={path:resultPath,sha:blob};
+      const a=nextIndex.ownerAssignments[args.ownerId]||{
+       token:args.token,jobIds:[],completedJobIds:[]};
+      if(a.token!==args.token)throw Error('Owner token mismatch');
+      if(!a.jobIds.includes(job.jobId))a.jobIds.push(job.jobId);
+      if(!a.completedJobIds.includes(job.jobId))a.completedJobIds.push(job.jobId);
+      nextIndex.ownerAssignments[args.ownerId]=a;
      }
     }
-    if(action==='renew'&&nextIndex.activeOwners[args.ownerId]?.jobId===job.jobId)
+    if(action==='renew'&&nextIndex.activeOwners[args.ownerId]?.jobId===args.jobId)
      nextIndex.activeOwners[args.ownerId].expiresAt=transition.expiresAt;
-    if(['release','submit','fail'].includes(action)&&
-       nextIndex.activeOwners[args.ownerId]?.jobId===job.jobId)
+    if(['submit','release','fail'].includes(action)&&
+       nextIndex.activeOwners[args.ownerId]?.jobId===args.jobId)
      delete nextIndex.activeOwners[args.ownerId];
    }
    if(['already_saved','already_released','already_failed'].includes(transition.status))
-    return{status:transition.status,head,jobId:args.jobId};
+    return{status:transition.status,head:base,jobId:args.jobId,owner};
    if(action==='checkpoint'){
-    const written=unwrap(await tools.mcp__GitHub__update_file({
-     repository_full_name:REPO,path:statePath,branch:BRANCH,sha:stateFile.sha,
-     content:clean(transition.shard),
-     message:'i18n: checkpoint '+job.jobId+' (shard CAS) [skip ci]'}));
-    if(!written.commit_sha)throw Error('Checkpoint CAS commit not confirmed');
-    return{status:'checkpoint_saved',commit:written.commit_sha,
-     branch:BRANCH,jobId:job.jobId,checkpointPath:statePath,
-     checkpointId:args.checkpointId,checkpointStorage:'inline-v1',
-     counts:index.counts};
+    const saved=un(await tools.mcp__GitHub__update_file({
+     repository_full_name:REPO,path:statePath,branch:BRANCH,
+     sha:stateFile.sha,content:clean(transition.shard),
+     message:`i18n: checkpoint ${args.jobId} [skip ci]`}));
+    if(!saved.commit_sha)throw Error('Checkpoint write unconfirmed');
+    return{status:'checkpoint_saved',commit:saved.commit_sha,jobId:args.jobId,
+     checkpointPath:statePath,checkpointId:args.checkpointId,owner};
    }
-   const next=core.massRebuildIndex(nextIndex,sid,transition.shard,time);
-   const updates=[{path:ROOT+'/index.json',data:next},
-    {path:ROOT+'/state/'+sid+'.json',data:transition.shard}];
-   if(extra)updates.push(extra);
-   const commit=await commitCas(tools,head,updates,
-    'i18n: '+action+' '+(job?.jobId||sid)+' (mass CAS) [skip ci]');
-   return{status:transition.status,commit,branch:BRANCH,
-    jobId:job?.jobId||args.jobId||null,
-    lease:transition.item?.lease||null,generation:transition.item?.generation,
-    source:action==='claim'&&job?job:null,
-    checkpoint:action==='claim'&&transition.item?transition.item.checkpoint||null:null,
-    counts:next.counts};
-  }catch(e){
-   if(restricted.test(String(e)))return{status:'rate_limited',retryAfterMs:60000,
-    reason:String(e).slice(0,180)};
-   if(denied.test(String(e)))throw e;
-   if(!conflict.test(String(e))&&transient.test(String(e)))return{status:'transport_retryable',action,
-    jobId:args.jobId||null,retryable:true,retryAfterMs:5000,
-    reason:String(e).slice(0,250)};
-   if(!conflict.test(String(e)))throw e;
-   if(attempt===LIMIT-1)
-    return{status:'cas_contention',action,jobId:args.jobId||null,
-     retryable:true,retryAfterMs:3000,
-     reason:String(e).slice(0,250)};
-   await delay(Math.min(250*2**attempt,2500)+Math.floor(Math.random()*200));
+   const next=core.massRebuildIndex(nextIndex,sid,transition.shard,now);
+   const files=[{path:`${ROOT}/index.json`,data:next},{path:statePath,data:transition.shard}];
+   if(extra)files.push(extra);
+   const sha=await commit(tools,base,files,
+    `i18n: ${action} ${job?.jobId||sid} (CAS) [skip ci]`);
+   return{status:transition.status,commit:sha,branch:BRANCH,
+    jobId:job?.jobId||args.jobId||null,source:action==='claim'?job:null,
+    generation:transition.item?.generation,lease:transition.item?.lease,
+    checkpoint:transition.item?.checkpoint||null,
+    counts:next.counts,stageCounts:next.stageCounts?.[next.stage],
+    ...resultFor(next,args.ownerId)};
+  }catch(error){
+   const message=String(error);
+   if(limited.test(message))return{status:'rate_limited',retryable:true,
+    retryAfterMs:3600000,reason:message.slice(0,240)};
+   if(transient.test(message)&&!conflict.test(message))
+    return{status:'transport_retryable',retryable:true,
+     retryAfterMs:30000,reason:message.slice(0,240)};
+   if(!conflict.test(message))throw error;
+   if(attempt===CAS_ATTEMPTS-1)return{status:'cas_contention',retryable:true,
+    retryAfterMs:30000,reason:message.slice(0,240)};
   }
  }
 }
-

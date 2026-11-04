@@ -1,245 +1,123 @@
-# ADA Tours EN — массовый переводчик: инструкция работника
+# Ada Tours EN — массовый переводчик: простой цикл SEO/GEO
 
-Стадия: Word 2027, затем Word 2026, затем AI-only. Репозиторий alexyakovlev79/adatours.ru.
-Единственная новая очередь: ветка i18n/translation-mass-staging,
-data/i18n/translation-mass/v2. Полный сайт на EN staging остается
-noindex; новые тексты не попадают на него до отдельной одобренной
-интеграции Astro.
+**Версия 04.11.2026.** Репозиторий `alexyakovlev79/adatours.ru`.
+Действующая очередь: `i18n/translation-mass-staging`, каталог
+`data/i18n/translation-mass/v2`. Эту очередь не пересоздавать.
 
-## Чтение состояний через подключенный GitHub
+## 1. Один переводчик = один последовательный цикл
 
-В Code Mode прочитать из одного main SHA:
-scripts/i18n/translation-mass-core.mjs и
-scripts/i18n/translation-mass-remote.mjs. Возвращаемый чистый
-core содержит massShard, massIndexShard, massClaim, massReap,
-massRenew, massCheckpoint, massSubmit, massRelease, massFail,
-massRebuildIndex, validateMassResult.
+Это тот же принцип, что у «пиши SEO» и «переписывай SEO»:
+
+`claim → подготовить максимум 8 EN-блоков → submit одним атомарным коммитом → следующий claim`.
+
+Один чат выполняет **до 10 подтвержденных пакетов** подряд без команды «дальше».
+Ограничения на **количество одновременно работающих переводчиков НЕТ**:
+число параллельных чатов определяет Алексей. Один чат держит не больше
+одного пакета. Следующий пакет захватывается **только после**
+`saved_for_review` или `already_saved` с подтвержденным Git-результатом.
+
+`ownerId` и `token` неизменны в течение чата и при восстановлении.
+`submissionId` для одной сдачи неизменен даже после потери ответа.
+`generation` всегда берется из последнего подтвержденного claim.
+
+Диспетчер — три файла текущего `main` на **одном SHA**:
+
+- `scripts/i18n/translation-mass-core.mjs` — существующий автомат состояний;
+- `scripts/i18n/translation-mass-remote.mjs` — CAS-адаптер GitHub;
+- `scripts/i18n/translation-mass-worker-cycle.mjs` — `start` и `finish`.
+
+Загрузка в Code Mode:
 
 ```javascript
 const repo='alexyakovlev79/adatours.ru';
-const un=r=>{if(r.isError)throw Error(JSON.stringify(r));return r.result||r.structuredContent||r;};
-const head=JSON.parse(un(await tools.mcp__GitHub__fetch({url:
- 'https://api.github.com/repos/'+repo+'/git/ref/heads/main'})).content).object.sha;
-const get=async p=>un(await tools.mcp__GitHub__fetch_file({
- repository_full_name:repo,path:p,ref:head})).content;
-const [coreSource,remoteSource]=await Promise.all([
+const un=r=>{if(r.isError)throw Error(JSON.stringify(r));return r.result||r.structuredContent||r};
+const head=JSON.parse(un(await tools.mcp__GitHub__fetch({
+ url:'https://api.github.com/repos/'+repo+'/git/ref/heads/main'
+})).content).object.sha;
+const get=async path=>un(await tools.mcp__GitHub__fetch_file({
+ repository_full_name:repo,path,ref:head})).content;
+const [a,b,c]=await Promise.all([
  get('scripts/i18n/translation-mass-core.mjs'),
- get('scripts/i18n/translation-mass-remote.mjs')]);
-const core=new Function(coreSource.replace(/^export /gm,'')+';return {massShard,massIndexShard,massReap,massClaim,massRenew,massCheckpoint,massSubmit,massApprove,massRelease,massFail,massRebuildIndex,validateMassResult};')();
-const run=new Function(remoteSource.replace(/^export /gm,'')+';return runEnMassTranslation;')();
-const status=await run(tools,core,{action:'status'});
-text(status);
+ get('scripts/i18n/translation-mass-remote.mjs'),
+ get('scripts/i18n/translation-mass-worker-cycle.mjs')
+]);
+const core=new Function(a.replace(/^export /gm,'')+
+ ';return {massShard,massIndexShard,massReap,massClaim,massRenew,massCheckpoint,massSubmit,massRelease,massFail,massRebuildIndex,validateMassResult};')();
+const remote=new Function(b.replace(/^export /gm,'')+
+ ';return runEnMassTranslation;')();
+const cycle=new Function(c.replace(/^export /gm,'')+
+ ';return runEnMassWorkerCycle;')();
+// ownerId/token присвоить один раз и сохранить в checkpoint чата.
+const first=await cycle(tools,core,remote,{action:'start',ownerId,token});
+text(first);
 ```
 
-Если gate закрыт, работник не включает его сам и не захватывает
-задачи. Ожидаются dispatcherEnabled=true и
-translationMassLaunchAllowed=true при publicationEnabled=false.
+Не вызывать `status` перед каждой пачкой: `start` уже читает единственный
+нужный индекс и выдает ровно один подтвержденный пакет. После перевода:
 
-Перед первым claim один раз назначить текущему чату ownerId и token,
-вывести их в рабочем checkpoint; повторять точно те же значения
-при неопределенном ответе. Для нового запуска по команде пользователя автоматический лимит —
-**10 последовательно сохранённых пакетов в одном чате** (до 8 блоков в пакете).
-Предыдущий технический предел maxJobsPerOwner=60 в состоянии очереди —
-верхняя защита диспетчера, а не команда выполнять 60 пакетов за этот запуск.
-Не останавливаться из-за завершения первого Tour, но и не захватывать
-несколько будущих пакетов заранее. После подтверждённого submit CAS
-агент получает следующий claim через автоматический worker-cycle.
-Готовность независимого QA при этом не требуется для захвата следующего.
+```javascript
+const next=await cycle(tools,core,remote,{
+ action:'finish',ownerId,token,jobId,generation,submissionId,result
+});
+text(next);
+```
 
-## Работа по одному пакету
+`next.next.source` — исходники следующего пакета; продолжать сразу.
+`cycle_limit_reached` — 10 пакетов завершены; `stage_drained` — в текущем
+этапе больше нет ожидающих заданий. `next_unavailable` — нет доступного
+задания в выбранном состоянии, **не доказательство**, что весь рой готов.
 
-1. claim с постоянным ownerId/token. source из ответа содержит
-   до 8 точных блоков, текущий RU Git blob SHA, stableId, stage,
-   sourceFingerprint и при необходимости Word fileId/SHA.
-2. Word-first: прочитать точный DOCX по Google Drive connector.
-   Проверить sourceSha256, modifiedTime/edition/folder, OOXML
-   paragraphs и коммерческие таблицы. Сохранять собственные
-   английские формулировки Word, не переписывая их ради красоты.
-   Для части, которой реально нет в Word, перевести текущий RU
-   без выдуманных фактов; provenance=ai_translation с
-   wordAbsenceReason. В AI-only не искать похожий Word заново.
-   **Обязательное решение владельца от 03.11.2026:** в RU-derived
-   блоках Tour и самостоятельных Excursion язык оказания услуги
-   «на русском языке» / «русскоговорящий» / «русский гид» передавать как
-   `English` / `English-speaking guide` и соответствующие естественные
-   EN-формулировки. Правило не действует на дословный утверждённый
-   Word 2027-блок и на гражданство, визы, культуру, личность и названия.
-   Точные примеры, обработка Word 2026 и provenance — §4.1
-   `docs/plans/english-site/03-translation-editorial.md`.
-3. Не изменять цену, валюту, отель, количество дней,
-   опубликованный русский Tour MD, общий Hero или медиа.
-   Точное изменение Word 2027 тарифа передать отдельным
-   structured price amendment мастеру (валюта, occupancy, basis).
-4. Каждый EN блок получает точный blockId/field, sourceTextSha256,
-   text без кириллицы и provenance (word_exact с фактическими
-   paragraphs/hash либо ai_translation с моделью, runId и причиной).
-   Итог: {jobId,stableId,locale:'en',status:'review',
-   releaseEligible:false,sourceFingerprint,blocks:[]}.
-5. Каждые 4 готовых блока сохранять checkpoint. Renew каждые
-   20 минут до истечения 90-минутного lease.
-6. submit с устойчивым submissionId. При потерянном ответе
-   повторять тот же payload, а не создавать новую запись.
-   Успех означает saved_for_review, НЕ опубликовано.
-7. Нельзя самостоятельно делать QA собственного пакета.
-   Независимый reviewer читает точный immutable result
-   и сверяет Word, смысл, факты, голос Ada Tours, структуру
-   и связи. QA API: scripts/i18n/translation-mass-qa.mjs.
-   В смысловую QA входит проверка специального правила языка
-   гида/экскурсии: в RU-derived частях `Russian-speaking` не
-   сохраняется, в дословных Word 2027-блоках ничего не подменяется;
-   `Russian` о гражданстве, России или культуре не считается ошибкой.
-8. Если Word или Drive недоступен, помечать blocked_external
-   (не фантазировать исходник). При изменении RU — stale_source.
-   При 429 уважать Retry-After и не делать горячие повторы.
+## 2. Предметная работа и достоверность
 
-## Восстановление и границы
+Приоритет этапов: точный английский **Word 2027**, затем **Word 2026**,
+затем подтвержденный **AI-only**. Источники, соответствия Tour↔Word,
+SHA и blockId уже закреплены в immutable job. Заново искать программы,
+проверять все 358 совпадений и создавать вторую очередь нельзя.
 
-GitHub Actions i18n-mass-reaper.yml возвращает истекшие leases
-и eligible retries по cron с fencing. Результат ready имеет
-immutable receipt и пока только staging-статус. Публикует
-отдельный мастер после согласования full-site Astro locale
-adapter, Word 2027 цен и QA блоков.
+Для Word-first взять точный Drive fileId, проверить версию/SHA и
+коммерческие таблицы, сохранить утвержденные английские формулировки.
+Фрагмент, действительно отсутствующий в Word, перевести с текущего RU
+с `provenance: ai_translation` и конкретным `wordAbsenceReason`.
+Для AI-only переводить закрепленные RU-блоки без выдумывания фактов.
 
-358 matching работ не повторять. 5 устаревших Tour
-фиксировать и адресно обновить их block maps. 30 ранее
-проверенных пилотных блоков из общего списка исключены.
-348 самостоятельных Excursion требуют собственных задач,
-повторяющиеся в разных турах refs не переводятся повторно.
+У каждого EN-блока — те же `blockId`, `field`, `sourceTextSha256`,
+проверяемое `provenance` и английский `text` без кириллицы.
+Итог имеет `{jobId, stableId, locale:'en', status:'review',
+releaseEligible:false, sourceFingerprint, blocks:[...]}`.
+Проверка формата выполняется существующим `validateMassResult`.
 
-## Автоматические 10 циклов одного переводчика (03.11.2026)
+В RU-derived Tour/Excursion описание языка обслуживания «русский гид» /
+«на русском языке» передавать как `English-speaking guide` / `English`.
+**Не заменять** дословный Word 2027 и упоминания гражданства, России,
+культуры или названий. Подробности: `03-translation-editorial.md`, §4.1.
 
-Точка запуска — `scripts/i18n/translation-mass-worker-cycle.mjs`.
-Она использует **тот же** `runEnMassTranslation` и те же CAS-shards,
-не создаёт вторую очередь. `start` читает собственное подтверждённое
-число `completedJobIds` из staging и захватывает ровно один пакет.
-`finish` сначала делает `submit` и ждёт `saved_for_review` или
-`already_saved` с Git receipt. Только после этого проверяет счётчик
-и в **том же вызове** захватывает следующий пакет; после 10 сданных
-пакетов возвращает `cycle_limit_reached` без нового захвата.
+Цены, валюту, тарифную основу, отели, даты, длительность, маршрут,
+RU-контент и медиа не менять. Изменение цен Word 2027 — отдельное
+структурированное поручение мастеру.
 
-Сам перевод между `start/finish` выполняет агент ChatGPT, используя
-доказательства Word или RU, checkpoint через каждые четыре готовых
-блока и renew через 20 минут. Скрипт **не** вызывает модель, не пишет
-за неё английский текст и не делает независимый QA за автора.
+## 3. Контрольная точка, сбои и QA
 
-В Code Mode один раз закрепить SHA main и загрузить три файла:
-`translation-mass-core.mjs`, `translation-mass-remote.mjs` и
-`translation-mass-worker-cycle.mjs`. Использовать один уникальный
-`ownerId` и `token` на чат, не создавать новую пару на каждом пакете.
-Первая операция: `cycle(tools,core,run,{action:'start',ownerId,token})`.
-Получив `next.source`, перевести все его блоки и вызвать
-`cycle(tools,core,run,{action:'finish',ownerId,token,jobId,generation,
- submissionId,result})`.
-`finish` возвращает `next.source` следующего пакета — сразу
-переходить к нему без дополнительной команды пользователя.
-На `cycle_limit_reached` завершить запуск. `retry_pending` — это
-продолжение работы, а не разрешение завершить чат: выждать
-`retryAfterMs` и повторить операцию из `resume.action`. При
-`next_unavailable`/`next_blocked`/`submit_not_confirmed` сначала
-разобрать причину: временная ошибка требует продолжения; закрытый
-gate, конфликт владельца или недействительный исходник требуют
-точного отчёта. `busy_or_empty` сам по себе не означает пустую очередь.
+На 4 готовых блоках сохранить **один** `checkpoint` с постоянным
+`checkpointId`; на 8-м блоке выполняется итоговый `finish`, отдельный
+второй checkpoint не нужен. `renew` только при реальной длительной работе,
+обычно раз в 20 минут; срок аренды 90 минут.
 
-Если GitHub подтвердил `submit`, но следующий `claim` не удался,
-`submitted_next_pending` содержит подтверждённый receipt: вызывать
-`start` с тем же owner/token, а не делать новый submit. При
-неопределённом ответе самого `finish` повторять **исходный**
-`submissionId` и тот же неизменный результат. На `already_saved`
-повторный claim возобновляет прежний активный lease, не создаёт дубль.
-При `rate_limited` уважать ограничения и не запускать горячие повторы.
+При `cas_contention`, `transport_retryable`, `rate_limited` не вызывать
+`fail` и не освобождать перевод. Сохранить текущие `ownerId`, `token`,
+`jobId`, `generation`, `submissionId`, `result` и точную операцию повтора.
+**Нет** вложенных циклов из 8×12 запросов, фонового ожидания 30 минут
+или постоянного опроса GitHub. `retry_pending` означает остановиться
+до указанного `retryAfterMs`; повторить ту же операцию только после
+паузы, не создавать новое задание. При истекшем lease пользоваться
+штатным восстановлением `start`, не записывать под старой generation.
 
-Отдельная команда для запуска одного работника:
+`submit` сохраняет EN-результат **только в staging** со статусом
+`saved_for_review`. Работник сам себя не проверяет и не одобряет.
+Независимый reviewer использует `translation-mass-qa.mjs`.
+Публикует отдельный мастер после согласованной интеграции с EN Astro;
+`publicationEnabled` остается `false`. GitHub Pages, основную ветку,
+цены, русскую версию и matching не менять.
 
-> Рой ADA EN: запусти одного переводчика на 10 последовательных пакетов.
-> Прочитай актуальные `docs/plans/english-site/34-mass-translation-worker.md`
-> и `docs/plans/english-site/33-mass-translation-queue.md` из `main`
-> репозитория `alexyakovlev79/adatours.ru`. Используй
-> `scripts/i18n/translation-mass-worker-cycle.mjs`: `start`, затем
-> `finish` с автоматическим захватом следующего пакета после каждого
-> подтверждённого коммита. Всего до 10 сдач в staging без ожидания
-> моего «дальше». Сохраняй ownerId/token и submissionId для восстановления,
-> продлевай lease, ставь checkpoints. Не меняй `main`, RU, цены, медиа,
-> публикацию и очередь сопоставления; не одобряй сам свои переводы.
-> В конце отчитайся о 10 сохранённых пакетах или точной причине остановки.
-
-## Защита от CAS-конфликтов (03.11.2026)
-
-Новые checkpoint записываются атомарным обновлением только точного
-`data/i18n/translation-mass/v2/state/<shard>.json` через GitHub Contents
-с ожидаемым blob SHA. В состоянии пакета сохраняются полный EN draft,
-`checkpointId`, `ownerId`, `token` и `generation`. Повтор того же
-контрольного снимка возвращает `already_saved`. Общий `index.json`
-при checkpoint не меняется. Прежние checkpoint с отдельным Git blob
-остаются действительными. После подтвержденного `submit` полный текст
-уже хранится в immutable result, поэтому объемная копия draft в сегменте
-удаляется, но ID/время checkpoint сохраняются.
-
-`claim` распределяет работников между доступными сегментами по
-`ownerId`; `submit`, `renew` и `release` продолжают использовать
-атомарную запись общего индекса и сегмента. CAS теперь имеет до
-8 попыток с ограниченной случайной задержкой. Внешний
-`worker-cycle` выполняет до 12 попыток той же операции при
-`cas_contention`, `transport_retryable` и временно занятой очереди,
-с нарастающей паузой 2–30 секунд и случайным разбросом. Идентификаторы
-и payload сохраняются. После 12 попыток возвращается `retry_pending`
-для продолжения тем же чатом; это не окончательная остановка.
-`rate_limited` возвращает паузу не менее 60 секунд без горячего повтора.
-
-Повтор подтвержденного `release` возвращает `already_released`,
-а `fail` — `already_failed`, без второго перехода или увеличения
-числа попыток. Действующие чужие leases не освобождать от имени
-другого работника. После обрыва `start` с прежними идентификаторами
-возвращает `checkpoint` текущего пакета, если он существует.
-
-### Автоматическое восстановление своего незавершенного пакета
-
-При `start` диспетчер сообщает `resumeCandidateJobId` из подтвержденной
-истории `ownerAssignments`. Если прежняя задача была освобождена или ее
-lease истек, `worker-cycle` вначале пытается атомарно захватить **тот же**
-незавершенный `jobId` с прежними `ownerId/token`, получает новую
-`generation` и возвращает прежний `checkpoint` (встроенный `payload`
-или ссылку на старый blob). Не переводить сохраненные блоки повторно.
-Если пакет уже захватил другой переводчик или RU устарел, разрешено
-перейти к обычному следующему пакету, не перезаписывая чужой результат.
-
-
-
-## Временные сбои не завершают чат с нулём (04.11.2026)
-
-**Решение владельца:** лимит в три неудачных захвата/сдачи не является
-основанием остановки. Лимит 10 относится только к подтверждённым
-сдачам. Неудачный вызов не расходует этот лимит.
-
-- `GithubGraphQLAPIError`, `Transport closed`, 502/503/504 и потерянный
-  ответ GitHub — временный сбой транспорта, а не `blocked_external`
-  исходника Word. Не вызывать `fail`/`release` из-за такого сбоя сдачи.
-- Продолжать `start`/исходный `finish` автоматически, без команды
-  пользователя. После каждого `retry_pending` выждать указанную паузу
-  и снова вызвать `resume.action` с теми же ownerId/token. Для `finish`
-  нужны исходные jobId, generation, submissionId и неизменный result.
-  После уже подтверждённой сдачи повторять только `start`.
-- Минимальное окно восстановления временной ошибки — **30 минут без
-  продвижения**, а не три попытки. Сохранённый блок, checkpoint, сдача
-  или новый законный claim начинает новое окно. Давать краткий прогресс
-  не реже раза в минуту. Долгие ожидания делить на интервалы до 60 секунд.
-  При 429 соблюдать Retry-After/reset; если пауза выходит за окно,
-  сохранить точное время возобновления и назвать ограничение сервиса.
-- Пока есть действующий lease, сохранять готовый draft и продлевать его
-  через 20 минут, используя тот же remote. Если lease действительно
-  истёк, вызвать `start` и восстановить собственный пакет/checkpoint с
-  новой generation; старой generation больше не писать. Чужой lease
-  не освобождать. Не менять submissionId и текст ради повторной сдачи.
-- `stage_drained` подтверждается нулём queued, leased и retryable именно
-  текущей стадии. Наличие review/blocked/held не означает завершение
-  всего перевода. При занятых пакетах продолжать ожидание в окне выше.
-- После 30 минут непрерывной недоступности допустим точный технический
-  отчёт с сохранённым checkpoint и операцией возобновления. Не обещать,
-  что уже завершившийся чат сам проснётся. Старые чаты с закреплённым
-  кодом должны перечитать эти три модуля из нового main SHA; изменение
-  файла не обновляет уже загруженный ими JavaScript автоматически.
-
-Проверенный инцидент: коммит `f0f1b2090bf5c721f675bc4cf4f3e9a56c75acd7`
-ошибочно перевёл полностью подготовленный пакет
-`en:bulk:tour:tour_argentina_agricultural_11_days:b006` в
-`blocked_external` после ошибок `update_ref`; полный checkpoint остался.
-Повторная обработка использует его без нового перевода и без самоодобрения QA.
+**Важное при обновлении кода:** ранее запущенные чаты со старой версией
+скриптов не обновляются автоматически. Новые чаты читают все три
+файла из одного нового SHA `main`.

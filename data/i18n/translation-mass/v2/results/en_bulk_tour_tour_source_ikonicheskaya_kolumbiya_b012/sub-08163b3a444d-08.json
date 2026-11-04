@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ikonicheskaya_kolumbiya:b012",
+  "stableId": "tour_source_ikonicheskaya_kolumbiya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c473f86b15db1c3a40672157584a08170bd9e169d65f50b5802ca869273a5129",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e63bf65c0e244be22794f0088bfbb7f5393ea0636430731c2df8d3c649e60086",
+      "text": "Santa Marta – Tayrona National Park – Cabo San Juan del Guía",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:138",
+            "textSha256": "649dc52777ba511cbcbde5b50753205d2d7bc7f6960e36b785004bd63b7a9f92"
+          },
+          {
+            "ref": "word/document.xml:p:140",
+            "textSha256": "1439a50056eccf19dfe24e88c0733dd272607f7ce07832400fdc016dedea94a1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The start city, national park and beach destination are composed in route order from the confirmed programme."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "12cb66e2b7a22881c3d3f128cf78af1b6fdf3fa72f09bcad9417449cbdfd4802",
+      "text": "Day 13 · Breakfast, then a full day (10 hours) in Tayrona National Natural Park, 45 minutes from Santa Marta, a sanctuary of remarkable biodiversity, beaches and indigenous cultures. From the Cañaveral sector, walk about an hour along the ecological trail to Arrecifes, then about 30 minutes more to the beaches of Cabo San Juan del Guía: free time to swim, typical lunch, and return on foot along the same path.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:140",
+            "textSha256": "1439a50056eccf19dfe24e88c0733dd272607f7ce07832400fdc016dedea94a1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:700467b11f64a0ed",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32c8dc5297665ad8f4f10fd6404a0105bdce4aa7f012589240107ed1e70d55b3",
+      "text": "Santa Marta",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:138",
+            "textSha256": "649dc52777ba511cbcbde5b50753205d2d7bc7f6960e36b785004bd63b7a9f92"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The city name is extracted from the exact Santa Marta and Tayrona section heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:570444420f61321c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fe4e74e76a23071098c34f4b99cdafd66e6a7aa0be82ff3be368aadaa1cfa700",
+      "text": "Tayrona National Natural Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:140",
+            "textSha256": "1439a50056eccf19dfe24e88c0733dd272607f7ce07832400fdc016dedea94a1"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The exact national park name is extracted from the confirmed day programme."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b06d1998f46c9730",
+      "field": "media.alt",
+      "sourceTextSha256": "a390951cf20c7068461b98c5da97306239117f4f0c38bdf93b9925d86c356608",
+      "text": "Sun over the sea and a pool in front of palm trees near Santa Marta, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no alternative text describing the pool, palms and sea in the assigned photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cd841f819a884614",
+      "field": "media.hover",
+      "sourceTextSha256": "5409614d53f5eed22d84f0c7c0583121eef6c0865f80dd53505be21083a23cd4",
+      "text": "Santa Marta: a sea panorama in golden light with a pool in the foreground",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-08163b3a444d",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no hover caption for this pool and sea panorama photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "32c8dc5297665ad8f4f10fd6404a0105bdce4aa7f012589240107ed1e70d55b3",
+      "text": "Santa Marta",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:138",
+            "textSha256": "649dc52777ba511cbcbde5b50753205d2d7bc7f6960e36b785004bd63b7a9f92"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The city name is extracted from the approved section heading for the departure-day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a9360580300cf8596144889f5397e276dbf4563050bef4aaae4521a4c0dbb84f",
+      "text": "Day 14 · Breakfast and transfer to Simón Bolívar International Airport for your onward flight (not included).",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1377hx5RYUNUxgJZ5JKYH3qvixSNhcvVH",
+        "documentSha256": "1296cb2dd09de704695be831fb65d062180ff1897c63cbbe4ee03a60c7d82ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:141",
+            "textSha256": "51e420d3e37fb5ab9c9d08d80bf6825ab668cb4eb4a59ffb7bd6332b9d5d872e"
+          }
+        ]
+      }
+    }
+  ]
+}

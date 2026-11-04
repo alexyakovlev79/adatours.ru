@@ -483,132 +483,22 @@
     {
       "jobId": "en:bulk:tour:tour_panama_mice_7_days:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "a3fa5fe31244555a8e1f34b6307d6537926e041e17330afa6f8cd933c5c132b3",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "claimedAt": "2026-11-04T07:45:22.744Z",
-        "expiresAt": "2026-11-04T09:15:22.744Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-8526ba7437bc-b004-cp8-tour_panama_mice_7_days",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_panama_mice_7_days:b004",
-          "stableId": "tour_panama_mice_7_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "a3fa5fe31244555a8e1f34b6307d6537926e041e17330afa6f8cd933c5c132b3",
-          "blocks": [
-            {
-              "blockId": "tour:note:5a6e2f0dfa465468",
-              "field": "note",
-              "sourceTextSha256": "08d846566a2e0fb0f372c4c589284f7d3f0f8c567fb8098bf582f26c1f309e8d",
-              "text": "Send us your meeting schedule so we can coordinate transfers, tours and meals around it.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The selected operational Word lists dated services but contains no equivalent request for the client’s meeting schedule; translated the current RU note."
-              }
-            },
-            {
-              "blockId": "tour:note:3baefeb1061ece71",
-              "field": "note",
-              "sourceTextSha256": "e3f679a2a731ede8a8047267b7f6ed4726e02e4ae9032b2f78e86be69c3e0066",
-              "text": "We offer English-speaking assistance and English-to-Spanish interpreting on Day 2. If your group needs English-speaking assistance, let us know when you enquire.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraph 42 confirms English-speaking coordination and English-to-Spanish translation but does not contain the RU request clause. Translated the RU note, adapting its requested Russian-language tourist assistance to English under the owner’s 03 November 2026 decision (§4.1).",
-                "serviceLanguageAdaptation": "Russian-language tourist assistance localised as English under the owner’s 03.11.2026 decision; English-to-Spanish interpreting retained."
-              }
-            },
-            {
-              "blockId": "tour:note:bd82b92c442b3cc6",
-              "field": "note",
-              "sourceTextSha256": "86c257e41e91ce6763c36e13d44e8fc5b22c6c3cec0485ce1bfa0b1b5a6a308d",
-              "text": "We will agree the menus, departure times and services with you before booking.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraphs 47, 51, 58 and 103 contain operational menu and service reconfirmation notes, not this client-facing pre-booking sentence; translated the current RU wording."
-              }
-            },
-            {
-              "blockId": "tour:highlight_title:bb56a04224174a28",
-              "field": "highlight.title",
-              "sourceTextSha256": "c16593930491facd517e1c79184a4c7c536abf95209a9ef365c56f151f2d1850",
-              "text": "Transport to suit your participants’ schedules",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "This reusable highlight title does not appear in the selected dated operational Word; translated the current RU title."
-              }
-            },
-            {
-              "blockId": "tour:highlight_text:9e9b10de0efa6f79",
-              "field": "highlight.text",
-              "sourceTextSha256": "980b10022bc9eef0b7b78b8ecbd828fa9944da7c491a0468eb87865e1ea0c8a6",
-              "text": "We meet participants arriving on different flights and arrange individual car journeys and group transfers in 15-, 35- and 45-seat coaches.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraphs 25, 45 and 95 list specific dated vehicle allocations, not this reusable summary. Translated the current RU service summary while retaining all three coach capacities."
-              }
-            },
-            {
-              "blockId": "tour:highlight_title:2e99e6452127c4b9",
-              "field": "highlight.title",
-              "sourceTextSha256": "70085646528dd8a95c19a7532fa547c179c5e4e353decc850fbe3d27e14b8959",
-              "text": "The Canal, history and gastronomy",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The selected Word has individual activity headings, but no equivalent to this combined current RU highlight title."
-              }
-            },
-            {
-              "blockId": "tour:highlight_text:b141d41ed0bc19f3",
-              "field": "highlight.text",
-              "sourceTextSha256": "8148601a7cef05a5bcfa66d407be9cfc451ba388ccaf9da903a45883467d912f",
-              "text": "We will show you Miraflores, Casco Viejo and Panama Viejo, arrange a boat expedition in Gamboa, and organise Geisha coffee and craft beer tastings.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraphs 38, 49, 78, 80 and 84 describe the activities separately in a dated operational schedule, not this current RU combined highlight; translated the reusable RU summary without adding times or services."
-              }
-            },
-            {
-              "blockId": "tour:highlight_title:a02fe1dd5b5af78c",
-              "field": "highlight.title",
-              "sourceTextSha256": "a9b220f628bf2a2f114f7d631965472b051313c54bc89974ba5ae9cb8db5386b",
-              "text": "Assistance and dining",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The selected Word contains several separate support and restaurant headings, but no equivalent to this combined current RU highlight title."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:46:57.234Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-8526ba7437bc-tour_panama_mice_7_days-b004",
+        "blobSha": "2c7651f7e537028fbf416576fc43bfe2cc358a41",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_panama_mice_7_days_b004/ada-en-20261104-8526ba7437bc-tour_panama_mice_7_days-b004.json",
+        "at": "2026-11-04T07:47:45.188Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

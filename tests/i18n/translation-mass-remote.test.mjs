@@ -107,3 +107,42 @@ test('checkpoint action is disabled before any GitHub API call',async()=>{
   /Unsupported worker action/);
  assert.equal(calls,0);
 });
+
+test('transient GraphQL ref failure safely retries same commit or rebases on an advanced HEAD',async()=>{
+ for(const concurrentlyAdvanced of [false,true]){
+  const jobId='en:bulk:tour:test:b001',sid=core.massShard(jobId);
+  const ownerId='worker_one',token='stable_token',now='2026-11-03T21:00:00Z';
+  const shard={schemaVersion:2,shardId:sid,items:[{jobId,stage:'word_2027',status:'leased',
+   sourceFingerprint:'fingerprint',generation:1,attempts:0,
+   lease:{ownerId,token,expiresAt:'2026-11-03T22:00:00Z'}}]};
+  const index={schemaVersion:2,pilotOnly:false,publicationEnabled:false,
+   dispatcherEnabled:true,translationMassLaunchAllowed:true,stage:'word_2027',
+   jobCount:1,shards:{[sid]:core.massShardSummary(shard)},
+   activeOwners:{[ownerId]:{jobId,token,expiresAt:'2026-11-03T22:00:00Z'}}};
+  const ok=x=>({result:x});
+  let head='a'.repeat(40),refs=0,commits=0;
+  const mocked={
+   mcp__GitHub__fetch:async({url})=>ok({content:JSON.stringify(url.includes('/git/commits/')
+    ?{tree:{sha:'e'.repeat(40)}}:{object:{sha:head}})}),
+   mcp__GitHub__fetch_file:async({path})=>ok({content:JSON.stringify(
+    path.endsWith('/index.json')?index:shard)}),
+   mcp__GitHub__create_tree:async()=>ok({sha:'f'.repeat(40)}),
+   mcp__GitHub__create_commit:async()=>ok({sha:(++commits===1?'c':'d').repeat(40)}),
+   mcp__GitHub__update_ref:async({sha,expected_sha,force})=>{
+    assert.equal(expected_sha,head);assert.equal(force,false);refs++;
+    if(refs===1){
+     if(concurrentlyAdvanced)head='b'.repeat(40);
+     throw Error('GithubGraphQLAPIError: Something went wrong while executing your query');
+    }
+    head=sha;return ok({success:true});
+   }
+  };
+  const result=await runEnMassTranslation(mocked,core,{action:'renew',
+   ownerId,token,jobId,generation:1,now});
+  assert.equal(result.status,'renewed');
+  assert.equal(result.commit,(concurrentlyAdvanced?'d':'c').repeat(40));
+  assert.equal(refs,2);
+  assert.equal(commits,concurrentlyAdvanced?2:1,
+   'unchanged HEAD must not recreate a Git commit');
+ }
+});

@@ -6,12 +6,13 @@ const REPO='alexyakovlev79/adatours.ru';
 const BRANCH='i18n/translation-mass-staging';
 const ROOT='data/i18n/translation-mass/v2';
 const CAS_ATTEMPTS=2;
+const REF_ACK_ATTEMPTS=2;
 const clean=x=>JSON.stringify(x,null,2)+'\n';
 const un=r=>{if(r?.isError)throw Error(JSON.stringify(r));return r?.result||r?.structuredContent||r};
 const valid=x=>typeof x==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(x);
 const limited=/rate.?limit|429|retry.?after|secondary limit|too many requests|resource.exhausted/i;
-const conflict=/non.fast.forward|expected.sha|409|422|reference|conflict|mismatch|changed/i;
-const transient=/GithubGraphQLAPIError|RemoteProtocolError|Server disconnected|Transport closed|internal (?:server )?error|something went wrong|bad gateway|service unavailable|gateway timeout|\b50[0234]\b|ECONNRESET|ETIMEDOUT|fetch failed|network error|response lost/i;
+const conflict=/non.fast.forward|expected.sha|409|422|reference|conflict|mismatch|changed|cas_rebase_required/i;
+const transient=/GithubGraphQLAPIError|RemoteProtocolError|Server disconnected|Transport closed|internal (?:server )?error|something went wrong|bad gateway|service unavailable|gateway timeout|\b50[0234]\b|ECONNRESET|ETIMEDOUT|fetch failed|network error|response lost|unconfirmed CAS ref update/i;
 const safe=x=>x.replace(/[^A-Za-z0-9_.-]/g,'_').slice(0,190);
 const currentTime=x=>{const s=x||new Date().toISOString();if(!Number.isFinite(Date.parse(s)))throw Error('Invalid timestamp');return s};
 const statusOfOwner=(index,ownerId)=>{
@@ -44,18 +45,26 @@ async function commit(tools,headSha,files,message){
    ...(f.sha?{sha:f.sha}:{content:clean(f.data)})}))})).sha;
  const next=un(await tools.mcp__GitHub__create_commit({repository_full_name:REPO,
   parent_sha:headSha,tree_sha:tree,message})).sha;
- try{
-  const updated=un(await tools.mcp__GitHub__update_ref({repository_full_name:REPO,
-   branch_name:BRANCH,expected_sha:headSha,sha:next,force:false}));
-  if(!updated.success)throw Error('Unconfirmed CAS ref update');
- }catch(e){
-  // Exactly one read on uncertain acknowledgement. Never make a second effect
-  // until the original SHA is resolved.
-  if(!limited.test(String(e))&&transient.test(String(e))&&await head(tools)===next)
+ // Confirm the branch before retrying an ambiguous GitHub GraphQL ref error.
+ // Reuse the same commit when HEAD is unchanged; rebase on concurrent changes.
+ for(let ackAttempt=0;ackAttempt<REF_ACK_ATTEMPTS;ackAttempt++){
+  try{
+   const updated=un(await tools.mcp__GitHub__update_ref({repository_full_name:REPO,
+    branch_name:BRANCH,expected_sha:headSha,sha:next,force:false}));
+   if(!updated.success)throw Error('Unconfirmed CAS ref update');
    return next;
-  throw e;
+  }catch(e){
+   const message=String(e);
+   if(limited.test(message)||(!transient.test(message)&&!conflict.test(message)))
+    throw e;
+   const observed=await head(tools);
+   if(observed===next)return next; // Lost ACK; same immutable result saved.
+   if(observed!==headSha)throw Error('cas_rebase_required: branch advanced');
+   // No new tree or commit: retry this exact CAS mutation once.
+   if(!transient.test(message)||ackAttempt===REF_ACK_ATTEMPTS-1)throw e;
+  }
  }
- return next;
+ throw Error('Unconfirmed CAS ref update');
 }
 const resultFor=(index,ownerId)=>({owner:statusOfOwner(index,ownerId)});
 export async function runEnMassTranslation(tools,core,args={}){

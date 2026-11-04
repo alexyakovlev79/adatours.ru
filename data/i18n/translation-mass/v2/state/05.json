@@ -847,7 +847,7 @@
         "expiresAt": "2026-11-04T07:47:37.941Z"
       },
       "checkpoint": {
-        "id": "ada-en-1d528bec4ff4-b03-cp8",
+        "id": "ada-en-1d528bec4ff4-b03-cp8-v2",
         "format": "inline-v1",
         "ownerId": "ada-en-1d528bec4ff4",
         "token": "ada-en-token-1d528bec4ff4-20261104",
@@ -865,14 +865,23 @@
                 "blockId": "tour:note:fd06ea2e19a4ef5d",
                 "field": "note",
                 "sourceTextSha256": "2f1969c9de551a9f0e2f23fdc058e43c19ff9037bf81616d4e5edd4e5cfa7d0b",
-                "text": "Group tours depart on Saturdays, with scheduled service for 2–16 travellers. Guide languages: Spanish and Italian.",
+                "text": "Saturdays (regular). Regular service: minimum 2, maximum 16 travellers; English-speaking guide.",
                 "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-1d528bec4ff4",
-                  "wordAbsenceReason": "The complete Word 2027 programme states English-speaking guide in paragraph 222, and has no equivalent of the frozen RU note specifying Spanish and Italian. Translate the current RU wording and flag this substantive language discrepancy for independent review.",
+                  "kind": "word_aligned",
                   "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
-                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6"
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p218",
+                      "textSha256": "c1bebdeb3ea0d505d68d77fd4300f71997145b5b388bb668a13fa198708aec99"
+                    },
+                    {
+                      "ref": "word/document.xml:p222",
+                      "textSha256": "c04cbd2ec3ada699a7b2feba204609b8db8b449988ec61c8eef61e84fb4f20ee"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Combine the exact Saturday departure label and regular-service group-size/language condition from the authoritative Word 2027; remove only the list dash."
                 }
               },
               {
@@ -1068,11 +1077,12 @@
                 }
               ]
             },
-            "unresolvedConflicts": [
+            "unresolvedConflicts": [],
+            "priceAmendments": [],
+            "sourcePriorityNotes": [
               {
                 "field": "/notes/0",
-                "issue": "Frozen RU note specifies Spanish and Italian; verified Word 2027 paragraph 222 specifies an English-speaking guide.",
-                "resolution": "Current RU guide-language statement translated without alteration; independent reviewer/commercial master must reconcile before publication.",
+                "decision": "Authoritative matched Word 2027 regular-service language supersedes the old Russian note under editorial contract section 1.5–1.6; no commercial data or RU source was changed.",
                 "wordEvidence": [
                   {
                     "ref": "word/document.xml:p222",
@@ -1080,13 +1090,12 @@
                   }
                 ]
               }
-            ],
-            "priceAmendments": []
+            ]
           },
           "submissionId": "ada-en-1d528bec4ff4-b03",
           "preparedBlocks": 8
         },
-        "at": "2026-11-04T06:19:24.091Z"
+        "at": "2026-11-04T06:19:54.759Z"
       },
       "submission": null,
       "review": null,

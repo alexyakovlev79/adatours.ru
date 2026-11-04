@@ -566,7 +566,7 @@
         "expiresAt": "2026-11-04T08:39:27.371Z"
       },
       "checkpoint": {
-        "id": "cp-5d56534e-07-4",
+        "id": "cp-5d56534e-07-8",
         "format": "inline-v1",
         "ownerId": "ada-en-5d56534e4493",
         "token": "lease-da131c3d187149a7b813992c83ea721b",
@@ -673,17 +673,79 @@
                   "transformation": "contextual_label",
                   "rationale": "Express the Word daily private-service departure rule and 2027 validity as the existing short private-tour date note."
                 }
+              },
+              {
+                "blockId": "tour:note:e72b5822fc396ac2",
+                "field": "note",
+                "sourceTextSha256": "14b884ef40b0918a22a10455e50729842167bb0a56c42f3e1dcbeb964b203101",
+                "text": "Rates do not apply from 20 to 28 March 2027 or from 15 December 2027 to 4 January 2028.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p222",
+                      "textSha256": "144af325f4f0a6c3603cf5592b19162b920898de6d1b2ca017c8d63a0b46d8b3"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Retain precisely the two Word tariff exclusion date ranges, expanding numeric dates into unambiguous month names without changing validity."
+                }
+              },
+              {
+                "blockId": "tour:included:f21d61dccef9e1ea",
+                "field": "included",
+                "sourceTextSha256": "ef0a046098ec152c01319aee8612ec136eca1005eae0a5f131397394b058d8c6",
+                "text": "11 nights in hotels in Guatemala City, Lake Atitlán, Antigua, Petén, San Ignacio / Hidden Valley and Ambergris Caye, according to the selected option.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraph 228 lists the same eleven-night destinations but does not include the current RU field's selected-option qualifier. The A/B hotel choices are separately evidenced in the accommodation table paragraphs 134–165; translate the exact current RU field preserving that qualifier."
+                }
+              },
+              {
+                "blockId": "tour:included:87a5bc067e171132",
+                "field": "included",
+                "sourceTextSha256": "2c63a2f4d9e2e4e09a44394403274659c1de031c3436944ad3641ea5715131c1",
+                "text": "Meals: daily breakfast, plus lunch inside Tikal on Day 7",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p229",
+                      "textSha256": "68de3bfa8aa6d0745a26e129d8a4417a4ce74e730c21aa49c02b3cccada290d1"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the Word list marker and leading list whitespace, preserving the exact approved Meals sentence and Day 7 Tikal lunch."
+                }
+              },
+              {
+                "blockId": "tour:included:cc5c4cdb540c273a",
+                "field": "included",
+                "sourceTextSha256": "5ce86ae15d7a821981c69588e5acf3d43e09170a7e456c9c0d0ec449c366a2c6",
+                "text": "Airport–hotel transfers in Guatemala City and Belize, and overland transfers between the destinations on the itinerary.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraph 230 combines airport and overland transfers with boat and ferry services not included in this particular RU field. There is no equivalent standalone Word sentence for this narrower field; translate the exact current RU airport/overland-transfer text without adding services from the broader Word item."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "wordEvidence": {
             "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
             "sha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
             "modifiedTime": "2026-10-28T14:23:51.828Z"
           }
         },
-        "at": "2026-11-04T07:41:09.398Z"
+        "at": "2026-11-04T07:41:15.379Z"
       },
       "submission": null,
       "review": null,

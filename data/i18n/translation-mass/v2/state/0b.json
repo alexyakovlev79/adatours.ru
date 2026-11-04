@@ -132,164 +132,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b003",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "c3b573756ca987faa8a2fa9a21597a3a1be38a3e617b7a5c96fbe3f21a6126af",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_1f8e8fe01ca4_20261104",
-        "token": "ada_en_token_1f8e8fe01ca4_20261104",
-        "claimedAt": "2026-11-04T06:04:06.011Z",
-        "expiresAt": "2026-11-04T07:34:06.011Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_1f8e8fe01ca4_20261104.2.cp8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_1f8e8fe01ca4_20261104",
-        "token": "ada_en_token_1f8e8fe01ca4_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b003",
-          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "c3b573756ca987faa8a2fa9a21597a3a1be38a3e617b7a5c96fbe3f21a6126af",
-          "blocks": [
-            {
-              "blockId": "tour:notIncluded:8d199ffe6a973532",
-              "field": "notIncluded",
-              "sourceTextSha256": "5612ec15b72bf07e698e916e9f0c02c8c096779c6e4cde7b627ecc859135a844",
-              "text": "International flights",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[274]",
-                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the technical list marker only; retain the approved exclusion exactly."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:6e52608d112e92b1",
-              "field": "notIncluded",
-              "sourceTextSha256": "1e7b740da431890dd85d53a213bd78601935c27039cb0c0012087ff01916403b",
-              "text": "Food and drinks during transfers",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[276]",
-                    "textSha256": "4228aa0822b188545ba7a5145e0393b0f4a74c8dff9ddf2a3f27b68275f628d1"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the technical list marker only; retain the approved exclusion exactly."
-              }
-            },
-            {
-              "blockId": "tour:note:b5de21613e03740f",
-              "field": "note",
-              "sourceTextSha256": "0bf1e69221589d8196ae596d81ce19ab9fc39a8f9ae0e7931986204bdebc25a7",
-              "text": "The departure dates of 12–21 February and the evening of the 2027 Parade of Champions are confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_1f8e8fe01ca4_20261104",
-                "wordAbsenceReason": "Word 2027 gives the dates in paragraphs 7 and 171 and general final confirmation in paragraph 285, but does not contain this exact booking-confirmation note; translated the RU note."
-              }
-            },
-            {
-              "blockId": "tour:note:cc6833ac58531783",
-              "field": "note",
-              "sourceTextSha256": "1540cbf1bea7899f107e2ad35f9c29a79c8ecac13779a5e850b338b21ce2b287",
-              "text": "Hotel names to be confirmed; hotels may be replaced by others of the same category.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[143]",
-                    "textSha256": "8d6fd40cd5fa9f2b2c12716d95f151641509e5b4f4b5bcda6257c1dae014bfe8"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:note:9dab4c0f9f3a1788",
-              "field": "note",
-              "sourceTextSha256": "021e5bdcb30c858d91993b6b1521b7b34b77b76363e7f71e3feae1907673d396",
-              "text": "Hotels may be replaced by others of the same category; some hotels outside the main centres may not meet international standards for their official category.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[176]",
-                    "textSha256": "72294231271cefb516a4f92f3326a3391f849b3100e1416a0de97cfb76a8b64c"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the technical list marker only; retain the approved hotel-category caveat exactly."
-              }
-            },
-            {
-              "blockId": "tour:note:8957ee77cf127269",
-              "field": "note",
-              "sourceTextSha256": "bb638198368091855c472f14b27f95e6d3c64bdc0d1989b43819a8edef914722",
-              "text": "We reserve the right to adjust the programme for reasons beyond our control (weather, strikes, road conditions, force majeure, health), always in the interest of our clients’ safety.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[177]",
-                    "textSha256": "29f371aa355983fac3464b48d17de03fd9aa4b7a84c68dfbb4b13c11f692105a"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the technical list marker only; retain the approved safety and programme-change caveat exactly."
-              }
-            },
-            {
-              "blockId": "tour:note:7dbcc526f7ac1446",
-              "field": "note",
-              "sourceTextSha256": "3490c401695e63d7a01871427dea248778cafac3bfce09012887428f631b77e3",
-              "text": "Prices for the Macuco Safari, Bird Park and helicopter flight in Iguazu differ between two sections of the itinerary. Both versions are shown below; the current price and the charging basis for the helicopter flight are confirmed before payment.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_1f8e8fe01ca4_20261104",
-                "wordAbsenceReason": "The verified Word 2027 has different optional prices in paragraph 90 and paragraphs 226, 231 and 236, but no explicit discrepancy-warning paragraph; translate the current RU warning without resolving prices."
-              }
-            },
-            {
-              "blockId": "tour:note:80fd8dab5b426f4c",
-              "field": "note",
-              "sourceTextSha256": "f3d9b9d4000fd0360cfe443c1fda3b1c511e2c8d981cb69af8aba4fe11db6c41",
-              "text": "The charging basis for the $230 Guanabara Bay boat trip is confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_1f8e8fe01ca4_20261104",
-                "wordAbsenceReason": "The verified Word 2027 labels USD 230 per person in paragraph 192 but has no equivalent RU booking-confirmation caveat; preserve and translate the current RU caveat without amending commercial terms."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:05:56.016Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_1f8e8fe01ca4_20261104.2.submit",
+        "blobSha": "3513efc0d4f4ecf2985430b271bd7c1a345d26e8",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b003/ada_en_1f8e8fe01ca4_20261104.2.submit.json",
+        "at": "2026-11-04T06:10:15.453Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

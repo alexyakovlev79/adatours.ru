@@ -485,7 +485,7 @@
         "expiresAt": "2026-11-04T08:36:32.841Z"
       },
       "checkpoint": {
-        "id": "ada-en-a40ee2cc-p04-cp4",
+        "id": "ada-en-a40ee2cc-p04-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-a40ee2cc",
         "token": "ada-en-token-a40ee2cc-71df-20261104",
@@ -583,10 +583,80 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracts the named visitor centre from the exact heading and programme passage."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:b4de4264904edf99",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0870a02f9c0264f4910edca99be97f98d0ec3fa9205d387439cc13a49ed8a3d8",
+              "text": "Gatun Lake & Monkey Island",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:76",
+                    "textSha256": "4877ddceaef094d5c95c0b96c8353f3ace80ba4ce35a62188c43421fdf158a28"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Retains the exact destination pair from the day 5 heading, removing the appended uppercase Gamboa location label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8ca622e238b51fd8:2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
+              "text": "Panama City",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:35",
+                    "textSha256": "c10eca654cdcab37352ddfb359e4fac85a21845332e37612c930e45a1cee9b8a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:b1146dab122bbdec",
+              "field": "included",
+              "sourceTextSha256": "08103ae4b81451fb4cf738dd39fa05afa4b79ff50a575f77a886d6acd0583871",
+              "text": "Transportation",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:96",
+                    "textSha256": "e5ffd6e65424dd6439e5ef2c7e4ddcbc1ed610c242fb0c1cd9da85cd382c22f4"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:b6f9d8e92341eccf",
+              "field": "included",
+              "sourceTextSha256": "2d2bdf4bfc4850bc4e5db32da594462822ef29cc016eeaba637c89d45be4ea49",
+              "text": "Entrance fees",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:97",
+                    "textSha256": "0c60717e801aff4e54cfbd9a3ebf3933f301a7704240a06e8e5308188f6a01e9"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:06:50.470Z"
+        "at": "2026-11-04T07:07:03.245Z"
       },
       "submission": null,
       "review": null,

@@ -484,7 +484,137 @@
         "claimedAt": "2026-11-04T06:02:42.000Z",
         "expiresAt": "2026-11-04T07:32:42.000Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-5d56534e-02-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-5d56534e4493",
+        "token": "lease-da131c3d187149a7b813992c83ea721b",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b001",
+            "stableId": "tour_brazil_tropical_champions_parade_rio_angra_2027",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "6244bbbe9a27b4b98f3463a0fe5252c02294dcab70d6fd5b1be94781a940b81b",
+            "blocks": [
+              {
+                "blockId": "tour:title:aaf2320646108059",
+                "field": "title",
+                "sourceTextSha256": "03431ccb366f922e053baa3708d82af467a5ed0fd4de64f2241a93ea82a9b943",
+                "text": "Tropical Champions Parade 2027: Rio and Angra dos Reis",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p3",
+                      "textSha256": "b3b7f04b3b4084dde2fa0c4e62c067524a67a8a2143781beb8d5884940a380bc"
+                    },
+                    {
+                      "ref": "word/document.xml:p4",
+                      "textSha256": "b22d0424769ccc68b7c2d1181c5a09b29277b8401b911e13b8d3043cf200fea2"
+                    },
+                    {
+                      "ref": "word/document.xml:p33",
+                      "textSha256": "5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combine the exact Word tour name, destination line and year into the current RU title structure."
+                }
+              },
+              {
+                "blockId": "tour:lead:e3456bc1f4d270f4",
+                "field": "lead",
+                "sourceTextSha256": "de6bd99a48efd320b7b5b44dbd9501be728c526ab0dd6c775ed8f34a04262e3e",
+                "text": "Ten days in Brazil, from 12 to 21 February 2027: the Carnival Parade of Champions in Rio de Janeiro, Sugar Loaf and Corcovado, followed by six nights on the coast at Angra dos Reis on an all-inclusive basis.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraph 18 is a related overview but lacks the precise date range carried by this RU lead and names a hotel not named in that lead. Translate the current RU lead; dates and six-night all-inclusive stay are corroborated by Word paragraphs 21, 23 and 25."
+                }
+              },
+              {
+                "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+                "field": "priceNote",
+                "sourceTextSha256": "b3f072cf7158b6f20b3adc9d16e3f82cc9eb09e3ed8af1aff3b41d86b9b04a47",
+                "text": "Price per person sharing a TRP room in 4-star hotels. The full SGL/DBL/TRP table for 4-star and 5-star hotels is given in the description.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p115",
+                      "textSha256": "ee74053323bff31a52c98db3ae13d5dbc0b33bb4765d0d73df53a960df924593"
+                    },
+                    {
+                      "ref": "word/document.xml:p116",
+                      "textSha256": "cef706da9facfeb8abbe2e6e47b725c0875ef3c9dd2497c6ff7292b03c2bdc40"
+                    },
+                    {
+                      "ref": "word/document.xml:p117",
+                      "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                    },
+                    {
+                      "ref": "word/document.xml:p118",
+                      "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                    },
+                    {
+                      "ref": "word/document.xml:p119",
+                      "textSha256": "299f4d5312ff948181be18fc1a928cc62a2c4a0d55907ac3d15b31f0a20bf033"
+                    },
+                    {
+                      "ref": "word/document.xml:p120",
+                      "textSha256": "4f351e71ed47534be12b42a9d39eed7872d61163be0bd476ffbd7f87af5c43d0"
+                    },
+                    {
+                      "ref": "word/document.xml:p124",
+                      "textSha256": "c589a298060d33ee40dbc0ca083bcb364d4f33de900c185345e331306fd0c32c"
+                    },
+                    {
+                      "ref": "word/document.xml:p132",
+                      "textSha256": "1f0384cf13a60ac35523d0b17e7d77e98a44e0051770bed8f7eaa302497b4505"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Compose the current price basis note from the Word per-person SGL/DBL/TRP category table and 4-star triple-room basis; preserve the current reference to the full tariff table."
+                }
+              },
+              {
+                "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+                "field": "formatLabel",
+                "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
+                "text": "Group tour",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p115",
+                      "textSha256": "ee74053323bff31a52c98db3ae13d5dbc0b33bb4765d0d73df53a960df924593"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the group tour product format explicitly stated in the Word tariff heading as the short format label."
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "wordEvidence": {
+            "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+            "sha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+            "modifiedTime": "2026-10-26T13:05:52.351Z"
+          }
+        },
+        "at": "2026-11-04T06:04:13.455Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -384,7 +384,7 @@
         "expiresAt": "2026-11-04T07:52:36.677Z"
       },
       "checkpoint": {
-        "id": "ada_en_4c0a9bc31e22_b007_cp4",
+        "id": "ada_en_4c0a9bc31e22_b007_cp8",
         "format": "inline-v1",
         "ownerId": "ada_en_4c0a9bc31e22",
         "token": "ada_en_4c0a9bc31e22_token_20261104",
@@ -468,6 +468,74 @@
                 ],
                 "transformation": "contextual_label",
                 "rationale": "Use the group-tour format explicitly approved throughout the selected Word 2027 as the EN format label. The shared RU format field is not changed; its private/group discrepancy is recorded for integration."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8137954c6a092cbb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+              "text": "Lima",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "p:51",
+                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:10b9affb31d6a916",
+              "field": "itinerary.label",
+              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+              "text": "Cusco",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "p:36",
+                    "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0afab8f7d8295e58",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+              "text": "Machu Picchu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "p:39",
+                    "textSha256": "a0f44a8110a7777fbf0277e9845c181e280e59750973a6ce48a30a93c580fe2a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:45638e9b08a604d1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
+              "text": "Puno",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "p:3",
+                    "textSha256": "537a353f5ab42040b4154bfb4d70321bd864f4334f316295b6c28ddfa6f11c03"
+                  }
+                ]
               }
             }
           ],
@@ -664,9 +732,21 @@
               ],
               "status": "not_applied_commercial_master_required"
             }
+          ],
+          "unresolved": [
+            {
+              "kind": "format_discrepancy",
+              "ru": "Private",
+              "word2027": "Group tour, guaranteed from 2 guests",
+              "resolution": "EN uses exact Word group format; shared RU unchanged."
+            },
+            {
+              "kind": "price_discrepancy",
+              "resolution": "Frozen RU price note retained in EN until commercial master applies exact structured Word 2027 tariff."
+            }
           ]
         },
-        "at": "2026-11-04T06:23:41.103Z"
+        "at": "2026-11-04T06:24:00.119Z"
       },
       "submission": null,
       "review": null,

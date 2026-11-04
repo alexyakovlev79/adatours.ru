@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_live:b005",
+  "stableId": "tour_source_kolumbiya_live",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "33c7daf8deb2dbbf0349482d39c3dee575263277ec719d4d5b1c0ace19463004",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:1b246f0e6d8ffcf4",
+      "field": "notIncluded",
+      "sourceTextSha256": "5433620d31fab11d9a273a9492cc880fa0ddf84c217ece37bff9321449d61d6d",
+      "text": "Visa or consular fees (when required)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p219",
+            "textSha256": "74b98b8fdbb8e971695d8bb34bd821444bbfff1d16b06a9b03a69223a73ad75b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the cited Word service wording as the corresponding standalone field label."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6db5ba101893f585",
+      "field": "notIncluded",
+      "sourceTextSha256": "14d6a0a0cec40aea3eee0bf342e81cfffa84406021092a0409bcd37c4ff2a8db",
+      "text": "Dock fee in Cartagena, $10 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdnyd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word lists unspecified dock taxes and a USD 5 sunset-cruise tax, but no matching USD 10 Cartagena fee. Retain the assigned RU fee without making a commercial change."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5470a26ae34f7e17",
+      "field": "notIncluded",
+      "sourceTextSha256": "77e3fb6bcfb2945d6b309524a390d59f5cea941709368fe972d053a10172f7a5",
+      "text": "Oceanarium admission, $10 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdnyd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no oceanarium visit or its USD 10 admission charge. Translated the assigned RU exclusion without changing its amount."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6f33a625a5714b63",
+      "field": "notIncluded",
+      "sourceTextSha256": "3e900d0cba60a9f974e40a44d79639588f5ad43e16932eb40b08890656d61d7a",
+      "text": "International and domestic flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p215",
+            "textSha256": "59b4f8bab6ca98b009f8dd1f3f6935e8b23d5f91ceaad024a8013b46a206abcd"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the cited Word service wording as the corresponding standalone field label."
+      }
+    },
+    {
+      "blockId": "tour:note:fa518fb6ca5d16fd",
+      "field": "note",
+      "sourceTextSha256": "2253b56f9414ebc35c617a262388d8d97ba730a60451e62473bc3e9b007aa674",
+      "text": "If the hotels provided are unavailable, a hotel of similar category will be confirmed.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p201",
+            "textSha256": "4d1ea2413b833718b8e03b4a360b4edb5b59e4558ce6f5c85a82fdef25a201ae"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the cited Word service wording as the corresponding standalone field label."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdnyd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The pinned Word has no condition about changing the order of excursions while preserving the programme. Translated this assigned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:97e52e6fdb8c6ac4",
+      "field": "note",
+      "sourceTextSha256": "4201f701902b5dedf1b3756a1fbfaafab623ae356a06f5ced31f29d0ca1d0e9b",
+      "text": "An early check-out for a flight or excursion may mean missing breakfast at the hotel; Ada Tours does not compensate for such a breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdnyd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no missed-breakfast compensation condition. Translated the complete assigned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    }
+  ]
+}

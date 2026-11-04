@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1345,
-    "leased": 10,
-    "review": 1044,
+    "leased": 9,
+    "review": 1045,
     "ready": 10,
     "retryable": 0,
     "blocked_external": 2,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1345,
-      "leased": 10,
-      "review": 1044,
+      "leased": 9,
+      "review": 1045,
       "ready": 10,
       "retryable": 0,
       "blocked_external": 2,
@@ -1226,8 +1226,8 @@
         "word_2027": {
           "held": 0,
           "queued": 26,
-          "leased": 1,
-          "review": 32,
+          "leased": 0,
+          "review": 33,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T21:07:56.785Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1e": {
@@ -1377,12 +1377,6 @@
       "token": "ada-en-mw2io0ye-amanda-token",
       "expiresAt": "2026-11-04T21:05:31.288Z",
       "generation": 2
-    },
-    "ada-en-8eb10fb50a76": {
-      "jobId": "en:bulk:tour:tour_source_luchshee_v_venesuele:b009",
-      "token": "ada-en-8eb10fb50a76-t1",
-      "expiresAt": "2026-11-04T21:07:56.785Z",
-      "generation": 1
     },
     "ada-en-20261104-008515d4": {
       "jobId": "en:bulk:tour:tour_source_meksika_lindo:b001",
@@ -4907,9 +4901,11 @@
       "jobIds": [
         "en:bulk:tour:tour_source_luchshee_v_venesuele:b009"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_luchshee_v_venesuele:b009"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T19:40:16.984Z"
+  "updatedAt": "2026-11-04T19:40:23.995Z"
 }

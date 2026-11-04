@@ -484,7 +484,110 @@
         "claimedAt": "2026-11-04T07:06:32.841Z",
         "expiresAt": "2026-11-04T08:36:32.841Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a40ee2cc-p04-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-a40ee2cc",
+        "token": "ada-en-token-a40ee2cc-71df-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_panama_city_gamboa_6_days:b002",
+          "stableId": "tour_panama_city_gamboa_6_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "084907759f7ba1fd83315f31a8549590b0aab385fd0ecae76d6ca2fdeb92b893",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:690d8c8b89dcc747",
+              "field": "itinerary.label",
+              "sourceTextSha256": "b210a5ab2c504a491d8b2332905100a75b0eb4f50b671be8fc7c26f7a7701155",
+              "text": "Chagres and an Emberá community",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:51",
+                    "textSha256": "5fa8947df6a94051b71765a8d1175b9fcf1d493adccc3c54f6a54a45bca303ec"
+                  },
+                  {
+                    "ref": "word/document.xml:p:53",
+                    "textSha256": "780be6dc5d9995a12991879af27e508990aa01cee7fe022fd1f95a04118fcef6"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combines the Chagres destination with the Emberá community named in the exact day 3 heading and description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:19a866c12390f5a7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "21a3d26327bb71825f0f75c7e4e6d4fbdbd8a2c3e7f5fd442fcfd57e68d60e20",
+              "text": "Gamboa",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:59",
+                    "textSha256": "5c6ea6d16c47e2eb0f9e1f7784f69af5b275b5cb152a8779f1afa46bbebc75b3"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0c300caf0c4f8d29",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c51d3b583017b93e5bc13167952b3709e571ac97cbbef5a72b767b6940954f12",
+              "text": "Soberanía",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:63",
+                    "textSha256": "d9b2e801b02b7db0645af3f390abb373e2a345074360b236bd599105a0cbc957"
+                  },
+                  {
+                    "ref": "word/document.xml:p:66",
+                    "textSha256": "c220aede5be8676b655ed322341bcddd36276f0dcfe41bd14acff1cf85774694"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Uses the proper name of Soberanía National Park as the short route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:bb55e1d91d8ba206",
+              "field": "itinerary.label",
+              "sourceTextSha256": "711471feaaf900baa121eaad35ca5c73fbac7ea7983d0a68b3366c858b4eface",
+              "text": "Rainforest Discovery Center",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:63",
+                    "textSha256": "d9b2e801b02b7db0645af3f390abb373e2a345074360b236bd599105a0cbc957"
+                  },
+                  {
+                    "ref": "word/document.xml:p:68",
+                    "textSha256": "fca04fdb84f5a5e44889a5d5b7bd8b4994a9d932ad6197473da93979e2858e42"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the named visitor centre from the exact heading and programme passage."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:06:50.470Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

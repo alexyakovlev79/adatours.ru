@@ -1,0 +1,158 @@
+{
+  "jobId": "en:bulk:tour:tour_mexico_religious_journey:b009",
+  "stableId": "tour_mexico_religious_journey",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9809ccc1c7938ad9646a3c4ceb934bed84ed8e8d369f9eccdc1c6bad57ecf30a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:d85a76f54531006e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "86e96ecbcd83d37e8ad1f76307f697a091c3b3b84b953c125af01f9a17612105",
+      "text": "Old Archbishop's Palace in Mexico City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "f2adbed2e168c837c5eae5dc3b6e2597c41c660740cabbd7424c8f8ead45ea0e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named visit from the verified Word itinerary and retain the current RU location qualifier as a concise label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5208a0dccfddaf4f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fdedd8b35f35e09eef6c7e9f82e1d69bea105dd6f61c6f0cf37ecbd424c7e6a9",
+      "text": "Garibaldi Square",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p30",
+            "textSha256": "2cef13cb3a330108f47974df5538a3768656d132752638db687cd35675bfae5e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named visit from the verified Word itinerary and retain the current RU location qualifier as a concise label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a8dc35086cb8797a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1963c70b10b9aec3456123b2d36fe82ddcc67ee63793cc48e166e76f79c6d4b2",
+      "text": "4 April 2027",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-52870a61",
+        "wordAbsenceReason": "The verified Word uses numbered days and does not contain the current RU calendar date 4 April 2027.",
+        "wordEvidence": {
+          "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+          "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+          "inspected": "All OOXML paragraphs and commercial tables"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5c7cb208caad6d8e3b5a607ba4cfbbdab6841cd18a1d20356cfddcee464070ff",
+      "text": "Tlaxcala, Ocotlan and Puebla",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p35",
+            "textSha256": "75705b5b225da0be29406d6309517183057799c2cb94dd0687e93e957d282eb5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named visit from the verified Word itinerary and retain the current RU location qualifier as a concise label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "10ed572ab4420d38dc45958d166715b0c5f34ba19b27f65a69dbbcdaac362790",
+      "text": "4 April. Breakfast at the hotel. Depart Mexico City through mountains and pine forests for the San Miguel del Milagro Shrine, where Mass will be celebrated. Continue to Tlaxcala, the Monastery of San Francisco, the Shrine of Our Lady of Ocotlan and Puebla. The full programme of visits is set out in the excursion below. Return to Mexico City for a late dinner and overnight at Casa Blanca 4* or a similar hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-52870a61",
+        "wordAbsenceReason": "The Word day 4 paragraphs 35–45 provide visits, but no equivalent compact summary, RU calendar date, excursion cross-reference or combined hotel sentence; translate the current RU summary without duplicating the standalone excursion.",
+        "wordEvidence": {
+          "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+          "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+          "inspected": "All OOXML paragraphs and commercial tables"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:10e7a1839cfc348c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4c2cc3edfc7827c177f180334231aeee9086d09d09ba134107615d96f4ae15d5",
+      "text": "San Miguel del Milagro Shrine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "010097edf46108dc7236a6e43a531e0be18e8e593f8ba44213c02069b0ff69db"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named visit from the verified Word itinerary and retain the current RU location qualifier as a concise label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2417daaa7af3eeda",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7bb747e21d4b0905185e6d609dcd859f85ef817b616c245f969d4e2aae4d5d8f",
+      "text": "Tlaxcala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "010097edf46108dc7236a6e43a531e0be18e8e593f8ba44213c02069b0ff69db"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named visit from the verified Word itinerary and retain the current RU location qualifier as a concise label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:000bd0a5de8975fc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bdd3b19bff0de8e9e5719064e23c74527245734b60d96236681531db8cab05a5",
+      "text": "Monastery of San Francisco in Tlaxcala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "010097edf46108dc7236a6e43a531e0be18e8e593f8ba44213c02069b0ff69db"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named visit from the verified Word itinerary and retain the current RU location qualifier as a concise label."
+      }
+    }
+  ]
+}

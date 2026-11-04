@@ -515,7 +515,87 @@
         "claimedAt": "2026-11-04T07:52:40.988Z",
         "expiresAt": "2026-11-04T09:22:40.988Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-5d56534e-08-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-5d56534e4493",
+        "token": "lease-da131c3d187149a7b813992c83ea721b",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_panama_mice_7_days:b002",
+            "stableId": "tour_panama_mice_7_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "aee9bf85c4ce5c42e9785ac9b436826ae1b6bb4959dc0b7f7f2fe0099b18733f",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:7cc5ba1e37e79747",
+                "field": "itinerary.label",
+                "sourceTextSha256": "ffda203dde7dfa92fb71c7393cdbe3abc2e2a3911b7ad85097993a31946e423c",
+                "text": "Panama Viejo",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                  "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "fee36cb2fa12fc483178c8811f31660bf01bd6806962ae4b2df16a243ffac782"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract Panama Viejo from the exact Word city sightseeing passage as the short stable place label."
+                }
+              },
+              {
+                "blockId": "tour:note:24f18741f081d749",
+                "field": "note",
+                "sourceTextSha256": "1dadb6ae50fe9a323fd2f48085c1f27e39ded6067505488029ea1231e41ca596",
+                "text": "On request. Sample programme: 12–18 September 2026.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraph 5 gives the exact September 2026 date range but has no equivalent note identifying it as an on-request sample programme. Translate the full current RU note, preserving its example status and 2026 year; the preselected queue source explicitly records editionYear2026."
+                }
+              },
+              {
+                "blockId": "tour:included:3ad0d6ec5711e492",
+                "field": "included",
+                "sourceTextSha256": "d44c5f7808eed9bc641598988e68ae24b200d594295b05b9434489a1d4b3c842",
+                "text": "Airport meet-and-assist services and transfers according to the group’s agreed schedule",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The Word details individual arrivals and transfer movements in paragraphs 23–25 and 90–99, but does not contain this single current RU included-summary sentence. Translate the exact RU summary, retaining the agreed group schedule qualifier."
+                }
+              },
+              {
+                "blockId": "tour:included:47831eecd9c4803f",
+                "field": "included",
+                "sourceTextSha256": "0e1f41692ae78954575f99f1a279f22da2f724f8d60c3a8aeade65b9dacf0e65",
+                "text": "Private vehicles and group coaches according to the agreed schedule",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraphs 34,45,56,65,76,95–97 detail the private fleet and coaches by day but contain no equivalent one-line included summary with the current agreed-schedule qualifier. Translate that exact RU field without adding vehicle capacity or hours."
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "wordEvidence": {
+            "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+            "sha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+            "modifiedTime": "2026-10-19T15:50:32.632Z"
+          }
+        },
+        "at": "2026-11-04T07:54:09.010Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

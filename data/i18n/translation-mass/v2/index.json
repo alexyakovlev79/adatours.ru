@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2121,
-    "leased": 9,
-    "review": 279,
+    "leased": 8,
+    "review": 280,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2121,
-      "leased": 9,
-      "review": 279,
+      "leased": 8,
+      "review": 280,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -346,8 +346,8 @@
         "word_2027": {
           "held": 0,
           "queued": 63,
-          "leased": 1,
-          "review": 9,
+          "leased": 0,
+          "review": 10,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T07:18:03.827Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "18": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-d8b5c6c4c917": {
-      "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b002",
-      "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
-      "expiresAt": "2026-11-04T07:18:03.827Z",
-      "generation": 1
-    },
     "ada_en_4c0a9bc31e22": {
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b010",
       "token": "ada_en_4c0a9bc31e22_token_20261104",
@@ -2377,9 +2371,11 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b002"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:53:30.780Z"
+  "updatedAt": "2026-11-04T05:53:37.724Z"
 }

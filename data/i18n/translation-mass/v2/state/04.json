@@ -384,7 +384,90 @@
         "claimedAt": "2026-11-04T06:49:47.700Z",
         "expiresAt": "2026-11-04T08:19:47.700Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_7d6c4f36ac68.explorer.b014.4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_7d6c4f36ac68",
+        "token": "tok_7d6c4f36ac68_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b014",
+          "stableId": "tour_colombia_explorer_9_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "1489b278b06b69091b04e6113c1483cf054a9491474d6b97ed3bf90b7bf15780",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:3331c3b8f968ccd1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2c71183f80becb0100c9d0ca6f975661a7dcb2d992668d01ecc41d188da02003",
+              "text": "Rosario Islands",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p131",
+                    "textSha256": "3130598356a2aaa6fbea5e87546b8d88e89a59fcfe4f0bdcd79ba6875fbc9c17"
+                  },
+                  {
+                    "ref": "word/document.xml:p135",
+                    "textSha256": "bbfed30d787b26827ee4a195b555df167d19c3689a7f45e091e8310dd01c30af"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the geographic name from the Word day heading and narrative as an itinerary place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:df1cfd08c56101b0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3584a22b6edcb23ea2752efb0353fa1a2343497fd54a1b35ba595b9acc52b1c5",
+              "text": "Isla Grande",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_7d6c4f36ac68",
+                "wordAbsenceReason": "The Word names Isla Majagua but does not name Isla Grande; retain the exact current RU place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4854bdbfff2ec479",
+              "field": "itinerary.label",
+              "sourceTextSha256": "620adb15945e5f918c51b0be668a32316a1b3de518e93b6e40e7df0ca136640e",
+              "text": "San Pedro de Majagua",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_7d6c4f36ac68",
+                "wordAbsenceReason": "The Word uses Isla Majagua without the San Pedro de Majagua name supplied by the current RU place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+              "field": "itinerary.title",
+              "sourceTextSha256": "7dcb0589e8aa3840176a188da735e3a716c586c146b5f7a22301a6fba89a6a18",
+              "text": "Departure from Cartagena",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p137",
+                    "textSha256": "2b7252a15e4220c09845cafb7ab147aaba1210be8c87242685f245e334bdc8de"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Express the departure described in the Word final-day paragraph as the itinerary heading."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:50:41.593Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

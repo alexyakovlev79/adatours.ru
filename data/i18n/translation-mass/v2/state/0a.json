@@ -310,7 +310,7 @@
         "expiresAt": "2026-11-04T09:14:41.644Z"
       },
       "checkpoint": {
-        "id": "ada-en-2ee259e72fda-010-04",
+        "id": "ada-en-2ee259e72fda-010-08",
         "format": "inline-v1",
         "ownerId": "ada-en-2ee259e72fda-20261104",
         "token": "ada-en-2ee259e72fda-token-20261104",
@@ -391,10 +391,86 @@
                 "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
                 "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:70d90edb0715adb7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a2104752adf834a1a84e1c3eb73ec14edff7fd60b562acf7dd8f95b9a3498e57",
+              "text": "Cuiabá",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p19",
+                    "textSha256": "5508dc9456559a57f3b05cc728311e5a3f8b94d19f75880435d436debd1899ed"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact arrival city name Cuiabá from the verified Word Day1 heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:25f8152dbe07970b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "23bf5e8a9921605c6594c2d4c3109c73bcfb93a817d18cf0adbd19f55492919e",
+              "text": "Jardim d’Amazonia Lodge",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p61",
+                    "textSha256": "e3059db8f9e76ec4f015b29c1ee796d8f22d239001bf3a3324e2db81b92189ec"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the existing lodge name from the verified included accommodation line, omitting the number of nights."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:aeab39e3af9d6146",
+              "field": "itinerary.label",
+              "sourceTextSha256": "152cb203818d9720a6961be82ccc7c6e71c15c63e07fb4c2aae31c1c61fd6759",
+              "text": "Bom Jardim",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p28",
+                    "textSha256": "9867f3e5405c4a7815e2e105050218134f73279857d633ea4ac13db053588ce2"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract Bom Jardim from the verified Word Day3 route heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:708bfcfcdfb83a87",
+              "field": "itinerary.label",
+              "sourceTextSha256": "34f00a472fdce88d3b5ac8eb33311edd92f8c7e89b1a1c3b7ad55e9903d8dd23",
+              "text": "Chapada dos Guimarães",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p29",
+                    "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract Chapada dos Guimarães from the verified Word Day3 programme paragraph as the route label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:45:49.446Z"
+        "at": "2026-11-04T07:45:53.571Z"
       },
       "submission": null,
       "review": null,

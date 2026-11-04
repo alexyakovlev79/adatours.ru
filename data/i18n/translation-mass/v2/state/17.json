@@ -368,7 +368,100 @@
         "claimedAt": "2026-11-04T06:40:55.665Z",
         "expiresAt": "2026-11-04T08:10:55.665Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_8c4fca0d2a61:b015:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_8c4fca0d2a61",
+        "token": "token_8c4fca0d2a61_c1970ba9",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b015",
+          "stableId": "tour_chile_hidden_secrets_9_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "acb6390ac27cb8d684ae5b5538003f14b7019615934f9684c15136ca263028fc",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:a404eab046afb487",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31be506d83b68bcdd8a07f3599fc8d68712cc64048aea9c66f2a6cc40600fe43",
+              "text": "Río Serrano",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "f9333366ddf60d537739bc8d86671fa93b6eb094087d567e61f71e5b6c604356"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact village name from the verified Day 8 Word paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0f4cddf152176044",
+              "field": "itinerary.label",
+              "sourceTextSha256": "98bc3b0a0b38a0abd060c3deb05b42cb03a3a3b07265672a78752dcc3b19b88d",
+              "text": "Pehoé Lake",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "c098f6066475678dece3336f5fb7ab6238049d7ee29e994c770e38863d9f59da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact lake name from the verified Day 8 Word paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fef4b46468dd4cc1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "aaba38a08249a9eb5d3e57b8b509206b7f755800430345a882849a23743e29d4",
+              "text": "Salto Grande Waterfall",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "c098f6066475678dece3336f5fb7ab6238049d7ee29e994c770e38863d9f59da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose a concise landmark label from the exact named waterfall in the Word paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:19b64a83765e7213",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a3ab2d4658058d1dfb590f8552e47e6f207616d304f2f27b0ac08ec64f9c703e",
+              "text": "Nordenskjöld Lake",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "c098f6066475678dece3336f5fb7ab6238049d7ee29e994c770e38863d9f59da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact lake name from the verified Day 8 Word paragraph."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:41:41.432Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

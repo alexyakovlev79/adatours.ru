@@ -329,181 +329,22 @@
     {
       "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b012",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "0ff0428141b8087081e513a373f8e13720afd82d6d76fa23fbaabe3cc93a58a2",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-b434d08210a0",
-        "token": "bfbfb4f3de78012c0cd0bd7ebf54a2f1ac6a9b548d6a8263",
-        "claimedAt": "2026-11-04T09:01:36.381Z",
-        "expiresAt": "2026-11-04T10:31:36.381Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-3f45d665-job-08-c8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-3f45d665-translator",
-        "token": "ada-en-token-3f45d665-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b012",
-          "stableId": "tour_chile_hidden_secrets_9_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "0ff0428141b8087081e513a373f8e13720afd82d6d76fa23fbaabe3cc93a58a2",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:c2109e2a4ccf6b4e",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c35802742692df6ad768c86b4f214cfdd06c2b1041750eae0d9fa93aea967d4f",
-              "text": "San Rafael Glacier",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p46",
-                    "textSha256": "0025e92bffc16034d9bf3d2803e52cd85d5300086c47f7aaa67c109e1188c691"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:603129aa44f76e09",
-              "field": "media.alt",
-              "sourceTextSha256": "4c54d05dbfce8d98323086ee5d85c7c358b25883b8aba82749c92db95a1f1e21",
-              "text": "Puerto Río Tranquilo on the shore of Lago General Carrera, surrounded by mountains, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-3f45d665-translator",
-                "wordAbsenceReason": "The exact Word contains the route description but no photo-specific alt text showing this lakeside settlement and mountains; translate the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:af2c52fd31a16b40",
-              "field": "media.hover",
-              "sourceTextSha256": "feabddab7f74aee390f4bb4c06017cf7df04367e3fad6cb2d152382b2b67b6af",
-              "text": "Chilean Patagonia: a village beside the turquoise waters of Lago General Carrera",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-3f45d665-translator",
-                "wordAbsenceReason": "The exact Word has no equivalent image hover caption for this particular website photograph; translate the current RU hover text."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
-              "field": "itinerary.title",
-              "sourceTextSha256": "e23e08faf58f01c8bf403f55323460a2616bd19947bb0b40db16eb70926e1f3b",
-              "text": "Marble Caves – Balmaceda – Punta Arenas – Puerto Natales",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p113",
-                    "textSha256": "8f2c1f325c61564a1346725c6901c330587e12404a64a4693f0e98769032990b"
-                  },
-                  {
-                    "ref": "word/document.xml:p114",
-                    "textSha256": "49d7ccb815958dcd4cc61d10d868e9b7c49f84c9aa42010c572e6f438712286c"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Compose the short ordered route heading from the Word Day 7 boat excursion, Balmaceda airport, Punta Arenas arrival and Puerto Natales transfer."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:2e780f63f4172747",
-              "field": "itinerary.text",
-              "sourceTextSha256": "63b68563bc4959bb0efef6a9511638df2ffffc1c0ce25188a0d05d89850b890c",
-              "text": "Day 7 · In the morning, an excursion by private boat to the famous Marble Caves (Catedrales de Mármol): extraordinary formations sculpted over thousands of years by the waters of Lago General Carrera, their swirling blue and white chambers among the most photographed sights in Patagonia.\n\nThe journey then continues along the Carretera Austral back to Balmaceda Airport for a regional flight to Punta Arenas with DAP Airlines (Aerovías DAP). On arrival in Punta Arenas, a ground transfer takes you to Puerto Natales, gateway to Torres del Paine.\n\nHotel Altiplánico Puerto Natales\n\nHotels as listed or similar, standard rooms, breakfast basis.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p113",
-                    "textSha256": "8f2c1f325c61564a1346725c6901c330587e12404a64a4693f0e98769032990b"
-                  },
-                  {
-                    "ref": "word/document.xml:p114",
-                    "textSha256": "49d7ccb815958dcd4cc61d10d868e9b7c49f84c9aa42010c572e6f438712286c"
-                  },
-                  {
-                    "ref": "word/document.xml:p159",
-                    "textSha256": "79d28651826febf2809459952cba10981f6b570d2c9c5b62dfb19f54cbb4fd43"
-                  },
-                  {
-                    "ref": "word/document.xml:p161",
-                    "textSha256": "5fdacdf8a306191d503c179f5a3ef63d52a956f10237a2e2ebb761878785fd0d"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b3c510d32f7e3951",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2bcb3e19d83c4cba1d16f0cb73102d0c334b4b161f06b6ba156b40f8ea18ce84",
-              "text": "Puerto Río Tranquilo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p151",
-                    "textSha256": "c68744724179f2c71cf89e20164605827e32cfd0eb972b4823aaeb629fd2490f"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:01df585701c831b7",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e3a34387f20a4c2514690c2bddb5f925e2d243be1e944629d70553c45bc960c4",
-              "text": "Marble Caves",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p49",
-                    "textSha256": "3170273ab280e4f39f354560e8c8488401a91f9a5f631b60162eff1726893c49"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:c2586fa2a856aba0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1f84b7eda8f68078cf52b0ea3cd9110d4b6006d76b0072f1a8b18560df1f4746",
-              "text": "Lago General Carrera",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
-                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p100",
-                    "textSha256": "ea4cc82248826cd5a14f964a2e70fb5f3955fba389d98d56ef9e8a74ccacd7db"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact Lago General Carrera name from the corresponding Word itinerary paragraph for the existing place label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:08:10.752Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-b434d08210a0-s002",
+        "blobSha": "0470e1ac1290384acfbb19794e6f3e8246c03ffa",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_hidden_secrets_9_days_2027_b012/ada-en-b434d08210a0-s002.json",
+        "at": "2026-11-04T09:03:25.684Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

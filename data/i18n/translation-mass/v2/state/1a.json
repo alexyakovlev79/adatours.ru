@@ -628,7 +628,7 @@
         "expiresAt": "2026-11-04T07:48:38.815Z"
       },
       "checkpoint": {
-        "id": "ada_en_6c7d31_s005_c04",
+        "id": "ada_en_6c7d31_s005_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_20261104_0555_6c7d31",
         "token": "ada_en_token_6c7d31_20261104",
@@ -734,10 +734,76 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:notIncluded:e304461ecf9efba1",
+              "field": "notIncluded",
+              "sourceTextSha256": "d613d2359a6b3f4c832ceb208e5200d4c6bd508ff3ec12a7a84c2de258562646",
+              "text": "Arrival and Departure Taxes",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p77",
+                    "textSha256": "b0e5b945420bad0c23d53e24815b04c0cd3062caf7882f3af3d679934120e554"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:46f4669ed50621c8",
+              "field": "notIncluded",
+              "sourceTextSha256": "c7cd07f80c91ea3f703b84a635cfceb1d298f1017b1c3e1bdb194bf5da22f140",
+              "text": "Extras in hotels (laundry, phone calls, room service, etc.)",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "d49ecda401653c64bc14e8554da91269dfdb60d227485edc4a6d18a1cac28760"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:note:b1f3673ba8b35e87",
+              "field": "note",
+              "sourceTextSha256": "7457e1d10dcf189e229ef0e59439d45f844d136cb2c505bdbf89a72acfc8cbbb",
+              "text": "The programme is designed for groups of 2 or more and can be arranged for any dates in 2027, except during Christmas, Easter and New Year periods.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "Word p6 states minimum two participants and the holiday exclusions; p1 identifies 2027. The current RU note combines these into one sentence, which is not present verbatim in Word. Retain the current year and all exclusions.",
+                "inspectedWord": {
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
+                }
+              }
+            },
+            {
+              "blockId": "tour:note:51ab5193988024b7",
+              "field": "note",
+              "sourceTextSha256": "42db5e3d83894a07558743f5d75f945f57ed067214d6d18115afa316a5de3eed",
+              "text": "The final hotels are confirmed before booking: day 2 — El Convento or Real La Merced; day 5 — Villa Colonial or Villa Paraiso; days 6–9 — Victoriano or Alcazar. The overnight location on days 2 and 5 also requires confirmation.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "No equivalent hotel-confirmation note exists in the verified Word. Word p25 names Villa Colonial while its hotel table p57 names Villa Paraiso; p12/p51 name Real La Merced and p28/p59-p65 Alcazar. Translate the current RU unresolved alternatives and overnight-location caveat without selecting a hotel or changing the itinerary.",
+                "inspectedWord": {
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
+                }
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:20:51.051Z"
+        "at": "2026-11-04T06:20:56.053Z"
       },
       "submission": null,
       "review": null,

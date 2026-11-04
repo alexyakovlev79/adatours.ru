@@ -1,0 +1,182 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b006",
+  "stableId": "tour_brazil_three_ecosystems_8_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "749f6fa7e643a2641b43ac31d88e5f609f9cef833055defddf9d08bdf9f9904b",
+  "sourceChecks": {
+    "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+    "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+    "sha256Verified": true,
+    "modifiedTime": "2026-09-14T19:48:05.850Z",
+    "yearFolder": 2027,
+    "wordFilename": "3 Ecosystems Student group 2026 Amazon,Savannah,Pantanal 8d7n ENG.docx",
+    "wordHeading": "Amazon, Savanna and Pantanal 2026",
+    "commercialTables": 1,
+    "tariffObservation": {
+      "currency": "USD",
+      "basis": "per person",
+      "groupSize": "2/3 PAX",
+      "amount": 5514,
+      "wordValidity": "All Year 2026",
+      "evidenceParagraphs": [
+        12,
+        13,
+        15,
+        17
+      ],
+      "noTariffEditsInPacket": true
+    },
+    "sourceDifferences": [
+      "Selected matching document is in yearFolder2027 but filename, heading and tariff validity say2026. No rematching or new edition year introduced.",
+      "Word p29 covers the included Enchanted Aquarium/Salobra snorkelling route, while current RU adds a cross-reference to the separately represented water activity module below. Current RU modular structure and included scope retained.",
+      "Word day3 transfer corresponds to current RU itinerary index3; no day ordinal introduced or route order changed."
+    ]
+  },
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "96e8c3ef59b862c7c359141482ab7657e9212618b2f1145061e90eea145f6a78",
+      "text": "Amazon – Bom Jardim – Chapada dos Guimarães",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the current RU route title using the exact Word place names Amazon, Bom Jardim and Chapada dos Guimarães in the same travel order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c84ea582d9235fe434abf69b54cf44cc20a22ffcb646d3456c6e60a99b4cb5ce",
+      "text": "After breakfast, depart from the Amazon for Bom Jardim, where the Cerrado meets the rainforest. This includes a short trail to the Enchanted Aquarium and around two hours of snorkelling in clear water; the standalone water activity module is shown below.\n\nAfter lunch, transfer to Chapada dos Guimarães. Rock formations can be seen along the way. In town, walk through the historic centre and visit the Geodesic Mark of South America viewpoint overlooking the surrounding plains.\n\nCheck in at Park Eco Lodge, dinner and overnight.\n\nMeals: breakfast, lunch, dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada_en_6c7d31_run",
+        "wordAbsenceReason": "Word p29 has the corresponding longer day description, but no equivalent of the current RU cross-reference to a standalone water activity module or this condensed structured block. Translate current RU faithfully, preserving the included two-hour snorkelling, meals and cross-reference without adding activities.",
+        "inspectedWord": {
+          "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+          "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b8753696cabeeb2a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "152cb203818d9720a6961be82ccc7c6e71c15c63e07fb4c2aae31c1c61fd6759",
+      "text": "Bom Jardim",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Word place name Bom Jardim from the corresponding transfer paragraph as the current RU itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1c86ffef9f19f1cd",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b0bbc0138a5d854d93a6f0d5e4d2e506730dc2b0698a841323f3e9610348076f",
+      "text": "Salobra River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Word river name Salobra River from the corresponding snorkelling paragraph as the current RU itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0da32b1b0320bc1c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "34f00a472fdce88d3b5ac8eb33311edd92f8c7e89b1a1c3b7ad55e9903d8dd23",
+      "text": "Chapada dos Guimarães",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Word destination name Chapada dos Guimarães from the corresponding transfer paragraph as the current RU itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ad439dfbdf7ba275",
+      "field": "media.alt",
+      "sourceTextSha256": "56b077dad08075fd0772b2784f1fbd4c36773cc5e0ffb13c8165c6ab190064fb",
+      "text": "Clear turquoise water of the Salobra River with underwater plants and forested banks, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada_en_6c7d31_run",
+        "wordAbsenceReason": "The selected Word has no photograph-specific Salobra River underwater plants alt text; translate the current RU image description.",
+        "inspectedWord": {
+          "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+          "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+        }
+      }
+    },
+    {
+      "blockId": "tour:media_hover:9250dbd464af7ba5",
+      "field": "media.hover",
+      "sourceTextSha256": "97147e749632d1326d18850b8b455ebd4d0ed7fad2ab653418f57a4da01ea50b",
+      "text": "Salobra River: underwater vegetation in clear water",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada_en_6c7d31_run",
+        "wordAbsenceReason": "The selected Word has no photograph-specific Salobra River hover caption; translate the current RU caption.",
+        "inspectedWord": {
+          "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+          "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:85e122039e63810b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "152cb203818d9720a6961be82ccc7c6e71c15c63e07fb4c2aae31c1c61fd6759",
+      "text": "Bom Jardim",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Word place name Bom Jardim as the current RU place label for the separately represented next itinerary module; do not change the module sequence."
+      }
+    }
+  ]
+}

@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1906,
-    "leased": 14,
-    "review": 489,
+    "leased": 13,
+    "review": 490,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1906,
-      "leased": 14,
-      "review": 489,
+      "leased": 13,
+      "review": 490,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -386,8 +386,8 @@
         "word_2027": {
           "held": 0,
           "queued": 54,
-          "leased": 1,
-          "review": 12,
+          "leased": 0,
+          "review": 13,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -417,7 +417,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T10:27:45.552Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "19": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261104-amanda-5498d95b": {
-      "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b008",
-      "token": "ada-en-5498d95b-20261104-persistent",
-      "expiresAt": "2026-11-04T10:27:45.552Z",
-      "generation": 2
-    },
     "ada-en-20261104-52870a61": {
       "jobId": "en:bulk:tour:tour_source_antarktida_programma_na_ves_den:b002",
       "token": "ada-token-52870a61-8d39-45ab-bf16",
@@ -2979,7 +2973,9 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_argentina_peru_14d:b008"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_brazil_argentina_peru_14d:b008"
+      ]
     },
     "ada-en-20261104-52870a61": {
       "token": "ada-token-52870a61-8d39-45ab-bf16",
@@ -2997,5 +2993,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T08:58:59.552Z"
+  "updatedAt": "2026-11-04T08:59:07.544Z"
 }

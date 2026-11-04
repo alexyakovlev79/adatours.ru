@@ -347,173 +347,22 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d9dd4623515392c1d2c1e40c37abc3180f30a2a0c08c837cfafbfb6b4225bf77",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "claimedAt": "2026-11-04T06:21:37.705Z",
-        "expiresAt": "2026-11-04T07:51:37.705Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-8526ba7437bc-b004-cp8-tour_colombia_complete_11_days",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b004",
-          "stableId": "tour_colombia_complete_11_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "d9dd4623515392c1d2c1e40c37abc3180f30a2a0c08c837cfafbfb6b4225bf77",
-          "blocks": [
-            {
-              "blockId": "tour:notIncluded:cbf51738536ca22f",
-              "field": "notIncluded",
-              "sourceTextSha256": "1fe178604f2d6772a7fb2e39f41351c366fe5c4ac916f7635f083503abd45482",
-              "text": "Optional tours and activities",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p219",
-                    "textSha256": "4b57e1534c6943a0668f637d4ad32e9c7f9490a3af9ea875217f9dd20318c36c"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Removed only the decorative list marker from the exact Word exclusion."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:f9c1ec798364fe9c",
-              "field": "notIncluded",
-              "sourceTextSha256": "5790027c373737c8b0f4cdaa1cdde9981659078319d38026856f3827b33ea467",
-              "text": "Lunches, dinners, beverages and any services not specified in the programme; all-inclusive meals on San Andrés are subject to the resort’s terms.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraph 220 lists excluded meals and services but omits the RU qualification about the resort’s all-inclusive terms; translated the full current RU block to retain it."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:dd8eb2ee319d9d99",
-              "field": "notIncluded",
-              "sourceTextSha256": "553adac15a3b9f4eaffe367eca8e74e5842744575c9ef03832f2957e930a261f",
-              "text": "Gratuities for guides, drivers and service staff",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p221",
-                    "textSha256": "77a53e997d554b4a2e9f11216085d68775d2bc99ce01911c24ee1528d4530680"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Removed only the decorative list marker from the exact Word exclusion."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:a0b0ac37984ff5a4",
-              "field": "notIncluded",
-              "sourceTextSha256": "0e4fcf37992068351109d852434de959046cb7898faede243dc02bc300996ac6",
-              "text": "Personal expenses",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p222",
-                    "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Removed only the decorative list marker from the exact Word exclusion."
-              }
-            },
-            {
-              "blockId": "tour:note:86ab84107d29b126",
-              "field": "note",
-              "sourceTextSha256": "659f1d6c89910c0aa2b1d52200466bd7166a9d5342e7300739b41782bf11378d",
-              "text": "Before paying, confirm the number of nights and the final calculation: the daily programme and route outline show 1 night in Cartagena and 10 nights in total; the hotel table lists 2 nights in Cartagena, making 11 nights. The rates below have been copied from the original table without recalculation.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The selected Word’s hotel table shows 1 night in Cartagena; it contains no equivalent to this current RU warning about conflicting legacy night counts. Translated the warning without changing prices or the RU source."
-              }
-            },
-            {
-              "blockId": "tour:note:daad65ee74730fec",
-              "field": "note",
-              "sourceTextSha256": "b2ae4e8397c1c296cd2424fb5b9e6203ba3c113ab29187c187598c3adefa496a",
-              "text": "The tour operator may substitute the hotels listed with others of a similar category, while maintaining the same standard of quality and service.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p205",
-                    "textSha256": "e8d858f8cceaaf97928afc2d6d774d76179399ea51e8eee7f6b3f3db1d197d42"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Removed only the decorative list marker; the approved Word wording is otherwise retained."
-              }
-            },
-            {
-              "blockId": "tour:note:cf102f5073001b6d",
-              "field": "note",
-              "sourceTextSha256": "3e104592f478b20225994f7ef574359bdab3f968edb02d8894b2b599ce74e96d",
-              "text": "The order of excursions may be modified due to operational requirements, weather or force majeure, while respecting the content of the programme.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p206",
-                    "textSha256": "8359f79f893c1035faf443c37df8ad6cf58cb129d85dd8ae14a6967b94364617"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Removed only the decorative list marker; the approved Word wording is otherwise retained."
-              }
-            },
-            {
-              "blockId": "tour:note:ca90b6c1a56f9faa",
-              "field": "note",
-              "sourceTextSha256": "f6a76c2ce9427a2f12b3168549f406dbeef2d856ee7b9fd19b7212d4dbab6903",
-              "text": "For early-morning departures, hotels may not be able to provide breakfast; no compensation is offered in such cases.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p207",
-                    "textSha256": "7d3b8773b0d7d3479957682bafb5f7c987712b6f576632b15ea8632e769d7270"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Removed only the decorative list marker; the approved Word wording is otherwise retained."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:23:16.216Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-8526ba7437bc-tour_colombia_complete_11_days-b004",
+        "blobSha": "03d8566e0d25db32bdc846a90f8a82d87eeced8a",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_complete_11_days_b004/ada-en-20261104-8526ba7437bc-tour_colombia_complete_11_days-b004.json",
+        "at": "2026-11-04T06:47:13.455Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

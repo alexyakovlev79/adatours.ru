@@ -142,7 +142,88 @@
         "claimedAt": "2026-11-04T06:09:10.327Z",
         "expiresAt": "2026-11-04T07:39:10.327Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-150b76fa3667-003-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-150b76fa3667",
+        "token": "ada-en-150b76fa3667-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b004",
+          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "d1e8f05385ecc33322e1df9304d8794bf40d6017230d2590193f1bf4b88b42ed",
+          "blocks": [
+            {
+              "blockId": "tour:note:0872fff4600425c8",
+              "field": "note",
+              "sourceTextSha256": "a3de7627141eabc03091383134f4cc416601b3893e03f64b5cc713ed3c96d68f",
+              "text": "After arrival in Buenos Aires, the final destination of the included transfer is to be confirmed; the itinerary allows for 2 nights in the city.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 paragraph 92 says transfer to the hotel and the accommodation table gives 2 nights in Buenos Aires; the current RU contains a specific transfer-endpoint clarification not present as a Word note.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:note:5f9c4d2f1ca89728",
+              "field": "note",
+              "sourceTextSha256": "25e6e0ebe420c0469992eb610b40d2b4162e5d0fe055fa7c2f9edea5319ebe25",
+              "text": "Optional excursions are arranged around the main programme. The trip to Uruguay is optional; the main itinerary covers Brazil, Argentina and Chile.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 optional-excursion table includes Montevideo in paragraphs 245–249, but contains no equivalent scheduling and main-country scope note; translate the current RU clarification.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "727286c5046da7a820085cd3e627a3af5ee5307eeec1f06296fd1732460aecda",
+              "text": "Arrival in Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p67",
+                    "textSha256": "b65ccc550eefe51436886b35993944b8dde562184c4b04d6b1ac69ef2e348bee"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the arrival event and exact city name from the day-one paragraph as the existing itinerary heading, without adding services."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "adcdb3cc1cac7f48ea1229e76a7ff34e7a4e0c3828997c7b72601abc79d04cfe",
+              "text": "Day 1 · Arrival at Rio de Janeiro Airport, meeting and transfer to the hotel. Free time. Rio is green hills, blue skies, rocky peaks, coves, islands and beautiful beaches: Brazil’s second-largest city and one of the most beautiful in the world. At nightfall, the hillside lights encircle the city like a shimmering necklace.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p67",
+                    "textSha256": "b65ccc550eefe51436886b35993944b8dde562184c4b04d6b1ac69ef2e348bee"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:10:10.651Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

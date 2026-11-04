@@ -379,7 +379,72 @@
         "claimedAt": "2026-11-04T06:47:20.540Z",
         "expiresAt": "2026-11-04T08:17:20.540Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-8526ba7437bc-b006-cp4-tour_colombia_essential_5_days",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-8526ba7437bc",
+        "token": "ada-en-token-8526ba7437bc",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b006",
+          "stableId": "tour_colombia_essential_5_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "fef6c5128751d8c1b72f4ba3ef356bb6c0dd721198bca7bbe5474ad9a0cc8cd2",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:1f7e609143e8315d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3584a22b6edcb23ea2752efb0353fa1a2343497fd54a1b35ba595b9acc52b1c5",
+              "text": "Isla Grande",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The selected Word names Isla Majagua in its Rosario Islands programme, but does not contain the current RU place label Isla Grande; translated the existing canonical RU label without remapping places."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:15957acb079c4f52",
+              "field": "itinerary.label",
+              "sourceTextSha256": "620adb15945e5f918c51b0be668a32316a1b3de518e93b6e40e7df0ca136640e",
+              "text": "San Pedro de Majagua",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The selected Word uses Isla Majagua, without the full current RU label San Pedro de Majagua; retained the proper name from the RU itinerary."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:3dfab1ec2fa7482a",
+              "field": "media.alt",
+              "sourceTextSha256": "22737ad02ce98683a80672b79e8a3ac29aef7f91b2aa44aa0b4618b64855ac9c",
+              "text": "The bow of a boat above clear water between green islets, Rosario Islands, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The Word contains programme text, but no matching image alt description of this boat and the green islets; translated the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:92f2bc6f2faab61d",
+              "field": "media.hover",
+              "sourceTextSha256": "777232ea21f02dbb574f1462fc209c44500a3103fa421ac2f6299d7df30dff65",
+              "text": "Rosario Islands, Colombia: the bow of a boat above clear water between green islets",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The Word contains no hover caption matching this boat image; translated the current RU caption."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:49:00.994Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -470,7 +470,7 @@
         "expiresAt": "2026-11-04T09:11:46.088Z"
       },
       "checkpoint": {
-        "id": "ada-en-2ee259e72fda-008-04",
+        "id": "ada-en-2ee259e72fda-008-08",
         "format": "inline-v1",
         "ownerId": "ada-en-2ee259e72fda-20261104",
         "token": "ada-en-2ee259e72fda-token-20261104",
@@ -558,10 +558,76 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the exact site name in the verified Word paragraph as the concise current day heading."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "6fcff22f3eebd4b487430edc92b97435d1ee2bb17463ac6e0c8e8cf1f57431fb",
+              "text": "An 8-hour trip to the Santa Bárbara Cenotes, starting between 9:00 and 9:30 am. Tour languages are English and Spanish. Shared transport, cenote entrance tickets and the necessary equipment are included: a life vest, bicycle or horse-drawn cart. Overnight at a hotel in Mérida. Meals, tips and personal expenses are not included.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word logistics p77 and service lists p84/p85 confirm every current RU condition, duration, departure window, languages, equipment and exclusion, but no single corresponding narrative passage combines them. Translate the current RU concise service paragraph without adding the separate Word excursion narrative.",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7fa10f5b49b8663d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3c576274d32f4dd78b3c71d7c491471ad379842e9e605b84d3815c877c6285a8",
+              "text": "Mérida",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p84",
+                    "textSha256": "929d753a2e887aa029d26248f717b7baaa115d2d3433b44369e3634c353e8b2a"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact overnight city name Mérida from the verified Santa Bárbara day services."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f8c3596083bd5156",
+              "field": "itinerary.label",
+              "sourceTextSha256": "70341f5dcab8b8c45083bf4263521636f6d15d7f3faaea02c9fc8b4873f2ab2d",
+              "text": "Santa Bárbara Cenotes",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "4aa13e432ac8c0ffe6e804d8028dd703a31d836dcf4129f81a02d0fd442d0707"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact destination name Santa Bárbara Cenotes from the verified Word programme paragraph."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:6deb3f858be625c0",
+              "field": "media.alt",
+              "sourceTextSha256": "f40a2577b374d9b4afff5bcc791f52931c9f7d84ce4ef141362fa3a94a044c3d",
+              "text": "Turquoise water in a Santa Bárbara cenote beneath a limestone vault, Yucatán, Mexico",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The verified Word describes cenotes but contains no matching photograph alt caption for this current RU limestone-vault view.",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b"
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:42:55.321Z"
+        "at": "2026-11-04T07:42:59.677Z"
       },
       "submission": null,
       "review": null,

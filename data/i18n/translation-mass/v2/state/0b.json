@@ -360,7 +360,7 @@
         "expiresAt": "2026-11-04T07:52:47.421Z"
       },
       "checkpoint": {
-        "id": "ada-en-3f45d665-b006-01-c4",
+        "id": "ada-en-3f45d665-b006-01-c8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-3f45d665-translator",
         "token": "ada-en-token-3f45d665-20261104",
@@ -436,10 +436,92 @@
                 "runId": "ada-en-20261104-3f45d665-translator",
                 "wordAbsenceReason": "The exact Word document has no hover caption for this website photograph; translate the current RU image hover text."
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p12",
+                    "textSha256": "14235775568d92144e5f005a0a96ed82d1ce92732b1e2fd6ea0cea33516d6aee"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Remove the Day 2 prefix from the Word heading to use its exact place name as the itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "fdce71a0f596ad2f1c2bd1530ccad426cdcc2a6fcacee929a99f4f8a7d92fd87",
+              "text": "After breakfast you have the chance to go on a half-day excursion to the Sugar Loaf. The first stop is the Urca Mountain, with a wide viewing area that also offers the possibility to have a snack in the restaurant on top of the mountain. On the mountain of Sugarloaf you will have a beautiful view of Rio, Copacabana beach, the bay, the surrounding mountains, islands in the ocean, bridge Niteroi, and the statue of Christ on Corcovado Mountain. After going down by cable car, the tour continues by car to the central regions of the old town of Rio where you can admire several old churches, monasteries, the main cathedral of the city as well as buildings in colonial style. Duration: 4 hours, Private with Guide\n\nAfter your tour, you will go to Corcovado and Christ the Redeemer Statue \n\nArriving at the station, the environmentally friendly train will take us through the jungle to the top of Corcovado. On both sides of the railway you will have spectacular views of Tijuca forest, inhabited by monkeys and other exotic animals and birds. On top of Corcovado, at an altitude of 700 m above sea level, you will stand in front of the symbol of Rio de Janeiro- Statue of Christ the Savior (38m) that was built in 1931. From top of Corcovado, you have a breathtaking panoramic view of the city and its surroundings like the Bridge Niteroi, Guanabara Bay, the Botanical Garden, the Maracana stadium and the Sugar Loaf.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p14",
+                    "textSha256": "50d96c81a88579215b597c9cba23e13ed05630dcd13da75396e951e0bb174812"
+                  },
+                  {
+                    "ref": "word/document.xml:p17",
+                    "textSha256": "0e0ccc9165e07dea902d94af98f55336c9fa76cc23b9968019673fe3e900df22"
+                  },
+                  {
+                    "ref": "word/document.xml:p18",
+                    "textSha256": "f3a8f417e4d5429461525ce41d0fa52d827812231f44295036ee8df930a89afe"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p12",
+                    "textSha256": "14235775568d92144e5f005a0a96ed82d1ce92732b1e2fd6ea0cea33516d6aee"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "The corresponding Word heading identifies Rio de Janeiro; use the place name for the existing place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:085b1b7f766af312",
+              "field": "itinerary.label",
+              "sourceTextSha256": "51f922eedb678ab10929d498388dfed9f8943023e72b708a075900215096c5ff",
+              "text": "Urca",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p14",
+                    "textSha256": "50d96c81a88579215b597c9cba23e13ed05630dcd13da75396e951e0bb174812"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the Urca place name from the Word description without the generic Mountain noun in the existing place label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:23:58.794Z"
+        "at": "2026-11-04T06:24:34.625Z"
       },
       "submission": null,
       "review": null,

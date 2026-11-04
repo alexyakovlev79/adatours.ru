@@ -186,7 +186,165 @@
         "claimedAt": "2026-11-04T06:20:48.572Z",
         "expiresAt": "2026-11-04T07:50:48.572Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-1d528bec4ff4-b04-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-1d528bec4ff4",
+        "token": "ada-en-token-1d528bec4ff4-20261104",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b003",
+            "stableId": "tour_brazil_foz_iguazu_three_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "43cf1bf8586f9adad817fb606f2059cdd0a06690e3a488833ef886862ad35af7",
+            "blocks": [
+              {
+                "blockId": "tour:notIncluded:7f3512c9eff7304c",
+                "field": "notIncluded",
+                "sourceTextSha256": "b608bfb6fc00b8b968e2cd0de98134d1c551d4a345aa73b493957e5ff2246085",
+                "text": "Optional Macuco Safari.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p42",
+                      "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+                    },
+                    {
+                      "ref": "word/document.xml:p43",
+                      "textSha256": "8aad98676e546aa3364a863cc995e4f743036038b0ca38bcece4f0a45f13d209"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Combine the verified Word activity name with its explicit optional status as the not-included list label."
+                }
+              },
+              {
+                "blockId": "tour:note:6f22d74599914a48",
+                "field": "note",
+                "sourceTextSha256": "ba4f000ba9e8d48135654be4bf96c109c6c465d0adb2236370d0e18b81d86a91",
+                "text": "Programme and rates for 2027; departure dates and group size are confirmed at the time of booking.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The Word 2027 document confirms the edition and availability at booking but has no equivalent statement covering departure-date and group-size confirmation; translate the complete current RU note.",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd"
+                }
+              },
+              {
+                "blockId": "tour:note:2b1ec4ed6ad30c43",
+                "field": "note",
+                "sourceTextSha256": "97a68756fc408f50e2ebdb92d6cdfa773ef78396d4c9931d36ee223e9674bd32",
+                "text": "Accommodation: Vivaz Cataratas (4★), Luxury room, 2 nights, with breakfast.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p93",
+                      "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+                    },
+                    {
+                      "ref": "word/document.xml:p94",
+                      "textSha256": "2a44d79d67418fb2360ee338b8601f9d2348aae77bd5373d810430b21b5b5e5a"
+                    },
+                    {
+                      "ref": "word/document.xml:p95",
+                      "textSha256": "b3a681f8c879e2577433fb8f58fd1e36c9704612fe9b5e26df7528fef57241bd"
+                    },
+                    {
+                      "ref": "word/document.xml:p96",
+                      "textSha256": "913d33c7fd39db8c8c4514669b011f617d911345592cc77b309b812667959720"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Compose the accommodation summary from the verified Word hotel-table row: two nights, Vivaz Cataratas (4 stars), Luxury room, Breakfast."
+                }
+              },
+              {
+                "blockId": "tour:note:0011bc59b6bc52b2",
+                "field": "note",
+                "sourceTextSha256": "ecd84daca907a21576876872e0ee8cf57a6ce507cecaea3655761be53ad9d1ce",
+                "text": "Entrance tickets for the included excursions are covered by this tour. Separate prices and supplements shown on the standalone excursion pages are not added to the visits included in this programme.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "Word paragraph 135 confirms tickets are included, but there is no corresponding warning about separate charges on standalone excursion pages. Translate the current RU cross-page pricing clarification without adding any prices.",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd"
+                }
+              }
+            ],
+            "wordSourceVerification": {
+              "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+              "sha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+              "modifiedTime": "2026-10-21T20:18:08.369Z",
+              "editionYear": 2027,
+              "folderYear": 2027,
+              "paragraphConvention": "zero-based w:p traversal in word/document.xml",
+              "commercialTableEvidence": [
+                {
+                  "ref": "word/document.xml:p99",
+                  "textSha256": "f80aeb821a2d1e9d240ecb26cc1c89eb38518873493828529d91f9e71df73f98"
+                },
+                {
+                  "ref": "word/document.xml:p101",
+                  "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                },
+                {
+                  "ref": "word/document.xml:p102",
+                  "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                },
+                {
+                  "ref": "word/document.xml:p103",
+                  "textSha256": "299f4d5312ff948181be18fc1a928cc62a2c4a0d55907ac3d15b31f0a20bf033"
+                },
+                {
+                  "ref": "word/document.xml:p104",
+                  "textSha256": "53381f7a9baaee46787c4006be94b9ab5f83051e5306e1cf059da9a3db4ce3be"
+                },
+                {
+                  "ref": "word/document.xml:p105",
+                  "textSha256": "9bbf77faf1256ab7933af7cfe9cba1db97b7db0ac44ca56fce9be810132a6760"
+                },
+                {
+                  "ref": "word/document.xml:p106",
+                  "textSha256": "b4c009d5c49c38e7593cff1c22c3a3c975a6d84dac4b7b5ab4c1390f7de21671"
+                },
+                {
+                  "ref": "word/document.xml:p107",
+                  "textSha256": "b4f222e5c284b4b7ac4a19583f4743f9d590d856a33a167d1a1902d925334a80"
+                },
+                {
+                  "ref": "word/document.xml:p108",
+                  "textSha256": "959bb03d23ffa6f1beec5394bbe3577e2051914b4bd35339fb71853e3fd09938"
+                },
+                {
+                  "ref": "word/document.xml:p125",
+                  "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+                },
+                {
+                  "ref": "word/document.xml:p127",
+                  "textSha256": "d047b31da275afb05dc7f7c42a1559bcfb5df77f2a6551bf81b753b68ec79619"
+                }
+              ]
+            },
+            "priceAmendments": []
+          },
+          "submissionId": "ada-en-1d528bec4ff4-b04",
+          "preparedBlocks": 4
+        },
+        "at": "2026-11-04T06:22:08.574Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

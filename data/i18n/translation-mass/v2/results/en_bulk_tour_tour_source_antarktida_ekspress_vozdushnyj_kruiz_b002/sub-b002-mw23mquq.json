@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b002",
+  "stableId": "tour_source_antarktida_ekspress_vozdushnyj_kruiz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a30cc28f63b16cb0a7ebc32f9624bf9aafd6788bb3480ee541d21166321696f5",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:ebdab58e1f0f2675",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4f2ced6ce890ac21bed76d4baeb27623c62a5f92161162aff81709c1501505e6",
+      "text": "Punta Arenas",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw23-translator-mw23ks7y",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions Punta Arenas in the return-flight narrative, but has no standalone route-label field."
+      }
+    },
+    {
+      "blockId": "tour:included:310d1028eca02d77",
+      "field": "included",
+      "sourceTextSha256": "81d137e3a78574bf68949c01c68c008697a16744cb08bbe9cdd8ceb58f0db1a9",
+      "text": "One night at the Cabo de Hornos hotel in Punta Arenas or similar with breakfast on the day of the scheduled return flight from Antarctica.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "p42",
+            "textSha256": "16e5b80a3c4245150ed74589f8341759c69f224a1a38aac10b1c823dd11ca991"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the leading bullet marker from the verified Word list item."
+      }
+    },
+    {
+      "blockId": "tour:included:80b022537dabdd15",
+      "field": "included",
+      "sourceTextSha256": "9a65f5a7b48e2a4192f56adc482d59c9199d08838be7ee05f5e810c31e7374fc",
+      "text": "Group transfer from the airport to the hotel on the day of the return flight from Antarctica.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw23-translator-mw23ks7y",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph p44 combines two transfers in one bullet; this RU field isolates the arrival transfer."
+      }
+    },
+    {
+      "blockId": "tour:included:f3cbe4202b4b5411",
+      "field": "included",
+      "sourceTextSha256": "cd9fedc2e07f4920942e3d57c3986df016008e1333cb46f0c630ac5d3006c4c0",
+      "text": "Group transfer from the hotel to the airport on the last day of the air-cruise.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw23-translator-mw23ks7y",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph p44 combines two transfers in one bullet; this RU field isolates the departure transfer."
+      }
+    },
+    {
+      "blockId": "tour:included:b20ad412c7bfc6b1",
+      "field": "included",
+      "sourceTextSha256": "5be227f0de5b97387c7cb3faf3764f3aebf3df3e7fa08631b48f8a0666a84f6d",
+      "text": "Flight from Punta Arenas to Frei Station on King  George Island and/or vice versa as indicated in the program corresponding to each voyage.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "p39",
+            "textSha256": "ecd560a13025d034761447ce2525adf2aaa54c294a250b30687e5a08b8cbb924"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the leading bullet marker from the verified Word list item."
+      }
+    },
+    {
+      "blockId": "tour:included:0e73119f2372880a",
+      "field": "included",
+      "sourceTextSha256": "926bfc97dd990fe83963b20bda9c0342597ddc5e813985f662f3059876045c84",
+      "text": "Ship cruise as indicated in the program  corresponding to each voyage.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "p38",
+            "textSha256": "f43b5cc186c95d18d9ccab2e22bd74952182cd5e9fafdba165635938fb7f72d3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the leading bullet marker from the verified Word list item."
+      }
+    },
+    {
+      "blockId": "tour:included:947c11948f22a282",
+      "field": "included",
+      "sourceTextSha256": "a1f5756ed3a7ae70d8f00d0a858bed5f738c92c39c669c48f2a61ba92c440ff0",
+      "text": "Daily buffet breakfast and lunch on board the ship, offering a variety of dishes.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "p45",
+            "textSha256": "ea9deb19ab4ac9e709f4ca1a497c94403fea92c2ed9606bcc9f7e1b186c68112"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the leading bullet marker from the verified Word list item."
+      }
+    },
+    {
+      "blockId": "tour:included:112ed1e661451623",
+      "field": "included",
+      "sourceTextSha256": "041a4e84ba2fc999a6f14d6fc99975252face2dfa181433f0926c137faac4084",
+      "text": "Three-course dinner served daily on board the ship offering a choice between one of three  main courses.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "p46",
+            "textSha256": "5fe5a40d2e790a4d8e4fb7db092424e1669f638d99f0cd54a11e5bf9ae20e0fb"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the leading bullet marker from the verified Word list item."
+      }
+    }
+  ]
+}

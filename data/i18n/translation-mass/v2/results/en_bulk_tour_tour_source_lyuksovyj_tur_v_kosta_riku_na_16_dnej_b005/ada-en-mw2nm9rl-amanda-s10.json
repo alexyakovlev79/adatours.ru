@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b005",
+  "stableId": "tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1c486bc5c4f60ebeab51a62c72d26afac3b663fd37eaeda7279ad50d5defb12b",
+  "blocks": [
+    {
+      "blockId": "tour:note:53d43ff6add43c42",
+      "field": "note",
+      "sourceTextSha256": "e844e4b5318c9d8649c91b494e6fc894aa2575518f6591ed1a82cb9e01d77839",
+      "text": "The best time to travel is from December to April.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm9rl-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The full selected Word contains no seasonal recommendation note; translate this assigned current RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:3670f5220b986812",
+      "field": "note",
+      "sourceTextSha256": "5eb0f22193424f992cfe0645a0be307b443f925f13e5ef4368ae2d144cfa0426",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed due to early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm9rl-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The full selected Word contains no liability note about breakfasts missed because of early departures; translate the assigned RU note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "340e9140b30d33c25295588002f1f6297f365fa55ad90666b5e578aa957177a5",
+      "text": "Arrival in San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:10",
+            "textSha256": "34eb47c9b5bfcf84e39a576e8b33d70900ff2f8ec192e003693cc145b0814a5e"
+          },
+          {
+            "ref": "word/document.xml:p:11",
+            "textSha256": "a7bdba06a48a16b9b4b682f069c6e8eb1254596a20ef0436c79a3e4a713f8609"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the arrival title from the Word Day 1 city heading and arrival paragraph; use the document's accented city spelling from Day 2."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ace82ae3f475925cc8bfafa1785fb5a8e8b87c192115958f7d8b15cfbabc42d3",
+      "text": "Arrival at Juan Santamaría International Airport. You  will be  met  at the airport  and  transferred   to the Hotel.  ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:11",
+            "textSha256": "a7bdba06a48a16b9b4b682f069c6e8eb1254596a20ef0436c79a3e4a713f8609"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:66c1a3ce4a33923b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:12",
+            "textSha256": "5a963344e2228391310bbe04b1cce4df2fc666dc08c9c1c7fc6ca96c76f84a85"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the city name with its spelling in the Word Day 2 heading as the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:36020f6a6a2ed579",
+      "field": "media.alt",
+      "sourceTextSha256": "fd3908a74e912217ca28102649a734b7f75fdcc62f661af161188f1bbb3a4c28",
+      "text": "An ornate building facade and a black street lamp in San José, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm9rl-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word provides no matching image-specific caption describing this facade and street lamp; translate the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:289c890da0c72260",
+      "field": "media.hover",
+      "sourceTextSha256": "a2c55348b3cceab8101b4781bc533ee497d91f60957a11b1906f2b8efed25ab6",
+      "text": "San José: a stucco facade behind a multi-arm street lamp",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm9rl-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word provides no matching image-specific caption describing this stucco facade and lamp; translate the assigned RU hover text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "41149fec5a98dadecae7266b565a8f52d503e73519bdae153662825146d7c3f0",
+      "text": "Doka Coffee Tour, Poas Volcano and La Paz Waterfall Gardens",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:12",
+            "textSha256": "5a963344e2228391310bbe04b1cce4df2fc666dc08c9c1c7fc6ca96c76f84a85"
+          },
+          {
+            "ref": "word/document.xml:p:13",
+            "textSha256": "0670e06927819e2f50c08cd40a013b6eb2c8e627620c89021a2976302412a8ad"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word Day 2 heading split across two paragraphs, omitting its day number and starting city for the activity title."
+      }
+    }
+  ]
+}

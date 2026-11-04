@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1604,
-    "leased": 9,
+    "queued": 1603,
+    "leased": 10,
     "review": 796,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1604,
-      "leased": 9,
+      "queued": 1603,
+      "leased": 10,
       "review": 796,
       "ready": 1,
       "retryable": 0,
@@ -105,8 +105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 39,
-          "leased": 0,
+          "queued": 38,
+          "leased": 1,
           "review": 23,
           "ready": 0,
           "retryable": 0,
@@ -137,7 +137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:03:55.719Z",
       "earliestRetryAt": null
     },
     "12": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii:b001",
       "token": "tok_s1xu6zzgricmw2bzxhu",
       "expiresAt": "2026-11-04T18:03:41.507Z",
+      "generation": 1
+    },
+    "ada-en-e8f6bc176576": {
+      "jobId": "en:bulk:tour:tour_source_colombia_bogota_cultural_ru:b004",
+      "token": "ada-en-e8f6bc176576-token-20261104",
+      "expiresAt": "2026-11-04T18:03:55.719Z",
       "generation": 1
     }
   },
@@ -4017,7 +4023,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002",
         "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b008",
-        "en:bulk:tour:tour_source_fantasticheskij_tur_po_meksike:b012"
+        "en:bulk:tour:tour_source_fantasticheskij_tur_po_meksike:b012",
+        "en:bulk:tour:tour_source_colombia_bogota_cultural_ru:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002",
@@ -4102,5 +4109,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:33:48.243Z"
+  "updatedAt": "2026-11-04T16:33:55.719Z"
 }

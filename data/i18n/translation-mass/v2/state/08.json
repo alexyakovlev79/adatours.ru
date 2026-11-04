@@ -266,7 +266,7 @@
         "expiresAt": "2026-11-04T07:21:34.570Z"
       },
       "checkpoint": {
-        "id": "adaen-mw1ojnf0-zzzsf540-job08-cp4",
+        "id": "adaen-mw1ojnf0-zzzsf540-job08-cp8",
         "format": "inline-v1",
         "ownerId": "adaen-mw1ojnf0-zzzsf540",
         "token": "tok-lnsxlpgwcpa92vym3bnf36",
@@ -347,10 +347,70 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the verified Word place name São Paulo for the structured itinerary place label or day title."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "field": "itinerary.text",
+              "sourceTextSha256": "ce3a32c92d2d3e1e4b265fc0cec01e202592c4d7c59f8d1a7b1ed35777e02a82",
+              "text": "Today you will explore São Paulo during a half-day city tour with your English-speaking guide. Tickets are included as you discover the main landmarks and cultural highlights of Brazil’s largest city. ",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p42",
+                    "textSha256": "d2a34f99b1099d10e30c0c468ed40fb345e99a6a9a50e4f9308e67480ef4ae2b"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6ba430b86dcbce6d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+              "text": "São Paulo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p40",
+                    "textSha256": "51cefd5c6c976936a6e35c941a4e71cb0b94f9f0db9db8a134fad869078336f9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name São Paulo for the structured itinerary place label or day title."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:79484b636976904f",
+              "field": "media.alt",
+              "sourceTextSha256": "294594f9fa1ec090bc9ea06897b2074353fadb423a46b98c801a49be44600fae",
+              "text": "Neo-Gothic cathedral among tall palm trees in a square in São Paulo, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Verified full Word OOXML has no matching alt text describing the neo-Gothic cathedral and palms in a São Paulo square; translate the existing RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:b47373dfae607d4b",
+              "field": "media.hover",
+              "sourceTextSha256": "7b3b62a9dc029fb7f4a7d4635206e0e0ee6b1ff5c2240aec31bb3cf656d37707",
+              "text": "São Paulo: cathedral with twin towers and a round window above the entrance",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Verified full Word OOXML has no matching hover caption describing the cathedral's twin towers and round window; translate the existing RU caption."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:52:31.826Z"
+        "at": "2026-11-04T05:52:37.402Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b009",
+  "stableId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "57514d740525bdc45586011bb97f6eff49898afcb2a6f66e5deca4674d62c5c4",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+        "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p16",
+            "textSha256": "7ebfa33d3cb212bb226190f12b82b35237d50bf3cf4a4600fdd7cea8ffa1e88f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact destination name from the Word Day 1 heading for the existing place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7119019f2735a382",
+      "field": "itinerary.label",
+      "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
+      "text": "Tijuca National Park",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-b434d08210a0",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The complete verified Word describes Tijuca Forest in p26 and p50 but does not contain the website's national-park label; translated the assigned RU place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5a29f0ae74ef4261",
+      "field": "media.alt",
+      "sourceTextSha256": "03be139a4c54668f612586971acefa12a8b65f5b1f4d6daf701ae22654bb1f05",
+      "text": "The narrow Cascatinha waterfall drops down a dark rock face amid the greenery of Tijuca Forest, Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-b434d08210a0",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The complete verified Word contains no photo-specific alt caption naming Cascatinha or describing this dark rock face; translated the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f130eef05097d673",
+      "field": "media.hover",
+      "sourceTextSha256": "7aa2ae4e558641ae2af50c0d219dbcb09eee9d3e7202cea2f077b9c3646615c0",
+      "text": "Tijuca in Rio: Cascatinha waterfall among wet rocks and plants",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-b434d08210a0",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The complete verified Word contains no image hover caption for Cascatinha waterfall and its wet rocks and plants; translated the assigned RU hover text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "425a40e52c072dd230278e46ee2daac19596aee9934b0b73a274d20fc4f42fc6",
+      "text": "Rio de Janeiro – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+        "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p27",
+            "textSha256": "85576fd110efff39e27d2cce39946dcb92fa074abfc4d9ddcec5424a3275143c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the short route heading using the ordered destinations in the exact Word Day 5 heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "43c5caa78588c9dc96500f60913a4bf3900cac8b213008860e49492dd172b1d9",
+      "text": "Transfer from the hotel to the airport with your English-speaking guide for your flight to Foz do Iguaçu. Upon arrival, you will be welcomed and transferred to your hotel with English-speaking assistance. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+        "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "ba995094b1feb6721e8740b9cf563179efd9ac04fdfdbc283c13c13f7b843a85"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2a305b40321085a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+        "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p16",
+            "textSha256": "7ebfa33d3cb212bb226190f12b82b35237d50bf3cf4a4600fdd7cea8ffa1e88f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact destination name from the Word Day 1 heading for the existing place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+        "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p30",
+            "textSha256": "6f5510fc9360cbfbb9e4720de12a70ba1a87d102696d492a26c21c1200713ee7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact destination name from the Word Day 6 heading for the existing place label."
+      }
+    }
+  ]
+}

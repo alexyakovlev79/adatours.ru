@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b010",
+  "stableId": "tour_source_issledovanie_argentiny",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3ab35cef48d4a1157ff1b7d7b2761031a5e51c0ea047c56fe4aeefb070455a57",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:cfe7130f9a37cf78",
+      "field": "media.hover",
+      "sourceTextSha256": "b69b952dee62cd7b37f08166a2d8e926e021fcc9336a415305a8942be25d4049",
+      "text": "Meat dishes: steaks and sliced meat with vegetable sides",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 describes meals but does not contain an image-specific hover caption for these plated meat dishes."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "222874806c5d992fed420a1fa5d620af90e8e4f72a6eb8170c098f2fbe734112",
+      "text": "Ushuaia – El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "text:Day 9 · Regular transfer to the airport for your Aerolíneas Argentinas flight to El Calafate. Reception and transfer to your hotel.",
+            "textSha256": "a1dee8bf6a62c9bd75fc3bd358ef5fcd04f30d38cb6fcf2d1c04fbfa79a5adec"
+          },
+          {
+            "ref": "text:Flight Ushuaia – El Calafate",
+            "textSha256": "5fd05ae75e4061d0c30c134aa4373f10d555ab3ae989800e976892e5038f8527"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route heading uses the departure and arrival cities explicitly named in the Word flight exclusion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0ee85acfca028d39d34bf6f0bcc4c03ca5dc9e4fe24b9c0b876d8f41ed85d6d6",
+      "text": "Regular transfer to the airport for your Aerolíneas Argentinas flight to El Calafate. Reception and transfer to your hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "text:Day 9 · Regular transfer to the airport for your Aerolíneas Argentinas flight to El Calafate. Reception and transfer to your hotel.",
+            "textSha256": "a1dee8bf6a62c9bd75fc3bd358ef5fcd04f30d38cb6fcf2d1c04fbfa79a5adec"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day prefix while retaining the approved transfer and flight paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c567a73a033689a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+      "text": "Ushuaia",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "text:Ushuaia",
+            "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:09d975f8d2dc49b9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "text:El Calafate",
+            "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:1d62e14ff9e7d9d5",
+      "field": "media.alt",
+      "sourceTextSha256": "8cf485cfb11ccc2d1d0349c501f2831fbbcc36c980379e0d53a58217e9b6694b",
+      "text": "Patagonia near El Calafate",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 contains no photo-specific alt caption for this Patagonian landscape near El Calafate."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:71f367d4a12e90f3",
+      "field": "media.hover",
+      "sourceTextSha256": "18974ef56b75d1467d17d7c707d976562d2b86355fa8eb287008a58ca278d7aa",
+      "text": "El Calafate: Patagonian landscapes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 has no hover caption for the assigned Patagonian landscape photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5d13d7524b75656431a8cfc6d19ce1bb6716e2f0011a9896e3317a3cafd4452c",
+      "text": "El Calafate and the Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "text:Day 10 · Breakfast. Full-day excursion to the walkways of the Perito Moreno Glacier, including the “Safari Náutico” boat trip. Drive 80 km to Los Glaciares National Park, a UNESCO World Heritage Site preserving a vast area of the continental ice field, from which the Moreno, Onelli, Agassiz and Upsala glaciers descend. The Perito Moreno spreads over Lago Argentino with a wall about 5 km wide and up to 70 metres high, in shades from pure white to turquoise.",
+            "textSha256": "501a104fe3368789be2877eb20550f8812e092b2e4e762bee5f3022e37774167"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Day heading combines the itinerary destination El Calafate with the confirmed glacier visit on Word Day 10."
+      }
+    }
+  ]
+}

@@ -265,7 +265,86 @@
         "claimedAt": "2026-11-04T06:13:14.212Z",
         "expiresAt": "2026-11-04T07:43:14.212Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-bceebc322bd5-s001-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-bceebc322bd5",
+        "token": "ada-en-bceebc322bd5-20261104-01",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b009",
+          "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "369deb795d98a905a6d1640f2a9c26f4446e1cb88427df2dabf4673d155a9f96",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "0f8c322ceff8d0816dcb5cb6883f2410e694724485bb23f3ddb9de9bc8030231",
+              "text": "Argentine side and the Devil’s Throat",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:103",
+                    "textSha256": "9d24f60f6b1350594380cf7a3aa2758df75fd7f6ed637707f2f818d3072be981"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Contextual itinerary heading composed from the Argentine side and Devil’s Throat explicitly named in paragraph 103; the Word does not supply this standalone title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "518093312fe9049653b92d58856c2f04556750f08abd43962d3c020187b2cd1c",
+              "text": "An excursion to the Argentine side of the falls. Paths run among the cascades and bring you closer to the falling water. The surrounding natural park covers 55,500 hectares.\n\nWithin the park, you will take the train to the Devil’s Throat and then step onto a viewing platform above the falling water. Tickets are included in this programme. The services included in the standalone excursion may differ from those in the package tour.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6.1",
+                "runId": "ada-en-bceebc322bd5",
+                "wordAbsenceReason": "Paragraph 103 covers the Argentine falls and tickets, but contains no package-versus-standalone-excursion service caveat. This complete RU block, including that current caveat, is translated from RU rather than falsely attributed as an exact Word passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6be895d301700d1f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+              "text": "Puerto Iguazú",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6.1",
+                "runId": "ada-en-bceebc322bd5",
+                "wordAbsenceReason": "The Word programme refers to the Argentine falls but does not contain the standalone Puerto Iguazú place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ea1f7100cab0c110",
+              "field": "itinerary.label",
+              "sourceTextSha256": "76f0e1f604783cecbb439e92c20f7dca834fa131ec7f785c8e76af2744c30ab9",
+              "text": "Devil’s Throat at Iguazu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:103",
+                    "textSha256": "9d24f60f6b1350594380cf7a3aa2758df75fd7f6ed637707f2f818d3072be981"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Contextual place label using the Devil’s Throat named in paragraph 103 and its Iguazu falls context; not an exact standalone paragraph."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:14:53.865Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

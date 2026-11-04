@@ -139,7 +139,7 @@
         "expiresAt": "2026-11-04T07:06:33.718Z"
       },
       "checkpoint": {
-        "id": "adaen-mw1ojnf0-zzzsf540-job03-cp4",
+        "id": "adaen-mw1ojnf0-zzzsf540-job03-cp8",
         "format": "inline-v1",
         "ownerId": "adaen-mw1ojnf0-zzzsf540",
         "token": "tok-lnsxlpgwcpa92vym3bnf36",
@@ -279,10 +279,98 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the verified Word service type Tours as the concise structured product-format label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:3aae17cc0b8223b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7904bdd1a713a9c9fa09e67f48aeffaf28dec06f6e43253b1bb57f675db88791",
+              "text": "Foz do Iguaçu — 2 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p8",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  },
+                  {
+                    "ref": "word/document.xml:p23",
+                    "textSha256": "365244819b53a7c189461788e17d8689b0353a5a5ca45c43ba4d159af4263afa"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the exact Word city and night-count labels into the structured route stop."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ecb33dfb2d80394b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a1bb6f458f9b9d801b467441d25ebed5a28a0761a1df271b9fc3e2cf985b9abe",
+              "text": "Brazilian Falls and Bird Park",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "498cad4bdc20b59e7de16108f4a6061ee2aa2bddba99a0b8ce8268f0990363d9"
+                  },
+                  {
+                    "ref": "word/document.xml:p40",
+                    "textSha256": "88c842f0ae9ba9e38bbfb19849822d9a14f1b162e5ccb0827494bd4b66a02fce"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the verified Word Brazilian Falls and Bird Park highlight labels for one route stop."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f4fcc57b2dddc308",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f8763e82274497cf4fe2155001dd9531466b845d51187bcb9579efa59c6ffef2",
+              "text": "Argentine Falls and Devil’s Throat",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "93033b9bf07192d0a9800d7e41492884e67a8239ee211193061be1b137679df0"
+                  },
+                  {
+                    "ref": "word/document.xml:p49",
+                    "textSha256": "0769bea725a89bb14aa79ccbbf708aa5817eae370624ddaca01fdf960d839db4"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the verified Word Argentine Falls and Devil’s Throat highlight labels for one route stop."
+              }
+            },
+            {
+              "blockId": "tour:included:c33a96330959cf5f",
+              "field": "included",
+              "sourceTextSha256": "1b80a6e17c688c02ddf0006afa41ef408627c5f60000c201dee1ada74d2217e2",
+              "text": "Tours with an English- or Spanish-speaking guide",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p135",
+                    "textSha256": "dd2c2a092060312a08d691a2ca40bc7b8f01533a5714632f0c202c538360f334"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the printed leading dash from the included-service bullet; preserve the approved 2027 Word service wording, including its guide languages."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:37:21.427Z"
+        "at": "2026-11-04T05:37:26.692Z"
       },
       "submission": null,
       "review": null,

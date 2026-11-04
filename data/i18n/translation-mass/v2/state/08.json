@@ -349,7 +349,7 @@
         "expiresAt": "2026-11-04T07:53:19.287Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-39fb6759e90b-b009-4",
+        "id": "ada-en-20261104-39fb6759e90b-b009-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-39fb6759e90b",
         "token": "tok-39fb6759e90b-20261104-a7c3",
@@ -419,10 +419,84 @@
                 "runId": "ada-en-20261104-39fb6759e90b",
                 "wordAbsenceReason": "No matching photograph hover caption exists in the exact Word document; translate current RU media.hover."
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "73878689d82aad5267b2e6b4d8a527b59d7a13f5a624d569de3d74d61f9fc2ac",
+              "text": "Lower Caño Cristales and chocolate-making",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p79",
+                    "textSha256": "525ed6f41fc4cd77a0e3810792b1f9718ff7110ad35e2b46254d212145d9fb8b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the existing day-title field from the confirmed Word lower-basin visit and chocolate-making activity."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "7359be899ca6f3c9f79dd4ce7499355bb8b2cc4174937f3ce8f3dac507aab52e",
+              "text": "The lower basin of Caño Cristales, more secluded and jungle-like, where the Macarenia clavigera takes on deep green tones, with a natural pool, an outdoor lunch and a view of Los Ochos from the opposite bank. In the afternoon, a cultural experience with neighbouring families: the traditional process of making chocolate from cacao. Dinner at the lodge.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p79",
+                    "textSha256": "525ed6f41fc4cd77a0e3810792b1f9718ff7110ad35e2b46254d212145d9fb8b"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the day-number prefix from the confirmed Word itinerary paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:d8440f3bad2adcec",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7e2a8dffa0bf2e9b2555561e5ffb98193487c8c8d4ee36625ab8e4ca12aa645f",
+              "text": "La Macarena",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p8",
+                    "textSha256": "692c69a485a31aaae9426ceae8139047e565d96bcdeb412b8b09c73a9fe98751"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the confirmed Word destination name for the existing linked place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:524c29304e6aa572",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e624958247a4886c51337c7346cf3ba7e9c77c6f40b3bc309396298b052baf87",
+              "text": "Guayabero River",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p52",
+                    "textSha256": "020d74e92f8985f0009de10b7b97667feb8561d60f682ee0b2634be9db337df2"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:24:05.041Z"
+        "at": "2026-11-04T06:24:18.928Z"
       },
       "submission": null,
       "review": null,

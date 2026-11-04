@@ -154,142 +154,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b012",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b7a3fc5be2ffc86eb7017ca8536907897542ffa8bb6a906b8c36a9b8af504d2d",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "claimedAt": "2026-11-04T05:46:36.837Z",
-        "expiresAt": "2026-11-04T07:16:36.837Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f801-r2-07-b012-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b012",
-          "stableId": "tour_brazil_dunes_13d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b7a3fc5be2ffc86eb7017ca8536907897542ffa8bb6a906b8c36a9b8af504d2d",
-          "sourceCoverageNote": {
-            "kind": "word_coverage_gap",
-            "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-            "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-            "wordParagraphRefs": [
-              "word/document.xml:p[7]",
-              "word/document.xml:p[121]",
-              "word/document.xml:p[126]"
-            ],
-            "note": "The selected Word is 13D/12N ending in Natal; current RU package includes a Pipa free day and Pipa–Natal airport heading absent from Word. These blocks use explicit AI gap provenance; route and duration were not changed."
-          },
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:190b51b5c29abccc",
-              "field": "media.alt",
-              "sourceTextSha256": "aa18158af5ec030c854ad31e3b971266deaa364087690ac7182db554501178dd",
-              "text": "Praia de Pipa beach with a sandy slope, palm trees, holidaymakers and turquoise water, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The selected Word has no image-specific alternative text for this Praia de Pipa beach photograph."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:a85adf57a1171522",
-              "field": "media.hover",
-              "sourceTextSha256": "41120b3579e5bf62504156d3c48ee2b6540e10bc5d6180166b175469df9b0392",
-              "text": "Praia de Pipa: palm trees and holidaymakers by the sea",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The Word contains no Praia de Pipa image hover caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:6c840bbfa53b5077",
-              "field": "itinerary.title",
-              "sourceTextSha256": "bff86082d779c507ee7f71aa297b8cee04644d20ee520698aafe37a0a7506f87",
-              "text": "Pipa",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The selected Word itinerary ends in Natal on Day 13 and contains no Pipa stay or corresponding Pipa heading."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
-              "field": "itinerary.text",
-              "sourceTextSha256": "02f5650336d113e8a301002e4832ad59c4d8e21953f6c4729a29315d3f583cb1",
-              "text": "Praia da Pipa is in the state of Rio Grande do Norte, about 70 km south of Natal. Until the 1970s, it was a small fishing village. Surfers and travellers then discovered Pipa, drawn by its beaches, natural surroundings and peaceful life by the ocean.\n\nThe coast combines white sand, clear water, tropical vegetation and sheer cliffs about 10 metres high. Pipa has many hotels, restaurants, bars, nightclubs and small shops. It has become one of the region’s best-known beach destinations, while tropical vegetation, cliffs and long stretches of sandy shore still surround it. Dolphins can be seen in the coastal waters.\n\nThere is no fixed sightseeing programme today. After the long journey through Rio, Iguazu and Maranhão, there is time for the ocean, walks and relaxation.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The exact selected Word itinerary ends in Natal on Day 13 and contains no Pipa history, beach description or additional free-day programme; translate the current RU block without changing it."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4860819783f27dc5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "cdb91ed371e64bee5fdf854ee745251593ffbbb3ca95762f32897c668f016596",
-              "text": "Praia de Pipa",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The selected Word does not include this Pipa place label or a stay in Pipa."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:542b972d2779e98d",
-              "field": "media.alt",
-              "sourceTextSha256": "2a7c61943efa061b7b427fef48d546cee6e18401dce9063ce8b1a62fc3d8358c",
-              "text": "White buildings with red roofs on the waterfront in São Luís, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The Word describes São Luís but contains no alternative text for this waterfront photograph."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:e8ae101d9a1495ff",
-              "field": "media.hover",
-              "sourceTextSha256": "6de363e44678eda4d211814c8a6fe32c76f38bfb3012c9818711af9c8e8fb85e",
-              "text": "São Luís: historic buildings along the waterfront",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The selected Word has no image hover caption for this São Luís waterfront view."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
-              "field": "itinerary.title",
-              "sourceTextSha256": "06cbacc3d41c6415771624821ef9e948c61748555eef8f601e0794f385ae82b1",
-              "text": "Pipa – Natal Airport",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The Word departure is from Natal on Day 13, with no Pipa–Natal airport route heading; translate the current RU heading."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:47:40.065Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f801-r2-07-b012-v1",
+        "blobSha": "8264e9b3d9c93cfb8258d155e37df1ba19aad49d",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_dunes_13d_b012/ada-en-f801-r2-07-b012-v1.json",
+        "at": "2026-11-04T05:47:44.162Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

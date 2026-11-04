@@ -208,7 +208,109 @@
         "claimedAt": "2026-11-04T05:46:59.648Z",
         "expiresAt": "2026-11-04T07:16:59.648Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "adaen-mw1ojnf0-zzzsf540-job06-cp4",
+        "format": "inline-v1",
+        "ownerId": "adaen-mw1ojnf0-zzzsf540",
+        "token": "tok-lnsxlpgwcpa92vym3bnf36",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b008",
+          "stableId": "tour_brazil_peru_argentina_group_15_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "02c7184da9303026cee47194ad41b7755c659c2df89cd74e941aa4f4240a424a",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:c4561055c6747266",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "984fd2d1462aa180c5107e762349024106f9ecd58bc8329ac757d2c05c986cb8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name Rio de Janeiro as the structured itinerary label without modifying its identity."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4b497fe6e162ec2c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "51f922eedb678ab10929d498388dfed9f8943023e72b708a075900215096c5ff",
+              "text": "Urca",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p14",
+                    "textSha256": "50d96c81a88579215b597c9cba23e13ed05630dcd13da75396e951e0bb174812"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name Urca as the structured itinerary label without modifying its identity."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e8eea8ebd4e2fc9e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c20fa275ecbe6a0d6c918b2133e0ffc8929360be9e40d9e18c29cdf8fd581bcf",
+              "text": "Sugar Loaf",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p14",
+                    "textSha256": "50d96c81a88579215b597c9cba23e13ed05630dcd13da75396e951e0bb174812"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name Sugar Loaf as the structured itinerary label without modifying its identity."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0ebf1daa4dd25c34",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
+              "text": "Corcovado",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p18",
+                    "textSha256": "f3a8f417e4d5429461525ce41d0fa52d827812231f44295036ee8df930a89afe"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name Corcovado as the structured itinerary label without modifying its identity."
+              }
+            }
+          ],
+          "sourceNotes": [
+            {
+              "kind": "confirmed_mixed_year_word",
+              "matchingReceiptBlobSha": "67bb32e48dc928fb4b15393ca384f0568fe23fc2",
+              "detail": "Body says Group 10–20pax 2026; tariff header says 2024. SourceYearFolder denotes location, not proof of new 2027 tariffs.",
+              "tariffEditionUncertain": true,
+              "priceAmendments": []
+            }
+          ]
+        },
+        "at": "2026-11-04T05:48:27.826Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1252,
-    "leased": 11,
+    "queued": 1251,
+    "leased": 12,
     "review": 1126,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1252,
-      "leased": 11,
+      "queued": 1251,
+      "leased": 12,
       "review": 1126,
       "ready": 20,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 49,
-          "leased": 0,
+          "queued": 48,
+          "leased": 1,
           "review": 31,
           "ready": 0,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T22:32:17.841Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b008",
       "token": "token-mw2loux3-7xffdwin7n6",
       "expiresAt": "2026-11-04T22:31:41.880Z",
+      "generation": 1
+    },
+    "ada-en-mw2lom3y-amanda": {
+      "jobId": "en:bulk:tour:tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu:b004",
+      "token": "ada-token-mw2lom3y-k5n43nl4vp",
+      "expiresAt": "2026-11-04T22:32:17.841Z",
       "generation": 1
     }
   },
@@ -5164,7 +5170,8 @@
       "token": "ada-token-mw2lom3y-k5n43nl4vp",
       "jobIds": [
         "en:bulk:tour:tour_source_chili_argentina:b012",
-        "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b006"
+        "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b006",
+        "en:bulk:tour:tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_chili_argentina:b012",
@@ -5211,5 +5218,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T21:02:10.399Z"
+  "updatedAt": "2026-11-04T21:02:17.841Z"
 }

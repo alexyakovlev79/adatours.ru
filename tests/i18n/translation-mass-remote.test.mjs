@@ -53,7 +53,7 @@ test('permission failures are not silently retried and 429 is a timed continuati
   {action:'claim',ownerId:'worker_one',token:'stable_token'}),/permission denied/);
  const limited=await runEnMassTranslation(mock('429 too many requests'),{},
   {action:'claim',ownerId:'worker_one',token:'stable_token'});
- assert.equal(limited.status,'rate_limited');assert.equal(limited.retryAfterMs,60000);
+ assert.equal(limited.status,'rate_limited');assert.equal(limited.retryAfterMs,3600000);
 });
 test('bulk connector rejects any QA/publish action without touching GitHub',async()=>{
  await assert.rejects(runEnMassTranslation({}, {},{action:'approve'}),/Unsupported worker action/);

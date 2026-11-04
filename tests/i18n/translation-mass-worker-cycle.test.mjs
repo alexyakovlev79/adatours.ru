@@ -1,206 +1,114 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {MAX_AUTOMATIC_CYCLES,MAX_INLINE_RETRIES,runEnMassWorkerCycle}
+import {MAX_AUTOMATIC_CYCLES,MAX_INLINE_RETRIES,runEnMassWorkerCycle as cycle}
  from '../../scripts/i18n/translation-mass-worker-cycle.mjs';
-
-const identity={ownerId:'one_translator',token:'stable_token'};
+const credentials={ownerId:'translator_test',token:'fixed_token'};
 function fake(){
- const calls=[],state={completed:0,active:null,claimCount:0,submitCount:0,failSubmit:false,failClaim:false};
- const runner=async (_tools,_core,args)=>{
-  calls.push({...args});
-  if(args.action==='status')return{status:'snapshot',stage:'word_2027',
-   enabled:true,translationMassLaunchAllowed:true,owner:{
-    completed:state.completed,maxJobsPerOwner:60,activeJobId:state.active?.jobId||null}};
-  if(args.action==='claim'){
-   if(state.failClaim)return{status:'rate_limited',retryAfterMs:60000};
-   if(state.active)return{status:'resumed',...state.active};
-   state.claimCount++;
-   state.active={jobId:'job_'+state.claimCount,generation:1,
-    source:{jobId:'job_'+state.claimCount,blocks:[{text:'RU'}]},
+ const calls=[];
+ const state={completed:0,claimed:0,saved:0,active:null,denyClaim:null,denySubmit:null};
+ const gateway=async(_t,_c,a)=>{
+  calls.push(a);
+  if(a.action==='status')return{status:'snapshot',stage:'word_2027',
+   owner:{completed:state.completed,activeJobId:state.active?.jobId||null}};
+  if(a.action==='claim'){
+   if(state.denyClaim)return state.denyClaim;
+   if(state.completed>=10)return{status:'cycle_limit_reached',completed:state.completed};
+   if(state.active)return{status:'resumed',...state.active,
+    owner:{completed:state.completed}};
+   state.claimed++;
+   state.active={jobId:'job_'+state.claimed,generation:1,
+    source:{jobId:'job_'+state.claimed,blocks:[{text:'RU'}]},
     lease:{expiresAt:'2099-01-01T00:00:00Z'}};
-   return{status:'claimed',...state.active};
+   return{status:'claimed',...state.active,owner:{completed:state.completed}};
   }
-  if(args.action==='submit'){
-   if(state.failSubmit)return{status:'rate_limited'};
+  if(a.action==='submit'){
+   if(state.denySubmit)return state.denySubmit;
    if(!state.active){
-    if(args.submissionId===state.lastSubmissionId)return{status:'already_saved'};
-    throw Error('Unexpected repeated submit');
+    if(state.submissionId===a.submissionId)return{status:'already_saved',
+     owner:{completed:state.completed}};
+    throw Error('Unexpected second submit');
    }
-   assert.equal(args.jobId,state.active.jobId);
-   state.submitCount++;
-   state.completed++;
-   state.lastSubmissionId=args.submissionId;
+   assert.equal(a.jobId,state.active.jobId);
+   state.saved++;state.completed++;state.submissionId=a.submissionId;
    state.active=null;
-   return{status:'saved_for_review',commit:'b'.repeat(40),jobId:args.jobId};
+   return{status:'saved_for_review',commit:'a'.repeat(40),
+    owner:{completed:state.completed}};
   }
-  throw Error('Unknown mocked action');
+  throw Error('Unsupported test action '+a.action);
  };
- return {calls,state,runner};
+ return{state,calls,gateway};
 }
-test('one translator claims the next job only after commit and stops after exactly ten',async()=>{
- const f=fake();
- let current=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
- assert.equal(current.status,'next_claimed');
- for(let k=1;k<=MAX_AUTOMATIC_CYCLES;k++){
-  const next=await runEnMassWorkerCycle({}, {},f.runner,{
-   action:'finish',...identity,jobId:current.next.jobId,
-   generation:current.next.generation,submissionId:'submission_'+k,
-   result:{blocks:[{text:'an English translation'}]}});
-  assert.equal(next.submission.status,'saved_for_review');
-  assert.equal(next.completed,k);
-  current=next;
-  if(k<MAX_AUTOMATIC_CYCLES)assert.equal(current.status,'next_claimed');
-  else assert.equal(current.status,'cycle_limit_reached');
+test('ten sequential completed packets, no status polling or parallel job',async()=>{
+ const f=fake();let job=await cycle({}, {},f.gateway,{action:'start',...credentials});
+ for(let i=1;i<=10;i++){
+  assert.equal(job.status,'next_claimed');
+  job=await cycle({}, {},f.gateway,{action:'finish',...credentials,
+   jobId:job.next.jobId,generation:job.next.generation,
+   submissionId:'sub_'+i,result:{blocks:[{text:'English'}]}});
+  assert.equal(job.submission.status,'saved_for_review');
+  assert.equal(job.completed,i);
  }
- assert.equal(f.state.claimCount,10);
- assert.equal(f.state.submitCount,10);
- assert.equal(f.calls.filter(x=>x.action==='claim').length,10);
- assert.equal((await runEnMassWorkerCycle({}, {},f.runner,{
-  action:'start',...identity})).status,'cycle_limit_reached');
+ assert.equal(job.status,'cycle_limit_reached');
+ assert.equal(f.state.saved,10);
+ assert.equal(f.state.claimed,10);
+ assert.equal(f.calls.filter(x=>x.action==='status').length,0);
+ assert.equal(MAX_AUTOMATIC_CYCLES,10);
+ assert.equal(MAX_INLINE_RETRIES,0);
 });
-
-test('more than three temporary failures still acquire work, without changing identity',async()=>{
- const f=fake(),waits=[];let attempts=0;
- const runner=async(t,c,a)=>{
-  if(a.action==='claim'&&attempts++<5){
-   assert.equal(a.ownerId,identity.ownerId);assert.equal(a.token,identity.token);
-   return{status:attempts%2?'transport_retryable':'cas_contention',retryAfterMs:5000};
-  }
-  return f.runner(t,c,a);
- };
- const out=await runEnMassWorkerCycle({}, {},runner,{action:'start',...identity},
-  {sleep:async ms=>waits.push(ms),random:()=>0});
- assert.equal(out.status,'next_claimed');assert.equal(attempts,6);
- assert.equal(waits.length,5);assert.ok(waits.every(ms=>ms>=5000));
+test('transient claim failure is returned immediately, not retried in a loop',async()=>{
+ const f=fake();f.state.denyClaim={status:'transport_retryable',retryAfterMs:30000};
+ const result=await cycle({}, {},f.gateway,{action:'start',...credentials});
+ assert.equal(result.status,'retry_pending');
+ assert.equal(result.retryAfterMs,30000);
+ assert.equal(result.resume.action,'start');
+ assert.equal(f.calls.filter(x=>x.action==='claim').length,1);
 });
-
-test('retry budget yields a continuation; the next call can submit the same result once',async()=>{
- const f=fake(),first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
- const args={action:'finish',...identity,jobId:first.next.jobId,generation:1,
-  submissionId:'unchanged_submission',result:{blocks:[{text:'Saved English'}]}};
- let attempts=0;
- const runner=async(t,c,a)=>{
-  if(a.action==='submit'&&attempts++<MAX_INLINE_RETRIES){
-   assert.equal(a.submissionId,args.submissionId);assert.equal(a.result,args.result);
-   return{status:'transport_retryable',retryAfterMs:5000};
-  }
-  return f.runner(t,c,a);
- };
- const pending=await runEnMassWorkerCycle({}, {},runner,args,{sleep:async()=>{}});
- assert.equal(pending.status,'retry_pending');assert.equal(pending.resume.action,'finish');
- assert.equal(f.state.submitCount,0);assert.equal(f.state.claimCount,1);
- const saved=await runEnMassWorkerCycle({}, {},runner,args,{sleep:async()=>{}});
- assert.equal(saved.submission.status,'saved_for_review');assert.equal(f.state.submitCount,1);
+test('failed submit does not claim a second job or change submissionId',async()=>{
+ const f=fake(),initial=await cycle({}, {},f.gateway,{action:'start',...credentials});
+ f.state.denySubmit={status:'cas_contention',retryAfterMs:30000};
+ const args={action:'finish',...credentials,jobId:initial.next.jobId,
+  generation:1,submissionId:'same_submission',result:{blocks:[{text:'English'}]}};
+ const waiting=await cycle({}, {},f.gateway,args);
+ assert.equal(waiting.status,'retry_pending');
+ assert.equal(waiting.resume.action,'finish');
+ assert.equal(f.state.claimed,1);
+ assert.equal(f.state.saved,0);
+ f.state.denySubmit=null;
+ const finished=await cycle({}, {},f.gateway,args);
+ assert.equal(finished.submission.status,'saved_for_review');
+ assert.equal(f.state.saved,1);
+ assert.equal(f.state.claimed,2);
+ assert.deepEqual(f.calls.filter(x=>x.action==='submit').map(x=>x.submissionId),
+  ['same_submission','same_submission']);
 });
-
-test('busy queue is retried while stage drain requires confirmed zero counts',async()=>{
- const f=fake();let claims=0;
- const runner=async(t,c,a)=>a.action==='claim'&&claims++<4
-  ?{status:'busy_or_empty',stageCounts:{queued:1,leased:5,retryable:0}}
-  :f.runner(t,c,a);
- const out=await runEnMassWorkerCycle({}, {},runner,{action:'start',...identity},{sleep:async()=>{}});
- assert.equal(out.status,'next_claimed');assert.equal(claims,5);
- const drained=await runEnMassWorkerCycle({}, {},async(t,c,a)=>a.action==='claim'
-  ?{status:'busy_or_empty',stageCounts:{queued:0,leased:0,retryable:0}}
-  :f.runner(t,c,a),{action:'start',...identity},{sleep:async()=>assert.fail('No polling drained stage')});
- assert.equal(drained.status,'next_unavailable');assert.equal(drained.reason.status,'stage_drained');
+test('after Git receipt, a failed next claim resumes by start only',async()=>{
+ const f=fake(),initial=await cycle({}, {},f.gateway,{action:'start',...credentials});
+ f.state.denyClaim={status:'rate_limited',retryAfterMs:3600000};
+ const waiting=await cycle({}, {},f.gateway,{action:'finish',...credentials,
+  jobId:initial.next.jobId,generation:1,submissionId:'first_done',result:{}});
+ assert.equal(waiting.submission.status,'saved_for_review');
+ assert.equal(waiting.status,'retry_pending');
+ assert.equal(waiting.resume.action,'start');
+ f.state.denyClaim=null;
+ const resumed=await cycle({}, {},f.gateway,{action:'start',...credentials});
+ assert.equal(resumed.status,'next_claimed');
+ assert.equal(f.state.saved,1);
 });
-
-test('rate limits return timed continuation and never sleep or retry immediately',async()=>{
- const f=fake();let claims=0;
- const out=await runEnMassWorkerCycle({}, {},async(t,c,a)=>a.action==='claim'
-  ?(claims++,{status:'rate_limited',retryAfterMs:120000}):f.runner(t,c,a),
-  {action:'start',...identity},{sleep:async()=>assert.fail('No hot rate-limit retry')});
- assert.equal(out.status,'retry_pending');assert.equal(out.retryAfterMs,120000);
- assert.equal(claims,1);assert.equal(out.resume.action,'start');
+test('resumed work retains checkpoint and generation',async()=>{
+ const f=fake();f.state.active={jobId:'unfinished_job',generation:3,
+  checkpoint:{id:'four',payload:{blocks:[{text:'Saved English'}]}},
+  lease:{expiresAt:'2099-01-01T00:00:00Z'}};
+ const result=await cycle({}, {},f.gateway,{action:'start',...credentials});
+ assert.equal(result.status,'next_claimed');
+ assert.equal(result.next.resumed,true);
+ assert.equal(result.next.generation,3);
+ assert.equal(result.next.checkpoint.payload.blocks[0].text,'Saved English');
 });
-
-test('temporary status read failures are retried before a claim',async()=>{
- const f=fake();let reads=0;
- const out=await runEnMassWorkerCycle({}, {},async(t,c,a)=>a.action==='status'&&reads++<4
-  ?{status:'transport_retryable'}:f.runner(t,c,a),
-  {action:'start',...identity},{sleep:async()=>{}});
- assert.equal(out.status,'next_claimed');assert.equal(reads,5);
+test('owner mismatch and stage drained do not start new work',async()=>{
+ const mismatch=await cycle({}, {},async()=>({status:'owner_token_conflict'}),
+  {action:'start',...credentials});
+ assert.equal(mismatch.status,'next_unavailable');
+ const exhausted=await cycle({}, {},async()=>({status:'busy_or_empty',
+  stageCounts:{queued:0,leased:0,retryable:0}}),{action:'start',...credentials});
+ assert.equal(exhausted.status,'stage_drained');
 });
-test('failed submit never claims another packet',async()=>{
- const f=fake();
- const first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
- f.state.failSubmit=true;
- const out=await runEnMassWorkerCycle({}, {},f.runner,{
-  action:'finish',...identity,jobId:first.next.jobId,
-  generation:first.next.generation,submissionId:'submission_1',result:{}});
- assert.equal(out.status,'retry_pending');
- assert.equal(out.resume.action,'finish');
- assert.equal(f.state.claimCount,1);
- assert.equal(f.state.completed,0);
-});
-test('lost next-claim leaves committed receipt and start resumes without resubmitting',async()=>{
- const f=fake();
- const first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
- f.state.failClaim=true;
- const out=await runEnMassWorkerCycle({}, {},f.runner,{
-  action:'finish',...identity,jobId:first.next.jobId,
-  generation:1,submissionId:'submission_1',result:{}});
- assert.equal(out.status,'retry_pending');
- assert.equal(out.resume.action,'start');
- assert.equal(out.submission.status,'saved_for_review');
- assert.equal(f.state.submitCount,1);
- f.state.failClaim=false;
- const next=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
- assert.equal(next.status,'next_claimed');
- assert.equal(f.state.claimCount,2);
- assert.equal(f.state.submitCount,1);
-});
-test('owner mismatch fails closed before claiming',async()=>{
- const f=fake();
- const bad=async()=>({status:'owner_token_conflict'});
- const v=await runEnMassWorkerCycle({}, {},bad,{action:'start',...identity});
- assert.equal(v.status,'next_blocked');
- assert.equal(f.state.claimCount,0);
-});
-
-test('bounded cycle retry uses identical submissionId on CAS contention',async()=>{
- const f=fake();
- const first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
- let collisions=0;
- const runner=async(tools,core,args)=>{
-  if(args.action==='submit'&&collisions++===0)return{status:'cas_contention',retryAfterMs:1};
-  return f.runner(tools,core,args);
- };
- const out=await runEnMassWorkerCycle({}, {},runner,{
-  action:'finish',...identity,jobId:first.next.jobId,generation:1,
-  submissionId:'stable_submission_1',result:{blocks:[{text:'A translation'}]}});
- assert.equal(out.submission.status,'saved_for_review');
- assert.equal(f.state.submitCount,1);
- assert.equal(f.state.claimCount,2);
- assert.equal(collisions,2);
-});
-
-test('start reclaims the same unfinished assigned packet and exposes its saved checkpoint',async()=>{
- const f=fake(),first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
- assert.equal(first.next.jobId,'job_1');
- f.state.active=null; // old lease was released, no completed submission
- let targeted=null;
- const runner=async(t,c,a)=>{
-  if(a.action==='status'){
-   const s=await f.runner(t,c,a);
-   s.owner.resumeCandidateJobId='job_1';
-   return s;
-  }
-  if(a.action==='claim'&&a.jobId==='job_1'){
-   targeted=a.jobId;
-   return{status:'claimed',jobId:'job_1',generation:2,
-    source:{jobId:'job_1',blocks:[{text:'RU'}]},
-    lease:{expiresAt:'2099-01-01T00:00:00Z'},
-    checkpoint:{id:'four',format:'inline-v1',payload:{blocks:[{text:'partial EN'}]}}};
-  }
-  return f.runner(t,c,a);
- };
- const resumed=await runEnMassWorkerCycle({}, {},runner,{action:'start',...identity});
- assert.equal(targeted,'job_1');
- assert.equal(resumed.next.jobId,'job_1');
- assert.equal(resumed.next.generation,2);
- assert.equal(resumed.next.checkpoint.payload.blocks[0].text,'partial EN');
- assert.equal(f.state.claimCount,1);
-});
-

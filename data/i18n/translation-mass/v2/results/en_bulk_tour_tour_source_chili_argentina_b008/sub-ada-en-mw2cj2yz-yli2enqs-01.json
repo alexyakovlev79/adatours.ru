@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_argentina:b008",
+  "stableId": "tour_source_chili_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "55bf7cf7aa50758c2aaa1af96ce4bfd4edbe3638278f10402f2a148d97167f62",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:ca758da0466879e3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b87c150eb4050fec267f540aaac1a09eae4cb6cf6f739cbb2e5f24ed797913de",
+      "text": "Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[90]",
+            "textSha256": "10b5e3b6559c9d37159cf879783e67f2018d8b1d6e75a87541e5d3cf74b70010"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named glacier from the approved Day 7 paragraph for the existing place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:64426d26bd8082eb",
+      "field": "media.alt",
+      "sourceTextSha256": "f4aa6e81ecbb225ef28baf0f99e03eeea33f4c775a5b00d5a05476681a1a6b74",
+      "text": "A visitor photographs the Perito Moreno Glacier from a viewing platform, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2cj2yz-yli2enqs",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no image-specific alternative text describing the visitor and viewing platform."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:dbafa7f762e9d729",
+      "field": "media.hover",
+      "sourceTextSha256": "483b88666c91ed223592a8ec6e10d200bdf4ad7fac9eb13b22bc7c7bc52eac8e",
+      "text": "Perito Moreno: a wall of blue ice in front of the viewing platform",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2cj2yz-yli2enqs",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no photograph hover caption for the blue ice wall and viewing platform."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "fe4988ad02d87bb433597f77dc9eb726a3979f27652a6e8544ed13e20de8938f",
+      "text": "El Calafate – Bariloche",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[87]",
+            "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+          },
+          {
+            "ref": "word/document.xml:p[97]",
+            "textSha256": "2f002781e3adeef826724fc2a3d6585ad46f23ac3c327c9bf823d423747ab59b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route title from the approved El Calafate and Bariloche destination headings."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3c0e191ad84dc316b2e7f92655cb231bd9d9b4aa1c5469ebc6681bf004b80092",
+      "text": "Transfer to the airport and flight to Bariloche; on arrival, transfer to the hotel with a driver. In the afternoon, excursion to Victoria Island, the largest island on Lake Nahuel Huapi, a natural gem with native and introduced flora and fauna and lagoons home to cormorants, and to the Arrayanes Forest, renowned for the size and density of its arrayán trees. Return to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[98]",
+            "textSha256": "895baccc17409c92770c6a00ca7bab2498d7e6fc15474057b9ee14d2018b7b65"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 8 marker; the itinerary node already supplies its own day numbering."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b24eaad6b8f86703",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[87]",
+            "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:84f98c1c69fa9c63",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7cc6a35b73304ba63e4543dce1f9d0a412e692af23e94e33354dca577daf970d",
+      "text": "Bariloche",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[97]",
+            "textSha256": "2f002781e3adeef826724fc2a3d6585ad46f23ac3c327c9bf823d423747ab59b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5167c1aea7c0f407",
+      "field": "media.alt",
+      "sourceTextSha256": "77026798becbcccd24ebf11c911a8de7299af3bb4674e4c8d65483b454e2137c",
+      "text": "Wooden houses by a quiet lakeshore in Bariloche, with a wooded hillside behind them, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2cj2yz-yli2enqs",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no image-specific alternative text for the wooden lakeshore houses and wooded hillside."
+      }
+    }
+  ]
+}

@@ -121,7 +121,7 @@
         "expiresAt": "2026-11-04T07:22:42.377Z"
       },
       "checkpoint": {
-        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-005-04",
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-005-08",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
         "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
@@ -214,10 +214,93 @@
                 "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
                 "wordAbsenceReason": "The verified selected Word contains no hover caption describing visitors between stands and agricultural machines; translate the current RU caption without changing media or inventing an event identity."
               }
+            },
+            {
+              "blockId": "tour:media_caption:a66c23c32b85cc6b",
+              "field": "media.caption",
+              "sourceTextSha256": "9a1fb1bc7873a3c33b097f78a24d94fadf799f720ea6e0be24433bd715fab0a6",
+              "text": "Photograph from the agribusiness programme; the specific event and year of the photograph have not been established.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word contains no exact caption establishing this photograph's event or year; translate the current RU uncertainty statement without inventing attribution."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "acba052174123a8eff19c17599ebadcf916a863c53c8ed888104b47f4ef8b95c",
+              "text": "Ribeirão Preto: second day of the business programme",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word has only the Day 4: Ribeirão Preto heading; it lacks the current RU business-day title without a confirmed exhibition identity. Translate the current RU heading.",
+                "wordSource": {
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p28",
+                      "textSha256": "c854a7285feafab25a2b19c1107b2fb25810b50f3eaabe5e257cd4b40fb01f3b"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "9d655681bc431deb23fb4890d5f4ba71a9c83d9963392032d48dc179f61a7383",
+              "text": "The second day of the business programme focuses on new agricultural technologies, sustainable practices and biotechnology. Transfer back to the hotel after the event.\n\nThe specific event and participation must be confirmed before booking; IFAMA 2027 in Ribeirão Preto is not presented as a confirmed service in this programme.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word describes a second exhibition day but lacks the current RU clarification that the event is unconfirmed and IFAMA 2027 in Ribeirão Preto is not an included confirmed service. Translate the current corrected RU block rather than restoring the outdated Word claim.",
+                "wordSource": {
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p28",
+                      "textSha256": "c854a7285feafab25a2b19c1107b2fb25810b50f3eaabe5e257cd4b40fb01f3b"
+                    },
+                    {
+                      "ref": "word/document.xml#p29",
+                      "textSha256": "c84da33cfa1fe1bee025d58e20f7ede2c29ce5b9eda4e0e02c34a01b17859e57"
+                    },
+                    {
+                      "ref": "word/document.xml#p30",
+                      "textSha256": "d89ddea0511e3613b8160ad9c861f69ac703828d25fac5c981f12d829880451f"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:66761f3edfddd3e1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d9c710fdc992bbe8a247c75a0354a52020937e688e4b2af09704c4cbb885954d",
+              "text": "Ribeirão Preto",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p28",
+                    "textSha256": "c854a7285feafab25a2b19c1107b2fb25810b50f3eaabe5e257cd4b40fb01f3b"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact Ribeirão Preto place name from the selected Word day heading."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:53:58.564Z"
+        "at": "2026-11-04T05:54:02.902Z"
       },
       "submission": null,
       "review": null,

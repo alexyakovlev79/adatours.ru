@@ -370,7 +370,114 @@
         "claimedAt": "2026-11-04T05:52:11.226Z",
         "expiresAt": "2026-11-04T07:22:11.226Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-009-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ef1fdb2517c4",
+        "token": "token-iwiao0re46l65ynbta4pbk",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_guatemala_discover_8_days:b009",
+          "stableId": "tour_guatemala_discover_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "21c3a09e3d64b442e2692f8f41403ae6843b9a596969246e1f1eee425f54be26",
+          "wordEvidence": {
+            "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+            "sha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+            "shaVerified": true,
+            "modifiedTime": "2026-10-28T14:31:32.157Z",
+            "title": "Discover Guatemala 8d7n 2027 eng com 20.docx",
+            "yearFolder": 2027,
+            "paragraphsFile": "/workspace/scratch/335ed4b6e466/ada_en_run/word_1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM.paragraphs.json"
+          },
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "c380399278742406b76a307736abaf5d1ed7cd7fd4decd332c090567370089e8",
+              "text": "Thursday: to Monterrico on the Pacific coast",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p86",
+                    "textSha256": "5f0f9327e82c8505e83e06cfdd1664eb0c6dc692a1128be5c2139c99551a98dd"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the concise site day heading from Word Day 6's Thursday, Pacific coast and Monterrico details, omitting hotel and meal prose."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "0ccf188b62d6f0e1cd760719f5da7814cfe568255723fa3570e3511127dbfcb6",
+              "text": "Breakfast. Transfer from Antigua to the Pacific coast and arrive in Monterrico, beside its volcanic-sand beach. This transfer operates without a guide. Overnight at Dos Mundos Pacífico or a similar hotel in Monterrico.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "Word paragraph 86 describes Day 6, paragraph 89 specifies driver only and paragraph 118 permits similar hotels. There is no exact combined narrative with all these qualifications; translate the current RU block without dropping the no-guide condition.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "supportingParagraphs": [
+                  {
+                    "ref": "word/document.xml:p86",
+                    "textSha256": "5f0f9327e82c8505e83e06cfdd1664eb0c6dc692a1128be5c2139c99551a98dd"
+                  },
+                  {
+                    "ref": "word/document.xml:p89",
+                    "textSha256": "fae5be659da1bbdd9a86a68aaf9f80faf4deb11a9b224f9944c7e0d2c92d969f"
+                  },
+                  {
+                    "ref": "word/document.xml:p118",
+                    "textSha256": "f0c2992acdf614f3e649dc8aa6edcf87d66f6169dab2c8183a416e93e967daeb"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f8d50ca23ebe6b42",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6f77ea077ac52d3606553c05922471d2567cfddc66298fa8c83ebf280ccf7c31",
+              "text": "Antigua",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p76",
+                    "textSha256": "26c914cb94d476cf5c57a733b93f5ebf046ca887c1083956954c8a6b520452df"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6877270a28760122",
+              "field": "itinerary.label",
+              "sourceTextSha256": "33140e36bf889ac8ac4c2dcc97b84709d3368cfdee2069dfdd5b2cdaad99505a",
+              "text": "Monterrico",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p85",
+                    "textSha256": "addc8ad675c8e2e394654148fd484bd349478e2a16228b67e3a863f95ceb06c0"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:52:45.692Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

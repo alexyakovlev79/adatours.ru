@@ -846,7 +846,187 @@
         "claimedAt": "2026-11-04T06:17:37.941Z",
         "expiresAt": "2026-11-04T07:47:37.941Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-1d528bec4ff4-b03-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-1d528bec4ff4",
+        "token": "ada-en-token-1d528bec4ff4-20261104",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b005",
+            "stableId": "tour_guatemala_belize_maya_world_12_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "dc29d114cfbeb9811353e21631a7905fa546cd7c3c8e19c359b7f9d78269be9d",
+            "blocks": [
+              {
+                "blockId": "tour:note:fd06ea2e19a4ef5d",
+                "field": "note",
+                "sourceTextSha256": "2f1969c9de551a9f0e2f23fdc058e43c19ff9037bf81616d4e5edd4e5cfa7d0b",
+                "text": "Group tours depart on Saturdays, with scheduled service for 2–16 travellers. Guide languages: Spanish and Italian.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The complete Word 2027 programme states English-speaking guide in paragraph 222, and has no equivalent of the frozen RU note specifying Spanish and Italian. Translate the current RU wording and flag this substantive language discrepancy for independent review.",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6"
+                }
+              },
+              {
+                "blockId": "tour:note:2810b6e0f03b8f8a",
+                "field": "note",
+                "sourceTextSha256": "f1328019bf3db84d35434a581e4cb9002caec8e52514f070540663de8f4d41f0",
+                "text": "Private tour: daily departures, with rates for 2–3, 4–5, 6–7 and 8–10 participants.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p28",
+                      "textSha256": "02b93e3754e867bb901aa971cd20f0f89de1c6d53bbcffb6fa6189f478ebc4d6"
+                    },
+                    {
+                      "ref": "word/document.xml:p170",
+                      "textSha256": "4878b764a55c284eeb4dafbed27c0c7e466d53b3b217a1f9ecdd8048aadaa6a3"
+                    },
+                    {
+                      "ref": "word/document.xml:p175",
+                      "textSha256": "04e66099ee6923836bf3c33d3ef0f84eee0ef6ffa99cb6c1b7452390ac63a0d2"
+                    },
+                    {
+                      "ref": "word/document.xml:p176",
+                      "textSha256": "9095c7e13fc0c77857ed8f6d50d2e3afef37f473708968076fc98887c7dc9d06"
+                    },
+                    {
+                      "ref": "word/document.xml:p177",
+                      "textSha256": "bd9b6307051bd7a60a5b832428be4a7d40d969127118fa4542ea92ba01086cfc"
+                    },
+                    {
+                      "ref": "word/document.xml:p178",
+                      "textSha256": "666599b929ae90e09c2ff4fafd9cf4c8d4b0286d0cbe90b437b81110c33bb8c4"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Compose the private-service departure and group-size summary from the exact daily-service label and four column headings in the verified Word 2027 tariff table."
+                }
+              },
+              {
+                "blockId": "tour:note:6983e17b95b690ab",
+                "field": "note",
+                "sourceTextSha256": "d26aac29cc72501787be8e1a25b59f944a8acc7f61e46887a23fec6d424c9f17",
+                "text": "Triple rooms available in Guatemala only, subject to availability.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p166",
+                      "textSha256": "153bac3e9e127a46b1d16a366f48c38bec162ffd04417a5e5c8775a2dbad64e3"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:note:9f01723b9963221d",
+                "field": "note",
+                "sourceTextSha256": "d3637696d2a1462a075e805171b5a1bdaf599cbcf1d0190d85dabdafae55b8e7",
+                "text": "Hotels in Belize offer rooms with one bed only; an extra-bed supplement applies if needed.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p166",
+                      "textSha256": "153bac3e9e127a46b1d16a366f48c38bec162ffd04417a5e5c8775a2dbad64e3"
+                    }
+                  ]
+                }
+              }
+            ],
+            "wordSourceVerification": {
+              "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+              "sha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+              "modifiedTime": "2026-10-28T14:23:51.828Z",
+              "editionYear": 2027,
+              "folderYear": 2027,
+              "paragraphConvention": "zero-based w:p traversal in word/document.xml",
+              "commercialTableEvidence": [
+                {
+                  "ref": "word/document.xml:p167",
+                  "textSha256": "823fc2fdd7ddb27448a8cb3f694e84d8392db5253c36929f16f60b7efcb770c9"
+                },
+                {
+                  "ref": "word/document.xml:p169",
+                  "textSha256": "6abd9a41d131e7e45cbdf12c12e22d35b8c94061693cc56659788a47f5b4ef07"
+                },
+                {
+                  "ref": "word/document.xml:p170",
+                  "textSha256": "4878b764a55c284eeb4dafbed27c0c7e466d53b3b217a1f9ecdd8048aadaa6a3"
+                },
+                {
+                  "ref": "word/document.xml:p175",
+                  "textSha256": "04e66099ee6923836bf3c33d3ef0f84eee0ef6ffa99cb6c1b7452390ac63a0d2"
+                },
+                {
+                  "ref": "word/document.xml:p176",
+                  "textSha256": "9095c7e13fc0c77857ed8f6d50d2e3afef37f473708968076fc98887c7dc9d06"
+                },
+                {
+                  "ref": "word/document.xml:p177",
+                  "textSha256": "bd9b6307051bd7a60a5b832428be4a7d40d969127118fa4542ea92ba01086cfc"
+                },
+                {
+                  "ref": "word/document.xml:p178",
+                  "textSha256": "666599b929ae90e09c2ff4fafd9cf4c8d4b0286d0cbe90b437b81110c33bb8c4"
+                },
+                {
+                  "ref": "word/document.xml:p195",
+                  "textSha256": "8c630171894598cab848f8119b6e4ad5cbc8358eca7fd5d8cf652009ee80cb63"
+                },
+                {
+                  "ref": "word/document.xml:p201",
+                  "textSha256": "4a17185ba6e8b8a6ca3c34eca11fd462a5b23e979a6fd8448d1110dc40161327"
+                },
+                {
+                  "ref": "word/document.xml:p202",
+                  "textSha256": "6f689ccee50e13da70637e130b2f4180e2467c4b5f93fd385087481031c92d0e"
+                },
+                {
+                  "ref": "word/document.xml:p204",
+                  "textSha256": "1b096933366696ab5f7ffe5ed4d5991c8b4511b669413855f1069068d0557c56"
+                },
+                {
+                  "ref": "word/document.xml:p205",
+                  "textSha256": "319a746e791ac01515879b142ce3d6589086f031186d61f6455f7fdf499f7bbf"
+                }
+              ]
+            },
+            "unresolvedConflicts": [
+              {
+                "field": "/notes/0",
+                "issue": "Frozen RU note specifies Spanish and Italian; verified Word 2027 paragraph 222 specifies an English-speaking guide.",
+                "resolution": "Current RU guide-language statement translated without alteration; independent reviewer/commercial master must reconcile before publication.",
+                "wordEvidence": [
+                  {
+                    "ref": "word/document.xml:p222",
+                    "textSha256": "c04cbd2ec3ada699a7b2feba204609b8db8b449988ec61c8eef61e84fb4f20ee"
+                  }
+                ]
+              }
+            ],
+            "priceAmendments": []
+          },
+          "submissionId": "ada-en-1d528bec4ff4-b03",
+          "preparedBlocks": 4
+        },
+        "at": "2026-11-04T06:18:52.382Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

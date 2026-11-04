@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2111,
-    "leased": 10,
+    "queued": 2110,
+    "leased": 11,
     "review": 288,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2111,
-      "leased": 10,
+      "queued": 2110,
+      "leased": 11,
       "review": 288,
       "ready": 1,
       "retryable": 0,
@@ -145,8 +145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 69,
-          "leased": 0,
+          "queued": 68,
+          "leased": 1,
           "review": 8,
           "ready": 0,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:26:55.494Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1401,6 +1401,12 @@
       "token": "lease-da131c3d187149a7b813992c83ea721b",
       "expiresAt": "2026-11-04T07:26:42.650Z",
       "generation": 1
+    },
+    "ada_en_2478a2a40c1c": {
+      "jobId": "en:bulk:tour:tour_chile_easter_island_3_days_2027:b005",
+      "token": "ada_en_2478a2a40c1c_20261104",
+      "expiresAt": "2026-11-04T07:26:55.494Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2422,8 +2428,15 @@
         "en:bulk:tour:tour_brazil_little_mix_ten_days:b005"
       ],
       "completedJobIds": []
+    },
+    "ada_en_2478a2a40c1c": {
+      "token": "ada_en_2478a2a40c1c_20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_chile_easter_island_3_days_2027:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:56:48.031Z"
+  "updatedAt": "2026-11-04T05:56:55.494Z"
 }

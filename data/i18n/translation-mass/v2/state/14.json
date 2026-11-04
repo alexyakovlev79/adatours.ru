@@ -211,179 +211,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "cdae72c9dc8a98ae72a9b61610cec5bf67aea7fc0a5b0098757af6342b242b34",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-2a369c57df19",
-        "token": "token-2a369c57df19-20261104",
-        "claimedAt": "2026-11-04T06:03:29.847Z",
-        "expiresAt": "2026-11-04T07:33:29.847Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-2a369-tour_brazil_peru_argentina_group_15_days-b010-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-2a369c57df19",
-        "token": "token-2a369c57df19-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b010",
-          "stableId": "tour_brazil_peru_argentina_group_15_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "cdae72c9dc8a98ae72a9b61610cec5bf67aea7fc0a5b0098757af6342b242b34",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:06b3a8351e97df3c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7d4a23e09e99c675d020ec7b12d845f4aaa57403b2c21697fdd8e084ab7a67f3",
-              "text": "Iguazu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p25",
-                    "textSha256": "118dc80df7355cf00ff2f35f08379dc712d75a7926370033b8c03cf4d9b8a77b"
-                  },
-                  {
-                    "ref": "word/document.xml:p27",
-                    "textSha256": "6e36f1a6bca98c439e5a6be351b520e3f4d56db9965dea7316c1992ac78d88d3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:2b892ff88f55ad5f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7d4a23e09e99c675d020ec7b12d845f4aaa57403b2c21697fdd8e084ab7a67f3",
-              "text": "Iguazu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p25",
-                    "textSha256": "118dc80df7355cf00ff2f35f08379dc712d75a7926370033b8c03cf4d9b8a77b"
-                  },
-                  {
-                    "ref": "word/document.xml:p27",
-                    "textSha256": "6e36f1a6bca98c439e5a6be351b520e3f4d56db9965dea7316c1992ac78d88d3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
-              "field": "itinerary.title",
-              "sourceTextSha256": "37d68b1a8c101ed663d6599cf65760d7e3cf7d96828a3fad6e316495e56e03ed",
-              "text": "Foz do Iguazu – Lima",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p40",
-                    "textSha256": "a27ba219043f090ce7a1c15100cf6fca709e1aafc0909ab3a3b30be43ea07dda"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word day marker for the dedicated itinerary title field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:b04d5d61d358e759",
-              "field": "itinerary.text",
-              "sourceTextSha256": "07dd1099a3563a52816779c9f46db615955e05b142a5cbdffe826c2343585909",
-              "text": "After your breakfast you will have a transfer out to airport to take your flight to Lima. Upon arrival, a driver will be waiting for you to drive you to your hotel. ",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p41",
-                    "textSha256": "12b1e5a54c25561f522d603a1f1f69990ef9e546f7002147364eb03f1dd10eda"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8e423711fb104e1d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-              "text": "Foz do Iguazu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p40",
-                    "textSha256": "a27ba219043f090ce7a1c15100cf6fca709e1aafc0909ab3a3b30be43ea07dda"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:bdebd5f5fcd1a26a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
-              "text": "Lima",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p40",
-                    "textSha256": "a27ba219043f090ce7a1c15100cf6fca709e1aafc0909ab3a3b30be43ea07dda"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:68de8cbe7ebb7c37",
-              "field": "media.alt",
-              "sourceTextSha256": "c67cef4def5d40fbcd4cff9da395d43004b4de92b8fb55e27a90e848bc4a5ddc",
-              "text": "Airport access road with a terminal and control tower in Lima, Peru",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-2a369c57df19",
-                "wordAbsenceReason": "The exact Word DOCX contains itinerary prose but no image-specific alternative text for the Lima airport access-road photograph; translated the supplied current RU alt."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:41945d3d61baeafa",
-              "field": "media.hover",
-              "sourceTextSha256": "dfc4e0400f999dd930fc94abc983b2230956edb7c87a9dd366c203a32ede9716",
-              "text": "Lima: access road, airport terminal and control tower",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-2a369c57df19",
-                "wordAbsenceReason": "The exact Word DOCX has no image hover caption for the Lima airport road; translated only the supplied current RU caption."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:04:43.375Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-2a369-tour_brazil_peru_argentina_group_15_days-b010",
+        "blobSha": "9bb7848f69ea9ce68e7026cfe41a1d311668a36f",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_peru_argentina_group_15_days_b010/sub-2a369-tour_brazil_peru_argentina_group_15_days-b010.json",
+        "at": "2026-11-04T06:04:52.602Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

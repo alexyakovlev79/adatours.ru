@@ -476,7 +476,90 @@
         "claimedAt": "2026-11-04T06:44:49.693Z",
         "expiresAt": "2026-11-04T08:14:49.693Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_2478a2a40c1c_s05_c04",
+        "format": "inline-v1",
+        "ownerId": "ada_en_2478a2a40c1c",
+        "token": "ada_en_2478a2a40c1c_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_luxury_brazil_11d:b009",
+          "stableId": "tour_luxury_brazil_11d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7529de9f5fa2d505f7460be23fd9fbc141b1f4448848b675854fb2276ab2d3e1",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "25f14280d7cfd97ede16d52ea53bc7923a95da13a88f3e9e7194598a51781230",
+              "text": "Day 7 · After breakfast, cross the border into Argentina to explore the spectacular Argentine side of Iguazú National Park, home to the largest network of trails and walkways among the falls. Recommended restaurant: the Itaipu restaurant at the Belmond Hotel das Cataratas (Brazilian and European cuisine).\n\nThe route follows wooden walkways above and between the streams of water, giving you different distances and angles from which to see individual cascades. To reach the Devil’s Throat, you take a train inside the national park, which covers 55,500 hectares.\n\nThe final section follows a bridge over the river. At the Devil’s Throat, the water drops almost beneath your feet. The largest cascade is 150 m wide and 82 m high, and carries roughly half of the total flow of the Iguazu Falls. The Argentine side has more close viewpoints: the walkways pass between individual streams, so you can see the water from above, from the side and almost at the level of the drop.\n\nSeeing both sides gives you two different experiences of Iguazu. The Brazilian side offers a broad panorama of the line of cascades as you gradually approach the main chasm. On the Argentine side, walkways lead into the waterfall complex and end at the edge of the Devil’s Throat. Two days here allow you to experience both perspectives.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s05",
+                "wordAbsenceReason": "Word 2027 p107 gives the approved Argentine-side visit and restaurant, but omits the current RU detailed train, park-area, cascade-dimension and two-side comparison passages. Retain p107 verbatim and translate those additional RU-only passages without changing their numbers.",
+                "wordEvidence": {
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p107",
+                      "textSha256": "65e801e68ef568cedafbd2660caad6f05ba72fe5097f4e865d41290ff3d109e3"
+                    }
+                  ]
+                },
+                "composition": "Verbatim approved Day 7 paragraph plus current RU-only detailed viewing and comparison passages."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3f69d9050d7522b8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "5b9fa0dc8001808c1d848887ec6d2d744b283e06ecf78068dac9933f8a9d5740",
+              "text": "Puerto Iguazú",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s05",
+                "wordAbsenceReason": "The selected Word describes the Argentine side of the falls but does not name Puerto Iguazú; translate the current RU stable-place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:374fc01d904e511f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d4c49018961e71c74be2fe1765588f178120716a5a987828b49099cecfda4e5e",
+              "text": "Devil’s Throat",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p106",
+                    "textSha256": "07eee0a236f9afaa64cbef659ac34a5b57e9a48302472952c02134b5029fc6a2"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named waterfall section unchanged from the approved Word programme."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:73ee8850a7ea4519",
+              "field": "media.alt",
+              "sourceTextSha256": "6f5e2e13ca03d7a9db0f6aaf75867354ad17f87cded378ce76cb2db724f9573e",
+              "text": "Visitors on a viewing walkway among the Iguazu Falls",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s05",
+                "wordAbsenceReason": "The checked Word contains no matching image-specific alt caption; translate the current RU caption."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:46:04.477Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

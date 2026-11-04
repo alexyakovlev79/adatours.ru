@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b006",
+  "stableId": "tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5dfafa7e592df54f6c2e5088d7eccd66f53bc6ba74490b15e5341d03ff48d706",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a7acddd29dc30115742dee1f93650d1b608b90193bbc6c31afdd2d4b7ec1dabe",
+      "text": "Day 5 · A full-day catamaran excursion to the Îles du Salut, the notorious former penal colony off Kourou: visit Île Royale and Île Saint-Joseph, with their prison ruins and natural beauty, and sail around Devil’s Island, which cannot be visited. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+        "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "736094b4e475abb0cb9aeee21e1da2523602b25bc84accd73c45c730178abef4"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1bf393be722bedea",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0e288f90924d70660c6edf94130a82648f28f0f25a32259457e45c80a878a666",
+      "text": "Devil’s Island",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+        "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "736094b4e475abb0cb9aeee21e1da2523602b25bc84accd73c45c730178abef4"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2da0d08ecda3fd27",
+      "field": "media.alt",
+      "sourceTextSha256": "28fb96e601acd6d010e3818117a354c132e1f3545a01b78bebbc050588a6a8a4",
+      "text": "Rocky Devil’s Island with dense palm trees, French Guiana",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-e5835a329b8c",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains the island itinerary but no image-specific alternative text describing these rocks and palm trees."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cc5c2f2d47f9ec49",
+      "field": "media.hover",
+      "sourceTextSha256": "5393a0a123380c3c276cbf5f61721b47cf5333d16b9ac4507d50fbb1335a8fad",
+      "text": "Devil’s Island off French Guiana: dark coastal rocks and tropical greenery",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-e5835a329b8c",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no image hover caption describing the dark coastal rocks and tropical vegetation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5960d636e5f550cca99b9032b67a41e2ce97ba8e526c60e1b3f707266159783a",
+      "text": "Cayenne – Saint-Laurent-du-Maroni – Paramaribo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+        "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "a69b2c0f401a001bf2e8d8a45e6b8998892c203727942a55e1e8a3fa07100d32"
+          },
+          {
+            "ref": "word/document.xml:p87",
+            "textSha256": "12de3a91b6bb83cb10c52787989f71943739d99325521be95695c7e14060fe06"
+          },
+          {
+            "ref": "word/document.xml:p116",
+            "textSha256": "af1c0ccbf5d606bf1e4fe30d8ae9c05f2d5a7443e6c3e81cb0a51edcd65db165"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing route label from the named places in the Word and the fixed RU route, without adding a visit."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ee5d07f7256f9f9b9ad977d01f2b5136f19c02ecd51589f1c69ac48e16e1101b",
+      "text": "After breakfast, you will travel to Cayenne, the capital of French Guiana.\n\nOn a city tour, you will see its main sights, heritage sites and architecture.\n\nFrom Cayenne, the route heads back towards Albina and the border with Suriname. Along the way, you will stop at the former transportation camp in Saint-Laurent-du-Maroni. For many years, it was one of France’s main penal institutions in the region.\n\nThis is where Papillon was imprisoned. During your visit to the camp, you will also see his cell.\n\nAfter the tour, return to Suriname and check in at your hotel in Paramaribo.\n\n**Meals:** breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-e5835a329b8c",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not contain this standalone return-day narrative via Cayenne and Saint-Laurent-du-Maroni or the visit to Papillon’s cell; its day 4 covers outbound travel and day 6 the Space Centre. This assigned RU block is translated without changing its route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4abdc8bc4b2255d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a25b369b20c3fde62654aea654c55ea9ca8b06934269e35a0c3429ad9ab8c39d",
+      "text": "Paramaribo",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+        "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p116",
+            "textSha256": "af1c0ccbf5d606bf1e4fe30d8ae9c05f2d5a7443e6c3e81cb0a51edcd65db165"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:251a0b7629409b4c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eb6b31fac8589c27ca534fe8828b4b144c55993fc8aae98b35c4673b1e51256e",
+      "text": "Saint-Laurent-du-Maroni",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+        "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "a69b2c0f401a001bf2e8d8a45e6b8998892c203727942a55e1e8a3fa07100d32"
+          }
+        ]
+      }
+    }
+  ]
+}

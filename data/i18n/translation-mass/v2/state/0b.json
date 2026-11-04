@@ -359,7 +359,88 @@
         "claimedAt": "2026-11-04T06:22:47.421Z",
         "expiresAt": "2026-11-04T07:52:47.421Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-3f45d665-b006-01-c4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-3f45d665-translator",
+        "token": "ada-en-token-3f45d665-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b006",
+          "stableId": "tour_brazil_peru_argentina_group_15_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "a76b52d288e43dbcc6b13cc2b7663b50d84c6e1ef308f2871b6ca1a87267aea3",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "acb82f3d4f14e8e31cf3548464b4db67adb10ffc99f2b9cde86892cfc9e514b2",
+              "text": "Arrival day in Rio de Janeiro! A driver will be waiting for you at the international airport of Rio de Janeiro to transfer you to your hotel. The rest of the day is free to discover the city or enjoy your first day at the beautiful beaches of Rio de Janeiro. Dinner at a restaurant. (drinks not included)\n\nRio de Janeiro has green hills, blue sky, beautiful bays, islands and marvelous beaches. It is the second biggest city in Brazil (after Sao Paulo) and, certainly, one of the most beautiful cities in the world! Beach hotels are situated along the whole perimeter of Guanabara Bay and, if you are staying in one of these hotels, the beauties of Rio de Janeiro are open for you all the time. Blue ocean water will call you to the beach. The most popular beaches - Copacabana, Ipanema and Leblon, are famous for their black and white tiled promenade. From early morning to late in the night you can see people playing soccer and volleyball on the golden sand of the beaches. For those who prefer active holidays, Rio offers opportunities to practice almost any sport: golf, tennis, surfing, rafting, diving, delta flight and many others.  Numerous open cafeterias on the beach will offer you refreshing coconut water, freshly squeezed juices and other drinks.  You can also see presentations of local musicians on the beach playing all kinds of music.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p7",
+                    "textSha256": "938a1df4dcce1ae73b2e6f78ba0476de30c338e67ac0e8999641651d8b30f95c"
+                  },
+                  {
+                    "ref": "word/document.xml:p9",
+                    "textSha256": "36ff131dc9170efb4239aaa21f7c6e4a2d784c637c404ac17f6aff3f6bce8048"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p6",
+                    "textSha256": "15aa5399a390d8f12a0abd0a8154dbd22a39ef70dd471be1793c9a6e5cf385c0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the place name from the corresponding Word itinerary heading as the existing place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:326afec03041a65a",
+              "field": "media.alt",
+              "sourceTextSha256": "bb63eef057fd22a3c980a665e5a82cf08304c7db08425fb4236287e3fc21aa9c",
+              "text": "Copacabana's mosaic promenade and beach with palm trees in golden light, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The exact Word document has no caption describing this website photograph or its golden light; translate the current RU media alt text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:4db4f68d922b28b4",
+              "field": "media.hover",
+              "sourceTextSha256": "871b49ee1cde7f4b82cd4a842952f65c70f397425b646eaf1fbbb0291e1301aa",
+              "text": "Copacabana in Rio de Janeiro: patterned promenade, palm trees and the sea in golden light",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The exact Word document has no hover caption for this website photograph; translate the current RU image hover text."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:23:58.794Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

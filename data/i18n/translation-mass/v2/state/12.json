@@ -324,7 +324,7 @@
         "expiresAt": "2026-11-04T07:10:45.391Z"
       },
       "checkpoint": {
-        "id": "cp-ada-en-befca8d88a7c-04-4",
+        "id": "cp-ada-en-befca8d88a7c-04-8",
         "format": "inline-v1",
         "ownerId": "ada-en-befca8d88a7c",
         "token": "ca9d19d3a2444d3eb27e82c408f2b400",
@@ -391,10 +391,76 @@
                 "runId": "ada-en-befca8d88a7c",
                 "wordAbsenceReason": "The Word contains the full shared canoeing excursion (paragraphs 46–47), but no separate day wrapper with the canonical excursion reference, alternative-visit clarification and second-night statement. Translated the current RU wrapper without duplicating the full canonical excursion."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:aabee2fbd06c9a73",
+              "field": "itinerary.label",
+              "sourceTextSha256": "05d92f3bebf288eb6c22e3e97b0e93e3f135d6ed83eb81be9b6418a078bc8b4d",
+              "text": "Araras Eco Lodge",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p45",
+                    "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the approved lodge name as the itinerary's standalone place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6a4d6ad6127ae7a2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "453af7b339499da174940f648f67657306d7adeeced91da7ba004d1ecc21e5e6",
+              "text": "Clarinho River or Corixo River",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "ed01e0eaaab53cf8c0fccaead56880d27b6b8f32c94238181fc63ac3cc6d96f4"
+                  },
+                  {
+                    "ref": "word/document.xml:p47",
+                    "textSha256": "1e683a11cf973f3ddd4e79e48402812f9a50211838f45326a2d51aa2f5af760e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the alternative river label from the main Clarinho route and the conditional Corixo alternative."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:30065435c10cd723",
+              "field": "media.alt",
+              "sourceTextSha256": "821ff7a37d9c54f86868be5b3263a6fa32c0435af36e5a54317e93fbf50b3dc2",
+              "text": "A flock of white and pink birds above the water and green banks of the Pantanal, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:d658413492035065",
+              "field": "media.hover",
+              "sourceTextSha256": "b49d85eff439bf47c3a611b98dac0f2c4aa52a45700650893fca4433b612a428",
+              "text": "Pantanal: birds take flight above the water",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:41:59.761Z"
+        "at": "2026-11-04T05:42:11.842Z"
       },
       "submission": null,
       "review": null,

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2061,
-    "leased": 13,
+    "queued": 2060,
+    "leased": 14,
     "review": 335,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2061,
-      "leased": 13,
+      "queued": 2060,
+      "leased": 14,
       "review": 335,
       "ready": 1,
       "retryable": 0,
@@ -1065,8 +1065,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 79,
-          "leased": 0,
+          "queued": 78,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:45:02.995Z",
       "earliestRetryAt": null
     },
     "1a": {
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b010",
       "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
       "expiresAt": "2026-11-04T07:44:42.444Z",
+      "generation": 1
+    },
+    "ada-en-3241f5702d2d": {
+      "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b012",
+      "token": "ada-en-token-3241f5702d2d-20261104",
+      "expiresAt": "2026-11-04T07:45:02.995Z",
       "generation": 1
     }
   },
@@ -2595,8 +2601,15 @@
         "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b009"
       ],
       "completedJobIds": []
+    },
+    "ada-en-3241f5702d2d": {
+      "token": "ada-en-token-3241f5702d2d-20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_colombia_complete_11_days:b012"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:14:42.444Z"
+  "updatedAt": "2026-11-04T06:15:02.995Z"
 }

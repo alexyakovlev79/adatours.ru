@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1797,
-    "leased": 8,
+    "queued": 1796,
+    "leased": 9,
     "review": 604,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1797,
-      "leased": 8,
+      "queued": 1796,
+      "leased": 9,
       "review": 604,
       "ready": 1,
       "retryable": 0,
@@ -905,8 +905,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 53,
-          "leased": 0,
+          "queued": 52,
+          "leased": 1,
           "review": 12,
           "ready": 0,
           "retryable": 0,
@@ -937,7 +937,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T13:28:31.854Z",
       "earliestRetryAt": null
     },
     "0c": {
@@ -1388,6 +1388,12 @@
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b021",
       "token": "ada-en-f5ac9871-mw22b2eq-session",
       "expiresAt": "2026-11-04T13:28:11.207Z",
+      "generation": 1
+    },
+    "ada-en-f5ac9871-mw22b6a9": {
+      "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b008",
+      "token": "ada-en-f5ac9871-mw22b6a9-token",
+      "expiresAt": "2026-11-04T13:28:31.854Z",
       "generation": 1
     }
   },
@@ -3384,7 +3390,8 @@
     "ada-en-f5ac9871-mw22b6a9": {
       "token": "ada-en-f5ac9871-mw22b6a9-token",
       "jobIds": [
-        "en:bulk:tour:tour_panama_mice_7_days:b011"
+        "en:bulk:tour:tour_panama_mice_7_days:b011",
+        "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_panama_mice_7_days:b011"
@@ -3406,5 +3413,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T11:58:24.929Z"
+  "updatedAt": "2026-11-04T11:58:31.854Z"
 }

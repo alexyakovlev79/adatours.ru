@@ -313,7 +313,91 @@
         "claimedAt": "2026-11-04T05:33:09.230Z",
         "expiresAt": "2026-11-04T07:03:09.230Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-001-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ef1fdb2517c4",
+        "token": "token-iwiao0re46l65ynbta4pbk",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b009",
+          "stableId": "tour_colombia_explorer_9_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "b54196adfd8d28f7a66782cff0e5c1dcedd2179b81ce3c759e4180c92ce5cfe2",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "5bdb8b64f0b572ee794efe9666733265b955fca6d1b0c12dd870ed9b52a57daf",
+              "text": "Zip-lining above the treetops is followed by a horseback ride through green hills, coffee plantations and meadows. For those who prefer a quieter day, alternative tours and activities can be arranged to suit their interests. The specific replacement is agreed in advance. Overnight in Pereira.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "Word 2027 paragraphs 89–90 describe Day 4 in full; the RU transition summary, advance-agreement sentence and overnight wording are separate site blocks with no exact Word counterpart. Translate the current RU summary without duplicating its excursion module.",
+                "wordFileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "wordDocumentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f4fe161220d09aea",
+              "field": "itinerary.label",
+              "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+              "text": "Pereira",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p88",
+                    "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e3e0f66fa67f5eb0",
+              "field": "media.alt",
+              "sourceTextSha256": "58b6727449e733f283eb3aa358f7c24e311232bb7b511e4386bdd67146b23431",
+              "text": "Tall palms of the Cocora Valley above green pastures, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified Word 2027 has no image-alt field corresponding to this Cocora Valley photograph. Translate the exact current RU caption without adding visual details.",
+                "wordFileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "wordDocumentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:b241f92923c8f376",
+              "field": "media.hover",
+              "sourceTextSha256": "fc49e0a20acfc44148e636618a083c8689cfafbeb6aeee6c3cc9fda9c19c6658",
+              "text": "Cocora Valley: slender palms above grassy slopes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified Word 2027 has no hover-caption field corresponding to this Cocora Valley photograph. Translate the current RU caption.",
+                "wordFileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "wordDocumentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3"
+              }
+            }
+          ],
+          "wordEvidence": {
+            "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+            "sha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+            "modifiedTime": "2026-10-26T18:01:44.969Z",
+            "title": "Colombia_Explorer_9d8n_-_Bogota___Pereira___Medellin___Cartagena_2027_ENG_com_20_.docx",
+            "shaVerified": true,
+            "paragraphsFile": "/workspace/scratch/335ed4b6e466/ada_en_run/word_1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP.paragraphs.json"
+          }
+        },
+        "at": "2026-11-04T05:34:48.832Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

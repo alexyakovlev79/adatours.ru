@@ -310,162 +310,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b044fef7fcbf4b210fc5daeadc3a8e76731d1e11f34ef8702ac66f9b0fd46871",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-6443bdee1590",
-        "token": "ada-en-6443bdee1590-f44bf3357a42",
-        "claimedAt": "2026-11-04T06:44:55.162Z",
-        "expiresAt": "2026-11-04T08:14:55.162Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-6443bdee1590-s001-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-6443bdee1590",
-        "token": "ada-en-6443bdee1590-f44bf3357a42",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b006",
-          "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b044fef7fcbf4b210fc5daeadc3a8e76731d1e11f34ef8702ac66f9b0fd46871",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "5f13d69ab18bb3e588e273ef706c184b1df395a9709f52d0f5bee73e41ccacdc",
-              "text": "After breakfast you have the chance to go on a half-day excursion to the Sugarloaf and City tour. The first stop is the Urca Mountain, with a wide viewing area that also offers the possibility to have a snack in the restaurant on top of the mountain. On the mountain of Sugar Loaf you will have a beautiful view of Rio, Copacabana beach, the bay, the surrounding mountains, islands in the ocean, bridge Niteroi, and the statue of Christ on Corcovado Mountain. After going down by cable car, the tour continues and we set off on a tour through the city, visiting the historic center, colonial churches, monasteries, the Cathedral, and buildings in colonial style. *Due to the high volume of visitors during the New Year period, the city tour route may be adjusted.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml//w:p[50]",
-                    "textSha256": "78a486a6c9fc8c37ea946c6a11961e580db0a5d9c2770d74f4e2305cae3e20cf"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:63faaff1da9e170b",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2fc680c8c006a763083a8f6a5acd59a4ccf31610ee29c7a5691c823d17d11126",
-              "text": "Praia Vermelha",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-6443bdee1590",
-                "wordAbsenceReason": "The approved Word Sugarloaf paragraph does not name Praia Vermelha; translate the current RU itinerary place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:cd4c239b3276ef4d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "51f922eedb678ab10929d498388dfed9f8943023e72b708a075900215096c5ff",
-              "text": "Urca Mountain",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml//w:p[50]",
-                    "textSha256": "78a486a6c9fc8c37ea946c6a11961e580db0a5d9c2770d74f4e2305cae3e20cf"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the place name used in the approved Word paragraph for the existing itinerary place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:68ef02bacb6b52e2",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c20fa275ecbe6a0d6c918b2133e0ffc8929360be9e40d9e18c29cdf8fd581bcf",
-              "text": "Sugar Loaf",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml//w:p[50]",
-                    "textSha256": "78a486a6c9fc8c37ea946c6a11961e580db0a5d9c2770d74f4e2305cae3e20cf"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the place name used in the approved Word paragraph for the existing itinerary place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b2f0e19acda78198",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml//w:p[50]",
-                    "textSha256": "78a486a6c9fc8c37ea946c6a11961e580db0a5d9c2770d74f4e2305cae3e20cf"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the place name used in the approved Word paragraph for the existing itinerary place label."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:c88ad6f08264625b",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "5f13d69ab18bb3e588e273ef706c184b1df395a9709f52d0f5bee73e41ccacdc",
-              "text": "After breakfast you have the chance to go on a half-day excursion to the Sugarloaf and City tour. The first stop is the Urca Mountain, with a wide viewing area that also offers the possibility to have a snack in the restaurant on top of the mountain. On the mountain of Sugar Loaf you will have a beautiful view of Rio, Copacabana beach, the bay, the surrounding mountains, islands in the ocean, bridge Niteroi, and the statue of Christ on Corcovado Mountain. After going down by cable car, the tour continues and we set off on a tour through the city, visiting the historic center, colonial churches, monasteries, the Cathedral, and buildings in colonial style. *Due to the high volume of visitors during the New Year period, the city tour route may be adjusted.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml//w:p[50]",
-                    "textSha256": "78a486a6c9fc8c37ea946c6a11961e580db0a5d9c2770d74f4e2305cae3e20cf"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:30096b184e3fa836",
-              "field": "media.alt",
-              "sourceTextSha256": "71abbc0ccd8f170b1ad687c87bdd1052d26b93c1bad9c6115d3240a4b747c080",
-              "text": "Cable car cabin above Rio de Janeiro at sunset, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-6443bdee1590",
-                "wordAbsenceReason": "Word contains the itinerary but no caption describing this existing image; translate its current RU alternative text."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:10ecf0ec34e18afc",
-              "field": "media.hover",
-              "sourceTextSha256": "e5123f3df7eaa0a69624b0431e48b16fa01d08ab1378865b21486b5aec63eae8",
-              "text": "Rio at sunset: the cable car above the city and the bay",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-6443bdee1590",
-                "wordAbsenceReason": "Word has no image hover caption corresponding to this existing RU image; translate the supplied caption without changing the photo."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:46:56.218Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-6443bdee1590-s001",
+        "blobSha": "2a361d77c9cd67399e2f98afee9212c9123796ef",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_new_year_11_days_2027_b006/ada-en-6443bdee1590-s001.json",
+        "at": "2026-11-04T06:51:22.263Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

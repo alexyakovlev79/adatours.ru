@@ -410,7 +410,165 @@
         "claimedAt": "2026-11-04T06:43:19.381Z",
         "expiresAt": "2026-11-04T08:13:19.381Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-1d528bec4ff4-b05-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-1d528bec4ff4",
+        "token": "ada-en-token-1d528bec4ff4-20261104",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b009",
+            "stableId": "tour_mexico_lindo_eight_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "4ff2e019690323ed9a6013b4230b381576332696eb6fbcc46786d0182cd4d634",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:554e10e40588c234",
+                "field": "itinerary.label",
+                "sourceTextSha256": "3e4ef6d3fa13090c609d0faf6539e626f78a65ae519e2f83fe8f4ffc8f3fa8c0",
+                "text": "Xochimilco",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p47",
+                      "textSha256": "3ed291fcc8b0414b52b870bf61b3393b16d71a9c5ab92ea6362008e9ae27bc81"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the verified Word place name Xochimilco as a concise itinerary label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+                "field": "itinerary.title",
+                "sourceTextSha256": "143cce2aa62429912a2f4e1b312c08f392056a61e196e467b7e5c76dd40ccec3",
+                "text": "From Mexico City to the White City",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p52",
+                      "textSha256": "118af5b3c3f54e2784bae63a5ff2c7acbb6d1ce740bfff30aa9bce5ffc498ef0"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the exact Word day title after removing only the Day 05 ordinal supplied by the itinerary structure."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:b04d5d61d358e759",
+                "field": "itinerary.text",
+                "sourceTextSha256": "2f6464a68ae17f47b8574fd0ce69d0533a6b0d070911fded6a67c29c2f6ec4c6",
+                "text": "(PT) Private Transfers + Domestic Flight (Not Included) + Mérida City Tour\nDuration: Flight approximately 2 hours + City Tour 2.5–3 hours\nLanguages: English and Spanish\n\nToday you leave behind the vibrant energy of Mexico City and travel to Mérida, the elegant and sun-drenched capital of the Yucatán Peninsula, often called La Ciudad Blanca (The White City).\n\nYour day begins with a private transfer to Mexico City International Airport. After your domestic flight (not included), a driver will be waiting to greet you upon arrival in Mérida and take you comfortably to your hotel located in the historic center.\n\nOnce settled, discover the city’s unique blend of colonial architecture and Mayan heritage on a guided walking tour through the Centro Histórico. Highlights include the Cathedral of San Ildefonso, the colorful Zócalo, and the elegant façades that line the historic streets. The tour also includes a visit to Paseo de Montejo, Mérida’s grand boulevard inspired by European architecture.\n\nTour start times are available at 13:00, 16:00, or 18:00 hours.\n\n\n•  Smooth private transfers in both Mexico City and Mérida.\n•  Guided walking tour through Mérida’s historic center.\n•  Discover landmarks including the Cathedral of San Ildefonso, the Zócalo, and Paseo de Montejo.\n•  Receive personalized dining recommendations for an authentic local meal.\n\nIncluded:\n•  Private transfers in Mexico City and Mérida\n•  Certified bilingual guide for the city tour\n•  Overnight stay in Mérida\n\nNot Included:\n•  Domestic flight (available upon request)\n•  Meals\n•  Tips\n•  Personal expenses",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p54",
+                      "textSha256": "230731a8b7ae8e014810df0bd5276cf10f1a043c4c038e1819ff0b69d85f1f0b"
+                    },
+                    {
+                      "ref": "word/document.xml:p55",
+                      "textSha256": "ad8db8ddb7e08c593b1a6cee5b3b11ad8eeb203d4984a90a63679592d1a6cf2d"
+                    },
+                    {
+                      "ref": "word/document.xml:p56",
+                      "textSha256": "95c0bac047ee93e9a93a743b693b42f52a5567d61cdc24a288ba8b8f0bc3c306"
+                    },
+                    {
+                      "ref": "word/document.xml:p57",
+                      "textSha256": "78928edc942d9f8b3cae35eab4a87524dd0c51d8701719100dd27874969803e4"
+                    },
+                    {
+                      "ref": "word/document.xml:p58",
+                      "textSha256": "37771bbbe5c76a94dae59e5f51cd35616a40d4a98e8e4edb8969113ae2c6edbb"
+                    },
+                    {
+                      "ref": "word/document.xml:p60",
+                      "textSha256": "76d2e74db7b589d0a08ed560e4c5443c1ada34a780990500fac4c58619165809"
+                    },
+                    {
+                      "ref": "word/document.xml:p61",
+                      "textSha256": "7f7cbe1b9805137f166ac3d7f867227b7f3f45136fcc6a24cb5481c2a9674b40"
+                    },
+                    {
+                      "ref": "word/document.xml:p62",
+                      "textSha256": "fe10adeb6c011be47fcf21333f5fdc17339208a6a578669446c91c19866ef3bd"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:a6561c5925c916ff",
+                "field": "itinerary.label",
+                "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
+                "text": "Mexico City",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p52",
+                      "textSha256": "118af5b3c3f54e2784bae63a5ff2c7acbb6d1ce740bfff30aa9bce5ffc498ef0"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the verified Word place name Mexico City as the itinerary label."
+                }
+              }
+            ],
+            "wordSourceVerification": {
+              "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+              "sha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+              "modifiedTime": "2026-10-08T14:01:21.046Z",
+              "editionYear": 2027,
+              "folderYear": 2027,
+              "paragraphConvention": "zero-based w:p traversal in word/document.xml; hash concatenates w:t; output may restore OOXML breaks and bullet line breaks",
+              "commercialTableEvidence": [
+                {
+                  "ref": "word/document.xml:p3",
+                  "textSha256": "002991e7914ba601c6056c7fa749864b19791199b8837caadac2e0934e2cde1c"
+                },
+                {
+                  "ref": "word/document.xml:p4",
+                  "textSha256": "2f618de4605b6e020c24e9ef2a04218bbf6e57f9df7b67dd35bcf7dc8fcce737"
+                },
+                {
+                  "ref": "word/document.xml:p5",
+                  "textSha256": "b4d016e3f46f645cb81cb4d7259f52e18dd131dc5974776acbc363d722001ecb"
+                },
+                {
+                  "ref": "word/document.xml:p6",
+                  "textSha256": "70f72c436e386baf3537babcd0772116f129673344de7039c7db6e7506b7c665"
+                },
+                {
+                  "ref": "word/document.xml:p7",
+                  "textSha256": "340cb05997d7490f118a03249f2495b6dd9caeb05e04120eb84cfbc74e233d4d"
+                },
+                {
+                  "ref": "word/document.xml:p8",
+                  "textSha256": "248ac86249a0c548af14ff39e2633d51fcdad90f47b9d1d92960f042c60bab7c"
+                }
+              ]
+            },
+            "priceAmendments": []
+          },
+          "submissionId": "ada-en-1d528bec4ff4-b05",
+          "preparedBlocks": 4
+        },
+        "at": "2026-11-04T06:44:33.608Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

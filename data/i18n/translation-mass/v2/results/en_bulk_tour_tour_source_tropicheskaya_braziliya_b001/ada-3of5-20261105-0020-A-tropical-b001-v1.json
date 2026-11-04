@@ -1,0 +1,171 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tropicheskaya_braziliya:b001",
+  "stableId": "tour_source_tropicheskaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1b49054fccc94ae3887bb23891ebb63c98cd9968d86dfdbe78871bed9d83e116",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "24ddec5936707d73e88ac3fd52c5da90ccbd9f60f2a7168ba8a899e744e0df62",
+      "text": "Tropical Brazil: Rio de Janeiro and a Beach Holiday in Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "docx:heading:Tropical Brazil",
+            "textSha256": "b809040168ba50c2c2f8bf1282eb27e4717d3348187f5662c4784e809c683b66"
+          },
+          {
+            "ref": "docx:subtitle:Rio de Janeiro and seven days in Búzios",
+            "textSha256": "4cdc5c03fb8d66f8813d7cb3176a045e55c0acc0ff20690cb32938bc799be995"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the brochure title and English Búzios subtitle into a natural English marketing title without changing the programme."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "ba1901907fdd65d6bc7478c917622b68f5e73f12057789aa8c36cb39dfbcfe76",
+      "text": "Enjoy four nights in Rio de Janeiro, including the iconic views from Sugar Loaf and Corcovado, followed by seven nights of relaxation on the tropical beaches of Búzios.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "docx:route:Rio (4N) · Búzios (7N)",
+            "textSha256": "3f87f2f235807ab1e561b33a32aa6a07272baee8dc862f47eaae71baa3c6966c"
+          },
+          {
+            "ref": "docx:highlights:Sugar Loaf · Corcovado",
+            "textSha256": "125be098e35151c714e1135788bd25b8378d703f89a2a03bd3fdbbbb8587fe6e"
+          },
+          {
+            "ref": "docx:overview:Experience the best of Brazil",
+            "textSha256": "d2c11fd25b837e27dba1a77a07dde00e14553db5aeb2c412f65340f69dfc4955"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Condense the approved 2027 brochure overview and route into a lead, retaining four Rio nights, seven Búzios nights and both landmark excursions."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "ad2cd508bc24645b54c9b783bf45f07c9c90a781ba0d3b0f3bf944960b7d9b32",
+      "text": "$4072",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-3of5-20261105-0020-A",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word 2027 lists USD pricing without the numeric $4072 figure from the pinned RU field; preserve this commercial figure exactly, with no price revision."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0010141711c9f59d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "302d421f3d7bdfc284b1efc0d13dee118beded26e3bc3c09362ecdfc9cf46ef2",
+      "text": "Rio de Janeiro (4 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "docx:route:Rio (4N) · Búzios (7N)",
+            "textSha256": "3f87f2f235807ab1e561b33a32aa6a07272baee8dc862f47eaae71baa3c6966c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expand the approved brochure abbreviation Rio (4N) to the complete destination label Rio de Janeiro (4 nights)."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a0a043773ff052e9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e545ff41163ca9eae4715bf6c26af96b00cf855bdf4fd912aa4d0f7c4d374a7f",
+      "text": "Tropical coast of Búzios (7 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "docx:route:Rio (4N) · Búzios (7N)",
+            "textSha256": "3f87f2f235807ab1e561b33a32aa6a07272baee8dc862f47eaae71baa3c6966c"
+          },
+          {
+            "ref": "docx:heading:Seven nights on the Búzios peninsula",
+            "textSha256": "da83e7cc0089611310d9dff405f206960705f8dc3dc1aaa980d4aa866ceab59f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expand Búzios (7N) into the coastal destination label while retaining the seven-night duration of the approved route."
+      }
+    },
+    {
+      "blockId": "tour:included:45f29ca8e175841a",
+      "field": "included",
+      "sourceTextSha256": "132311d7fd49ba899ec62902ff7f5a7ac69e424042bf0f8be2005b0461c26aaa",
+      "text": "Hotels according to the programme or similar, with breakfast.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "docx:included:Hotels according to the programme or similar, with breakfast",
+            "textSha256": "66ef00e1dbc82a9a4c79c672134a7e49dc6cafcba007d0f8e093364112be9edc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved brochure wording for hotel accommodation and breakfast, without the preceding list dash."
+      }
+    },
+    {
+      "blockId": "tour:included:29ac633833b2ff90",
+      "field": "included",
+      "sourceTextSha256": "981987c7789a96543dd473edfebaeee822fd16e200371bb7578a6159eeaf86f3",
+      "text": "Excursions with an English-speaking guide.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "docx:guide:English-speaking guide on excursions",
+            "textSha256": "200a39979268c6289bfc5c4de5f9f99b17a955d695dd4b7fe0ef951586638471"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Rephrase the brochure's English-speaking guide on excursions as an included-service line, replacing the RU-language guide in the localized English product."
+      }
+    },
+    {
+      "blockId": "tour:included:e28631d4985d71bd",
+      "field": "included",
+      "sourceTextSha256": "2f5fdb20fad5b88a7e5e9ab88bceb7a4722a542210f9aa7c709ec4792a8cd72a",
+      "text": "Airport-to-hotel transfer in Rio de Janeiro.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "docx:included:Airport – hotel transfer in Rio de Janeiro",
+            "textSha256": "722d11e6fe45fecc2e15b81de8136d265d64753f31332da58043f5f92a8bf256"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the explicit airport–hotel transfer inclusion from the approved Word; the brochure does not promise a guide accompanying the airport transfer."
+      }
+    }
+  ]
+}

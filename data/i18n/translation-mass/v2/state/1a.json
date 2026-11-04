@@ -527,7 +527,89 @@
         "claimedAt": "2026-11-04T06:51:55.832Z",
         "expiresAt": "2026-11-04T08:21:55.832Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2ee259e72fda-003-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2ee259e72fda-20261104",
+        "token": "ada-en-2ee259e72fda-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b008",
+          "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "a829a66ecc1e415195ebd4540d1fc1195b3c10b48ed807e5bfc6edb7667abfa4",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:6be895d301700d1f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+              "text": "Puerto Iguazú",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The selected Word p92 covers the Argentine falls but does not name Puerto Iguazú as a standalone route label. Translate this current RU place name using its established English form.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:media_alt:d3ca71261e067b2b",
+              "field": "media.alt",
+              "sourceTextSha256": "6ef618c4cb24d2c237e1e627df95287b913324cd0bd63716029ed819c5b244c8",
+              "text": "An illuminated pedestrian bridge and waterfront high-rises in Buenos Aires, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word itinerary and tables contain no corresponding caption for this current RU photograph; translate the exact RU media text without changing the image.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:eb2b2f58b7acc541",
+              "field": "media.hover",
+              "sourceTextSha256": "38168a8a99b4ed93c10bb61555313c55bd4d43605cd5be86c94516c1f4a5df57",
+              "text": "Buenos Aires at night: lights from the bridge and towers reflected in the water",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word itinerary and tables contain no corresponding caption for this current RU photograph; translate the exact RU media text without changing the image.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "7448486bc1b6c510e093859e9a8014b41ce152380848a62ff1927d671484a16e",
+              "text": "Buenos Aires and tango show",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                  },
+                  {
+                    "ref": "word/document.xml:p101",
+                    "textSha256": "15e5578fe665fe60f5c4072a7e9caab1c7eb55e648dae58e38ae2661292b3574"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the current heading from the Word Buenos Aires heading and its tango show paragraph, preserving the declared activities."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:52:38.328Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -371,7 +371,7 @@
         "expiresAt": "2026-11-04T07:20:08.369Z"
       },
       "checkpoint": {
-        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-003-04",
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-003-08",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
         "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
@@ -482,10 +482,101 @@
                   ]
                 }
               }
+            },
+            {
+              "blockId": "tour:included:868efac4b03b66e3",
+              "field": "included",
+              "sourceTextSha256": "c4eda4be8e52724bb322b05fddf9dcbdf75a2d9b1b39effdeac160fbc5bb0f43",
+              "text": "Daily breakfast",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p149",
+                    "textSha256": "7892cdbb9c91d6175888436ad5a81c860416ab2bc55c32c8ba965b0eb50f0bad"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the exact Word breakfast inclusion."
+              }
+            },
+            {
+              "blockId": "tour:included:593a3bf402303229",
+              "field": "included",
+              "sourceTextSha256": "65dc657fe988d76cb313d49da35ecfd80ae45b0c7cc3a2d1bd91f5b11d4bea9f",
+              "text": "Sightseeing tours and excursions as described, with an English-speaking guide",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p150",
+                    "textSha256": "1746645730c92e6e22021ced165a317a0111bbdfd93f977169e0c1b9bb8ef683"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the exact Word guide and excursions inclusion."
+              }
+            },
+            {
+              "blockId": "tour:included:c4b4ebff12aa934d",
+              "field": "included",
+              "sourceTextSha256": "4ec113ecb255d806892fef8ea2b478326d216af1c5e537f903da2c9ca8699245",
+              "text": "Private transfers as specified in the programme",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+                "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p151",
+                    "textSha256": "c1074e60c1a42beac95edb012b4cec4070ee2e63cccdf83541dae7dcb6b969d6"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the exact Word private-transfers inclusion."
+              }
+            },
+            {
+              "blockId": "tour:included:ea3850fe2dc81729",
+              "field": "included",
+              "sourceTextSha256": "47be9419f6424efedcbca73a6b5f26da08b8eedae50ce137768af3b33612fa4e",
+              "text": "A day at San Pedro de Majagua: shared round-trip speedboat, Caribbean lunch, dessert, coffee or tea, and marina tax",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word 2027 describes the day at Isla Majagua and its speedboat, lunch, dessert, coffee or tea and marina tax, but has no exact sentence using the RU resort name San Pedro de Majagua and this full list. Translate the current RU inclusion while preserving all components.",
+                "wordSource": {
+                  "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+                  "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p88",
+                      "textSha256": "3adb4d7dae6ca098bb970a5ebad48808379c09d61bf63b4ffdd53c9b1966f37d"
+                    },
+                    {
+                      "ref": "word/document.xml#p89",
+                      "textSha256": "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+                    },
+                    {
+                      "ref": "word/document.xml#p91",
+                      "textSha256": "8ec5f341046d6a3658dfa53de86389b1c6b7e9c0533c30eeeae711e5b000c69a"
+                    },
+                    {
+                      "ref": "word/document.xml#p152",
+                      "textSha256": "243c6e0a3dfcb019963bbd1a14642e7e467007c97a4bd9476ef289000b5100e7"
+                    }
+                  ]
+                }
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:51:14.284Z"
+        "at": "2026-11-04T05:51:18.222Z"
       },
       "submission": null,
       "review": null,

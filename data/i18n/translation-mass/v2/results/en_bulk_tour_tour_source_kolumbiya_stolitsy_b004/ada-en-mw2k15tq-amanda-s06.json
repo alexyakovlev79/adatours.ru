@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_stolitsy:b004",
+  "stableId": "tour_source_kolumbiya_stolitsy",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4b4b7ec05bcf5e337fb4d14d3362cec9d3afc3690b9b30510013a80ffceade26",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:a77c2aa0c116e7b6",
+      "field": "notIncluded",
+      "sourceTextSha256": "c0323eb4f1a3cca5a8a5e729068ca6f261ed3de5a4291f6195f45c34d1bf9928",
+      "text": "Visa or consular documentation, if required.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2k15tq-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The SHA-verified Word 2027 does not include this specific visa/consular-document or fixed-tax exclusion; the current RU contractual exclusion is translated without changing it."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:eae01595b2f5f539",
+      "field": "notIncluded",
+      "sourceTextSha256": "96b1c7c1576991106e6637ffd1dc0ec8b89906a71b550abc97473f7f6f26734d",
+      "text": "Fixed taxes and unspecified fees.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2k15tq-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The SHA-verified Word 2027 does not include this specific visa/consular-document or fixed-tax exclusion; the current RU contractual exclusion is translated without changing it."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6f33a625a5714b63",
+      "field": "notIncluded",
+      "sourceTextSha256": "3e900d0cba60a9f974e40a44d79639588f5ad43e16932eb40b08890656d61d7a",
+      "text": "International and domestic flights.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml zero-based paragraph 181",
+            "textSha256": "a633e20a37722435099619fee738b727158bf6143101937cf84ef20d0e2310d3"
+          },
+          {
+            "ref": "word/document.xml zero-based paragraph 182",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the Word's two separate flight-exclusion entries into the existing single international-and-domestic-flight field."
+      }
+    },
+    {
+      "blockId": "tour:note:fa518fb6ca5d16fd",
+      "field": "note",
+      "sourceTextSha256": "2253b56f9414ebc35c617a262388d8d97ba730a60451e62473bc3e9b007aa674",
+      "text": "The tour operator may substitute the hotels listed with others of a similar category, while maintaining the same standard of quality and service.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml zero-based paragraph 168",
+            "textSha256": "e8d858f8cceaaf97928afc2d6d774d76179399ea51e8eee7f6b3f3db1d197d42"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the printed list dash and following spaces; keep the approved Word condition wording unchanged."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may be modified due to operational requirements, weather or force majeure, while respecting the content of the programme.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml zero-based paragraph 169",
+            "textSha256": "8359f79f893c1035faf443c37df8ad6cf58cb129d85dd8ae14a6967b94364617"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the printed list dash and following spaces; keep the approved Word condition wording unchanged."
+      }
+    },
+    {
+      "blockId": "tour:note:3670f5220b986812",
+      "field": "note",
+      "sourceTextSha256": "5eb0f22193424f992cfe0645a0be307b443f925f13e5ef4368ae2d144cfa0426",
+      "text": "For early-morning departures, hotels may not be able to provide breakfast; no compensation is offered in such cases.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml zero-based paragraph 170",
+            "textSha256": "7d3b8773b0d7d3479957682bafb5f7c987712b6f576632b15ea8632e769d7270"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the printed list dash and following spaces; keep the approved Word condition wording unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml zero-based paragraph 65",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ceebce5448526946841dc34aae4fec2516e4a3dfd13494328d1edf2242c79dd1",
+      "text": "Day 1 · Upon arrival at El Dorado International Airport, you will be welcomed by your private English-speaking guide, who will accompany you throughout your stay in Bogotá. The afternoon begins with a journey into the heart of the capital, exploring the historic district of La Candelaria, with its colonial architecture and atmospheric streets. Visit the Gold Museum, the Casa de la Moneda and the Botero Collection, before continuing to Plaza de Bolívar, surrounded by some of the city’s most important historic buildings.\n\nThe day concludes with an ascent to Monserrate, offering a different perspective of Bogotá, before returning to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml zero-based paragraph 66",
+            "textSha256": "206fdcdb1352e3c25f24c5d28f65eb9d233cb4a11aee1be04f9cf9f4cb55ec9b"
+          },
+          {
+            "ref": "word/document.xml zero-based paragraph 67",
+            "textSha256": "d60b58cd650b5c93ba8214c9532076fc9eaaedfd39f58e2782ebc85925f31d33"
+          }
+        ]
+      }
+    }
+  ]
+}

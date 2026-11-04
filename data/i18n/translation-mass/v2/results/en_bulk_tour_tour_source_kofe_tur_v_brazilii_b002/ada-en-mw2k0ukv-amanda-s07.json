@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kofe_tur_v_brazilii:b002",
+  "stableId": "tour_source_kofe_tur_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1f3af8de55d63d3c773d64779c88644f47559b60dd891c4008fe68412777036d",
+  "blocks": [
+    {
+      "blockId": "tour:included:6419592d2550ed99",
+      "field": "included",
+      "sourceTextSha256": "56815f4ab22ed4ddd7ff67fe65ec1b49472f4a7b21c88cfac0f7545a968f9ba2",
+      "text": "Hotels with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[193]",
+            "textSha256": "0300d812dd340ff3a8a77630d71c99ef48c9abb75b962dd0f3179b7a8ee04921"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the document list marker to fit this structured list item."
+      }
+    },
+    {
+      "blockId": "tour:included:a7a0c6b435d813a5",
+      "field": "included",
+      "sourceTextSha256": "b616a910a001c298e21de3af13d5b97a2184149fa2c9e8d113d7f53ee1e677a4",
+      "text": "Private tours with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[195]",
+            "textSha256": "c5f01a7ea65d81f7f8ff3c9a71aaa6bbe6c872c3d9766fcaa44a0ab1b7cc18d7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the document list marker to fit this structured list item."
+      }
+    },
+    {
+      "blockId": "tour:included:0b36535d46195474",
+      "field": "included",
+      "sourceTextSha256": "07f9e2e2abb4b1451aabc4d31f0d50e829b9386c7410423221446b5db0646c54",
+      "text": "Excursions according to the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2k0ukv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The checked Word contains individual excursions and a private-guided-tours inclusion but no separate equivalent generic excursions inclusion; translate this additional pinned RU list item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:407849e4aa12ddfc",
+      "field": "notIncluded",
+      "sourceTextSha256": "c3d4d7aa35ea41dbe41ec3af6aece43113c09374813b210bafad91a4ab0c7b01",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[199]",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the document list marker to fit this structured list item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:80c7b0b9ee5f55db",
+      "field": "notIncluded",
+      "sourceTextSha256": "cd6c7fd3f7bd52c1fc3283b60fd0816ca5c05457c42b2ab67ed9760cfb736364",
+      "text": "Domestic flights Rio de Janeiro – Iguaçu – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[200]",
+            "textSha256": "1dc23c24a0d8651ccebd8f3db9ee91620e4042ea7b7e06b8e7811abf96de0f65"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the excluded flight route as a service label, retaining the pinned RU item without introducing a new quoted fare."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ddde98c8d71040e3",
+      "field": "notIncluded",
+      "sourceTextSha256": "07c5163e3b8bf062ed82917f4775dd39898f47335da33426f77643a55cca87ca",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[201]",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the document list marker to fit this structured list item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:817bf44d4bacef2a",
+      "field": "notIncluded",
+      "sourceTextSha256": "104199d10ae2e2cc6271faa4e4b7c852ce1ac651a42d54c3587e6d054c860b36",
+      "text": "Personal expenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[202]",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the document list marker to fit this structured list item."
+      }
+    },
+    {
+      "blockId": "tour:note:fa518fb6ca5d16fd",
+      "field": "note",
+      "sourceTextSha256": "2253b56f9414ebc35c617a262388d8d97ba730a60451e62473bc3e9b007aa674",
+      "text": "The hotels may be replaced by others of the same category.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[128]",
+            "textSha256": "c46f843d5cb913bdd68d9a144daceb52158c00b5f79737f80b316e6495c62e92"
+          }
+        ]
+      }
+    }
+  ]
+}

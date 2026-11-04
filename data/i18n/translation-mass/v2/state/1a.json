@@ -451,7 +451,7 @@
     {
       "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b001",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "6b8026bf59b927bba92a1a34efebe3b9121c90b2e2175360aa8cd11f631a5366",
       "generation": 1,
       "attempts": 0,
@@ -467,7 +467,19 @@
         "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_mexico_lindo_eight_days_b001/ada_en_1f8e8fe01ca4_20261104.b001.submit.json",
         "at": "2026-11-04T06:01:43.229Z"
       },
-      "review": null,
+      "review": {
+        "reviewerId": "ada-independent-semantic-qa-20261104-t4",
+        "at": "2026-11-04T22:37:07.648Z",
+        "acceptedBlobSha": "6b8c1e9a3d6484a6830acdbe3faa73b5eaa12ee8",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
       "nextAttemptAt": null
     },
     {

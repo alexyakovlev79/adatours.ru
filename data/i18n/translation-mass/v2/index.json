@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1795,
-    "leased": 10,
+    "queued": 1794,
+    "leased": 11,
     "review": 604,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1795,
-      "leased": 10,
+      "queued": 1794,
+      "leased": 11,
       "review": 604,
       "ready": 1,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 59,
-          "leased": 0,
+          "queued": 58,
+          "leased": 1,
           "review": 14,
           "ready": 0,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T13:28:46.134Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1400,6 +1400,12 @@
       "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b002",
       "token": "tok-a7bf2bb6-mw22ch45",
       "expiresAt": "2026-11-04T13:28:38.503Z",
+      "generation": 1
+    },
+    "ada-en-f5ac9871-mw22bzxh": {
+      "jobId": "en:bulk:tour:tour_guatemala_discover_8_days:b006",
+      "token": "ada-token-mw22bzxh-xvwyywnvno8",
+      "expiresAt": "2026-11-04T13:28:46.134Z",
       "generation": 1
     }
   },
@@ -3423,8 +3429,15 @@
         "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b002"
       ],
       "completedJobIds": []
+    },
+    "ada-en-f5ac9871-mw22bzxh": {
+      "token": "ada-token-mw22bzxh-xvwyywnvno8",
+      "jobIds": [
+        "en:bulk:tour:tour_guatemala_discover_8_days:b006"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T11:58:38.503Z"
+  "updatedAt": "2026-11-04T11:58:46.134Z"
 }

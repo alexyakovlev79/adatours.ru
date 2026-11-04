@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1995,
-    "leased": 23,
+    "queued": 1994,
+    "leased": 24,
     "review": 391,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1995,
-      "leased": 23,
+      "queued": 1994,
+      "leased": 24,
       "review": 391,
       "ready": 1,
       "retryable": 0,
@@ -545,8 +545,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 63,
-          "leased": 0,
+          "queued": 62,
+          "leased": 1,
           "review": 16,
           "ready": 0,
           "retryable": 0,
@@ -577,7 +577,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T08:20:14.099Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -1478,6 +1478,12 @@
       "jobId": "en:bulk:tour:tour_iguazu_incentive_3_days:b001",
       "token": "token-9c9ff2214505-20261104",
       "expiresAt": "2026-11-04T08:20:00.706Z",
+      "generation": 1
+    },
+    "ada-en-1d528bec4ff4": {
+      "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b005",
+      "token": "ada-en-token-1d528bec4ff4-20261104",
+      "expiresAt": "2026-11-04T08:20:14.099Z",
       "generation": 1
     }
   },
@@ -2652,7 +2658,8 @@
         "en:bulk:tour:tour_colombia_complete_11_days:b002",
         "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b005",
         "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b003",
-        "en:bulk:tour:tour_mexico_lindo_eight_days:b009"
+        "en:bulk:tour:tour_mexico_lindo_eight_days:b009",
+        "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b007",
@@ -2889,5 +2896,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:50:00.706Z"
+  "updatedAt": "2026-11-04T06:50:14.099Z"
 }

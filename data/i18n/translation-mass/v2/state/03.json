@@ -673,188 +673,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "ec892a43ce0ff4eee028bae64c00df49538b921465bcc76f978c99636c97b4a9",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "claimedAt": "2026-11-04T06:48:06.983Z",
-        "expiresAt": "2026-11-04T08:18:06.983Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_6c7d31_s007_c08",
-        "format": "inline-v1",
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b010",
-          "stableId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "ec892a43ce0ff4eee028bae64c00df49538b921465bcc76f978c99636c97b4a9",
-          "sourceChecks": {
-            "wordSha256Verified": true,
-            "wordFileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-            "wordSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
-            "wordYearFolder": 2027,
-            "wordTitle": "5 Countries Tour New Year 2027",
-            "wordDateRange": "30.12.2026 – 17.01.2027",
-            "wordDayRoute": "Day 11: 09/01 - Santiago de Chile – San Pedro de Atacama",
-            "currentRuItineraryIndex": 13,
-            "wordDifferences": [
-              "Word p119 says unavailable during monthly lunar eclipse dates; current RU says bright Moon/full moon. Current RU restriction retained and discrepancy recorded for external review.",
-              "Current RU includes altitude/dry air/sun acclimatization, out-of-town location and sky-object details absent from the short Word passage."
-            ],
-            "commercialObservations": [
-              "Astronomical tour USD 150 per person matches Word p119; unchanged.",
-              "Word states domestic flights included, international flights excluded and price/availability confirmed upon booking; no commercial or itinerary re-matching edits made."
-            ]
-          },
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:5fce48d567cc5627",
-              "field": "media.alt",
-              "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
-              "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word has no photograph-specific Santiago alt text; translate the current RU image description.",
-                "inspectedWord": {
-                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
-                }
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:ae94fe015ae2f2c3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "40b85fcb155abfe021b1aa39497c5eddc9a8bc858720a879f1b9400fd7a8117a",
-              "text": "Maipo Valley",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word describes Santa Rita vineyard but has no Maipo Valley place label; translate the current RU label.",
-                "inspectedWord": {
-                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
-                }
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:359c7c25395d1837",
-              "field": "itinerary.title",
-              "sourceTextSha256": "0f53691e91efd580f3655bfea13ae9f81f57342b87d3d398e6f141b7f9b05448",
-              "text": "9 January. Santiago de Chile – San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p117",
-                    "textSha256": "8fcddffa230751452431f5cc697ffd78ecdc77e4a5e50f3820956a6113cac63f"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Keep the exact Word route names and 09/01 date; render the date as 9 January and omit the source day ordinal to fit the current RU title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
-              "field": "itinerary.text",
-              "sourceTextSha256": "bc16f431843ac3db04601c4824ee08d849dcfc2ed3d2cfcd25e5f4063d313a4e",
-              "text": "Transfer to the airport and a flight to Calama, followed by a transfer to San Pedro de Atacama. After arrival, it is best to allow time to acclimatize to the altitude, dry air and strong sun.\n\nIn the evening, you can take a group astronomical tour. The group travels outside the village, where there is very little light from the town. Through professional telescopes, you can see the Moon, planets, star clusters and other objects, while an English-speaking guide tells you about the desert's night sky.\n\nAstronomical tour price: **USD 150 per person**. The tour does not operate when the Moon is bright or during a full moon.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word paragraphs 118–119 provide a shorter transfer and astronomy description and a different lunar restriction. The current RU contains acclimatization and observation details plus bright/full-moon caveats absent from the selected Word; translate the current RU composite faithfully, retaining USD 150.",
-                "inspectedWord": {
-                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
-                }
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:bd42dfc80020ab03",
-              "field": "itinerary.label",
-              "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
-              "text": "Calama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p118",
-                    "textSha256": "53355a351912efe80a5f518ac3ac6db4554a65e1af02d15dd00cca37e57dbf7f"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact Word destination name Calama from the flight sentence as the corresponding current RU place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:3fd2f094b63379a4",
-              "field": "itinerary.label",
-              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
-              "text": "San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p196",
-                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:04b08a0f2222926f",
-              "field": "media.alt",
-              "sourceTextSha256": "0a5dc33fb1757773939efea667efa37f364c0152dc7feb7b65a55c5bf83c6593",
-              "text": "Square with palm trees and a church in Calama against a backdrop of dry mountains, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word has no photograph-specific Calama square alt text; translate the current RU image description.",
-                "inspectedWord": {
-                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_hover:cfcf82e9f79b77fe",
-              "field": "media.hover",
-              "sourceTextSha256": "21327013d806476f15e0c54ccd6c15cac42569bcb5c153747a1441d01b6263bc",
-              "text": "Calama: a green square amid urban buildings and desert slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word has no photograph-specific Calama hover caption; translate the current RU caption.",
-                "inspectedWord": {
-                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
-                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
-                }
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:51:17.550Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_6c7d31_s007",
+        "blobSha": "536ce29836f7a27f1015072f5567048e777475d2",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god_b010/ada_en_6c7d31_s007.json",
+        "at": "2026-11-04T06:53:40.797Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

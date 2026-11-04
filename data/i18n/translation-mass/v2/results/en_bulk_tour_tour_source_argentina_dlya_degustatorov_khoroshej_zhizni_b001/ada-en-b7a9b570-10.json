@@ -1,0 +1,147 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni:b001",
+  "stableId": "tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "30fc945413d72e4d273ca84aac3f55b1c75e75e4cc21a9da888e552ddd2fd9e4",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "2597ace46ffe7d8e7c02f1a77777cb598a636636b5745475d991aaab030fc167",
+      "text": "Argentina for Food & Wine Lovers",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+        "documentSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[2]",
+            "textSha256": "9d3055a8793d25fcb17429ecacb157c2d2aee0ebe3ee0fff1e894f50d0ef312b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "261e5d56b41a8bc8b8c8c36833735bba854b284c0f8ebcbef73cb01a1c28d1f2",
+      "text": "A week for lovers of fine food and wine: the elegance of Buenos Aires, a tango show with dinner, a day with the gauchos around an Argentine barbecue, then the vineyards of Mendoza at the foot of the Andes, with tastings guided by a wine specialist.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+        "documentSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[17]",
+            "textSha256": "ac928dc116c17e509f60271696e5b58acd1752a9db645ed3e38b9956fe6968bc"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "5a554c192f7ae47691268132f9419044db16c9cb6dbfa771ae770877351115b5",
+      "text": "Food and wine tour",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-b7a9b570-translator",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word describes food and wine throughout but has no standalone product-format label; translate the pinned RU format label without adding a service."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+        "documentSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[36]",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d528ae90267ce1e5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+      "text": "Mendoza",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+        "documentSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[45]",
+            "textSha256": "053c8714516dced29c62894d7cdafc680b38ff7c5eaa88b95b38850f4741a7a5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:9cbc4781a176463c",
+      "field": "included",
+      "sourceTextSha256": "f9dba4786fce70b030e41367889897611a671807eae34082a1670263c3dae8e6",
+      "text": "Accommodation in the specified hotels, with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+        "documentSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[170]",
+            "textSha256": "7d4fc96dffb5e4b302ef69fdd881bef352e79d3f06549c1206f7fdfb099e5ba5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading Word list marker for the existing individual included-service field; preserve the approved wording."
+      }
+    },
+    {
+      "blockId": "tour:included:5f19401bc58a536d",
+      "field": "included",
+      "sourceTextSha256": "4fdbe5c4c539a61ecc80bc08f277e54aa37fb059cd00038c63e4c52cc35c53ab",
+      "text": "Excursions with an English-speaking guide: Buenos Aires city tour, Gaucho Fiesta group tour and Mendoza wine group tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+        "documentSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[171]",
+            "textSha256": "1f0eab7fe2b98a97e2eb68732b254a5545955940cca56ac4fa7c4992d8319263"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading Word list marker for the existing individual included-service field; preserve the approved wording."
+      }
+    },
+    {
+      "blockId": "tour:included:c3870f9525632488",
+      "field": "included",
+      "sourceTextSha256": "0ec21019ed8580187f9a962cad35b6709289f534990151e5f88934ed8eb75555",
+      "text": "English-speaking guide on the Buenos Aires city tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+        "documentSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[67]",
+            "textSha256": "ff127c66d146abde03f2dd92cc8d90c31b2e8a45ecf165894dc739fd85311cf2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved English-speaking Buenos Aires city-tour guide service from the Word paragraph for this included-service label."
+      }
+    }
+  ]
+}

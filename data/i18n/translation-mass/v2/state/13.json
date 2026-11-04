@@ -314,7 +314,7 @@
         "expiresAt": "2026-11-04T07:42:51.049Z"
       },
       "checkpoint": {
-        "id": "sub-2a369-tour_chile_easter_island_3_days_2027-b002-cp4",
+        "id": "sub-2a369-tour_chile_easter_island_3_days_2027-b002-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-2a369c57df19",
         "token": "token-2a369c57df19-20261104",
@@ -408,10 +408,96 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:959c740af43f8c03",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8a57855ab0d91447b03fa3434eeda02a91d03780a646024da5733e78deda26ba",
+              "text": "Ahu Hanga Puku Riki",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p87",
+                    "textSha256": "4994cade04499467668172eb8e1e710c8c5b668d51a15a27ae96787c6d33af70"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4fa6e267050cec01",
+              "field": "itinerary.label",
+              "sourceTextSha256": "38a520658695c08487f7fcb54c59cbeb6564aa34afb1c3db85d7144dfb6c4f78",
+              "text": "Puna Pau",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p84",
+                    "textSha256": "295b71511c20164c1c1083a7ac662fe94c6744894e7b240c2f980555e34877e9"
+                  },
+                  {
+                    "ref": "word/document.xml:p87",
+                    "textSha256": "4994cade04499467668172eb8e1e710c8c5b668d51a15a27ae96787c6d33af70"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8de9220b8ea490d1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "28f1c47ca609c53d7edf8a0bf9719b59677ae1b75400e3b821a97227b4b76b5f",
+              "text": "Tahai",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p52",
+                    "textSha256": "0acdd1fee5b978e9bb9b342fdbaf284ff3297498003c51648ac476adee16a8ed"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:0b45d875ab94bb47",
+              "field": "included",
+              "sourceTextSha256": "24d868ec142ae868a9614f0bbe4f60598a51f37e8514683c9258c0aeb184afdc",
+              "text": "2 nights in a 4★ hotel",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p23",
+                    "textSha256": "365244819b53a7c189461788e17d8689b0353a5a5ca45c43ba4d159af4263afa"
+                  },
+                  {
+                    "ref": "word/document.xml:p101",
+                    "textSha256": "1b371dfd2a9e9f72e5fd198a3b73141df6cdb823377f2e57c7996b60e2c5db47"
+                  },
+                  {
+                    "ref": "word/document.xml:p177",
+                    "textSha256": "062947d6249e97857bad672f5cf497a903b2be0949ad231236d74aa29df0044c"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the included-accommodation label from the verified Word two-night duration and its 4-star hotel inclusion, preserving both facts."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:13:50.335Z"
+        "at": "2026-11-04T06:14:05.051Z"
       },
       "submission": null,
       "review": null,

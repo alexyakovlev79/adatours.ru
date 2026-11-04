@@ -116,7 +116,86 @@
         "claimedAt": "2026-11-04T05:32:45.383Z",
         "expiresAt": "2026-11-04T07:02:45.383Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "adaen-mw1ojnf0-zzzsf540-b010-cp4",
+        "format": "inline-v1",
+        "ownerId": "adaen-mw1ojnf0-zzzsf540",
+        "token": "tok-lnsxlpgwcpa92vym3bnf36",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b010",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "a9d2a14e261be87443bf204e4ff261be0ea01db61fb4da02c130dedebc6c9fe2",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:5c99037039e82f62",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4568fe37041ba908a6463366cdb323ffe5798410e05019525938e729e38d4de",
+              "text": "Vassouras",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p115",
+                    "textSha256": "1a444a8ff6c7bd6cea0ef2051e3f37b415ebce0b81838e4da783cc65a4584bbf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact place name Vassouras from the verified Word river itinerary for the structured place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b34b619d394d86a3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "72374eff9c738b49af66e49df1a414be5bc870a06d3e85389079100528c5d520",
+              "text": "Atins",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p115",
+                    "textSha256": "1a444a8ff6c7bd6cea0ef2051e3f37b415ebce0b81838e4da783cc65a4584bbf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact place name Atins from the verified Word river itinerary for the structured place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:be1a75ca3e96d7e7",
+              "field": "media.alt",
+              "sourceTextSha256": "3dd428846c18d50418c8e07fd376a0d25e7e4a0f32e4c78ebefd9dd1585e2df7",
+              "text": "Turquoise lagoon among white dunes, with a woman on the sandy slope",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Verified full Word OOXML contains no image-specific alt text matching the woman beside a turquoise lagoon; translate the existing RU accessibility description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:385ec5110cedd4a0",
+              "field": "media.hover",
+              "sourceTextSha256": "243af7040077f1b6f37e9654ca5a588805bd61d1cfe6d986205cda60deef38eb",
+              "text": "Woman beside the curved shore of a lagoon between white dunes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Verified full Word OOXML contains no matching image-hover caption for the woman on the lagoon shore; translate the existing RU caption."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:34:21.144Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

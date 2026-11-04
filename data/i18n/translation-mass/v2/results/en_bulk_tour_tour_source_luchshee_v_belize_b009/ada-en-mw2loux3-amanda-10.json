@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_belize:b009",
+  "stableId": "tour_source_luchshee_v_belize",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c39791d2f5cbb2cc6d649e1e33dc3548960fa1ad769e249e412e430455ff23b5",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:b37079fe7050357e",
+      "field": "media.alt",
+      "sourceTextSha256": "e813ee882af06bc64a0fa37662df4fb493d2c52bd68084699be69eae44c40c67",
+      "text": "A wooden jetty leads to boats and waterfront houses on Ambergris Caye, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 has no photo-specific alt text describing the jetty, boats and waterfront houses in this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:33f5d6b92a369961",
+      "field": "media.hover",
+      "sourceTextSha256": "7783ea973ff790224323664d6e6b886238ee4214aafe31750636fc8ed5af8db3",
+      "text": "Ambergris Caye, Belize: a jetty above turquoise shallows",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 does not contain a hover caption describing the jetty and turquoise shallows shown here."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "914fe2dbc4988da3616030a38ad36b3a3f5493b502ba0bed0d2691ca7c61c31e",
+      "text": "Relaxing on Ambergris Caye",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "text:Days 6–7 · Free days to relax and explore the island at your own pace, or to enjoy optional activities on the Belize Barrier Reef, such as snorkelling at Hol Chan Marine Reserve and Shark Ray Alley, Mexico Rocks or Coral Gardens, or a sunset cruise (see Optional activities). (Meals: B)",
+            "textSha256": "f296454d5bb202fa280bee111e36d457ee5c0823f631d215e7d2a08b83bbec5e"
+          },
+          {
+            "ref": "text:Ambergris Caye",
+            "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The heading labels the island's free day as described in the approved Word Days 6–7 passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "97840b88b69a58c06b82f3673ff0d104ade2bbc52ba1f60554a9c5cfca949005",
+      "text": "Free days to relax and explore the island at your own pace, or to enjoy optional activities on the Belize Barrier Reef, such as snorkelling at Hol Chan Marine Reserve and Shark Ray Alley, Mexico Rocks or Coral Gardens, or a sunset cruise (see Optional activities). (Meals: B)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "text:Days 6–7 · Free days to relax and explore the island at your own pace, or to enjoy optional activities on the Belize Barrier Reef, such as snorkelling at Hol Chan Marine Reserve and Shark Ray Alley, Mexico Rocks or Coral Gardens, or a sunset cruise (see Optional activities). (Meals: B)",
+            "textSha256": "f296454d5bb202fa280bee111e36d457ee5c0823f631d215e7d2a08b83bbec5e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the combined day marker to use the same approved free-day description for this assigned single day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3215fceea603fcf2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+      "text": "Ambergris Caye",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "text:Ambergris Caye",
+            "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5578263eed0f8f8d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3d3b8fdb871bd22f1bd555b045de4b4b9c060d4ac5d04bd04ca968952a74d7f6",
+      "text": "Cayo",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "text:Cayo",
+            "textSha256": "c12a6b9a235114394f19868edf0d96ec3b1ed7cbe0d01031a683dbf9d208fe95"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c629adc2f9c00d25",
+      "field": "media.alt",
+      "sourceTextSha256": "4775f7a23b045d51085468fefbe412acfbf0a914a58a4f83756d47bdebab365f",
+      "text": "A sailing boat on turquoise water off Ambergris Caye, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 mentions optional island activities but has no alt caption for this particular sailing boat photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7c53d436d8d9b5c6",
+      "field": "media.hover",
+      "sourceTextSha256": "874d28fe1402daf01720fe50edd429a940722d08b62df499bc1c977c313fa99b",
+      "text": "Ambergris Caye: a boat under sail on the clear turquoise sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 contains no hover text for the assigned photograph of a sailing boat on turquoise water."
+      }
+    }
+  ]
+}

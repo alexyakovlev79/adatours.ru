@@ -472,7 +472,7 @@
         "expiresAt": "2026-11-04T07:52:01.473Z"
       },
       "checkpoint": {
-        "id": "sub-2a369-tour_mexico_religious_journey-b010-cp4",
+        "id": "sub-2a369-tour_mexico_religious_journey-b010-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-2a369c57df19",
         "token": "token-2a369c57df19-20261104",
@@ -564,10 +564,76 @@
                 "transformation": "contextual_label",
                 "rationale": "Combine the two named places into the existing single place-label field, retaining the Word Puebla context."
               }
+            },
+            {
+              "blockId": "tour:media_alt:dd531b509f8d9a6b",
+              "field": "media.alt",
+              "sourceTextSha256": "12c7112dc9cf3214fd75d0fd759b8fcb7f01f6e4858776aaa5bd18a3ed5765ca",
+              "text": "San Francisco Monastery with an arcade and bell tower beside a green courtyard, Tlaxcala, Mexico",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2a369c57df19",
+                "wordAbsenceReason": "The exact Word DOCX contains no photograph-specific alternative text describing the monastery arcade, bell tower and green courtyard; translated the current RU alt."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:40c4f7fc573e6419",
+              "field": "media.hover",
+              "sourceTextSha256": "5c6b90b9bf3730537472ed015005a1d050a19f1dcbce461af99d559b050d1d78",
+              "text": "Tlaxcala: old stone monastery walls beneath the trees",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2a369c57df19",
+                "wordAbsenceReason": "The exact Word DOCX contains no hover caption for this photograph of monastery walls in Tlaxcala; translated the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:088f75d26e25deee",
+              "field": "itinerary.label",
+              "sourceTextSha256": "4c2cc3edfc7827c177f180334231aeee9086d09d09ba134107615d96f4ae15d5",
+              "text": "San Miguel del Milagro Shrine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "010097edf46108dc7236a6e43a531e0be18e8e593f8ba44213c02069b0ff69db"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ed32c03d95b69937",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7bb747e21d4b0905185e6d609dcd859f85ef817b616c245f969d4e2aae4d5d8f",
+              "text": "Tlaxcala",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p35",
+                    "textSha256": "75705b5b225da0be29406d6309517183057799c2cb94dd0687e93e957d282eb5"
+                  },
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "010097edf46108dc7236a6e43a531e0be18e8e593f8ba44213c02069b0ff69db"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:22:43.102Z"
+        "at": "2026-11-04T06:23:00.998Z"
       },
       "submission": null,
       "review": null,

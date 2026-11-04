@@ -335,7 +335,109 @@
         "claimedAt": "2026-11-04T06:16:53.897Z",
         "expiresAt": "2026-11-04T07:46:53.897Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-2a369-tour_colombia_complete_11_days-b005-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2a369c57df19",
+        "token": "token-2a369c57df19-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b005",
+          "stableId": "tour_colombia_complete_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "037f45259bef79ca40564482656d84f6329c95e85543cfcc531991e675e6899a",
+          "blocks": [
+            {
+              "blockId": "tour:note:6bc83133d40a90f1",
+              "field": "note",
+              "sourceTextSha256": "32360fe4b887b7d5a3ed53a719c27970190356a61385da902911aa845a9e7e04",
+              "text": "The price is based on services with English-speaking guides. Arrangements for another guide language are agreed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2a369c57df19",
+                "wordAbsenceReason": "Word p177 prices and p29/p213 guide inclusions confirm English-speaking service, but the document has no statement about agreeing a different guide language when booking; translate the current RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:4c9a19e3d965edf8",
+              "field": "note",
+              "sourceTextSha256": "5be5b8bb8617d2f33ec49ab2729991310db9627c35d94209f9a830ef8e4c9dda",
+              "text": "San Andrés: 3 nights, including two full free days, at an all-inclusive resort.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p23",
+                    "textSha256": "2047d45101fbfd9dae1883b1a704a689380e674a3543102f0e243437a9fee421"
+                  },
+                  {
+                    "ref": "word/document.xml:p109",
+                    "textSha256": "54439c1b777f6c0bb7677f731498fc946aafe6d7c32f45cc49714181f89f518c"
+                  },
+                  {
+                    "ref": "word/document.xml:p112",
+                    "textSha256": "815282df17880c253da37c4c33640734031e76f9bb19d2c1d272dc5db599140f"
+                  },
+                  {
+                    "ref": "word/document.xml:p113",
+                    "textSha256": "a9b314538c264e711f82e07b7e3a374e3625e08089d073263ec1a5f098f35eb4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose a standalone stay note from the Word night allocation, two free days and all-inclusive resort passages, without changing any of these facts."
+              }
+            },
+            {
+              "blockId": "tour:note:af95aefa7fdf698c",
+              "field": "note",
+              "sourceTextSha256": "64620d6c04d2bd66896f15cbb876a974a85316d05ede6bae9da4e51a173a8928",
+              "text": "Not included: Flight Bogotá – Pereira\n\nNot included: Flights Pereira – Cartagena – San Andrés\n\nNot included: Flight San Andrés – Medellín",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p82",
+                    "textSha256": "1ddef762a7e89fd8ffb9a9b58cb3b58f1978eba6a9f79861d2f28a390c182b46"
+                  },
+                  {
+                    "ref": "word/document.xml:p105",
+                    "textSha256": "ef86031c6cd09c660b1c67b5be6821916a5d743b979b888e12a6ac157074c12e"
+                  },
+                  {
+                    "ref": "word/document.xml:p127",
+                    "textSha256": "f5ecda766c103b612da7e3a3452ffd36bfb9688e6cf789e93f4148cfff1f6cb4"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:note:322d0122413f82e0",
+              "field": "note",
+              "sourceTextSha256": "7c9c36815ac66ed3ebc834239ec6f207daa54dd72d6a5631744a2076ed42e688",
+              "text": "Personalized Alternatives · For those who prefer a more relaxed pace, the day can be tailored with alternative experiences and activities according to your interests and preferences.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p90",
+                    "textSha256": "9cb6deeeecd08067697b50c8a6e8b5bfd77cfaf678d30e9716af42b637dcb573"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:17:54.394Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

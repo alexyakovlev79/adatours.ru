@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b013",
+  "stableId": "tour_colombia_explorer_9_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b91da02aa1f7ecf355df6047eba2a3c331d1349d4c2a1b5c1f2bde53ed9ffa64",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "34bc25261251f4d8a38bd56e4b6291d41550ef8abd9ab1515d3dd0178072aa37",
+      "text": "Day 8 · Breakfast at the hotel. Today, escape Cartagena for a full-day experience in the Rosario Islands, travelling by private transfer to the marina and then by shared speedboat to Isla Majagua, one of the islands of this beautiful Caribbean archipelago. Surrounded by crystal-clear waters, coral beaches and lush tropical scenery, Isla Majagua offers the perfect setting to enjoy a day by the sea, away from the bustle of Cartagena. Take time to swim, relax and savour the tranquil atmosphere of the island, surrounded by the vibrant colours of the Colombian Caribbean.\n\nThe experience includes private hotel–marina transfers, shared speedboat transportation, a traditional Caribbean lunch, dessert, coffee or tea, and the marina tax. In the afternoon, return by shared speedboat to Cartagena, followed by your private transfer back to the hotel. A private boat experience can also be arranged as an optional upgrade, offering greater flexibility and exclusivity throughout the day.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:134",
+            "textSha256": "bbfed30d787b26827ee4a195b555df167d19c3689a7f45e091e8310dd01c30af"
+          },
+          {
+            "ref": "word/document.xml:p:135",
+            "textSha256": "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1fdc59b68ae6d00a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+      "text": "Cartagena",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:164",
+            "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:17db52b2fcb9b882",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2c71183f80becb0100c9d0ca6f975661a7dcb2d992668d01ecc41d188da02003",
+      "text": "Rosario Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:134",
+            "textSha256": "bbfed30d787b26827ee4a195b555df167d19c3689a7f45e091e8310dd01c30af"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the canonical place name from the corresponding verified Word programme passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:552f1409a530dc98",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3584a22b6edcb23ea2752efb0353fa1a2343497fd54a1b35ba595b9acc52b1c5",
+      "text": "Isla Grande",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "gpt-6",
+        "runId": "ada-en-0adf912c416a",
+        "wordAbsenceReason": "The verified Word day-8 passage names Isla Majagua but contains no exact Isla Grande route-place label; translated the current canonical RU label, without rematching or changing its entity."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3a347bc090103ab6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "620adb15945e5f918c51b0be668a32316a1b3de518e93b6e40e7df0ca136640e",
+      "text": "San Pedro de Majagua",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "gpt-6",
+        "runId": "ada-en-0adf912c416a",
+        "wordAbsenceReason": "The verified Word uses Isla Majagua for the island visit and does not contain the San Pedro de Majagua facility label; translated the exact current RU route-place label without altering matching."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:db4c93ab0a992a5c",
+      "field": "media.alt",
+      "sourceTextSha256": "22737ad02ce98683a80672b79e8a3ac29aef7f91b2aa44aa0b4618b64855ac9c",
+      "text": "The bow of a boat above clear water between green islets, Rosario Islands, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "gpt-6",
+        "runId": "ada-en-0adf912c416a",
+        "wordAbsenceReason": "No corresponding photograph alt caption exists in the verified Word; translated only the current RU media.alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:597a5f46c256ed71",
+      "field": "media.hover",
+      "sourceTextSha256": "777232ea21f02dbb574f1462fc209c44500a3103fa421ac2f6299d7df30dff65",
+      "text": "Rosario Islands, Colombia: the bow of a boat above clear water between green islets",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "gpt-6",
+        "runId": "ada-en-0adf912c416a",
+        "wordAbsenceReason": "No corresponding image hover caption exists in the verified Word; translated only the current RU media.hover."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d117cc1d0dcb0694",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+      "text": "Cartagena",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:164",
+            "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+          }
+        ]
+      }
+    }
+  ]
+}

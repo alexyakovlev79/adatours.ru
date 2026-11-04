@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b010",
+  "stableId": "tour_sao_paulo_rio_october_11_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "49e849272cab36e4818d1f9d619636c01a43a362fab06d3610bfccc792590a1a",
+  "sourceNotes": [
+    "The dispatcher-selected Word is in yearFolder 2027 but its filename says OUT2026 and editionYear is null. No year is inferred or changed; selected fileId and SHA are retained."
+  ],
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5bc78aff6a9cff1f2d1ff0b58f48e13a7c24c0e0525ad2bb1046360ba0e6ae3e",
+      "text": "Free day: Santa Teresa, Lapa or the ocean",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_2478a2a40c1c_s04",
+        "wordAbsenceReason": "The exact Word 2027 selected source contains the free-day prose at p63 but no matching standalone title; translate the current RU heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4fa41fc91a2527f0d775a242ec06b5b04ec9f874dacb90847041f249ef77711f",
+      "text": "29 October.\n\nOne final, unhurried day in paradise, to be enjoyed exactly as you please. We suggest exploring the hidden colonial alleys of Santa Teresa, a hilltop neighborhood of cobbled streets, century-old mansions and the charming yellow tram rattling past, or soaking up the bohemian charm of Lapa, where the illuminated arches pulse with live samba after dark. If the ocean calls one last time, return to its turquoise embrace for a final swim. However you choose to spend it, Rio will make it unforgettable.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_2478a2a40c1c_s04",
+        "wordAbsenceReason": "The Word free-day paragraph does not include the current RU day date. Keep Word p63 verbatim and add only the translated RU date.",
+        "wordEvidence": {
+          "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+          "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml:p63",
+              "textSha256": "948fe1e3d92b55dbc30edd105ac8127fe10cfdd585d8593bdc07e08e67516133"
+            }
+          ]
+        },
+        "composition": "Verbatim Word paragraph with current RU date."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:465159675cc547c8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+        "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p10",
+            "textSha256": "a73353d1badf71dc6ec7c27a3e1499d3518be1f76f0fd084745b116de60e0807"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the city name from the Word destination heading without its descriptive epithet."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2d74adcc8d7247fb",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "Shaded street with trees and café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_2478a2a40c1c_s04",
+        "wordAbsenceReason": "The checked Word source has no matching image-specific alt caption; translate this current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7ebf4faac20232cd",
+      "field": "media.hover",
+      "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+      "text": "Rio de Janeiro: a pavement café beneath the trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_2478a2a40c1c_s04",
+        "wordAbsenceReason": "The checked Word source has no matching image-specific hover caption; translate this current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5c9c928aca24a725c1316ed1f8b8f27318a802b58993d86706fdd55104cf18a8",
+      "text": "Journey's end",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_2478a2a40c1c_s04",
+        "wordAbsenceReason": "The checked Word source has departure prose at p67 but no matching standalone heading; translate the current RU title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4d42840f73b2b7bba4a946c1f6f3697ac0e0255efd7c141b93d3194195945c8a",
+      "text": "30 October.\n\nA private transfer ensures a graceful departure, but not all of you will leave. You carry home the warmth of the people, a rhythm that now lives in your step, and the indelible spirit of a country that welcomes rather than merely hosts.\n\nTransfer to GRU Airport with an English-speaking guide. Your departure airport and return transfer arrangements will be confirmed when you book.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_2478a2a40c1c_s04",
+        "wordAbsenceReason": "The Word departure paragraph does not contain the current RU date, GRU transfer detail or booking-confirmation caveat. Retain Word p67 verbatim and translate those RU-only details; do not infer an airport change.",
+        "wordEvidence": {
+          "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+          "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml:p67",
+              "textSha256": "0cdde63bd00c99d4c03e7632d238e6023f9dea26101939380a0487d4831c89ec"
+            },
+            {
+              "ref": "word/document.xml:p73",
+              "textSha256": "60076da128c703a7d0bb00b257e4769c4687e5f81d2717d2cbf7e56aa3c8ee84"
+            }
+          ]
+        },
+        "composition": "Verbatim Word departure prose plus translated current RU date, transfer and confirmation caveat."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71c343059cadf68d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+        "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p10",
+            "textSha256": "a73353d1badf71dc6ec7c27a3e1499d3518be1f76f0fd084745b116de60e0807"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the city name from the Word destination heading without its descriptive epithet."
+      }
+    }
+  ]
+}

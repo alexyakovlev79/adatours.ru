@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kofe_tur_v_brazilii:b005",
+  "stableId": "tour_source_kofe_tur_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "600a6ce9aeb73cc3e53802bff69466d54b2abe03faab67f7670c93ad067e3567",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:ffd1709ecc52c733",
+      "field": "media.hover",
+      "sourceTextSha256": "f3cffd6b7fb809d1b7fd5286325bf6fcc3c1048dda882048a5e4328e3ee29036",
+      "text": "Brazilian coast: boats between green islands and the shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word tropical-islands description has no hover caption for this photograph of boats between the islands and shore."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "0c343c3846d8032ab7fa4b6c6217a18b38964fe16893f3609ef598d84ecd32b4",
+      "text": "Rio de Janeiro – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p83",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Formatted the two exact endpoints from the Word day-section route heading as the itinerary route title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d58570b9fdd1c60ff1a1779c5cf92d49a67081d664a13002c38cd338f8125632",
+      "text": "Day 4 · After breakfast, transfer to the airport in time for your flight to Foz do Iguaçu, where you are welcomed and taken to your hotel. In the afternoon, visit the magnificent Iguaçu Falls: following the walkways along the canyon of the Iguazu River, you pass hundreds of small waterfalls, arriving in front of the huge Devil’s Throat, the most powerful of all, with the splashing water and rainbows all around you. At the end of the tour, your guide drops you off at your hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p87",
+            "textSha256": "5ed3e62977cb76e6ee4c5be3eac96b81d36852ba3f5abdef977cfad0f3d58d9c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p87",
+            "textSha256": "5ed3e62977cb76e6ee4c5be3eac96b81d36852ba3f5abdef977cfad0f3d58d9c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extracted the exact city endpoint from the Word day paragraph as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p87",
+            "textSha256": "5ed3e62977cb76e6ee4c5be3eac96b81d36852ba3f5abdef977cfad0f3d58d9c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extracted the exact city endpoint from the Word day paragraph as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fc4afc00684b3279",
+      "field": "media.alt",
+      "sourceTextSha256": "07ebbb096d7598a7ee7e473169c7ba42ba46a2ccbfe4e62a6508975ad2899924",
+      "text": "Iguazu cascades and a rainbow in the spray beyond green trees, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary describes waterfalls and rainbows but has no corresponding image alt text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:fdda8451ff37ef1a",
+      "field": "media.hover",
+      "sourceTextSha256": "5de3d55ddb4ec95e2e00240bf9021440b05906ae8d4ca0e17b503e495e43b8c1",
+      "text": "Iguazu from the Brazilian side: waterfalls and a rainbow amid the greenery",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary has no corresponding hover caption for the Brazilian-side waterfalls photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:bcbacbdf0415c8cc",
+      "field": "media.alt",
+      "sourceTextSha256": "e4b7438a53c27b1086955b69ef9d4f4a7c7b2a4fce2c6ff8425eabc337b4f322",
+      "text": "Rio de Janeiro from above: the statue of Christ, the bay and Sugar Loaf, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding image alt text describing this aerial photograph of Rio."
+      }
+    }
+  ]
+}

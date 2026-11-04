@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1358,
-    "leased": 7,
+    "queued": 1357,
+    "leased": 8,
     "review": 1034,
     "ready": 10,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1358,
-      "leased": 7,
+      "queued": 1357,
+      "leased": 8,
       "review": 1034,
       "ready": 10,
       "retryable": 0,
@@ -1225,8 +1225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 28,
-          "leased": 0,
+          "queued": 27,
+          "leased": 1,
           "review": 31,
           "ready": 0,
           "retryable": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T21:06:09.788Z",
       "earliestRetryAt": null
     },
     "1e": {
@@ -1383,6 +1383,12 @@
       "token": "ada-en-mw2io0ye-amanda-token",
       "expiresAt": "2026-11-04T21:05:31.288Z",
       "generation": 2
+    },
+    "ada-en-20261104-008515d4": {
+      "jobId": "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b002",
+      "token": "tok-008515d4-20261104-translate",
+      "expiresAt": "2026-11-04T21:06:09.788Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -4846,8 +4852,15 @@
         "en:bulk:tour:tour_source_mir_majya:b008"
       ],
       "completedJobIds": []
+    },
+    "ada-en-20261104-008515d4": {
+      "token": "tok-008515d4-20261104-translate",
+      "jobIds": [
+        "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b002"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T19:35:31.288Z"
+  "updatedAt": "2026-11-04T19:36:09.788Z"
 }

@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_belize:b010",
+  "stableId": "tour_source_luchshee_v_belize",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "cd619ad65540f443a9f6c29057d1af545b700822049cbd8cbfa433d774c46979",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6a2efb79ea1e9168d786ccdb1bd8bb5b449c056bc076c051ff6828cdbd55f67a",
+      "text": "San Pedro – Belize City – airport",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "9bc1479caf4fe12d82ed2460cd39994d9937c4551d845de3cdcf6830976f379d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day heading from the ferry departure, arrival city and airport transfer in Day 8."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "337cec0a092dcc8c309a78e917fae18cec82bf18928018d37bc34c710061e44f",
+      "text": "Day 8 · Ferry from San Pedro to Belize City, then transfer to the international airport for your flight home. (Meals: B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "9bc1479caf4fe12d82ed2460cd39994d9937c4551d845de3cdcf6830976f379d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c7c2e9770f138776",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+      "text": "Ambergris Caye",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:52",
+            "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:39963862d2bfa151",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f620218cdd77b2ad60567710712d6da201d3153494d15437fde9773420ec1211",
+      "text": "Belize City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "9bc1479caf4fe12d82ed2460cd39994d9937c4551d845de3cdcf6830976f379d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract Belize City from the Day 8 paragraph for the existing places label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:99bf0a296ace753f",
+      "field": "media.alt",
+      "sourceTextSha256": "22043849bb4f92917d44f90a2c5b00568f27d671e47c12aa8e18faf128a8f3f5",
+      "text": "Aerial view of Belize City: an urban canal, low-rise houses and the Caribbean Sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word programme has no corresponding photograph alt or hover caption; translate the assigned RU description of the existing image without changing media."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:fbbbd4450452d397",
+      "field": "media.hover",
+      "sourceTextSha256": "6c0a4e90618c4ab8854f7cbe9295e02f4a8b8a4210bbf8d84282a88541d0c5aa",
+      "text": "Belize City: a canal runs through the city neighbourhoods towards the sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word programme has no corresponding photograph alt or hover caption; translate the assigned RU description of the existing image without changing media."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "1ec51d25524d0321a02aa6f6413d91c1ec40488818bffa410bb590586fd88266",
+      "text": "Cave entrance through a rock arch above dense green forest, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word programme has no corresponding photograph alt or hover caption; translate the assigned RU description of the existing image without changing media."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "8b9d57e3a71379f2bd47eba11f35b1500c388e4513f29df451f08146f6534317",
+      "text": "Belize: overgrown stone walls around a bright cave entrance",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word programme has no corresponding photograph alt or hover caption; translate the assigned RU description of the existing image without changing media."
+      }
+    }
+  ]
+}

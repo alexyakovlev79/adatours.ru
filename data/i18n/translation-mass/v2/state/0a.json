@@ -120,7 +120,98 @@
         "claimedAt": "2026-11-04T05:57:16.772Z",
         "expiresAt": "2026-11-04T07:27:16.772Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_8c4fca0d2a61:b007:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_8c4fca0d2a61",
+        "token": "token_8c4fca0d2a61_c1970ba9",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b007",
+          "stableId": "tour_brazil_agribusiness_14_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "6bad4e522de33389e48103c4ebe64b0cb936482ce81a85d37a556695d4a0c707",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:57582af7779781c1",
+              "field": "media.alt",
+              "sourceTextSha256": "8af3bfacf6be04244b3fe35638aea686219ff3f143c71e670bbd2a90188d528c",
+              "text": "Agricultural exhibition with machinery, pavilions and visitors, viewed from above",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific alt text for this exhibition photograph.",
+                "wordEvidence": {
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:68fed426a27bd9ef",
+              "field": "media.hover",
+              "sourceTextSha256": "9acab0f1eb4ab8891e0b7924236914248524e7e2c513e5fd5d6a6325cd352e8c",
+              "text": "Pavilions and agricultural machinery at the exhibition venue",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image hover description for this exhibition photograph.",
+                "wordEvidence": {
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_caption:37a1a3e309c4f963",
+              "field": "media.caption",
+              "sourceTextSha256": "9a1fb1bc7873a3c33b097f78a24d94fadf799f720ea6e0be24433bd715fab0a6",
+              "text": "Photograph from the agribusiness programme; the specific event and year of photography have not been established.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no editorial caption about the unidentified event and photograph date.",
+                "wordEvidence": {
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "26f168b07677cc89271916cc8df93462fe47d94abb1852bbb598fe0292a3dff4",
+              "text": "Ribeirão Preto — São Paulo — Manaus and the Amazon",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p33",
+                    "textSha256": "9fa95ad9d3b042c8afddc370100ce88d65df8fb78c7b82ac77e9da3d860c6d6d"
+                  },
+                  {
+                    "ref": "word/document.xml:p35",
+                    "textSha256": "e890546d03db07088116d8ebc2f42b26f059c9be125244759fcda3ef1252783d"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the route heading from the exact Day 5 locations and its Amazon jungle destination."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:58:51.235Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

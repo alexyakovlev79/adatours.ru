@@ -311,7 +311,104 @@
         "claimedAt": "2026-11-04T06:08:09.201Z",
         "expiresAt": "2026-11-04T07:38:09.201Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_8c4fca0d2a61:b002:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_8c4fca0d2a61",
+        "token": "token_8c4fca0d2a61_c1970ba9",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b002",
+          "stableId": "tour_brazil_three_ecosystems_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "bb3e0f9c57aaf5af47ad0f44e576c662bf20bfc0811cb7f8df5fe2665236a0ef",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:3ca5d6c95ae76844",
+              "field": "itinerary.label",
+              "sourceTextSha256": "81c4771b3cf5d4810c3b584957852a0c3ee43ae97a2bebea1be1164a73963d79",
+              "text": "Northern Pantanal",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p6",
+                    "textSha256": "0bd5311e07fdac573503e2eed13195bed13002314602b76d0880750b4a221e34"
+                  },
+                  {
+                    "ref": "word/document.xml:p41",
+                    "textSha256": "967992dbcd8b24ca4e43928f79c940493c1976c1b2a9c3e38c2ac201b634f0fd"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact named region from the verified overview and Day 5 paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:70d90edb0715adb7:2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a2104752adf834a1a84e1c3eb73ec14edff7fd60b562acf7dd8f95b9a3498e57",
+              "text": "Cuiabá",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p19",
+                    "textSha256": "5508dc9456559a57f3b05cc728311e5a3f8b94d19f75880435d436debd1899ed"
+                  },
+                  {
+                    "ref": "word/document.xml:p53",
+                    "textSha256": "5f757d2159721a073504c1a51ff2f89f5f8c6dedb7ef582783ff88ef84fbe211"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact airport-city name from the verified departure and arrival headings."
+              }
+            },
+            {
+              "blockId": "tour:included:cc0b5b77ffe17611",
+              "field": "included",
+              "sourceTextSha256": "48839b798b3e2a221b9cf738a6867e4e5fffc6b45ebfa6b35e98fada56289299",
+              "text": "Regular transfers in air conditioned vehicle",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p60",
+                    "textSha256": "9e284869100208fa2313a6aed86deb972e22e0b6b661d94f729183347b8737b8"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:c21740b61ff6ceb1",
+              "field": "included",
+              "sourceTextSha256": "a65fae1c9b65a342d8fd73814bb943c0e03cbb3ca02df16bd870834c7f68460c",
+              "text": "2 nights at Jardim d’Amazonia Lodge",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p61",
+                    "textSha256": "e3059db8f9e76ec4f015b29c1ee796d8f22d239001bf3a3324e2db81b92189ec"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:09:00.645Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

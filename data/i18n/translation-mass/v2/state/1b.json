@@ -143,7 +143,7 @@
         "expiresAt": "2026-11-04T08:13:39.648Z"
       },
       "checkpoint": {
-        "id": "ada-en-3241f5702d2d-02-cp4",
+        "id": "ada-en-3241f5702d2d-02-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-3241f5702d2d",
         "token": "ada-en-token-3241f5702d2d-20261104",
@@ -240,10 +240,68 @@
                 "transformation": "contextual_label",
                 "rationale": "Combine the Santiago place heading and the Day 10 airport departure passage into the itinerary day title."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "2b539d7e869c874614eea4865c18c94e1924b43bc226b1d3453de2204f08e5a4",
+              "text": "Day 10 · Breakfast. At the appointed time, transfer with driver to the airport for your flight home.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p114",
+                    "textSha256": "772acedfc9231e26e5f81d5598f75c0a2b349c301fd04a5d8979fa64f9c20df2"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a807dfee0c6eab0a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago de Chile",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p112",
+                    "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:1da41f8f7f52600d",
+              "field": "media.alt",
+              "sourceTextSha256": "3fecf00616c77c071ae999eb03172b5aa079028d15cb3ce319505e39408ad620",
+              "text": "Santiago in the evening, with the river, bridges and road lights, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-3241f5702d2d",
+                "wordAbsenceReason": "The verified Word document has no corresponding alt text for the evening city image; translate the current RU description."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "d2047a38c275dced93b9c93a4297ff189e74e478881341c81f52b33cdbe2a541",
+              "text": "A couple dances Argentine tango on a stage in Buenos Aires — illustration",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-3241f5702d2d",
+                "wordAbsenceReason": "The verified Word document contains no matching alt description for the illustrated hero image; translate the current RU text including its illustration qualifier."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:45:02.981Z"
+        "at": "2026-11-04T06:45:06.628Z"
       },
       "submission": null,
       "review": null,

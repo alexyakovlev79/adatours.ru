@@ -322,7 +322,95 @@
         "claimedAt": "2026-11-04T06:19:04.009Z",
         "expiresAt": "2026-11-04T07:49:04.009Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-2a369-tour_brazil_rio_iguazu_sao_paulo_group_9d-b012-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2a369c57df19",
+        "token": "token-2a369c57df19-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b012",
+          "stableId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "d81bfc7f9efd043d853b139e9a023b5e17ada60aaafc2bb20f8f5f89e9b57fae",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+              "field": "itinerary.title",
+              "sourceTextSha256": "93758fa3ef35c531d9bbc3323a20792f30bc1f7ecb545bdd7b5eea1e1b273682",
+              "text": "Departure",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p43",
+                    "textSha256": "e77459e3115e73700529c9096d61ebf9f2df211ad5898cf209eb4060a0f1c9fc"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word day marker for the dedicated itinerary title field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+              "field": "itinerary.text",
+              "sourceTextSha256": "caabc0c77582957dfcb51940cfedb3f8665bdb928ac7b8b881bd26d1703a7cc4",
+              "text": "At the scheduled time, you will be transferred from your hotel to the airport in São Paulo with your English-speaking guide for your departure flight, concluding your Brazilian experience.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "c3baa62a88fd0be0a608ffbc5651f578628cab6ab3742e8c64131261bcf876ba"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:d7955f6de364dac3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+              "text": "São Paulo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p40",
+                    "textSha256": "51cefd5c6c976936a6e35c941a4e71cb0b94f9f0db9db8a134fad869078336f9"
+                  },
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "c3baa62a88fd0be0a608ffbc5651f578628cab6ab3742e8c64131261bcf876ba"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:702faf6f774b9241",
+              "field": "media.alt",
+              "sourceTextSha256": "9997bd0b44f0551c0ea2f5428ea1408b82273993942f3bd91a5e01283a2bef62",
+              "text": "Shaded pavement and a busy street among São Paulo's high-rise buildings, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2a369c57df19",
+                "wordAbsenceReason": "The verified Word DOCX has no matching photograph-specific alternative text for this São Paulo street image; translated the current RU alt."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:20:15.216Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

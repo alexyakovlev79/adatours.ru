@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_luxury_brazil_11d:b005",
+  "stableId": "tour_luxury_brazil_11d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9d03ef073479f978f5a4bd601830ff63cae8620b631f515ca0a1a326be6f4d92",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6df78ac15c2f0feba3ca45ab04fd32f1ea978fd1c934ed1679ff3e509538115d",
+      "text": "Day 3 · After breakfast, an excursion (4 hours) to Corcovado. A train climbs from the foot of the mountain through the Tijuca rainforest, where you may encounter some of Rio’s tropical wildlife, such as toucans and monkeys. At the summit, 710 metres above sea level, stands the iconic 38-metre statue of Christ the Redeemer, with breathtaking panoramas from Guanabara Bay and Maracanã Stadium to Sugar Loaf, Copacabana, Ipanema and Gávea Mountain. After the tour, enjoy coffee and traditional Brazilian sweets at the historic Confeitaria Colombo.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p92",
+            "textSha256": "b6be06220440f5ae119e694c57797e874172162c9867664c3532d65b9f66ce9a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6222538407b181fe",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
+      "text": "Corcovado",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p92",
+            "textSha256": "b6be06220440f5ae119e694c57797e874172162c9867664c3532d65b9f66ce9a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact mountain name from the corresponding verified Word day for the existing place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:615eaea339ede4b9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "21f46b8ec047bab4c066136eab21526012e247b693a2fc209cc4b18c6b40d271",
+      "text": "Tijuca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p92",
+            "textSha256": "b6be06220440f5ae119e694c57797e874172162c9867664c3532d65b9f66ce9a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Tijuca name from the rainforest description in the corresponding verified Word day."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ad1540feb3e4c0c4",
+      "field": "media.alt",
+      "sourceTextSha256": "d9b059f89c816a10567e2e972ad28ddbb7bcdfac2450f6952cd8f3bf259ee559",
+      "text": "Sugar Loaf between sea bays and green mountains in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-b434d08210a0",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The complete verified Word describes Sugar Loaf but has no image-specific alt caption for this view between bays and green mountains; translated the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:4ea929bff7367201",
+      "field": "media.hover",
+      "sourceTextSha256": "63b9bba9cc211b27f54ec93cb289de6ba7d9b62249b5a0662a7934541994609b",
+      "text": "Rio de Janeiro: rocky Sugar Loaf and the built-up coastline seen from above",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-b434d08210a0",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The complete verified Word has no image hover caption corresponding to this aerial view of Sugar Loaf and the built-up coastline; translated the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b2c0b8da54a3b0ea4b91d0f3a64d414934209617ab7e61dae04f5c1d6b3c6f3f",
+      "text": "A free day in Rio",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p93",
+            "textSha256": "8895c48b485b6bac512434ef04b5eafbe5a27c22a31b8d22f0328a58c5d2eff3"
+          },
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the short free-day heading from the Word Day 4 description and the exact Rio destination name, without adding an activity."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1738898fd53788bdb5eeee58ffd512287e3c2876f5862af8d6fa2b0acdb58c96",
+      "text": "Day 4 · Breakfast and a free day to discover more of the city on your own, or choose one of our optional experiences (see Optional excursions).",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p93",
+            "textSha256": "8895c48b485b6bac512434ef04b5eafbe5a27c22a31b8d22f0328a58c5d2eff3"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    }
+  ]
+}

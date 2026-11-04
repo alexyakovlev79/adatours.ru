@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1887,
-    "leased": 3,
+    "queued": 1886,
+    "leased": 4,
     "review": 519,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1887,
-      "leased": 3,
+      "queued": 1886,
+      "leased": 4,
       "review": 519,
       "ready": 1,
       "retryable": 0,
@@ -145,8 +145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 60,
-          "leased": 0,
+          "queued": 59,
+          "leased": 1,
           "review": 17,
           "ready": 0,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T11:40:08.370Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_ekvador_i_galapagosskie_ostrova_v_iyule:b008",
       "token": "ada-token-52870a61-8d39-45ab-bf16",
       "expiresAt": "2026-11-04T10:40:03.776Z",
+      "generation": 1
+    },
+    "ada-en-20261104-bb6ca3d61543": {
+      "jobId": "en:bulk:tour:tour_source_argentina_bariloche_i_buenos_ajres:b003",
+      "token": "ada-token-bb6ca3d61543",
+      "expiresAt": "2026-11-04T11:40:08.370Z",
       "generation": 1
     }
   },
@@ -3057,8 +3063,15 @@
         "en:bulk:tour:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni:b004",
         "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b004"
       ]
+    },
+    "ada-en-20261104-bb6ca3d61543": {
+      "token": "ada-token-bb6ca3d61543",
+      "jobIds": [
+        "en:bulk:tour:tour_source_argentina_bariloche_i_buenos_ajres:b003"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T09:37:19.877Z"
+  "updatedAt": "2026-11-04T10:10:08.370Z"
 }

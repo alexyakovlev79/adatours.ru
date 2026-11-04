@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1530,
-    "leased": 15,
+    "queued": 1529,
+    "leased": 16,
     "review": 864,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1530,
-      "leased": 15,
+      "queued": 1529,
+      "leased": 16,
       "review": 864,
       "ready": 1,
       "retryable": 0,
@@ -265,8 +265,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 62,
-          "leased": 0,
+          "queued": 61,
+          "leased": 1,
           "review": 26,
           "ready": 0,
           "retryable": 0,
@@ -297,7 +297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:29:25.105Z",
       "earliestRetryAt": null
     },
     "16": {
@@ -1430,6 +1430,12 @@
       "jobId": "en:bulk:tour:tour_source_chili_santyago_pustynya_atakama_torres_del_pajne:b005",
       "token": "ada_en_token_5a186ebc4209",
       "expiresAt": "2026-11-04T18:29:10.472Z",
+      "generation": 1
+    },
+    "ada-en-mw2d0fwd": {
+      "jobId": "en:bulk:tour:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni:b007",
+      "token": "tok-ada-en-mw2d0fwd",
+      "expiresAt": "2026-11-04T18:29:25.105Z",
       "generation": 1
     }
   },
@@ -4313,7 +4319,8 @@
     "ada-en-mw2d0fwd": {
       "token": "tok-ada-en-mw2d0fwd",
       "jobIds": [
-        "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b010"
+        "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b010",
+        "en:bulk:tour:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b010"
@@ -4349,5 +4356,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:59:17.658Z"
+  "updatedAt": "2026-11-04T16:59:25.105Z"
 }

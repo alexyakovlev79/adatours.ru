@@ -1,0 +1,167 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b001",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c2d1257b59d5cf84d4b97640c7a32f740873adf809702efbe5a61621f32a1207",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "868eb3cf5da8373340f4e57aee6b252d76a30c69e05e02adaff49220c5faf91a",
+      "text": "5 Countries & the Champions Parade",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p2",
+            "textSha256": "4ffd54a4181f5e3319e06fd543f07888b973c6b19a6c187162e3a032794b95d4"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "7c1c66ca03bbcf1f61b7c02226f11a123e1d1f2c1c5da90104f2ccd84d2a70df",
+      "text": "Experience the famous Carnival of Rio de Janeiro, one of the largest and most colourful cultural events on the planet, at the Parade of Champions. Then see the Iguazu Falls, one of the widest waterfall systems in the world, the elegant architecture of Buenos Aires, Santiago at the foot of the Andes, the Atacama and the natural wonders of the Uyuni Salt Flat, the floating islands of the Uros on Lake Titicaca, and finally the mysterious Machu Picchu.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p17",
+            "textSha256": "1f645b4098788fdd0c8472166c33087814b39d20c26df970389b12821734629f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "95f815e265ecb8b14b28664356801a32c1e9b2eae628f5f0925391bdc2912ecb",
+      "text": "Per person sharing a double room (DBL) in 4★ hotels. SGL, DBL and TPL rates for 4★ and 5★ hotels are listed below; the final price is confirmed when booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-701c2338f1e2",
+        "wordAbsenceReason": "The Word price-summary paragraph uses triple occupancy, not this RU double-occupancy note. Translate the frozen RU note without changing the common tariff basis; the Word table confirms SGL/DBL/TPL rows for both hotel categories and booking confirmation."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
+      "text": "Group",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p28",
+            "textSha256": "28ddbe6c3da979950bb6ed9b3bf576d13586e0439b3c6d165adc9da1751b98df"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the group service format explicitly stated in the Word guide-language field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a2490c091d79367",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+      "text": "Rio de Janeiro, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p140",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p142",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine exact Word accommodation-table city and night-count cells for the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c8ffbd6fc38d01b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e571875ec720a5ede2d4198bb255ac215b15ee7139d2cb36d3e04b709cb2383d",
+      "text": "Foz do Iguaçu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p145",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p147",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine exact Word accommodation-table city and night-count cells for the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8711a253902b9244",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c37dce1a30398fdcd836fc1554d450d0496e66b89d03885de1a27a2e194a9d8b",
+      "text": "Buenos Aires, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p150",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          },
+          {
+            "ref": "word/document.xml:p152",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine exact Word accommodation-table city and night-count cells for the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:eba01720f03465d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0df9632536cc03cad907920e98f41950bdd370cd8f5c2d55f3e2efdc388ceff1",
+      "text": "Santiago, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p155",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          },
+          {
+            "ref": "word/document.xml:p157",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine exact Word accommodation-table city and night-count cells for the existing route label."
+      }
+    }
+  ]
+}

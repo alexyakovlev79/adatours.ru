@@ -265,7 +265,133 @@
         "claimedAt": "2026-11-04T05:41:28.440Z",
         "expiresAt": "2026-11-04T07:11:28.440Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-005-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ef1fdb2517c4",
+        "token": "token-iwiao0re46l65ynbta4pbk",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_guatemala_discover_8_days:b008",
+          "stableId": "tour_guatemala_discover_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "0e817078926450ed2dd32559b39c4125e292ea20c212c9b00631f758bb697abc",
+          "wordEvidence": {
+            "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+            "sha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+            "shaVerified": true,
+            "modifiedTime": "2026-10-28T14:31:32.157Z",
+            "title": "Discover Guatemala 8d7n 2027 eng com 20.docx",
+            "yearFolder": 2027,
+            "paragraphsFile": "/workspace/scratch/335ed4b6e466/ada_en_run/word_1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM.paragraphs.json"
+          },
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:b04d5d61d358e759",
+              "field": "itinerary.text",
+              "sourceTextSha256": "36fd18fffd43b58bb8f85cb65591ece7a2a2bd1a1b36b1eadbfe5bca1ff4c7b1",
+              "text": "Breakfast. Spend the day exploring Antigua independently or relaxing at the hotel. If you wish, you can add a trip to Pacaya Volcano or Tikal. These are alternative ways to spend the free day, rather than required visits to both places. The timing, arrangements and price of your chosen excursion are confirmed when booking. Overnight at Casa Santo Domingo or a similar hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "Word paragraph 78 gives the free day and Pacaya/Tikal options, but does not include the current RU block's explicit either/or clarification, arrangements/timing confirmation or similar-hotel qualification. Translate the entire current RU block with those material conditions retained.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "supportingParagraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "71901c5a254a3190c177b932c11af3a978d2c1442c9d05f38d5f47ae5392839f"
+                  },
+                  {
+                    "ref": "word/document.xml:p118",
+                    "textSha256": "f0c2992acdf614f3e649dc8aa6edcf87d66f6169dab2c8183a416e93e967daeb"
+                  },
+                  {
+                    "ref": "word/document.xml:p134",
+                    "textSha256": "8f96c560d5829beec8b0c494725635cd01167e1ad43ae28c0b6a33d765206fcf"
+                  },
+                  {
+                    "ref": "word/document.xml:p135",
+                    "textSha256": "751e0975f498ddcd83acb7edef9822021c6179ca92ab474fdd3a6a7b6a8bfbb3"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:abc8657278035f01",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6f77ea077ac52d3606553c05922471d2567cfddc66298fa8c83ebf280ccf7c31",
+              "text": "Antigua",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p76",
+                    "textSha256": "26c914cb94d476cf5c57a733b93f5ebf046ca887c1083956954c8a6b520452df"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_title:f97bef5c09be3efd",
+              "field": "contentBlock.title",
+              "sourceTextSha256": "d4439b4d2147c08489879dc76dd3b51ba9b2a0e103d4df1e69b97d8c4b63b424",
+              "text": "Optional excursion",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "71901c5a254a3190c177b932c11af3a978d2c1442c9d05f38d5f47ae5392839f"
+                  },
+                  {
+                    "ref": "word/document.xml:p134",
+                    "textSha256": "8f96c560d5829beec8b0c494725635cd01167e1ad43ae28c0b6a33d765206fcf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use a concise optional-excursion panel label for the two alternatives explicitly listed as optional and excluded in the verified Word source."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:3ae4fb164ed24d62",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "89dbc96221511152762a0a0fd8465f4fbb37cb4f6d02f408555c5d6fcf9b56ac",
+              "text": "Participation is optional; the price, timing and included services are agreed separately.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "Word paragraphs 78, 134 and 135 confirm optional excursions and booking-time availability/rates but contain no exact panel text covering timing and service scope agreed separately. Translate the current RU conditions panel.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "supportingParagraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "71901c5a254a3190c177b932c11af3a978d2c1442c9d05f38d5f47ae5392839f"
+                  },
+                  {
+                    "ref": "word/document.xml:p134",
+                    "textSha256": "8f96c560d5829beec8b0c494725635cd01167e1ad43ae28c0b6a33d765206fcf"
+                  },
+                  {
+                    "ref": "word/document.xml:p135",
+                    "textSha256": "751e0975f498ddcd83acb7edef9822021c6179ca92ab474fdd3a6a7b6a8bfbb3"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:42:25.141Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

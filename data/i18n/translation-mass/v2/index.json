@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1917,
-    "leased": 22,
+    "queued": 1916,
+    "leased": 23,
     "review": 470,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1917,
-      "leased": 22,
+      "queued": 1916,
+      "leased": 23,
       "review": 470,
       "ready": 1,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 60,
-          "leased": 0,
+          "queued": 59,
+          "leased": 1,
           "review": 15,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T09:20:15.291Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-d8b5c6c4c917": {
-      "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b008",
-      "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
-      "expiresAt": "2026-11-04T07:50:08.940Z",
-      "generation": 1
-    },
     "ada-en-2a369c57df19": {
       "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b007",
       "token": "token-2a369c57df19-20261104",
@@ -1466,6 +1460,12 @@
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b011",
       "token": "ada_en_2478a2a40c1c_20261104",
       "expiresAt": "2026-11-04T09:19:57.356Z",
+      "generation": 1
+    },
+    "ada-en-20261104-9a69348b6e00": {
+      "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b005",
+      "token": "tok-9a69348b6e00-20261104-a1",
+      "expiresAt": "2026-11-04T09:20:15.291Z",
       "generation": 1
     }
   },
@@ -2979,7 +2979,8 @@
         "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b003",
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b012",
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b004",
-        "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b002"
+        "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b002",
+        "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b008",
@@ -3036,5 +3037,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T07:50:06.102Z"
+  "updatedAt": "2026-11-04T07:50:15.291Z"
 }

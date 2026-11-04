@@ -336,7 +336,7 @@
         "expiresAt": "2026-11-04T07:15:47.083Z"
       },
       "checkpoint": {
-        "id": "ada-en-f801-r2-06-b005-cp4",
+        "id": "ada-en-f801-r2-06-b005-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-f8019ad86757-run2-20261104",
         "token": "ada-en-f8019ad86757-r2-824d6b397e10",
@@ -425,10 +425,83 @@
                 "runId": "ada-en-f801-r2",
                 "wordAbsenceReason": "The Word itinerary contains no image-specific alternative text for this red Volkswagen Beetle photograph."
               }
+            },
+            {
+              "blockId": "tour:media_hover:1b3fec59042a18eb",
+              "field": "media.hover",
+              "sourceTextSha256": "349a927e56419be1d2d6d8509c3d35b5cae0644ef34503703a7b2e6b05e95429",
+              "text": "Bogotá: a red car on a quiet, tree-lined street",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f801-r2",
+                "wordAbsenceReason": "The selected Word contains no image hover caption describing the red car and tree-lined street."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "b0d8a1e40aebd1d16252b4686e4ce6c72378eb49ba51fca54af3ea3aa5ca2d94",
+              "text": "Lake Guatavita, the town of Guatavita and Zipaquirá",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[69]",
+                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
+                  },
+                  {
+                    "ref": "word/document.xml:p[70]",
+                    "textSha256": "3ce0a02e57075e79d5a268ef922c7da96710b1034a415d5ac14d14c71bd89d70"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the Day 2 heading from the exact Word destinations and town visit."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "1c589ecabae06eff3710eac5ad822fa2e62db43c4777bf48d4f91ec85ab51bca",
+              "text": "Day 2 · Breakfast at the hotel. Today, embark on a full-day excursion to discover two of the most remarkable destinations near Bogotá: Lake Guatavita and the Salt Cathedral of Zipaquirá. Begin at Lake Guatavita, surrounded by the peaceful landscapes of the Andean highlands and closely associated with the legendary story of El Dorado. Enjoy a scenic walk through the reserve before visiting the picturesque town of Guatavita. Free time for lunch at a local restaurant (lunch not included).\n\nIn the afternoon, continue to Zipaquirá and explore the extraordinary Salt Cathedral, carved approximately 180 metres underground within a former salt mine. Discover its chapels, galleries and monumental chambers before returning to Bogotá.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[69]",
+                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
+                  },
+                  {
+                    "ref": "word/document.xml:p[70]",
+                    "textSha256": "3ce0a02e57075e79d5a268ef922c7da96710b1034a415d5ac14d14c71bd89d70"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:d9c35578f29b8796",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+              "text": "Bogotá",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[66]",
+                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:46:06.926Z"
+        "at": "2026-11-04T05:46:22.732Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_kosta_rike:b003",
+  "stableId": "tour_source_luchshee_v_kosta_rike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4e1f6da6611bcd3b68d899fc3dc1ce88e4fa88fe3e5386f02774d00d42c61f5c",
+  "blocks": [
+    {
+      "blockId": "tour:included:a1fd8cdc1c8fd815",
+      "field": "included",
+      "sourceTextSha256": "74d7591ca45a32ad7398af3477458b536b6ace0c504018e4e0557e772013c1c2",
+      "text": "Meals according to the itinerary (B = breakfast, L = lunch, D = dinner)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "p:149",
+            "textSha256": "27e10b772903a6654df5ac89fb3903c6d8a29bc7a819519f1c1b964219ad72f8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day or list marker for the standalone translated field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:489966e4b689c256",
+      "field": "notIncluded",
+      "sourceTextSha256": "514cce5a11cb57748bf6b35ab361bcbbc1b3b6935eb70bc3e7ce6debe7e6bad4",
+      "text": "Optional activities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "p:153",
+            "textSha256": "cb28ad2d762ce4aa4544d038a48c18fdc4f1cbedcd051ce2a448104b167faab7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day or list marker for the standalone translated field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5450330c046332de",
+      "field": "notIncluded",
+      "sourceTextSha256": "5fbb9ac4dcfab07a44979b3dbd58473e22bf6b59c048beb2058e1fe2b5202967",
+      "text": "Tortuguero National Park entrance fee (USD 17 per person)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "p:151",
+            "textSha256": "f46e0e851f2833125aaab0e7b25b4c96e65efb165af3baf88d8a09a24eb5f7ea"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day or list marker for the standalone translated field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1d9c1ddf5a411227",
+      "field": "notIncluded",
+      "sourceTextSha256": "f55bc46501f3b03d07961bc98a5ba157d7611f274138f18820725a03335dfa04",
+      "text": "Arrival and departure taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "p:154",
+            "textSha256": "cfe81af04d94dc7d9642a10090535a2b497a77dd4829698fed5ea7b5c93d989b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day or list marker for the standalone translated field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word lists hotel extras but has no separate general personal-expenses item; translate the RU exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:b7f9e66621906906",
+      "field": "note",
+      "sourceTextSha256": "74245fd62d89db8b22791aeee3eaff198c87a2241c0be6e72dfe1a7c5a3ecace",
+      "text": "Ada Tours may replace the specified hotels with other hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word lists accommodation but contains no equivalent general hotel-substitution note; use the RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:571ee1ad8f5acb16",
+      "field": "note",
+      "sourceTextSha256": "e6d2b0fddd0247d4b771121e4ef0540f1c6d4641ad4db92cd4a2b4e4816dc93d",
+      "text": "The order of excursions may change while the tour programme is maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no equivalent note about rearranging excursions; translate the existing RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:50c74b165e439549",
+      "field": "note",
+      "sourceTextSha256": "87c5d8ed10345bb675f9426a2ca1cee4462bd17e594a55b680338310e57405b3",
+      "text": "Ada Tours is not responsible for breakfasts missed because of early hotel check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word does not contain this missed-breakfast condition; translate the existing RU note."
+      }
+    }
+  ]
+}

@@ -243,7 +243,94 @@
         "claimedAt": "2026-11-04T05:53:01.269Z",
         "expiresAt": "2026-11-04T07:23:01.269Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-884b0cfde5f5-s07-c4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-884b0cfde5f5",
+        "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b007",
+          "stableId": "tour_brazil_tropical_champions_parade_rio_angra_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "126107f4f61edb0708e95576a7881d442a33ca9ebd71a987a369a768946084e1",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "97c6b17766da2929578c23c055eef31ee93bebdde59ff1df468d21c43a952964",
+              "text": "Days 5–9 · A beach holiday on an all-inclusive basis at Vila Galé Angra, among the green hills and island-studded bay of Angra dos Reis.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:90",
+                    "textSha256": "9593fc57b4e1b97d489d2e1ab6b479207fe885f00604598a38f85d8b6b7c7c58"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:aa5800a0bd6f0ede",
+              "field": "itinerary.label",
+              "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
+              "text": "Angra dos Reis",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:88",
+                    "textSha256": "3f72316d71435f62c745e51639955f8e2b53f6d037a9fb2b5cb0b9eebd81f0e6"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:3ffaf62d0bfc08ea",
+              "field": "media.alt",
+              "sourceTextSha256": "7e8065289b65746802af956c8270b21246aa6d9c733ff53426f1834fa3c5d57b",
+              "text": "A rainbow over sailing yachts in a bay in Angra dos Reis, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-884b0cfde5f5",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The complete verified Word 2027 does not contain this photograph-specific alt or hover description; translated the current RU image metadata.",
+                "wordDocumentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "a6c87df528dfde3990bf5ce1b3cbbf9d4fa0299170fad970b8ddb627af2409ad",
+              "text": "Angra dos Reis: a day by the ocean",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:88",
+                    "textSha256": "3f72316d71435f62c745e51639955f8e2b53f6d037a9fb2b5cb0b9eebd81f0e6"
+                  },
+                  {
+                    "ref": "word/document.xml:p:90",
+                    "textSha256": "9593fc57b4e1b97d489d2e1ab6b479207fe885f00604598a38f85d8b6b7c7c58"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Form a short day heading from the exact Word destination and its all-inclusive beach-holiday programme for Days 5–9."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:54:10.975Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

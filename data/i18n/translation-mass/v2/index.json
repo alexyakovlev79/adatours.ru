@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1354,
-    "leased": 8,
+    "queued": 1353,
+    "leased": 9,
     "review": 1037,
     "ready": 10,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1354,
-      "leased": 8,
+      "queued": 1353,
+      "leased": 9,
       "review": 1037,
       "ready": 10,
       "retryable": 0,
@@ -465,8 +465,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 27,
-          "leased": 0,
+          "queued": 26,
+          "leased": 1,
           "review": 46,
           "ready": 5,
           "retryable": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T21:07:43.109Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1388,6 +1388,12 @@
       "jobId": "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b002",
       "token": "tok-mw2ioy0g-resume",
       "expiresAt": "2026-11-04T21:07:24.932Z",
+      "generation": 1
+    },
+    "ada-en-20261104-008515d4": {
+      "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b009",
+      "token": "tok-008515d4-20261104-translate",
+      "expiresAt": "2026-11-04T21:07:43.109Z",
       "generation": 1
     }
   },
@@ -4859,7 +4865,8 @@
     "ada-en-20261104-008515d4": {
       "token": "tok-008515d4-20261104-translate",
       "jobIds": [
-        "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b002"
+        "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b002",
+        "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b002"
@@ -4877,5 +4884,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T19:37:35.801Z"
+  "updatedAt": "2026-11-04T19:37:43.109Z"
 }

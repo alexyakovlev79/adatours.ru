@@ -1,0 +1,154 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_argentina:b007",
+  "stableId": "tour_source_chili_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "956f72b4ec318d7dec0e4c7adfb59069c6963ab0c9b24e93ad0ecf94315bc0d6",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:da6c54b4050b65df",
+      "field": "media.hover",
+      "sourceTextSha256": "29f446083263bde2e2cd7b1ad988133566537265d65a1cd5eaa874e451116c17",
+      "text": "Torres del Paine: turquoise lake, a small island and mountain peaks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0058-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word 2027 contains no text for the specific turquoise-lake photograph hover caption; the immutable Russian caption is the only textual source."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "0ccf57776bf48ea5bb0291b519b2931480eccc95efa37acc0354658a7d450f35",
+      "text": "Puerto Natales – El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "body:p:37",
+            "textSha256": "e80c8596c1018c869cb2e0c08033ed6961f2967d3ab57fd5a47e59b68d1583f7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The Word transfer paragraph explicitly identifies Puerto Natales and El Calafate; use its place names as the route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "32725113a2093aa4ecdc434a858c6e5374a75738eb7b3bd57215a18a8ffc669e",
+      "text": "After breakfast, transfer from Puerto Natales (Chile) to El Calafate (Argentina), across mountains and steppe where you may see guanacos, hares and foxes. On arrival, transfer to the hotel. On the shore of Lago Argentino, El Calafate is the gateway to Los Glaciares National Park, a UNESCO World Heritage Site since 1981: about 40% of the park is covered by ice fields, with 47 major glaciers, 13 of which flow east to feed Lake Viedma and Lago Argentino, and some 190 smaller glaciers.\n\nEvening · Guided jeep tour “Nativo Experience” with dinner in a cave. On this anthropological journey through time, learn how Indigenous peoples and later settlers lived in these lands, driving along Lago Argentino to caves where the Indigenous peoples of Patagonia left paintings thousands of years ago, before an unforgettable dinner of traditional dishes in the caves.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "body:p:37",
+            "textSha256": "e80c8596c1018c869cb2e0c08033ed6961f2967d3ab57fd5a47e59b68d1583f7"
+          },
+          {
+            "ref": "body:p:38",
+            "textSha256": "968197d6578bf12660c5aba0639f42eaafd6268c5f2e5e224559ec1aa7b7d810"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove only the brochure day-number prefix, retaining the approved Word itinerary and Nativo Experience prose verbatim."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4bd82be0e9f89208",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "body:p:36",
+            "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5d171705f0c8fd48",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "body:p:25",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          },
+          {
+            "ref": "body:p:37",
+            "textSha256": "e80c8596c1018c869cb2e0c08033ed6961f2967d3ab57fd5a47e59b68d1583f7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified Puerto Natales and Torres del Paine place names for this compact destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c8c6cf26cac87226",
+      "field": "media.alt",
+      "sourceTextSha256": "97e733c39306f42fca10393174d9130ceaaec972dd2304d97c55173ca91f1d1d",
+      "text": "Puerto Natales",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0058-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The English Word 2027 describes Puerto Natales but does not contain alt text for the particular image; the caption is translated directly from the immutable RU field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b87c150eb4050fec267f540aaac1a09eae4cb6cf6f739cbb2e5f24ed797913de",
+      "text": "Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "body:p:39",
+            "textSha256": "10b5e3b6559c9d37159cf879783e67f2018d8b1d6e75a87541e5d3cf74b70010"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved English glacier name from the Word excursion prose for this compact heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "74fc0cfaceb9c7dc80bc66379faa71765f33f511da953138525326d7cf39e4a5",
+      "text": "Breakfast. Excursion to the Perito Moreno Glacier, 80 km from El Calafate in the south-west of Lago Argentino. Named after the great 19th-century Argentine explorer, it is one of the few glaciers in the world that is not retreating. From time to time its 60-metre ice front releases walls of ice the size of buildings into Brazo Rico or the Canal de los Témpanos. Periodically it advances to the Magallanes Peninsula and dams Brazo Rico, whose level rises considerably until the water carves through the ice and the barrier collapses: a breathtaking sight.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "body:p:39",
+            "textSha256": "10b5e3b6559c9d37159cf879783e67f2018d8b1d6e75a87541e5d3cf74b70010"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove the original Word day-number prefix because the destination has its own day heading; keep the approved Word prose unchanged."
+      }
+    }
+  ]
+}

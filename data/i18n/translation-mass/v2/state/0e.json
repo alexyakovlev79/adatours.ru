@@ -439,122 +439,22 @@
     {
       "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b009",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "6f0bf74e80c768412389bd959878694d501d0091585146d1161fe4c71bc408e1",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_91a5d7c2e8b4",
-        "token": "ada-en-token-91a5d7c2e8b4-20261104",
-        "claimedAt": "2026-11-04T06:09:47.047Z",
-        "expiresAt": "2026-11-04T07:39:47.047Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_91a5d7c2e8b4_cp003_6",
-        "format": "inline-v1",
-        "ownerId": "ada_en_91a5d7c2e8b4",
-        "token": "ada-en-token-91a5d7c2e8b4-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b009",
-          "stableId": "tour_mexico_oaxaca_city_break_five_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "6f0bf74e80c768412389bd959878694d501d0091585146d1161fe4c71bc408e1",
-          "sourceVerification": {
-            "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-            "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-            "modifiedTime": "2026-09-22T16:51:20.461Z",
-            "fileName": "Oaxaca City Break Tour_5d4n_2027_20%COM_ENG.docx",
-            "yearFolder": 2027,
-            "editionYear": null
-          },
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:4bba62b24698122e",
-              "field": "itinerary.label",
-              "sourceTextSha256": "8c55ce7611964f45adea6774b2ff03f2659c0e15023c04495888f7b3f0c5a71f",
-              "text": "Oaxaca",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p13",
-                    "textSha256": "9b50253a07df5c36f1c29e87ae2559d5b7dd704bb3b4bc794f119353a5952803"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named Oaxaca stop from the verified arrival heading to label the existing route place."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:8cc8aea0845f29f7",
-              "field": "media.alt",
-              "sourceTextSha256": "ab9f662693ffb7847ff5dc146e2095e0e032560e5df82b4127fb9b81776a6900",
-              "text": "El Sol y la Luna restaurant sign on an ochre wall in Oaxaca, Mexico",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_91a5d7c2e8b4",
-                "wordAbsenceReason": "No image-specific alt description of the El Sol y la Luna sign occurs in the verified Word; translate the existing RU media description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:06dc9130d087f0c8",
-              "field": "media.hover",
-              "sourceTextSha256": "42bd3b4dc29967158efbeb172ed4742d44d1a4bda1971cf2499a26c186addb6f",
-              "text": "Oaxaca: a painted restaurant sign on an ochre facade",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_91a5d7c2e8b4",
-                "wordAbsenceReason": "No image-specific hover caption for the restaurant sign occurs in the verified Word; translate the existing RU media caption."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:68ebdd10346d3d20",
-              "field": "media.alt",
-              "sourceTextSha256": "959ef4398662189d2ec5533e27bbfc20f75f8114ccda9073b1f8bb8fc00933f5",
-              "text": "Stone platforms at Monte Albán surrounding a grassy plaza, Mexico",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_91a5d7c2e8b4",
-                "wordAbsenceReason": "The verified Word describes visiting Monte Albán but has no alt text describing this photograph; translate the existing RU image description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:77871c8f58bdcbc6",
-              "field": "media.hover",
-              "sourceTextSha256": "0611715414dbdb58b05dfd6eb2a79d9b7e0eff627c368abf88e30fe061f688f4",
-              "text": "Monte Albán: low stepped structures above the Oaxaca Valley",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_91a5d7c2e8b4",
-                "wordAbsenceReason": "The verified Word contains no photograph-specific hover caption describing the stepped structures; translate the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:body:47f6c11f40afc686",
-              "field": "body",
-              "sourceTextSha256": "0165c84e97d199984555718815ba1e4016c0e94f38a2b5ca6d0df8e8d55d4203",
-              "text": "\n## Prices for 2027\n\nPrices are per person in US dollars for the 5-day / 4-night programme.\n\n| Occupancy | Price per person |\n|---|---:|\n| SGL, single occupancy | $2530 |\n| DBL, double occupancy | $3267 |\n| TPL, triple occupancy | $2423 |\n\nThe source table lists DBL at a higher price than SGL. These values have been retained; the rate and corresponding room occupancy must be confirmed before booking. Specific departure dates and the hotel name are agreed on request.\n\n## Meals and transfers\n\nThe package includes daily breakfast and 1 lunch. The itinerary does not specify which day the lunch takes place, while the conditions for individual excursions list meals as an additional expense. The included lunch and all other meals must be agreed before booking.\n\nAirport transfers are private, and the excursions on days 2–4 are shared. The guide conducts the excursions in English and Spanish.\n\n## Extend your journey\n\nAfter Oaxaca, you can separately book a trip to Mérida, a journey through Chiapas with a stop in Mexico City, or a stay on the Riviera Maya followed by travel to Mérida. These extensions are not included in the price of this programme.\n",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_91a5d7c2e8b4",
-                "wordAbsenceReason": "The current RU body is a composite editorial section with a DBL/SGL anomaly note and an unresolved lunch-day warning absent from the verified Word. Translate this existing RU explanatory block, retaining its prices and restrictions; Word paragraphs 6–11, 18, 21, 25, 28–29 and 33–37 corroborate the underlying tariffs and services, but no equivalent complete body exists."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:11:02.627Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_91a5d7c2e8b4_s003",
+        "blobSha": "09e11136aaa1a6bac65f7e9b5914665fd17999e9",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_mexico_oaxaca_city_break_five_days_b009/ada_en_91a5d7c2e8b4_s003.json",
+        "at": "2026-11-04T06:11:18.667Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

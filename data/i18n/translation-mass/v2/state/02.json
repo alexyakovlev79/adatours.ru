@@ -468,7 +468,7 @@
         "expiresAt": "2026-11-04T08:38:19.100Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-8526ba7437bc-b006-cp4-tour_peru_8d",
+        "id": "ada-en-20261104-8526ba7437bc-b006-cp8-tour_peru_8d",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-8526ba7437bc",
         "token": "ada-en-token-8526ba7437bc",
@@ -545,10 +545,70 @@
                 "runId": "ada-en-20261104-8526ba7437bc",
                 "wordAbsenceReason": "The selected Word contains no equivalent image alt text for this panorama; translated the current RU caption."
               }
+            },
+            {
+              "blockId": "tour:media_hover:37b05af3e8836071",
+              "field": "media.hover",
+              "sourceTextSha256": "6a79ebf7dd26393b7f0e60e5db61d19ebe94b6c5aeadf24438112225a612acc9",
+              "text": "Cusco: an overhead view of the square, church towers and red roofs",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The selected Word contains no matching image hover description of this aerial view; translated the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8772c523c7107844",
+              "field": "itinerary.label",
+              "sourceTextSha256": "adb751a0f92e89a63d9c3e4bfc385255e09df7a7009eb968b7b48fde713f5d6c",
+              "text": "Sacred Valley of the Incas",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p205",
+                    "textSha256": "86e6ec60aa2c738629ec7b0f911d4e3a770f41a5161b5e922c624c04f654ed8c"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "5a5f331e5c92c82fc8bf86a9dc7a8d58e008928b96acd49c39627aa2a64ac674",
+              "text": "Cusco – Puno",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p211",
+                    "textSha256": "bc9ccac223413aae882e5998bfc6c1069b3adc5492c528786a55d718c41933d5"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the route label from the Word excursion context, omitting its Word day number because this field is a title, not a schedule change."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b04d5d61d358e759",
+              "field": "itinerary.text",
+              "sourceTextSha256": "0d4dd4640234585c45ade5922971e215f1a1cff5b39a2642e42a957ac908a2c3",
+              "text": "After breakfast, transfer to the bus station and continue to Puno on a Wonder bus.\n\nThere are several stops along the way. The first is Andahuaylillas. The Church of San Pedro de Andahuaylillas was built in the 17th century on the site of an ancient Inca temple. Its paintings and stucco decoration have led to frequent comparisons with the Sistine Chapel.\n\nThe next stop is Raqchi, an ancient administrative and religious centre. After lunch in Sicuani, the route continues through La Raya, where there is a market against a mountain backdrop.\n\nAnother stop is Pucará, an Inca fortification with a lithic museum.\n\nYou will spend about 10 hours on the road. Arrive in Puno at the end of the day and check in at the 3-star Conde de Lemos Inn.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "Word paragraphs 87–88 recast the Andean bus day but omit the RU Wonder bus name, 17th-century date, La Raya market, approximate 10-hour duration and Conde de Lemos Inn 3-star hotel. Translated the current RU block to retain these facts without importing different Word timings or accommodation."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:09:22.675Z"
+        "at": "2026-11-04T07:09:42.517Z"
       },
       "submission": null,
       "review": null,

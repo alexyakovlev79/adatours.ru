@@ -476,7 +476,7 @@
         "expiresAt": "2026-11-04T09:14:03.579Z"
       },
       "checkpoint": {
-        "id": "ada_en_4c0a9bc31e22_b010_cp4",
+        "id": "ada_en_4c0a9bc31e22_b010_cp8",
         "format": "inline-v1",
         "ownerId": "ada_en_4c0a9bc31e22",
         "token": "ada_en_4c0a9bc31e22_token_20261104",
@@ -562,10 +562,82 @@
                   "tableObserved": "22.10 São Paulo H.D Historical São Paulo 4h / English-speaking guide; 23.10 Day at leisure"
                 }
               }
+            },
+            {
+              "blockId": "tour:media_hover:d3c02aaad23b1cfb",
+              "field": "media.hover",
+              "sourceTextSha256": "43c56eddcc86cd59a19f17d476f2dbd9e396fcc37e526f44eb7fcff023caf64a",
+              "text": "São Paulo: trees, pedestrians and cars among the city's high-rises",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_4c0a9bc31e22",
+                "wordAbsenceReason": "The exact Word has no photograph-specific hover caption of trees, pedestrians and cars by São Paulo high-rises; translated the current RU image caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b3f52ccc45acdbfe",
+              "field": "itinerary.label",
+              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+              "text": "São Paulo",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                "paragraphs": [
+                  {
+                    "ref": "p:7",
+                    "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "5c76aa02e81cc385ef7142bf444455c64e4602b3b8c4eb407e6f9e72778cfa0d",
+              "text": "A free day in São Paulo",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_4c0a9bc31e22",
+                "wordAbsenceReason": "The selected Word p:37 contains the free-day narrative and its service-table image16.jpg lists 23.10 Day at leisure, but there is no equivalent standalone itinerary heading; translated the current RU free-day title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "ab2eb3c0ac559e4573669f95cfd6dd1d38cd6e1e8f027c84ec77379f95cf500f",
+              "text": "23 October.\n\nA day that belongs entirely to you. Wander the sophisticated galleries of Jardins, lose yourself in the lush greenery of Ibirapuera Park, or surrender to one of the world's great culinary scenes. A great option is the Municipal Market, home to the legendary mortadella sandwich beneath its famous stained-glass windows. In São Paulo, even the free hours taste extraordinary",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_4c0a9bc31e22",
+                "wordAbsenceReason": "Word p:37 supplies the entire approved English narrative verbatim, but its extracted paragraph has no date prefix; the date 23 October is present in the current RU field and confirmed by the exact Word service-table image16.jpg row 23.10 Day at leisure. Kept the Word narrative unchanged and translated only the RU date prefix; the mixed block is not labelled word_exact.",
+                "preservedWordPassages": [
+                  {
+                    "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                    "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                    "ref": "p:37",
+                    "textSha256": "cef9c83267471f219f2946bd622f2fd83be390de4a21fcf4cd317d4aa02cb22a"
+                  }
+                ],
+                "dateEvidence": "word/media/image16.jpg, OOXML p:68 rId80, row23.10"
+              }
+            }
+          ],
+          "sourceNotes": [
+            {
+              "kind": "edition_label",
+              "note": "Selected source is assigned yearFolder2027, editionYear null; its exact filename contains OUT2026. No explicit year in itinerary text; dates 20–30 October and assignments retained."
+            },
+            {
+              "kind": "commercial_table_checked",
+              "note": "Word price table is raster image16.jpg (not OOXML w:tbl). Visually read: 22 PAX basis, per-person net totals USD1642 SGL / USD1122 DBL. No price fields in this packet and no shared prices changed."
             }
           ]
         },
-        "at": "2026-11-04T07:46:41.476Z"
+        "at": "2026-11-04T07:47:09.714Z"
       },
       "submission": null,
       "review": null,

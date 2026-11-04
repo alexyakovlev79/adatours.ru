@@ -265,7 +265,90 @@
         "claimedAt": "2026-11-04T07:07:53.663Z",
         "expiresAt": "2026-11-04T08:37:53.663Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2ee259e72fda-006-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2ee259e72fda-20261104",
+        "token": "ada-en-2ee259e72fda-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b008",
+          "stableId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "f4c868a933f83c55eb8330858329f795569264a71267d05e83376da709f780f9",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:0eec925147ef942a",
+              "field": "media.alt",
+              "sourceTextSha256": "06161bc81b2716a0436a69d60151c0687175cf4a0339d0a0b14e1462ddc35d22",
+              "text": "A view over Rio de Janeiro from above",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The verified Word contains no matching media caption for this current RU photograph description; translate the RU text without changing the image.",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p21",
+                    "textSha256": "c5d70ae424bd8c69541ba83e41f1630532c88c94ea25c4a362aa739a88b1f555"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the verified Day 3 city heading without its day prefix as the current itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "344de94f3d73a68f41b2472eb8e3653be86f4549d76f922b9297a785cd3ae7a3",
+              "text": "A half-day tour to Corcovado and Santa Teresa with an English-speaking guide. Entrance tickets and lunch are listed in the overall included services.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word p23 describes the excursion and p50/p52 separately confirm tickets and lunch. No corresponding single paragraph contains the current RU cross-reference to the general included-services list; translate that concise current RU block while retaining all services.",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p21",
+                    "textSha256": "c5d70ae424bd8c69541ba83e41f1630532c88c94ea25c4a362aa739a88b1f555"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract Rio de Janeiro from the verified Day 3 Word heading for the place label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:09:08.231Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

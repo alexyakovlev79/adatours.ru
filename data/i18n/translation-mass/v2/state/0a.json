@@ -186,7 +186,86 @@
         "claimedAt": "2026-11-04T06:44:13.445Z",
         "expiresAt": "2026-11-04T08:14:13.445Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-150b76fa3667-005-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-150b76fa3667",
+        "token": "ada-en-150b76fa3667-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b006",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "b0899634ece33132c2c5abd45982290bcbbefd6d25d995783894752c9ff825fe",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:d9de996ca499dc9a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "58abf2a1ebd4efe4c0e8d0c25a9543b82a4b326b6788db043ffe5182570e47cf",
+              "text": "Petrópolis",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p40",
+                    "textSha256": "f2e0fa0fe256bbd2cd08dcdd69fbe13e62bc2ee7597aaead011da0751d28cc05"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cbedbcb0c60d5e66",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d6b6af45737d14c2a35612794b3b433bd074306720e70b2c5cd88948c441a122",
+              "text": "Ouro Preto",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p43",
+                    "textSha256": "d52838205f1a4ebeb923b634aba0cfe44f6cc7d580296eb43cd193b86cabb226"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:71c79fa8cf37bdbd",
+              "field": "media.alt",
+              "sourceTextSha256": "396ff91f374c1491e7721eb9f8fd257bd656f880a6735b607a67d0fc2e58ad89",
+              "text": "A white church with two towers above the colourful houses of Ouro Preto, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 programme paragraphs 101–103 describe Ouro Preto but contain no image-specific alt caption; translate the current RU photograph description.",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:6b16df19b09e87af",
+              "field": "media.hover",
+              "sourceTextSha256": "0884f46b8c593c4c47342f41ac9fd71c3515ea11b0368fdbfa850d8b809c6cdc",
+              "text": "Ouro Preto, Brazil: a historic church and tiled roofs among green mountains",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 programme paragraphs 101–103 contain no image-specific hover caption; translate the current RU photograph caption.",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9"
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:45:10.073Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

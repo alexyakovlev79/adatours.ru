@@ -300,7 +300,101 @@
         "claimedAt": "2026-11-04T06:12:34.024Z",
         "expiresAt": "2026-11-04T07:42:34.024Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-5d56534e-04-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-5d56534e4493",
+        "token": "lease-da131c3d187149a7b813992c83ea721b",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_rio_four_days:b004",
+            "stableId": "tour_brazil_rio_four_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "5ee26bbeefe70b0588f42514e7dc513a825746e9a1d3f7f9507d707ce38b5f37",
+            "blocks": [
+              {
+                "blockId": "tour:media_alt:07172fd6ca3b791b",
+                "field": "media.alt",
+                "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+                "text": "Panoramic view of Rio de Janeiro with the bay, Sugar Loaf Mountain and the city’s buildings, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The exact Word has no image-specific alt caption combining this bay, Sugar Loaf and city view; translate the current RU media.alt."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:6eee82a2b72a1a8c",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                  "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p8",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:fad087100c51e11d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "bbba7ba154e490b062cee03e8dcb16b0bd5e7eb94f09c1f351f75a9a19dd8189",
+                "text": "Urca Hill",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                  "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p38",
+                      "textSha256": "b2ee12581151c84d27aa0f0670ebfc9245dcb0e45941d41959c97df86b977fb6"
+                    },
+                    {
+                      "ref": "word/document.xml:p78",
+                      "textSha256": "f97bcb1c9381a4660dbda8d61a3e2145ae46e57916677e4726255d036e69422e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the Urca Hill name attested in the exact Word cable-car highlight and excursion passage."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:c2bdac36630388b5",
+                "field": "itinerary.label",
+                "sourceTextSha256": "c20fa275ecbe6a0d6c918b2133e0ffc8929360be9e40d9e18c29cdf8fd581bcf",
+                "text": "Sugar Loaf",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                  "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "52e7420260c3b5ec74d4a21b09c3b207e86cf16e10389bce6d9965bef6f41675"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "wordEvidence": {
+            "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+            "sha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+            "modifiedTime": "2026-10-21T20:19:00.892Z"
+          }
+        },
+        "at": "2026-11-04T06:13:33.705Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

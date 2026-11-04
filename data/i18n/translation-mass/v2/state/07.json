@@ -243,7 +243,104 @@
         "claimedAt": "2026-11-04T05:53:30.780Z",
         "expiresAt": "2026-11-04T07:23:30.780Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f801-r2-09-b002-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-run2-20261104",
+        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
+        "generation": 2,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_four_days:b002",
+          "stableId": "tour_brazil_rio_four_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "661ead54b83683605500fe8d4aa68ffa3208e9dc75ed49e89297b804e3aaeb0a",
+          "blocks": [
+            {
+              "blockId": "tour:included:f2fd32b230b67f27",
+              "field": "included",
+              "sourceTextSha256": "ef66a0a9784b6db95c88dcc4505997f316875c2e7bb55872254a2a921ebc8beb",
+              "text": "Accommodation in the mentioned hotel or similar: 3 nights.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[171]",
+                    "textSha256": "38a46b509b87912f6444388c7b51577b2d2933f002fc1d1f474bda2826e48c50"
+                  },
+                  {
+                    "ref": "word/document.xml:p[23]",
+                    "textSha256": "2885d8b7833f72024f8dd7a88069e9b074514304feec2fdb073b79e2e17b3d2e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the Word accommodation inclusion with the exact three-night duration."
+              }
+            },
+            {
+              "blockId": "tour:included:a624d3585233a933",
+              "field": "included",
+              "sourceTextSha256": "348dc08026e8047ed3144b3b36e9c0184d308dbb32ffb89509e59826f17edce9",
+              "text": "   Breakfast at the hotel",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[172]",
+                    "textSha256": "de4eaf81f923c0ba515759dbf6ef2e1138ba5c7a41a710c75fa0474017c69a8a"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:85e42307b61ca9d2",
+              "field": "notIncluded",
+              "sourceTextSha256": "236047bf5a1673051fe1fd8eaf58445cd44c624b58f3e99bd0fe6ed34fbafdee",
+              "text": "   International flights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[175]",
+                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:5f7004d708c653a3",
+              "field": "notIncluded",
+              "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+              "text": "   Tips",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[176]",
+                    "textSha256": "24794f5344f2549c0d4ed6f854a52adb1d37bc862de582ed39226849a44b2d3c"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:54:15.281Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

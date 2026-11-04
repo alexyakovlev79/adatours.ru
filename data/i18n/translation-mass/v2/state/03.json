@@ -329,198 +329,22 @@
     {
       "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "e75713689120b100f954ffd5ab33c27694debbbda4bbf53c3c2003a3a13ad173",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "claimedAt": "2026-11-04T06:01:04.759Z",
-        "expiresAt": "2026-11-04T07:31:04.759Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_4c0a9bc31e22_b004_cp8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b002",
-          "stableId": "tour_mexico_oaxaca_city_break_five_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "e75713689120b100f954ffd5ab33c27694debbbda4bbf53c3c2003a3a13ad173",
-          "blocks": [
-            {
-              "blockId": "tour:included:f889700c9aa970be",
-              "field": "included",
-              "sourceTextSha256": "564868e19eb538b9a02ad4c51ff8e8bff957de057c433f5052da81f5a19e4416",
-              "text": "Daily breakfast and 1 lunch; the day of the lunch must be confirmed.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "Word p:33 includes daily breakfast and one lunch but does not specify its day, while p:17/p:20/p:24 exclude meals; the current RU preserves an explicit confirmation caveat absent from Word. Translated the complete RU inclusion without resolving the contradiction."
-              }
-            },
-            {
-              "blockId": "tour:included:de158dca73615f1c",
-              "field": "included",
-              "sourceTextSha256": "333dc9a8d965340503204d3c77c923ecc1719d25e33fabf89740478f70b31f21",
-              "text": "Private transfers from the airport to the hotel on Day 1 and from the hotel to the airport on Day 5.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "p:14",
-                    "textSha256": "f55a2cbce0eab4b6b9cd05d7f0d3dae97ab031963f5bbf4e542e89376f707014"
-                  },
-                  {
-                    "ref": "p:27",
-                    "textSha256": "59578dc519c927cb9222800f68cfda4c80a8513ffba69dfa53ece901c2840a2f"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Combine the explicit private arrival and departure transfers in the exact Word days into the existing single transfer inclusion label, preserving their day numbers."
-              }
-            },
-            {
-              "blockId": "tour:included:9ce4abd17faf1be3",
-              "field": "included",
-              "sourceTextSha256": "a935faf01d1bf0180782751026630b9663fb10c6c6d5e1b0f7b69b6e8e3d9e57",
-              "text": "Shared excursions and transportation as described for Days 2–4.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "p:17",
-                    "textSha256": "e53cd3ec0a07c98a6dd6c630d7e23c3f1a38f2fd21767bc6b17cdcc7bafe23ae"
-                  },
-                  {
-                    "ref": "p:20",
-                    "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
-                  },
-                  {
-                    "ref": "p:24",
-                    "textSha256": "756b6272c8008c5f98d7c4c962137f672714b0bd35128f1733fa9f062fd86201"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Summarise the exact Word shared transportation inclusions for its Days 2–4 in the corresponding concise existing included-services field."
-              }
-            },
-            {
-              "blockId": "tour:included:adc39e6f96f4a0f3",
-              "field": "included",
-              "sourceTextSha256": "daf879588c30429b5822c02d55340fd55809a016d280a505156572096cb6a263",
-              "text": "Certified Bilingual Guide (English-Spanish Language) throughout the program.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "p:36",
-                    "textSha256": "89cf8d597eabecf6e061d3a45ca00805f08c391829ba70ceab76426997dedf83"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:included:cc1545de6e7885ac",
-              "field": "included",
-              "sourceTextSha256": "d19b2650f44993de07a884e08436084677764987395a51b70f6fb36ea396e098",
-              "text": "Entrance fees to the listed historic and archaeological sites, including Monte Albán and Hierve el Agua.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "p:17",
-                    "textSha256": "e53cd3ec0a07c98a6dd6c630d7e23c3f1a38f2fd21767bc6b17cdcc7bafe23ae"
-                  },
-                  {
-                    "ref": "p:20",
-                    "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
-                  },
-                  {
-                    "ref": "p:24",
-                    "textSha256": "756b6272c8008c5f98d7c4c962137f672714b0bd35128f1733fa9f062fd86201"
-                  },
-                  {
-                    "ref": "p:35",
-                    "textSha256": "c487db22d4ed83a0dbe7d819def1eda64a8122f95de16095d2310e0505352e20"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Expand the generic Word entry-fee inclusion label using the explicitly named included sites in its Day 2–4 descriptions."
-              }
-            },
-            {
-              "blockId": "tour:included:e8ea7e7bb590d589",
-              "field": "included",
-              "sourceTextSha256": "e68543629280e7079e1c6897a6e3d00b52506a732c96c636d10e1a337f4dae7c",
-              "text": "Artisan workshop visits and mezcal tasting on Day 4.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "p:24",
-                    "textSha256": "756b6272c8008c5f98d7c4c962137f672714b0bd35128f1733fa9f062fd86201"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the included workshop visit and mezcal tasting from the exact Word Day 4 paragraph for the corresponding service label."
-              }
-            },
-            {
-              "blockId": "tour:included:19826404aae86e07",
-              "field": "included",
-              "sourceTextSha256": "7115403beb133668b4cc8b3504b82b42df3195351fc79c404be2abe1fe12db21",
-              "text": "All Taxes and Service Charges on Meals.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "p:37",
-                    "textSha256": "c567702496ef81da3ac4696fe1430caad2b940668cfdc944ee4fededac499911"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:2db7006d0732403f",
-              "field": "notIncluded",
-              "sourceTextSha256": "2bf226c5230a58b60daebae8eb8990f1b2921bffeb47793d48d66be187a5b104",
-              "text": "Flights (Domestic/International)",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "p:39",
-                    "textSha256": "5325e95f86f9ec2f06e1429e6330f63efbc24a511c6cce15764e6207a5bbd217"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:02:13.017Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_4c0a9bc31e22_b004",
+        "blobSha": "ce53b55d98f148a06e56535f1776028e959bb522",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_mexico_oaxaca_city_break_five_days_b002/ada_en_4c0a9bc31e22_b004.json",
+        "at": "2026-11-04T06:03:00.642Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

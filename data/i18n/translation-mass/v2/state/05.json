@@ -569,7 +569,7 @@
         "expiresAt": "2026-11-04T09:21:14.151Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-8526ba7437bc-b010-cp4-tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+        "id": "ada-en-20261104-8526ba7437bc-b010-cp8-tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-8526ba7437bc",
         "token": "ada-en-token-8526ba7437bc",
@@ -644,10 +644,81 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracted the exact valley name from the Word optional winery excursion for this standalone place label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "4ddaa55ba2bf2434dbe3eab0de8c8c382a2cfa5819fcbe78dee0791198f5a963",
+              "text": "Santiago – Calama – San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p90",
+                    "textSha256": "b0bf83bb47572fb31b61716332e1c450b64840a00a1dfb62c47fa9f29851d0da"
+                  },
+                  {
+                    "ref": "word/document.xml#p102",
+                    "textSha256": "b1e679945e4a25225ec43c8ad407a77939e504d6cb9d6d85740ca1cfbd54e8d9"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combined the exact Word departure, flight and onward-transfer place names in the current RU route order."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "bba0b68f6307c05b8642a8b61965cd4a1860ea9bb37da978efe8f4e866d1cc2f",
+              "text": "Transfer to the airport for a flight to northern Chile.\n\nIn Calama, the air becomes much drier and there is almost no greenery. Continue by road through the desert to San Pedro de Atacama.\n\nSan Pedro is a small settlement of low adobe houses, with volcanoes on the horizon. The earth changes from grey to copper, with salt patches and folds of the Cordillera appearing nearby.\n\nThe jeep journey across the Altiplano begins the following day.\n\nAn astronomical tour is available at an additional cost. The dry climate, altitude and low light pollution make it possible to see the Milky Way, Southern Hemisphere constellations, planets and distant galaxies clearly.\n\n**Price:** USD 350 per person, minimum 2 participants.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "Word paragraph 102 confirms the transfers and the same USD 350/minimum-2 astronomical tour, but omits the detailed current RU Calama/San Pedro landscape and night-sky descriptions. Translated those RU details and retained the original price and minimum group size."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:72a475cdaa5f3d7f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
+              "text": "Calama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p102",
+                    "textSha256": "b1e679945e4a25225ec43c8ad407a77939e504d6cb9d6d85740ca1cfbd54e8d9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact arrival-airport place name from the Word transfer paragraph for this standalone label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:119f675a67d110fe",
+              "field": "itinerary.label",
+              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+              "text": "San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p161",
+                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:52:47.337Z"
+        "at": "2026-11-04T07:53:16.503Z"
       },
       "submission": null,
       "review": null,

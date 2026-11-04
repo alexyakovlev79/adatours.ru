@@ -433,7 +433,7 @@
         "expiresAt": "2026-11-04T08:20:14.099Z"
       },
       "checkpoint": {
-        "id": "ada-en-1d528bec4ff4-b06-cp4",
+        "id": "ada-en-1d528bec4ff4-b06-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-1d528bec4ff4",
         "token": "ada-en-token-1d528bec4ff4-20261104",
@@ -513,6 +513,73 @@
                   "runId": "ada-en-1d528bec4ff4",
                   "wordAbsenceReason": "The complete verified Word 2027 programme has no corresponding alt description of this image showing a boy and watermelons at a market stall; translate the current RU image metadata."
                 }
+              },
+              {
+                "blockId": "tour:media_hover:0380b2ac119611f2",
+                "field": "media.hover",
+                "sourceTextSha256": "062c901bdefa0db184ef7d4f380886c12612216f9e211c42785b972f4f58e81a",
+                "text": "Oaxaca market: a boy holds a watermelon beside a fruit stall",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The complete verified Word 2027 programme has no corresponding image hover caption about the boy holding a watermelon by a fruit stall in Oaxaca; translate the current RU hover text."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:5da3b87f3779b3f1",
+                "field": "itinerary.label",
+                "sourceTextSha256": "8c55ce7611964f45adea6774b2ff03f2659c0e15023c04495888f7b3f0c5a71f",
+                "text": "Oaxaca",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p16",
+                      "textSha256": "ad31064f34e7bdfeb8b37f90b7755f49c8b3c5f53a4cf003503ca0b86dc20802"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the matching place name Oaxaca from the verified Word heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+                "field": "itinerary.title",
+                "sourceTextSha256": "532f4695b7a726acff314511fafd318a4f91ffe7b8c3c1d99cfb9a52238ba24e",
+                "text": "Monte Albán, Alebrijes & Black Clay Traditions",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p18",
+                      "textSha256": "516a3877b6948202ac4c52994c9cce4cb878eb81cfd2e6b4c89e7147596128d8"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the exact Word day heading after removing only the Day 03 ordinal supplied by the itinerary structure."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+                "field": "itinerary.text",
+                "sourceTextSha256": "e0e0992d8a0664437e06e2e13077dcc83136cc621b54e0012e84cc4db4874b8e",
+                "text": "Duration: 8 Hours • Pick Up: 9:00–9:30 am • Language: English and Spanish. Visit Monte Albán (UNESCO), the mountaintop Zapotec ceremonial city, exploring temples, pyramids, ball courts, and tombs with expert storytelling. Continue to San Antonio Arrazola to see hand-carved and painted alebrijes, then to San Bartolo Coyotepec for a black clay pottery workshop visit. Included: Shared transportation, certified bilingual guide, entry to Monte Albán, artisan workshop visits, overnight in Oaxaca. Not included: Meals, tips, personal expenses.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p20",
+                      "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
+                    }
+                  ]
+                }
               }
             ],
             "wordSourceVerification": {
@@ -552,9 +619,9 @@
             "priceAmendments": []
           },
           "submissionId": "ada-en-1d528bec4ff4-b06",
-          "preparedBlocks": 4
+          "preparedBlocks": 8
         },
-        "at": "2026-11-04T06:51:26.840Z"
+        "at": "2026-11-04T06:51:59.370Z"
       },
       "submission": null,
       "review": null,

@@ -222,7 +222,7 @@
         "expiresAt": "2026-11-04T08:20:23.560Z"
       },
       "checkpoint": {
-        "id": "ada-en-2ee259e72fda-002-04",
+        "id": "ada-en-2ee259e72fda-002-08",
         "format": "inline-v1",
         "ownerId": "ada-en-2ee259e72fda-20261104",
         "token": "ada-en-2ee259e72fda-token-20261104",
@@ -361,6 +361,82 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the document group designation as the concise format label without passenger count or legacy edition year."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "984fd2d1462aa180c5107e762349024106f9ecd58bc8329ac757d2c05c986cb8"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the Rio de Janeiro stop from the verified route line."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b4a101a4607d4777",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguacu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "984fd2d1462aa180c5107e762349024106f9ecd58bc8329ac757d2c05c986cb8"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the Foz do Iguacu stop exactly as spelled in the verified document route."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8137954c6a092cbb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+              "text": "Lima",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "984fd2d1462aa180c5107e762349024106f9ecd58bc8329ac757d2c05c986cb8"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the Lima stop from the verified document route line."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:10b9affb31d6a916",
+              "field": "itinerary.label",
+              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+              "text": "Cusco",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "984fd2d1462aa180c5107e762349024106f9ecd58bc8329ac757d2c05c986cb8"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the Cusco stop from the verified document route line."
+              }
             }
           ],
           "sourceNotes": [
@@ -370,7 +446,7 @@
             }
           ]
         },
-        "at": "2026-11-04T06:51:32.304Z"
+        "at": "2026-11-04T06:51:45.584Z"
       },
       "submission": null,
       "review": null,

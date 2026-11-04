@@ -371,180 +371,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "787b46b3fe46a8a74bb8ea621d97549f4d2ecc5743348a0a7bfffa272e562d19",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "claimedAt": "2026-11-04T06:54:24.182Z",
-        "expiresAt": "2026-11-04T08:24:24.182Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_6c7d31_s008_c08",
-        "format": "inline-v1",
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b004",
-          "stableId": "tour_brazil_recife_porto_noronha_10d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "787b46b3fe46a8a74bb8ea621d97549f4d2ecc5743348a0a7bfffa272e562d19",
-          "sourceChecks": {
-            "wordSha256Verified": true,
-            "wordFileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-            "wordSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-            "wordYearFolder": 2027,
-            "wordReusedFromPriorPacket": "b005; same immutable selectedWord SHA, no repeated matching or completed translations",
-            "wordDifferences": [
-              "The RU Porto de Galinhas highlight includes traditional raft and snorkelling details absent from Word p77.",
-              "The RU Noronha highlight includes about 350 km from mainland and volcanic-coast details absent from Word p89."
-            ],
-            "commercialObservations": [
-              "Word 2027 hotel tariff: SGL USD 9909, half DBL USD 5660, third TRP USD 5151 per person; flights Recife–Noronha–Recife from USD 850 per person excluded.",
-              "No pricing, hotel, flight or service data changed by this packet; only the eight claimed text fields translated."
-            ]
-          },
-          "blocks": [
-            {
-              "blockId": "tour:highlight_text:dda49a0be749ba90",
-              "field": "highlight.text",
-              "sourceTextSha256": "8bbacec2cbb2d774d4e4c56dd3421acc9b805943840cecde0ae7a40bb1c604ff",
-              "text": "At low tide, shallow natural pools of warm, clear water remain between the reefs. Here you can snorkel or take a traditional raft out to the reefs. A free day gives you a choice: stay on the beach, head to Santo Aleixo Island for diving, visit the surfers at Maracaípe or go to Muro Alto, where the reefs form a large, calm natural pool.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p77 describes the free day and these locations, but the current RU highlight is a different composite with traditional raft/snorkelling details absent from Word. Translate this current RU highlight without importing the longer Word itinerary.",
-                "inspectedWord": {
-                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_alt:2a483521a148c633",
-              "field": "media.alt",
-              "sourceTextSha256": "2d1e717a936815f85bae4998440bf16e69f44bbd4e6d0b43ce48ab776e416f2a",
-              "text": "Sailboat above the clear natural pools of Porto de Galinhas, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word contains no photograph-specific Porto de Galinhas sailboat alt text; translate the current RU description.",
-                "inspectedWord": {
-                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_hover:bac72e0fbb03ac60",
-              "field": "media.hover",
-              "sourceTextSha256": "428bed804063f51587f864ed131edd1af85e94f6794df74670b5f82892d9bdcf",
-              "text": "Porto de Galinhas, Brazil: shallow water with reefs and a palm-lined beach",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word contains no photograph-specific Porto de Galinhas hover caption; translate the current RU caption.",
-                "inspectedWord": {
-                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-                }
-              }
-            },
-            {
-              "blockId": "tour:highlight_title:9c30bb186495765e",
-              "field": "highlight.title",
-              "sourceTextSha256": "e1b0799fc24e5b2a2379ff305ed058aba1636d2804d6f4a5429f233ae13cc7de",
-              "text": "Fernando de Noronha",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p87",
-                    "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:highlight_text:db30451471b8fcaa",
-              "field": "highlight.text",
-              "sourceTextSha256": "54cc01ada0d76d5964b7b4f714819c69c120708daab7f69ae9637abbc933cdf3",
-              "text": "The archipelago lies about 350 km from the mainland and is markedly different from the resort coast of Pernambuco. Baía dos Porcos is tucked between dark volcanic rocks, Dois Irmãos rises nearby, and Sancho opens onto clear water. The island tour by 4x4 takes in Baía do Sueste, Baía dos Golfinhos, Vila dos Remédios, beaches and viewpoints.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p89 contains the named island tour locations, but not this current RU composite with the 350 km distance and volcanic-coast description. Translate the current RU highlight, retaining its details and the source Word place spellings.",
-                "inspectedWord": {
-                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_alt:2e0a95006205c26c",
-              "field": "media.alt",
-              "sourceTextSha256": "de999a50080b603fc484b76d9c5024957748abb7e99cd2bea02ab794376b4dfa",
-              "text": "Sea cliffs and turquoise bays of Fernando de Noronha, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word contains no photograph-specific Fernando de Noronha sea cliffs alt text; translate the current RU description.",
-                "inspectedWord": {
-                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_hover:9583703df936c467",
-              "field": "media.hover",
-              "sourceTextSha256": "6edf4d4ddd64d465b6034da18f56513e6f87804e138ada31ac3cb536235c213b",
-              "text": "Fernando de Noronha: a rocky coast with small beaches",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The selected Word contains no photograph-specific Fernando de Noronha hover caption; translate the current RU caption.",
-                "inspectedWord": {
-                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
-                }
-              }
-            },
-            {
-              "blockId": "tour:highlight_title:a50a7afa39057f79",
-              "field": "highlight.title",
-              "sourceTextSha256": "160aeb0fc6b838533f19a00b133808e2293b8fd3eb7ec1164110966546597f9d",
-              "text": "Diving",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p49",
-                    "textSha256": "34e49da7280de1ea25d8a7621110f91c68a959a4ff3fd6bd43eb7aaf00b2b9e1"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:55:40.479Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_6c7d31_s008",
+        "blobSha": "b03cb1feb1151739dc833af79dc3140c7a695e0b",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_recife_porto_noronha_10d_b004/ada_en_6c7d31_s008.json",
+        "at": "2026-11-04T07:02:51.249Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

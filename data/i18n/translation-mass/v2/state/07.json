@@ -383,7 +383,93 @@
         "claimedAt": "2026-11-04T07:50:33.927Z",
         "expiresAt": "2026-11-04T09:20:33.927Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a40ee2cc-p08-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-a40ee2cc",
+        "token": "ada-en-token-a40ee2cc-71df-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b006",
+          "stableId": "tour_chile_hidden_secrets_9_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c3a5fc31fe884caf8b3f40bf3f7a9616be85e19e165bb4f6523b1ee35f700afc",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:40603cf7ecfe9542",
+              "field": "media.hover",
+              "sourceTextSha256": "55e944310c45740caddf3759736699912498f127982f84764e33fa55a9432faf",
+              "text": "Santiago at sunset: city lights beneath dark mountains",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word 2027 contains no matching photograph hover caption of Santiago at sunset; translated the current RU media caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "d4c50ff99d0972e04428bb9f97e49e64f4ab9e0c67823ee8549dbff68789c622",
+              "text": "Santiago – Calama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:67",
+                    "textSha256": "bf5b1342d02ce26b4dfbfb163a7da5125a0bd499d8acbbd2a73b6d82ebfbdb50"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combines the departure and arrival airport cities from the exact day 2 flight passage as the itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "c1457e5861845dfb8643ff480ebc3e9b6d13f48da648232dde46dd27367ed07f",
+              "text": "Day 2 · Breakfast at the hotel. Transfer from your hotel in Santiago to the airport for your flight to Calama. Upon arrival, meeting at Calama Airport and take a shared transfer to San Pedro de Atacama. In the afternoon, enjoy a half-day excursion to the Moon Valley (Valle de la Luna). Just a few kilometers from San Pedro de Atacama, amid the dramatic rock formations and unusual shapes of the Cordillera de la Sal (Salt Mountains), lies Moon Valley, a true geological wonder and part of Los Flamencos National Reserve.\n\nDuring the excursion, you will admire the fascinating landscape and extraordinary rock formations, which create the feeling of walking across the surface of the moon. In the afternoon, enjoy breathtaking views of the Andes mountain range and its volcanoes. As the sun sets, golden and red hues spread across the desert, revealing a truly spectacular panorama.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:67",
+                    "textSha256": "bf5b1342d02ce26b4dfbfb163a7da5125a0bd499d8acbbd2a73b6d82ebfbdb50"
+                  },
+                  {
+                    "ref": "word/document.xml:p:68",
+                    "textSha256": "b471883dbb1a1f2ea0e7554dc34db8d0f3c15e0f69de27787d4a34cdd771b808"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cdaa2982734c0db0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:135",
+                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:51:33.792Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

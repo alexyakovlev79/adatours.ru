@@ -364,7 +364,7 @@
         "expiresAt": "2026-11-04T08:33:55.890Z"
       },
       "checkpoint": {
-        "id": "ada-en-3241f5702d2d-03-cp4",
+        "id": "ada-en-3241f5702d2d-03-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-3241f5702d2d",
         "token": "ada-en-token-3241f5702d2d-20261104",
@@ -455,10 +455,77 @@
                 "transformation": "compose_route_label",
                 "rationale": "Remove the Day 10 numbering and format the exact Cusco/Buenos Aires route as the itinerary day title."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "655d00030c1d45162f84bb8c6167a99bda88355d491f0fe2459b730a596447b5",
+              "text": "Transfer to the airport to take your flight to Buenos Aires. Upon arrival, transfer in to your hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p67",
+                    "textSha256": "9089b5e428d3d5b6a6298c068a5a102a0b6d9571512fe33c77d181ceb7964437"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8e19e09ba64964d0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+              "text": "Cusco",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p66",
+                    "textSha256": "e47151f8f4f8a258c18081da7e4e906d04844b97f89ec07785796b1999cb0d31"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Cusco place name from the Day 10 route heading for this departure place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ffe3d969b9d1dcee",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p66",
+                    "textSha256": "e47151f8f4f8a258c18081da7e4e906d04844b97f89ec07785796b1999cb0d31"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Buenos Aires place name from the Day 10 route heading for this arrival place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:638774123e476f4f",
+              "field": "media.alt",
+              "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
+              "text": "Buenos Aires, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-3241f5702d2d",
+                "wordAbsenceReason": "The verified Word contains the Buenos Aires itinerary but no matching image alt caption; translate the current RU photograph description."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:05:13.162Z"
+        "at": "2026-11-04T07:05:17.267Z"
       },
       "submission": null,
       "review": null,

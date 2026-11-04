@@ -458,7 +458,84 @@
         "claimedAt": "2026-11-04T06:46:50.268Z",
         "expiresAt": "2026-11-04T08:16:50.268Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-39fb6759e90b-b004-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-39fb6759e90b",
+        "token": "tok-39fb6759e90b-20261104-a7c3",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b004",
+          "stableId": "tour_mexico_oaxaca_city_break_five_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7686e034687d97060e253c440e1026b2208fbb475b67177541dfdc35b9c8146a",
+          "blocks": [
+            {
+              "blockId": "tour:note:a60ce5430f546521",
+              "field": "note",
+              "sourceTextSha256": "6129e4637a759a8ae67bc1f39c6bfbfd525a7094b550f628e4ff961a9c7a59cf",
+              "text": "Airport transfers on days 1 and 5 are private; tours on days 2–4 and their transport are shared. Transport arrangements are confirmed at the time of booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "The exact Word specifies private airport transfers on days 1 and 5 and shared tours on days 2–4, but has no matching consolidated transport-confirmation note; translate the current RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:8e6f6b2877265dcc",
+              "field": "note",
+              "sourceTextSha256": "bd3f559c17a4594a76824360c7f6f9ba1b884cb472918e0bf2e2b795b91f1ba9",
+              "text": "Certified Bilingual Guide (English-Spanish Language) throughout the program.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "89cf8d597eabecf6e061d3a45ca00805f08c391829ba70ceab76426997dedf83"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:note:541291a15ee3f244",
+              "field": "note",
+              "sourceTextSha256": "7b13c2d996f84e789b63902c61eb41a076369ce9d928f818fd15f398f1a8da56",
+              "text": "The tours on days 2–4 are included in the package. A cooking class, art galleries, additional tastings, evening activities and itinerary extensions can be arranged separately on request.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "The exact Word describes optional add-ons and onward connections in separate day sections, but has no matching consolidated optional-services note; translate the current RU note."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "9d81fe23ce5e8caf7e6d1231a7dadd957d6935420f6db36a076d98cf94cb14c0",
+              "text": "Welcome to Oaxaca",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p13",
+                    "textSha256": "9b50253a07df5c36f1c29e87ae2559d5b7dd704bb3b4bc794f119353a5952803"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the day-number prefix from the confirmed Word heading to fit the existing day-title field."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:47:32.646Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

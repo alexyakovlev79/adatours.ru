@@ -361,7 +361,7 @@
         "expiresAt": "2026-11-04T08:10:43.730Z"
       },
       "checkpoint": {
-        "id": "ada_en_6c7d31_s006_c04",
+        "id": "ada_en_6c7d31_s006_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_20261104_0555_6c7d31",
         "token": "ada_en_token_6c7d31_20261104",
@@ -472,10 +472,75 @@
                 "transformation": "contextual_label",
                 "rationale": "Express the arrival-and-transfer passage as the short current RU day heading; preserve the same place and arrival event."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "75a324f60dda9fba84345a66c54acc25d4611041675bac4898bb4383a0da4ef7",
+              "text": "Flight to Recife. On arrival, you will be met and transferred to your hotel. The rest of the day is free to relax.\n\nRecife is the capital of Pernambuco and a major seaport in northeastern Brazil. It stands at the mouth of the Capibaribe River, where the river divides into branches before reaching the Atlantic Ocean. Its canals, bridges and boats by the quays have earned it the nickname \"Brazilian Venice\".\n\nThe city retains traces of Portuguese and Dutch rule: churches, mansions and historic buildings with carved balconies and facades darkened by time. Recife also has a lively modern side, with many cafés, restaurants, shops and places for an evening stroll, while the ocean is always close by.\n\nThe first day is deliberately relaxed. After your flight, you can rest at the hotel, walk along the waterfront or simply get used to the climate of northeastern Brazil before the full day of sightseeing that follows.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "Word p67 covers arrival and a shorter city overview, but it lacks the current RU free-afternoon/rest paragraph, river-branch detail and carved-balcony description. No complete equivalent day block exists; translate all current RU paragraphs without importing Word-only average temperatures.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c65e32799b01a5a9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+              "text": "Recife",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:eab7decda60eb32f",
+              "field": "media.alt",
+              "sourceTextSha256": "e7f0c92e69416feff72e6c8cae1916b55e26d4460179213b60703b0f53cb5f94",
+              "text": "Historic facades and boats beside Recife's stone waterfront, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The verified Word has no matching alt caption for this production Recife image; translate the current RU alt without replacing the image or adding details.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:bb8e6ee88605be22",
+              "field": "media.hover",
+              "sourceTextSha256": "f48850bb6152bf8ba43f6c988055670d3a41f668f5d395e21003bd063dc8fcff",
+              "text": "Recife: colourful buildings by the water in the evening light",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The verified Word has no matching hover caption for this Recife image; translate the existing RU caption without adding visual details.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:42:06.796Z"
+        "at": "2026-11-04T06:42:11.172Z"
       },
       "submission": null,
       "review": null,

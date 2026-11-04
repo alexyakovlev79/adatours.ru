@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_s_plyazhami:b006",
+  "stableId": "tour_source_braziliya_s_plyazhami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "989ca00a8a7e2d414599f12e7170e5ff87ba88dfa54eeecb97fa541331ea26ba",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9c0314c56e4da90a6b1face2d30742e87f28f7ef0082784fac150f2ef6a35c34",
+      "text": "Iguaçu – Recife – Porto de Galinhas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:98",
+            "textSha256": "55462fddbbd3c7f910ad31cead0af5fd5cc294018a33214a0431b49e6cbc78ae"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the DAY BY DAY label and retain the approved three-stop route, with normal title casing."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "68ed8a868742076fc698bea9b1c4f625141dd928a2635295de1f40037e017c56",
+      "text": "After breakfast, transfer to the airport for your flight to Recife, then to Porto de Galinhas, about 60 km south of Recife, where your hotel is on the tropical coast. This former fishing village is famous for its magnificent beaches, considered among the most beautiful in Brazil: clear turquoise water, white sand and coconut palms along the shore.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:102",
+            "textSha256": "5e128559a1453b2ce5197bde3a6035c38ba73267322b475c962013a6514c3866"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 6 prefix from the approved transfer and beach-arrival passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fccd262c357ba0de",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:90",
+            "textSha256": "6a0baf90731c3196d19064e7cf975fc500c3da418b08740986adfb7be6788625"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Foz do Iguacu destination from the approved arrival and falls programme."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:127c97e181428d99",
+      "field": "itinerary.label",
+      "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+      "text": "Recife",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:102",
+            "textSha256": "5e128559a1453b2ce5197bde3a6035c38ba73267322b475c962013a6514c3866"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Recife from the approved flight and onward-transfer passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b6dba3de5bfff2f7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "efedf0ef69adccd5467a3633cbd4dbe5b23440dc80c233ad78d862756bab2082",
+      "text": "Porto de Galinhas",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:46",
+            "textSha256": "660462991187fe099319662bccd0418970a8ad3aade279bfff8b658fa960fbc5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:60417d6735d09d06",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-704e3e13-mw25t7t2",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes the Argentine side of the falls but does not name Puerto Iguazu as a standalone route label. Translate the assigned RU place name without changing its identity."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c668bcfe598f4eb6",
+      "field": "media.alt",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:90",
+            "textSha256": "6a0baf90731c3196d19064e7cf975fc500c3da418b08740986adfb7be6788625"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Foz do Iguacu destination from the approved arrival and falls programme."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:79b49c0f2f9b8580",
+      "field": "media.alt",
+      "sourceTextSha256": "ed120f95639685c1e2645b9cb47899bcf74992caffd59ebde14ff1ef1ba27a13",
+      "text": "A beach in Recife with palm trees and dense high-rise buildings along the ocean, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-704e3e13-mw25t7t2",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no alt-text description of this particular Recife beach photograph with palms and high-rise buildings."
+      }
+    }
+  ]
+}

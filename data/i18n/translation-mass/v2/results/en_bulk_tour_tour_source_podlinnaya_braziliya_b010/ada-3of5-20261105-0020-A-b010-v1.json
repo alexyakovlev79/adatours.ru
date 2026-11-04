@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_podlinnaya_braziliya:b010",
+  "stableId": "tour_source_podlinnaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e52c56fb083a80f9817c8d939fca5ff6d5c02b61ce9f86b8571f09c96adbf4b8",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:3a84a929733f16bc",
+      "field": "media.hover",
+      "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+      "text": "Iguazu Falls in Brazil: cascading waterfalls, rainbows and lush green banks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-3of5-20261105-0020-A",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No standalone image-hover caption appears in the approved Word programme."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2f6c6aa4f92b25d6e5c0c70480ee7b58b42cee797f57f25dbb89ec5c95ebb217",
+      "text": "Foz do Iguaçu: Argentine Side",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "body:p48",
+            "textSha256": "17b01ff51d28074b25ecccaa0312a854ff8de4fc899123ab2ecddceb792e1e8d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word day 11 itinerary identifies the Argentine side; the route location is taken from the adjoining Foz do Iguaçu section."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "727f3b51764bb95f024bcaaea268010484e7c96e417f90fd938a36b4ed4e4206",
+      "text": "Cross the Tancredo Neves Bridge to the Argentine side of the falls, where you stand above and below the cascades at the same time, close enough to feel the power of the falling water, and see the source of the Devil’s Throat.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "body:p48",
+            "textSha256": "17b01ff51d28074b25ecccaa0312a854ff8de4fc899123ab2ecddceb792e1e8d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 11 numbering prefix; preserve the approved Word itinerary wording in English."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d5bc9e3b0938e59f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-3of5-20261105-0020-A",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word has no independent Puerto Iguazu place-label field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:eb52245d3ba1e242",
+      "field": "media.alt",
+      "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
+      "text": "Iguazu Falls viewed from the Brazilian side",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-3of5-20261105-0020-A",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word has no image alt text tied to this specific photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "79cfaed6ea891b0f28b266fc2c2cde59d8b52f732a3d25b7a1f26e8963c64c43",
+      "text": "Foz do Iguaçu – São Paulo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "body:p49",
+            "textSha256": "942f15a73cecf31578d0b94285c07c49d1f35acc3af3cdf200229df3f372dbbc"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The approved Word day 12 describes departure from Foz do Iguaçu by flight to São Paulo; this is a concise route title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a852ced8a72006ae9172454d8a1c173b2e8acbd4671859bed4064f1ef1687efc",
+      "text": "After breakfast, transfer to the airport for your flight to São Paulo. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "body:p49",
+            "textSha256": "942f15a73cecf31578d0b94285c07c49d1f35acc3af3cdf200229df3f372dbbc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 12 numbering prefix, retaining the exact approved English wording from the Word programme."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2c302c2f5a4b365e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-3of5-20261105-0020-A",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact independent place-label field is absent from the approved English Word programme."
+      }
+    }
+  ]
+}

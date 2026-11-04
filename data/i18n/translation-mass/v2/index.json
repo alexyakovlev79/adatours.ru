@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2155,
-    "leased": 4,
-    "review": 250,
+    "leased": 3,
+    "review": 251,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2155,
-      "leased": 4,
-      "review": 250,
+      "leased": 3,
+      "review": 251,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -826,8 +826,8 @@
         "word_2027": {
           "held": 0,
           "queued": 66,
-          "leased": 1,
-          "review": 8,
+          "leased": 0,
+          "review": 9,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T07:09:31.824Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0a": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-f8019ad86757-run2-20261104": {
-      "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b004",
-      "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-      "expiresAt": "2026-11-04T07:09:31.824Z",
-      "generation": 1
-    },
     "ada-en-20261104-ef1fdb2517c4": {
       "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b011",
       "token": "token-iwiao0re46l65ynbta4pbk",
@@ -2221,7 +2215,8 @@
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b006",
-        "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b003"
+        "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b003",
+        "en:bulk:tour:tour_colombia_highlights_7_days:b004"
       ]
     },
     "ada-en-20261104-ef1fdb2517c4": {
@@ -2254,5 +2249,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:40:57.825Z"
+  "updatedAt": "2026-11-04T05:41:04.729Z"
 }

@@ -1,0 +1,167 @@
+{
+  "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b004",
+  "stableId": "tour_colombia_highlights_7_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e6fb5ef32f1af3d91aa7019f35bb928c285323e854a88cff982d827c30f10330",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:4df43aad41bd1872",
+      "field": "notIncluded",
+      "sourceTextSha256": "5bdc95ce5d682d243528dfcddd4ad32049fdcf9f7b4b24806301f59319c9c4f7",
+      "text": "Optional tours and activities, including a private boat to the Rosario Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[184]",
+            "textSha256": "4b57e1534c6943a0668f637d4ad32e9c7f9490a3af9ea875217f9dd20318c36c"
+          },
+          {
+            "ref": "word/document.xml:p[58]",
+            "textSha256": "16a9007749e72c6d88cc0776582a7a1b699f8dfcb67ad794df71a0c18f5d7d94"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the optional activities exclusion and exact private-boat upgrade context from the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:7a4035bf14f67904",
+      "field": "notIncluded",
+      "sourceTextSha256": "47f15e56937002d7b9be83fc9392d4765a50f5396fb341166d88454b33ee2c37",
+      "text": "Lunches other than the included lunch in the Rosario Islands, dinners and beverages not mentioned in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[185]",
+            "textSha256": "fc887b4d0253caa2e36a0bd1b8dffe633c2b57f24d86b1ca42faa462dbec1b0a"
+          },
+          {
+            "ref": "word/document.xml:p[111]",
+            "textSha256": "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Clarify the Word meals exclusion with the expressly included Rosario Islands lunch."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:dd8eb2ee319d9d99",
+      "field": "notIncluded",
+      "sourceTextSha256": "553adac15a3b9f4eaffe367eca8e74e5842744575c9ef03832f2957e930a261f",
+      "text": "   Gratuities for guides, drivers and service staff",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[186]",
+            "textSha256": "77a53e997d554b4a2e9f11216085d68775d2bc99ce01911c24ee1528d4530680"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone list item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:0fccea3600e3021d",
+      "field": "notIncluded",
+      "sourceTextSha256": "bd9e4de32114f4c7ffb1258dc62b88785e03de93e2dfac84e50cc312864e0ce5",
+      "text": "Personal expenses and any services not mentioned in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[187]",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          },
+          {
+            "ref": "word/document.xml:p[185]",
+            "textSha256": "fc887b4d0253caa2e36a0bd1b8dffe633c2b57f24d86b1ca42faa462dbec1b0a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the Word personal-expenses exclusion and services-not-mentioned exclusion for this list item."
+      }
+    },
+    {
+      "blockId": "tour:note:7773d0b5eebc4304",
+      "field": "note",
+      "sourceTextSha256": "1f287ebbe7de4bf83d153251fa8593520594a18e8a2f0352105dcd59fa3dd368",
+      "text": "Rates are based on services with an English-speaking guide. Other guiding languages must be agreed upon at the time of booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-f801-r2",
+        "wordAbsenceReason": "The Word specifies English-speaking guides in the tariff and itinerary, but does not state the RU booking rule for other guiding languages; translate the complete RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:11860cd59e5cc2d1",
+      "field": "note",
+      "sourceTextSha256": "d2f1f9afca334fe3d488a2412c49ca4e23163b3972fcf9a57f4c031467b59105",
+      "text": "   The tour operator may substitute the hotels listed with others of a similar category, while maintaining the same standard of quality and service.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[169]",
+            "textSha256": "e8d858f8cceaaf97928afc2d6d774d76179399ea51e8eee7f6b3f3db1d197d42"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone list item."
+      }
+    },
+    {
+      "blockId": "tour:note:1833ff620471a903",
+      "field": "note",
+      "sourceTextSha256": "0fee5f0c035a3878548a91f9b47a144f4dbc8cd6332cb0f6d31bc0ac7e0a82e9",
+      "text": "   The order of excursions may be modified due to operational requirements, weather or force majeure, while respecting the content of the programme.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[170]",
+            "textSha256": "8359f79f893c1035faf443c37df8ad6cf58cb129d85dd8ae14a6967b94364617"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone list item."
+      }
+    },
+    {
+      "blockId": "tour:note:828228da6078e79a",
+      "field": "note",
+      "sourceTextSha256": "ef9dfea142143e321312019458ab855c7c62cce45749b188bdf722c61220aa62",
+      "text": "   For early-morning departures, hotels may not be able to provide breakfast; no compensation is offered in such cases.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[171]",
+            "textSha256": "7d3b8773b0d7d3479957682bafb5f7c987712b6f576632b15ea8632e769d7270"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the standalone list item."
+      }
+    }
+  ]
+}

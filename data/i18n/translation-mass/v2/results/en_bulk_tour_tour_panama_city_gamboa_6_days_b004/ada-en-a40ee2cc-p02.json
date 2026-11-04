@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_panama_city_gamboa_6_days:b004",
+  "stableId": "tour_panama_city_gamboa_6_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e786db69425bdf9ccceae08717314417bf2121ad8d6bfa39fb88fbec6f18e427",
+  "blocks": [
+    {
+      "blockId": "tour:note:d630720d4df093fe",
+      "field": "note",
+      "sourceTextSha256": "0130c4f0791b3f6772f160aee7c6aa059ba9c8d42a9a5afe7e3cf074f327be39",
+      "text": "Rates are per person for SGL, DBL and TRP occupancy. The 5* or 4* category refers to your accommodation in Panama City; both options include Gamboa Rainforest Resort in Gamboa.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+        "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:14",
+            "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+          },
+          {
+            "ref": "word/document.xml:p:15",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          },
+          {
+            "ref": "word/document.xml:p:16",
+            "textSha256": "299f4d5312ff948181be18fc1a928cc62a2c4a0d55907ac3d15b31f0a20bf033"
+          },
+          {
+            "ref": "word/document.xml:p:17",
+            "textSha256": "f007c0b2cefdc3ae0c9a696cc19f199112bdb51132ba790c69e1d0aed990008b"
+          },
+          {
+            "ref": "word/document.xml:p:18",
+            "textSha256": "adc677ada665a66d52fb3beffbf071a3102944b318bb257d29868be3772bf7b4"
+          },
+          {
+            "ref": "word/document.xml:p:22",
+            "textSha256": "969662d35a1a46457f99e6b206204c59ec4a0b228493b31501207ca0513dcf41"
+          },
+          {
+            "ref": "word/document.xml:p:23",
+            "textSha256": "5c931ee575a101ea927de50680b9e0160e2a96065d3bf0d4ad62c3686d411083"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Summarises the exact occupancy columns and the two accommodation rows; the Gamboa hotel is common to both options."
+      }
+    },
+    {
+      "blockId": "tour:note:c9e1d00c0519f5f5",
+      "field": "note",
+      "sourceTextSha256": "adc300027ef2cdbad59ab8ca597d3338bdd7a845e02d1b9888c0e132f523968b",
+      "text": "All five breakfasts are included. Lunch is mentioned on days 2 and 3, while the general meal list refers to the itinerary and the table specifies BB. Lunch inclusion and payment terms are confirmed when you book. No dinners are specified in the day-by-day programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-run-a40ee2cc",
+        "wordAbsenceReason": "The Word meal list refers generally to the itinerary and BB table; it has no equivalent explanatory note resolving lunch payment, so the current RU clarification is translated."
+      }
+    },
+    {
+      "blockId": "tour:note:7af98bf159f8e4ce",
+      "field": "note",
+      "sourceTextSha256": "aad945de207a5bc380b91c4385dae248d8e3de57854f2b5d148d92fed3ebe11b",
+      "text": "The specific Emberá community, group size and excursion times are agreed when you book.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-run-a40ee2cc",
+        "wordAbsenceReason": "The checked Word 2027 describes an Emberá community visit but contains no equivalent booking clarification about community, group size and timings."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7871bd228187010277b72860c3d3c00a40c336856f5b2eff64038abc1d98f376",
+      "text": "Arrival in Panama City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+        "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:29",
+            "textSha256": "b84fc440ca37bf79423eb3a9338acc027d90c1a0be551108747d8ff44965d253"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removes the repeated uppercase destination label from the exact arrival heading, retaining the itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "366902dffb61dc46e7e4012d59277b995ee849598d68bbd45a5be73cf239ca5f",
+      "text": "Upon arrival at Tocumen International Airport, you will be welcomed by your private guide in your selected language, who will accompany you throughout your stay in Panama and transferred to your hotel.\n\nOVERNIGHT\n\nPanama City",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+        "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:31",
+            "textSha256": "1823b3b1e72086be7e7007f6afb9f3d39549bda58e6b585f3d7023198521f8a1"
+          },
+          {
+            "ref": "word/document.xml:p:34",
+            "textSha256": "a54ccfaa345045e6adbcfad9e1257a650e6399f45e53b36e0f36258240517b39"
+          },
+          {
+            "ref": "word/document.xml:p:35",
+            "textSha256": "c10eca654cdcab37352ddfb359e4fac85a21845332e37612c930e45a1cee9b8a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cefd11bf3c9afceb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
+      "text": "Panama City",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+        "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:35",
+            "textSha256": "c10eca654cdcab37352ddfb359e4fac85a21845332e37612c930e45a1cee9b8a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:e6f217d49f9e32b0",
+      "field": "media.alt",
+      "sourceTextSha256": "92ea9a22523be26390c6f00fe12307fac42a843bee936dde2ae1a48f12ec5b25",
+      "text": "Small fishing boats in front of Panama City's high-rise buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-run-a40ee2cc",
+        "wordAbsenceReason": "The checked Word 2027 contains no matching photograph ALT text; translated the current RU media description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5a8797a07dd85792",
+      "field": "media.hover",
+      "sourceTextSha256": "5c8e1c48fb57dd04732f3d9996a8c1c914079b7953c20db58a48dcb471bf0d9e",
+      "text": "Panama: a fishing harbour against the modern city skyline",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-run-a40ee2cc",
+        "wordAbsenceReason": "The checked Word 2027 contains no matching image hover caption; translated the current RU media caption."
+      }
+    }
+  ]
+}

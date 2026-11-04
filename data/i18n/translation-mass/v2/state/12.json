@@ -323,7 +323,79 @@
         "claimedAt": "2026-11-04T05:40:45.391Z",
         "expiresAt": "2026-11-04T07:10:45.391Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-ada-en-befca8d88a7c-04-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-befca8d88a7c",
+        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b009",
+          "stableId": "tour_brazil_three_ecosystems_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "3f7bdf198ac946326feafff0c9770020d212b428bc3dd0d45c044de41c3fcd8d",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:0f4f0fe0beccdee6",
+              "field": "media.alt",
+              "sourceTextSha256": "95ce9943d93545b6d2ca0e8b49add469738f1ef1a35706b61d483b81b4cc15eb",
+              "text": "Tall green vegetation and forested hills under a cloudy sky",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:97224dc730d3dea5",
+              "field": "media.hover",
+              "sourceTextSha256": "10e0e01f534e98334dd3611ef9e9f1ad4f44d308c143d764d2de89f1ce3435b2",
+              "text": "Forested hills beyond dense greenery",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "981866290963132d98ebefd00b21e4fab71f3021758f2622a1a4a7dd08ef57b2",
+              "text": "Araras Eco Lodge: Canoeing and trekking",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p45",
+                    "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the approved day's heading without its day-number prefix for this itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "fee4c6d623d8c2396fd6a434bbc749cb3e697faa696959adac51511fa3d976a4",
+              "text": "After breakfast, a photo safari and a canoe trip. In the afternoon, follow the Howler Monkey Trail to the 25-metre tower, then take a night drive in a special vehicle after dinner. See the excursion below for the full programme, including opportunities for fishing and watching otters.\n\nThe main itinerary includes a barbecue lunch and time to relax in a hammock. If Sentinela Camp is inaccessible because of the weather or road and terrain conditions, the canoe trip takes place on the Corixo River, followed by a return to the lodge for lunch. Clarinho and Corixo are included alternatives, rather than two guaranteed visits.\n\nYour second night at Araras Eco Lodge.\n\nMeals: breakfast, lunch and dinner.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The Word contains the full shared canoeing excursion (paragraphs 46–47), but no separate day wrapper with the canonical excursion reference, alternative-visit clarification and second-night statement. Translated the current RU wrapper without duplicating the full canonical excursion."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:41:59.761Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

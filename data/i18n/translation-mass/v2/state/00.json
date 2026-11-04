@@ -233,165 +233,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "ba82c95011c33cbdf03d2ff8f30a866d9f5145eb1b0ab875a1138d9af181f59d",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-befca8d88a7c",
-        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
-        "claimedAt": "2026-11-04T05:45:08.378Z",
-        "expiresAt": "2026-11-04T07:15:08.378Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-ada-en-befca8d88a7c-06-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-befca8d88a7c",
-        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b006",
-          "stableId": "tour_brazil_tropical_champions_parade_rio_angra_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "ba82c95011c33cbdf03d2ff8f30a866d9f5145eb1b0ab875a1138d9af181f59d",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p104",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:42b1d5c35e6d34c5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
-              "text": "Angra dos Reis",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p89",
-                    "textSha256": "3f72316d71435f62c745e51639955f8e2b53f6d037a9fb2b5cb0b9eebd81f0e6"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:d3b056f42cb861e0",
-              "field": "media.alt",
-              "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
-              "text": "Panorama of Rio de Janeiro with the bay, Sugar Loaf Mountain and city buildings, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-befca8d88a7c",
-                "wordAbsenceReason": "The verified Word has no image-specific alt caption matching this RU field; translated only the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
-              "field": "itinerary.title",
-              "sourceTextSha256": "ef25af3cb9d8574b146622a189b69dd2acf88f60501362cb9753d5d1e0dd28e9",
-              "text": "Beach holiday in Angra dos Reis",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p91",
-                    "textSha256": "9593fc57b4e1b97d489d2e1ab6b479207fe885f00604598a38f85d8b6b7c7c58"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose a short itinerary label from the named place and beach-holiday activity in the approved Word paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:b04d5d61d358e759",
-              "field": "itinerary.text",
-              "sourceTextSha256": "2f6148181455ca36cfc5b7daff76f21092cba3bba00a2fd5864aa8b14409b6a7",
-              "text": "A beach holiday on an all-inclusive basis at Vila Galé Angra, among the green hills and island-studded bay of Angra dos Reis.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p91",
-                    "textSha256": "9593fc57b4e1b97d489d2e1ab6b479207fe885f00604598a38f85d8b6b7c7c58"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:fd4bba9e89f09032",
-              "field": "itinerary.label",
-              "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
-              "text": "Angra dos Reis",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p89",
-                    "textSha256": "3f72316d71435f62c745e51639955f8e2b53f6d037a9fb2b5cb0b9eebd81f0e6"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:00c8b70b82bffac2",
-              "field": "media.alt",
-              "sourceTextSha256": "21bebc189eb298ec7ae2970a5ee2e8ef8fce5062e6c1ccfd195bf08e588fcbf6",
-              "text": "Colourful fishing boats in the harbour of Angra dos Reis, with coastal houses in the background, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-befca8d88a7c",
-                "wordAbsenceReason": "The verified Word has no image-specific alt caption matching this RU field; translated only the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
-              "field": "itinerary.title",
-              "sourceTextSha256": "cc224d6fa694e119a9572d79fbe74f33e348bbf96542a29c8888d12759188124",
-              "text": "Angra dos Reis: Beach holiday",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p91",
-                    "textSha256": "9593fc57b4e1b97d489d2e1ab6b479207fe885f00604598a38f85d8b6b7c7c58"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose a short itinerary label from the named place and beach-holiday activity in the approved Word paragraph."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:46:17.864Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ada-en-befca8d88a7c-06",
+        "blobSha": "622c32f12f4244b003de8f2ab35b9152e47683c7",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_tropical_champions_parade_rio_angra_2027_b006/sub-ada-en-befca8d88a7c-06.json",
+        "at": "2026-11-04T05:47:23.490Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

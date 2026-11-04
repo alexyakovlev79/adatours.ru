@@ -1,0 +1,177 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b001",
+  "stableId": "tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "86cbbc67375b60f9a21fe9c8da003008addeb8aeeb8d2d2d6655f93fd01061c1",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "a176132b4405c9bfa326703fd7e5ad24347f85061e1b49709f7ad97e62eb6856",
+      "text": "Brazil and Argentina for Adults: Rio, Iguazu and Buenos Aires in 9 Days",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezm4r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word cover uses Dreams Come True; the current RU title specifies the adult audience and nine-day route, which have no equivalent complete title in Word."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a61a1fd108f9e5ac2b2d818c0bb0a5c3eace6bc26d6314104528eed81f752ee8",
+      "text": "This 9-day itinerary brings together Rio de Janeiro, Iguazu Falls and Buenos Aires. In Rio, see the city from Sugar Loaf and Corcovado, explore the historic centre and choose optional activities such as a boat trip, an evening show, the Botanical Garden, a helicopter flight or hang gliding. Two days are then devoted to Iguazu, allowing you to see the falls from both the Brazilian and Argentine sides. The trip ends in Buenos Aires, with a city tour and tango show included, plus a free day for Tigre, a gaucho ranch or a trip to Montevideo.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezm4r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview is a different promotional paragraph and does not contain the current RU lead's complete summary of included and optional activities; translated the assigned RU lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "b76398fc95b40fe1a0130547df8b7a2f1f22addcfbc85e972d066fac69f65ba2",
+      "text": "USD 3,173 per person, 3★, DBL, 2 travellers; domestic flights included. Rates for 1–3 travellers are listed below.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p125",
+            "textSha256": "3bffd8f959c7d2154157926d38d727bca5be8c94e31cad1204859c3c09b9bea3"
+          },
+          {
+            "ref": "word/document.xml#p130",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          },
+          {
+            "ref": "word/document.xml#p134",
+            "textSha256": "d9a1b2b7e430eb753b68ec0a7ca7baa66ac862cfa0aae49c6b674f90efc899b7"
+          },
+          {
+            "ref": "word/document.xml#p137",
+            "textSha256": "2018b7b7a25ab4577e94b03a35f2feeb951b2b5524e885c79a0220dca275b11a"
+          },
+          {
+            "ref": "word/document.xml#p155",
+            "textSha256": "bbf9b7144ab66d0f6e22dc36c297fa46da27a5d9d71fdac7c411913618c81983"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Composes the unchanged RU tariff basis from the Word price table: two guests, DBL, 3-star category and USD 3,173; domestic flights included."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "4ac6fed8406130d2a45d96c606625092276a657530d74e7e893499f17f7f14ae",
+      "text": "For adults",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezm4r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word brochure does not contain an adult-audience format label; this label is present only in the assigned RU format field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a2490c091d79367",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+      "text": "Rio de Janeiro, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p106",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml#p107",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word accommodation table city and three-night count into the assigned route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a8c44c221a7f5e28",
+      "field": "itinerary.label",
+      "sourceTextSha256": "42065d70b768c9d05060e7b7ead1d823feb0c43e27c1df8eb25b1aa6b36700ed",
+      "text": "Iguazu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p76",
+            "textSha256": "c2d2dcbca614bb805121a922902d0c9e04e5092167b62ba69b7d105d2fa99d24"
+          },
+          {
+            "ref": "word/document.xml#p111",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml#p112",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word Iguazu place name with the two-night accommodation entry, preserving the RU route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:710e3aef7b5379c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9560cce6cd8665492f67be0c56e8efef93fc0d4ced596b54778ffcc05b3dccda",
+      "text": "Buenos Aires, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p116",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          },
+          {
+            "ref": "word/document.xml#p117",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word accommodation table city and three-night count into the assigned route label."
+      }
+    },
+    {
+      "blockId": "tour:note:96b87b4a9d7b1b82",
+      "field": "note",
+      "sourceTextSha256": "53fa1643ba76b8a35feb4d1277c9b802bd6ec1ae710153375a649b5a830e4188",
+      "text": "9 January 2027",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p33",
+            "textSha256": "5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e"
+          },
+          {
+            "ref": "word/document.xml#p161",
+            "textSha256": "da829776e0d2b0649911c1ed0c65d7694d825250b85f4c39558c1683befd3c7b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Expands the Word January 9 departure under the 2027 schedule into an unambiguous English date."
+      }
+    }
+  ]
+}

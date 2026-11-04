@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_stolitsy:b006",
+  "stableId": "tour_source_kolumbiya_stolitsy",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f5b0beb3e77657dccf34c6da6f2a6c6a289b605b35d49e82169456591da17742",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "3439aa288cdd561733db4584cd3846b02a74fa9bfd4d64bca967680fe8bc4c9e",
+      "text": "Bogotá – Medellín",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          },
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the transfer-day route from the confirmed Word city headings without changing the route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "91a6b50d1d257aba02d3b77cf578c936683585a1e557cc7df1013e2cacfe68c6",
+      "text": "After breakfast, transfer to El Dorado International Airport at the scheduled time.\n\nThe flight to Medellín is not included.\n\nOn arrival, you will be met at José María Córdova International Airport and taken to your hotel.\n\nAccommodation in Medellín.\n\nLunch and dinner are at an additional cost.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word p78 combines the transfer and city tour in one day, and does not provide the standalone RU transfer-day block or its named arrival airport. Translate the assigned RU transfer block; flight exclusion is confirmed in p82.",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:592d9bf6f24904d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b26439bfaf85aea9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d286529098f17ba7",
+      "field": "media.alt",
+      "sourceTextSha256": "6af4493dac851cb3a752b79d0191621c02e5942611bddccc073fc22369f9757c",
+      "text": "Gothic church and elevated metro tracks among the buildings of Medellín, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme contains no caption for this specific existing photograph of a Gothic church beside elevated metro tracks; translate the assigned RU alt text.",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:97a9823fc19ba0f5",
+      "field": "media.hover",
+      "sourceTextSha256": "92fb86bc86eebad0f8692f6f830a5a3842668dd3c622ba5ca1c0b7143ba2fa62",
+      "text": "Medellín: a church by the metro line, with the city and mountains behind it",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "No matching photo hover caption is present in the Word document; translate the current RU caption for the existing image.",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "37b8dbac96b8fcdba253df1bed8ed8546b02aaf402c2ceb55a4061009183e787",
+      "text": "Medellín and Comuna 13",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+          },
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "301c4a5af9af381d913cf6b7c06fae98844298238a1bf4789a8538516d1ee6b1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the confirmed Word city and neighbourhood names into the existing day's title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "423381cdcfc6e10c86b8d8a1b7b40733a0230e7674d678a05e6a788ec42aa751",
+      "text": "After breakfast, a six-hour private city tour begins, followed by a walking tour of Comuna 13.\n\nThe first stop is Pueblito Paisa, with panoramic views of the Aburrá Valley and examples of the region's traditional architecture nearby.\n\nThe route then continues through central Medellín, passing San Antonio Park, La Playa Avenue, the Coltejer building and the Prado neighbourhood.\n\nNext, the tour moves to the redeveloped northern part of the city: the Park of Wishes, Parque Explora, the University of Antioquia and the Botanical Garden.\n\nContinue past Punto Cero, the Atanasio Girardot sports complex, La Macarena convention centre and Plaza Mayor.\n\nThe next stretch takes you through the La Alpujarra administrative district, home to Medellín City Hall and the government of Antioquia. Along the way, you will see Liberty Square, Parque de las Luces and the Public Utilities Library.\n\nThe final part of the driving route passes through El Poblado, including El Poblado Park, Lleras Park and the Golden Mile.\n\nThen take a walking tour of Comuna 13 with a local guide.\n\nOnce considered one of the city's most dangerous neighbourhoods, it is now known for graffiti, street art and its system of escalators. As you walk through the narrow streets and stairways, your guide explains the neighbourhood's history and transformation.\n\nPrivate transport, an English-speaking guide, a local guide in Comuna 13, stops at Pueblito Paisa and key areas of urban transformation, and a local medical assistance card are included.\n\nLunch and dinner are at an additional cost.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word p79 describes a different, shorter city route, including El Castillo. The assigned RU six-hour route through Pueblito Paisa, Prado, the northern district and La Alpujarra, plus the local medical card, has no corresponding Word passage; translate these assigned RU details for review.",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c"
+      }
+    }
+  ]
+}

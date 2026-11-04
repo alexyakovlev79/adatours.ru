@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b004",
+  "stableId": "tour_source_luchshee_v_tsentralnoj_amerike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "eec03a89e9a2bf307f24cab8ae800451406de91d86ae93eb5cfe789d9b6acb45",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f5f38e4abeb440876b70e4d440dbb0dcd931ce3a8de9dacb15f9edfdb2241b2c",
+      "text": "Guatemala City – Antigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_BRE9VL_iD9KTVPGMywVcGURwLlYt1rg",
+        "documentSha256": "887bf01a503cd499824fa20671d94a1417298ec0cb071bfbef58baa48c4f38a0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[68]",
+            "textSha256": "5323a46262643c9c9c16e2bf60cb537d058a93b0eed75e74c47eea503d4b417c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Retained both Word route destinations and omitted the day-number prefix."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c58ca2b1b7ec32ffa9aaa95053267599b05f7f4326040d1b59931cd773cbab5d",
+      "text": "Arrival at La Aurora International Airport. You will be met  at the airport in order to transfer  to Antigua. Overnight at Hotel Villa Colonial.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_BRE9VL_iD9KTVPGMywVcGURwLlYt1rg",
+        "documentSha256": "887bf01a503cd499824fa20671d94a1417298ec0cb071bfbef58baa48c4f38a0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[69]",
+            "textSha256": "b2b20cf0c78acfbe8d74a87eae3eb3141e9ca6e8d9a29568a67c06a4d04c50af"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3a44e89961d0ffdf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c4487ded86c59c5a5a35f2eb03cf6f8fe9bdc4e5fd50c082ae37ac54eab748db",
+      "text": "Guatemala City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_BRE9VL_iD9KTVPGMywVcGURwLlYt1rg",
+        "documentSha256": "887bf01a503cd499824fa20671d94a1417298ec0cb071bfbef58baa48c4f38a0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[68]",
+            "textSha256": "5323a46262643c9c9c16e2bf60cb537d058a93b0eed75e74c47eea503d4b417c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the arrival city from the confirmed Word route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:89b31d56eb18a399",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0f9c9cf3126a3243a817cc833027300d5896a9ce52642e2f57cbda1dcd59efa7",
+      "text": "Antigua Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_BRE9VL_iD9KTVPGMywVcGURwLlYt1rg",
+        "documentSha256": "887bf01a503cd499824fa20671d94a1417298ec0cb071bfbef58baa48c4f38a0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[71]",
+            "textSha256": "db5872c7d4a044a07bd4c44f7fbfb432b00b822b93dc475f4f86305744c9f0a4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the destination name described by the Word city-tour paragraph for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fbf059e49f46ca18",
+      "field": "media.alt",
+      "sourceTextSha256": "f7f1e85e9420ae86453b6bae23aed5f05499dd7c5132d6eb4527daa34c22ce77",
+      "text": "City neighbourhoods and high-rise buildings with volcanoes in the background, Guatemala City, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2miydv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no corresponding media alt caption; translated the assigned RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:44868698ad8705e8",
+      "field": "media.hover",
+      "sourceTextSha256": "a65813d378d986a7c403fdb4d6ccc9e824dd67308d3e6470c55853cae5d81156",
+      "text": "Guatemala City: urban buildings in front of a chain of volcanic peaks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2miydv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no corresponding media hover caption; translated the assigned RU image caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "26c914cb94d476cf5c57a733b93f5ebf046ca887c1083956954c8a6b520452df",
+      "text": "Antigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_BRE9VL_iD9KTVPGMywVcGURwLlYt1rg",
+        "documentSha256": "887bf01a503cd499824fa20671d94a1417298ec0cb071bfbef58baa48c4f38a0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[70]",
+            "textSha256": "8759f58ded52ce68552a28cf794ce0e60f373d90672f7aba32e5753c34b581a5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removed the day-number prefix from the confirmed Word city heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1862953759bdc158930a80d7ad38ee7c3c598da7522ddda07a1165035ee6773f",
+      "text": "Antigua City Tour: Antigua lies in the wide mountain valley of Panchoy, sandwiched between the cones of the volcanoes of Agua, Acatenango and Fuego. The city was founded in 1543 as the third capital of Guatemala, and was called Santiago de Guatemala. And only after the strong earthquake occurred in 1773, the capital had to be moved to a new place in Guatemala City. The city reached its peak by the middle of the 18th century, when an unprecedented construction boom tripled and its population grew to fifty thousand people. By 1773, this city had about 25 churches, 5 women's, 8 men's monasteries and a cathedral built in 1680 and was compared only with the cathedral in Mexico City and Lima, Peru for its beauty and majesty of construction. In 1773 there were 3 very strong earthquakes: the very first that destroyed almost the entire city, all the churches and monasteries happened on July 29, 1773 on St. Martha's Day, so it was called the Santa Marta earthquake. But the most important museum in Antigua is the city itself, its streets, where you can study its history just by walking it. Overnight at Hotel Villa Colonial. (Meals: B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_BRE9VL_iD9KTVPGMywVcGURwLlYt1rg",
+        "documentSha256": "887bf01a503cd499824fa20671d94a1417298ec0cb071bfbef58baa48c4f38a0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[71]",
+            "textSha256": "db5872c7d4a044a07bd4c44f7fbfb432b00b822b93dc475f4f86305744c9f0a4"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -369,7 +369,7 @@
         "expiresAt": "2026-11-04T08:10:55.665Z"
       },
       "checkpoint": {
-        "id": "ada_en_8c4fca0d2a61:b015:cp4",
+        "id": "ada_en_8c4fca0d2a61:b015:cp8",
         "format": "inline-v1",
         "ownerId": "ada_en_8c4fca0d2a61",
         "token": "token_8c4fca0d2a61_c1970ba9",
@@ -457,10 +457,82 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact lake name from the verified Day 8 Word paragraph."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:2dccb7c2dda9a3e2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "ce344686c4c8f8e4323953df4b4fb4f7cfa191bbdbe79a0f357b6ab84030a149",
+              "text": "Laguna Amarga",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "c098f6066475678dece3336f5fb7ab6238049d7ee29e994c770e38863d9f59da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact lagoon name from the verified Day 8 Word paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3ae0f880e5765f17",
+              "field": "itinerary.label",
+              "sourceTextSha256": "12b7a8a89f2950cd008312ccc93048db071c80d81c11ee1b3ad526feec66d75e",
+              "text": "Sarmiento Viewpoint",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "c098f6066475678dece3336f5fb7ab6238049d7ee29e994c770e38863d9f59da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Condense the Word visit to viewpoints overlooking Sarmiento Lake into the named viewpoint label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:c6a7b416dd2ba52a",
+              "field": "media.alt",
+              "sourceTextSha256": "c67be644582c1e17253772dc5030a7fcb71831f3611d45c480eae4e3f0499659",
+              "text": "Turquoise Pehoé Lake in front of the jagged peaks of Torres del Paine, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific alt text for the Pehoé Lake photograph.",
+                "wordEvidence": {
+                  "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                  "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:44fecfec355e0883",
+              "field": "media.hover",
+              "sourceTextSha256": "868c116b2a63bf47488a6f502ea05f240a40c450ccdc6a89cd2aea5f90976309",
+              "text": "Pehoé: vivid lake water beside golden grass and Patagonian mountains",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific hover text describing the lake, grass and mountains.",
+                "wordEvidence": {
+                  "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                  "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:41:41.432Z"
+        "at": "2026-11-04T06:41:52.310Z"
       },
       "submission": null,
       "review": null,

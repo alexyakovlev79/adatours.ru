@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b005",
+  "stableId": "tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "46260ca782df60941532f6b368eecdafed98cfa5d17819da38bf2c8774c6dc4c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ad5cf22d12d3ba173a5a3f48987671f803dd5e8ba41820b5df3038c5b4e3899c",
+      "text": "Buenos Aires: free day",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+        "documentSha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "755d3bd66f2310bea4ab0757d1614032b9dd17a9a35d09922bcf086aad6c19a3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Create the day heading from the city context and the free-day wording of the corresponding Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7d4c81dcb19e1f7458279384f62c6d597cc3576744e732fbf9e06247c3a7cc88",
+      "text": "Breakfast at the hotel. Free day for optional tours: Tigre and the Northern Zone, a Fiesta Gaucha at the Santa Susana ranch or a day trip to Colonia del Sacramento, Uruguay (see Optional Excursions).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+        "documentSha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "755d3bd66f2310bea4ab0757d1614032b9dd17a9a35d09922bcf086aad6c19a3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the day marker; the itinerary supplies the day number separately."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7a611df869cde5d6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+        "documentSha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c497f49f7a66b432",
+      "field": "media.alt",
+      "sourceTextSha256": "fd9d9092fed54cbaf1d87aa2b64a2750296f46cbdf7b38dff56efc8a071aa2a9",
+      "text": "The Obelisk in Buenos Aires above an avenue at dusk with light trails from cars, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document has no caption for this specific dusk photograph of the Obelisk and car light trails."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8eb23ba9790b23ed",
+      "field": "media.hover",
+      "sourceTextSha256": "a0f99ec2042a027317350f1e43fe85046b4b5cc7eef0c8d724d3fbede8d49116",
+      "text": "Buenos Aires: traffic lights around the Obelisk",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document has no hover caption describing vehicle lights around the Obelisk."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a15d8fb847c70a7e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5c47d7068c59878b8bfe69628a1c791f4222b40897399eeb2aa5668dabbaae93",
+      "text": "San Isidro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+        "documentSha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0189",
+            "textSha256": "f056ff9fae144a56ab954999e5fc369ea0571553e95dfe7cf9a6461288a27ecc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the place name explicitly named in the corresponding optional excursion paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2c28aaecea19bb2f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "439dfdc2a7dd325b9a1ee456e3e2daa3ba41457aa1490abfd67c8656d4d53c6c",
+      "text": "Tigre",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+        "documentSha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0186",
+            "textSha256": "9a288059231df29677aeaeda5ba79ed374b2f496ad75b47544936b154a8f8d3d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination name from the optional excursion heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1304d656eeea67a8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+        "documentSha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    }
+  ]
+}

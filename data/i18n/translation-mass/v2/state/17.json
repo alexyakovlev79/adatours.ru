@@ -268,7 +268,7 @@
         "expiresAt": "2026-11-04T07:18:03.827Z"
       },
       "checkpoint": {
-        "id": "ada-en-d8b5c6c4c917-001-cp4",
+        "id": "ada-en-d8b5c6c4c917-001-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-d8b5c6c4c917",
         "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
@@ -375,10 +375,75 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact destination name from the approved Word passage for the short route label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:baf4a32c564902b5:2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "984fd2d1462aa180c5107e762349024106f9ecd58bc8329ac757d2c05c986cb8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact destination name from the approved Word route for the repeated route label."
+              }
+            },
+            {
+              "blockId": "tour:note:4abc484a9687e458",
+              "field": "note",
+              "sourceTextSha256": "5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e",
+              "text": "2027",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "The exact Word has a 2026 heading and a 2024 tariff heading; the current RU date label is 2027 and no matching 2027 date label occurs in the Word."
+              }
+            },
+            {
+              "blockId": "tour:included:8f1b002ca553c634",
+              "field": "included",
+              "sourceTextSha256": "407b456481fb1c26b9652c1b06db241c4213ce9045beaaffbcde1a76dbf67484",
+              "text": "Accommodation to suggested hotels on program or similar, including breakfast",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p114",
+                    "textSha256": "c598f826a79ec7db385319430c2f6c7de29049ed1d18ede453e35e16f2c64071"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:d73146f187e81228",
+              "field": "included",
+              "sourceTextSha256": "8704faded7906b4440545d81ad6b6840456074d3fc5629dd0bb5d288c28ac0c3",
+              "text": "Tours according to the Program ",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p115",
+                    "textSha256": "febbb849b81bd0128c7f2b915846efd0ab4d5c2377b645b8fddccb8b4522d070"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:49:24.388Z"
+        "at": "2026-11-04T05:49:56.398Z"
       },
       "submission": null,
       "review": null,

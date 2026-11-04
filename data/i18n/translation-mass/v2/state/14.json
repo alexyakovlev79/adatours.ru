@@ -461,216 +461,22 @@
     {
       "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b001",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b8070f8bad52ee2f711d862c8925a179e3dd2cdfba0cab12885be5af807a1d6f",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_91a5d7c2e8b4",
-        "token": "ada-en-token-91a5d7c2e8b4-20261104",
-        "claimedAt": "2026-11-04T07:06:14.049Z",
-        "expiresAt": "2026-11-04T09:10:04.016Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_91a5d7c2e8b4_cp008_8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_91a5d7c2e8b4",
-        "token": "ada-en-token-91a5d7c2e8b4-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b001",
-          "stableId": "tour_nicaragua_best_10_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b8070f8bad52ee2f711d862c8925a179e3dd2cdfba0cab12885be5af807a1d6f",
-          "sourceVerification": {
-            "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-            "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-            "modifiedTime": "2026-10-05T20:38:46.318Z",
-            "fileName": "The Best of Nicaragua 2027 10d9n Eng.20%.docx",
-            "yearFolder": 2027,
-            "editionYear": null
-          },
-          "blocks": [
-            {
-              "blockId": "tour:title:aaf2320646108059",
-              "field": "title",
-              "sourceTextSha256": "87765730a8313bb57502c32e1b96b0262b3a00d80e6d70ae1b7469900db3c677",
-              "text": "The Best of Nicaragua",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p38",
-                    "textSha256": "d689e861df504fdf016b54909658d098c0f7a010f1f984144130fcdc874b38f2"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:lead:e3456bc1f4d270f4",
-              "field": "lead",
-              "sourceTextSha256": "1a756169389c75ad25e9b1c29575b87c99825b8981121417f5e84d1b8f67cbe2",
-              "text": "Ten days from the colonial streets of León and Granada to Ometepe Island and the Pacific coast. The programme includes Masaya's crater, a boat trip among the islets of Lake Nicaragua, ziplining on Mombacho and Ojo de Agua. The journey ends with 3 free days in San Juan del Sur. The tour operates for groups of at least 2 people.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_91a5d7c2e8b4",
-                "wordAbsenceReason": "The verified Word has no introductory overview equivalent to the current RU lead; translate that lead, preserving the itinerary and minimum party confirmed by Word paragraphs 2,6,12,16,20,25,28,30."
-              }
-            },
-            {
-              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
-              "field": "priceNote",
-              "sourceTextSha256": "7dd6523ad5d5f7f1058fc1b5bf95d8cbe5085b2947d348e5f3d971f70c31d4df",
-              "text": "USD 3342 per person in a double room (DBL); USD 4196 in a single room (SGL). Minimum 2 people. Hotels and accommodation conditions are confirmed before booking.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_91a5d7c2e8b4",
-                "wordAbsenceReason": "The verified Word tariff table differs from the frozen canonical RU price note: Word lists SGL4599/DBL3607 USD, while current RU lists SGL4196/DBL3342. Preserve current RU prices in this translation and pass the exact Word tariff as a structured amendment for the commercial master; no canonical price is changed."
-              }
-            },
-            {
-              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
-              "field": "formatLabel",
-              "sourceTextSha256": "104da5d53339637575b25c419dd3f40114b1065f8a300326cadfa9143c361fd5",
-              "text": "From 2 travellers",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p6",
-                    "textSha256": "6626168b4219ea1c48a635014482b9fca91582c07894eaf825d9430faa76f0e3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Render the verified minimum group of 2 pax as the existing tour-format label, without copying date exclusions into the label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a73c15d40030450f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "b292c7425dd881c4a4844047d63cda82239da0fc2986de1bc9f07ef39f927dc9",
-              "text": "Managua",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p8",
-                    "textSha256": "485585c3d5534503f3c18fc64fd741b432e2368bfabacaa4f286da882dc788eb"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract Managua from the verified Day 1 heading for the existing route stop."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:be0e2c61a1fa83f0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "5be8f0815ffe9532c270a75e56f045117afc040df9a96c1a4beae96b1d35521a",
-              "text": "Leon Viejo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p12",
-                    "textSha256": "e805c402d3a0f551ef9d9c3a896cc3b6352175d7ce15a379b8b1a71413e6410c"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the established name for the old city of Leon explicitly visited in the verified day-2 paragraph, as the existing route-place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:3c26daaa448ad352",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c2e97be741a77deb200b24aada0a441d5d5ea51d5d59f6ce9861934a24847821",
-              "text": "Leon",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p11",
-                    "textSha256": "0fda785c7d25d10298522e64e3c866b08bc30fd09d456f64908925e09ac395a5"
-                  },
-                  {
-                    "ref": "word/document.xml:p12",
-                    "textSha256": "e805c402d3a0f551ef9d9c3a896cc3b6352175d7ce15a379b8b1a71413e6410c"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the new-city Leon name from the verified day-2 route for the existing route-place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:bb1e7e085e84823d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "10deb16480e36d1d663002a6b2e6d3f0e08fb7399cd7a7e71c54526835d255b5",
-              "text": "Granada",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p11",
-                    "textSha256": "0fda785c7d25d10298522e64e3c866b08bc30fd09d456f64908925e09ac395a5"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract Granada from the verified day-2 route heading for the existing route stop."
-              }
-            }
-          ],
-          "priceAmendments": [
-            {
-              "stableId": "tour_nicaragua_best_10_days",
-              "status": "for_commercial_master",
-              "currency": "USD",
-              "basis": "per person",
-              "minimumTravellers": 2,
-              "prices": [
-                {
-                  "occupancy": "SGL",
-                  "currentRu": 4196,
-                  "word2027": 4599
-                },
-                {
-                  "occupancy": "DBL",
-                  "currentRu": 3342,
-                  "word2027": 3607
-                }
-              ],
-              "sourceFileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-              "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-              "paragraphRefs": [
-                "word/document.xml:p35",
-                "word/document.xml:p39",
-                "word/document.xml:p40",
-                "word/document.xml:p41",
-                "word/document.xml:p42",
-                "word/document.xml:p43",
-                "word/document.xml:p44"
-              ],
-              "canonicalChanged": false
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:07:47.574Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_91a5d7c2e8b4_s008",
+        "blobSha": "45d8b213d0242bd45d4e6a344917b21c641206be",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_nicaragua_best_10_days_b001/ada_en_91a5d7c2e8b4_s008.json",
+        "at": "2026-11-04T07:40:28.806Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -252,7 +252,119 @@
         "claimedAt": "2026-11-04T05:59:36.450Z",
         "expiresAt": "2026-11-04T07:29:36.450Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-39fb6759e90b-b001-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-39fb6759e90b",
+        "token": "tok-39fb6759e90b-20261104-a7c3",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b001",
+          "stableId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "b92ae18baa6019d34e2f41ac93d137fd3382c787f76cdcf85ef79b01825285ee",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "0bef606f3de9676872d3ec774840f745e13dd6b2e1782ce891f1f12fc010ea6a",
+              "text": "Brazil Rio - Iguacu - Sao Paulo",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p1",
+                    "textSha256": "98309fd9e0f22a163043a0ef4fb8a925a0f0ce2260bd6095f6bafe4a4a256424"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "bf687a77a0f3d83241da23f1f0a08b385d6eac43fa5142856f849ed658bb1915",
+              "text": "9 days in Rio de Janeiro, Foz do Iguaçu and São Paulo with English-speaking guides. Visit Sugarloaf, Corcovado and Santa Teresa, the Tijuca rainforest, the Brazilian side of Iguazu Falls with Macuco Safari, and the Japanese district of Liberdade. The programme is designed for a group of 40+1 and includes the meals and themed dinners listed in the services.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "The verified Word contains the itinerary, group basis and service lists, but no matching concise editorial lead; translate the current RU lead without adding facts."
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "2530e547c4d310b46be93afb0e73bd7d6d7900ceda06d9de502b1fc94a4e990b",
+              "text": "USD $4,640 per person in DBL and $7,140 in SGL for Batch 1 on a 40+1 FOC basis. Package: 5* Hotels + Services. Accommodation is confirmed in the quotation.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p5",
+                    "textSha256": "dd619701eab1f254b36340c374354ea7b5e2cf6e0c846f2c09a26075f95f43f1"
+                  },
+                  {
+                    "ref": "word/document.xml:p6",
+                    "textSha256": "da961370d94934885a3c6c1d0ba52a835be634e7af0ca279bf8383b75a85eb27"
+                  },
+                  {
+                    "ref": "word/document.xml:p7",
+                    "textSha256": "7c0b3424cd238ecb66e22480aed308e757f1c6411c7ed76200d389cd111c132f"
+                  },
+                  {
+                    "ref": "word/document.xml:p8",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p9",
+                    "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                  },
+                  {
+                    "ref": "word/document.xml:p11",
+                    "textSha256": "818934e0cd2d8b487775b58fbbaa1e1d72200aeabc3aedffd0fb785b63c56bf4"
+                  },
+                  {
+                    "ref": "word/document.xml:p12",
+                    "textSha256": "1e316f718df6068b770802ef29694485d276f87239143f2bcf41e333d7f3bdb0"
+                  },
+                  {
+                    "ref": "word/document.xml:p56",
+                    "textSha256": "25c596a0a6e5014d110b0bc4b9bde098c57d51dc79ad3626cf342e1405aeaf05"
+                  }
+                ],
+                "transformation": "compose_tariff_summary",
+                "rationale": "Present the exact Word tariff table's group basis, currency, occupancy and amounts in the existing price-note field, preserving the RU qualifier that accommodation is confirmed in the offer."
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
+              "text": "Group",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p5",
+                    "textSha256": "dd619701eab1f254b36340c374354ea7b5e2cf6e0c846f2c09a26075f95f43f1"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "The confirmed 40+1 FOC group basis supplies the existing product-format label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:00:38.924Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

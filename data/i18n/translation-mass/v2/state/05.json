@@ -106,159 +106,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "a9d2a14e261be87443bf204e4ff261be0ea01db61fb4da02c130dedebc6c9fe2",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "adaen-mw1ojnf0-zzzsf540",
-        "token": "tok-lnsxlpgwcpa92vym3bnf36",
-        "claimedAt": "2026-11-04T05:32:45.383Z",
-        "expiresAt": "2026-11-04T07:02:45.383Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "adaen-mw1ojnf0-zzzsf540-job01-cp8",
-        "format": "inline-v1",
-        "ownerId": "adaen-mw1ojnf0-zzzsf540",
-        "token": "tok-lnsxlpgwcpa92vym3bnf36",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b010",
-          "stableId": "tour_brazil_dunes_13d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "a9d2a14e261be87443bf204e4ff261be0ea01db61fb4da02c130dedebc6c9fe2",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:5c99037039e82f62",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e4568fe37041ba908a6463366cdb323ffe5798410e05019525938e729e38d4de",
-              "text": "Vassouras",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p115",
-                    "textSha256": "1a444a8ff6c7bd6cea0ef2051e3f37b415ebce0b81838e4da783cc65a4584bbf"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact place name Vassouras from the verified Word river itinerary for the structured place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b34b619d394d86a3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "72374eff9c738b49af66e49df1a414be5bc870a06d3e85389079100528c5d520",
-              "text": "Atins",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p115",
-                    "textSha256": "1a444a8ff6c7bd6cea0ef2051e3f37b415ebce0b81838e4da783cc65a4584bbf"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact place name Atins from the verified Word river itinerary for the structured place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:be1a75ca3e96d7e7",
-              "field": "media.alt",
-              "sourceTextSha256": "3dd428846c18d50418c8e07fd376a0d25e7e4a0f32e4c78ebefd9dd1585e2df7",
-              "text": "Turquoise lagoon among white dunes, with a woman on the sandy slope",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "adaen-mw1ojnf0-zzzsf540",
-                "wordAbsenceReason": "Verified full Word OOXML contains no image-specific alt text matching the woman beside a turquoise lagoon; translate the existing RU accessibility description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:385ec5110cedd4a0",
-              "field": "media.hover",
-              "sourceTextSha256": "243af7040077f1b6f37e9654ca5a588805bd61d1cfe6d986205cda60deef38eb",
-              "text": "Woman beside the curved shore of a lagoon between white dunes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "adaen-mw1ojnf0-zzzsf540",
-                "wordAbsenceReason": "Verified full Word OOXML contains no matching image-hover caption for the woman on the lagoon shore; translate the existing RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:f76823f601bc2496",
-              "field": "itinerary.title",
-              "sourceTextSha256": "5b62cc9e16ce1e044452f6cc372364db6f72019530a9ddd04c13ad344a92841d",
-              "text": "Atins Lagoon and return to Barreirinhas",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "adaen-mw1ojnf0-zzzsf540",
-                "wordAbsenceReason": "Verified Word 2027 paragraph word/document.xml:p116 describes an Atins 4x4 excursion ending in São Luís; it does not contain this RU-only Atins Lagoon visit, optional lunch at Luzia, and motorboat return to Barreirinhas. Translate the uncovered RU module without merging a different Word itinerary."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "7c89e0e523c4eae8db3cdc7517a45a9de0d58a4f42ec68e792d8ce484fa9ff8a",
-              "text": "In the morning, visit Atins Lagoon. On the way back, stop for lunch at Luzia restaurant, which serves shrimp. Lunch is optional.\n\nAfter lunch, return to the hotel, then take a motorboat along the river towards Barreirinhas.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "adaen-mw1ojnf0-zzzsf540",
-                "wordAbsenceReason": "Verified Word 2027 paragraph word/document.xml:p116 describes an Atins 4x4 excursion ending in São Luís; it does not contain this RU-only Atins Lagoon visit, optional lunch at Luzia, and motorboat return to Barreirinhas. Translate the uncovered RU module without merging a different Word itinerary."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8cbc4677856e50ab",
-              "field": "itinerary.label",
-              "sourceTextSha256": "72374eff9c738b49af66e49df1a414be5bc870a06d3e85389079100528c5d520",
-              "text": "Atins",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p115",
-                    "textSha256": "1a444a8ff6c7bd6cea0ef2051e3f37b415ebce0b81838e4da783cc65a4584bbf"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact place name Atins from the verified Word river itinerary for the structured place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:53775b9448db795d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6e667fb5a9e887789091966d624a2699b5d59d30110d7cf750f4f74b79565fb0",
-              "text": "Barreirinhas",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "adaen-mw1ojnf0-zzzsf540",
-                "wordAbsenceReason": "Barreirinhas is retained as the destination of the RU-only boat-return module; the corresponding Word Atins excursion instead finishes in São Luís, so it does not supply this label in that route context."
-              }
-            }
-          ],
-          "sourceNotes": [
-            {
-              "kind": "uncovered_ru_module",
-              "field": "itinerary.text",
-              "detail": "Verified Word 2027 paragraph word/document.xml:p116 describes an Atins 4x4 excursion ending in São Luís; it does not contain this RU-only Atins Lagoon visit, optional lunch at Luzia, and motorboat return to Barreirinhas. Translate the uncovered RU module without merging a different Word itinerary."
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:34:53.185Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "adaen-mw1ojnf0-zzzsf540-job01",
+        "blobSha": "33b073d76dcb0979cc4d70bcebb80a5af510734d",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_dunes_13d_b010/adaen-mw1ojnf0-zzzsf540-job01.json",
+        "at": "2026-11-04T05:34:57.973Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

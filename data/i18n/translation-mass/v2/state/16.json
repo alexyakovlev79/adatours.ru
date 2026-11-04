@@ -163,183 +163,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "32a96b4e87bf64e0a22f59b3231ce274ca6fd64c69a3221c93984cef504c475f",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "claimedAt": "2026-11-04T05:32:57.208Z",
-        "expiresAt": "2026-11-04T07:02:57.208Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f801-r2-01-b006-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "generation": 2,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b006",
-          "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "32a96b4e87bf64e0a22f59b3231ce274ca6fd64c69a3221c93984cef504c475f",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "d59dce6f63b1763c409758474eeff35c45d415cef4329106687619415d41cf31",
-              "text": "After breakfast, a shared tour through the city to the station, where an eco-friendly train climbs through the Tijuca Forest, home to monkeys and exotic birds, to the top of Corcovado. At 710 metres above sea level stands the symbol of Rio, the 38-metre statue of Christ the Redeemer, built in 1931, with a breathtaking panorama of the city and its surroundings: the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the Maracanã Stadium and Sugar Loaf.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
-                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p79",
-                    "textSha256": "da50011c8162af39620f015e8672d4b17652d1c3a0b2ae55f09cc744c074d052"
-                  }
-                ],
-                "excerpts": [
-                  {
-                    "ref": "word/document.xml:p79",
-                    "start": 43,
-                    "end": 503,
-                    "reason": "Day heading is stored separately in the Tour; retain the body verbatim."
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b2f0e19acda78198",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-33c6be7dc0f7453f",
-                "wordAbsenceReason": "The Word contains Rio de Janeiro within route and prose passages, but no standalone full city label for this place slot; translate the existing RU place label using that established spelling."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a82e03a0a82de559",
-              "field": "itinerary.label",
-              "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
-              "text": "Tijuca National Park",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-33c6be7dc0f7453f",
-                "wordAbsenceReason": "The Word refers to Tijuca Forest within the Corcovado passage, but does not provide the standalone national-park place label required here; translate the exact current RU place name."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:effd613e700ce7f8",
-              "field": "media.alt",
-              "sourceTextSha256": "7a5051979a13716c111454fdbb7e60065d869569b0ac89173c8181082f119ffc",
-              "text": "Rocky shoreline and sailboats in Guanabara Bay, Rio de Janeiro, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-33c6be7dc0f7453f",
-                "wordAbsenceReason": "The verified Word does not contain this image alt caption. Translate the provided RU visual description without adding or changing photo details."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:c4561055c6747266",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
-                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p66",
-                    "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
-                  }
-                ],
-                "excerpts": [
-                  {
-                    "ref": "word/document.xml:p66",
-                    "start": 11,
-                    "end": 25
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "b2c0b8da54a3b0ea4b91d0f3a64d414934209617ab7e61dae04f5c1d6b3c6f3f",
-              "text": "A free day in Rio",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
-                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p46",
-                    "textSha256": "79ffa58002a2716071a6ba6661f891be9a8d48a446979ceae4f3538044a1f42a"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceTextSha256": "fcca124a2144525d93d278211237085cc77b037cc1d1a05d7fa77b5ef728407c",
-              "text": "A free day to relax and enjoy the city, its beaches and viewpoints. Ask Ada Tours for extra activities: the Botanical Garden, the tropical islands, a sailing tour of Guanabara Bay, a samba and capoeira show or Imperial Petrópolis (see Optional excursions).\n\nIncluded: Breakfast",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
-                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p90",
-                    "textSha256": "d01e60ab55acef805970193e6bfe295e16934401e1c4dcd6005166b4a98a4c65"
-                  },
-                  {
-                    "ref": "word/document.xml:p91",
-                    "textSha256": "ededc5fc70daeeb9d30e4012a2f86f4b7425a24b1fcd28abfe2b386eac017b75"
-                  }
-                ],
-                "structureNote": "The Word day overview is retained verbatim; detailed optional excursions are independently owned canonical Excursion records and are not repeated here."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
-                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p66",
-                    "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
-                  }
-                ],
-                "excerpts": [
-                  {
-                    "ref": "word/document.xml:p66",
-                    "start": 11,
-                    "end": 25
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:33:58.391Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f801-r2-01-b006-v1",
+        "blobSha": "75623edafe5860eefa41ab3142862a92b0dd1b56",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_rio_iguazu_jewish_heritage_8_days_b006/ada-en-f801-r2-01-b006-v1.json",
+        "at": "2026-11-04T05:34:27.338Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskaya_programma_po_gvatemale:b006",
+  "stableId": "tour_source_klassicheskaya_programma_po_gvatemale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "279553544095db1d6dc730f47c23be0f9bfb9b5238e6488bd670aed810558114",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2d0df3ce554d0b6d371d5ecd4418f964a017fca0853222d1ce67336b77315e86",
+      "text": "Antigua – Guatemala City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "bb5627fd6e11d08a4e765422cacad969b8592ad2e680f48719e35bd27a6162f1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route heading from the Antigua city tour and departure transfer in the same Word day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8eb18091e0de4751ab91783928629fb84537815f6751cc044e8cdab173b0c7d6",
+      "text": "Day 4 · Antigua city tour. Founded in 1543 as Santiago de Guatemala, the third capital of the country, Antigua lies in the Panchoy valley between the volcanoes of Agua, Acatenango and Fuego. By the mid-18th century it had some 25 churches, numerous convents and a cathedral built in 1680; in 1773 the Santa Marta earthquakes destroyed much of the city and the capital moved to present-day Guatemala City. Its finest museum is the city itself, best discovered on foot. Transfer to La Aurora International Airport in Guatemala City. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "bb5627fd6e11d08a4e765422cacad969b8592ad2e680f48719e35bd27a6162f1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3ca8efd7e2dbfa68",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c4487ded86c59c5a5a35f2eb03cf6f8fe9bdc4e5fd50c082ae37ac54eab748db",
+      "text": "Guatemala City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "bb5627fd6e11d08a4e765422cacad969b8592ad2e680f48719e35bd27a6162f1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual label based on the corresponding confirmed Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1422bd2e8a4d019c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0f9c9cf3126a3243a817cc833027300d5896a9ce52642e2f57cbda1dcd59efa7",
+      "text": "Antigua Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "bb5627fd6e11d08a4e765422cacad969b8592ad2e680f48719e35bd27a6162f1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual label based on the corresponding confirmed Word passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3c92f5b059d01e4b",
+      "field": "media.alt",
+      "sourceTextSha256": "fad88dbe39308f7ae2d1a4f1da56556324c4cce879b4aa54f85ff3f65aa025d4",
+      "text": "Yellow Santa Catalina Arch with a clock above a street in Antigua, with a volcano in the background, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mj91p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word does not contain an equivalent image alt or hover caption; translate the supplied RU photograph description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:aa4fb243deb02ad4",
+      "field": "media.hover",
+      "sourceTextSha256": "f9b96dd2e9bc0ae95fbe44066399adadf99afdc88744f3144f8b1b31c9311288",
+      "text": "Antigua: Santa Catalina Arch and the volcano behind it",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mj91p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word does not contain an equivalent image alt or hover caption; translate the supplied RU photograph description."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "45036dfc1e608acf2848061d27fbeb1a5aafbaf2e70c7e2b86dc8756f4795203",
+      "text": "Historic arches and rooftops of Antigua Guatemala with a volcano in the background, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mj91p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word does not contain an equivalent image alt or hover caption; translate the supplied RU photograph description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "bede0b9462c7e53efd7af217fa45e567c746da0a118141b5eae8b380c799d77e",
+      "text": "Antigua Guatemala: city rooftops beneath a green volcano",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mj91p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word does not contain an equivalent image alt or hover caption; translate the supplied RU photograph description."
+      }
+    }
+  ]
+}

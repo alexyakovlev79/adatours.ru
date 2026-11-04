@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2063,
-    "leased": 12,
+    "queued": 2062,
+    "leased": 13,
     "review": 334,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2063,
-      "leased": 12,
+      "queued": 2062,
+      "leased": 13,
       "review": 334,
       "ready": 1,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 69,
-          "leased": 0,
+          "queued": 68,
+          "leased": 1,
           "review": 10,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:44:21.182Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1413,6 +1413,12 @@
       "token": "tok-39fb6759e90b-20261104-a7c3",
       "expiresAt": "2026-11-04T07:44:14.001Z",
       "generation": 1
+    },
+    "ada-en-5d56534e4493": {
+      "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b010",
+      "token": "lease-da131c3d187149a7b813992c83ea721b",
+      "expiresAt": "2026-11-04T07:44:21.182Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2481,7 +2487,8 @@
         "en:bulk:tour:tour_brazil_little_mix_ten_days:b005",
         "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b001",
         "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b015",
-        "en:bulk:tour:tour_brazil_rio_four_days:b004"
+        "en:bulk:tour:tour_brazil_rio_four_days:b004",
+        "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_little_mix_ten_days:b005",
@@ -2589,5 +2596,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:14:14.001Z"
+  "updatedAt": "2026-11-04T06:14:21.182Z"
 }

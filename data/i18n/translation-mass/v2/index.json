@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1332,
-    "leased": 13,
+    "queued": 1331,
+    "leased": 14,
     "review": 1054,
     "ready": 10,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1332,
-      "leased": 13,
+      "queued": 1331,
+      "leased": 14,
       "review": 1054,
       "ready": 10,
       "retryable": 0,
@@ -1305,8 +1305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 40,
-          "leased": 0,
+          "queued": 39,
+          "leased": 1,
           "review": 31,
           "ready": 0,
           "retryable": 0,
@@ -1337,7 +1337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T21:14:08.295Z",
       "earliestRetryAt": null
     }
   },
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_paname:b001",
       "token": "token-mw2ins1i-a91",
       "expiresAt": "2026-11-04T21:13:54.270Z",
+      "generation": 1
+    },
+    "ada-en-mw2ixbpx-amanda": {
+      "jobId": "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b016",
+      "token": "tok-mw2ixbpx-47iw6ue2zwb",
+      "expiresAt": "2026-11-04T21:14:08.295Z",
       "generation": 1
     }
   },
@@ -4949,7 +4955,8 @@
     "ada-en-mw2ixbpx-amanda": {
       "token": "tok-mw2ixbpx-47iw6ue2zwb",
       "jobIds": [
-        "en:bulk:tour:tour_source_luchshee_v_gvatemale:b003"
+        "en:bulk:tour:tour_source_luchshee_v_gvatemale:b003",
+        "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b016"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_gvatemale:b003"
@@ -4978,5 +4985,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T19:44:01.578Z"
+  "updatedAt": "2026-11-04T19:44:08.295Z"
 }

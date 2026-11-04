@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1407,
-    "leased": 11,
+    "queued": 1406,
+    "leased": 12,
     "review": 991,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1407,
-      "leased": 11,
+      "queued": 1406,
+      "leased": 12,
       "review": 991,
       "ready": 1,
       "retryable": 0,
@@ -145,8 +145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 45,
-          "leased": 0,
+          "queued": 44,
+          "leased": 1,
           "review": 32,
           "ready": 0,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T20:05:32.860Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro:b005",
       "token": "tok-mw2gdfy4-c65915722f21",
       "expiresAt": "2026-11-04T20:05:15.251Z",
+      "generation": 1
+    },
+    "ada-en-mw2gds4u": {
+      "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b003",
+      "token": "token-mw2gds4u-d3a66e",
+      "expiresAt": "2026-11-04T20:05:32.860Z",
       "generation": 1
     }
   },
@@ -4689,7 +4695,8 @@
       "token": "token-mw2gds4u-d3a66e",
       "jobIds": [
         "en:bulk:tour:tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala:b004",
-        "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b008"
+        "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b008",
+        "en:bulk:tour:tour_source_issledovanie_argentiny:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala:b004",
@@ -4718,5 +4725,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T18:35:25.835Z"
+  "updatedAt": "2026-11-04T18:35:32.860Z"
 }

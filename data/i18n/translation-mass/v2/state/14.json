@@ -735,7 +735,99 @@
         "claimedAt": "2026-11-04T06:22:19.794Z",
         "expiresAt": "2026-11-04T07:52:19.794Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2661932f-20261104-s04-cp04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2661932f-20261104",
+        "token": "ada-en-token-2661932f-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-en-2661932f-20261104-s04",
+          "result": {
+            "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b007",
+            "stableId": "tour_colombia_explorer_9_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "ffaab3bf562e1940bfd6c988377420fac84e8afae46392a4cd3b242473e9ad03",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:ccb262aba1bca738",
+                "field": "itinerary.label",
+                "sourceTextSha256": "bf8cba7476ef70f7569cf75f53af0d18024f196022eb783173bd448ecb770348",
+                "text": "Cocora Valley",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                  "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                  "modifiedTime": "2026-10-26T18:01:44.969Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p43",
+                      "textSha256": "d1c4215f34af51b3613b116ec785531c5bb3d76fbf2fe9c0ba0bfd3c9f915635"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the confirmed place name from the selected Word as the separate label for this existing canonical itinerary place."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:e5eb47b3ed09402f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "2ddfb00db2ab9c93e5c2d1e4c29d29ef3e1fecaf08864ae854b32d00f3997249",
+                "text": "Salento",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                  "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                  "modifiedTime": "2026-10-26T18:01:44.969Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p79",
+                      "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the confirmed place name from the selected Word as the separate label for this existing canonical itinerary place."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:0f05db2b3f4f6520",
+                "field": "itinerary.label",
+                "sourceTextSha256": "776bc4849d26fa0e84efe400cb20469509ac3ef66b4f63c069edf6875e31f5f1",
+                "text": "El Ocaso Coffee Farm",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                  "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                  "modifiedTime": "2026-10-26T18:01:44.969Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p79",
+                      "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the confirmed place name from the selected Word as the separate label for this existing canonical itinerary place."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:98f78729c2405457",
+                "field": "media.alt",
+                "sourceTextSha256": "c16a5b64acd11b49ffc6c97f4c4cf759044d80f05d9aad6e3ade9641dd19022f",
+                "text": "Tall wax palms above the green hills of the Cocora Valley, Colombia",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word contains no caption for this specific existing website image; translate its frozen RU alt or hover description."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-04T06:23:46.078Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1152,
-    "leased": 14,
+    "queued": 1151,
+    "leased": 15,
     "review": 1222,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1152,
-      "leased": 14,
+      "queued": 1151,
+      "leased": 15,
       "review": 1222,
       "ready": 20,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 50,
-          "leased": 0,
+          "queued": 49,
+          "leased": 1,
           "review": 20,
           "ready": 3,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T23:25:42.783Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1424,6 +1424,12 @@
       "jobId": "en:bulk:tour:tour_source_rajskaya_braziliya:b007",
       "token": "tk-mw2nm357-15890d93c0af",
       "expiresAt": "2026-11-04T23:25:36.334Z",
+      "generation": 1
+    },
+    "ada-en-mw2nmu8n-amanda": {
+      "jobId": "en:bulk:tour:tour_source_braziliya_s_san_paulo:b011",
+      "token": "ada-en-mw2nmu8n-amanda-token",
+      "expiresAt": "2026-11-04T23:25:42.783Z",
       "generation": 1
     }
   },
@@ -5539,8 +5545,15 @@
         "en:bulk:tour:tour_source_braziliya_gruppovoj_tur_na_13_dnej:b007"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw2nmu8n-amanda": {
+      "token": "ada-en-mw2nmu8n-amanda-token",
+      "jobIds": [
+        "en:bulk:tour:tour_source_braziliya_s_san_paulo:b011"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T21:55:36.334Z"
+  "updatedAt": "2026-11-04T21:55:42.783Z"
 }

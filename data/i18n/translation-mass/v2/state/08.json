@@ -326,7 +326,106 @@
         "claimedAt": "2026-11-04T06:02:47.388Z",
         "expiresAt": "2026-11-04T07:32:47.388Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "adaen-mw1ojnf0-zzzsf540-job10-cp4",
+        "format": "inline-v1",
+        "ownerId": "adaen-mw1ojnf0-zzzsf540",
+        "token": "tok-lnsxlpgwcpa92vym3bnf36",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b003",
+          "stableId": "tour_chile_hidden_secrets_9_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "9cfeb299c2f76b4bc29bfda25b28001ec55cbbe460d8cd1987c484d6f656c47c",
+          "blocks": [
+            {
+              "blockId": "tour:included:a7b88771a594c533",
+              "field": "included",
+              "sourceTextSha256": "981bb7d0b9dbff11a6541131d97895fb89bb660fe0280100a5d18ccbd5ff5fe4",
+              "text": "Entrance tickets",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p200",
+                    "textSha256": "47c05e6da3e22539190c3d51839f6e11e514449457a14cd7a457a7200ced49a7"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading printed dash and spacing because this field is already a structured list item. Retain the verified approved Word 2027 included/excluded service wording."
+              }
+            },
+            {
+              "blockId": "tour:included:294a61fee1a4f47c",
+              "field": "included",
+              "sourceTextSha256": "93d3bd1ad29e3d2dd3d3dab16f60728fb4e9fe9efebfe8fed5bb77c260668cd1",
+              "text": "Meals as per the programme",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p199",
+                    "textSha256": "326aaa46937b5fd6013326c974382256a5e8e00eacf43053ad392b247c63144f"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading printed dash and spacing because this field is already a structured list item. Retain the verified approved Word 2027 included/excluded service wording."
+              }
+            },
+            {
+              "blockId": "tour:included:116dbe867253a6a0",
+              "field": "included",
+              "sourceTextSha256": "cd87bd7313b17ee584a5b9cac3c88b7f9e8018af0edbb61d4994acee03b6a866",
+              "text": "Airport–hotel–airport transfers",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p201",
+                    "textSha256": "e1800057683ee7f30fee03cce139ebcd4405c3cba80674c00695e98405229d28"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading printed dash and spacing because this field is already a structured list item. Retain the verified approved Word 2027 included/excluded service wording."
+              }
+            },
+            {
+              "blockId": "tour:included:3ff6a4effa69b688",
+              "field": "included",
+              "sourceTextSha256": "1a1cdaa8da27ac865c50fdcf0a8cb4c8a3eabd6108dfe3da541429f1acf94eba",
+              "text": "All mentioned excursions, including transportation",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p202",
+                    "textSha256": "2b18d1b67a74a439d3ed7f1ac50b7318125362917c29a9e7a6b8c0c78b189a1b"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading printed dash and spacing because this field is already a structured list item. Retain the verified approved Word 2027 included/excluded service wording."
+              }
+            }
+          ],
+          "sourceNotes": [
+            {
+              "kind": "word_2027_clarifies_airfare",
+              "detail": "Selected Word explicitly excludes Flight Calama – Santiago at paragraph p93 and airfare in p60/p192/p207, unlike the older RU note about a Day4 inclusion conflict. Approved Word wording is retained; no shared RU or commercial fields are changed."
+            }
+          ]
+        },
+        "at": "2026-11-04T06:03:44.393Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

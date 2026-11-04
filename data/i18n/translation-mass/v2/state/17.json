@@ -290,7 +290,7 @@
         "expiresAt": "2026-11-04T07:32:29.745Z"
       },
       "checkpoint": {
-        "id": "ada-en-150b76fa3667-001-cp4",
+        "id": "ada-en-150b76fa3667-001-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-150b76fa3667",
         "token": "ada-en-150b76fa3667-20261104",
@@ -361,10 +361,79 @@
                 "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
                 "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601"
               }
+            },
+            {
+              "blockId": "tour:media_hover:1c7b98e8b248442a",
+              "field": "media.hover",
+              "sourceTextSha256": "6cfe90958426c8b129c57f8c7ed67d107fd0a31b6d3a87b292a513a1483dce77",
+              "text": "Florianópolis, Brazil: a flight over coastal hills and sea bays",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 programme paragraphs 98–100 contain no image-specific hover caption; this coastal flight caption is translated from the current RU media.hover field.",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "ee36400cc07547466eee3d98405fa64414e2c3670878a47f0e1f4e40b34c7b00",
+              "text": "Porto Alegre and the vineyards of Bento Gonçalves",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p67",
+                    "textSha256": "5d0448a162b6577c1d2d1e0da020ae9537bcbfebd27f707767978488ff5cdb1b"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the day-one route heading from the exact arrival and vineyard stay paragraph; the combined Days 1–2 heading also names Gramado, which belongs to day two."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "757ea6f0934a91aa05a1f92a8c57012f6f51d940f3ca7e257d7b7daa90903c38",
+              "text": "Day 1 · Arrival at Porto Alegre’s Salgado Filho International Airport, where your English-speaking guide meets you for a private transfer by road to Bento Gonçalves, in the heart of Brazil’s renowned wine region. Check in at the elegant Spa do Vinho, set among the vineyards of the Serra Gaúcha: the hotel offers a beautiful introduction to the region’s wine culture, including a scenic walk through the vineyards. Overnight in Bento Gonçalves.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p67",
+                    "textSha256": "5d0448a162b6577c1d2d1e0da020ae9537bcbfebd27f707767978488ff5cdb1b"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:78c4ea2accc32802",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d55dbe47448ba68b7000b28139fd57835f32b84db4d7eb6467cd38bd3e85d238",
+              "text": "Porto Alegre",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p67",
+                    "textSha256": "5d0448a162b6577c1d2d1e0da020ae9537bcbfebd27f707767978488ff5cdb1b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact arrival city name inside the verified day-one paragraph as the existing place label; no itinerary facts or entity links change."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:03:32.837Z"
+        "at": "2026-11-04T06:04:02.208Z"
       },
       "submission": null,
       "review": null,

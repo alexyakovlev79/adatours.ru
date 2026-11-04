@@ -243,7 +243,83 @@
         "claimedAt": "2026-11-04T06:52:19.783Z",
         "expiresAt": "2026-11-04T08:22:19.783Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-150b76fa3667-006-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-150b76fa3667",
+        "token": "ada-en-150b76fa3667-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b003",
+          "stableId": "tour_brazil_recife_porto_noronha_10d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "f546a62f9c514559c9a0b9a6be141917e2b6254db0fa413b681de5a07792a20d",
+          "blocks": [
+            {
+              "blockId": "tour:note:d11c7693ebb71fbd",
+              "field": "note",
+              "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+              "text": "If necessary, we may replace your hotel with another of the same category.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 129 says similar hotels, but contains no complete hotel-substitution policy note; translate the explicit current RU condition in Ada Tours' voice.",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+              }
+            },
+            {
+              "blockId": "tour:note:aad34780a245497e",
+              "field": "note",
+              "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+              "text": "The order of excursions may change while the tour programme is maintained.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 has no matching excursion-order condition in paragraphs 149–152 or the service sections; retain the current RU condition.",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+              }
+            },
+            {
+              "blockId": "tour:note:64d02759479179f7",
+              "field": "note",
+              "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+              "text": "We are not responsible for missed hotel breakfasts when you check out early for an early flight or excursion.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 includes breakfast in programme and hotel sections but has no condition about missed breakfasts due to early departures; translate the current RU condition without changing its scope.",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:f9b489069eced7f2",
+              "field": "highlight.title",
+              "sourceTextSha256": "16c0178e2a979266322e2696a5a69ac727cc9b4c4d17e8920ab5a5c9a422b4d5",
+              "text": "Recife and Olinda",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p66",
+                    "textSha256": "6cfe6c8badd3287f0026145fa170775a84065b914977c92590e2157cd7ab11ae"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:53:02.802Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

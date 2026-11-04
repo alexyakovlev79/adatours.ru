@@ -1,0 +1,118 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kosta_rika_za_5_dnej:b005",
+  "stableId": "tour_source_kosta_rika_za_5_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "30e1f68bc56cb76be23c6e0290ab84826ac5e8dafb1f5eedec3cd59afdf98098",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:c5acfcaef86bf2a0",
+      "field": "media.hover",
+      "sourceTextSha256": "ed8fb86f70bb5825687b63304e2d807ba5b695db37a79105d89b7b2a21a7fd91",
+      "text": "San José: a red-and-white bus on a city street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no image-specific hover caption describing a red-and-white city bus."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "0b53b2f7761b1d15342d9bdabb6b45c26384dfff018158e61d21fb9cd66b6e6a",
+      "text": "Tortuguero National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "7528c4d065c1e82f5123264a908542ab8a879b413f830daba5643f54dc277f15"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the national park name explicitly present in the Word trip overview as the day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ff894be166567600400b3dfbf6ec9845c476f2c7cddabd9e2055e7f7de0cdd07",
+      "text": "After breakfast, we set off on a boat trip along the canals of Tortuguero National Park.\n\nDuring the tour, we discover the natural surroundings of this region, known as the Costa Rican Amazon.\n\nAfter lunch, a walk along nature trails is planned.\n\nReturn to the lodge.\n\n**Accommodation:** Pachira Lodge Tortuguero.  \n**Meals:** breakfast, lunch and dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 3 schedules a 6:15 boat tour before breakfast, then free time, whereas pinned RU specifies a boat tour after breakfast and an afternoon nature-trail walk. The Costa Rican Amazon description is also absent. Retained the assigned RU sequence rather than importing the conflicting Word timetable."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1145bb2af19c4058",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f12c66a75784fb21b256437f0db6da432416d7c9d5e676b5c1685d4c9cb8e1f3",
+      "text": "Tortuguero",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "4733e2e2987f2fb3a5891cc54fb26fac6423552478fef954e9b399b49fe3aca2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b94b6d9ccd9ab984",
+      "field": "media.alt",
+      "sourceTextSha256": "d2e5e34609d0bb310121cc55c5af6aab6847d65cb44672897a0d93d1bbc1be44",
+      "text": "Calm river reflecting the tropical forest in Tortuguero, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding image-specific alternative text about this calm river and reflected forest occurs in the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:95b743da5bb184b9",
+      "field": "media.hover",
+      "sourceTextSha256": "8a331f3ee22456a907206fe3444448f3e4c5089481739bcdc18a1707e0e88024",
+      "text": "Tortuguero: green banks and clouds reflected in the river",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no hover caption describing green banks and clouds reflected in this river photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "844151daa3ae7f130155db7c2918e05125d0d55dc853dc7c754e90fae86e8c52",
+      "text": "Tortuguero – San José – Poás Volcano – La Paz – San José",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 4 visits Doka coffee plantation and La Paz rather than Poas Volcano. There is no equivalent Word route label; translated the pinned RU route without changing its stops."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "49de9cb5f23d42aa42d171818074ae210f77bc561893410e02ffb138ecd854a3",
+      "text": "Fly to San José on a small aircraft operated by a local airline.\n\nOn arrival, you will be met at the airport and set off for Poás Volcano National Park.\n\nPoás is jokingly called the world's largest geyser. Its crater is 1.5 km wide, and its activity takes the form of steam and gas emissions.\n\nOld trees, orchids and bromeliads grow in the cloud forest around the volcano.\n\nAfter Poás, we head to La Paz Waterfall Gardens.\n\nHere, a walk along a forest trail to the waterfalls and lunch are planned. You can also visit the hummingbird gallery, serpentarium, aviary, butterfly garden and frog exhibit.\n\nAfter the tour, transfer back to San José.\n\n**Accommodation:** Barceló San José Palacio.  \n**Meals:** breakfast and lunch.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 4 replaces the pinned RU Poas Volcano visit with Doka coffee plantation and names Hotel Palma Real instead of Barcelo San Jose Palacio. No equivalent complete Word passage exists for this RU block; preserved its hotel, route, crater dimension and services without importing conflicting Word facts."
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b015",
+  "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5731f91ae3a527de23dc75290b733b65b0d969b85a22e50497413488933b0076",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:54c8aa7c51192a6d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b87c150eb4050fec267f540aaac1a09eae4cb6cf6f739cbb2e5f24ed797913de",
+      "text": "Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p53",
+            "textSha256": "38a6cecd26a20b18e205dc220b1f2dab0213e2befa0cee113a6da937580e544c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove the day number and El Calafate heading prefix, retaining the exact named glacier for the current place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:483732081478fa7a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9713a643ce2698f6f1f79c591528d6aeeee657eb1cd7beb063225eba47bc4d0a",
+      "text": "Los Glaciares National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p56",
+            "textSha256": "7ad5f994ba2b25680f5a2063812fa72f750a96ef0d1db5c1cdc87429120f6682"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the national park name from the optional excursion passage as the short stable place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dc64a11b6aceb175",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6d99a328cae20e95c5d6b1d2871e00badc06d102aedc57f5d37a246ace6f385e",
+      "text": "Lake Argentino",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p55",
+            "textSha256": "a34d7b61e2eda298740d8b9de71072f2ac98b4f14b549a971e3da72552ec857d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Lake Argentino from the verified glacier description as the current stable place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b3a17d3fd2fbce60",
+      "field": "media.alt",
+      "sourceTextSha256": "d68ce6024056167a27029455b55d34baadeaccf05435f59ef734b4cb5ea7b128",
+      "text": "Perito Moreno Glacier and a viewing platform above the water in overcast weather, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-5d56534e4493",
+        "wordAbsenceReason": "The exact Word contains no photo-specific alt text for the glacier viewing platform in overcast weather. Translate the current RU media.alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:0253aa79bece5220",
+      "field": "media.hover",
+      "sourceTextSha256": "dabbb1ebfcb1a57c600529e6332a715c6cc6de6d001a898697bb0f3cd04ba43f",
+      "text": "Perito Moreno: a blue wall of ice beneath mist-covered mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-5d56534e4493",
+        "wordAbsenceReason": "The exact Word contains no hover caption describing this blue ice front beneath misty mountains. Translate the current RU media.hover."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "858641b7333b93240b9ec543da2972e6715816c176c54d5ff5831498f7f81261",
+      "text": "El Calafate → Mendoza",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p58",
+            "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Remove only the Day 11 prefix from the exact Word route heading while retaining the same destination pair and direction."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fb864d8746bd04cf8f2b869c8ce511ad7f2ae10c27d6eec5be3ee3b88460d70d",
+      "text": "Fly by private jet from El Calafate to Mendoza. A helicopter transfer to the winery door is also proposed; the exact flight sector and landing arrangements are confirmed at the time of booking. Stay at the foot of the Andes and discover Argentina’s wine region. Overnight at Entre Cielos in a Superior Room. Breakfast is included in your stay (BB).",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-5d56534e4493",
+        "wordAbsenceReason": "Word paragraphs 59–61 describe the jet/helicopter proposal and hotel but do not contain the current RU clarification that the helicopter sector and landing are confirmed at booking, nor the exact complete current wrapper. Preserve this RU clarification and the BB basis attested by Word paragraph 102."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a9acafb75344935",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p58",
+            "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the El Calafate destination name from the verified Word route heading."
+      }
+    }
+  ]
+}

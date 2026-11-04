@@ -54,3 +54,48 @@
 - `en:bulk:tour:tour_brazil_three_ecosystems_8_days:b012` — **ready без изменения EN**; блок `tour:body:47f6c11f40afc686`. Текущий RU по исходному Git blob `d3b23e4fea6f1862a0162aac77a988d3fd55cc4b` явно задаёт «весь 2027 год» и 5 514 USD, а Word в папке 2027 (fileId `1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA`, SHA-256 `c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08`) внутри помечен 2026, но подтверждает те же 5 514 USD, маршрут, 7 ночей и включённые услуги. Выбрана действующая RU-редакция 2027 как источник EN-периода (экспертная оценка 85%), без изменения валюты, суммы или внешних условий; доступность конкретных дат по тексту подтверждается при бронировании. Provenance `ai_translation` верно отражает отсутствие дословного Word 2027 для блока, поэтому исправление исходного перевода не нужно.
 
 Проверены шесть критериев каждого пакета: Word/provenance, смысл, факты, голос Ada Tours, структура и география. **Вероятностный вывод в журнале не заменяет исходный Word.** Пакеты не возвращались переводчикам, отдельные результаты из прошлых сдач не перезаписывались.
+
+
+## Дополнительный независимый QA — 04.11.2026, 23:14:54 (МСК)
+
+Обновление прежних незавершённых замечаний по Marble Caves и Argentina Best: оба закрыты независимым QA. Каждый из пяти перечисленных пакетов прошел шесть отдельных checks: word, meaning, facts, voice, structure, relations; текущий RU blob совпадал с pinned sourceBlobSha, immutable EN result совпал с receipt. Word открыт по exact fileId и сверена версия. CAS переводил review в ready, без изменения RU, глобальных цен, Word, публикации; publicationEnabled=false.
+
+### `en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b002` — ready
+
+Восемь подписей Cafayate–El Calafate соответствуют Word 2027 и RU. Топонимы, порядок и написания сохранены.
+
+CAS: https://github.com/alexyakovlev79/adatours.ru/commit/1d8c9c2aa38908eb5715f8a600b30f595e003c54; accepted immutable blob `340a844ed6c78fa50f0b995c674b016591a98c46`.
+RU blob `ee9a870e191d4b6a27baa21bdbda96657fdb8be9`; Word fileId `1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn`; pinned Word SHA-256 `658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952`; frozen modifiedTime `2026-09-30T13:49:31.141Z`.
+Проверены blockId (8): `tour:itinerary_label:a8a39aba8e52fd93`, `tour:itinerary_label:eb9b35d8b806d899`, `tour:itinerary_label:af78a1ba9e8b85ee`, `tour:itinerary_label:09d86887ef4455fd`, `tour:itinerary_label:d528ae90267ce1e5`, `tour:itinerary_label:7b6749d81052c0a9`, `tour:itinerary_label:e4ebd93db8bd5d35`, `tour:itinerary_label:9b3f87db07393c2f`.
+
+### `en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b002` — ready
+
+Восемь топонимов от Puerto Natales до Santiago совпадают с 16D/15N Word и RU. VIK — сокращенная маршрутная подпись Viña Vik. Уверенность 97%.
+
+CAS: https://github.com/alexyakovlev79/adatours.ru/commit/e93bfe2201fdaa8c0fec6008d410ada5fa4f79ad; accepted immutable blob `f307884ff2367d0a6797026b7f5945c21c208bd0`.
+RU blob `882ec10fb84fc4858c88051e57e238bf747bd9d4`; Word fileId `1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw`; pinned Word SHA-256 `b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009`; frozen modifiedTime `2026-10-22T14:05:36.417Z`.
+Проверены blockId (8): `tour:itinerary_label:12fde0b243846520`, `tour:itinerary_label:08abf0b76ce9052d`, `tour:itinerary_label:858fa40dbf9ebf08`, `tour:itinerary_label:268943f960b42834`, `tour:itinerary_label:81ddce99016ad72a`, `tour:itinerary_label:51342c1a534a5483`, `tour:itinerary_label:e6ae8d10486bbfc2`, `tour:itinerary_label:05d7c958b87212c3:2`.
+
+### `en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b001` — ready
+
+Ревизия amanda-qa-20261104-marble-b001-v1. Изменен только provenance priceNote с word_aligned на ai_translation: Word подтверждает базу цены на человека при двух путешественниках, но не содержит суммы USD 2,000; цифра подтверждена действующим RU priceFrom/priceNote. Публичный EN и прочие блоки не менялись. Старый immutable blob 6a66a52300925ebc3d5c14ed405017c5cc07b19f сохранен в qaRevisions. Уверенность 98%.
+
+CAS: https://github.com/alexyakovlev79/adatours.ru/commit/2865f2dfb41d8ba11bbdbf1d75fc38159cf2ead6; accepted immutable blob `b6f925802aa81a564504e007d12fe6d980f73ee5`.
+RU blob `7d1a7685949839b0906b7dd1cb8b8f8402c354fc`; Word fileId `1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx`; pinned Word SHA-256 `dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0`; frozen modifiedTime `2026-10-22T14:06:52.263Z`.
+Проверены blockId (8): `tour:title:aaf2320646108059`, `tour:lead:e3456bc1f4d270f4`, `tour:priceNote:9b6b7f5cf7b1e557`, `tour:formatLabel:e904c9ccfa425ff0`, `tour:itinerary_label:28d2d149682ad276`, `tour:itinerary_label:fff6bf46f19a933c`, `tour:itinerary_label:858fa40dbf9ebf08`, `tour:itinerary_label:82ee50e526966bdf`.
+
+### `en:bulk:tour:tour_brazil_rio_four_days:b004` — ready
+
+Шесть топонимов Rio, Urca Hill, Sugar Loaf, Tijuca Forest, Corcovado и две RU-derived media.alt сверены с точным Word и RU. Новых фактов нет.
+
+CAS: https://github.com/alexyakovlev79/adatours.ru/commit/80eafc92dee81cd29a5833e3e7990ee5d4f675be; accepted immutable blob `dbc593d5f6fc8dc50b9c062afaaa1efba8f78fda`.
+RU blob `b2596730f9b029dc398d9704ea483f1511c80eb8`; Word fileId `1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU`; pinned Word SHA-256 `1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e`; frozen modifiedTime `2026-10-21T20:19:00.892Z`.
+Проверены blockId (8): `tour:media_alt:07172fd6ca3b791b`, `tour:itinerary_label:6eee82a2b72a1a8c`, `tour:itinerary_label:fad087100c51e11d`, `tour:itinerary_label:c2bdac36630388b5`, `tour:itinerary_label:b2f0e19acda78198`, `tour:itinerary_label:3513f80c57dd3c9d`, `tour:itinerary_label:6222538407b181fe`, `tour:media_alt:fc0908d150be64e9`.
+
+### `en:bulk:tour:tour_argentina_best_14_days:b010` — ready
+
+Прежний конфликт Days 6–7 устранен семантически: индексы массива itinerary/12–13 на самом деле соответствуют русским day:6 и day:7, которые совпадают с Word 2027 (Ushuaia). Не путать порядковый индекс структуры и день маршрута. Бинарный DOCX независимо проверен SHA-256 0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2, несмотря на смену modifiedTime 20.10→30.10. Перелеты не объявлены включенными, Martillo optional, Word программа приоритетна. Уверенность 99%.
+
+CAS: https://github.com/alexyakovlev79/adatours.ru/commit/f77b300cd182d68d791b805ba272e565b974cc40; accepted immutable blob `cf4a23eccd8953828e90607c647217522e2bcb39`.
+RU blob `30ba0233d75ec9be38d1f1a1dc3b61f849d60487`; Word fileId `1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy`; pinned Word SHA-256 `0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2`; frozen modifiedTime `2026-10-20T19:43:30.596Z`.
+Проверены blockId (8): `tour:itinerary_title:e1dddf681303f0bd`, `tour:itinerary_text:b9ad3e14216c2f08`, `tour:itinerary_label:4bd82be0e9f89208`, `tour:itinerary_label:5dfd2dfb75550881`, `tour:media_alt:a1e78bc13379af51`, `tour:media_hover:16dda3c08175eb0b`, `tour:itinerary_title:ed497b2a669f6ce4`, `tour:itinerary_text:2e780f63f4172747`.

@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_gruppovoj_tur_na_13_dnej:b010",
+  "stableId": "tour_source_braziliya_gruppovoj_tur_na_13_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2114307db7b7ea75a68d6885094b3ef3cd8bfb71fe48f783b93a6bb8feed640f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f78925ba7f6a86e6438c613fbda678ce2ae107109a35fae34bf3725703401b61",
+      "text": "Pick-up at your hotel and crossing of the Tancredo Neves Bridge to the Argentine side of the falls, where you stand under and above the falls at the same time, feeling the power of the falling water very close to you in the national park around them. See the source of the Devil’s Throat.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Al0JwtwBWcCAl7qn62N5xDzee4nQR0Hh",
+        "documentSha256": "a2f45e60fe0080cbbb4a477fa1d158052207056eeef4d1e02fb0683d828ea95a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p116",
+            "textSha256": "82a39d32a101b3c379f8fae74badfad828d19cfd8c21cebc40e06b96a16506ee"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the day marker from the matching Word excursion paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d5bc9e3b0938e59f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw2c44xv",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes the Argentine side of Iguazu but does not explicitly provide the Puerto Iguazu place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:15f37e80b9ee0f61",
+      "field": "media.alt",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Al0JwtwBWcCAl7qn62N5xDzee4nQR0Hh",
+        "documentSha256": "a2f45e60fe0080cbbb4a477fa1d158052207056eeef4d1e02fb0683d828ea95a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p155",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "586c2db4882183acff5b175e0dd0c398e572d04da46b50bc8e2d86aadc7eab76",
+      "text": "Foz do Iguaçu – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Al0JwtwBWcCAl7qn62N5xDzee4nQR0Hh",
+        "documentSha256": "a2f45e60fe0080cbbb4a477fa1d158052207056eeef4d1e02fb0683d828ea95a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p124",
+            "textSha256": "7e0b385162167431ed695363812cd92e2a8ea8412ebfc95deda35f65c9f341d3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses the Word route heading without its DAY BY DAY section prefix."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "700e2a42efd8c0f81b3b2d11ba6333af09abc579dfe356b815b2e43f1630431b",
+      "text": "After breakfast, transfer to the airport for your flight to Rio; your driver meets you at Rio de Janeiro airport for the transfer to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Al0JwtwBWcCAl7qn62N5xDzee4nQR0Hh",
+        "documentSha256": "a2f45e60fe0080cbbb4a477fa1d158052207056eeef4d1e02fb0683d828ea95a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p128",
+            "textSha256": "3facc8bd4634039871eb707c96337dcccd201aabe62c41091c52fd37f0783e42"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the day marker from the matching Word transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71ebc4b75bbcacf1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Al0JwtwBWcCAl7qn62N5xDzee4nQR0Hh",
+        "documentSha256": "a2f45e60fe0080cbbb4a477fa1d158052207056eeef4d1e02fb0683d828ea95a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2c302c2f5a4b365e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Al0JwtwBWcCAl7qn62N5xDzee4nQR0Hh",
+        "documentSha256": "a2f45e60fe0080cbbb4a477fa1d158052207056eeef4d1e02fb0683d828ea95a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p155",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d7ad3823b3fd3d40",
+      "field": "media.alt",
+      "sourceTextSha256": "68b1777c33b09870edf5511a2aba6f398eb62cce56f89c21288a9cb316ef06ec",
+      "text": "Broad cascades at Iguazu with spray and a bright rainbow above the gorge",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw2c44xv",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme contains no photograph-specific alternative text for the cascades, spray and rainbow over this gorge."
+      }
+    }
+  ]
+}

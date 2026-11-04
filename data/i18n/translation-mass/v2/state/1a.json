@@ -378,7 +378,87 @@
         "claimedAt": "2026-11-04T05:53:44.865Z",
         "expiresAt": "2026-11-04T07:23:44.865Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-d8b5c6c4c917-002-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-d8b5c6c4c917",
+        "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_guatemala_discover_8_days:b005",
+          "stableId": "tour_guatemala_discover_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c37e63214705e405818b3e2f0dc219b4d0942a7ffd57956f3e4dd1966697f6bd",
+          "wordSourceVerification": {
+            "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+            "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+            "modifiedTimeVerified": true,
+            "editionYear": 2027,
+            "yearFolder": 2027,
+            "commercialTablesReviewed": true
+          },
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:b9da2083a1cf0801",
+              "field": "media.alt",
+              "sourceTextSha256": "ebafc39ace70a5875fa8d023e6a487630ed212de9e95ca86c3b5ebf54f0fce5e",
+              "text": "Yellow arch with a clock tower above a cobbled street between low buildings",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "The approved Word has no equivalent alt text describing the yellow clock-tower arch photograph; translate the exact current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:a4dcf17d0457a3f1",
+              "field": "media.hover",
+              "sourceTextSha256": "8092ce632e50d5467a5e053ae57037722a4f18f5efd136c0c090cabaf05c2fae",
+              "text": "Historic street beneath a yellow arch with a clock",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "No equivalent photograph hover caption is present in the approved Word; translate the exact current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "b475567f6adb78bb95e4905f53b5ff2b47f1d863f0336ab3cbe25ea5d8a836bb",
+              "text": "Sunday: Chichicastenango and Lake Atitlán",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p68",
+                    "textSha256": "d8604ff99d1b647c49c047a3c10f2a30086a518529feda7c7ebdff86a9b3e234"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the short day heading from the approved Word day number, weekday and named places."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "995b26fa260765153d90ea62d5b2ef451ee40bf72da241098ac0bd908ae63063",
+              "text": "Breakfast. Travel into the Guatemalan highlands for your market visit and hands-on corn-growing workshop, then continue to Lake Atitlán, which Aldous Huxley called the most beautiful lake in the world. Overnight at Hotel Atitlán or a similar lakeside hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "Word paragraph 68 combines the day's transfer text with shared excursion content; the current RU block has distinct separated content and a similar-hotel option. Translate this exact RU block without duplicating the full shared excursion description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:55:08.498Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

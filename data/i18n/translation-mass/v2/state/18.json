@@ -604,7 +604,7 @@
         "expiresAt": "2026-11-04T08:17:49.113Z"
       },
       "checkpoint": {
-        "id": "ada-en-3f45d665-job-02-c4",
+        "id": "ada-en-3f45d665-job-02-c8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-3f45d665-translator",
         "token": "ada-en-token-3f45d665-20261104",
@@ -685,10 +685,82 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:e37ade0dcae0950f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "64c4271b5935c18354fd4e46002f72b14e5a2ee1532bdf378cafdca889ffd527",
+              "text": "Balmaceda",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "ea4cc82248826cd5a14f964a2e70fb5f3955fba389d98d56ef9e8a74ccacd7db"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the Balmaceda destination name from the corresponding Word itinerary paragraph for the existing place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:dad59615bd9d1453",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1053ff70c863619237b21bf402b98ab447fc19a837f8fd58579f4ea995187289",
+              "text": "Carretera Austral",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p43",
+                    "textSha256": "b13fcd61a77ed7accc1b5cfa4431fcc4c728eb094c13870646804e2bb2d11c17"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5d1313198d54a16b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1f84b7eda8f68078cf52b0ea3cd9110d4b6006d76b0072f1a8b18560df1f4746",
+              "text": "Lago General Carrera",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "ea4cc82248826cd5a14f964a2e70fb5f3955fba389d98d56ef9e8a74ccacd7db"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Lago General Carrera name from the corresponding Word itinerary paragraph for the existing place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:59e0e7cc62119012",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2bcb3e19d83c4cba1d16f0cb73102d0c334b4b161f06b6ba156b40f8ea18ce84",
+              "text": "Puerto Río Tranquilo",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p151",
+                    "textSha256": "c68744724179f2c71cf89e20164605827e32cfd0eb972b4823aaeb629fd2490f"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:49:07.700Z"
+        "at": "2026-11-04T06:49:14.786Z"
       },
       "submission": null,
       "review": null,

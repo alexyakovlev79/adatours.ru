@@ -336,120 +336,22 @@
     {
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b022",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "e987171304f25ab925084fe65de8f7453ef62097400d117d7a0c1a92a7a19c07",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "claimedAt": "2026-11-04T06:11:35.219Z",
-        "expiresAt": "2026-11-04T07:41:35.219Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_6c7d31_s004_c04",
-        "format": "inline-v1",
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b022",
-          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "e987171304f25ab925084fe65de8f7453ef62097400d117d7a0c1a92a7a19c07",
-          "sourceChecks": {
-            "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-            "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-            "sha256Verified": true,
-            "modifiedTime": "2026-09-30T20:16:32.777Z",
-            "yearFolder": 2027,
-            "commercialTables": 0,
-            "priceComparison": {
-              "currentRu": 23700,
-              "word": 23700,
-              "currency": "USD",
-              "occupancy": "DBL",
-              "basis": "per person",
-              "matches": true,
-              "wordParagraph": 117
-            },
-            "sourceDifferences": [
-              "Word hotel list p96 says Colchagua; current RU table says Millahue / Cachapoal. Current RU location retained.",
-              "The RU body adds approximate-flight and aircraft/international-flight confirmation caveats absent from one equivalent Word block; all retained."
-            ]
-          },
-          "blocks": [
-            {
-              "blockId": "tour:media_hover:d9e3c1f96fc7441d",
-              "field": "media.hover",
-              "sourceTextSha256": "512a8e4c27c1fbf685743e8889436737e9b62999699bf2469703213f220ccf5c",
-              "text": "The Obelisk on the central avenues of Buenos Aires",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The verified Word p88 describes the Obelisk but has no matching hover caption for the current production image. Translate the existing RU caption without adding image details.",
-                "inspectedWord": {
-                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_alt:68ebdd10346d3d20",
-              "field": "media.alt",
-              "sourceTextSha256": "2225bf51e78c0f3fca5b849951851c732289d433e064b805c0ad80d6f52e7a3f",
-              "text": "A row of stone moai at Ahu Tongariki on the ocean shore, Easter Island, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The verified Word p24 describes Ahu Tongariki but contains no matching hero alt text. Translate the existing RU alt caption; retain the current image.",
-                "inspectedWord": {
-                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b"
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_hover:77871c8f58bdcbc6",
-              "field": "media.hover",
-              "sourceTextSha256": "177901b139a17937aaa21e53bedd2ce8b6cd8ce330020a3ed03fb17e7fd44917",
-              "text": "Ahu Tongariki: moai statues with the sea and volcanic coastline in the background",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The verified Word has no matching hero hover caption. Translate the current RU caption without inferring additional details from the Word narrative.",
-                "inspectedWord": {
-                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b"
-                }
-              }
-            },
-            {
-              "blockId": "tour:body:47f6c11f40afc686",
-              "field": "body",
-              "sourceTextSha256": "c46f51942ab0e50eb42ccbe10e14f12bb79415ddd3938cfdcf2d3cc02f521aaf",
-              "text": "From Chile's vineyards, the route leads to the moai of Rapa Nui, then on to the dry valleys of the Atacama and the glaciers of Patagonia. After visiting Mendoza's wineries, you will see Iguazu from the Brazilian and Argentine sides and end your journey in Buenos Aires.\n\n## Accommodation: 16 nights\n\n| Stage | Nights | Hotel | Room category | Meals |\n|---|---:|---|---|---|\n| Santiago | 1 | The Singular Santiago | Lastarria Room | BB |\n| Millahue / Cachapoal | 1 | VIK Chile | Master Suite | BB |\n| Easter Island | 2 | Nayara Hangaroa | Kainga | BB |\n| Santiago | 1 | The Singular Santiago | Lastarria Room | BB |\n| San Pedro de Atacama | 1 | Nayara Alto Atacama | Quitor | BB |\n| Puerto Natales | 2 | The Singular Patagonia | Singular Room | BB |\n| El Calafate | 2 | EOLO Patagonia | Corner Room | BB |\n| Mendoza | 2 | Entre Cielos | Superior Room | BB |\n| Iguazu, Brazil | 2 | Belmond Hotel das Cataratas | Deluxe Room | BB |\n| Buenos Aires | 2 | Four Seasons Hotel Buenos Aires | Mansion-View Room | BB |\n\nBB means breakfast. Room categories are listed as specified in the programme.\n\n## Price\n\n| Occupancy | Price per person |\n|---|---:|\n| Double | from $23,700 |\n\nThe price shown includes hotel accommodation and all ground services/excursions in the program. Private jet flights between regions are not included and are calculated separately, depending on the dates selected.\n\n## Private aviation\n\nThe itinerary includes charter flights from Santiago to Easter Island and back (about 5.5 hours each), Santiago to Calama (about 2 hours), a flight to Punta Arenas, direct flights from Puerto Natales to El Calafate, El Calafate to Mendoza and Mendoza to Iguazu, followed by Iguazu to Buenos Aires (about 1 hour 45 minutes). Helicopter sectors and alternatives to road transfers are agreed separately. Flight times are approximate; aircraft availability and the feasibility of international private flights are confirmed when booking.\n",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "The current RU body is an editorial synthesis containing a Markdown hotel table, the Millahue/Cachapoal location, a tariff table and a consolidated aviation summary with confirmation caveats. No equivalent complete Word block exists. Translate current RU while retaining verified Word hotel/room names (p95-p104), USD 23,700 double-occupancy basis (p117), and the separate private-flight charge (p112,p118); do not import unrelated optional rates.",
-                "inspectedWord": {
-                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b"
-                }
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:12:45.123Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_6c7d31_s004",
+        "blobSha": "9aa96450d13251ce5ca232d48f51ffcb11b57614",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_argentina_private_grand_tour_17_days_b022/ada_en_6c7d31_s004.json",
+        "at": "2026-11-04T06:18:17.777Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

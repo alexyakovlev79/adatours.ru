@@ -698,7 +698,7 @@
         "expiresAt": "2026-11-04T09:23:10.224Z"
       },
       "checkpoint": {
-        "id": "cp-9a69348b6e00-08-4",
+        "id": "cp-9a69348b6e00-08-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9a69348b6e00",
         "token": "tok-9a69348b6e00-20261104-a1",
@@ -783,10 +783,102 @@
                   ],
                   "excerpt": true
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:0228040b43b9b8d0",
+                "field": "itinerary.label",
+                "sourceTextSha256": "e975867d576cf7c97c44d640e2c3bfe6acae25342e92016ea6294b7822b3615d",
+                "text": "Lima (1 night)",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p216",
+                      "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+                    },
+                    {
+                      "ref": "word/document.xml:p217",
+                      "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+                    },
+                    {
+                      "ref": "word/document.xml:p218",
+                      "textSha256": "3bb6f400393f5d6cfdbc7f6b5a41f96b8eb4ba5b20eac597a1fa5889151c1a05"
+                    },
+                    {
+                      "ref": "word/document.xml:p174",
+                      "textSha256": "9b54c54db1cd8fad95ec256cc30c940c141cdf1402e492bcb53cfb739b7afec2"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Uses the detailed Lima hotel row (16–17 January, one night), agreeing with current RU, rather than the conflicting two-night overview line."
+                }
+              },
+              {
+                "blockId": "tour:note:7bb336016cf1dd91",
+                "field": "note",
+                "sourceTextSha256": "4ee2c23fabd9e4729e06e6446e3cea7c92023a1c82e8fe1028dd960761f18734",
+                "text": "30.12.2026 – 17.01.2027",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p3",
+                      "textSha256": "3b82dc09d6e7f357af66cfff1f243468013984cafe9bec6c8209c57903ad435f"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:4b57c7be721557eb",
+                "field": "included",
+                "sourceTextSha256": "b193f6983dfbd845ad090624db1d3fae23c4beb6e8b2029c9827c95a6cfafbbb",
+                "text": "Tours according to the Program in Private with English-speaking guide (Russian-speaking available on request)\nBustrip to Cusco, Tango Show, Uros,  and Machu Picchu in SIB with English-speaking guide (Russian-speaking available on request)",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p277",
+                      "textSha256": "bb902d621693694a2af7fdcefc60bd86cf7169fecb472db63b99c9939fe43faa"
+                    },
+                    {
+                      "ref": "word/document.xml:p278",
+                      "textSha256": "f2ebf899ec5e29b0774718d88b4c70a441ee722dba25d9b0de7aa12c26fdeddb"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:1ae30ec67d92cae9",
+                "field": "included",
+                "sourceTextSha256": "a391a0b025e926bd81c78dee8bb6c134625701e485c61d5f3548805f5b5cd890",
+                "text": "Group transfers with a driver.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The approved Word specifies individual transfers within daily descriptions, but contains no global group-transfers-with-driver inclusion matching this RU field."
+                }
+              }
+            ],
+            "sourceDifferences": [
+              {
+                "field": "route/9",
+                "issue": "Word overview p6 says Lima (2 N), while detailed accommodation p216–218 says one night, 16–17 January. Current RU also says one night.",
+                "handling": "Detailed hotel row used for EN label; flagged for independent reviewer."
+              },
+              {
+                "field": "included/0",
+                "handling": "Approved Word p277–278 retained verbatim, including English-speaking guide and Russian-speaking available on request; exact Word 2027 exception to RU-derived guide-language substitution applies."
               }
             ]
           },
-          "completedBlockCount": 4,
+          "completedBlockCount": 8,
           "wordSourceVerified": {
             "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
             "sha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
@@ -794,7 +886,7 @@
             "localPath": "/workspace/scratch/9a69348b6e00/ada_word/five_countries.docx"
           }
         },
-        "at": "2026-11-04T07:53:47.835Z"
+        "at": "2026-11-04T07:54:14.059Z"
       },
       "submission": null,
       "review": null,

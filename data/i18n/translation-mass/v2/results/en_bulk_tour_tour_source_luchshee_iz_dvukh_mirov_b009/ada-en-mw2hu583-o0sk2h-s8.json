@@ -1,0 +1,128 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b009",
+  "stableId": "tour_source_luchshee_iz_dvukh_mirov",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b23f2450b045cb57fa7b27836ba3a8af30cb722186a81b07aff14c78ca435d14",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "365b3c563936a571f86296b4b734f350cb83f523153020681565d281adb9c36b",
+      "text": "San Pedro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "text-line:20",
+            "textSha256": "044372f2415641fcdfb3e42e59fa0866e9ca9a228873034d8e119899ca89bf96"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime",
+        "transformation": "contextual_label",
+        "rationale": "Localize the assigned field using the named destination or heading in the cited Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6d0bc15c4a0e71ac7a8489888498ddb43a5c3002db56c0d5e7c0acccf31879b2",
+      "text": "Free days to relax and enjoy optional excursions.\n\n**Accommodation:** Ramon’s Village.  \n**Meals:** breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines Days 7–8 in one sentence and lists Ramon's Village separately in the hotel table; there is no standalone per-day block with the assigned accommodation and meal labels. Preserve those RU labels and the confirmed hotel."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3215fceea603fcf2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+      "text": "Ambergris Caye",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "text-line:72",
+            "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime"
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c629adc2f9c00d25",
+      "field": "media.alt",
+      "sourceTextSha256": "4775f7a23b045d51085468fefbe412acfbf0a914a58a4f83756d47bdebab365f",
+      "text": "Sailboat on turquoise water off Ambergris Caye, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No image-specific alt description for this sailboat appears in the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7c53d436d8d9b5c6",
+      "field": "media.hover",
+      "sourceTextSha256": "874d28fe1402daf01720fe50edd429a940722d08b62df499bc1c977c313fa99b",
+      "text": "Ambergris Caye: a sailboat on the clear turquoise sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no hover caption corresponding to this sailboat photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "365b3c563936a571f86296b4b734f350cb83f523153020681565d281adb9c36b",
+      "text": "San Pedro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "text-line:20",
+            "textSha256": "044372f2415641fcdfb3e42e59fa0866e9ca9a228873034d8e119899ca89bf96"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime",
+        "transformation": "contextual_label",
+        "rationale": "Localize the assigned field using the named destination or heading in the cited Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6d0bc15c4a0e71ac7a8489888498ddb43a5c3002db56c0d5e7c0acccf31879b2",
+      "text": "Free days to relax and enjoy optional excursions.\n\n**Accommodation:** Ramon’s Village.  \n**Meals:** breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines Days 7–8 in one sentence and lists Ramon's Village separately in the hotel table; there is no standalone per-day block with the assigned accommodation and meal labels. Preserve those RU labels and the confirmed hotel."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a3565ffface82670",
+      "field": "media.alt",
+      "sourceTextSha256": "7867a8eda13b5e1cc11ebe91c200651fec70335a5b3e8ba88db35c6e01525b9c",
+      "text": "Travellers at a water-taxi ticket office on Ambergris Caye, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no image alt text describing travellers at the water-taxi ticket office."
+      }
+    }
+  ]
+}

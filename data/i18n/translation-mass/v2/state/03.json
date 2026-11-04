@@ -684,7 +684,7 @@
         "expiresAt": "2026-11-04T08:18:06.983Z"
       },
       "checkpoint": {
-        "id": "ada_en_6c7d31_s007_c04",
+        "id": "ada_en_6c7d31_s007_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_20261104_0555_6c7d31",
         "token": "ada_en_token_6c7d31_20261104",
@@ -781,10 +781,78 @@
                   "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
                 }
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:bd42dfc80020ab03",
+              "field": "itinerary.label",
+              "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
+              "text": "Calama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p118",
+                    "textSha256": "53355a351912efe80a5f518ac3ac6db4554a65e1af02d15dd00cca37e57dbf7f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Word destination name Calama from the flight sentence as the corresponding current RU place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3fd2f094b63379a4",
+              "field": "itinerary.label",
+              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+              "text": "San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p196",
+                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:04b08a0f2222926f",
+              "field": "media.alt",
+              "sourceTextSha256": "0a5dc33fb1757773939efea667efa37f364c0152dc7feb7b65a55c5bf83c6593",
+              "text": "Square with palm trees and a church in Calama against a backdrop of dry mountains, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The selected Word has no photograph-specific Calama square alt text; translate the current RU image description.",
+                "inspectedWord": {
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:cfcf82e9f79b77fe",
+              "field": "media.hover",
+              "sourceTextSha256": "21327013d806476f15e0c54ccd6c15cac42569bcb5c153747a1441d01b6263bc",
+              "text": "Calama: a green square amid urban buildings and desert slopes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The selected Word has no photograph-specific Calama hover caption; translate the current RU caption.",
+                "inspectedWord": {
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0"
+                }
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:51:12.993Z"
+        "at": "2026-11-04T06:51:17.550Z"
       },
       "submission": null,
       "review": null,

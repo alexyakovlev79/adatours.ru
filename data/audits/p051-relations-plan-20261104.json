@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "programKey": "P051",
+  "tourId": "tour_source_podlinnaya_braziliya",
+  "baselineRef": "e144e35a0143791f02b10b7234da25286be29243",
+  "checkedAgainstMain": "31b11f1ba36460fc0eac99f6546b958f5a6a24d5",
+  "sourceReviewPath": "data/audits/tour-lifecycle/P051-source-preparation-20261103.json",
+  "status": "PENDING",
+  "stage": "relations_planned_not_applied",
+  "candidateHashes": [
+    {
+      "path": "src/content/excursions/corcovado-christ-by-train.md",
+      "blobSha": "4c353883b9e59d91d727ea853a0333c26700fa0e"
+    },
+    {
+      "path": "src/content/excursions/ekskursiya-na-sakharnuyu-golovu.md",
+      "blobSha": "372f4657de3159c19d0aa45802548ce79006f19f"
+    },
+    {
+      "path": "src/content/excursions/salvador-pelourinho-sao-francisco.md",
+      "blobSha": "c02f223f7edb60315db5f30d7af85f5e523c45fc"
+    },
+    {
+      "path": "src/content/excursions/vstrecha-rek.md",
+      "blobSha": "d10d3f55b0106a19fb4ce46cc800dd74abeff4fa"
+    },
+    {
+      "path": "src/content/excursions/nablyudenie-za-rozovymi-delfinami.md",
+      "blobSha": "aafee840fa0452b02dd7d53e7ae75e2e7970050a"
+    }
+  ],
+  "decisions": [
+    {
+      "day": 1,
+      "decision": "ordinary_arrival_day",
+      "reason": "Самостоятельная экскурсия не заявлена; перечисление пляжей и видов спорта — описание Рио, не обязательные посещения."
+    },
+    {
+      "day": 2,
+      "decision": "reuse_with_word_variant",
+      "excursionId": "excursion_rio_corcovado_train_christ",
+      "reason": "Совпадают поезд через Тижуку и Христос/Корковаду. Точный Word-вариант тура сохраняет 6 часов, русский язык и включённый обед; в маршруте добавить Тижуку и Корковаду. Видимые с вершины объекты не считать посещёнными."
+    },
+    {
+      "day": 3,
+      "decision": "reuse_with_word_variant",
+      "excursionId": "excursion_source_ekskursiya_na_sakharnuyu_golovu",
+      "reason": "Точное соответствие 6-часовой экскурсии с обедом, Уркой, Сахарной Головой и городом. Не выбирать 4-часовую карточку. В текстовом override сохранять только Word, не импортировать standalone тарифы394/680 и лишние остановки."
+    },
+    {
+      "day": 4,
+      "decision": "new_excursion_required",
+      "proposedId": "excursion_amazon_meeting_waters_victoria_lodge_transfer",
+      "reason": "Дополнительные220USD NET, встреча вод, виктория-регия, лодки до10чел. Существующая9-часовая Встреча рек за313USD из/в отель не является точным тем же продуктом: другое направление трансфера и условия."
+    },
+    {
+      "day": 4,
+      "decision": "reuse_with_word_variant",
+      "excursionId": "excursion_amazon_pink_dolphin_observation",
+      "reason": "Базовая карточка наблюдения без иной фиксированной длительности/цены позволяет сохранить точный Word-вариант100USD, заход в воду по пояс, посещение общины и рыбалку. Не добавлять кормление, 4 часа и минимум2 из другой самостоятельной экскурсии."
+    },
+    {
+      "day": 5,
+      "decision": "retain_full_ordinary_lodge_day",
+      "reason": "Сохранить весь распорядок07:00–20:00, кабокло, приготовление муки, Акажатубу, кайманов. Не подменять объединённой канонической экскурсией с выживанием/отравленными стрелами, которых Word не обещает."
+    },
+    {
+      "day": 7,
+      "decision": "reuse_with_word_variant",
+      "excursionId": "excursion_salvador_pelourinho_sao_francisco",
+      "reason": "Совпадает индивидуальная полудневная экскурсия. Отдельно сохранить вечернюю церемонию Кандомбле и зависимость от календаря; не терять её при выделении городского блока."
+    },
+    {
+      "day": 9,
+      "decision": "preserve_existing_optional_rafain",
+      "excursionId": "excursion_source_rafain_shou"
+    },
+    {
+      "day": 10,
+      "decision": "preserve_word_services_and_existing_refs",
+      "reason": "Бразильские водопады, Macuco Safari и Парк птиц входят в исходную13-дневную программу; не подменять условия новой12-дневной брошюрой, где Macuco факультативен."
+    },
+    {
+      "day": 11,
+      "decision": "retain_argentine_waterfalls_full_day_text",
+      "reason": "Сохранить аргентинскую сторону и исключить двойное обещание перелёта: историческое условие о его точном дне остаётся, не придумывать день13."
+    },
+    {
+      "day": 12,
+      "decision": "preserve_historical_approved_end",
+      "reason": "Исходник по-прежнему заявляет13д/12н, подробно описывает1–12 и повторяет заключительный перелёт; прежняя оговорка не закрыта новой12-дневной самостоятельной брошюрой."
+    }
+  ],
+  "existingMandatoryDestinationsToAdd": [
+    "destination_brazil_tijuca_national_park",
+    "destination_brazil_corcovado_christ_the_redeemer",
+    "destination_brazil_morro_da_urca",
+    "destination_brazil_rio_metropolitan_cathedral"
+  ],
+  "namedPlacesRequiringReservationAndFullContent": [
+    {
+      "name": "Пелуринью",
+      "countryId": "country_brazil",
+      "proposedEnglishName": "Pelourinho",
+      "destinationType": "district",
+      "navigationRole": "hub",
+      "visit": "mandatory_day7"
+    },
+    {
+      "name": "Лифт Ласерда",
+      "countryId": "country_brazil",
+      "proposedEnglishName": "Elevador Lacerda",
+      "destinationType": "building",
+      "navigationRole": "sight",
+      "visit": "mandatory_viewpoint_day7"
+    },
+    {
+      "name": "Муниципальная площадь Сальвадора",
+      "countryId": "country_brazil",
+      "proposedEnglishName": "Praça Municipal Salvador",
+      "destinationType": "square",
+      "navigationRole": "sight",
+      "visit": "mandatory_day7"
+    },
+    {
+      "name": "Церковь Сан-Франсиску в Сальвадоре",
+      "countryId": "country_brazil",
+      "proposedEnglishName": "Church of São Francisco Salvador",
+      "destinationType": "religious_site",
+      "navigationRole": "sight",
+      "visit": "mandatory_day7"
+    },
+    {
+      "name": "Встреча вод Риу-Негру и Солимойнс",
+      "countryId": "country_brazil",
+      "proposedEnglishName": "Meeting of the Waters Manaus",
+      "destinationType": "natural_area",
+      "navigationRole": "sight",
+      "visit": "optional_day4"
+    }
+  ],
+  "interestReview": {
+    "registryBlobSha": "b2acce93e256855e293b6fc84b1d30d5e6e0733d",
+    "registryCount": 15,
+    "tour": {
+      "primaryThemes": [
+        "theme_nature",
+        "theme_culture"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "decision": "verified_unchanged",
+      "reason": "Природные парки/ледников нет; природные объекты Рио, Амазония, водопады; культура городов и Кандомбле; содержательные наблюдения кайманов. Факультативные занятия не добавляют adventure/fishing."
+    },
+    "excursionThemesIndependent": true
+  },
+  "audit": {
+    "summary": {
+      "blockers": 1,
+      "mediaSources": 25,
+      "confirmedGptImages": 25,
+      "reusableGptImages": 0,
+      "mobileHeroes": 4,
+      "ownArticles": 1,
+      "referringArticles": 3,
+      "catalogMobileHeroes": 7,
+      "catalogImageFree": 2,
+      "newCatalogues": 0,
+      "catalogMemberships": 0,
+      "legacyCutoffTreeAvailable": true
+    },
+    "blockers": [
+      {
+        "code": "GEO_PASSPORT_MISSING",
+        "entityId": "tour_source_podlinnaya_braziliya",
+        "detail": "data/geo-knowledge/entities/tour_source_podlinnaya_braziliya.json"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "EXCURSION_MATCH_REVIEW",
+        "detail": [
+          {
+            "day": 1,
+            "title": "Рио-де-Жанейро"
+          },
+          {
+            "day": 2,
+            "title": "Рио-де-Жанейро: Корковадо и Христос-Искупитель"
+          },
+          {
+            "day": 3,
+            "title": "Рио-де-Жанейро: Сахарная голова"
+          },
+          {
+            "day": 4,
+            "title": "Рио-де-Жанейро - Манаус"
+          },
+          {
+            "day": 5,
+            "title": "Амазония"
+          },
+          {
+            "day": 7,
+            "title": "Сальвадор: Пелуриньо и Кандомбле"
+          }
+        ],
+        "note": "Textual candidates require semantic matching; no identity or mandatory visit is inferred by regex"
+      }
+    ]
+  },
+  "gates": {
+    "historicalLifecycle": {
+      "ok": true,
+      "receiptsChecked": 1
+    },
+    "runtimeSeoCoverage": {
+      "ok": true,
+      "activeEntities": 1833,
+      "canonicalPages": 5848,
+      "cataloguePages": 4015
+    },
+    "scopeLifecycle": "not_complete_not_predeploy_ready"
+  },
+  "note": "This is a persisted preparation plan, not a valid completed lifecycle receipt. No source MD, reserve, media, GEO or Sheets publication claimed."
+}

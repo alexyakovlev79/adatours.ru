@@ -1,0 +1,138 @@
+{
+  "jobId": "en:bulk:tour:tour_source_amazoniya_kruiz_tukano:b003",
+  "stableId": "tour_source_amazoniya_kruiz_tukano",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "381b25776ffd57a7cee2a2b1cd051f8b941166d7a83e8d124d5d99fb2d791057",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:ef2de4238cf247fc",
+      "field": "notIncluded",
+      "sourceTextSha256": "8db96310376257406527e275f330f7a29b2900d2a2f5081f1c7f035771001b27",
+      "text": "Lodging at hotels in Manaus.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_VOc5UGDbZiGnbSfv8co9grjQzUMsG0o",
+        "documentSha256": "540e588bed500bfe994b7d357ea8af434fb03fc8153b99e9232a5b485f7cf298",
+        "paragraphs": [
+          {
+            "ref": "pdf:page:9",
+            "textSha256": "6b07a811c603a296487a6422be81d15abea1c5dd58946793b084155715cda705"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the lodging condition from the Word-source PDF's combined Laundry and Lodging exclusion for this separate accommodation field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:0d0f0c5bb995e790",
+      "field": "notIncluded",
+      "sourceTextSha256": "aee454555ce35cf81188640e015f5cb9fcd42168f6c400722531fb1f1bdb8c41",
+      "text": "Alcoholic Beverages: outside of meals, all other alcoholic beverages are charged separately.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_VOc5UGDbZiGnbSfv8co9grjQzUMsG0o",
+        "documentSha256": "540e588bed500bfe994b7d357ea8af434fb03fc8153b99e9232a5b485f7cf298",
+        "paragraphs": [
+          {
+            "ref": "pdf:page:9",
+            "textSha256": "6b07a811c603a296487a6422be81d15abea1c5dd58946793b084155715cda705"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the complete alcohol exclusion sentence from the source PDF without the following separate description of the onboard bar."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:c5556c682b0b5e7f",
+      "field": "notIncluded",
+      "sourceTextSha256": "bd17aad3a9d7651d04954f26d8f220aa0d0b8995f05629679cd0637b500c9e4d",
+      "text": "Drinks from the onboard bar, including signature cocktails made by a professional bartender.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The source PDF has an alcoholic-beverage exclusion and a promotional mixologist description, but no standalone all-bar-drinks exclusion matching this RU block; translated the assigned standalone condition."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:eda008e571a39d58",
+      "field": "notIncluded",
+      "sourceTextSha256": "4eeed9172a34ccdc4eb53d1cd07982e537d3bafd3088d3814f96927852f3b1fa",
+      "text": "Other Items: any other items not mentioned included.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_VOc5UGDbZiGnbSfv8co9grjQzUMsG0o",
+        "documentSha256": "540e588bed500bfe994b7d357ea8af434fb03fc8153b99e9232a5b485f7cf298",
+        "paragraphs": [
+          {
+            "ref": "pdf:page:10",
+            "textSha256": "0e21dae1830a6c52a33435367b623942df164fc1e876c17a42febc710f6bac0b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the bullet and page footer from the exact other-items exclusion sentence in the source PDF."
+      }
+    },
+    {
+      "blockId": "tour:note:1ffa9a907dfaa903",
+      "field": "note",
+      "sourceTextSha256": "04e3cf2fcbfdb1786f2fce0bf4684ce1a727dffb7caac75836ca0d1f6d4b49ca",
+      "text": "If necessary, Ada Tours may replace the listed hotels with other hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected source PDF contains no hotel-substitution condition; translated the assigned current RU note without adding conditions."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme is maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The source PDF has navigation and weather flexibility notes but no equivalent general guarantee of preserving this tour programme; translated the assigned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:95e8057013a92fec",
+      "field": "note",
+      "sourceTextSha256": "339a57c938751c063258d3d524a3737c60545871afd2bf41d86299ecbbd3dcb5",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when an early flight or excursion requires early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected source PDF contains no condition about missed hotel breakfasts due to early check-out; translated the assigned RU note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "525e83de6efa00917204f5eee486f4e5442c763e286cac6c930fdbe6c430bd2a",
+      "text": "Manaus and the Rio Negro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_VOc5UGDbZiGnbSfv8co9grjQzUMsG0o",
+        "documentSha256": "540e588bed500bfe994b7d357ea8af434fb03fc8153b99e9232a5b485f7cf298",
+        "paragraphs": [
+          {
+            "ref": "pdf:page:4",
+            "textSha256": "d5905626bcefc236945913b0bc9d9b2d14851494b2b550037517d2f3b16db341"
+          },
+          {
+            "ref": "pdf:page:7",
+            "textSha256": "4d27a6bcf4a47c4436a42b97c27cc8c84ef48c36530751abd2d58ea1788b1095"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the source PDF's Manaus and Rio Negro geographical names into the assigned first-day route title."
+      }
+    }
+  ]
+}

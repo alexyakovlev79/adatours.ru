@@ -164,7 +164,98 @@
         "claimedAt": "2026-11-04T06:19:35.985Z",
         "expiresAt": "2026-11-04T07:49:35.985Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_8c4fca0d2a61:b012:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_8c4fca0d2a61",
+        "token": "token_8c4fca0d2a61_c1970ba9",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b012",
+          "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "6596c14de357ac82f04c1f8ab6e84b3757881badaf32bfa92b285381515a2823",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:6645f78927f0c2e7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p121",
+                    "textSha256": "86c1918baeb3db0c16d843485b604c28ba8c64e2fa8b719b93fb62da6b352dec"
+                  },
+                  {
+                    "ref": "word/document.xml:p148",
+                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the city label exactly as it appears in the verified hotel table."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:7dd9adcf66908541",
+              "field": "media.alt",
+              "sourceTextSha256": "3fecf00616c77c071ae999eb03172b5aa079028d15cb3ce319505e39408ad620",
+              "text": "Santiago in the evening, with its river, bridges and illuminated roads, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific alt text for the evening Santiago photograph.",
+                "wordEvidence": {
+                  "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                  "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "34cf665e9dbd60bc799eeecef55a3d39900eb2268c2668d915bdd5ad4f6c4ba3",
+              "text": "New Year fireworks over the Atlantic Ocean off Copacabana — illustration",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image alt text identifying this hero artwork as an illustration.",
+                "wordEvidence": {
+                  "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                  "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:77871c8f58bdcbc6",
+              "field": "media.hover",
+              "sourceTextSha256": "34cf665e9dbd60bc799eeecef55a3d39900eb2268c2668d915bdd5ad4f6c4ba3",
+              "text": "New Year fireworks over the Atlantic Ocean off Copacabana — illustration",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image hover text identifying this hero artwork as an illustration.",
+                "wordEvidence": {
+                  "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                  "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:21:01.916Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

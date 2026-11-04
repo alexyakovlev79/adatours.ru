@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b003",
+  "stableId": "tour_source_kontinentalnyj_ekvador_amazoniya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "36235bb026cc70c844fb272bacbc9028390a0baa759e320bb07cd76e0593ff24",
+  "blocks": [
+    {
+      "blockId": "tour:included:0af72cb9c13173c4",
+      "field": "included",
+      "sourceTextSha256": "78effa35a0ede1c374cdb96889b5f51c45951000d6656a6519169e453e5ca154",
+      "text": "Shared excursions in the Amazon and at Bellavista.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-e43739ead93c",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word confirms shared Amazon excursions but does not specify that Bellavista excursions are shared; this assigned RU detail is translated."
+      }
+    },
+    {
+      "blockId": "tour:included:4e302efda80589b5",
+      "field": "included",
+      "sourceTextSha256": "e9e973a84aea50f0a5bbf468722fa2b95ee4334274b8ac649ba005086824ecfa",
+      "text": "Private tours throughout the rest of the itinerary.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[195]",
+            "textSha256": "d0a3c60123615f617e9d8a8d925af209e4d70f8cb8c2f3a18f4667ce7b2fb7a3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the private-service clause from the Word service summary for this included-service field."
+      }
+    },
+    {
+      "blockId": "tour:included:f3a0e5006f4ad948",
+      "field": "included",
+      "sourceTextSha256": "8bbd15bf55f98e3379549bedabcac98961017e2ec6d7dc2e8bb7fe44dd552ad8",
+      "text": "Accommodation in hotels and lodges as per programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[196]",
+            "textSha256": "ddeaacaace00a1c30a36d283dc9a5a1d71d87bb7cdc6d7ded05f4f0f018506d7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Word list marker to fit the assigned standalone included-service field."
+      }
+    },
+    {
+      "blockId": "tour:included:a617f7780f2fc1c1",
+      "field": "included",
+      "sourceTextSha256": "f5bf9e5f957ca9f352c2ae252709c144e12bafa48a37d2bdfc65d58d0224ee88",
+      "text": "Meals as specified",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[197]",
+            "textSha256": "87edae9e8fa2ecf0465edffc98eb0510ce419ac18bd61b4d0020d84c0c559c23"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Word list marker to fit the assigned standalone included-service field."
+      }
+    },
+    {
+      "blockId": "tour:included:08c9940c36936889",
+      "field": "included",
+      "sourceTextSha256": "f66e831e34d6f57a447128143c2d879d05d1584e4cc8d883892fe75c861d2aac",
+      "text": "English-speaking guide in the Amazon.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[103]",
+            "textSha256": "1024497ad38fa855141777997709aabe8574cd90bdc618531b16fc14cdd41bf3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Condensed the Word Amazon service summary to its guide-language component."
+      }
+    },
+    {
+      "blockId": "tour:included:007ef880643b92e2",
+      "field": "included",
+      "sourceTextSha256": "7de2658b152d9eed2f47accdcd625addbd5edce906732c06a1e5ff3c25dfe25b",
+      "text": "English-speaking interpreter-guide or driver-guide throughout the rest of the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-e43739ead93c",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word specifies English-speaking guides but not the interpreter-guide or driver-guide roles in this RU field; translated with the agreed service-language adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:06444af91bd435c4",
+      "field": "included",
+      "sourceTextSha256": "15ded7de1b04e7374bb5824a5597817cfe949bfafe9c195ac7bb1103a9ed2aa9",
+      "text": "Entrance fees to all listed sites",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[199]",
+            "textSha256": "dcd34b2f03ff10d05fe3c6cbf31fae4611f702abcb2aaf8a39925dab62292321"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Word list marker to fit the assigned standalone included-service field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a262b2c81923f509",
+      "field": "notIncluded",
+      "sourceTextSha256": "0431a0cc3979ad406879b0c7f306c0bb7852e7e2fd6c4910dd2c911997ac5b8d",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[202]",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Word list marker to fit the assigned standalone included-service field."
+      }
+    }
+  ]
+}

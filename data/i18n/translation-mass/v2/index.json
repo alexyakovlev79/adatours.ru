@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2123,
-    "leased": 8,
+    "queued": 2122,
+    "leased": 9,
     "review": 278,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2123,
-      "leased": 8,
+      "queued": 2122,
+      "leased": 9,
       "review": 278,
       "ready": 1,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 8,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:23:18.324Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1389,6 +1389,12 @@
       "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
       "expiresAt": "2026-11-04T07:23:01.269Z",
       "generation": 1
+    },
+    "ada_en_abf469133bbf": {
+      "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b005",
+      "token": "ada_en_token_abf469133bbf_20261104",
+      "expiresAt": "2026-11-04T07:23:18.324Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2319,7 +2325,8 @@
       "token": "ada_en_token_abf469133bbf_20261104",
       "jobIds": [
         "en:bulk:tour:tour_colombia_complete_11_days:b013",
-        "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b005"
+        "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b005",
+        "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_colombia_complete_11_days:b013",
@@ -2372,5 +2379,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:53:11.556Z"
+  "updatedAt": "2026-11-04T05:53:18.324Z"
 }

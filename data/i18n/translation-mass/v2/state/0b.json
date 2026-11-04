@@ -303,7 +303,91 @@
         "claimedAt": "2026-11-04T06:04:06.011Z",
         "expiresAt": "2026-11-04T07:34:06.011Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_1f8e8fe01ca4_20261104.2.cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_1f8e8fe01ca4_20261104",
+        "token": "ada_en_token_1f8e8fe01ca4_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b003",
+          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c3b573756ca987faa8a2fa9a21597a3a1be38a3e617b7a5c96fbe3f21a6126af",
+          "blocks": [
+            {
+              "blockId": "tour:notIncluded:8d199ffe6a973532",
+              "field": "notIncluded",
+              "sourceTextSha256": "5612ec15b72bf07e698e916e9f0c02c8c096779c6e4cde7b627ecc859135a844",
+              "text": "International flights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[274]",
+                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the technical list marker only; retain the approved exclusion exactly."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:6e52608d112e92b1",
+              "field": "notIncluded",
+              "sourceTextSha256": "1e7b740da431890dd85d53a213bd78601935c27039cb0c0012087ff01916403b",
+              "text": "Food and drinks during transfers",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[276]",
+                    "textSha256": "4228aa0822b188545ba7a5145e0393b0f4a74c8dff9ddf2a3f27b68275f628d1"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the technical list marker only; retain the approved exclusion exactly."
+              }
+            },
+            {
+              "blockId": "tour:note:b5de21613e03740f",
+              "field": "note",
+              "sourceTextSha256": "0bf1e69221589d8196ae596d81ce19ab9fc39a8f9ae0e7931986204bdebc25a7",
+              "text": "The departure dates of 12–21 February and the evening of the 2027 Parade of Champions are confirmed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_1f8e8fe01ca4_20261104",
+                "wordAbsenceReason": "Word 2027 gives the dates in paragraphs 7 and 171 and general final confirmation in paragraph 285, but does not contain this exact booking-confirmation note; translated the RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:cc6833ac58531783",
+              "field": "note",
+              "sourceTextSha256": "1540cbf1bea7899f107e2ad35f9c29a79c8ecac13779a5e850b338b21ce2b287",
+              "text": "Hotel names to be confirmed; hotels may be replaced by others of the same category.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[143]",
+                    "textSha256": "8d6fd40cd5fa9f2b2c12716d95f151641509e5b4f4b5bcda6257c1dae014bfe8"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:05:46.807Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

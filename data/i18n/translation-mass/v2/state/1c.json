@@ -896,186 +896,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "c29f1decea4b0b4b1d5ad951d6cd99b2bbb9dbe44f47797ebacaf9e04c400ce6",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_2478a2a40c1c",
-        "token": "ada_en_2478a2a40c1c_20261104",
-        "claimedAt": "2026-11-04T07:52:07.343Z",
-        "expiresAt": "2026-11-04T09:22:07.343Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_2478a2a40c1c_s10_c08",
-        "format": "inline-v1",
-        "ownerId": "ada_en_2478a2a40c1c",
-        "token": "ada_en_2478a2a40c1c_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b004",
-          "stableId": "tour_source_antarktida_ekspress_vozdushnyj_kruiz",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "c29f1decea4b0b4b1d5ad951d6cd99b2bbb9dbe44f47797ebacaf9e04c400ce6",
-          "blocks": [
-            {
-              "blockId": "tour:notIncluded:8115e29cf3f6f72d",
-              "field": "notIncluded",
-              "sourceTextSha256": "ccc26c947f0d5f5d67bfe439af1c951201a60d160beef8c980d7f19be257200d",
-              "text": "Accommodation, meals, excursions, and transfers other than those included in the itinerary and the Contingency Plan corresponding to each voyage.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
-                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p58",
-                    "textSha256": "6bbbc87ed6c5e5d9b59e9b7fdda0cca181f4354fd4b4b03a893a9bdc42c7eec5"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Split the approved combined exclusion across the two existing RU fields; retain the accommodation/meal/excursion/transfer sentence verbatim."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:8b97789a00ed9273",
-              "field": "notIncluded",
-              "sourceTextSha256": "f84974132b1020452cdc60de5e04192e7668181c58e3cd1b529d479771caec10",
-              "text": "Specifically, dinner in Punta Arenas upon return from Antarctica is not included.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
-                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p58",
-                    "textSha256": "6bbbc87ed6c5e5d9b59e9b7fdda0cca181f4354fd4b4b03a893a9bdc42c7eec5"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Split the approved combined exclusion across the two existing RU fields; retain its dinner-exclusion sentence verbatim."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:c601a92d2c60f78b",
-              "field": "notIncluded",
-              "sourceTextSha256": "e9d85161dc84df7e6d1ccce8b8605270fb103959b1f9022fce7185148a7ab15e",
-              "text": "Beverages purchased at the ship’s bar.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
-                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p59",
-                    "textSha256": "c797c662f1a9185ba64d17fcd1dc0d756b287182592bcec7d1d9b0614520a3cc"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading list marker from the approved Word exclusion."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:694a19e4a31da765",
-              "field": "notIncluded",
-              "sourceTextSha256": "552c5555e516217705dab7d77e5d2b2eec5b3183cd8f12705759187b97610be6",
-              "text": "Personal travel and medical insurance.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
-                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p60",
-                    "textSha256": "3652055371a984516b5c52dac0112d27aa807ac618f1951fefa22c1409a95b1f"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading list marker from the approved Word exclusion."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:6edfcdcf0966326a",
-              "field": "notIncluded",
-              "sourceTextSha256": "001eb33b2e75cb276f50380eaffa1fb0d69bd15080a45099acbbc2805fa503ce",
-              "text": "Extra expenses (communication, laundry, souvenirs, etc.).",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
-                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p61",
-                    "textSha256": "08507866818f8b2fd667496c51e13f5ad71e417328c80e29014ded164e8eb35f"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading list marker from the approved Word exclusion."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:610e72c9549f710d",
-              "field": "notIncluded",
-              "sourceTextSha256": "8e0a0e9870739528fa2811d9e0d2b773f7b03cda9eb0d768b10a69a66bed918b",
-              "text": "Gratuities.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
-                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p62",
-                    "textSha256": "9be7476f78fd7f3bdd9f275b731af6daaadce65b9f1236ea0513eb4485ffed60"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading list marker from the approved Word exclusion."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:618c180881f5a49a",
-              "field": "notIncluded",
-              "sourceTextSha256": "53ec8c2e6cf04fa7492ea70358ca4f82a4655c847be7eb6f54c2d0517937025e",
-              "text": "Visas for Chile, Argentina and/or United Kingdom (for South Georgia), passport expenses, and any arrival and/or departure tax, if applicable.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
-                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p63",
-                    "textSha256": "1f56450a8fd98260133b87858b4e1e6dfe8b3d15a942f91d3c23ccc74b07cf96"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading list marker from the approved Word visa and tax exclusion, retaining its destination and applicability qualifiers."
-              }
-            },
-            {
-              "blockId": "tour:note:5aa2c628beab8b85",
-              "field": "note",
-              "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
-              "text": "If necessary, we may replace the listed hotels with others of the same category.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_2478a2a40c1c_s10",
-                "wordAbsenceReason": "The checked Word permits the listed Punta Arenas hotel or similar, but does not contain the general current RU same-category hotel-substitution clause; translate the RU note without changing accommodation facts."
-              }
-            }
-          ],
-          "sourceObservations": [
-            {
-              "topic": "visa_exclusion",
-              "detail": "The approved Word's generic visa exclusion retains its United Kingdom qualifier for South Georgia and if-applicable tax qualification; no nationality or itinerary change is inferred."
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:53:52.565Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_2478a2a40c1c_s10",
+        "blobSha": "d0d11b1ddc93fd0b6424ca371c508d3fb8072793",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_antarktida_ekspress_vozdushnyj_kruiz_b004/ada_en_2478a2a40c1c_s10.json",
+        "at": "2026-11-04T07:55:08.732Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

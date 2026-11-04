@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1718,
-    "leased": 12,
+    "queued": 1717,
+    "leased": 13,
     "review": 679,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1718,
-      "leased": 12,
+      "queued": 1717,
+      "leased": 13,
       "review": 679,
       "ready": 1,
       "retryable": 0,
@@ -65,8 +65,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 52,
-          "leased": 0,
+          "queued": 51,
+          "leased": 1,
           "review": 23,
           "ready": 0,
           "retryable": 0,
@@ -97,7 +97,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T14:09:06.746Z",
       "earliestRetryAt": null
     },
     "11": {
@@ -1412,6 +1412,12 @@
       "jobId": "en:bulk:tour:tour_source_colombia_bogota_cultural_ru:b005",
       "token": "token-b866232976e1-20261104",
       "expiresAt": "2026-11-04T14:08:52.507Z",
+      "generation": 1
+    },
+    "ada-en-d1c0ddaf-20261104": {
+      "jobId": "en:bulk:tour:tour_source_braziliya_s_detmi:b002",
+      "token": "ada-en-d1c0ddaf-mw23jdlp",
+      "expiresAt": "2026-11-04T14:09:06.746Z",
       "generation": 1
     }
   },
@@ -3592,7 +3598,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b008",
         "en:bulk:tour:tour_source_braziliya_argentina_gruppovoj_tur:b010",
-        "en:bulk:tour:tour_source_braziliya_s_detmi:b001"
+        "en:bulk:tour:tour_source_braziliya_s_detmi:b001",
+        "en:bulk:tour:tour_source_braziliya_s_detmi:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b008",
@@ -3700,5 +3707,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T12:38:59.745Z"
+  "updatedAt": "2026-11-04T12:39:06.746Z"
 }

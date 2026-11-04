@@ -335,7 +335,101 @@
         "claimedAt": "2026-11-04T05:45:47.083Z",
         "expiresAt": "2026-11-04T07:15:47.083Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f801-r2-06-b005-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-run2-20261104",
+        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b005",
+          "stableId": "tour_colombia_highlights_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "dd768bb323298cb9798fa473470d3c108ac02590bac0142db4fdede953ebc732",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "c05cba558513ed1d695e59b1b92b1949f002ecc8770343ebd1c29631184a24c6",
+              "text": "Arrival in Bogotá: history, gold and Monserrate",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[64]",
+                    "textSha256": "9f1c3f147bd268c8d03f05e87736ff5d7ddd033854b65236f630f2b717cd05dc"
+                  },
+                  {
+                    "ref": "word/document.xml:p[67]",
+                    "textSha256": "206fdcdb1352e3c25f24c5d28f65eb9d233cb4a11aee1be04f9cf9f4cb55ec9b"
+                  },
+                  {
+                    "ref": "word/document.xml:p[68]",
+                    "textSha256": "d60b58cd650b5c93ba8214c9532076fc9eaaedfd39f58e2782ebc85925f31d33"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the Day 1 heading from the exact Word arrival and Bogotá sightseeing passages."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "a53e04539d9b129e1db7afc5b6402e791a6ee3a8d3c21b5f5c5a76ee345ad381",
+              "text": "Day 1 · Upon arrival at El Dorado International Airport, you will be welcomed by your private English-speaking guide, who will accompany you throughout your stay in Bogotá. The afternoon begins with a journey into the heart of the capital, exploring the historic district of La Candelaria, with its colonial architecture and atmospheric streets. Visit the Gold Museum, the Casa de la Moneda and the Botero Collection, before continuing to Plaza de Bolívar, surrounded by some of the city’s most important historic buildings.\n\nThe day concludes with an ascent to Monserrate, offering a different perspective of Bogotá, before returning to the hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[67]",
+                    "textSha256": "206fdcdb1352e3c25f24c5d28f65eb9d233cb4a11aee1be04f9cf9f4cb55ec9b"
+                  },
+                  {
+                    "ref": "word/document.xml:p[68]",
+                    "textSha256": "d60b58cd650b5c93ba8214c9532076fc9eaaedfd39f58e2782ebc85925f31d33"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:2b7a8bc5ae06d536",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+              "text": "Bogotá",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[66]",
+                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:5d8f893e246c798d",
+              "field": "media.alt",
+              "sourceTextSha256": "3deff5df98425c41840019c469e2435311216da8e219a977a4d7fc48ae77e45d",
+              "text": "A red Volkswagen Beetle on a Bogotá street lined with brick houses, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f801-r2",
+                "wordAbsenceReason": "The Word itinerary contains no image-specific alternative text for this red Volkswagen Beetle photograph."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:46:06.926Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

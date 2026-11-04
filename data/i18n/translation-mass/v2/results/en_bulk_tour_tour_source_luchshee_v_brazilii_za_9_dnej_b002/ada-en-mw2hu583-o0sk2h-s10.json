@@ -1,0 +1,154 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_za_9_dnej:b002",
+  "stableId": "tour_source_luchshee_v_brazilii_za_9_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4234cc108483d4c113415c9a67129129c4cfa438b6c0d4d816aa47e04d3c3df2",
+  "blocks": [
+    {
+      "blockId": "tour:included:7eb164e42e0f6ffe",
+      "field": "included",
+      "sourceTextSha256": "3d331cdf25e2c0a965a299dc9cbcf259ce34f54f52315e61ad0e385ef27edcfe",
+      "text": "Shared transfers with a driver.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lists transfers with a driver but does not specify shared/group service in that entry; the assigned RU group-service qualifier is retained."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:019bb714e694242b",
+      "field": "notIncluded",
+      "sourceTextSha256": "909c12ee5d5bebd7e72266ef6a6d1a2762f4e2a134ac3ab90da8b13fc1566984",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "text-line:171",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime",
+        "transformation": "strip_list_marker",
+        "rationale": "Localize the assigned field using the named destination or heading in the cited Word passage."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:93276ee0b82f5786",
+      "field": "notIncluded",
+      "sourceTextSha256": "8f82cf4d986ac97b71fc7aee0986fefa19a3883d66e696c06e8d89883c500896",
+      "text": "Domestic flights Rio de Janeiro – Iguaçu – Rio de Janeiro (from $ 650 per person)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "text-line:49",
+            "textSha256": "4acf6a7f6fa103ed9077abcb514580d8ddeb71261bd2c001b683a683daa0013f"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime",
+        "transformation": "strip_list_marker",
+        "rationale": "Localize the assigned field using the named destination or heading in the cited Word passage."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "text-line:173",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime",
+        "transformation": "strip_list_marker",
+        "rationale": "Localize the assigned field using the named destination or heading in the cited Word passage."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1b4cad85e8fcb375",
+      "field": "notIncluded",
+      "sourceTextSha256": "d85a1a1e8107f783edb456bed55954ef5342892623988343497a404842d833e8",
+      "text": "Macuco Safari, on request.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "text-line:89",
+            "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+          },
+          {
+            "ref": "text-line:159",
+            "textSha256": "d047b31da275afb05dc7f7c42a1559bcfb5df77f2a6551bf81b753b68ec79619"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime",
+        "transformation": "contextual_label",
+        "rationale": "Combine the optional activity name and its adjacent price-on-request cell, preserving its optional status."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ea26a3482e69b1d0",
+      "field": "notIncluded",
+      "sourceTextSha256": "468e47671ec37702ef1f5920534a7ab5080cfa5439d8e8b0354f33afc5e36a1b",
+      "text": "Bird Park, on request.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "text-line:161",
+            "textSha256": "88c842f0ae9ba9e38bbfb19849822d9a14f1b162e5ccb0827494bd4b66a02fce"
+          },
+          {
+            "ref": "text-line:163",
+            "textSha256": "d047b31da275afb05dc7f7c42a1559bcfb5df77f2a6551bf81b753b68ec79619"
+          }
+        ],
+        "sourceVersionVerifiedBy": "Drive modified_time matches immutable selectedWord.modifiedTime",
+        "transformation": "contextual_label",
+        "rationale": "Combine the optional Bird Park name and adjacent price-on-request cell without adding a price."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:da756b777306942e",
+      "field": "notIncluded",
+      "sourceTextSha256": "8aa20f6b3d403b060491185c5c34717a5009ff46c170cb841649ff5440474bad",
+      "text": "Additional meals and drinks.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word exclusion is food and beverages during transfers; it has no matching broader additional-meals-and-drinks item. Preserve the scope of this assigned RU field for review."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5f7004d708c653a3",
+      "field": "notIncluded",
+      "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+      "text": "Tips.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2hu583-o0sk2h",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no standalone gratuities exclusion corresponding to this assigned RU item."
+      }
+    }
+  ]
+}

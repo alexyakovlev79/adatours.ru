@@ -520,7 +520,7 @@
         "expiresAt": "2026-11-04T07:36:57.930Z"
       },
       "checkpoint": {
-        "id": "ada_en_2478a2a40c1c_s03_c04",
+        "id": "ada_en_2478a2a40c1c_s03_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_2478a2a40c1c",
         "token": "ada_en_2478a2a40c1c_20261104",
@@ -601,10 +601,65 @@
                 "runId": "ada_en_2478a2a40c1c_s03",
                 "wordAbsenceReason": "The checked Word 2027 document contains the resort itinerary but no matching image-specific alt text; translate the current RU caption."
               }
+            },
+            {
+              "blockId": "tour:media_hover:2977993ff573b940",
+              "field": "media.hover",
+              "sourceTextSha256": "e7333b239c6dc371502caedee7cc336ad1a9eea2348341b22f510a6cf5959462",
+              "text": "San Juan del Sur, Nicaragua: a rocky outcrop by the shore with green hills",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s03",
+                "wordAbsenceReason": "The checked Word 2027 document contains no matching image-specific hover caption; translate the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "16bfecac7b881bdcbde49d00ea92795d34494de85d2e31eed42c5fdbce9db2fb",
+              "text": "Free day in San Juan del Sur",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s03",
+                "wordAbsenceReason": "Word 2027 has only the heading Day 7-9: San Juan del Sur, with no separate free-day heading; translate the current RU field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "fa81f634a359e2277cee89c34515cdc93228fabb9c7f5b6389738814f2163beb",
+              "text": "A free day to relax and explore the resort town and its surroundings on your own. Overnight at Alcazar. Your hotel and meals on free days will be confirmed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s03",
+                "wordAbsenceReason": "Word 2027 has no prose for Days 7-9; its accommodation table lists Hotel Alcazar for Day 7. Translate the current RU free-day description and retain its hotel and meal confirmation caveat."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ab6b3260ce27a348",
+              "field": "itinerary.label",
+              "sourceTextSha256": "78450c11d36b3554785164f0e2171ded8d87291e630d5c3809bab2ad80e04707",
+              "text": "San Juan del Sur",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p30",
+                    "textSha256": "f53f23fe9bc1bedf892e6d119eb4808c52901d6a3508cebbd419fda76c85193a"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the destination name unchanged from the approved Word Days 7-9 heading."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:08:02.172Z"
+        "at": "2026-11-04T06:08:05.949Z"
       },
       "submission": null,
       "review": null,

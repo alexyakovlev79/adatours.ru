@@ -174,7 +174,7 @@
         "expiresAt": "2026-11-04T07:50:08.940Z"
       },
       "checkpoint": {
-        "id": "ada-en-d8b5c6c4c917-003-cp4",
+        "id": "ada-en-d8b5c6c4c917-003-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-d8b5c6c4c917",
         "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
@@ -256,10 +256,70 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5204f029aa1c04fe",
+              "field": "itinerary.label",
+              "sourceTextSha256": "69702d03cfa00fd1c739deb2ed162bb573f690ffad3c27627c150024069fa698",
+              "text": "Sugar Loaf",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p38",
+                    "textSha256": "54f9aa76a0e3322f0840e1978275ebaafe16777ae312a34ee141de89896ae78f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact place name Sugar Loaf from the approved programme heading for the short route label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:c3b3d4bc608ec522",
+              "field": "media.alt",
+              "sourceTextSha256": "18840d3547fea2c5b99f9d2c83fd7d93cbdea9f1b6ca02339a9dee0269e0f318",
+              "text": "Arcades of a courtyard beneath the wooded slope of Corcovado, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "The Word does not contain this exact courtyard photograph caption; translate the current RU media description without adding details."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:086e6b51b79ee93d",
+              "field": "media.hover",
+              "sourceTextSha256": "c3235a895c2eed6b84cad0b83a7de319cea16bef94bbacf65c622bbdf012035e",
+              "text": "Rio de Janeiro: courtyard arcades beneath the green slope of Corcovado",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "The Word does not contain this exact courtyard photograph caption; translate the current RU media description without adding details."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:21:10.800Z"
+        "at": "2026-11-04T06:21:29.768Z"
       },
       "submission": null,
       "review": null,

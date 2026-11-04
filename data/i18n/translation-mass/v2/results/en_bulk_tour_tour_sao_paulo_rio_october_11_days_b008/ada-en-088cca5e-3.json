@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b008",
+  "stableId": "tour_sao_paulo_rio_october_11_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "fe5b3ed330bcebb92ef38b0966fbb01dd72da2ec8acdf6492ae254d62a8d7383",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ee3113e4aeb28326ab1bb2d2e11c83330b4497bc2aa5d778c89d4ee432103e90",
+      "text": "26 October: a 4-hour tour of Corcovado and Christ the Redeemer with an English-speaking guide. Admission is included. Breakfast at the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 51 describes Corcovado but omits the RU block's 26 October date, four-hour duration and specific admission and breakfast details."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f82a47102d58c1a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+        "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "bd9434cec955f070fbb6ccf9979c6c9a6c8f7591b98aa8af898c68e2ebb25d55"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the relevant service or place label from the confirmed Word passage for this field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c17f27dadf25cbde",
+      "field": "media.alt",
+      "sourceTextSha256": "4836ac0d17e66ca566977d826bd6ab8576af38b992d8f2fd68853fd3d6168168",
+      "text": "Christ the Redeemer and visitor viewing areas among the forested mountains of Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no image-specific alternative text describing this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:86a68d044c35d244",
+      "field": "media.hover",
+      "sourceTextSha256": "95fdcaf40a3705f1df900b496844a7e11620017f859755b78a576bbca066433c",
+      "text": "Rio de Janeiro: a statue on a rocky summit surrounded by green mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no matching image hover caption; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:09ae871b76911ef9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+        "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "bd9434cec955f070fbb6ccf9979c6c9a6c8f7591b98aa8af898c68e2ebb25d55"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the relevant service or place label from the confirmed Word passage for this field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b6e0205e388348c3ba5d398a3104b958269c04dbe75bc3d4ff43f711e5e9618f",
+      "text": "Discovering Rio's favelas",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 55 describes the communities but supplies no equivalent concise title naming the favela tour."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "482890ac4c0a1a8b9acb209dfff030dcffab7ebf4f16b7b4b66bf38a63a0dde8",
+      "text": "27 October: a 4-hour tour of Rio's favelas with an English-speaking guide is included in the programme. Breakfast at the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 55 describes the communities but omits the RU block's four-hour duration, included guided service and breakfast."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3fa8c2af53ae2e7a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+        "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "bd9434cec955f070fbb6ccf9979c6c9a6c8f7591b98aa8af898c68e2ebb25d55"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the relevant service or place label from the confirmed Word passage for this field."
+      }
+    }
+  ]
+}

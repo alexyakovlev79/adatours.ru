@@ -187,7 +187,7 @@
         "expiresAt": "2026-11-04T07:50:48.572Z"
       },
       "checkpoint": {
-        "id": "ada-en-1d528bec4ff4-b04-cp4",
+        "id": "ada-en-1d528bec4ff4-b04-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-1d528bec4ff4",
         "token": "ada-en-token-1d528bec4ff4-20261104",
@@ -282,6 +282,98 @@
                   "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
                   "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd"
                 }
+              },
+              {
+                "blockId": "tour:note:2e3118784edd822e",
+                "field": "note",
+                "sourceTextSha256": "f1e32adb7c4660afda822b655f9e37946b861836afccd55b0124306847b6a360",
+                "text": "Macuco Safari — optional excursion at an additional cost. Price on request.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p119",
+                      "textSha256": "f1310d559c261b716be5ec031e8c63c09eac2864f8f7a28348ec292956fbe761"
+                    },
+                    {
+                      "ref": "word/document.xml:p125",
+                      "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+                    },
+                    {
+                      "ref": "word/document.xml:p127",
+                      "textSha256": "d047b31da275afb05dc7f7c42a1559bcfb5df77f2a6551bf81b753b68ec79619"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Compose the optional activity price note using the verified Word optional-excursion heading, activity name and Price on request table cell."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+                "field": "itinerary.title",
+                "sourceTextSha256": "4c5f536c6ef7e8eccca6c2a3de84169bff41a1d33e39b744b99e671b50075759",
+                "text": "Brazilian Falls & Bird Park",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p63",
+                      "textSha256": "89320489b76c8557e785dd4d37f3ae6568e235db92ee1a66cefe175bd3edcfc8"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the Word day heading without its Day 1 ordinal because the itinerary structure already provides the day number."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:5a4836cca1208c95",
+                "field": "itinerary.text",
+                "sourceTextSha256": "ce9c14fb8c9b619a75d7aa4c9c68ebf9d53aa7bd3ecc3d1c911c2f763cf6c179",
+                "text": "Upon arrival at Foz do Iguaçu International Airport, our local representative meets you for the transfer to the Brazilian side of Iguaçu National Park.\n\nEnjoy a visit to the breathtaking Brazilian Falls, where panoramic walkways offer spectacular views of one of the world’s greatest natural wonders. Afterwards, continue to the renowned Bird Park, home to hundreds of native and exotic birds living in spacious natural aviaries surrounded by the Atlantic Rainforest.\n\nRecommended optional activity, at an additional cost: the Macuco Safari (see Optional excursions).\n\nAn exciting adventure through the rainforest by electric vehicle and on foot, before a thrilling boat ride that takes you close to the impressive waterfalls.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p66",
+                      "textSha256": "9f047b0b67d5e00e0e40984324ec8b407d55c48154f822c1a14438e7949890f4"
+                    },
+                    {
+                      "ref": "word/document.xml:p67",
+                      "textSha256": "f5c80115f9b57124756d0f06a7686816bb90e2e2c5ef4b36f4c2f3052c4e8b45"
+                    },
+                    {
+                      "ref": "word/document.xml:p68",
+                      "textSha256": "46d905bab82a7cd7b639967d39e7ca5325323ff2593f4bf4a8e8737745142f53"
+                    },
+                    {
+                      "ref": "word/document.xml:p128",
+                      "textSha256": "65402c82e2b9de5ed005160b0c7b324582e4f42a27293009876398c5fc234198"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:e56b9cf4f52f98df",
+                "field": "itinerary.label",
+                "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+                "text": "Foz do Iguaçu",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+                  "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p7",
+                      "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                    }
+                  ]
+                }
               }
             ],
             "wordSourceVerification": {
@@ -341,9 +433,9 @@
             "priceAmendments": []
           },
           "submissionId": "ada-en-1d528bec4ff4-b04",
-          "preparedBlocks": 4
+          "preparedBlocks": 8
         },
-        "at": "2026-11-04T06:22:08.574Z"
+        "at": "2026-11-04T06:22:40.560Z"
       },
       "submission": null,
       "review": null,

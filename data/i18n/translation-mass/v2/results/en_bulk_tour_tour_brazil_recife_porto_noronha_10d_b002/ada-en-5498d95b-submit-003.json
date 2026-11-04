@@ -1,0 +1,167 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b002",
+  "stableId": "tour_brazil_recife_porto_noronha_10d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8d4a31a4ced6c8415ae8e6f7f0466c1f88ba736d3117e7b1bbb9394cafb09b0f",
+  "wordSourceVerification": {
+    "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+    "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+    "modifiedTimeVerified": true,
+    "commercialTablesReviewed": true
+  },
+  "unresolvedConflicts": [
+    {
+      "blockId": "tour:included:edb4f7623658951a",
+      "reason": "Assigned RU /included/0 includes the Recife–Noronha–Recife flights, while verified Word 2027 explicitly excludes them (p60,p91,p150,p162). Worker cannot move blocks between fields; independent review/commercial master must resolve inclusion before publication."
+    }
+  ],
+  "blocks": [
+    {
+      "blockId": "tour:included:edb4f7623658951a",
+      "field": "included",
+      "sourceTextSha256": "14d8664d6de4f21c90cdace0b33f716deb6000e4917a1fe5f869908dec1f1eb2",
+      "text": "Flights Recife – Fernando de Noronha – Recife.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-amanda-5498d95b",
+        "wordAbsenceReason": "No included-flight statement exists in the selected Word: paragraphs 60, 91, 150 and 162 instead exclude these flights. Preserved the assigned RU included item and flagged this concrete field-placement conflict for independent review."
+      }
+    },
+    {
+      "blockId": "tour:included:572d1ec3e439a9dd",
+      "field": "included",
+      "sourceTextSha256": "189f3b8ccf115109bb7481d2c29aeef7c7b1255e1f0ec529af32cd243c71c3f4",
+      "text": "Accommodation in 4★ hotels with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+        "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p156",
+            "textSha256": "2f27ffd9c4bce70b9c5aebdc80930123835e21d302b8fb6fa2ed8ae0a1ebc69e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker and spacing to fit the assigned single service item."
+      }
+    },
+    {
+      "blockId": "tour:included:9ec713f54a2c02d4",
+      "field": "included",
+      "sourceTextSha256": "ede8119bbef8ed505f859a521b45c7bc92ae44b18f6a9f7ebe631eef2045f7e1",
+      "text": "Excursions according to the programme with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+        "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p157",
+            "textSha256": "be84b758aa96f6a4460c95ba1eea1b230836f184efa7c614c0f7d9e6e7e103c8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker and spacing to fit the assigned single service item."
+      }
+    },
+    {
+      "blockId": "tour:included:4eba4a26406ba9e1",
+      "field": "included",
+      "sourceTextSha256": "6860bc19bbe5b04c3e5dd423f20aae08dc502d7b0779697f03c95d1f6a74a4c7",
+      "text": "Transfers with driver",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+        "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p158",
+            "textSha256": "75def9523beb7f715cc9b9e73e6dda4bd39628bb769257d77dc890cfb65f5628"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker and spacing to fit the assigned single service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:019bb714e694242b",
+      "field": "notIncluded",
+      "sourceTextSha256": "909c12ee5d5bebd7e72266ef6a6d1a2762f4e2a134ac3ab90da8b13fc1566984",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+        "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p161",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker and spacing to fit the assigned single service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:cc75b91f7b2eaccf",
+      "field": "notIncluded",
+      "sourceTextSha256": "d626bece2a54a2f066d8d670ea03b18d68a176f15c6bcfceab78f77fe97ccfe9",
+      "text": "Meals not mentioned in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+        "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p163",
+            "textSha256": "97807ad43f5a60c34ec2b767ff6bc1c0229f24bbbbac0f31c65ea332d114086a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker and spacing to fit the assigned single service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+        "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p164",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker and spacing to fit the assigned single service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+        "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p165",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker and spacing to fit the assigned single service item."
+      }
+    }
+  ]
+}

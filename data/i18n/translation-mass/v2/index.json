@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2166,
-    "leased": 4,
-    "review": 239,
+    "leased": 3,
+    "review": 240,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2166,
-      "leased": 4,
-      "review": 239,
+      "leased": 3,
+      "review": 240,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -146,8 +146,8 @@
         "word_2027": {
           "held": 0,
           "queued": 71,
-          "leased": 1,
-          "review": 5,
+          "leased": 0,
+          "review": 6,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 1,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T07:03:24.818Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "13": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-befca8d88a7c": {
-      "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
-      "token": "ca9d19d3a2444d3eb27e82c408f2b400",
-      "expiresAt": "2026-11-04T07:03:24.818Z",
-      "generation": 2
-    },
     "ada-en-f8019ad86757-run2-20261104": {
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b003",
       "token": "ada-en-f8019ad86757-r2-824d6b397e10",
@@ -2227,9 +2221,11 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_dunes_13d:b011"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_brazil_dunes_13d:b011"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:35:29.159Z"
+  "updatedAt": "2026-11-04T05:35:53.110Z"
 }

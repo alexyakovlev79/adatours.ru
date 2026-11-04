@@ -119,158 +119,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "62b85b5a802dc52308a90632c2e9053dd7a8c0af32f4f6456d1df7e9b46acb24",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-befca8d88a7c",
-        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
-        "claimedAt": "2026-11-04T05:33:24.818Z",
-        "expiresAt": "2026-11-04T07:03:24.818Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-ada-en-befca8d88a7c-01-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-befca8d88a7c",
-        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
-        "generation": 2,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
-          "stableId": "tour_brazil_dunes_13d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "62b85b5a802dc52308a90632c2e9053dd7a8c0af32f4f6456d1df7e9b46acb24",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:6979b1706243a588",
-              "field": "media.alt",
-              "sourceTextSha256": "43dac6acf5a2896f0ec8a08d3bec1a06ddb509c01f3368c924ae60e921de069d",
-              "text": "A person at the edge of a blue lagoon among white sand dunes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-6b8358141bab",
-                "wordAbsenceReason": "The verified Word has no image-specific alt text; translated the exact RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:e6fafd653b753aba",
-              "field": "media.hover",
-              "sourceTextSha256": "47ec3874fe0609c1f750a6f8c9ca452e736746d7d59e0379e5c51035eb44cd9a",
-              "text": "White dunes, deep blue water and a person by the shore",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-6b8358141bab",
-                "wordAbsenceReason": "The verified Word has no image-specific hover caption; translated the exact RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:359c7c25395d1837",
-              "field": "itinerary.title",
-              "sourceTextSha256": "4b2678f59ff3b67caf706b69eae50a8491e5591b1181e24d04396045fb0f9c81",
-              "text": "São Luís – Natal",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p120",
-                    "textSha256": "975b1feeed0091a20326acf462aff767a494f53ebc1448bf63bd4559d3e7121c"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "The corresponding Word 2027 day section names the route São Luís – Natal."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
-              "field": "itinerary.text",
-              "sourceTextSha256": "9d69237bca9dc7cd3bf099422fed3da25c6f27322e9ae2dc9063b7395754b1cb",
-              "text": "Breakfast and, at the appointed time, transfer to the airport for your flight to Natal; on arrival, transfer to your hotel.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p124",
-                    "textSha256": "e6f8875fb517da8379620a32f0ca41af2717d8b966d6d6eda513692f9c23520c"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5aa6296ec7705760",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6e667fb5a9e887789091966d624a2699b5d59d30110d7cf750f4f74b79565fb0",
-              "text": "Barreirinhas",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p154",
-                    "textSha256": "fd74233577dcd6d14d91668feb61af13788591c1addc509d29db50ec36cbf16b"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5d1e4a8a50753111",
-              "field": "itinerary.label",
-              "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
-              "text": "São Luís",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p43",
-                    "textSha256": "596e5276fb7f990fd0eb42abf59f5c449cb55a59128b8a6a8b19744d920364c6"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f54b5b909265a945",
-              "field": "itinerary.label",
-              "sourceTextSha256": "caca571562c98fddf785ce97bf0cb1c0dee3b063ec94d94414bfe163f0bc3cc9",
-              "text": "Natal",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p123",
-                    "textSha256": "ac6ce12fa95443f9c11680b5a5e5b13437d6a5e3fdf3d010c1f4508af6b51e41"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8ddbbecb37e2a350",
-              "field": "itinerary.label",
-              "sourceTextSha256": "cdb91ed371e64bee5fdf854ee745251593ffbbb3ca95762f32897c668f016596",
-              "text": "Praia de Pipa",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-6b8358141bab",
-                "wordAbsenceReason": "Praia de Pipa is not named in this verified Word 2027; retained the exact RU place label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:34:34.365Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ada-en-befca8d88a7c-01",
+        "blobSha": "bcb6882ab34b24b427960d7da53c9839c2082ba0",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_dunes_13d_b011/sub-ada-en-befca8d88a7c-01.json",
+        "at": "2026-11-04T05:35:53.110Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

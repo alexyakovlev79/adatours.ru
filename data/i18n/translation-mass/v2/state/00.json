@@ -463,7 +463,7 @@
         "expiresAt": "2026-11-04T08:31:00.808Z"
       },
       "checkpoint": {
-        "id": "ada-en-2bf7b149bb51-luxury-brazil-b011-v1-cp04",
+        "id": "ada-en-2bf7b149bb51-luxury-brazil-b011-v1-cp08",
         "format": "inline-v1",
         "ownerId": "ada-en-2bf7b149bb51",
         "token": "ada-en-2bf7b149bb51-20261104",
@@ -540,6 +540,79 @@
                 "runId": "ada-en-2bf7b149bb51",
                 "wordAbsenceReason": "The exact Word 2027 brochure has no corresponding sandcastle-and-boats photo alt text; translate this assigned RU media caption."
               }
+            },
+            {
+              "blockId": "tour:media_hover:1afceff678bddc71",
+              "field": "media.hover",
+              "sourceTextSha256": "9dad6707f93db00b6c7ea1b3f1eb0adaea430286fcdaa55bb1964b38b08108b1",
+              "text": "Búzios: a sandcastle on the shore of the bay",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2bf7b149bb51",
+                "wordAbsenceReason": "The exact Word 2027 brochure contains no corresponding sandcastle photo hover caption; this text is translated from the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:75069196db31c486",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+              "text": "Búzios",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p119",
+                    "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:359c7c25395d1837",
+              "field": "itinerary.title",
+              "sourceTextSha256": "1a4f51772dbb538827a72c6315a8c768e8bc5bbc08786fbf4d3ad33a9f79ebf0",
+              "text": "Búzios – Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p119",
+                    "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+                  },
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "18de1fd0f536f388965ed7425cdaff29d7183e683adb5bc7f57bb0ba5c2c4105"
+                  },
+                  {
+                    "ref": "word/document.xml:p137",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the departure route label from the exact Word Búzios destination and Day 11 transfer to Rio de Janeiro airport."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+              "field": "itinerary.text",
+              "sourceTextSha256": "dc72643346f2bb4c0c7064fba8068e9f9050186bdfaac61252334fd41c328581",
+              "text": "Day 11 · After breakfast, transfer to Rio de Janeiro airport for your international flight. End of services.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "18de1fd0f536f388965ed7425cdaff29d7183e683adb5bc7f57bb0ba5c2c4105"
+                  }
+                ]
+              }
             }
           ],
           "alignmentNotes": [
@@ -549,7 +622,7 @@
             }
           ]
         },
-        "at": "2026-11-04T07:02:14.643Z"
+        "at": "2026-11-04T07:02:38.277Z"
       },
       "submission": null,
       "review": null,

@@ -60,7 +60,7 @@ async function commit(tools,headSha,files,message){
 const resultFor=(index,ownerId)=>({owner:statusOfOwner(index,ownerId)});
 export async function runEnMassTranslation(tools,core,args={}){
  const action=args.action;
- if(!['status','claim','renew','checkpoint','submit','release','fail','reap'].includes(action))
+ if(!['status','claim','renew','submit','release','fail','reap'].includes(action))
   throw Error('Unsupported worker action');
  if(action!=='status'&&(!valid(args.ownerId)||!valid(args.token)))
   throw Error('Stable ownerId/token required');
@@ -176,12 +176,6 @@ export async function runEnMassTranslation(tools,core,args={}){
       receipt:{resultPath:item.submission.resultPath,blobSha:item.submission.blobSha}};
     }
     if(action==='renew')transition=core.massRenew(shard,common);
-    if(action==='checkpoint'){
-     if(!valid(args.checkpointId)||!args.checkpoint||
-        JSON.stringify(args.checkpoint).length>80000)throw Error('Invalid checkpoint');
-     transition=core.massCheckpoint(shard,{...common,checkpointId:args.checkpointId,
-      payload:args.checkpoint});
-    }
     if(action==='release')transition=core.massRelease(shard,common);
     if(action==='fail')transition=core.massFail(shard,{
      ...common,failureStatus:args.failureStatus});
@@ -215,15 +209,6 @@ export async function runEnMassTranslation(tools,core,args={}){
    }
    if(['already_saved','already_released','already_failed'].includes(transition.status))
     return{status:transition.status,head:base,jobId:args.jobId,owner};
-   if(action==='checkpoint'){
-    const saved=un(await tools.mcp__GitHub__update_file({
-     repository_full_name:REPO,path:statePath,branch:BRANCH,
-     sha:stateFile.sha,content:clean(transition.shard),
-     message:`i18n: checkpoint ${args.jobId} [skip ci]`}));
-    if(!saved.commit_sha)throw Error('Checkpoint write unconfirmed');
-    return{status:'checkpoint_saved',commit:saved.commit_sha,jobId:args.jobId,
-     checkpointPath:statePath,checkpointId:args.checkpointId,owner};
-   }
    const next=core.massRebuildIndex(nextIndex,sid,transition.shard,now);
    const files=[{path:`${ROOT}/index.json`,data:next},{path:statePath,data:transition.shard}];
    if(extra)files.push(extra);

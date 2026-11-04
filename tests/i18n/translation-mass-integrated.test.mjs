@@ -31,7 +31,7 @@ function fixture(each=16){
   jobs[sid].push({schemaVersion:2,jobId:id,stableId:'tour_test',stage:'word_2027',
    sourceFingerprint:`source:${id}`,source:{contentPath:'src/content/tours/test.md',
     sourceBlobSha:gitBlob(ru),selectedWord:{fileId:'word-2027',sha256:sha256('DOCX')}},
-   blocks:[{blockId:'body_1',field:'body',ruTextSha256:sha256('Текст')} ]});
+   blocks:Array.from({length:8},(_,i)=>({blockId:`body_${i+1}`,field:'body',ruTextSha256:sha256(`Текст ${i+1}`)}))});
  }
  write('src/content/tours/test.md',ru);
  let index={schemaVersion:2,version:2,sourceCommit:HEAD,matchingCommit:HEAD,pilotCommit:HEAD,
@@ -104,10 +104,11 @@ function fixture(each=16){
  };
  const resultFor=j=>({jobId:j.jobId,stableId:j.stableId,locale:'en',status:'review',
   releaseEligible:false,sourceFingerprint:j.sourceFingerprint,
-  blocks:[{blockId:'body_1',field:'body',sourceTextSha256:sha256('Текст'),
-   text:'Verified translated content',provenance:{kind:'word_exact',
-    fileId:'word-2027',documentSha256:sha256('DOCX'),
-    paragraphs:[{ref:'word/document.xml#p0001',textSha256:sha256('Paragraph')} ]}}]});
+  blocks:j.blocks.map((block,i)=>({blockId:block.blockId,field:block.field,
+   sourceTextSha256:block.ruTextSha256,text:`Verified translated content ${i+1}`,
+   provenance:{kind:'word_exact',fileId:'word-2027',documentSha256:sha256('DOCX'),
+    paragraphs:[{ref:`word/document.xml#p${String(i+1).padStart(4,'0')}`,
+     textSha256:sha256(`Paragraph ${i+1}`)}]}}))});
  return{tools,stats,files,all,resultFor,read:p=>JSON.parse(files.get(p).content),
   write:(p,o)=>{write(p,typeof o==='string'?o:json(o));snapshot();},HEAD:()=>HEAD,
   shard:sid=>JSON.parse(files.get(`${root}/state/${sid}.json`).content)};
@@ -121,12 +122,7 @@ test('one chat processes ten 8-block packets with no status polling',async()=>{
  for(let n=1;n<=10;n++){
   assert.equal(next.status,'next_claimed');
   const j=next.next.source;
-  if(n===1){
-   const cp=await remote(f.tools,core,{action:'checkpoint',ownerId,token,
-    jobId:j.jobId,generation:next.next.generation,checkpointId:'after_four',
-    checkpoint:{blocks:[{text:'EN draft'}]},now:date});
-   assert.equal(cp.status,'checkpoint_saved');
-  }
+  assert.equal(j.blocks.length,8,'the complete packet consists of eight blocks');
   next=await cycle(f.tools,core,r,{action:'finish',ownerId,token,
    jobId:j.jobId,generation:next.next.generation,submissionId:`saved_${n}`,
    result:f.resultFor(j),now:date});
@@ -137,7 +133,7 @@ test('one chat processes ten 8-block packets with no status polling',async()=>{
  assert.equal(actions.filter(a=>a==='status').length,0);
  assert.equal(actions.filter(a=>a==='claim').length,10);
  assert.equal(actions.filter(a=>a==='submit').length,10);
- assert.equal(f.stats.contentsWrites,1,'one optional 4-block checkpoint');
+ assert.equal(f.stats.contentsWrites,0,'no intermediate checkpoint writes');
  assert.equal(f.stats.blobWrites,10,'immutable text blob once per packet');
  assert.equal(f.stats.refWrites,20,'one atomic CAS commit per claim and submit');
  const allItems=f.all.flatMap(s=>f.shard(s).items);
@@ -197,17 +193,25 @@ test('lost ref confirmation is checked once and does not repeat claim',async()=>
  assert.equal(f.stats.refWrites,1);
 });
 
-test('a worker restores its own checkpoint after a recoverable replay',async()=>{
+test('new checkpoints are rejected without GitHub calls; existing ones remain readable',async()=>{
  const f=fixture(1),ownerId='saved_worker',token='saved_token';
  const claimed=await remote(f.tools,core,{action:'claim',ownerId,token,now:date});
- const data={action:'checkpoint',ownerId,token,jobId:claimed.jobId,
-  generation:claimed.generation,checkpointId:'part_four',now:date,
-  checkpoint:{blocks:[{text:'first four translated'}]}};
- assert.equal((await remote(f.tools,core,data)).status,'checkpoint_saved');
+ const before={...f.stats};
+ await assert.rejects(remote(f.tools,core,{action:'checkpoint',ownerId,token,
+  jobId:claimed.jobId,generation:claimed.generation,checkpointId:'part_four',
+  checkpoint:{blocks:[{text:'first four translated'}]},now:date}),
+  /Unsupported worker action/);
+ assert.deepEqual(f.stats,before,'no GitHub call for disabled checkpoint');
+ const sid=core.massShard(claimed.jobId),shard=f.shard(sid);
+ const item=shard.items.find(x=>x.jobId===claimed.jobId);
+ const previous={blocks:[{text:'a previously saved partial draft'}]};
+ item.checkpoint={id:'legacy-four',format:'inline-v1',payload:previous,
+  ownerId,token,generation:claimed.generation,at:date};
+ f.write(`${root}/state/${sid}.json`,shard);
  const same=await remote(f.tools,core,{action:'claim',ownerId,token,now:date});
  assert.equal(same.status,'resumed');
- assert.deepEqual(same.checkpoint.payload,data.checkpoint);
- assert.equal((await remote(f.tools,core,data)).status,'already_saved');
+ assert.deepEqual(same.checkpoint.payload,previous);
+ assert.equal(f.stats.contentsWrites,0);
 });
 
 test('a changed Russian original does not publish a stale translation',async()=>{

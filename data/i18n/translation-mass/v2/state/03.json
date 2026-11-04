@@ -689,7 +689,93 @@
         "claimedAt": "2026-11-04T06:43:06.439Z",
         "expiresAt": "2026-11-04T08:13:06.439Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-80384d2949b2-b005-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-80384d2949b2",
+        "token": "lease-3f84c2b9333742f799abf44c7d6d7474",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b005",
+          "stableId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "1d45976d0ddffabd623516c3b8c76359d22421bf5e18f4e11786b09a6e27bf47",
+          "blocks": [
+            {
+              "blockId": "tour:note:720c6d1813a3ea78",
+              "field": "note",
+              "sourceTextSha256": "a4982549c439136327f7d3016d993e9637312709de2384c29359ffd6766edb33",
+              "text": "Uyuni is above 4,000 m: altitude sickness is possible.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[220] (zero-based all descendant w:p)",
+                    "textSha256": "0695b22c92f7b2cd601553d1c2c62a4c238f2eb6e28fb69dbba38edcf529ee45"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the leading list marker for the existing standalone note field; preserve the approved Word wording."
+              }
+            },
+            {
+              "blockId": "tour:note:988252364ef734dc",
+              "field": "note",
+              "sourceTextSha256": "e31e95ed180b4335498f553b6417acf634d17ac9d8923128ef6a6832913f547a",
+              "text": "Prices are subject to change: the final price will be confirmed once all services and flight fares have been checked on the date of booking.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[222] (zero-based all descendant w:p)",
+                    "textSha256": "4b991c94feba8e8b13979b123fac32d1a734740bea3b7814c229e5e036605b7b"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker because the target is an individual note field."
+              }
+            },
+            {
+              "blockId": "tour:note:618358817e89249d",
+              "field": "note",
+              "sourceTextSha256": "eeb5cacb8d5675ed35555787d416c37fa1ade66960aac9b6611eee104283b408",
+              "text": "If a single traveller’s flight does not match the group arrival, a supplement for a private transfer may apply.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[224] (zero-based all descendant w:p)",
+                    "textSha256": "d30358f039b8d9ea63fec2414e33658ac78cfc2e96b74cbdea20e5e7cbc474fc"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker because the target is an individual note field."
+              }
+            },
+            {
+              "blockId": "tour:note:36661bd8c0920162",
+              "field": "note",
+              "sourceTextSha256": "87d7f8b876a6a4a11ac87e73f4234620f07921c8ee22fe797523bba2361c07fa",
+              "text": "The flight from Uyuni to La Paz is included in the programme price.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-80384d2949b2",
+                "wordAbsenceReason": "The verified Word lists the included Uyuni–La Paz flight in paragraphs 59, 116 and 233, but contains no standalone note sentence for this RU field; translate the exact RU note without adding any conditions."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:44:43.803Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

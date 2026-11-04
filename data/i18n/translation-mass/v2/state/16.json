@@ -427,7 +427,94 @@
         "claimedAt": "2026-11-04T06:44:38.023Z",
         "expiresAt": "2026-11-04T08:14:38.023Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-24807b62-20261104:s03:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-24807b62-20261104",
+        "token": "ada-en-24807b62-token-c83715b9",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b001",
+            "stableId": "tour_mexico_oaxaca_city_break_five_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "c25f9fcb68cd96df2933d508d532bab1dc84db9b136a78e26cf3db8b5158d6c7",
+            "blocks": [
+              {
+                "blockId": "tour:title:aaf2320646108059",
+                "field": "title",
+                "sourceTextSha256": "d626fe9febafdf3067976ed03017e6b38d90251cbe1ec7868fa7daa801e4d3a9",
+                "text": "Oaxaca City Break: 5 Days",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:1",
+                      "textSha256": "893eda704c1ddcfa71fe6ea990525d4b9f7b02fa40e1a564f2f9988fee642ad3"
+                    },
+                    {
+                      "ref": "word/document.xml:p:2",
+                      "textSha256": "19d3fa0a08fe91b1557bdd46d3d31af7a7aacc801218f6eb9c19436b47565336"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combine the verified tour name and five-day duration into the current title without changing the itinerary."
+                }
+              },
+              {
+                "blockId": "tour:lead:e3456bc1f4d270f4",
+                "field": "lead",
+                "sourceTextSha256": "e7674a40d5daca6a414bdeba246bf262ec8d938442066963fc4694fe78641105",
+                "text": "Over 5 days, you will explore Oaxaca's historic centre, see ancient Monte Albán and discover Mitla's stone mosaics. In artisan workshops, you will learn about alebrijes, black pottery and weaving, then admire the mineral cascades at Hierve el Agua. All 4 nights are spent in Oaxaca.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-24807b62-20261104",
+                  "wordAbsenceReason": "Verified complete DOCX SHA c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a: p18, p21, p25 and p33 support the attractions and nights, but no corresponding stand-alone lead summary exists; translated the current RU summary without adding Word-only activities."
+                }
+              },
+              {
+                "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+                "field": "priceNote",
+                "sourceTextSha256": "2b4bf469c14cc6603d77c5a2ef36f76c7d043e09a2523137a9f82e504b5b621f",
+                "text": "From $2423 per person in triple occupancy (TPL); SGL $2530, DBL $3267. 2027 rates. The table lists DBL higher than SGL: the price and room occupancy must be confirmed before booking.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-24807b62-20261104",
+                  "wordAbsenceReason": "The verified commercial table p6-p11 confirms SGL USD2530, DBL USD3267 and TPL USD2423, but has no matching combined price note or RU booking-confirmation warning. Translated the current RU note with all amounts and the anomaly preserved, without applying a price amendment."
+                }
+              },
+              {
+                "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+                "field": "formatLabel",
+                "sourceTextSha256": "da91cb14da3941660f4a3bff1255161a06dd4bf448347569b756c6a6ba6c84ee",
+                "text": "Excursions",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:35",
+                      "textSha256": "735ef57836823a4f479aa6430c0b67590d84ca4d5ac07a2bbbf2800d169af8d0"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the excursion service type stated in the verified inclusion line as the format label."
+                }
+              }
+            ]
+          },
+          "submissionId": "ada-en-24807b62-20261104:s03",
+          "mainSha": "1926fdca8929ebf54d61fc6b977e841423ff67b1"
+        },
+        "at": "2026-11-04T06:45:38.877Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

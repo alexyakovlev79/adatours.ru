@@ -1133,20 +1133,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "blocked_external",
       "sourceFingerprint": "0048e3e2546dd064bc391130d4e2e6550d64a471278cefc4a8176cad3e8d4ef4",
       "generation": 3,
-      "attempts": 2,
-      "lease": {
-        "ownerId": "ada-en-mw2lom3y-amanda",
-        "token": "ada-token-mw2lom3y-k5n43nl4vp",
-        "claimedAt": "2026-11-04T21:05:38.586Z",
-        "expiresAt": "2026-11-04T22:35:38.586Z"
-      },
+      "attempts": 3,
+      "lease": null,
       "checkpoint": null,
       "submission": null,
       "review": null,
-      "nextAttemptAt": null
+      "nextAttemptAt": null,
+      "lastFailure": {
+        "ownerId": "ada-en-mw2lom3y-amanda",
+        "token": "ada-token-mw2lom3y-k5n43nl4vp",
+        "generation": 3,
+        "failureStatus": "blocked_external",
+        "at": "2026-11-04T21:06:36.930Z"
+      }
     },
     {
       "jobId": "en:bulk:tour:tour_source_mototur_cherez_braziliyu:b001",

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1730,
-    "leased": 13,
+    "queued": 1729,
+    "leased": 14,
     "review": 666,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1730,
-      "leased": 13,
+      "queued": 1729,
+      "leased": 14,
       "review": 666,
       "ready": 1,
       "retryable": 0,
@@ -105,8 +105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 45,
-          "leased": 0,
+          "queued": 44,
+          "leased": 1,
           "review": 17,
           "ready": 0,
           "retryable": 0,
@@ -137,7 +137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T14:05:10.128Z",
       "earliestRetryAt": null
     },
     "12": {
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b007",
       "token": "token-b866232976e1-20261104",
       "expiresAt": "2026-11-04T14:04:48.981Z",
+      "generation": 1
+    },
+    "ada-en-088cca5e": {
+      "jobId": "en:bulk:tour:tour_source_5_chudes_kosta_riki:b003",
+      "token": "ada-en-088cca5e-20261104",
+      "expiresAt": "2026-11-04T14:05:10.128Z",
       "generation": 1
     }
   },
@@ -3639,7 +3645,8 @@
     "ada-en-088cca5e": {
       "token": "ada-en-088cca5e-20261104",
       "jobIds": [
-        "en:bulk:tour:tour_mexico_religious_journey:b002"
+        "en:bulk:tour:tour_mexico_religious_journey:b002",
+        "en:bulk:tour:tour_source_5_chudes_kosta_riki:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_mexico_religious_journey:b002"
@@ -3678,5 +3685,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T12:35:02.910Z"
+  "updatedAt": "2026-11-04T12:35:10.128Z"
 }

@@ -253,7 +253,7 @@
         "expiresAt": "2026-11-04T07:29:36.450Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-39fb6759e90b-b001-4",
+        "id": "ada-en-20261104-39fb6759e90b-b001-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-39fb6759e90b",
         "token": "tok-39fb6759e90b-20261104-a7c3",
@@ -360,10 +360,90 @@
                 "transformation": "contextual_label",
                 "rationale": "The confirmed 40+1 FOC group basis supplies the existing product-format label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p2",
+                    "textSha256": "2747c42cd7d0903431830872bdc1d2c51d3ffae300ab355c7e25d07b40226bed"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the confirmed city name from the exact Word route for its existing route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e06c39c56c45a33f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
+              "text": "Tijuca Forest",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p26",
+                    "textSha256": "97bfe71eb7ae027fd8d13ef2331370f98feda098fc560127782253b29414918a"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact confirmed Word name for the rainforest visited on this route."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:d929e73af6671673",
+              "field": "itinerary.label",
+              "sourceTextSha256": "618d045ea4c66dd9c3099f9db12c1566899682540b0e83ffd5b8ce2a50dd74c5",
+              "text": "Foz do Iguaçu — Brazilian side of the falls",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p30",
+                    "textSha256": "6f5510fc9360cbfbb9e4720de12a70ba1a87d102696d492a26c21c1200713ee7"
+                  },
+                  {
+                    "ref": "word/document.xml:p32",
+                    "textSha256": "b126b03606d03366d0fd8da8d6b2b2ed9914c0b19e3bc315a476f672c693e2d9"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the confirmed Word city and falls-side wording for the existing route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b90436eb8118147b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+              "text": "São Paulo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p2",
+                    "textSha256": "2747c42cd7d0903431830872bdc1d2c51d3ffae300ab355c7e25d07b40226bed"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the confirmed city name from the exact Word route for its existing route label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:00:38.924Z"
+        "at": "2026-11-04T06:00:43.148Z"
       },
       "submission": null,
       "review": null,

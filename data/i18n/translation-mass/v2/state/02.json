@@ -701,7 +701,7 @@
         "expiresAt": "2026-11-04T09:18:46.244Z"
       },
       "checkpoint": {
-        "id": "cp-9a69348b6e00-06-4",
+        "id": "cp-9a69348b6e00-06-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9a69348b6e00",
         "token": "tok-9a69348b6e00-20261104-a1",
@@ -822,10 +822,100 @@
                   "transformation": "compose_route_label",
                   "rationale": "Combines the approved accommodation-table destination and its number of nights into the existing compact route label."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:7bbe4642d619c8c7",
+                "field": "itinerary.label",
+                "sourceTextSha256": "264931cf61aee5728c386496c98efd45f7608a6ed2126f1b5f22766d356ae516",
+                "text": "Cusco, 2 nights",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p181",
+                      "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+                    },
+                    {
+                      "ref": "word/document.xml:p183",
+                      "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+                    },
+                    {
+                      "ref": "word/document.xml:p138",
+                      "textSha256": "9b54c54db1cd8fad95ec256cc30c940c141cdf1402e492bcb53cfb739b7afec2"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combines the approved Cusco accommodation-table destination and two nights into the existing compact route label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:a806fded53f604b1",
+                "field": "itinerary.label",
+                "sourceTextSha256": "2cfe0123ac727a0a39f72498473b37912a091d19070657e767c2b43fecb77b0d",
+                "text": "Lima, 1 night",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p186",
+                      "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+                    },
+                    {
+                      "ref": "word/document.xml:p188",
+                      "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+                    },
+                    {
+                      "ref": "word/document.xml:p138",
+                      "textSha256": "9b54c54db1cd8fad95ec256cc30c940c141cdf1402e492bcb53cfb739b7afec2"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combines the approved Lima accommodation-table destination and one night into the existing compact route label."
+                }
+              },
+              {
+                "blockId": "tour:note:596306fd1f63b0d8",
+                "field": "note",
+                "sourceTextSha256": "f9be55c03bdb6916983b4d3c9e644e737f2e5269c318115249d9c2f9666c83b4",
+                "text": "12 Feb – 1 Mar 2027",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p8",
+                      "textSha256": "b8e3c555ce419058a32ddc52223e62b768eee9a23258f0e9a88ea0af4fd4fa36"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:636dccb3fb9a00fa",
+                "field": "included",
+                "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+                "text": "Accommodation in hotels as per the programme",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p229",
+                      "textSha256": "15d09785bec62a8a639c6784b6a1fca1ae84082a987862b2e4772e6bd2c84e80"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading dash and spacing from the approved accommodation inclusion."
+                }
               }
             ]
           },
-          "completedBlockCount": 4,
+          "completedBlockCount": 8,
           "wordSourceVerified": {
             "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
             "sha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
@@ -833,7 +923,7 @@
             "localPath": "/workspace/scratch/9a69348b6e00/ada_word/five_carnival.docx"
           }
         },
-        "at": "2026-11-04T07:49:18.957Z"
+        "at": "2026-11-04T07:49:41.599Z"
       },
       "submission": null,
       "review": null,

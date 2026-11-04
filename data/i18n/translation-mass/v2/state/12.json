@@ -622,7 +622,7 @@
         "expiresAt": "2026-11-04T09:19:57.356Z"
       },
       "checkpoint": {
-        "id": "ada_en_2478a2a40c1c_s09_c04",
+        "id": "ada_en_2478a2a40c1c_s09_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_2478a2a40c1c",
         "token": "ada_en_2478a2a40c1c_20261104",
@@ -694,10 +694,90 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the country and confirmed 4x4 expedition format to label the current itinerary leg."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+              "field": "itinerary.text",
+              "sourceTextSha256": "540aae63f6f8126aa5cb948f28fc6b2c572d06f86842b6ca0501e235c2179533",
+              "text": "Day 11 · Transfer to the Bolivian border and start of the 4x4 expedition: Laguna Verde beneath the Licancabur volcano, the Dalí Desert and its stone sculptures, the Polques hot springs, the Sol de Mañana geysers and Laguna Colorada, at about 4,300 m, the red lagoon where James’s flamingos feed. Overnight in an expedition-style desert hotel.\n\nAt Laguna Verde, wind and light change the colour of the water, surrounded by an open plain and volcanic formations. In the Dalí Desert, stone shapes are scattered across the landscape. At the Polques hot springs, cold air mixes with warm steam. You can hear the Sol de Mañana geysers before you reach them: the ground hisses, jets of steam rise, and hot mud moves in grey pools.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s09",
+                "wordAbsenceReason": "Word 2027 p103 covers the approved route, flamingos and overnight accommodation but omits the current RU descriptive details of water colour, open volcanic terrain, scattered rocks, steam and bubbling mud. Preserve p103 verbatim and translate only those additional RU passages.",
+                "wordEvidence": {
+                  "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                  "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p103",
+                      "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
+                    }
+                  ]
+                },
+                "composition": "Verbatim Word Day 11 paragraph plus current RU-only descriptions of the same stops."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:bb9931a062b2ed22",
+              "field": "itinerary.label",
+              "sourceTextSha256": "74f2893f4c7859605ce1e1795d0443cc6e335542a7afcf1a66a37852ed1f4bb5",
+              "text": "Laguna Verde",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p103",
+                    "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the lagoon name unchanged from the approved Word expedition passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f54fb5c7f60bec8d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "b7d20c31559806989abc34c3d9a9b5fd780d10a79d04583fc0548fcbb3f56ad5",
+              "text": "Dalí Desert",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p103",
+                    "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the desert name unchanged from the approved Word expedition passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:384392faa9bbbded",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7fadc62d04f941fe742fccb6bbea3e830542b53a1190d20ca79a58653c355624",
+              "text": "Polques hot springs",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p103",
+                    "textSha256": "57310c8c9187077602d86e2bcf19cd7f7ab1f0f1f6fdeb141db4abf413616ad6"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the hot-springs name unchanged from the approved Word expedition passage."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:51:19.281Z"
+        "at": "2026-11-04T07:51:23.822Z"
       },
       "submission": null,
       "review": null,

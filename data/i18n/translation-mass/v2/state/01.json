@@ -279,7 +279,7 @@
         "expiresAt": "2026-11-04T07:38:14.151Z"
       },
       "checkpoint": {
-        "id": "sub-2a369-tour_brazil_recife_porto_noronha_10d-b011-cp4",
+        "id": "sub-2a369-tour_brazil_recife_porto_noronha_10d-b011-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-2a369c57df19",
         "token": "token-2a369c57df19-20261104",
@@ -362,10 +362,77 @@
                 "runId": "ada-en-2a369c57df19",
                 "wordAbsenceReason": "The verified Word DOCX has no photograph-specific alternative text for the reef-pool beach image; translated the supplied current RU alt."
               }
+            },
+            {
+              "blockId": "tour:media_hover:2d1e9f77ce123153",
+              "field": "media.hover",
+              "sourceTextSha256": "845bb87ebfb6acc8a09636a46c947ec353be423b677eda3cb707c33c036519ed",
+              "text": "Coastal reefs and bands of clear shallow water along a busy beach",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2a369c57df19",
+                "wordAbsenceReason": "The exact Word DOCX has no matching image hover caption for the coastal-reef photograph; translated the supplied current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "396ca596db9e61cf7de87df1ab57d34474cbf3db68c9045f00b3b6bcf1e3a0c5",
+              "text": "Return to Recife",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "06bd602d3fdff0b371b7a0b3790a03225e8a22ce0121c8634563b11b6ff72e32"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the departure-day title from the Word airport transfer and flight to Recife passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "111998e6bb03b42616db32759d859e5548975de3e8a68ddc330b166557cab306",
+              "text": "Breakfast and transfer to the airport for your flight to Recife. End of services.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "06bd602d3fdff0b371b7a0b3790a03225e8a22ce0121c8634563b11b6ff72e32"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word day marker for the dedicated itinerary title field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:16ee245006a96f07",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e1b0799fc24e5b2a2379ff305ed058aba1636d2804d6f4a5429f233ae13cc7de",
+              "text": "Fernando de Noronha",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p87",
+                    "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:09:05.518Z"
+        "at": "2026-11-04T06:09:16.686Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_little_mix_ru:b009",
+  "stableId": "tour_source_little_mix_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "babfd84baebf98cffd5856a3ac3036f919ff606f695aa9cbf80c4d291f04f020",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "500328d0a2d93977bcec51ad7e4cf0595a1515086b6ba137110f9a34660c5e2c",
+      "text": "Two days at leisure to relax on the beach, explore the surrounding area or simply enjoy the laid-back atmosphere of Praia do Forte. One of Brazil’s most attractive coastal destinations, it lies about 60 kilometres north of Salvador on the Coconut Coast, with beautiful beaches, tropical surroundings and a relaxed atmosphere, the perfect place to unwind after exploring Salvador.\n\n**Accommodation:** Pousada Casa do Forte.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "p:79",
+            "textSha256": "43391d8b1deb83d0eaf77122e482f415445e4e3e97eef614675b7d65f4de7b30"
+          },
+          {
+            "ref": "p:106",
+            "textSha256": "09686eee405a69a3a902f7baa10d2ea2b8b34bfb530f0d7793c4d21b8c98154b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove the day-range marker and attach the hotel listed for the Praia do Forte stay in the Word table."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:30d88f239d4af023",
+      "field": "media.alt",
+      "sourceTextSha256": "798f343dc36f82d73bf9143c7c44fee99cb059fd562d8b0292100591749c83e1",
+      "text": "Sandy beach with palm trees by the sea in Praia do Forte, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no alt text for this particular beach image; translate the supplied RU description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:a751a00b3072482e",
+      "field": "media.hover",
+      "sourceTextSha256": "1824e741e6acd5f6d2b9d3d9547a836720fb4379fc4719a557363e7a22b3ddb1",
+      "text": "Praia do Forte: waves along a sandy shore beneath palm trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no hover caption for this beach image; translate the supplied RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "41e2dab215a19d3fabcae678bd2e25a8357631c1e0b584be12038d4d9254ce01",
+      "text": "Praia do Forte – airport",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "p:78",
+            "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+          },
+          {
+            "ref": "p:80",
+            "textSha256": "43e4147ed734f40961e4f94f641fd9d905a08f94ddb905f2018ed5ff067fb9d8"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word beach-stay location and airport transfer for the departure heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c171ebd18aee5156ab64b8d3873ecd0e501875c827a692ee366c86be93a260f2",
+      "text": "After breakfast, transfer to the airport in time for your flight home. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "p:80",
+            "textSha256": "43e4147ed734f40961e4f94f641fd9d905a08f94ddb905f2018ed5ff067fb9d8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day or list marker for the standalone translated field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2590b971f5e6cec1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "p:78",
+            "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b183b8ef10bd628b",
+      "field": "media.alt",
+      "sourceTextSha256": "729da9e6886593ef672f60b4acf6f2df580c7b58e2fdc5299294f04ce6856e2a",
+      "text": "Paved street with low-rise houses, flowers and palm trees in Praia do Forte, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no description of this street image; translate the supplied RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:67cd32b03ec19f92",
+      "field": "media.hover",
+      "sourceTextSha256": "c697e4d92464c6b0a87f8e158cdfc4fa175ce08a7727991b1b24d75b12038879",
+      "text": "Praia do Forte: a quiet street among palm trees and flower-covered façades",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no hover caption for this particular street image; translate the RU caption."
+      }
+    }
+  ]
+}

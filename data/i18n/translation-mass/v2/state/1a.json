@@ -627,7 +627,118 @@
         "claimedAt": "2026-11-04T06:18:38.815Z",
         "expiresAt": "2026-11-04T07:48:38.815Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_6c7d31_s005_c04",
+        "format": "inline-v1",
+        "ownerId": "ada_en_20261104_0555_6c7d31",
+        "token": "ada_en_token_6c7d31_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b003",
+          "stableId": "tour_nicaragua_best_10_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "e233f1b0fa4fdc332e6c628c853a5937d93943092f66b7ff107802a4fdfd0e02",
+          "sourceChecks": {
+            "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+            "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+            "sha256Verified": true,
+            "modifiedTime": "2026-10-05T20:38:46.318Z",
+            "yearFolder": 2027,
+            "editionYear": 2027,
+            "commercialTables": 1,
+            "tariffObservation": {
+              "currency": "USD",
+              "basis": "per person",
+              "SGL": 4599,
+              "DBL": 3607,
+              "evidenceParagraphs": [
+                35,
+                39,
+                40,
+                41,
+                43,
+                44
+              ]
+            },
+            "sourceDifferences": [
+              "Word day5 narrative names Villa Colonial while hotel table says Villa Paraiso; current RU keeps both pending confirmation.",
+              "Current RU also retains El Convento/Real La Merced and Victoriano/Alcazar alternatives, and day2/day5 overnight-location confirmation.",
+              "Current RU meal-by-day clarification has no single equivalent Word block; translated with its existing limits."
+            ]
+          },
+          "blocks": [
+            {
+              "blockId": "tour:included:6fbd6c54ece922d4",
+              "field": "included",
+              "sourceTextSha256": "f99bafc6ab1625eba41a5e022989de4c86fa3694dbe57b426b1ce63de4032b87",
+              "text": "Guided Tours as per the itinerary (English Speaking Guide)",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p71",
+                    "textSha256": "69bb982305d40ba154912ccf7621c6761588b27e4cbb35b42f0a9622f16b6afe"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:1c0c26edbc1fe3cf",
+              "field": "included",
+              "sourceTextSha256": "c30354968c3c9f0de5455805d6fe68abbffa252511dee1f6800fbaa6aa2c8fb8",
+              "text": "Accommodation: 9 nights and local taxes.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "Word p72 says 'Lodging and local taxes' and p2 separately gives nine nights. No single matching service item includes the current RU night count; translate this combined item with the count unchanged.",
+                "inspectedWord": {
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
+                }
+              }
+            },
+            {
+              "blockId": "tour:included:4a8aef196f77250a",
+              "field": "included",
+              "sourceTextSha256": "719f973e896b820965104b67192e52742ddd5c6981226ac2bb4b96b77071e392",
+              "text": "Meals according to the itinerary: breakfast, lunch and dinner. Breakfast is specifically listed on days 2–6 and 10; lunch is also listed on day 4.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "Word p73 gives a general meal-key line but does not contain the current RU clarification of meals by day. The current RU clarification is retained, consistent with meal markers in p12,p16,p20,p25,p28,p33; no additional meals are promised.",
+                "inspectedWord": {
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
+                }
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:664ca1d0362f346b",
+              "field": "notIncluded",
+              "sourceTextSha256": "6b2551d5efd1146fd32175b43f6445610f010b277cbd903a979cb6e3e27a078c",
+              "text": "Optional Activities.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p76",
+                    "textSha256": "8ca7c5f4b1b01cedc8a7bc3be4add3c955afbd36ff5286142a75eefab5b92404"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:20:51.051Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

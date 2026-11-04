@@ -99,3 +99,11 @@ RU blob `b2596730f9b029dc398d9704ea483f1511c80eb8`; Word fileId `1hHW-AYy4WdTIjI
 CAS: https://github.com/alexyakovlev79/adatours.ru/commit/f77b300cd182d68d791b805ba272e565b974cc40; accepted immutable blob `cf4a23eccd8953828e90607c647217522e2bcb39`.
 RU blob `30ba0233d75ec9be38d1f1a1dc3b61f849d60487`; Word fileId `1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy`; pinned Word SHA-256 `0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2`; frozen modifiedTime `2026-10-20T19:43:30.596Z`.
 Проверены blockId (8): `tour:itinerary_title:e1dddf681303f0bd`, `tour:itinerary_text:b9ad3e14216c2f08`, `tour:itinerary_label:4bd82be0e9f89208`, `tour:itinerary_label:5dfd2dfb75550881`, `tour:media_alt:a1e78bc13379af51`, `tour:media_hover:16dda3c08175eb0b`, `tour:itinerary_title:ed497b2a669f6ce4`, `tour:itinerary_text:2e780f63f4172747`.
+
+
+### `en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b008` — ready (продолжение того же прохода)
+
+Восемь frozen блоков: семь географических подписей Rano Raraku volcano → Ahu Tongariki → Poike peninsula → Ahu Te Pito Kura → Anakena Beach → Ahu Nau Nau → Hanga Roa дословно подтверждены точным Word 2027. Восьмой — RU-derived alt-подпись пляжа Анакена: без добавленных деталей. Сохранены структура, маршрут Easter Island, 17 дней / 16 ночей; новых цен/обязательств нет. Все шесть checks выполнены.
+CAS: https://github.com/alexyakovlev79/adatours.ru/commit/2e2566af595bb0b846bf0cfad044507287e405c6. Immutable result blob `7b0bb921fdb62971c62a249caeabefd803aeb45a`.
+RU blob `c7f72884bcd690f8891a46f87260fd934f0fc1ca`; Word fileId `1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9`; Word SHA-256 pinned `8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b`; modifiedTime `2026-09-30T20:16:32.777Z`.
+Проверены blockId: `tour:itinerary_label:c96b72d103cdc28c`, `tour:itinerary_label:4a0f5e36e3378ce9`, `tour:itinerary_label:446e9df03f1c2e9c`, `tour:itinerary_label:e78c032dbb6001ab`, `tour:itinerary_label:35eb3eb99adb4095`, `tour:itinerary_label:d001266e30ed580a`, `tour:itinerary_label:d9729e7cbc24071f`, `tour:media_alt:d7e7bf0a3c730c72`.

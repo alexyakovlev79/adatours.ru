@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b016",
+  "stableId": "tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "33c580d1678067d44b81d00f5721f6cf26788752bded36bb0bbf801f1c9109ab",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4cea6872aff6ada7a48367621369e9745172356f3be36401b90fc663e895391b",
+      "text": "The Westin Reserva Conchal",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0125-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The current RU hotel heading is The Westin Reserva Conchal; the approved English Word instead names the property The Westin Playa Conchal Resort & Spa, so this exact current hotel name is not available there and is preserved."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "73a67553f5025a1ea580d440702e6bd546c3fec3cc2eb9d4982439ad6217c5cd",
+      "text": "In the morning, you can go snorkelling or kayaking.\n\nDuring the day, you can relax by the ocean or at the spa.\n\nIn the evening, you can watch the sunset from the beach or terrace.\n\nBreakfast, lunch and dinner are included.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0125-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word lists Days 13–15 as free beach time with breakfast, lunch and dinner, but it does not describe snorkelling, kayaking, spa visits or sunset viewpoints; those parts are translated from the RU itinerary without invented inclusions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2d2264cf9c390e58",
+      "field": "itinerary.label",
+      "sourceTextSha256": "191dd299f31d8e1a92145ff53c340c3f90caf87c23913a0e772b22815b5177d9",
+      "text": "Playa Conchal",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:92",
+            "textSha256": "b3d606bb4ee1923853d004d56d45ddccd86f5b1e3109fdbedfc30924c6cb1a93"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the Playa Conchal locality name from the approved Word hotel description and removed unrelated hotel and board details."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2839428e9c2e9662",
+      "field": "media.alt",
+      "sourceTextSha256": "442891ea061138c383074af3eee920507c3103dd03fdf822096d07fbbde77ac1",
+      "text": "Swimming pool beside a thatched-roof pavilion at The Westin Reserva Conchal, Costa Rica.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0125-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word does not provide this image-specific text about a pool and thatched pavilion at the resort; translated from the existing RU image alt metadata."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7e2ec790042af0ce",
+      "field": "media.hover",
+      "sourceTextSha256": "d9336f1b34731cb8a415259f350bcefee35df82f1ed4e7dcbc335149fdcb79b4",
+      "text": "The Westin Reserva Conchal, Costa Rica: a turquoise pool surrounded by palm trees.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0125-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected approved Word does not include the specific image-hover caption of the resort turquoise swimming pool and palms; translated from the RU caption metadata."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:02b05f9c4c806e6e",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4cea6872aff6ada7a48367621369e9745172356f3be36401b90fc663e895391b",
+      "text": "The Westin Reserva Conchal",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0125-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The current RU hotel heading is The Westin Reserva Conchal; the selected Word uses the older The Westin Playa Conchal Resort & Spa designation, so retain the existing RU hotel name in English."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:25152ad0c634f823",
+      "field": "itinerary.text",
+      "sourceTextSha256": "73a67553f5025a1ea580d440702e6bd546c3fec3cc2eb9d4982439ad6217c5cd",
+      "text": "In the morning, you can go snorkelling or kayaking.\n\nDuring the day, you can relax by the ocean or at the spa.\n\nIn the evening, you can watch the sunset from the beach or terrace.\n\nBreakfast, lunch and dinner are included.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0125-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word lists Days 13–15 as beach leisure days with breakfast, lunch and dinner, but does not specify snorkelling, kayaking, spa time or sunsets; translated those missing details from the RU source."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fe4de83cebb04a03",
+      "field": "itinerary.label",
+      "sourceTextSha256": "191dd299f31d8e1a92145ff53c340c3f90caf87c23913a0e772b22815b5177d9",
+      "text": "Playa Conchal",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hyKfbAINGguFKAfpk9PlK5XVqsF4C5eZ",
+        "documentSha256": "0c4aea6cc28118097e552b06d46ed421ae80f35b298646968f3b4296c6b7ad30",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:92",
+            "textSha256": "b3d606bb4ee1923853d004d56d45ddccd86f5b1e3109fdbedfc30924c6cb1a93"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the Playa Conchal locality name from the approved Word hotel description and removed unrelated hotel and board details."
+      }
+    }
+  ]
+}

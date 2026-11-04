@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1340,
-    "leased": 9,
+    "queued": 1339,
+    "leased": 10,
     "review": 1050,
     "ready": 10,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1340,
-      "leased": 9,
+      "queued": 1339,
+      "leased": 10,
       "review": 1050,
       "ready": 10,
       "retryable": 0,
@@ -465,8 +465,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 25,
-          "leased": 0,
+          "queued": 24,
+          "leased": 1,
           "review": 48,
           "ready": 5,
           "retryable": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T21:12:22.697Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_fantasticheskij_tur_po_meksike:b008",
       "token": "token-mw2ins1i-a91",
       "expiresAt": "2026-11-04T21:12:06.997Z",
+      "generation": 1
+    },
+    "ada-en-20261104-008515d4": {
+      "jobId": "en:bulk:tour:tour_source_mir_majya:b002",
+      "token": "tok-008515d4-20261104-translate",
+      "expiresAt": "2026-11-04T21:12:22.697Z",
       "generation": 1
     }
   },
@@ -4875,7 +4881,8 @@
         "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b009",
         "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b010",
         "en:bulk:tour:tour_source_meksika_lindo:b001",
-        "en:bulk:tour:tour_source_manyashchaya_kolumbiya:b003"
+        "en:bulk:tour:tour_source_manyashchaya_kolumbiya:b003",
+        "en:bulk:tour:tour_source_mir_majya:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b002",
@@ -4917,5 +4924,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T19:42:15.669Z"
+  "updatedAt": "2026-11-04T19:42:22.697Z"
 }

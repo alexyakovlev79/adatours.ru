@@ -1520,11 +1520,16 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b002",
       "stage": "word_2027",
-      "status": "queued",
+      "status": "leased",
       "sourceFingerprint": "94c6b976c39e135e5e533ec9082808471f23e6489af3a6dde76acd07e9128160",
-      "generation": 0,
+      "generation": 1,
       "attempts": 0,
-      "lease": null,
+      "lease": {
+        "ownerId": "ada-en-20261104-008515d4",
+        "token": "tok-008515d4-20261104-translate",
+        "claimedAt": "2026-11-04T19:42:22.697Z",
+        "expiresAt": "2026-11-04T21:12:22.697Z"
+      },
       "checkpoint": null,
       "submission": null,
       "review": null,

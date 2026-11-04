@@ -85,7 +85,100 @@
         "claimedAt": "2026-11-04T05:59:49.275Z",
         "expiresAt": "2026-11-04T07:29:49.275Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_8c4fca0d2a61:b015:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_8c4fca0d2a61",
+        "token": "token_8c4fca0d2a61_c1970ba9",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b015",
+          "stableId": "tour_argentina_grand_tour_15_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "68282a7e7d32b7606532ed0a458034cef3bbb35e9f9aa83cca9df88d133b261d",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:c9fcefa9475cee21",
+              "field": "media.hover",
+              "sourceTextSha256": "dabbb1ebfcb1a57c600529e6332a715c6cc6de6d001a898697bb0f3cd04ba43f",
+              "text": "Perito Moreno: a blue ice front beneath misty mountains",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The Word glacier paragraphs do not contain this photograph-specific hover description.",
+                "wordEvidence": {
+                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+              "field": "itinerary.title",
+              "sourceTextSha256": "a7616f3487ad87633e3899bcf8dc7b6d4441e247e2cd8454194b995f7d7aac4a",
+              "text": "Flight to Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p53",
+                    "textSha256": "a0329013c1efa6e57a90481cb72bd48cb50b075e69e409a92f3efb156825bf39"
+                  },
+                  {
+                    "ref": "word/document.xml:p54",
+                    "textSha256": "4da9b4bb6187f9497ba8cc115a05025a901eaaaab1e8440013268ea2d673e7d3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Condense the Day 14 heading and flight-back service into the itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+              "field": "itinerary.text",
+              "sourceTextSha256": "cebf390eeb132f957f3d2b6ca6101ee646ce80b1ae9ceb5131859e69b43990d1",
+              "text": "Transfer to the airport (driver only) and flight back to Buenos Aires. Meet and transfer to the hotel (driver only). Check-in at Four Seasons Buenos Aires (City View Room).",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p54",
+                    "textSha256": "4da9b4bb6187f9497ba8cc115a05025a901eaaaab1e8440013268ea2d673e7d3"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f6d80d146d18577e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+              "text": "El Calafate",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p53",
+                    "textSha256": "a0329013c1efa6e57a90481cb72bd48cb50b075e69e409a92f3efb156825bf39"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact departure city from the Day 14 heading."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:00:35.318Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

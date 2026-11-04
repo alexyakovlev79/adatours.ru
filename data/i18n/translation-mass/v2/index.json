@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1614,
-    "leased": 4,
+    "queued": 1613,
+    "leased": 5,
     "review": 791,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1614,
-      "leased": 4,
+      "queued": 1613,
+      "leased": 5,
       "review": 791,
       "ready": 1,
       "retryable": 0,
@@ -1185,8 +1185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 52,
-          "leased": 0,
+          "queued": 51,
+          "leased": 1,
           "review": 27,
           "ready": 0,
           "retryable": 0,
@@ -1217,7 +1217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:01:03.403Z",
       "earliestRetryAt": null
     },
     "1d": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b008",
       "token": "ada-en-e8f6bc176576-token-20261104",
       "expiresAt": "2026-11-04T18:00:40.530Z",
+      "generation": 1
+    },
+    "ada-en-ecbee34ab85b": {
+      "jobId": "en:bulk:tour:tour_source_chili_argentina:b004",
+      "token": "tk-ecbee34ab85b-20261104",
+      "expiresAt": "2026-11-04T18:01:03.403Z",
       "generation": 1
     }
   },
@@ -4012,7 +4018,8 @@
     "ada-en-ecbee34ab85b": {
       "token": "tk-ecbee34ab85b-20261104",
       "jobIds": [
-        "en:bulk:tour:tour_source_braziliya_s_vodopadami_na_novyj_god:b003"
+        "en:bulk:tour:tour_source_braziliya_s_vodopadami_na_novyj_god:b003",
+        "en:bulk:tour:tour_source_chili_argentina:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_braziliya_s_vodopadami_na_novyj_god:b003"
@@ -4027,5 +4034,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:30:55.227Z"
+  "updatedAt": "2026-11-04T16:31:03.403Z"
 }

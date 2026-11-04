@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b008",
+  "stableId": "tour_source_luchshee_iz_dvukh_mirov",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "184064d87e566bafa688af31e5d9113726ed32c28c918ecbafadb1454d875975",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:a45119b54018ffec",
+      "field": "media.hover",
+      "sourceTextSha256": "460be8ea94d4372027018171e0d5bf6aac8802c918ebee2b5bb541a237641e83",
+      "text": "Flores: a boat and a trail of sunlight across the lake",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no equivalent image hover caption of a boat on the lake at Flores; translated the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "8dec419146b48273c4607d052d5e68d5dd8af33967d6d54a52000eec430d7844",
+      "text": "San Ignacio – Belize City – San Pedro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:94",
+            "textSha256": "cdadac6ff169bbb52554263f73f7b6342c77e2928c6168145d0158e6b5780040"
+          },
+          {
+            "ref": "word/document.xml:p:91",
+            "textSha256": "e34b1c32d6553f7ee44901dc015996a927cc9fd95111ef38c5828c4719f8b0ba"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composed the assigned transfer route label using the named departure in paragraph 91 and flight cities in paragraph 94."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "78feb655e13a1711f973c2dfe05a4a2f0db8a96b2f2ef6efb0fc8ef7e9c4a640",
+      "text": "Road transfer from San Ignacio to the Belize Municipal Airstrip for a local flight to San Pedro, on Ambergris Caye. (Meals: B)\n\nRamon’s Village",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:91",
+            "textSha256": "e34b1c32d6553f7ee44901dc015996a927cc9fd95111ef38c5828c4719f8b0ba"
+          },
+          {
+            "ref": "word/document.xml:p:114",
+            "textSha256": "263c6bbeec350b363ee7673750ea28254cc16f3fae9abfd02e639b142e7f0acf"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the existing day-number marker and appended the verbatim hotel name from the accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f7a498dac4132fc4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+      "text": "Ambergris Caye",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:48",
+            "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f98ad35e040d11a4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f620218cdd77b2ad60567710712d6da201d3153494d15437fde9773420ec1211",
+      "text": "Belize City",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:94",
+            "textSha256": "cdadac6ff169bbb52554263f73f7b6342c77e2928c6168145d0158e6b5780040"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b02f62aaafa3096e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f4d2a89f40902e205d875b4061508c2d455053b9a699e6bf4d16943953c3fe07",
+      "text": "San Ignacio",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:91",
+            "textSha256": "e34b1c32d6553f7ee44901dc015996a927cc9fd95111ef38c5828c4719f8b0ba"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c753af591e0cef1d",
+      "field": "media.alt",
+      "sourceTextSha256": "07fda602255f0bda55859dba5dcbf8836e5652214dabfd3056517a6b25725422",
+      "text": "A building with a colourful \"Welcome to Belize\" sign behind parked cars, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not contain the supplied image alt description; translated the assigned RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:286510fc07f6e629",
+      "field": "media.hover",
+      "sourceTextSha256": "8ba2f7bd3df5a4f6c6de2c41d188999ac6b02b41e5a130ae2ca89c040ca26f15",
+      "text": "Belize: a welcome sign on a building beside cars",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no matching image hover caption; translated the assigned RU caption."
+      }
+    }
+  ]
+}

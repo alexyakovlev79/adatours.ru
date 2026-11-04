@@ -516,7 +516,7 @@
         "expiresAt": "2026-11-04T09:22:40.988Z"
       },
       "checkpoint": {
-        "id": "cp-5d56534e-08-4",
+        "id": "cp-5d56534e-08-8",
         "format": "inline-v1",
         "ownerId": "ada-en-5d56534e4493",
         "token": "lease-da131c3d187149a7b813992c83ea721b",
@@ -584,17 +584,81 @@
                   "runId": "ada-en-5d56534e4493",
                   "wordAbsenceReason": "Word paragraphs 34,45,56,65,76,95–97 detail the private fleet and coaches by day but contain no equivalent one-line included summary with the current agreed-schedule qualifier. Translate that exact RU field without adding vehicle capacity or hours."
                 }
+              },
+              {
+                "blockId": "tour:included:5f228c99c619f816",
+                "field": "included",
+                "sourceTextSha256": "6ed68777262e55200d65e1f1ead6389c0af3a8ed184169bb7cd1853096fba254",
+                "text": "English-speaking transportation coordinator",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                  "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p31",
+                      "textSha256": "d9e7ab92effe8108ef1334392e0c8e6f179a544057cfe33c1e48f617dc65a688"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:5ba0e3113e0a0d53",
+                "field": "included",
+                "sourceTextSha256": "7601a61a0c217402d37ed18a1527b9872123cf655f20ac03cf16c59dd57fd0e7",
+                "text": "English-speaking guides for the Casco Viejo, Miraflores and Panama City tours",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraphs 40,49 and 80 separately specify English-speaking guides for the three visits, but no exact combined included-summary sentence exists. Translate the current RU field keeping those same tour names and language."
+                }
+              },
+              {
+                "blockId": "tour:included:1fd394bc8761e69a",
+                "field": "included",
+                "sourceTextSha256": "9e325a6015c2e41dd5f3495c56c10c06e1e5e2b13491b4f7decae5f7685e15cc",
+                "text": "English-to-Spanish translator available for four hours on Day 2",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                  "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p32",
+                      "textSha256": "4ad7ae5deab9e61f3fb4d0070de7551e1fea81ce9885e66c130e5e4d324bb802"
+                    },
+                    {
+                      "ref": "word/document.xml:p42",
+                      "textSha256": "59d75663061639d97c0b66b6c92f7311b06302c3d63dcf64431a2fc6fedfa618"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Retain the exact Word English-to-Spanish translator service and four-hour duration, identifying the 13 September programme section as Day 2 of the 12–18 September itinerary."
+                }
+              },
+              {
+                "blockId": "tour:included:7cca60420b1ab2bf",
+                "field": "included",
+                "sourceTextSha256": "448205a6a5b7c598765c53da26cdcbd54d959c03dba1f3d0da340b4aba2fc50f",
+                "text": "Tours of Casco Viejo and Panama City, a visit to Miraflores and a boat expedition in Gamboa",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraphs 40,49,78 and80 describe these four visits in separate daily services, not as this single included-summary field. Translate the current RU list without adding admission, duration or meal promises."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "wordEvidence": {
             "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
             "sha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
             "modifiedTime": "2026-10-19T15:50:32.632Z"
           }
         },
-        "at": "2026-11-04T07:54:09.010Z"
+        "at": "2026-11-04T07:54:19.395Z"
       },
       "submission": null,
       "review": null,

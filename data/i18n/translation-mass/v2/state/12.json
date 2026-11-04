@@ -565,7 +565,7 @@
         "expiresAt": "2026-11-04T08:26:53.725Z"
       },
       "checkpoint": {
-        "id": "ada-en-1d528bec4ff4-b08-cp4",
+        "id": "ada-en-1d528bec4ff4-b08-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-1d528bec4ff4",
         "token": "ada-en-token-1d528bec4ff4-20261104",
@@ -648,6 +648,71 @@
                   "runId": "ada-en-1d528bec4ff4",
                   "wordAbsenceReason": "The verified Word gives rates for 22 Pax but no standalone tour-format field or English format label. Translate the current RU Group label; the itinerary format and group size are unchanged."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:b90436eb8118147b",
+                "field": "itinerary.label",
+                "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+                "text": "São Paulo",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                  "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p7",
+                      "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                  "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p1",
+                      "textSha256": "bd9434cec955f070fbb6ccf9979c6c9a6c8f7591b98aa8af898c68e2ebb25d55"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the exact city name Rio de Janeiro from the verified Word tour title."
+                }
+              },
+              {
+                "blockId": "tour:note:81df205e4fa16f81",
+                "field": "note",
+                "sourceTextSha256": "6b0283b09616044d79397707839e6a1b89b2a7f04c9972de9cf6218ee9f993b1",
+                "text": "20–30 October 2027",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The verified Word gives October20–24 and October25–30 in paragraphs6/8, but prints no year. The frozen source explicitly says20–30October2027; translate that current RU date without inventing a Word year or repeating matching."
+                }
+              },
+              {
+                "blockId": "tour:included:24945e7fc20178ef",
+                "field": "included",
+                "sourceTextSha256": "cef010f326dd43f85bd0c0a3ef5c3ab254b856feafc2da1b9f9a7ee496c5db3d",
+                "text": "Private transfers according to the program, with an English-speaking guide",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                  "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p72",
+                      "textSha256": "60076da128c703a7d0bb00b257e4769c4687e5f81d2717d2cbf7e56aa3c8ee84"
+                    }
+                  ]
+                }
               }
             ],
             "wordSourceVerification": {
@@ -669,9 +734,9 @@
             "priceAmendments": []
           },
           "submissionId": "ada-en-1d528bec4ff4-b08",
-          "preparedBlocks": 4
+          "preparedBlocks": 8
         },
-        "at": "2026-11-04T06:59:15.275Z"
+        "at": "2026-11-04T06:59:43.800Z"
       },
       "submission": null,
       "review": null,

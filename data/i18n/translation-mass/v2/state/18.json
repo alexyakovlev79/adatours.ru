@@ -360,7 +360,123 @@
         "claimedAt": "2026-11-04T06:40:43.730Z",
         "expiresAt": "2026-11-04T08:10:43.730Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_6c7d31_s006_c04",
+        "format": "inline-v1",
+        "ownerId": "ada_en_20261104_0555_6c7d31",
+        "token": "ada_en_token_6c7d31_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b005",
+          "stableId": "tour_brazil_recife_porto_noronha_10d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "51efb464f166d4c2686e3eb146b552831e546fed92c35c246fff49425d4a4e03",
+          "sourceChecks": {
+            "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+            "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+            "sha256Verified": true,
+            "modifiedTime": "2026-10-21T20:53:45.720Z",
+            "yearFolder": 2027,
+            "editionYear": 2027,
+            "commercialTables": 14,
+            "tariffObservation": {
+              "currency": "USD",
+              "basis": "per person",
+              "SGL": 9909,
+              "DBL": 5660,
+              "TRPL": 5151,
+              "flightSupplementFrom": 850,
+              "evidenceParagraphs": [
+                131,
+                133,
+                134,
+                135,
+                137,
+                138,
+                139,
+                140,
+                150
+              ]
+            },
+            "sourceDifferences": [
+              "Current RU diving highlight and Recife arrival block contain detail absent from the corresponding Word paragraphs; those fields are RU-derived translations.",
+              "The diving highlight says a day is set aside for diving; no extra dive duration or depth added from Word."
+            ]
+          },
+          "blocks": [
+            {
+              "blockId": "tour:highlight_text:1032fc839dd8739f",
+              "field": "highlight.text",
+              "sourceTextSha256": "017bca5a50ea758c24a2e1c7bd161e323d33f2c9a02b3c2c85e02824e8d51e07",
+              "text": "One day is set aside for a boat dive off Fernando de Noronha. The water temperature stays around 27 °C and visibility is high. Underwater, you can encounter shoals of fish, rays and turtles, rocky areas and a sandy seabed. Certified divers dive in small groups, while beginners receive a briefing and have an instructor of their own.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "Word p98 describes the diving day, warm water and experience-based groups, but no matching highlight includes the current RU list of fish, rays, turtles, rocks and sandy seabed. Translate the current RU highlight without adding Word-only durations or depths.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_alt:504382fd23b5f92c",
+              "field": "media.alt",
+              "sourceTextSha256": "66459464088775884254885c1f4745982bf571427581cb70575a4edbbb1a4a63",
+              "text": "A scuba diver beside a sea turtle in the waters of Fernando de Noronha, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The verified Word contains no matching alt caption for this production highlight image; translate the current RU alt text without changing the photograph.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:9a287c1956286ce5",
+              "field": "media.hover",
+              "sourceTextSha256": "01ea65132b3dc54cd8d5bd65c0f83aac288adb93b470c984e2aa5438618cedf8",
+              "text": "Fernando de Noronha, Brazil: a dive beside a turtle and rock formations",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The verified Word contains no matching hover caption for the current highlight image. Translate its existing RU caption without adding visual details.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "bd4101652561d8c65e264ff68e1bd12bcc1fbf5e9118bb6eb02e105cd388dbc2",
+              "text": "Arrival in Recife",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p67",
+                    "textSha256": "78f9f78728f80b790656076638a19302369eba989737b2b3a519f102e3003106"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Express the arrival-and-transfer passage as the short current RU day heading; preserve the same place and arrival event."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:42:06.796Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1794,
-    "leased": 11,
-    "review": 604,
+    "leased": 10,
+    "review": 605,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1794,
-      "leased": 11,
-      "review": 604,
+      "leased": 10,
+      "review": 605,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -146,8 +146,8 @@
         "word_2027": {
           "held": 0,
           "queued": 55,
-          "leased": 1,
-          "review": 21,
+          "leased": 0,
+          "review": 22,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 1,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T13:27:18.064Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "13": {
@@ -1365,12 +1365,6 @@
       "token": "tok-mw1zd9je-eedbf866",
       "expiresAt": "2026-11-04T12:12:32.134Z",
       "generation": 1
-    },
-    "ada-en-20261104-f5ac-75b022": {
-      "jobId": "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b002",
-      "token": "ada-en-token-20261104-75b022",
-      "expiresAt": "2026-11-04T13:27:18.064Z",
-      "generation": 2
     },
     "ada-en-7befc5e39812": {
       "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b001",
@@ -3390,7 +3384,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b002"
+      ]
     },
     "ada-en-7befc5e39812": {
       "token": "ada-en-token-7befc5e39812-20261104",
@@ -3439,5 +3435,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T11:58:46.134Z"
+  "updatedAt": "2026-11-04T11:58:53.930Z"
 }

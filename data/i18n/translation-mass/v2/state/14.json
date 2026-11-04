@@ -303,199 +303,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "67730526005ce7d11172b18f06a4faa147ab426493d09ea84202d24bebbbd84d",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-5d56534e4493",
-        "token": "lease-da131c3d187149a7b813992c83ea721b",
-        "claimedAt": "2026-11-04T06:14:21.182Z",
-        "expiresAt": "2026-11-04T07:44:21.182Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-5d56534e-05-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-5d56534e4493",
-        "token": "lease-da131c3d187149a7b813992c83ea721b",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b010",
-            "stableId": "tour_brazil_three_ecosystems_8_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "67730526005ce7d11172b18f06a4faa147ab426493d09ea84202d24bebbbd84d",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_label:060ca3e809a6de54",
-                "field": "itinerary.label",
-                "sourceTextSha256": "05d92f3bebf288eb6c22e3e97b0e93e3f135d6ed83eb81be9b6418a078bc8b4d",
-                "text": "Araras Eco Lodge",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p40",
-                      "textSha256": "c20bd4d00ce56a8ca7b8d51fbeca627428c11a9255e430bfa6f0790855fa3afe"
-                    },
-                    {
-                      "ref": "word/document.xml:p45",
-                      "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
-                    },
-                    {
-                      "ref": "word/document.xml:p50",
-                      "textSha256": "4c3d868d901bf42d9216eec34b660438b0474d8041464c094b7e19c1ec736519"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the verified Araras Eco Lodge name from the current Word day headings for the stable place label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:0ec5c839bb658778",
-                "field": "itinerary.label",
-                "sourceTextSha256": "453af7b339499da174940f648f67657306d7adeeced91da7ba004d1ecc21e5e6",
-                "text": "Clarinho or Corixo River",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p46",
-                      "textSha256": "ed01e0eaaab53cf8c0fccaead56880d27b6b8f32c94238181fc63ac3cc6d96f4"
-                    },
-                    {
-                      "ref": "word/document.xml:p47",
-                      "textSha256": "1e683a11cf973f3ddd4e79e48402812f9a50211838f45326a2d51aa2f5af760e"
-                    }
-                  ],
-                  "transformation": "compose_route_label",
-                  "rationale": "Combine the Clarinho River name and the explicitly conditional Corixo River alternative into the existing short route label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
-                "field": "itinerary.title",
-                "sourceTextSha256": "b9980bddd949b95226fef9348c9c50a528ea36258c980f72b49b6b9a52de2fe2",
-                "text": "Araras Eco Lodge: horseback riding and trekking",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p50",
-                      "textSha256": "4c3d868d901bf42d9216eec34b660438b0474d8041464c094b7e19c1ec736519"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Remove the Day 7 prefix and retain the exact Word activity title, using a colon to match the short RU title structure."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:2e780f63f4172747",
-                "field": "itinerary.text",
-                "sourceTextSha256": "b30a7f2f18a520168600872da13c41d2a70a0c0ac71c35d7d7738735aef916b0",
-                "text": "After breakfast, ride through the Pantanal’s open floodplains and shallow waters on horseback. Return to the lodge for lunch.\n\nIn the afternoon, follow the Rondon Trail to the 13-metre Jabiru Tower. If conditions are favourable, you may see a jabiru stork’s nest. Details of the riding and walking programme are given in the excursion below.\n\nReturn to Araras Eco Lodge for dinner and your final, third night in the Pantanal.\n\nMeals: breakfast, lunch and dinner.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "Word paragraph 51 gives the full horseback and Rondon Trail excursion, not this current short RU day wrapper with an excursion-below pointer and an explicit third-night count. Translate the current wrapper without duplicating the separate excursion; 13-metre tower, meals and three-night stay are corroborated by paragraphs 51 and 63–64."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:8df2eb67a6229576",
-                "field": "itinerary.label",
-                "sourceTextSha256": "05d92f3bebf288eb6c22e3e97b0e93e3f135d6ed83eb81be9b6418a078bc8b4d",
-                "text": "Araras Eco Lodge",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p50",
-                      "textSha256": "4c3d868d901bf42d9216eec34b660438b0474d8041464c094b7e19c1ec736519"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the Araras Eco Lodge name from the verified day heading for the stable place label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:8ed4376fc981ab81",
-                "field": "itinerary.label",
-                "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
-                "text": "Pantanal",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p51",
-                      "textSha256": "abc4bd0fd1846e6f9037c6abf8a991821b25edf162ea7d216eed3b02d717c6fc"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract Pantanal from the verified horseback-riding day paragraph as the stable place label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:62a2b991a0d33594",
-                "field": "media.alt",
-                "sourceTextSha256": "90ea690f1b56a3502fc2876b17fdd0a91d87ac5e04104c6106de362cefd09915",
-                "text": "Large round water-lily leaves and a white flower on a body of water in the Pantanal, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "The exact Word contains no image-specific alt caption for these round water-lily leaves and white flower. Translate the current RU media.alt."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:da52d6dbb556395c",
-                "field": "media.hover",
-                "sourceTextSha256": "302c2e23625d041b6f9d5e395e0a8bf3ab059f46e62277b62ce82c812240d538",
-                "text": "Pantanal: giant water lilies on still water",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "The exact Word contains no hover caption for giant water lilies on still water. Translate the current RU media.hover."
-                }
-              }
-            ],
-            "unresolvedConflicts": [
-              {
-                "kind": "word_edition_label",
-                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                "queueYearFolder": 2027,
-                "wordTitleYear": 2026,
-                "paragraphs": [
-                  "word/document.xml:p2",
-                  "word/document.xml:p13"
-                ],
-                "note": "Use the exact preselected matching source without rematching. This packet has no year, tariff or price fields; commercial/year reconciliation remains with the coordinator."
-              }
-            ]
-          },
-          "completedBlocks": 8,
-          "wordEvidence": {
-            "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-            "sha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-            "modifiedTime": "2026-09-14T19:48:05.850Z"
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:15:37.097Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-5d56534e-05",
+        "blobSha": "b176de2a073baeed297b3c8f63e257b6330ad595",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_three_ecosystems_8_days_b010/submit-5d56534e-05.json",
+        "at": "2026-11-04T06:43:00.372Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

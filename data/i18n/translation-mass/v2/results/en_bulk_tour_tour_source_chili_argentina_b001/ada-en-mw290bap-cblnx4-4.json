@@ -1,0 +1,179 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_argentina:b001",
+  "stableId": "tour_source_chili_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e5d8f748481335bec8e819bd55b98af9a5c6fd07f15e5f96e1e82cdf1f431f93",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "2429357f34c8b7539ad98a5bd12cc0b65559c6951329405619130409a2e8d0e0",
+      "text": "Chile & Argentina Deluxe",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "e48114c164eb744b8b39e10e8d0b11a82ac70987657d555fd3a23b51dabe79de"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "f3a691b03b950fdba0782d28b0a787638938f955fff8ba0109493d3f366537ef",
+      "text": "Fourteen days in the finest hotels of Chile and Argentina: Santiago and the Pacific coast, the granite towers of Torres del Paine, the Perito Moreno Glacier and a dinner in a cave, the lakes of Bariloche, the Iguazu Falls by boat and helicopter, and the tango of Buenos Aires.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "eea4a960887ae9b3fe6ebb0865fc91df3694d3c5e6d358b885dd4f097a7847ed"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "ee454c86adfc34c997b2029dfcf5704726313e9d500a33f44d1e80244d9d445b",
+      "text": "$10548",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The assigned protected price note $10548 is absent from the Word price table ($20115/$11045/$9967). Preserve the current value; price changes are owned by the commercial master.",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:84de3e594f5a56da",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9e817bf26e40080ec809fc6cff138f63f151c3954b861ca0d995a4fb5e6d438c",
+      "text": "Santiago de Chile (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p135",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          },
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word destination with its corresponding three-night accommodation-table entry."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:35a5a85c921f1ff3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f6276fa59abc0de8fe84be23086e95bc791380bf2bddd9905421019df2b4d7f8",
+      "text": "Puerto Natales (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p140",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          },
+          {
+            "ref": "word/document.xml:p142",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word destination with its corresponding two-night accommodation-table entry."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cd3df18fbc9945f2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b8362197d599d445fcc13ca84d6c9c7b8f751f4df79ef50abcdb016d4654a961",
+      "text": "El Calafate (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p145",
+            "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+          },
+          {
+            "ref": "word/document.xml:p147",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word destination with its corresponding two-night accommodation-table entry."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e5356e1669ad77a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "42da2ceb8de0d80ffa97d5b568d2fe590fcce255151462920967fd06e8a51da4",
+      "text": "Bariloche (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p150",
+            "textSha256": "2f002781e3adeef826724fc2a3d6585ad46f23ac3c327c9bf823d423747ab59b"
+          },
+          {
+            "ref": "word/document.xml:p152",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word destination with its corresponding two-night accommodation-table entry."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da44029d6e030002",
+      "field": "itinerary.label",
+      "sourceTextSha256": "26aaac1b66ce5ddc04aa321d9b5b1f7beaf242ffa9ed3078102d68210a322498",
+      "text": "Foz do Iguaçu (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aWUbUU6YPlsMBoyRKpXYQxnELzXegGOR",
+        "documentSha256": "cd5c9d0e54f0166e1c3ed8f6c03be635dc44daca3563550e3450f0cca8520dae",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p155",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p157",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word destination with its corresponding two-night accommodation-table entry."
+      }
+    }
+  ],
+  "unresolvedConflicts": [
+    {
+      "field": "priceNote",
+      "reason": "Current protected price $10548 differs from Word table SGL 20115 / DBL 11045 / TRP 9967. Preserved current price for commercial-master review."
+    }
+  ]
+}

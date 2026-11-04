@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1934,
-    "leased": 24,
+    "queued": 1933,
+    "leased": 25,
     "review": 451,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1934,
-      "leased": 24,
+      "queued": 1933,
+      "leased": 25,
       "review": 451,
       "ready": 1,
       "retryable": 0,
@@ -665,8 +665,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 62,
-          "leased": 0,
+          "queued": 61,
+          "leased": 1,
           "review": 20,
           "ready": 0,
           "retryable": 0,
@@ -697,7 +697,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T09:12:03.708Z",
       "earliestRetryAt": null
     },
     "06": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada_en_1f8e8fe01ca4_20261104": {
-      "jobId": "en:bulk:tour:tour_brazil_gems_14d:b001",
-      "token": "ada_en_token_1f8e8fe01ca4_20261104",
-      "expiresAt": "2026-11-04T07:42:02.211Z",
-      "generation": 1
-    },
     "ada-en-d8b5c6c4c917": {
       "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b008",
       "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
@@ -1484,6 +1478,12 @@
       "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b011",
       "token": "ada-en-2ee259e72fda-token-20261104",
       "expiresAt": "2026-11-04T09:11:46.088Z",
+      "generation": 1
+    },
+    "ada-en-20261104-8526ba7437bc": {
+      "jobId": "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b002",
+      "token": "ada-en-token-8526ba7437bc",
+      "expiresAt": "2026-11-04T09:12:03.708Z",
       "generation": 1
     }
   },
@@ -2839,7 +2839,8 @@
         "en:bulk:tour:tour_colombia_complete_11_days:b004",
         "en:bulk:tour:tour_colombia_essential_5_days:b006",
         "en:bulk:tour:tour_mexico_lindo_eight_days:b003",
-        "en:bulk:tour:tour_peru_8d:b006"
+        "en:bulk:tour:tour_peru_8d:b006",
+        "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_colombia_complete_11_days:b004",
@@ -3018,5 +3019,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T07:41:58.009Z"
+  "updatedAt": "2026-11-04T07:42:03.708Z"
 }

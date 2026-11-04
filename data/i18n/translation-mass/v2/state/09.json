@@ -463,7 +463,7 @@
         "expiresAt": "2026-11-04T09:20:15.291Z"
       },
       "checkpoint": {
-        "id": "cp-9a69348b6e00-07-4",
+        "id": "cp-9a69348b6e00-07-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9a69348b6e00",
         "token": "tok-9a69348b6e00-20261104-a1",
@@ -580,10 +580,107 @@
                   "transformation": "strip_list_marker",
                   "rationale": "Removes only the leading dash and spacing from the approved domestic-flights inclusion."
                 }
+              },
+              {
+                "blockId": "tour:included:ef6473346b981b51",
+                "field": "included",
+                "sourceTextSha256": "4fe42331f0612c086ccd033db9009e62948e8acccc3d531c3535780cdb398f7b",
+                "text": "English-speaking guides throughout the programme",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p298",
+                      "textSha256": "41240fccf5025fbfa10674f255c6c1327be4aaa00e802f0dab1190be8af53f3f"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading dash and spacing from the approved English-speaking guide inclusion."
+                }
+              },
+              {
+                "blockId": "tour:included:1b36218062ec7eb6",
+                "field": "included",
+                "sourceTextSha256": "4a3f00f2e318a571f57fb244b2dc7c3a48dc80cfd514c0e63be16ad20a48a7b7",
+                "text": "English-speaking guides in Uyuni, on Lake Titicaca and at Machu Picchu.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p115",
+                      "textSha256": "ae1ffc96da2b8cb8e9ef2a861cb79511d642ca597416c524eb41c5fef63c912e"
+                    },
+                    {
+                      "ref": "word/document.xml:p124",
+                      "textSha256": "772a2bf40eb41d604a43e6e478262e9780cc21f002c672a74d7ffa5caed0d83f"
+                    },
+                    {
+                      "ref": "word/document.xml:p135",
+                      "textSha256": "4b5725623cc5085e33c2fcc9fc35281fb483418043fc00d719236f5d3f111c56"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Summarises the approved English-speaking guide service at Uyuni, the Uros Islands on Lake Titicaca and Machu Picchu; no unlisted language supplement is added."
+                }
+              },
+              {
+                "blockId": "tour:included:47233f9225f926bf",
+                "field": "included",
+                "sourceTextSha256": "a030cfbc6c866573e289a2f198d44b10011e4467a62aac45a734cb83224dc33d",
+                "text": "Transfers with driver (group)\nExcursions according to the programme (group)",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p299",
+                      "textSha256": "23e8116cc32980fb714a90e8b885e019ac320f9ee9c2f85f25990ca9a37d4c95"
+                    },
+                    {
+                      "ref": "word/document.xml:p300",
+                      "textSha256": "70e16b58d2a20ae3ac24099cc28a79fffda5994d10fd03d93e09c71940b3bf6e"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading list markers from the approved group transfers and group excursions, retaining both clauses."
+                }
+              },
+              {
+                "blockId": "tour:notIncluded:019bb714e694242b",
+                "field": "notIncluded",
+                "sourceTextSha256": "909c12ee5d5bebd7e72266ef6a6d1a2762f4e2a134ac3ab90da8b13fc1566984",
+                "text": "International flights",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p306",
+                      "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading dash and spacing from the approved international-flight exclusion."
+                }
+              }
+            ],
+            "sourceDifferences": [
+              {
+                "fields": [
+                  "included/3",
+                  "included/4"
+                ],
+                "handling": "Approved Word 2027 states English-speaking guides throughout and at the three listed locations; it does not promise an additional Russian-speaking guide for a supplement. The EN result retains approved Word services; RU is unchanged."
               }
             ]
           },
-          "completedBlockCount": 4,
+          "completedBlockCount": 8,
           "wordSourceVerified": {
             "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
             "sha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
@@ -591,7 +688,7 @@
             "localPath": "/workspace/scratch/9a69348b6e00/ada_word/five_regular.docx"
           }
         },
-        "at": "2026-11-04T07:51:41.295Z"
+        "at": "2026-11-04T07:52:02.793Z"
       },
       "submission": null,
       "review": null,

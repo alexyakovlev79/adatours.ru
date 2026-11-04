@@ -776,7 +776,117 @@
         "claimedAt": "2026-11-04T07:01:13.492Z",
         "expiresAt": "2026-11-04T08:31:13.492Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_91a5d7c2e8b4_cp007_4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_91a5d7c2e8b4",
+        "token": "ada-en-token-91a5d7c2e8b4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_antarktida_programma_na_ves_den:b003",
+          "stableId": "tour_source_antarktida_programma_na_ves_den",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "f1a2eddb5045bdf2aebc0d2eaa55234498794a37eaf6ea559bf4e9657a7b2dc5",
+          "sourceVerification": {
+            "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+            "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+            "modifiedTime": "2026-09-01T20:40:10.732Z",
+            "fileName": "A Day In Antarctica ENG com 5%.docx",
+            "yearFolder": 2027,
+            "editionYear": null
+          },
+          "blocks": [
+            {
+              "blockId": "tour:note:aad34780a245497e",
+              "field": "note",
+              "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+              "text": "All activities are subject to weather conditions. These may change the order of the tour, the activities planned and the total time spent on King George Island. The final decision on whether activities can be carried out rests with the Operations Department.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+                "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p116",
+                    "textSha256": "10b2c1164b188c773046d7a5498e7ac72405d0760e26e5f7166868162459b187"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:note:64d02759479179f7",
+              "field": "note",
+              "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+              "text": "Ada Tours is not responsible for hotel breakfasts missed because of early check-out for an early flight or excursion.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "The verified Word has no equivalent of this Ada Tours disclaimer concerning missed hotel breakfasts; translate the existing RU note without changing its conditions."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "4f2ced6ce890ac21bed76d4baeb27623c62a5f92161162aff81709c1501505e6",
+              "text": "Punta Arenas",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+                "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p24",
+                    "textSha256": "885ba09375f2b4a6c1d7c1953d0c83f41952c3fcc969dedd2e24787b38e3d379"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the verified Punta Arenas heading as the existing arrival-day title, changing heading capitalization only."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "93af62060bfa01259fcad30a991c95fb68f0ab5b83f9bd15301b2a1d3ac758fd",
+              "text": "Upon arrival in Punta Arenas, the program includes 4 consecutive nights of accommodation with breakfast.\n\nReservations include double or twin rooms. For passengers travelling alone, a single room will be reserved.\n\nBetween 72 and 48 hours before the tour, you will receive instructions by email to participate in the Antarctic briefing meeting. There you will meet the other passengers and be welcomed by our host, who will offer a welcome cocktail.\n\nYour arrival itinerary in Punta Arenas must allow you to attend the briefing. Passengers who are not present at this meeting will not be able to participate in the booked tour.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+                "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p51",
+                    "textSha256": "9cd0a9d2c843975247111746a64ee78c634af923fea6237218a23ee582e94921"
+                  },
+                  {
+                    "ref": "word/document.xml:p52",
+                    "textSha256": "50f8d65b9626992b550cb089b9054ce1d465e8d7a8e24edbeea9a875bf3cf41a"
+                  },
+                  {
+                    "ref": "word/document.xml:p54",
+                    "textSha256": "3030ef8adedbb590e3db913e158e4d7b0ca480cf6eb2c8c65e363f118c81f8aa"
+                  },
+                  {
+                    "ref": "word/document.xml:p56",
+                    "textSha256": "4476d054cd84caa84494b93b44d052c49af1593add2cd8d07f973241881742b6"
+                  }
+                ]
+              }
+            }
+          ],
+          "unresolvedConflicts": [
+            {
+              "field": "itinerary.text",
+              "path": "/itinerary/0/text",
+              "kind": "word_ru_programme_details",
+              "note": "Verified selected Word describes a same-day Antarctic visit with four consecutive hotel nights in Punta Arenas and briefing instructions 72–48 hours beforehand. Current RU text labels the core as 2 days/1 night, names Cabo de Hornos or similar and requires arrival by 17:00; these details have no equivalent in the selected Word. Word-exact accommodation/briefing paragraphs used; canonical RU, hotel facts and matching remain unchanged. Master review required before publication."
+            }
+          ]
+        },
+        "at": "2026-11-04T07:02:32.724Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

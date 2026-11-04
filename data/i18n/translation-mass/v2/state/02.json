@@ -411,7 +411,7 @@
         "expiresAt": "2026-11-04T08:13:19.381Z"
       },
       "checkpoint": {
-        "id": "ada-en-1d528bec4ff4-b05-cp4",
+        "id": "ada-en-1d528bec4ff4-b05-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-1d528bec4ff4",
         "token": "ada-en-token-1d528bec4ff4-20261104",
@@ -526,6 +526,68 @@
                   "transformation": "contextual_label",
                   "rationale": "Extract the verified Word place name Mexico City as the itinerary label."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:1caa7baaa5411257",
+                "field": "itinerary.label",
+                "sourceTextSha256": "3c576274d32f4dd78b3c71d7c491471ad379842e9e605b84d3815c877c6285a8",
+                "text": "Mérida",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p55",
+                      "textSha256": "ad8db8ddb7e08c593b1a6cee5b3b11ad8eeb203d4984a90a63679592d1a6cf2d"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the matching city name from the verified Word day passage as the itinerary label."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:788ac19d97cf61df",
+                "field": "media.alt",
+                "sourceTextSha256": "07b728fdc91056e6ef6f30efa3ad467d784bee9ba7cf4317dc3145ff005ac7c0",
+                "text": "Building with festive decorations and flags, Mexico City, Mexico",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The complete verified Word 2027 programme contains no corresponding alt or hover description of this image showing festive decorations and flags on a Mexico City building; translate the current RU image metadata."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:1fad1ddb90cc1d63",
+                "field": "media.hover",
+                "sourceTextSha256": "51830e7f5e19033a7a1e3b15627b3a8542bf103bf05d797dac8cda5559f5c652",
+                "text": "Mexico City, Mexico: colourful festive decorations on a building façade",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-1d528bec4ff4",
+                  "wordAbsenceReason": "The complete verified Word 2027 programme contains no corresponding alt or hover description of this image showing festive decorations and flags on a Mexico City building; translate the current RU image metadata."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:122fc0ef54ddfed7",
+                "field": "itinerary.label",
+                "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
+                "text": "Mexico City",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p52",
+                      "textSha256": "118af5b3c3f54e2784bae63a5ff2c7acbb6d1ce740bfff30aa9bce5ffc498ef0"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the matching city name from the verified Word day passage as the itinerary label."
+                }
               }
             ],
             "wordSourceVerification": {
@@ -565,9 +627,9 @@
             "priceAmendments": []
           },
           "submissionId": "ada-en-1d528bec4ff4-b05",
-          "preparedBlocks": 4
+          "preparedBlocks": 8
         },
-        "at": "2026-11-04T06:44:33.608Z"
+        "at": "2026-11-04T06:45:06.165Z"
       },
       "submission": null,
       "review": null,

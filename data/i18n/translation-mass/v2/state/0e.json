@@ -471,7 +471,104 @@
         "claimedAt": "2026-11-04T06:22:01.473Z",
         "expiresAt": "2026-11-04T07:52:01.473Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-2a369-tour_mexico_religious_journey-b010-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2a369c57df19",
+        "token": "token-2a369c57df19-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_mexico_religious_journey:b010",
+          "stableId": "tour_mexico_religious_journey",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "2f0de8fe18d6419babfb06c2247008da5ac729f93fa1ecfe1c0c6f6325e152ff",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:ce64cf161caae3d0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2e78cba9234779009598e8360d2d37733a98943bb5a2fc0cbae57c9d61b93b83",
+              "text": "Shrine of our Lady of Ocotlan",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "010097edf46108dc7236a6e43a531e0be18e8e593f8ba44213c02069b0ff69db"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:9c01a43964dd367a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0ce36b2a9f6ea7f755c4ee5377cc96ea59a5f5ddeab669a7dbb6ad15a54d8c74",
+              "text": "Puebla",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p35",
+                    "textSha256": "75705b5b225da0be29406d6309517183057799c2cb94dd0687e93e957d282eb5"
+                  },
+                  {
+                    "ref": "word/document.xml:p41",
+                    "textSha256": "9e49f3cffd8caf2d4141d2177b3b4ba8b7574089505ed7060735b969e9c19434"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place label from the exact Word itinerary passage without changing its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:83446a643d8fa24e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "85418fb12d509a6142210de7e9b8656626f36fec32b6312b4d46005ed37d5fad",
+              "text": "Puebla Cathedral",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p41",
+                    "textSha256": "9e49f3cffd8caf2d4141d2177b3b4ba8b7574089505ed7060735b969e9c19434"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the cathedral place label using its confirmed Puebla context in the exact Word passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:15b3dadb37ed0114",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e0f79313ef949d9ad1892a1663fda5aaa240def616a5e1a6068d7f9a3c53ea5f",
+              "text": "Church of Santo Domingo and Chapel of the Rosary in Puebla",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p41",
+                    "textSha256": "9e49f3cffd8caf2d4141d2177b3b4ba8b7574089505ed7060735b969e9c19434"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the two named places into the existing single place-label field, retaining the Word Puebla context."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:22:43.102Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

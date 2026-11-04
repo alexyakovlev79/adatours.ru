@@ -268,173 +268,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b011",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "f70b26fad2b88aad9360ae7b8d56b9c5754877e2e908b45dd510c9f4a69f3c91",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-2a369c57df19",
-        "token": "token-2a369c57df19-20261104",
-        "claimedAt": "2026-11-04T06:08:14.151Z",
-        "expiresAt": "2026-11-04T07:38:14.151Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-2a369-tour_brazil_recife_porto_noronha_10d-b011-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-2a369c57df19",
-        "token": "token-2a369c57df19-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b011",
-          "stableId": "tour_brazil_recife_porto_noronha_10d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "f70b26fad2b88aad9360ae7b8d56b9c5754877e2e908b45dd510c9f4a69f3c91",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-              "field": "itinerary.title",
-              "sourceTextSha256": "f28d7ac0b958b397e22a687857526432edfc75ac6fa7c2b8fa96fb0a333ce558",
-              "text": "Free day in Fernando de Noronha",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p87",
-                    "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
-                  },
-                  {
-                    "ref": "word/document.xml:p99",
-                    "textSha256": "80c3885deb0d9ba27621c87d793686a843f065451cb8b21382f15955c926a9c7"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose the individual free-day title from the Word island name and the Days 8–9 free-days passage."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-              "field": "itinerary.text",
-              "sourceTextSha256": "fbb4c89cbd938e75830e38d1ecac9e0b1489872211fa96182a1403f31e0c4947",
-              "text": "Free days: relax on the many beaches, add more dives, take a boat trip or go trekking.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p99",
-                    "textSha256": "80c3885deb0d9ba27621c87d793686a843f065451cb8b21382f15955c926a9c7"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word day marker for the dedicated itinerary title field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:71a391e9f962c801",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e1b0799fc24e5b2a2379ff305ed058aba1636d2804d6f4a5429f233ae13cc7de",
-              "text": "Fernando de Noronha",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p87",
-                    "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:c79485c6550f0da8",
-              "field": "media.alt",
-              "sourceTextSha256": "43323ed03b8db3097aadf3d039261232eee3091be609f26220046d33ae03955c",
-              "text": "Beach with numerous umbrellas beside turquoise reef pools",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-2a369c57df19",
-                "wordAbsenceReason": "The verified Word DOCX has no photograph-specific alternative text for the reef-pool beach image; translated the supplied current RU alt."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:2d1e9f77ce123153",
-              "field": "media.hover",
-              "sourceTextSha256": "845bb87ebfb6acc8a09636a46c947ec353be423b677eda3cb707c33c036519ed",
-              "text": "Coastal reefs and bands of clear shallow water along a busy beach",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-2a369c57df19",
-                "wordAbsenceReason": "The exact Word DOCX has no matching image hover caption for the coastal-reef photograph; translated the supplied current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:f76823f601bc2496",
-              "field": "itinerary.title",
-              "sourceTextSha256": "396ca596db9e61cf7de87df1ab57d34474cbf3db68c9045f00b3b6bcf1e3a0c5",
-              "text": "Return to Recife",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p100",
-                    "textSha256": "06bd602d3fdff0b371b7a0b3790a03225e8a22ce0121c8634563b11b6ff72e32"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose the departure-day title from the Word airport transfer and flight to Recife passage."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "111998e6bb03b42616db32759d859e5548975de3e8a68ddc330b166557cab306",
-              "text": "Breakfast and transfer to the airport for your flight to Recife. End of services.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p100",
-                    "textSha256": "06bd602d3fdff0b371b7a0b3790a03225e8a22ce0121c8634563b11b6ff72e32"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word day marker for the dedicated itinerary title field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:16ee245006a96f07",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e1b0799fc24e5b2a2379ff305ed058aba1636d2804d6f4a5429f233ae13cc7de",
-              "text": "Fernando de Noronha",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p87",
-                    "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:09:16.686Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-2a369-tour_brazil_recife_porto_noronha_10d-b011",
+        "blobSha": "e75a228d0270d627689ea4a1064a63841c2545e5",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_recife_porto_noronha_10d_b011/sub-2a369-tour_brazil_recife_porto_noronha_10d-b011.json",
+        "at": "2026-11-04T06:12:21.236Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

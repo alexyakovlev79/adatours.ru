@@ -470,7 +470,96 @@
         "claimedAt": "2026-11-04T07:43:31.584Z",
         "expiresAt": "2026-11-04T09:13:31.584Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_91a5d7c2e8b4_cp009_4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_91a5d7c2e8b4",
+        "token": "ada-en-token-91a5d7c2e8b4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b006",
+          "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "e2ef0a97df6bb9141a4a424aa3022faca21d342639e81dea896f867ecbd32082",
+          "sourceVerification": {
+            "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+            "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+            "modifiedTime": "2026-10-26T13:04:31.565Z",
+            "fileName": "Magnific_Dreams_Come_True_Carnival_Champions_10d9n_2027_ENG_20__1_.docx",
+            "yearFolder": 2027,
+            "editionYear": null
+          },
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:6c6a178b19904285",
+              "field": "media.alt",
+              "sourceTextSha256": "6ddaafdf9e017e4ff78c0a9cabb45afc6062fc912d07935ee14eee5d96d353b6",
+              "text": "Christ the Redeemer against white clouds and a blue sky, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "The verified Word names Christ the Redeemer but has no image-specific alt description of these clouds and sky; translate the existing RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:0258f7f577964064",
+              "field": "media.hover",
+              "sourceTextSha256": "491398760947c71720016256273719d38a450bdde0c6cf801fe06ffe4885319b",
+              "text": "Rio de Janeiro: the statue of Christ with arms outstretched",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "No equivalent photograph-specific hover caption occurs in the verified Word; translate the current RU caption for the existing image."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "d5687f4237299bfa193970b7288742c9dba4b915264b8844bae04f3344f28fa2",
+              "text": "Flight Rio – Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p90",
+                    "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
+                  },
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the existing flight-day heading from the verified Rio departure city and Foz do Iguaçu destination, preserving the route."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b04d5d61d358e759",
+              "field": "itinerary.text",
+              "sourceTextSha256": "85a5d9177e361b7ffb4d01e265198f79cc051936308b73eab34a079147bfabe3",
+              "text": "Day 4 · Breakfast and transfer to the airport for your flight to Foz do Iguaçu. Meeting and transfer to your hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p90",
+                    "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:44:27.302Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

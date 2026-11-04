@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1560,
-    "leased": 13,
+    "queued": 1559,
+    "leased": 14,
     "review": 836,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1560,
-      "leased": 13,
+      "queued": 1559,
+      "leased": 14,
       "review": 836,
       "ready": 1,
       "retryable": 0,
@@ -385,8 +385,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 47,
-          "leased": 0,
+          "queued": 46,
+          "leased": 1,
           "review": 20,
           "ready": 0,
           "retryable": 0,
@@ -417,7 +417,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:17:46.139Z",
       "earliestRetryAt": null
     },
     "19": {
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b002",
       "token": "ada_en_973e64bf8d24_token",
       "expiresAt": "2026-11-04T18:17:28.772Z",
+      "generation": 1
+    },
+    "ada-en-dc96e9d420f3": {
+      "jobId": "en:bulk:tour:tour_source_braziliya_s_san_paulo:b007",
+      "token": "ada-en-dc96e9d420f3-20261104",
+      "expiresAt": "2026-11-04T18:17:46.139Z",
       "generation": 1
     }
   },
@@ -4223,7 +4229,8 @@
       "token": "ada-en-dc96e9d420f3-20261104",
       "jobIds": [
         "en:bulk:tour:tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu:b005",
-        "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b015"
+        "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b015",
+        "en:bulk:tour:tour_source_braziliya_s_san_paulo:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu:b005",
@@ -4246,5 +4253,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:47:37.894Z"
+  "updatedAt": "2026-11-04T16:47:46.139Z"
 }

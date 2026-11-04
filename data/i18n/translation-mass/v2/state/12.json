@@ -473,7 +473,7 @@
         "expiresAt": "2026-11-04T08:11:45.345Z"
       },
       "checkpoint": {
-        "id": "ada_en_91a5d7c2e8b4_cp006_4",
+        "id": "ada_en_91a5d7c2e8b4_cp006_8",
         "format": "inline-v1",
         "ownerId": "ada_en_91a5d7c2e8b4",
         "token": "ada-en-token-91a5d7c2e8b4-20261104",
@@ -569,10 +569,87 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the verified Hidden Valley nature walk as the separate included-services item and capitalize its initial letter."
               }
+            },
+            {
+              "blockId": "tour:notIncluded:1c19e59be1a4e211",
+              "field": "notIncluded",
+              "sourceTextSha256": "20ecb353aaf2725768dff9902633b3043ff3f2fe62d73cbce12b7caf444f4d41",
+              "text": "Local flight: Guatemala City – Flores (one way), USD 165 per person; 50 lb checked baggage.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p197",
+                    "textSha256": "c5c93119d757ac369d69db5660774ba044e33d0a7a92ae8de731867e27e26915"
+                  },
+                  {
+                    "ref": "word/document.xml:p202",
+                    "textSha256": "4a17185ba6e8b8a6ca3c34eca11fd462a5b23e979a6fd8448d1110dc40161327"
+                  },
+                  {
+                    "ref": "word/document.xml:p203",
+                    "textSha256": "6f689ccee50e13da70637e130b2f4180e2467c4b5f93fd385087481031c92d0e"
+                  }
+                ],
+                "transformation": "compose_tariff_summary",
+                "rationale": "Compose the exact excluded local-flight route, one-way per-person USD fare and 50 lb baggage allowance from the verified tariff table."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:4bcefd8bfc8972b9",
+              "field": "notIncluded",
+              "sourceTextSha256": "f59eadb976aa4c3f2e884a532ce93f84ac360acec46bb0ed738bef645683d234",
+              "text": "The supplements list includes a Santa Elena / Flores – Belize City flight, one way, at USD 135 per person, with up to 50 lb of baggage; its place in this itinerary requires confirmation.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "The verified Word tariff table lists Santa Elena/Flores–Belize City at USD 135 per person with 50 lb baggage, but has no equivalent of the current RU warning that this flight conflicts with the overland itinerary. Translate that existing composite warning, preserving all tariff values and the unresolved status."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:9b145ea5af29de12",
+              "field": "notIncluded",
+              "sourceTextSha256": "55b34ed744250fbafe6baa861e9941a9919c3cf31d92a5b6643ca9b3dd97a357",
+              "text": "Optional excursions: Pacaya Volcano (Day 5), Yaxhá (Day 6) and Caracol (Day 9)",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p235",
+                    "textSha256": "c3e8c6924b1dcc4093553312a48dbcddc879ce936e4c7bc1a246733862c5188f"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading dash and spacing from the verified Word exclusion for the existing list item."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:64242470e0d6eb1f",
+              "field": "notIncluded",
+              "sourceTextSha256": "ac654be034982c8a8d49157d37c291d96920bbd902e56ae5aa61db79643e8194",
+              "text": "International flights, travel insurance and any service not expressly mentioned",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p236",
+                    "textSha256": "71f26b73c77382d8ed5531f81f5bf5f1ddcd6ceed1a9b0e86e5a1a4c62b49c82"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading dash and spacing from the verified Word exclusion for the existing list item."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:42:28.483Z"
+        "at": "2026-11-04T06:42:47.165Z"
       },
       "submission": null,
       "review": null,

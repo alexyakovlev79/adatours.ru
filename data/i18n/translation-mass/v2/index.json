@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2104,
-    "leased": 12,
+    "queued": 2103,
+    "leased": 13,
     "review": 293,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2104,
-      "leased": 12,
+      "queued": 2103,
+      "leased": 13,
       "review": 293,
       "ready": 1,
       "retryable": 0,
@@ -385,8 +385,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 63,
-          "leased": 0,
+          "queued": 62,
+          "leased": 1,
           "review": 4,
           "ready": 0,
           "retryable": 0,
@@ -417,7 +417,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:29:24.546Z",
       "earliestRetryAt": null
     },
     "19": {
@@ -1412,6 +1412,12 @@
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b011",
       "token": "ada_en_2478a2a40c1c_20261104",
       "expiresAt": "2026-11-04T07:29:18.847Z",
+      "generation": 1
+    },
+    "ada_en_20261104_0555_6c7d31": {
+      "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b001",
+      "token": "ada_en_token_6c7d31_20261104",
+      "expiresAt": "2026-11-04T07:29:24.546Z",
       "generation": 1
     }
   },
@@ -2472,8 +2478,15 @@
         "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b007"
       ],
       "completedJobIds": []
+    },
+    "ada_en_20261104_0555_6c7d31": {
+      "token": "ada_en_token_6c7d31_20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_agribusiness_14_days:b001"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:59:18.847Z"
+  "updatedAt": "2026-11-04T05:59:24.546Z"
 }

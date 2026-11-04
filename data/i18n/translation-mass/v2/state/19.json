@@ -439,173 +439,22 @@
     {
       "jobId": "en:bulk:tour:tour_panama_city_gamboa_6_days:b001",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "7cfa522c4888de89c715dead6335101754752af52ecd17d8cf033184a9fff954",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-a40ee2cc",
-        "token": "ada-en-token-a40ee2cc-71df-20261104",
-        "claimedAt": "2026-11-04T07:02:42.081Z",
-        "expiresAt": "2026-11-04T08:32:42.081Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-a40ee2cc-p03-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-a40ee2cc",
-        "token": "ada-en-token-a40ee2cc-71df-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_panama_city_gamboa_6_days:b001",
-          "stableId": "tour_panama_city_gamboa_6_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "7cfa522c4888de89c715dead6335101754752af52ecd17d8cf033184a9fff954",
-          "blocks": [
-            {
-              "blockId": "tour:title:aaf2320646108059",
-              "field": "title",
-              "sourceTextSha256": "961e2494d367de887505bdd9c4a4763d4c7e4dd134d5e1c90ccae17405f8539d",
-              "text": "Panama City & Gamboa",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
-                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:13",
-                    "textSha256": "fd8a81acc5294c3ca5c31600af5dec8155d21a7d3cf24a166940e3bed4f58cfb"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracts the English tour name from the heading, omitting year, duration and guide-language metadata."
-              }
-            },
-            {
-              "blockId": "tour:lead:e3456bc1f4d270f4",
-              "field": "lead",
-              "sourceTextSha256": "317fe048991c81ccd04086bbb71c5e0be956a62b8ce17c1424b434e764c7ef48",
-              "text": "Panama City & Gamboa offer a remarkable combination of modern city life, colonial heritage, the engineering legacy of the Panama Canal and the extraordinary biodiversity of the surrounding rainforest. This six-day program combines the essential highlights of the capital with an authentic Emberá cultural experience and excursions into the tropical landscapes of Soberanía and Gamboa..",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
-                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:5",
-                    "textSha256": "40ee1a44891f0e5de27dc0ba6b7e44ad0a4bc51cf02b855ccf8292066ac49f8c"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
-              "field": "priceNote",
-              "sourceTextSha256": "27d6ccd0844b2cc343ac43dafb1eee7547058427b7e0c774699356fc3b14916f",
-              "text": "Per person: 4* SGL USD 3,607 / DBL USD 1,915 / TRP USD 1,783; 5* SGL USD 3,832 / DBL USD 2,027 / TRP USD 1,896. Five nights, breakfast and services as per the itinerary; dates and guide language are agreed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The Word rate table confirms all listed amounts and occupancy rows, but no complete note contains the RU booking-date and language qualifier; translated the current RU note with the checked rates unchanged."
-              }
-            },
-            {
-              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
-              "field": "formatLabel",
-              "sourceTextSha256": "e5ae0a61ed1d925fa1d5ab875e0fb6b4cf36f7ab1aa9153d93cb7a009df6d6a0",
-              "text": "Transfers",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The checked Word 2027 has descriptions of airport transfers but no equivalent product-format label; translated the current RU label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8ca622e238b51fd8",
-              "field": "itinerary.label",
-              "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
-              "text": "Panama City",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
-                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:35",
-                    "textSha256": "c10eca654cdcab37352ddfb359e4fac85a21845332e37612c930e45a1cee9b8a"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:1cccfccb964cca9d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6167da0bfc500fa43450b195c44d1bb51c453aac1d4385851718d94fcd5eae5b",
-              "text": "Miraflores",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
-                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:39",
-                    "textSha256": "7a3038a7e2754a1b3cba5a24234ee0da84264baa5cfa193f172d3ab647c863d2"
-                  },
-                  {
-                    "ref": "word/document.xml:p:43",
-                    "textSha256": "7b5dc65323a240f32d3ddc9fd3dabc8ca9190b2f7aac09bf7eb1facf2fe398dc"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Uses the named Miraflores destination from the exact locks heading and visitor-centre passage as the route label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:73bf19ef6d842f42",
-              "field": "itinerary.label",
-              "sourceTextSha256": "4cd16db4fc830c0be15b8584897d342df6fd1b934ec43533065467c59b89bd67",
-              "text": "Biomuseo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
-                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:44",
-                    "textSha256": "3287bbd220c4ff7e5ab668ebe0bda855ce8ac97e22a8d0ba5a9b1037e2f527e4"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracts the museum's proper name from the exact Biodiversity Museum passage for the route label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:bd0d4731fbeb70ff",
-              "field": "itinerary.label",
-              "sourceTextSha256": "31371be2fdddcaeb8b5620478863bb733fa9d80497659080397a76a3a8bbbed3",
-              "text": "Casco Viejo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
-                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:45",
-                    "textSha256": "1e564f9bd3d55bfc76590519fb2caf42bdf675be93ce8f5cce49ba89c7c2b679"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracts the neighbourhood's proper name from the exact city-tour passage for the route label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:03:28.874Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-a40ee2cc-p03",
+        "blobSha": "467ee66f5d05ede7f5bfb59bb9252b453cab298c",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_panama_city_gamboa_6_days_b001/ada-en-a40ee2cc-p03.json",
+        "at": "2026-11-04T07:03:32.953Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

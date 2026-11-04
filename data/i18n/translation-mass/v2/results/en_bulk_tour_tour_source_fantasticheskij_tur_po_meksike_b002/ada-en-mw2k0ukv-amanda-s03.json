@@ -1,0 +1,156 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fantasticheskij_tur_po_meksike:b002",
+  "stableId": "tour_source_fantasticheskij_tur_po_meksike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d396f2dceaef4393dfe38f312a3fd7d9b33970d39733343b4179637c3092ab0f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:d3517c3f8cedca29",
+      "field": "itinerary.label",
+      "sourceTextSha256": "65f8098d51e9b1671bd93cb6cc012292fb2ecce6e203bb81d8a10e6d547b88e8",
+      "text": "Yaxchilan & Bonampak",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[44]",
+            "textSha256": "c0d8a52a737d1d2c3b2f7f11a4932ee42a183a54b0eaeb5ecee94cb797feee22"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination names from the Word day heading as the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c6b15713015ff062",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6c650593f320ea49cb87e28e42873662e394e6883e3f39b9240cfd86ce513461",
+      "text": "Villahermosa – Cancun (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[58]",
+            "textSha256": "2663fdd383e504ef2b6df35af5888831c6d0b59ce5defd6f19e3f2474a786a67"
+          },
+          {
+            "ref": "word/document.xml:p[59]",
+            "textSha256": "ab39b7280090bd1ee01ca20c3079c0824d8b6801c26a72c09d256ba084f93349"
+          },
+          {
+            "ref": "word/document.xml:p[62]",
+            "textSha256": "1acb475f123fa02a5f0289507fbab35e1cdc1fa2d28b8f1270f6a2b749d2bd31"
+          },
+          {
+            "ref": "word/document.xml:p[65]",
+            "textSha256": "9f5e5bfb34d9e8a69a013b2dd51394cba399cbc897e2feb2e44f830a83b63061"
+          },
+          {
+            "ref": "word/document.xml:p[68]",
+            "textSha256": "412b7c0626c96972eb39b0b5e593e3b364447a684a4361f77771c6abf11821c7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route segment and three-night stay from the confirmed arrival on Day 9 and departure on Day 12."
+      }
+    },
+    {
+      "blockId": "tour:included:70c38f5c2cd4712f",
+      "field": "included",
+      "sourceTextSha256": "8153c907addeefadcf5e98fd95845b788358cac410690cf68ca344e402b0602a",
+      "text": "Accommodation for 11 nights in hotels of your selected category, 4★ or 5★, or similar.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2k0ukv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The complete Word confirms 11 nights, hotel category options and similar hotels in separate passages, but contains no equivalent accommodation inclusion sentence; translate the pinned RU inclusion without changing its conditions."
+      }
+    },
+    {
+      "blockId": "tour:included:0ac75eee8002ef03",
+      "field": "included",
+      "sourceTextSha256": "cc74b0270f2f32aaae6ee78561d590966c936bedfff89c190c88da583b822644",
+      "text": "Breakfasts according to the programme from Day 2 to Day 12.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2k0ukv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The checked Word lists breakfast separately on Days 2–12 but does not contain the equivalent consolidated inclusion sentence; translate the pinned RU summary preserving the same days."
+      }
+    },
+    {
+      "blockId": "tour:included:9b54682b1ef0d212",
+      "field": "included",
+      "sourceTextSha256": "ea9a7997257c7c7e0d94480c9b0c62796815b4ce72e6475c08df32b611da9b10",
+      "text": "English speaking guide. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[89]",
+            "textSha256": "f16b75fdfcbd92eab7c4eb036077cdca3a1cebca003d3b287ecacf5441b706df"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:9eff2005f67732f1",
+      "field": "included",
+      "sourceTextSha256": "0ee321d6c3ee5aa1a3899dd8790bea889b198224e7dc030bb6fc7ae5bc9def00",
+      "text": "Entrance fees to sites to be visited as detailed in the itinerary. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[90]",
+            "textSha256": "4915002d9aa2ba378b3cec4c83f16796f265b58fd71352eff4785c7f68826c88"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:7c00ee7c1a5f5a0c",
+      "field": "included",
+      "sourceTextSha256": "98836e0a9d65ad01fa3d6d67563bdef21c89087babaa2eef27d4e9ae20fd588f",
+      "text": "Transfers in Cancun will be just with a Spanish speaking driver, not guide or assistance       included. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[91]",
+            "textSha256": "8d1b67390761f15a032100c65f057f04569218d8d887411829ac56c16c4833d8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:41868050ccf2b125",
+      "field": "included",
+      "sourceTextSha256": "2cfe1cebddc3ee757c138c2065b7c82704e68284e6e3816c1b47e400b1a454a4",
+      "text": "Hotel tax.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[92]",
+            "textSha256": "01bbccab34004a3f67b3872014f0b9bfba7f2bd5641fbb2379ae392f0424c09b"
+          }
+        ]
+      }
+    }
+  ]
+}

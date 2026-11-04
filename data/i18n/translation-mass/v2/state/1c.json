@@ -252,7 +252,93 @@
         "claimedAt": "2026-11-04T05:43:24.090Z",
         "expiresAt": "2026-11-04T07:13:24.090Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-ada-en-befca8d88a7c-05-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-befca8d88a7c",
+        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b003",
+          "stableId": "tour_colombia_highlights_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "baf0faa9bcaa320b5088f28f7a77395e061b7d42f99454b515d6c27d09275863",
+          "blocks": [
+            {
+              "blockId": "tour:note:446c249610d28966",
+              "field": "note",
+              "sourceTextSha256": "fb4ea60871b7c2ce78540f455ff7aa7e3f05d18ad6eb1339b81038e970a5d70a",
+              "text": "2027. Exact travel dates are confirmed at the time of booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The Word confirms 2027 rates but contains no exact travel-date confirmation note for this RU field."
+              }
+            },
+            {
+              "blockId": "tour:included:225462c0110d90b4",
+              "field": "included",
+              "sourceTextSha256": "e102844e402b68b7cf0d2913bb464ff15ea7a876801ed8c03e78509ccc3041b6",
+              "text": "Accommodation in the hotels specified, or others of a similar category",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p175",
+                    "textSha256": "ef18ac969bf651aa9e190f568207e36959b28f5e143f036c57ed608e5f697d70"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the Word list marker because this field is rendered as a list item by the shared template."
+              }
+            },
+            {
+              "blockId": "tour:included:868efac4b03b66e3",
+              "field": "included",
+              "sourceTextSha256": "c4eda4be8e52724bb322b05fddf9dcbdf75a2d9b1b39effdeac160fbc5bb0f43",
+              "text": "Daily breakfast",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p176",
+                    "textSha256": "7892cdbb9c91d6175888436ad5a81c860416ab2bc55c32c8ba965b0eb50f0bad"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the Word list marker because this field is rendered as a list item by the shared template."
+              }
+            },
+            {
+              "blockId": "tour:included:593a3bf402303229",
+              "field": "included",
+              "sourceTextSha256": "65dc657fe988d76cb313d49da35ecfd80ae45b0c7cc3a2d1bd91f5b11d4bea9f",
+              "text": "Sightseeing tours and excursions as described, with an English-speaking guide",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p177",
+                    "textSha256": "1746645730c92e6e22021ced165a317a0111bbdfd93f977169e0c1b9bb8ef683"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the Word list marker because this field is rendered as a list item by the shared template."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:44:19.775Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

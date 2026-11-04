@@ -1,0 +1,169 @@
+{
+  "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b002",
+  "stableId": "tour_colombia_explorer_9_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c8ccccb737d913888ec08fb9b1601de04595a9bb91688bbbe63724fe3a8fd3e3",
+  "blocks": [
+    {
+      "blockId": "tour:note:99e5af95ef77c7e6",
+      "field": "note",
+      "sourceTextSha256": "53f58dda437d8b000b613ddd385cb981b79854556f4015d31e630aff8287b4f6",
+      "text": "Travel in 2027; exact dates are confirmed at booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-20261105-5of5-B-colombia-b002",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved 2027 Word confirms the travel year but does not explicitly state the timing of final date confirmation; this note is translated from locked RU."
+      }
+    },
+    {
+      "blockId": "tour:included:1bd3b6cd86d30d63",
+      "field": "included",
+      "sourceTextSha256": "5a1ea0ff4405b129b54671c5971cf3a1c8f19a9e983e4052128f3994fd85f57e",
+      "text": "8 nights in the listed hotels or similar-category properties: 2 nights each in Bogotá, Pereira, Medellín and Cartagena.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p149",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          },
+          {
+            "ref": "word/document.xml#p154",
+            "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
+          },
+          {
+            "ref": "word/document.xml#p159",
+            "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+          },
+          {
+            "ref": "word/document.xml#p164",
+            "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+          },
+          {
+            "ref": "word/document.xml#p204",
+            "textSha256": "ef18ac969bf651aa9e190f568207e36959b28f5e143f036c57ed608e5f697d70"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "The approved hotel table lists two nights in each of these four destinations; the approved included-services list permits similar-category hotels."
+      }
+    },
+    {
+      "blockId": "tour:included:ab77453b59b64a84",
+      "field": "included",
+      "sourceTextSha256": "a3b880f87b82fb390808b754454b46108adb7d3b34271c2cfee61b2bb3038b9e",
+      "text": "Daily breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p205",
+            "textSha256": "7892cdbb9c91d6175888436ad5a81c860416ab2bc55c32c8ba965b0eb50f0bad"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved daily breakfast item is reproduced verbatim except for its leading printed list marker."
+      }
+    },
+    {
+      "blockId": "tour:included:593a3bf402303229",
+      "field": "included",
+      "sourceTextSha256": "65dc657fe988d76cb313d49da35ecfd80ae45b0c7cc3a2d1bd91f5b11d4bea9f",
+      "text": "Sightseeing tours and excursions as described, with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p206",
+            "textSha256": "1746645730c92e6e22021ced165a317a0111bbdfd93f977169e0c1b9bb8ef683"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved included-services guide provision is retained exactly with the printed bullet marker removed."
+      }
+    },
+    {
+      "blockId": "tour:included:c4b4ebff12aa934d",
+      "field": "included",
+      "sourceTextSha256": "4ec113ecb255d806892fef8ea2b478326d216af1c5e537f903da2c9ca8699245",
+      "text": "Private transfers as specified in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p207",
+            "textSha256": "c1074e60c1a42beac95edb012b4cec4070ee2e63cccdf83541dae7dcb6b969d6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved private-transfer inclusion is reproduced verbatim after omitting only its printed list marker."
+      }
+    },
+    {
+      "blockId": "tour:included:a4467efcda496232",
+      "field": "included",
+      "sourceTextSha256": "bfbc9fd7b7b2e5396c3174ee581a049adfeedf6b628bffa60b19cdfbc689229d",
+      "text": "The experience includes private hotel–marina transfers, shared speedboat transportation, a traditional Caribbean lunch, dessert, coffee or tea, and the marina tax. In the afternoon, return by shared speedboat to Cartagena, followed by your private transfer back to the hotel. A private boat experience can also be arranged as an optional upgrade, offering greater flexibility and exclusivity throughout the day.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p135",
+            "textSha256": "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1f2294a2a9caeb15",
+      "field": "notIncluded",
+      "sourceTextSha256": "0a87bd9c8a1eb4a11262f5ed9f4734de9c8bb1f3850be4729bd0f7be4f2149ef",
+      "text": "Domestic flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p211",
+            "textSha256": "a633e20a37722435099619fee738b727158bf6143101937cf84ef20d0e2310d3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved programme excludes the domestic flights; only the leading printed list marker is removed."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:4becef667003ebae",
+      "field": "notIncluded",
+      "sourceTextSha256": "6bb4b4ae8f1f314ad96d6ae71b2fb6a482babe841336fa9fb5dd111255d655a8",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p212",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved programme excludes international flights; only the leading printed list marker is removed."
+      }
+    }
+  ]
+}

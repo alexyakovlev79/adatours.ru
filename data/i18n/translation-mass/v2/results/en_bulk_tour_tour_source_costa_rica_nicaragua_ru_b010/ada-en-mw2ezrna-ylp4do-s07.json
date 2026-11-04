@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b010",
+  "stableId": "tour_source_costa_rica_nicaragua_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e08dfc5131c61654f39a6e4e60dd0c0d5cc0da94d0b714451b43d9575c6ac8c2",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:48c74bc32b51342e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "032dae29cd982e237a98590ef27fb59495c112804d3aac18f03d7f31ec9c76fc",
+      "text": "Zopango Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#paragraph[104]",
+            "textSha256": "9013277e33766db1eeb1b2367693a5475681055b09a4b89ec2c7f073137a6780"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the island name and type from the Day 9 Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2d842231034958d8",
+      "field": "media.alt",
+      "sourceTextSha256": "3919b7e37650162ed4a8fe1f64556487ef4181c5a50d7a32ba04afa7ab73008d",
+      "text": "The Nicaraguan flag in front of the yellow and red façades of Granada Cathedral",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezrna-ylp4do",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no photo-specific alt description of Granada Cathedral."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d3ec9ce40ea7f962",
+      "field": "media.hover",
+      "sourceTextSha256": "285a3fe7bc0c97535004f580d9a87cbeea110b040d952ce1863c0c5b1d3a24e9",
+      "text": "Granada: the city's domed cathedral and a flag flying in the breeze",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezrna-ylp4do",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no photo-specific hover caption of this cathedral."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "06a877abe18782ccd70d131313fb2a70ead3e12cab9ad15dd35f98ff07346a32",
+      "text": "Granada – Pacific coast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#paragraph[112]",
+            "textSha256": "e0eeef105d0829d1e88f34fe2302c7f82f509e4e467793e4b9da7ce8574866a9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composes the route heading from the Granada departure and the Day 10 Pacific coast destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d93a9b7c89b0ee5a1c7ed36395460c199dc9a873edb27baa02c49efc8dc1b1de",
+      "text": "Transfer to the border with Costa Rica, then continue to the Pacific coast.\n\nRelax on the beach.\n\n**Overnight:** Wyndham Tamarindo.  \n**Meals:** breakfast, lunch.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezrna-ylp4do",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 10 names Hotel Pasatiempo and breakfast only; the current RU block's Wyndham Tamarindo, lunch, border crossing and beach-rest details have no matching Word passage. The assigned RU terms are preserved; no shared hotel or meal data is changed."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b139b0dc69e55172",
+      "field": "itinerary.label",
+      "sourceTextSha256": "10deb16480e36d1d663002a6b2e6d3f0e08fb7399cd7a7e71c54526835d255b5",
+      "text": "Granada",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#paragraph[48]",
+            "textSha256": "3248572c5b6c1107545b5d8fdc6f9b8a83b75cfbe3449255cc9e96550178b42c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:406347e6c20850da",
+      "field": "media.alt",
+      "sourceTextSha256": "925b190cf4dbaafc1ec6395fcadceef5084a6e857f3ebaebffdba40e026af048",
+      "text": "A colourful tourist road train and a cyclist on a street in Granada, Nicaragua",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezrna-ylp4do",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no photo-specific alt description of the tourist road train."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e359870005ecf3e4",
+      "field": "media.hover",
+      "sourceTextSha256": "3c20190d51a3b738e6f0afe9f22cf6c6f117bbcbadaf40fdf8e95ad956a60e66",
+      "text": "Granada: a colourful sightseeing road train beside a cyclist",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2ezrna-ylp4do",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no photo-specific hover caption of the tourist road train."
+      }
+    }
+  ]
+}

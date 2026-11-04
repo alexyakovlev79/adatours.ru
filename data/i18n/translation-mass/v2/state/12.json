@@ -393,7 +393,96 @@
         "claimedAt": "2026-11-04T05:56:55.494Z",
         "expiresAt": "2026-11-04T07:26:55.494Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_2478a2a40c1c_s01_c04",
+        "format": "inline-v1",
+        "ownerId": "ada_en_2478a2a40c1c",
+        "token": "ada_en_2478a2a40c1c_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_easter_island_3_days_2027:b005",
+          "stableId": "tour_chile_easter_island_3_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "75d0fb976e6955a1dd289ca3498f3cec582c2739e7c26bae978e9fb18a80cbc1",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:bddd2d69c46fcb7a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "4ddd3ef502da3a155c9693c1d396df4496109ee797bdc000cc6d0d4155f3891c",
+              "text": "Ahu Akahanga",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p76",
+                    "textSha256": "c4377f627ebda9c58e68c2e9506af813ea7e71c2f550b316584a797d802623bb"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named platform Akahanga from the Day 2 passage, retaining the RU platform label Ahu."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c914737d23dc4726",
+              "field": "itinerary.label",
+              "sourceTextSha256": "87727e505e0cf8fb8a1d90a35876ad8bcb0df96cffd1a76e304b64df757a8527",
+              "text": "Rano Raraku",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p43",
+                    "textSha256": "1d163ab7838cf084befca2a8bb1c25c7bf223949f4ce38a7e471eed294cbe941"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:567c9a0701f79166",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a25c0394e92d145efe32a577e4346f00324aea83e28e8502ff4b2811d1598d1b",
+              "text": "Ahu Tongariki",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "1bd817639bc00ec785b816fedd162998e5cad883bf54d79e5cdda6c2544404d1"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:aeea27f7f5630208",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8d5ea37edce31618d23c4a2587c58fcad1eda81c00ca26cb6fac91d012fd2161",
+              "text": "Ahu Te Pito Kura",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+                "documentSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p77",
+                    "textSha256": "9358dd6741d96e073aebb304ef9729e6d74a951a436ec02724ae730fe62cf315"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the site name unchanged from the Day 2 passage for this route label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:58:10.797Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

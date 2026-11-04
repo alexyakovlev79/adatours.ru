@@ -132,177 +132,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b018",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "6aea2baff6e34059c3fbc365f485c3401135a39e5a12a4264e55da26fbb0d0a5",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-884b0cfde5f5",
-        "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
-        "claimedAt": "2026-11-04T05:40:57.825Z",
-        "expiresAt": "2026-11-04T07:10:57.825Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-884b0cfde5f5-s04-c8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-884b0cfde5f5",
-        "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
-        "generation": 2,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b018",
-          "stableId": "tour_brazil_peru_argentina_group_15_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "6aea2baff6e34059c3fbc365f485c3401135a39e5a12a4264e55da26fbb0d0a5",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:173cf987634ed90a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "141bec94060e1531011bc1651672b12d4074a0268125a1782e94a36256fd98ed",
-              "text": "Transfer to the airport to take your flight back to Buenos Aires.Transfer to your hotel",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p81",
-                    "textSha256": "272ac5cf9275bc8c3f421a4432a7881764f44a5a10a21129530fb94d304a0016"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:294cc25a4eafe564",
-              "field": "itinerary.label",
-              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
-              "text": "El Calafate",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p80",
-                    "textSha256": "350433d65adfa9fc97492206cb2d903b82f03bd1b6d152f9f2ce93c185a0ed54"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the departure place from the exact Day 13 Word heading for this place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:208366df5b21a36f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p80",
-                    "textSha256": "350433d65adfa9fc97492206cb2d903b82f03bd1b6d152f9f2ce93c185a0ed54"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the arrival place from the exact Day 13 Word heading for this place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:dcb5e47b12fcf932",
-              "field": "media.alt",
-              "sourceTextSha256": "260fbcd2272616ef56120e7d4cb5d746847a2a2d98862fbbc2bd42aaa4c27250",
-              "text": "The pink Casa Rosada building behind a flower bed in Buenos Aires, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "adaen-ce889297dd8d-20261104",
-                "wordAbsenceReason": "Full exact Word e45cd1f7 inspected, including p80–87: website-specific image alt descriptions are absent; translate current RU image metadata."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:b644dbaf810af2c3",
-              "field": "media.hover",
-              "sourceTextSha256": "05afe20b952e8f1856079461e27e2faa9ca6069f46185e58c957b8a5a51e180c",
-              "text": "Buenos Aires: the Casa Rosada façade with flowers in the foreground",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "adaen-ce889297dd8d-20261104",
-                "wordAbsenceReason": "Full exact Word e45cd1f7 inspected: no website image hover text exists for this photograph. Translate current RU metadata."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
-              "field": "itinerary.title",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p83",
-                    "textSha256": "708ca17fc8071ee14540305817f088571bbddbcca78034bca15620df0fa685e1"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Remove the day number prefix from the exact Word heading for the day title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:936a34ccc6e7c635",
-              "field": "itinerary.text",
-              "sourceTextSha256": "7043d7078f604043b7c42c2dca73f1ac31e4ee9569791975a6015781cb5aab75",
-              "text": "Half day city tour in Buenos Aires.\n\nThis panoramic tour will take you through the highlights of South America's most European and cosmopolitan city. We'll drive along 9 de Julio Avenue where the renowned Colón Theater and the Obelisk, symbols of our city, are located. We'll visit Plaza de Mayo, surrounded by important historic buildings like the Casa Rosada, the Cathedral and the City Hall. We'll also visit Plaza San Martin, Alvear and Plaza del Congreso. The tour will drive us along the old fashion Avenida de Mayo and the dynamic Avenida Corrientes. Explore neighborhoods filled with colors and history, like La Boca and San Telmo, and the sumptuous neighborhoods of Palermo, Recoleta and the modern Puerto Madero, a busy gastronomic and entertainment area. Return to hotel and overnight.\n\nBuenos Aires is famous for being the birthplace of Tango. No doubt, this is the best city in the world for fans of this famous dance. In addition, you will certainly feel the extraordinary charm of this cosmopolitan city, with its famous palace Casa Rosada, the former port of Puerto Madero, quarter Caminito, Calle Florida , Boca Hunior football stadium , the cathedral , the National History Museum , the Botanical Garden (…) - This multi-faceted city is so full of interesting places, which makes it impossible to list them all.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p84",
-                    "textSha256": "b9b615686fd1e297d25e428b1566dc64c43400680f08b64b8fccecb7fac2f564"
-                  },
-                  {
-                    "ref": "word/document.xml:p85",
-                    "textSha256": "47fa6b18f763cf7f028a9f1f8bef6fdefbc538ae842fce7818b9d8e7005e7159"
-                  },
-                  {
-                    "ref": "word/document.xml:p87",
-                    "textSha256": "2430242f1692ec97c9cacaafb4b3bb61cb01f9ed02082576f94bcae8c5fa2be3"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:748238cba351036c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p83",
-                    "textSha256": "708ca17fc8071ee14540305817f088571bbddbcca78034bca15620df0fa685e1"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the location in the exact Day 14 Word heading as the stable place label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:42:00.727Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-884b0cfde5f5-s04",
+        "blobSha": "e4e7318e5af706282e3ba789374e700910383ae0",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_peru_argentina_group_15_days_b018/ada-en-884b0cfde5f5-s04.json",
+        "at": "2026-11-04T05:42:35.266Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

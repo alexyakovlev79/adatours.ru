@@ -426,179 +426,22 @@
     {
       "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "4afa14a366e7e72e9fabae831451b3b6328abc383fa8e973b7d38b3159e6ea37",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "claimedAt": "2026-11-04T06:14:14.001Z",
-        "expiresAt": "2026-11-04T07:44:14.001Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-39fb6759e90b-b008-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b008",
-          "stableId": "tour_mexico_lindo_eight_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "4afa14a366e7e72e9fabae831451b3b6328abc383fa8e973b7d38b3159e6ea37",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:5bb963aeb2f0c070",
-              "field": "itinerary.label",
-              "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
-              "text": "Teotihuacan",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p36",
-                    "textSha256": "e9028c9ee8d6e519ea46a8243cc374874dac904c89c28d79d05b586c695c7bd1"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the confirmed Word archaeological-site name for the existing place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "c8726bce05ba4b2223c6bac2b31b3b8d63197f8a519213651eb2064b2cc2dcca",
-              "text": "Xochimilco & Southern Neighborhoods",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p42",
-                    "textSha256": "b13cd9b4205a3e3c68071b5df6c18813c77c347e01c407faac0694cd258557bb"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the day-number prefix from the confirmed Word heading for the existing itinerary title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceTextSha256": "3b2c1a05da04ede9723ea3f7affcef17e7797dd17c4ca55faf3e17587dd1fc5c",
-              "text": "Duration: 12 Hours\nPick-Up: 8:45 – 9:30 AM\nLanguages: English and Spanish\nAvailable: Wednesdays, Fridays, and Sundays\n\nIncluded:\n•  Shared transportation\n•  Certified bilingual guide\n•  Visits to Xochimilco\n•  Overnight stay in Mexico City\n\nNot Included:\n•  Meals and drinks\n•  Tips\n•  Personal expenses",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p44",
-                    "textSha256": "6b191935f04e79dfa0542f41da2eae5b88d5bddbf67fc54de7589917afec4fac"
-                  },
-                  {
-                    "ref": "word/document.xml:p51",
-                    "textSha256": "6fd3b4b4590d10818576a25c6797c3b9fd7ca7a9185b7cee27281cd298faf8d1"
-                  },
-                  {
-                    "ref": "word/document.xml:p52",
-                    "textSha256": "58d01e5b39d3498ccb2449ef5b81c150b3da2719635607e926dfcca0643e0484"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:9c5776e57b6c5d33",
-              "field": "itinerary.label",
-              "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
-              "text": "Mexico City",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p14",
-                    "textSha256": "ccc06574af3ecb1da2573ebf9aeb19ba1c872c0ca5dfcff4a3289a30151d47ab"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the confirmed Word city name for the existing linked place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:fa1ddaed8488e8fe",
-              "field": "itinerary.label",
-              "sourceTextSha256": "3e4ef6d3fa13090c609d0faf6539e626f78a65ae519e2f83fe8f4ffc8f3fa8c0",
-              "text": "Xochimilco",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p48",
-                    "textSha256": "3ed291fcc8b0414b52b870bf61b3393b16d71a9c5ab92ea6362008e9ae27bc81"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the confirmed Word place name for the existing linked place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:2f725188c930b8f0",
-              "field": "media.alt",
-              "sourceTextSha256": "457e37590e7204cb69eab8a5fe1c9584789343d15f1c0dbc0ca775924e83cf8b",
-              "text": "Illuminated city streets and buildings seen from above at night, Mexico City, Mexico",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word document has no matching photo alternative text; translate the current RU media.alt."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:605e9043cbfd0d1d",
-              "field": "media.hover",
-              "sourceTextSha256": "34602d2cc65499e125cbf042e85e748e1e72f4adeae9c13b7a2f12eaf6e7744a",
-              "text": "Mexico City, Mexico: illuminated city streets and buildings seen from above at night",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word document has no matching photo hover caption; translate the current RU media.hover."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:e93b4ceb5da5b013",
-              "field": "itinerary.label",
-              "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
-              "text": "Mexico City",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p14",
-                    "textSha256": "ccc06574af3ecb1da2573ebf9aeb19ba1c872c0ca5dfcff4a3289a30151d47ab"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the confirmed Word city name for the existing linked place label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:15:07.932Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-39fb6759e90b-save-05",
+        "blobSha": "29caffecbee4e38e5f2eab007947d15ee19367bd",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_mexico_lindo_eight_days_b008/ada-en-20261104-39fb6759e90b-save-05.json",
+        "at": "2026-11-04T06:21:22.892Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

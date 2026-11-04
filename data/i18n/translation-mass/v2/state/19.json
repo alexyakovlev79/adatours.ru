@@ -303,191 +303,22 @@
     {
       "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b3ff3aef968ad3706d673e3661227db6adb72712b71251319b175df808280462",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_abf469133bbf",
-        "token": "ada_en_token_abf469133bbf_20261104",
-        "claimedAt": "2026-11-04T06:07:35.436Z",
-        "expiresAt": "2026-11-04T07:37:35.436Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_abf469133bbf:b002:cp8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_abf469133bbf",
-        "token": "ada_en_token_abf469133bbf_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b002",
-          "stableId": "tour_chile_marble_caves_san_rafael_three_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b3ff3aef968ad3706d673e3661227db6adb72712b71251319b175df808280462",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:268943f960b42834",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e3a34387f20a4c2514690c2bddb5f925e2d243be1e944629d70553c45bc960c4",
-              "text": "Marble Caves",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:48",
-                    "textSha256": "3170273ab280e4f39f354560e8c8488401a91f9a5f631b60162eff1726893c49"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:0c21e1a494fb55f4",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6bc72a06d3ee5ca21936396b7e8062b5039d0f52fc831d1d638c1e70eb3b4091",
-              "text": "Cerro Castillo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:51",
-                    "textSha256": "3f92fa468147f0705804a2bb4efcf12296530ce0ce4d3fbe40e0890814fe2cab"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:28d2d149682ad276:2",
-              "field": "itinerary.label",
-              "sourceTextSha256": "64c4271b5935c18354fd4e46002f72b14e5a2ee1532bdf378cafdca889ffd527",
-              "text": "Balmaceda",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:7",
-                    "textSha256": "9ccae571f0437d95bb6312aec45de615bc1727b26b445b3375a1da7b518f792d"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact destination name Balmaceda from the Word route label."
-              }
-            },
-            {
-              "blockId": "tour:included:f02fdc247244fba0",
-              "field": "included",
-              "sourceTextSha256": "be488236f1a0a4326ed73ce986d197ef53405ab3b6deb8443cdd4190e8bc9353",
-              "text": "Arrival at Balmaceda Airport and welcome by your local English-speaking driver-guide.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:66",
-                    "textSha256": "030e20f8d6b7df797c8a19d9059c7f3e3e2355691ccfc12c7b6503cf1a90980d"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact arrival-and-welcome sentence from the Word day paragraph, removing only its day-number prefix."
-              }
-            },
-            {
-              "blockId": "tour:included:fdef5cde4dea6761",
-              "field": "included",
-              "sourceTextSha256": "37e8cb07a3db5e46bcc1f2261609dca4eb81a5d6c0532ddaac97df1489e8c139",
-              "text": "Ground transport along the Carretera Austral according to the programme.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:66",
-                    "textSha256": "030e20f8d6b7df797c8a19d9059c7f3e3e2355691ccfc12c7b6503cf1a90980d"
-                  },
-                  {
-                    "ref": "word/document.xml:p:89",
-                    "textSha256": "988215599aaaaa00e91aca530a57ddfbf55aac15a54f26fa416cb17700a872c7"
-                  },
-                  {
-                    "ref": "word/document.xml:p:132",
-                    "textSha256": "f6f7e694fd678df4af0aad4cd66f79f6c8b23bba01d688db93d1e7efc1f7be47"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Create the inclusion label from the Word transport inclusion and the outbound and return paragraphs that explicitly follow the Carretera Austral."
-              }
-            },
-            {
-              "blockId": "tour:included:961c52b487486b92",
-              "field": "included",
-              "sourceTextSha256": "96849b8e277303c2554b651c2aedfabc01c3c91b844b37c9a57cc257f999120a",
-              "text": "2 nights at El Puesto Patagonia",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:131",
-                    "textSha256": "d1bd8a80c73e2693907dd0f4901c49934242f020a1f9c1d99e2fa78520f4ef6c"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading dash and list spacing from the exact Word inclusion item."
-              }
-            },
-            {
-              "blockId": "tour:included:20a43852b95881cd",
-              "field": "included",
-              "sourceTextSha256": "4ccd8747eed921b92ff61c858db371b1fb7468576e258008107e71fa2804059e",
-              "text": "San Rafael Glacier full-day excursion by boat",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:133",
-                    "textSha256": "e409c838474fb38a51524a052b064f3ce93d4ead1d719ce5dd5731ef45ac0756"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading dash and list spacing from the exact Word inclusion item."
-              }
-            },
-            {
-              "blockId": "tour:included:ce4e4634263fc6b7",
-              "field": "included",
-              "sourceTextSha256": "32c3f7502bded25eb3077da7324cf086dab0b1da29f164469368e678a0ab4bec",
-              "text": "Marble Caves excursion by private boat",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:134",
-                    "textSha256": "4a3f8a6fbe5b724e155f24180e4482ebe3fddfc9ffb25b53a41ba9311414767f"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the leading dash and list spacing from the exact Word inclusion item."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:08:26.449Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_abf469133bbf:tour_chile_marble_caves_san_rafael_three_days:b002",
+        "blobSha": "c749da1f058e8c70eb1f1ea03da9b632465510d8",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_marble_caves_san_rafael_three_days_b002/ada_en_abf469133bbf_tour_chile_marble_caves_san_rafael_three_days_b002.json",
+        "at": "2026-11-04T06:08:31.329Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

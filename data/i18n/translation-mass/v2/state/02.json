@@ -252,7 +252,116 @@
         "claimedAt": "2026-11-04T05:34:46.999Z",
         "expiresAt": "2026-11-04T07:04:46.999Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f801-r2-02-b003-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-run2-20261104",
+        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
+        "generation": 2,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b003",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "113a077895eedeeb2430c288e1403a7ff4b96a8b48e0d6f9bbb4ae36e1a014d7",
+          "blocks": [
+            {
+              "blockId": "tour:included:f9966cf1848d219a",
+              "field": "included",
+              "sourceTextSha256": "084c2cec867f41f2aa0a0236b797c053ff8528caa9f063dcda30ea8a09b8eae4",
+              "text": "  Entrance tickets to the sites listed in the program;",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[108]",
+                    "textSha256": "2b7492eafa5ae0bc2f044f5ba37f2de29b1e04ebdd4e06179208c381af581605"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            },
+            {
+              "blockId": "tour:included:2cc07ab2afd0b1b3",
+              "field": "included",
+              "sourceTextSha256": "5813caaaf484372eddc28e891cc698ceb2eb508099a4ab30d90b492c3d9f522b",
+              "text": "  Ground transfers between the hotel and excursion starting points.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[109]",
+                    "textSha256": "1af721a0bbab439c3b4fb586b2450c644e596400990a4f64c70810e43a092591"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            },
+            {
+              "blockId": "tour:included:ebb065db57ed65c6",
+              "field": "included",
+              "sourceTextSha256": "618a434d59c6f795fac7417ab243ffe83e490c90c4a9d7d3a81735a50007c34e",
+              "text": "Box lunch on Easter Island on Day 4; a cocktail in the Valley of the Moon on Day 7; lunch in Torres del Paine on Day 8; lunch at the third winery on Day 12; a tango show with dinner on Day 16.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[23]",
+                    "textSha256": "8f349224d9c7cbe8c1112723bf985f01fcbff29951f2814e34248589631159d2"
+                  },
+                  {
+                    "ref": "word/document.xml:p[37]",
+                    "textSha256": "e1d39150fc030f6dd526308e70347fa5bcbaf809a0792ddfed780c5d5b2afec2"
+                  },
+                  {
+                    "ref": "word/document.xml:p[43]",
+                    "textSha256": "1d5b88566c599ce3d49aed298e8b3fa24993b6b48a230548d87103836de9bdd9"
+                  },
+                  {
+                    "ref": "word/document.xml:p[65]",
+                    "textSha256": "27078d7ef408d13025f3c08b935aef2faf91075fa85e1a915d95d4168a4b0c36"
+                  },
+                  {
+                    "ref": "word/document.xml:p[87]",
+                    "textSha256": "5b65c4ff8723128eddec443c9403366da08cb318a6e7f39770bc1a42e23c293e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the included-meals list from the exact day headings and meal inclusions in the selected Word itinerary."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:78deb6e41e273d7b",
+              "field": "notIncluded",
+              "sourceTextSha256": "2a7ef43f01c44e6c58a6cababd09d35e37a924a30d832eea1035ddd141d7f65d",
+              "text": "  International flights;",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[111]",
+                    "textSha256": "5cb21a4e82b2f9294c0992b0a84eee88c1b44383b8e39ab5ec0039c3908b7e87"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:38:12.598Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

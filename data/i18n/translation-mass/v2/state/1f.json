@@ -468,194 +468,22 @@
     {
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b017",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "9fdb00b6fdf19e3ebeb3d0ae62bdcc5b4620473bcd5882229efccfb830d99300",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-a40ee2cc",
-        "token": "ada-en-token-a40ee2cc-71df-20261104",
-        "claimedAt": "2026-11-04T07:55:35.203Z",
-        "expiresAt": "2026-11-04T09:25:35.203Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-a40ee2cc-p10-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-a40ee2cc",
-        "token": "ada-en-token-a40ee2cc-71df-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b017",
-          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "9fdb00b6fdf19e3ebeb3d0ae62bdcc5b4620473bcd5882229efccfb830d99300",
-          "blocks": [
-            {
-              "blockId": "tour:media_hover:9b76fb9dc2895483",
-              "field": "media.hover",
-              "sourceTextSha256": "76146182d58fc385f629bb3f700cf9299a2c1a0945081747eb5185e1ee53de75",
-              "text": "Wine and snacks on a table by the sea",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The checked Word contains no matching photograph hover caption of wine and snacks by the sea; translated the current RU media caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
-              "field": "itinerary.title",
-              "sourceTextSha256": "dcd053327255f98efef580f1f2c93cfb95b93d2b9196ce9d541ee806ce14eb59",
-              "text": "Mendoza → Iguazú",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:66",
-                    "textSha256": "118377278b66f61cff0842a048e48de07760cdd667f09fb8a69c9d52c69803f7"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Removes the day number from the exact day 13 route heading, preserving the route and destination spelling."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:173cf987634ed90a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "95a5b61193ad8629bfccefb6a89384dec1b92dec2d4b81021aac90f742fc2a05",
-              "text": "Direct private jet flight\n\nOne of the planet's most extraordinary natural phenomena — Iguazú Falls, greeting travelers with the thunder of falling water and a cloud of spray visible for miles.\n\nHotel: Belmond Hotel das Cataratas, Deluxe Room.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:67",
-                    "textSha256": "d9ab5122df9e66939e80ca309073bd1eec3708476a7371afb406bb2e0ff9a513"
-                  },
-                  {
-                    "ref": "word/document.xml:p:68",
-                    "textSha256": "556fe155bc4285abeaa4b82acbe2d09bb3a81463c702a096e80abf2cda998c23"
-                  },
-                  {
-                    "ref": "word/document.xml:p:69",
-                    "textSha256": "52ea7e31f019bfa73261ecc2a47d422fbdd489233338cbd15d22a5b91a91c5cd"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:594cd1489999822c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
-              "text": "Mendoza",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:57",
-                    "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
-                  },
-                  {
-                    "ref": "word/document.xml:p:62",
-                    "textSha256": "b542dd18221bd36e149e6ccef68b6fc9745e64fadec8800b4b66fd4abc46248e"
-                  },
-                  {
-                    "ref": "word/document.xml:p:66",
-                    "textSha256": "118377278b66f61cff0842a048e48de07760cdd667f09fb8a69c9d52c69803f7"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracts the exact Mendoza place name used in the approved route headings."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:2e9aae17d0a7d02c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-              "text": "Foz do Iguaçu",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The checked Word uses Iguazú and names the Brazilian Belmond hotel but has no equivalent Foz do Iguaçu place-label text; translated the current RU canonical city label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:08e8e832d5705a6c",
-              "field": "media.alt",
-              "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
-              "text": "Iguazu Falls seen from the Brazilian side",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The checked Word contains no matching photograph ALT text for this Brazilian-side falls image; translated the current RU media description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
-              "field": "itinerary.title",
-              "sourceTextSha256": "1d8ef8f88110254d9d1fef30d3d6a8746c03aded68f41d1358c40ffcc763392a",
-              "text": "Iguazú | Brazilian Side of the Falls",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:71",
-                    "textSha256": "1a78b324e67d851ad1905917eac10dc28a71b6c25eac8a8c609a66447ad7e9f8"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Removes the day number from the exact day 14 heading, preserving the approved destination and side-of-falls title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:936a34ccc6e7c635",
-              "field": "itinerary.text",
-              "sourceTextSha256": "fb7c3924fd10d7f2019d2f5b1bde1f462e0b75f68d718096c41d37d8e07ee247",
-              "text": "You head to the Brazilian side of the falls, bordering the Iguazú River canyon. To call it a magnificent sight barely captures the emotions it evokes. The falls sit within a national park of unique flora and fauna, formed by volcanic eruption and shifting tectonic plates. The name, in Guaraní, means \"big water.\" 275 individual waterfalls, each with its own name, merge into one and plunge thunderously into the \"Devil's Throat\" gorge. The sight of the spray, wrapped in a halo of rainbow color, is utterly mesmerizing. Along the way to the mightiest of them all — the Devil's Throat — you'll pass countless smaller falls. The rainbow-lit spray of billions of falling droplets, set against magnificent scenery, delivers an incomparable sense of awe.\n\nTwo more excursions follow — the Macuco Safari and the Bird Park.\n\nMacuco Safari: an exhilarating jeep safari through the jungle, accompanied by a guide describing the national park. Through the forest and then on foot, you reach a dedicated platform on the Iguazú River, where an exhilarating boat journey beneath the falls awaits. Aboard a specially equipped boat, you approach the falls up close — unique views not only of the falls themselves but of the jungle-clad mountainsides around them. It's breathtaking, adrenaline-charged, as you find yourself beneath a solid curtain of falling water.\n\nThe Bird Park sits near Iguazú National Park. This exotic bird sanctuary spans 4 hectares of pristine subtropical forest. Here you can see — and even feed — more than 500 species of exotic birds from across the continents in their natural habitat. The reserve is also home to crocodiles, monkeys and other animals. You'll walk through enormous aviaries where magnificent, fantastical birds of extraordinary color fly and roam freely among the tropical foliage.\n\nHotel: Belmond Hotel das Cataratas, Deluxe Room.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:73",
-                    "textSha256": "720d250a54770cf1bbcd1bff231bf9c0963b141c5c14063b7ff005b10ca6164e"
-                  },
-                  {
-                    "ref": "word/document.xml:p:74",
-                    "textSha256": "1471e8cbfc061aa16e5aa6f0693fa1b2adab3e65ec45e9e4c5aed3e1c1b53e98"
-                  },
-                  {
-                    "ref": "word/document.xml:p:75",
-                    "textSha256": "3e35143e68038c3b8ad84deee984de035c2e78735ce2a5ac8ce3cff686a8231d"
-                  },
-                  {
-                    "ref": "word/document.xml:p:76",
-                    "textSha256": "d26470abd92301b90967c44a49e36ff01fd7b995f372d8055dbde78504fb680f"
-                  },
-                  {
-                    "ref": "word/document.xml:p:69",
-                    "textSha256": "52ea7e31f019bfa73261ecc2a47d422fbdd489233338cbd15d22a5b91a91c5cd"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:56:50.719Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-a40ee2cc-p10",
+        "blobSha": "33ae8eaf9831f4ff7fc9bcfbcd27330eb1fd31b2",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_argentina_private_grand_tour_17_days_b017/ada-en-a40ee2cc-p10.json",
+        "at": "2026-11-04T07:56:57.034Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

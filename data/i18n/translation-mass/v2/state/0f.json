@@ -375,173 +375,22 @@
     {
       "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "88068ad2783264403be1413d90c3a49a150ca72cbc61bea4c845ee28938ff30a",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-9c9ff2214505",
-        "token": "token-9c9ff2214505-20261104",
-        "claimedAt": "2026-11-04T06:55:24.449Z",
-        "expiresAt": "2026-11-04T08:25:24.449Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-9c9ff2214505-en-bulk-tour-tour_mexico_oaxaca_city_break_five_days-b006-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-9c9ff2214505",
-        "token": "token-9c9ff2214505-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b006",
-          "stableId": "tour_mexico_oaxaca_city_break_five_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "88068ad2783264403be1413d90c3a49a150ca72cbc61bea4c845ee28938ff30a",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:769b3effebf3fc30",
-              "field": "itinerary.label",
-              "sourceTextSha256": "8c55ce7611964f45adea6774b2ff03f2659c0e15023c04495888f7b3f0c5a71f",
-              "text": "Oaxaca",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p13",
-                    "textSha256": "9b50253a07df5c36f1c29e87ae2559d5b7dd704bb3b4bc794f119353a5952803"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7c81b6c62659024a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "b231778ba2c4ad43135c1d88969173a3dcdad2fc25a8373c4b5f9bf81f7b626d",
-              "text": "Monte Albán",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p21",
-                    "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:0b65b003dfae391a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f6c4e32d9f4cd529468c353a914ba5a27c46d2ecb99f616af587d5a864b5ea66",
-              "text": "San Antonio Arrazola",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p21",
-                    "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:3d24c1a1b53c2791",
-              "field": "itinerary.label",
-              "sourceTextSha256": "44ee1edd659770fc6a09b02e2561a9d07ed6fa6af0e6325b052ca0d5075ff5cc",
-              "text": "San Bartolo Coyotepec",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p21",
-                    "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:7f89bf592372631c",
-              "field": "media.alt",
-              "sourceTextSha256": "51daa3192a1121f677fc74209944debfda8743c3a6fc40a1a9e1ab5b07a4599c",
-              "text": "Black ceramic vessels with carved decoration in a Coyotepec workshop, Mexico",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-9c9ff2214505",
-                "wordAbsenceReason": "The verified Word describes a pottery workshop but contains no matching image alt text; translate the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:fa8083a3fbace6d7",
-              "field": "media.hover",
-              "sourceTextSha256": "04614d3e922202e2cf136b9e1f517253fec6948428481f8618e6ddad9dcb4e96",
-              "text": "Coyotepec, Mexico: glossy black pottery on a wooden table",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-9c9ff2214505",
-                "wordAbsenceReason": "The verified Word contains no image hover text about glossy pottery on a wooden table; translate the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:2bb075ca0fc21ee5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "8c55ce7611964f45adea6774b2ff03f2659c0e15023c04495888f7b3f0c5a71f",
-              "text": "Oaxaca",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p13",
-                    "textSha256": "9b50253a07df5c36f1c29e87ae2559d5b7dd704bb3b4bc794f119353a5952803"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4aaa4077302cbbf8",
-              "field": "itinerary.label",
-              "sourceTextSha256": "b231778ba2c4ad43135c1d88969173a3dcdad2fc25a8373c4b5f9bf81f7b626d",
-              "text": "Monte Albán",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p21",
-                    "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:56:03.245Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-9c9ff2214505-en-bulk-tour-tour_mexico_oaxaca_city_break_five_days-b006",
+        "blobSha": "553da8abfd720637f73224a4b5f5e5a2baf98934",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_mexico_oaxaca_city_break_five_days_b006/sub-9c9ff2214505-en-bulk-tour-tour_mexico_oaxaca_city_break_five_days-b006.json",
+        "at": "2026-11-04T06:56:07.141Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

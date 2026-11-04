@@ -352,172 +352,22 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "414a699c1cc18a299af88a2c2a5e74157b5d8fff291b0b48cd0416cb84dca80f",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_7d6c4f36ac68",
-        "token": "tok_7d6c4f36ac68_20261104",
-        "claimedAt": "2026-11-04T06:23:08.312Z",
-        "expiresAt": "2026-11-04T07:53:08.312Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_7d6c4f36ac68.b008.8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_7d6c4f36ac68",
-        "token": "tok_7d6c4f36ac68_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b008",
-          "stableId": "tour_colombia_complete_11_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "414a699c1cc18a299af88a2c2a5e74157b5d8fff291b0b48cd0416cb84dca80f",
-          "blocks": [
-            {
-              "blockId": "tour:media_hover:1c049d47f7a8ec47",
-              "field": "media.hover",
-              "sourceTextSha256": "ab795a67cc622394d81cc5495cf1b2c0c2df747623b808cefb52efc3f725afe1",
-              "text": "Cocora in Colombia: wax palms on green slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_7d6c4f36ac68",
-                "wordAbsenceReason": "The Word programme has no image-specific hover caption describing this photograph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "2937f5b91731667fd0e904b4bb89a839296e4264d264bcadc2b41b79d511af2f",
-              "text": "Canopy adventure and horseback ride",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p86",
-                    "textSha256": "449c553121ed8795000dc0194bea948070a07ac7a54529c52978533d9b08b442"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the Word day heading without the day number, supplied separately by the itinerary."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceTextSha256": "9451933e8e34270c3263f916f8463a348f5de39f1797523755be2777256702e2",
-              "text": "Day 4 · Start the day with an exhilarating canopy adventure, gliding through the treetops on a thrilling network of zip lines while enjoying a unique perspective of the lush landscapes of Colombia's Coffee Region. An unforgettable experience for nature lovers and adventure seekers, combining the excitement of the activity with breathtaking views of the surrounding scenery. Afterwards, enjoy a relaxing horseback ride through the beautiful countryside of the Coffee Region. Ride across rolling hills, coffee plantations and lush green meadows as you discover some of the region's most characteristic landscapes and experience the tranquillity and natural beauty of this remarkable setting.\n\nPersonalized Alternatives · For those who prefer a more relaxed pace, the day can be tailored with alternative experiences and activities according to your interests and preferences.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p89",
-                    "textSha256": "19d182feba479c830af765909af7ed3c85e6fd717fd55daa211faf6c3f277c5b"
-                  },
-                  {
-                    "ref": "word/document.xml:p90",
-                    "textSha256": "9cb6deeeecd08067697b50c8a6e8b5bfd77cfaf678d30e9716af42b637dcb573"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f4fe161220d09aea",
-              "field": "itinerary.label",
-              "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
-              "text": "Pereira",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p88",
-                    "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:e3e0f66fa67f5eb0",
-              "field": "media.alt",
-              "sourceTextSha256": "58b6727449e733f283eb3aa358f7c24e311232bb7b511e4386bdd67146b23431",
-              "text": "Tall palms of the Cocora Valley above green pastures, Colombia",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_7d6c4f36ac68",
-                "wordAbsenceReason": "The Word programme does not contain this image-specific alternative text."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:b241f92923c8f376",
-              "field": "media.hover",
-              "sourceTextSha256": "fc49e0a20acfc44148e636618a083c8689cfafbeb6aeee6c3cc9fda9c19c6658",
-              "text": "Cocora Valley: slender palms above grassy slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_7d6c4f36ac68",
-                "wordAbsenceReason": "The Word programme does not contain this image-specific hover caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
-              "field": "itinerary.title",
-              "sourceTextSha256": "ec1bdb456f0b5cc1f65ef629b862fa97d2e022aa1e28a315f8a026b2b7673a7d",
-              "text": "Pereira – Cartagena: the walled city",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p98",
-                    "textSha256": "2cd979c6c8338660fe35f9fef24cb0f0e1dbeeae8ecbfe3bc84dce643dfdfec4"
-                  },
-                  {
-                    "ref": "word/document.xml:p100",
-                    "textSha256": "1fbff8b8934d160561fefa0d652a66931ee875851485ee9ebe78de85f7e68872"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combine the departure place in the Word route with Cartagena and the walled-city heading; omit the following day's flight."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:b04d5d61d358e759",
-              "field": "itinerary.text",
-              "sourceTextSha256": "50d5072ea85a872704dde3d2f8766b94bfa83a9657718799b589d93f42fd6ff2",
-              "text": "Day 5 · Breakfast at the hotel. After breakfast, private transfer to the airport with your driver for your flight to Cartagena de Indias, one of the best-preserved colonial cities in the Americas and a UNESCO World Heritage Site. Upon arrival at Rafael Núñez International Airport, you will be welcomed by your private English-speaking guide, who will accompany you throughout your stay in Cartagena. In the afternoon, discover Cartagena, where colonial architecture, history and Caribbean charm come together. Explore Bocagrande, Castillogrande and Manga before visiting La Popa Monastery and San Felipe de Barajas Castle.\n\nContinue on foot through the historic centre, discovering its colourful streets, picturesque squares and emblematic landmarks, including the Clock Tower, Plaza de los Coches, Plaza de Santo Domingo, Santa Catalina Cathedral, the Palace of the Inquisition and the city walls. The tour concludes at Las Bóvedas, a former military complex now home to an artisan market, before returning to the hotel.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
-                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p101",
-                    "textSha256": "12d963353bebdce6dfc993ab6103f626241f352f3e06cf6835e49af6843b00cd"
-                  },
-                  {
-                    "ref": "word/document.xml:p102",
-                    "textSha256": "5e3eceea27a1d3fa9e69d08e84d563507c0dca21e0394aae8aed37df318120f7"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:24:54.223Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_7d6c4f36ac68.colombia_complete.b008.v1",
+        "blobSha": "12875c7ff2339bbffed74ae7a0b4941c985dff39",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_complete_11_days_b008/ada_en_7d6c4f36ac68.colombia_complete.b008.v1.json",
+        "at": "2026-11-04T06:24:59.824Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

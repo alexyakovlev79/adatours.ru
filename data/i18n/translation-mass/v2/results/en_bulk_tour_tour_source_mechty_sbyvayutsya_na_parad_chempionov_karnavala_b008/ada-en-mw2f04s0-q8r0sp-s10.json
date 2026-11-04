@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala:b008",
+  "stableId": "tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ef49a50ffd7af4d06a770d28c583e97f225bf1ef9e67d6f5f71b5ddc21dfccd7",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1WQ9hmvd6yPaclFGuRY0AOAPFkR26fubw",
+        "documentSha256": "5015022105a731c0333d27fdec22c27bb6af589770ebd0859f6a75c989a5b3f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:66",
+            "textSha256": "b65ccc550eefe51436886b35993944b8dde562184c4b04d6b1ac69ef2e348bee"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1WQ9hmvd6yPaclFGuRY0AOAPFkR26fubw",
+        "documentSha256": "5015022105a731c0333d27fdec22c27bb6af589770ebd0859f6a75c989a5b3f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:89",
+            "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4bac385a0108d3d8",
+      "field": "media.alt",
+      "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
+      "text": "Iguazu Falls from the Brazilian side",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not contain this exact image alt label; translated the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "337b4fbdb94ee769b975fb8b7311e0d8d4806fd28f146cfd91ac2aa0b465272c",
+      "text": "Brazilian side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WQ9hmvd6yPaclFGuRY0AOAPFkR26fubw",
+        "documentSha256": "5015022105a731c0333d27fdec22c27bb6af589770ebd0859f6a75c989a5b3f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:90",
+            "textSha256": "c66bf9f2f958587e773f43d1c3847a9db3e4115df7860400cfb19ede0fc288e6"
+          },
+          {
+            "ref": "word/document.xml:p:88",
+            "textSha256": "c2d2dcbca614bb805121a922902d0c9e04e5092167b62ba69b7d105d2fa99d24"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Created a concise heading from the Word description of the Brazilian side and the Iguazu Falls section name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "037b986ec5cb54b6ee7a430d297133161689f4b9f9880d4fa94418d90f9962dc",
+      "text": "Breakfast, then a tour of the Brazilian side of the falls, in a national park of unique flora and fauna: “big water” in the Guaraní language, some 275 cascades, each with its own name, thunder into the Devil’s Throat gorge, a spectacle you could contemplate for hours. Optional: the Macuco Safari (USD 135 per person), about 3 km through the jungle in an open jeep, then on foot to the river and by motorboat close to the falls; the Bird Park (USD 65 per person); or a helicopter flight over the falls (USD 170 per person).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WQ9hmvd6yPaclFGuRY0AOAPFkR26fubw",
+        "documentSha256": "5015022105a731c0333d27fdec22c27bb6af589770ebd0859f6a75c989a5b3f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:90",
+            "textSha256": "c66bf9f2f958587e773f43d1c3847a9db3e4115df7860400cfb19ede0fc288e6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the day-number prefix for the existing standalone itinerary node, retaining the exact approved day text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1WQ9hmvd6yPaclFGuRY0AOAPFkR26fubw",
+        "documentSha256": "5015022105a731c0333d27fdec22c27bb6af589770ebd0859f6a75c989a5b3f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:89",
+            "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:subsection_title:0001cd293ce5560a",
+      "field": "subsection.title",
+      "sourceTextSha256": "6bf8e9183d68b5cfc881aeaa9c4479f88402ae959788ce70b506d39cb35b4800",
+      "text": "Optional excursions in Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WQ9hmvd6yPaclFGuRY0AOAPFkR26fubw",
+        "documentSha256": "5015022105a731c0333d27fdec22c27bb6af589770ebd0859f6a75c989a5b3f4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:168",
+            "textSha256": "c377938bcbff3436b834a8e38055417682e69e4423361b22f4c224e487708f79"
+          },
+          {
+            "ref": "word/document.xml:p:166",
+            "textSha256": "f1310d559c261b716be5ec031e8c63c09eac2864f8f7a28348ec292956fbe761"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Composed the local optional-excursions heading from the optional-experiences section and its Iguazu destination."
+      }
+    },
+    {
+      "blockId": "tour:subsection_text:976a850bcb4f257f",
+      "field": "subsection.text",
+      "sourceTextSha256": "8dc1ab767eb1ede903fe929fc36d9c710f315c3eff0ed2710df838e6315b0ccb",
+      "text": "The day's programme gives the following prices per person: Macuco Safari $135, Bird Park $65 and helicopter flight $170.\n\nThe additional list for the same offer gives different amounts: Macuco Safari $130 per person; Bird Park $55 per person; and a 10-minute helicopter flight for $250, with a minimum of 3 people. The pricing basis for the latter amount is not specified. Before booking, confirm the applicable rate and flight conditions. Macuco Safari and Bird Park are offered in the list as additions to the Brazilian-side falls tour. A DVD recording of Macuco Safari can be ordered separately.\n\nRafain show at Rafain Grill Place: $95 per person, with drinks charged separately. A buffet of meat dishes, vegetables, fruit and desserts is accompanied by performances by Latin American artists.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The assigned RU subsection reconciles conflicting day/list tariffs and mentions a DVD not present in Word. Word paragraph 223 specifies USD250 per person whereas assigned RU leaves its basis unspecified. Translate the RU subsection without altering any price or pricing basis; commercial reconciliation belongs to the master."
+      }
+    }
+  ]
+}

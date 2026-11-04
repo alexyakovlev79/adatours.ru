@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2025,
-    "leased": 19,
+    "queued": 2024,
+    "leased": 20,
     "review": 365,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2025,
-      "leased": 19,
+      "queued": 2024,
+      "leased": 20,
       "review": 365,
       "ready": 1,
       "retryable": 0,
@@ -1065,8 +1065,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 77,
-          "leased": 0,
+          "queued": 76,
+          "leased": 1,
           "review": 11,
           "ready": 0,
           "retryable": 0,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T08:11:09.973Z",
       "earliestRetryAt": null
     },
     "1a": {
@@ -1454,6 +1454,12 @@
       "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b015",
       "token": "token_8c4fca0d2a61_c1970ba9",
       "expiresAt": "2026-11-04T08:10:55.665Z",
+      "generation": 1
+    },
+    "ada-en-20261104-9c9ff2214505": {
+      "jobId": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b010",
+      "token": "token-9c9ff2214505-20261104",
+      "expiresAt": "2026-11-04T08:11:09.973Z",
       "generation": 1
     }
   },
@@ -2756,7 +2762,8 @@
     "ada-en-20261104-9c9ff2214505": {
       "token": "token-9c9ff2214505-20261104",
       "jobIds": [
-        "en:bulk:tour:tour_colombia_highlights_7_days:b002"
+        "en:bulk:tour:tour_colombia_highlights_7_days:b002",
+        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_colombia_highlights_7_days:b002"
@@ -2778,5 +2785,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:41:02.692Z"
+  "updatedAt": "2026-11-04T06:41:09.973Z"
 }

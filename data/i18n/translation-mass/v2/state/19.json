@@ -423,7 +423,91 @@
         "claimedAt": "2026-11-04T06:58:18.801Z",
         "expiresAt": "2026-11-04T08:28:18.801Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2661932f-20261104-s08-cp04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2661932f-20261104",
+        "token": "ada-en-token-2661932f-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-en-2661932f-20261104-s08",
+          "result": {
+            "jobId": "en:bulk:tour:tour_luxury_brazil_11d:b012",
+            "stableId": "tour_luxury_brazil_11d",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "85d24448555b1e1a8e3010250dedaf6ee0da83b27169fc8a9dafe5b5bf3239a0",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:f5d290ec03357301",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+                "text": "Búzios",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "modifiedTime": "2026-10-21T20:49:36.876Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p119",
+                      "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the approved Word destination name as the label of this existing canonical itinerary place."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:71c343059cadf68d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "modifiedTime": "2026-10-21T20:49:36.876Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p4",
+                      "textSha256": "57ffa0d5169998eb701bd9d1f37f505883dc76aad12c8ec8419d8116b49b5426"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the approved Word destination name as the label of this existing canonical itinerary place."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:22bcc9bf29ed4b31",
+                "field": "media.alt",
+                "sourceTextSha256": "4a89cff0ea7b7fbbbee9e2bf84705fed5be348f91bdc20c21819be010b60fe7f",
+                "text": "Blue sea beside a rocky coast with dense greenery and a mountain peak, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word does not contain the alt or hover caption for this specific existing website photograph; translate the frozen RU image description."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:bc2b0977d091f196",
+                "field": "media.hover",
+                "sourceTextSha256": "40a82a83656fb08cd0561da52c427ced828e0b75b1c646d785f8e744b3bd13dc",
+                "text": "Green, rocky coastline above the blue sea",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word does not contain the alt or hover caption for this specific existing website photograph; translate the frozen RU image description."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-04T06:58:53.394Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

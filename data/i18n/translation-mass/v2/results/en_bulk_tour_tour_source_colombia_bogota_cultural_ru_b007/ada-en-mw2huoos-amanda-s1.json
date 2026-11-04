@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_colombia_bogota_cultural_ru:b007",
+  "stableId": "tour_source_colombia_bogota_cultural_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4066562d7412d05e02e247964b9388d03517244ebf471ce9d2e80108e995a7c3",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:236cbd9627418ae1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "extracted-text:line:2",
+            "textSha256": "cfdb07778de897f45b5e8ce0d756cff083771cecfc946c7fb0a4d0a128d59c7d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the short route label from the named places in this verified Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d74355fdd9670be2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ed8dee78bdba6a188ae4c84b7fb31ffe2abbdfacb6324702481c0d48881b2e73",
+      "text": "Guatapé",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "extracted-text:line:16",
+            "textSha256": "edb06c93721deb45a2f3e59222cefc0254b3c3c3bfe6cead589fa64a7ea8b4b2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the short route label from the named places in this verified Word passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a5972a4c48a1d406",
+      "field": "media.alt",
+      "sourceTextSha256": "91951a6510c8a1b1e609559207836a9ce186a6c570938437bb8d6baa62d68849",
+      "text": "A cobbled square with a white church and colourful houses in Medellín, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2huoos-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no image-specific alt text or hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:859175e79950c87b",
+      "field": "media.hover",
+      "sourceTextSha256": "19665e9180f76cce35583682b0a537ffdde1cf9586c4829a16bd9213bab69281",
+      "text": "Medellín: a church, a fountain and bright houses around a small square",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2huoos-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no image-specific alt text or hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9840a33c53b8d197e39cd31e866c8d3055133154006f023f484273d36731e64f",
+      "text": "Medellín - Cartagena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "extracted-text:line:21",
+            "textSha256": "3f3abae324cb92f6862c8285f119b0599516e7bfc5c60c277661db7efd3635f4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the short route label from the named places in this verified Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3dc1537166db4a3636fcca297ef7e39f7f8a8e03698ca6c9fe1fe70b038674cc",
+      "text": "Breakfast at the hotel.\n\nTransfer to José María Córdova International Airport and flight to Cartagena. The flight is not included in the price.\n\nOn arrival, meet at Rafael Núñez International Airport and transfer to the hotel.\n\nThen take a private sightseeing tour in an air-conditioned vehicle.\n\nThe route includes panoramic views of the Bay of Cartagena, the Muelle de los Pegasos, the Clock Tower and the Manga neighbourhood, where Moorish and Republican architecture survives.\n\nVisit Castillo de San Felipe de Barajas, then walk through the historic centre within the city walls.\n\nThere will be stops to shop for handicrafts and walk through the old streets and squares. You will also see the Church of San Pedro Claver and the Santo Domingo bastion.\n\nReturn to the hotel.\n\n**Duration:** approximately 4 hours.  \n**Available:** daily.\n\n**Included:** a professional English-speaking guide, private transport and entrance fees to the listed sites.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2huoos-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 6 describes the tour but omits the RU block's air-conditioned vehicle, daily availability and return-to-hotel clauses; translate the complete RU block to preserve these details."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:21ec47731a9af71d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "extracted-text:line:2",
+            "textSha256": "cfdb07778de897f45b5e8ce0d756cff083771cecfc946c7fb0a4d0a128d59c7d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the short route label from the named places in this verified Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:439aaee09724aa06",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+      "text": "Cartagena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iURAz-aM-dqSWq4n8-pE4UUWMmppd1UN",
+        "documentSha256": "587e06e5327248c4cef858c7606e01257bc7a62c5ab55f3614d97c55410381c4",
+        "paragraphs": [
+          {
+            "ref": "extracted-text:line:21",
+            "textSha256": "3f3abae324cb92f6862c8285f119b0599516e7bfc5c60c277661db7efd3635f4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the short route label from the named places in this verified Word passage."
+      }
+    }
+  ]
+}

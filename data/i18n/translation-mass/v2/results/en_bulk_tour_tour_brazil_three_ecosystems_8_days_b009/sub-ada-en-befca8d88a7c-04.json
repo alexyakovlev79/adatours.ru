@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b009",
+  "stableId": "tour_brazil_three_ecosystems_8_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3f7bdf198ac946326feafff0c9770020d212b428bc3dd0d45c044de41c3fcd8d",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:0f4f0fe0beccdee6",
+      "field": "media.alt",
+      "sourceTextSha256": "95ce9943d93545b6d2ca0e8b49add469738f1ef1a35706b61d483b81b4cc15eb",
+      "text": "Tall green vegetation and forested hills under a cloudy sky",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-befca8d88a7c",
+        "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:97224dc730d3dea5",
+      "field": "media.hover",
+      "sourceTextSha256": "10e0e01f534e98334dd3611ef9e9f1ad4f44d308c143d764d2de89f1ce3435b2",
+      "text": "Forested hills beyond dense greenery",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-befca8d88a7c",
+        "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "981866290963132d98ebefd00b21e4fab71f3021758f2622a1a4a7dd08ef57b2",
+      "text": "Araras Eco Lodge: Canoeing and trekking",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p45",
+            "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved day's heading without its day-number prefix for this itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fee4c6d623d8c2396fd6a434bbc749cb3e697faa696959adac51511fa3d976a4",
+      "text": "After breakfast, a photo safari and a canoe trip. In the afternoon, follow the Howler Monkey Trail to the 25-metre tower, then take a night drive in a special vehicle after dinner. See the excursion below for the full programme, including opportunities for fishing and watching otters.\n\nThe main itinerary includes a barbecue lunch and time to relax in a hammock. If Sentinela Camp is inaccessible because of the weather or road and terrain conditions, the canoe trip takes place on the Corixo River, followed by a return to the lodge for lunch. Clarinho and Corixo are included alternatives, rather than two guaranteed visits.\n\nYour second night at Araras Eco Lodge.\n\nMeals: breakfast, lunch and dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-befca8d88a7c",
+        "wordAbsenceReason": "The Word contains the full shared canoeing excursion (paragraphs 46–47), but no separate day wrapper with the canonical excursion reference, alternative-visit clarification and second-night statement. Translated the current RU wrapper without duplicating the full canonical excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:aabee2fbd06c9a73",
+      "field": "itinerary.label",
+      "sourceTextSha256": "05d92f3bebf288eb6c22e3e97b0e93e3f135d6ed83eb81be9b6418a078bc8b4d",
+      "text": "Araras Eco Lodge",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p45",
+            "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved lodge name as the itinerary's standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6a4d6ad6127ae7a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "453af7b339499da174940f648f67657306d7adeeced91da7ba004d1ecc21e5e6",
+      "text": "Clarinho River or Corixo River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+        "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p46",
+            "textSha256": "ed01e0eaaab53cf8c0fccaead56880d27b6b8f32c94238181fc63ac3cc6d96f4"
+          },
+          {
+            "ref": "word/document.xml:p47",
+            "textSha256": "1e683a11cf973f3ddd4e79e48402812f9a50211838f45326a2d51aa2f5af760e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the alternative river label from the main Clarinho route and the conditional Corixo alternative."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:30065435c10cd723",
+      "field": "media.alt",
+      "sourceTextSha256": "821ff7a37d9c54f86868be5b3263a6fa32c0435af36e5a54317e93fbf50b3dc2",
+      "text": "A flock of white and pink birds above the water and green banks of the Pantanal, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-befca8d88a7c",
+        "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d658413492035065",
+      "field": "media.hover",
+      "sourceTextSha256": "b49d85eff439bf47c3a611b98dac0f2c4aa52a45700650893fca4433b612a428",
+      "text": "Pantanal: birds take flight above the water",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-befca8d88a7c",
+        "wordAbsenceReason": "The verified Word has no image-specific alt or hover text matching this RU field; translated only the current RU caption."
+      }
+    }
+  ]
+}

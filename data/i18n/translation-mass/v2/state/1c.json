@@ -954,7 +954,216 @@
         "claimedAt": "2026-11-04T07:54:40.141Z",
         "expiresAt": "2026-11-04T09:24:40.141Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-9a69348b6e00-09-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9a69348b6e00",
+        "token": "tok-9a69348b6e00-20261104-a1",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b013",
+            "stableId": "tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "4b9b8a1f4275efb0e92f3e8dbb30099ab055e111c360b7ad9c469993a013f4a1",
+            "blocks": [
+              {
+                "blockId": "tour:media_hover:fa5e59d883a07022",
+                "field": "media.hover",
+                "sourceTextSha256": "209521fb536204de2867f01705376ec94be3629f50e956926cb0db904217d807",
+                "text": "San Telmo: a city street with balconies and shops",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The approved DOCX mentions San Telmo but contains no hover caption for this specific street, balconies and shops photograph."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:68ebdd10346d3d20",
+                "field": "media.alt",
+                "sourceTextSha256": "3c4c843814434bfb925859c04b35df92b4f6c7b44e1b8860666dfbbdb1d7146b",
+                "text": "Ushuaia on the Beagle Channel, backed by the mountains of Tierra del Fuego — illustration",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The approved DOCX has no alt text for this hero illustration of Ushuaia, the Beagle Channel and the Tierra del Fuego mountains."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:77871c8f58bdcbc6",
+                "field": "media.hover",
+                "sourceTextSha256": "3c4c843814434bfb925859c04b35df92b4f6c7b44e1b8860666dfbbdb1d7146b",
+                "text": "Ushuaia on the Beagle Channel, backed by the mountains of Tierra del Fuego — illustration",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The approved DOCX has no hover text for this hero illustration of Ushuaia, the Beagle Channel and the Tierra del Fuego mountains."
+                }
+              },
+              {
+                "blockId": "tour:body:47f6c11f40afc686",
+                "field": "body",
+                "sourceTextSha256": "0293a55346979c5fe4f0b3178b9435e65146daccf54f4630766631d2a04a7aff",
+                "text": "Begin your journey in Buenos Aires, discovering the elegance and vibrant culture of Argentina’s capital, before heading south to the glaciers and dramatic landscapes of El Calafate. Continue to Ushuaia, often called the southernmost city in the world, surrounded by the wild beauty of Tierra del Fuego, and finally travel north to the spectacular Iguazú Falls, where the journey ends among rainforest and rushing waters.\n\nDay 3 · Breakfast at the hotel. Free day for optional tours: Tigre and the Northern Zone, a Fiesta Gaucha at the Santa Susana ranch or a day trip to Colonia del Sacramento, Uruguay (see Optional Excursions).\n\n## Hotels and prices\n\nAccommodation: 474 Buenos Aires — 4 nights, Calafate Parque — 2 nights, Wyndham Garden Ushuaia — 2 nights, Mercure Iguazu — 3 nights.\n\n| Travellers | Room type | Price per person |\n|---|---|---:|\n| 1 guest | SGL | $7 568 |\n| 2 guests | SGL | $5 651 |\n| 2 guests | DBL | $4 036 |\n| 3 guests | SGL | $5 265 |\n| 3 guests | DBL | $3 650 |\n| 3 guests | TRL | $3 578 |\n\n",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The Word contains no exact consolidated Markdown body combining the overview, optional tours and current RU commercial table. Word paragraphs 18 and 70 are retained verbatim; hotel-night totals and all existing RU prices are preserved under the task's price freeze. Separate structured priceAmendments records the differing Word 2027 tariffs for the commercial master.",
+                  "retainedWordPassages": [
+                    {
+                      "ref": "word/document.xml:p18",
+                      "textSha256": "5023af76d0ca55370cfb4b928519fa48464d40ad03be069c82a396861faf3122"
+                    },
+                    {
+                      "ref": "word/document.xml:p70",
+                      "textSha256": "755d3bd66f2310bea4ab0757d1614032b9dd17a9a35d09922bcf086aad6c19a3"
+                    }
+                  ]
+                }
+              }
+            ],
+            "priceAmendments": [
+              {
+                "status": "proposed_to_commercial_master",
+                "apply": false,
+                "currency": "USD",
+                "basis": "per_person",
+                "year": 2027,
+                "category": "4-star hotels + services",
+                "sourceFileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+                "documentSha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p143",
+                    "textSha256": "2e2c0f8e0c1d58d78e81d97e7dfe8fc9c18e0350656e6f566062956216c66e66"
+                  },
+                  {
+                    "ref": "word/document.xml:p145",
+                    "textSha256": "67c22176986006c6ce293db7666a0e493ea0c74ea44031d10245c96626eb71e8"
+                  },
+                  {
+                    "ref": "word/document.xml:p146",
+                    "textSha256": "3bffd8f959c7d2154157926d38d727bca5be8c94e31cad1204859c3c09b9bea3"
+                  },
+                  {
+                    "ref": "word/document.xml:p147",
+                    "textSha256": "93d96d67675fa797c37bd4ef0cba5ba460231e3a38fc662825a611114056cf5a"
+                  },
+                  {
+                    "ref": "word/document.xml:p149",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p150",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p151",
+                    "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                  },
+                  {
+                    "ref": "word/document.xml:p152",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p153",
+                    "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                  },
+                  {
+                    "ref": "word/document.xml:p154",
+                    "textSha256": "299f4d5312ff948181be18fc1a928cc62a2c4a0d55907ac3d15b31f0a20bf033"
+                  },
+                  {
+                    "ref": "word/document.xml:p155",
+                    "textSha256": "50ad491d841c77466eeb4a67761710f01267437d8c6eb575837daf02bf331a9b"
+                  },
+                  {
+                    "ref": "word/document.xml:p156",
+                    "textSha256": "08c659bdb4e27ab1ca23247d45746021bc65a41818e2e1ba0525b9982a2ad0ba"
+                  },
+                  {
+                    "ref": "word/document.xml:p157",
+                    "textSha256": "38289684cf5d2c8eb0370d9db446df22a9f1a861eea2faf40664a4343752824e"
+                  },
+                  {
+                    "ref": "word/document.xml:p158",
+                    "textSha256": "cdf1406084d94a84d289fec49fc66776568d631a0208191bf46d11dd59098a9a"
+                  },
+                  {
+                    "ref": "word/document.xml:p159",
+                    "textSha256": "5da3fc4ee61978f660edaf68dfc3f31cdb7aaf5a2ab1332ffb3927d0ec29e40e"
+                  },
+                  {
+                    "ref": "word/document.xml:p160",
+                    "textSha256": "2063752494fe06f57e38873e420048f306b9692b84122fc5f830ab1109b571d1"
+                  },
+                  {
+                    "ref": "word/document.xml:p161",
+                    "textSha256": "4990bcca3250e6a9a138e8af0c78da65d300dd031fc278fa908a0a99a6c24393"
+                  },
+                  {
+                    "ref": "word/document.xml:p162",
+                    "textSha256": "161a069d68326d2268892ab903afe5ec2c6589b09f6920401c65d2b46e59aeba"
+                  }
+                ],
+                "rows": [
+                  {
+                    "travellers": 1,
+                    "occupancy": "SGL",
+                    "currentRu": 7568,
+                    "word2027": 7891
+                  },
+                  {
+                    "travellers": 2,
+                    "occupancy": "SGL",
+                    "currentRu": 5651,
+                    "word2027": 5831
+                  },
+                  {
+                    "travellers": 2,
+                    "occupancy": "DBL",
+                    "currentRu": 4036,
+                    "word2027": 4216
+                  },
+                  {
+                    "travellers": 3,
+                    "occupancy": "SGL",
+                    "currentRu": 5265,
+                    "word2027": 5573
+                  },
+                  {
+                    "travellers": 3,
+                    "occupancy": "DBL",
+                    "currentRu": 3650,
+                    "word2027": 3959
+                  },
+                  {
+                    "travellers": 3,
+                    "occupancy": "TRP",
+                    "currentRu": 3578,
+                    "word2027": 3886
+                  }
+                ],
+                "note": "No price was applied to RU, canonical tariffs or the EN body; all current RU body values retained."
+              }
+            ]
+          },
+          "completedBlockCount": 4,
+          "wordSourceVerified": {
+            "fileId": "1D_E-oul3WFZbDRsLL2DWctX6vuqZhBHH",
+            "sha256": "453f1d600de1191ec0a2de4bec1861f758bd5744c14f31ab17df01cf20376475",
+            "modifiedTime": "2026-10-21T19:56:47.457Z",
+            "localPath": "/workspace/scratch/9a69348b6e00/ada_word/ice_waterfalls.docx"
+          }
+        },
+        "at": "2026-11-04T07:56:32.830Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

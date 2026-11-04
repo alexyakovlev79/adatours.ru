@@ -164,7 +164,94 @@
         "claimedAt": "2026-11-04T06:10:22.666Z",
         "expiresAt": "2026-11-04T07:40:22.666Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_1f8e8fe01ca4_20261104.3.cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_1f8e8fe01ca4_20261104",
+        "token": "ada_en_token_1f8e8fe01ca4_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b009",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "d8e62c5a1aaf5234c1e17e981ea51605ef61e35317163d6cb3a148925f83e374",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "8d31407778081adcc27f24338f8048c059855546ee5606c5d37938f5771c9ab2",
+              "text": "Flight to Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[89]",
+                    "textSha256": "d7765a715ed46173c9fe59c9c6755e46c7e633d5c789d5e2348968f855d07507"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Create the short day title from the flight destination expressly stated in the approved Day 4 paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "09030c0c0d65bc525bfe0d0dde9c130764274bb2951cd12c44536b78459b08c4",
+              "text": "Day 4 · Breakfast at the hotel and transfer to the airport with your driver for your flight to Foz do Iguaçu; on arrival, meet your driver and transfer to your hotel. Located where Brazil, Argentina and Paraguay meet, Foz do Iguaçu is home to one of the world’s greatest natural wonders: fed by the Iguazu River, the falls comprise some 275 individual cascades surrounded by the lush rainforest of Iguazu National Park, among them the impressive Devil’s Throat, the most powerful of all.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[89]",
+                    "textSha256": "d7765a715ed46173c9fe59c9c6755e46c7e633d5c789d5e2348968f855d07507"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[36]",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[176]",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:11:14.328Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

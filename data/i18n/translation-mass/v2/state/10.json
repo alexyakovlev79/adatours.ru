@@ -361,7 +361,87 @@
         "claimedAt": "2026-11-04T06:48:48.150Z",
         "expiresAt": "2026-11-04T08:18:48.150Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_abf469133bbf:b003:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_abf469133bbf",
+        "token": "ada_en_token_abf469133bbf_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b003",
+          "stableId": "tour_mexico_oaxaca_city_break_five_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "815a609220d2962e223230ba139088dcd6e8d676b335b6785e966bc026d01254",
+          "blocks": [
+            {
+              "blockId": "tour:notIncluded:da756b777306942e",
+              "field": "notIncluded",
+              "sourceTextSha256": "8aa20f6b3d403b060491185c5c34717a5009ff46c170cb841649ff5440474bad",
+              "text": "Additional Meals & Beverages",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:40",
+                    "textSha256": "91283b1fd421690d980c6cf2031a41bfc099f0ed6dd0cfaf25030e85bcd0d0b1"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:cd3aeb81e0a8bcf5",
+              "field": "notIncluded",
+              "sourceTextSha256": "60ef173786451548bd4fa7b6251f430d1b091c2c53c9d5597f005cc682fdde7a",
+              "text": "Tips for Guides, Drivers, and Hotel Staff",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:41",
+                    "textSha256": "25cb059b8e3ee1bfeb5fff67fb122e7c578c97dc97713d70191b4e208b5e9416"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:e306ce6ca55803d7",
+              "field": "notIncluded",
+              "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+              "text": "Personal Expenses.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:42",
+                    "textSha256": "80567ebe3bfc6777d7947a7d7ab8229a4289c31db5ddcc0ea4c049a4ddadf2f5"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:eb6241ddaa0d2b85",
+              "field": "notIncluded",
+              "sourceTextSha256": "be060699763c8d9207e578f39cf17ff74a747d5909baea77f339b0220560ddc4",
+              "text": "Entrance fees for additional sites, optional cultural activities and evening experiences.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_abf469133bbf",
+                "wordAbsenceReason": "The verified Word has no single standalone exclusion combining optional entry fees, cultural activities and evening experiences; translate this composite frozen RU exclusion."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:49:31.257Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

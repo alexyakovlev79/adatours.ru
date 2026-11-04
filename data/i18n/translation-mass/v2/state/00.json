@@ -278,7 +278,100 @@
         "claimedAt": "2026-11-04T05:54:59.466Z",
         "expiresAt": "2026-11-04T07:24:59.466Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-ada-en-befca8d88a7c-08-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-befca8d88a7c",
+        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b012",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "6af137924c53c1afcf530a1718fe65a87471b1bf0274d13099386b16509b3529",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:8127313ed51b2e3e",
+              "field": "media.alt",
+              "sourceTextSha256": "1513d494083f66e4977254e20887dad9d990a51d15f4cd2474ddc3a2ee655508",
+              "text": "A lake in front of the jagged mountains of Torres del Paine at sunset, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover caption corresponding to this field; translated only the exact RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:84fc2da28c3a8c11",
+              "field": "media.hover",
+              "sourceTextSha256": "d19528720adc3a13423e2d4ab095fd0181d28df540428920fbc5c1f7ee170a65",
+              "text": "Torres del Paine in Chile: a blue lake and mountain peaks in the evening light",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-befca8d88a7c",
+                "wordAbsenceReason": "The verified Word has no image-specific alt or hover caption corresponding to this field; translated only the exact RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f2aee1247f1d94b7e8f25a08e9a1c8a837682d790dc9e0ce4f1875f3e49edd89",
+              "text": "Patagonia (Chile) | Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p42",
+                    "textSha256": "c3138bd6e1c585eaef49772fab38deac46d1b817ef8af8ea80adc65504ef5742"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the approved destination or place name from its Word heading and programme context as a standalone itinerary label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "field": "itinerary.text",
+              "sourceTextSha256": "6fd591f6aaeaf6d59c09787b60ea877be99d70d222bab7463d640c116d8ff3af",
+              "text": "Full-day excursion, entrance fee and lunch included\n\nSoaring almost vertically more than 2,000 meters above the Patagonian steppe, the granite towers of Torres del Paine dominate the landscape — but the park holds much more: azure lakes, trails through emerald forests, rushing rivers and one great, gleaming glacier. In the morning — a stop at Milodon Cave on Cerro Benítez hill, where in 1895 the remains of a prehistoric ground sloth that lived here 8,000–10,000 years ago were discovered. Next — panoramas of Sofía Lagoon, the Prat mountain range, Lake Porteño and Lake Toro; the Mirador Grey viewpoint overlooking the lake, where icebergs calved from the glacier drift on the water.\n\nA walk through lenga forest to the lakeshore, lunch at a local restaurant, viewpoints over Lake Pehoé and the 18-meter Salto Grande waterfall, as well as Lake Nordenskjöld and Laguna Amarga.\n\nOptional: a private helicopter excursion over the park's glaciers and peaks ($800–1,200/hour), available as an add-on to the day's program.\n\nHotel: The Singular Patagonia, Singular Room.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p43",
+                    "textSha256": "1d5b88566c599ce3d49aed298e8b3fa24993b6b48a230548d87103836de9bdd9"
+                  },
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "80452737bd0d1931fe7d4f88111f3c774a49eba03549c304f8a2a675dfba0bed"
+                  },
+                  {
+                    "ref": "word/document.xml:p45",
+                    "textSha256": "f19faba43e92de545e7b277e829e10e1d88f405da82b451844d97c4c9f750d15"
+                  },
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "f1b7f4ef9e924fbdf431be5f4ce7b912e267c80572662f58edb54f74a8384c24"
+                  },
+                  {
+                    "ref": "word/document.xml:p41",
+                    "textSha256": "528dfa71dcbfb0004634d783f559189935e9fa7f24e5ddc3a310fc880a70d651"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:55:26.813Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -199,7 +199,91 @@
         "claimedAt": "2026-11-04T05:56:42.650Z",
         "expiresAt": "2026-11-04T07:26:42.650Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-5d56534e-littlemix-b005-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-5d56534e4493",
+        "token": "lease-da131c3d187149a7b813992c83ea721b",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b005",
+            "stableId": "tour_brazil_little_mix_ten_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "73a065d566489053caa8c2a69b7e54a4a3382a52f6d993f8d46d3d4a708bbf8f",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:7f7c6df0a6bc1dcb",
+                "field": "itinerary.label",
+                "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+                "text": "São Paulo",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:b2f0e19acda78198",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p137",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:media_alt:b45eae09fd307668",
+                "field": "media.alt",
+                "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+                "text": "A shaded street with trees and café tables in Rio de Janeiro, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The verified Word has no image-specific alt text for the shaded Rio street and café tables; translated from the exact current RU media.alt."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:7d79c315121388be",
+                "field": "media.hover",
+                "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+                "text": "Rio de Janeiro: a pavement café beneath the trees",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The verified Word has no image-specific hover caption for this pavement café; translated from the exact current RU media.hover."
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "wordEvidence": {
+            "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+            "sha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+            "modifiedTime": "2026-10-21T20:49:10.129Z",
+            "paragraphsFile": "little_mix.docx.paragraphs.json"
+          }
+        },
+        "at": "2026-11-04T05:58:24.980Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

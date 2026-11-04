@@ -553,7 +553,7 @@
         "expiresAt": "2026-11-04T07:26:30.615Z"
       },
       "checkpoint": {
-        "id": "ada_en_1f8e8fe01ca4_20261104.mexico.b001.cp4",
+        "id": "ada_en_1f8e8fe01ca4_20261104.mexico.b001.cp8",
         "format": "inline-v1",
         "ownerId": "ada_en_1f8e8fe01ca4_20261104",
         "token": "ada_en_token_1f8e8fe01ca4_20261104",
@@ -653,10 +653,126 @@
                 "runId": "ada_en_1f8e8fe01ca4_20261104",
                 "wordAbsenceReason": "The verified Word 2027 has no separate product-format field corresponding to the short RU catalogue label; translated this label from the current RU."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:d08bad5b79b9e6a4",
+              "field": "itinerary.label",
+              "sourceTextSha256": "546f723606960afba0f7583449f63c799f840dbc32f9c84e4ec9e9b2ae9d2f8b",
+              "text": "Mexico City — 4 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[15]",
+                    "textSha256": "046478c74cacf8438956d32dd78792f4f1a4637d15e2389a741eba3d1354c109"
+                  },
+                  {
+                    "ref": "word/document.xml:p[28]",
+                    "textSha256": "e90e8bbf03492e1780981e775519477ea8b144b8e3552e50e731bf8ff1804a2e"
+                  },
+                  {
+                    "ref": "word/document.xml:p[39]",
+                    "textSha256": "0f940ca8753d94d116cbd6fd06a3678684391720b16c410a30d88ad5464d4350"
+                  },
+                  {
+                    "ref": "word/document.xml:p[50]",
+                    "textSha256": "6fd3b4b4590d10818576a25c6797c3b9fd7ca7a9185b7cee27281cd298faf8d1"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the four expressly included overnight stays in Mexico City into the compact route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:31ad3781c9a47a6f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a4d7510b0463b6f5a5e943f9452232447cabde90b855228a2972398ddb3dc917",
+              "text": "Teotihuacan and the Basilica of Guadalupe",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[30]",
+                    "textSha256": "20cacc12e32a843fbcaf9650088be35dbf5b822ca6573c1d6ec86119eaf0bdb1"
+                  },
+                  {
+                    "ref": "word/document.xml:p[34]",
+                    "textSha256": "61acf9e5526254d6231dd628d844338e01677ee00ad46fae1a72786df79c8305"
+                  },
+                  {
+                    "ref": "word/document.xml:p[35]",
+                    "textSha256": "e9028c9ee8d6e519ea46a8243cc374874dac904c89c28d79d05b586c695c7bd1"
+                  }
+                ],
+                "transformation": "condense_route_label",
+                "rationale": "Condense the day heading and its named Basilica visit into the current RU route label without changing the included stops."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fd817dd0bf06e945",
+              "field": "itinerary.label",
+              "sourceTextSha256": "38bd6944ce82ad6b9ea48898e102d3f95b72acea3ed352d616221a3209367889",
+              "text": "Xochimilco and Southern Mexico City",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[41]",
+                    "textSha256": "b13cd9b4205a3e3c68071b5df6c18813c77c347e01c407faac0694cd258557bb"
+                  },
+                  {
+                    "ref": "word/document.xml:p[45]",
+                    "textSha256": "ca0271e05eb1c2031167ced08cc21b11d7b8c91305921a5ef1f0721944657647"
+                  },
+                  {
+                    "ref": "word/document.xml:p[46]",
+                    "textSha256": "5fd7f9918333dc325da90db697695027f0ac53b531ff283262df13fac6138f23"
+                  },
+                  {
+                    "ref": "word/document.xml:p[47]",
+                    "textSha256": "3ed291fcc8b0414b52b870bf61b3393b16d71a9c5ab92ea6362008e9ae27bc81"
+                  }
+                ],
+                "transformation": "condense_route_label",
+                "rationale": "Condense the verified southern-neighborhoods and Xochimilco day into a compact route label, preserving its geographical scope."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b7f17bae132f28ca",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8d8e44e4c144a212ae1f5057d5bef4234bae0af6cba38c445811760c9cc3ea86",
+              "text": "Mérida — 3 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[61]",
+                    "textSha256": "7f7cbe1b9805137f166ac3d7f867227b7f3f45136fcc6a24cb5481c2a9674b40"
+                  },
+                  {
+                    "ref": "word/document.xml:p[72]",
+                    "textSha256": "59324436a98f53cb26569e01f5535f3c9af1632c1c85f27c694ac99d9d85aa1c"
+                  },
+                  {
+                    "ref": "word/document.xml:p[83]",
+                    "textSha256": "929d753a2e887aa029d26248f717b7baaa115d2d3433b44369e3634c353e8b2a"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the three expressly included overnight stays in Mérida into the compact route label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:58:15.328Z"
+        "at": "2026-11-04T05:58:37.890Z"
       },
       "submission": null,
       "review": null,

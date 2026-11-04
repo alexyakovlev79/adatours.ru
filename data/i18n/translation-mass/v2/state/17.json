@@ -289,7 +289,83 @@
         "claimedAt": "2026-11-04T06:02:29.745Z",
         "expiresAt": "2026-11-04T07:32:29.745Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-150b76fa3667-001-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-150b76fa3667",
+        "token": "ada-en-150b76fa3667-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b005",
+          "stableId": "tour_brazil_southern_vip_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "301f0a626b3208f5a350621dd96938cfff74d831c3692bb4712a8dcebff5b772",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:2deacc09653a4eb2",
+              "field": "media.hover",
+              "sourceTextSha256": "2707fbb43ea614b819884e894cdd505759e61846395b127e9b74acf72fa7adb2",
+              "text": "Cambará do Sul: a balloon flight beside sheer canyon walls at sunrise",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraphs 49–50 and 88 describe the balloon flight and picnic but contain no image-specific hover caption or sunrise wording; this caption is translated from the current RU field.",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601"
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:de431f24d2ecf446",
+              "field": "highlight.title",
+              "sourceTextSha256": "b136cd3edc52ba8d5a6a2ef8a3eccdd02d5ca2d8fd29cf38df4b10d33b03ca14",
+              "text": "By helicopter to Florianópolis",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p97",
+                    "textSha256": "42784b631276bc7155485012e4d7d56278381c9f14dead28b04da05d54f9bc2b"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:highlight_text:3a93d9a6c93be2c1",
+              "field": "highlight.text",
+              "sourceTextSha256": "875ab6b2e5a7f83ead1a41d6c49dbaba1749828985fb46f6b0fa2eeebe6db088",
+              "text": "A private flight to Florianópolis, a night on the coast and a sightseeing tour before departure.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraphs 98–100 cover the helicopter arrival and city tour but have no equivalent short highlight summary including the coastal overnight; the current RU highlight is translated without added facts.",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601"
+              }
+            },
+            {
+              "blockId": "tour:media_alt:ffa5399c3e3891fe",
+              "field": "media.alt",
+              "sourceTextSha256": "39785fed0163039d795297f129b87d9f6c30fcebc9f1396af05995f6f27f31c6",
+              "text": "A dark helicopter flies over a wooded headland and the beaches of Florianópolis, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 has no image-specific alt text for this photograph; its visual description is present only in the current RU media.alt field.",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601"
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:03:32.837Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

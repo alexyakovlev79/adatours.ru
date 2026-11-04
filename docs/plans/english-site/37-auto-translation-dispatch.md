@@ -1,0 +1,13 @@
+# ADA EN — автоматический диспетчер перевода
+
+Дата решения: 04.11.2026 по Москве (точное время не установлено).
+
+Рабочий репозиторий: alexyakovlev79/adatours.ru. Единственная очередь: i18n/translation-mass-staging, без миграции, сброса или повторного перевода сохраненного.
+
+Поручение: до 05.11.2026 09:00 МСК (2026-11-05T06:00:00Z) каждые 5 минут проверять текущий индекс и при наличии свободных queued запускать ровно одного нового независимого переводчика. Один переводчик — до 10 последовательных пакетов, максимум 8 блоков каждый; атомарный submit полного пакета. В 09:00 новый запуск и новые claims запрещены, уже взятый пакет разрешено сохранить. GitHub schedule best-effort, возможны задержки. Контроль времени проверяется внутри кода независимо от cron.
+
+Существенное ограничение: GitHub Actions не создает новые пользовательские чаты ChatGPT. Исполнитель здесь — отдельный запуск GitHub Actions с OpenAI API. Требуются Secrets OPENAI_API_KEY и доступ к исходным Word через Google Drive: ADA_WORD_DRIVE_ACCESS_TOKEN либо три секрета ADA_WORD_DRIVE_CLIENT_ID, ADA_WORD_DRIVE_CLIENT_SECRET, ADA_WORD_DRIVE_REFRESH_TOKEN. Без них диспетчер только проверяет очередь, не захватывает задания и не объявляет переводы сделанными. OpenAI API оплачивается отдельно от подписки ChatGPT.
+
+Независимые QA и публикация не входят в этот процесс; RU, тарифы, медиа, matching и publicationEnabled=false не меняются. Достоверный результат перевода — только сохраненный GitHub receipt saved_for_review/commit. На cutoff расписание пытается самостоятельно отключить свою задачу GitHub Actions.
+
+Реализация: data/i18n/translation-mass-auto-dispatch.json; scripts/i18n/translation-mass-auto-dispatcher.mjs; scripts/i18n/translation-mass-api-worker.mjs; workflows i18n-mass-auto-dispatch.yml и i18n-mass-auto-worker.yml.

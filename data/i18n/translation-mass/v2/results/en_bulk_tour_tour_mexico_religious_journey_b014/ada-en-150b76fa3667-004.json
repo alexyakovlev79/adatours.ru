@@ -1,0 +1,167 @@
+{
+  "jobId": "en:bulk:tour:tour_mexico_religious_journey:b014",
+  "stableId": "tour_mexico_religious_journey",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6d263b35b1199892dd6ab90970e6a4f19c4d9fce05bc190ed91d460601d433ce",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b8f0ff32bd4b9f2d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "03d37a3878926ed77ef90ae5db64f73cd50a97292a8238086843032fe1c1e880",
+      "text": "Tulpetlac",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p54",
+            "textSha256": "52710a9623dc1af1ab9e5103700725102b17b6c4c020565cda27912d49fba0a9"
+          },
+          {
+            "ref": "word/document.xml#p56",
+            "textSha256": "f65e57cf7df1f22e72877882d25c85357ec9772e9830061de471a90ac6aebb96"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact place name from the verified day-six heading and visit paragraph for the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a5ed779284b6e05a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "039c1b6049bc76852fca28c2e2497869321d7f838a9994897186cc49c78ffd27",
+      "text": "Tlatelolco and the Square of the Three Cultures",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p54",
+            "textSha256": "52710a9623dc1af1ab9e5103700725102b17b6c4c020565cda27912d49fba0a9"
+          },
+          {
+            "ref": "word/document.xml#p57",
+            "textSha256": "711bac84b84e17b884b4b4ad68ceb3912320438fa64c88199ba87a178dc0b348"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Tlatelolco heading with its Square of the Three Cultures visit label, retaining the same existing place identity."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2c508d3399e76249",
+      "field": "media.alt",
+      "sourceTextSha256": "9cbe90f15acc948e3e0af9ceb903f6861bd8a7c38e38f4d3f7c33bc7e57ab8b9",
+      "text": "Stone platforms and a pyramid on the Avenue of the Dead in Teotihuacan",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-150b76fa3667",
+        "wordAbsenceReason": "Verified Word 2027 paragraph 56 describes the archaeological visit but contains no image-specific alt caption; translate the current RU image description.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:64ade79a5a517b8f",
+      "field": "media.hover",
+      "sourceTextSha256": "9cbe90f15acc948e3e0af9ceb903f6861bd8a7c38e38f4d3f7c33bc7e57ab8b9",
+      "text": "Stone platforms and a pyramid on the Avenue of the Dead in Teotihuacan",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-150b76fa3667",
+        "wordAbsenceReason": "Verified Word 2027 paragraph 56 describes the archaeological visit but contains no image-specific hover caption; translate the current RU image description.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f4fb17d428a3e6be",
+      "field": "itinerary.label",
+      "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
+      "text": "Teotihuacan",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p54",
+            "textSha256": "52710a9623dc1af1ab9e5103700725102b17b6c4c020565cda27912d49fba0a9"
+          },
+          {
+            "ref": "word/document.xml#p56",
+            "textSha256": "f65e57cf7df1f22e72877882d25c85357ec9772e9830061de471a90ac6aebb96"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact unaccented place spelling from the day-six heading for the existing itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b061ea909b7a12e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "03d37a3878926ed77ef90ae5db64f73cd50a97292a8238086843032fe1c1e880",
+      "text": "Tulpetlac",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p54",
+            "textSha256": "52710a9623dc1af1ab9e5103700725102b17b6c4c020565cda27912d49fba0a9"
+          },
+          {
+            "ref": "word/document.xml#p56",
+            "textSha256": "f65e57cf7df1f22e72877882d25c85357ec9772e9830061de471a90ac6aebb96"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Reuse the verified same place label across the two distinct assigned itinerary nodes; the stable content identity remains unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ea3062384708d71a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "039c1b6049bc76852fca28c2e2497869321d7f838a9994897186cc49c78ffd27",
+      "text": "Tlatelolco and the Square of the Three Cultures",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p54",
+            "textSha256": "52710a9623dc1af1ab9e5103700725102b17b6c4c020565cda27912d49fba0a9"
+          },
+          {
+            "ref": "word/document.xml#p57",
+            "textSha256": "711bac84b84e17b884b4b4ad68ceb3912320438fa64c88199ba87a178dc0b348"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Reuse the same heading and square identification in the next assigned route node, preserving the existing repeated route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:37241cc5d71a0bb2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bf1361d0cfddd637a1f008d21a1f1b26f21969764a5a4d03fd84369a3b45f86d",
+      "text": "7 April 2027",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-150b76fa3667",
+        "wordAbsenceReason": "The verified Word 2027 gives a seven-day generic itinerary and seasonal tariff validity, not calendar departure dates; this exact dated itinerary label exists only in the current RU field.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+      }
+    }
+  ]
+}

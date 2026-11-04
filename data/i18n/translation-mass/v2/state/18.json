@@ -173,7 +173,94 @@
         "claimedAt": "2026-11-04T06:20:08.940Z",
         "expiresAt": "2026-11-04T07:50:08.940Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-d8b5c6c4c917-003-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-d8b5c6c4c917",
+        "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b008",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "ecca75f0a43ceff05daa45aed5a240129ad94352805dc3ce891b1b200232643f",
+          "wordSourceVerification": {
+            "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+            "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+            "modifiedTimeVerified": true,
+            "editionYear": 2027,
+            "yearFolder": 2027,
+            "commercialTablesReviewed": true
+          },
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:1063048e39c9b154",
+              "field": "media.alt",
+              "sourceTextSha256": "67e3598ed82cb40533aa162598c1c23486104797c481eb8fd35e8fbaeee07d0a",
+              "text": "Christ the Redeemer statue on Corcovado above the city and bay, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "The Word does not contain the exact photograph alt description; translate the current RU media text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:49db018f22361c5a",
+              "field": "media.hover",
+              "sourceTextSha256": "b19313dd8346f3a84cb45e174a181c40cee4b833b94a4591956898faa7e682b2",
+              "text": "Rio de Janeiro: Christ the Redeemer statue against the backdrop of the bay",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-d8b5c6c4c917",
+                "wordAbsenceReason": "The Word has no equivalent hover caption for this photograph; translate the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "88c1cf7adb42b05db03439585e7d1112ff56eac47e89d3810b8d67f81c7cbd62",
+              "text": "Sugar Loaf & city highlights",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "61d073135d361bd9b07c3b0606b4f19e1380f6110e600830c518609ca6c1aa4e"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "0b910e1a5d1143d5832cd53b63a34c687448214634f4bdcdde7684b21d3ae150",
+              "text": "Breakfast at the hotel and a half-day excursion to Sugar Loaf (Pão de Açúcar). The first stop is Urca Hill, with a wide viewing area and a restaurant at the top where you can enjoy a snack.\n\nFrom the summit of Sugar Loaf, admire a beautiful view of Rio, Copacabana Beach, the bay, the surrounding mountains, the islands in the ocean, the Rio–Niterói Bridge and the statue of Christ the Redeemer on Corcovado. After descending by cable car, the tour continues through the city.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p79",
+                    "textSha256": "9c1ef02568555afc365f5c2b9b6b7c5842a4511471360eef5d38fb278fd0fd32"
+                  },
+                  {
+                    "ref": "word/document.xml:p80",
+                    "textSha256": "631d73c4b2e7139232804ae767e9e7cc5a3a83cf5b6b3f33de6206e146d19649"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:21:10.800Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

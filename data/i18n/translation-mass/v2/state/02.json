@@ -586,7 +586,7 @@
         "expiresAt": "2026-11-04T09:27:14.584Z"
       },
       "checkpoint": {
-        "id": "cp-9a69348b6e00-10-4",
+        "id": "cp-9a69348b6e00-10-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-9a69348b6e00",
         "token": "tok-9a69348b6e00-20261104-a1",
@@ -688,10 +688,105 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:media_alt:461581bd43d82496",
+                "field": "media.alt",
+                "sourceTextSha256": "ac2147c5f5e8deb868353990fc35385f0f12b5734c61694622b7b03394eb1a26",
+                "text": "Powerful cascades at Iguazu amid rocks and greenery, Argentina",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The approved DOCX describes Iguazu but contains no alt text for this photograph of cascades amid rocks and greenery."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+                "field": "itinerary.title",
+                "sourceTextSha256": "0ff516d9e42d3ffa26d31610c1349059f0482b20b810ed7a83e67c348be4f99f",
+                "text": "6 January. Buenos Aires and tango show",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p92",
+                      "textSha256": "8126a47b724fa51237ffcc55ad65b4f25aa080de50a9dcda7ebac1746d7a2844"
+                    },
+                    {
+                      "ref": "word/document.xml:p95",
+                      "textSha256": "3c957773d979a8836a4a28e10a10bebc59b57bbcaef0aeee3943cc15e5ccb66b"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combines the approved 06/01 Buenos Aires date and evening tango-show heading into the existing daily title."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+                "field": "itinerary.text",
+                "sourceTextSha256": "063f956cb4e7e2550194b142d69a1d1f2742eb60a13893961877150447991cf3",
+                "text": "Today after breakfast you will go on a half day city tour of Buenos Aires.\n\nThis panoramic tour will take you through the highlights of South America's most European and cosmopolitan city. We'll drive along 9 de Julio Avenue where the renowned Colón Theater and the Obelisk, symbols of our city, are located. We'll visit Plaza de Mayo, surrounded by important historic buildings like the Casa Rosada, the Cathedral and the City Hall. We'll also visit Plaza San Martin, Alvear and Plaza del Congreso. The tour will drive us along the old fashion Avenida de Mayo and the dynamic Avenida Corrientes. Explore neighborhoods filled with colors and history, like La Boca and San Telmo, and the sumptuous neighborhoods of Palermo, Recoleta and the modern Puerto Madero, a busy gastronomic and entertainment area. Return to hotel and overnight.\n\nIn the evening: Tango Show & Dinner\n\nTango is still very much alive. A good way of feeling its spirit is visiting one of the restaurants that offers tango shows of an excellent level, to enjoy tango´s sensual magnetism taken to the stage by some of the best dancers, singers and musicians in Buenos Aires!\n\nAfter a delicious dinner, you will follow a spectacular presentation of acclaimed popular and sensuous Tango, performed by the world's best. It is the music of Buenos Aires par excellence.\n\nTango is felt in the air of the city, the city breathes Tango!!",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p93",
+                      "textSha256": "1b6238deb2b5236f1a54da458019bd561ef3751a745f86b908ebe98d5a38e358"
+                    },
+                    {
+                      "ref": "word/document.xml:p94",
+                      "textSha256": "47fa6b18f763cf7f028a9f1f8bef6fdefbc538ae842fce7818b9d8e7005e7159"
+                    },
+                    {
+                      "ref": "word/document.xml:p95",
+                      "textSha256": "3c957773d979a8836a4a28e10a10bebc59b57bbcaef0aeee3943cc15e5ccb66b"
+                    },
+                    {
+                      "ref": "word/document.xml:p96",
+                      "textSha256": "9cc8e49778011055b1152e38f83de8122b9802aaee7c27e4f352bf030594ad3e"
+                    },
+                    {
+                      "ref": "word/document.xml:p97",
+                      "textSha256": "bdfec3616733e7067e4bae1e60a5fd0b57d023b326191c6a4fa436f7a3b1ade8"
+                    },
+                    {
+                      "ref": "word/document.xml:p98",
+                      "textSha256": "6831ce506e1ed35c8a8334e1aefaeaa1059fbace1f594dda09fdb30f4d6b6f60"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:fee6a8b6a89f30bf",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+                "text": "Buenos Aires",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p188",
+                      "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                    }
+                  ]
+                }
+              }
+            ],
+            "sourceDifferences": [
+              {
+                "field": "itinerary/8/places/0",
+                "handling": "Current canonical Argentine place label Puerto Iguazú is translated from RU because the Word daily heading names Brazilian Foz do Iguazu; these distinct cities are not conflated."
               }
             ]
           },
-          "completedBlockCount": 4,
+          "completedBlockCount": 8,
           "wordSourceVerified": {
             "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
             "sha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
@@ -699,7 +794,7 @@
             "localPath": "/workspace/scratch/9a69348b6e00/ada_word/five_countries.docx"
           }
         },
-        "at": "2026-11-04T07:58:01.504Z"
+        "at": "2026-11-04T07:58:32.078Z"
       },
       "submission": null,
       "review": null,

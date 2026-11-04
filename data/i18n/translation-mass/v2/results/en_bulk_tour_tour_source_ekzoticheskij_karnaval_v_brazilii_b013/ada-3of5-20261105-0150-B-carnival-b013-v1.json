@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_v_brazilii:b013",
+  "stableId": "tour_source_ekzoticheskij_karnaval_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "73e2aeb97717e7c045a6e37f59666feae8de69b9025bf403107aa5c53f3c9504",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7881281c90471b6aac5f3ff219a92f782fed2b9ffa6328b66eb1d7c6e3c1bb40",
+      "text": "Foz do Iguaçu – Manaus – Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1H7jAoR502x-m7S0TWHiol8udVN3eEtAp",
+        "documentSha256": "620ed126a6bc8c67c6a6be76a348785033c424352c2d7636bee918e87eea93bb",
+        "paragraphs": [
+          {
+            "ref": "docx:day12",
+            "textSha256": "17553df806f0d8123594d1295dd19231f754226de3fef1bfbd49c03b9d74b302"
+          },
+          {
+            "ref": "docx:day9",
+            "textSha256": "42197b5332b090c06c19a1f620d76a0b64e2a3641db2331d866a66f634ed7332"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the transfer departure at Foz do Iguaçu and the confirmed flight to Manaus with the onward Amazon lodge stage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b312f6b35079e62a2f26f06b3320cbb083a79ae96c039ff0c67a4c06e704ad55",
+      "text": "After breakfast, transfer to the airport for your flight to Manaus. On arrival, continue to the pier, where a speedboat takes you to Evolução Ecolodge, a jungle retreat designed for travellers wishing to experience the Amazon’s natural surroundings up close. Settle into the lodge and enjoy free time before the next day’s jungle activities.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1H7jAoR502x-m7S0TWHiol8udVN3eEtAp",
+        "documentSha256": "620ed126a6bc8c67c6a6be76a348785033c424352c2d7636bee918e87eea93bb",
+        "paragraphs": [
+          {
+            "ref": "docx:day12",
+            "textSha256": "17553df806f0d8123594d1295dd19231f754226de3fef1bfbd49c03b9d74b302"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved Word itinerary for the Manaus flight and speedboat transfer to Evolução Ecolodge, removing the date prefix and keeping the transfer facts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:25c6390c55f06880",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1H7jAoR502x-m7S0TWHiol8udVN3eEtAp",
+        "documentSha256": "620ed126a6bc8c67c6a6be76a348785033c424352c2d7636bee918e87eea93bb",
+        "paragraphs": [
+          {
+            "ref": "docx:day9",
+            "textSha256": "42197b5332b090c06c19a1f620d76a0b64e2a3641db2331d866a66f634ed7332"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved place name Foz do Iguaçu as the location label for the departure stage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0097cdc0078a6e4a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1H7jAoR502x-m7S0TWHiol8udVN3eEtAp",
+        "documentSha256": "620ed126a6bc8c67c6a6be76a348785033c424352c2d7636bee918e87eea93bb",
+        "paragraphs": [
+          {
+            "ref": "docx:day12",
+            "textSha256": "17553df806f0d8123594d1295dd19231f754226de3fef1bfbd49c03b9d74b302"
+          },
+          {
+            "ref": "docx:heading:amazon",
+            "textSha256": "336b7a8f378318e64b27502026297091388b9f21cf6e0b2b12d5ce6308908ab0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the confirmed Manaus arrival point with the approved English heading The Amazon for the destination label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ee3383f7798e5fa2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-3of5-20261105-0150-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word describes travel from Iguazu Falls to Manaus but does not provide Puerto Iguazú as a route location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:50ed57ba50cdebe2",
+      "field": "media.alt",
+      "sourceTextSha256": "305831731f089effae6b688e344a7c0efa922c1aa31f522f6b1d8c46b48e0698",
+      "text": "A dark river winding through dense Amazon rainforest, viewed from above, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-3of5-20261105-0150-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word describes an Amazon speedboat transfer but contains no alternative-text caption for this aerial river photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f9e09235086b8fd1",
+      "field": "media.hover",
+      "sourceTextSha256": "ded4df80c58c98122deee0d37c4724b9291bde403db68c860035a63f78c9c351",
+      "text": "Brazilian Amazon: a river bend surrounded by an unbroken canopy of green forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-3of5-20261105-0150-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact image-hover caption and river-bend photograph are not described in the approved 2027 Word programme."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:049634d2a5b1c0f4",
+      "field": "media.alt",
+      "sourceTextSha256": "2363a6d9cbc50a31570eca409cc36ca6d2b39d2b38b800a57154e9fb1e4ffed7",
+      "text": "Iguazu cascades behind green trees, with a rainbow in the spray",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-3of5-20261105-0150-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word describes Iguazu Falls but has no caption identifying the specific image of a rainbow above the cascades."
+      }
+    }
+  ]
+}

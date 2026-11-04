@@ -233,151 +233,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "2a2630f06c766a3daf38efcf39f0bb0803acdf2a20b8caaf70e4a27df238f9c6",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_abf469133bbf",
-        "token": "ada_en_token_abf469133bbf_20261104",
-        "claimedAt": "2026-11-04T05:53:18.324Z",
-        "expiresAt": "2026-11-04T07:23:18.324Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_abf469133bbf:b005:cp8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_abf469133bbf",
-        "token": "ada_en_token_abf469133bbf_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b005",
-          "stableId": "tour_brazil_tropical_champions_parade_rio_angra_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "2a2630f06c766a3daf38efcf39f0bb0803acdf2a20b8caaf70e4a27df238f9c6",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:b2f0e19acda78198",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:103",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a82e03a0a82de559",
-              "field": "itinerary.label",
-              "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
-              "text": "Tijuca National Park",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_abf469133bbf",
-                "wordAbsenceReason": "No standalone national-park label occurs in the checked Word; its Corcovado paragraph names Tijuca Forest, while RU specifies the national park."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:f5626ccf77b16d53",
-              "field": "media.alt",
-              "sourceTextSha256": "333f54b4f515d39bd51743e4aa30a103312ee7c1b0d89675d9e664dfd866faac",
-              "text": "Christ the Redeemer statue on the summit of Corcovado above the green slopes of Rio, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_abf469133bbf",
-                "wordAbsenceReason": "No exact caption for this Corcovado photograph appears in the checked Word."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:605960b45988818e",
-              "field": "media.hover",
-              "sourceTextSha256": "183d7a19a4488ca39d44e11c1028cc339651699149cc08e1ad0b4cdfacc09eea",
-              "text": "Corcovado: the Christ statue and the viewing platform on the summit",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_abf469133bbf",
-                "wordAbsenceReason": "No exact hover caption for this Corcovado photograph appears in the checked Word."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:c4561055c6747266",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:103",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:0cf4fafe6de98237",
-              "field": "itinerary.label",
-              "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
-              "text": "Tijuca National Park",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_abf469133bbf",
-                "wordAbsenceReason": "No standalone national-park label occurs in the checked Word; its Corcovado paragraph names Tijuca Forest, while RU specifies the national park."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "e5822dd5ace26045a757a3e5dcc1fc520210129e3fa0f870eeef1913b8532faa",
-              "text": "Rio de Janeiro · Angra dos Reis",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:3",
-                    "textSha256": "b22d0424769ccc68b7c2d1181c5a09b29277b8401b911e13b8d3043cf200fea2"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceTextSha256": "77efaf7c455e66d6e61df414c71b43545256432d2442b3f6ba1209137a1131ca",
-              "text": "Day 4 · Breakfast and transfer to Angra dos Reis, on Brazil’s Costa Verde, and check-in at your resort on the tropical coast.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
-                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:89",
-                    "textSha256": "6dd97cc209d131e334f0bbdc154b9720dfebe9c4415f9cc6020721126eda8aae"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:54:05.371Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_abf469133bbf:tour_brazil_tropical_champions_parade_rio_angra_2027:b005",
+        "blobSha": "1cf34bbbd9025cc11978eaf8650a5b7701d98a0c",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_tropical_champions_parade_rio_angra_2027_b005/ada_en_abf469133bbf_tour_brazil_tropical_champions_parade_rio_angra_2027_b005.json",
+        "at": "2026-11-04T06:00:07.815Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_samoe_luchshee:b011",
+  "stableId": "tour_source_chili_samoe_luchshee",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9c402e446d0f6768beaa14ecd7c7bf08df2fd995b72865eed90401c947a246c1",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:327caab2464ed83b",
+      "field": "media.hover",
+      "sourceTextSha256": "bd83e3adac04a895bbce936c1f37fe199012c7a1715d5d98d610ee0960b72eca",
+      "text": "Orongo: ancient houses by the rocky coast at sunset",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw2c44xv",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme has no photograph-specific hover caption describing these ancient coastal houses at sunset."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "10f7d9b963c851b0ef1f2d04dbca53a8f2a578bf50430911870439cf00b8a9ec",
+      "text": "Easter Island – Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p112",
+            "textSha256": "82acd933d9a86d48a13194e9fe1f19467c515033fd067dfc021f91e880939abb"
+          },
+          {
+            "ref": "word/document.xml:p128",
+            "textSha256": "bce563260561d9769387958c2b25ddb864d3e3f38a6b4edb55db989616c190df"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route label combines the Word Easter Island location with the Day 11 flight to Santiago."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "5f556d24abbe2eaf9301d1e20269f538dd40868a7d24d30f347243c31ea5ff07",
+      "text": "Transfer to the airport for your flight to Santiago. Upon arrival, meet and greet at the airport and transfer to your hotel in Santiago. Free time at leisure. Optional: Excursion to a vineyard or a visit to the coastal city of Viña del Mar.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p128",
+            "textSha256": "bce563260561d9769387958c2b25ddb864d3e3f38a6b4edb55db989616c190df"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Day 11 list marker to fit the itinerary text field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a578b6c6bc29a01d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p140",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:83a1219d036f28b1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e41062add057645e926bf42391b44b831d40619296fa430b370f4633481e7939",
+      "text": "Easter Island",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p112",
+            "textSha256": "82acd933d9a86d48a13194e9fe1f19467c515033fd067dfc021f91e880939abb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:f3b5b98a94159a8f",
+      "field": "media.alt",
+      "sourceTextSha256": "9223c79ff0c5251e764fcb4a025f0cd3dc7b0f52a6feaced790358c9bd0feb3d",
+      "text": "Large stone head in front of a wall covered in writing, Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw2c44xv",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme does not contain a photograph-specific alternative text for this stone head and inscribed wall."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7c5d17e00c132d2b",
+      "field": "media.hover",
+      "sourceTextSha256": "838522bbc749053490fc949a2db1d70b795755bad242ca2ac60290a593ae76c6",
+      "text": "Santiago, Chile: a large stone head in front of a wall covered in writing",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw2c44xv",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme does not contain a photograph-specific hover caption for this stone head and inscribed wall."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p140",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ]
+      }
+    }
+  ]
+}

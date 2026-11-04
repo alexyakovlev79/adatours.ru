@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2083,
-    "leased": 14,
-    "review": 312,
+    "leased": 13,
+    "review": 313,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2083,
-      "leased": 14,
-      "review": 312,
+      "leased": 13,
+      "review": 313,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -346,8 +346,8 @@
         "word_2027": {
           "held": 0,
           "queued": 62,
-          "leased": 1,
-          "review": 10,
+          "leased": 0,
+          "review": 11,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T07:32:29.745Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "18": {
@@ -1376,12 +1376,6 @@
       "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b002",
       "token": "ada-en-token-1d528bec4ff4-20261104",
       "expiresAt": "2026-11-04T07:32:06.391Z",
-      "generation": 1
-    },
-    "ada-en-150b76fa3667": {
-      "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b005",
-      "token": "ada-en-150b76fa3667-20261104",
-      "expiresAt": "2026-11-04T07:32:29.745Z",
       "generation": 1
     },
     "ada_en_1f8e8fe01ca4_20261104": {
@@ -2548,9 +2542,11 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_southern_vip_7_days:b005"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_brazil_southern_vip_7_days:b005"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:06:57.930Z"
+  "updatedAt": "2026-11-04T06:07:04.760Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2077,
-    "leased": 15,
+    "queued": 2076,
+    "leased": 16,
     "review": 317,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2077,
-      "leased": 15,
+      "queued": 2076,
+      "leased": 16,
       "review": 317,
       "ready": 1,
       "retryable": 0,
@@ -865,8 +865,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 62,
-          "leased": 0,
+          "queued": 61,
+          "leased": 1,
           "review": 4,
           "ready": 0,
           "retryable": 0,
@@ -897,7 +897,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:39:10.327Z",
       "earliestRetryAt": null
     },
     "0b": {
@@ -1430,6 +1430,12 @@
       "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b001",
       "token": "ada_en_token_abf469133bbf_20261104",
       "expiresAt": "2026-11-04T07:38:38.586Z",
+      "generation": 1
+    },
+    "ada-en-150b76fa3667": {
+      "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b004",
+      "token": "ada-en-150b76fa3667-20261104",
+      "expiresAt": "2026-11-04T07:39:10.327Z",
       "generation": 1
     }
   },
@@ -2561,7 +2567,8 @@
       "token": "ada-en-150b76fa3667-20261104",
       "jobIds": [
         "en:bulk:tour:tour_brazil_southern_vip_7_days:b005",
-        "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b003"
+        "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b003",
+        "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_southern_vip_7_days:b005",
@@ -2570,5 +2577,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:08:51.639Z"
+  "updatedAt": "2026-11-04T06:09:10.327Z"
 }

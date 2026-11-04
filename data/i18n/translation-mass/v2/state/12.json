@@ -599,7 +599,118 @@
         "claimedAt": "2026-11-04T07:08:32.676Z",
         "expiresAt": "2026-11-04T08:38:32.676Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_2478a2a40c1c_s07_c04",
+        "format": "inline-v1",
+        "ownerId": "ada_en_2478a2a40c1c",
+        "token": "ada_en_2478a2a40c1c_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b003",
+          "stableId": "tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "3a07db838ffeb6dc9ad793c5005dccb71b364a1b58d7ede2fa861648c5d284f4",
+          "blocks": [
+            {
+              "blockId": "tour:included:e647586063c98619",
+              "field": "included",
+              "sourceTextSha256": "b47bb14a80fc0d2e9be46c44876739bd257136efda3b7fcdab6a4faa135e07a7",
+              "text": "Overland transfer to French Guiana and back",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p148",
+                    "textSha256": "458551588d9eeb25e61e61cc2761bc21b742fa966cf9b1b1dc34aebc4f2d76af"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Separate the overland transfer from the river-crossing service already assigned to the next included block."
+              }
+            },
+            {
+              "blockId": "tour:included:a4590eadc2ceba40",
+              "field": "included",
+              "sourceTextSha256": "9bfe588f83526fa039a58e8c4dfbb4b853743cdd2f7eaae50e19dea0fbc17c63",
+              "text": "Pirogue crossing from Suriname to French Guiana",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "a69b2c0f401a001bf2e8d8a45e6b8998892c203727942a55e1e8a3fa07100d32"
+                  },
+                  {
+                    "ref": "word/document.xml:p148",
+                    "textSha256": "458551588d9eeb25e61e61cc2761bc21b742fa966cf9b1b1dc34aebc4f2d76af"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the confirmed Word pirogue transport for the river-crossing service, rather than infer a conventional ferry from the older RU label."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:f3d8e30341a4e098",
+              "field": "notIncluded",
+              "sourceTextSha256": "06a8b94260495db21d9a49ff126551b92d7d6a7dd7abd1baafbd5323fad0bae5",
+              "text": "Flights to Guyana and onward from Suriname or French Guiana\nFlight Guyana – Suriname",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p151",
+                    "textSha256": "d9c4b344a7da6b5792ea6a355c35b39a8fe4d6d515323148c36ae8a883669c7e"
+                  },
+                  {
+                    "ref": "word/document.xml:p152",
+                    "textSha256": "fba999c057a8a0000c55487eb621a4666750a83920f06dd219fa24b52604420e"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the leading list markers from both approved Word flight-exclusion entries."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:6007bc24352e4f66",
+              "field": "notIncluded",
+              "sourceTextSha256": "c20c270e45b2f27572d74a80ec0cf5c72e1c51c6d76d111629666ba0e25891f6",
+              "text": "Visa if needed",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p153",
+                    "textSha256": "627c091001a3e1a8938b5ab0c5cc0d5dc704f50d3e5a9e5c36339008478680b9"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the approved Word exclusion."
+              }
+            }
+          ],
+          "sourceObservations": [
+            {
+              "topic": "river_crossing",
+              "detail": "Approved Word specifies a pirogue across the Marowijne; the RU ferry label is represented using this confirmed transport."
+            },
+            {
+              "topic": "flight_exclusions",
+              "detail": "Approved Word excludes flights to Guyana and onward from Suriname or French Guiana, plus Guyana–Suriname; both entries retained."
+            }
+          ]
+        },
+        "at": "2026-11-04T07:09:55.136Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

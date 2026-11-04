@@ -449,7 +449,102 @@
         "claimedAt": "2026-11-04T06:57:30.830Z",
         "expiresAt": "2026-11-04T08:27:30.830Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-24807b62-20261104:s04:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-24807b62-20261104",
+        "token": "ada-en-24807b62-token-c83715b9",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_peru_8d:b002",
+            "stableId": "tour_peru_8d",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "ccfc2a6eef4c3ad300cbabfe59fd24965f7dcfd94c9bf10b0a9be120b5b3e531",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:8137954c6a092cbb:2",
+                "field": "itinerary.label",
+                "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+                "text": "Lima",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                  "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:52",
+                      "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:b033b4ae0e000280",
+                "field": "included",
+                "sourceTextSha256": "2f9b2af3e3a888b2aab0a95f33390d2d76bda3de2248cb1b9fb73801be93fc28",
+                "text": "Domestic flights Lima – Cusco and Juliaca – Lima",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                  "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:228",
+                      "textSha256": "48fa81509443abf4e1ccb3981b71e4cd9426878bf73cc72f34d050535d15f57a"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the leading Word list dash and spacing to fit the existing included/notIncluded array item."
+                }
+              },
+              {
+                "blockId": "tour:included:58069c46dcff365e",
+                "field": "included",
+                "sourceTextSha256": "fcc033460fcdae93a6aeabf8a69946f32a49e04b226fbbaaa63f23b533f7c970",
+                "text": "Transfers",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                  "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:229",
+                      "textSha256": "5eef61e1fdfb43abc44847f9cecd6e8151cf13be73e33d7c6224840ce755ff6f"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the leading Word list dash and spacing to fit the existing included/notIncluded array item."
+                }
+              },
+              {
+                "blockId": "tour:included:06ec2894cabc8c8c",
+                "field": "included",
+                "sourceTextSha256": "9cbcd2b4952d50e93e30743f846b8fb4ff6fef881f577dce47ea240b3ad80f4a",
+                "text": "Meals according to the programme",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                  "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:230",
+                      "textSha256": "f2aeb244d30fdadfb20bbe3c8f2d7f822884aae9fba015e9676858b36dda4d8b"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the leading Word list dash and spacing to fit the existing included/notIncluded array item."
+                }
+              }
+            ]
+          },
+          "submissionId": "ada-en-24807b62-20261104:s04",
+          "mainSha": "1926fdca8929ebf54d61fc6b977e841423ff67b1"
+        },
+        "at": "2026-11-04T06:58:34.806Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

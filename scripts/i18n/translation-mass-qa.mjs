@@ -6,7 +6,7 @@ const ROOT='data/i18n/translation-mass/v2',MAX_TRIES=3;
 const un=r=>{if(r?.isError)throw Error(JSON.stringify(r));return r?.result||r?.structuredContent||r};
 const clean=x=>JSON.stringify(x,null,2)+'\n';
 const valid=s=>typeof s==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(s);
-const retry=e=>/409|422|non.fast.forward|expected.sha|changed|conflict|reference/i.test(String(e));
+const retry=e=>/409|422|non.fast.forward|expected.sha|changed|conflict|reference|GithubGraphQLAPIError|Something went wrong|Server disconnected|Transport closed|remote protocol/i.test(String(e));
 async function head(tools){
  const r=un(await tools.mcp__GitHub__fetch({
   url:'https://api.github.com/repos/'+REPO+'/git/ref/heads/'+BRANCH}));

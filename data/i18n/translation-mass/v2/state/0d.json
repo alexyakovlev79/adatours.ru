@@ -537,7 +537,7 @@
         "expiresAt": "2026-11-04T09:11:20.410Z"
       },
       "checkpoint": {
-        "id": "ada-en-a40ee2cc-p05-cp4",
+        "id": "ada-en-a40ee2cc-p05-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-a40ee2cc",
         "token": "ada-en-token-a40ee2cc-71df-20261104",
@@ -717,10 +717,114 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracts the city name from the exact day 1 heading as a route label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:ce6994969b4972d6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
+              "text": "Teotihuacan",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+                "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:3",
+                    "textSha256": "4e6121b76e674724b60c63a4be3af40fd1d320517c9c403fa719f86cb6446ed1"
+                  },
+                  {
+                    "ref": "word/document.xml:p:10",
+                    "textSha256": "b7471a0ea8c148b714cd8ae8874896e828ec0d5233bf1f6ee376507a5bffb82a"
+                  },
+                  {
+                    "ref": "word/document.xml:p:11",
+                    "textSha256": "0a108d04cf4f2066869d333f64baca266cf98bee54437edc8e0d427bbfd98976"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Uses the exact Teotihuacan place name from the approved route and day 2 programme as the route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1585595f966b6273",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8fd3e89edea97b9e30acc45623f4701fd73976e9f47464b7351086f9cb39a7af",
+              "text": "Basilica of Our Lady of Guadalupe",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+                "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:3",
+                    "textSha256": "4e6121b76e674724b60c63a4be3af40fd1d320517c9c403fa719f86cb6446ed1"
+                  },
+                  {
+                    "ref": "word/document.xml:p:12",
+                    "textSha256": "8678ff295f66427f45ed2cf4283d1aab5c53af40f6b1201864cf1fc70f515ada"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the exact basilica name from the approved route and day 2 description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:052ba91fdfe900af",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f57ed2e16f6902a28ea2815e9444891b375b18545dfa87057f24c346bc325130",
+              "text": "Villahermosa",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+                "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:3",
+                    "textSha256": "4e6121b76e674724b60c63a4be3af40fd1d320517c9c403fa719f86cb6446ed1"
+                  },
+                  {
+                    "ref": "word/document.xml:p:18",
+                    "textSha256": "faec4bdc224fc73c4fe7b22004e90f95fc7eef24c79c869999b30de5407db2ac"
+                  },
+                  {
+                    "ref": "word/document.xml:p:19",
+                    "textSha256": "c7f9d4872894a9ccb790d544738dd11d2a43fe6a3dddd3decd2e7bf2a567544f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the named flight destination from the exact approved route and day 3 passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6bf5209f71096820",
+              "field": "itinerary.label",
+              "sourceTextSha256": "ee38b98906147c1849f0d05be395ffaeb7444043e6b63380b2b869f900cc444b",
+              "text": "Palenque",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+                "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:3",
+                    "textSha256": "4e6121b76e674724b60c63a4be3af40fd1d320517c9c403fa719f86cb6446ed1"
+                  },
+                  {
+                    "ref": "word/document.xml:p:18",
+                    "textSha256": "faec4bdc224fc73c4fe7b22004e90f95fc7eef24c79c869999b30de5407db2ac"
+                  },
+                  {
+                    "ref": "word/document.xml:p:20",
+                    "textSha256": "52970afe2277ff8dbb87d15f3856652bd5cab67dd152a611392b100ab5f68330"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Uses the exact archaeological destination name from the approved route and day 3 passage."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:42:28.070Z"
+        "at": "2026-11-04T07:42:51.762Z"
       },
       "submission": null,
       "review": null,

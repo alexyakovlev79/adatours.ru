@@ -305,7 +305,7 @@
         "expiresAt": "2026-11-04T08:11:23.711Z"
       },
       "checkpoint": {
-        "id": "ada-en-0adf912c416a-p02-s01-cp4",
+        "id": "ada-en-0adf912c416a-p02-s01-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-0adf912c416a-translator",
         "token": "ada-en-0adf912c416a-20261104",
@@ -391,10 +391,94 @@
                 "transformation": "contextual_label",
                 "rationale": "Compose the canonical compound place label from the exact Puerto Natales and Torres del Paine names in the verified passage."
               }
+            },
+            {
+              "blockId": "tour:media_alt:529f586a5a0216cd",
+              "field": "media.alt",
+              "sourceTextSha256": "934333c91631dfd058910f3114a2f6c92212e1bec61bcb2ee383c2046cef7b61",
+              "text": "Colourful houses along the waterfront in Puerto Natales, with mountains in the background, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "gpt-6",
+                "runId": "ada-en-0adf912c416a",
+                "wordAbsenceReason": "The verified Word programme contains no alt text describing this Puerto Natales photograph; translated the current RU media.alt without adding details."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:1db2323169cb11f1",
+              "field": "media.hover",
+              "sourceTextSha256": "4cb697ec07b3ecfba6d0c6655e208eb8f97530fcccadb86c8d5e5b6a5ca0db05",
+              "text": "Puerto Natales: waterfront houses, waves and mountains beneath a cloudy sky",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "gpt-6",
+                "runId": "ada-en-0adf912c416a",
+                "wordAbsenceReason": "The verified Word has no matching hover caption for this image; translated only the current RU media.hover."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "71911de4fedd9c74feb57bd9142ca9fd6899d883ce7c87339690b2b830b2bcd6",
+              "text": "Puerto Natales — Torres del Paine and Milodón Cave",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:113",
+                    "textSha256": "49d7ccb815958dcd4cc61d10d868e9b7c49f84c9aa42010c572e6f438712286c"
+                  },
+                  {
+                    "ref": "word/document.xml:p:122",
+                    "textSha256": "f9333366ddf60d537739bc8d86671fa93b6eb094087d567e61f71e5b6c604356"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the route title from the exact destination, park and cave names in the verified Word day-7 and day-8 passages."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "field": "itinerary.text",
+              "sourceTextSha256": "f03d5b0be2921b08689bd41f33dba61cfe2faf948a9ccd596b7bdfeca3af6465",
+              "text": "Day 8 · Torres del Paine & Milodón Cave — Full-Day Shared Tour At 7:00 a.m., you will be picked up from your hotel and depart for the Milodón Cave Natural Monument, where a prehistoric mammal lived approximately 12,000 years ago. We will then continue the tour, enjoying incredible views of Soffa Lagoon, Cordillera Prat, Lago Porteño, Cerro Mesa, and Toro Lake. We will make a stop at Grey Viewpoint, followed by a visit to the village of Río Serrano.\n\nThe tour continues with a hike around Grey Lake, passing through a lenga forest to reach the lakeshore, where you may see icebergs that have broken away from the glacier. Lunch at a local restaurant. After lunch, visit the viewpoints overlooking Pehoé Lake and Salto Grande, followed by a pleasant walk to the 18-meter-high waterfall. The tour continues with visits to viewpoints overlooking Nordenskjöld Lake, Laguna Amarga, and Sarmiento Lake.\n\nReturn to Puerto Natales, arriving at approximately 6:45 p.m.\n\nIncluded: Torres del Paine & Milodón Cave full-day group tour with entrance fees and lunch\n\nHotel Altiplánico Puerto Natales\n\nHotels as listed or similar, standard rooms, breakfast basis.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:122",
+                    "textSha256": "f9333366ddf60d537739bc8d86671fa93b6eb094087d567e61f71e5b6c604356"
+                  },
+                  {
+                    "ref": "word/document.xml:p:123",
+                    "textSha256": "c098f6066475678dece3336f5fb7ab6238049d7ee29e994c770e38863d9f59da"
+                  },
+                  {
+                    "ref": "word/document.xml:p:124",
+                    "textSha256": "8028ed3f9d38161a2ff4bd142b833f0b6efc87dba774e17cb3065ab85421da15"
+                  },
+                  {
+                    "ref": "word/document.xml:p:126",
+                    "textSha256": "2c79277e220d9739059a05569bb1305ef7266fdc799f3bed66dc77deb4807346"
+                  },
+                  {
+                    "ref": "word/document.xml:p:158",
+                    "textSha256": "79d28651826febf2809459952cba10981f6b570d2c9c5b62dfb19f54cbb4fd43"
+                  },
+                  {
+                    "ref": "word/document.xml:p:160",
+                    "textSha256": "5fdacdf8a306191d503c179f5a3ef63d52a956f10237a2e2ebb761878785fd0d"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:42:42.029Z"
+        "at": "2026-11-04T06:43:15.777Z"
       },
       "submission": null,
       "review": null,

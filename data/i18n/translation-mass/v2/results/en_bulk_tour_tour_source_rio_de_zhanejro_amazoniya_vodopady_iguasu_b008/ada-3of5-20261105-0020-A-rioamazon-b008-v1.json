@@ -1,0 +1,111 @@
+{
+  "jobId": "en:bulk:tour:tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu:b008",
+  "stableId": "tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9e9f43d9730e4a4c540d762bdcd6eb8470fe68d6238bfb020a583d518f59d813",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f26cc24b9e33255a0c890ffeb4ce7878f9cdce81885714cc03f60023b585ac0a",
+      "text": "Breakfast at the hotel and transfer to the airport. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "docx:Iguazu:Day8",
+            "textSha256": "c1487f0a6582a38dddcb04e9ba096cace7149707242399782838b68d43a0ee68"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removed the Word day marker and retained the approved full departure sentence, including the end-of-services note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:25c6390c55f06880",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "docx:hotel:Foz",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8707bc45e7f1a4f0",
+      "field": "media.alt",
+      "sourceTextSha256": "2a20f4bd03ba124f29df710fde305cb3a212a84f1a9b8c34617e0a9e138960f7",
+      "text": "Powerful streams of Iguazu Falls plunging over a rocky cliff.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0144-A-b008",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word 2027 itinerary describes Iguazu Falls but contains no approved photo-alt text about streams over the rocky cliff."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3fc7873b5e16c3b2",
+      "field": "media.hover",
+      "sourceTextSha256": "6cb2360dd113894373796ce56cda7ff13f79f8c5880940c408de5b4dbdf18d52",
+      "text": "Iguazu Falls: broad cascades and spray rising above the gorge.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0144-A-b008",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word does not contain an image-hover caption for broad cascades and spray rising above a gorge."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "f9af672f3076ee12e4e4e43cf05def3f62d218a02d3acabac7e86ae6397cbf76",
+      "text": "The bow of a motorboat in Guanabara Bay, with Sugar Loaf Mountain and a golden sunset behind it, Rio de Janeiro, Brazil.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0144-A-b008",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word has no hero image description of a motorboat bow in Guanabara Bay with Sugar Loaf Mountain at sunset."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "4b000d2a641a4e0268f2af6bd2729b9406b1255d28f761bd862b635d99e823ad",
+      "text": "Guanabara Bay: Sugar Loaf Mountain viewed from the water at sunset.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0144-A-b008",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word contains no hero-hover image caption describing Sugar Loaf from the water at sunset."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "248db6ab73e15c7cf197253c375ba79fdf003c1e9753168569512daba60a0de1",
+      "text": "Three natural wonders in one journey: the green hills, golden beaches and iconic views of Rio de Janeiro; two nights at a jungle lodge in the heart of the Amazon near Manaus; and the spectacular Iguazu Falls, explored from both the Argentine and Brazilian sides.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "docx:overview",
+            "textSha256": "8ab01b581caec4bef8ddbf8af87f478770cf5311da5fcba9fa3933a932362502"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -396,7 +396,81 @@
         "claimedAt": "2026-11-04T06:47:06.243Z",
         "expiresAt": "2026-11-04T08:17:06.243Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-9a69348b6e00-02-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9a69348b6e00",
+        "token": "tok-9a69348b6e00-20261104-a1",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b003",
+            "stableId": "tour_source_3_vzglyada_na_kosta_riku",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "6091c4f4971f2d47eecbf0499447cabaf96b8f38ee4e55e5140f3cf2c5b2bd0d",
+            "blocks": [
+              {
+                "blockId": "tour:notIncluded:e306ce6ca55803d7",
+                "field": "notIncluded",
+                "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+                "text": "Personal expenses.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The Word Not Included list, paragraphs 160–163, lists flights, optional activities, taxes and hotel extras but no general personal-expenses item."
+                }
+              },
+              {
+                "blockId": "tour:note:5aa2c628beab8b85",
+                "field": "note",
+                "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+                "text": "If necessary, Ada Tours may replace the specified hotels with other hotels of the same category.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The Word conditions, paragraphs 147–149, do not contain a same-category hotel-substitution clause."
+                }
+              },
+              {
+                "blockId": "tour:note:eeb2832b5b22895b",
+                "field": "note",
+                "sourceTextSha256": "05c7ec663a3193acbebd1bc1bd009ffff1b5c7055788a0c60dc32eddf5f368c5",
+                "text": "If necessary, Ada Tours may change the order of excursions while retaining the tour programme.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The Word conditions, paragraphs 147–149, do not contain a clause about changing excursion order while retaining the programme."
+                }
+              },
+              {
+                "blockId": "tour:note:116ab96902d7828a",
+                "field": "note",
+                "sourceTextSha256": "e78bdc0d130871fcc2469eac9068ffa9c50b44768324e4a1f7beea7b41c41c9f",
+                "text": "Ada Tours is not responsible for missed hotel breakfasts when an early check-out is required for an early flight or excursion.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The Word conditions and inclusions contain no liability clause for breakfasts missed because of early departures."
+                }
+              }
+            ]
+          },
+          "completedBlockCount": 4,
+          "wordSourceVerified": {
+            "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+            "sha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+            "modifiedTime": "2026-10-27T13:09:10.999Z",
+            "localPath": "/workspace/scratch/9a69348b6e00/ada_word/costarica.docx"
+          }
+        },
+        "at": "2026-11-04T06:48:13.874Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b005",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1d45976d0ddffabd623516c3b8c76359d22421bf5e18f4e11786b09a6e27bf47",
+  "blocks": [
+    {
+      "blockId": "tour:note:720c6d1813a3ea78",
+      "field": "note",
+      "sourceTextSha256": "a4982549c439136327f7d3016d993e9637312709de2384c29359ffd6766edb33",
+      "text": "Uyuni is above 4,000 m: altitude sickness is possible.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[220] (zero-based all descendant w:p)",
+            "textSha256": "0695b22c92f7b2cd601553d1c2c62a4c238f2eb6e28fb69dbba38edcf529ee45"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the leading list marker for the existing standalone note field; preserve the approved Word wording."
+      }
+    },
+    {
+      "blockId": "tour:note:988252364ef734dc",
+      "field": "note",
+      "sourceTextSha256": "e31e95ed180b4335498f553b6417acf634d17ac9d8923128ef6a6832913f547a",
+      "text": "Prices are subject to change: the final price will be confirmed once all services and flight fares have been checked on the date of booking.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[222] (zero-based all descendant w:p)",
+            "textSha256": "4b991c94feba8e8b13979b123fac32d1a734740bea3b7814c229e5e036605b7b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker because the target is an individual note field."
+      }
+    },
+    {
+      "blockId": "tour:note:618358817e89249d",
+      "field": "note",
+      "sourceTextSha256": "eeb5cacb8d5675ed35555787d416c37fa1ade66960aac9b6611eee104283b408",
+      "text": "If a single traveller’s flight does not match the group arrival, a supplement for a private transfer may apply.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[224] (zero-based all descendant w:p)",
+            "textSha256": "d30358f039b8d9ea63fec2414e33658ac78cfc2e96b74cbdea20e5e7cbc474fc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker because the target is an individual note field."
+      }
+    },
+    {
+      "blockId": "tour:note:36661bd8c0920162",
+      "field": "note",
+      "sourceTextSha256": "87d7f8b876a6a4a11ac87e73f4234620f07921c8ee22fe797523bba2361c07fa",
+      "text": "The flight from Uyuni to La Paz is included in the programme price.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-80384d2949b2",
+        "wordAbsenceReason": "The verified Word lists the included Uyuni–La Paz flight in paragraphs 59, 116 and 233, but contains no standalone note sentence for this RU field; translate the exact RU note without adding any conditions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "727286c5046da7a820085cd3e627a3af5ee5307eeec1f06296fd1732460aecda",
+      "text": "Arrival in Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[66] (zero-based all descendant w:p)",
+            "textSha256": "b13d4267d4a28710feaa5e7dd908386df31b84a82b27b7df52e60b80247ab3dd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the arrival destination phrase from the approved Day 1 paragraph as the existing itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "face5e157f91239d5b11994367b2b2a2b0eb14cbea10f0fc910550d929ff9925",
+      "text": "Day 1 · Arrival in Rio de Janeiro and transfer to the hotel, past green hills, rocky peaks, palm trees and beautiful bays. In the evening, the famous mosaic promenades of Copacabana and Ipanema and their cafés stay open late: time for a cold coconut water by the sea.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[66] (zero-based all descendant w:p)",
+            "textSha256": "b13d4267d4a28710feaa5e7dd908386df31b84a82b27b7df52e60b80247ab3dd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+        "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[140] (zero-based all descendant w:p)",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:32772677f5079ec1",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro, with the bay, Sugarloaf Mountain and city buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-80384d2949b2",
+        "wordAbsenceReason": "The verified Word DOCX contains no matching image alternative-text caption for this itinerary image; translate the supplied RU alt text without changing the photo."
+      }
+    }
+  ]
+}

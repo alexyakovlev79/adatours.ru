@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b005",
+  "stableId": "tour_source_issledovanie_argentiny",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "65aeab30968d2b4de0729a0775aa2a8d0f7e1b20a2c5b1464d3160fe28b68147",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2bc64d60ee49f3e93bfc357c140e51c80269f9b5bc14a213ab924a14b1a62a17",
+      "text": "Buenos Aires – Trelew – Puerto Madryn",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "1e604490b8704ea03234f4d93df708e1db2e1586595eff65608997e54d8c9784"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day route label from the three locations explicitly connected in the Word Day 3 paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "bf4d259fd523990aa1430965f524130eab8038f5c767eb6e2d8d16c9f361af51",
+      "text": "Breakfast. Private transfer to the airport for your Aerolíneas Argentinas flight. On arrival, you will be met and take a regular transfer to Puerto Madryn.\n\nAccommodation at Dazzler Puerto Madryn in a sea-view room. This is where the Patagonian part of the itinerary begins.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 3 provides the airport transfer and flight to Trelew/Puerto Madryn, but it does not specify a regular arrival transfer, a sea-view room or the concluding Patagonian introduction. The complete RU block has no equivalent Word passage; those RU details are retained."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7a611df869cde5d6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p82",
+            "textSha256": "dfc497a86cb709383d3050140d443fff37103c23464854fa4a415c8d5ac3248a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The route departure is Buenos Aires, confirmed by the Word flight exclusion for this day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:27f6ef1f6b9d0908",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7c0559a861100d45f13e41612112c1fa1eecd2484af82b31a777fbaa289925c8",
+      "text": "Trelew",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "1e604490b8704ea03234f4d93df708e1db2e1586595eff65608997e54d8c9784"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the arrival airport location explicitly named in the Word Day 3 flight paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bec79bde1657cb5a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4a441d2c49f89e930565c3b69aca7ef723d440bbef862b525373bce7c711a691",
+      "text": "Puerto Madryn",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "5260fb0094a6b48ab1523fbe758545f079fb57eec210021983a9c2208212cab8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:f465ec25e6c14ced",
+      "field": "media.alt",
+      "sourceTextSha256": "d8b47286096151f114d663da32d2047e50d320240262aa30c3d0653601ea3182",
+      "text": "Passenger boats beside a waterfront with market stalls and high-rise buildings, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No image-specific alternative text describing the passenger boats, market stalls and high-rise buildings occurs in the selected Word document."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:ca580846711a49d9",
+      "field": "media.hover",
+      "sourceTextSha256": "e3c15db86d3ba1fc48121f2a33e4e63ee3ae412f87cf08c22782d87a75946b50",
+      "text": "Argentina: wooden boats beside a lively city waterfront",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word document has no corresponding image-specific hover caption for the wooden boats and city waterfront."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7f6fbb2addf7cb0de02c9f3f2679777dc9729311709e1abd802511819831c15e",
+      "text": "Puerto Madryn and Península Valdés",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "5260fb0094a6b48ab1523fbe758545f079fb57eec210021983a9c2208212cab8"
+          },
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "866331098c2d2f163baf66dfac0f55f2ef0e40bdffddd559085611c33d713c09"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day title from the Word overnight base and the explicitly scheduled Península Valdés excursion."
+      }
+    }
+  ]
+}

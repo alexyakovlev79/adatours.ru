@@ -421,7 +421,108 @@
         "claimedAt": "2026-11-04T05:59:06.260Z",
         "expiresAt": "2026-11-04T07:29:06.260Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_91a5d7c2e8b4_cp002_4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_91a5d7c2e8b4",
+        "token": "ada-en-token-91a5d7c2e8b4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b013",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "2eb22a9b7399f94f70e5d3800532738159a33a6e402c762c2530b519e92a3f77",
+          "sourceVerification": {
+            "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+            "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+            "modifiedTime": "2026-09-30T20:16:32.777Z",
+            "fileName": "Chile_Argentina_17d_EN_com20%.docx",
+            "yearFolder": 2027,
+            "editionYear": null
+          },
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:9e21cea2dfe41789",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1fe5b9cf31894c76d2ae0f052f02c40d906fe8d1635075a8400363e5512e3daa",
+              "text": "Lake Toro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "80452737bd0d1931fe7d4f88111f3c774a49eba03549c304f8a2a675dfba0bed"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract Lake Toro from the verified Torres del Paine passage as the existing stop label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ba4bd2d31ece50dc",
+              "field": "itinerary.label",
+              "sourceTextSha256": "4fc4889c16d31b3fe3fc244b67706c6ffb177a14074d8ea6d7f099fbf5fe8d7d",
+              "text": "Lake Grey",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "80452737bd0d1931fe7d4f88111f3c774a49eba03549c304f8a2a675dfba0bed"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the Grey lake referenced by the Mirador Grey lakeside passage for the existing route stop."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0f4cddf152176044",
+              "field": "itinerary.label",
+              "sourceTextSha256": "98bc3b0a0b38a0abd060c3deb05b42cb03a3a3b07265672a78752dcc3b19b88d",
+              "text": "Lake Pehoé",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p45",
+                    "textSha256": "f19faba43e92de545e7b277e829e10e1d88f405da82b451844d97c4c9f750d15"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract Lake Pehoé from the verified Torres del Paine passage as the existing stop label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fef4b46468dd4cc1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "aaba38a08249a9eb5d3e57b8b509206b7f755800430345a882849a23743e29d4",
+              "text": "Salto Grande Waterfall",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p45",
+                    "textSha256": "f19faba43e92de545e7b277e829e10e1d88f405da82b451844d97c4c9f750d15"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract and capitalize the waterfall name from the verified passage as an existing route label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:00:03.425Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

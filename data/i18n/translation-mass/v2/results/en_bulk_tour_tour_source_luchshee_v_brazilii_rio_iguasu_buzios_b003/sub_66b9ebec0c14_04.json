@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_rio_iguasu_buzios:b003",
+  "stableId": "tour_source_luchshee_v_brazilii_rio_iguasu_buzios",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8f488808d7c47b6866dd805500cb37e1cd1f0cc4f4e24fa7410b7da51c0516f4",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:f33169ed00481ef7",
+      "field": "notIncluded",
+      "sourceTextSha256": "e924e89bb68f57d6240bb579908e80ea7e2e006d184c0b9f4343977ff62b9a77",
+      "text": "Laundry services.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word exclusions do not include a laundry-services entry; the current RU exclusion is translated."
+      }
+    },
+    {
+      "blockId": "tour:note:b7f9e66621906906",
+      "field": "note",
+      "sourceTextSha256": "74245fd62d89db8b22791aeee3eaff198c87a2241c0be6e72dfe1a7c5a3ecace",
+      "text": "Ada Tours may substitute the listed hotels with hotels of a similar class.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p194",
+            "textSha256": "bd95362fb762ea46c15eb4221448cd3b2a26b0887d3fcd81382c8f9982c46b1d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Retained the hotel-substitution wording as a standalone note, naming Ada Tours as in RU and leaving booking availability to its own clause."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while retaining the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding clause about changing excursion order while retaining the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:3670f5220b986812",
+      "field": "note",
+      "sourceTextSha256": "5eb0f22193424f992cfe0645a0be307b443f925f13e5ef4368ae2d144cfa0426",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed because of an early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding early-departure missed-breakfast liability clause."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p4",
+            "textSha256": "be813da43c020f86a4cb7783a15720a3a68e762b3048dcd72cd2b59df3a17bce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Selected the exact Rio de Janeiro endpoint from the Word route line as this day's city label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fa9edec4247db86fb001b917601f9eaa23f9762e7ebb1ccea7830f1d4bffa128",
+      "text": "Arrival at Rio de Janeiro airport.\n\nYour driver will be waiting in the arrivals area with a sign.\n\nTransfer to your hotel.\n\nIf you arrive during daylight hours, you can already see green hills, rocky mountains, palm trees and bays along the way.\n\nAfter dark, the lights of residential neighbourhoods and favelas appear on the hillsides.\n\nAfter check-in, the rest of the day is free.\n\nHead out for a walk around the city or spend some time by the ocean.\n\nThere is no scheduled excursion on the first day, so you can set your own pace after the flight.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 67–69 confirm arrival and transfer but omit the detailed RU account of the sign, daytime and night-time views, free time and arrival-day pace."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p4",
+            "textSha256": "be813da43c020f86a4cb7783a15720a3a68e762b3048dcd72cd2b59df3a17bce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Selected the exact Rio de Janeiro endpoint from the Word route line as this day's city label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:e8745d890878df1b",
+      "field": "media.alt",
+      "sourceTextSha256": "f30a30644c4fccab8e55dda80951393f83cb076c0d8376d48f567a9070b7ccce",
+      "text": "The Municipal Theatre with green domes among the high-rise buildings of Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching alt text for the Municipal Theatre photograph."
+      }
+    }
+  ]
+}

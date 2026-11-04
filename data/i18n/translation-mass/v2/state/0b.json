@@ -269,7 +269,7 @@
         "expiresAt": "2026-11-04T07:31:38.107Z"
       },
       "checkpoint": {
-        "id": "ada_en_6c7d31_s002_c04",
+        "id": "ada_en_6c7d31_s002_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_20261104_0555_6c7d31",
         "token": "ada_en_token_6c7d31_20261104",
@@ -385,10 +385,92 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:669039e7fce13950",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+              "text": "Puerto Natales & Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p191",
+                    "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+                  },
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Join the two exact Word place names to preserve the scope of the current RU place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:ee306841065467b8",
+              "field": "media.alt",
+              "sourceTextSha256": "bb208d29a71107d5d38c7dd2a6d08739cac2e3ea568e7e021c07492aa53193b3",
+              "text": "Stone buildings with red roofs beside the bay near Puerto Natales, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The verified Word has no matching alt caption for this production image. Translate the existing RU alt text; do not replace the image or infer additional visual details.",
+                "inspectedWord": {
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:958dc00a7046987a",
+              "field": "media.hover",
+              "sourceTextSha256": "dc464db9dd9b28dc84a110c6657d4eaf22aa879f21bdbf65665cd423ef28061c",
+              "text": "Around Puerto Natales: waterfront buildings beneath clouds and snow-covered mountains",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The verified Word has no corresponding hover caption for this production image. Translate the current RU hover caption without adding visual claims.",
+                "inspectedWord": {
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+              "field": "itinerary.title",
+              "sourceTextSha256": "71911de4fedd9c74feb57bd9142ca9fd6899d883ce7c87339690b2b830b2bcd6",
+              "text": "Puerto Natales — Torres del Paine and Milodón Cave",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p191",
+                    "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+                  },
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+                  },
+                  {
+                    "ref": "word/document.xml:p121",
+                    "textSha256": "296a68cd1e6e4a005dde478a6d2b77d36fb1c04e3ad0b140a74745f81c5bfc8e"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the current RU excursion heading using the exact Word place names and Milodón Cave; omit Word day numbering to preserve the current itinerary sequence."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:03:16.405Z"
+        "at": "2026-11-04T06:03:20.459Z"
       },
       "submission": null,
       "review": null,

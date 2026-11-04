@@ -234,7 +234,98 @@
         "claimedAt": "2026-11-04T06:16:04.459Z",
         "expiresAt": "2026-11-04T07:46:04.459Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-008-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b004",
+          "stableId": "tour_brazil_three_ecosystems_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7dc2161959c940c7339f2e691b01f48d883920bb803726940be4105326bbc300",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "2605803e22ecc6e7543c499e91e8b2dad7c9212f328ebd59de53b0412058382d",
+              "text": "Cuiabá — Jardim D’Amazônia",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p18",
+                    "textSha256": "5508dc9456559a57f3b05cc728311e5a3f8b94d19f75880435d436debd1899ed"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Use the exact place names from the Word arrival heading and remove the Day 1/Arrival labels for this itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "84e2d2f1e3f50bb56b8b7a00176433816783917cc250c4cd57569d9fec2af0ab",
+              "text": "Meeting and greeting at Cuiaba airport. At 13h20, departure to the Amazon ecosystem. The drive takes around 4.5 hours, following a paved federal road and leaving the city behind as the landscape becomes more rare and the forest starts to appear. Arrival by late afternoon. Welcome drink and check-in at Jardim d’Amazonia Eco Lodge. Dinner and overnight.(D)",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p19",
+                    "textSha256": "72fe15e3d40b1564aa058330157fbae6b7d78d6a6eaeb35ea08b6b744b67b401"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:33c41432a39b4c06",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a2104752adf834a1a84e1c3eb73ec14edff7fd60b562acf7dd8f95b9a3498e57",
+              "text": "Cuiabá",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p18",
+                    "textSha256": "5508dc9456559a57f3b05cc728311e5a3f8b94d19f75880435d436debd1899ed"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact Cuiabá place name from the Word arrival heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:08190485ecf8335a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "23bf5e8a9921605c6594c2d4c3109c73bcfb93a817d18cf0adbd19f55492919e",
+              "text": "Jardim d’Amazonia Lodge",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p60",
+                    "textSha256": "e3059db8f9e76ec4f015b29c1ee796d8f22d239001bf3a3324e2db81b92189ec"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact Jardim d’Amazonia Lodge name from the Word accommodation inclusion."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:16:42.979Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

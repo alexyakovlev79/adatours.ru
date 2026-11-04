@@ -558,169 +558,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "10dd04a9d01a7f8b2c827fe11bb43170c6aa14374a3d2ba5416fce9fee497f8e",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "claimedAt": "2026-11-04T07:51:14.151Z",
-        "expiresAt": "2026-11-04T09:21:14.151Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-8526ba7437bc-b010-cp8-tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b010",
-          "stableId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "10dd04a9d01a7f8b2c827fe11bb43170c6aa14374a3d2ba5416fce9fee497f8e",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-              "field": "itinerary.text",
-              "sourceTextSha256": "78342b424d9d7c7d5e73055f9a72d3c02625e8f188f88d05b155b29ab93d0b1f",
-              "text": "After breakfast, take a sightseeing tour with an English-speaking guide.\n\nAround La Moneda Palace, the city has a formal feel: its restrained façade and spacious square form the government district.\n\nPlaza de Armas is livelier. Here you will find the cathedral, the post office and historic administrative buildings.\n\nNext, climb Santa Lucía Hill. Its terraces overlook the city centre and the Andes.\n\nThe tour continues along the Mapocho River through Vitacura, Las Condes and Providencia.\n\nAn optional trip to the wineries of the Maipo Valley can also be arranged.\n\n**Price:** USD 230 per person, minimum 2 participants.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraph 91 covers the city tour and the same USD 230/minimum-2 option, but omits the current RU descriptions of La Moneda’s square, the Andes view and the Mapocho River. Translated the full RU block, with guide language localised as English under §4.1; no price change.",
-                "serviceLanguageAdaptation": "RU-derived Russian-speaking guide localised as English-speaking guide under editorial §4.1."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7991947c43aeb0de",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
-              "text": "Santiago de Chile",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p90",
-                    "textSha256": "b0bf83bb47572fb31b61716332e1c450b64840a00a1dfb62c47fa9f29851d0da"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the exact destination name from the Word arrival paragraph for this standalone place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:8ae6dba7c7713a0f",
-              "field": "media.alt",
-              "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
-              "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The selected Word contains no matching image alt description; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:ae94fe015ae2f2c3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "40b85fcb155abfe021b1aa39497c5eddc9a8bc858720a879f1b9400fd7a8117a",
-              "text": "Maipo Valley",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p91",
-                    "textSha256": "cfaa67877c3dd11d0b73fecd8196b4fd66b3f0e627504029901c0dd61ca054ae"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the exact valley name from the Word optional winery excursion for this standalone place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:f76823f601bc2496",
-              "field": "itinerary.title",
-              "sourceTextSha256": "4ddaa55ba2bf2434dbe3eab0de8c8c382a2cfa5819fcbe78dee0791198f5a963",
-              "text": "Santiago – Calama – San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p90",
-                    "textSha256": "b0bf83bb47572fb31b61716332e1c450b64840a00a1dfb62c47fa9f29851d0da"
-                  },
-                  {
-                    "ref": "word/document.xml#p102",
-                    "textSha256": "b1e679945e4a25225ec43c8ad407a77939e504d6cb9d6d85740ca1cfbd54e8d9"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combined the exact Word departure, flight and onward-transfer place names in the current RU route order."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "bba0b68f6307c05b8642a8b61965cd4a1860ea9bb37da978efe8f4e866d1cc2f",
-              "text": "Transfer to the airport for a flight to northern Chile.\n\nIn Calama, the air becomes much drier and there is almost no greenery. Continue by road through the desert to San Pedro de Atacama.\n\nSan Pedro is a small settlement of low adobe houses, with volcanoes on the horizon. The earth changes from grey to copper, with salt patches and folds of the Cordillera appearing nearby.\n\nThe jeep journey across the Altiplano begins the following day.\n\nAn astronomical tour is available at an additional cost. The dry climate, altitude and low light pollution make it possible to see the Milky Way, Southern Hemisphere constellations, planets and distant galaxies clearly.\n\n**Price:** USD 350 per person, minimum 2 participants.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraph 102 confirms the transfers and the same USD 350/minimum-2 astronomical tour, but omits the detailed current RU Calama/San Pedro landscape and night-sky descriptions. Translated those RU details and retained the original price and minimum group size."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:72a475cdaa5f3d7f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
-              "text": "Calama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p102",
-                    "textSha256": "b1e679945e4a25225ec43c8ad407a77939e504d6cb9d6d85740ca1cfbd54e8d9"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the exact arrival-airport place name from the Word transfer paragraph for this standalone label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:119f675a67d110fe",
-              "field": "itinerary.label",
-              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
-              "text": "San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
-                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p161",
-                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:53:16.503Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-8526ba7437bc-tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala-b010",
+        "blobSha": "f74990d67fcc1c76b23cc7db2b372f5fe9dfa1f2",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala_b010/ada-en-20261104-8526ba7437bc-tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala-b010.json",
+        "at": "2026-11-04T07:53:34.765Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

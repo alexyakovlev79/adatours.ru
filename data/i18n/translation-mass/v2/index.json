@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2028,
-    "leased": 19,
+    "queued": 2027,
+    "leased": 20,
     "review": 362,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2028,
-      "leased": 19,
+      "queued": 2027,
+      "leased": 20,
       "review": 362,
       "ready": 1,
       "retryable": 0,
@@ -1305,8 +1305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 64,
-          "leased": 0,
+          "queued": 63,
+          "leased": 1,
           "review": 7,
           "ready": 0,
           "retryable": 0,
@@ -1337,7 +1337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:55:56.043Z",
       "earliestRetryAt": null
     }
   },
@@ -1454,6 +1454,12 @@
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b008",
       "token": "ada-en-65f842a29ffa-20261104",
       "expiresAt": "2026-11-04T07:55:28.051Z",
+      "generation": 1
+    },
+    "ada-en-20261104-9a69348b6e00": {
+      "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b008",
+      "token": "tok-9a69348b6e00-20261104-a1",
+      "expiresAt": "2026-11-04T07:55:56.043Z",
       "generation": 1
     }
   },
@@ -2762,8 +2768,15 @@
         "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b008"
       ],
       "completedJobIds": []
+    },
+    "ada-en-20261104-9a69348b6e00": {
+      "token": "tok-9a69348b6e00-20261104-a1",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b008"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:25:47.866Z"
+  "updatedAt": "2026-11-04T06:25:56.043Z"
 }

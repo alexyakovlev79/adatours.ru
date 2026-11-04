@@ -452,7 +452,7 @@
         "expiresAt": "2026-11-04T09:11:13.079Z"
       },
       "checkpoint": {
-        "id": "ada_en_6c7d31_s010_c04",
+        "id": "ada_en_6c7d31_s010_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_20261104_0555_6c7d31",
         "token": "ada_en_token_6c7d31_20261104",
@@ -566,10 +566,80 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact Word river name Salobra River from the corresponding snorkelling paragraph as the current RU itinerary place label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:0da32b1b0320bc1c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "34f00a472fdce88d3b5ac8eb33311edd92f8c7e89b1a1c3b7ad55e9903d8dd23",
+              "text": "Chapada dos Guimarães",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p29",
+                    "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Word destination name Chapada dos Guimarães from the corresponding transfer paragraph as the current RU itinerary place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:ad439dfbdf7ba275",
+              "field": "media.alt",
+              "sourceTextSha256": "56b077dad08075fd0772b2784f1fbd4c36773cc5e0ffb13c8165c6ab190064fb",
+              "text": "Clear turquoise water of the Salobra River with underwater plants and forested banks, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The selected Word has no photograph-specific Salobra River underwater plants alt text; translate the current RU image description.",
+                "inspectedWord": {
+                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:9250dbd464af7ba5",
+              "field": "media.hover",
+              "sourceTextSha256": "97147e749632d1326d18850b8b455ebd4d0ed7fad2ab653418f57a4da01ea50b",
+              "text": "Salobra River: underwater vegetation in clear water",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The selected Word has no photograph-specific Salobra River hover caption; translate the current RU caption.",
+                "inspectedWord": {
+                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:85e122039e63810b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "152cb203818d9720a6961be82ccc7c6e71c15c63e07fb4c2aae31c1c61fd6759",
+              "text": "Bom Jardim",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p29",
+                    "textSha256": "7793912f9dbd2501aad0c136ab5e146797449ffa7d5fdb15510f6a388fc29029"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Word place name Bom Jardim as the current RU place label for the separately represented next itinerary module; do not change the module sequence."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:42:39.695Z"
+        "at": "2026-11-04T07:42:44.841Z"
       },
       "submission": null,
       "review": null,

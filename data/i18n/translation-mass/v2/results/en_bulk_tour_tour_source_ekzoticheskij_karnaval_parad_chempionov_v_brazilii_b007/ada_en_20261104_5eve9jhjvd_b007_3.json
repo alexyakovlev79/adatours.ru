@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii:b007",
+  "stableId": "tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2c1103106dc7ba252901365c08630124d45b49fa780c8fd29d4de2b6683f2b6d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7e88439c8305d6c7e95904a8daef1eb668876070ea103efb6fb0afdb7e317663",
+      "text": "Day 7 · Breakfast, transfer to the airport and flight to Manaus. From Manaus, a speedboat takes you to Evolução Ecolodge, a jungle lodge for travellers who want to relax in close contact with the nature of the Amazon.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:102",
+            "textSha256": "a7fedf6904993d183ba6f0a6bdef1efe6484e9e1757e1de37dc81308965c99c7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0f8f1524af76a74c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:224",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3170f468203352fc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:102",
+            "textSha256": "a7fedf6904993d183ba6f0a6bdef1efe6484e9e1757e1de37dc81308965c99c7"
+          },
+          {
+            "ref": "word/document.xml:p:101",
+            "textSha256": "336b7a8f378318e64b27502026297091388b9f21cf6e0b2b12d5ce6308908ab0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the named arrival city and the Amazon region into the assigned combined place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6be895d301700d1f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes the Argentine side without naming Puerto Iguazu; translate the assigned RU place label using its English geographical form."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:e446e879e525cf46",
+      "field": "media.alt",
+      "sourceTextSha256": "0b3eb60fa68219d4405325ee52711459a30f603b5c0936f527ab3f2ccc32f7b5",
+      "text": "Aerial view of a boat leaving a wake on a forest river in the Brazilian Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no image-specific alt text describing this aerial river scene; translated from the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:689a946095b93c94",
+      "field": "media.hover",
+      "sourceTextSha256": "27042591be937961105ff3aa3febbcb8f27eb8cf05cf003d75b4a33aad7d4e9f",
+      "text": "The Amazon: a boat route between densely wooded green banks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no image-specific hover caption for the boat route between green banks; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f426824b7e3c572b8c05318de092bb603daaf697bc86202262668ffb91fc1b70",
+      "text": "Eco Lodge Evolution",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The assigned title is already a Latin-script lodge name, while the Word uses Evolucao Ecolodge. Preserve the existing hotel name unchanged under the worker's hotel restriction."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d6eea7720151fead01b8fc29a840028c49da61b8c35f91021cd17127e2d649f8",
+      "text": "Day 8 · A jungle walk with a naturalist guide and a visit to a caboclo house, to discover local daily life and the secrets of making manioc flour. After lunch, a visit to the village of Acajatuba, where people live from fishing and farming and local artisans make crafts from natural seeds. Then a canoe trip into the igapó, the flooded forest, and piranha fishing; after dinner, a torch-lit walk along the riverbanks to spot caimans and, with luck, nightjars, snakes and frogs.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:103",
+            "textSha256": "95aab7de82808c33914cb70bc753f1a7fb5ae1f8399bd1f90b26206bfdb9aedd"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b006",
+  "stableId": "tour_chile_marble_caves_san_rafael_three_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "22752045e9bfe5df5585b514df5347720f0aeef0e4d7c9aa5abdf7f461e1871c",
+  "sourceVerification": {
+    "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+    "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+    "modifiedTime": "2026-10-22T14:06:52.263Z",
+    "fileName": "MarbleCaves_2027_3D2N.docx",
+    "yearFolder": 2027,
+    "editionYear": null
+  },
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:032665d42ad81843",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b7010392a8e76f4b1d1b778cbfd815e7b622bf64c9c9d37e701305e319ad6308",
+      "text": "Bahía Exploradores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "b52e882b33cf3c788f6c9b63d16c838419d5f647f474f509eb0050971b8bd9bb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Bahía Exploradores directly from the verified boat departure description as the existing stop label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ac2f60e4884d1e1a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e6e494f410ffb4eaec51ba4ffd85cb79a8543b1e3de3089db9f7a4b22963ce5d",
+      "text": "San Rafael National Park",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_91a5d7c2e8b4",
+        "wordAbsenceReason": "The verified Word refers to Laguna San Rafael and San Rafael Glacier but does not name the national park; translate the existing RU park label without adding a visit."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5f2391601962c2d7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c35802742692df6ad768c86b4f214cfdd06c2b1041750eae0d9fa93aea967d4f",
+      "text": "San Rafael Glacier",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p46",
+            "textSha256": "0025e92bffc16034d9bf3d2803e52cd85d5300086c47f7aaa67c109e1188c691"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5514bb47a4e5e851bacd30144615d4d1589aed473f54d88e9d27fc1a75b30bf6",
+      "text": "Marble Caves – Cerro Castillo – Balmaceda",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "3170273ab280e4f39f354560e8c8488401a91f9a5f631b60162eff1726893c49"
+          },
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "3f92fa468147f0705804a2bb4efcf12296530ce0ce4d3fbe40e0890814fe2cab"
+          },
+          {
+            "ref": "word/document.xml:p31",
+            "textSha256": "603823209751b053bdbae0b4171b9ac918923436a4ee2193b92887f2476186d7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing day-route title from the verified cave, Cerro Castillo and Balmaceda names; preserve the original route order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4f85092a7e7f00f610ff33ce56efcecca96928b8d424cbc53d0a42929a6869f0",
+      "text": "Day 3 · In the morning, an excursion by private boat to the famous Marble Caves (Catedrales de Mármol): extraordinary formations sculpted over thousands of years by the waters of Lago General Carrera, their swirling blue and white chambers among the most photographed sights in Patagonia.\n\nThe journey then continues along the Carretera Austral, past Cerro Castillo, towards Balmaceda Airport.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p89",
+            "textSha256": "ba147dd36a981a293efca50660d34dbfc31830c2ba2c644abe08df7b348b4037"
+          },
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "988215599aaaaa00e91aca530a57ddfbf55aac15a54f26fa416cb17700a872c7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5952ef81aa5c93ca",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e3a34387f20a4c2514690c2bddb5f925e2d243be1e944629d70553c45bc960c4",
+      "text": "Marble Caves",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "3170273ab280e4f39f354560e8c8488401a91f9a5f631b60162eff1726893c49"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7ef6efbfcb2f29e2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1f84b7eda8f68078cf52b0ea3cd9110d4b6006d76b0072f1a8b18560df1f4746",
+      "text": "Lago General Carrera",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p40",
+            "textSha256": "724e45ce02362ea09d2b57c76913c6b356ca5847c708f61cc9cfff8e3fafb237"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ecad2807cdd67536",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c777069897a1ab3d28591b83df963741b35c92458fcd5a4a5516169f844e4403",
+      "text": "Cerro Castillo (Aysén)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "3f92fa468147f0705804a2bb4efcf12296530ce0ce4d3fbe40e0890814fe2cab"
+          },
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "e6a13704ac4869333b8ba11b027a5348945d333bd16266844efd1b4092f95501"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Cerro Castillo name with the brochure's Aysén regional context for the existing disambiguated label."
+      }
+    }
+  ]
+}

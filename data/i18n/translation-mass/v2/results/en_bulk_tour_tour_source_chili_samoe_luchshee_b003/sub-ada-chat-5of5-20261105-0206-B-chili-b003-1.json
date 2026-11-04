@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_samoe_luchshee:b003",
+  "stableId": "tour_source_chili_samoe_luchshee",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "365189f7f4f74ef8e40090bc86d39e590bfa598ece174950419399aee961a350",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:fc74f65196ff34d1",
+      "field": "notIncluded",
+      "sourceTextSha256": "1d2b669bbd05fff2c699514463293a33a1cb9f470418e4c7413a67a79087e7b1",
+      "text": "Travel insurance",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p226",
+            "textSha256": "2c66236199ace23bc61ebde0382dceed1dc069bb211377c93dc5ba7d37a04d94"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the bullet marker from the approved 2027 Word excluded-services entry."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:33e7834d228e6998",
+      "field": "notIncluded",
+      "sourceTextSha256": "0a4921eac47e3c5666ee277800b8fbb9390d7ade9490399982f32d5d92970bb4",
+      "text": "Tips (recommended: USD 5 per person for half-day tours and USD 10 per person for full-day tours)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p227",
+            "textSha256": "e5adf6e340aea3300807cfb1b79f0917079f46392a4eebe84e950d69ccfaa60d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retains the exact 2027 Word gratuity amounts; removes the original list marker and changes only the connecting comma to 'and'."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:d051def04b0eed46",
+      "field": "notIncluded",
+      "sourceTextSha256": "ef7dd13d4254592cebff02f9bf9a613dc996d4d0f8ad99542d71a3dffba8f6bb",
+      "text": "Bank charges: incoming transfer fees or a 5% credit card payment fee.\n\nIf necessary, Ada Tours may replace the listed hotels with other hotels of the same category.\n\nIf necessary, Ada Tours may change the order of excursions while preserving the tour programme.\n\nAda Tours is not responsible for missed hotel breakfasts when early check-out is required due to an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The 2027 English Word includes bank charges but omits the RU clauses concerning equivalent hotel substitutions, itinerary order and early missed breakfasts; those missing clauses are translated from current RU."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p63",
+            "textSha256": "6f36e79a8f96c7706a1066ad02cf1f51148e109430f0c226ef8d21a8b23f22c7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the approved 2027 Word itinerary heading for the Santiago stage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "bd180588abe0acf22941a635be41f71e74aa62e1105b32134d52bd3e5be3890f",
+      "text": "Meeting at the airport and transfer to your hotel in Santiago. After check-in, enjoy a half-day city tour of Santiago. The sightseeing tour begins with a visit to the city's historic center. You will see Plaza de Armas, the Central Post Office, the Municipality, the Government Palace “La Moneda,” and Santa Lucía Hill. The tour then continues to the eastern part of the city, known for its modern residential neighborhoods and newly developed commercial districts.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p66",
+            "textSha256": "b166725c88219f61ed0e984541f41bc35dca6d7a2393df46f04b179bc0e0959e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Copies the approved 2027 Word Day 1 paragraph verbatim after omitting its 'Day 1' marker; the Word edition contains no separate hotel-return sentence."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1fa62c13fcc2747b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago, Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p66",
+            "textSha256": "b166725c88219f61ed0e984541f41bc35dca6d7a2393df46f04b179bc0e0959e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses Santiago from the approved Day 1 description and Chile from the programme context as the concise location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4dea0e72aff84ac0",
+      "field": "media.alt",
+      "sourceTextSha256": "a6a53591c1e86dbc8f0a14ebf847b340adc648c543c698ce54092d9ee56271a7",
+      "text": "Historic corner building and a television tower amid modern buildings in Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme contains no ALT text describing this specific source website photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3a6366c3e25bb338",
+      "field": "media.hover",
+      "sourceTextSha256": "cc7003370a791b870193edd8003556cb7396fe2f3a86c6c9c2713365677f61f2",
+      "text": "Santiago: historic architecture beside glass-fronted buildings and a tower",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme contains no hover caption for this specific website image."
+      }
+    }
+  ]
+}

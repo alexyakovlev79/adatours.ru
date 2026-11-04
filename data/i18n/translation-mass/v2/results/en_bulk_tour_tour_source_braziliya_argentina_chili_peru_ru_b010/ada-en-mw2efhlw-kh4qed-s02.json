@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_argentina_chili_peru_ru:b010",
+  "stableId": "tour_source_braziliya_argentina_chili_peru_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b70e567936abb9ae91df4fbab3c99158f6b05089c8930a0a19dc59ac7382fff7",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:f7cbb54d05857fa5",
+      "field": "media.hover",
+      "sourceTextSha256": "67c30f371d54136d1bccd6c3f6b922c493ee2eb2c64b5e74ac11ea041a396ff3",
+      "text": "Santiago: city towers at the foot of the snow-capped Andes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2efhlw-kh4qed",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 contains the itinerary but no image hover caption describing these Santiago towers."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "54a84fb3a6f4a0cff0ff14cdf18de1adacd5848031d4ae8734bcc60145e4c5a0",
+      "text": "Viña del Mar and Valparaíso",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:46",
+            "textSha256": "57bba873f9236e173c30a2b364bf58dc87518b200af2be2b5b7537b087e413c3"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "41ea20d09850a722d372173d78b9353d16b0c620e8c72bd506d26fdd513a38ab",
+      "text": "Breakfast at the hotel. After the guided tour, return to Santiago and overnight at the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2efhlw-kh4qed",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 gives the full coastal excursion, but has no separate residual day paragraph with this overnight statement; translate only the assigned RU block to avoid duplicating excursionRef."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1d9c923022d3ed9f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "87fe574bd51f17d5205651d78ebdd2145a78f6fd10f8d39d01b4fadbc57f4cb6",
+      "text": "Valparaíso and Viña del Mar",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:46",
+            "textSha256": "57bba873f9236e173c30a2b364bf58dc87518b200af2be2b5b7537b087e413c3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed Word passage to form the existing standalone field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cc9b6f9ba089d759",
+      "field": "media.alt",
+      "sourceTextSha256": "8822dbfa298b012d7498bb61f79d57c4f605e699e5013ecc623b77c6a01f8dd2",
+      "text": "An orange facade with bright murals, colourful windows and doors in Valparaíso, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2efhlw-kh4qed",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding image alt description appears in the verified Word 2027 document."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d2962b36316baf01",
+      "field": "media.hover",
+      "sourceTextSha256": "90538857b4a8f3f764f92509605afeb238406eba386ab95541a10657cc3e8b1a",
+      "text": "Street art on an orange house in Valparaíso",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2efhlw-kh4qed",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word 2027 document contains no corresponding image hover caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a7d2362fc0d8a167",
+      "field": "itinerary.label",
+      "sourceTextSha256": "87fe574bd51f17d5205651d78ebdd2145a78f6fd10f8d39d01b4fadbc57f4cb6",
+      "text": "Valparaíso and Viña del Mar",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:46",
+            "textSha256": "57bba873f9236e173c30a2b364bf58dc87518b200af2be2b5b7537b087e413c3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed Word passage to form the existing standalone field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "df9c845b3c1dc1b79786034da79f25e04f88e3474abc558441e56a30ddbd2568",
+      "text": "Santiago de Chile – Cusco – Sacred Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:113",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          },
+          {
+            "ref": "word/document.xml:p:127",
+            "textSha256": "7b22446ef91ba0699c6db2dc4919d7f719185fdf8d8fcfb8d713065eababfd8c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed Word passage to form the existing standalone field."
+      }
+    }
+  ]
+}

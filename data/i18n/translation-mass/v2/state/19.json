@@ -450,7 +450,7 @@
         "expiresAt": "2026-11-04T08:32:42.081Z"
       },
       "checkpoint": {
-        "id": "ada-en-a40ee2cc-p03-cp4",
+        "id": "ada-en-a40ee2cc-p03-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-a40ee2cc",
         "token": "ada-en-token-a40ee2cc-71df-20261104",
@@ -522,10 +522,88 @@
                 "runId": "ada-en-run-a40ee2cc",
                 "wordAbsenceReason": "The checked Word 2027 has descriptions of airport transfers but no equivalent product-format label; translated the current RU label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:8ca622e238b51fd8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
+              "text": "Panama City",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:35",
+                    "textSha256": "c10eca654cdcab37352ddfb359e4fac85a21845332e37612c930e45a1cee9b8a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1cccfccb964cca9d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6167da0bfc500fa43450b195c44d1bb51c453aac1d4385851718d94fcd5eae5b",
+              "text": "Miraflores",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:39",
+                    "textSha256": "7a3038a7e2754a1b3cba5a24234ee0da84264baa5cfa193f172d3ab647c863d2"
+                  },
+                  {
+                    "ref": "word/document.xml:p:43",
+                    "textSha256": "7b5dc65323a240f32d3ddc9fd3dabc8ca9190b2f7aac09bf7eb1facf2fe398dc"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Uses the named Miraflores destination from the exact locks heading and visitor-centre passage as the route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:73bf19ef6d842f42",
+              "field": "itinerary.label",
+              "sourceTextSha256": "4cd16db4fc830c0be15b8584897d342df6fd1b934ec43533065467c59b89bd67",
+              "text": "Biomuseo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:44",
+                    "textSha256": "3287bbd220c4ff7e5ab668ebe0bda855ce8ac97e22a8d0ba5a9b1037e2f527e4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the museum's proper name from the exact Biodiversity Museum passage for the route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:bd0d4731fbeb70ff",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31371be2fdddcaeb8b5620478863bb733fa9d80497659080397a76a3a8bbbed3",
+              "text": "Casco Viejo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:45",
+                    "textSha256": "1e564f9bd3d55bfc76590519fb2caf42bdf675be93ce8f5cce49ba89c7c2b679"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the neighbourhood's proper name from the exact city-tour passage for the route label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:03:06.526Z"
+        "at": "2026-11-04T07:03:28.874Z"
       },
       "submission": null,
       "review": null,

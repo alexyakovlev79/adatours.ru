@@ -706,7 +706,7 @@
         "expiresAt": "2026-11-04T08:38:38.086Z"
       },
       "checkpoint": {
-        "id": "ada-en-150b76fa3667-007-cp4",
+        "id": "ada-en-150b76fa3667-007-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-150b76fa3667",
         "token": "ada-en-150b76fa3667-20261104",
@@ -790,10 +790,85 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:media_alt:32772677f5079ec1",
+              "field": "media.alt",
+              "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+              "text": "Panorama of Rio de Janeiro with the bay, Sugar Loaf Mountain and the city, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 67 describes arrival in Rio but contains no alt text for this panorama photograph; translate the current RU media.alt field.",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "c092c1b828f5d4e552788f87572c412d2cbc631dead9969d3fe3f7ec142d7745",
+              "text": "Corcovado and Christ the Redeemer",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p68",
+                    "textSha256": "b399cfee0ae272248abdc4ae8d28ad3328b942c6fd5c8fd31f6f41d3fc48ad30"
+                  },
+                  {
+                    "ref": "word/document.xml#p69",
+                    "textSha256": "72353a7144b5eb0eaef24339a07b123412d992ec3a453cf776ff3db5f552415c"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the mountain and statue named in the approved day-two paragraphs as the existing heading without changing the visit."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "0f369a3bcaffd358538dd509d5772c6c9d88c8526f8535f2ba9935967d39de98",
+              "text": "Day 2 · Meet your guide in the hotel lobby for the excursion to Corcovado Mountain and the statue of Christ the Redeemer (4 hours, English-speaking guide). From the station, an open, eco-friendly train climbs through the jungle to the summit, with breathtaking views of the Tijuca Forest on both sides.\n\nAt 710 metres above sea level rises the symbol of Rio, the 38-metre statue of Christ the Redeemer, erected in 1931. The view takes in the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the legendary Maracanã Stadium, Sugar Loaf Mountain and much more.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p68",
+                    "textSha256": "b399cfee0ae272248abdc4ae8d28ad3328b942c6fd5c8fd31f6f41d3fc48ad30"
+                  },
+                  {
+                    "ref": "word/document.xml#p69",
+                    "textSha256": "72353a7144b5eb0eaef24339a07b123412d992ec3a453cf776ff3db5f552415c"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p157",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:09:18.461Z"
+        "at": "2026-11-04T07:09:33.839Z"
       },
       "submission": null,
       "review": null,

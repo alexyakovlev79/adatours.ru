@@ -371,7 +371,106 @@
         "claimedAt": "2026-11-04T05:50:21.983Z",
         "expiresAt": "2026-11-04T07:20:21.983Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-ada-en-befca8d88a7c-07-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-befca8d88a7c",
+        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b014",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "72c89a4d059d4edd8d52b406cc7f48b988a56834db9f32929656d6b1dd5c8a35",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+              "field": "itinerary.title",
+              "sourceTextSha256": "153b3adcf32a6f213d81c6bdf491b9b284f6b02609d12f4bfcf78ba3b0097bfe",
+              "text": "Patagonia (Chile) → El Calafate",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p48",
+                    "textSha256": "5bd305e5df33aa7c881cd5f97e11998e0072601b8e157bbcb4fdcba029acad87"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named route or destination from the approved Word heading and corresponding day paragraph as a standalone itinerary label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+              "field": "itinerary.text",
+              "sourceTextSha256": "90e3025d91525cb7fcfcf6c9dc065c66ad64166b529456b8df8b19e364887d9c",
+              "text": "The border is crossed not by land but by air — a direct flight from Puerto Natales to El Calafate, bypassing Santiago and Buenos Aires. Here nature reveals itself in its most pristine beauty, and the accommodation becomes part of the landscape.\n\nHotel: EOLO Patagonia, Corner Room.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p50",
+                    "textSha256": "a3a0dee72ba7efba54cc50af6a25b30321609a8a030f3127fdf8cc2f2d2c591b"
+                  },
+                  {
+                    "ref": "word/document.xml:p51",
+                    "textSha256": "fbf4270f6ffda5e3dbd3224aec7fee34959479572a82be34192b9de03cec4faa"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b36321b4c85268f2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+              "text": "Puerto Natales & Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p42",
+                    "textSha256": "c3138bd6e1c585eaef49772fab38deac46d1b817ef8af8ea80adc65504ef5742"
+                  },
+                  {
+                    "ref": "word/document.xml:p50",
+                    "textSha256": "a3a0dee72ba7efba54cc50af6a25b30321609a8a030f3127fdf8cc2f2d2c591b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named route or destination from the approved Word heading and corresponding day paragraph as a standalone itinerary label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:09d975f8d2dc49b9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+              "text": "El Calafate",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p48",
+                    "textSha256": "5bd305e5df33aa7c881cd5f97e11998e0072601b8e157bbcb4fdcba029acad87"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named route or destination from the approved Word heading and corresponding day paragraph as a standalone itinerary label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:51:15.809Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

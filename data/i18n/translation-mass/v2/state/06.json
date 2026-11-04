@@ -537,172 +537,22 @@
     {
       "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b003",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "eb28e8f50896a7386890e58e1a5505af1574da30bbae05ca7a36a145b2f7ae2b",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-150b76fa3667",
-        "token": "ada-en-150b76fa3667-20261104",
-        "claimedAt": "2026-11-04T06:07:13.102Z",
-        "expiresAt": "2026-11-04T07:37:13.102Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-150b76fa3667-002-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-150b76fa3667",
-        "token": "ada-en-150b76fa3667-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b003",
-          "stableId": "tour_chile_marble_caves_san_rafael_three_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "eb28e8f50896a7386890e58e1a5505af1574da30bbae05ca7a36a145b2f7ae2b",
-          "blocks": [
-            {
-              "blockId": "tour:note:030391307e36d187",
-              "field": "note",
-              "sourceTextSha256": "d1faffab8ee0f869d01704a7980d4d5fca51eb46b09c05eaeb501e1095160cfc",
-              "text": "The USD 2,000 price is per person, based on accommodation and a group of 2 people.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraphs 113 and 116 state USD 2,000 per person based on 2 travellers, but do not separately state the RU note's accommodation basis; translate the complete current RU note without changing the tariff.",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0"
-              }
-            },
-            {
-              "blockId": "tour:note:aa2decd21e5c5e67",
-              "field": "note",
-              "sourceTextSha256": "e3f5f7c99b11fe1808932c08edb2bc5653c562d038dfaf8360ef5114a829e8d9",
-              "text": "The room category, meal plan and conditions for paying for flights are confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraph 105 covers room type and meals, and 138 excludes flights; the combined note on flight-payment conditions is absent and is translated from the current RU.",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0"
-              }
-            },
-            {
-              "blockId": "tour:note:80b5349888f361f1",
-              "field": "note",
-              "sourceTextSha256": "cf01ccb52157114fdeb15b2af412e91abe4ef7f52c88122a063721641b55c91a",
-              "text": "Travel dates, boat excursion schedules and airport arrival times are confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraphs 58 and 127 discuss weather and lake conditions but contain no matching note on confirmation of dates, boat schedules and airport arrival times; use the current RU note.",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0"
-              }
-            },
-            {
-              "blockId": "tour:note:c7c01aa065446068",
-              "field": "note",
-              "sourceTextSha256": "30720de1936d31b7f10a30026138bf935929c0af5c6ae44736e42cab7e8cea6a",
-              "text": "The 130 km and approximately 2 hours stated for Day 3 refer to the section towards Cerro Castillo; they are not a confirmed total journey time to Balmaceda Airport.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraphs 86 and 90 name the return towards Balmaceda via Cerro Castillo but provide no 130 km/2-hour scope clarification; preserve this explicit current RU clarification.",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0"
-              }
-            },
-            {
-              "blockId": "tour:note:b1146c0190687be4",
-              "field": "note",
-              "sourceTextSha256": "0a7419107c144ac85e70610c618ed1d04b26dd32d5f4af8280fc31f7cb2e896f",
-              "text": "Trekking and a visit to Cerro Castillo National Park are not included in this itinerary.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "wordAbsenceReason": "Verified Word 2027 paragraph 90 describes passing Cerro Castillo on the return journey and offers no trekking or national-park visit; this explicit scope note exists only in current RU."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "26d247d06eb322a9be5cd1861e4dd9f5352aa8c06e0b4431935d3f3afaf75c8e",
-              "text": "Balmaceda – Puerto Río Tranquilo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p64",
-                    "textSha256": "47c760b10546d2e5ca5bce8aa6b898df4aeccc43e795fd12f6b18268b9ab5ad4"
-                  }
-                ],
-                "transformation": "condense_route_label",
-                "rationale": "Retain the exact two route endpoints from the day-one heading; the day number and distance/time are structural details, not part of this route label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a4836cca1208c95",
-              "field": "itinerary.text",
-              "sourceTextSha256": "cad0e09505528cdb43ff4604ec79da74abbc3a6ca33e9206f5400d82e485c54d",
-              "text": "Day 1    Balmaceda – Puerto Río Tranquilo · 220 km, about 4 hours\n\nDay 1 · Arrival at Balmaceda Airport and welcome by your local English-speaking driver-guide. The journey begins along the legendary Carretera Austral, heading south through the wide-open Patagonian steppe and the vast valleys of the Aysén region. Little by little, arid plains give way to forested slopes, until the road reveals the brilliant turquoise waters of Lago General Carrera. Arrival in Puerto Río Tranquilo.\n\nOvernight: El Puesto Patagonia",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p64",
-                    "textSha256": "47c760b10546d2e5ca5bce8aa6b898df4aeccc43e795fd12f6b18268b9ab5ad4"
-                  },
-                  {
-                    "ref": "word/document.xml#p67",
-                    "textSha256": "030e20f8d6b7df797c8a19d9059c7f3e3e2355691ccfc12c7b6503cf1a90980d"
-                  },
-                  {
-                    "ref": "word/document.xml#p68",
-                    "textSha256": "a342464d99a056d533b002a2a4ca43d025153774b026e70528d6c51a36461c16"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:206d9cefaf233288",
-              "field": "itinerary.label",
-              "sourceTextSha256": "64c4271b5935c18354fd4e46002f72b14e5a2ee1532bdf378cafdca889ffd527",
-              "text": "Balmaceda",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
-                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p31",
-                    "textSha256": "603823209751b053bdbae0b4171b9ac918923436a4ee2193b92887f2476186d7"
-                  },
-                  {
-                    "ref": "word/document.xml#p64",
-                    "textSha256": "47c760b10546d2e5ca5bce8aa6b898df4aeccc43e795fd12f6b18268b9ab5ad4"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact city name from the verified airport and route headings for the existing place label without changing its stable entity."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:08:47.265Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-150b76fa3667-002",
+        "blobSha": "6c77ac89cef51c4f8110d5693bb5a1e02f8e167e",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_marble_caves_san_rafael_three_days_b003/ada-en-150b76fa3667-002.json",
+        "at": "2026-11-04T06:08:51.639Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

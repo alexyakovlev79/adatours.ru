@@ -669,7 +669,7 @@
         "expiresAt": "2026-11-04T08:13:25.361Z"
       },
       "checkpoint": {
-        "id": "ada-en-2661932f-20261104-s05-cp04",
+        "id": "ada-en-2661932f-20261104-s05-cp08",
         "format": "inline-v1",
         "ownerId": "ada-en-2661932f-20261104",
         "token": "ada-en-token-2661932f-20261104",
@@ -746,11 +746,75 @@
                   "model": "GPT-6",
                   "wordAbsenceReason": "The verified Word has no caption for this specific existing website image; translate the exact frozen RU media description."
                 }
+              },
+              {
+                "blockId": "tour:media_hover:c5f93ca194abdc07",
+                "field": "media.hover",
+                "sourceTextSha256": "3aabf70a34c5156d3bc3929edabdd84131749d510b8e62f4d306d1365d2790ed",
+                "text": "Iguazu in the evening: rushing water beneath a warm-toned sky",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word has no caption for this specific existing website image; translate the exact frozen RU media description."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:d98ef24cb0612c37",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7aa65fe510b5abedc5fc31d346dc0dd9edeac5a417d1553c9d2a16dd3ff00aa5",
+                "text": "Foz do Iguaçu",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "modifiedTime": "2026-10-21T20:49:36.876Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p105",
+                      "textSha256": "ea52ba7b075ac946fcab6967978d0afe78ff4445b50296ca6ad45af59550b35a"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the approved Word place or visit heading as the separate title or label for this existing itinerary block."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:b3b89ebdb189c304",
+                "field": "itinerary.label",
+                "sourceTextSha256": "83b10131009589d420b5b7d22bab5260a34e711fddb52dcaa7a27df5e60a9b3b",
+                "text": "Iguaçu National Park",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The Word names the Argentine park, but does not give the Brazilian national park's name as a separate label; translate the frozen RU Brazilian park label in its existing itinerary context."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+                "field": "itinerary.title",
+                "sourceTextSha256": "1c26f0bb98450328b796ed86b80cf94bdfa4e9a3ea498b27d81a725f0acd0e9e",
+                "text": "Argentine Falls",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "modifiedTime": "2026-10-21T20:49:36.876Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p102",
+                      "textSha256": "d6bb847805515d804c4f912550d4758f8f2d24c1c3d476ffca25d30cd3225ab8"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the approved Word place or visit heading as the separate title or label for this existing itinerary block."
+                }
               }
             ]
           }
         },
-        "at": "2026-11-04T06:45:02.673Z"
+        "at": "2026-11-04T06:45:12.649Z"
       },
       "submission": null,
       "review": null,

@@ -478,7 +478,107 @@
         "claimedAt": "2026-11-04T07:55:35.203Z",
         "expiresAt": "2026-11-04T09:25:35.203Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a40ee2cc-p10-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-a40ee2cc",
+        "token": "ada-en-token-a40ee2cc-71df-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b017",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "9fdb00b6fdf19e3ebeb3d0ae62bdcc5b4620473bcd5882229efccfb830d99300",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:9b76fb9dc2895483",
+              "field": "media.hover",
+              "sourceTextSha256": "76146182d58fc385f629bb3f700cf9299a2c1a0945081747eb5185e1ee53de75",
+              "text": "Wine and snacks on a table by the sea",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word contains no matching photograph hover caption of wine and snacks by the sea; translated the current RU media caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+              "field": "itinerary.title",
+              "sourceTextSha256": "dcd053327255f98efef580f1f2c93cfb95b93d2b9196ce9d541ee806ce14eb59",
+              "text": "Mendoza → Iguazú",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:66",
+                    "textSha256": "118377278b66f61cff0842a048e48de07760cdd667f09fb8a69c9d52c69803f7"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Removes the day number from the exact day 13 route heading, preserving the route and destination spelling."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:173cf987634ed90a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "95a5b61193ad8629bfccefb6a89384dec1b92dec2d4b81021aac90f742fc2a05",
+              "text": "Direct private jet flight\n\nOne of the planet's most extraordinary natural phenomena — Iguazú Falls, greeting travelers with the thunder of falling water and a cloud of spray visible for miles.\n\nHotel: Belmond Hotel das Cataratas, Deluxe Room.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:67",
+                    "textSha256": "d9ab5122df9e66939e80ca309073bd1eec3708476a7371afb406bb2e0ff9a513"
+                  },
+                  {
+                    "ref": "word/document.xml:p:68",
+                    "textSha256": "556fe155bc4285abeaa4b82acbe2d09bb3a81463c702a096e80abf2cda998c23"
+                  },
+                  {
+                    "ref": "word/document.xml:p:69",
+                    "textSha256": "52ea7e31f019bfa73261ecc2a47d422fbdd489233338cbd15d22a5b91a91c5cd"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:594cd1489999822c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+              "text": "Mendoza",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:57",
+                    "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
+                  },
+                  {
+                    "ref": "word/document.xml:p:62",
+                    "textSha256": "b542dd18221bd36e149e6ccef68b6fc9745e64fadec8800b4b66fd4abc46248e"
+                  },
+                  {
+                    "ref": "word/document.xml:p:66",
+                    "textSha256": "118377278b66f61cff0842a048e48de07760cdd667f09fb8a69c9d52c69803f7"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the exact Mendoza place name used in the approved route headings."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:56:30.000Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

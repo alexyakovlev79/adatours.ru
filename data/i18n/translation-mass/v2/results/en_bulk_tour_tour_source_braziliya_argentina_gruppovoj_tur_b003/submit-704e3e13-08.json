@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_argentina_gruppovoj_tur:b003",
+  "stableId": "tour_source_braziliya_argentina_gruppovoj_tur",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "eb3ff699912c3079edc0f368af43a145311950c7023269bb26d08158f89bc492",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:04042ebfaff7cb29",
+      "field": "notIncluded",
+      "sourceTextSha256": "c8b6aafdda31b6ea796e8f4b59c386419f26662d31e1946093358d1c4c4ea838",
+      "text": "Domestic flights Rio de Janeiro – Manaus – Salvador – Foz do Iguaçu – Buenos Aires: from 1,250 USD per person NET, non-commissionable.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-704e3e13-mw25t7t2",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word route and price are confirmed in paragraphs 60 and 189, but the selected Word omits the assigned RU NET and non-commissionable qualification. Translate the full assigned line retaining its commercial basis and amount."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Kl6Y_YktZO89MI0rKrRDe5w6o1oxTjxQ",
+        "documentSha256": "3768a71a51fdb139bca0740f9262149767b32ca097241400707b3c0aedc5c268",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:201",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker and spacing from the approved personal-expenses exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5ddae4fc96b2657a",
+      "field": "notIncluded",
+      "sourceTextSha256": "6d4530f06e4ecba97cda0bafd46d43fda65293ec9928eb86c100f0f0b5e24a75",
+      "text": "Additional services and excursions not specified in the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-704e3e13-mw25t7t2",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word lists flights and personal expenses as exclusions but has no corresponding line excluding additional unspecified services and excursions. Translate the assigned RU exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:6fb8182940a54e1d",
+      "field": "note",
+      "sourceTextSha256": "486d57005147435d18f9bb7303f6e11fdbcd46606db61c7794ebe2fc8ce4da23",
+      "text": "All hotels can be substituted by hotels of a similar class.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Kl6Y_YktZO89MI0rKrRDe5w6o1oxTjxQ",
+        "documentSha256": "3768a71a51fdb139bca0740f9262149767b32ca097241400707b3c0aedc5c268",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:167",
+            "textSha256": "ec95a8d4777c3ee8ecc08e87c561b06cf424ebe61722c29a58719381231a4605"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:08bfbcae9d578248",
+      "field": "note",
+      "sourceTextSha256": "9c1258184247eaa388f25a62b54a52d56a8165f98630510d344e3abf0c30d623",
+      "text": "Availability and prices will be confirmed upon booking.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Kl6Y_YktZO89MI0rKrRDe5w6o1oxTjxQ",
+        "documentSha256": "3768a71a51fdb139bca0740f9262149767b32ca097241400707b3c0aedc5c268",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:188",
+            "textSha256": "ec62bfd88f23acd34778f9be664c869ba1833b687a16aa280237ee4a5e6c351b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the availability and price-confirmation clause into the separate assigned note, capitalising its first word."
+      }
+    },
+    {
+      "blockId": "tour:note:744e8c758287c4f0",
+      "field": "note",
+      "sourceTextSha256": "a34c921bf7dac6bc649a8566bd840becb1628c9c586c1f0b5c76f579813b4ac8",
+      "text": "Prices are not valid during holidays, New Year and Carnival.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Kl6Y_YktZO89MI0rKrRDe5w6o1oxTjxQ",
+        "documentSha256": "3768a71a51fdb139bca0740f9262149767b32ca097241400707b3c0aedc5c268",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:188",
+            "textSha256": "ec62bfd88f23acd34778f9be664c869ba1833b687a16aa280237ee4a5e6c351b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the holiday, New Year and Carnival restriction into the assigned standalone note."
+      }
+    },
+    {
+      "blockId": "tour:note:e29a2d475470ad8e",
+      "field": "note",
+      "sourceTextSha256": "d0ec71820538d387682e6b2f3b4969e7db96f4476e1ccf97d5d920bbee5b57e1",
+      "text": "The programme includes 3 nights in Rio, 2 in the Amazon, 3 in Salvador, 2 in Iguazu and 3 in Buenos Aires. The hotel in Buenos Aires will be confirmed upon booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-704e3e13-mw25t7t2",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word accommodation table supports the city/night distribution but has no single matching note with the RU Buenos Aires hotel-confirmation clause. Translate the assigned note without naming or changing a hotel."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Kl6Y_YktZO89MI0rKrRDe5w6o1oxTjxQ",
+        "documentSha256": "3768a71a51fdb139bca0740f9262149767b32ca097241400707b3c0aedc5c268",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:66",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    }
+  ]
+}

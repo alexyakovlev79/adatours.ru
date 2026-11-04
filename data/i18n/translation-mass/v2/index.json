@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1905,
-    "leased": 16,
-    "review": 488,
+    "leased": 15,
+    "review": 489,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1905,
-      "leased": 16,
-      "review": 488,
+      "leased": 15,
+      "review": 489,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -1186,8 +1186,8 @@
         "word_2027": {
           "held": 0,
           "queued": 60,
-          "leased": 1,
-          "review": 18,
+          "leased": 0,
+          "review": 19,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1217,7 +1217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T10:27:38.719Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1d": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada_en_20261104_aa57d219": {
-      "jobId": "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b004",
-      "token": "ada_token_aa57d219_c1c5",
-      "expiresAt": "2026-11-04T10:27:38.719Z",
-      "generation": 2
-    },
     "ada-en-20261104-amanda-5498d95b": {
       "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b008",
       "token": "ada-en-5498d95b-20261104-persistent",
@@ -2969,7 +2963,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b004"
+      ]
     },
     "ada-en-20261104-amanda-5498d95b": {
       "token": "ada-en-5498d95b-20261104-persistent",
@@ -2994,5 +2990,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T08:58:42.639Z"
+  "updatedAt": "2026-11-04T08:58:51.084Z"
 }

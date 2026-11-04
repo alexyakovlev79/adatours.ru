@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala:b015",
+  "stableId": "tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1e0b13a09465f486a1f1bcf9c422babd8feae7987cdd7d5d959bd3c4bae17f9f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1a4f51772dbb538827a72c6315a8c768e8bc5bbc08786fbf4d3ad33a9f79ebf0",
+      "text": "Búzios – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-44",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          },
+          {
+            "ref": "google-drive-text-extract#line-47",
+            "textSha256": "7bfbd9f52f6a4b542a009ffba8de7f4fadd0066f81f19aed759514831f0740a0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composed the departure-day route label from the Búzios heading and the Rio de Janeiro airport transfer in the Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "50a418a77293b14cb01ddd8bec3a2b2940a8a0ae21b7a0ce7f39f1731dfaab9a",
+      "text": "After breakfast at the hotel, transfer to Rio de Janeiro Airport for your international departure. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-47",
+            "textSha256": "7bfbd9f52f6a4b542a009ffba8de7f4fadd0066f81f19aed759514831f0740a0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Adapted the approved final-day sentence to a standalone itinerary text without adding any services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:887e7753afd678e7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-83",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da641d5ad1c6931d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-44",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ae6c663cc1ec5067",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro, Guanabara Bay, Sugar Loaf Mountain and the city skyline, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme has no image-specific alternative text describing this Rio panorama."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:24c7d80c3779e0c8",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugar Loaf Mountain framed by urban neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word file has no English hover caption for the Rio and Sugar Loaf image."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "b7eb81bea46a79bd2717df0e3fd967036cfe0a96b73ec0bfdb7955fcbe12c5d7",
+      "text": "Sugar Loaf Mountain and boats on Guanabara Bay in a panoramic view of Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme has no image-specific alternative text for this hero photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "740f9286c560c3081727534bc92f4b9c9aacd60d7d6d4cdef0bcc03e3cd9ea67",
+      "text": "Rio de Janeiro: a city framed by green hills and a blue bay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word document does not have an image-hover caption describing this bay photo."
+      }
+    }
+  ]
+}

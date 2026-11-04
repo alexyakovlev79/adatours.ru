@@ -533,7 +533,7 @@
         "expiresAt": "2026-11-04T07:35:08.452Z"
       },
       "checkpoint": {
-        "id": "cp-5d56534e-03-4",
+        "id": "cp-5d56534e-03-8",
         "format": "inline-v1",
         "ownerId": "ada-en-5d56534e4493",
         "token": "lease-da131c3d187149a7b813992c83ea721b",
@@ -615,17 +615,79 @@
                   "runId": "ada-en-5d56534e4493",
                   "wordAbsenceReason": "The exact Word contains no photo-specific alt text for the glacier viewing platform in overcast weather. Translate the current RU media.alt."
                 }
+              },
+              {
+                "blockId": "tour:media_hover:0253aa79bece5220",
+                "field": "media.hover",
+                "sourceTextSha256": "dabbb1ebfcb1a57c600529e6332a715c6cc6de6d001a898697bb0f3cd04ba43f",
+                "text": "Perito Moreno: a blue wall of ice beneath mist-covered mountains",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The exact Word contains no hover caption describing this blue ice front beneath misty mountains. Translate the current RU media.hover."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:359c7c25395d1837",
+                "field": "itinerary.title",
+                "sourceTextSha256": "858641b7333b93240b9ec543da2972e6715816c176c54d5ff5831498f7f81261",
+                "text": "El Calafate → Mendoza",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p58",
+                      "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Remove only the Day 11 prefix from the exact Word route heading while retaining the same destination pair and direction."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+                "field": "itinerary.text",
+                "sourceTextSha256": "fb864d8746bd04cf8f2b869c8ce511ad7f2ae10c27d6eec5be3ee3b88460d70d",
+                "text": "Fly by private jet from El Calafate to Mendoza. A helicopter transfer to the winery door is also proposed; the exact flight sector and landing arrangements are confirmed at the time of booking. Stay at the foot of the Andes and discover Argentina’s wine region. Overnight at Entre Cielos in a Superior Room. Breakfast is included in your stay (BB).",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraphs 59–61 describe the jet/helicopter proposal and hotel but do not contain the current RU clarification that the helicopter sector and landing are confirmed at booking, nor the exact complete current wrapper. Preserve this RU clarification and the BB basis attested by Word paragraph 102."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:8a9acafb75344935",
+                "field": "itinerary.label",
+                "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+                "text": "El Calafate",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p58",
+                      "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the El Calafate destination name from the verified Word route heading."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "wordEvidence": {
             "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
             "sha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
             "modifiedTime": "2026-09-30T20:16:32.777Z"
           }
         },
-        "at": "2026-11-04T06:06:09.353Z"
+        "at": "2026-11-04T06:06:15.200Z"
       },
       "submission": null,
       "review": null,

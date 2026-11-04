@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2066,
-    "leased": 12,
+    "queued": 2065,
+    "leased": 13,
     "review": 331,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2066,
-      "leased": 12,
+      "queued": 2065,
+      "leased": 13,
       "review": 331,
       "ready": 1,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 64,
-          "leased": 0,
+          "queued": 63,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:43:14.212Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1412,6 +1412,12 @@
       "jobId": "en:bulk:tour:tour_chile_easter_island_3_days_2027:b002",
       "token": "token-2a369c57df19-20261104",
       "expiresAt": "2026-11-04T07:42:51.049Z",
+      "generation": 1
+    },
+    "ada-en-bceebc322bd5": {
+      "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b009",
+      "token": "ada-en-bceebc322bd5-20261104-01",
+      "expiresAt": "2026-11-04T07:43:14.212Z",
       "generation": 1
     }
   },
@@ -2574,8 +2580,15 @@
         "en:bulk:tour:tour_brazil_southern_vip_7_days:b005",
         "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b003"
       ]
+    },
+    "ada-en-bceebc322bd5": {
+      "token": "ada-en-bceebc322bd5-20261104-01",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b009"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:13:08.353Z"
+  "updatedAt": "2026-11-04T06:13:14.212Z"
 }

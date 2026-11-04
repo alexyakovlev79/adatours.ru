@@ -222,7 +222,7 @@
         "expiresAt": "2026-11-04T07:09:53.208Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-ef1fdb2517c4-submit-004-cp4",
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-004-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-ef1fdb2517c4",
         "token": "token-iwiao0re46l65ynbta4pbk",
@@ -333,10 +333,76 @@
                 "wordFileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
                 "wordDocumentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8"
               }
+            },
+            {
+              "blockId": "tour:media_hover:64cff85427723d90",
+              "field": "media.hover",
+              "sourceTextSha256": "896384db3c33a16b7903243b87ae3e9b647e0dc785316e31a45a41347308d60c",
+              "text": "Lima: the cathedral, palm trees and street lamps in a city square",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified source contains no hover caption for this photograph of Lima's square, cathedral, palms and street lamps. Translate only the current RU visual description.",
+                "wordFileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "wordDocumentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:778232033cbed569",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+              "text": "Lima",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "121226a8879e22f6fcfbb9180e3d01af28e4fd4de0696d50712fc7faedea826b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Lima place name from the Word day heading as the standalone itinerary label, without a day-number prefix."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "425604be6287eff3cd8aa6afb57eeb2a1a990e08ef28e0e76f40e34f33129cde",
+              "text": "Lima – Cusco – Sacred Valley",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p50",
+                    "textSha256": "ded2160e04e705aa1b438553e8f337e39113c33606434b57cc4d37b82988535e"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Render the exact three-place route from Word paragraph 50 using the site's route-heading separators and excluding its day-number prefix."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "3c479d6a1c63f72c7d27c9723a8519ea43d7f9e281f7bad8ed272250e59b987b",
+              "text": "Transfer to the airport for your flight to Cusco.\nOn arrival in Cusco, meet your local representative and transfer to the Sacred Valley and your hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "Word paragraphs 50–52 provide the route and brief 'Departure transfer'/'Meet and greet' statements, but no exact prose matching this RU field's airport-flight and local-representative detail. Translate the current RU transfer block without adding services.",
+                "wordFileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "wordDocumentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8"
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:40:51.710Z"
+        "at": "2026-11-04T05:41:08.717Z"
       },
       "submission": null,
       "review": null,

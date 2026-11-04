@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b001",
+  "stableId": "tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5a0a992d2fe0f978115f976efed78531db4a7b3e60923b15da36d47ddf07089f",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "cdfbf4e1c96122d8b7660e31443f566a5373a8687e4206c61e539d19b1278e6f",
+      "text": "Luxury Peru and Ecuador Tour, 18 Days: Machu Picchu, Amazon and Galapagos",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:1",
+            "textSha256": "820eed37864d3aa205840979e119b873875c6521051330e87d5aa8538050d70d"
+          },
+          {
+            "ref": "docx:paragraph:2",
+            "textSha256": "20767dbebc9c653f0fd130b98b9fc4fab7c556d74525313d00e16e6658c09083"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The approved English Word title and opening description list Peru, Ecuador, Machu Picchu, the Amazon and Galapagos; combined with the fixed RU tour duration for an informative heading."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "5c89e355062b477aa632ff11ed5b4b058834a2a28f1aed4b16618fd2e651069e",
+      "text": "An extraordinary 18-day journey through Peru and Ecuador, where the climate, altitude and scenery change dramatically along the way. Begin in Lima on the Pacific coast, then enter the Amazon rainforest on an Aria Amazon cruise. From the jungle, climb into the Andes to explore the Sacred Valley, Machu Picchu, Vinicunca Rainbow Mountain and Cusco. In Ecuador, discover Quito, the Mashpi cloud forest and, finally, the Galapagos Islands.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word introduction lists all the principal destinations and the Aria Amazon cruise but does not provide this complete website-specific 18-day lead narrative."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "064353bf03a6eda5778069a118b590129bc5c1d6189a18ce125090e055c8ecde",
+      "text": "$16250",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme does not list the website price note; the unmodified source price string is preserved verbatim from RU."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8137954c6a092cbb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:3",
+            "textSha256": "28e6e4335c8f53ccc075e64840cd72cb00db3c25d6722b07a6b55beef9faf172"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The exact city name Lima appears in the Word Day 1 heading, with the day prefix removed for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e9d2188f9ae4f35",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5b2ae9790d3ee3327b60b3ed59eafb655238131b332803993d33f39ff9a486bd",
+      "text": "Amazon (Iquitos)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:26",
+            "textSha256": "06832b4dcbe6fac23de69e09436782e39803501ffab284743a7cb60b36570eec"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The Word Day 3 heading contains Iquitos Amazon; this itinerary label reverses the order and adds parentheses to preserve the original route notation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:10b9affb31d6a916",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:77",
+            "textSha256": "e637dcb019b3e18f57d353061380f88885ba33b2fe27ae074298aaf01dcab816"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word route names Cusco before Quito; the city is extracted as a standalone label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f0541bbf83cbdf6d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32734b2b9d1083b6f278caadf14c006e96dec83e80bc7557305451499d2f4750",
+      "text": "Quito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:77",
+            "textSha256": "e637dcb019b3e18f57d353061380f88885ba33b2fe27ae074298aaf01dcab816"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word route names Quito after Cusco; the city is extracted as a standalone label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:635f67ee807dd9ed",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9c40ba72312aff79f65bd120a27b407d579f60e44d40c1ff8b3bb7da5ab304ee",
+      "text": "Galapagos Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:136",
+            "textSha256": "9300e4071e1de73a989082f7a60181b9b0aba292481f8c2776923970e4c3ef86"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word programme explicitly names the Galapagos Islands, normalized as a standalone route label."
+      }
+    }
+  ]
+}

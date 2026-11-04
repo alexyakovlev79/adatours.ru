@@ -878,7 +878,88 @@
         "claimedAt": "2026-11-04T07:46:25.286Z",
         "expiresAt": "2026-11-04T09:16:25.286Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-150b76fa3667-010-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-150b76fa3667",
+        "token": "ada-en-150b76fa3667-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle:b004",
+          "stableId": "tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "9542229746fbc0f98153bd157d8013bde525912dd13aacdcc8b60a1f74f805ce",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:1fa62c13fcc2747b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p108",
+                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:b638b629eeec8275",
+              "field": "media.alt",
+              "sourceTextSha256": "f4f988d5f40d56e9cd18c3d11118970919dba749626fdad502498032e880a68d",
+              "text": "Panorama of Santiago with high-rise buildings against the snow-covered Andes, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 67 describes the Santiago arrival and city tour but contains no image-specific alt text; translate the current RU panorama description.",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:8be43a71f54e4a3e",
+              "field": "media.hover",
+              "sourceTextSha256": "67c30f371d54136d1bccd6c3f6b922c493ee2eb2c64b5e74ac11ea041a396ff3",
+              "text": "Santiago: city towers at the foot of the snowy Andes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 contains no hover caption for this Santiago panorama; translate the current RU caption.",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "6f3d5192aa3f75287ea4e4f5dbe93a7cace51fd454fbd5e9ae555bf9d9e25105",
+              "text": "Valparaíso and Viña del Mar",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+                "documentSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p68",
+                    "textSha256": "a54faa1b49de5c8229fcf1dd7e1c874030790a2a72d33ba69ffd3dfe10369837"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Use the two exact city names from the approved day-two paragraph as the existing heading without adding destinations."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:47:18.863Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

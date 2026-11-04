@@ -243,7 +243,77 @@
         "claimedAt": "2026-11-04T05:53:18.324Z",
         "expiresAt": "2026-11-04T07:23:18.324Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_abf469133bbf:b005:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_abf469133bbf",
+        "token": "ada_en_token_abf469133bbf_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b005",
+          "stableId": "tour_brazil_tropical_champions_parade_rio_angra_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "2a2630f06c766a3daf38efcf39f0bb0803acdf2a20b8caaf70e4a27df238f9c6",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:103",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a82e03a0a82de559",
+              "field": "itinerary.label",
+              "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
+              "text": "Tijuca National Park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_abf469133bbf",
+                "wordAbsenceReason": "No standalone national-park label occurs in the checked Word; its Corcovado paragraph names Tijuca Forest, while RU specifies the national park."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:f5626ccf77b16d53",
+              "field": "media.alt",
+              "sourceTextSha256": "333f54b4f515d39bd51743e4aa30a103312ee7c1b0d89675d9e664dfd866faac",
+              "text": "Christ the Redeemer statue on the summit of Corcovado above the green slopes of Rio, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_abf469133bbf",
+                "wordAbsenceReason": "No exact caption for this Corcovado photograph appears in the checked Word."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:605960b45988818e",
+              "field": "media.hover",
+              "sourceTextSha256": "183d7a19a4488ca39d44e11c1028cc339651699149cc08e1ad0b4cdfacc09eea",
+              "text": "Corcovado: the Christ statue and the viewing platform on the summit",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_abf469133bbf",
+                "wordAbsenceReason": "No exact hover caption for this Corcovado photograph appears in the checked Word."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:54:01.400Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -585,7 +585,122 @@
         "claimedAt": "2026-11-04T07:57:14.584Z",
         "expiresAt": "2026-11-04T09:27:14.584Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-9a69348b6e00-10-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9a69348b6e00",
+        "token": "tok-9a69348b6e00-20261104-a1",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b008",
+            "stableId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "9ca67abc925ba3c273de17b32b227a9471e39e8d810d9220def21b96aa9e734d",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+                "field": "itinerary.title",
+                "sourceTextSha256": "9d79d44b244151d75adf7ce34d763fce9c9f2cd2a3fb7d94c76b79e652863b4b",
+                "text": "5 January. Argentine Iguazu Falls – Buenos Aires",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p75",
+                      "textSha256": "71e13a550d65ebb10fb902e8d77703d55d71f70efebefde4de01f1c5ecd74339"
+                    },
+                    {
+                      "ref": "word/document.xml:p76",
+                      "textSha256": "e8c0c739cfb6ed79f234ca981e1326b94a6e460eb30a7c0671b9d2f2effd4b59"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combines the approved 05/01 date, Argentine-side visit and onward Buenos Aires destination into the existing daily heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:2e780f63f4172747",
+                "field": "itinerary.text",
+                "sourceTextSha256": "a258257bce939d8e804b5988b5ce955a0d1adccc25d0a985ac4aebd921b8add7",
+                "text": "Good Morning! After breakfast in your hotel, our guide will pick you up for a full day adventure to the Argentinian Side of the Iguazu Nationalpark. The Argentinean side is very different from the Brazilian one; there are the three trails leading you through the nature in the parc:\n\nThe Lower Circuit: At a length of 1,700 meters, runways venture into the lush jungle to take direct contact with the breaking of the Dos Hermanas, Chico and Ramirez. Walking down a runway you can be at the foot of a huge seawall water which is the fall of Salto Bosetti and you will enjoy the steep falls in the Saltos Alvar Nuñez, Elenita and Lanusse.\n\nThe Upper Circuit: a walk of 1,300 meters, elevated runways will take you on the fall line of several major jumps, reaching the edge thereof. It provides an overview of the whole area from a greater height.\n\nThe Devil's Throat: Accessed through the Rainforest with the Ecological Train arriving at the Devil's Throat Station. From there, after a 1,000 meters walk, you will reach the enormous 'Devil's Throat'.\n\nYou will walk around next to the falls to have a close look of the falls. You can feel the strength of the water and enjoy the 55.500 hectares of natural beauty! \n\nAfterwards you will have a transfer out to airport to take your flight to Buenos Aires. Upon arrival, a driver will be waiting for you to drive you to your hotel. ",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p76",
+                      "textSha256": "e8c0c739cfb6ed79f234ca981e1326b94a6e460eb30a7c0671b9d2f2effd4b59"
+                    },
+                    {
+                      "ref": "word/document.xml:p78",
+                      "textSha256": "ed7db5ee2085eb07423cb2804c3d11be86353712cbebcb3a7e9d89b5df317df9"
+                    },
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "7c386f58f8594ad918a23f07864bc54717452f928aa8f9bf9128d34a39f4c497"
+                    },
+                    {
+                      "ref": "word/document.xml:p82",
+                      "textSha256": "e44962e857883b8225dbc1dc68fee6a62a7ce05dd3c1ae0378152c67d953b9f2"
+                    },
+                    {
+                      "ref": "word/document.xml:p84",
+                      "textSha256": "260b6294d9c13647c1f373ac342d5a41f9fb15e81a3e7eddc9086e432c516011"
+                    },
+                    {
+                      "ref": "word/document.xml:p87",
+                      "textSha256": "59abf4d138f5ac80a5b941986960659563ccedf585ef6ed929b07f016ba053e7"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:6be895d301700d1f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+                "text": "Puerto Iguazú",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The Word heading uses Foz do Iguazu, but does not supply the distinct canonical Argentine place label Puerto Iguazú used by this RU itinerary; the current RU label is translated without substituting the Brazilian city."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:7cc4a40a90d0192d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+                "text": "Buenos Aires",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                  "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p188",
+                      "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "completedBlockCount": 4,
+          "wordSourceVerified": {
+            "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+            "sha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+            "modifiedTime": "2026-05-21T14:47:56.000Z",
+            "localPath": "/workspace/scratch/9a69348b6e00/ada_word/five_countries.docx"
+          }
+        },
+        "at": "2026-11-04T07:58:01.504Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

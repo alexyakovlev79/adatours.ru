@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_argentina_chili_peru_ru:b003",
+  "stableId": "tour_source_braziliya_argentina_chili_peru_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f6d61bc813b1e8cc2cdbdeb9e246cdfcc6293f1e52ea12170b0ff945bf215b79",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:01cf01d57050544f",
+      "field": "notIncluded",
+      "sourceTextSha256": "8d35e502ebf00ec4b928aad73c57442aee9e04881c369036955432caa8dbaf79",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[248]",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word bullet marker while preserving the approved service wording."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e620d3923d24e956",
+      "field": "notIncluded",
+      "sourceTextSha256": "aaa1d3882f125bcae5e3ea3004c4be5e897e9a9f29990b94b6c47b3ee4479d35",
+      "text": "Domestic flights Rio de Janeiro – Foz do Iguaçu – Buenos Aires – Santiago de Chile – Cusco – Lima, from USD 2,000 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_f5ac9871_mw1zdtvh",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 60 and 249 quote USD 1,800; no corresponding passage preserves the current RU tariff of USD 2,000. The commercial master owns price changes, so this block translates the assigned RU amount unchanged."
+      }
+    },
+    {
+      "blockId": "tour:note:1ffa9a907dfaa903",
+      "field": "note",
+      "sourceTextSha256": "04e3cf2fcbfdb1786f2fce0bf4684ce1a727dffb7caac75836ca0d1f6d4b49ca",
+      "text": "If necessary, Ada Tours may replace the listed hotels with others of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_f5ac9871_mw1zdtvh",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The full selected Word contains no hotel-substitution condition corresponding to this RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme remains the same.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_f5ac9871_mw1zdtvh",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has general availability and final-confirmation statements but no equivalent clause on changing the order of excursions while retaining the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:b945b35735fb6701",
+      "field": "note",
+      "sourceTextSha256": "a93ef08b7351443416a87e46145591263e83304a74a1434e673b88941944053f",
+      "text": "Ada Tours is not responsible for missed breakfasts when you check out early for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_f5ac9871_mw1zdtvh",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No paragraph in the selected Word states the missed-breakfast condition for early hotel check-out."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[66]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8ccf6131d0494839ab454fff75c4e32d91a5a39bd7b6832be28e53a90863290b",
+      "text": "Day 1 · Arrival in Rio de Janeiro. At the international airport, your driver meets you for the transfer to the hotel. The rest of the day is free to explore the city or enjoy your first day on its beautiful beaches.\n\nRio de Janeiro is a city of green hills, blue skies, lovely bays, islands and wonderful beaches: Brazil’s second-largest city after São Paulo, and one of the most beautiful in the world. Copacabana, Ipanema and Leblon are famous for their black-and-white mosaic promenades, where people play football and volleyball on the golden sand from morning until late evening. Rio offers almost every sport, from golf and tennis to surfing, diving and hang gliding, while beach cafés serve coconut water and fresh juices to the sound of local musicians.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[67]",
+            "textSha256": "86d3e6ad3ec42b8b574b24658626de8e8cf16ef6e367400fb889beefdd40294a"
+          },
+          {
+            "ref": "word/document.xml:p[68]",
+            "textSha256": "0cbd587728538a6afb795757d75973e33cb70207a1f0ff56f47755ca576e441a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cZT1OftE-36NSMteIbFLu2h2u8tTgizH",
+        "documentSha256": "1633eaa3e05ba246551564f24ae3b73a291b34c356d5f167463ce64bcff16c3b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[66]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    }
+  ]
+}

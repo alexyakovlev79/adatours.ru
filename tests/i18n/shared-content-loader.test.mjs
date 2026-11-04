@@ -274,7 +274,7 @@ test('submitted review previews display only source-hash-matched text and keep c
   const sha='e'.repeat(40);
   const prepared={entityId:source.data.id,entityType:'tour',sourceFingerprint:'preview',
     massSnapshotSha:sha,previewMass:[{status:'preview_review',blocks:[{
-      blockId:slot.blockId,field:slot.field,sourceTextSha256:slot.sourceTextHash.slice(7),
+      blockId:slot.blockId,field:slot.field,sourceTextSha256:digest(source.data.title),
       text:'Preview English title'}],receipt:{snapshotSha:sha,pendingIndependentQA:true,jobId:'test:b001'}}]};
   const projected=projectSharedEnglishEntry(source,'tours',prepared);
   assert.equal(projected.entry.data.title,'Preview English title');

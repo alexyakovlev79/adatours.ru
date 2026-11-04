@@ -1,0 +1,157 @@
+{
+  "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b001",
+  "stableId": "tour_chile_marble_caves_san_rafael_three_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "783713d93b682f9eb6f9075d4fc5669cc1d7b90f9c4a5db3a03ee6e2c33293e3",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "53cd648abf8382831ba6f3995d2bc04e8f9150bd49119193c24554b3c4caa517",
+      "text": "Carretera Austral Expedition",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "5c5e3dde1c76f410f5e1f67623278b4080f289d102c541390911dc38bae774aa"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "5e35dac5d65fb8a0ec161d287f7b25ecd9b27def9fe0cf1433992d592361f2b4",
+      "text": "Three days in the wild heart of Chilean Patagonia. Drive the legendary Carretera Austral through the steppe and valleys of Aysén to the turquoise shores of Lago General Carrera, sail among drifting icebergs to the San Rafael Glacier, and explore the swirling blue-and-white chambers of the Marble Caves by private boat.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:17",
+            "textSha256": "8574ae9a5851e076d41cb9c782a2cbf178ad8450133407c256ba58f3dbd6dc6f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "4360d2a8f93033de84e7b0ae765f925917011e7e2e07dad0be46bbb01e764a44",
+      "text": "USD 2,000 per person, based on 2 travellers. Availability and price confirmed upon booking.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:111",
+            "textSha256": "e51c0153366c931f413c89ba35d62e7af0780863138ed37f350374c904d58b19"
+          },
+          {
+            "ref": "word/document.xml:p:112",
+            "textSha256": "3021ba0cdc121f9eb351c5ac800c0cf7d35db1075f487064c7d3112a496d1707"
+          },
+          {
+            "ref": "word/document.xml:p:115",
+            "textSha256": "d0dac05b3d4159ae609458315d26a3c985098d6440f1144bb6d8ebd9c3e8f077"
+          },
+          {
+            "ref": "word/document.xml:p:127",
+            "textSha256": "ecc90968d7b0e9da8fb8b3ae5972662c80681bd0364b2c4a855b9b04b5a3e330"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combine the exact Word per-person amount, two-traveller basis and booking-confirmation condition; remove only table formatting and the list marker."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
+      "text": "Private",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada_en_abf469133bbf",
+        "wordAbsenceReason": "The checked Word does not provide a standalone label for the overall tour format; retain the frozen RU private-tour classification without generalising the boat-only wording."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:28d2d149682ad276",
+      "field": "itinerary.label",
+      "sourceTextSha256": "64c4271b5935c18354fd4e46002f72b14e5a2ee1532bdf378cafdca889ffd527",
+      "text": "Balmaceda",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:7",
+            "textSha256": "9ccae571f0437d95bb6312aec45de615bc1727b26b445b3375a1da7b518f792d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact destination name Balmaceda from the verified Word route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fff6bf46f19a933c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1053ff70c863619237b21bf402b98ab447fc19a837f8fd58579f4ea995187289",
+      "text": "Carretera Austral",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:36",
+            "textSha256": "b13fcd61a77ed7accc1b5cfa4431fcc4c728eb094c13870646804e2bb2d11c17"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:858fa40dbf9ebf08",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2bcb3e19d83c4cba1d16f0cb73102d0c334b4b161f06b6ba156b40f8ea18ce84",
+      "text": "Puerto Río Tranquilo",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:24",
+            "textSha256": "c68744724179f2c71cf89e20164605827e32cfd0eb972b4823aaeb629fd2490f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:82ee50e526966bdf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c35802742692df6ad768c86b4f214cfdd06c2b1041750eae0d9fa93aea967d4f",
+      "text": "San Rafael Glacier",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+        "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:45",
+            "textSha256": "0025e92bffc16034d9bf3d2803e52cd85d5300086c47f7aaa67c109e1188c691"
+          }
+        ]
+      }
+    }
+  ]
+}

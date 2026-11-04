@@ -1,0 +1,161 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b017",
+  "stableId": "tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d1f840f97b029ab9551947797775e31c64936a2a45cb0041b6b3e4cc27851389",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:c4b9450eed473263",
+      "field": "itinerary.title",
+      "sourceTextSha256": "97c7a858fce654f6afa25b4a419376f8acb36a74fb209c7dace8fdb05b54d89c",
+      "text": "Española: Punta Suárez and Gardner Bay",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p118",
+            "textSha256": "904d2953815c2e213d1b25861ba2e5b10bf7169fb0c909ecb14251ec7777ca1f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing day title from the three place names in the approved Word day-17 paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:1e1fcafafd438aa8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "5ed9e5b1d6e0038f60945c60d1b46ee314fac160c6e6bf3ed444413bdd75e562",
+      "text": "Española: at Punta Suárez, blue-footed and Nazca boobies, mockingbirds and, from about April to December, waved albatrosses, which breed almost only here, with a cliff-top “runway” and a spectacular blowhole; in the afternoon, the white-sand beach of Gardner Bay with its sea lions. (B, L, D)\n\nThe morning trail follows an open, rocky volcanic shore with little tall vegetation, making the birds easy to see. You may also see red-billed tropicbirds, Galápagos hawks and lava lizards, with the sound of the ocean along the island's edge.\n\nAlmost all 12,000 pairs of Galápagos waved albatrosses breed here. The birds use air currents and the slope of the high cliff to take off. Colonies of boobies and other seabirds line the route, and seawater is forced upwards through the blowhole.\n\nThe morning walk is about 3 km, with a dry landing and a difficult level of walking.\n\nAfter lunch, the yacht approaches Gardner Bay. Sea lions lie right on its long white-sand beach. You can walk along the shore or enter the water. While snorkelling, you may encounter colourful fish and young sea lions, which often approach people out of curiosity; on land, you may see mockingbirds.\n\nActivities include snorkelling, a motorboat ride, kayaking and a short walk of about 1 km. The landing is wet and the difficulty level is easy.\n\nMeals: breakfast, lunch and dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Retain the English day-17 Word passage p118 after removing its day prefix, and translate RU-only details absent from that passage: additional species, 12000 breeding pairs, 3 km and 1 km walks, landing types, difficulty levels and water activities. The complete mixed block is not marked word_exact.",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "retainedWordParagraphs": [
+          {
+            "ref": "word/document.xml:p118",
+            "textSha256": "904d2953815c2e213d1b25861ba2e5b10bf7169fb0c909ecb14251ec7777ca1f",
+            "transformation": "strip_list_marker"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:13e41fab610c9cec",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2e5e5101ff28b398de7c180119f2e50e3f38593b390ef856d1cd462c4a51f012",
+      "text": "Española Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p118",
+            "textSha256": "904d2953815c2e213d1b25861ba2e5b10bf7169fb0c909ecb14251ec7777ca1f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the approved Word island name as a standalone itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:39e57158ea204f6a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2fe23f2198e386ce142fc78fbe4afc3465fbf8a3b46d937fbeb3198358f68360",
+      "text": "Punta Suárez",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p118",
+            "textSha256": "904d2953815c2e213d1b25861ba2e5b10bf7169fb0c909ecb14251ec7777ca1f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Word site name for the existing itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a62d1ead66587e85",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6c9f9b83b36590e0739e388699d851ae4e85feffc4d6e48daa9945d7381d3565",
+      "text": "Gardner Bay",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p118",
+            "textSha256": "904d2953815c2e213d1b25861ba2e5b10bf7169fb0c909ecb14251ec7777ca1f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Word bay name for the existing itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:0f77ae8938b3fb81",
+      "field": "media.alt",
+      "sourceTextSha256": "69c70da36b5b079382a252f321c1f2d9367f1af39a912cfb5cf6a029db8b1021",
+      "text": "Pictured: the Galápagos Islands in Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word contains no corresponding image-alt caption; translate the existing RU caption without altering the image.",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:0a54ad54d36b0a7d",
+      "field": "itinerary.title",
+      "sourceTextSha256": "8ede06f86d1c3858d3cf71be3de54f8fe118f26c6b7be4db61879b533d6c0c58",
+      "text": "Santa Cruz – Los Gemelos – mainland Ecuador",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p119",
+            "textSha256": "b8f92e471e396b29ef89bd2e4fa71be5705084077c25da00c0c4e643238ef870"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing final-day route from the Word island, twin-crater site and return to Quito or Guayaquil."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:cad8c23d0530c6f0",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3f6ab16fa8d94d896827d232aa196b577d346bc45ff5df1affd95d0e98e6a20f",
+      "text": "Santa Cruz: Los Gemelos, twin craters formed by the collapse of the ground into empty lava chambers; transfer to Baltra for your flight to Quito or Guayaquil and your international connection. (B)\n\nIn the morning, visit the twin craters on Santa Cruz, on either side of the road between Puerto Ayora and Baltra. Despite their name, these are not volcanic craters: the depressions formed when surface material collapsed into underground cavities and fissures.\n\nThe walk is easy, with a dry landing. After visiting the information centre, transfer to Baltra Airport and fly to the mainland.\n\nOn arrival in Quito or Guayaquil, make your own way to the international terminal and check in for your onward flight.\n\nBy this point, the journey has taken you through 3 very different natural worlds in Ecuador. In the Amazon, you have seen lowland rainforest from the water and from canopy level; in the Andes, high-altitude páramo, volcanoes and cloud forest; and in the Galápagos, an island ecosystem where wildlife takes centre stage. The final flight to the mainland completes the programme without an additional overnight stay. The style of travel has changed several times along the way: private mainland excursions, group programmes in reserves, an Amazon lodge stay and a cruise. These different experiences reveal several sides of the country while following a continuous route.\n\nMeals: breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Retain Word p119 after removing its day prefix. Translate the RU-only additions absent from the concise Word paragraph: the road location, easy walk and dry landing, information centre, independent international-terminal connection, no extra overnight stay and concluding comparison of Ecuador's three ecosystems.",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "retainedWordParagraphs": [
+          {
+            "ref": "word/document.xml:p119",
+            "textSha256": "b8f92e471e396b29ef89bd2e4fa71be5705084077c25da00c0c4e643238ef870",
+            "transformation": "strip_list_marker"
+          }
+        ]
+      }
+    }
+  ]
+}

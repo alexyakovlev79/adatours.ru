@@ -53,157 +53,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b016",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d26f1f51dab4696f6d9ff81dcee09ccba6cb0ed97bbd28fde6496557d5d603f7",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
-        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
-        "claimedAt": "2026-11-04T05:45:55.312Z",
-        "expiresAt": "2026-11-04T07:15:55.312Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-001-05",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
-        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
-        "generation": 2,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b016",
-          "stableId": "tour_argentina_grand_tour_15_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "d26f1f51dab4696f6d9ff81dcee09ccba6cb0ed97bbd28fde6496557d5d603f7",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:b2bb8d165b968a83",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p54",
-                    "textSha256": "2d955e853a8bd8929321cb7723c8bd45c3ce9295454c873274ced4bf54971de2"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact Buenos Aires place name from the final-day Word heading for this route-label field."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:e52900a8fa5c89c4",
-              "field": "media.alt",
-              "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
-              "text": "Buenos Aires, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-e9fc69e2bbe6",
-                "wordAbsenceReason": "The verified Word 2027 contains Buenos Aires itinerary text but no exact caption for this existing photograph; translate the current RU image alt without changing media."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:68ebdd10346d3d20",
-              "field": "media.alt",
-              "sourceTextSha256": "729b84adf98beba27687076e4f0cb39f6378d47a701d348029ec10795847786d",
-              "text": "Cafayate vineyards and the red mountains of the Calchaquí Valleys — illustration",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-e9fc69e2bbe6",
-                "wordAbsenceReason": "The verified Word 2027 describes Cafayate and the Calchaquí Valley but has no alt caption for this illustrated hero image or its illustration disclaimer; translate the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:77871c8f58bdcbc6",
-              "field": "media.hover",
-              "sourceTextSha256": "729b84adf98beba27687076e4f0cb39f6378d47a701d348029ec10795847786d",
-              "text": "Cafayate vineyards and the red mountains of the Calchaquí Valleys — illustration",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-e9fc69e2bbe6",
-                "wordAbsenceReason": "The verified Word 2027 has no hover caption for the illustrated Cafayate/Calchaquí hero; translate the current RU hover and preserve the illustration disclaimer."
-              }
-            },
-            {
-              "blockId": "tour:body:47f6c11f40afc686",
-              "field": "body",
-              "sourceTextSha256": "09ed393ca4eeefcb4f640e8ebe025a5d274cb731e360a5036ffeeb66f9dc8e59",
-              "text": "\n## Accommodation\n\nHotels\n•  Buenos Aires (2 nights): Four Seasons, City View Room, BB\n•  Iguassu (2 nights): Gran Meliá Iguazú Hotel, Deluxe Room, BB\n•  Cafayate (1 night): Grace Cafayate, Deluxe Room, BB\n•  Salta (1 night): Hotel Alejandro I, Affiliated by Meliá, Premium Room, BB\n•  Purmamarca (1 night): Mirador del Virrey Cabañas Boutique, Cabaña, BB\n•  Salta (1 night): Hotel Alejandro I, Affiliated by Meliá, Premium Room, BB\n•  Mendoza (3 nights): Entre Cielos, Superior Room, BB\n•  El Calafate (2 nights): EOLO, Corner Room, BB\n•  Buenos Aires (1 night): Four Seasons, City View Room, BB\n\n## Price\n\nFrom USD 12,500 net per person, based on 2 travelers. Meal plan at the listed accommodations: BB. Flights, transfers, guides and excursions are specified by day.\n",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
-                "wordAbsenceReason": "The verified Word 2027 provides the exact Hotels list and USD 12,500 net per-person price for 2 travelers, but does not contain the full RU body with Markdown Accommodation/Price headings, the meal-plan summary and the final day-by-day services sentence. Preserve the Word hotel list and price verbatim and translate only these RU additions.",
-                "wordSource": {
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "modifiedTime": "2026-09-30T13:49:31.141Z",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml#p56",
-                      "textSha256": "9fb889ca7b718a042544a62e782cc9518615b5a02f4ea03a6a0a7516e1b69e20"
-                    },
-                    {
-                      "ref": "word/document.xml#p57",
-                      "textSha256": "21efc07ed74d2fd3873b7d18b50a58b7a063085ad17478546e7fde57620d9b77"
-                    },
-                    {
-                      "ref": "word/document.xml#p58",
-                      "textSha256": "18f615bab48e161591b225c0dcea486d4eccc933ecfe6be6736b12402b4b8884"
-                    },
-                    {
-                      "ref": "word/document.xml#p59",
-                      "textSha256": "8351d31a48de3e7ca8025000868bba84a5526b49e204ab78e2a7e588300bd7a3"
-                    },
-                    {
-                      "ref": "word/document.xml#p60",
-                      "textSha256": "90223ab6990c7a8219f3884bdfaad33faeeff0ba09deec9a60ab1654fd820835"
-                    },
-                    {
-                      "ref": "word/document.xml#p61",
-                      "textSha256": "0ef8f06b640882971ec77cdf8329ccaaaf0741e127b2917f67646f74de0909a5"
-                    },
-                    {
-                      "ref": "word/document.xml#p62",
-                      "textSha256": "90223ab6990c7a8219f3884bdfaad33faeeff0ba09deec9a60ab1654fd820835"
-                    },
-                    {
-                      "ref": "word/document.xml#p63",
-                      "textSha256": "38218d292652aca0728f00d561aa8c41029cab33861c736d5632e0d56d0f9bb4"
-                    },
-                    {
-                      "ref": "word/document.xml#p64",
-                      "textSha256": "532b39e261c98e676aeea5ec8daf6acafe50e853456aa5d200442ece426d28dc"
-                    },
-                    {
-                      "ref": "word/document.xml#p65",
-                      "textSha256": "2ac567f5a76c3657a535eb712a530dbb4fc122e589b9da9761f9d0a71694b2d7"
-                    },
-                    {
-                      "ref": "word/document.xml#p67",
-                      "textSha256": "6b15a2f2d52f25143852e5034e740812de6c054b64e8bfc93edc28c31442ec8c"
-                    },
-                    {
-                      "ref": "word/document.xml#p68",
-                      "textSha256": "b6c2a7dbc20187b162d72d3787797828e0d583138e0dcf5b77d25809114d482d"
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:47:11.124Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ada-en-20261104-mw1ownhg-0a870a9f-001",
+        "blobSha": "5a8895ba2c32ad6f181609117ee943863f99f432",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_grand_tour_15_days_2027_b016/sub-ada-en-20261104-mw1ownhg-0a870a9f-001.json",
+        "at": "2026-11-04T05:47:50.468Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

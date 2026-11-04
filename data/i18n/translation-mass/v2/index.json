@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2107,
-    "leased": 10,
-    "review": 292,
+    "leased": 9,
+    "review": 293,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2107,
-      "leased": 10,
-      "review": 292,
+      "leased": 9,
+      "review": 293,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -146,8 +146,8 @@
         "word_2027": {
           "held": 0,
           "queued": 68,
-          "leased": 1,
-          "review": 8,
+          "leased": 0,
+          "review": 9,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 1,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T07:26:55.494Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "13": {
@@ -1384,12 +1384,6 @@
       "expiresAt": "2026-11-04T07:26:42.650Z",
       "generation": 1
     },
-    "ada_en_2478a2a40c1c": {
-      "jobId": "en:bulk:tour:tour_chile_easter_island_3_days_2027:b005",
-      "token": "ada_en_2478a2a40c1c_20261104",
-      "expiresAt": "2026-11-04T07:26:55.494Z",
-      "generation": 1
-    },
     "ada-en-2661932f-20261104": {
       "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b005",
       "token": "ada-en-token-2661932f-20261104",
@@ -2434,7 +2428,9 @@
       "jobIds": [
         "en:bulk:tour:tour_chile_easter_island_3_days_2027:b005"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_chile_easter_island_3_days_2027:b005"
+      ]
     },
     "ada-en-2661932f-20261104": {
       "token": "ada-en-token-2661932f-20261104",
@@ -2452,5 +2448,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:58:20.971Z"
+  "updatedAt": "2026-11-04T05:58:33.448Z"
 }

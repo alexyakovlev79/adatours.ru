@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2137,
-    "leased": 5,
+    "queued": 2136,
+    "leased": 6,
     "review": 267,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2137,
-      "leased": 5,
+      "queued": 2136,
+      "leased": 6,
       "review": 267,
       "ready": 1,
       "retryable": 0,
@@ -345,8 +345,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 64,
-          "leased": 0,
+          "queued": 63,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:18:03.827Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1371,6 +1371,12 @@
       "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
       "expiresAt": "2026-11-04T07:17:57.491Z",
       "generation": 1
+    },
+    "ada-en-d8b5c6c4c917": {
+      "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b002",
+      "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
+      "expiresAt": "2026-11-04T07:18:03.827Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2319,8 +2325,15 @@
       "completedJobIds": [
         "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b016"
       ]
+    },
+    "ada-en-d8b5c6c4c917": {
+      "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b002"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:47:57.491Z"
+  "updatedAt": "2026-11-04T05:48:03.827Z"
 }

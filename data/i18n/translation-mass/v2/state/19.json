@@ -474,88 +474,22 @@
     {
       "jobId": "en:bulk:tour:tour_peru_8d:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "941f9acd11db9ab6b2709ee16e94ee248623b07eca057b6d3913704960a61056",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-a40ee2cc",
-        "token": "ada-en-token-a40ee2cc-71df-20261104",
-        "claimedAt": "2026-11-04T07:45:07.039Z",
-        "expiresAt": "2026-11-04T09:15:07.039Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-a40ee2cc-p06-cp4",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-a40ee2cc",
-        "token": "ada-en-token-a40ee2cc-71df-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_peru_8d:b010",
-          "stableId": "tour_peru_8d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "941f9acd11db9ab6b2709ee16e94ee248623b07eca057b6d3913704960a61056",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:79267ef2a5c2ae2c",
-              "field": "media.alt",
-              "sourceTextSha256": "e0c1033e66feb36899ef7407a2ffa1419c7d32087a4863a7fd9fc98c6352fdf4",
-              "text": "Green coastal slopes of Miraflores above the Pacific Ocean, Lima, Peru",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The checked Word 2027 contains no matching ALT description of the specific Miraflores photograph; translated the current RU media text."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:6cd814ee89bd0951",
-              "field": "media.hover",
-              "sourceTextSha256": "7f0146c27d7d188fec388dece08a38d8cc7bd3032d15f5f1c307e58d5e823cf9",
-              "text": "Miraflores in Lima: a park above the ocean and the coastal road",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The checked Word 2027 contains no equivalent image hover caption for this photograph; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:51d4d257b9695eec",
-              "field": "itinerary.label",
-              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
-              "text": "Lima",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:51",
-                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:68ebdd10346d3d20",
-              "field": "media.alt",
-              "sourceTextSha256": "a44e824eadc7e53f19980d7c81d26afe1f72975e8ecd13c4d5bd9ff60dd63e54",
-              "text": "Flowerbeds spelling out Lima and historic buildings in a square in Lima, Peru",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-run-a40ee2cc",
-                "wordAbsenceReason": "The checked Word 2027 contains no matching ALT description of the flowerbed and historic-square photograph; translated the current RU media text."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:46:07.961Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-a40ee2cc-p06",
+        "blobSha": "81d5b6446066048b8032a4563c6f7d0a263a6b3b",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_peru_8d_b010/ada-en-a40ee2cc-p06.json",
+        "at": "2026-11-04T07:46:51.287Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -695,182 +695,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b007",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "cf5acb8627cc586d762bd55553c5624546d5753aa4d530bdda4bccfbe6e89fef",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-150b76fa3667",
-        "token": "ada-en-150b76fa3667-20261104",
-        "claimedAt": "2026-11-04T07:08:38.086Z",
-        "expiresAt": "2026-11-04T08:38:38.086Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-150b76fa3667-007-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-150b76fa3667",
-        "token": "ada-en-150b76fa3667-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b007",
-          "stableId": "tour_source_5_stran_latinskoj_ameriki",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "cf5acb8627cc586d762bd55553c5624546d5753aa4d530bdda4bccfbe6e89fef",
-          "blocks": [
-            {
-              "blockId": "tour:note:ab11dce24f892ae2",
-              "field": "note",
-              "sourceTextSha256": "eeafcc5a60909a4065c2ae4cd1338f9fd91c0212c633f42d23b2fb740544123c",
-              "text": "Prices are subject to change: the final price will be confirmed upon booking, once all services and flight fares have been checked.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p264",
-                    "textSha256": "22601897b6f39a4e12ea914b338b572c8727f7755d6e46044b7fa0f852306bb4"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list marker because this field is already a standalone note; preserve its approved wording verbatim."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "727286c5046da7a820085cd3e627a3af5ee5307eeec1f06296fd1732460aecda",
-              "text": "Arrival in Rio de Janeiro",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p67",
-                    "textSha256": "fc01b0ac5aa524449201c7fc317cb461ef9218055ca3f2f3132ace904effe7d9"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact arrival event and city from the day-one paragraph as the existing itinerary heading."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a4836cca1208c95",
-              "field": "itinerary.text",
-              "sourceTextSha256": "36d5a1940e5316d55333b14ac7877123fe4761c7a805af569146fcf6b567e058",
-              "text": "Day 1 · Arrival in Rio de Janeiro and transfer to the hotel. If you arrive before dusk, the road from the airport reveals green hills, rocky mountains, palm trees and beautiful bays; at nightfall, the lights of the hillside neighbourhoods surround the city like a shimmering necklace. Between palm trees, sand, ocean waves and a cold coconut water, you are in one of the most beautiful and exotic cities in the world.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p67",
-                    "textSha256": "fc01b0ac5aa524449201c7fc317cb461ef9218055ca3f2f3132ace904effe7d9"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p157",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:32772677f5079ec1",
-              "field": "media.alt",
-              "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
-              "text": "Panorama of Rio de Janeiro with the bay, Sugar Loaf Mountain and the city, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-150b76fa3667",
-                "wordAbsenceReason": "Verified Word 2027 paragraph 67 describes arrival in Rio but contains no alt text for this panorama photograph; translate the current RU media.alt field.",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c"
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-              "field": "itinerary.title",
-              "sourceTextSha256": "c092c1b828f5d4e552788f87572c412d2cbc631dead9969d3fe3f7ec142d7745",
-              "text": "Corcovado and Christ the Redeemer",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p68",
-                    "textSha256": "b399cfee0ae272248abdc4ae8d28ad3328b942c6fd5c8fd31f6f41d3fc48ad30"
-                  },
-                  {
-                    "ref": "word/document.xml#p69",
-                    "textSha256": "72353a7144b5eb0eaef24339a07b123412d992ec3a453cf776ff3db5f552415c"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combine the mountain and statue named in the approved day-two paragraphs as the existing heading without changing the visit."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:569e72e117968fcc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "0f369a3bcaffd358538dd509d5772c6c9d88c8526f8535f2ba9935967d39de98",
-              "text": "Day 2 · Meet your guide in the hotel lobby for the excursion to Corcovado Mountain and the statue of Christ the Redeemer (4 hours, English-speaking guide). From the station, an open, eco-friendly train climbs through the jungle to the summit, with breathtaking views of the Tijuca Forest on both sides.\n\nAt 710 metres above sea level rises the symbol of Rio, the 38-metre statue of Christ the Redeemer, erected in 1931. The view takes in the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the legendary Maracanã Stadium, Sugar Loaf Mountain and much more.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p68",
-                    "textSha256": "b399cfee0ae272248abdc4ae8d28ad3328b942c6fd5c8fd31f6f41d3fc48ad30"
-                  },
-                  {
-                    "ref": "word/document.xml#p69",
-                    "textSha256": "72353a7144b5eb0eaef24339a07b123412d992ec3a453cf776ff3db5f552415c"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
-                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p157",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:09:33.839Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-150b76fa3667-007",
+        "blobSha": "c19e4f9634be0dc8361ea307ff3fcadb8c09387f",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_5_stran_latinskoj_ameriki_b007/ada-en-150b76fa3667-007.json",
+        "at": "2026-11-04T07:09:38.286Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

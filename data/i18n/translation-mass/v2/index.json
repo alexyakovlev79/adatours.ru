@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1561,
-    "leased": 13,
+    "queued": 1560,
+    "leased": 14,
     "review": 835,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1561,
-      "leased": 13,
+      "queued": 1560,
+      "leased": 14,
       "review": 835,
       "ready": 1,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 47,
-          "leased": 0,
+          "queued": 46,
+          "leased": 1,
           "review": 32,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:17:28.772Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro:b001",
       "token": "tk-08163b3a444d-20261104",
       "expiresAt": "2026-11-04T18:17:13.046Z",
+      "generation": 1
+    },
+    "ada_en_973e64bf8d24": {
+      "jobId": "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b002",
+      "token": "ada_en_973e64bf8d24_token",
+      "expiresAt": "2026-11-04T18:17:28.772Z",
       "generation": 1
     }
   },
@@ -4203,7 +4209,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b005",
         "en:bulk:tour:tour_source_braziliya_s_vodopadami_na_novyj_god:b001",
-        "en:bulk:tour:tour_source_kongress_v_argentine:b003"
+        "en:bulk:tour:tour_source_kongress_v_argentine:b003",
+        "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b005",
@@ -4244,5 +4251,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:47:21.143Z"
+  "updatedAt": "2026-11-04T16:47:28.772Z"
 }

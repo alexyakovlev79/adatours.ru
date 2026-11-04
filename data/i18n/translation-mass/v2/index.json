@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1900,
-    "leased": 14,
-    "review": 495,
+    "leased": 13,
+    "review": 496,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1900,
-      "leased": 14,
-      "review": 495,
+      "leased": 13,
+      "review": 496,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -306,8 +306,8 @@
         "word_2027": {
           "held": 0,
           "queued": 59,
-          "leased": 1,
-          "review": 17,
+          "leased": 0,
+          "review": 18,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T10:29:59.370Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "17": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-e5835a329b8c": {
-      "jobId": "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b002",
-      "token": "ada-en-token-e5835a329b8c",
-      "expiresAt": "2026-11-04T10:29:59.370Z",
-      "generation": 2
-    },
     "ada-en-20261104-amanda-5498d95b": {
       "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b002",
       "token": "ada-en-5498d95b-20261104-persistent",
@@ -3014,9 +3008,11 @@
       "jobIds": [
         "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b002"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T09:01:08.858Z"
+  "updatedAt": "2026-11-04T09:01:16.106Z"
 }

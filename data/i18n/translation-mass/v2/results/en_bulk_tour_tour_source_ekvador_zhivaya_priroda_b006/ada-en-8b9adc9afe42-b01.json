@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekvador_zhivaya_priroda:b006",
+  "stableId": "tour_source_ekvador_zhivaya_priroda",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "51e5556aef5a5f4e169543add7bf9eaddbfbe17380aacc5d72dcb349629c0550",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:766df12a4f8932f1",
+      "field": "media.alt",
+      "sourceTextSha256": "34db3e40d37c1b02c6820fb059fd632c4edc588febc8f956598f0647c66ca012",
+      "text": "A narrow path through high-altitude grasses in Cotacachi-Cayapas, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-8b9adc9afe42",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matching Word 2027 programme has no image-specific alt text for this photograph; translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5c1b3d20f2956481",
+      "field": "media.hover",
+      "sourceTextSha256": "bcadd248a4f5834c4a61e5d5f5bdf30723cac5a231ae1cc63e6f7bbbcedcca62",
+      "text": "Cotacachi-Cayapas in Ecuador: green slopes and a path beneath cloud-covered mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-8b9adc9afe42",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matching Word 2027 programme has no image-specific hover caption for this photograph; translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7646fb5f2eb8d14bcd219e043527a186a7908a2f14f5bc49e91509bed4e6cdd8",
+      "text": "El Ángel – Imbabura",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p124",
+            "textSha256": "dac42caada8a682a6f7e5baf41f204e50c1e186d722027dda54f4cefff8a7195"
+          },
+          {
+            "ref": "word/document.xml:p129",
+            "textSha256": "6e28da564c67ed7654015f2d2247b500227fb47d492a9594c8150ec3fc1d36f2"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the exact Word destination labels for the reserve and the overnight province into the pinned day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2a0187072c7769f508b5e6acc990c1fe9907b2e7084da8a968c289fdcc90abfe",
+      "text": "Day 5 · A walk of about 3 hours in the El Ángel Ecological Reserve (15,715 ha), where giant frailejones, up to 6 m tall, cover most of the páramo; look for condors, Andean caracaras and gulls, blue-winged teals, foxes and deer. Transfer to a beautiful historic hacienda. Overnight at Hacienda Cusín. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "cfcc8f4e0daee86f4b97844fd013fe817c3e8264cf9a3d207a29816c3ebda483"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:899de05428a9207b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bb627eb5fe3405432bf925402d8379f721bad051a2296d222a6b997dec4f3ec8",
+      "text": "El Ángel Ecological Reserve",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "cfcc8f4e0daee86f4b97844fd013fe817c3e8264cf9a3d207a29816c3ebda483"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the reserve name occurring verbatim in the matched Word Day 5 paragraph as a standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:864899d59f2509da",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5c4db98a72b6dc3d160387c13b3fecd00a1559008bc93d4d8bc96f8685bd6bc1",
+      "text": "Imbabura Province",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p129",
+            "textSha256": "6e28da564c67ed7654015f2d2247b500227fb47d492a9594c8150ec3fc1d36f2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word accommodation-table destination Imbabura and retain the RU administrative province qualifier."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:483da3ef0d6fc87e",
+      "field": "media.alt",
+      "sourceTextSha256": "aa6aef53effc7b8d4536523259632f79b73ed901c6d6048684b8fd823ad21cb4",
+      "text": "Frailejones on a mountain slope beside a lake in El Ángel Reserve, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-8b9adc9afe42",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matching Word 2027 programme has no image-specific alt text for this photograph; translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:0187c614904a8cce",
+      "field": "media.hover",
+      "sourceTextSha256": "501e3c7e19d6c4f402d61086bd47df026ea0b8e617204860dbdda448fb7676bf",
+      "text": "El Ángel in Ecuador: a high-altitude lake among frailejones",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-8b9adc9afe42",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matching Word 2027 programme has no image-specific hover caption for this photograph; translated from the pinned RU block."
+      }
+    }
+  ]
+}

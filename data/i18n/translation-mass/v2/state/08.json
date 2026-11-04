@@ -178,7 +178,7 @@
         "expiresAt": "2026-11-04T07:05:04.928Z"
       },
       "checkpoint": {
-        "id": "adaen-mw1ojnf0-zzzsf540-job02-cp4",
+        "id": "adaen-mw1ojnf0-zzzsf540-job02-cp8",
         "format": "inline-v1",
         "ownerId": "adaen-mw1ojnf0-zzzsf540",
         "token": "tok-lnsxlpgwcpa92vym3bnf36",
@@ -245,10 +245,75 @@
                 "runId": "adaen-mw1ojnf0-zzzsf540",
                 "wordAbsenceReason": "Full verified Word OOXML has no matching hover caption describing the macaws' yellow chests and blue wings; translate the existing RU caption."
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+              "field": "itinerary.title",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p170",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+              "field": "itinerary.text",
+              "sourceTextSha256": "0e204c2bdccb729c2affd361f9cf651cb1f69e03e0a840586e8b2a1e9139fdce",
+              "text": "After breakfast, transfer to the airport for your flight home. End of the programme.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p139",
+                    "textSha256": "42136744f0946ecf98409d2b4e49dcee4d03baa6ccecae1c80652a45ba6c78cd"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading Day number and separator because the structured itinerary supplies its own day heading; retain the approved Word wording."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:15b0adbbafbb2266",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p170",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e5eafa34e662750e",
+              "field": "media.alt",
+              "sourceTextSha256": "cda9739adcfdfd1ce3d7e90f62f588056698ae44f40eb75e1d8474ae76674ea5",
+              "text": "Foz do Iguaçu, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "The verified Word has Foz do Iguaçu as itinerary and hotel location, but no matching image-alt description with its country; translate the current RU alt text."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:36:15.646Z"
+        "at": "2026-11-04T05:36:20.968Z"
       },
       "submission": null,
       "review": null,

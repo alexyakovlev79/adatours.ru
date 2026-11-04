@@ -480,7 +480,96 @@
         "claimedAt": "2026-11-04T06:52:05.658Z",
         "expiresAt": "2026-11-04T08:22:05.658Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-39fb6759e90b-b007-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-39fb6759e90b",
+        "token": "tok-39fb6759e90b-20261104-a7c3",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_peru_8d:b007",
+          "stableId": "tour_peru_8d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "d9037bbcb2a00bb1101bf2e1a7fc37526135b3d8ca84bc88c4c4c7542754c1b4",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:ebe1b3dd813e8a53",
+              "field": "itinerary.label",
+              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+              "text": "Cusco",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cb3be3bd28c316c5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
+              "text": "Puno",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p4",
+                    "textSha256": "537a353f5ab42040b4154bfb4d70321bd864f4334f316295b6c28ddfa6f11c03"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the confirmed Word city name for the existing linked place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:1882b9b849625851",
+              "field": "media.alt",
+              "sourceTextSha256": "417fab96cc8e714eab8afc372ed306bd085e78fda32c199a339e8d9c552f5ae7",
+              "text": "Reed huts on a floating Uros island in the blue waters of Lake Titicaca, Puno, Peru",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "The exact Word contains no matching photograph alternative text; translate current RU media.alt."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:3e1de1906d41c1c9",
+              "field": "media.hover",
+              "sourceTextSha256": "973488c32115837f931aaf03078171158f47fbd4a2819a99846e2ef1a5798847",
+              "text": "Uros: huts on a reed island on Lake Titicaca",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "The exact Word contains no matching photograph hover caption; translate current RU media.hover."
+              }
+            }
+          ],
+          "sourceNotes": [
+            {
+              "kind": "word_2027_programme_difference",
+              "detail": "The confirmed Word separates the Uros/Taquile visit (Day 6, night in Puno) and the flight from Juliaca to Lima (Day 7). Word paragraph 108 includes that flight; the current RU block combines these and calls flights excluded. EN follows the confirmed Word; no shared commercial fields changed.",
+              "paragraphRefs": [
+                "word/document.xml:p94",
+                "word/document.xml:p98",
+                "word/document.xml:p106",
+                "word/document.xml:p108"
+              ]
+            }
+          ]
+        },
+        "at": "2026-11-04T06:52:51.192Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

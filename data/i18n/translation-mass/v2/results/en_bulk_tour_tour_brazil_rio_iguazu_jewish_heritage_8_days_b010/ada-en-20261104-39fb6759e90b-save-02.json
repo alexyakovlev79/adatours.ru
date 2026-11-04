@@ -1,0 +1,274 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b010",
+  "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7413885a49bfbf03d8fa55031c5f52bcc7ff77bdfa022989d6db68c0e3fb802c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b3c6a1128e38077d628f63affda3f662586cbeffc7287f0b6312c3bc8f55540c",
+      "text": "Departure from Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+        "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p104",
+            "textSha256": "dfe011573a04a2f6905356cf67fcd2f2b7d19bb96a74ea8d19dcc278dea8a35c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose a departure title from the confirmed Day 8 airport-transfer paragraph and its Foz location."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6cd911c17762003cd0a74fa8c0845bba9dda34465c059802bb8308edbc6761cd",
+      "text": "Private transfer (driver only) from the hotel to the airport for your flight home. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+        "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p104",
+            "textSha256": "dfe011573a04a2f6905356cf67fcd2f2b7d19bb96a74ea8d19dcc278dea8a35c"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day-number prefix to fit the existing itinerary text field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:25c6390c55f06880",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+        "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p8",
+            "textSha256": "644316e2355999ae677325183aef7836ffd7d2cf5dd8b6fde441c9dd33df5fc0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed Word route place name for the existing linked place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ded9da96be0cde26",
+      "field": "media.alt",
+      "sourceTextSha256": "b10d4ad28a907e46a50edf11f0938bf5ddf61951b10ffe3a5765e92e095ad736",
+      "text": "Iguazu Falls with a cloud of spray and forested banks",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-39fb6759e90b",
+        "wordAbsenceReason": "No matching photograph alternative text exists in the exact Word document; translate current RU media.alt."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "127a13909d703a6ce3ffce07dbb0d76eb9590bb9e12f80c3696649cbd7d7ca28",
+      "text": "Botafogo Bay and Sugar Loaf in Rio de Janeiro — illustration",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-39fb6759e90b",
+        "wordAbsenceReason": "No matching hero alternative text exists in the exact Word document; translate current RU media.alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "127a13909d703a6ce3ffce07dbb0d76eb9590bb9e12f80c3696649cbd7d7ca28",
+      "text": "Botafogo Bay and Sugar Loaf in Rio de Janeiro — illustration",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-39fb6759e90b",
+        "wordAbsenceReason": "No matching hero hover caption exists in the exact Word document; translate current RU media.hover."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "280f28d78d0f5d9093f74eb67f212d29f3141b07ff4f91d700d53a493f2e0562",
+      "text": "**2027 programme: 8 days / 7 nights.**\n\nRio de Janeiro has green hills, blue sky, beautiful bays, islands and marvellous beaches: Brazil’s second-largest city after São Paulo and one of the most beautiful in the world. Copacabana, Ipanema and Leblon are famous for their black-and-white mosaic promenades, and Rio offers almost any sport, from golf, tennis and surfing to diving and hang-gliding. The journey then continues to the Iguazu Falls, to discover their thundering power from both the Brazilian and Argentine sides.\n\nDay 2 · City tour and Sugar Loaf. After breakfast, a shared half-day excursion to Sugar Loaf. The first stop is Urca Hill, with a wide viewing area and a restaurant for a snack; from Sugar Loaf, enjoy a beautiful view of Rio, Copacabana Beach, the bay, the surrounding mountains, the islands in the ocean, the Rio–Niterói Bridge and the statue of Christ on Corcovado. After the cable car ride down, the tour continues to Rio’s old town, with its historic churches, monasteries, cathedral and colonial-style buildings, as well as notable synagogues, offering a glimpse into the rich Jewish heritage and culture of the city.\n\nDay 3 · Corcovado and Christ the Redeemer. After breakfast, a shared tour through the city to the station, where an eco-friendly train climbs through the Tijuca Forest, home to monkeys and exotic birds, to the top of Corcovado. At 710 metres above sea level stands the symbol of Rio, the 38-metre statue of Christ the Redeemer, built in 1931, with a breathtaking panorama of the city and its surroundings: the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the Maracanã Stadium and Sugar Loaf.\n\nDay 5 · Breakfast at the hotel and transfer to the airport for your flight to Foz do Iguaçu; transfer to your hotel. Free day.\n\nDay 6 · An excursion to the Brazilian side of the falls. A calm walk along the edge of the canyon reveals one of the most spectacular views on Earth, with some 275 cascades and rainbows shimmering in the spray, before the path leads to the largest waterfall in the park, the Devil’s Throat, where the water plunges some 80 metres. A walkway takes you into the heart of the falls, surrounded by their power on all sides, before a stairway leads up to look down on them from above. At the end of the tour, your guide drops you off at your hotel (entrance ticket included).\n\nDay 7 · An excursion to the Argentine side of the falls, which is different from the Brazilian one: paths lead you through the falls, giving you the chance to look at them from below and feel the strength of the falling water up close, in a natural park of some 55,500 hectares. Within the park, take the train to the Devil’s Throat, the most powerful of all the falls, and stand directly above the falling water. Tickets included.\n\n## Hotels & prices\n\nPrices per person (USD). BB means breakfast. Rio (4N) · Foz do Iguaçu (3N).\n\n| Category | Hotels | SGL | 2 SGL | DBL | TRP |\n|---|---|---:|---:|---:|---:|\n| 4★ | Arena Leme (4 nights) + Vivaz Cataratas (3 nights), breakfast and services included | $3493 | $3089 | $1950 | $1961 |\n| 5★ | Miramar Copacabana (4 nights) + DoubleTree by Hilton (3 nights), breakfast and services included | $4281 | $3876 | $2617 | $2327 |\n\nFrom $ 1,950\n\nPer person, 4★ hotels, sharing a double room. Includes accommodation and services as described.\n\nNot included: International flights; Domestic flight Rio de Janeiro – Foz do Iguaçu; Additional excursions.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+        "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p7",
+            "textSha256": "e3b26491a85ba8b4a4971b87eb405668776baafa054e9dc59b8247d148a57840"
+          },
+          {
+            "ref": "word/document.xml:p8",
+            "textSha256": "644316e2355999ae677325183aef7836ffd7d2cf5dd8b6fde441c9dd33df5fc0"
+          },
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "1fb23ce3dd7cb07738bf04dfcb3348d54f5aa21807e212c805f7582b2f6d28f3"
+          },
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "f12b1d9b7d26eb1d543ae302cada86219f8825d0aa2ae9d9fc88d789e51a4cf9"
+          },
+          {
+            "ref": "word/document.xml:p79",
+            "textSha256": "da50011c8162af39620f015e8672d4b17652d1c3a0b2ae55f09cc744c074d052"
+          },
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "72c4223a7860a6d55e9eaf76efaaf5eecd5e51068554f187ab2f83a0950de279"
+          },
+          {
+            "ref": "word/document.xml:p102",
+            "textSha256": "f84e835c1bed88dc33ba5b23bb0f2fb187b757c012d9518bf9cfb3f1f7714484"
+          },
+          {
+            "ref": "word/document.xml:p103",
+            "textSha256": "9d24f60f6b1350594380cf7a3aa2758df75fd7f6ed637707f2f818d3072be981"
+          },
+          {
+            "ref": "word/document.xml:p112",
+            "textSha256": "b2322489f936c26ad4ba8f7a863ec65f44e8f67cb706e1646ab98bb8152de311"
+          },
+          {
+            "ref": "word/document.xml:p115",
+            "textSha256": "4f351e71ed47534be12b42a9d39eed7872d61163be0bd476ffbd7f87af5c43d0"
+          },
+          {
+            "ref": "word/document.xml:p116",
+            "textSha256": "2ac8bcb8413282bd0bf48027cc7357e910e4324d94ccd504f68d67278b2698fa"
+          },
+          {
+            "ref": "word/document.xml:p117",
+            "textSha256": "55bb4158e008bfba3815f5804da51c4f7404c5a3b53967d265af7cc14901ce9c"
+          },
+          {
+            "ref": "word/document.xml:p119",
+            "textSha256": "913d33c7fd39db8c8c4514669b011f617d911345592cc77b309b812667959720"
+          },
+          {
+            "ref": "word/document.xml:p120",
+            "textSha256": "c589a298060d33ee40dbc0ca083bcb364d4f33de900c185345e331306fd0c32c"
+          },
+          {
+            "ref": "word/document.xml:p121",
+            "textSha256": "2ac8bcb8413282bd0bf48027cc7357e910e4324d94ccd504f68d67278b2698fa"
+          },
+          {
+            "ref": "word/document.xml:p122",
+            "textSha256": "7c382a1ca5ae847911aff0bdd621c146ea95a05fcde15afb61936e7ed0a098cb"
+          },
+          {
+            "ref": "word/document.xml:p124",
+            "textSha256": "913d33c7fd39db8c8c4514669b011f617d911345592cc77b309b812667959720"
+          },
+          {
+            "ref": "word/document.xml:p125",
+            "textSha256": "71c7a192862cdf9dade082734332335681ace7141ba96a94d86f7a8a0ca954da"
+          },
+          {
+            "ref": "word/document.xml:p126",
+            "textSha256": "2e2c0f8e0c1d58d78e81d97e7dfe8fc9c18e0350656e6f566062956216c66e66"
+          },
+          {
+            "ref": "word/document.xml:p128",
+            "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+          },
+          {
+            "ref": "word/document.xml:p129",
+            "textSha256": "9ac73203caba4e4ed46a399507969b97a5d434cfaf11a33f59548c4138bfd398"
+          },
+          {
+            "ref": "word/document.xml:p130",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          },
+          {
+            "ref": "word/document.xml:p131",
+            "textSha256": "299f4d5312ff948181be18fc1a928cc62a2c4a0d55907ac3d15b31f0a20bf033"
+          },
+          {
+            "ref": "word/document.xml:p132",
+            "textSha256": "4f351e71ed47534be12b42a9d39eed7872d61163be0bd476ffbd7f87af5c43d0"
+          },
+          {
+            "ref": "word/document.xml:p133",
+            "textSha256": "6780385834a79ec9b3a12262c8dd637a20c60ece823a0e0748791ecfae377ab2"
+          },
+          {
+            "ref": "word/document.xml:p134",
+            "textSha256": "a62334d53e19f4572a7776322d8894fd645fa6e974b2e92aa33d5f2a710e018f"
+          },
+          {
+            "ref": "word/document.xml:p135",
+            "textSha256": "c8f1931ade4bf2430f8d505e622fbb1fd05099aeab0ba0fbc199c0ba5689a709"
+          },
+          {
+            "ref": "word/document.xml:p136",
+            "textSha256": "2b0384a9b87bd5147da66f307b06bd0b2db29a2a43a90f071012d8bf33a87a6d"
+          },
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "c589a298060d33ee40dbc0ca083bcb364d4f33de900c185345e331306fd0c32c"
+          },
+          {
+            "ref": "word/document.xml:p138",
+            "textSha256": "9cc592dc1f728d0aa04391e0169841fab036db9ec90b61f563ff2bb3197e66b0"
+          },
+          {
+            "ref": "word/document.xml:p139",
+            "textSha256": "f73e387d2a99f14ba5486f167ef0f21754f2257bc550049fec393ce42df6a6db"
+          },
+          {
+            "ref": "word/document.xml:p140",
+            "textSha256": "0fc05dea4c2c142984b9f24647a27e9e17b9eb7832a4834bbc62312637bf4583"
+          },
+          {
+            "ref": "word/document.xml:p141",
+            "textSha256": "5dc25c55c1286b923c8f039fb7484a9cb113bfc0223dc4d723ce73cecb0f5172"
+          },
+          {
+            "ref": "word/document.xml:p142",
+            "textSha256": "ff65eebc819e8acda4e4bf9ef9d0c47a6fc29d37cc393428693788c2b87310f1"
+          },
+          {
+            "ref": "word/document.xml:p145",
+            "textSha256": "69f3e43e9992b708dee1ecdb9d8ac47e72ec17642c977410db727c01a70041b6"
+          },
+          {
+            "ref": "word/document.xml:p146",
+            "textSha256": "edafccbae8aa77e074d90f23d2dd5442755a334c06d6a8052eee0bf785c736ce"
+          },
+          {
+            "ref": "word/document.xml:p199",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          },
+          {
+            "ref": "word/document.xml:p200",
+            "textSha256": "592c5792ce6c0592250ec6658c738d856e20834268a9f80eeb1c1ccb556e6ab7"
+          },
+          {
+            "ref": "word/document.xml:p201",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Assemble confirmed Word overview and day passages with its accommodation and tariff tables in the RU body's Markdown layout; keep every price, occupancy column, currency and basis unchanged."
+      }
+    }
+  ]
+}

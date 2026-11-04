@@ -479,7 +479,7 @@
         "expiresAt": "2026-11-04T09:25:35.203Z"
       },
       "checkpoint": {
-        "id": "ada-en-a40ee2cc-p10-cp4",
+        "id": "ada-en-a40ee2cc-p10-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-a40ee2cc",
         "token": "ada-en-token-a40ee2cc-71df-20261104",
@@ -574,10 +574,86 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracts the exact Mendoza place name used in the approved route headings."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:2e9aae17d0a7d02c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word uses Iguazú and names the Brazilian Belmond hotel but has no equivalent Foz do Iguaçu place-label text; translated the current RU canonical city label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:08e8e832d5705a6c",
+              "field": "media.alt",
+              "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
+              "text": "Iguazu Falls seen from the Brazilian side",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word contains no matching photograph ALT text for this Brazilian-side falls image; translated the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+              "field": "itinerary.title",
+              "sourceTextSha256": "1d8ef8f88110254d9d1fef30d3d6a8746c03aded68f41d1358c40ffcc763392a",
+              "text": "Iguazú | Brazilian Side of the Falls",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:71",
+                    "textSha256": "1a78b324e67d851ad1905917eac10dc28a71b6c25eac8a8c609a66447ad7e9f8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Removes the day number from the exact day 14 heading, preserving the approved destination and side-of-falls title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+              "field": "itinerary.text",
+              "sourceTextSha256": "fb7c3924fd10d7f2019d2f5b1bde1f462e0b75f68d718096c41d37d8e07ee247",
+              "text": "You head to the Brazilian side of the falls, bordering the Iguazú River canyon. To call it a magnificent sight barely captures the emotions it evokes. The falls sit within a national park of unique flora and fauna, formed by volcanic eruption and shifting tectonic plates. The name, in Guaraní, means \"big water.\" 275 individual waterfalls, each with its own name, merge into one and plunge thunderously into the \"Devil's Throat\" gorge. The sight of the spray, wrapped in a halo of rainbow color, is utterly mesmerizing. Along the way to the mightiest of them all — the Devil's Throat — you'll pass countless smaller falls. The rainbow-lit spray of billions of falling droplets, set against magnificent scenery, delivers an incomparable sense of awe.\n\nTwo more excursions follow — the Macuco Safari and the Bird Park.\n\nMacuco Safari: an exhilarating jeep safari through the jungle, accompanied by a guide describing the national park. Through the forest and then on foot, you reach a dedicated platform on the Iguazú River, where an exhilarating boat journey beneath the falls awaits. Aboard a specially equipped boat, you approach the falls up close — unique views not only of the falls themselves but of the jungle-clad mountainsides around them. It's breathtaking, adrenaline-charged, as you find yourself beneath a solid curtain of falling water.\n\nThe Bird Park sits near Iguazú National Park. This exotic bird sanctuary spans 4 hectares of pristine subtropical forest. Here you can see — and even feed — more than 500 species of exotic birds from across the continents in their natural habitat. The reserve is also home to crocodiles, monkeys and other animals. You'll walk through enormous aviaries where magnificent, fantastical birds of extraordinary color fly and roam freely among the tropical foliage.\n\nHotel: Belmond Hotel das Cataratas, Deluxe Room.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:73",
+                    "textSha256": "720d250a54770cf1bbcd1bff231bf9c0963b141c5c14063b7ff005b10ca6164e"
+                  },
+                  {
+                    "ref": "word/document.xml:p:74",
+                    "textSha256": "1471e8cbfc061aa16e5aa6f0693fa1b2adab3e65ec45e9e4c5aed3e1c1b53e98"
+                  },
+                  {
+                    "ref": "word/document.xml:p:75",
+                    "textSha256": "3e35143e68038c3b8ad84deee984de035c2e78735ce2a5ac8ce3cff686a8231d"
+                  },
+                  {
+                    "ref": "word/document.xml:p:76",
+                    "textSha256": "d26470abd92301b90967c44a49e36ff01fd7b995f372d8055dbde78504fb680f"
+                  },
+                  {
+                    "ref": "word/document.xml:p:69",
+                    "textSha256": "52ea7e31f019bfa73261ecc2a47d422fbdd489233338cbd15d22a5b91a91c5cd"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:56:30.000Z"
+        "at": "2026-11-04T07:56:50.719Z"
       },
       "submission": null,
       "review": null,

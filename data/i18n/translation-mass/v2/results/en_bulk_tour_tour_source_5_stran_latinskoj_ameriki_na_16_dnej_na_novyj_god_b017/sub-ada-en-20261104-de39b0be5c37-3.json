@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b017",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9a917311cf6b8df47c3c02374c9bf5a5dfd5adeacc0f9fccba4b36fdcac9dbf4",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:8540f320534a681b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+      "text": "Machu Picchu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:151",
+            "textSha256": "5da2e3cf9dbbb9730897c509ef4d19dad0652c03b3851d87014ed50f9acea214"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Machu Picchu place name from the verified day heading for a place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:292784fc44ac312a",
+      "field": "media.alt",
+      "sourceTextSha256": "35ffa8c708e3d214c7e2d8fd70d7c74e05d8b7829c83ca791e1e61a5a462d96e",
+      "text": "Stone walls at Machu Picchu against green mountain slopes, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no photograph-specific alt description of stone walls against green slopes."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:0a54ad54d36b0a7d",
+      "field": "itinerary.title",
+      "sourceTextSha256": "91ec66070fdedee30b3cb028111eab9613d0b38a98da81e11143ec376a132607",
+      "text": "16 January. Cusco – Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:155",
+            "textSha256": "c1ebf89f0b1f77ece76f3b86702b06457115d3dfae01493a5746815a9275915c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Format the verified 16/01 Cusco to Lima heading as a dated itinerary title without the Word day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:cad8c23d0530c6f0",
+      "field": "itinerary.text",
+      "sourceTextSha256": "81aaf4d2fa323e784e37e000871f7efb4d84fbb0dc2331960100c80350780eac",
+      "text": "After breakfast, you will explore Cusco with an English-speaking guide. First, you will see Qorikancha, the Temple of the Sun, one of the Inca capital's principal sanctuaries. After the Spanish arrived, the Santo Domingo convent was built on its foundations.\n\nThe route then takes you to Qenqo, a ritual centre with rocky passageways, channels and niches; Puca Pucara, a fortified complex beside the road; and Tambomachay, with its system of stone channels and cascading water.\n\nAt Sacsayhuaman, you will see enormous stone blocks fitted together without mortar. The walls run in zigzags, and the slope offers views over Cusco.\n\nAfter the tour, transfer to the airport, fly to Lima and transfer to your hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word's Cusco paragraphs omit Qorikancha, Santo Domingo, the breakfast opening and the detailed RU water-channel and dry-stone descriptions; translate the current RU and localize guide language under editorial section 4.1."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f41435b497370ca2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:155",
+            "textSha256": "c1ebf89f0b1f77ece76f3b86702b06457115d3dfae01493a5746815a9275915c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Cusco place name from the verified route heading for a place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:85636cbe5e70e3e0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3b882b1784fd0899b3734e701b276ac510e27c1a30c61f3736b53015d07ca093",
+      "text": "Qorikancha",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Qorikancha is absent from the verified Word's Cusco sightseeing paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c0c70c1250acbfda",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b2ebe8d30d29cea54d6c73b10a76156e2f4e7aecdc5f3fc41354e0c167adbee2",
+      "text": "Qenqo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:156",
+            "textSha256": "15cc56c486a9d536b403a9f52fd3e1e01a2ed67abfffc4e8953d043667b5b6f7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Qenqo place name from the verified Cusco sightseeing paragraph for a place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:37b091a90af1f6af",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0d5d14a885b92a75dc072996785916778db36a2f8b7720cda215972816828d9b",
+      "text": "Puca Pucara",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:156",
+            "textSha256": "15cc56c486a9d536b403a9f52fd3e1e01a2ed67abfffc4e8953d043667b5b6f7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Puca Pucara from the verified Cusco sightseeing paragraph for a place label."
+      }
+    }
+  ]
+}

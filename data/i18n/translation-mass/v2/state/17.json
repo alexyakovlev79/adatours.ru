@@ -530,7 +530,88 @@
         "claimedAt": "2026-11-04T07:44:56.792Z",
         "expiresAt": "2026-11-04T09:14:56.792Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-150b76fa3667-009-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-150b76fa3667",
+        "token": "ada-en-150b76fa3667-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana:b008",
+          "stableId": "tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "d50c6619bb31460d2043a3d72d9df38c02430044ff5797d2933edd2899e8da98",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:f96fe0eb7b554691",
+              "field": "media.alt",
+              "sourceTextSha256": "d4e09bf7419d4ad785ab524f844b511bc68ccf28a82c26b6cb270f6feaccea13",
+              "text": "Kaieteur Falls drops from a rocky escarpment amid tropical rainforest, Guyana",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 68 describes Kaieteur Falls but contains no image-specific alt text; translate the current RU photograph description.",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:497a562d02a8997f",
+              "field": "media.hover",
+              "sourceTextSha256": "43005514bfc119ba43f077b22152672339b397f53d3e381638c76c73ed05c19d",
+              "text": "Kaieteur, Guyana: a river plunges as a waterfall amid green forest",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 68 describes the waterfall visit but contains no image-specific hover caption; translate the current RU image caption.",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "e21b57829ce406a6b7e9f7e6945713aadc472bcb5990417cc7eb9a6b10c45365",
+              "text": "Departure",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p88",
+                    "textSha256": "88e7938bfe503a4e9cbd08cc48d06d346b595bfe78bff6a022cc3b7391fca524"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the approved day-seven departure event as the day heading; the Word itinerary ends with the airport transfer after returning to Suriname."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "13df617decf8df674631ecf2f9ca66bb41dbac90535af6dd130c00032bf96ff9",
+              "text": "Day 7 · Depending on your flight, transfer to the airport about 3 hours before departure. (B)",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+                "documentSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p88",
+                    "textSha256": "88e7938bfe503a4e9cbd08cc48d06d346b595bfe78bff6a022cc3b7391fca524"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:45:52.653Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

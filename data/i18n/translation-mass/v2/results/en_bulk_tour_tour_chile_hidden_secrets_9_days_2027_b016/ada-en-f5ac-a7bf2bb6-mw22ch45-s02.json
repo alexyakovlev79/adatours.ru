@@ -1,0 +1,210 @@
+{
+  "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b016",
+  "stableId": "tour_chile_hidden_secrets_9_days_2027",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "af099e83c78db6784f29281440ccfaaddb4a9d34930f091d69ba4eb914b37329",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "df46d8edad92d3553e9ecb93d520768c22e94ee899a9380035245e5552058f3b",
+      "text": "Puerto Natales — departure",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p126",
+            "textSha256": "5622c47a4ce47e7e6c19e9f833a5618963a260b806c6f03fb1bf96ec68718096"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Departure heading derived from the private airport transfer in the verified Day 9 paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e1c59bd80554130120921f6cfbc3d7389db9c133a8f8ddb8ea6fe1d7a9d16a25",
+      "text": "Breakfast at the hotel. Private transfer from your hotel in Puerto Natales to the airport for your flight home.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p126",
+            "textSha256": "5622c47a4ce47e7e6c19e9f833a5618963a260b806c6f03fb1bf96ec68718096"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 9 prefix because the canonical itinerary node already carries its own day numbering."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b36321b4c85268f2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p122",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          },
+          {
+            "ref": "word/document.xml:p126",
+            "textSha256": "5622c47a4ce47e7e6c19e9f833a5618963a260b806c6f03fb1bf96ec68718096"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified park and departure location names into the canonical regional label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4c5eae24f52c10b7",
+      "field": "media.alt",
+      "sourceTextSha256": "bb208d29a71107d5d38c7dd2a6d08739cac2e3ea568e7e021c07492aa53193b3",
+      "text": "Stone buildings with red roofs by the bay near Puerto Natales, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac-a7bf2bb6-mw22ch45",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no corresponding photograph-specific alt or hover caption; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:aae821d179b37463",
+      "field": "media.hover",
+      "sourceTextSha256": "dc464db9dd9b28dc84a110c6657d4eaf22aa879f21bdbf65665cd423ef28061c",
+      "text": "Around Puerto Natales: coastal buildings beneath clouds and snow-capped mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac-a7bf2bb6-mw22ch45",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no corresponding photograph-specific alt or hover caption; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "410d062818a92595c2b99ef00cd496f6d1c02aae81162319715aecb76558474e",
+      "text": "Marble arches above the clear turquoise waters of Lake General Carrera, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac-a7bf2bb6-mw22ch45",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no corresponding photograph-specific alt or hover caption; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "3a9aefdefddc9f2f0c44ae4a93e46b526298430f98d8f0a5ce555aeabbd47f8e",
+      "text": "Chile's Marble Caves: arches and striped rock walls by the water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac-a7bf2bb6-mw22ch45",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no corresponding photograph-specific alt or hover caption; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "9a6fd0d9cb30c3b32561f13e3d641c964732bd17e83f624dc94962c0741b6c34",
+      "text": "\n## Price and accommodation\n\n| Option | USD |\n| --- | ---: |\n| 2 PAX DBL | 6994 |\n\nThe rate is for two travellers sharing a double room. The package includes accommodation with breakfast (BB) and services as per the programme.\n\n| Days | Hotel | Room and meals | Nights |\n| --- | --- | --- | ---: |\n| 1–2 | Novotel Santiago Providencia | Standard Room, BB | 1 |\n| 2–4 | Hotel Kimal | Standard Room, BB | 2 |\n| 4–5 | Novotel Santiago Providencia | Standard Room, BB | 1 |\n| 5–7 | El Puesto Patagonia | Standard Room, BB | 2 |\n| 7–9 | Hotel Altiplanico Puerto Natales | Standard Room, BB | 2 |\n\n",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+        "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "a235f43f04013939332b948b8ce11ae672976da17507f6a39b09b8e1b96f1d26"
+          },
+          {
+            "ref": "word/document.xml:p138",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          },
+          {
+            "ref": "word/document.xml:p139",
+            "textSha256": "745c9a8408457dc0538482dfd85feeaeaad1ebd20a45860107b08e84d438919a"
+          },
+          {
+            "ref": "word/document.xml:p142",
+            "textSha256": "4c18f946630fd16f351a2630d0ee8d288e98e1492662651d3065aeefc40368e9"
+          },
+          {
+            "ref": "word/document.xml:p143",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          },
+          {
+            "ref": "word/document.xml:p144",
+            "textSha256": "8ac0da1a218bc27fc2dd9e50cb060d2b362f2a11930be559d170e0f263dee8e7"
+          },
+          {
+            "ref": "word/document.xml:p147",
+            "textSha256": "17fc0cefac5c943937925067fdb02be5fd02d2bebc8d3e4907447589edac7d02"
+          },
+          {
+            "ref": "word/document.xml:p148",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          },
+          {
+            "ref": "word/document.xml:p149",
+            "textSha256": "745c9a8408457dc0538482dfd85feeaeaad1ebd20a45860107b08e84d438919a"
+          },
+          {
+            "ref": "word/document.xml:p152",
+            "textSha256": "27aede9104969854e9ada77308e83f0a2c6736342a91fab22810e3c92c683d7f"
+          },
+          {
+            "ref": "word/document.xml:p153",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          },
+          {
+            "ref": "word/document.xml:p154",
+            "textSha256": "f7928d9d4933eb8c2cbacc7c04f0d875c9267ea683755d3bb2579de3850ba1d5"
+          },
+          {
+            "ref": "word/document.xml:p157",
+            "textSha256": "7fadde74a62d07bc9d60f1269c79e5cf57ba52ca81401f257dc7e7f0880a5b03"
+          },
+          {
+            "ref": "word/document.xml:p158",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          },
+          {
+            "ref": "word/document.xml:p159",
+            "textSha256": "79d28651826febf2809459952cba10981f6b570d2c9c5b62dfb19f54cbb4fd43"
+          },
+          {
+            "ref": "word/document.xml:p161",
+            "textSha256": "5fdacdf8a306191d503c179f5a3ef63d52a956f10237a2e2ebb761878785fd0d"
+          },
+          {
+            "ref": "word/document.xml:p178",
+            "textSha256": "c6ec65575090210b6f5106531cd7852a1727c48017c74f30cb342e8196dc3f9d"
+          },
+          {
+            "ref": "word/document.xml:p179",
+            "textSha256": "fe4b534f214c1c161dbeb5081c90e83b33b62a57ec85d3571760a36b4cf14532"
+          },
+          {
+            "ref": "word/document.xml:p182",
+            "textSha256": "d30b5956fda87a72cc1242a9f2bc6fce1d5c8add9ba7fe203820606ec5266723"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Reformat verified accommodation and tariff passages into the assigned canonical Markdown tables, preserving RU prices, hotel spellings, room basis and nights."
+      }
+    }
+  ]
+}

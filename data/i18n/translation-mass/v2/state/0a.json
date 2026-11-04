@@ -288,7 +288,7 @@
         "expiresAt": "2026-11-04T08:39:46.762Z"
       },
       "checkpoint": {
-        "id": "ada-en-150b76fa3667-008-cp4",
+        "id": "ada-en-150b76fa3667-008-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-150b76fa3667",
         "token": "ada-en-150b76fa3667-20261104",
@@ -364,10 +364,75 @@
                 "transformation": "compose_route_label",
                 "rationale": "Combine the quad-bike activity and afternoon transfer destination from the approved day-two paragraph into the existing day heading."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "566cc2dd3e18cd20b8c89619b49e3fa2816c4cc49fd546f1b22e758c2268c4ec",
+              "text": "Day 2 · After breakfast, an exciting quad-bike experience through the vineyards, an adventurous way to discover the landscapes of the wine region. In the afternoon, depart by private vehicle with your guide for Gramado, one of the most charming destinations in southern Brazil, known for its picturesque architecture, green landscapes and distinctive European influence. Check in and overnight in Gramado.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p68",
+                    "textSha256": "7c8b5ceda09ed8a64dcde23a78b6d2478a90fc1beb8deb5e422dea74e6ccfe83"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cde3d74b9b708ae8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "5bb260315f36f1d9c232ab04fedbe8da109c30fc63bfda412f765264f3acef44",
+              "text": "Bento Gonçalves",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p109",
+                    "textSha256": "00d046331a4f26e2a099e6292056ff3baf061334264460f5172b31749db89c33"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8e93030816689b6d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6cdb3a150f77a9be104c4f43259a7d47e19bfed7f048eae77b514487db9f092f",
+              "text": "Gramado",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p43",
+                    "textSha256": "f4209122bfaf4ca1674d722a2231a5d74b393c78ca9be4b25aeeb51693b2a039"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:33340debf224a949",
+              "field": "media.alt",
+              "sourceTextSha256": "28bc52a775b0e6f909bde53c1ef5a3bb0a170e6a4cf4f67fd7922c4476f1a3ca",
+              "text": "Rows of vines on the green hills of Bento Gonçalves, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "The verified Word 2027 paragraph 68 describes quad biking through the vineyards but contains no alt text for this vineyard photograph; translate the current RU field.",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601"
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:40:44.964Z"
+        "at": "2026-11-04T07:40:49.664Z"
       },
       "submission": null,
       "review": null,

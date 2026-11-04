@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1288,
-    "leased": 12,
-    "review": 1093,
+    "leased": 11,
+    "review": 1094,
     "ready": 16,
     "retryable": 0,
     "blocked_external": 2,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1288,
-      "leased": 12,
-      "review": 1093,
+      "leased": 11,
+      "review": 1094,
       "ready": 16,
       "retryable": 0,
       "blocked_external": 2,
@@ -146,8 +146,8 @@
         "word_2027": {
           "held": 0,
           "queued": 42,
-          "leased": 1,
-          "review": 34,
+          "leased": 0,
+          "review": 35,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 1,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T21:44:15.529Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "13": {
@@ -1389,12 +1389,6 @@
       "token": "ada-en-mw2k0q4f-amanda-token",
       "expiresAt": "2026-11-04T21:43:23.394Z",
       "generation": 2
-    },
-    "ada-en-mw2k1ucm-amanda": {
-      "jobId": "en:bulk:tour:tour_source_klassicheskaya_antarktida:b001",
-      "token": "ada-en-token-mw2k1ucm-persistent",
-      "expiresAt": "2026-11-04T21:44:15.529Z",
-      "generation": 1
     },
     "ada-en-mw2k182z-amanda": {
       "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_brazilii:b010",
@@ -5094,9 +5088,11 @@
       "jobIds": [
         "en:bulk:tour:tour_source_klassicheskaya_antarktida:b001"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_klassicheskaya_antarktida:b001"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T20:16:31.865Z"
+  "updatedAt": "2026-11-04T20:16:48.324Z"
 }

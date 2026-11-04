@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskaya_antarktida:b001",
+  "stableId": "tour_source_klassicheskaya_antarktida",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "621d35d56b8e00ee01bb5556a67f8380ae467eb1d25800476899ada9285b43e4",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "7804cd17c63eb5df7f375423d776de6cc31977216f8925e5c40de64ff7647abb",
+      "text": "Classic Antarctica",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2k1ucm-amanda",
+        "wordAbsenceReason": "The Word programme uses Antarctica Discovery; this canonical RU product title is translated separately."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a7f65ebd4ceab3489907d9a33bcb6f5cfee6429a7cc78ca8855356ccff8175cc",
+      "text": "A classic air-cruise takes you to Antarctica by plane, followed by several days aboard an expedition vessel between the South Shetland Islands and the western coast of the Antarctic Peninsula.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2k1ucm-amanda",
+        "wordAbsenceReason": "The canonical RU lead is a distinct editorial summary, absent as a complete paragraph in the Word programme."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "9920306ea3ed83a8ad7b069b69970b5d76473b976a15f945fae3f83b69e633d3",
+      "text": "$15995",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2k1ucm-amanda",
+        "wordAbsenceReason": "The verified Word document contains no tariff table or numeric price; retain the canonical RU price note unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ebdab58e1f0f2675",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4f2ced6ce890ac21bed76d4baeb27623c62a5f92161162aff81709c1501505e6",
+      "text": "Punta Arenas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mmaD6pxncEvotAbC6Sl268WV-VqkCliK",
+        "documentSha256": "81e75777e997386db95e2d386dbec6891d8e0ae6113057d93c97fb4fbdeeda94",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[8] (zero-based)",
+            "textSha256": "7803e2f00acedb4561b5c2c6f6ee682179cb48d5487b6ed55b069e309cce3960"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the destination name from the verified Word itinerary paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:381cf5c0e6b35db4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "855e7568af1ea32398355e033ebd517af0d5140396700ad66b4bc7f8773541ab",
+      "text": "King George Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mmaD6pxncEvotAbC6Sl268WV-VqkCliK",
+        "documentSha256": "81e75777e997386db95e2d386dbec6891d8e0ae6113057d93c97fb4fbdeeda94",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[10] (zero-based)",
+            "textSha256": "45dd4518e7f77847c551c0e96e5b049c84c8cf3c7f9800742a2670bd1a0fa887"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the destination name from the verified Word itinerary paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c6c3409bc2f384c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "48e3dcb3f980f1c87efa651e76295b813aeed3262d797deae99d9ce607b0d350",
+      "text": "South Shetland Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mmaD6pxncEvotAbC6Sl268WV-VqkCliK",
+        "documentSha256": "81e75777e997386db95e2d386dbec6891d8e0ae6113057d93c97fb4fbdeeda94",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[10] (zero-based)",
+            "textSha256": "45dd4518e7f77847c551c0e96e5b049c84c8cf3c7f9800742a2670bd1a0fa887"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the destination name from the verified Word itinerary paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ebdab58e1f0f2675:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4f2ced6ce890ac21bed76d4baeb27623c62a5f92161162aff81709c1501505e6",
+      "text": "Punta Arenas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mmaD6pxncEvotAbC6Sl268WV-VqkCliK",
+        "documentSha256": "81e75777e997386db95e2d386dbec6891d8e0ae6113057d93c97fb4fbdeeda94",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[26] (zero-based)",
+            "textSha256": "f92264f3953bd3c7823e46e9255b273ef2fc8864f52c3855400ce1b9c6782b1f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the destination name from the verified Word itinerary paragraph."
+      }
+    },
+    {
+      "blockId": "tour:included:61bd78e28ce2a07e",
+      "field": "included",
+      "sourceTextSha256": "5156404d6bfece780ee9b6a550a8447c27d36fa2120381dbf01f48684b6b00e2",
+      "text": "One night at the Cabo de Hornos hotel in Punta Arenas or similar with breakfast on the day of the scheduled return flight from Antarctica.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mmaD6pxncEvotAbC6Sl268WV-VqkCliK",
+        "documentSha256": "81e75777e997386db95e2d386dbec6891d8e0ae6113057d93c97fb4fbdeeda94",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[42] (zero-based)",
+            "textSha256": "16e5b80a3c4245150ed74589f8341759c69f224a1a38aac10b1c823dd11ca991"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the list marker from the verified Word included service."
+      }
+    }
+  ]
+}

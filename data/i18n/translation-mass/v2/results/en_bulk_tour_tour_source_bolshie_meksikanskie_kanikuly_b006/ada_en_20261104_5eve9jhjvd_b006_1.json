@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b006",
+  "stableId": "tour_source_bolshie_meksikanskie_kanikuly",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "52b4bc85f701413fed374790ebd97fa02d8f5de3ede555b156e4fd4ac463ed48",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:e732bb5c4ef486dc",
+      "field": "media.hover",
+      "sourceTextSha256": "a67ec5b4cf715f27e25ac252e33b3236b37ef1acd8870713f05aa6f95308c148",
+      "text": "Teotihuacan: a pyramid behind ancient stone platforms",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no image-specific hover caption describing this composition; translated from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "bfc7cd98439767d284a87bbd13fd38449c1c200832cf4e3120f9a89d72652e35",
+      "text": "Mexico City – Villahermosa – Palenque (145 km)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:19",
+            "textSha256": "faec4bdc224fc73c4fe7b22004e90f95fc7eef24c79c869999b30de5407db2ac"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Remove the Day 3 prefix for the itinerary title field; preserve the Word route and distance."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "08cbf85c6255df7fb6eb6da37b9acb11b3711c635c1090a7c0029a163cffe1eb",
+      "text": "Free morning in the capital. Transfer to the airport (driver only) to fly to Villahermosa.\n\nTransfer (driver only) to Palenque. Check-in at a 4* hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "c7f9d4872894a9ccb790d544738dd11d2a43fe6a3dddd3decd2e7bf2a567544f"
+          },
+          {
+            "ref": "word/document.xml:p:21",
+            "textSha256": "52970afe2277ff8dbb87d15f3856652bd5cab67dd152a611392b100ab5f68330"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:90a336c35e4dc85b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d6caecbb04aaa0ccab22e4d1d06407e4b10dec9e47f87583cf0648f6d605ed33",
+      "text": "Mexico City (Teotihuacan ruins)",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word names Mexico City and Teotihuacan but has no combined place label with this parenthetical; translated the assigned RU label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6ed843e983596fa4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f57ed2e16f6902a28ea2815e9444891b375b18545dfa87057f24c346bc325130",
+      "text": "Villahermosa",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:19",
+            "textSha256": "faec4bdc224fc73c4fe7b22004e90f95fc7eef24c79c869999b30de5407db2ac"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact place name from the Day 3 route for the single-place label field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e9aaae02c2f6d0d1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee38b98906147c1849f0d05be395ffaeb7444043e6b63380b2b869f900cc444b",
+      "text": "Palenque",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:19",
+            "textSha256": "faec4bdc224fc73c4fe7b22004e90f95fc7eef24c79c869999b30de5407db2ac"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact place name from the Day 3 route for the single-place label field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7f25894bb8a313f1",
+      "field": "media.alt",
+      "sourceTextSha256": "04f30e40fcc580d05dd80063a61fdeceed0c7d770244062b960ffcefbdd311ca",
+      "text": "Yellow Volkswagen Beetle taxi on a street in Mexico City, Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no alt text identifying the yellow Volkswagen taxi image; translated from the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:2903be9c0e09ce1b",
+      "field": "media.hover",
+      "sourceTextSha256": "9f7d119c57c3f60448ed04d170d3c1661d60b6dbfb0805da727e128971467d81",
+      "text": "Mexico City: a yellow Volkswagen taxi in city traffic",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no hover caption about the yellow Volkswagen taxi in traffic; translated from the assigned RU caption."
+      }
+    }
+  ]
+}

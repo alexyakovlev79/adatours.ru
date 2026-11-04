@@ -142,7 +142,87 @@
         "claimedAt": "2026-11-04T05:41:36.213Z",
         "expiresAt": "2026-11-04T07:11:36.213Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f801-r2-04-b005-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-run2-20261104",
+        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b005",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "21d1122394a2a9a3ecb89eb8e073c12e61c90b7115bf216860d4e9112fe1df58",
+          "blocks": [
+            {
+              "blockId": "tour:highlight_text:cc5f1adce65071f4",
+              "field": "highlight.text",
+              "sourceTextSha256": "7016575e27e2e1c9194fd2f28657751c633c338cba27d6579e26675c68e4bec9",
+              "text": "In Lima, the colonial centre gives way to modern neighbourhoods by the ocean. The programme includes the Main Square, the Convent of San Francisco, Miraflores with the Park of Love high above the Pacific Ocean, and the Larco Museum.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f801-r2",
+                "wordAbsenceReason": "The Word Lima passage lists the historic centre and Miraflores, but does not include the RU highlight's Park of Love and Larco Museum; preserve these current RU facts in translation."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:0b3d8dd0f45c72a0",
+              "field": "media.alt",
+              "sourceTextSha256": "55b6bf7140745306c38c8906e6116666f308c0fb39b515a04f18a6dceb7c435f",
+              "text": "A mosaic bench and green coastal slopes in Miraflores, Lima, Peru",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f801-r2",
+                "wordAbsenceReason": "The selected Word has itinerary prose but no image-specific alternative text for this mosaic bench and coastal slopes."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:d72f1471269709b2",
+              "field": "media.hover",
+              "sourceTextSha256": "a112d1ba7d4161dd7afe114b91fe8f357550027b58d7eff165bab5f83596d7fd",
+              "text": "Lima: the Pacific Ocean from a Miraflores viewpoint",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f801-r2",
+                "wordAbsenceReason": "The selected Word does not contain this image hover caption or the Miraflores viewpoint caption."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:d8b6ba380b50d995",
+              "field": "highlight.title",
+              "sourceTextSha256": "37262933ded34a5cc92de315eac88e40e6d512dea94030e2f6542f8ad58ab0de",
+              "text": "Cusco and Inca heritage",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[46]",
+                    "textSha256": "a852fee23a1807c51dc4ffdaac8f2ac6d618c7fc86ff2ccb07f0c490a08c0d5b"
+                  },
+                  {
+                    "ref": "word/document.xml:p[47]",
+                    "textSha256": "37fcd355ab00813b1d43cda12ad9e5b96101f8e3a3d5438a66377d7dba2a2743"
+                  },
+                  {
+                    "ref": "word/document.xml:p[132]",
+                    "textSha256": "9056e7c3f4de1c015755fd5a398024eb1c7a33ca0b29a5cc692ff42962af37b1"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the highlight heading from the Word Cusco and Inca-heritage highlight context."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:42:27.229Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

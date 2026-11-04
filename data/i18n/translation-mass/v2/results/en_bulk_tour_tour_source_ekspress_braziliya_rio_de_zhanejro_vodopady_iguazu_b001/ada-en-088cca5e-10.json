@@ -1,0 +1,157 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu:b001",
+  "stableId": "tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "74e25321bd0498ccb37e349f72b6c37a85f7827a8aaf8b6ccb2d043c7f853865",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "beddcaca8719e399fe97a67ad7a76db70279eff62410007e75def3109689e115",
+      "text": "Express Brazil: Rio de Janeiro & Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "docx/cover/title",
+            "textSha256": "6b1b5912d18088de1fb4dc11dffa11ba55c203a41155593f0a666ebe8f8e0489"
+          },
+          {
+            "ref": "docx/cover/route",
+            "textSha256": "cd2e1b7e6cb152e2158e67eaa1285b36cdcaf45983c6af9538387c6b25b81e8f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the approved English title and two destination names into the source headline."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "89b74b08c1209b06ff6e7bdd04f8017686c3ef10f2324d6dce3286a6ea13ce40",
+      "text": "Discover two of Brazil’s most iconic destinations in one unforgettable short break: the vibrant energy and legendary sights of Rio de Janeiro, then the breathtaking power of the Iguazu Falls. A perfect introduction to Brazil, combining culture, scenery and nature.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "docx/overview/lead",
+            "textSha256": "5498aff8521356bc390a917fd67f75d71e352b4a51595debf664a302ad9146a9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2886c5ba13789b79fcc32846d6f112542c71db8a3fa31937dbfbad28db1c9dd0",
+      "text": "$2110",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-088cca5e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no numerical programme price for this exact price note; the existing amount is preserved unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a2490c091d79367",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+      "text": "Rio de Janeiro, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "docx/cover/route",
+            "textSha256": "cd2e1b7e6cb152e2158e67eaa1285b36cdcaf45983c6af9538387c6b25b81e8f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expands the Word itinerary abbreviation Rio (3N) into its standard English route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:14c2fc82f9d02e3e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "645ef6106d2ce2cb43ba4a040b1b80b76d9ce40e5dfc9054a25f75f59b1357c0",
+      "text": "Foz do Iguaçu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "docx/cover/route",
+            "textSha256": "cd2e1b7e6cb152e2158e67eaa1285b36cdcaf45983c6af9538387c6b25b81e8f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expands the approved Iguaçu (2N) destination notation to the full city route label."
+      }
+    },
+    {
+      "blockId": "tour:included:0fb80ac25cbf604b",
+      "field": "included",
+      "sourceTextSha256": "83ec6658910d2d4311fcb0090b7393a8ce06f065594530147efd6006880fe257",
+      "text": "Accommodation in the suggested hotels or similar, with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "docx/conditions/included/accommodation",
+            "textSha256": "3df0471d03839d2b1cbe1551b6b6435c6dd1b0d8a0906d8166e4ed77738d437b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the list bullet from the approved English Word inclusion without changing terms."
+      }
+    },
+    {
+      "blockId": "tour:included:219889115f99ee25",
+      "field": "included",
+      "sourceTextSha256": "4f36b34bf8796a192a9d17f12cb6f503cf09fa5016ecc64b3327defac7f366db",
+      "text": "Excursions described in the programme on a shared basis with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "docx/conditions/included/excursions",
+            "textSha256": "8df8a49cdaae610ecefed08ef2fc3316ec6c9674fae9f94d0170a9d25af98a4b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the list bullet and preserves the approved English shared-guide arrangement."
+      }
+    },
+    {
+      "blockId": "tour:included:e12a02113eb1000f",
+      "field": "included",
+      "sourceTextSha256": "6cc247c582e8585fa546f2adcbefdf8656db7bdccb57181f09ae5c8833ea69ee",
+      "text": "All airport – hotel – airport transfers with driver",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "docx/conditions/included/transfers",
+            "textSha256": "3c66d46ccd6462420cb85f67044602cf43c3f8599de9db881b6aa73692818672"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the list marker while preserving the approved English transfer service wording."
+      }
+    }
+  ]
+}

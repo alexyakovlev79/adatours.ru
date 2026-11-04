@@ -198,187 +198,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "9e582c11e29e445d75f9a55107f00d15569c02a49ed069445dcc83ccec3f46cc",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "claimedAt": "2026-11-04T05:43:16.425Z",
-        "expiresAt": "2026-11-04T07:13:16.425Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f801-r2-05-b004-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b004",
-          "stableId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "9e582c11e29e445d75f9a55107f00d15569c02a49ed069445dcc83ccec3f46cc",
-          "blocks": [
-            {
-              "blockId": "tour:included:d1b258dc7dcfa1ba",
-              "field": "included",
-              "sourceTextSha256": "bd545ee79552107130f8b2834cc4fc327bbdeb924133e6f77bd40537a74acbf9",
-              "text": "Lunch included during Corcovado & Santa Teresa tour",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            },
-            {
-              "blockId": "tour:included:b736eb0dbd50c2da",
-              "field": "included",
-              "sourceTextSha256": "c9ede5848de04b83431be4da5368653a69018a72b5503b416da126fa29bc13ba",
-              "text": "Theme Party 1 dinner at the hotel in Rio",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            },
-            {
-              "blockId": "tour:included:6420c73be8925a6e",
-              "field": "included",
-              "sourceTextSha256": "42f6a42af58155444444a24fc9d237125a6a147255ac22f1579030b68f0be91b",
-              "text": "Lunch included during Tijuca Forest excursion",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            },
-            {
-              "blockId": "tour:included:6acb42a00ed9ca65",
-              "field": "included",
-              "sourceTextSha256": "128c0c871fecd41589f41be8655004833526059d1a6a04a1df45f0b05d0e8f4f",
-              "text": "Lunch at the hotel in Foz do Iguaçu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            },
-            {
-              "blockId": "tour:included:0dc0f1cd8573628e",
-              "field": "included",
-              "sourceTextSha256": "b5acc881505f80a3a50afaf8736a73e24bef9abd05d6813ff65960cbe3a11255",
-              "text": "Dinner at the hotel in Foz do Iguaçu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            },
-            {
-              "blockId": "tour:included:16164c7ff2412c2a",
-              "field": "included",
-              "sourceTextSha256": "386fd8da5509ade4592e9dfb17429f3782724a00b6c182c77ca4a6aa9a53a031",
-              "text": "Theme Party 2 dinner at the hotel in Foz do Iguaçu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            },
-            {
-              "blockId": "tour:included:82476491a1c40fbb",
-              "field": "included",
-              "sourceTextSha256": "4d8d3f264a434112b95bec5938e5cb52e222879124c70ec85d1159ba7f9be6cb",
-              "text": "Lunch at the hotel in São Paulo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            },
-            {
-              "blockId": "tour:included:3058bf165d1e69aa",
-              "field": "included",
-              "sourceTextSha256": "a6142547172d895663bc569ee47a7b2fe7467e94d65c129161cde98b076bd572",
-              "text": "Dinner at the hotel in São Paulo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
-                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "e039ee05ce7258294a665f09b30d5533fdca34d7cf8d1ff900c970c730e22dbd"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Extract the corresponding meal entry from the exact Word bullet-separated meals paragraph."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:43:54.693Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f801-r2-05-b004-v1",
+        "blobSha": "405e5c074076d46c989770707ed2b879dae99fcc",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_rio_iguazu_sao_paulo_group_9d_b004/ada-en-f801-r2-05-b004-v1.json",
+        "at": "2026-11-04T05:45:40.019Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

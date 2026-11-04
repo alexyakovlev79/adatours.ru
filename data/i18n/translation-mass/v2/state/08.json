@@ -243,7 +243,77 @@
         "claimedAt": "2026-11-04T05:48:46.352Z",
         "expiresAt": "2026-11-04T07:18:46.352Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "adaen-mw1ojnf0-zzzsf540-job07-cp4",
+        "format": "inline-v1",
+        "ownerId": "adaen-mw1ojnf0-zzzsf540",
+        "token": "tok-lnsxlpgwcpa92vym3bnf36",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b012",
+          "stableId": "tour_brazil_recife_porto_noronha_10d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "bdc377c32df00fb0aa9237f25e5556e2b43433b625093445fe7b167e09f5a265",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:1b38ab489b763bf6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+              "text": "Recife",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:25835f45b89747fa",
+              "field": "media.alt",
+              "sourceTextSha256": "29e31141ad696bd0a0a888e64e1678491534ad94cac9320df1b02339c7779b5d",
+              "text": "Yellow sailboat on clear turquoise water, seen from above",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Verified full Word OOXML has no corresponding aerial image-alt caption for a yellow sailboat on turquoise water; translate the existing RU accessibility text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:3ba2ad6d1988e9d9",
+              "field": "media.hover",
+              "sourceTextSha256": "cd4faf68a4eacb20b4b217e7525910291c4c899a6782e20724d6b455e7e14954",
+              "text": "Small wooden boat on bright blue-green seawater",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Verified full Word OOXML has no corresponding hover caption for the small wooden boat on bright seawater; translate the existing RU image caption."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "f16746e34ca5719ab6ceb3593ecacb6d6f86e02a3e4df15dbad8639a1e2d0fda",
+              "text": "Small boats in the turquoise waters of Porto de Galinhas, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Verified full Word OOXML has no matching hero-alt caption for small boats in Porto de Galinhas; translate the existing RU accessibility description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:49:36.524Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

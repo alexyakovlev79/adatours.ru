@@ -290,164 +290,22 @@
     {
       "jobId": "en:bulk:tour:tour_peru_8d:b003",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "2f7d67a538938ea78eb590d16718970dc7b720c3fafed7d700b2815b4a1f9f41",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "claimedAt": "2026-11-04T05:54:38.991Z",
-        "expiresAt": "2026-11-04T07:24:38.991Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f801-r2-10-b003-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f8019ad86757-run2-20261104",
-        "token": "ada-en-f8019ad86757-r2-824d6b397e10",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_peru_8d:b003",
-          "stableId": "tour_peru_8d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "2f7d67a538938ea78eb590d16718970dc7b720c3fafed7d700b2815b4a1f9f41",
-          "blocks": [
-            {
-              "blockId": "tour:notIncluded:ddde98c8d71040e3",
-              "field": "notIncluded",
-              "sourceTextSha256": "07c5163e3b8bf062ed82917f4775dd39898f47335da33426f77643a55cca87ca",
-              "text": "   Optional excursions",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[238]",
-                    "textSha256": "2f6be32eb10f897da0ecfed24140c8d7f0f27f710569bc5282b94ea8d0358463"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list marker for the standalone list item."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:3d505e4449cbfe60",
-              "field": "notIncluded",
-              "sourceTextSha256": "e78e97ad0a9d2036e8aecf6f0c9b2237610dbe30358e9bc971619e1afe986671",
-              "text": "   Excess baggage fees",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[239]",
-                    "textSha256": "ecc39c5f617d6c60edc253b7c787bb1b120802d825d3f32635e2d94b1565fd13"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list marker for the standalone list item."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:770cb31cd60d4654",
-              "field": "notIncluded",
-              "sourceTextSha256": "9961482d8263aef5998d717c6c7d38051848ebcf74f611f45b68ed2554dc7380",
-              "text": "   Alcoholic and soft drinks",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[240]",
-                    "textSha256": "7db596865846abb7d2692f0fb39394d249567c616d5264efe43f55e5b4c36a80"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list marker for the standalone list item."
-              }
-            },
-            {
-              "blockId": "tour:note:5aa2c628beab8b85",
-              "field": "note",
-              "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
-              "text": "If necessary, Ada Tours may replace the listed hotels with other hotels of the same category.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[148]",
-                    "textSha256": "8395718373e0fd45b27fa80125581ee0b3beef9e602b16c98e71cdede9481162"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Express the exact Word same-category hotel-substitution condition as the corresponding Ada Tours note."
-              }
-            },
-            {
-              "blockId": "tour:note:eeb2832b5b22895b",
-              "field": "note",
-              "sourceTextSha256": "05c7ec663a3193acbebd1bc1bd009ffff1b5c7055788a0c60dc32eddf5f368c5",
-              "text": "If necessary, Ada Tours may change the order of excursions while preserving the tour programme.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The selected Word does not contain the RU policy on changing the order of excursions while preserving the programme."
-              }
-            },
-            {
-              "blockId": "tour:note:64d02759479179f7",
-              "field": "note",
-              "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
-              "text": "Ada Tours is not responsible for missed hotel breakfasts due to early check-out for an early flight or excursion.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The selected Word does not contain the RU early-check-out and missed-breakfast liability note."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
-              "text": "Lima",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[52]",
-                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a4836cca1208c95",
-              "field": "itinerary.text",
-              "sourceTextSha256": "bb6a0c6cdf84a9de3621a9747dbb6ad39e4ef194813bb6a7ec2b1d7f57b26144",
-              "text": "Upon arrival in Lima, you will be met at the airport and transferred to your hotel.\n\nLima lies on the Pacific coast. Founded by the Spanish, the city combines European architecture with monuments from the Inca era. After checking in, you can rest after your flight and begin exploring Peru’s capital at your own pace.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f801-r2",
-                "wordAbsenceReason": "The selected Word Day 1 only states the airport meeting and transfer; it does not contain the current RU Pacific-coast history paragraph or the free-time description. Translate the complete current RU block."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:55:38.836Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f801-r2-10-b003-v1",
+        "blobSha": "c2fd5f59c98b00b3fb7d8f72740527f51a64b1d9",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_peru_8d_b003/ada-en-f801-r2-10-b003-v1.json",
+        "at": "2026-11-04T05:56:48.031Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

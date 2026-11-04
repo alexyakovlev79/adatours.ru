@@ -505,162 +505,22 @@
     {
       "jobId": "en:bulk:tour:tour_panama_mice_7_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "aee9bf85c4ce5c42e9785ac9b436826ae1b6bb4959dc0b7f7f2fe0099b18733f",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-5d56534e4493",
-        "token": "lease-da131c3d187149a7b813992c83ea721b",
-        "claimedAt": "2026-11-04T07:52:40.988Z",
-        "expiresAt": "2026-11-04T09:22:40.988Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-5d56534e-08-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-5d56534e4493",
-        "token": "lease-da131c3d187149a7b813992c83ea721b",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_panama_mice_7_days:b002",
-            "stableId": "tour_panama_mice_7_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "aee9bf85c4ce5c42e9785ac9b436826ae1b6bb4959dc0b7f7f2fe0099b18733f",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_label:7cc5ba1e37e79747",
-                "field": "itinerary.label",
-                "sourceTextSha256": "ffda203dde7dfa92fb71c7393cdbe3abc2e2a3911b7ad85097993a31946e423c",
-                "text": "Panama Viejo",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
-                  "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p80",
-                      "textSha256": "fee36cb2fa12fc483178c8811f31660bf01bd6806962ae4b2df16a243ffac782"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract Panama Viejo from the exact Word city sightseeing passage as the short stable place label."
-                }
-              },
-              {
-                "blockId": "tour:note:24f18741f081d749",
-                "field": "note",
-                "sourceTextSha256": "1dadb6ae50fe9a323fd2f48085c1f27e39ded6067505488029ea1231e41ca596",
-                "text": "On request. Sample programme: 12–18 September 2026.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "Word paragraph 5 gives the exact September 2026 date range but has no equivalent note identifying it as an on-request sample programme. Translate the full current RU note, preserving its example status and 2026 year; the preselected queue source explicitly records editionYear2026."
-                }
-              },
-              {
-                "blockId": "tour:included:3ad0d6ec5711e492",
-                "field": "included",
-                "sourceTextSha256": "d44c5f7808eed9bc641598988e68ae24b200d594295b05b9434489a1d4b3c842",
-                "text": "Airport meet-and-assist services and transfers according to the group’s agreed schedule",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "The Word details individual arrivals and transfer movements in paragraphs 23–25 and 90–99, but does not contain this single current RU included-summary sentence. Translate the exact RU summary, retaining the agreed group schedule qualifier."
-                }
-              },
-              {
-                "blockId": "tour:included:47831eecd9c4803f",
-                "field": "included",
-                "sourceTextSha256": "0e1f41692ae78954575f99f1a279f22da2f724f8d60c3a8aeade65b9dacf0e65",
-                "text": "Private vehicles and group coaches according to the agreed schedule",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "Word paragraphs 34,45,56,65,76,95–97 detail the private fleet and coaches by day but contain no equivalent one-line included summary with the current agreed-schedule qualifier. Translate that exact RU field without adding vehicle capacity or hours."
-                }
-              },
-              {
-                "blockId": "tour:included:5f228c99c619f816",
-                "field": "included",
-                "sourceTextSha256": "6ed68777262e55200d65e1f1ead6389c0af3a8ed184169bb7cd1853096fba254",
-                "text": "English-speaking transportation coordinator",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
-                  "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p31",
-                      "textSha256": "d9e7ab92effe8108ef1334392e0c8e6f179a544057cfe33c1e48f617dc65a688"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:included:5ba0e3113e0a0d53",
-                "field": "included",
-                "sourceTextSha256": "7601a61a0c217402d37ed18a1527b9872123cf655f20ac03cf16c59dd57fd0e7",
-                "text": "English-speaking guides for the Casco Viejo, Miraflores and Panama City tours",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "Word paragraphs 40,49 and 80 separately specify English-speaking guides for the three visits, but no exact combined included-summary sentence exists. Translate the current RU field keeping those same tour names and language."
-                }
-              },
-              {
-                "blockId": "tour:included:1fd394bc8761e69a",
-                "field": "included",
-                "sourceTextSha256": "9e325a6015c2e41dd5f3495c56c10c06e1e5e2b13491b4f7decae5f7685e15cc",
-                "text": "English-to-Spanish translator available for four hours on Day 2",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
-                  "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p32",
-                      "textSha256": "4ad7ae5deab9e61f3fb4d0070de7551e1fea81ce9885e66c130e5e4d324bb802"
-                    },
-                    {
-                      "ref": "word/document.xml:p42",
-                      "textSha256": "59d75663061639d97c0b66b6c92f7311b06302c3d63dcf64431a2fc6fedfa618"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Retain the exact Word English-to-Spanish translator service and four-hour duration, identifying the 13 September programme section as Day 2 of the 12–18 September itinerary."
-                }
-              },
-              {
-                "blockId": "tour:included:7cca60420b1ab2bf",
-                "field": "included",
-                "sourceTextSha256": "448205a6a5b7c598765c53da26cdcbd54d959c03dba1f3d0da340b4aba2fc50f",
-                "text": "Tours of Casco Viejo and Panama City, a visit to Miraflores and a boat expedition in Gamboa",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-5d56534e4493",
-                  "wordAbsenceReason": "Word paragraphs 40,49,78 and80 describe these four visits in separate daily services, not as this single included-summary field. Translate the current RU list without adding admission, duration or meal promises."
-                }
-              }
-            ]
-          },
-          "completedBlocks": 8,
-          "wordEvidence": {
-            "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
-            "sha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
-            "modifiedTime": "2026-10-19T15:50:32.632Z"
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:54:19.395Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-5d56534e-08",
+        "blobSha": "8387f43ea27c999bc4667beded9fc8ba92f1c194",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_panama_mice_7_days_b002/submit-5d56534e-08.json",
+        "at": "2026-11-04T07:54:50.405Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

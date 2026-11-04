@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2073,
-    "leased": 14,
+    "queued": 2072,
+    "leased": 15,
     "review": 322,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2073,
-      "leased": 14,
+      "queued": 2072,
+      "leased": 15,
       "review": 322,
       "ready": 1,
       "retryable": 0,
@@ -905,8 +905,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 60,
-          "leased": 0,
+          "queued": 59,
+          "leased": 1,
           "review": 5,
           "ready": 0,
           "retryable": 0,
@@ -937,7 +937,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:40:22.666Z",
       "earliestRetryAt": null
     },
     "0c": {
@@ -1424,6 +1424,12 @@
       "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b007",
       "token": "ada_en_token_abf469133bbf_20261104",
       "expiresAt": "2026-11-04T07:39:59.963Z",
+      "generation": 1
+    },
+    "ada_en_1f8e8fe01ca4_20261104": {
+      "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b009",
+      "token": "ada_en_token_1f8e8fe01ca4_20261104",
+      "expiresAt": "2026-11-04T07:40:22.666Z",
       "generation": 1
     }
   },
@@ -2469,7 +2475,8 @@
       "token": "ada_en_token_1f8e8fe01ca4_20261104",
       "jobIds": [
         "en:bulk:tour:tour_mexico_lindo_eight_days:b001",
-        "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b003"
+        "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b003",
+        "en:bulk:tour:tour_brazil_argentina_peru_14d:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_mexico_lindo_eight_days:b001",
@@ -2573,5 +2580,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:10:15.453Z"
+  "updatedAt": "2026-11-04T06:10:22.666Z"
 }

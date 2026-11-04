@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2043,
-    "leased": 17,
+    "queued": 2042,
+    "leased": 18,
     "review": 349,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2043,
-      "leased": 17,
+      "queued": 2042,
+      "leased": 18,
       "review": 349,
       "ready": 1,
       "retryable": 0,
@@ -1305,8 +1305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 65,
-          "leased": 0,
+          "queued": 64,
+          "leased": 1,
           "review": 6,
           "ready": 0,
           "retryable": 0,
@@ -1337,7 +1337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:50:48.572Z",
       "earliestRetryAt": null
     }
   },
@@ -1442,6 +1442,12 @@
       "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b010",
       "token": "ada_en_2478a2a40c1c_20261104",
       "expiresAt": "2026-11-04T07:50:40.503Z",
+      "generation": 1
+    },
+    "ada-en-1d528bec4ff4": {
+      "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b003",
+      "token": "ada-en-token-1d528bec4ff4-20261104",
+      "expiresAt": "2026-11-04T07:50:48.572Z",
       "generation": 1
     }
   },
@@ -2579,7 +2585,8 @@
       "jobIds": [
         "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b007",
         "en:bulk:tour:tour_colombia_complete_11_days:b002",
-        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b005"
+        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b005",
+        "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b007",
@@ -2674,5 +2681,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:20:40.503Z"
+  "updatedAt": "2026-11-04T06:20:48.572Z"
 }

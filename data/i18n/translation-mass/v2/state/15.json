@@ -470,199 +470,22 @@
     {
       "jobId": "en:bulk:tour:tour_peru_8d:b007",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d9037bbcb2a00bb1101bf2e1a7fc37526135b3d8ca84bc88c4c4c7542754c1b4",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "claimedAt": "2026-11-04T06:52:05.658Z",
-        "expiresAt": "2026-11-04T08:22:05.658Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-39fb6759e90b-b007-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_peru_8d:b007",
-          "stableId": "tour_peru_8d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "d9037bbcb2a00bb1101bf2e1a7fc37526135b3d8ca84bc88c4c4c7542754c1b4",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:ebe1b3dd813e8a53",
-              "field": "itinerary.label",
-              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
-              "text": "Cusco",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p37",
-                    "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:cb3be3bd28c316c5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
-              "text": "Puno",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p4",
-                    "textSha256": "537a353f5ab42040b4154bfb4d70321bd864f4334f316295b6c28ddfa6f11c03"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the confirmed Word city name for the existing linked place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:1882b9b849625851",
-              "field": "media.alt",
-              "sourceTextSha256": "417fab96cc8e714eab8afc372ed306bd085e78fda32c199a339e8d9c552f5ae7",
-              "text": "Reed huts on a floating Uros island in the blue waters of Lake Titicaca, Puno, Peru",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word contains no matching photograph alternative text; translate current RU media.alt."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:3e1de1906d41c1c9",
-              "field": "media.hover",
-              "sourceTextSha256": "973488c32115837f931aaf03078171158f47fbd4a2819a99846e2ef1a5798847",
-              "text": "Uros: huts on a reed island on Lake Titicaca",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word contains no matching photograph hover caption; translate current RU media.hover."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
-              "field": "itinerary.title",
-              "sourceTextSha256": "5840e7f952e803019929ab3e04839b99fe72ac0350844da836e2c809a0fd1d8d",
-              "text": "Puno — Lake Titicaca — Lima",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p4",
-                    "textSha256": "537a353f5ab42040b4154bfb4d70321bd864f4334f316295b6c28ddfa6f11c03"
-                  },
-                  {
-                    "ref": "word/document.xml:p97",
-                    "textSha256": "02858c0a608eb9f064de4d81ad6eadc09c1b2c895f6f2ae0e19ad6c201d91754"
-                  },
-                  {
-                    "ref": "word/document.xml:p106",
-                    "textSha256": "d824c23bbf8e2b31749f182ab629efd6e98b6f94f8383f1991ef65d6a365d33a"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Compose the existing itinerary title from the confirmed Word destinations and return-flight paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
-              "field": "itinerary.text",
-              "sourceTextSha256": "12cb8c627fbfcaee3c75892d5221e66d2e093746ecef13eee286c823cd6d3c19",
-              "text": "Day 6    The Uros and Taquile islands\n\nBreakfast and transfer to the port for a day on Lake Titicaca. For many Peruvians the lake is sacred: according to tradition, Manco Cápac, the first Inca, a descendant of the Sun, was born from its waters. Today the Uros people, who live on its floating islands, consider themselves “people of the lake”.\n\nVisit the floating reed islands of the Uros, made by hand from totora reeds, to learn about their history and way of life, browse local crafts and ride on a traditional reed boat. Continue to Taquile Island, where time seems to stand still: there are no vehicles, and the main village lies high above the lake at about 3,950 metres. The island is famous for its weaving traditions, proclaimed a Masterpiece of the Oral and Intangible Heritage of Humanity by UNESCO in 2005. Lunch on the island, then return to Puno for the night.\n\nDay 7 · Breakfast and transfer to Juliaca airport for your flight to Lima; on arrival, meeting and transfer to the hotel. Free time in Lima, or the optional Lima city tour and Casa Aliaga museum (see Optional excursions).",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p94",
-                    "textSha256": "4357fdb6f5bfc7e7b8a9b9ca769d9dae80a68f20310d08a5d995e26793877727"
-                  },
-                  {
-                    "ref": "word/document.xml:p97",
-                    "textSha256": "02858c0a608eb9f064de4d81ad6eadc09c1b2c895f6f2ae0e19ad6c201d91754"
-                  },
-                  {
-                    "ref": "word/document.xml:p98",
-                    "textSha256": "0c9b98dd5d29349acf8e9ddf25c62c9198997a882d362879a35da3423a07a0cf"
-                  },
-                  {
-                    "ref": "word/document.xml:p106",
-                    "textSha256": "d824c23bbf8e2b31749f182ab629efd6e98b6f94f8383f1991ef65d6a365d33a"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:d7991121306c7dd7",
-              "field": "itinerary.label",
-              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
-              "text": "Puno",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p4",
-                    "textSha256": "537a353f5ab42040b4154bfb4d70321bd864f4334f316295b6c28ddfa6f11c03"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the confirmed Word city name for the existing linked place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:075e7da59383d570",
-              "field": "itinerary.label",
-              "sourceTextSha256": "5778759e9dc062e7b9f6e49736c50335b3b928140004e2a2b4bf609a605cb8be",
-              "text": "Lake Titicaca",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
-                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p49",
-                    "textSha256": "c5fcb2ab783fae42bfb14a3ea436b668e9a795f313a252e2983ed947a4126cd6"
-                  }
-                ]
-              }
-            }
-          ],
-          "sourceNotes": [
-            {
-              "kind": "word_2027_programme_difference",
-              "detail": "The confirmed Word separates the Uros/Taquile visit (Day 6, night in Puno) and the flight from Juliaca to Lima (Day 7). Word paragraph 108 includes that flight; the current RU block combines these and calls flights excluded. EN follows the confirmed Word; no shared commercial fields changed.",
-              "paragraphRefs": [
-                "word/document.xml:p94",
-                "word/document.xml:p98",
-                "word/document.xml:p106",
-                "word/document.xml:p108"
-              ]
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:52:55.534Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-39fb6759e90b-save-08",
+        "blobSha": "719a972ed797fd453198ca83a63544f8773ada2f",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_peru_8d_b007/ada-en-20261104-39fb6759e90b-save-08.json",
+        "at": "2026-11-04T06:59:49.647Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

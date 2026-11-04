@@ -1027,7 +1027,134 @@
         "claimedAt": "2026-11-04T06:24:22.973Z",
         "expiresAt": "2026-11-04T07:54:22.973Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-f15fc6575170-s02-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-f15fc6575170",
+        "token": "tok-a6c7288eaf078ffcfbb24346ad",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b001",
+          "stableId": "tour_source_3_vzglyada_na_kosta_riku",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "9fe76de21cb54e5176656a4c129f019e0627117ca0b321241e94e5e6cc67ab79",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "823bd1c84b7bb2067fda24898812cde24b6fcafbd111f5d3f617c8da825c2d5f",
+              "text": "Costa Rica in 3 Steps",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p3",
+                    "textSha256": "faffa85784969082aaa1b37fd4d6d736b7311c46d07d7f1102fa74e7f6bcbf86"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "421eced16b45bcb94db32dc3d98da58c348a579f3429c156a29b62be85cd4294",
+              "text": "Our classic programme for travellers who want to see the best of Costa Rica and relax: a few days among the country’s finest attractions, Poás Volcano, La Paz Waterfall Gardens and Arenal, followed by six nights by the sea on the North Pacific coast, in a beach hotel chosen to suit your budget and expectations.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p18",
+                    "textSha256": "0169e02481ea051530aa42dd455f392187a046b7907fab2f3915f3ea0910f37f"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "d7182e23aa80f38866480f192f7886f543e8b0ec54fc40934ef0776d83c28750",
+              "text": "$3721",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-f15fc6575170",
+                "wordAbsenceReason": "Current RU priceNote is $3721. The verified Word 2027 tariff table instead shows a minimum USD 2960 per person in a double room, Option 1, from two travellers. The current price is preserved pending the commercial master's amendment."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ae29ce0675a1630d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+              "text": "San José",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p104",
+                    "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+                  }
+                ]
+              }
+            }
+          ],
+          "priceAmendments": [
+            {
+              "status": "proposed_for_commercial_master",
+              "currentPriceNote": "$3721",
+              "currency": "USD",
+              "amount": 2960,
+              "basis": "per person",
+              "occupancy": "double room",
+              "minimumTravellers": 2,
+              "option": "Option 1 Pasatiempo Hotel (3-star), 6 beach nights",
+              "validity": "Any arrival date except Christmas, Easter and New Year; rates confirmed on booking.",
+              "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+              "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+              "paragraphs": [
+                {
+                  "ref": "word/document.xml#p125",
+                  "text": "$ 2,960",
+                  "textSha256": "b8da0ccd40621d8fb5c8896491244db45146f18c245727fab24671b650e6a7f6"
+                },
+                {
+                  "ref": "word/document.xml#p132",
+                  "text": "Rates per person, valid from 2 travellers for any arrival date, except Christmas, Easter and New Year.",
+                  "textSha256": "5e16d46a10803f6b5863ce38a05ffafe1034bd520eb32603997dad987df9db24"
+                },
+                {
+                  "ref": "word/document.xml#p134",
+                  "text": "PROGRAMME PRICE  ·  PER PERSON  ·  USD",
+                  "textSha256": "f80aeb821a2d1e9d240ecb26cc1c89eb38518873493828529d91f9e71df73f98"
+                },
+                {
+                  "ref": "word/document.xml#p135",
+                  "text": "From $ 2,960",
+                  "textSha256": "8a6b1f887025153bc711f42859035c04d5084c7e5a6fbffd415c959f46554b2c"
+                },
+                {
+                  "ref": "word/document.xml#p136",
+                  "text": "Per person, Option 1 (Pasatiempo Hotel), double room. Includes hotels with breakfast and the excursions described.",
+                  "textSha256": "bd7d8ec3e3faedc96906c5d2ae41ffa7c7a30198335b5fa3291f23cedbf39f55"
+                },
+                {
+                  "ref": "word/document.xml#p137",
+                  "text": "Price per person in USD, minimum 2 travellers; not valid at Christmas, New Year and Easter.",
+                  "textSha256": "701ad2e9ad4c6af2a0f914d25e27458c9113dbd652e9279d1c8d136793b5b32d"
+                }
+              ]
+            }
+          ]
+        },
+        "at": "2026-11-04T06:25:21.982Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

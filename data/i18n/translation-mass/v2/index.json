@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1656,
-    "leased": 13,
+    "queued": 1655,
+    "leased": 14,
     "review": 740,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1656,
-      "leased": 13,
+      "queued": 1655,
+      "leased": 14,
       "review": 740,
       "ready": 1,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 51,
-          "leased": 0,
+          "queued": 50,
+          "leased": 1,
           "review": 27,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T15:16:35.424Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b004",
       "token": "ada-en-token-fd1138068893-20261104",
       "expiresAt": "2026-11-04T15:16:08.865Z",
+      "generation": 1
+    },
+    "ada-en-704e3e13-mw25t7t2": {
+      "jobId": "en:bulk:tour:tour_source_chili_argentina:b010",
+      "token": "token-mw25t7t2-704e3e13",
+      "expiresAt": "2026-11-04T15:16:35.424Z",
       "generation": 1
     }
   },
@@ -3772,7 +3778,8 @@
         "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b001",
         "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b007",
         "en:bulk:tour:tour_source_braziliya_s_vodopadami_na_novyj_god:b007",
-        "en:bulk:tour:tour_source_colombia_bogota_cultural_ru:b009"
+        "en:bulk:tour:tour_source_colombia_bogota_cultural_ru:b009",
+        "en:bulk:tour:tour_source_chili_argentina:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_nicaragua_best_10_days:b005",
@@ -3902,5 +3909,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T13:46:27.992Z"
+  "updatedAt": "2026-11-04T13:46:35.424Z"
 }

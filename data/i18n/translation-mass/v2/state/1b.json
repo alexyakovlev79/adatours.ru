@@ -132,178 +132,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b014",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b7314051a70d051c073b8ebafd7836420f699de53eea2301f900d647864545b6",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-3241f5702d2d",
-        "token": "ada-en-token-3241f5702d2d-20261104",
-        "claimedAt": "2026-11-04T06:43:39.648Z",
-        "expiresAt": "2026-11-04T08:13:39.648Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-3241f5702d2d-02-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-3241f5702d2d",
-        "token": "ada-en-token-3241f5702d2d-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b014",
-          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b7314051a70d051c073b8ebafd7836420f699de53eea2301f900d647864545b6",
-          "blocks": [
-            {
-              "blockId": "tour:contentBlock_text:39bd0021dacd6cd8",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "aea3244d7e4bcf4e16f036ae4c05b5fb5171ac87cbfaaaeee88ddd6976d5e0a8",
-              "text": "The Santiago city tour with an English-speaking guide is included.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p115",
-                    "textSha256": "fcca0fe65a105f83ab80736a17db1ea5e94b8af1975d576bfdcf5f91fd631fe6"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the Santiago city-tour inclusion and guide language from the exact included-services line, omitting the separate transfer and breakfast items."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:0a0fe15a81077c2d",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "048b0d7eb4ec1e0aa8a846142a70be599cab8829083690ff7bcfc942d9af7681",
-              "text": "The Maipo Valley wineries and wine tasting cost USD 230 per person, with a minimum of 2 participants.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p255",
-                    "textSha256": "3a84c1c7087e1fa7e7230c58cb10f079afaef5bb2630b89a47f03a1fbee01960"
-                  },
-                  {
-                    "ref": "word/document.xml:p257",
-                    "textSha256": "3dd84812e6daa3ebb4be487859f667d16bbf5803e4b7340bf98fd70d5276bf7c"
-                  },
-                  {
-                    "ref": "word/document.xml:p258",
-                    "textSha256": "105d6f89ff1556458c2f05c2bfae419eb13a0c92ecaad57c97de1ff2a3956b0d"
-                  },
-                  {
-                    "ref": "word/document.xml:p259",
-                    "textSha256": "9da6575dad25cb0243d224f92d5e3a694259408f2b843abe9601ee189b9472e9"
-                  }
-                ],
-                "transformation": "compose_tariff_summary",
-                "rationale": "Combine the exact optional excursion name, per-person USD rate, minimum participation and tasting description into the current standalone tariff sentence."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:8ae6dba7c7713a0f",
-              "field": "media.alt",
-              "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
-              "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-3241f5702d2d",
-                "wordAbsenceReason": "The verified Word document has no matching image alt text for this Santiago street photograph; translate the exact current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:f76823f601bc2496",
-              "field": "itinerary.title",
-              "sourceTextSha256": "393302a02fcde5c8b1947e229468fe1b4ae1980c579f13c947ea974201a80717",
-              "text": "Departure from Santiago de Chile",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p112",
-                    "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
-                  },
-                  {
-                    "ref": "word/document.xml:p114",
-                    "textSha256": "772acedfc9231e26e5f81d5598f75c0a2b349c301fd04a5d8979fa64f9c20df2"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Combine the Santiago place heading and the Day 10 airport departure passage into the itinerary day title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "2b539d7e869c874614eea4865c18c94e1924b43bc226b1d3453de2204f08e5a4",
-              "text": "Day 10 · Breakfast. At the appointed time, transfer with driver to the airport for your flight home.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p114",
-                    "textSha256": "772acedfc9231e26e5f81d5598f75c0a2b349c301fd04a5d8979fa64f9c20df2"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a807dfee0c6eab0a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
-              "text": "Santiago de Chile",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p112",
-                    "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:1da41f8f7f52600d",
-              "field": "media.alt",
-              "sourceTextSha256": "3fecf00616c77c071ae999eb03172b5aa079028d15cb3ce319505e39408ad620",
-              "text": "Santiago in the evening, with the river, bridges and road lights, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-3241f5702d2d",
-                "wordAbsenceReason": "The verified Word document has no corresponding alt text for the evening city image; translate the current RU description."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:68ebdd10346d3d20",
-              "field": "media.alt",
-              "sourceTextSha256": "d2047a38c275dced93b9c93a4297ff189e74e478881341c81f52b33cdbe2a541",
-              "text": "A couple dances Argentine tango on a stage in Buenos Aires — illustration",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-3241f5702d2d",
-                "wordAbsenceReason": "The verified Word document contains no matching alt description for the illustrated hero image; translate the current RU text including its illustration qualifier."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:45:06.628Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-3241f5702d2d-02",
+        "blobSha": "7f55df9a42dc8f6c29dd6894ab8ba1ec77295452",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b014/ada-en-3241f5702d2d-02.json",
+        "at": "2026-11-04T06:54:18.067Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

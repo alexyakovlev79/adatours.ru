@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2169,
-    "leased": 3,
+    "queued": 2168,
+    "leased": 4,
     "review": 237,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2169,
-      "leased": 3,
+      "queued": 2168,
+      "leased": 4,
       "review": 237,
       "ready": 1,
       "retryable": 0,
@@ -545,8 +545,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 67,
-          "leased": 0,
+          "queued": 66,
+          "leased": 1,
           "review": 12,
           "ready": 0,
           "retryable": 0,
@@ -577,7 +577,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:04:46.999Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
       "token": "ca9d19d3a2444d3eb27e82c408f2b400",
       "expiresAt": "2026-11-04T07:03:24.818Z",
+      "generation": 2
+    },
+    "ada-en-f8019ad86757-run2-20261104": {
+      "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b003",
+      "token": "ada-en-f8019ad86757-r2-824d6b397e10",
+      "expiresAt": "2026-11-04T07:04:46.999Z",
       "generation": 2
     }
   },
@@ -2196,7 +2202,8 @@
     "ada-en-f8019ad86757-run2-20261104": {
       "token": "ada-en-f8019ad86757-r2-824d6b397e10",
       "jobIds": [
-        "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b006"
+        "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b006",
+        "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b006"
@@ -2218,5 +2225,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:34:27.338Z"
+  "updatedAt": "2026-11-04T05:34:46.999Z"
 }

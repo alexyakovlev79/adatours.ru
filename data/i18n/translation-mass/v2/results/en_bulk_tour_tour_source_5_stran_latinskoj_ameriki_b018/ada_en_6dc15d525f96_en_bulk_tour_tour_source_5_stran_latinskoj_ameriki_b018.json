@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b018",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "bb69f0c57b0d0b96bb9dd66ae8668a1e9d388610b0afb280feb033118713b7bd",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:a07aab1c40e8cc61",
+      "field": "itinerary.label",
+      "sourceTextSha256": "dd3cc90095f66d7b8835288edeaf327491b8092eda1bf53b50ae100350bbe80d",
+      "text": "Pucará",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0133",
+            "textSha256": "0d97de4f60a7d7b8a89fe28de4294f8f3d712d89dfe2825d6399212705129232"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place name from the corresponding Word route paragraph as the location label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5b3ad68bdf237ff5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0196",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cc5cafcb982f76d7",
+      "field": "media.alt",
+      "sourceTextSha256": "929c2845385b195eab541b26d338cb3c2927eddc19821caff2444604f45f78f2",
+      "text": "A woman in a black hat carries a child in a colourful woven carrier in the Puno region, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document has no caption describing this specific photograph of a woman carrying a child."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:bc85cd73333c2baf",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+      "text": "Machu Picchu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0051",
+            "textSha256": "a0f44a8110a7777fbf0277e9845c181e280e59750973a6ce48a30a93c580fe2a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:99d4ebb0270da8fa",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8f76afee8da6dd0a9b5c33923ee35e6ba495a79faf7911a2a8e4c980c4b35b16",
+      "text": "Full-day group excursion to Machu Picchu, the “lost city of the Incas”, with an English-speaking guide. Built on a mountaintop of huge stone blocks fitted without mortar and surrounded by dense jungle, the citadel was never found by the Spanish conquerors and was brought to international attention in 1911 by the American explorer Hiram Bingham. Dinner, return to Cusco by train and transfer to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0134",
+            "textSha256": "4b5725623cc5085e33c2fcc9fc35281fb483418043fc00d719236f5d3f111c56"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the day marker because the day number is supplied by the itinerary structure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6c4c198c75cdbbc7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+      "text": "Machu Picchu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0051",
+            "textSha256": "a0f44a8110a7777fbf0277e9845c181e280e59750973a6ce48a30a93c580fe2a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2d4f06778253e7ca",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+        "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0196",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:bf85c8f12106e234",
+      "field": "media.alt",
+      "sourceTextSha256": "35ffa8c708e3d214c7e2d8fd70d7c74e05d8b7829c83ca791e1e61a5a462d96e",
+      "text": "Stone walls of Machu Picchu against green mountain slopes, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document has no image description of these stone walls against green mountain slopes."
+      }
+    }
+  ]
+}

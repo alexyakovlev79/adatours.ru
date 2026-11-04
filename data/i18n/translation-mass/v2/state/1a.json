@@ -528,7 +528,7 @@
         "expiresAt": "2026-11-04T08:21:55.832Z"
       },
       "checkpoint": {
-        "id": "ada-en-2ee259e72fda-003-04",
+        "id": "ada-en-2ee259e72fda-003-08",
         "format": "inline-v1",
         "ownerId": "ada-en-2ee259e72fda-20261104",
         "token": "ada-en-2ee259e72fda-token-20261104",
@@ -605,10 +605,69 @@
                 "transformation": "compose_route_label",
                 "rationale": "Compose the current heading from the Word Buenos Aires heading and its tango show paragraph, preserving the declared activities."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "field": "itinerary.text",
+              "sourceTextSha256": "ab7de5dbba2fcb017c04adfa67dc7d884a00b5c9d8ea826122c06a20a3c64f1e",
+              "text": "After breakfast, take a sightseeing tour of Buenos Aires with an English-speaking guide, lasting around 3 hours.\n\nAt Plaza de Mayo, you will see the Casa Rosada, the Cathedral and government buildings. Your guide will explain the square’s history and its connection with Evita Perón.\n\nThe route continues through La Boca, San Telmo, Recoleta, the Obelisk area and modern Puerto Madero. The old quarters gradually give way to broad avenues and the glass buildings of the business districts.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word p100 describes the same three-hour city tour but does not contain the current RU Cathedral/history explanation and urban-transition narrative as a corresponding paragraph. Translate the current RU block; guide language follows editorial 4.1.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fee6a8b6a89f30bf",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:d1cd60580ff27225",
+              "field": "media.alt",
+              "sourceTextSha256": "637ab2b29ebc76aba7ede8fbbd52192e514acb14ec7239ef13290566a84777b3",
+              "text": "The dome of the Argentine Congress above the neighbourhoods of Buenos Aires at sunset",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word itinerary and tables contain no corresponding caption for this current RU photograph; translate the exact RU media text without changing the image.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:40b0d5653d8bcf18",
+              "field": "media.hover",
+              "sourceTextSha256": "e3fc85af3bf3bdc26892fc7f83351780750b8b84ab39ffce60114030732f3be6",
+              "text": "Buenos Aires: the green dome of Congress beneath an orange sky",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word itinerary and tables contain no corresponding caption for this current RU photograph; translate the exact RU media text without changing the image.",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:52:38.328Z"
+        "at": "2026-11-04T06:52:42.632Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,175 @@
+{
+  "jobId": "en:bulk:tour:tour_iguazu_incentive_3_days:b002",
+  "stableId": "tour_iguazu_incentive_3_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "176303027fa9433b0e8334b470cc3f3aeb32b4e934f616850789de95d1421111",
+  "wordEvidence": {
+    "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+    "sha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+    "shaVerified": true,
+    "modifiedTime": "2026-09-21T19:23:33.768Z",
+    "title": "5-Iguazu incentive3d2n.docx",
+    "yearFolder": 2027,
+    "editionYear": null,
+    "paragraphsFile": "/workspace/scratch/335ed4b6e466/ada_en_run/word_1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al.paragraphs.json"
+  },
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:c619020d01192c67",
+      "field": "itinerary.label",
+      "sourceTextSha256": "59876a6f0ac60145697b9a039c33853a33bf01e2b48f0ccf5c479670a8f445f6",
+      "text": "Devil's Throat",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p7",
+            "textSha256": "dd780765bdd82ab3524ed88e6ea8096a3553c7c6b253dc22f0b5915acf154497"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact named waterfall/gorge from the verified Word paragraph as the site's standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:included:989b44ba5383843a",
+      "field": "included",
+      "sourceTextSha256": "4b7e78a2512f4ed3e70c355376353834c88636c9aa3e44bbbf8bac79d270aac0",
+      "text": "Accommodation in hotels as specified in the programme, 2 nights.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-ef1fdb2517c4",
+        "wordAbsenceReason": "Word paragraph 47 lists accommodation and paragraph 3 gives 2 nights, but the source has no exact single inclusions sentence containing both. Translate this current RU inclusions item with its stated night count.",
+        "wordFileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "wordDocumentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "supportingParagraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "de5fc7f38e0b8c10619a69f1022bea83ac0da6a3c1f02e848c3064c28906b5a0"
+          },
+          {
+            "ref": "word/document.xml:p47",
+            "textSha256": "14caac13f7e73b18459849bec9ebce46d901ee613be8cdf543bd076d50fd9212"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:7fb9cc851b5b626b",
+      "field": "included",
+      "sourceTextSha256": "7bc07300f5e8e4429cd7b0cc5f2ab91a84be1fb9ab6b7e0ee9276e45ebf4cbc3",
+      "text": "Excursions according to the program with an English-speaking guide (in a group)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p48",
+            "textSha256": "f0622b510a56bf5bfb6ad9df7838fc94cd15e9b0df263ecc56e06fd04df95737"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:ceb8a484262cf549",
+      "field": "included",
+      "sourceTextSha256": "84c0142ebac4b829110661b1e157ddfd2d4b8f0778aba59235b2d1d02dc5a1f8",
+      "text": "Transfers airport/hotel/airport with driver ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "372dcd2234fd6001979ae39990584598c65a141d5326e0c0c2379a3fe34bd905"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:2e35d82dac87e01a",
+      "field": "notIncluded",
+      "sourceTextSha256": "44780746e9b4004045f57cf66842347dc3d0e03f06329e885084ff51821c527d",
+      "text": "Optional excursions and activities.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-ef1fdb2517c4",
+        "wordAbsenceReason": "Word paragraph 52 says only 'Optional excursions'; no exact exclusions item includes the additional activity category used in current RU. Translate the current RU scope without expanding it.",
+        "wordFileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "wordDocumentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "supportingParagraphs": [
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "7408a3bdf15120ed8d16576dce42b7790490da1407a62107059f11bac4e8c5cc"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:f5af06d67b66eb0d",
+      "field": "notIncluded",
+      "sourceTextSha256": "c9f99976ba19d7a271eefe0d25c7a31f0fc0679f7398b0f78121b0245e0b9e2d",
+      "text": "Food and drinks during transfers",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p53",
+            "textSha256": "7e13a69f66710e011bde2057565e9dfece566003a67a48c3ceb0448854904798"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:85e42307b61ca9d2",
+      "field": "notIncluded",
+      "sourceTextSha256": "236047bf5a1673051fe1fd8eaf58445cd44c624b58f3e99bd0fe6ed34fbafdee",
+      "text": "International Flight",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p54",
+            "textSha256": "b74a57c39adcb9a942bd9d60fb74d46f1d8cedf01a795eb054e0bfe7e17ff915"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:db2be1880f1abd7e",
+      "field": "note",
+      "sourceTextSha256": "6d24f3f4edcb354b1116a97443a56a612fb4af5fa0eb7ab8c5376d89d1138dd4",
+      "text": "A helicopter flight over the falls is an optional experience lasting 10 minutes.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-ef1fdb2517c4",
+        "wordAbsenceReason": "Word paragraphs 34–35 describe a 10-minute helicopter flight but do not contain the current RU note's explicit optional status in a concise sentence. Translate the RU optional-service note and retain the exact duration.",
+        "wordFileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+        "wordDocumentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+        "supportingParagraphs": [
+          {
+            "ref": "word/document.xml:p34",
+            "textSha256": "3dfac3f36be44c884db8f45818f514f2cba9f38a431fad147a354f65c0248d9f"
+          },
+          {
+            "ref": "word/document.xml:p35",
+            "textSha256": "9375c9759aef2e71e0260099c1cc9d734510748aeda3e0f585719fe72d8cd1fb"
+          }
+        ]
+      }
+    }
+  ]
+}

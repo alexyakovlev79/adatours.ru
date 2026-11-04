@@ -443,7 +443,93 @@
         "claimedAt": "2026-11-04T07:06:25.753Z",
         "expiresAt": "2026-11-04T08:36:25.753Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-9a69348b6e00-03-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9a69348b6e00",
+        "token": "tok-9a69348b6e00-20261104-a1",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b003",
+            "stableId": "tour_brazil_tropical_champions_parade_rio_angra_2027",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "bfd359b9dc5ea56519431c1b26b20b528301bc0ddfa4750a3c37db098cb54a15",
+            "blocks": [
+              {
+                "blockId": "tour:note:2e64ba17469bf9a7",
+                "field": "note",
+                "sourceTextSha256": "441de2d28ed6ee6ca76826d35500a2477339d2f45764f987ecd5674464dded8e",
+                "text": "Or similar; hotels may be replaced by others of the same category.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p114",
+                      "textSha256": "af2a665965b0463447e2af41d5a6f6c9818ed69da4ca7e97c13e93baf9e0bec8"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:note:934e3e0fb0773c72",
+                "field": "note",
+                "sourceTextSha256": "124ca8c13cdcabaccb263067ffd1a7c11ad8baff1fed8fc425e4f4e29b1724a8",
+                "text": "Local 5*, 4* and 3* hotel categories may differ from familiar international standards.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "Word paragraph 143 has a general warning about hotels outside main centres, but no separate clause referring specifically to local 5*, 4* and 3* categories; this RU-specific detail is translated."
+                }
+              },
+              {
+                "blockId": "tour:note:293e26a8a45d1999",
+                "field": "note",
+                "sourceTextSha256": "e0c043dc14e907adc616c7fda5326070538213a3ac240ee7f1a59dd0e84e5fff",
+                "text": "We reserve the right to adjust the programme for reasons beyond our control (weather, strikes, road conditions, force majeure, health), always in the interest of our clients’ safety.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+                  "documentSha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p144",
+                      "textSha256": "29f371aa355983fac3464b48d17de03fd9aa4b7a84c68dfbb4b13c11f692105a"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading list dash and spaces from the approved safety and force-majeure condition."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+                "field": "itinerary.title",
+                "sourceTextSha256": "727286c5046da7a820085cd3e627a3af5ee5307eeec1f06296fd1732460aecda",
+                "text": "Arrival in Rio de Janeiro",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-9a69348b6e00",
+                  "wordAbsenceReason": "The DOCX Day 1 text covers arrival, but there is no separate Day 1 arrival heading matching this itinerary title."
+                }
+              }
+            ]
+          },
+          "completedBlockCount": 4,
+          "wordSourceVerified": {
+            "fileId": "1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_",
+            "sha256": "960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9",
+            "modifiedTime": "2026-10-26T13:05:52.351Z",
+            "localPath": "/workspace/scratch/9a69348b6e00/ada_word/champions.docx"
+          }
+        },
+        "at": "2026-11-04T07:07:49.675Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

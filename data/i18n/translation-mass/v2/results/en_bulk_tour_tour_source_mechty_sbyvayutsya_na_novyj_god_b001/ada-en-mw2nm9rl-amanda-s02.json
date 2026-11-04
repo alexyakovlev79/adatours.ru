@@ -1,0 +1,158 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b001",
+  "stableId": "tour_source_mechty_sbyvayutsya_na_novyj_god",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "742aa26c65be535cf97e34b14be81c398bf608fbbb29cacb836bc4faf68d22d5",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "bbbfc474dde6b44b468768620163235482bcd3d01e5791b9a13198cc7156337f",
+      "text": "Dreams come true! Brazil and Argentina: New Year 2026-2027",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:3",
+            "textSha256": "ea0d07c1c4d691a3c56ad0a5bd90a5ef409d47c05995d54409030f647e716e4d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "517c2516f78c896a259bf3f736c99762f9805137d172637fed770fd72e30f864",
+      "text": "Celebrate the New Year on the beaches of warm Rio de Janeiro with fireworks right  above the blue ocean! Plunge into the atmosphere of this fabulous city with its incredible nature and the feeling of eternal celebration. See the world's widest Iguazu waterfalls and the exquisite architecture of Buenos Aires, which is called the Latin American Paris. Dreams come true!!",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:11",
+            "textSha256": "ff98c0e38495e3250a71172d4cc404b154a08b53e4f82ab1c57406ed05fd01b1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "02d50e08702f541c56eec551bf0a6b09beca122b46f232a91ddf33a935620091",
+      "text": "$4373",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "a9f72018a64fa73d6103a89106d9c899ff9c9688344d8b3d53ad8b366b9ebeaa"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Preserve the existing price amount and normalize spacing and grouping from the matching Word tariff cell; no price change."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a2490c091d79367",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+      "text": "Rio de Janeiro, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:5",
+            "textSha256": "1f84b0338d351510536179f5906378c6b7328e02c84cee6c384cb8446a5ad195"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Rio de Janeiro segment from the Word route line, retaining its stated three nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:14c2fc82f9d02e3e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "645ef6106d2ce2cb43ba4a040b1b80b76d9ce40e5dfc9054a25f75f59b1357c0",
+      "text": "Foz de Iguaçu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:5",
+            "textSha256": "1f84b0338d351510536179f5906378c6b7328e02c84cee6c384cb8446a5ad195"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Foz de Iguaçu segment from the Word route line, retaining its stated two nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9b8a57323cfa90da",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2e50de159c34f1284985d1777ae3501c1433aa06aeee35526c2c767fd999ec21",
+      "text": "Buenos Aires, 4 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:5",
+            "textSha256": "1f84b0338d351510536179f5906378c6b7328e02c84cee6c384cb8446a5ad195"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Buenos Aires segment from the Word route line, retaining its stated four nights."
+      }
+    },
+    {
+      "blockId": "tour:included:636dccb3fb9a00fa",
+      "field": "included",
+      "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+      "text": "Accommodation in hotels according to the program:",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:103",
+            "textSha256": "7e3a1c87ca522b4ceeb79beae8f68f9dfa41d98a5615fdea2f8ebbc30318017c"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker and spacing for a separately rendered list item."
+      }
+    },
+    {
+      "blockId": "tour:included:e89a4643ad72a12b",
+      "field": "included",
+      "sourceTextSha256": "a515cb7af6cca05b871162db9c24f30ba02dbf9a04973488599887602caab9d1",
+      "text": "Excursions with an English-speaking guide according to the program (in a group)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hA45ATf79dqJfTjANhUzFq1yJMTpBjSs",
+        "documentSha256": "a2ea9db9af1b260a67f28f94a72af259a5749bbd8f59e7237244aefb22d2bdce",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:141",
+            "textSha256": "f96d84f12438234457ab410fc3283a31cbf5ca442680b8d07434632b7b633650"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker for a separately rendered list item."
+      }
+    }
+  ]
+}

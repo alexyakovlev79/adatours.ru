@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1406,
-    "leased": 11,
+    "queued": 1405,
+    "leased": 12,
     "review": 992,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1406,
-      "leased": 11,
+      "queued": 1405,
+      "leased": 12,
       "review": 992,
       "ready": 1,
       "retryable": 0,
@@ -1105,8 +1105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 26,
-          "leased": 0,
+          "queued": 25,
+          "leased": 1,
           "review": 49,
           "ready": 1,
           "retryable": 0,
@@ -1137,7 +1137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T20:05:54.106Z",
       "earliestRetryAt": null
     },
     "1b": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b003",
       "token": "token-mw2gds4u-d3a66e",
       "expiresAt": "2026-11-04T20:05:32.860Z",
+      "generation": 1
+    },
+    "ada-en-mw2gdgt8-single": {
+      "jobId": "en:bulk:tour:tour_source_peru_expeditoin_ru:b003",
+      "token": "tok-mw2gdgt8-3fi5n3slxrw",
+      "expiresAt": "2026-11-04T20:05:54.106Z",
       "generation": 1
     }
   },
@@ -4711,7 +4717,8 @@
       "token": "tok-mw2gdgt8-3fi5n3slxrw",
       "jobIds": [
         "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_brazilii:b002",
-        "en:bulk:tour:tour_source_pantanal_bonito:b006"
+        "en:bulk:tour:tour_source_pantanal_bonito:b006",
+        "en:bulk:tour:tour_source_peru_expeditoin_ru:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_brazilii:b002",
@@ -4720,5 +4727,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T18:35:46.353Z"
+  "updatedAt": "2026-11-04T18:35:54.106Z"
 }

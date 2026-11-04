@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2101,
-    "leased": 11,
+    "queued": 2100,
+    "leased": 12,
     "review": 297,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2101,
-      "leased": 11,
+      "queued": 2100,
+      "leased": 12,
       "review": 297,
       "ready": 1,
       "retryable": 0,
@@ -1185,8 +1185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -1217,7 +1217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:30:52.159Z",
       "earliestRetryAt": null
     },
     "1d": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b015",
       "token": "token_8c4fca0d2a61_c1970ba9",
       "expiresAt": "2026-11-04T07:29:49.275Z",
+      "generation": 1
+    },
+    "ada-en-2661932f-20261104": {
+      "jobId": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b011",
+      "token": "ada-en-token-2661932f-20261104",
+      "expiresAt": "2026-11-04T07:30:52.159Z",
       "generation": 1
     }
   },
@@ -2452,7 +2458,8 @@
     "ada-en-2661932f-20261104": {
       "token": "ada-en-token-2661932f-20261104",
       "jobIds": [
-        "en:bulk:tour:tour_mexico_lindo_eight_days:b005"
+        "en:bulk:tour:tour_mexico_lindo_eight_days:b005",
+        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b011"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_mexico_lindo_eight_days:b005"
@@ -2484,5 +2491,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:00:07.815Z"
+  "updatedAt": "2026-11-04T06:00:52.159Z"
 }

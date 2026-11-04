@@ -509,141 +509,22 @@
     {
       "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "99b42246f435de230b8feffe0e16ffde3825bf943e55e8fbf88e54ed1d5c3810",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "claimedAt": "2026-11-04T07:56:08.600Z",
-        "expiresAt": "2026-11-04T09:26:08.600Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-8526ba7437bc-b004-cp8-tour_sao_paulo_rio_october_11_days",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-8526ba7437bc",
-        "token": "ada-en-token-8526ba7437bc",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b004",
-          "stableId": "tour_sao_paulo_rio_october_11_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "99b42246f435de230b8feffe0e16ffde3825bf943e55e8fbf88e54ed1d5c3810",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:5546f48080aaf8f4",
-              "field": "media.alt",
-              "sourceTextSha256": "caf772b41b9cfddb48cd3e15ca429cd3f46e53d729467658035df6ad0098bcdc",
-              "text": "São Paulo at night with illuminated towers and a crescent moon, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The selected Word has no matching alt description of this night skyline photograph; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:a769b9de92fa6516",
-              "field": "media.hover",
-              "sourceTextSha256": "e7575ecea601b7cbe84fea7bdd768def07d333297067c8beb5d31695ce755332",
-              "text": "São Paulo, Brazil: city lights beneath the evening sky",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The selected Word has no matching hover caption for this city-lights image; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-              "field": "itinerary.title",
-              "sourceTextSha256": "74ebc6e7df50e2693ed465f5498b10e25df757e4eb076c659614fcd9b5ae6058",
-              "text": "São Paulo and Avenida Paulista",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraph 29 evokes Paulista life but contains no equivalent full standalone itinerary title naming Avenida Paulista; translated the current RU title."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:569e72e117968fcc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "883e5d3324b74e2d832e7776067f5a327f93e306641dc24660ddf339995364d1",
-              "text": "21 October: a four-hour sightseeing tour of São Paulo with an English-speaking guide is included in the programme. Breakfast at the hotel.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "Word paragraph 29 has a general guided city description and paragraph75 includes hotel breakfast, but neither contains this exact date and four-hour duration. Translated the current RU operational details without inventing missing Word content."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5f3250371c406893",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
-              "text": "São Paulo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p8",
-                    "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:56df1953b6a986bf",
-              "field": "media.alt",
-              "sourceTextSha256": "b7c8c36c199c1676ad134fc7ab8b6300c543f1fa06fe761a4ddafd01567c6821",
-              "text": "A cable-stayed bridge and high-rise towers in São Paulo in the evening light, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The Word contains no matching alt description of this bridge photograph; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:c521a84fc4c18e26",
-              "field": "media.hover",
-              "sourceTextSha256": "56c13627f323fefed5f4e17c86e37dc35308782d0c11fae8913591d6f6e2c52f",
-              "text": "São Paulo: a bridge with crossing supports beside the city’s high-rises",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-8526ba7437bc",
-                "wordAbsenceReason": "The Word contains no matching hover caption describing this bridge’s supports; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4978e57d19bd7272",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
-              "text": "São Paulo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
-                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p8",
-                    "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:58:45.665Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-8526ba7437bc-tour_sao_paulo_rio_october_11_days-b004",
+        "blobSha": "182644d5a2e462713b7f20ecd0f689bea9e3fa85",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_sao_paulo_rio_october_11_days_b004/ada-en-20261104-8526ba7437bc-tour_sao_paulo_rio_october_11_days-b004.json",
+        "at": "2026-11-04T07:59:03.018Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

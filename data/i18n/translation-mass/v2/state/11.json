@@ -304,7 +304,98 @@
         "claimedAt": "2026-11-04T06:41:23.711Z",
         "expiresAt": "2026-11-04T08:11:23.711Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-0adf912c416a-p02-s01-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-0adf912c416a-translator",
+        "token": "ada-en-0adf912c416a-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b013",
+          "stableId": "tour_chile_hidden_secrets_9_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "ffe108977836d843861c26a6f6990ad883d548dce37c7e088ec3af387d76296a",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:503b39d3ea7af174",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1053ff70c863619237b21bf402b98ab447fc19a837f8fd58579f4ea995187289",
+              "text": "Carretera Austral",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:42",
+                    "textSha256": "b13fcd61a77ed7accc1b5cfa4431fcc4c728eb094c13870646804e2bb2d11c17"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:40777f6fe4ba2d55",
+              "field": "itinerary.label",
+              "sourceTextSha256": "64c4271b5935c18354fd4e46002f72b14e5a2ee1532bdf378cafdca889ffd527",
+              "text": "Balmaceda",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:113",
+                    "textSha256": "49d7ccb815958dcd4cc61d10d868e9b7c49f84c9aa42010c572e6f438712286c"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact place name from the verified Word programme as a canonical route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3d548d4ab9148971",
+              "field": "itinerary.label",
+              "sourceTextSha256": "832e77c5b0c4e0c74296c334a94b4e4cdbc2f8874f4896c6d7fba4604bd4dd64",
+              "text": "Punta Arenas",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:113",
+                    "textSha256": "49d7ccb815958dcd4cc61d10d868e9b7c49f84c9aa42010c572e6f438712286c"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact place name from the verified Word programme as a canonical route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:59dcf023838026aa",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+              "text": "Puerto Natales & Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:113",
+                    "textSha256": "49d7ccb815958dcd4cc61d10d868e9b7c49f84c9aa42010c572e6f438712286c"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the canonical compound place label from the exact Puerto Natales and Torres del Paine names in the verified passage."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:42:42.029Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

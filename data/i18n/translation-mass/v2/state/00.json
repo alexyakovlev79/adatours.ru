@@ -545,7 +545,86 @@
         "claimedAt": "2026-11-04T07:47:23.486Z",
         "expiresAt": "2026-11-04T09:17:23.486Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a40ee2cc-p07-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-a40ee2cc",
+        "token": "ada-en-token-a40ee2cc-71df-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b007",
+          "stableId": "tour_sao_paulo_rio_october_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "6f70e7ee7233b0475a15b44aee6f3729e15fafb99aef5bdbd041e523cb114a22",
+          "sourceNotes": [
+            "Selected matching source is in the 2027 folder; its unchanged filename contains OUT2026 and editionYear is null. Existing matching reused without reinterpretation."
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:61be238cd3dae865",
+              "field": "media.hover",
+              "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+              "text": "Rio de Janeiro: the bay and Sugarloaf Mountain among the city neighbourhoods",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word contains no equivalent hover caption for this specific city-view photograph; translated the current RU media text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "c20fa275ecbe6a0d6c918b2133e0ffc8929360be9e40d9e18c29cdf8fd581bcf",
+              "text": "Sugarloaf Mountain",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "Sugarloaf appears in the embedded service-table image, not as an equivalent OOXML heading paragraph; translated the current RU day title using the confirmed place name from that table."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "55b11e68bb19beb39a001d997ad75c3eb81fc183e7c9ec800e8684bba8c4275f",
+              "text": "25 October: a four-hour excursion to Sugarloaf Mountain with an English-speaking guide. The entrance ticket is included. Breakfast at the hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The Word has a descriptive cable-car paragraph but no equivalent compact dated service note in OOXML text; the embedded table confirms 25.10, Sugarloaf, entrance inclusion, four hours and an English-speaking guide, and the Word inclusions confirm daily breakfast. Translated the current RU note."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:31416ee0d00bcea4",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "17FKGKjo_9TEGQr1-YP1TmmH-QdRPAbvq",
+                "documentSha256": "de2d1246c223fccef2a9f0aab72c4e12564c1df7b6ca5ef4a14b04c2aead134f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:1",
+                    "textSha256": "bd9434cec955f070fbb6ccf9979c6c9a6c8f7591b98aa8af898c68e2ebb25d55"
+                  },
+                  {
+                    "ref": "word/document.xml:p:9",
+                    "textSha256": "a73353d1badf71dc6ec7c27a3e1499d3518be1f76f0fd084745b116de60e0807"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracts the exact Rio de Janeiro destination name from the cover title and city heading."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:49:16.789Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

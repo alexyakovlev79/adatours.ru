@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskaya_programma_po_gvatemale:b005",
+  "stableId": "tour_source_klassicheskaya_programma_po_gvatemale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "103fb3609f48304ce2206d65f1a92b5a564b7d919f017bf8d1859d0e79c692b2",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a1f05562a5d366dff9c7b938d8ef74ee02524ff7b8f78f81cd7bb8f3942cc3a3",
+      "text": "San Juan La Laguna – Santiago Atitlán – Antigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "text:Day 3 · A boat tour of the Maya Tz’utujil towns of Lake Atitlán. First San Juan La Laguna (about 30 minutes by boat), a neat town of art galleries where painters work in the naïve style. Then Santiago Atitlán, founded in 1547 at the foot of the Atitlán volcano, the largest town on the lake, whose people live from fishing, farming and crafts such as painting, woodwork and weaving. Santiago is known for the veneration of Maximón, a folk figure who blends Maya and Catholic traditions, honoured with offerings of alcohol and cigars; visit the church, where both traditions meet, and the town hall, where the elders sit in their traditional embroidered dress. Back to Antigua. Overnight at Hotel Villa Colonial. (B)",
+            "textSha256": "7902943ccc807a280d1c5a3c9dc8a1ed1ab7fb8d605cd87ae2a8192a8b201c6d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route title uses the three named stops in the confirmed Day 3 Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8269e1e4243a69d32e9f38e6895488cb071b93f1e520ef3d40c8b7e4ec42a165",
+      "text": "A boat tour of the Maya Tz’utujil towns of Lake Atitlán. First San Juan La Laguna (about 30 minutes by boat), a neat town of art galleries where painters work in the naïve style. Then Santiago Atitlán, founded in 1547 at the foot of the Atitlán volcano, the largest town on the lake, whose people live from fishing, farming and crafts such as painting, woodwork and weaving. Santiago is known for the veneration of Maximón, a folk figure who blends Maya and Catholic traditions, honoured with offerings of alcohol and cigars; visit the church, where both traditions meet, and the town hall, where the elders sit in their traditional embroidered dress. Back to Antigua. Overnight at Hotel Villa Colonial. (B)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "text:Day 3 · A boat tour of the Maya Tz’utujil towns of Lake Atitlán. First San Juan La Laguna (about 30 minutes by boat), a neat town of art galleries where painters work in the naïve style. Then Santiago Atitlán, founded in 1547 at the foot of the Atitlán volcano, the largest town on the lake, whose people live from fishing, farming and crafts such as painting, woodwork and weaving. Santiago is known for the veneration of Maximón, a folk figure who blends Maya and Catholic traditions, honoured with offerings of alcohol and cigars; visit the church, where both traditions meet, and the town hall, where the elders sit in their traditional embroidered dress. Back to Antigua. Overnight at Hotel Villa Colonial. (B)",
+            "textSha256": "7902943ccc807a280d1c5a3c9dc8a1ed1ab7fb8d605cd87ae2a8192a8b201c6d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 3 list prefix because the existing itinerary structure already supplies the day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0430aecf95797594",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0f9c9cf3126a3243a817cc833027300d5896a9ce52642e2f57cbda1dcd59efa7",
+      "text": "Antigua Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "text:Antigua",
+            "textSha256": "26c914cb94d476cf5c57a733b93f5ebf046ca887c1083956954c8a6b520452df"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Canonical place label for Antigua in Guatemala, identified by the Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:50e9de56ea32ce83",
+      "field": "itinerary.label",
+      "sourceTextSha256": "8d95775656ab138f8d8e511d07fcf667e09c843c47c525b82991ffa55b940341",
+      "text": "Lake Atitlán",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "text:Lake Atitlán",
+            "textSha256": "750387c63bf31e2579a12de207b93d3a51306c983143d73472b06143f9192507"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fe1dfea113492e02",
+      "field": "itinerary.label",
+      "sourceTextSha256": "39425e676b5c22d5d7bebf4d210555af155726984bcab6d25a6519d77fa187ad",
+      "text": "San Juan La Laguna",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "text:San Juan La Laguna",
+            "textSha256": "073babd5cac318abcf6e0c370675c6e143e229953b1f03025a5f6f23d0699f8c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:25f4852dec8b5f73",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b8b8d9cef676f8b9709e66b1b77a09dbd47a85e70b113f727bb1d97927afabe2",
+      "text": "Santiago Atitlán",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "text:Santiago Atitlán",
+            "textSha256": "f73857707df696c6029baee1e8bad60e597de762764b8c9b3ef3ea2f2055f683"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cd6b4d50f48437c7",
+      "field": "media.alt",
+      "sourceTextSha256": "197e0872e2d29844a6686baf5b85a1b5db1822b9fe09c6a0785e99f3674d286c",
+      "text": "Blue Lake Atitlán and a volcano beyond flowers on the shore, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 contains itinerary prose, but no image-specific alt text for this shore photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6c37075af2795099",
+      "field": "media.hover",
+      "sourceTextSha256": "9de0c82a2bebad941f04f3a97e41f335cbd5fd105e7bcee93b8ed090e09a7f5a",
+      "text": "Lake Atitlán: flowers on the shore and a volcano above the blue water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2loux3-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 has no hover caption for this image; the assigned RU caption supplies its visual description."
+      }
+    }
+  ]
+}

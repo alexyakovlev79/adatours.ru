@@ -1,0 +1,157 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b001",
+  "stableId": "tour_brazil_southern_vip_7_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1fcd1bae7d7719691f162e0959e8f27fa6968e88894903523f4136ddb061c89c",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "3f9f04d375a90694ac973325f6c67e2a8e534ed5d005ab9060db93f9672ab582",
+      "text": "Southern Brazil VIP: Wine, canyons & coastal escapes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "066cdcb4fbc3d38958113331d7b29b13e8de75377ac8727e150cd9718a4f8f8d"
+          },
+          {
+            "ref": "word/document.xml:p4",
+            "textSha256": "259e945f7dd1dcc81bcbb29f07a1357d3aae2267f4b0e3d679c4ad446e78bf82"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Join the verified Word title and subtitle as the current single title field while preserving the Word wording."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "7a66ff92b92314373c8608808f82299a8c930c81ecc7424bb315e2ba197249b1",
+      "text": "From the vineyards of Bento Gonçalves, through mountain-set Gramado, to the canyons of Cambará do Sul and the ocean at Florianópolis. Over 7 days, ride quad bikes among the vines, take a hot-air balloon flight, enjoy a picnic and reach the coast by private helicopter.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-2ee259e72fda-20261104",
+        "wordAbsenceReason": "Verified Word overview p18 does not mention the quad-bike ride, Gramado stop or picnic as this concise current RU lead does; those activities are confirmed in p68/p88/p98. Translate the current RU lead without introducing additional claims.",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601"
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "1dfd05760502bf4b488b554de9be607e6e786ab76c539ccab014f7e6db94b2fd",
+      "text": "USD 10,043 per person. The price is based on a private trip for 2 passengers.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "9e1b922aca344404760e9d528d1fbe4b5edb13eba0c25931a7350320f599db15"
+          },
+          {
+            "ref": "word/document.xml:p140",
+            "textSha256": "4c6a45befce6b41a053ec4dac1486cf5077242e22f5677b36a5ed7dd31822539"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combine the exact Word USD price and per-passenger private two-person basis into the current concise price note; no commercial values change."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "c4340dba85431925ddd672ce9e2080d1487fe8b11349b0df7552a10ba6c9ccd5",
+      "text": "For 2 travellers",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p12",
+            "textSha256": "60b454d8d421ce2058c852c1c9efdf4dfa7f8400441217e3cf9ec695d4d9db44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:897edb58252e60bc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d55dbe47448ba68b7000b28139fd57835f32b84db4d7eb6467cd38bd3e85d238",
+      "text": "Porto Alegre",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "5d0448a162b6577c1d2d1e0da020ae9537bcbfebd27f707767978488ff5cdb1b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the airport arrival city name Porto Alegre from the verified Word paragraph for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b4c984cb233a3f22",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5bb260315f36f1d9c232ab04fedbe8da109c30fc63bfda412f765264f3acef44",
+      "text": "Bento Gonçalves",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p109",
+            "textSha256": "00d046331a4f26e2a099e6292056ff3baf061334264460f5172b31749db89c33"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3015840f3b492775",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6cdb3a150f77a9be104c4f43259a7d47e19bfed7f048eae77b514487db9f092f",
+      "text": "Gramado",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "f4209122bfaf4ca1674d722a2231a5d74b393c78ca9be4b25aeeb51693b2a039"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2eab04e7b4c747a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ed6eff2d9d5d6bdbcf782eb0acfccd81cc018a6271904bcedcb70891a9bead73",
+      "text": "Cambará do Sul",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p119",
+            "textSha256": "78ebc7d26b001809693e6812bfc5f6ccffddbd6738be014c4907ddd95e42c85c"
+          }
+        ]
+      }
+    }
+  ]
+}

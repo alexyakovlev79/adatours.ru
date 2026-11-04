@@ -552,7 +552,112 @@
         "claimedAt": "2026-11-04T05:56:30.615Z",
         "expiresAt": "2026-11-04T07:26:30.615Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_1f8e8fe01ca4_20261104.mexico.b001.cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_1f8e8fe01ca4_20261104",
+        "token": "ada_en_token_1f8e8fe01ca4_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b001",
+          "stableId": "tour_mexico_lindo_eight_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "6b8026bf59b927bba92a1a34efebe3b9121c90b2e2175360aa8cd11f631a5366",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "860b7b53f95cb69689bb7cd024d9b36e4d8899c372989353661f94fcdbaa4ad7",
+              "text": "Mexico Lindo 2027",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[0]",
+                    "textSha256": "98db618f52e81981cf30010ab0f2aaf79e394a39bc51c0daab5b02af0e3c1850"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "dc4a1d619cbe843f0f7f50d744baec773a7807fd5af1b0809af163cd4551d549",
+              "text": "Eight days connect Mexico City with the Maya heritage of the Yucatán. After the Anthropology Museum, the pyramids of Teotihuacan and a boat trip through Xochimilco, you fly to Mérida. From there, your route takes you to Uxmal, Kabah, the Santa Bárbara cenotes and Chichén Itzá, before ending on the Caribbean coast. Seven hotel nights and tours in English and Spanish are included; the domestic flight is payable separately.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_1f8e8fe01ca4_20261104",
+                "wordAbsenceReason": "The verified Word 2027 contains the daily itinerary but no single introductory overview corresponding to this RU lead; translated the current RU summary."
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "1339f38da469667a3aaa6a75576b854b1d0f171c71aff990b80e328db976acd9",
+              "text": "From USD $1,855 per person in triple occupancy (TPL). DBL: $1,908; SGL: $2,372. 2027 rates; the Mexico City–Mérida domestic flight and accommodation on the coast are payable separately.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[3]",
+                    "textSha256": "002991e7914ba601c6056c7fa749864b19791199b8837caadac2e0934e2cde1c"
+                  },
+                  {
+                    "ref": "word/document.xml:p[4]",
+                    "textSha256": "2f618de4605b6e020c24e9ef2a04218bbf6e57f9df7b67dd35bcf7dc8fcce737"
+                  },
+                  {
+                    "ref": "word/document.xml:p[5]",
+                    "textSha256": "b4d016e3f46f645cb81cb4d7259f52e18dd131dc5974776acbc363d722001ecb"
+                  },
+                  {
+                    "ref": "word/document.xml:p[6]",
+                    "textSha256": "70f72c436e386baf3537babcd0772116f129673344de7039c7db6e7506b7c665"
+                  },
+                  {
+                    "ref": "word/document.xml:p[7]",
+                    "textSha256": "340cb05997d7490f118a03249f2495b6dd9caeb05e04120eb84cfbc74e233d4d"
+                  },
+                  {
+                    "ref": "word/document.xml:p[8]",
+                    "textSha256": "248ac86249a0c548af14ff39e2633d51fcdad90f47b9d1d92960f042c60bab7c"
+                  },
+                  {
+                    "ref": "word/document.xml:p[62]",
+                    "textSha256": "fe10adeb6c011be47fcf21333f5fdc17339208a6a578669446c91c19866ef3bd"
+                  },
+                  {
+                    "ref": "word/document.xml:p[98]",
+                    "textSha256": "665a0842e52962e380f680c815c21d88bd1b9b2f19afaef56bfbed37d0a37f57"
+                  }
+                ],
+                "transformation": "compose_tariff_summary",
+                "rationale": "Compose the compact price note from the exact USD occupancy table and the explicit domestic-flight and coastal-overnight exclusions; preserve every current RU amount and basis."
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "da91cb14da3941660f4a3bff1255161a06dd4bf448347569b756c6a6ba6c84ee",
+              "text": "Excursions",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_1f8e8fe01ca4_20261104",
+                "wordAbsenceReason": "The verified Word 2027 has no separate product-format field corresponding to the short RU catalogue label; translated this label from the current RU."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:58:15.328Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

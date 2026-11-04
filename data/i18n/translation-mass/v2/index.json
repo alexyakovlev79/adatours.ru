@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1075,
-    "leased": 9,
+    "queued": 1074,
+    "leased": 10,
     "review": 1296,
     "ready": 27,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1075,
-      "leased": 9,
+      "queued": 1074,
+      "leased": 10,
       "review": 1296,
       "ready": 27,
       "retryable": 0,
@@ -345,8 +345,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 30,
-          "leased": 0,
+          "queued": 29,
+          "leased": 1,
           "review": 43,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T00:48:26.376Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_ekstrim_v_kosta_rike:b005",
       "token": "ada-chat-5of5-20261105-0206-B-token",
       "expiresAt": "2026-11-05T00:48:14.103Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0218-b": {
+      "jobId": "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b009",
+      "token": "adaen-w2-20261105-0218-token-b",
+      "expiresAt": "2026-11-05T00:48:26.376Z",
       "generation": 1
     }
   },
@@ -5735,8 +5741,15 @@
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b008",
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b003"
       ]
+    },
+    "adaen-w2-20261105-0218-b": {
+      "token": "adaen-w2-20261105-0218-token-b",
+      "jobIds": [
+        "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b009"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T23:18:14.103Z"
+  "updatedAt": "2026-11-04T23:18:26.376Z"
 }

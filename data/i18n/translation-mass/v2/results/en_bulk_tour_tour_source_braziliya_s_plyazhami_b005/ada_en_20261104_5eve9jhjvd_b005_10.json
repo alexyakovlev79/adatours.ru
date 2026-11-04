@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_s_plyazhami:b005",
+  "stableId": "tour_source_braziliya_s_plyazhami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2cbdcacd29f26dd859ac5ee47f721c35de7a32c763c44360ae3de4a690f7a79a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "eb8fe1f6bedd7883e9b869b49c2145d5184203cf552dc912d60ccea398d2c012",
+      "text": "Day 4 · After breakfast, transfer to the airport for your flight to Foz do Iguaçu; arrival and transfer to the hotel, then a tour of the Brazilian side of the falls. On the border of Brazil, Argentina and Paraguay, within a national park of unique flora and fauna, 275 waterfalls, each with its own name, crash into the canyon of the Devil’s Throat; their name means “big water” in Guarani. The contrast between the calm, almost lazy river above the falls and the torrents boiling into the gorge below is stunning: you could watch this spectacle for hours. Optional: the Macuco Safari or the Bird Park (see Optional excursions).",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:90",
+            "textSha256": "6a0baf90731c3196d19064e7cf975fc500c3da418b08740986adfb7be6788625"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:66",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:158",
+            "textSha256": "2cf27523ab3f04e3e123d334c0f993c3ac4220151cd5d512519f09cf379a2ef9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact city name without the optional-excursion day label for the assigned place field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c5db62043ca56213",
+      "field": "media.alt",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:158",
+            "textSha256": "2cf27523ab3f04e3e123d334c0f993c3ac4220151cd5d512519f09cf379a2ef9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact city name from the Word for the assigned location-only image alt field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1c26f0bb98450328b796ed86b80cf94bdfa4e9a3ea498b27d81a725f0acd0e9e",
+      "text": "The Argentine side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:89",
+            "textSha256": "6097e6e5aed69647c7cbbfd07873919312ae2bfe2cbddc3339622a02e0b61b7a"
+          },
+          {
+            "ref": "word/document.xml:p:91",
+            "textSha256": "19c7605a0950daa9ec5ae7eb54236801390097c1ad4350a6788c166130547c1d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the day's title from the approved falls name and the Argentine-side programme description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8b6ab0596ad8cbc3a2fbf597547fbb09efa95010fd951370b61ad36999c1661f",
+      "text": "Day 5 · After breakfast, cross the Tancredo Neves Bridge over the Iguazu River to the Argentine side of the falls, which is different from the Brazilian one: here you stand under and above the falls at the same time, feeling the power of the falling water very close to you, and enjoy the national park around this astonishing beauty. See the source of the Devil’s Throat.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:91",
+            "textSha256": "19c7605a0950daa9ec5ae7eb54236801390097c1ad4350a6788c166130547c1d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5cdca6b10f2d61e8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes the Argentine side without a standalone Puerto Iguazu place name; translated the assigned RU geographical label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:37caf0df102e52c2",
+      "field": "media.alt",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XC7SzKzCjT4JKLqQFnqOC9dWFebKT9E1",
+        "documentSha256": "fe59445a1b2cb18734dd461c3b95d63aad6c27f6bf02681492f12f6906495f73",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:158",
+            "textSha256": "2cf27523ab3f04e3e123d334c0f993c3ac4220151cd5d512519f09cf379a2ef9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact city name from the Word for this second assigned location-only image alt field."
+      }
+    }
+  ]
+}

@@ -279,7 +279,7 @@
         "expiresAt": "2026-11-04T07:29:18.847Z"
       },
       "checkpoint": {
-        "id": "ada_en_2478a2a40c1c_s02_c04",
+        "id": "ada_en_2478a2a40c1c_s02_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_2478a2a40c1c",
         "token": "ada_en_2478a2a40c1c_20261104",
@@ -380,10 +380,94 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the town name from the approved Word arrival description."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:3b7e0ad0ef363a91",
+              "field": "itinerary.label",
+              "sourceTextSha256": "94a3c52897619740b9151654a93c10280ad3be618fcf4dfb6bc91ce3ff16d513",
+              "text": "Valley of the Moon (Atacama)",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p36",
+                    "textSha256": "f90298d34520d64f553369af081cd6664c1e56b6d731cd947acb04d5d3217254"
+                  },
+                  {
+                    "ref": "word/document.xml:p38",
+                    "textSha256": "3c3adf7bb469da667c1ad9a89a661d699380827585162672d74b0949899cf14f"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the contextual place label using the Word site and region names."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5c8cda0f715ac10e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "fdeb82224988222216997ad3f9bb33fec8fabac5ec01fc60d0072d64c4fb9d8f",
+              "text": "Los Flamencos National Reserve",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p38",
+                    "textSha256": "3c3adf7bb469da667c1ad9a89a661d699380827585162672d74b0949899cf14f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the reserve name from the approved Word excursion description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3d548d4ab9148971",
+              "field": "itinerary.label",
+              "sourceTextSha256": "832e77c5b0c4e0c74296c334a94b4e4cdbc2f8874f4896c6d7fba4604bd4dd64",
+              "text": "Punta Arenas",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p40",
+                    "textSha256": "e9c38ce649059e7229c8e048b93ddb71999a5344484cd2136acb101c7b453bc6"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the arrival airport city name from the Word flight and helicopter passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:59dcf023838026aa",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+              "text": "Puerto Natales & Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "ad2983b1098ec92c0df799311912cf64075066522b201d5b2c33d0e1c071f4e1"
+                  },
+                  {
+                    "ref": "word/document.xml:p40",
+                    "textSha256": "e9c38ce649059e7229c8e048b93ddb71999a5344484cd2136acb101c7b453bc6"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the existing compound RU route label from the Word hotel location and national park names."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:00:17.788Z"
+        "at": "2026-11-04T06:00:22.350Z"
       },
       "submission": null,
       "review": null,

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1856,
-    "leased": 9,
+    "queued": 1855,
+    "leased": 10,
     "review": 544,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1856,
-      "leased": 9,
+      "queued": 1855,
+      "leased": 10,
       "review": 544,
       "ready": 1,
       "retryable": 0,
@@ -1025,8 +1025,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 64,
-          "leased": 0,
+          "queued": 63,
+          "leased": 1,
           "review": 20,
           "ready": 0,
           "retryable": 0,
@@ -1057,7 +1057,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T11:58:13.089Z",
       "earliestRetryAt": null
     },
     "0f": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b003",
       "token": "token-a1c6344c04d3e865cd5d93ba6558",
       "expiresAt": "2026-11-04T11:57:23.220Z",
+      "generation": 1
+    },
+    "ada-en-20261104-de39b0be5c37": {
+      "jobId": "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b004",
+      "token": "tok-db9649f9bb7bd5daaf3f038a62",
+      "expiresAt": "2026-11-04T11:58:13.089Z",
       "generation": 1
     }
   },
@@ -3180,7 +3186,8 @@
     "ada-en-20261104-de39b0be5c37": {
       "token": "tok-db9649f9bb7bd5daaf3f038a62",
       "jobIds": [
-        "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b004"
+        "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b004",
+        "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b004"
@@ -3218,5 +3225,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T10:28:04.973Z"
+  "updatedAt": "2026-11-04T10:28:13.089Z"
 }

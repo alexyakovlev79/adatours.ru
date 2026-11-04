@@ -907,7 +907,7 @@
         "expiresAt": "2026-11-04T09:22:07.343Z"
       },
       "checkpoint": {
-        "id": "ada_en_2478a2a40c1c_s10_c04",
+        "id": "ada_en_2478a2a40c1c_s10_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_2478a2a40c1c",
         "token": "ada_en_2478a2a40c1c_20261104",
@@ -995,6 +995,75 @@
                 "transformation": "strip_list_marker",
                 "rationale": "Remove only the leading list marker from the approved Word exclusion."
               }
+            },
+            {
+              "blockId": "tour:notIncluded:6edfcdcf0966326a",
+              "field": "notIncluded",
+              "sourceTextSha256": "001eb33b2e75cb276f50380eaffa1fb0d69bd15080a45099acbbc2805fa503ce",
+              "text": "Extra expenses (communication, laundry, souvenirs, etc.).",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p61",
+                    "textSha256": "08507866818f8b2fd667496c51e13f5ad71e417328c80e29014ded164e8eb35f"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the approved Word exclusion."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:610e72c9549f710d",
+              "field": "notIncluded",
+              "sourceTextSha256": "8e0a0e9870739528fa2811d9e0d2b773f7b03cda9eb0d768b10a69a66bed918b",
+              "text": "Gratuities.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p62",
+                    "textSha256": "9be7476f78fd7f3bdd9f275b731af6daaadce65b9f1236ea0513eb4485ffed60"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the approved Word exclusion."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:618c180881f5a49a",
+              "field": "notIncluded",
+              "sourceTextSha256": "53ec8c2e6cf04fa7492ea70358ca4f82a4655c847be7eb6f54c2d0517937025e",
+              "text": "Visas for Chile, Argentina and/or United Kingdom (for South Georgia), passport expenses, and any arrival and/or departure tax, if applicable.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+                "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p63",
+                    "textSha256": "1f56450a8fd98260133b87858b4e1e6dfe8b3d15a942f91d3c23ccc74b07cf96"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the approved Word visa and tax exclusion, retaining its destination and applicability qualifiers."
+              }
+            },
+            {
+              "blockId": "tour:note:5aa2c628beab8b85",
+              "field": "note",
+              "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+              "text": "If necessary, we may replace the listed hotels with others of the same category.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s10",
+                "wordAbsenceReason": "The checked Word permits the listed Punta Arenas hotel or similar, but does not contain the general current RU same-category hotel-substitution clause; translate the RU note without changing accommodation facts."
+              }
             }
           ],
           "sourceObservations": [
@@ -1004,7 +1073,7 @@
             }
           ]
         },
-        "at": "2026-11-04T07:53:43.499Z"
+        "at": "2026-11-04T07:53:52.565Z"
       },
       "submission": null,
       "review": null,

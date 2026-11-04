@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1792,
-    "leased": 12,
-    "review": 605,
+    "leased": 11,
+    "review": 606,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1792,
-      "leased": 12,
-      "review": 605,
+      "leased": 11,
+      "review": 606,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -586,8 +586,8 @@
         "word_2027": {
           "held": 0,
           "queued": 51,
-          "leased": 1,
-          "review": 21,
+          "leased": 0,
+          "review": 22,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T13:27:57.091Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "04": {
@@ -1371,12 +1371,6 @@
       "token": "ada-en-token-7befc5e39812-20261104",
       "expiresAt": "2026-11-04T13:27:27.639Z",
       "generation": 2
-    },
-    "ada-en-f5ac9871-mw22bfo2": {
-      "jobId": "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b005",
-      "token": "token-mw22bl5s-2lgitvnumf",
-      "expiresAt": "2026-11-04T13:27:57.091Z",
-      "generation": 1
     },
     "ada-en-f5ac9871-mw22b2eq": {
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b021",
@@ -3423,7 +3417,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b005"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b005"
+      ]
     },
     "ada-en-f5ac9871-mw22b2eq": {
       "token": "ada-en-f5ac9871-mw22b2eq-session",
@@ -3455,5 +3451,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T11:59:10.703Z"
+  "updatedAt": "2026-11-04T11:59:22.723Z"
 }

@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2167,
-    "leased": 4,
-    "review": 238,
+    "leased": 3,
+    "review": 239,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2167,
-      "leased": 4,
-      "review": 238,
+      "leased": 3,
+      "review": 239,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -306,8 +306,8 @@
         "word_2027": {
           "held": 0,
           "queued": 66,
-          "leased": 1,
-          "review": 10,
+          "leased": 0,
+          "review": 11,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T07:03:09.230Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "17": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261104-ef1fdb2517c4": {
-      "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b009",
-      "token": "token-iwiao0re46l65ynbta4pbk",
-      "expiresAt": "2026-11-04T07:03:09.230Z",
-      "generation": 1
-    },
     "ada-en-befca8d88a7c": {
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
       "token": "ca9d19d3a2444d3eb27e82c408f2b400",
@@ -2217,7 +2211,9 @@
       "jobIds": [
         "en:bulk:tour:tour_colombia_explorer_9_days:b009"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_colombia_explorer_9_days:b009"
+      ]
     },
     "ada-en-befca8d88a7c": {
       "token": "ca9d19d3a2444d3eb27e82c408f2b400",
@@ -2228,5 +2224,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:35:04.928Z"
+  "updatedAt": "2026-11-04T05:35:21.493Z"
 }

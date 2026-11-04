@@ -303,183 +303,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b011",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d501b44f0c8b58cf66c49a7986d9c9da6328e31fbfa18813fa0446d43d433d49",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-24807b62-20261104",
-        "token": "ada-en-24807b62-token-c83715b9",
-        "claimedAt": "2026-11-04T06:19:29.413Z",
-        "expiresAt": "2026-11-04T07:49:29.413Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-24807b62-20261104:s02:cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-24807b62-20261104",
-        "token": "ada-en-24807b62-token-c83715b9",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b011",
-            "stableId": "tour_brazil_three_ecosystems_8_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "d501b44f0c8b58cf66c49a7986d9c9da6328e31fbfa18813fa0446d43d433d49",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_label:f80be803295e2d49",
-                "field": "itinerary.label",
-                "sourceTextSha256": "05d92f3bebf288eb6c22e3e97b0e93e3f135d6ed83eb81be9b6418a078bc8b4d",
-                "text": "Araras Eco Lodge",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:45",
-                      "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact destination or lodge name from the verified itinerary as this place label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:074767429e37cdab",
-                "field": "itinerary.label",
-                "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
-                "text": "Pantanal",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:41",
-                      "textSha256": "967992dbcd8b24ca4e43928f79c940493c1976c1b2a9c3e38c2ac201b634f0fd"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact destination or lodge name from the verified itinerary as this place label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
-                "field": "itinerary.title",
-                "sourceTextSha256": "cedb791f1b4f1a368556f51e67bd93d3f11d07e71289311aa6d2cc5a6ea0a5c1",
-                "text": "Sunrise in the Pantanal – Cuiabá Airport",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:53",
-                      "textSha256": "5f757d2159721a073504c1a51ff2f89f5f8c6dedb7ef582783ff88ef84fbe211"
-                    },
-                    {
-                      "ref": "word/document.xml:p:54",
-                      "textSha256": "7ee994594b8bb2d66529fccd3d870c4672f177224f7f108408a01d79edb44df2"
-                    }
-                  ],
-                  "transformation": "compose_route_label",
-                  "rationale": "Compose the current route title from the verified sunrise activity, Pantanal location and Cuiabá Airport departure heading."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:fb5db666cae6efb7",
-                "field": "itinerary.text",
-                "sourceTextSha256": "784b5c3c6ef3827d46c5802ce829ef70759fa18d11b828c7d52c65196baef15e",
-                "text": "Start the day with one final sunrise walk around the lodge. The early morning is a particularly peaceful time in the Pantanal, when the temperature is cooler and the wildlife is already active. It is a lovely way to finish the journey before returning to the lodge for breakfast. Departure for Cuiabá at approximately 07:00 or 12:30, depending on your flight schedule. (B)\n\nEND OF SERVICES.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:54",
-                      "textSha256": "7ee994594b8bb2d66529fccd3d870c4672f177224f7f108408a01d79edb44df2"
-                    },
-                    {
-                      "ref": "word/document.xml:p:56",
-                      "textSha256": "cf547a5597feef105a6cf99a226da8038a77740b7413794ccfe8f0cd4600c1ea"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:4648c8e568707115",
-                "field": "itinerary.label",
-                "sourceTextSha256": "05d92f3bebf288eb6c22e3e97b0e93e3f135d6ed83eb81be9b6418a078bc8b4d",
-                "text": "Araras Eco Lodge",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:45",
-                      "textSha256": "973718c25f2b4071473942b3284525fdade52f37c5e419e572b7ad40eb325ca8"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact destination or lodge name from the verified itinerary as this place label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:956a1ccf634fcd4f",
-                "field": "itinerary.label",
-                "sourceTextSha256": "a2104752adf834a1a84e1c3eb73ec14edff7fd60b562acf7dd8f95b9a3498e57",
-                "text": "Cuiabá",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:53",
-                      "textSha256": "5f757d2159721a073504c1a51ff2f89f5f8c6dedb7ef582783ff88ef84fbe211"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the established Cuiabá place name from the verified airport departure heading."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:e7a3c80603290907",
-                "field": "media.alt",
-                "sourceTextSha256": "780bda18481c3c47c3f035b2ec71844fb8721c7fd0d60c6be659ae7494273413",
-                "text": "Large round water lily leaves and a white flower in the Pantanal, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-24807b62-20261104",
-                  "wordAbsenceReason": "The complete SHA-verified DOCX contains itinerary prose but no matching water-lily image accessibility text; translated the exact current RU alt without altering media."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:c3f37ee684261ac6",
-                "field": "media.hover",
-                "sourceTextSha256": "60e70dba93af611e604c95287953552bf8a76bc34ad6443c6005f9ccbda90e63",
-                "text": "Pantanal: floating water lily leaves against green hills",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-24807b62-20261104",
-                  "wordAbsenceReason": "The complete SHA-verified DOCX contains no corresponding photo hover caption for water lilies and green hills; translated the current RU caption."
-                }
-              }
-            ]
-          },
-          "submissionId": "ada-en-24807b62-20261104:s02",
-          "mainSha": "1926fdca8929ebf54d61fc6b977e841423ff67b1"
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:20:32.567Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-24807b62-20261104:s02",
+        "blobSha": "54a74857c110d151198e1582a09c760fe1424b6e",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_three_ecosystems_8_days_b011/ada-en-24807b62-20261104_s02.json",
+        "at": "2026-11-04T06:41:35.297Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

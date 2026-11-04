@@ -374,159 +374,22 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b014",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "1489b278b06b69091b04e6113c1483cf054a9491474d6b97ed3bf90b7bf15780",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_7d6c4f36ac68",
-        "token": "tok_7d6c4f36ac68_20261104",
-        "claimedAt": "2026-11-04T06:49:47.700Z",
-        "expiresAt": "2026-11-04T08:19:47.700Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_7d6c4f36ac68.explorer.b014.8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_7d6c4f36ac68",
-        "token": "tok_7d6c4f36ac68_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b014",
-          "stableId": "tour_colombia_explorer_9_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "1489b278b06b69091b04e6113c1483cf054a9491474d6b97ed3bf90b7bf15780",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:3331c3b8f968ccd1",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2c71183f80becb0100c9d0ca6f975661a7dcb2d992668d01ecc41d188da02003",
-              "text": "Rosario Islands",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p131",
-                    "textSha256": "3130598356a2aaa6fbea5e87546b8d88e89a59fcfe4f0bdcd79ba6875fbc9c17"
-                  },
-                  {
-                    "ref": "word/document.xml:p135",
-                    "textSha256": "bbfed30d787b26827ee4a195b555df167d19c3689a7f45e091e8310dd01c30af"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the geographic name from the Word day heading and narrative as an itinerary place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:df1cfd08c56101b0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "3584a22b6edcb23ea2752efb0353fa1a2343497fd54a1b35ba595b9acc52b1c5",
-              "text": "Isla Grande",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_7d6c4f36ac68",
-                "wordAbsenceReason": "The Word names Isla Majagua but does not name Isla Grande; retain the exact current RU place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4854bdbfff2ec479",
-              "field": "itinerary.label",
-              "sourceTextSha256": "620adb15945e5f918c51b0be668a32316a1b3de518e93b6e40e7df0ca136640e",
-              "text": "San Pedro de Majagua",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_7d6c4f36ac68",
-                "wordAbsenceReason": "The Word uses Isla Majagua without the San Pedro de Majagua name supplied by the current RU place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-              "field": "itinerary.title",
-              "sourceTextSha256": "7dcb0589e8aa3840176a188da735e3a716c586c146b5f7a22301a6fba89a6a18",
-              "text": "Departure from Cartagena",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p137",
-                    "textSha256": "2b7252a15e4220c09845cafb7ab147aaba1210be8c87242685f245e334bdc8de"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Express the departure described in the Word final-day paragraph as the itinerary heading."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-              "field": "itinerary.text",
-              "sourceTextSha256": "97a6545a3585fba223e225037a36268818ac566c251fd5298da322377196d185",
-              "text": "Day 9 · Breakfast at the hotel. Depending on the international flight schedule, enjoy some final free time in Cartagena. Private transfer to Rafael Núñez International Airport for the departure flight.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p137",
-                    "textSha256": "2b7252a15e4220c09845cafb7ab147aaba1210be8c87242685f245e334bdc8de"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:1cbfffe65133f455",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
-              "text": "Cartagena",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p52",
-                    "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:26965bad58b99a69",
-              "field": "media.alt",
-              "sourceTextSha256": "4e16981e3e02cd2abd60f637b8578f3e1d64623967dc748709be98e9a81aac64",
-              "text": "Long urban beach and high-rise buildings by the sea in Cartagena, Colombia",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_7d6c4f36ac68",
-                "wordAbsenceReason": "The Word programme has no image-specific alternative text for this urban beach photograph."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:56e1fbf99c51a206",
-              "field": "media.hover",
-              "sourceTextSha256": "3181335af058cea1a013423dc5eb7a10d487271aa0d8f6be9e3a5e26cc39532b",
-              "text": "Cartagena: a sea bay and urban buildings along the beach",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_7d6c4f36ac68",
-                "wordAbsenceReason": "The Word programme has no hover caption for this photograph of the bay and beachfront buildings."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:51:04.257Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_7d6c4f36ac68.colombia_explorer.b014.v1",
+        "blobSha": "482c60761af5a5bc80c1cc855bcef42d1442f99a",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_explorer_9_days_b014/ada_en_7d6c4f36ac68.colombia_explorer.b014.v1.json",
+        "at": "2026-11-04T06:51:08.022Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -212,7 +212,118 @@
         "claimedAt": "2026-11-04T05:51:41.225Z",
         "expiresAt": "2026-11-04T07:21:41.225Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-004-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b003",
+          "stableId": "tour_brazil_southern_vip_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "da80431758abcfe7d5b5d3425d7dec694005fb273b2698cada7b9d1d36426308",
+          "blocks": [
+            {
+              "blockId": "tour:notIncluded:d3fed4ff57afb02c",
+              "field": "notIncluded",
+              "sourceTextSha256": "b0ee9fdcfd1bfc1df3615f2cb173d39a558cea3f55bc0b46ceea84b08dced599",
+              "text": "Meals and beverages not specified in the programme",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p162",
+                    "textSha256": "c125353ae8bbf63fd49d5696f9825cb31a4e6bf82c70029e8548e4451636d4ae"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the exact Word meals exclusion."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:80586f449792a7b5",
+              "field": "notIncluded",
+              "sourceTextSha256": "104650800075167101f5cbe69e62ddba5e0b0761d5777cf828065b7027047f28",
+              "text": "Gratuities for guides, drivers and service staff",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p163",
+                    "textSha256": "77a53e997d554b4a2e9f11216085d68775d2bc99ce01911c24ee1528d4530680"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the exact Word gratuities exclusion."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:d038eafe7e719288",
+              "field": "notIncluded",
+              "sourceTextSha256": "9a440f5c984283e4a039a4a18f1f32c75baac27886597d9fa28fa3f6d34588ca",
+              "text": "Personal expenses and any services not expressly listed under “Included”.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word has an exclusion for personal expenses and services not expressly mentioned, but does not use this RU restriction to the Included section; translate the current RU clause without broadening its scope.",
+                "wordSource": {
+                  "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                  "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p164",
+                      "textSha256": "ced3a07d68f367c807166ec67b6ffacdd47064cf5b0fad8493698db28ee188f7"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:note:ef5dc12f24413527",
+              "field": "note",
+              "sourceTextSha256": "5fa52b20e5c87bcf3952df1cef31e71dc223b18d29f29862127432f946705ac0",
+              "text": "The price of USD 10,043 per person is based on a private trip for 2 passengers. The programme does not provide separate SGL, DBL or TPL rates.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word commercial table gives USD 10,043 per person for a private arrangement for 2 passengers and no separate occupancy-rate table; it has no exact sentence stating the absence of SGL/DBL/TPL rates. Translate this current RU clarification without changing any price.",
+                "wordSource": {
+                  "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                  "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p135",
+                      "textSha256": "fbf32ceee52021b06ef7312ccd2ff64c36887f6359090bf592da89214406c974"
+                    },
+                    {
+                      "ref": "word/document.xml#p136",
+                      "textSha256": "9e1b922aca344404760e9d528d1fbe4b5edb13eba0c25931a7350320f599db15"
+                    },
+                    {
+                      "ref": "word/document.xml#p139",
+                      "textSha256": "4c6a45befce6b41a053ec4dac1486cf5077242e22f5677b36a5ed7dd31822539"
+                    },
+                    {
+                      "ref": "word/document.xml#p146",
+                      "textSha256": "8931bd545158a268a2f4ecdd33860de2af9d1a2db2ddc649f756d2b3abbc4f1d"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:52:15.256Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

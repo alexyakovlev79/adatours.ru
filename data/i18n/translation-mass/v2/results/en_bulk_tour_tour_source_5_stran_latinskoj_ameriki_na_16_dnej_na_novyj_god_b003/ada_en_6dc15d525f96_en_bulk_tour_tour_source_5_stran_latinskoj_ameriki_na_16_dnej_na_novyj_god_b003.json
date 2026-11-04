@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b003",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0d9e7f57795f66da2b17bbb48bb50b1201690441d360af97a90b6cdde1a17d4d",
+  "blocks": [
+    {
+      "blockId": "tour:included:96a227e14550bb2d",
+      "field": "included",
+      "sourceTextSha256": "7c3e6bc631c4b3520a7e488f60206a9b11fd89bfa0d2863decb233f4532695b6",
+      "text": "Tours according to the Program in Private with English-speaking guide (Russian-speaking available on request)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0276",
+            "textSha256": "bb902d621693694a2af7fdcefc60bd86cf7169fecb472db63b99c9939fe43faa"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:1f742c956964bb56",
+      "field": "included",
+      "sourceTextSha256": "71b85a2fa148af6a6c3c73446fc89c6b85da37dd34d8be6ef92a4346bff45038",
+      "text": "Meals as specified in the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has breakfast and individual meal details but no standalone general included-meals line corresponding to this RU item."
+      }
+    },
+    {
+      "blockId": "tour:included:f1782e5a709c113e",
+      "field": "included",
+      "sourceTextSha256": "c3a3b635ee8a85b2c7df8e67c37f04df1e0f8b6510bf193c6416dfbe79cfb069",
+      "text": "Accommodation in 4* or 5* hotels.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0174",
+            "textSha256": "3d473edcabb550ac2aefde6f362293ec08547bbf7c9889b898ea79c8562a35da"
+          },
+          {
+            "ref": "word/document.xml#p0221",
+            "textSha256": "f18adb7a1a41e21c7414161c32f1febcda32e762c84359117e46232037aa5189"
+          },
+          {
+            "ref": "word/document.xml#p0274",
+            "textSha256": "c598f826a79ec7db385319430c2f6c7de29049ed1d18ede453e35e16f2c64071"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the two hotel-category headings with the Word accommodation inclusion without changing hotels or rates."
+      }
+    },
+    {
+      "blockId": "tour:included:b47624a332d97cc4",
+      "field": "included",
+      "sourceTextSha256": "257f0d83cc5df2d8304a816656fa005c03783c556877b350d80d5e27746e8455",
+      "text": "All Domestic flights",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0275",
+            "textSha256": "73f13aa49980a71fd0a6066fcc8eb38d8fbacc544881f9eb8067f972d78f0bb2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:019bb714e694242b",
+      "field": "notIncluded",
+      "sourceTextSha256": "909c12ee5d5bebd7e72266ef6a6d1a2762f4e2a134ac3ab90da8b13fc1566984",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0284",
+            "textSha256": "a9a5fb2e7d89889d301b84d448adb2775e784388e30ea78c5ce94fe7f12394e8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading tab used as list indentation."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0282",
+            "textSha256": "72f1ea7376f15402ecfe5021f4ff913c14480e60e9cf5616ce7c496a1c7c2264"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading tab used as list indentation."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:bbbe6869118ea342",
+      "field": "notIncluded",
+      "sourceTextSha256": "cacaf06317795492106ae2a6d648624fb9296e6c9af96a879fed404e7db6c444",
+      "text": "Meals & beverages not mentioned",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0283",
+            "textSha256": "49919c0eb5133e97be76c89608fe209d1da4841c0454d4911dfda038aaf184fa"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading tab used as list indentation."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5f7004d708c653a3",
+      "field": "notIncluded",
+      "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+      "text": "Tips.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word not-included list contains optional excursions, meals and international flights but no separate tips item."
+      }
+    }
+  ]
+}

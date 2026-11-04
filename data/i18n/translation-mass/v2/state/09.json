@@ -244,7 +244,7 @@
         "expiresAt": "2026-11-04T07:09:31.824Z"
       },
       "checkpoint": {
-        "id": "ada-en-f801-r2-03-b004-cp4",
+        "id": "ada-en-f801-r2-03-b004-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-f8019ad86757-run2-20261104",
         "token": "ada-en-f8019ad86757-r2-824d6b397e10",
@@ -344,10 +344,79 @@
                 "transformation": "contextual_label",
                 "rationale": "Combine the Word personal-expenses exclusion and services-not-mentioned exclusion for this list item."
               }
+            },
+            {
+              "blockId": "tour:note:7773d0b5eebc4304",
+              "field": "note",
+              "sourceTextSha256": "1f287ebbe7de4bf83d153251fa8593520594a18e8a2f0352105dcd59fa3dd368",
+              "text": "Rates are based on services with an English-speaking guide. Other guiding languages must be agreed upon at the time of booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f801-r2",
+                "wordAbsenceReason": "The Word specifies English-speaking guides in the tariff and itinerary, but does not state the RU booking rule for other guiding languages; translate the complete RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:11860cd59e5cc2d1",
+              "field": "note",
+              "sourceTextSha256": "d2f1f9afca334fe3d488a2412c49ca4e23163b3972fcf9a57f4c031467b59105",
+              "text": "   The tour operator may substitute the hotels listed with others of a similar category, while maintaining the same standard of quality and service.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[169]",
+                    "textSha256": "e8d858f8cceaaf97928afc2d6d774d76179399ea51e8eee7f6b3f3db1d197d42"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            },
+            {
+              "blockId": "tour:note:1833ff620471a903",
+              "field": "note",
+              "sourceTextSha256": "0fee5f0c035a3878548a91f9b47a144f4dbc8cd6332cb0f6d31bc0ac7e0a82e9",
+              "text": "   The order of excursions may be modified due to operational requirements, weather or force majeure, while respecting the content of the programme.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[170]",
+                    "textSha256": "8359f79f893c1035faf443c37df8ad6cf58cb129d85dd8ae14a6967b94364617"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
+            },
+            {
+              "blockId": "tour:note:828228da6078e79a",
+              "field": "note",
+              "sourceTextSha256": "ef9dfea142143e321312019458ab855c7c62cce45749b188bdf722c61220aa62",
+              "text": "   For early-morning departures, hotels may not be able to provide breakfast; no compensation is offered in such cases.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[171]",
+                    "textSha256": "7d3b8773b0d7d3479957682bafb5f7c987712b6f576632b15ea8632e769d7270"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Word list marker for the standalone list item."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:40:33.405Z"
+        "at": "2026-11-04T05:40:48.157Z"
       },
       "submission": null,
       "review": null,

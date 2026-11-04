@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kosta_rika:b001",
+  "stableId": "tour_source_kosta_rika",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b39e0c18a0d01ce917d5c8bedd9478ce53ffda88fb28441e5703969950a26b16",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "1a58b72ec809842748552e7d94079e66973f9ab87b98f440a3b5642958e1f036",
+      "text": "Basic Costa Rica",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "fc40662a897abee9e3f10ab14f10f49cdd0a89e350da1aa7bc08c193d0bea79b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "938779f8f18b558694292c0bf60232431fbcc0d57b51edb6210a8ae8b7814767",
+      "text": "This short Costa Rica itinerary combines San José, Tortuguero National Park, the Doka coffee plantation and La Paz Waterfall Gardens. The main part of the trip focuses on the nature of the Caribbean coast: Tortuguero's canals, tropical forests, birds and an early outing at dawn.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview describes the same broad route but has no equivalent complete lead naming San Jose and Doka and highlighting birds and the dawn outing together. Translated the pinned RU lead without adding facts."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "fecf1186f23657e1c2a8a947475d6e35db00ab853b2df52b0511b913419c14f9",
+      "text": "$1709",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists different programme rates ($2055/$1897) and does not contain the pinned RU price note $1709. Retained the exact assigned price string without importing a Word rate or changing shared prices; commercial differences belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ae29ce0675a1630d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p92",
+            "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:223faa6cf84419e5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0b53b2f7761b1d15342d9bdabb6b45c26384dfff018158e61d21fb9cd66b6e6a",
+      "text": "Tortuguero National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "7528c4d065c1e82f5123264a908542ab8a879b413f830daba5643f54dc277f15"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the national park name explicitly used in the Word trip overview for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4e59e0ea0d8a9dbb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9c534ab2f5aee5eb9c93be1f7707abd2c56026231b98194215b599067f1777dd",
+      "text": "Doka coffee plantation",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "0e2ceb297e90f431489b5a1951d4e239cba5249245e65f5716c9865d21ee2ab7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the route label from the Word named coffee plantation Doka without its surrounding day narrative."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:32d7b9d28ab90e4b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bc2c16db06e2776f191dacf5d03b9ac7154970d9f85282e5f058cb3ccfb85f4b",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "cb6a0d8131c88e79f3b421059a6c669460f6fe8bd200026cd261e338f26a0374"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ae29ce0675a1630d:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+        "documentSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p92",
+            "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+          }
+        ]
+      }
+    }
+  ]
+}

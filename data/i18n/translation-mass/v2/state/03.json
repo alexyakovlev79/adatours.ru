@@ -383,7 +383,291 @@
         "claimedAt": "2026-11-04T06:22:36.677Z",
         "expiresAt": "2026-11-04T07:52:36.677Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_4c0a9bc31e22_b007_cp4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_4c0a9bc31e22",
+        "token": "ada_en_4c0a9bc31e22_token_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_peru_8d:b001",
+          "stableId": "tour_peru_8d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "dcfe26f4a929ce006e58dc9ada2c6c37654152e27814b3613bd6f635e4628470",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "b31f3ae9f52d69fc632a5a66d35c0b4b6e0c7525a58c5d72fe478cc14633ec6c",
+              "text": "Amazing Peru 2027",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "p:2",
+                    "textSha256": "284ef844c76439e211789ea6b9946518713ab875372d157883347c83a99dd3f3"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "65104ed543fa36b018928ee875f8a35bb5b1f630acdfc47103f0a0188ca3eabc",
+              "text": "Eight days through the heart of Peru: Lima and its colonial centre, Cusco, the ancient Inca capital, the citadel of Machu Picchu, a day across the Andes to Puno, the floating islands of the Uros and Taquile Island on Lake Titicaca, with optional excursions to the Sacred Valley, Lima and the Larco Museum.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "p:17",
+                    "textSha256": "f21a45f82888c48f55b3cab869a53547b42e1d8047aa2fcb73a804712f61bd2e"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "572ecd4c4c377537901887cc0ec0c9e8af99b48b6d1a209476ee9789f619efac",
+              "text": "Price as of 23 September 2026: from $2,230. The final amount depends on the dates, hotels, tickets and included services.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_4c0a9bc31e22",
+                "wordAbsenceReason": "The exact Word 2027 contains a different nine-rate tariff table (USD 2502–4608 per person), not the dated RU quote from 23 September 2026. Translated the frozen RU price note unchanged; the exact 2027 tariff is recorded separately as a structured commercial amendment, not applied by this worker."
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
+              "text": "Group tour",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                "paragraphs": [
+                  {
+                    "ref": "p:1",
+                    "textSha256": "7de2732076175e73594b5c2780831d3851b63057c80c54505bda5a0d6ae27e6a"
+                  },
+                  {
+                    "ref": "p:7",
+                    "textSha256": "0b734fc5ab0ec2b65ccbea83698ebf503a73ac978716aefdea59766413d2500e"
+                  },
+                  {
+                    "ref": "p:191",
+                    "textSha256": "40babe13528e802722b351c74d51fca852aba351f485bebcc33f7671aee04b94"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the group-tour format explicitly approved throughout the selected Word 2027 as the EN format label. The shared RU format field is not changed; its private/group discrepancy is recorded for integration."
+              }
+            }
+          ],
+          "commercialAmendments": [
+            {
+              "stableId": "tour_peru_8d",
+              "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+              "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+              "currency": "USD",
+              "basis": "per person",
+              "editionYear": 2027,
+              "currentRuPriceNote": "from $2230 as of 23.09.2026",
+              "rates": [
+                {
+                  "hotelCategory": "3-star",
+                  "occupancy": "SGL",
+                  "amount": 2884
+                },
+                {
+                  "hotelCategory": "3-star",
+                  "occupancy": "DBL",
+                  "amount": 2528
+                },
+                {
+                  "hotelCategory": "3-star",
+                  "occupancy": "TPL",
+                  "amount": 2502
+                },
+                {
+                  "hotelCategory": "4-star",
+                  "occupancy": "SGL",
+                  "amount": 3192
+                },
+                {
+                  "hotelCategory": "4-star",
+                  "occupancy": "DBL",
+                  "amount": 2668
+                },
+                {
+                  "hotelCategory": "4-star",
+                  "occupancy": "TPL",
+                  "amount": 2636
+                },
+                {
+                  "hotelCategory": "5-star",
+                  "occupancy": "SGL",
+                  "amount": 4608
+                },
+                {
+                  "hotelCategory": "5-star",
+                  "occupancy": "DBL",
+                  "amount": 3512
+                },
+                {
+                  "hotelCategory": "5-star",
+                  "occupancy": "TPL",
+                  "amount": 3440
+                }
+              ],
+              "includes": "Accommodation, services and domestic flights Lima–Cusco and Juliaca–Lima.",
+              "supplements": [
+                {
+                  "item": "Extra night Lima 3-star",
+                  "basis": "per room",
+                  "amount": 126,
+                  "tripleRoomAmount": 190
+                },
+                {
+                  "item": "Extra night Lima 4-star",
+                  "basis": "per room",
+                  "amount": 165,
+                  "tripleRoomAmount": 246
+                },
+                {
+                  "item": "Extra night Lima 5-star",
+                  "basis": "per room SGL/DBL",
+                  "amount": 300
+                },
+                {
+                  "item": "29 Dec departure including New Year's Eve dinner",
+                  "basis": "per person",
+                  "amount": 250
+                }
+              ],
+              "evidence": [
+                {
+                  "ref": "p:162",
+                  "textSha256": "f80aeb821a2d1e9d240ecb26cc1c89eb38518873493828529d91f9e71df73f98"
+                },
+                {
+                  "ref": "p:163",
+                  "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                },
+                {
+                  "ref": "p:164",
+                  "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                },
+                {
+                  "ref": "p:165",
+                  "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+                },
+                {
+                  "ref": "p:166",
+                  "textSha256": "8871b1c03f7a3f8fbdfc4a746b0a03b9c7de2313465c5f3b554f2b77b8a324ae"
+                },
+                {
+                  "ref": "p:167",
+                  "textSha256": "b3cd51757fa9702478aaaa714229eeb571cca5a43523820fc3fec225af000acf"
+                },
+                {
+                  "ref": "p:168",
+                  "textSha256": "ab7de6be6436b7140b84854469b8cf9b2d7e3ede10dc95c6c8c0cb1bb65092f1"
+                },
+                {
+                  "ref": "p:169",
+                  "textSha256": "affc9c80c9319c5625dee45fca12c7327ee79ed42f8167d40c8a740118746209"
+                },
+                {
+                  "ref": "p:170",
+                  "textSha256": "c2f3722470beca5fffa4a714efb570eeaa9390b2c84dc22d95d60c9895e05aea"
+                },
+                {
+                  "ref": "p:171",
+                  "textSha256": "21367cc851a90c0ecf6f83e282021fffba417dc1b6043d14424ec86593dd60fc"
+                },
+                {
+                  "ref": "p:172",
+                  "textSha256": "9d9122702c8be2bec27272a0be0a0fc0890357c6fb2212390f46c114e1c0c420"
+                },
+                {
+                  "ref": "p:173",
+                  "textSha256": "593990a4e15a14a52c6190894117e4ec6bedb2497b0b290cc6c6bc50d9448a49"
+                },
+                {
+                  "ref": "p:174",
+                  "textSha256": "46b2d089abc18c91f2191421e7fd8eb9042a1f7b7b0149d711b9958ea18778fe"
+                },
+                {
+                  "ref": "p:175",
+                  "textSha256": "0574b72f4ccf23c3072ebf9558a066d28eb15c9b0ea0b6cf00def819777a539e"
+                },
+                {
+                  "ref": "p:176",
+                  "textSha256": "efebe2e424585740b30ba6eebc194e2b7e19e23d101f1d29b28cab49e4ae07e0"
+                },
+                {
+                  "ref": "p:177",
+                  "textSha256": "587f69f2891914e2696495480d6fa28ad5134601e7a5ca9dfa444cb081f0a5b1"
+                },
+                {
+                  "ref": "p:178",
+                  "textSha256": "6f2eeef58efd6e0b91b25b4b1da51d3d4df258d976f73adade2af0c828d2d323"
+                },
+                {
+                  "ref": "p:179",
+                  "textSha256": "445a55490b3675bc85d53169e7cb8cd2182df7d3243f143f86868bba56b5a41e"
+                },
+                {
+                  "ref": "p:180",
+                  "textSha256": "dd2ad3af176823119e66643f9ccc53188c8cd101ab017c691ce6170bc0871ef9"
+                },
+                {
+                  "ref": "p:181",
+                  "textSha256": "82f6df8a7994cc4bb21e33e887ef040440d0c64109a4c8e37143b629a14d690c"
+                },
+                {
+                  "ref": "p:182",
+                  "textSha256": "8f1c2eb6ea7382088b3daa6546dde0fae320c0bb597142103f3967f5c404ca96"
+                },
+                {
+                  "ref": "p:183",
+                  "textSha256": "60938055cfe36b1b6d35a10ab28d024e4b676cbddb7d844464ff94995c1377d9"
+                },
+                {
+                  "ref": "p:184",
+                  "textSha256": "0a98fd4993f2f36d4a7127388a4f20b4112bce531485107810389f28dd652600"
+                },
+                {
+                  "ref": "p:185",
+                  "textSha256": "3039f2e5c0548bc1506eda71a2f0ac95cd3170ff0e6aa5f7e1af9dc9b5d3bd01"
+                },
+                {
+                  "ref": "p:186",
+                  "textSha256": "34db45d677f71741b9c5d06ff8f8a5b62012bf6fc7dd997f2f5d5c3229fbd076"
+                },
+                {
+                  "ref": "p:187",
+                  "textSha256": "1f0db22a94c67a01ff00ca66d46e499fdd1c2add9f3f40eec05bde7bfdf79fe9"
+                },
+                {
+                  "ref": "p:188",
+                  "textSha256": "922579c64539e6e02ab798f33ba9eb294f960f5a18eb666e83f827f7fa4cef96"
+                }
+              ],
+              "status": "not_applied_commercial_master_required"
+            }
+          ]
+        },
+        "at": "2026-11-04T06:23:41.103Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -462,7 +462,137 @@
         "claimedAt": "2026-11-04T07:50:15.291Z",
         "expiresAt": "2026-11-04T09:20:15.291Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-9a69348b6e00-07-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9a69348b6e00",
+        "token": "tok-9a69348b6e00-20261104-a1",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b005",
+            "stableId": "tour_source_5_stran_latinskoj_ameriki",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "2dfe9c7471694da591341f92dcca22866c4da90f9c680c6c7ac44a2be04c2b98",
+            "blocks": [
+              {
+                "blockId": "tour:note:7af652695ddb7a14",
+                "field": "note",
+                "sourceTextSha256": "e545582869a58f119a009ee3d60bb83bab2e919a4c28c31a8c427e52879c4010",
+                "text": "11 December 2027",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p246",
+                      "textSha256": "507a9a15c9a5abfa0aeb70cd37c8fc807ccd15fc35a7e1f7304f386edd9198c0"
+                    },
+                    {
+                      "ref": "word/document.xml:p258",
+                      "textSha256": "5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the approved 11 Dec departure and its 2027 table year, spelling out December to avoid numeric-date ambiguity."
+                }
+              },
+              {
+                "blockId": "tour:included:213268fa80105d54",
+                "field": "included",
+                "sourceTextSha256": "2fb10c5a93116a539e68a63a88d36b38ddf275b591784355b37ff93678b12e2e",
+                "text": "Accommodation in the selected hotels, with breakfast · 17 nights",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p302",
+                      "textSha256": "d5886c2273504f228151d1e87a839dddeb3704cf7c1ffeb598e9cfb5fceeec3a"
+                    },
+                    {
+                      "ref": "word/document.xml:p23",
+                      "textSha256": "c6f3347a499d9b20b0f3a1db1b0e92097ccc00de9930ceadcf712e97d6007c7d"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Combines the approved hotel accommodation inclusion and the programme's exact seventeen-night total into the existing inclusion field."
+                }
+              },
+              {
+                "blockId": "tour:included:2f07d72ce781c8e2",
+                "field": "included",
+                "sourceTextSha256": "6c9821b1297ef1d40925ec9a605ae711c6bcb9976d282cdffd225618b590818c",
+                "text": "Breakfast and meals specified in the programme, including dinner at the tango show, a lunch box in Uyuni and meals included in the Peru itinerary.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p25",
+                      "textSha256": "adc858d165fa9d7da221a573b516085197def15eb47d4e63d5bca53952d71793"
+                    },
+                    {
+                      "ref": "word/document.xml:p91",
+                      "textSha256": "5f5d49c3724b09dc9cb7800ef52016e07eef7e4033d8a72676ca3fbe9565c2af"
+                    },
+                    {
+                      "ref": "word/document.xml:p115",
+                      "textSha256": "ae1ffc96da2b8cb8e9ef2a861cb79511d642ca597416c524eb41c5fef63c912e"
+                    },
+                    {
+                      "ref": "word/document.xml:p134",
+                      "textSha256": "0d97de4f60a7d7b8a89fe28de4294f8f3d712d89dfe2825d6399212705129232"
+                    },
+                    {
+                      "ref": "word/document.xml:p135",
+                      "textSha256": "4b5725623cc5085e33c2fcc9fc35281fb483418043fc00d719236f5d3f111c56"
+                    },
+                    {
+                      "ref": "word/document.xml:p301",
+                      "textSha256": "1fd01aaa130af671cf9cf7a4e80c5909b3c7e3b83f8b9be0358ea5e8322e9b68"
+                    }
+                  ],
+                  "transformation": "compose_tariff_summary",
+                  "rationale": "Summarises the meals explicitly included in the approved Word programme, retaining breakfast, tango dinner, Uyuni lunch box and Peru meals."
+                }
+              },
+              {
+                "blockId": "tour:included:645f8e054d5161a1",
+                "field": "included",
+                "sourceTextSha256": "ec74f1dfc09db054d31f24b42622e679f6a7d57c193f48305439da54ebfa320d",
+                "text": "Domestic flights",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                  "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p303",
+                      "textSha256": "a633e20a37722435099619fee738b727158bf6143101937cf84ef20d0e2310d3"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the leading dash and spacing from the approved domestic-flights inclusion."
+                }
+              }
+            ]
+          },
+          "completedBlockCount": 4,
+          "wordSourceVerified": {
+            "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+            "sha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+            "modifiedTime": "2026-10-26T14:08:55.978Z",
+            "localPath": "/workspace/scratch/9a69348b6e00/ada_word/five_regular.docx"
+          }
+        },
+        "at": "2026-11-04T07:51:41.295Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

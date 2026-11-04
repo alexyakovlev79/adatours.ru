@@ -340,7 +340,123 @@
         "claimedAt": "2026-11-04T05:45:03.122Z",
         "expiresAt": "2026-11-04T07:15:03.122Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-007-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ef1fdb2517c4",
+        "token": "token-iwiao0re46l65ynbta4pbk",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b014",
+          "stableId": "tour_chile_hidden_secrets_9_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c18f016e37e41a1a0866cb6913f7aa3db42a60e7f5757cd4d78bdbb7567bf52c",
+          "wordEvidence": {
+            "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+            "sha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+            "shaVerified": true,
+            "modifiedTime": "2026-10-22T13:59:26.965Z",
+            "title": "Chile_s_Best_Kept_Secrets_-_Atacama__Patagonia___Marble_Caves_2027_com_20_.docx",
+            "yearFolder": 2027,
+            "paragraphsFile": "/workspace/scratch/335ed4b6e466/ada_en_run/word_1JhUcfwm8nluzG9BG57eKadVF8jagmfmU.paragraphs.json"
+          },
+          "unresolvedConflicts": [
+            {
+              "kind": "place_name_spelling",
+              "blockId": "tour:itinerary_label:9d5b8ca46e1870cc",
+              "ruText": "Озеро София",
+              "wordRef": "word/document.xml:p123",
+              "wordText": "Soffa Lagoon",
+              "detail": "Current RU label names Lake Sofia; the selected Word 2027 spells the corresponding Day 8 stop 'Soffa Lagoon'. Word wording is preserved, with no new place mapping or independent approval. Reviewer/master should resolve the spelling."
+            }
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:669039e7fce13950",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+              "text": "Puerto Natales & Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p122",
+                    "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+                  },
+                  {
+                    "ref": "word/document.xml:p156",
+                    "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the two exact place names recorded in the Word park heading and accommodation table as the site's combined geographical label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fd4eeef400f04d67",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c1396b57b2ffab559eac79f8b05dccf894edd995996ea11e7096f982e546aa05",
+              "text": "Milodón Cave",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "f9333366ddf60d537739bc8d86671fa93b6eb094087d567e61f71e5b6c604356"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact name of the cave from the verified Day 8 excursion narrative for the standalone site place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:9d5b8ca46e1870cc",
+              "field": "itinerary.label",
+              "sourceTextSha256": "52913d1f3b8db35a873a05452fba25a6c4b75308b736ebf5b6536882c397570a",
+              "text": "Soffa Lagoon",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "f9333366ddf60d537739bc8d86671fa93b6eb094087d567e61f71e5b6c604356"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Preserve the selected Word's exact English spelling of the lagoon name in the Day 8 route list; flag its difference from the RU Sofia label for independent review."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e6006f86bbcf3dc8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "166ee9af8b426039adf1f184f351c636fe9e099125dd2fc3a736910e38e232d0",
+              "text": "Cordillera Prat",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "f9333366ddf60d537739bc8d86671fa93b6eb094087d567e61f71e5b6c604356"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact mountain-range name from the Word Day 8 route list as this standalone itinerary label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:45:58.423Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

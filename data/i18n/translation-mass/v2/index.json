@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2165,
-    "leased": 4,
+    "queued": 2164,
+    "leased": 5,
     "review": 240,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2165,
-      "leased": 4,
+      "queued": 2164,
+      "leased": 5,
       "review": 240,
       "ready": 1,
       "retryable": 0,
@@ -1025,8 +1025,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 73,
-          "leased": 0,
+          "queued": 72,
+          "leased": 1,
           "review": 11,
           "ready": 0,
           "retryable": 0,
@@ -1057,7 +1057,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:06:08.848Z",
       "earliestRetryAt": null
     },
     "0f": {
@@ -1365,6 +1365,12 @@
       "token": "ca9d19d3a2444d3eb27e82c408f2b400",
       "expiresAt": "2026-11-04T07:06:00.301Z",
       "generation": 2
+    },
+    "ada-en-884b0cfde5f5": {
+      "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b001",
+      "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
+      "expiresAt": "2026-11-04T07:06:08.848Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2186,7 +2192,8 @@
     "ada-en-884b0cfde5f5": {
       "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
       "jobIds": [
-        "en:bulk:tour:tour_brazil_best_rio_express_six_days:b007"
+        "en:bulk:tour:tour_brazil_best_rio_express_six_days:b007",
+        "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_best_rio_express_six_days:b007"
@@ -2234,5 +2241,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:36:00.301Z"
+  "updatedAt": "2026-11-04T05:36:08.848Z"
 }

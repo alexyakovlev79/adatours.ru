@@ -374,7 +374,77 @@
         "claimedAt": "2026-11-04T06:15:23.437Z",
         "expiresAt": "2026-11-04T07:45:23.437Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-bceebc322bd5-s002-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-bceebc322bd5",
+        "token": "ada-en-bceebc322bd5-20261104-01",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b005",
+          "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c2fc864e3ac712c48c31792cd7f95d68adb55f27d68dd1f92acd92c59cd32c01",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "56c59988e5f631b58e855909e59627b44445ca22949f0415d0110e2f639d6413",
+              "text": "Free day and the Parade of Champions at the Sambadrome",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-bceebc322bd5",
+                "wordAbsenceReason": "Word paragraphs 68–69 place Sugar Loaf and the parade on the same day; they do not supply this separate free-day title. The title is translated from current RU without changing its day structure."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "a297790ef98996484f6e513d83d8fcbff9ae6c27b24a98ffd5c8a7c12c1b7494",
+              "text": "A free day. You can sleep in, enjoy a leisurely breakfast and get ready for the main event of the trip.\n\nAfter sunset, a transfer will take you to the Sambadrome. Grandstands line the long avenue, with the lights focused on the parade.\n\nThe Parade of Champions continues all night and features the best samba schools. They spend the whole year preparing the music, costumes, floats and choreography. First you hear the approaching drumbeat; then the opening group appears, followed by dancers and enormous sets.\n\nTickets are provided for Sector 9 or a similar sector.\n\nYou can leave before the end of the parade if you wish. A transfer will take you back to the hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-bceebc322bd5",
+                "wordAbsenceReason": "Word paragraph 69 covers the parade but omits the current RU details of Sector 9 or similar seating and the option to leave early. The current complete RU block is translated to retain those service details."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:124",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:ab0790a1d9a36d5c",
+              "field": "media.alt",
+              "sourceTextSha256": "8957c9b2f812fd29a21f5302e23cc5c275ced5a275ce4c8da9adc818f5ed6abc",
+              "text": "Two carnival participants in colourful costumes take a selfie, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-bceebc322bd5",
+                "wordAbsenceReason": "The DOCX contains no image-specific ALT about two carnival participants taking a selfie; translated from the exact RU media field."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:16:45.019Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

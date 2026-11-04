@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_kosta_rike:b006",
+  "stableId": "tour_source_luchshee_v_kosta_rike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "faeaa00636a972107af3fc7f8b9e1a4630405c39bb317e4ab0033ee6dfd6142a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "09330cb89017ae360091805dbd08747f3fbb23ce89469a6428d8e3e65d1cd6ae",
+      "text": "At 6:15, a boat tour to watch the wildlife of Tortuguero awaken, then breakfast (7:00–9:00). Continue to the northern lowlands and La Fortuna, at the foot of Arenal Volcano, and relax in the area’s hot springs. Overnight at Arenal Paraíso Resort & Spa. (B)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:p:27:day4",
+            "textSha256": "fe01d170c601a907999ac95e68d1c89ab5464ef941d03beca938f5081b25b55f"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The exact English Word 2027 Day 4 paragraph is preserved after removing the day marker; Word lists breakfast only, unlike the RU source."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dc0cdae0f84f023a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f12c66a75784fb21b256437f0db6da432416d7c9d5e676b5c1685d4c9cb8e1f3",
+      "text": "Tortuguero",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:p:25:tortuguero",
+            "textSha256": "4733e2e2987f2fb3a5891cc54fb26fac6423552478fef954e9b399b49fe3aca2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9155925f36a501cf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e58a965a100dff871e1bc0dab50f95e60b21e1f3af8eb0c348457bc8758e7a48",
+      "text": "La Fortuna & Arenal Volcano",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:p:27:day4",
+            "textSha256": "fe01d170c601a907999ac95e68d1c89ab5464ef941d03beca938f5081b25b55f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "La Fortuna and Arenal Volcano are explicitly named together in the approved Word Day 4 paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2aece174a2c8d6a8",
+      "field": "media.alt",
+      "sourceTextSha256": "2d426911716931e8c139ed92f486555cb98e40baf122e8935136599cf7a07185",
+      "text": "Visitors by a river and waterfall in the forest near Arenal, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "gpt6-chat1-20261105-0000",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified English Word has no caption or alt text for this particular Arenal waterfall photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:4da0b23075888c5f",
+      "field": "media.hover",
+      "sourceTextSha256": "dc229fc9c1f14e02cd371fea635628d809c5ea3ed94450bd105a0755d2eda733",
+      "text": "Arenal, Costa Rica: waterfall, rushing river and visitors on a rocky bank",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "gpt6-chat1-20261105-0000",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme lacks a hover caption for this specific river and waterfall photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b01cae0c5279c028fdc1d4f272dba38ea6ff506dfea6a41967b68ea919834260",
+      "text": "Arenal Volcano",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:p:35:arenal-title",
+            "textSha256": "f9c8a456c829aab9208149416d1337f66cd2662468ad96df458025ccd9f3dcb0"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f838e1b26ee529c99d9bda3001541453d39e24453ad827eb1aab6d2b2b226d94",
+      "text": "Morning · The Arenal Hanging Bridges at Mistico Park, one of the best nature walks around La Fortuna: about 3 km of easy trails and 15 bridges, 6 of them hanging, bring you close to the birds, flowers and lush vegetation of the primary rainforest, with views of Arenal Volcano (about 2.5 hours).\n\nAfternoon · A guided walk on the 1968 trail, along the edge of Arenal Volcano National Park, where parts of the landscape were devastated by the lava flows of 1968 and still have little vegetation: magnificent views of the volcano, Lake Arenal and the dormant volcano Cerro Chato, with forested sections where your guide will look for birds, monkeys and other wildlife. Overnight at Arenal Paraíso Resort & Spa.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:p:36:day5-morning",
+            "textSha256": "10057a0ba3c3a0cd4efaa7df8e91ee95ca247a972deeb26b290ead0a076515ca"
+          },
+          {
+            "ref": "docx:p:37:day5-afternoon",
+            "textSha256": "045233c028b3c981e1ddc4138250e5f99fdfce56589aef769fe20dab8e165b75"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved Word Day 5 morning and afternoon paragraphs are reproduced in their exact English sequence with only the introductory day marker removed."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fd1d6441862e7c30",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e58a965a100dff871e1bc0dab50f95e60b21e1f3af8eb0c348457bc8758e7a48",
+      "text": "La Fortuna & Arenal Volcano",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:p:36:day5-morning",
+            "textSha256": "10057a0ba3c3a0cd4efaa7df8e91ee95ca247a972deeb26b290ead0a076515ca"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "La Fortuna and Arenal Volcano appear together in the verified English Word Day 5 paragraph."
+      }
+    }
+  ]
+}

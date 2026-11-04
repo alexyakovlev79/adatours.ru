@@ -694,7 +694,93 @@
         "claimedAt": "2026-11-04T07:07:35.300Z",
         "expiresAt": "2026-11-04T08:37:35.300Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2bf7b149bb51-five-countries-b015-v1-cp04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2bf7b149bb51",
+        "token": "ada-en-2bf7b149bb51-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b015",
+          "stableId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "a3d38d8473b97a4aad29352bbb74ffb1a30ff2c8da8dd113df0c094229393fe7",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:89609a8fe42b35e7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "93918da548154ed9157a2b3f63138aadbebf123c03985f778e93de1ce9d23f3b",
+              "text": "Puno and Lake Titicaca",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p145",
+                    "textSha256": "1a7b40a525bb39584d7f9ce43a33cec91cba8ee1f181c2ae22dfcad3f7afe38f"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the exact Word place names Puno and Lake Titicaca into the assigned route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b1c70fc95c228cd3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e650684f4fbb4f87d155740fd8d867c5449bac635b78ae23219ee6ff26135914",
+              "text": "Uros Islands",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p149",
+                    "textSha256": "acdaf625d80488b620928b6146a18790b9f74b9bc167fe24e98bae4ce2d47f82"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Uros Islands place name from the approved Word day passage."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:8b612b2c1e987395",
+              "field": "media.alt",
+              "sourceTextSha256": "47089b06e2466eeffe273c42f35ef60e90c6bbb5ae673c2d48bc432475875c08",
+              "text": "Stone walls, steps and a rectangular passageway at Tiwanaku, Bolivia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-2bf7b149bb51",
+                "wordAbsenceReason": "The exact Word document has no matching photographic alt caption for these stone walls and steps; translated from the assigned RU image description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:bc85cd73333c2baf",
+              "field": "itinerary.title",
+              "sourceTextSha256": "1576bf62a4559aa7bf175b1426857dd86b61a51074f24b7d4f4bd380ce6e4039",
+              "text": "14 January. Puno – Cusco",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+                "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p148",
+                    "textSha256": "5fc879d33195eb96c2df189f7dc5bafbb8ba8b7b60a1857f30b5b386e7fd41ae"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word departure date and route as a concise heading, spelling out January to avoid numeric date ambiguity."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:08:52.978Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

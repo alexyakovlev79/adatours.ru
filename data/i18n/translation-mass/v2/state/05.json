@@ -568,7 +568,87 @@
         "claimedAt": "2026-11-04T07:51:14.151Z",
         "expiresAt": "2026-11-04T09:21:14.151Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-8526ba7437bc-b010-cp4-tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-8526ba7437bc",
+        "token": "ada-en-token-8526ba7437bc",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala:b010",
+          "stableId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "10dd04a9d01a7f8b2c827fe11bb43170c6aa14374a3d2ba5416fce9fee497f8e",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+              "field": "itinerary.text",
+              "sourceTextSha256": "78342b424d9d7c7d5e73055f9a72d3c02625e8f188f88d05b155b29ab93d0b1f",
+              "text": "After breakfast, take a sightseeing tour with an English-speaking guide.\n\nAround La Moneda Palace, the city has a formal feel: its restrained façade and spacious square form the government district.\n\nPlaza de Armas is livelier. Here you will find the cathedral, the post office and historic administrative buildings.\n\nNext, climb Santa Lucía Hill. Its terraces overlook the city centre and the Andes.\n\nThe tour continues along the Mapocho River through Vitacura, Las Condes and Providencia.\n\nAn optional trip to the wineries of the Maipo Valley can also be arranged.\n\n**Price:** USD 230 per person, minimum 2 participants.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "Word paragraph 91 covers the city tour and the same USD 230/minimum-2 option, but omits the current RU descriptions of La Moneda’s square, the Andes view and the Mapocho River. Translated the full RU block, with guide language localised as English under §4.1; no price change.",
+                "serviceLanguageAdaptation": "RU-derived Russian-speaking guide localised as English-speaking guide under editorial §4.1."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7991947c43aeb0de",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago de Chile",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p90",
+                    "textSha256": "b0bf83bb47572fb31b61716332e1c450b64840a00a1dfb62c47fa9f29851d0da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact destination name from the Word arrival paragraph for this standalone place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:8ae6dba7c7713a0f",
+              "field": "media.alt",
+              "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
+              "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-8526ba7437bc",
+                "wordAbsenceReason": "The selected Word contains no matching image alt description; translated the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ae94fe015ae2f2c3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "40b85fcb155abfe021b1aa39497c5eddc9a8bc858720a879f1b9400fd7a8117a",
+              "text": "Maipo Valley",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1p43mEGxeh35l0VLkcj1IlUV9E-hKpInp",
+                "documentSha256": "3fee51854bf61a45547d1df8df4f548db569100525537afde1e341551188fbdf",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p91",
+                    "textSha256": "cfaa67877c3dd11d0b73fecd8196b4fd66b3f0e627504029901c0dd61ca054ae"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact valley name from the Word optional winery excursion for this standalone place label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:52:47.337Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

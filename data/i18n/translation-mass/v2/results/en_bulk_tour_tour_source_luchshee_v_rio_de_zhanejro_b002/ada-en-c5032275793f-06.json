@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro:b002",
+  "stableId": "tour_source_luchshee_v_rio_de_zhanejro",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "cebe64d351de1f8a3f547aaea74481132c76f61263b7cbaf4fd8c9ccf54f264e",
+  "blocks": [
+    {
+      "blockId": "tour:included:a624d3585233a933",
+      "field": "included",
+      "sourceTextSha256": "348dc08026e8047ed3144b3b36e9c0184d308dbb32ffb89509e59826f17edce9",
+      "text": "Breakfast at the hotel",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1AzNz1-uUndjI6U7ZXLyKv1nncZ4eCaYQ",
+        "documentSha256": "63e7ac586b1bf2f20cdfc0126ac682a3b6034e8e3ef964ab856cf5696433ada8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p25",
+            "textSha256": "0dfc1a6ceefe8ccc8349623db54e45d4cc3a1c2c47ec8d168b10af9b4d1b02c0"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:85e42307b61ca9d2",
+      "field": "notIncluded",
+      "sourceTextSha256": "236047bf5a1673051fe1fd8eaf58445cd44c624b58f3e99bd0fe6ed34fbafdee",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AzNz1-uUndjI6U7ZXLyKv1nncZ4eCaYQ",
+        "documentSha256": "63e7ac586b1bf2f20cdfc0126ac682a3b6034e8e3ef964ab856cf5696433ada8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p163",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker for the separate notIncluded item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5f7004d708c653a3",
+      "field": "notIncluded",
+      "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+      "text": "Tips",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AzNz1-uUndjI6U7ZXLyKv1nncZ4eCaYQ",
+        "documentSha256": "63e7ac586b1bf2f20cdfc0126ac682a3b6034e8e3ef964ab856cf5696433ada8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p164",
+            "textSha256": "24794f5344f2549c0d4ed6f854a52adb1d37bc862de582ed39226849a44b2d3c"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker for the separate notIncluded item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ffb7360d4975d6b8",
+      "field": "notIncluded",
+      "sourceTextSha256": "402e56ba7da9c1bf2abadd53240c16c7d82f0c81b7a1ff277e6d6c5cf35ed4d3",
+      "text": "Meals not mentioned",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AzNz1-uUndjI6U7ZXLyKv1nncZ4eCaYQ",
+        "documentSha256": "63e7ac586b1bf2f20cdfc0126ac682a3b6034e8e3ef964ab856cf5696433ada8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p165",
+            "textSha256": "5428c4c6fafa86d8d669eedb05398d27bd52041fd32f4bbf155eb178e2224884"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker for the separate notIncluded item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AzNz1-uUndjI6U7ZXLyKv1nncZ4eCaYQ",
+        "documentSha256": "63e7ac586b1bf2f20cdfc0126ac682a3b6034e8e3ef964ab856cf5696433ada8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p166",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker for the separate notIncluded item."
+      }
+    },
+    {
+      "blockId": "tour:highlight_title:997e839e6a21ae92",
+      "field": "highlight.title",
+      "sourceTextSha256": "b4f32fc1cecf1c6bd813da09b0d77594a22315551879b17a8f1ba966dca7f5d2",
+      "text": "Rio from two heights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-c5032275793f",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The RU highlight title is an original short description of the two viewpoints; there is no equivalent standalone heading in the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:highlight_text:62849fe7b205a15f",
+      "field": "highlight.text",
+      "sourceTextSha256": "c358dcd942670d4dc8babeaefdca66ba0c0a69d2636ff43d6b5e0e42cfdadb56",
+      "text": "Take the train through Tijuca Forest up Corcovado, then ride the cable car to Sugar Loaf.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AzNz1-uUndjI6U7ZXLyKv1nncZ4eCaYQ",
+        "documentSha256": "63e7ac586b1bf2f20cdfc0126ac682a3b6034e8e3ef964ab856cf5696433ada8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "2f5533b1d70b2b135a2bbfd2ca009554217f3210b14af415fccaaa56dae79964"
+          },
+          {
+            "ref": "word/document.xml:p85",
+            "textSha256": "6fb1ec40cbd1808d33b595da4f800015c60e4ca6c42eb7d1e6046a654e7a0089"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Condense the train and cable-car activities described in the two verified Word paragraphs into the assigned short highlight, without adding services."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d271e95d1d58e233",
+      "field": "media.alt",
+      "sourceTextSha256": "d1f9ddfa9865629ca05933f7c31b8682287547390df361416202b427c21d2190",
+      "text": "The statue of Christ the Redeemer seen from behind above the bays of Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-c5032275793f",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This RU image caption is not present in the selected Word document; translated directly from the assigned RU caption."
+      }
+    }
+  ]
+}

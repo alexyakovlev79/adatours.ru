@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1688,
-    "leased": 11,
+    "queued": 1689,
+    "leased": 10,
     "review": 710,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1688,
-      "leased": 11,
+      "queued": 1689,
+      "leased": 10,
       "review": 710,
       "ready": 1,
       "retryable": 0,
@@ -1305,8 +1305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 50,
-          "leased": 2,
+          "queued": 51,
+          "leased": 1,
           "review": 19,
           "ready": 0,
           "retryable": 0,
@@ -1337,17 +1337,11 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T13:27:27.639Z",
+      "earliestExpiryAt": "2026-11-04T15:06:07.689Z",
       "earliestRetryAt": null
     }
   },
   "activeOwners": {
-    "ada-en-mw22atq1-ed4qo77j": {
-      "jobId": "en:bulk:tour:tour_source_braziliya_s_plyazhami:b007",
-      "token": "token-mw22atq1-ed4qo77j-1ocnftqiet4",
-      "expiresAt": "2026-11-04T13:35:39.333Z",
-      "generation": 1
-    },
     "ada-en-9274849a-mw23k135": {
       "jobId": "en:bulk:tour:tour_source_braziliya_s_detmi:b003",
       "token": "tok-9274849a-mw23k135",
@@ -1389,6 +1383,12 @@
       "token": "token-mw25t7t2-704e3e13",
       "expiresAt": "2026-11-04T15:05:38.441Z",
       "generation": 2
+    },
+    "ada_en_98a794b99d49": {
+      "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b001",
+      "token": "tok_98a794b99d49_20261104",
+      "expiresAt": "2026-11-04T15:06:07.689Z",
+      "generation": 3
     }
   },
   "ownerAssignments": {
@@ -3741,8 +3741,15 @@
         "en:bulk:tour:tour_nicaragua_best_10_days:b005"
       ],
       "completedJobIds": []
+    },
+    "ada_en_98a794b99d49": {
+      "token": "tok_98a794b99d49_20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_colombia_complete_11_days:b001"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T13:35:38.441Z"
+  "updatedAt": "2026-11-04T13:36:07.689Z"
 }

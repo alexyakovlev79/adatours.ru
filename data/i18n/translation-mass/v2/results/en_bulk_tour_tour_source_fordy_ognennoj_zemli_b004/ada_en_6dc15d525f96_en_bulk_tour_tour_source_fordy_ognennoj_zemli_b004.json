@@ -1,0 +1,158 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b004",
+  "stableId": "tour_source_fordy_ognennoj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d0b4cffddce3290a0dc881d7213799aab867a24e2c195120ff300d5b7689d95d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4779a4d0330a4f9e90c7136272fd66fbddf5d2f17e322af71284c3d91d11b6ac",
+      "text": "Ainsworth Bay / Tucker Islets",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "0ee74647e6e251089c8f399d4f9b76aaf932132d85b0e6d8c0a62f9f6b8e3549"
+          },
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "cee186d6c080ac00a57a5486a456e527d85dff6bb069ad5584c98b26f0f7f14e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route heading from the two approved place names, omitting the separate Marinelli Glacier detail from the bay heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "5d7f5bef4f07449b917caa4e780cb7a29987a9dffd2c062e1c15a00afdb7cb18",
+      "text": "By dawn, the ship enters Admiralty Sound (Seno Almirantazgo), a majestic arm of the Strait of Magellan reaching almost to the centre of Tierra del Fuego. The snow-capped peaks of Karukinka Natural Park line its northern shore, while the southern coast is cut by the deep fjords and broad bays of Alberto de Agostini National Park.\n\nDisembark at Ainsworth Bay, home to many birds and a haul-out site for southern sea lions, sometimes visible from the zodiac boats. Two guided excursions are offered: a walk along a stream through peat bogs and beaver habitats to a moss-covered cliff with waterfalls, deep in untouched subpolar forest, or a more challenging climb along the ridge of a glacial moraine; both offer views of the Marinelli Glacier and the Darwin Mountains.\n\nIn the afternoon, the ship sails west to the Tucker Islets, where zodiac boats take you close to more than 4,000 Magellanic penguins nesting and raising their chicks, along with imperial cormorants, oystercatchers, skuas, geese, gulls, eagles and even Andean condors. In September and April, when the penguins migrate, this excursion is replaced by a short hike to a glacier in nearby Brookes Bay.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0067",
+            "textSha256": "ab97202b7017ae83e1d1eb3fa07409be8ca755ce490af3ae1abf35db5820965d"
+          },
+          {
+            "ref": "word/document.xml#p0068",
+            "textSha256": "b2a3777271151f07f4564814b0574af4895d0ba3f4409983cf390747101626e0"
+          },
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "da0505cddd9cbf2ff24f349f080d028f8fca78edc73d53c7a25710316d7feee9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the day marker at the start; retain the full approved Word day text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e89d5a9c47db4b84",
+      "field": "itinerary.label",
+      "sourceTextSha256": "da83b636b6aba146d550ce74799e5213a0815dad191c72b18a9cfa20f93cbcf0",
+      "text": "Ainsworth Bay",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "0ee74647e6e251089c8f399d4f9b76aaf932132d85b0e6d8c0a62f9f6b8e3549"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the bay name from the Word place heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:24f31632e4e1db2f",
+      "field": "media.alt",
+      "sourceTextSha256": "12f341508e91b3fbc38d812796a05ff53f6b35fd25aaeff86dfedd3cd7001653",
+      "text": "The rocky shore of Ainsworth Bay and forest with a glacier and snow-covered mountains behind, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no caption describing this specific rocky shoreline photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:4dda0894a3f0c78a",
+      "field": "media.hover",
+      "sourceTextSha256": "975e370b3feb7ae7cf0818ace55d80bcade533caf780245ef8c736ddc71a8312",
+      "text": "Ainsworth Bay, Chile: calm water beside a forested mountain shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_6dc15d525f96",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no hover caption describing calm water by the forested shore."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "dab8210616eb804e28971b3492ef0eb0e2ab601db6d9a7b9508d63e9117323f0",
+      "text": "Pia Glacier / Avenue of the Glaciers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0073",
+            "textSha256": "5501583d719a311ee8571984c1ac9658fcf710382c7c25aa6afe08a10fc04a4a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the two route names from the approved day heading without its day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "06e645a9b8e38977c70cb1c68a146cbaac36acef7c6219de56a442e83cbcd7ec",
+      "text": "Overnight, the ship rounds the western tip of Tierra del Fuego through the narrow Gabriel, Magdalena and Cockburn channels, passes the remote Brecknock Peninsula and re-enters the Beagle Channel. In the morning, zodiac boats land you at the Pia Glacier, believed to be named after Princess Maria Pia of Savoy, daughter of the King of Italy: choose a short walk to a viewpoint or a more challenging climb along its lateral moraine. Back on board, sail east through the Avenue of the Glaciers, where glaciers named after European countries (Holland, Italy, Germany, Spain and France) descend from the Darwin Mountains to the sea.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0076",
+            "textSha256": "a17e33794b5104011a63a6003cfa8ad10317622faf98ff732b9decc0bca04fa4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the leading day and route marker because those are already supplied by the itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3199e65d0cd5f57a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9ca3c0fba63cc44baa93d26d99521aec6b980bcc210082cdae225d48a5d18feb",
+      "text": "Pia Glacier",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "96d3d4e18760542103b45e3ab8ace62ba9933559a987f523c896f02e4558f2e4"
+          }
+        ]
+      }
+    }
+  ]
+}

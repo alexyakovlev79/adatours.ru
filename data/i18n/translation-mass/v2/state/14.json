@@ -450,7 +450,7 @@
         "expiresAt": "2026-11-04T08:30:47.214Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-8526ba7437bc-b003-cp4-tour_mexico_lindo_eight_days",
+        "id": "ada-en-20261104-8526ba7437bc-b003-cp8-tour_mexico_lindo_eight_days",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-8526ba7437bc",
         "token": "ada-en-token-8526ba7437bc",
@@ -546,10 +546,122 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracted the Day 7 included services, retaining Santa Bárbara from the programme heading and current RU field; overnight accommodation is separate."
               }
+            },
+            {
+              "blockId": "tour:included:d81830d4f0db4b9a",
+              "field": "included",
+              "sourceTextSha256": "76130653420dd6d9c8917d39b7dd38cabf2f60d23e00c928ea6202cb02babd8e",
+              "text": "Day 8: private transfer from Mérida to Chichén Itzá, shared guided tour, entrance fees, cenote visit, lunch, and drop-off in Riviera Maya.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p89",
+                    "textSha256": "d0c2fd64bc20a4ea73ee8ecd4ec5ba90789fa9ee87f2367d7ef4d7bd6d0a9e5f"
+                  },
+                  {
+                    "ref": "word/document.xml#p91",
+                    "textSha256": "a08001235b5ad8b645f5c55099af0b4300f0b5dc030fdb84bddcb3ce5da0078e"
+                  },
+                  {
+                    "ref": "word/document.xml#p98",
+                    "textSha256": "1cad5b58557f7945079b326004bb0763d7361675b668f347f96f95fee128c6da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combined the Day 8 private-transfer and shared-tour context with the exact included-service list without changing service scope."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:27f3754a1d93c533",
+              "field": "notIncluded",
+              "sourceTextSha256": "8c78dbc2fc754077eb829c1dd64015ba21e6c11bbede7ee6caf1670617454f8a",
+              "text": "Domestic flight from Mexico City to Mérida (available upon request).",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p57",
+                    "textSha256": "95c0bac047ee93e9a93a743b693b42f52a5567d61cdc24a288ba8b8f0bc3c306"
+                  },
+                  {
+                    "ref": "word/document.xml#p63",
+                    "textSha256": "fe10adeb6c011be47fcf21333f5fdc17339208a6a578669446c91c19866ef3bd"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the domestic-flight exclusion and its on-request qualification; the route is specified by the Day 5 programme."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:b400ff7546bf79fc",
+              "field": "notIncluded",
+              "sourceTextSha256": "1b353134d5b4e83bf3ed54c7907368d94e88ca306f02411e3d1ad9a596b5106c",
+              "text": "Meals and drinks, except for the lunch included on Day 8.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p30",
+                    "textSha256": "d987c1bc9b6e5fd772ad3f1d622b6179792ccf0f3c8562036c5f1056d06e8d96"
+                  },
+                  {
+                    "ref": "word/document.xml#p41",
+                    "textSha256": "d987c1bc9b6e5fd772ad3f1d622b6179792ccf0f3c8562036c5f1056d06e8d96"
+                  },
+                  {
+                    "ref": "word/document.xml#p52",
+                    "textSha256": "58d01e5b39d3498ccb2449ef5b81c150b3da2719635607e926dfcca0643e0484"
+                  },
+                  {
+                    "ref": "word/document.xml#p63",
+                    "textSha256": "fe10adeb6c011be47fcf21333f5fdc17339208a6a578669446c91c19866ef3bd"
+                  },
+                  {
+                    "ref": "word/document.xml#p74",
+                    "textSha256": "f84023fbb04507b09624dc4085ef3d1845d588ed6ba58f9d56e3048bb4ade10f"
+                  },
+                  {
+                    "ref": "word/document.xml#p85",
+                    "textSha256": "f84023fbb04507b09624dc4085ef3d1845d588ed6ba58f9d56e3048bb4ade10f"
+                  },
+                  {
+                    "ref": "word/document.xml#p98",
+                    "textSha256": "1cad5b58557f7945079b326004bb0763d7361675b668f347f96f95fee128c6da"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Condensed repeated meal and drink exclusions, retaining the explicit included lunch in the Day 8 service list and the RU exception."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:be709821b36ad05d",
+              "field": "notIncluded",
+              "sourceTextSha256": "0770b68575073fae33591d85c9443853c2c1e7d1bc5b17dc3aea25b8e60cfc43",
+              "text": "Tips and personal expenses.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+                "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p99",
+                    "textSha256": "665a0842e52962e380f680c815c21d88bd1b9b2f19afaef56bfbed37d0a37f57"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted only tips and personal expenses from the exclusion list; the Riviera Maya overnight exclusion belongs to a separate service field."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:02:02.559Z"
+        "at": "2026-11-04T07:02:12.553Z"
       },
       "submission": null,
       "review": null,

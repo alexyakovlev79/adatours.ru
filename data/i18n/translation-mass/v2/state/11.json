@@ -235,7 +235,7 @@
         "expiresAt": "2026-11-04T07:46:04.459Z"
       },
       "checkpoint": {
-        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-008-04",
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-008-08",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
         "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
@@ -321,10 +321,89 @@
                 "transformation": "compose_route_label",
                 "rationale": "Extract the exact Jardim d’Amazonia Lodge name from the Word accommodation inclusion."
               }
+            },
+            {
+              "blockId": "tour:media_alt:9f1da1e20973964d",
+              "field": "media.alt",
+              "sourceTextSha256": "06fc63d4239e7092c5c6474c0a3cc079285771d7a95cc562465431725cdd9673",
+              "text": "A street in Cuiabá with palm trees, other trees and high-rise buildings, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word contains no exact alt caption for this existing Cuiabá streetscape; translate the current RU image alt without changing media."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:5f38c210a1907ab7",
+              "field": "media.hover",
+              "sourceTextSha256": "445e366b3473ba23fd7cc146d2ba7326ded3194a1f0af63f6b6f3fdf5764f123",
+              "text": "Cuiabá: cars on a city street surrounded by greenery",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word contains no exact hover caption for this existing Cuiabá street photograph; translate the current RU hover description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "aa495b0979b0fe3e691390f23bfe1a2cb6f7a1d504d6ab3a8362d38bede82970",
+              "text": "Amazon: trails and canoeing",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p22",
+                    "textSha256": "8e982ceee929f80832f68acfe7ba3d33cb9721fa354888c70fb88670afaed201"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Retain the exact Word day-title wording after removing only the leading Day 2 label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "29f2321c4f82cd1f68bec74c35453a3574bf9f53f5dedea0eb3f76d3433f5391",
+              "text": "After breakfast, Jardim d’Amazonia Lodge’s forest and canoeing programme begins. The trail walk, fish barbecue, time in a hammock and canoe trip along the Claro River towards Anaconda Lake are described in the excursion below.\n\nReturn to Jardim d’Amazonia Lodge for dinner and a second overnight stay.\n\nMeals: breakfast, lunch and dinner.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified Word contains the detailed excursion and board code but no short wrapper referring to the separate excursion below. Translate the current RU wrapper without copying the full shared excursion description beside its reference.",
+                "wordSource": {
+                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p23",
+                      "textSha256": "eda2e3991ef7de415a27db361de7fc8c8ec6d453902cca99a0a9fa4b3314d35d"
+                    },
+                    {
+                      "ref": "word/document.xml#p25",
+                      "textSha256": "43def17cf082e0a5206de6d00e8e441946e6b5b1b7604d1ea53eaa23e45a2912"
+                    },
+                    {
+                      "ref": "word/document.xml#p60",
+                      "textSha256": "e3059db8f9e76ec4f015b29c1ee796d8f22d239001bf3a3324e2db81b92189ec"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "sourceObservations": [
+            {
+              "kind": "edition_year_conflict",
+              "detail": "The exact selected file in the 2027 folder contains a 2026 heading and All Year 2026 tariff. This packet contains itinerary labels, service text and media captions; no price or year promise is changed."
             }
           ]
         },
-        "at": "2026-11-04T06:16:42.979Z"
+        "at": "2026-11-04T06:16:47.129Z"
       },
       "submission": null,
       "review": null,

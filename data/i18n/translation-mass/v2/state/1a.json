@@ -447,195 +447,22 @@
     {
       "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b003",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "e233f1b0fa4fdc332e6c628c853a5937d93943092f66b7ff107802a4fdfd0e02",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "claimedAt": "2026-11-04T06:18:38.815Z",
-        "expiresAt": "2026-11-04T07:48:38.815Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_6c7d31_s005_c08",
-        "format": "inline-v1",
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b003",
-          "stableId": "tour_nicaragua_best_10_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "e233f1b0fa4fdc332e6c628c853a5937d93943092f66b7ff107802a4fdfd0e02",
-          "sourceChecks": {
-            "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-            "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-            "sha256Verified": true,
-            "modifiedTime": "2026-10-05T20:38:46.318Z",
-            "yearFolder": 2027,
-            "editionYear": 2027,
-            "commercialTables": 1,
-            "tariffObservation": {
-              "currency": "USD",
-              "basis": "per person",
-              "SGL": 4599,
-              "DBL": 3607,
-              "evidenceParagraphs": [
-                35,
-                39,
-                40,
-                41,
-                43,
-                44
-              ]
-            },
-            "sourceDifferences": [
-              "Word day5 narrative names Villa Colonial while hotel table says Villa Paraiso; current RU keeps both pending confirmation.",
-              "Current RU also retains El Convento/Real La Merced and Victoriano/Alcazar alternatives, and day2/day5 overnight-location confirmation.",
-              "Current RU meal-by-day clarification has no single equivalent Word block; translated with its existing limits."
-            ]
-          },
-          "blocks": [
-            {
-              "blockId": "tour:included:6fbd6c54ece922d4",
-              "field": "included",
-              "sourceTextSha256": "f99bafc6ab1625eba41a5e022989de4c86fa3694dbe57b426b1ce63de4032b87",
-              "text": "Guided Tours as per the itinerary (English Speaking Guide)",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p71",
-                    "textSha256": "69bb982305d40ba154912ccf7621c6761588b27e4cbb35b42f0a9622f16b6afe"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:included:1c0c26edbc1fe3cf",
-              "field": "included",
-              "sourceTextSha256": "c30354968c3c9f0de5455805d6fe68abbffa252511dee1f6800fbaa6aa2c8fb8",
-              "text": "Accommodation: 9 nights and local taxes.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p72 says 'Lodging and local taxes' and p2 separately gives nine nights. No single matching service item includes the current RU night count; translate this combined item with the count unchanged.",
-                "inspectedWord": {
-                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
-                }
-              }
-            },
-            {
-              "blockId": "tour:included:4a8aef196f77250a",
-              "field": "included",
-              "sourceTextSha256": "719f973e896b820965104b67192e52742ddd5c6981226ac2bb4b96b77071e392",
-              "text": "Meals according to the itinerary: breakfast, lunch and dinner. Breakfast is specifically listed on days 2–6 and 10; lunch is also listed on day 4.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p73 gives a general meal-key line but does not contain the current RU clarification of meals by day. The current RU clarification is retained, consistent with meal markers in p12,p16,p20,p25,p28,p33; no additional meals are promised.",
-                "inspectedWord": {
-                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
-                }
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:664ca1d0362f346b",
-              "field": "notIncluded",
-              "sourceTextSha256": "6b2551d5efd1146fd32175b43f6445610f010b277cbd903a979cb6e3e27a078c",
-              "text": "Optional Activities.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p76",
-                    "textSha256": "8ca7c5f4b1b01cedc8a7bc3be4add3c955afbd36ff5286142a75eefab5b92404"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:e304461ecf9efba1",
-              "field": "notIncluded",
-              "sourceTextSha256": "d613d2359a6b3f4c832ceb208e5200d4c6bd508ff3ec12a7a84c2de258562646",
-              "text": "Arrival and Departure Taxes",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p77",
-                    "textSha256": "b0e5b945420bad0c23d53e24815b04c0cd3062caf7882f3af3d679934120e554"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:46f4669ed50621c8",
-              "field": "notIncluded",
-              "sourceTextSha256": "c7cd07f80c91ea3f703b84a635cfceb1d298f1017b1c3e1bdb194bf5da22f140",
-              "text": "Extras in hotels (laundry, phone calls, room service, etc.)",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p78",
-                    "textSha256": "d49ecda401653c64bc14e8554da91269dfdb60d227485edc4a6d18a1cac28760"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:note:b1f3673ba8b35e87",
-              "field": "note",
-              "sourceTextSha256": "7457e1d10dcf189e229ef0e59439d45f844d136cb2c505bdbf89a72acfc8cbbb",
-              "text": "The programme is designed for groups of 2 or more and can be arranged for any dates in 2027, except during Christmas, Easter and New Year periods.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p6 states minimum two participants and the holiday exclusions; p1 identifies 2027. The current RU note combines these into one sentence, which is not present verbatim in Word. Retain the current year and all exclusions.",
-                "inspectedWord": {
-                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
-                }
-              }
-            },
-            {
-              "blockId": "tour:note:51ab5193988024b7",
-              "field": "note",
-              "sourceTextSha256": "42db5e3d83894a07558743f5d75f945f57ed067214d6d18115afa316a5de3eed",
-              "text": "The final hotels are confirmed before booking: day 2 — El Convento or Real La Merced; day 5 — Villa Colonial or Villa Paraiso; days 6–9 — Victoriano or Alcazar. The overnight location on days 2 and 5 also requires confirmation.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "No equivalent hotel-confirmation note exists in the verified Word. Word p25 names Villa Colonial while its hotel table p57 names Villa Paraiso; p12/p51 name Real La Merced and p28/p59-p65 Alcazar. Translate the current RU unresolved alternatives and overnight-location caveat without selecting a hotel or changing the itinerary.",
-                "inspectedWord": {
-                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
-                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283"
-                }
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:20:56.053Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_6c7d31_s005",
+        "blobSha": "63feec473179f5141cc4c5bb5fd5b54303e14128",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_nicaragua_best_10_days_b003/ada_en_6c7d31_s005.json",
+        "at": "2026-11-04T06:40:25.333Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

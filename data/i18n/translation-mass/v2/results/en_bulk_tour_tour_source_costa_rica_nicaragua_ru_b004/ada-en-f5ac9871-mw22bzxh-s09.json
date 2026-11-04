@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b004",
+  "stableId": "tour_source_costa_rica_nicaragua_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f6206dacf01d262020ed06fb23f87d0fc4c2da4029f62820d41fbc00a8d3f2a9",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:0fa333293e1d31c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ecf1d4aaf87efa0e77b1e87aa624616c6ff82b4b7a23f4960dea213038d53667",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d18f7ca221e17edc",
+      "field": "media.alt",
+      "sourceTextSha256": "770703a2bc92ea38ae7c75e3d93878261d4c57aab7b915049f2784dbb4a055cb",
+      "text": "Church with two tall spires among palm trees in San José, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22bzxh",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word has no image-specific alt caption describing this San José church photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e0f80269819c81c9",
+      "field": "media.hover",
+      "sourceTextSha256": "682993244c7a0c39c6d5704f874e930d16440d6af3885a71893a625a70faf852",
+      "text": "San José: a church façade with twin spires and palm trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22bzxh",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word has no image-specific hover caption describing this San José church photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b47c5bbc22f4a37703ce82741944aef54bce566674351627d3ad95d14337c543",
+      "text": "Doka coffee tour – Poás Volcano – La Paz Waterfall Gardens",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p64",
+            "textSha256": "33fa3ee7a0440b11c1748f90869225d2b16291b0cc746eec99dc6871b0125061"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the three destinations from the Word days 1–2 heading for this day's itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c7f4dd7fb3c6f4d71e3914a2983041af930cf37dc97ea1f348276e8163c307ef",
+      "text": "The trip begins at the Doka coffee plantation.\n\nHere you will learn how Costa Rican coffee is grown, harvested, processed and roasted. Coffee is available to buy on site.\n\nContinue to Poás Volcano National Park. The temperature and vegetation change as you climb towards the volcano. The road passes coffee plantations, flower greenhouses and strawberry farms.\n\nAt the Poás crater, you can see sulphur fumaroles and learn about the national park’s ecosystems.\n\nThe next stop is La Paz Waterfall Gardens. A trail leads through the forest to the waterfalls. You can also visit the hummingbird gallery, serpentarium, aviary, butterfly garden and frog exhibit.\n\nReturn to San José.\n\n**Overnight:** Barceló San Jose Palacio.  \n**Meals:** breakfast and lunch.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22bzxh",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The Word day 2 paragraph names Hotel Palma Real, while this current RU block names Barceló San Jose Palacio and adds coffee purchases and changing temperature. No Word passage matches this current-hotel block; translate RU and retain its hotel without modifying protected Word text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e30e14fb446aafec",
+      "field": "itinerary.label",
+      "sourceTextSha256": "468a6cb1bcd162ee0c990d11f8368202b15a73ddeb3cfb793ad87ef2c03716bc",
+      "text": "Poás Volcano",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+        "documentSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p68",
+            "textSha256": "656c9579cdf02848e06858d860db066535e5045f64e73856a56c8493dc42ff53"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the volcano's English name from the Word day 2 programme for this place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c5513c929082c449",
+      "field": "media.alt",
+      "sourceTextSha256": "491ed975b78e3c7096e876bfe23396219a24f328531280bb136eddfc87de11e9",
+      "text": "Turquoise lake and steam in the broad crater of Poás Volcano, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22bzxh",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word has no image-specific alt caption describing this Poás crater photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d222014d1f62958c",
+      "field": "media.hover",
+      "sourceTextSha256": "31fc851b2646f4f0d96666482856d3bdb0d4fb3f9aac1c367a3fd704cbccfde9",
+      "text": "Poás: grey crater walls surrounding a pale turquoise lake",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22bzxh",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word has no image-specific hover caption describing this Poás crater photograph."
+      }
+    }
+  ]
+}

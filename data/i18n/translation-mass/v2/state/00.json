@@ -211,169 +211,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "ed986bc2d89a361ff66e03b4a26b6e8f6f0f3bc5a8007ff82b7c9ac81b7b1820",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-befca8d88a7c",
-        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
-        "claimedAt": "2026-11-04T05:39:26.173Z",
-        "expiresAt": "2026-11-04T07:09:26.173Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-ada-en-befca8d88a7c-03-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-befca8d88a7c",
-        "token": "ca9d19d3a2444d3eb27e82c408f2b400",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b008",
-          "stableId": "tour_brazil_southern_vip_7_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "ed986bc2d89a361ff66e03b4a26b6e8f6f0f3bc5a8007ff82b7c9ac81b7b1820",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:735798c76cc623a3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6cdb3a150f77a9be104c4f43259a7d47e19bfed7f048eae77b514487db9f092f",
-              "text": "Gramado",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
-                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p43",
-                    "textSha256": "f4209122bfaf4ca1674d722a2231a5d74b393c78ca9be4b25aeeb51693b2a039"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "42cfcf2a25511dbf38cda5eb029037ba4b47f70d14f04cf21528a1635b80c543",
-              "text": "Itaimbezinho Canyon",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
-                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p84",
-                    "textSha256": "614370570ede1a2e0833cd7f9f1fff8dbc88cb4c16bdcaab565cf8fae5f15fa5"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named destination as a standalone itinerary label, retaining the approved Word spelling."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceTextSha256": "17774747484f3a574977dd5328dff46cbc180301ef0523a1fc01c331a5507114",
-              "text": "Day 4 · A full-day excursion to Itaimbezinho Canyon, one of southern Brazil’s most impressive natural landscapes. In a spectacular protected area, the canyon is surrounded by dramatic cliffs, rolling highlands and lush vegetation; enjoy a day immersed in the extraordinary scenery, with time to explore its trails and viewpoints. Return to Cambará do Sul in the afternoon.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
-                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p87",
-                    "textSha256": "b9efe7b92cef379f59b1a9972f3d0e0fd8174972f87fd968549a0d1387575b5b"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:db131575044fde2b",
-              "field": "itinerary.label",
-              "sourceTextSha256": "ed6eff2d9d5d6bdbcf782eb0acfccd81cc018a6271904bcedcb70891a9bead73",
-              "text": "Cambará do Sul",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
-                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p86",
-                    "textSha256": "acec8a175d2105dbb155777f416d370b30db1973da940a5fa800f3898ac29169"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named destination as a standalone itinerary label, retaining the approved Word spelling."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:d9cfe133970a2cb6",
-              "field": "itinerary.label",
-              "sourceTextSha256": "42cfcf2a25511dbf38cda5eb029037ba4b47f70d14f04cf21528a1635b80c543",
-              "text": "Itaimbezinho Canyon",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
-                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p84",
-                    "textSha256": "614370570ede1a2e0833cd7f9f1fff8dbc88cb4c16bdcaab565cf8fae5f15fa5"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named destination as a standalone itinerary label, retaining the approved Word spelling."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:0eb20c430077bbb8",
-              "field": "media.alt",
-              "sourceTextSha256": "096cf1044084d4bbdbce4f576787871cdaf4d107207346d1a699f46b32f69c27",
-              "text": "The sheer walls of Itaimbezinho Canyon above a forested gorge, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-befca8d88a7c",
-                "wordAbsenceReason": "The verified Word describes the canyon, but contains no image-specific alt caption matching this RU field."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:3361f9572e0d4841",
-              "field": "media.hover",
-              "sourceTextSha256": "30fd91635c84c628092a5514a606213c3059ef1134f08a59d295ef099ebed203",
-              "text": "Itaimbezinho in Brazil: a deep green gorge between rock walls",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-befca8d88a7c",
-                "wordAbsenceReason": "The verified Word has no image-specific hover caption; translated the exact current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f60ccaf902463edc",
-              "field": "itinerary.label",
-              "sourceTextSha256": "42cfcf2a25511dbf38cda5eb029037ba4b47f70d14f04cf21528a1635b80c543",
-              "text": "Itaimbezinho Canyon",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
-                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p84",
-                    "textSha256": "614370570ede1a2e0833cd7f9f1fff8dbc88cb4c16bdcaab565cf8fae5f15fa5"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the named destination as a standalone itinerary label, retaining the approved Word spelling."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:40:33.583Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ada-en-befca8d88a7c-03",
+        "blobSha": "b26cc8a1f12a813eb1c7f4b1f939833199bc0da5",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_southern_vip_7_days_b008/sub-ada-en-befca8d88a7c-03.json",
+        "at": "2026-11-04T05:40:38.216Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

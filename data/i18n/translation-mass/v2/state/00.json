@@ -361,7 +361,7 @@
     {
       "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b001",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "783713d93b682f9eb6f9075d4fc5669cc1d7b90f9c4a5db3a03ee6e2c33293e3",
       "generation": 1,
       "attempts": 0,
@@ -372,13 +372,43 @@
         "at": "2026-11-04T06:09:00.853Z"
       },
       "submission": {
-        "id": "ada_en_abf469133bbf:tour_chile_marble_caves_san_rafael_three_days:b001",
-        "blobSha": "6a66a52300925ebc3d5c14ed405017c5cc07b19f",
-        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_marble_caves_san_rafael_three_days_b001/ada_en_abf469133bbf_tour_chile_marble_caves_san_rafael_three_days_b001.json",
-        "at": "2026-11-04T06:09:52.558Z"
+        "id": "amanda-qa-20261104-marble-b001-v1",
+        "blobSha": "b6f925802aa81a564504e007d12fe6d980f73ee5",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_marble_caves_san_rafael_three_days_b001/qa-amanda-qa-20261104-marble-b001-v1-b6f925802aa81a56.json",
+        "at": "2026-11-04T20:11:03.795Z"
       },
-      "review": null,
-      "nextAttemptAt": null
+      "review": {
+        "reviewerId": "amanda-en-independent-qa-20261104",
+        "at": "2026-11-04T20:11:03.795Z",
+        "acceptedBlobSha": "b6f925802aa81a564504e007d12fe6d980f73ee5",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
+      "nextAttemptAt": null,
+      "qaRevisions": [
+        {
+          "reviewerId": "amanda-en-independent-qa-20261104",
+          "at": "2026-11-04T20:11:03.795Z",
+          "previousSubmission": {
+            "id": "ada_en_abf469133bbf:tour_chile_marble_caves_san_rafael_three_days:b001",
+            "blobSha": "6a66a52300925ebc3d5c14ed405017c5cc07b19f",
+            "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_marble_caves_san_rafael_three_days_b001/ada_en_abf469133bbf_tour_chile_marble_caves_san_rafael_three_days_b001.json",
+            "at": "2026-11-04T06:09:52.558Z"
+          },
+          "revisionId": "amanda-qa-20261104-marble-b001-v1",
+          "changedBlockIds": [
+            "tour:priceNote:9b6b7f5cf7b1e557"
+          ],
+          "reason": "Correct fabricated Word tariff provenance: exact Word 2027 confirms price basis but not USD 2,000; numeric amount derives from unchanged current canonical RU priceFrom/priceNote. Keep the customer-facing price and confirmation caveat unchanged.",
+          "confidence": 98
+        }
+      ]
     },
     {
       "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b004",

@@ -1,0 +1,129 @@
+{
+  "jobId": "en:bulk:tour:tour_source_bolshie_meksikanskie_kanikuly:b004",
+  "stableId": "tour_source_bolshie_meksikanskie_kanikuly",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "341690bb544fb372373a9e7a69129180dbf569b99f035887447db7d4bd143f3b",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:b54e52befa319b2d",
+      "field": "notIncluded",
+      "sourceTextSha256": "d58e03c5dfe26893e7da7c1a96b218814a911e0512d56c3d958d093df21eb472",
+      "text": "International and other flights, unless expressly listed as included.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word excludes airfare and several taxes without the RU exception for flights expressly included; this qualifying clause is absent."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:28382f5f4aad89f4",
+      "field": "notIncluded",
+      "sourceTextSha256": "9d7d6d47b903b4d7a46ffe7937c9725da242de1b14bda7f985c6b24ebcbff866",
+      "text": "Tips for the guide and driver.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:77",
+            "textSha256": "29579eaadffc4369197dfe68c95e621bcba2ca61ee96d1634e42fb0a72051683"
+          },
+          {
+            "ref": "word/document.xml#p:78",
+            "textSha256": "3a4f658a4588077b9b022b041d1253e0c9120aaf835720e98fc0183226df1c17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the guide and driver gratuity label for the RU exclusion, without importing Word-only suggested tip amounts."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6a39ccd049ddceb7",
+      "field": "notIncluded",
+      "sourceTextSha256": "4b578879e5a3551af8603a418be586458d39a177aefc00055c9ab97505e432dc",
+      "text": "Lunches and dinners.\n\nBefore purchasing a domestic flight ticket, you must confirm the flight number with the reservations department. The recommended departure time from Mexico City is between 12:00 and 13:00.\n\nPassengers arriving on other flights can only be provided with private transfers at an additional charge: 1–3 people, $230; 4–5 people, $280.\n\nFor domestic flights, select Aeropuerto Internacional Benito Juarez Ciudad de Mexico, AICM, airport code MEX.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has a general meals clause but no RU domestic-flight confirmation, 12:00–13:00 departure window, MEX airport instruction or private-transfer charges of $230/$280."
+      }
+    },
+    {
+      "blockId": "tour:note:1ffa9a907dfaa903",
+      "field": "note",
+      "sourceTextSha256": "04e3cf2fcbfdb1786f2fce0bf4684ce1a727dffb7caac75836ca0d1f6d4b49ca",
+      "text": "If necessary, Ada Tours may replace the listed hotels with others of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word mentions similar accommodation in the inclusion list but contains no standalone Ada Tours hotel-substitution clause."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while retaining the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No clause in the verified Word allows changing excursion order while retaining the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:b945b35735fb6701",
+      "field": "note",
+      "sourceTextSha256": "a93ef08b7351443416a87e46145591263e83304a74a1434e673b88941944053f",
+      "text": "Ada Tours is not responsible for missed breakfasts when early hotel check-out is required for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-20261104-de39b0be5c37",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No early-check-out or missed-breakfast liability clause appears in the verified Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "0d1997db18761bc615c16b6d56ece0e01fb1ea20504cdb479fb9ab26ff708dd6",
+      "text": "Mexico City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:7",
+            "textSha256": "78497ee49262335f38a8c88c13974ecc7998af7dc9ff6cc32c0b4a125c5e8831"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number prefix to fit the itinerary title field while preserving Mexico City."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7c95003b934203a2afb009e8a76cc9d9536e6be0800db341e5b16ad9e07e8af8",
+      "text": "Arrival at the airport. Transfer with driver only and check-in at a 4* hotel. Free evening for rest.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "documentSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:8",
+            "textSha256": "58c71440fac1e7895801c5a8f22d50cb1d8c95ce01ac9933c1992e3a93408767"
+          }
+        ]
+      }
+    }
+  ]
+}

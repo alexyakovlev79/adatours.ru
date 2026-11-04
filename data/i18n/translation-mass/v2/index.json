@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1606,
-    "leased": 9,
+    "queued": 1605,
+    "leased": 10,
     "review": 794,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1606,
-      "leased": 9,
+      "queued": 1605,
+      "leased": 10,
       "review": 794,
       "ready": 1,
       "retryable": 0,
@@ -945,8 +945,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 39,
-          "leased": 0,
+          "queued": 38,
+          "leased": 1,
           "review": 29,
           "ready": 0,
           "retryable": 0,
@@ -977,7 +977,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:03:20.195Z",
       "earliestRetryAt": null
     },
     "0d": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_chili_argentina_braziliya:b009",
       "token": "ada_en_8ff8ce2575fb_20261104",
       "expiresAt": "2026-11-04T18:03:11.762Z",
+      "generation": 1
+    },
+    "ada-en-08163b3a444d": {
+      "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b002",
+      "token": "tk-08163b3a444d-20261104",
+      "expiresAt": "2026-11-04T18:03:20.195Z",
       "generation": 1
     }
   },
@@ -4089,8 +4095,15 @@
         "en:bulk:tour:tour_source_chili_argentina_braziliya:b009"
       ],
       "completedJobIds": []
+    },
+    "ada-en-08163b3a444d": {
+      "token": "tk-08163b3a444d-20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b002"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:33:11.762Z"
+  "updatedAt": "2026-11-04T16:33:20.195Z"
 }

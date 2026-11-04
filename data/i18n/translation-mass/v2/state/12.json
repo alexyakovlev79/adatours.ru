@@ -517,7 +517,7 @@
         "expiresAt": "2026-11-04T08:24:56.825Z"
       },
       "checkpoint": {
-        "id": "ada-en-a40ee2cc-p02-cp4",
+        "id": "ada-en-a40ee2cc-p02-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-a40ee2cc",
         "token": "ada-en-token-a40ee2cc-71df-20261104",
@@ -615,10 +615,76 @@
                 "transformation": "contextual_label",
                 "rationale": "Removes the repeated uppercase destination label from the exact arrival heading, retaining the itinerary title."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "366902dffb61dc46e7e4012d59277b995ee849598d68bbd45a5be73cf239ca5f",
+              "text": "Upon arrival at Tocumen International Airport, you will be welcomed by your private guide in your selected language, who will accompany you throughout your stay in Panama and transferred to your hotel.\n\nOVERNIGHT\n\nPanama City",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:31",
+                    "textSha256": "1823b3b1e72086be7e7007f6afb9f3d39549bda58e6b585f3d7023198521f8a1"
+                  },
+                  {
+                    "ref": "word/document.xml:p:34",
+                    "textSha256": "a54ccfaa345045e6adbcfad9e1257a650e6399f45e53b36e0f36258240517b39"
+                  },
+                  {
+                    "ref": "word/document.xml:p:35",
+                    "textSha256": "c10eca654cdcab37352ddfb359e4fac85a21845332e37612c930e45a1cee9b8a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cefd11bf3c9afceb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
+              "text": "Panama City",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+                "documentSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:35",
+                    "textSha256": "c10eca654cdcab37352ddfb359e4fac85a21845332e37612c930e45a1cee9b8a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e6f217d49f9e32b0",
+              "field": "media.alt",
+              "sourceTextSha256": "92ea9a22523be26390c6f00fe12307fac42a843bee936dde2ae1a48f12ec5b25",
+              "text": "Small fishing boats in front of Panama City's high-rise buildings",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word 2027 contains no matching photograph ALT text; translated the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:5a8797a07dd85792",
+              "field": "media.hover",
+              "sourceTextSha256": "5c8e1c48fb57dd04732f3d9996a8c1c914079b7953c20db58a48dcb471bf0d9e",
+              "text": "Panama: a fishing harbour against the modern city skyline",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-run-a40ee2cc",
+                "wordAbsenceReason": "The checked Word 2027 contains no matching image hover caption; translated the current RU media caption."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:56:21.438Z"
+        "at": "2026-11-04T06:56:35.045Z"
       },
       "submission": null,
       "review": null,

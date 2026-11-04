@@ -293,7 +293,94 @@
         "claimedAt": "2026-11-04T06:25:19.266Z",
         "expiresAt": "2026-11-04T07:55:19.266Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-9c9ff2214505-colombia-b002-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9c9ff2214505",
+        "token": "token-9c9ff2214505-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b002",
+          "stableId": "tour_colombia_highlights_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "db4b710a81b4b07cb9eeeea8e155dd228e45d4ab3f52745a4bb86878ee6866f1",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:991e17d2ef70ddb6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+              "text": "Medellín",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p77",
+                    "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6b074d5fb0be94d8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "ed8dee78bdba6a188ae4c84b7fb31ffe2abbdfacb6324702481c0d48881b2e73",
+              "text": "Guatapé",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p88",
+                    "textSha256": "a69e4aa94c82c4847c76b6f54df942da6c89e3812d31aae126338ba143bb912f"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7ed289cbe7fd8a9f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "4d8052290e41a10ed5437537c3325e6489051d2377eae754720dcbdbfee97c7a",
+              "text": "El Peñol Rock",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p89",
+                    "textSha256": "8ef2bb2b470236ce7b55f53ebbf308eabf3a24aab87c2527531746052b2077d7"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the destination name from the approved Word paragraph for this route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:991e17d2ef70ddb6:2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+              "text": "Medellín",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p77",
+                    "textSha256": "3c382074b2c177d5d4e959445f3a5e2d3c0b5d74b91a09640a6bd9fac457907e"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:40:12.083Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

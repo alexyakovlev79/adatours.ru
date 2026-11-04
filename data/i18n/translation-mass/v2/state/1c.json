@@ -304,7 +304,91 @@
         "claimedAt": "2026-11-04T06:00:52.159Z",
         "expiresAt": "2026-11-04T07:30:52.159Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2661932f-20261104-s02-cp04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2661932f-20261104",
+        "token": "ada-en-token-2661932f-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-en-2661932f-20261104-s02",
+          "result": {
+            "jobId": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b011",
+            "stableId": "tour_guatemala_belize_maya_world_12_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "9c12ed314da0ffef2d614dc2016a72750b9733852ce8a30764060d0e97791f54",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:392794a8a28ae116",
+                "field": "itinerary.label",
+                "sourceTextSha256": "9cfece5fdc4f008d08f186c7d852423f4a283e30e39b6b93cb008460c7ff2b20",
+                "text": "Tikal",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "modifiedTime": "2026-10-28T14:23:51.828Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p46",
+                      "textSha256": "cd5ebc7b075a4c6915a6d2ec3b20803ba2f4398e905781d6b339b86b0ed03189"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the confirmed place name from the corresponding Word itinerary or destination list as a separate place label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:0c18640cf44318c2",
+                "field": "itinerary.label",
+                "sourceTextSha256": "e7f51ae52e8a56c6001bb204491b5051b68a7401a95c9bf34514166502cb5804",
+                "text": "Flores",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                  "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                  "modifiedTime": "2026-10-28T14:23:51.828Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p101",
+                      "textSha256": "ca83a949d230981ca3379d89582054c7afab61c0eb6acc4cb0cfe66d25fdbf11"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the confirmed place name from the corresponding Word itinerary or destination list as a separate place label."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:de64b23803a650a7",
+                "field": "media.alt",
+                "sourceTextSha256": "226c7c88c09aa2dde153286797903119fc9932af23249da4e0cc22732eabeec5",
+                "text": "Boat on a lake in the orange light of the low sun near Flores, Guatemala",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word contains no caption for this specific existing website photograph; translate the exact frozen RU media text."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:a12756046f90d3d6",
+                "field": "media.hover",
+                "sourceTextSha256": "460be8ea94d4372027018171e0d5bf6aac8802c918ebee2b5bb541a237641e83",
+                "text": "Flores: a boat and a trail of sunlight across the lake",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word contains no caption for this specific existing website photograph; translate the exact frozen RU media text."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-04T06:01:50.720Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

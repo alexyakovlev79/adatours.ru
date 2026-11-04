@@ -1,0 +1,183 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fantasticheskij_tur_po_meksike:b001",
+  "stableId": "tour_source_fantasticheskij_tur_po_meksike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "86f186c2bd96d49a83e9c4efd290474779de3eeafce16fe953f24db86e61ae1f",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "9fe0ed9cce29526b31c6ca481400735beeecccc7cefb8809317e0c620250c470",
+      "text": "Mexico Fantastico 2027",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-1",
+            "textSha256": "baccc81064526ae5f001b1d3f0870c6d3bc17c103b8c718e78a8a3fa75376682"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Normalized excess spacing from the approved Word brochure title without changing the approved English title."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "1c7d2be2e392c19f77a8060e5f316802b582a920fcf157259e819bbfb6d21a26",
+      "text": "12 days / 11 nights: Mexico City and Teotihuacan, then a flight to Tuxtla Gutiérrez for Sumidero Canyon, San Cristóbal and the indigenous communities, Agua Azul, Palenque, Yaxchilán and Bonampak. The journey concludes with three nights in Cancún. Services are accompanied by an English-speaking guide; Cancún transfers are operated by a Spanish-speaking driver only.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-2",
+            "textSha256": "91b1bed7d61799e1e1e724727337f363543ad1127a0955ab891a109d73b4c6ac"
+          },
+          {
+            "ref": "google-drive-text-extract#line-3",
+            "textSha256": "830eff325512e22c06eb1673baea402520bd9bc181507feb7b9968406190dc34"
+          },
+          {
+            "ref": "google-drive-text-extract#line-18",
+            "textSha256": "871960389c918a8d84bcb540788f79a2b1fb47cda7046d05244af7b8da058ad6"
+          },
+          {
+            "ref": "google-drive-text-extract#line-22",
+            "textSha256": "5c2da6711b64f54da434e9ac3fcf603c9e1b7c98feaac520a1f02cab0945ca1f"
+          },
+          {
+            "ref": "google-drive-text-extract#line-26",
+            "textSha256": "3b5a1ec8e4859e003f0bf2d06684d20c012fce7abd456bab6142d11d3a96755c"
+          },
+          {
+            "ref": "google-drive-text-extract#line-31",
+            "textSha256": "c0d8a52a737d1d2c3b2f7f11a4932ee42a183a54b0eaeb5ecee94cb797feee22"
+          },
+          {
+            "ref": "google-drive-text-extract#line-63",
+            "textSha256": "8d1b67390761f15a032100c65f057f04569218d8d887411829ac56c16c4833d8"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Built a concise route description from approved English programme headings, including guidance and transfer-language conditions."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "343a532970ad5dc787778b22c0531e0dd86b98c801f353f44ad29800e780a6e9",
+      "text": "USD 4,046 per person in a double room with 4-star hotels; the 5-star option is USD 5,209 per person in a double room. Airfare is additional.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-chat-5of5-20261105-0206-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word extract contains a pricing heading but no matching 4-star and 5-star double-room price figures; translated current RU price note, preserving both amounts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2e2ec5612248e239",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2485c1787158d062e516504c400acedbfd251b832c3d8350af9e7f3fae9f8a19",
+      "text": "Mexico City (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-2",
+            "textSha256": "91b1bed7d61799e1e1e724727337f363543ad1127a0955ab891a109d73b4c6ac"
+          },
+          {
+            "ref": "google-drive-text-extract#line-3",
+            "textSha256": "830eff325512e22c06eb1673baea402520bd9bc181507feb7b9968406190dc34"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Shortened the first three Mexico City itinerary days into a route-place label and retained the night count."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ce6994969b4972d6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
+      "text": "Teotihuacan",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-14",
+            "textSha256": "581ac91f3dee04a605c1a30ec3c4958f61342f0c41563945027c9ff4b58347ed"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Selected the English spelling of Teotihuacan from the approved Word Day 3 heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0a195a51d9d54622",
+      "field": "itinerary.label",
+      "sourceTextSha256": "70af22088591c278e3bc30f193cde985106f25990fa724b2a9f961bfde2b272e",
+      "text": "Tuxtla Gutiérrez – Sumidero Canyon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-18",
+            "textSha256": "871960389c918a8d84bcb540788f79a2b1fb47cda7046d05244af7b8da058ad6"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the approved Day 4 Tuxtla Gutierrez and Sumidero Canyon locations into one route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bbc3e5fc3f507335",
+      "field": "itinerary.label",
+      "sourceTextSha256": "96548fee2750aea2855411ae9de49843418c02b5496a882faa0beb319f87ea53",
+      "text": "San Cristóbal, Zinacantán and San Juan Chamula (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-22",
+            "textSha256": "5c2da6711b64f54da434e9ac3fcf603c9e1b7c98feaac520a1f02cab0945ca1f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Summarized the approved Day 5 San Cristobal excursion including Zinacantan and San Juan Chamula communities and the stay duration."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:58c90744b724143e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a105a788347ba6c87a683b0920b629792128ad84bb930e68bb1202a19a36c409",
+      "text": "Agua Azul – Palenque (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1UXO768NkUX7ndNnNDtvFiwaaEWBGea6R",
+        "documentSha256": "5036096cc88ddda28ac5d1ea7de94b7a527b165650694d5175cec95941d65d3f",
+        "paragraphs": [
+          {
+            "ref": "google-drive-text-extract#line-26",
+            "textSha256": "3b5a1ec8e4859e003f0bf2d06684d20c012fce7abd456bab6142d11d3a96755c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Used approved Day 6 Agua Azul and Palenque locations with the three-night stay inferred from days 6 to 9."
+      }
+    }
+  ]
+}

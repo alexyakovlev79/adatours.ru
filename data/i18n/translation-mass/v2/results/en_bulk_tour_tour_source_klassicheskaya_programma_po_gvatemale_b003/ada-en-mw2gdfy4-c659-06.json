@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskaya_programma_po_gvatemale:b003",
+  "stableId": "tour_source_klassicheskaya_programma_po_gvatemale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "65224c2b85b5c2f3c96b7c9cf93958f1ebb9dedbc29f6bd663b28621651aad15",
+  "blocks": [
+    {
+      "blockId": "tour:note:e3af986a1e8dc2ee",
+      "field": "note",
+      "sourceTextSha256": "9fe027d7f888a6634ee32239777f6990771be95c59d7bca17ffa495c3679e396",
+      "text": "If necessary, Ada Tours may replace hotels with others of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word lists the hotels and booking availability but has no equivalent hotel-substitution clause. This condition is translated from the pinned RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:80d2ed11276533ef",
+      "field": "note",
+      "sourceTextSha256": "55379aed07b2e9467f3a3ba4b6a6e3596d1440d48c9760ca43042defa76c4e16",
+      "text": "Ada Tours may change the order of excursions while retaining the full tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no equivalent clause allowing a change to the order of excursions while preserving the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:a9105769b0e1cd55",
+      "field": "note",
+      "sourceTextSha256": "a9b6165676cbe5c9b81a72fb422262446c77dd30f562ab9a5cc38761dfb4f745",
+      "text": "Breakfasts missed because of early check-out for an early flight or excursion are not compensated.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no equivalent condition concerning compensation for breakfast missed due to early check-out, flights or excursions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6ce1ca2c74889f576654efa5e9de094b1546528478f0267c6889db48e7304c2d",
+      "text": "Guatemala City – Antigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the arrival-day route heading from the two cities explicitly connected by the Word airport transfer."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d46da7c53780b5d40a535579ecf975f371708a7b50f2b8c4f876d0bcc42cf73a",
+      "text": "Arrival at La Aurora International Airport.\n\nA representative of the local operator will meet you at the airport. Transfer to Antigua, approximately 40 km away, with a journey time of about 1 hour.\n\nAfter check-in, you will receive a detailed briefing on the journey ahead.\n\nOvernight at Villa Colonial.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 1 names the airport, transfer and hotel but does not contain the local representative, 40 km/1 hour journey details or the post-check-in briefing. The full pinned RU block therefore has no equivalent Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3a44e89961d0ffdf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c4487ded86c59c5a5a35f2eb03cf6f8fe9bdc4e5fd50c082ae37ac54eab748db",
+      "text": "Guatemala City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the arrival city explicitly named in the Word Day 1 airport-and-transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:89b31d56eb18a399",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0f9c9cf3126a3243a817cc833027300d5896a9ce52642e2f57cbda1dcd59efa7",
+      "text": "Antigua Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          },
+          {
+            "ref": "word/document.xml:p79",
+            "textSha256": "bb5627fd6e11d08a4e765422cacad969b8592ad2e680f48719e35bd27a6162f1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the full English place label for Antigua, the Guatemalan city explicitly identified in Word Day 1 and its city-tour history."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8bbebdc55e788588",
+      "field": "media.alt",
+      "sourceTextSha256": "536b96edd8df8ea6071f05dfc1039fa52f089f0c7cc94f98f39e543d83f1cc54",
+      "text": "Yellow clock arch on a street in Antigua Guatemala, with a volcano in the background, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No image-specific alternative text describing the yellow clock arch and background volcano appears in the selected Word."
+      }
+    }
+  ]
+}

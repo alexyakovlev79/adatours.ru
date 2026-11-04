@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b002",
+  "stableId": "tour_source_kontinentalnyj_ekvador_amazoniya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "96f89a88b6ebbad4a8b5390e07e6453f2a8c357b7bf59c0fdc0ee528ecf6be26",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:c3fa41bcc90a498e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "34923a536eb2049c571dd82b2df281dff922b0d3d515e241aeb5046987eb9b80",
+      "text": "Bellavista",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:87",
+            "textSha256": "27e3ef864fcb54b974fdf4861720a9cd607df2fee83d291058b96cfca1af34e9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the reserve name from the approved Day 7 paragraph for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a84d554e19827ffa",
+      "field": "itinerary.label",
+      "sourceTextSha256": "730be8762f922f2e19182a2065f65b5f853209a55b549a576af83a79719c1598",
+      "text": "Mindo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:88",
+            "textSha256": "b06e6abe5863c7627624e7f2341c80c0f8d72741e3f2a3dae1ff6383773a3955"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the destination name from the approved Day 8 paragraph for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:44489e0183719c05",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5acec8d39027fd71bcb44a9edc8ecab27c2ca4bccf66edce439c962796bfd238",
+      "text": "Yanacocha",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Yanacocha is an existing RU route label but is absent from the confirmed Word 2027 text; retain that assigned route name in English without inventing a visit description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c1ee804025894f81",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e44259dd663bba348b8861f05867be4110816154dcc0c7e70b585a01c8cfe0b6",
+      "text": "Cotopaxi",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:90",
+            "textSha256": "37d413a16b46cd7b263c1928ba1fe779913a1ae56df57cd4e50b15f9c5a3a39c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the national park destination name for the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8efd2487f2868eec",
+      "field": "itinerary.label",
+      "sourceTextSha256": "737fcac1e647d0974049e09645461c42a2897ea0ea3569daf3c28ac7cc6c7935",
+      "text": "Quilotoa",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_98a794b99d49",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Quilotoa is an existing RU route label but is absent from the confirmed Word 2027 text; translate only the assigned route label and leave route changes to the master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0fe30fd4c0d517db",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f674ee48b11959d9c481e0228eb080e953e35c2cbf5f6374e5c0d3814a12d2d1",
+      "text": "Coca and Sacha Lodge",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:98",
+            "textSha256": "9b062f5f365417eb921b6cdee9f16531a7844c291922655319d9243075bd23e1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing combined route label from the two named destinations in Day 11."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f0541bbf83cbdf6d:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32734b2b9d1083b6f278caadf14c006e96dec83e80bc7557305451499d2f4750",
+      "text": "Quito",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:114",
+            "textSha256": "ef859221bb583220b58d1ca4d66f1ec513fa78a4c8713acf097cbafb1b481e62"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:205c11df9a725161",
+      "field": "included",
+      "sourceTextSha256": "1ef7015bd6472663f5cf088adb6e61aedec9694b6559bc272ce8eb430fc748fa",
+      "text": "Transfers and excursions: group in the Amazon, private for the rest of the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:195",
+            "textSha256": "d0a3c60123615f617e9d8a8d925af209e4d70f8cb8c2f3a18f4667ce7b2fb7a3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word bullet marker to fit the separate included-service field."
+      }
+    }
+  ]
+}

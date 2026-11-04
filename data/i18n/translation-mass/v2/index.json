@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1153,
-    "leased": 13,
+    "queued": 1152,
+    "leased": 14,
     "review": 1222,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1153,
-      "leased": 13,
+      "queued": 1152,
+      "leased": 14,
       "review": 1222,
       "ready": 20,
       "retryable": 0,
@@ -1265,8 +1265,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 16,
-          "leased": 0,
+          "queued": 15,
+          "leased": 1,
           "review": 47,
           "ready": 0,
           "retryable": 0,
@@ -1297,7 +1297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T23:25:36.334Z",
       "earliestRetryAt": null
     },
     "1f": {
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b003",
       "token": "ada-en-mw2nlx3k-amanda-token",
       "expiresAt": "2026-11-04T23:25:09.666Z",
+      "generation": 1
+    },
+    "ada-en-mw2nm357-amanda": {
+      "jobId": "en:bulk:tour:tour_source_rajskaya_braziliya:b007",
+      "token": "tk-mw2nm357-15890d93c0af",
+      "expiresAt": "2026-11-04T23:25:36.334Z",
       "generation": 1
     }
   },
@@ -5492,7 +5498,8 @@
     "ada-en-mw2nm357-amanda": {
       "token": "tk-mw2nm357-15890d93c0af",
       "jobIds": [
-        "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b010"
+        "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b010",
+        "en:bulk:tour:tour_source_rajskaya_braziliya:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b010"
@@ -5535,5 +5542,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T21:55:28.494Z"
+  "updatedAt": "2026-11-04T21:55:36.334Z"
 }

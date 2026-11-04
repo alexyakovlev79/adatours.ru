@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_s_san_paulo:b006",
+  "stableId": "tour_source_braziliya_s_san_paulo",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8fa5ea27254979b7d03936a889b151258949222dce7c45c22b4e862140573a6f",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:e78af356cc496476",
+      "field": "media.alt",
+      "sourceTextSha256": "a0b6f74c3d356e2973e099d2666f0d344e15c09a09d9281e949ea99260c071cd",
+      "text": "Three smiling children with face paint, blue feather ornaments and beads, Amazon region, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-fd1138068893",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching image alt text; translated the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8b2dc2dd182801f6",
+      "field": "media.hover",
+      "sourceTextSha256": "721fedd3d76bb16eab6ae8007c9c84b588e6b79a77ba4803eb7dde9a4e5f61d7",
+      "text": "Children of the Amazon wearing feather ornaments against a forest backdrop",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-fd1138068893",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching image hover caption; translated the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2a4ca397e035dcd38df8f5af66891b40a2d6ff348094494fb35465f8cb0ffdb",
+      "text": "Manaus – Rio de Janeiro",
+      "provenance": {
+        "fileId": "17NnL3w_rDYEiXXG1EslfyusClEqpZaE9",
+        "documentSha256": "04397a1912f2779e1eeb2bd5b9d3cf5e6d4f9d991ba4d2c1de148e6dd0dc5002",
+        "kind": "word_aligned",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[88]",
+            "textSha256": "e8d5d7091c6f3bbdc1a7e9e63b83794e21c507c4793bf66f246dc0846355214f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Removed the section prefix and normalised case in the confirmed route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c986a0975bfc2ea7b97b20eb994ebe9269de62b137048ef718133b457225dfaa",
+      "text": "Day 5 · Transfer to Manaus airport for your flight to Rio de Janeiro, where your driver meets you for the transfer to the hotel. Rio is green hills, blue sky, beautiful bays, islands and marvellous beaches: Brazil’s second-largest city and one of the most beautiful in the world, where Copacabana, Ipanema and Leblon are famous for their black-and-white mosaic promenades, beach cafés serve coconut water and fresh juices, and local musicians play on the sand.",
+      "provenance": {
+        "fileId": "17NnL3w_rDYEiXXG1EslfyusClEqpZaE9",
+        "documentSha256": "04397a1912f2779e1eeb2bd5b9d3cf5e6d4f9d991ba4d2c1de148e6dd0dc5002",
+        "kind": "word_exact",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[92]",
+            "textSha256": "085faadafd16c1237b79b3510b82e9f7985d8672215ec34ef150061634d91ce1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2a305b40321085a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "fileId": "17NnL3w_rDYEiXXG1EslfyusClEqpZaE9",
+        "documentSha256": "04397a1912f2779e1eeb2bd5b9d3cf5e6d4f9d991ba4d2c1de148e6dd0dc5002",
+        "kind": "word_exact",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[91]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:34222ca2d5086cf4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "fileId": "17NnL3w_rDYEiXXG1EslfyusClEqpZaE9",
+        "documentSha256": "04397a1912f2779e1eeb2bd5b9d3cf5e6d4f9d991ba4d2c1de148e6dd0dc5002",
+        "kind": "word_aligned",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[75]",
+            "textSha256": "0c7fea0f882c5ddc70a1b49f56109215c55a03c73f25c282692f190a9481cc17"
+          },
+          {
+            "ref": "word/document.xml:p[123]",
+            "textSha256": "ae3c923b7464986811bc370523960ebf9f3cf234cdedaedb9c927ee4adc21c20"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composed the combined place label from the confirmed Manaus and Amazon section heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:84120a32a8194085",
+      "field": "media.alt",
+      "sourceTextSha256": "2de98a2fdf7697c551dc81ad6cb8a139504dd1a57ae5e17522a3d9f80be848cb",
+      "text": "Pictured: A booking in Rio de Janeiro",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-fd1138068893",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching image caption. Translated the assigned ambiguous RU alt text literally; its wording requires independent content review."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "0639ed909a5b237126a2c9d7477e1c7410674cf17f7c38f47f835261dd81f969",
+      "text": "Sugar Loaf and old Rio",
+      "provenance": {
+        "fileId": "17NnL3w_rDYEiXXG1EslfyusClEqpZaE9",
+        "documentSha256": "04397a1912f2779e1eeb2bd5b9d3cf5e6d4f9d991ba4d2c1de148e6dd0dc5002",
+        "kind": "word_aligned",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[43]",
+            "textSha256": "52e7420260c3b5ec74d4a21b09c3b207e86cf16e10389bce6d9965bef6f41675"
+          },
+          {
+            "ref": "word/document.xml:p[44]",
+            "textSha256": "037f130e4a399e4c090fc00acd2985a649b9cff6c7ea926a48fe8df0e686e479"
+          },
+          {
+            "ref": "word/document.xml:p[93]",
+            "textSha256": "cbb352b3d1fa564a0943fc82d39927f426b584883b88520e4988a6580ed64ee8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Composed a concise heading from the confirmed Sugar Loaf and old-centre sightseeing programme."
+      }
+    }
+  ]
+}

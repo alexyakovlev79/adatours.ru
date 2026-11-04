@@ -515,7 +515,7 @@
         "expiresAt": "2026-11-04T08:30:08.581Z"
       },
       "checkpoint": {
-        "id": "ada-en-2661932f-20261104-s09-cp04",
+        "id": "ada-en-2661932f-20261104-s09-cp08",
         "format": "inline-v1",
         "ownerId": "ada-en-2661932f-20261104",
         "token": "ada-en-token-2661932f-20261104",
@@ -605,11 +605,77 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:767e03efc092244c",
+                "field": "itinerary.label",
+                "sourceTextSha256": "e58a965a100dff871e1bc0dab50f95e60b21e1f3af8eb0c348457bc8758e7a48",
+                "text": "La Fortuna & Arenal Volcano",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                  "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                  "modifiedTime": "2026-10-27T13:09:10.999Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p77",
+                      "textSha256": "f9c8a456c829aab9208149416d1337f66cd2662468ad96df458025ccd9f3dcb0"
+                    },
+                    {
+                      "ref": "word/document.xml:p78",
+                      "textSha256": "0d9f733741e2ab9a102d44834cd3bf1e32a59d538da5fac588022ef11d8d5c2c"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Compose the existing combined place label from La Fortuna and Arenal Volcano, both explicitly named in the approved Word."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:6d64e140f7ff36a0",
+                "field": "media.alt",
+                "sourceTextSha256": "2305ba7274f1d5155bfeb090349d05516df464a43a642027ab17873ca27ab93c",
+                "text": "Cascading pools among palms and tropical greenery in the Arenal area, Costa Rica",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word has no alt or hover caption for this specific existing website image; translate the exact frozen RU image description."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:dfc89405c53d427b",
+                "field": "media.hover",
+                "sourceTextSha256": "c02d98b28b5f14b473eac48d91824ffcddeeb1c7046653296fea121ee4cfeea8",
+                "text": "Arenal area: small pools and cascading water in a green garden",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "runId": "ada-en-2661932f-20261104",
+                  "model": "GPT-6",
+                  "wordAbsenceReason": "The verified Word has no alt or hover caption for this specific existing website image; translate the exact frozen RU image description."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+                "field": "itinerary.title",
+                "sourceTextSha256": "b01cae0c5279c028fdc1d4f272dba38ea6ff506dfea6a41967b68ea919834260",
+                "text": "Arenal",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+                  "documentSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+                  "modifiedTime": "2026-10-27T13:09:10.999Z",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p109",
+                      "textSha256": "c0b467f48120bd24e67d608f088faf9f0019681e53228a0f773a02b364061f49"
+                    }
+                  ]
+                }
               }
             ]
           }
         },
-        "at": "2026-11-04T07:01:47.523Z"
+        "at": "2026-11-04T07:01:55.294Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b009",
+  "stableId": "tour_source_mechty_sbyvayutsya_na_karnaval",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f3bbc95d856562ed1419f2c493c92376057e278f6c1a918c53d534bc84caf3a6",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:5a1c6edb450a48de",
+      "field": "media.alt",
+      "sourceTextSha256": "260fbcd2272616ef56120e7d4cb5d746847a2a2d98862fbbc2bd42aaa4c27250",
+      "text": "The pink Casa Rosada building behind a flower bed in Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word names Casa Rosada but contains no matching image alt caption of the pink building and flower bed; translated the assigned RU."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:2351eb592b18fae8",
+      "field": "media.hover",
+      "sourceTextSha256": "05afe20b952e8f1856079461e27e2faa9ca6069f46185e58c957b8a5a51e180c",
+      "text": "Buenos Aires: the Casa Rosada façade with flowers in the foreground",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no corresponding image hover caption; translated the assigned RU image caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "fff1e09958d27c0162beb4a7547c9740bb9d48d231c849ae177d3796df76d77d",
+      "text": "Free day in Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:103",
+            "textSha256": "ec96ca02489b94a332598699a0332eb1f89f5e1b58b25bafdd840ed7045749b4"
+          },
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Composed the short day heading from the free-day description and the Buenos Aires section heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d7f79ac12e5b38946fe4dc0f400588cd64260e9335f492a6267170ca3dac8a0a",
+      "text": "A free day to explore the city, or for optional excursions: Tigre and the northern suburbs (group, USD 100 per person), the Fiesta Gaucha (full day, group, USD 250 per person), or Montevideo, Uruguay (full day; group USD 500, private USD 850 per person, minimum 2, ferry included).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:103",
+            "textSha256": "ec96ca02489b94a332598699a0332eb1f89f5e1b58b25bafdd840ed7045749b4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the day-number prefix because the itinerary node already provides the day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:67cf36b5051b760f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d1259d70718732b2",
+      "field": "media.alt",
+      "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
+      "text": "Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2f04s0-q8r0sp",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word does not contain this exact combined city-and-country image alt label; translated the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ca8511141e250ce17e5048571c0713bac7bef75b3545646147210529010a8938",
+      "text": "Departure from Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:104",
+            "textSha256": "a24b1de21862f0732e4bb9ca3523733e6cd0e28abf658c6fdd98c03c81ec9a8f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Rendered a short departure heading from the explicit airport transfer and flight home in the Word day text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7fd31b0a6594d4a182e8742d5c5c111acd3b968afa271010f916aab23664d3a9",
+      "text": "Breakfast. At the appointed time, transfer with driver to Buenos Aires airport for your flight home.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:104",
+            "textSha256": "a24b1de21862f0732e4bb9ca3523733e6cd0e28abf658c6fdd98c03c81ec9a8f"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the day-number prefix for the existing standalone itinerary node."
+      }
+    }
+  ]
+}

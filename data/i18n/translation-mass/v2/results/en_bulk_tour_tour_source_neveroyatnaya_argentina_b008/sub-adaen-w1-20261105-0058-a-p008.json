@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b008",
+  "stableId": "tour_source_neveroyatnaya_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "01b3a639ef6845196680991756d7f329af590ab5916c8d22d1246ff40742b501",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:799b0e49df7aef63",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b08f31e4dc5b783ed83d7e2e3465b3d9db5df4cd79ef5afc5ef2466165710c0f",
+      "text": "Lake Fagnano",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:30",
+            "textSha256": "649fed0db2786f52aa0c8f091612803f6172eaadfa9c0551f8b692e0a21bd217"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3586102723977808",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4c74832afca2396aec9b201a64abfca7b7e3c3f7f146da26618a6b31cbe5f0a6",
+      "text": "Lake Escondido",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:30",
+            "textSha256": "649fed0db2786f52aa0c8f091612803f6172eaadfa9c0551f8b692e0a21bd217"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:da492af1275f1765",
+      "field": "media.alt",
+      "sourceTextSha256": "303c53a60910df761a9aa80e4c46f8fb9baf2d5001b29ad46ce0f8633a35a62c",
+      "text": "Brightly coloured corner house and pedestrians in La Boca, Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The English Word itinerary has no image alt caption for the La Boca street photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:2b3a3f0301f7a368",
+      "field": "media.hover",
+      "sourceTextSha256": "7367c8efa196f60eb2f2fca05596bd39a3fc0fded1ffb30f55494d18a5663038",
+      "text": "Buenos Aires: colourful La Boca facades in the evening light",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chat-w1-20261105-0058-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word tour does not include an image hover caption for La Boca."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "222874806c5d992fed420a1fa5d620af90e8e4f72a6eb8170c098f2fbe734112",
+      "text": "Ushuaia – El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:39",
+            "textSha256": "fe1f1db581dcc6694047b1912e38416a2987b2b89f0cb8c0a04e18d2a1712d18"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The English Word Day 6 flight route runs from Ushuaia to El Calafate and is presented as a concise itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "913d5f8c992fc1f98854a3297610538bd6759987c6297c7b108e9b31398ee57a",
+      "text": "Scheduled transfer to the airport for your Aerolíneas Argentinas flight to El Calafate. On arrival, you will be met and transferred to your hotel. Domestic flights are not included in the programme price.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:39",
+            "textSha256": "fe1f1db581dcc6694047b1912e38416a2987b2b89f0cb8c0a04e18d2a1712d18"
+          },
+          {
+            "ref": "docx:paragraph:68",
+            "textSha256": "0848ae880929db2e64bf4a3da038c350358e538d2546fdc4c02200d10bd7f491"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved Word Day 6 programme specifies the transfer and flight, while its commercial conditions exclude domestic airfares; outdated RU hotel alternatives were not substituted for the Word accommodation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5dfd2dfb75550881",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+      "text": "Ushuaia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:39",
+            "textSha256": "fe1f1db581dcc6694047b1912e38416a2987b2b89f0cb8c0a04e18d2a1712d18"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Ushuaia is the departure city in the approved Word Day 6 route, normalized as an itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4bd82be0e9f89208",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:39",
+            "textSha256": "fe1f1db581dcc6694047b1912e38416a2987b2b89f0cb8c0a04e18d2a1712d18"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word Day 6 passage names El Calafate as the arrival city, normalized for the place label."
+      }
+    }
+  ]
+}

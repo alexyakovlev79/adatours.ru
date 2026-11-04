@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1070,
-    "leased": 3,
+    "queued": 1069,
+    "leased": 4,
     "review": 1307,
     "ready": 27,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1070,
-      "leased": 3,
+      "queued": 1069,
+      "leased": 4,
       "review": 1307,
       "ready": 27,
       "retryable": 0,
@@ -265,8 +265,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 51,
-          "leased": 0,
+          "queued": 50,
+          "leased": 1,
           "review": 37,
           "ready": 0,
           "retryable": 0,
@@ -297,7 +297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T00:59:53.228Z",
       "earliestRetryAt": null
     },
     "16": {
@@ -1359,6 +1359,12 @@
       "token": "adaen-w2-20261105-0218-token-b",
       "expiresAt": "2026-11-05T00:59:43.273Z",
       "generation": 2
+    },
+    "adaen-w4-20261105-0226-a": {
+      "jobId": "en:bulk:tour:tour_source_chili_samoe_luchshee:b009",
+      "token": "adaen-w4-20261105-0226-token-a",
+      "expiresAt": "2026-11-05T00:59:53.228Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -5730,7 +5736,8 @@
     "adaen-w4-20261105-0226-a": {
       "token": "adaen-w4-20261105-0226-token-a",
       "jobIds": [
-        "en:bulk:tour:tour_source_braziliya_gruppovoj_tur_na_13_dnej:b009"
+        "en:bulk:tour:tour_source_braziliya_gruppovoj_tur_na_13_dnej:b009",
+        "en:bulk:tour:tour_source_chili_samoe_luchshee:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_braziliya_gruppovoj_tur_na_13_dnej:b009"
@@ -5738,5 +5745,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T23:29:43.273Z"
+  "updatedAt": "2026-11-04T23:29:53.228Z"
 }

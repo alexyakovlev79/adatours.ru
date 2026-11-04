@@ -272,7 +272,7 @@
         "expiresAt": "2026-11-04T07:45:02.995Z"
       },
       "checkpoint": {
-        "id": "ada-en-3241f5702d2d-01-cp4",
+        "id": "ada-en-3241f5702d2d-01-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-3241f5702d2d",
         "token": "ada-en-token-3241f5702d2d-20261104",
@@ -362,10 +362,72 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:5d7326f1ab3afee9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "4d8052290e41a10ed5437537c3325e6489051d2377eae754720dcbdbfee97c7a",
+              "text": "El Peñol Rock",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p137",
+                    "textSha256": "6da2c1c5f0ff36278a2f99c8ed5b5b96a90f1761dae985aac7185f1b73242fae"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact named landmark in the Day 10 paragraph as the standalone itinerary place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:aada548539a32d0a",
+              "field": "media.alt",
+              "sourceTextSha256": "fc69a524dddc75852e8693ca224a54c905481d2d790ead52e0762dc71d7bc645",
+              "text": "Islets and developed green shores of the reservoir near Guatapé, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-3241f5702d2d",
+                "wordAbsenceReason": "The verified Word document contains the Day 10 programme but no corresponding image alt text; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:8693c65b691238cf",
+              "field": "media.hover",
+              "sourceTextSha256": "5642bed7e8164b70badeaee91da23bd2f1f00309ba165ab550b80e667faa99a9",
+              "text": "Guatapé reservoir: islets and settlements between the branches of the lake",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-3241f5702d2d",
+                "wordAbsenceReason": "The verified Word document contains no matching photograph hover caption; translate the current RU caption without adding itinerary promises."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:359c7c25395d1837",
+              "field": "itinerary.title",
+              "sourceTextSha256": "3161ad1bbcf333196a235078f1f33859a5f7b15cf6a73edbe82b6927e9784f3d",
+              "text": "Departure from Medellín",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p139",
+                    "textSha256": "0f1234663008340654dabc3aa8b69ce99439b45bac04ede6ad098f9f2b656397"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the departure title from the Day 11 paragraph confirming free time in Medellín and the airport departure transfer."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:16:50.092Z"
+        "at": "2026-11-04T06:17:14.104Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_gvatemale:b010",
+  "stableId": "tour_source_luchshee_v_gvatemale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "94209b54002b19185d4aef26122f4481fd3843f2da60d4155719918a2ba2c9a5",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:3588708e23c3a5d5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "58225cd650017f0300aeaaa7286b5749e441858613ce9b2e46f0a99e192c8839",
+      "text": "Semuc Champey",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "b4601262da7373227b89c2df54f05de59b138e4213d2748901f8e89c27dae26b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3506f8931ad46753",
+      "field": "media.alt",
+      "sourceTextSha256": "bcd31d6d253c7db75dbe73416cea3a5fb01601d61f3beeb7445b63faaa413e45",
+      "text": "A veranda with red supports amid flowers and greenery in Alta Verapaz, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-c5032275793f",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This RU image caption is not present in the selected Word document; translated directly from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:977d5a8d3fa12a3c",
+      "field": "media.hover",
+      "sourceTextSha256": "2048791f88e073e6a2ccd9c71832c0c68ec08809e23837ea0359d5f803593208",
+      "text": "Alta Verapaz, Guatemala: a veranda with red supports amid flowers and greenery",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-c5032275793f",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This RU image caption is not present in the selected Word document; translated directly from the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "388f180c1afb201fc0e291e02dd856613405ebbb966451fab6cba241a6a6c010",
+      "text": "Cobán – Candelaria Caves – Flores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "31d80dea3c3bd88f12407708c494c1fbcb310f78b967f480997a752e9ca48d8b"
+          },
+          {
+            "ref": "word/document.xml:p88",
+            "textSha256": "1391934be4c2ec7ca7a85ccaf02130750070fb1ab9e9959f0dc534f551b5d9f6"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the assigned route heading from the place names in the verified Day 6 and Day 8 Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8c4ebf05b925f58432e799a87305fcf64f6be4907d12fe288a83e0129c56c594",
+      "text": "Day 8 · North to Petén (about 5 hours), stopping at the Candelaria Caves, a vast cave system whose main gallery is some 22 km long: for the ancient Maya it was an entrance to Xibalbá, the underworld, and Maya rituals are still held there. Continue to Flores. Overnight at Hotel Villa Maya. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p88",
+            "textSha256": "1391934be4c2ec7ca7a85ccaf02130750070fb1ab9e9959f0dc534f551b5d9f6"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:97903a1f168918fe",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cc0b051d72cc71c45460d68bb13d40df72e280a3a1bc7287eba29092e42ae218",
+      "text": "Cobán",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "31d80dea3c3bd88f12407708c494c1fbcb310f78b967f480997a752e9ca48d8b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place name or heading in this verified Word paragraph as the contextual itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:42ace5e309fad8d1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b6547ee8efaf7df307b4a74c7a6232bc6ed4dee4fe126060ab8282751d12abbd",
+      "text": "Candelaria Caves",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p46",
+            "textSha256": "c10736d3d0a7c64f9d16b58019b4884d0936eb49efca95f7522760b3ff130c08"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ded04bf4d38c7eb2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9a7fc7d30092e3d837ebf67109ce02c78e6492b3745eaa441e485e93f795af36",
+      "text": "Tikal & Flores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p99",
+            "textSha256": "5132cca362dad9d47c056a3ae63b4887a26562398ea53c48dd23e7f1740dcae4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the two linked locations named in the Day 9 Word paragraph for the existing combined place label."
+      }
+    }
+  ]
+}

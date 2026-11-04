@@ -671,153 +671,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d4f67f7c474aa04a19a24ec37b8555a084686db5d0e771105fec4190d0129faa",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-65f842a29ffa",
-        "token": "ada-en-65f842a29ffa-20261104",
-        "claimedAt": "2026-11-04T06:59:36.129Z",
-        "expiresAt": "2026-11-04T08:29:36.129Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-65f842a29ffa-carnaval-b004-v1-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-65f842a29ffa",
-        "token": "ada-en-65f842a29ffa-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b004",
-          "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "d4f67f7c474aa04a19a24ec37b8555a084686db5d0e771105fec4190d0129faa",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p124",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:f3df1246fc2292de",
-              "field": "media.alt",
-              "sourceTextSha256": "bda7867ff1ea726f0d579148270f283b7325a04348c43716cc89433ce0cc27f9",
-              "text": "A smiling Carnival participant with green and pink feathers, Rio de Janeiro, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "runId": "ada-en-65f842a29ffa",
-                "model": "ChatGPT",
-                "wordAbsenceReason": "The verified Word contains no matching media alt or hover text; translated the exact current RU image caption without new visual details."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:8cfb4994bcbd5aee",
-              "field": "media.hover",
-              "sourceTextSha256": "c6d68e8e072b3aa025f9496dcbdb08c5274bfdeeec3f06021ee2f62b6cbc973a",
-              "text": "Rio Carnival: a floral headdress and green feathers with pink tips",
-              "provenance": {
-                "kind": "ai_translation",
-                "runId": "ada-en-65f842a29ffa",
-                "model": "ChatGPT",
-                "wordAbsenceReason": "The verified Word contains no matching media alt or hover text; translated the exact current RU image caption without new visual details."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-              "field": "itinerary.title",
-              "sourceTextSha256": "23f3afbecb8c64a6a6ab2540c3e1d87705f1ec7a60ccf911a7b891668af90611",
-              "text": "Rio — Sugar Loaf and Old Town",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p68",
-                    "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Short day title composed from Sugar Loaf and old Rio in the exact day-two Word paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:569e72e117968fcc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "2e34fa1512f047f4685eefaf19869e86c6f52445cd758b1f44869de6387e6d5f",
-              "text": "Day 2 · Breakfast, then a 4-hour tour: the cable car to Morro da Urca, with its wide observation deck, and on to Sugar Loaf, with views of Copacabana, the bay, the islands, the bridge to Niterói and Christ the Redeemer, then old Rio, with its historic churches, monasteries, Metropolitan Cathedral and colonial buildings. Rest in the afternoon before the big night.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p68",
-                    "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p124",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:555dc2f633bd6a52",
-              "field": "media.alt",
-              "sourceTextSha256": "a764d03dbf060f1d00edb081f1ee4f5358576c0aabe215de5bdde9307b6c21f4",
-              "text": "A cable car cabin above the green hills and bays of Rio de Janeiro, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "runId": "ada-en-65f842a29ffa",
-                "model": "ChatGPT",
-                "wordAbsenceReason": "The verified Word contains no matching media alt or hover text; translated the exact current RU image caption without new visual details."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:424a683fdd86f09d",
-              "field": "media.hover",
-              "sourceTextSha256": "424ff568f7b5c41db7c20f4dfd3b3395a6198bdd73ceb357977b4ff46bb2b9ab",
-              "text": "Rio de Janeiro: the Sugar Loaf cable car above the city's coastline",
-              "provenance": {
-                "kind": "ai_translation",
-                "runId": "ada-en-65f842a29ffa",
-                "model": "ChatGPT",
-                "wordAbsenceReason": "The verified Word contains no matching media alt or hover text; translated the exact current RU image caption without new visual details."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T07:00:26.534Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-65f842a29ffa-carnaval-b004-v1",
+        "blobSha": "d30105686baef817f0c16936b18560a4a5525555",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio_b004/ada-en-65f842a29ffa-carnaval-b004-v1.json",
+        "at": "2026-11-04T07:01:19.768Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

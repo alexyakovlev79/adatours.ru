@@ -321,7 +321,7 @@
         "expiresAt": "2026-11-04T08:14:55.162Z"
       },
       "checkpoint": {
-        "id": "ada-en-6443bdee1590-s001-cp4",
+        "id": "ada-en-6443bdee1590-s001-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-6443bdee1590",
         "token": "ada-en-6443bdee1590-f44bf3357a42",
@@ -400,10 +400,70 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the place name used in the approved Word paragraph for the existing itinerary place label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml//w:p[50]",
+                    "textSha256": "78a486a6c9fc8c37ea946c6a11961e580db0a5d9c2770d74f4e2305cae3e20cf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the place name used in the approved Word paragraph for the existing itinerary place label."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:c88ad6f08264625b",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "5f13d69ab18bb3e588e273ef706c184b1df395a9709f52d0f5bee73e41ccacdc",
+              "text": "After breakfast you have the chance to go on a half-day excursion to the Sugarloaf and City tour. The first stop is the Urca Mountain, with a wide viewing area that also offers the possibility to have a snack in the restaurant on top of the mountain. On the mountain of Sugar Loaf you will have a beautiful view of Rio, Copacabana beach, the bay, the surrounding mountains, islands in the ocean, bridge Niteroi, and the statue of Christ on Corcovado Mountain. After going down by cable car, the tour continues and we set off on a tour through the city, visiting the historic center, colonial churches, monasteries, the Cathedral, and buildings in colonial style. *Due to the high volume of visitors during the New Year period, the city tour route may be adjusted.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml//w:p[50]",
+                    "textSha256": "78a486a6c9fc8c37ea946c6a11961e580db0a5d9c2770d74f4e2305cae3e20cf"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:30096b184e3fa836",
+              "field": "media.alt",
+              "sourceTextSha256": "71abbc0ccd8f170b1ad687c87bdd1052d26b93c1bad9c6115d3240a4b747c080",
+              "text": "Cable car cabin above Rio de Janeiro at sunset, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-6443bdee1590",
+                "wordAbsenceReason": "Word contains the itinerary but no caption describing this existing image; translate its current RU alternative text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:10ecf0ec34e18afc",
+              "field": "media.hover",
+              "sourceTextSha256": "e5123f3df7eaa0a69624b0431e48b16fa01d08ab1378865b21486b5aec63eae8",
+              "text": "Rio at sunset: the cable car above the city and the bay",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-6443bdee1590",
+                "wordAbsenceReason": "Word has no image hover caption corresponding to this existing RU image; translate the supplied caption without changing the photo."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:46:32.202Z"
+        "at": "2026-11-04T06:46:56.218Z"
       },
       "submission": null,
       "review": null,

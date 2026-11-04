@@ -371,7 +371,7 @@
         "expiresAt": "2026-11-04T07:22:11.226Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-ef1fdb2517c4-submit-009-cp4",
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-009-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-ef1fdb2517c4",
         "token": "token-iwiao0re46l65ynbta4pbk",
@@ -473,10 +473,91 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:media_alt:e979dc610c9c0b06",
+              "field": "media.alt",
+              "sourceTextSha256": "d7bcffb22b74cc6b861f178ea70dc41c4a6f2cb1df5a9c44a30ee62395630298",
+              "text": "Palm trees along Monterrico's dark-sand beach at sunset, Guatemala",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified Word 2027 has no alt text for this Monterrico beach photograph showing palms and sunset. Translate the current RU visual caption.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "supportingParagraphs": []
+              }
+            },
+            {
+              "blockId": "tour:media_hover:a116b3a17d518244",
+              "field": "media.hover",
+              "sourceTextSha256": "0492f3d56b236a6558c1cc12bb500fac86161f9ead6c45fd9e17d5384ba09a45",
+              "text": "Monterrico, Guatemala: the ocean shore beneath an orange evening sky",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified Word 2027 has no hover caption for the Monterrico shore beneath an orange evening sky. Translate the exact current RU caption.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "supportingParagraphs": []
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "4793a0e20010a688d94bd3f4ccbb23050a9d59033ea6c87f802495555b30c648",
+              "text": "Friday: relax on Monterrico beach",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p87",
+                    "textSha256": "fda40f9f2ea78ea9cc0d865127b9bdc6dc7f5e55abacf628cf4b6a3fb0f79b7d"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the site heading from Word Day 7's Friday and free beach day, using Monterrico from the same section and preserving the day activity."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "55e7810fa8733a715480c2ef637dcbb3b03623b59250e97d16ba461ced0400d6",
+              "text": "Breakfast. Enjoy a free day by the ocean. If you wish, choose a mangrove excursion or a visit to the Monterrico turtle conservation centre. The timing, included services and price of optional activities are agreed in advance; a turtle release cannot be guaranteed on a particular date. Overnight at Dos Mundos Pacífico or a similar hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "Word paragraph 87 gives optional mangroves/turtle reserve and the hotel, but does not contain the current RU advance-agreement and no-guaranteed-turtle-release conditions. Translate this current RU block and preserve those material limitations.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "supportingParagraphs": [
+                  {
+                    "ref": "word/document.xml:p87",
+                    "textSha256": "fda40f9f2ea78ea9cc0d865127b9bdc6dc7f5e55abacf628cf4b6a3fb0f79b7d"
+                  },
+                  {
+                    "ref": "word/document.xml:p118",
+                    "textSha256": "f0c2992acdf614f3e649dc8aa6edcf87d66f6169dab2c8183a416e93e967daeb"
+                  },
+                  {
+                    "ref": "word/document.xml:p134",
+                    "textSha256": "8f96c560d5829beec8b0c494725635cd01167e1ad43ae28c0b6a33d765206fcf"
+                  },
+                  {
+                    "ref": "word/document.xml:p135",
+                    "textSha256": "751e0975f498ddcd83acb7edef9822021c6179ca92ab474fdd3a6a7b6a8bfbb3"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:52:45.692Z"
+        "at": "2026-11-04T05:53:07.106Z"
       },
       "submission": null,
       "review": null,

@@ -428,7 +428,7 @@
         "expiresAt": "2026-11-04T08:14:38.023Z"
       },
       "checkpoint": {
-        "id": "ada-en-24807b62-20261104:s03:cp4",
+        "id": "ada-en-24807b62-20261104:s03:cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-24807b62-20261104",
         "token": "ada-en-24807b62-token-c83715b9",
@@ -507,13 +507,91 @@
                   "transformation": "contextual_label",
                   "rationale": "Use the excursion service type stated in the verified inclusion line as the format label."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:be4076c2befbbb4a",
+                "field": "itinerary.label",
+                "sourceTextSha256": "63b1ad403deae178fcbd0024869d2db05ae43934908ce1a366348c364aa327f3",
+                "text": "Oaxaca – 4 nights",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:15",
+                      "textSha256": "f55a2cbce0eab4b6b9cd05d7f0d3dae97ab031963f5bbf4e542e89376f707014"
+                    },
+                    {
+                      "ref": "word/document.xml:p:33",
+                      "textSha256": "c6994d727b9bd8f45abc4d1f400b8643b02d1ee64b0d13e85a96980468bac61b"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combine Oaxaca as the overnight base with the verified four-night accommodation inclusion."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:682aadc11561d41c",
+                "field": "itinerary.label",
+                "sourceTextSha256": "74abb30be5efe090d0c9383c44036c7c45e02e9f2a43a5cce91c9a5e5e115ac0",
+                "text": "Monte Albán · San Antonio Arrazola · San Bartolo Coyotepec",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:21",
+                      "textSha256": "d40e6b328362e5c900de7590f208894c4c5c3d05755814cc402f1b5b7341b94e"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "List the three day-three destinations in their verified visit order using the document's exact place names."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:306956342e453862",
+                "field": "itinerary.label",
+                "sourceTextSha256": "d0211b4286080ada704aef9e98f709426d6438972b7eb7800b666dd70fb03bd7",
+                "text": "Mitla · Teotitlán del Valle · Hierve el Agua",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:25",
+                      "textSha256": "756b6272c8008c5f98d7c4c962137f672714b0bd35128f1733fa9f062fd86201"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "List the three day-four destinations in their verified order using the document's exact names."
+                }
+              },
+              {
+                "blockId": "tour:included:e2e3fa41f5a6ee84",
+                "field": "included",
+                "sourceTextSha256": "24b571ba6bf74bb9125673d610fa653897e506e74f2bf36bf3270b95fad96e68",
+                "text": "04 Nights’ Accommodation in Standard Room with Daily Breakfast",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                  "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:33",
+                      "textSha256": "c6994d727b9bd8f45abc4d1f400b8643b02d1ee64b0d13e85a96980468bac61b"
+                    }
+                  ]
+                }
               }
             ]
           },
           "submissionId": "ada-en-24807b62-20261104:s03",
           "mainSha": "1926fdca8929ebf54d61fc6b977e841423ff67b1"
         },
-        "at": "2026-11-04T06:45:38.877Z"
+        "at": "2026-11-04T06:45:43.881Z"
       },
       "submission": null,
       "review": null,

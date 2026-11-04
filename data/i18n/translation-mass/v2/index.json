@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1633,
-    "leased": 7,
+    "queued": 1632,
+    "leased": 8,
     "review": 769,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1633,
-      "leased": 7,
+      "queued": 1632,
+      "leased": 8,
       "review": 769,
       "ready": 1,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 50,
-          "leased": 0,
+          "queued": 49,
+          "leased": 1,
           "review": 28,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T16:40:10.745Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1383,6 +1383,12 @@
       "token": "tok-h3x490lwol5mw290bap",
       "expiresAt": "2026-11-04T16:39:44.380Z",
       "generation": 2
+    },
+    "ada-en-20261104-c46gibazhy": {
+      "jobId": "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b004",
+      "token": "t-8jf924gfu64",
+      "expiresAt": "2026-11-04T16:40:10.745Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -3950,7 +3956,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b004",
         "en:bulk:tour:tour_brazil_gems_14d:b012",
-        "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b011"
+        "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b011",
+        "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b004",
@@ -3967,5 +3974,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T15:09:56.950Z"
+  "updatedAt": "2026-11-04T15:10:10.745Z"
 }

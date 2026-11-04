@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b014",
+  "stableId": "tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b9bbe4f5c784c10b9c2090cc70b37d978e7815f4ff1290ae3d4e3094c4920fb3",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:c45327142f583520",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2828558903d4749b0d737c0f8770cc04e1f08e12441132034ee87ddde7bd5a3f",
+      "text": "Yanacocha Ecological Reserve",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:104",
+            "textSha256": "b214d713f63fdf74da7fe1f63b78d24138b21e0ff4bd8db21c88daca9ea8049f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the reserve's exact name from the Word day description for this place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:553e25916b23127f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9b62ba596270cbc35c7ee0ca8b134de75628d9f70a6ebf67fcb281ed6b95483a",
+      "text": "Quito & Cotopaxi Volcano",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:79",
+            "textSha256": "213701d3acdde8671310f75de19dc8e723c004b5f5552abd434dcef9c83d6b7b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the combined place label from Quito and Cotopaxi named in the Word city-and-volcano description."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:931d302773f93612",
+      "field": "media.alt",
+      "sourceTextSha256": "fcd5b5c759dc68dd82e5613ca96cf54632cf1b1fcb4c29a80f65528d0b662c08",
+      "text": "A damp forest trail in Yanacocha among mosses and misty mountain slopes, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw2dk420_paek60",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes Yanacocha but has no corresponding photo caption for this damp mossy trail and mountain slopes."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:ad0d6a23719f3ec0",
+      "field": "media.hover",
+      "sourceTextSha256": "ceab9916b2cf7ab1fdefcb17e24df6ece23754ceb7be18a9d5797ad0e57c4748",
+      "text": "Yanacocha: a narrow trail through dense cloud forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw2dk420_paek60",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no matching hover caption describing this narrow cloud-forest trail."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "87493d30268419457432490db60ec1809719cab82df7ed1f88abe865592e049f",
+      "text": "Cotopaxi – Quilotoa – Quito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:170",
+            "textSha256": "277cad883f1c45b7c2e3cf61df8354d99ca09a8763b97ed4f7caef31865874fb"
+          },
+          {
+            "ref": "word/document.xml:p:105",
+            "textSha256": "0a90832c68cff32d650cce7ceeae417ebd04dfc5d7ff3a161ff2710fdb9b42af"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word overnight location Cotopaxi with the next day's Quilotoa visit and return to Quito."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2c3a61ca3b57bc5292375b1e8125a8caeffaecee5cb19bb4b34488a68b91f2c4",
+      "text": "Day 14 · The Tigua workshops and the Quilotoa crater lake: hike down to the shore and return to the rim by mule. Back to Quito for the night. (B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:105",
+            "textSha256": "0a90832c68cff32d650cce7ceeae417ebd04dfc5d7ff3a161ff2710fdb9b42af"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0efcca4d94f5d186",
+      "field": "itinerary.label",
+      "sourceTextSha256": "37e94ee8cb1feda04ccec00cd5ffe98fcf81caf83695dca7c1a813fd6840f6d6",
+      "text": "Quilotoa crater lake",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:105",
+            "textSha256": "0a90832c68cff32d650cce7ceeae417ebd04dfc5d7ff3a161ff2710fdb9b42af"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact lake name from the Word day description for the place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:04e3f07a7daf05e3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1841b2eb5a8c802ca001958a595081812272bda35448e01f519bae4cd59b35b2",
+      "text": "Tigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:105",
+            "textSha256": "0a90832c68cff32d650cce7ceeae417ebd04dfc5d7ff3a161ff2710fdb9b42af"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Tigua place name from the workshops visit in the Word day description."
+      }
+    }
+  ]
+}

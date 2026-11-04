@@ -391,7 +391,7 @@
         "expiresAt": "2026-11-04T08:15:53.439Z"
       },
       "checkpoint": {
-        "id": "ada_en_8c4fca0d2a61:b009:cp4",
+        "id": "ada_en_8c4fca0d2a61:b009:cp8",
         "format": "inline-v1",
         "ownerId": "ada_en_8c4fca0d2a61",
         "token": "token_8c4fca0d2a61_c1970ba9",
@@ -471,10 +471,84 @@
                   "inspected": "All OOXML paragraphs and tables"
                 }
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "3ed951ea026809299945f3ff6865a013b65a3f987cbcc1faa1ff88d7787a9c00",
+              "text": "Cartagena — San Andrés",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p8",
+                    "textSha256": "f327f0c85a31ef8e8f8bca765575be5e0e4ac2ecffe1f7aa7bdc49989ab6fa00"
+                  },
+                  {
+                    "ref": "word/document.xml:p103",
+                    "textSha256": "0c1fce2cac1ae1d207c0492c6fd80b8437f2771f2fa7090713c6aa35f4931a4b"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the exact departure and arrival locations from the verified Day 6 flight paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "6ba69c7de730f26159807087cc6d85bd45bc8aa216d8cf469697ec6d71e1713d",
+              "text": "Breakfast at the hotel. Enjoy some free time to continue exploring Cartagena at your own pace. Wander through the charming streets of the historic centre, savour the local cuisine or take the opportunity for some last-minute shopping. At the scheduled time, transfer to the airport to board your flight to the idyllic island of San Andrés, renowned for its white-sand beaches and the breathtaking turquoise waters of the famous Sea of Seven Colours.\n\nAccommodation at an island resort. Overnight on San Andrés.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "Preserve the verified Day 6 paragraph p103 verbatim after removing its day prefix. The current RU additionally states island-resort accommodation and the overnight on San Andrés, which are not included in that Word day paragraph; translate only this missing final sentence.",
+                "wordEvidence": {
+                  "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                  "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:439aaee09724aa06",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+              "text": "Cartagena",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p161",
+                    "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4bc0b563b53112ec",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c0ae5cd83297c2224479d3b32027d6d3e4c3483ba8f2e99495c13f0bec66e254",
+              "text": "San Andrés",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+                "documentSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p49",
+                    "textSha256": "521ea5b627da270f09612a76b20a95b2879b026c7cb1b87e2ee33d4f6e25a1b1"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:46:27.421Z"
+        "at": "2026-11-04T06:46:45.333Z"
       },
       "submission": null,
       "review": null,

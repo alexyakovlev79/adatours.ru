@@ -266,7 +266,7 @@
         "expiresAt": "2026-11-04T07:11:28.440Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-ef1fdb2517c4-submit-005-cp4",
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-005-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-ef1fdb2517c4",
         "token": "token-iwiao0re46l65ynbta4pbk",
@@ -387,10 +387,89 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:contentBlock_title:6818b96d27f000d3",
+              "field": "contentBlock.title",
+              "sourceTextSha256": "d4439b4d2147c08489879dc76dd3b51ba9b2a0e103d4df1e69b97d8c4b63b424",
+              "text": "Optional excursion",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "documentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "71901c5a254a3190c177b932c11af3a978d2c1442c9d05f38d5f47ae5392839f"
+                  },
+                  {
+                    "ref": "word/document.xml:p134",
+                    "textSha256": "8f96c560d5829beec8b0c494725635cd01167e1ad43ae28c0b6a33d765206fcf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use a concise optional-excursion panel label for the two alternatives explicitly listed as optional and excluded in the verified Word source."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:0389e81b6a225655",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "89dbc96221511152762a0a0fd8465f4fbb37cb4f6d02f408555c5d6fcf9b56ac",
+              "text": "Participation is optional; the price, timing and included services are agreed separately.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "Word paragraphs 78, 134 and 135 confirm optional excursions and booking-time availability/rates but contain no exact panel text covering timing and service scope agreed separately. Translate the current RU conditions panel.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+                "supportingParagraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "71901c5a254a3190c177b932c11af3a978d2c1442c9d05f38d5f47ae5392839f"
+                  },
+                  {
+                    "ref": "word/document.xml:p134",
+                    "textSha256": "8f96c560d5829beec8b0c494725635cd01167e1ad43ae28c0b6a33d765206fcf"
+                  },
+                  {
+                    "ref": "word/document.xml:p135",
+                    "textSha256": "751e0975f498ddcd83acb7edef9822021c6179ca92ab474fdd3a6a7b6a8bfbb3"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:b346b3d0a253aad4",
+              "field": "media.alt",
+              "sourceTextSha256": "f0a063ac47384b1d044103942758bc9b73ebd1402f713014d5d05a434f82d4f2",
+              "text": "Historic church with an ornate white façade against a mountain backdrop, Antigua Guatemala, Guatemala",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified Word 2027 source has no image-alt field for this historic white church against a mountain backdrop. Translate the exact current RU visual caption.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:9cc3bbfc135822a4",
+              "field": "media.hover",
+              "sourceTextSha256": "a17953832998ce9e76e5f84d0a255c265f672f5f8dd35b670b51f2978539159b",
+              "text": "Antigua Guatemala, Guatemala: a historic church with an ornate white façade against a mountain backdrop",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified Word 2027 source has no hover caption for this church photograph. Translate the current RU place name and visible features only.",
+                "wordFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+                "wordDocumentSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48"
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:42:25.141Z"
+        "at": "2026-11-04T05:42:39.137Z"
       },
       "submission": null,
       "review": null,

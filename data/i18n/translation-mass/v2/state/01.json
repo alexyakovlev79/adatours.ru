@@ -301,7 +301,7 @@
         "expiresAt": "2026-11-04T07:42:34.024Z"
       },
       "checkpoint": {
-        "id": "cp-5d56534e-04-4",
+        "id": "cp-5d56534e-04-8",
         "format": "inline-v1",
         "ownerId": "ada-en-5d56534e4493",
         "token": "lease-da131c3d187149a7b813992c83ea721b",
@@ -383,17 +383,86 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:b2f0e19acda78198",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                  "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p8",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:3513f80c57dd3c9d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "6bd9c9bdf78249ddedfce16a21e31ea680bc435d97b101570c48662cb29177b0",
+                "text": "Tijuca Forest",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                  "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p46",
+                      "textSha256": "20503504dd1f770e34b2a8a7ace6f9ad394208e229361f5e0b4e7fdad28957c9"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:6222538407b181fe",
+                "field": "itinerary.label",
+                "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
+                "text": "Corcovado",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                  "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p89",
+                      "textSha256": "46cd6d0366323a016d0154471f6176288226504a207dcf44826393e8652bb95b"
+                    },
+                    {
+                      "ref": "word/document.xml:p90",
+                      "textSha256": "89ae8708ef870eae31c5a979d4588ac428c7faf47d4548e6e6e78169ec45c94c"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the Corcovado place name from the Word heading and mountain description."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:fc0908d150be64e9",
+                "field": "media.alt",
+                "sourceTextSha256": "e4151dd4cc22725c56258aba76b318ef8337f47c1d448e7df3860290dc212f8c",
+                "text": "View of Rio de Janeiro and Corcovado",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The exact Word has no alt caption for this photograph of Rio de Janeiro and Corcovado; translate the current RU media.alt."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "wordEvidence": {
             "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
             "sha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
             "modifiedTime": "2026-10-21T20:19:00.892Z"
           }
         },
-        "at": "2026-11-04T06:13:33.705Z"
+        "at": "2026-11-04T06:13:40.195Z"
       },
       "submission": null,
       "review": null,

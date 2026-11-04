@@ -259,199 +259,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "c86c3ef0c2ab62ebdafb0559842daef769b0279057bcdd64a8e4b1c4de9e1190",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
-        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
-        "claimedAt": "2026-11-04T05:55:05.584Z",
-        "expiresAt": "2026-11-04T07:25:05.584Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-006-08",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
-        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b005",
-          "stableId": "tour_brazil_three_ecosystems_8_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "c86c3ef0c2ab62ebdafb0559842daef769b0279057bcdd64a8e4b1c4de9e1190",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:0a0c78feefc330ad",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23bf5e8a9921605c6594c2d4c3109c73bcfb93a817d18cf0adbd19f55492919e",
-              "text": "Jardim d’Amazonia Lodge",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p60",
-                    "textSha256": "e3059db8f9e76ec4f015b29c1ee796d8f22d239001bf3a3324e2db81b92189ec"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact Jardim d’Amazonia Lodge name from the selected Word accommodation inclusion."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4e629c394d5fac89",
-              "field": "itinerary.label",
-              "sourceTextSha256": "34c0fc04effcd1d58ca50e514c99e9749f23ad16b9f1cd4df675812a883ead45",
-              "text": "Claro River",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p23",
-                    "textSha256": "eda2e3991ef7de415a27db361de7fc8c8ec6d453902cca99a0a9fa4b3314d35d"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact Claro River name from the selected Word canoeing paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:922c4d3611184b6c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c154b96505ed61fa6dea175270ec459c3ed83660d4537876b6453eb53632682a",
-              "text": "Anaconda Lake",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p23",
-                    "textSha256": "eda2e3991ef7de415a27db361de7fc8c8ec6d453902cca99a0a9fa4b3314d35d"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact Anaconda Lake name from the selected Word canoeing paragraph."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:4f1b30b56320fde5",
-              "field": "media.alt",
-              "sourceTextSha256": "7f8ec15dbe5654da2a3591d7dd4500580879980220d5f3e6bfe7d8bb4006a677",
-              "text": "A calm forest river reflecting green trees, Amazonia, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
-                "wordAbsenceReason": "The verified Word describes the Amazon river setting but has no exact alt caption for this existing forest-river image; translate its current RU alt without changing media.",
-                "wordSource": {
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml#p23",
-                      "textSha256": "eda2e3991ef7de415a27db361de7fc8c8ec6d453902cca99a0a9fa4b3314d35d"
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "blockId": "tour:media_hover:be3183a0fbcd6c65",
-              "field": "media.hover",
-              "sourceTextSha256": "c4cf7ee024a7647df36e0cbadaebfe078998050e85163dfa510cc2679a83e097",
-              "text": "Amazonia: densely forested banks reflected in still water",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
-                "wordAbsenceReason": "The verified Word has no exact hover caption describing this existing river photograph; translate the current RU caption and preserve its observable description.",
-                "wordSource": {
-                  "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                  "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml#p23",
-                      "textSha256": "eda2e3991ef7de415a27db361de7fc8c8ec6d453902cca99a0a9fa4b3314d35d"
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:ede35c7dd18576d0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23bf5e8a9921605c6594c2d4c3109c73bcfb93a817d18cf0adbd19f55492919e",
-              "text": "Jardim d’Amazonia Lodge",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p60",
-                    "textSha256": "e3059db8f9e76ec4f015b29c1ee796d8f22d239001bf3a3324e2db81b92189ec"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact Jardim d’Amazonia Lodge name for this distinct itinerary route-label block."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:cc9546d60e45c5bb",
-              "field": "itinerary.label",
-              "sourceTextSha256": "34c0fc04effcd1d58ca50e514c99e9749f23ad16b9f1cd4df675812a883ead45",
-              "text": "Claro River",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p23",
-                    "textSha256": "eda2e3991ef7de415a27db361de7fc8c8ec6d453902cca99a0a9fa4b3314d35d"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact Claro River name for this distinct itinerary route-label block."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:4beda73736712c79",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c154b96505ed61fa6dea175270ec459c3ed83660d4537876b6453eb53632682a",
-              "text": "Anaconda Lake",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
-                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p23",
-                    "textSha256": "eda2e3991ef7de415a27db361de7fc8c8ec6d453902cca99a0a9fa4b3314d35d"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Extract the exact Anaconda Lake name for this distinct itinerary route-label block."
-              }
-            }
-          ],
-          "sourceObservations": [
-            {
-              "kind": "edition_year_conflict",
-              "detail": "The exact selected file in the 2027 folder contains a 2026 heading and All Year 2026 tariff. This packet contains only place labels and media captions; no prices or year promises are changed."
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:56:06.315Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ada-en-20261104-mw1ownhg-0a870a9f-006",
+        "blobSha": "9ea8f6e1be9a073b3ece0f9be03bbb90413f9743",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_three_ecosystems_8_days_b005/sub-ada-en-20261104-mw1ownhg-0a870a9f-006.json",
+        "at": "2026-11-04T05:56:10.417Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

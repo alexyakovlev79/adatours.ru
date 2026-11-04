@@ -448,7 +448,7 @@
         "expiresAt": "2026-11-04T08:33:04.738Z"
       },
       "checkpoint": {
-        "id": "ada_en_8c4fca0d2a61:b003:cp4",
+        "id": "ada_en_8c4fca0d2a61:b003:cp8",
         "format": "inline-v1",
         "ownerId": "ada_en_8c4fca0d2a61",
         "token": "token_8c4fca0d2a61_c1970ba9",
@@ -538,10 +538,78 @@
                 "transformation": "contextual_label",
                 "rationale": "Compose the arrival title from the verified Day 1 heading and paragraph about first impressions of Rio."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "5aed51c5dace01bfae5cfd1a69b158f5acdd0d3cc6898f7c970701551e713bb7",
+              "text": "Upon arrival at Rio de Janeiro airport, your guide welcomes you and accompanies you to your hotel, offering a brief introduction to the city along the way, answering your questions and helping with practical details. Alternatively, you may opt for the Fast Track Gold service at the airport.\n\nThe rest of the day is at leisure to enjoy your first impressions of Rio: explore at your own pace or simply relax beneath the palm trees with a refreshing coconut water, to the rhythm of samba. Copacabana, Ipanema and Leblon are renowned for their black-and-white mosaic promenades, lined with open-air cafés serving coconut water and freshly squeezed juices, where local musicians often add a lively soundtrack.\n\nFor the evening, you can choose Cipriani at Belmond Copacabana Palace, which has 1 Michelin star.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "Keep the verified arrival paragraphs p67–68 verbatim. The current RU also recommends Cipriani at Belmond Copacabana Palace with 1 Michelin star, which is absent from this Word; translate that missing restaurant sentence from RU without repeating the Fast Track Gold option already retained from Word p67.",
+                "wordEvidence": {
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p137",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:34bdf94a06af7655",
+              "field": "media.alt",
+              "sourceTextSha256": "695ad89d22d1516315ae3590211c72094f72c6404bfbab2d4cdc60ffdb894788",
+              "text": "Christ the Redeemer statue with outstretched arms against a blue sky, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific alt text for the Christ the Redeemer photograph.",
+                "wordEvidence": {
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:687a0a02e8d90ab8",
+              "field": "media.hover",
+              "sourceTextSha256": "5e98330c1e39edd50dc01a347ec7c5ce3d0722b11208e95af4df7e9059fb9e45",
+              "text": "Rio de Janeiro: Christ the Redeemer against the clouds",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_8c4fca0d2a61",
+                "wordAbsenceReason": "The verified Word has no image-specific hover text for this Christ the Redeemer photograph.",
+                "wordEvidence": {
+                  "fileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+                  "documentSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+                  "inspected": "All OOXML paragraphs and tables"
+                }
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:03:39.089Z"
+        "at": "2026-11-04T07:04:01.613Z"
       },
       "submission": null,
       "review": null,

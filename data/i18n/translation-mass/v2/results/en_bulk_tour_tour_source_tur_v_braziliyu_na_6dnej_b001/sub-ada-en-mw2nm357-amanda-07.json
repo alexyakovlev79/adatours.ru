@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_6dnej:b001",
+  "stableId": "tour_source_tur_v_braziliyu_na_6dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "aedf9abbed1ca237eb41af9f34ea73697c14c13d34aa304cb8f32a28a3d39a8d",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "c5d81e704f7e0eeb5fe1b6e659fc2fec971db9185ae65582ea3f313504f1a1a4",
+      "text": "6-day Brazil tour: Rio de Janeiro and Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p3",
+            "textSha256": "6b1b5912d18088de1fb4dc11dffa11ba55c203a41155593f0a666ebe8f8e0489"
+          },
+          {
+            "ref": "word/document.xml#p7",
+            "textSha256": "85d7e95ff04b6380214d40113ee62e8728b6a85280f2964cb7fc1a4073557fdf"
+          },
+          {
+            "ref": "word/document.xml#p8",
+            "textSha256": "cd2e1b7e6cb152e2158e67eaa1285b36cdcaf45983c6af9538387c6b25b81e8f"
+          },
+          {
+            "ref": "word/document.xml#p18",
+            "textSha256": "5498aff8521356bc390a917fd67f75d71e352b4a51595debf664a302ad9146a9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the RU title's six-day duration and two destinations from the verified Word title, duration, route and overview."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "ed2cc1b06234b86632444f6aef4f61ea2933d3df68d77ed3e5bb245fc015075d",
+      "text": "Discover two of Brazil’s most iconic destinations in one unforgettable short break: the vibrant energy and legendary sights of Rio de Janeiro, then the breathtaking power of the Iguazu Falls. A perfect introduction to Brazil, combining culture, scenery and nature.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p18",
+            "textSha256": "5498aff8521356bc390a917fd67f75d71e352b4a51595debf664a302ad9146a9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2ec5e6400c689f410ca3b5a76158848533931f069f6544ee603d06349b487194",
+      "text": "$1135",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm357-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 commercial table at paragraphs 111–124 lists different rates; the pinned RU priceNote $1135 has no corresponding Word passage. Retain $1135 unchanged because price updates belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm357-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word document has no matching image-specific caption or exact field text; translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ee50bb31f066a0a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "68dd2fdbc60b13d3b755f1538c7422f3fdaa16b53b328656d3b536d2dd63d9db",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm357-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word document has no matching image-specific caption or exact field text; translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:included:45f29ca8e175841a",
+      "field": "included",
+      "sourceTextSha256": "132311d7fd49ba899ec62902ff7f5a7ac69e424042bf0f8be2005b0461c26aaa",
+      "text": "Hotel accommodation.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm357-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 161 includes additional hotel substitution and breakfast conditions; the exact short RU inclusion is absent. Translate only the assigned RU item."
+      }
+    },
+    {
+      "blockId": "tour:included:bd5844f76857a53e",
+      "field": "included",
+      "sourceTextSha256": "1819585bbd0df1642a6f1ca233fad2922fb483a3cff6828201afef6ef534e21a",
+      "text": "Excursions described in the programme on a shared basis with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p162",
+            "textSha256": "8df8a49cdaae610ecefed08ef2fc3316ec6c9674fae9f94d0170a9d25af98a4b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the bullet prefix from the verified Word inclusion; preserve the English-speaking guide and shared format."
+      }
+    },
+    {
+      "blockId": "tour:included:d95f5110ba7d9eaf",
+      "field": "included",
+      "sourceTextSha256": "17ed256bf2d0674d96b818b5aadbcab1821d350bed5194d9237d90c1b2a1cf7e",
+      "text": "Shared transfers with a driver.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2nm357-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 164 describes airport transfers with a driver but does not state the shared format in this exact inclusion; preserve the pinned RU shared-transfer condition."
+      }
+    }
+  ]
+}

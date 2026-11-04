@@ -1,0 +1,167 @@
+{
+  "jobId": "en:bulk:tour:tour_mexico_religious_journey:b005",
+  "stableId": "tour_mexico_religious_journey",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "36f617d99268d2adab7b8662bf77bded856c81a7c76fa0f158b435f2d67b705f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:65b59280159fca8c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "69ade4050ef4a1e0dbb22688f581e5c95082596ade6199338dfd269cc6db294d",
+      "text": "1 April 2027",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22b2eq",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The confirmed Word labels this as Day 1 without a fixed calendar date; retain and translate the assigned RU date of 1 April 2027.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1b72f42129cc622f3875ee71e577016a5b34e876cb77b80f898adb9adc0b9479",
+      "text": "Arrival in Mexico City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p7",
+            "textSha256": "47fc2581db5cec50992a1e891884df02e01912c028297b6dc64cf578b979c45f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the arrival destination and event from the confirmed English Day 1 heading as the day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1d04e271235f404b0792f8dd5108031eaeed7a5be8898d9b51cd9b85f48b0db3",
+      "text": "1 April 2027. Arrival at Mexico City International Airport. Meet your guide and take a private transfer to the Casa Blanca 4* hotel (www.hotel-casablanca.com.mx). Stay in a standard room: all 6 nights of the trip are spent here or at a hotel of a similar standard. Dinner and overnight at the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22b2eq",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word provides the arrival transfer, Casa Blanca 4*, six standard-room nights and similar-hotel/private-transfer conditions, but does not contain the fixed 1 April 2027 date or this consolidated dated arrival paragraph. Translate the assigned RU composite while retaining those confirmed conditions.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p8",
+            "textSha256": "7101239f9a05f281df3718dfa4d8dcee6ee81815ba21711e22f062a8e93425fd"
+          },
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "fe440e70c039ea7313cd1b6ea9749b4269b0dd7ab9e4a2a98a6521e2cf36db3c"
+          },
+          {
+            "ref": "word/document.xml:p107",
+            "textSha256": "b2dd1cdf4f4958bb68f756480fa7cf34b71f44da43d8d387fe3ae45d8eefa4fc"
+          },
+          {
+            "ref": "word/document.xml:p108",
+            "textSha256": "ae0d0400d33454cfcfb0482156dde9b312b12004bcdc90ffe329459eaf3a2d69"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2141c79819815b21",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d6caecbb04aaa0ccab22e4d1d06407e4b10dec9e47f87583cf0648f6d605ed33",
+      "text": "Mexico City (Teotihuacan ruins)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p7",
+            "textSha256": "47fc2581db5cec50992a1e891884df02e01912c028297b6dc64cf578b979c45f"
+          },
+          {
+            "ref": "word/document.xml:p55",
+            "textSha256": "f65e57cf7df1f22e72877882d25c85357ec9772e9830061de471a90ac6aebb96"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Preserve the existing destination label by combining the confirmed Mexico City and Teotihuacan archaeological site names."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4b5e49c00db51850",
+      "field": "media.alt",
+      "sourceTextSha256": "d02b6a1c58e657f327a6d66371210a67a87dd0a3a28d221d3990fe80c4c0610a",
+      "text": "A yellow Volkswagen Beetle taxi on a street in Mexico City",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22b2eq",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The confirmed Word contains no alt text for a yellow Volkswagen Beetle taxi photograph; translate the assigned RU image description.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:69962fe8c1c3b98b",
+      "field": "media.hover",
+      "sourceTextSha256": "d02b6a1c58e657f327a6d66371210a67a87dd0a3a28d221d3990fe80c4c0610a",
+      "text": "A yellow Volkswagen Beetle taxi on a street in Mexico City",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22b2eq",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The confirmed Word contains no hover caption for a yellow Volkswagen Beetle taxi photograph; translate the assigned RU caption.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e1e9c81f5e1160a1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32182f02bb87761a16cab592ba17ae4e7b983dfb55d0bc1ea509e2bf109047d5",
+      "text": "2 April 2027",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-f5ac9871-mw22b2eq",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The confirmed Word labels this as Day 2 without a fixed calendar date; retain and translate the assigned RU date of 2 April 2027.",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "19b2b040e92294309374dd0eea49f9a7fef43850f026a00c866b01e0bf160bf0",
+      "text": "Basilica of Guadalupe and Museum of Anthropology",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+        "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p12",
+            "textSha256": "221514e3e6d567f12ae1f96a013bd3f0918330503f462c1f23801b1562b97564"
+          },
+          {
+            "ref": "word/document.xml:p14",
+            "textSha256": "08e1abece2820f79bba6bdba87dd3f414851381233e86959e45473ef14c929da"
+          },
+          {
+            "ref": "word/document.xml:p15",
+            "textSha256": "7c967632226ff9d6052eb86ae18476e99ac7d67025cb174d414605ab8d97905a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed Basilica of Guadalupe and Museum of Anthropology names for the assigned Day 2 heading."
+      }
+    }
+  ]
+}

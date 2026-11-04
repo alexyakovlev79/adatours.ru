@@ -211,171 +211,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b014",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "f71f4d7568be5192f676236cc3c965b7e136f8eed31b0b4985a2496f5b50f9cf",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "claimedAt": "2026-11-04T05:43:40.425Z",
-        "expiresAt": "2026-11-04T07:13:40.425Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-39fb6759e90b-b014-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b014",
-          "stableId": "tour_brazil_peru_argentina_group_15_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "f71f4d7568be5192f676236cc3c965b7e136f8eed31b0b4985a2496f5b50f9cf",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:0bab932ce958bd1b",
-              "field": "itinerary.label",
-              "sourceTextSha256": "4574c31f146cda44b81b1fa9086f4744f7223c127fe45d1f3d2af876059c209d",
-              "text": "Aguas Calientes",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p55",
-                    "textSha256": "4e6bbdc6d196a21e62536a75a3276027e88a21581316ec32f481e8ef921c8173"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the place name in the confirmed Word itinerary as the linked place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-              "field": "itinerary.title",
-              "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
-              "text": "Machu Pichu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p57",
-                    "textSha256": "0a11660c511cedd7a719f0fb3cdc71bb1be011934d20fced21dc5f087ec4359e"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the Word day-number prefix to fit the existing itinerary title field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-              "field": "itinerary.text",
-              "sourceTextSha256": "da11a62abc67b01b7894e22980ff61e214d91dea9d800b4424c334e9f6f07542",
-              "text": "After breakfast, we set off by bus to Machu Picchu. Its a 30-minute bus ride up to Machu Picchu. Machu Picchu, an Inca city with a maze of fine stone temples, houses and fountains, spectacularly situated on a ridge between two peaks. Hidden by dense vegetation when Hiram Bingham discovered it in 1911. There you have a guided tour. After the tour we take the train back to Cuzco. Overnight in Cuzco",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p58",
-                    "textSha256": "70c735764116c083e9b71adff555f2b9018513cb764facc349f5e7c3ea488ff1"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5e2e672bc3daa591",
-              "field": "itinerary.label",
-              "sourceTextSha256": "4574c31f146cda44b81b1fa9086f4744f7223c127fe45d1f3d2af876059c209d",
-              "text": "Aguas Calientes",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p55",
-                    "textSha256": "4e6bbdc6d196a21e62536a75a3276027e88a21581316ec32f481e8ef921c8173"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the place name in the confirmed Word itinerary as the linked place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:9953e29c4c2ee8e7",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
-              "text": "Machu Picchu",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p58",
-                    "textSha256": "70c735764116c083e9b71adff555f2b9018513cb764facc349f5e7c3ea488ff1"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the place name in the confirmed Word itinerary as the linked place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:ab914abd3924e03b",
-              "field": "itinerary.label",
-              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
-              "text": "Cuzco",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p58",
-                    "textSha256": "70c735764116c083e9b71adff555f2b9018513cb764facc349f5e7c3ea488ff1"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the return-city name in the confirmed Word day paragraph as the place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:34a9263de503cdda",
-              "field": "media.alt",
-              "sourceTextSha256": "0dff2d797b28a6888ceaa400fd2b797145d2766e44eb20e3168a2f6aac7b2c8d",
-              "text": "Stone ruins of Machu Picchu and a mountain peak seen through an opening in an ancient wall, Peru",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word document contains no matching image alternative text; translate the current RU media.alt field."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:d83b3414e4bcefba",
-              "field": "media.hover",
-              "sourceTextSha256": "18f7f9c631bc15fd72015c698e3a8db01e95172bae8a3909378a13a4383a0fe4",
-              "text": "Machu Picchu: terraces and mountains seen through a stone window",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word document contains no matching image hover caption; translate the current RU media.hover field."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:45:19.771Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-39fb6759e90b-save-01",
+        "blobSha": "ef585afb4274c7263f913ed397870c56cb6df5fd",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_peru_argentina_group_15_days_b014/ada-en-20261104-39fb6759e90b-save-01.json",
+        "at": "2026-11-04T05:45:24.294Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

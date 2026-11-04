@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2102,
-    "leased": 13,
-    "review": 294,
+    "leased": 12,
+    "review": 295,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2102,
-      "leased": 13,
-      "review": 294,
+      "leased": 12,
+      "review": 295,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -1026,8 +1026,8 @@
         "word_2027": {
           "held": 0,
           "queued": 69,
-          "leased": 1,
-          "review": 14,
+          "leased": 0,
+          "review": 15,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1057,7 +1057,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T07:27:03.625Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0f": {
@@ -1382,12 +1382,6 @@
       "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b005",
       "token": "lease-da131c3d187149a7b813992c83ea721b",
       "expiresAt": "2026-11-04T07:26:42.650Z",
-      "generation": 1
-    },
-    "ada-en-2661932f-20261104": {
-      "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b005",
-      "token": "ada-en-token-2661932f-20261104",
-      "expiresAt": "2026-11-04T07:27:03.625Z",
       "generation": 1
     },
     "ada-en-1d528bec4ff4": {
@@ -2464,7 +2458,9 @@
       "jobIds": [
         "en:bulk:tour:tour_mexico_lindo_eight_days:b005"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_mexico_lindo_eight_days:b005"
+      ]
     },
     "ada_en_8c4fca0d2a61": {
       "token": "token_8c4fca0d2a61_c1970ba9",
@@ -2491,5 +2487,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:59:36.450Z"
+  "updatedAt": "2026-11-04T05:59:42.756Z"
 }

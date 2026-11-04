@@ -417,206 +417,22 @@
     {
       "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "699f7e7f3cd90564179f663b345369761232cc8fde45442241aa71e7d24210ee",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-2661932f-20261104",
-        "token": "ada-en-token-2661932f-20261104",
-        "claimedAt": "2026-11-04T05:57:03.625Z",
-        "expiresAt": "2026-11-04T07:27:03.625Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-2661932f-20261104-s01-cp08",
-        "format": "inline-v1",
-        "ownerId": "ada-en-2661932f-20261104",
-        "token": "ada-en-token-2661932f-20261104",
-        "generation": 1,
-        "payload": {
-          "submissionId": "ada-en-2661932f-20261104-s01",
-          "result": {
-            "jobId": "en:bulk:tour:tour_mexico_lindo_eight_days:b005",
-            "stableId": "tour_mexico_lindo_eight_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "699f7e7f3cd90564179f663b345369761232cc8fde45442241aa71e7d24210ee",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-                "field": "itinerary.title",
-                "sourceTextSha256": "1b72f42129cc622f3875ee71e577016a5b34e876cb77b80f898adb9adc0b9479",
-                "text": "Arrival in Mexico City",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                  "modifiedTime": "2026-10-08T14:01:21.046Z",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p11",
-                      "textSha256": "310821baa0029fe95a6fbd740b3e46f84cc27f86d3c492d744ad82b6ba676a4b"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact Word arrival heading without its day-number prefix for the separate itinerary title field."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:5a4836cca1208c95",
-                "field": "itinerary.text",
-                "sourceTextSha256": "a02af34ac043b83d0663df73e6342d5e7923328bef1968ed3726767529c3ba4a",
-                "text": "Upon landing at Mexico City International Airport, a friendly bilingual host will be waiting to welcome you, holding a sign with your name. From the moment you arrive, you’ll be greeted with warm hospitality and guided comfortably to your hotel located in the heart of Mexico City.\n\nOnce you’ve checked in, the remainder of the day is free for you to enjoy at your own pace. You may wish to relax after your journey, take a gentle walk through nearby plazas, or discover the city’s lively atmosphere for the first time. Perhaps enjoy a drink on a rooftop terrace at sunset or explore the neighborhood around your hotel—however you choose to begin, Mexico City offers a memorable start to your adventure.\n\nIncluded:• Private arrival transfer• Overnight stay in Mexico City\n\nOptional:• Early check-in• Evening experience (ask for available options)",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                  "modifiedTime": "2026-10-08T14:01:21.046Z",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p14",
-                      "textSha256": "ccc06574af3ecb1da2573ebf9aeb19ba1c872c0ca5dfcff4a3289a30151d47ab"
-                    },
-                    {
-                      "ref": "word/document.xml:p15",
-                      "textSha256": "6f783c05613bdfa5d4b869c730ff9c99980a5078ffc99b7bf7f6a0f2e74b34fb"
-                    },
-                    {
-                      "ref": "word/document.xml:p16",
-                      "textSha256": "046478c74cacf8438956d32dd78792f4f1a4637d15e2389a741eba3d1354c109"
-                    },
-                    {
-                      "ref": "word/document.xml:p17",
-                      "textSha256": "a5a46f6eb817c76e5b790af93031eb057a332f313ad30d6ab2d7fd86645ebc6f"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:e4645fc6631631c6",
-                "field": "itinerary.label",
-                "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
-                "text": "Mexico City",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                  "modifiedTime": "2026-10-08T14:01:21.046Z",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p11",
-                      "textSha256": "310821baa0029fe95a6fbd740b3e46f84cc27f86d3c492d744ad82b6ba676a4b"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the destination name explicitly present in the Word arrival heading as the itinerary place label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:4b5e49c00db51850",
-                "field": "media.alt",
-                "sourceTextSha256": "04f30e40fcc580d05dd80063a61fdeceed0c7d770244062b960ffcefbdd311ca",
-                "text": "Yellow Volkswagen Beetle taxi on a street in Mexico City, Mexico",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "runId": "ada-en-2661932f-20261104",
-                  "model": "GPT-6",
-                  "wordAbsenceReason": "The verified Word has no caption for the specific existing website taxi image; translate the frozen RU media description."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:69962fe8c1c3b98b",
-                "field": "media.hover",
-                "sourceTextSha256": "9f7d119c57c3f60448ed04d170d3c1661d60b6dbfb0805da727e128971467d81",
-                "text": "Mexico City: a yellow Volkswagen taxi in city traffic",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "runId": "ada-en-2661932f-20261104",
-                  "model": "GPT-6",
-                  "wordAbsenceReason": "The verified Word contains no hover caption for this specific website taxi image; translate the exact frozen RU image text."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-                "field": "itinerary.title",
-                "sourceTextSha256": "817c7b6179742ef50f9745d19428c11a4aa197536810a4375954f3e754168325",
-                "text": "Historic Streets & Cultural Heritage",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                  "modifiedTime": "2026-10-08T14:01:21.046Z",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p18",
-                      "textSha256": "f56b38d6b6624000408464e635575441586431bffdaecddbe51b215144382792"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the approved Word day heading without the day number, which is represented separately by the itinerary structure."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:569e72e117968fcc",
-                "field": "itinerary.text",
-                "sourceTextSha256": "4221374deef617c42854ca715d54515de8602edc13c2cf1a7e87a6a2edff2236",
-                "text": "Duration: 6 HoursPick-Up: 8:45 – 9:30 AMLanguages: English and Spanish\n\nAfter the tour, you will return to your hotel, or you may choose to stay out and enjoy lunch while continuing to experience the rhythm of the city.\n\nRound-trip transportation is included for a smooth and comfortable tour.\n\nIncluded:• Shared transportation• Certified bilingual guide• Entrance to the National Museum of Anthropology• City tour• Overnight stay in Mexico City\n\nNot Included:• Meals• Drinks• Tips• Personal expenses",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                  "modifiedTime": "2026-10-08T14:01:21.046Z",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p20",
-                      "textSha256": "91b47861c0fd760095c3b90bc315a4dafb2118a1867a2033148a16a43725fcf3"
-                    },
-                    {
-                      "ref": "word/document.xml:p25",
-                      "textSha256": "1fab9a621a50a973157ed802c41af7f64b957bee7c7455b97c0c5dfdf5d23354"
-                    },
-                    {
-                      "ref": "word/document.xml:p28",
-                      "textSha256": "9b12a2a8f1dd53967dc90eb033a7a16f89572cc7a9d37f46ae002248fe350181"
-                    },
-                    {
-                      "ref": "word/document.xml:p29",
-                      "textSha256": "e90e8bbf03492e1780981e775519477ea8b144b8e3552e50e731bf8ff1804a2e"
-                    },
-                    {
-                      "ref": "word/document.xml:p30",
-                      "textSha256": "d987c1bc9b6e5fd772ad3f1d622b6179792ccf0f3c8562036c5f1056d06e8d96"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:f1a5ff63ddbbe385",
-                "field": "itinerary.label",
-                "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
-                "text": "Mexico City",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
-                  "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
-                  "modifiedTime": "2026-10-08T14:01:21.046Z",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p21",
-                      "textSha256": "3e5818f57578f2428116b81f79d1a7cf1ee9e12637263008c87fc4aa5ecb6ec8"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the explicit city name from the corresponding Word day as the itinerary destination label."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:59:13.834Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-2661932f-20261104-s01",
+        "blobSha": "49f66104896e36c137c5a98b1d1b55144cfc354b",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_mexico_lindo_eight_days_b005/ada-en-2661932f-20261104-s01.json",
+        "at": "2026-11-04T05:59:42.756Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

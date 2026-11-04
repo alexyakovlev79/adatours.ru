@@ -350,7 +350,84 @@
         "claimedAt": "2026-11-04T06:50:00.706Z",
         "expiresAt": "2026-11-04T08:20:00.706Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-9c9ff2214505-en-bulk-tour-tour_iguazu_incentive_3_days-b001-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9c9ff2214505",
+        "token": "token-9c9ff2214505-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_iguazu_incentive_3_days:b001",
+          "stableId": "tour_iguazu_incentive_3_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "8c45dd3d7e0f2e89c7511d0a876bf431da17bf50a70d9052b76604079e9f4596",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "7441fb0db478082951fd54200b62054f4d8a5e5314286986d324f4ba899c939e",
+              "text": "Great Incentive to the Widest Waterfall on Earth",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p1",
+                    "textSha256": "07869390ca7abb9a7bb246efaec544e9c9d74b2c5fbfec81f0a486cc47820525"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "00fcef0a6a18fb64554796146595f67c88a8a01c2a269c62da9aea8191b864a1",
+              "text": "Panoramic trails above the cascades, a boat ride towards the falling water and a walk among tropical birds. In 3 days, you will see the Brazilian and Argentine sides of Iguazu, enjoy the Rafain show and discover Argentine asado.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-9c9ff2214505",
+                "wordAbsenceReason": "The verified Word has individual day descriptions but no equivalent concise overview lead; translate the current RU lead using its existing facts."
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "a9541adb80e2036da052449da0f6ceaf67c00057a08d768064ae455d2f6c8826",
+              "text": "Prices are available on request. Your hotel, travel dates and group size will be agreed when booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-9c9ff2214505",
+                "wordAbsenceReason": "The verified Word lists included services but contains no price-on-request note or booking-basis summary; translate the current RU commercial note without changing prices."
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "2ee53527865d4b0e71c7c4bd9b385e9a73486364ed9654eefc3692076a7d7c5a",
+              "text": "Incentive",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p1",
+                    "textSha256": "07869390ca7abb9a7bb246efaec544e9c9d74b2c5fbfec81f0a486cc47820525"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract this place name from the approved Word passage for the corresponding itinerary label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:50:54.450Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

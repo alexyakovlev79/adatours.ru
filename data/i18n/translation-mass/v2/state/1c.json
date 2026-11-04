@@ -108,7 +108,7 @@
         "expiresAt": "2026-11-04T07:02:33.020Z"
       },
       "checkpoint": {
-        "id": "ada-en-884b0cfde5f5-s01-c4",
+        "id": "ada-en-884b0cfde5f5-s01-c8",
         "format": "inline-v1",
         "ownerId": "ada-en-884b0cfde5f5",
         "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
@@ -190,10 +190,70 @@
                 "transformation": "contextual_label",
                 "rationale": "Create the short departure heading from the Word airport-transfer paragraph and its exact destination name, without adding itinerary facts."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "0ea9ecc08a396c578c36d4d9fd856319d2605262d34edd848eedfb882d41a014",
+              "text": "Day 6 · Transfer to the airport with a driver for your flight home. End of services.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:97",
+                    "textSha256": "70e6026cb8babebfca4d9603baf63c5cc3acab2ff583f68a2aa10f8bc3fc49d0"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:31416ee0d00bcea4",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:7",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:3abc552a0fcd3372",
+              "field": "media.alt",
+              "sourceTextSha256": "7a5051979a13716c111454fdbb7e60065d869569b0ac89173c8181082f119ffc",
+              "text": "Rocky shore and sailboats in Guanabara Bay, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-a2d69b03d72ad4e9",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The verified Word 2027 does not contain equivalent text for this RU image alt caption; translated the existing visual description without changing the image or its status as an illustration.",
+                "wordDocumentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400"
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "185890b2dd42ca52092d3cb84a67fb0a5448b712dbf3464822dc71be19137eb7",
+              "text": "Lopes Mendes Beach on Ilha Grande and the Atlantic Forest — illustration",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-a2d69b03d72ad4e9",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The verified Word 2027 does not contain equivalent text for this RU image alt caption; translated the existing visual description without changing the image or its status as an illustration.",
+                "wordDocumentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400"
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:33:38.723Z"
+        "at": "2026-11-04T05:33:42.382Z"
       },
       "submission": null,
       "review": null,

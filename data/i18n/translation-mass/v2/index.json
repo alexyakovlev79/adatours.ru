@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2129,
-    "leased": 9,
+    "queued": 2128,
+    "leased": 10,
     "review": 271,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2129,
-      "leased": 9,
+      "queued": 2128,
+      "leased": 10,
       "review": 271,
       "ready": 1,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 71,
-          "leased": 0,
+          "queued": 70,
+          "leased": 1,
           "review": 7,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:20:42.131Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1395,6 +1395,12 @@
       "token": "ca9d19d3a2444d3eb27e82c408f2b400",
       "expiresAt": "2026-11-04T07:20:21.983Z",
       "generation": 1
+    },
+    "ada_en_abf469133bbf": {
+      "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b005",
+      "token": "ada_en_token_abf469133bbf_20261104",
+      "expiresAt": "2026-11-04T07:20:42.131Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2318,7 +2324,8 @@
     "ada_en_abf469133bbf": {
       "token": "ada_en_token_abf469133bbf_20261104",
       "jobIds": [
-        "en:bulk:tour:tour_colombia_complete_11_days:b013"
+        "en:bulk:tour:tour_colombia_complete_11_days:b013",
+        "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_colombia_complete_11_days:b013"
@@ -2365,5 +2372,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T05:50:35.220Z"
+  "updatedAt": "2026-11-04T05:50:42.131Z"
 }

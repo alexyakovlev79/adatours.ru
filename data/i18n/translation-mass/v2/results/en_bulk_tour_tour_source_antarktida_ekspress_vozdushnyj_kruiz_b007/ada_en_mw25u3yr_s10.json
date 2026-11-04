@@ -1,0 +1,147 @@
+{
+  "jobId": "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b007",
+  "stableId": "tour_source_antarktida_ekspress_vozdushnyj_kruiz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1b86653b76c555c495e30a6a3bb4551547fa1943b149c771477d281374dbb28e",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:4b1d82f7026d30ca",
+      "field": "itinerary.label",
+      "sourceTextSha256": "67df4a7b6d2d3b238bc99d1a145b5c02a40640b5f7b272ce00b367124bb961c7",
+      "text": "Drake Passage",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:9",
+            "textSha256": "9dcf316b151e840624d53d9b1f7a6abf43e64cd33e5570f84031999ad11b4470"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed geographic name from the Word sailing-day heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:54a74b6c2be92e8f",
+      "field": "media.alt",
+      "sourceTextSha256": "caf59043bb9417e365bed09cc742dae7e1c8755f6459892cf92232e9d9a32741",
+      "text": "Wooden church with a tall tower, cross and steps on a dark, rocky seashore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary contains no visual alt caption for this wooden church; translate the assigned RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:c84bd506ee2b8b23",
+      "field": "media.hover",
+      "sourceTextSha256": "fb3602b2eb55bc74f1d019ab7b45e5caf1a260bc6b8388f3bdea4937ac152a9f",
+      "text": "A wooden church beside a cold sea under cloudy skies",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no hover caption describing a wooden church beside the sea; translate the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c36dcd6fe0efeb05aeb013c063b5121e1ea3196e5d8416ca651e1417422aceba",
+      "text": "Drake Passage – South Shetland Islands – Antarctica",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:13",
+            "textSha256": "258e79dc992aa883a8916e062f9d24aa877ec077ab66ab03829f9ff59df47a8e"
+          },
+          {
+            "ref": "word/document.xml:p:15",
+            "textSha256": "08a128448b52df024d5a71446399b064f4766b1f7c0addc9a36b47d2fec3cf01"
+          },
+          {
+            "ref": "word/document.xml:p:16",
+            "textSha256": "4be02ea0aab210347bd0b39a8cced5fb53909a824c96eeb6cac020dcbaf81a8f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day route from the confirmed Drake Passage crossing, South Shetland Islands and arrival in Antarctica."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3eaac72b083bf288c0ab70061e2a7e9d4e4f2acee478680b90f4317ea8b38266",
+      "text": "After crossing the Antarctic Convergence, the environment changes noticeably. Keep your camera ready, as this is the time to watch for the first icebergs and the first sight of Antarctic land. After reaching the South Shetland Islands, sail in ice-filled bays while enjoying the company of seabirds, penguins, seals, and whales. Board a Zodiac for your first memorable shore visit to a penguin colony. Exploration will continue well into the evening, taking advantage of the long Antarctic daylight.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:16",
+            "textSha256": "4be02ea0aab210347bd0b39a8cced5fb53909a824c96eeb6cac020dcbaf81a8f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fee148a3b22b15e9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "48e3dcb3f980f1c87efa651e76295b813aeed3262d797deae99d9ce607b0d350",
+      "text": "South Shetland Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:16",
+            "textSha256": "4be02ea0aab210347bd0b39a8cced5fb53909a824c96eeb6cac020dcbaf81a8f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed island-group name from the Word arrival-day paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:47b1c33a95b0ebe7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0053ed74bc4710179fdf85967a8b782d50f5ce6414f31f7bee67574c2b18f464",
+      "text": "Antarctica",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:15",
+            "textSha256": "08a128448b52df024d5a71446399b064f4766b1f7c0addc9a36b47d2fec3cf01"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed destination name from the Word arrival-day heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:57818ce8e95a0f2b",
+      "field": "media.alt",
+      "sourceTextSha256": "e6923c5fe75a8b622ed2ab97c56c50af4991e9bd0989a3a9d27ccb9228ec372e",
+      "text": "Rocky green islands and a white lighthouse in a blue sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_mw25u3yr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word programme contains no visual alt caption for the islands and lighthouse; translate the assigned RU image description."
+      }
+    }
+  ]
+}

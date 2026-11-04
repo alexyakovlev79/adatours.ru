@@ -1,0 +1,169 @@
+{
+  "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b009",
+  "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "586c3e42c95d33d6ff6408d2661800e20f1f618b02491f7233abd221462d8001",
+  "sourceVerification": {
+    "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+    "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+    "modifiedTime": "2026-09-30T20:16:32.777Z",
+    "fileName": "Chile_Argentina_17d_EN_com20%.docx",
+    "yearFolder": 2027,
+    "editionYear": null
+  },
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:9600b98e84677c6f",
+      "field": "media.hover",
+      "sourceTextSha256": "e981d48d74db12485a80b1ca5812cd44763c5ddf47ac7907545416d6bd95cd34",
+      "text": "Anakena: a palm-lined shore beside the ocean and green hills",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada_en_91a5d7c2e8b4",
+        "wordAbsenceReason": "The verified Word describes Anakena Beach but has no photograph-specific hover text for this existing image; translate the exact current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e552550c34d41f8973865b68ebc68076302cdb93a223c07580f4bed1ecf0094f",
+      "text": "Easter Island → Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p26",
+            "textSha256": "375a6b166ffb93df7d8f841f0773be0da5fe7d1e7b08fae0866c9294cf4a5fb1"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Remove the day-number heading prefix while preserving the exact two-stop flight route for the existing itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "49990b429ddc07efe2dad72ae6bbc1c24bbc79e3f9a22444b43c5c5e4ddb9513",
+      "text": "Private charter back to the mainland, ~5.5 hours\n\nIn the morning — an excursion to Ahu Akivi, the only platform on the island where seven moai face the ocean: according to legend, they represent the seven explorers sent by King Hotu Matu'a in search of new land. Next, the Puna Pau quarry, source of the red scoria used for the moai's topknots, and the Tahai ceremonial complex with its restored platforms, including Ko Te Riku — the only statue with restored eyes. From Easter Island, the only route back is through Santiago — there are no direct flights to the north of the country from here. Return by private charter and an overnight in the capital before the next flight deep into the desert.\n\n•  Santiago (1 night): The Singular Santiago, Lastarria Room, BB",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p27",
+            "textSha256": "56cc9c8b622c58cd8d90c57314a6f671a85c05b539c8bf4014c405ba5b677f90"
+          },
+          {
+            "ref": "word/document.xml:p28",
+            "textSha256": "281b538e06e4f065e390750a2c3fec2606b761a0e364774883623dd9f1baf99e"
+          },
+          {
+            "ref": "word/document.xml:p98",
+            "textSha256": "e419981b58758e650fe0e10ed2312e65191a922551f934c859afcff255be4118"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:161312e06388c23b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e41062add057645e926bf42391b44b831d40619296fa430b370f4633481e7939",
+      "text": "Easter Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p26",
+            "textSha256": "375a6b166ffb93df7d8f841f0773be0da5fe7d1e7b08fae0866c9294cf4a5fb1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified Easter Island name from the departure heading for the existing route stop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dd1ef65a679378d4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79a7e4d346e5dcca6955b45c4928bcf9c8d57856b87a1a001d8a1f799678a211",
+      "text": "Ahu Akivi",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p28",
+            "textSha256": "281b538e06e4f065e390750a2c3fec2606b761a0e364774883623dd9f1baf99e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Ahu Akivi directly from the verified morning excursion paragraph for the existing route stop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bc2313c815a35d7f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "8d5a5921e4f019fb6a3f47696e41ecd37f768621f381456de74895897ace760f",
+      "text": "Puna Pau Quarry",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p28",
+            "textSha256": "281b538e06e4f065e390750a2c3fec2606b761a0e364774883623dd9f1baf99e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Puna Pau quarry name as the existing location label, with label capitalization."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5981292f40cccb2d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "28f1c47ca609c53d7edf8a0bf9719b59677ae1b75400e3b821a97227b4b76b5f",
+      "text": "Tahai",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p28",
+            "textSha256": "281b538e06e4f065e390750a2c3fec2606b761a0e364774883623dd9f1baf99e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Tahai directly from the verified ceremonial-complex paragraph as the existing stop label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3d310a170b794362",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+        "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p26",
+            "textSha256": "375a6b166ffb93df7d8f841f0773be0da5fe7d1e7b08fae0866c9294cf4a5fb1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified Santiago arrival name from the flight heading for the existing capital-city stop."
+      }
+    }
+  ]
+}

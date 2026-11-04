@@ -278,7 +278,113 @@
         "claimedAt": "2026-11-04T05:59:18.847Z",
         "expiresAt": "2026-11-04T07:29:18.847Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_2478a2a40c1c_s02_c04",
+        "format": "inline-v1",
+        "ownerId": "ada_en_2478a2a40c1c",
+        "token": "ada_en_2478a2a40c1c_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b011",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "35a79447a5d86401aea56297e2cf15949e559538f1e1f654fe40fcdf83097589",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:0e0b9850a7665c78",
+              "field": "media.hover",
+              "sourceTextSha256": "531b584f6f58b2464b385b7cfe40d778facff9e99b7912c62c4101a525c328fd",
+              "text": "Atacama, Chile: mountains and their mirror image in the water",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s02",
+                "wordAbsenceReason": "The exact Word 2027 programme has no matching image-specific hover caption; translate this current RU image caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "4d412e859fedbe79539b1c341a20559f8c699a7be244c0331ee7c968b2ecb45d",
+              "text": "Atacama | Valley of the Moon → Patagonia",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p36",
+                    "textSha256": "f90298d34520d64f553369af081cd6664c1e56b6d731cd947acb04d5d3217254"
+                  }
+                ],
+                "transformation": "condense_route_label",
+                "rationale": "Retain the Word route title while omitting its embedded day number from the standalone title field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "21bfa4178524e5ecb483f253cf18eb9140cc11a5c69dd951c91c49edf0aa3f00",
+              "text": "Half-day excursion, entrance fee and cocktail included; followed by a jet to Punta Arenas (PUQ) with a helicopter connection\n\nA few kilometers from San Pedro de Atacama, amid the sharp rock formations of the Cordillera de la Sal, lies the Valley of the Moon — a true geological wonder within the Los Flamencos National Reserve. The mesmerizing landscape creates the full sensation of walking on the lunar surface; in the afternoon, an unrivaled view opens up over the Andes range and its volcanoes, and as the sun sets, the desert is washed in gold and crimson tones — a truly unforgettable sight.\n\nIn the afternoon — private jet transfer to Punta Arenas with a helicopter connection straight to the hotel, bypassing 3–4 hours of driving. Chile's southernmost region greets you with the rugged beauty of its fjords and the famous Torres del Paine towers.\n\nExcursion, flight and helicopter connection times are agreed before booking, taking the sunset in the Valley of the Moon into account.\n\nHotel: The Singular Patagonia, Singular Room.\n\nBreakfast is included in your accommodation (BB).",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_2478a2a40c1c_s02",
+                "wordAbsenceReason": "Word 2027 covers the Valley of the Moon, jet and helicopter programme but does not contain the current RU pre-booking schedule caveat. Retain the approved Word passages verbatim and append only that RU-only caveat and the RU breakfast label supported by the Word hotel table.",
+                "wordEvidence": {
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "e1d39150fc030f6dd526308e70347fa5bcbaf809a0792ddfed780c5d5b2afec2"
+                    },
+                    {
+                      "ref": "word/document.xml:p38",
+                      "textSha256": "3c3adf7bb469da667c1ad9a89a661d699380827585162672d74b0949899cf14f"
+                    },
+                    {
+                      "ref": "word/document.xml:p40",
+                      "textSha256": "e9c38ce649059e7229c8e048b93ddb71999a5344484cd2136acb101c7b453bc6"
+                    },
+                    {
+                      "ref": "word/document.xml:p41",
+                      "textSha256": "528dfa71dcbfb0004634d783f559189935e9fa7f24e5ddc3a310fc880a70d651"
+                    },
+                    {
+                      "ref": "word/document.xml:p100",
+                      "textSha256": "ad2983b1098ec92c0df799311912cf64075066522b201d5b2c33d0e1c071f4e1"
+                    }
+                  ]
+                },
+                "composition": "Verbatim Word paragraphs plus translated current RU schedule caveat and breakfast label; mixed provenance, not word_exact."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a78c49ec897d2177",
+              "field": "itinerary.label",
+              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+              "text": "San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p33",
+                    "textSha256": "50bd0698bfe11b77b4e45d786e81cc180c6c6d2a619104e8674f966364b754b2"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the town name from the approved Word arrival description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:00:17.788Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

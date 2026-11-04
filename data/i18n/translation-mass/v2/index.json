@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1615,
-    "leased": 5,
-    "review": 789,
+    "leased": 4,
+    "review": 790,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 1,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1615,
-      "leased": 5,
-      "review": 789,
+      "leased": 4,
+      "review": 790,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 1,
@@ -1106,8 +1106,8 @@
         "word_2027": {
           "held": 0,
           "queued": 39,
-          "leased": 1,
-          "review": 35,
+          "leased": 0,
+          "review": 36,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 0,
@@ -1137,7 +1137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T17:58:32.065Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1b": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-e8f6bc176576": {
-      "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002",
-      "token": "ada-en-e8f6bc176576-token-20261104",
-      "expiresAt": "2026-11-04T17:58:32.065Z",
-      "generation": 1
-    },
     "ada-en-20261104-82d9d1": {
       "jobId": "en:bulk:tour:tour_mexico_religious_journey:b003",
       "token": "t-82d9d1-20261104-unique",
@@ -3993,7 +3987,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002"
+      ]
     },
     "ada-en-20261104-82d9d1": {
       "token": "t-82d9d1-20261104-unique",
@@ -4028,5 +4024,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:30:20.882Z"
+  "updatedAt": "2026-11-04T16:30:33.038Z"
 }

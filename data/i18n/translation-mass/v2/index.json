@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1794,
-    "leased": 10,
+    "queued": 1793,
+    "leased": 11,
     "review": 605,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1794,
-      "leased": 10,
+      "queued": 1793,
+      "leased": 11,
       "review": 605,
       "ready": 1,
       "retryable": 0,
@@ -705,8 +705,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 55,
-          "leased": 0,
+          "queued": 54,
+          "leased": 1,
           "review": 18,
           "ready": 0,
           "retryable": 0,
@@ -737,7 +737,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T13:29:02.299Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -1400,6 +1400,12 @@
       "jobId": "en:bulk:tour:tour_guatemala_discover_8_days:b006",
       "token": "ada-token-mw22bzxh-xvwyywnvno8",
       "expiresAt": "2026-11-04T13:28:46.134Z",
+      "generation": 1
+    },
+    "ada-en-20261104-f5ac-75b022": {
+      "jobId": "en:bulk:tour:tour_source_argentina_bariloche_i_buenos_ajres:b007",
+      "token": "ada-en-token-20261104-75b022",
+      "expiresAt": "2026-11-04T13:29:02.299Z",
       "generation": 1
     }
   },
@@ -3382,7 +3388,8 @@
     "ada-en-20261104-f5ac-75b022": {
       "token": "ada-en-token-20261104-75b022",
       "jobIds": [
-        "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b002"
+        "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b002",
+        "en:bulk:tour:tour_source_argentina_bariloche_i_buenos_ajres:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu:b002"
@@ -3435,5 +3442,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T11:58:53.930Z"
+  "updatedAt": "2026-11-04T11:59:02.299Z"
 }

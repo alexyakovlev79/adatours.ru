@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2088,
-    "leased": 13,
+    "queued": 2087,
+    "leased": 14,
     "review": 308,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2088,
-      "leased": 13,
+      "queued": 2087,
+      "leased": 14,
       "review": 308,
       "ready": 1,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 71,
-          "leased": 0,
+          "queued": 70,
+          "leased": 1,
           "review": 8,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:35:01.105Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1419,6 +1419,12 @@
       "token": "ada_en_4c0a9bc31e22_token_20261104",
       "expiresAt": "2026-11-04T07:34:46.644Z",
       "generation": 1
+    },
+    "ada-en-2a369c57df19": {
+      "jobId": "en:bulk:tour:tour_brazil_rio_four_days:b003",
+      "token": "token-2a369c57df19-20261104",
+      "expiresAt": "2026-11-04T07:35:01.105Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2521,7 +2527,8 @@
       "token": "token-2a369c57df19-20261104",
       "jobIds": [
         "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b008",
-        "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b010"
+        "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b010",
+        "en:bulk:tour:tour_brazil_rio_four_days:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b008",
@@ -2537,5 +2544,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:04:52.602Z"
+  "updatedAt": "2026-11-04T06:05:01.105Z"
 }

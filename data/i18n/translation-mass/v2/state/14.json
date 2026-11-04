@@ -265,7 +265,98 @@
         "claimedAt": "2026-11-04T06:07:45.264Z",
         "expiresAt": "2026-11-04T07:37:45.264Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-884b0cfde5f5-s09-c4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-884b0cfde5f5",
+        "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b008",
+          "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "313ba4d6b63d656afaeca1054874a3fc476c8cd691b77cef6eb2c15db7c2ef38",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:2a305b40321085a3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:100",
+                    "textSha256": "72c4223a7860a6d55e9eaf76efaaf5eecd5e51068554f187ab2f83a0950de279"
+                  },
+                  {
+                    "ref": "word/document.xml:p:105",
+                    "textSha256": "cfc50b308ba98af7302ac9626d83ab395fff48b33e1b2875ac5d71417d86dec1"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Rio de Janeiro departure name from the verified Word transfer and flight sections as the place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8e423711fb104e1d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:100",
+                    "textSha256": "72c4223a7860a6d55e9eaf76efaaf5eecd5e51068554f187ab2f83a0950de279"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Foz do Iguaçu arrival name from the verified Word day-five transfer paragraph for this place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:fa1a6a22bde53990",
+              "field": "media.alt",
+              "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
+              "text": "Iguazu Falls from the Brazilian side",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-884b0cfde5f5",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The complete verified Word 2027 has no equivalent photograph-specific alternative text; translated the exact current RU image caption.",
+                "wordDocumentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "37ae56e645f21ab4509e29b895b4ff6ac3468028b02cff634a42ac5baee9da57",
+              "text": "The Brazilian side of the falls",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:101",
+                    "textSha256": "f84e835c1bed88dc33ba5b23bb0f2fb187b757c012d9518bf9cfb3f1f7714484"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Condense the opening of the exact Word day-six excursion paragraph into a concise itinerary heading."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:08:58.463Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

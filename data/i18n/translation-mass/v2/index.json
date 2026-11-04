@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1437,
-    "leased": 20,
+    "queued": 1436,
+    "leased": 21,
     "review": 952,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1437,
-      "leased": 20,
+      "queued": 1436,
+      "leased": 21,
       "review": 952,
       "ready": 1,
       "retryable": 0,
@@ -1305,8 +1305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 45,
-          "leased": 0,
+          "queued": 44,
+          "leased": 1,
           "review": 26,
           "ready": 0,
           "retryable": 0,
@@ -1337,7 +1337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T19:24:30.801Z",
       "earliestRetryAt": null
     }
   },
@@ -1460,6 +1460,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_venesuele:b002",
       "token": "tok-t6o8x95xpzd",
       "expiresAt": "2026-11-04T19:23:32.478Z",
+      "generation": 1
+    },
+    "ada-en-mw2ezrna-ylp4do": {
+      "jobId": "en:bulk:tour:tour_source_buenos_ajres_salta_iguasu:b001",
+      "token": "ada-en-mw2ezrna-ylp4do-token-t3g16k4i",
+      "expiresAt": "2026-11-04T19:24:30.801Z",
       "generation": 1
     }
   },
@@ -4632,7 +4638,8 @@
     "ada-en-mw2ezrna-ylp4do": {
       "token": "ada-en-mw2ezrna-ylp4do-token-t3g16k4i",
       "jobIds": [
-        "en:bulk:tour:tour_source_ekvador_zhivaya_priroda:b010"
+        "en:bulk:tour:tour_source_ekvador_zhivaya_priroda:b010",
+        "en:bulk:tour:tour_source_buenos_ajres_salta_iguasu:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ekvador_zhivaya_priroda:b010"
@@ -4654,5 +4661,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T17:54:23.221Z"
+  "updatedAt": "2026-11-04T17:54:30.801Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1792,
-    "leased": 11,
+    "queued": 1791,
+    "leased": 12,
     "review": 606,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1792,
-      "leased": 11,
+      "queued": 1791,
+      "leased": 12,
       "review": 606,
       "ready": 1,
       "retryable": 0,
@@ -585,8 +585,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 51,
-          "leased": 0,
+          "queued": 50,
+          "leased": 1,
           "review": 22,
           "ready": 0,
           "retryable": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T13:29:30.043Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b005",
       "token": "ada-en-token-e3304ab61ca8-f5ac98715a5f",
       "expiresAt": "2026-11-04T13:29:10.703Z",
+      "generation": 1
+    },
+    "ada-en-f5ac9871-mw22bfo2": {
+      "jobId": "en:bulk:tour:tour_source_beliz_san_pedro_ostrov_ambergris_kaje:b001",
+      "token": "token-mw22bl5s-2lgitvnumf",
+      "expiresAt": "2026-11-04T13:29:30.043Z",
       "generation": 1
     }
   },
@@ -3415,7 +3421,8 @@
     "ada-en-f5ac9871-mw22bfo2": {
       "token": "token-mw22bl5s-2lgitvnumf",
       "jobIds": [
-        "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b005"
+        "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b005",
+        "en:bulk:tour:tour_source_beliz_san_pedro_ostrov_ambergris_kaje:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b005"
@@ -3451,5 +3458,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T11:59:22.723Z"
+  "updatedAt": "2026-11-04T11:59:30.043Z"
 }

@@ -1,0 +1,201 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_argentina_braziliya:b010",
+  "stableId": "tour_source_chili_argentina_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "267434b026eebc449252c6f6ff520de5ea9b732375739d73e63a739a46df628a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1324534eee1283d10598457df870f143cba05c3d3b31de6f26021c4b24f8e024",
+      "text": "Buenos Aires – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:46",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          },
+          {
+            "ref": "word/document.xml#p:111",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml#p:112",
+            "textSha256": "28d3b127d900ae085a404d28f5d1a143ec1cc805e0e7620f75405fcbdb9eb8ce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the approved departure city and arrival city for the flight and Argentine-falls day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f57bdb63d6394b4be28a76d6c76d22e348e52280ac3a406e0fdd622629a6946c",
+      "text": "Transfer to the airport and flight to Iguazu. After arrival, tour of the Argentine side of the falls, with three trails through the 55,500-hectare park.\n\nLower Circuit · 1,700 metres of walkways into the jungle, close to the Dos Hermanas, Chico and Ramírez falls, down to the foot of the Salto Bossetti. Upper Circuit · A 1,300-metre elevated walkway along the edge of several major falls. Devil’s Throat · The Ecological Train leads to a 1,000-metre walk to the enormous Devil’s Throat.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:112",
+            "textSha256": "28d3b127d900ae085a404d28f5d1a143ec1cc805e0e7620f75405fcbdb9eb8ce"
+          },
+          {
+            "ref": "word/document.xml#p:113",
+            "textSha256": "dbd69520965870c751cd637c37a9a04ca3f8aec7d07649b6af6caee71d2d3a32"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 10 prefix and join the two approved Argentine-falls paragraphs with a paragraph break."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f992053791203a00",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:111",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ffe3d969b9d1dcee",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:46",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7956f8e953677bd1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-704e3e13-mw25t7t2",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word describes the Argentine side of the falls but does not provide Puerto Iguazu as a standalone place label. Translate the assigned RU city name without changing the destination."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5341794e8fce6141",
+      "field": "media.alt",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:111",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "69e9233677b896f9a3eee0951981aa8d4cf7886f0ed56de1ac8b4aebff0b201f",
+      "text": "Brazilian side of Iguazu Falls – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:114",
+            "textSha256": "2347b7cbace78de1f3a86ba22b657914c79b783640fa5163c5c0591bbbc36355"
+          },
+          {
+            "ref": "word/document.xml#p:122",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the approved Brazilian-falls visit with the onward Rio de Janeiro destination for the assigned day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a8cb01ab3547e717f119743c5b8fd3b712dc044d02f74c363cf3418f0c443231",
+      "text": "After breakfast, your guide takes you to the Brazilian side of the falls, along walkways bordering the canyon of the Iguaçu River, past hundreds of small waterfalls to the magnificent Devil’s Throat, the mightiest of all, where the spray lets you feel its grandeur among rainbows. After the excursion, transfer to the airport for your flight to Rio de Janeiro and to the hotel. Optional: Macuco Safari, helicopter flight or Bird Park (see Optional Excursions).\n\nMacuco Safari\n\nUSD 135 per person\n\nAbout 3 km through the jungle in an open jeep with a guide, then on foot to the river and by motorboat close to the falls.\n\nHelicopter over the falls\n\nUSD 170 per person\n\nThe power and beauty of the falls from a bird’s-eye view.\n\nBird Park\n\nUSD 65 per person\n\nHundreds of birds in 16.5 hectares of Atlantic Forest, immersive aviaries and a butterfly house.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p:114",
+            "textSha256": "2347b7cbace78de1f3a86ba22b657914c79b783640fa5163c5c0591bbbc36355"
+          },
+          {
+            "ref": "word/document.xml#p:230",
+            "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+          },
+          {
+            "ref": "word/document.xml#p:232",
+            "textSha256": "c2f5090555773bfc569456fab2e5ff140c8db827d67877ad721c3cfba5bbaa5d"
+          },
+          {
+            "ref": "word/document.xml#p:233",
+            "textSha256": "0b9a7c6beafd6b958cf4e4e1d2c2aa1b40103edd1d53802758122fde9da79ce7"
+          },
+          {
+            "ref": "word/document.xml#p:234",
+            "textSha256": "2679cb3c00813d0b70d8a2b8fec94c5177f58087043dcfa4f8d7c4e9a4b68d1b"
+          },
+          {
+            "ref": "word/document.xml#p:236",
+            "textSha256": "5074c59e5b70836faf5b4ef9160a7302e05a9aea7bb191a40d97cdf7df9b9b32"
+          },
+          {
+            "ref": "word/document.xml#p:237",
+            "textSha256": "3f7e2170fc78aff3ea4912a6ee8acd9ec9ccc837923b8c9d3a585ca0b1d18f1e"
+          },
+          {
+            "ref": "word/document.xml#p:238",
+            "textSha256": "88c842f0ae9ba9e38bbfb19849822d9a14f1b162e5ccb0827494bd4b66a02fce"
+          },
+          {
+            "ref": "word/document.xml#p:240",
+            "textSha256": "fa8e300880254b40f841437c721f35369c9f9b8e67afd8d18a17ba85742f8e4f"
+          },
+          {
+            "ref": "word/document.xml#p:241",
+            "textSha256": "78694b4926b61d5f7926f75cdba0c7d91005e293acb59c0f883b1fd76eb94989"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 11 prefix, then append the approved optional excursion names, unchanged prices and descriptions as separate paragraphs."
+      }
+    }
+  ]
+}

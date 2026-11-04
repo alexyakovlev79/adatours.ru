@@ -266,7 +266,7 @@
         "expiresAt": "2026-11-04T08:37:53.663Z"
       },
       "checkpoint": {
-        "id": "ada-en-2ee259e72fda-006-04",
+        "id": "ada-en-2ee259e72fda-006-08",
         "format": "inline-v1",
         "ownerId": "ada-en-2ee259e72fda-20261104",
         "token": "ada-en-2ee259e72fda-token-20261104",
@@ -344,10 +344,74 @@
                 "transformation": "compose_route_label",
                 "rationale": "Extract Rio de Janeiro from the verified Day 3 Word heading for the place label."
               }
+            },
+            {
+              "blockId": "tour:media_alt:b82df599795ddb92",
+              "field": "media.alt",
+              "sourceTextSha256": "35ee1a3dba7ebc3344318315307a8c8a7b0399274ac6b7fdde3e2df8c26c032e",
+              "text": "The statue of Christ the Redeemer on Corcovado amid the green mountains of Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The verified Word contains no matching media caption for this current RU photograph description; translate the RU text without changing the image.",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:2533202196b8cdce",
+              "field": "media.hover",
+              "sourceTextSha256": "639cf3e5281be421c4e6d16fc32765f3e94650baeb20696a352e2ed2145ef283",
+              "text": "Corcovado in Rio: the statue of Christ above forested mountain slopes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The verified Word contains no matching media caption for this current RU photograph description; translate the RU text without changing the image.",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p24",
+                    "textSha256": "af70fcb7a7fc49cb1ca5c08f572e6ab43b377c05b5080eacc7b3f1f1d1289620"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the verified Day 4 city heading without its day prefix as the current itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "03823cb522a0e741f997df95064875074ee9c6c00d3100586437bd51607de181",
+              "text": "Today you will explore the lush Tijuca Forest during a half-day guided excursion. This remarkable urban rainforest offers waterfalls, scenic viewpoints, and incredible biodiversity. Lunch is included during the tour. The remainder of the day is free to enjoy Rio at your own pace.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p26",
+                    "textSha256": "97bfe71eb7ae027fd8d13ef2331370f98feda098fc560127782253b29414918a"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:09:08.231Z"
+        "at": "2026-11-04T07:09:12.448Z"
       },
       "submission": null,
       "review": null,

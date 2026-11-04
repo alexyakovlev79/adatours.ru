@@ -200,7 +200,7 @@
         "expiresAt": "2026-11-04T07:26:42.650Z"
       },
       "checkpoint": {
-        "id": "cp-5d56534e-littlemix-b005-4",
+        "id": "cp-5d56534e-littlemix-b005-8",
         "format": "inline-v1",
         "ownerId": "ada-en-5d56534e4493",
         "token": "lease-da131c3d187149a7b813992c83ea721b",
@@ -271,10 +271,81 @@
                   "runId": "ada-en-5d56534e4493",
                   "wordAbsenceReason": "The verified Word has no image-specific hover caption for this pavement café; translated from the exact current RU media.hover."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+                "field": "itinerary.title",
+                "sourceTextSha256": "88d0e3243626d7390dd5096e8a4936d03a2154358a622ed7d2741d7ffd27f0cc",
+                "text": "Corcovado and Christ the Redeemer",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p79",
+                      "textSha256": "573336fb4045628a700051098082bda73fa063e2537d98bf151d6814a6a5c1a8"
+                    },
+                    {
+                      "ref": "word/document.xml:p81",
+                      "textSha256": "ddd49b9e6878abb4ed88290dcd007e557dea1e2a556222113f60542e57dfa655"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Compose the short RU day title from the Corcovado and Christ the Redeemer names attested in the exact Word day heading and paragraph."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:ec46e3209ab74818",
+                "field": "itinerary.text",
+                "sourceTextSha256": "3b8e1cca1324a596ce5834e7c40c73bd16b9aa981905ded3666937b43f5e6386",
+                "text": "After breakfast at the hotel, depart on a private tour to Corcovado, home to the world-famous Christ the Redeemer statue, one of the principal symbols of Rio de Janeiro and Brazil.\n\nAfter the tour, return to the hotel. Accommodation at Arena Leme.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "Word paragraph 81 contains the longer Corcovado excursion narrative, not this short RU day wrapper with the explicit Arena Leme stay. Translate the current wrapper without duplicating the shared excursion or adding the Word-only details; Arena Leme is separately attested in Word paragraph 139."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p137",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:44f2e7b4143e8098",
+                "field": "itinerary.label",
+                "sourceTextSha256": "6bd9c9bdf78249ddedfce16a21e31ea680bc435d97b101570c48662cb29177b0",
+                "text": "Tijuca Forest",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p81",
+                      "textSha256": "ddd49b9e6878abb4ed88290dcd007e557dea1e2a556222113f60542e57dfa655"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Render the stable place label for the Tijuca forest named as the Tijuca rainforest in the verified Corcovado paragraph."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "wordEvidence": {
             "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
             "sha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
@@ -282,7 +353,7 @@
             "paragraphsFile": "little_mix.docx.paragraphs.json"
           }
         },
-        "at": "2026-11-04T05:58:24.980Z"
+        "at": "2026-11-04T05:58:43.075Z"
       },
       "submission": null,
       "review": null,

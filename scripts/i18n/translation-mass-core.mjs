@@ -219,25 +219,6 @@ export function massSubmit(shard,args){
 }
 /** Independent QA rejects a completed review to the existing retry/blocked queue.
  * The old submitted blob remains immutable and its receipt remains in history. */
-export function massQaReject(shard,args){
- const out=copy(shard),item=out.items.find(x=>x.jobId===args.jobId);
- check(item?.status==='review'&&item.submission?.blobSha===args.blobSha,
-  'QA rejection must identify the exact unapproved receipt');
- check(valid(args.reviewerId)&&typeof args.reason==='string'&&
-  args.reason.trim().length>=24,'QA rejection needs reviewer and evidence');
- check(['retryable','blocked_external'].includes(args.failureStatus),
-  'QA rejection must specify correction or genuine external blocker');
- check(Number.isInteger(args.confidence)&&args.confidence>=0&&
-  args.confidence<=100,'QA decision confidence out of range');
- item.qaDecisions=item.qaDecisions||[];
- item.qaDecisions.push({kind:'rejected',reviewerId:args.reviewerId,at:args.now,
-  previousSubmission:copy(item.submission),failureStatus:args.failureStatus,
-  reason:args.reason,confidence:args.confidence});
- item.status=args.failureStatus;
- item.nextAttemptAt=item.status==='retryable'?offset(args.now,10*60000):null;
- item.review=null;
- return{shard:out,status:item.status};
-}
 export function massApprove(shard,args){
  const out=copy(shard),item=out.items.find(x=>x.jobId===args.jobId);
  check(item?.status==='review'&&item.submission?.blobSha===args.blobSha,

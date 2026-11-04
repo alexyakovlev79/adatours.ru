@@ -35,7 +35,7 @@ const completeChecks=checks=>['word','meaning','facts','voice','structure','rela
 const confident=x=>Number.isInteger(x)&&x>=0&&x<=100;
 export async function runEnMassQa(tools,core,args={}){
  const action=args.action;
- if(!['status','approve','revise_and_approve','reject'].includes(action))
+ if(!['status','approve','revise_and_approve'].includes(action))
   throw Error('Unsupported QA action');
  if(!valid(args.jobId))throw Error('Exact jobId required');
  for(let n=0;n<MAX_TRIES;n++){
@@ -71,11 +71,7 @@ export async function runEnMassQa(tools,core,args={}){
    const original=JSON.parse(f.content);
    const when=args.now||new Date().toISOString();
    let outcome,newBlob=null,newPath=null,previousBlob=row.submission.blobSha;
-   if(action==='reject'){
-    outcome=core.massQaReject(shard,{jobId:args.jobId,
-     blobSha:previousBlob,reviewerId:args.reviewerId,reason:args.reason,
-     confidence:args.confidence,failureStatus:args.failureStatus,now:when});
-   }else{
+   {
     if(!completeChecks(args.checks))
      throw Error('All six independent semantic checks must be substantiated');
     const live=await get(tools,job.source.contentPath,'main');

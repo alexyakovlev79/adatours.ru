@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1068,
-    "leased": 3,
+    "queued": 1067,
+    "leased": 4,
     "review": 1309,
     "ready": 27,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1068,
-      "leased": 3,
+      "queued": 1067,
+      "leased": 4,
       "review": 1309,
       "ready": 27,
       "retryable": 0,
@@ -705,8 +705,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 29,
-          "leased": 0,
+          "queued": 28,
+          "leased": 1,
           "review": 44,
           "ready": 0,
           "retryable": 0,
@@ -737,7 +737,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T01:02:06.001Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_chili_samoe_luchshee:b009",
       "token": "adaen-w4-20261105-0226-token-a",
       "expiresAt": "2026-11-05T00:59:53.228Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0218-b": {
+      "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya:b004",
+      "token": "adaen-w2-20261105-0218-token-b",
+      "expiresAt": "2026-11-05T01:02:06.001Z",
       "generation": 1
     }
   },
@@ -5716,7 +5722,8 @@
         "en:bulk:tour:tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej:b002",
         "en:bulk:tour:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle:b007",
         "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b003",
-        "en:bulk:tour:tour_source_luchshee_v_venesuele:b003"
+        "en:bulk:tour:tour_source_luchshee_v_venesuele:b003",
+        "en:bulk:tour:tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b009",
@@ -5742,5 +5749,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T23:31:48.005Z"
+  "updatedAt": "2026-11-04T23:32:06.001Z"
 }

@@ -141,198 +141,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "9ae9993872e63ede315482891466acce44bc31ee54bbf22ad81e48d724cf6de3",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "claimedAt": "2026-11-04T06:04:23.813Z",
-        "expiresAt": "2026-11-04T07:34:23.813Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_6c7d31_s003_c08",
-        "format": "inline-v1",
-        "ownerId": "ada_en_20261104_0555_6c7d31",
-        "token": "ada_en_token_6c7d31_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b002",
-          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "9ae9993872e63ede315482891466acce44bc31ee54bbf22ad81e48d724cf6de3",
-          "sourceChecks": {
-            "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-            "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-            "sha256Verified": true,
-            "modifiedTime": "2026-10-26T13:04:31.565Z",
-            "yearFolder": 2027,
-            "editionYear": 2027,
-            "commercialTables": 17,
-            "tariffObservation": {
-              "fromAmount": 5208,
-              "currency": "USD",
-              "occupancy": "TRPL",
-              "hotelCategory": "3-star",
-              "basis": "per person",
-              "evidenceParagraphs": [
-                163,
-                165,
-                166
-              ]
-            },
-            "guideLanguageRule": "RU-derived service-language promises adapted to English under owner decision 2026-11-03; verified Word already says English-speaking."
-          },
-          "blocks": [
-            {
-              "blockId": "tour:note:950ed73e1a1eadfe",
-              "field": "note",
-              "sourceTextSha256": "dac5ce58d9a0c240924ef189a45f31c808ecb4edbb52a89444b6dca01c49b401",
-              "text": "Carnival 2027 Parade of Champions; the 12–21 February departure is subject to confirmation",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p8 gives 12–21 February 2027 and p10 names the Parade of Champions, but no matching date label includes the current RU explicit confirmation condition. Preserve that condition in the RU-derived translation.",
-                "inspectedWord": {
-                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
-                }
-              }
-            },
-            {
-              "blockId": "tour:included:5cd9e85ecc01e315",
-              "field": "included",
-              "sourceTextSha256": "754b3530ef989b910d9680cfaa381d081d2a346d809578a0c955c99f21727483",
-              "text": "9 nights in the selected hotels with breakfast: 3 nights in Rio and 2 each in Foz do Iguaçu, Buenos Aires and Santiago.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p266 lists accommodation with breakfast and p23 separately gives the night allocation. There is no single matching list item combining the current RU nine-night total and city breakdown; translate that current item with all quantities unchanged.",
-                "inspectedWord": {
-                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
-                }
-              }
-            },
-            {
-              "blockId": "tour:included:f61e9a15ff298c51",
-              "field": "included",
-              "sourceTextSha256": "bcacbe905dc2287e0f719ba756afcc048ab27649a8fbe4b676b3e1775345aa17",
-              "text": "Flights Rio de Janeiro — Iguazu — Buenos Aires — Santiago de Chile.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p267 calls the route 'Domestic flights Rio – Iguazu – Buenos Aires – Santiago de Chile'; no passage matches the current RU list item without the domestic qualifier. Translate the current RU route without adding a classification of cross-border flights.",
-                "inspectedWord": {
-                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
-                }
-              }
-            },
-            {
-              "blockId": "tour:included:b8c7cab1c45c4f16",
-              "field": "included",
-              "sourceTextSha256": "15400e0c87ba2b2fe0be51568b690b665878d0db2dbaa14eff85fff02d3d290e",
-              "text": "Excursions as per the programme with an English-speaking guide",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p268",
-                    "textSha256": "3990a8f102b3bdf7022e9efd1ebe8d14e7970415e72dbb3154e8d82246a22bbc"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the decorative dash/list marker from the verified Word included-service item; retain its English-speaking guide wording."
-              }
-            },
-            {
-              "blockId": "tour:included:d9b9557b280286e1",
-              "field": "included",
-              "sourceTextSha256": "ddb7d9f73fb907e3b0e1451fa025fc3e7b85ab7de31d68c9fb89d9fad176285b",
-              "text": "Transfers as per the programme",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p269",
-                    "textSha256": "2bc2808a303189f994e8b0ff96649c86256648fe285733d01454b1ed4a80f80e"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the decorative dash/list marker from the verified Word included-service item."
-              }
-            },
-            {
-              "blockId": "tour:included:81d4e65c598dabd5",
-              "field": "included",
-              "sourceTextSha256": "d76e77771204644e5f6d382825c22e3cc2d4e4a85f35fa00be0621b20efda6a9",
-              "text": "Champions Parade ticket\nTransfer hotel – Sambadrome – hotel",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p270",
-                    "textSha256": "39b53c588628fdce2cb7d98f5b5ec04eadd008f1004114c68eb3bdb98a38768d"
-                  },
-                  {
-                    "ref": "word/document.xml:p271",
-                    "textSha256": "3bdbb5d33cbfb25cb8f7dec508af823cc0265743a7899468d522f75c7eb63036"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the decorative list markers and combine the two unchanged Word items owned by the single current RU ticket-and-transfer block."
-              }
-            },
-            {
-              "blockId": "tour:included:7e80e43f10691f12",
-              "field": "included",
-              "sourceTextSha256": "6771ef8ad67e5438abe59ecd61573047e6e8963f8a48817d1874d21030ff8a1a",
-              "text": "Tango show with dinner and Argentine wines in Buenos Aires, without a guide.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p272 has only 'Tango show with dinner'; p101 separately states without a guide and Argentine wines. No single equivalent compact included-service block exists, so translate the current RU item without losing those conditions.",
-                "inspectedWord": {
-                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
-                }
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:78f90d3b9a451718",
-              "field": "notIncluded",
-              "sourceTextSha256": "aea61339b73f186607d71a2f03616d3285c9f014a125fe8db6f4700064a11aec",
-              "text": "All optional excursions and the Marius restaurant.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada_en_6c7d31_run",
-                "wordAbsenceReason": "Word p276 lists optional excursions, while p80 separately recommends Marius at an additional price; no single matching exclusion item names both. Translate the current RU exclusion without importing the optional price.",
-                "inspectedWord": {
-                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3"
-                }
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:05:52.139Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_6c7d31_s003",
+        "blobSha": "0f0db8d53ccb5c5780eb91eee88c005288fd8eab",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b002/ada_en_6c7d31_s003.json",
+        "at": "2026-11-04T06:11:28.130Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

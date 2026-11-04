@@ -1,0 +1,77 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskaya_antarktida:b008",
+  "stableId": "tour_source_klassicheskaya_antarktida",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2c52db6123fa5ce94cdd51b4f61a748e1e589208549027d88364163440721c5f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:86c615c1cd9f6a6d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "832e77c5b0c4e0c74296c334a94b4e4cdbc2f8874f4896c6d7fba4604bd4dd64",
+      "text": "Punta Arenas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mmaD6pxncEvotAbC6Sl268WV-VqkCliK",
+        "documentSha256": "81e75777e997386db95e2d386dbec6891d8e0ae6113057d93c97fb4fbdeeda94",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "7803e2f00acedb4561b5c2c6f6ee682179cb48d5487b6ed55b069e309cce3960"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the exact Punta Arenas place name from the Word arrival paragraph for the itinerary city label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3a7f8d8eb2178e9a",
+      "field": "media.alt",
+      "sourceTextSha256": "9785de8570216c9ad3f120d606cc6fa84d907065454ba7816f03aea788ccb838",
+      "text": "Pictured: Punta Arenas in Chilean Patagonia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding photo caption identifying Punta Arenas in Patagonia."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "6c322e31617621eafe3f98da4ac4584876e521f31de6fd9b952edc72d0537abe",
+      "text": "A boat carrying people beside a large blue iceberg with a natural ice arch, Antarctica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding image alt text describing the boat and natural iceberg arch."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "22923b790d73b18612eb5234e7f8cbeb54953d72891138419ad7411e7e428f2e",
+      "text": "Antarctica: a boat beside an iceberg's ice arch",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding hover caption for the boat beside an iceberg arch."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "f9a8007f3cbe348983b06d7ed2f00340be124a857848b9b19563536413ed8bb9",
+      "text": "\n\nThe programme includes ice-filled fjords, icebergs, Zodiac landings and opportunities to watch seabirds, penguins, seals and whales. The exact expedition route depends on the weather, ice and other natural conditions.\n\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_66b9ebec0c14",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 17–20 describe wildlife, Zodiac visits and flexible routing, but do not contain this standalone summary or its explicit weather-and-ice dependency wording. The current RU summary is translated."
+      }
+    }
+  ]
+}

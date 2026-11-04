@@ -165,7 +165,7 @@
         "expiresAt": "2026-11-04T08:36:00.189Z"
       },
       "checkpoint": {
-        "id": "ada-en-3f45d665-job-07-c4",
+        "id": "ada-en-3f45d665-job-07-c8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-3f45d665-translator",
         "token": "ada-en-token-3f45d665-20261104",
@@ -239,10 +239,80 @@
                 "transformation": "compose_route_label",
                 "rationale": "Use the first three ordered route destinations from the Word day 6–7 section heading; this existing heading covers only the day 6 segment."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "86b98d0b6ccb7f649d03a1c5f9ba7c99c7d1434241518183c37fe9a82fbc6d27",
+              "text": "Day 6 · After breakfast, visit the Inhotim Institute, one of Brazil’s most important contemporary art destinations and one of the largest open-air museums in the world, where galleries, outdoor installations, sculptures and botanical collections come together amid the landscapes of the Atlantic Forest. After the visit, transfer to the airport for your flight to Salvador, where you are met and taken to your hotel. Known as the African soul of Brazil, Salvador blends African, Portuguese and Brazilian traditions, with music, dance, capoeira, Candomblé and Bahian cuisine woven into everyday life.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p112",
+                    "textSha256": "95dbd420d6f4e1502d4764d26b9a21a533d5b09670fdf5e004f3aa33b43db037"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0e903657aff3ae6e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d6b6af45737d14c2a35612794b3b433bd074306720e70b2c5cd88948c441a122",
+              "text": "Ouro Preto",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p43",
+                    "textSha256": "d52838205f1a4ebeb923b634aba0cfe44f6cc7d580296eb43cd193b86cabb226"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e68f0ef26fc5f2b1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a33edbbb3920083d137370602577b5e2f57c366fd9cc04b61db68e1b38878203",
+              "text": "Inhotim",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "2cf0e12812ef742b2f9d43db88eedbdfe68bea5c7030a4bc3d67e2cd18c471fc"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:264c4e6eb65c4cea",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7cc5cea91466d0598fcd7d6ba0671ba33384b8a56d9d0b132500680a31841f96",
+              "text": "Belo Horizonte",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p115",
+                    "textSha256": "737683fc74ef9b54dfec791a322ac2984234360e2daa48417989562f4775c0c8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the Belo Horizonte departure-airport city from the exact Word flight exclusion line for the existing place label."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:06:51.819Z"
+        "at": "2026-11-04T07:06:58.039Z"
       },
       "submission": null,
       "review": null,

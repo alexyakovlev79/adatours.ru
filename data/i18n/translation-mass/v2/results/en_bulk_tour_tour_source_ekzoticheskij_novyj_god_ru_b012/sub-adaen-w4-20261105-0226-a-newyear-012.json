@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b012",
+  "stableId": "tour_source_ekzoticheskij_novyj_god_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1bad1b5458351f038a6ec1da2500b53331888dfbabfb1a5b9bfa2895d81cf9c0",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:01ae4a86d1b44261",
+      "field": "media.hover",
+      "sourceTextSha256": "b5a05cc7d7a0659a9a4fbc42ef7b9adbe73ee941384d7b5a2ef0b5146c5f5ca3",
+      "text": "Búzios: clear water along a sandy shore backed by green hills",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "adaen-w4-20261105-0226-a",
+        "wordAbsenceReason": "The authorized English programme contains no dedicated caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c4dfc8def81ac7fa635a77877d150b86e95b99a7a38ea9737d44218a8a0b675c",
+      "text": "10 January 2027: Búzios – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p75",
+            "textSha256": "c9de5b900f9c932bc9bda8871a4163655e4f79545b83b986b1854c516538ca61"
+          },
+          {
+            "ref": "docx:p1",
+            "textSha256": "e0cfcf688c57611b61b66ad71e539b3686cd02dd92f0f0d1ed920a5d1b56c89e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expanded the approved Day 12 date (10/01) with its explicit programme year 2027."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b154ccb0b5a58070d7c9c35819c27e583cab923da3ffa20a8f43edf5f7d495cd",
+      "text": "Breakfast at the hotel; Transfer to the Airport of Rio de Janeiro for your flight home.\n\nEnd of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p76",
+            "textSha256": "1568da0e5cccada1538304487d8329cee0ea70174b74cfafc8bf83de989bcbc2"
+          },
+          {
+            "ref": "docx:p78",
+            "textSha256": "62ef96dec7b3aa4f7884bf90b21b4fc792fc2c97a93219b1b0c955558fc563a4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retained the authorized final-day transfer and end-of-services statements without the day header."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71ebc4b75bbcacf1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p75",
+            "textSha256": "c9de5b900f9c932bc9bda8871a4163655e4f79545b83b986b1854c516538ca61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Destination city appears directly in the approved Word Day 12 route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1a5b1479106435fc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "docx:p75",
+            "textSha256": "c9de5b900f9c932bc9bda8871a4163655e4f79545b83b986b1854c516538ca61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Departure resort appears directly in the approved Word Day 12 route heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7bf73f2db3bf9a51",
+      "field": "media.alt",
+      "sourceTextSha256": "6ff42f6d17aaa76bf33d4df442ad0c849267b8718655387034c896b182e5e054",
+      "text": "A narrow passage between colourful houses overlooking the sea in Búzios, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "adaen-w4-20261105-0226-a",
+        "wordAbsenceReason": "The Word source does not contain a description of this specific photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:46ef04a3a7dd3af6",
+      "field": "media.hover",
+      "sourceTextSha256": "a0e527428ff51157a1ceb0024cdfac462ed031b696f0f3029b3c88159e02303d",
+      "text": "Búzios: brightly coloured houses lining a path towards the sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "adaen-w4-20261105-0226-a",
+        "wordAbsenceReason": "No image-hover wording is present for this photograph in the approved Word."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "b832a5c59b6ac58334077a8bdf399460811c0f8898bfdf9e109685d8481f5c08",
+      "text": "New Year’s fireworks over the sweeping curve of Copacabana Beach in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "adaen-w4-20261105-0226-a",
+        "wordAbsenceReason": "The approved Word discusses fireworks but contains no image-specific hero alt text."
+      }
+    }
+  ]
+}

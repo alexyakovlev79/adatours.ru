@@ -148,3 +148,44 @@ Word 2027 9D/8N совпадает с `word_exact` днём 7–8: `Days 7–8 �
 - RU source: `src/content/tours/5-chudes-kosta-riki.md`; Git blob `17d83addbdb104a5e9d46b0f2ba0f65206d832fa`; sourceFingerprint `ca5027777251353b7685f5944d2f85c452903324169536afda228a8aef6575f0`.
 - Exact Word: fileId `1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj`; pinned SHA-256 `6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2`; frozen/observed modifiedTime `2026-10-26T18:16:01.279Z`.
 - Frozen blocks (8): `tour:itinerary_label:dd77013a13a1a441`, `tour:media_alt:fa9b5aac40559803`, `tour:media_hover:d2292332edfee0f8`, `tour:itinerary_title:2fb5525f94c7ffcd`, `tour:itinerary_text:fb5db666cae6efb7`, `tour:media_alt:ae025c1050ee7c5b`, `tour:media_hover:c899fca26f8f6b0d`, `tour:itinerary_title:ab3fd6cac362f6b0`.
+
+
+## Независимый QA — следующий конечный проход 05.11.2026, 01:27:23 (МСК)
+
+Из существующей очереди `data/i18n/translation-mass/v2` рассмотрены **4 ранее сохранённых пакета**, всего **30 frozen-блоков**, все четыре получили **ready** по штатному CAS `approve`. В каждом случае прочитаны: запись `state/00.json`, соответствующий immutable `jobs/00.json`, результат `results/` с проверкой Git blob SHA относительно receipt, все назначенные RU-блоки, актуальный Git blob текущего RU (`main`) и полный текст **точного** Word 2027 по закреплённому Drive `fileId`. Drive `modifiedTime` совпал с закреплённым. Проверены `word`, `meaning`, `facts`, `voice`, `structure`, `relations`; сопоставлены дни, ночи, маршруты, коммерческие оговорки и допустимость локализации языка гида для RU-derived текста. SHA-256 DOCX ниже — закреплённые fingerprints в job, **не новое независимое хеширование бинарных DOCX**. Данные о ценах и условиях не переписывались, EN-ревизий не понадобилось. Инструментальных препятствий для этих 4 проверок: **0**. Работа не означает QA остальных записей.
+
+### `en:bulk:tour:tour_brazil_southern_vip_7_days:b008` — ready, 8 блоков
+
+Проверила раздел о каньоне Итаимбезинью: выбранный Word 2027 содержит **Day 4** с маршрутом Gramado → Cambará do Sul → Itaimbezinho Canyon, возвращением в Cambará do Sul во второй половине дня; согласованное название в заголовке, подписях и маршруте совпадает. Сохранён Word-exact текст дня, включая его рекламный стиль как защищённый Word 2027; не подменяла текст подробностями из RU о питании. Подписи к изображению `media.alt` и `media.hover` соответствуют RU, отсутствуют как самостоятельные подписи в Word и правильно отмечены `ai_translation`. Общая программа 7 дней / 6 ночей; погодная оговорка о воздушном шаре и вертолёте в Word не изменена, новых обязательств в этом пакете нет. Уверенность редакционного решения **99%**.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/774cad00274c7cb0f38070e20a10d36776460ead; accepted result Git blob `b26cc8a1f12a813eb1c7f4b1f939833199bc0da5`.
+- RU: `src/content/tours/southern-brazil-vip-7-days.md`, текущий/pinned Git blob `60ff4b0c851d4476a400e08028efb66ac3e78d98`; sourceFingerprint `ed986bc2d89a361ff66e03b4a26b6e8f6f0f3bc5a8007ff82b7c9ac81b7b1820`.
+- Word 2027: exact fileId `15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S`; pinned SHA-256 `2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601`; frozen/observed modifiedTime `2026-10-19T19:14:32.463Z`.
+- BlockIds: `tour:itinerary_label:735798c76cc623a3`, `tour:itinerary_title:ce8fa4f4df9e3974`, `tour:itinerary_text:ec46e3209ab74818`, `tour:itinerary_label:db131575044fde2b`, `tour:itinerary_label:d9cfe133970a2cb6`, `tour:media_alt:0eb20c430077bbb8`, `tour:media_hover:3361f9572e0d4841`, `tour:itinerary_label:f60ccaf902463edc`.
+
+### `en:bulk:tour:tour_brazil_tropical_champions_parade_rio_angra_2027:b006` — ready, 8 блоков
+
+По точному Word 2027 подтверждены **12–21 февраля 2027, 10 дней / 9 ночей**, три ночи в Рио и шесть в Ангра-дус-Рейс, одобрено `Days 5–9` об отдыхе на базе all-inclusive в Vila Galé Angra. Отель указан как программный, с общим условием Word/RU о возможности замены на аналогичный; сохранён защищённый утверждённый Word-фрагмент, не добавлено отдельной гарантии наличия. `Rio de Janeiro` и `Angra dos Reis` соответствуют документу, две фото-подписи — дословно по смыслу RU с честным `ai_translation`. В блоках не добавлены авиабилеты, даты и цены. Уверенность **99%**.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/80a08cfdbd37ba10f86d634a36b326d44005741c; accepted blob `622c32f12f4244b003de8f2ab35b9152e47683c7`.
+- RU: `src/content/tours/tropical-champions-parade-rio-angra-2027.md`, blob `434af7cb604dd4cd56aa19407a13e7deb925dcb0`; sourceFingerprint `ba82c95011c33cbdf03d2ff8f30a866d9f5145eb1b0ab875a1138d9af181f59d`.
+- Word 2027: fileId `1hmIJPtN_0bWvKAmlH4Aipt-3yfbnW0p_`; pinned SHA-256 `960ba4e684e5b7ba7e99c6823005085464557c55ea7f1a3e8d526d8a52dcb8d9`; frozen/observed modifiedTime `2026-10-26T13:05:52.351Z`.
+- BlockIds: `tour:itinerary_label:1b7ac15bbf82b0ae`, `tour:itinerary_label:42b1d5c35e6d34c5`, `tour:media_alt:d3b056f42cb861e0`, `tour:itinerary_title:9d160262ccf40bb8`, `tour:itinerary_text:b04d5d61d358e759`, `tour:itinerary_label:fd4bba9e89f09032`, `tour:media_alt:00c8b70b82bffac2`, `tour:itinerary_title:e1dddf681303f0bd`.
+
+### `en:bulk:tour:tour_brazil_gems_14d:b008` — ready, 8 блоков
+
+Утверждённый Word 2027 **14D/13N** содержит экскурсию `Day 7` по историческому Салвадору и дальнейший переезд в Praia do Forte. Все утверждённые `Salvador`, `Praia do Forte`, маршрут дня и полный Word-exact абзац сохранены; добавленные фото-alt/hover Иньотима и Салвадора сверены с RU и не выданы за Word. В RU отдельно упомянут англоязычный гид и возможный русскоязычный по запросу, но проверяемый `word_exact` Day 7 не содержит языка гида и корректен без приписывания дополнительного обещания; документ в целом обозначает английское сопровождение. Согласованность продолжения маршрута через Фос-ду-Игуасу подтверждена Word. Уверенность **98%**.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/0fda0cef9a681819a08e0e75a2e7783e25a28520; accepted blob `a159b3e86b7d23475a10c3e7b78e6f0c42d39896`.
+- RU: `src/content/tours/brazil-gems-14d.md`, blob `2f6a87e26a001d51a27d4616c9d1edeacdc1a729`; sourceFingerprint `49ce8c71f5a5e754db205142fcd2bf39bf5f24a290304e67e64fb2925e811ebb`.
+- Word 2027: fileId `16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI`; pinned SHA-256 `eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9`; frozen/observed modifiedTime `2026-10-21T20:47:38.620Z`.
+- BlockIds: `tour:itinerary_label:c12f8d3cb0052213`, `tour:media_alt:dea113f3a15319b8`, `tour:media_hover:66403fad7da2be7a`, `tour:itinerary_title:ed497b2a669f6ce4`, `tour:itinerary_text:2e780f63f4172747`, `tour:itinerary_label:179afc5b619ea227`, `tour:itinerary_label:f593e8098afbf224`, `tour:media_alt:14755d46b6f87dd3`.
+
+### `en:bulk:tour:tour_source_kongress_v_rio_de_zhanejro:b005` — ready, 6 блоков
+
+Точный Word содержит **5 дней / 4 ночи**, корпоративную программу в Рио, конгрессные сессии дней 2–4, Corcovado, Sugar Loaf, выбор дополнительной активности и **Day 5: after breakfast, transfer to the airport**. EN финального дня сохраняет эти условия и не выдумывает новых услуг. Статья `body` и фото-подписи отсутствуют в Word как самостоятельные блоки: корректно переведены по текущему RU, с `ai_translation`, без ложной Word-атрибуции, сохранён Markdown-заголовок и перечень ресторанов с оговоркой о перестановке порядка. Дополнительный ресторан `Fogo de Chão` из Word, отсутствующий в RU-статье, не добавлен в RU-derived `body`; это не пропуск обязательной строки уже существующего Word-абзаца. Уверенность **97%**.
+
+- CAS: https://github.com/alexyakovlev79/adatours.ru/commit/e17cd3dd77e409e901e9ae633410b12ca03942b9; accepted blob `f93c70aa96debd449be7dce88d9846fa07a69c97`.
+- RU: `src/content/tours/kongress-v-rio-de-zhanejro.md`, blob `dfe72719ed0eaa42ac41660ef2f8163344bf06b2`; sourceFingerprint `0df51e2e54bc8b4991465df327a9810e7ac07885c40f0d6a076b9541248768c4`.
+- Word 2027: fileId `14nRX0wYh8xtWOCRYW3YxthdOeZdCM3Xh`; pinned SHA-256 `cd871686a1930b3d4ded4d5adada17af9400a6a7b6009d6dbf3af08dadb18c42`; frozen/observed modifiedTime `2026-10-07T14:17:04.531Z`.
+- BlockIds: `tour:itinerary_title:9d160262ccf40bb8`, `tour:itinerary_text:b04d5d61d358e759`, `tour:media_alt:faac2d4212dc95a2`, `tour:media_alt:68ebdd10346d3d20`, `tour:media_hover:77871c8f58bdcbc6`, `tour:body:47f6c11f40afc686`.

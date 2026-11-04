@@ -120,7 +120,105 @@
         "claimedAt": "2026-11-04T05:52:42.377Z",
         "expiresAt": "2026-11-04T07:22:42.377Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-005-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b006",
+          "stableId": "tour_brazil_agribusiness_14_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "59e9158fe2592ca1b51fc0ed91119fdd660999ea871ceeb4f3f953f040d4adc5",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "6051dccd8e546719242c5f9f5ca5785f2d847ea84e38dac915d23091ea2fd70b",
+              "text": "After breakfast, the first day of the agribusiness programme is planned. Topics include industry trends, food-production technologies, sustainable development and the exchange of experience among executives, producers, scientists and researchers. Transfer back to the hotel after the event.\n\n**The business programme requires confirmation.** IFAMA 2027 takes place in Lima, Peru, on 20–25 June. The name of the event in Ribeirão Preto, its dates and participation terms must be agreed separately before booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The exact selected file in the 2027 folder has a 2026 heading and an outdated claim of an IFAMA conference in Ribeirão Preto. It lacks the current RU correction about IFAMA 2027 in Lima on 20–25 June and the unconfirmed local event. Translate the current corrected RU block; do not import the conflicting Word event claim.",
+                "wordSource": {
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p1",
+                      "textSha256": "90b7bba268e9e481155bccfd53718a8b1d0c8a037bf35ff837d96d64d83a8b30"
+                    },
+                    {
+                      "ref": "word/document.xml#p21",
+                      "textSha256": "5ef8e649222ee13694edc8b399d72aaa408619d33f7ff3fb83e764b58a0c69fe"
+                    },
+                    {
+                      "ref": "word/document.xml#p22",
+                      "textSha256": "1ae78ab584e359e7bf9108ff0fa57f8e5eb09ed42b0b980439f790304cca720a"
+                    },
+                    {
+                      "ref": "word/document.xml#p23",
+                      "textSha256": "a927c7c7878ca59c9bb2c3b1ce90b2a1dc41e777e438732616bf7d00d3e5163d"
+                    },
+                    {
+                      "ref": "word/document.xml#p24",
+                      "textSha256": "da8489894525dc369a170e83973f3377395b7c76b29d9fe65009d565e5ecfa9a"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:dbee5d253981d665",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d9c710fdc992bbe8a247c75a0354a52020937e688e4b2af09704c4cbb885954d",
+              "text": "Ribeirão Preto",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p21",
+                    "textSha256": "5ef8e649222ee13694edc8b399d72aaa408619d33f7ff3fb83e764b58a0c69fe"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact Ribeirão Preto place name from the selected Word day heading."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:ceaab76000528668",
+              "field": "media.alt",
+              "sourceTextSha256": "c06ca4fb93b56b0d3d7bfdcc7276f34c1f70e90cc07819299431eaf3d0fb5925",
+              "text": "Agricultural machinery and pavilions at an outdoor exhibition venue",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word contains no exact alt caption describing agricultural machinery and pavilions at this existing exhibition photograph; translate the current RU image alt without identifying the event."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:7c788ce54e875777",
+              "field": "media.hover",
+              "sourceTextSha256": "a19cc4813b164c92ca251cd2b0c5721c249adab10d824d57c0d645ef8b015963",
+              "text": "Visitors between exhibition stands and rows of agricultural machinery",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word contains no hover caption describing visitors between stands and agricultural machines; translate the current RU caption without changing media or inventing an event identity."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:53:58.564Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

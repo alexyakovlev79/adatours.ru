@@ -1,13 +1,7 @@
 name: ADA EN mass auto-dispatch (every 5 minutes)
 run-name: ADA EN dispatcher ${{ github.run_id }}
 on:
-  schedule:
-    - cron: '*/5 * * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/i18n-mass-auto-dispatch.yml'
 permissions:
   contents: read
   actions: write
@@ -16,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   check:
-    if: github.repository == 'alexyakovlev79/adatours.ru'
+    if: false && github.repository == 'alexyakovlev79/adatours.ru'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

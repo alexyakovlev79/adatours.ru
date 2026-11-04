@@ -11,3 +11,7 @@
 Независимые QA и публикация не входят в этот процесс; RU, тарифы, медиа, matching и publicationEnabled=false не меняются. Достоверный результат перевода — только сохраненный GitHub receipt saved_for_review/commit. На cutoff расписание пытается самостоятельно отключить свою задачу GitHub Actions.
 
 Реализация: data/i18n/translation-mass-auto-dispatch.json; scripts/i18n/translation-mass-auto-dispatcher.mjs; scripts/i18n/translation-mass-api-worker.mjs; workflows i18n-mass-auto-dispatch.yml и i18n-mass-auto-worker.yml.
+
+## Решение от 04.11.2026: отключение платного API-маршрута
+
+Алексей отверг использование платного OpenAI API. Для GitHub-диспетчера `enabled=false`, пяти-минутный cron удален; автономный GitHub Actions worker явно отключен. Программа и история остаются для справки, но **не запускают перевод и не списывают деньги**. Существующая очередь, RU/EN-переводы и состояние independent QA не изменяются. Альтернативный маршрут использует только доступный интерфейс ChatGPT/подключенные приложения, без ключей внешнего API, с фактическим ограничением частоты автоматических запусков.

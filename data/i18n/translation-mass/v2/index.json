@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1461,
-    "leased": 17,
+    "queued": 1460,
+    "leased": 18,
     "review": 931,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1461,
-      "leased": 17,
+      "queued": 1460,
+      "leased": 18,
       "review": 931,
       "ready": 1,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 53,
-          "leased": 0,
+          "queued": 52,
+          "leased": 1,
           "review": 27,
           "ready": 0,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T19:07:44.423Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1442,6 +1442,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_belize:b011",
       "token": "ada-en-c5032275793f-mw2efmlg",
       "expiresAt": "2026-11-04T19:07:00.967Z",
+      "generation": 1
+    },
+    "ada-en-5cd76a73-mw2efdld": {
+      "jobId": "en:bulk:tour:tour_source_buenos_ajres_salta_iguasu:b005",
+      "token": "token-mw2efdld-7f69ac",
+      "expiresAt": "2026-11-04T19:07:44.423Z",
       "generation": 1
     }
   },
@@ -4549,8 +4555,15 @@
         "en:bulk:tour:tour_source_luchshee_v_belize:b011"
       ],
       "completedJobIds": []
+    },
+    "ada-en-5cd76a73-mw2efdld": {
+      "token": "token-mw2efdld-7f69ac",
+      "jobIds": [
+        "en:bulk:tour:tour_source_buenos_ajres_salta_iguasu:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T17:37:00.967Z"
+  "updatedAt": "2026-11-04T17:37:44.423Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1436,
-    "leased": 20,
+    "queued": 1435,
+    "leased": 21,
     "review": 953,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1436,
-      "leased": 20,
+      "queued": 1435,
+      "leased": 21,
       "review": 953,
       "ready": 1,
       "retryable": 0,
@@ -1265,8 +1265,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 24,
-          "leased": 0,
+          "queued": 23,
+          "leased": 1,
           "review": 40,
           "ready": 0,
           "retryable": 0,
@@ -1297,7 +1297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T19:24:48.936Z",
       "earliestRetryAt": null
     },
     "1f": {
@@ -1460,6 +1460,12 @@
       "jobId": "en:bulk:tour:tour_source_buenos_ajres_salta_iguasu:b001",
       "token": "ada-en-mw2ezrna-ylp4do-token-t3g16k4i",
       "expiresAt": "2026-11-04T19:24:30.801Z",
+      "generation": 1
+    },
+    "ada-en-mw2ezm4r-amanda": {
+      "jobId": "en:bulk:tour:tour_source_mir_majya:b008",
+      "token": "token-4ldg72nzttymw2ezm4r",
+      "expiresAt": "2026-11-04T19:24:48.936Z",
       "generation": 1
     }
   },
@@ -4618,7 +4624,8 @@
     "ada-en-mw2ezm4r-amanda": {
       "token": "token-4ldg72nzttymw2ezm4r",
       "jobIds": [
-        "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b001"
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b001",
+        "en:bulk:tour:tour_source_mir_majya:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b001"
@@ -4657,5 +4664,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T17:54:41.618Z"
+  "updatedAt": "2026-11-04T17:54:48.936Z"
 }

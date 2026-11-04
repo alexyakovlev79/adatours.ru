@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_chudes_kosta_riki:b002",
+  "stableId": "tour_source_5_chudes_kosta_riki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8d9ff0819b21da8fd73e5e6142790dca83ae0a2a5474065ef5ffb728c8e0d9f0",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:a44a94c619f37b26",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1efa08501342656a1b3a96a1d54d8dbeae030b98eb2f97d3da4bdca0847c16f6",
+      "text": "Pacific coast",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[51]",
+            "textSha256": "aeec95a3d6dc9f6a7f431027f686844197c74c607d0d22c7076267d7d5942e03"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:dfe69a0e968f6f5c",
+      "field": "included",
+      "sourceTextSha256": "dcc172a5eced523172183162231abaad44f8ff0b02b9abddb6a0d5eeb390bca0",
+      "text": "English-speaking guide.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word specifies only Guide service, without a language. The RU Russian-speaking guide is adapted to English-speaking guide under the agreed service-language rule."
+      }
+    },
+    {
+      "blockId": "tour:included:eed4c5beaf26e988",
+      "field": "included",
+      "sourceTextSha256": "0e0f6f8ae6c3050cf6d0bb372a2cf47f46dc68354ea9df77d1c2ec07753b15e2",
+      "text": "Transfers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[151]",
+            "textSha256": "5eef61e1fdfb43abc44847f9cecd6e8151cf13be73e33d7c6224840ce755ff6f"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the included-services array entry."
+      }
+    },
+    {
+      "blockId": "tour:included:636dccb3fb9a00fa",
+      "field": "included",
+      "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+      "text": "Accommodation in hotels according to the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[152]",
+            "textSha256": "31449c5ae485f2259ef99b423ea176e325022890bef048d1e7c3b3792b58184b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word accommodation phrase without the separate taxes clause, which has its own assigned block."
+      }
+    },
+    {
+      "blockId": "tour:included:9f08e164ce8ed597",
+      "field": "included",
+      "sourceTextSha256": "4afab422daab820554451616ef8b028278c715279e279cb6fee49d6d05f7712d",
+      "text": "Excursions according to the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[153]",
+            "textSha256": "8058c199498ef455345413d4d7cba756ceb2d13199a1e4744fcc7752015e4514"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the included-services array entry."
+      }
+    },
+    {
+      "blockId": "tour:included:afe5d53512439986",
+      "field": "included",
+      "sourceTextSha256": "2a41ca8b45cae2b19d1f3f53b24d095bcdb61358590fda1a57c00d855e4d9b98",
+      "text": "Accommodation taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[152]",
+            "textSha256": "31449c5ae485f2259ef99b423ea176e325022890bef048d1e7c3b3792b58184b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Render the Word accommodation-with-taxes clause as the separate accommodation-tax service label required by RU."
+      }
+    },
+    {
+      "blockId": "tour:included:a1fd8cdc1c8fd815",
+      "field": "included",
+      "sourceTextSha256": "74d7591ca45a32ad7398af3477458b536b6ace0c504018e4e0557e772013c1c2",
+      "text": "Meals as per the itinerary: B – breakfast, L – lunch, D – dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-d41641341913",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word's meal key lists only B and L. The assigned RU general meal key additionally defines dinner; translate the key unchanged without implying additional meals are included."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:489966e4b689c256",
+      "field": "notIncluded",
+      "sourceTextSha256": "514cce5a11cb57748bf6b35ab361bcbbc1b3b6935eb70bc3e7ce6debe7e6bad4",
+      "text": "Additional activities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1T5sSpBPWF4D-su6vbAettn4oU6nsz5yj",
+        "documentSha256": "6eafb6c0a7d8faf42133a98c544f9ec542c912e158dd9fbe565cad3c1946b0c2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[157]",
+            "textSha256": "3472ee82fd8ca7e3ca9ec6ad5d7b12493608cc2c8747a93cbcee81dae61346c2"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker to populate the excluded-services field."
+      }
+    }
+  ]
+}

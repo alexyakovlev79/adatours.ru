@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2174,
-    "leased": 0,
+    "queued": 2173,
+    "leased": 1,
     "review": 235,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2174,
-      "leased": 0,
+      "queued": 2173,
+      "leased": 1,
       "review": 235,
       "ready": 1,
       "retryable": 0,
@@ -1185,8 +1185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 74,
-          "leased": 0,
+          "queued": 73,
+          "leased": 1,
           "review": 5,
           "ready": 0,
           "retryable": 0,
@@ -1217,7 +1217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:02:33.020Z",
       "earliestRetryAt": null
     },
     "1d": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-884b0cfde5f5": {
+      "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b007",
+      "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
+      "expiresAt": "2026-11-04T07:02:33.020Z",
+      "generation": 2
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -2157,8 +2164,15 @@
         "en:bulk:tour:tour_argentina_best_14_days:b019",
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b009"
       ]
+    },
+    "ada-en-884b0cfde5f5": {
+      "token": "ada-en-token-6aeacdeb4b04ba34d993db1462cba2e7",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_best_rio_express_six_days:b007"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T03:10:54.714Z"
+  "updatedAt": "2026-11-04T05:32:33.020Z"
 }

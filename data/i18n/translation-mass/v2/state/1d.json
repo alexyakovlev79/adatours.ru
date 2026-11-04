@@ -164,7 +164,86 @@
         "claimedAt": "2026-11-04T07:06:00.189Z",
         "expiresAt": "2026-11-04T08:36:00.189Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-3f45d665-job-07-c4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-3f45d665-translator",
+        "token": "ada-en-token-3f45d665-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b007",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "2d2524a6e168fb9706a68bed50c8c621efca71fe8e5c5d14c9becec147f03231",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:a94029371e5e146a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f9e0e75f45cd1a0b3666e7ff7bebdc86e3278b5e3fd3bd75fe67cf727cd25404",
+              "text": "Mariana",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p100",
+                    "textSha256": "64391f7f1798743960eb077ca999cb5d91a607182b687c6742c7e6929b519535"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the Mariana place name from the corresponding Word heading for the existing itinerary place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:d84d09589cfacf45",
+              "field": "media.alt",
+              "sourceTextSha256": "008980c6cdbe571b863de0d9b22595212cbfea73e7a4738628a9caddf24de153",
+              "text": "A church with towers and white houses with tiled roofs on a green hillside in Ouro Preto, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The Word discusses Ouro Preto but contains no image-specific alt text for these towers, tiled roofs and green hillside; translate the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:bc403078b9b4e91b",
+              "field": "media.hover",
+              "sourceTextSha256": "b07918e53fa0357c30155fab1218c21c5d6b767382f4433323a88d1bf68c8f7d",
+              "text": "Ouro Preto: a church and historic houses on a hillside",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The exact Word has no matching image-hover caption describing this website photograph; translate the current RU hover text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "535e43cb3e88762827d5d5affad906b224cee7885c314f0b880dce2357869e3e",
+              "text": "Ouro Preto – Inhotim – Salvador",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p108",
+                    "textSha256": "b330d21f14cfb73b6f2b54d98e4de7b3aa2fc4e1e439db037a85dad25be3273f"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Use the first three ordered route destinations from the Word day 6–7 section heading; this existing heading covers only the day 6 segment."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:06:51.819Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

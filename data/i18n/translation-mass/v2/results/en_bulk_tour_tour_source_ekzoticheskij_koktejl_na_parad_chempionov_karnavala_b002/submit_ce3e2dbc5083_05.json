@@ -1,0 +1,113 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala:b002",
+  "stableId": "tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7d05183bf6f1f936ff86a210217232682bd0d47aac58ba2f8f9fdca86334db52",
+  "blocks": [
+    {
+      "blockId": "tour:included:2b7c3f8368745ecd",
+      "field": "included",
+      "sourceTextSha256": "aa7af993703dff1f6b7a5eb9e33341c17efe5a2b82d89e0f4a78e2ed82378cf0",
+      "text": "Hotel accommodation with breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_ce3e2dbc5083",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word accommodation summary does not include breakfast in that same item; the pinned RU breakfast condition is retained."
+      }
+    },
+    {
+      "blockId": "tour:included:1d5cc411fb1c6c08",
+      "field": "included",
+      "sourceTextSha256": "705632c8862ae128eb55fc0464d9e295e573153184743f8ef760eec0f13d86c6",
+      "text": "Excursions as per the programme with an English-speaking guide in Rio and Iguazu.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_ce3e2dbc5083",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word summary does not specify Rio and Iguazu in its guide inclusion line; these current RU locations are retained with the agreed English-language adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:833cda788dc65472",
+      "field": "included",
+      "sourceTextSha256": "189322b5d55fb404e43ef275e6cb27ff8ff57e8195ca1b66c0d2a4c032667724",
+      "text": "English-speaking guide in the Pantanal and Bonito.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_ce3e2dbc5083",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No standalone guide inclusion line covering both Pantanal and Bonito appears in the Word; translated from current RU."
+      }
+    },
+    {
+      "blockId": "tour:included:320516829ced474c",
+      "field": "included",
+      "sourceTextSha256": "b9b38d0a60442cf3e01ca87227f6efb421194648aa45171dfff13a518530801c",
+      "text": "Transfers as per the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_ce3e2dbc5083",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word specifies transfers with driver, not the current RU programme-wide transfer wording; translated without adding qualifications."
+      }
+    },
+    {
+      "blockId": "tour:included:4f06fb7b499fd774",
+      "field": "included",
+      "sourceTextSha256": "5a75144cffd699818f33523bb2925f072ae83886e8fec0570fefc9b5247e76bc",
+      "text": "Carnival tickets.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_ce3e2dbc5083",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes the non-carnival Exotic Cocktail itinerary and contains no Carnival ticket inclusion; current RU inclusion retained for independent review."
+      }
+    },
+    {
+      "blockId": "tour:included:4b3aefb750283e43",
+      "field": "included",
+      "sourceTextSha256": "526a9514ee23939ff1faf2d394c4dc19b40eca836f7d3c45af680c61d448cb2e",
+      "text": "Transfer hotel – Sambadrome – hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_ce3e2dbc5083",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no hotel–Sambadrome–hotel transfer inclusion; current RU condition retained for independent review."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[223] (zero-based)",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the list marker from the matching additional excursions exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:73d5d7e181b1b325",
+      "field": "notIncluded",
+      "sourceTextSha256": "013ad4bf2b915d5dcbcc5190e1733ecdf224e4f659ac46ee2ac6d9f6f3a505c4",
+      "text": "Domestic flights Rio de Janeiro – Iguazu – Campo Grande – Rio de Janeiro: from USD 950.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_ce3e2dbc5083",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word uses Foz do Iguaçu and a different domestic-flight wording; current RU route and USD 950 threshold are retained without changing commercial data."
+      }
+    }
+  ]
+}

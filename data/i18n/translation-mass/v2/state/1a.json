@@ -574,7 +574,98 @@
         "claimedAt": "2026-11-04T06:16:25.816Z",
         "expiresAt": "2026-11-04T07:46:25.816Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-150b76fa3667-004-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-150b76fa3667",
+        "token": "ada-en-150b76fa3667-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_mexico_religious_journey:b014",
+          "stableId": "tour_mexico_religious_journey",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "6d263b35b1199892dd6ab90970e6a4f19c4d9fce05bc190ed91d460601d433ce",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:b8f0ff32bd4b9f2d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "03d37a3878926ed77ef90ae5db64f73cd50a97292a8238086843032fe1c1e880",
+              "text": "Tulpetlac",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p54",
+                    "textSha256": "52710a9623dc1af1ab9e5103700725102b17b6c4c020565cda27912d49fba0a9"
+                  },
+                  {
+                    "ref": "word/document.xml#p56",
+                    "textSha256": "f65e57cf7df1f22e72877882d25c85357ec9772e9830061de471a90ac6aebb96"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact place name from the verified day-six heading and visit paragraph for the existing route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a5ed779284b6e05a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "039c1b6049bc76852fca28c2e2497869321d7f838a9994897186cc49c78ffd27",
+              "text": "Tlatelolco and the Square of the Three Cultures",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p54",
+                    "textSha256": "52710a9623dc1af1ab9e5103700725102b17b6c4c020565cda27912d49fba0a9"
+                  },
+                  {
+                    "ref": "word/document.xml#p57",
+                    "textSha256": "711bac84b84e17b884b4b4ad68ceb3912320438fa64c88199ba87a178dc0b348"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the Tlatelolco heading with its Square of the Three Cultures visit label, retaining the same existing place identity."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:2c508d3399e76249",
+              "field": "media.alt",
+              "sourceTextSha256": "9cbe90f15acc948e3e0af9ceb903f6861bd8a7c38e38f4d3f7c33bc7e57ab8b9",
+              "text": "Stone platforms and a pyramid on the Avenue of the Dead in Teotihuacan",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 56 describes the archaeological visit but contains no image-specific alt caption; translate the current RU image description.",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:64ade79a5a517b8f",
+              "field": "media.hover",
+              "sourceTextSha256": "9cbe90f15acc948e3e0af9ceb903f6861bd8a7c38e38f4d3f7c33bc7e57ab8b9",
+              "text": "Stone platforms and a pyramid on the Avenue of the Dead in Teotihuacan",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-150b76fa3667",
+                "wordAbsenceReason": "Verified Word 2027 paragraph 56 describes the archaeological visit but contains no image-specific hover caption; translate the current RU image description.",
+                "fileId": "1x6Whg-o3bJ1VGwgCJxq34Jl5roVLZq1b",
+                "documentSha256": "68165d445ba7ae39ae22bf0b88c8d552fb45fff4f59fa700901bb3dbc0c0a349"
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:17:09.590Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

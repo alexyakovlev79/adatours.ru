@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2045,
-    "leased": 16,
+    "queued": 2044,
+    "leased": 17,
     "review": 348,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2045,
-      "leased": 16,
+      "queued": 2044,
+      "leased": 17,
       "review": 348,
       "ready": 1,
       "retryable": 0,
@@ -385,8 +385,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 61,
-          "leased": 0,
+          "queued": 60,
+          "leased": 1,
           "review": 6,
           "ready": 0,
           "retryable": 0,
@@ -417,7 +417,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:50:08.940Z",
       "earliestRetryAt": null
     },
     "19": {
@@ -1436,6 +1436,12 @@
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b012",
       "token": "token_8c4fca0d2a61_c1970ba9",
       "expiresAt": "2026-11-04T07:49:35.985Z",
+      "generation": 1
+    },
+    "ada-en-d8b5c6c4c917": {
+      "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b008",
+      "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
+      "expiresAt": "2026-11-04T07:50:08.940Z",
       "generation": 1
     }
   },
@@ -2474,7 +2480,8 @@
       "token": "tok-8ce1ba0ed035498d947330a9f0eb3ee4",
       "jobIds": [
         "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b002",
-        "en:bulk:tour:tour_guatemala_discover_8_days:b005"
+        "en:bulk:tour:tour_guatemala_discover_8_days:b005",
+        "en:bulk:tour:tour_brazil_argentina_peru_14d:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b002",
@@ -2665,5 +2672,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:19:48.426Z"
+  "updatedAt": "2026-11-04T06:20:08.940Z"
 }

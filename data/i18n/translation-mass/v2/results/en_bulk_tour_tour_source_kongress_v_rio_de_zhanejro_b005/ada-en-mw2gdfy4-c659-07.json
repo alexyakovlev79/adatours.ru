@@ -1,0 +1,93 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kongress_v_rio_de_zhanejro:b005",
+  "stableId": "tour_source_kongress_v_rio_de_zhanejro",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0df51e2e54bc8b4991465df327a9810e7ac07885c40f0d6a076b9541248768c4",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "78cd108f7e13b58b93dd14049249bee03dfdc12a99aed120f3b9d4d2f112625c",
+      "text": "End of the trip",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14nRX0wYh8xtWOCRYW3YxthdOeZdCM3Xh",
+        "documentSha256": "cd871686a1930b3d4ded4d5adada17af9400a6a7b6009d6dbf3af08dadb18c42",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p96",
+            "textSha256": "4129eedf2954368bd9316d597c88030cb5af2bf394b8d3dacfa6acf581204541"
+          },
+          {
+            "ref": "word/document.xml:p185",
+            "textSha256": "c78b4c7ed2122f6a8784fa5a0578c1d8bd2cc1d7ffcad7d07e20f6bc8f1efdb7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use a concise final-day heading for the Word airport transfer and end-of-services entry."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b44737fbd1eb9f52caebc9c9a0004ece98afe546e1a9f945d5968fc81f55a5b7",
+      "text": "After breakfast, transfer to the airport.\n\nThe corporate programme comes to an end.\n\nOver 5 days, participants have time for several business sessions, visits to Rio's 2 main panoramic viewpoints, a city tour and a choice of an additional activity, all while staying in the same city.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Day 5 contains only breakfast and airport transfer. It has no equivalent closing summary of business sessions, two viewpoints and the single-city stay; these paragraphs are translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:faac2d4212dc95a2",
+      "field": "media.alt",
+      "sourceTextSha256": "d1c39b693b4021c90f73f8552aa746e23dd110e72000af3fd2cf000873c8e5f4",
+      "text": "Rio de Janeiro in the evening",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding image-specific alternative caption for the evening view is present in the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "91dfc8f06f46605037f5c3d8d58fe0733098d21bff5f42a07d3fb0650735f57d",
+      "text": "Panoramic view of Rio de Janeiro with a lake, dense urban development and a long ocean beach, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no equivalent image-specific alternative text describing this panoramic photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "07596c6d656f6516c5a3123b6f4777c579dfb08d477f8b820f380423d0288355",
+      "text": "Rio from above: the city between the lake, mountains and ocean",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No matching image-specific hover caption for the aerial view appears in the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "61b8841e41f21b98c4c867ede829a4954ccbd22319f414f6e6caf5a5ec67fd1a",
+      "text": "\n\n## Rio for a corporate trip\n\nRio de Janeiro lets you combine business with leisure without long journeys between cities. Its conference venues and hotels are in a city where, after work meetings, you can reach the main viewpoints, a beach or the historic districts in a matter of hours.\n\nRio is suited to meetings, conferences, exhibitions and incentive trips. The city offers modern venues, high-quality hotels and transport facilities for international groups. After business events, it is easy to add guided tours, time on the beach, dining and entertainment to the programme.\n\nThe city lies between mountains, the bay and the Atlantic Ocean. Copacabana, Ipanema and Leblon offer time by the water, while Corcovado and Sugar Loaf reveal Rio from above.\n\nActivities for corporate groups can be added to the programme, including beach walks, samba lessons and other experiences related to Brazilian culture. The trip is designed to keep work and leisure in one city, without additional complex logistics.\n\nGroup lunches and dinners are planned at Confeitaria Colombo, Rio Scenarium, Caixa de Oriente, Marius Seafood, Palace Grill and Assador. Ada Tours may change their order while retaining the overall programme.\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2gdfy4-c659",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has congress-day descriptions and restaurant entries, but no equivalent complete article on conference/exhibition facilities, samba lessons and single-city corporate logistics. Translated the pinned RU body, retaining its restaurant names and the stated flexibility rather than claiming a verbatim Word extract."
+      }
+    }
+  ]
+}

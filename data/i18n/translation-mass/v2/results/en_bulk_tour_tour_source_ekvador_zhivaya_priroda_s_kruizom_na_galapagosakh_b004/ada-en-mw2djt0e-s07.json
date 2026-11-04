@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b004",
+  "stableId": "tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "53e3aab53ef43e18d038e06eb328396a5c8490bd1ad81e51c3b1724c0c85202d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "11db4a9f96a46acbb34d1166d1473a8f00bd0273f57594adf32432df108f7048",
+      "text": "Day 2 · Fly to Coca (30 minutes), lunch at Sacha’s house in town, then 2 hours by motorised canoe down the Napo River, a 30-minute walk through the forest and a paddle across Lake Pilchicocha to Sacha Lodge (arrival around 15:30–16:00). Swim in the lake, visit the butterfly house and, after dinner, take a night walk or a canoe ride to spot caimans. (B, L, D)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:67",
+            "textSha256": "677bda8c86c1b2c2d484c2e4448b1bf0554afc38e5cc2560d33b9aaa576dc4a5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:737c62b067b5ffd6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fa5c0bbdc91e228ec6adba4a106f23f4f6e931f0d6f5db2865a8c765f4c49b9a",
+      "text": "Coca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:67",
+            "textSha256": "677bda8c86c1b2c2d484c2e4448b1bf0554afc38e5cc2560d33b9aaa576dc4a5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the arrival town name from the matching Word day for the canonical place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9adae5b13f5af370",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3eb756e195c5b35d3f545751eee89374d0b3067db4783bdc5f2b7d03acbe8901",
+      "text": "Napo River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:67",
+            "textSha256": "677bda8c86c1b2c2d484c2e4448b1bf0554afc38e5cc2560d33b9aaa576dc4a5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the river name from the matching Word day for the canonical place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9efa834ee2f2c3bb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "15d9d1b9f4de8321dfc4cf000946624a93d9dcc2f75f1b5f2c44790a28dcb782",
+      "text": "Sacha Reserve",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2djt0e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word names Sacha Lodge and its forest activities but does not give the standalone Sacha Reserve place label; translate the assigned canonical place name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7eb932f01e8467ca",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d555a36935345ca16c5e56256e78700947b2fbdf94b057311e4088f3c1a15ce7",
+      "text": "Lake Pilchicocha",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:67",
+            "textSha256": "677bda8c86c1b2c2d484c2e4448b1bf0554afc38e5cc2560d33b9aaa576dc4a5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact lake name within the corresponding Word arrival paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5377d4e859cfe79e",
+      "field": "media.alt",
+      "sourceTextSha256": "6827b0c6a17f6318d21540d886340410c812b7dffbe1a7d22cf13134f5b3dd46",
+      "text": "Motorised canoes by Coca’s riverfront, with houses on the bank, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2djt0e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no matching image-specific description of the Coca waterfront; translate the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b333e4e0d7742a23",
+      "field": "media.hover",
+      "sourceTextSha256": "d559142ab45e2e6ee255330a67cab38535a71bbc0913ba87f17b95d972984832",
+      "text": "Coca, Ecuador: canoes by the waterfront of a broad river",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2djt0e",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no matching image hover caption; translate the assigned RU description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "87f89ce1653c6ccf3bb775ca5c566a94467b271b8a87468cf5bb46a325ba66d1",
+      "text": "Sacha Lodge: canopy walkway and forest trails",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:68",
+            "textSha256": "9e927dbb143b0a2915dc29be6436a7c82c2800b223652ce66a472b7393829f56"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the day heading from Sacha's canopy walkway and named forest trails in the corresponding Word day."
+      }
+    }
+  ]
+}

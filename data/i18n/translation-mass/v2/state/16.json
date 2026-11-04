@@ -450,7 +450,7 @@
         "expiresAt": "2026-11-04T08:27:30.830Z"
       },
       "checkpoint": {
-        "id": "ada-en-24807b62-20261104:s04:cp4",
+        "id": "ada-en-24807b62-20261104:s04:cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-24807b62-20261104",
         "token": "ada-en-24807b62-token-c83715b9",
@@ -537,13 +537,80 @@
                   "transformation": "strip_list_marker",
                   "rationale": "Remove only the leading Word list dash and spacing to fit the existing included/notIncluded array item."
                 }
+              },
+              {
+                "blockId": "tour:included:a2e4414c39b811bd",
+                "field": "included",
+                "sourceTextSha256": "c77e74677425aa6e754171435a9849b31f47e8da2a6dfb578ba0600cecbcdc21",
+                "text": "–   Excursions with a Russian-speaking guide according to the programme",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                  "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:231",
+                      "textSha256": "9eaeab6d4ffb288119d7b63cf936042d88ba7cd49cffd76e36d5236c00b9db61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:included:134b914f34a8602d",
+                "field": "included",
+                "sourceTextSha256": "eb73831ca7ff7f5dd5b3a2a207c92b6b655887e212b60679b90445e727d100b9",
+                "text": "Expedition train Cusco – Aguas Calientes – Cusco",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                  "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:232",
+                      "textSha256": "0c37c0c4b28c5c5a965873bd3d6075e2707e15272d89424d7db3878091a51a40"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the leading Word list dash and spacing to fit the existing included/notIncluded array item."
+                }
+              },
+              {
+                "blockId": "tour:included:221f696d0bff472c",
+                "field": "included",
+                "sourceTextSha256": "a5edfb964ae291b315bd9327ef786cbbaedd6e332ae8161e26f22a6b54047212",
+                "text": "Entrance tickets to museums according to the programme.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-24807b62-20261104",
+                  "wordAbsenceReason": "Verified complete DOCX SHA8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026, p233 says Entrance tickets according to the programme, which is broader than the current RU museum-ticket inclusion. No museum-specific standalone equivalent exists; translated the narrower current RU wording without expanding the service."
+                }
+              },
+              {
+                "blockId": "tour:notIncluded:958b4928cdac91ce",
+                "field": "notIncluded",
+                "sourceTextSha256": "5f643bf3aafa15a57d4439aa82f9e657ca26fb44eb411b340da962bbff4a811f",
+                "text": "Airport taxes",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "16HHnYhZGS6O1KsC1SnpQnIzksIPR2FTL",
+                  "documentSha256": "8476e1ffdc69c946b8d41f917f4313870e2431eb57545025cfb5e125505e9026",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p:237",
+                      "textSha256": "842e1d0150fc59848912d8ab4c0b0304124800eff90b2c4d998690191db461d4"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Remove only the leading Word list dash and spacing to fit the existing included/notIncluded array item."
+                }
               }
             ]
           },
           "submissionId": "ada-en-24807b62-20261104:s04",
           "mainSha": "1926fdca8929ebf54d61fc6b977e841423ff67b1"
         },
-        "at": "2026-11-04T06:58:34.806Z"
+        "at": "2026-11-04T06:58:40.823Z"
       },
       "submission": null,
       "review": null,

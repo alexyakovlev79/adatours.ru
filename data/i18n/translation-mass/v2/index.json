@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1345,
-    "leased": 9,
+    "queued": 1344,
+    "leased": 10,
     "review": 1045,
     "ready": 10,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1345,
-      "leased": 9,
+      "queued": 1344,
+      "leased": 10,
       "review": 1045,
       "ready": 10,
       "retryable": 0,
@@ -1225,8 +1225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 26,
-          "leased": 0,
+          "queued": 25,
+          "leased": 1,
           "review": 33,
           "ready": 0,
           "retryable": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T21:10:31.360Z",
       "earliestRetryAt": null
     },
     "1e": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_ekstrim_v_kosta_rike:b001",
       "token": "token-mw2ins1i-a91",
       "expiresAt": "2026-11-04T21:10:16.984Z",
+      "generation": 1
+    },
+    "ada-en-8eb10fb50a76": {
+      "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b002",
+      "token": "ada-en-8eb10fb50a76-t1",
+      "expiresAt": "2026-11-04T21:10:31.360Z",
       "generation": 1
     }
   },
@@ -4899,7 +4905,8 @@
     "ada-en-8eb10fb50a76": {
       "token": "ada-en-8eb10fb50a76-t1",
       "jobIds": [
-        "en:bulk:tour:tour_source_luchshee_v_venesuele:b009"
+        "en:bulk:tour:tour_source_luchshee_v_venesuele:b009",
+        "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_venesuele:b009"
@@ -4907,5 +4914,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T19:40:23.995Z"
+  "updatedAt": "2026-11-04T19:40:31.360Z"
 }

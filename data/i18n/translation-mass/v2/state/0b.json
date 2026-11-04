@@ -382,7 +382,7 @@
         "expiresAt": "2026-11-04T08:24:24.182Z"
       },
       "checkpoint": {
-        "id": "ada_en_6c7d31_s008_c04",
+        "id": "ada_en_6c7d31_s008_c08",
         "format": "inline-v1",
         "ownerId": "ada_en_20261104_0555_6c7d31",
         "token": "ada_en_token_6c7d31_20261104",
@@ -474,10 +474,75 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:highlight_text:db30451471b8fcaa",
+              "field": "highlight.text",
+              "sourceTextSha256": "54cc01ada0d76d5964b7b4f714819c69c120708daab7f69ae9637abbc933cdf3",
+              "text": "The archipelago lies about 350 km from the mainland and is markedly different from the resort coast of Pernambuco. Baía dos Porcos is tucked between dark volcanic rocks, Dois Irmãos rises nearby, and Sancho opens onto clear water. The island tour by 4x4 takes in Baía do Sueste, Baía dos Golfinhos, Vila dos Remédios, beaches and viewpoints.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "Word p89 contains the named island tour locations, but not this current RU composite with the 350 km distance and volcanic-coast description. Translate the current RU highlight, retaining its details and the source Word place spellings.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_alt:2e0a95006205c26c",
+              "field": "media.alt",
+              "sourceTextSha256": "de999a50080b603fc484b76d9c5024957748abb7e99cd2bea02ab794376b4dfa",
+              "text": "Sea cliffs and turquoise bays of Fernando de Noronha, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The selected Word contains no photograph-specific Fernando de Noronha sea cliffs alt text; translate the current RU description.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:9583703df936c467",
+              "field": "media.hover",
+              "sourceTextSha256": "6edf4d4ddd64d465b6034da18f56513e6f87804e138ada31ac3cb536235c213b",
+              "text": "Fernando de Noronha: a rocky coast with small beaches",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_6c7d31_run",
+                "wordAbsenceReason": "The selected Word contains no photograph-specific Fernando de Noronha hover caption; translate the current RU caption.",
+                "inspectedWord": {
+                  "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                  "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227"
+                }
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:a50a7afa39057f79",
+              "field": "highlight.title",
+              "sourceTextSha256": "160aeb0fc6b838533f19a00b133808e2293b8fd3eb7ec1164110966546597f9d",
+              "text": "Diving",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p49",
+                    "textSha256": "34e49da7280de1ea25d8a7621110f91c68a959a4ff3fd6bd43eb7aaf00b2b9e1"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:55:35.672Z"
+        "at": "2026-11-04T06:55:40.479Z"
       },
       "submission": null,
       "review": null,

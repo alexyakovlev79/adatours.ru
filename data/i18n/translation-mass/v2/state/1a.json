@@ -550,7 +550,7 @@
         "expiresAt": "2026-11-04T08:31:24.977Z"
       },
       "checkpoint": {
-        "id": "ada-en-2ee259e72fda-005-04",
+        "id": "ada-en-2ee259e72fda-005-08",
         "format": "inline-v1",
         "ownerId": "ada-en-2ee259e72fda-20261104",
         "token": "ada-en-2ee259e72fda-token-20261104",
@@ -631,10 +631,76 @@
                 "transformation": "compose_route_label",
                 "rationale": "Extract the exact city name from the Word arrival paragraph as the route label."
               }
+            },
+            {
+              "blockId": "tour:media_alt:fe54762f29779f8c",
+              "field": "media.alt",
+              "sourceTextSha256": "bb63eef057fd22a3c980a665e5a82cf08304c7db08425fb4236287e3fc21aa9c",
+              "text": "Copacabana’s mosaic promenade and palm-lined beach in golden light, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The verified Word has no corresponding media caption for this current RU image description; translate the current RU caption without changing media.",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "8d31407778081adcc27f24338f8048c059855546ee5606c5d37938f5771c9ab2",
+              "text": "Flight to Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "d3c3495352ea756e7f7b395014d958ea66d7b041cfd96a73cedf3df6e1af0bd0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the onward flight destination from the verified Day 4 paragraph as the itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "505c696295950b95ece1e0e3cfc7b5314ff342ea96ba0f5534668ffa96a0a0d7",
+              "text": "After breakfast, transfer to the airport and fly to Foz do Iguaçu.\n\nIguazu lies in a natural park on the border between Brazil and Argentina. It is one of the largest waterfall systems in the world, with 275 cascades plunging into gorges.\n\nOn arrival, meet your driver and transfer to the hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word p78 contains the arrival transfer but not the breakfast and geographical overview in this current RU day block; its 275-cascade description is in the following day's p79. Translate the composite current RU text without moving the next day's excursion into this day.",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "d3c3495352ea756e7f7b395014d958ea66d7b041cfd96a73cedf3df6e1af0bd0"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact Foz do Iguaçu place name from the verified Word arrival paragraph."
+              }
             }
           ]
         },
-        "at": "2026-11-04T07:02:22.879Z"
+        "at": "2026-11-04T07:02:26.601Z"
       },
       "submission": null,
       "review": null,

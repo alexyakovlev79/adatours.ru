@@ -1,0 +1,200 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b002",
+  "stableId": "tour_brazil_southern_vip_7_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "877b612b85f449a77348e0d9c9ae7d2c927897d2c24b7d44014934dc64872345",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b9a32b425e062453",
+      "field": "itinerary.label",
+      "sourceTextSha256": "42cfcf2a25511dbf38cda5eb029037ba4b47f70d14f04cf21528a1635b80c543",
+      "text": "Itaimbezinho Canyon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p83",
+            "textSha256": "614370570ede1a2e0833cd7f9f1fff8dbc88cb4c16bdcaab565cf8fae5f15fa5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the exact Itaimbezinho Canyon name from the Word day heading for this route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:41b692a098076acb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "31078d7ff208026ecc9f265bc7eefd315224141c28415f9efaa371365100f575",
+      "text": "Florianópolis",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p123",
+            "textSha256": "35b757f7bc7167a2ebc19a605b56abae1b4372bafd056029adbcd9774658c481"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:bab2da2012da9be2",
+      "field": "included",
+      "sourceTextSha256": "f82cb4d616e23ee119316a96c38f3fd2c76f1fe883b650fb99faf41f5e26b9f1",
+      "text": "6 nights in the hotels specified in the itinerary or similar properties.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word gives 6 nights in its overview and lists accommodation in the specified hotels or similar, but has no single identical inclusion sentence combining them; translate the current RU inclusion.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p22",
+              "textSha256": "d9359c24c79e19d4cd826a9206007e6a8ecd9dc532bdacc49ef7095ab50b686a"
+            },
+            {
+              "ref": "word/document.xml#p128",
+              "textSha256": "779b4344bd48a8d1c4eaedf11a4de3abd3e492c537f38af89709d70c428c1ea1"
+            },
+            {
+              "ref": "word/document.xml#p155",
+              "textSha256": "5c1bb1be0616cf0099d1e606ff7b52c8ccf4d67930d09252e429f51f4bdb54a7"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:included:2d53cb83e34eb7f3",
+      "field": "included",
+      "sourceTextSha256": "23988f5230141ca0bb19c5e963225a402f47746b6126bcb47ab5a7e3c79ea04d",
+      "text": "Excursions included in the itinerary with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p156",
+            "textSha256": "3668a6fd9e635d3b7f34f580b559211726721e163203f5ccad58054679b564c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the exact Word inclusion paragraph for this list item."
+      }
+    },
+    {
+      "blockId": "tour:included:c3288b591f8401d3",
+      "field": "included",
+      "sourceTextSha256": "8bce8a41fcf5fa88c0833b52fa030cce61b1e8eef44bec12b57af8b28b206be2",
+      "text": "All specified transfers, including the private helicopter transfer from Cambará do Sul to Florianópolis.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word includes all specified transfers and describes the private helicopter route in its Day 6 paragraph, but has no single exact inclusion sentence naming both endpoints; translate the current RU item.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p97",
+              "textSha256": "49fa1ed3ed66b6ec344e28f1c46339eca06087c6c7733882905e4adf25860719"
+            },
+            {
+              "ref": "word/document.xml#p157",
+              "textSha256": "0cee2f1f0745f3db4590775be75192c567583d7bbc8622fd35c325137dafefa4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:included:e1b26b399bc4fe6f",
+      "field": "included",
+      "sourceTextSha256": "a3f3e51d9f351d02817b26e92823b0a8c9613d78766688f7dc345032339b81a8",
+      "text": "The vineyard walk included in the stay at Spa do Vinho.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word Day 1 describes Spa do Vinho and its vineyard walk, and the days 1–2 inclusion line lists the vineyard walk; there is no exact standalone sentence matching this RU accommodation-related inclusion.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p66",
+              "textSha256": "5d0448a162b6577c1d2d1e0da020ae9537bcbfebd27f707767978488ff5cdb1b"
+            },
+            {
+              "ref": "word/document.xml#p68",
+              "textSha256": "ea9e26b989e39ddce91828dd01f19297a03cf7903f5ab04c04abda1d4392a9cb"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:included:fc7283620247e980",
+      "field": "included",
+      "sourceTextSha256": "5593ace509fa708bda4fa69b4c8c9423005d7d7003f1f6339e760476d876637d",
+      "text": "Quad biking through the vineyards, tours of Gramado, Itaimbezinho Canyon and Florianópolis, a hot-air balloon flight and a picnic.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word lists these activities across several itinerary and inclusion paragraphs, but does not contain this combined RU summary as a single exact fragment; translate the current RU list without adding services.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p67",
+              "textSha256": "7c8b5ceda09ed8a64dcde23a78b6d2478a90fc1beb8deb5e422dea74e6ccfe83"
+            },
+            {
+              "ref": "word/document.xml#p79",
+              "textSha256": "a865b1dc9f943218b21aefded436e7f8f147ddee8fff792fe53fae49c6735d3f"
+            },
+            {
+              "ref": "word/document.xml#p88",
+              "textSha256": "b798c8662a12785cda8a7f1c816b0612d6b4bd9ef39eaa8deba195e52e12c0f9"
+            },
+            {
+              "ref": "word/document.xml#p99",
+              "textSha256": "151f0f76ed57bb13887865e9887edbca257ebc9bf79dae32cc194cb1d714cac1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:483df77a530b29d5",
+      "field": "notIncluded",
+      "sourceTextSha256": "4501a46c1e6480ac50d436fde1feb0eea41946d082b0f828ff30589afb385377",
+      "text": "Optional excursions or activities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p161",
+            "textSha256": "43afbe9ce40090a6c9eff4349abbcfcd780f49c76b0aa4947cd5d7b20dc68242"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the exact Word exclusion paragraph for this list item."
+      }
+    }
+  ]
+}

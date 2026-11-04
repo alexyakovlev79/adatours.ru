@@ -493,7 +493,132 @@
         "claimedAt": "2026-11-04T07:03:17.020Z",
         "expiresAt": "2026-11-04T08:33:17.020Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-5d56534e-06-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-5d56534e4493",
+        "token": "lease-da131c3d187149a7b813992c83ea721b",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b007",
+            "stableId": "tour_nicaragua_best_10_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "3cd147492477c2bb14157a512519ef708c0da1156de5c2e5ccf0777250eb5282",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_text:ec46e3209ab74818",
+                "field": "itinerary.text",
+                "sourceTextSha256": "2b48ed6ce969196dc970157551605b4559c11f4bc6c7ef4d1398b081b0aa8240",
+                "text": "Take a private boat trip among the Islets of Granada, the birds and the green shores of Lake Nicaragua. Then enjoy a half-day canopy tour on Mombacho, with cloud forest and panoramic views. Overnight at Real La Merced. Meals: breakfast and lunch.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-5d56534e4493",
+                  "wordAbsenceReason": "The current RU day wrapper combines the private Granada-islets boat trip with a half-day Mombacho canopy tour. Word paragraph 20 describes a Zopango Island day, while the Mombacho canopy experience appears separately in paragraph 28 on Day 6; there is no equivalent complete Word passage for the current day arrangement. Translate the current RU wrapper without adding Word-only island activities or changing its timing."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:cbc645da3ee16225",
+                "field": "itinerary.label",
+                "sourceTextSha256": "d6958041ca4d9028edc412c2896b6a58c9dbee49ee0336936822953cf068b258",
+                "text": "Islets of Granada — Las Isletas",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p20",
+                      "textSha256": "c1dfd34ac002ad49da9128812bb92e586c5c94c95df76d6765365a06d1668dae"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the Islets of Granada name from the exact Word island excursion and retain Las Isletas as the current local place-name form."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:665debabdabce8c9",
+                "field": "itinerary.label",
+                "sourceTextSha256": "451adeaa03a29f65a62b4b5c7da8e993205b4f8d3999ae64170475e114565f33",
+                "text": "Lake Nicaragua",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p20",
+                      "textSha256": "c1dfd34ac002ad49da9128812bb92e586c5c94c95df76d6765365a06d1668dae"
+                    },
+                    {
+                      "ref": "word/document.xml:p28",
+                      "textSha256": "8db4907813e4a8d1ecda40798432430608be3216e0e6f02050aeeab87f2472cb"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract Lake Nicaragua from the verified island and volcano passages as the stable place label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:2834c2a64a68b62f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "c52848f99e5ae1213187b4dd6cba423f8b239d13d151f233bd7ae382d07a5f96",
+                "text": "Mombacho Volcano",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                  "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p27",
+                      "textSha256": "316f7d153e8bf00e0e9bb061ba7da2084391c88dea95ec73dc5b62c16e565719"
+                    },
+                    {
+                      "ref": "word/document.xml:p28",
+                      "textSha256": "8db4907813e4a8d1ecda40798432430608be3216e0e6f02050aeeab87f2472cb"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract Mombacho Volcano from the verified Word day heading and excursion passage."
+                }
+              }
+            ],
+            "unresolvedConflicts": [
+              {
+                "kind": "word_itinerary_alignment",
+                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                "paragraphs": [
+                  "word/document.xml:p20",
+                  "word/document.xml:p28"
+                ],
+                "note": "Current RU wrapper combines the islets boat trip and Mombacho canopy visit; Word places them on different days. Current RU timing retained without adding Word-only details."
+              },
+              {
+                "kind": "word_hotel_conflict",
+                "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+                "documentSha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+                "paragraphs": [
+                  "word/document.xml:p25",
+                  "word/document.xml:p56",
+                  "word/document.xml:p57"
+                ],
+                "note": "Word day narrative names Villa Colonial; Day 5 hotel table names Villa Paraiso. Current RU already retains both and requires confirmation before booking; translated faithfully."
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "wordEvidence": {
+            "fileId": "1GEAqKllvpuyhW_tX7RNr8kOZv0aPt8sw",
+            "sha256": "a842f2507859b0e1f237f1d06a935371b4f698c538b60e1b60e0735b3b8ff283",
+            "modifiedTime": "2026-10-05T20:38:46.318Z"
+          }
+        },
+        "at": "2026-11-04T07:04:32.354Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

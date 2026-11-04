@@ -1,0 +1,154 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_brazilii_argentiny_i_chili:b009",
+  "stableId": "tour_source_luchshee_brazilii_argentiny_i_chili",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "cd91dbbe8b1f4021fce3addbb5ed74b66d175ad989a3cfa222b235539ffa4dbf",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:ec8c5866b197f4de",
+      "field": "media.alt",
+      "sourceTextSha256": "97e733c39306f42fca10393174d9130ceaaec972dd2304d97c55173ca91f1d1d",
+      "text": "Puerto Natales",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:117",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "3c82ebab47a03c563cbde0769f4e71de36c56e2aa4aa187b5e0d89198af42d8d",
+      "text": "Torres del Paine National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:77",
+            "textSha256": "6148e37d7f2117df5225800ae9181d5abeffd8ab3c8de0f2c0e6f75bc745f4cd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the park name from the matched Word day as the itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0bf8f5090b6bcc5e96ff37716a8b16ad7491f376cee9314795891a04e003f81c",
+      "text": "Guided visit to Torres del Paine National Park, renowned for its towering granite peaks, glacial lakes such as Pehoé and Grey, the Grey Glacier, grassy plains and dense forests. Guanacos, foxes, pumas and many birds, including condors, live here, and the park’s trails, among them the famous W and O circuits, attract hikers from all over the world.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:77",
+            "textSha256": "6148e37d7f2117df5225800ae9181d5abeffd8ab3c8de0f2c0e6f75bc745f4cd"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day marker because the itinerary day is stored separately."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:669039e7fce13950",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:77",
+            "textSha256": "6148e37d7f2117df5225800ae9181d5abeffd8ab3c8de0f2c0e6f75bc745f4cd"
+          },
+          {
+            "ref": "p:117",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the place label from the Word park name and Puerto Natales."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:75247e1339bde5fa",
+      "field": "media.alt",
+      "sourceTextSha256": "934333c91631dfd058910f3114a2f6c92212e1bec61bcb2ee383c2046cef7b61",
+      "text": "Colourful waterfront houses in Puerto Natales with mountains in the background, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no description of this particular image; translate the supplied RU image alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f0b0e404cc3ae057",
+      "field": "media.hover",
+      "sourceTextSha256": "4cb697ec07b3ecfba6d0c6655e208eb8f97530fcccadb86c8d5e5b6a5ca0db05",
+      "text": "Puerto Natales: waterfront houses, waves and mountains beneath a cloudy sky",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2mjejn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no hover caption for this image; translate the supplied RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9ddecec0e203ef5027d6742fc42a36c832acb03624b8a8afa59442f320c075fc",
+      "text": "Puerto Natales – Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:83",
+            "textSha256": "d11b0487b97b5d6a9496ababc9cfd96148ffff520ea51a138728b76baa420f28"
+          },
+          {
+            "ref": "p:117",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the flight-day route using the preceding Puerto Natales stay and Santiago arrival."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c1757ff91c048b1a2083b7a0961c4039d32d11184fcad6c15d4f438a836a0cb5",
+      "text": "After breakfast, transfer to the airport for your flight to Santiago. On arrival, transfer to the hotel. Rest of the day at leisure.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10dhj-ApZLYe73Yq6Xoxsx-6PXm248EjO",
+        "documentSha256": "2f2b71ae65afdb3c0877b46018c75a20a0f5fa5ff288b307e3174ea5e54ce948",
+        "paragraphs": [
+          {
+            "ref": "p:83",
+            "textSha256": "d11b0487b97b5d6a9496ababc9cfd96148ffff520ea51a138728b76baa420f28"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day marker because the itinerary day is stored separately."
+      }
+    }
+  ]
+}

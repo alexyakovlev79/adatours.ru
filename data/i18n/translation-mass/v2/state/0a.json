@@ -154,7 +154,7 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b012",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "6596c14de357ac82f04c1f8ab6e84b3757881badaf32bfa92b285381515a2823",
       "generation": 1,
       "attempts": 0,
@@ -165,13 +165,43 @@
         "at": "2026-11-04T06:21:33.912Z"
       },
       "submission": {
-        "id": "ada_en_8c4fca0d2a61:sub:tour_brazil_argentina_chile_new_year_11_days_2027:b012",
-        "blobSha": "e3d346c964c48152dd551054ab1ae424d8d69e84",
-        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_new_year_11_days_2027_b012/ada_en_8c4fca0d2a61_sub_tour_brazil_argentina_chile_new_year_11_days_2027_b012.json",
-        "at": "2026-11-04T06:40:37.996Z"
+        "id": "amanda-qa-20261104-newyear-b012-v1",
+        "blobSha": "aa53090b2a22cd9b6f002bf3642d76d5eb80a8f6",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_new_year_11_days_2027_b012/qa-amanda-qa-20261104-newyear-b012-v1-aa53090b2a22cd9b.json",
+        "at": "2026-11-04T19:25:22.885Z"
       },
-      "review": null,
-      "nextAttemptAt": null
+      "review": {
+        "reviewerId": "amanda-en-independent-qa-probability-20261104",
+        "at": "2026-11-04T19:25:22.885Z",
+        "acceptedBlobSha": "aa53090b2a22cd9b6f002bf3642d76d5eb80a8f6",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
+      "nextAttemptAt": null,
+      "qaRevisions": [
+        {
+          "reviewerId": "amanda-en-independent-qa-probability-20261104",
+          "at": "2026-11-04T19:25:22.885Z",
+          "previousSubmission": {
+            "id": "ada_en_8c4fca0d2a61:sub:tour_brazil_argentina_chile_new_year_11_days_2027:b012",
+            "blobSha": "e3d346c964c48152dd551054ab1ae424d8d69e84",
+            "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_new_year_11_days_2027_b012/ada_en_8c4fca0d2a61_sub_tour_brazil_argentina_chile_new_year_11_days_2027_b012.json",
+            "at": "2026-11-04T06:40:37.996Z"
+          },
+          "revisionId": "amanda-qa-20261104-newyear-b012-v1",
+          "changedBlockIds": [
+            "tour:body:47f6c11f40afc686"
+          ],
+          "confidence": 96,
+          "reason": "The itinerary and departure on 9 January, both hotel tables and two nights in Santiago favour 7–9 January over one isolated hotel-table typo 7–8; remove internal editorial note."
+        }
+      ]
     },
     {
       "jobId": "en:bulk:tour:tour_brazil_gems_14d:b006",

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1615,
-    "leased": 4,
+    "queued": 1614,
+    "leased": 5,
     "review": 790,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1615,
-      "leased": 4,
+      "queued": 1614,
+      "leased": 5,
       "review": 790,
       "ready": 1,
       "retryable": 0,
@@ -1225,8 +1225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 40,
-          "leased": 0,
+          "queued": 39,
+          "leased": 1,
           "review": 19,
           "ready": 0,
           "retryable": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T18:00:40.530Z",
       "earliestRetryAt": null
     },
     "1e": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_source_braziliya_s_plyazhami:b004",
       "token": "tok_s1xu6zzgricmw2bzxhu",
       "expiresAt": "2026-11-04T18:00:20.882Z",
+      "generation": 1
+    },
+    "ada-en-e8f6bc176576": {
+      "jobId": "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b008",
+      "token": "ada-en-e8f6bc176576-token-20261104",
+      "expiresAt": "2026-11-04T18:00:40.530Z",
       "generation": 1
     }
   },
@@ -3985,7 +3991,8 @@
     "ada-en-e8f6bc176576": {
       "token": "ada-en-e8f6bc176576-token-20261104",
       "jobIds": [
-        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002"
+        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002",
+        "en:bulk:tour:tour_source_chudesa_gvatemaly_beliza:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b002"
@@ -4024,5 +4031,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T16:30:33.038Z"
+  "updatedAt": "2026-11-04T16:30:40.530Z"
 }

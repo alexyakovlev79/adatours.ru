@@ -383,7 +383,108 @@
         "claimedAt": "2026-11-04T06:53:29.085Z",
         "expiresAt": "2026-11-04T08:23:29.085Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_7d6c4f36ac68.panama.b008.4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_7d6c4f36ac68",
+        "token": "tok_7d6c4f36ac68_20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_panama_mice_7_days:b008",
+          "stableId": "tour_panama_mice_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "75935aa909f860d083878d03ff69f7c33cfe8d4391ea66c40c94cf73c5d99bd7",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:afeec35629e8af46",
+              "field": "media.alt",
+              "sourceTextSha256": "fdfbb933f3b667d804ad396414be89ab31004349230290db38f9ec287f757d35",
+              "text": "Panama City skyline with the spiral tower and city lights at dusk, Panama",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_7d6c4f36ac68",
+                "wordAbsenceReason": "The selected Word has no image-specific alternative text for this skyline photograph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c26c85d00597d350",
+              "field": "itinerary.label",
+              "sourceTextSha256": "755dc5c9bfc887b1adba003851d74285c32236301133e8f7e77be08d5517596a",
+              "text": "16 September · sample programme",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada_en_7d6c4f36ac68",
+                "wordAbsenceReason": "The selected Word gives actual September 2026 schedule dates, not the current RU sample-programme qualifier; retain that qualifier."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "032ee0fdce572b00493eb4c2fb929709c780b50fd371a30db2ff31b10c72c53e",
+              "text": "Private transport and restaurant services",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p64",
+                    "textSha256": "cde269568b70bd0303cf069c501c8e9798ca413971170e5f81337d68fbf27d01"
+                  },
+                  {
+                    "ref": "word/document.xml:p66",
+                    "textSha256": "3a52fb00000adc49c7bdd87c4075572f90cb2ca5f8194bff95d80ae1f513a483"
+                  },
+                  {
+                    "ref": "word/document.xml:p68",
+                    "textSha256": "0ed23459b83071d684dee50c3afc0df047fe50f256dea8d18c0346cafe092cde"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the Word transport and dining section headings into one descriptive itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b04d5d61d358e759",
+              "field": "itinerary.text",
+              "sourceTextSha256": "781ce28da013e43c52d1322677ca30208e044bdc22c5635bf9f7e8a9f5842d58",
+              "text": "Multiple Chevrolet Suburban premium SUVs and Mercedes-Benz Vito standard SUVs at disposal for up to 14 hours, 08:00–22:00, from Hyatt Regency Panama City. Dedicated 45-seat motor coach for up to 13 hours, 08:00–21:00, including dinner and hotel transfers.\n\nLunch at Mystic India Restaurant with à la carte consumption by group members, coordinated with the programme transportation.\n\nGroup buffet dinner at Mystic India Restaurant, with restaurant and return transport arrangements. Additional à la carte consumption is separate.\n\nIndividual departure transfer from Hyatt Regency Panama City to PTY Airport for flight CM 443 at 09:13; approximate hotel pick-up at 06:30. Mercedes-Benz Vito standard SUV.\n\nEnglish-speaking transportation coordinator and bottled water (three bottles per person per day).",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p65",
+                    "textSha256": "71a5a7ea3fbc9a4d3337d7760dddc497c92190b1224db77569465510edff87d2"
+                  },
+                  {
+                    "ref": "word/document.xml:p67",
+                    "textSha256": "3dd093e52457cb156675fee82544016bda4261c1f491d8eadf68c8ec032d7cb2"
+                  },
+                  {
+                    "ref": "word/document.xml:p69",
+                    "textSha256": "2450b9187d21d909102a4d54edd19edfb5f842bad9fd63b660674e9703e1d233"
+                  },
+                  {
+                    "ref": "word/document.xml:p71",
+                    "textSha256": "b8db57633d56c24686dba2763744e5d696cd4406659b3d27ef37a34214912ff3"
+                  },
+                  {
+                    "ref": "word/document.xml:p73",
+                    "textSha256": "b676a1af656dd45abd12632b13cf7c2c528cc334cac4a3ccfe5ac364133c5caf"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:54:28.526Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

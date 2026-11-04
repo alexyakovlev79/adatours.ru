@@ -177,7 +177,79 @@
         "claimedAt": "2026-11-04T05:35:04.928Z",
         "expiresAt": "2026-11-04T07:05:04.928Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "adaen-mw1ojnf0-zzzsf540-job02-cp4",
+        "format": "inline-v1",
+        "ownerId": "adaen-mw1ojnf0-zzzsf540",
+        "token": "tok-lnsxlpgwcpa92vym3bnf36",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b013",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "986de5c8429ce0581e5445e3c8c2f9faffd654b1b1523cfdfdfb4b176c1e1e87",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:173cf987634ed90a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "c1e11970deb99abd30825f4f835bb09fa219fd82c5e5a8c35a29597162e16bc9",
+              "text": "A full day on the Argentine side of Iguazu National Park, with its three main trails: the Lower Circuit, deep in the rainforest close to falls such as Dos Hermanas, Bossetti and Álvar Núñez; the Upper Circuit, along elevated walkways above several waterfalls; and the Devil’s Throat, reached by the Ecological Train and a walk, where observation platforms reveal the immense power of the water plunging into the gorge.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p138",
+                    "textSha256": "22385b66465ee677d721523671edc6c4fbbcb0df504047d4f127165bf7fc3846"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading Day number and separator because the structured itinerary supplies its own day heading; retain the approved Word wording."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1f678393a30d3f1e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "5b9fa0dc8001808c1d848887ec6d2d744b283e06ecf78068dac9933f8a9d5740",
+              "text": "Puerto Iguazú",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Full verified Word 2027 has the Argentine-side excursion in paragraph p138 but no Puerto Iguazú structured place label; translate the current RU place name."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:a691272fca3e4120",
+              "field": "media.alt",
+              "sourceTextSha256": "e716340f0f91ce312b237973d1b5ec51bb2f25897ef571e9f9d2af0af135a678",
+              "text": "Two blue-and-yellow macaws on a branch among green leaves",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Full verified Word OOXML has no matching alt text for two blue-and-yellow macaws on a leafy branch; translate the existing RU accessibility text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:fe1079f9766b8ee4",
+              "field": "media.hover",
+              "sourceTextSha256": "011331ca0981e33e05baa7fd78b64afec278c2561c5d408e38870c1628b00c25",
+              "text": "Macaws side by side on a branch, with yellow chests and blue wings",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "adaen-mw1ojnf0-zzzsf540",
+                "wordAbsenceReason": "Full verified Word OOXML has no matching hover caption describing the macaws' yellow chests and blue wings; translate the existing RU caption."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:36:15.646Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

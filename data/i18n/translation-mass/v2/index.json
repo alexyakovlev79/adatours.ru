@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1960,
-    "leased": 22,
+    "queued": 1959,
+    "leased": 23,
     "review": 427,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1960,
-      "leased": 22,
+      "queued": 1959,
+      "leased": 23,
       "review": 427,
       "ready": 1,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 63,
-          "leased": 0,
+          "queued": 62,
+          "leased": 1,
           "review": 15,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T08:32:42.081Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1472,6 +1472,12 @@
       "jobId": "en:bulk:tour:tour_luxury_brazil_11d:b002",
       "token": "ada-en-token-1d528bec4ff4-20261104",
       "expiresAt": "2026-11-04T08:32:19.299Z",
+      "generation": 1
+    },
+    "ada-en-20261104-a40ee2cc": {
+      "jobId": "en:bulk:tour:tour_panama_city_gamboa_6_days:b001",
+      "token": "ada-en-token-a40ee2cc-71df-20261104",
+      "expiresAt": "2026-11-04T08:32:42.081Z",
       "generation": 1
     }
   },
@@ -2937,7 +2943,8 @@
       "token": "ada-en-token-a40ee2cc-71df-20261104",
       "jobIds": [
         "en:bulk:tour:tour_guatemala_discover_8_days:b007",
-        "en:bulk:tour:tour_panama_city_gamboa_6_days:b004"
+        "en:bulk:tour:tour_panama_city_gamboa_6_days:b004",
+        "en:bulk:tour:tour_panama_city_gamboa_6_days:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_guatemala_discover_8_days:b007",
@@ -2956,5 +2963,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T07:02:19.299Z"
+  "updatedAt": "2026-11-04T07:02:42.081Z"
 }

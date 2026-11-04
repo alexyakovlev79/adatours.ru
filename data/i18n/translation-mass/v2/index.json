@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1411,
-    "leased": 11,
+    "queued": 1410,
+    "leased": 12,
     "review": 987,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1411,
-      "leased": 11,
+      "queued": 1410,
+      "leased": 12,
       "review": 987,
       "ready": 1,
       "retryable": 0,
@@ -465,8 +465,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 42,
-          "leased": 0,
+          "queued": 41,
+          "leased": 1,
           "review": 36,
           "ready": 0,
           "retryable": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T20:04:26.056Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1406,6 +1406,12 @@
       "jobId": "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b008",
       "token": "token-mw2gds4u-d3a66e",
       "expiresAt": "2026-11-04T20:03:56.662Z",
+      "generation": 1
+    },
+    "ada-en-mw2gdfy4-c659": {
+      "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b005",
+      "token": "tok-mw2gdfy4-c65915722f21",
+      "expiresAt": "2026-11-04T20:04:26.056Z",
       "generation": 1
     }
   },
@@ -4663,7 +4669,8 @@
       "token": "tok-mw2gdfy4-c65915722f21",
       "jobIds": [
         "en:bulk:tour:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle:b002",
-        "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b013"
+        "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b013",
+        "en:bulk:tour:tour_source_issledovanie_argentiny:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle:b002",
@@ -4709,5 +4716,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T18:34:17.821Z"
+  "updatedAt": "2026-11-04T18:34:26.056Z"
 }

@@ -339,7 +339,88 @@
         "claimedAt": "2026-11-04T07:07:27.504Z",
         "expiresAt": "2026-11-04T08:37:27.504Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-3f45d665-job-08-c4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-3f45d665-translator",
+        "token": "ada-en-token-3f45d665-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_hidden_secrets_9_days_2027:b012",
+          "stableId": "tour_chile_hidden_secrets_9_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "0ff0428141b8087081e513a373f8e13720afd82d6d76fa23fbaabe3cc93a58a2",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:c2109e2a4ccf6b4e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c35802742692df6ad768c86b4f214cfdd06c2b1041750eae0d9fa93aea967d4f",
+              "text": "San Rafael Glacier",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "0025e92bffc16034d9bf3d2803e52cd85d5300086c47f7aaa67c109e1188c691"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:603129aa44f76e09",
+              "field": "media.alt",
+              "sourceTextSha256": "4c54d05dbfce8d98323086ee5d85c7c358b25883b8aba82749c92db95a1f1e21",
+              "text": "Puerto Río Tranquilo on the shore of Lago General Carrera, surrounded by mountains, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The exact Word contains the route description but no photo-specific alt text showing this lakeside settlement and mountains; translate the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:af2c52fd31a16b40",
+              "field": "media.hover",
+              "sourceTextSha256": "feabddab7f74aee390f4bb4c06017cf7df04367e3fad6cb2d152382b2b67b6af",
+              "text": "Chilean Patagonia: a village beside the turquoise waters of Lago General Carrera",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-3f45d665-translator",
+                "wordAbsenceReason": "The exact Word has no equivalent image hover caption for this particular website photograph; translate the current RU hover text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "e23e08faf58f01c8bf403f55323460a2616bd19947bb0b40db16eb70926e1f3b",
+              "text": "Marble Caves – Balmaceda – Punta Arenas – Puerto Natales",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p113",
+                    "textSha256": "8f2c1f325c61564a1346725c6901c330587e12404a64a4693f0e98769032990b"
+                  },
+                  {
+                    "ref": "word/document.xml:p114",
+                    "textSha256": "49d7ccb815958dcd4cc61d10d868e9b7c49f84c9aa42010c572e6f438712286c"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the short ordered route heading from the Word Day 7 boat excursion, Balmaceda airport, Punta Arenas arrival and Puerto Natales transfer."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:08:03.963Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

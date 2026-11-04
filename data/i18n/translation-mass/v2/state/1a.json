@@ -549,7 +549,93 @@
         "claimedAt": "2026-11-04T07:01:24.977Z",
         "expiresAt": "2026-11-04T08:31:24.977Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2ee259e72fda-005-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2ee259e72fda-20261104",
+        "token": "ada-en-2ee259e72fda-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b008",
+          "stableId": "tour_source_5_stran_latinskoj_ameriki",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7756449d1d41fe902b834928cf731d26be26c20e7b4e7918f89e3b6b6242f574",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:3a67ba293ad5bd5a",
+              "field": "media.alt",
+              "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+              "text": "A shady street with trees and café tables in Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The verified Word has no corresponding media caption for this current RU image description; translate the current RU caption without changing media.",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "70d4e2e67c7a525037fe34ef3ec6170130ee241296fdadbf02e1a0c97ee70076",
+              "text": "Sugar Loaf and Rio’s historic centre",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p70",
+                    "textSha256": "ebfeb0d657fc49576dcc5cef557c582195ae7f5480fc84733671903f5d2769b0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the Sugar Loaf and historic Rio activities from the verified Day 3 paragraph for this concise heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "a277b6615475a8d84259caa942a69de47f3c2dafc2a83054ee3915e534db5426",
+              "text": "Day 3 · City tour and Sugar Loaf tour (4 hours, English-speaking guide). From Praia Vermelha (Red Beach), a cable car takes you to Urca Hill and its wide viewpoint, then on to Sugar Loaf Mountain (Pão de Açúcar), with beautiful views of Rio, Copacabana Beach, the bay, the surrounding mountains, the islands, the Rio–Niterói Bridge and the statue of Christ. The tour continues to the historic centre of old Rio, with its ancient churches, monasteries, the city’s Cathedral and colonial-style buildings.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p70",
+                    "textSha256": "ebfeb0d657fc49576dcc5cef557c582195ae7f5480fc84733671903f5d2769b0"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p67",
+                    "textSha256": "fc01b0ac5aa524449201c7fc317cb461ef9218055ca3f2f3132ace904effe7d9"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Extract the exact city name from the Word arrival paragraph as the route label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:02:22.879Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

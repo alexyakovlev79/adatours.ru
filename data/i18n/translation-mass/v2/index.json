@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2049,
-    "leased": 14,
+    "queued": 2048,
+    "leased": 15,
     "review": 346,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2049,
-      "leased": 14,
+      "queued": 2048,
+      "leased": 15,
       "review": 346,
       "ready": 1,
       "retryable": 0,
@@ -505,8 +505,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 68,
-          "leased": 0,
+          "queued": 67,
+          "leased": 1,
           "review": 11,
           "ready": 0,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T07:49:04.009Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1424,6 +1424,12 @@
       "jobId": "en:bulk:tour:tour_nicaragua_best_10_days:b003",
       "token": "ada_en_token_6c7d31_20261104",
       "expiresAt": "2026-11-04T07:48:38.815Z",
+      "generation": 1
+    },
+    "ada-en-2a369c57df19": {
+      "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b012",
+      "token": "token-2a369c57df19-20261104",
+      "expiresAt": "2026-11-04T07:49:04.009Z",
       "generation": 1
     }
   },
@@ -2586,7 +2592,8 @@
         "en:bulk:tour:tour_brazil_rio_four_days:b003",
         "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b011",
         "en:bulk:tour:tour_chile_easter_island_3_days_2027:b002",
-        "en:bulk:tour:tour_colombia_complete_11_days:b005"
+        "en:bulk:tour:tour_colombia_complete_11_days:b005",
+        "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b012"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b008",
@@ -2647,5 +2654,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T06:18:44.444Z"
+  "updatedAt": "2026-11-04T06:19:04.009Z"
 }

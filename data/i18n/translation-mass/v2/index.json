@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1905,
-    "leased": 13,
+    "queued": 1904,
+    "leased": 14,
     "review": 491,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1905,
-      "leased": 13,
+      "queued": 1904,
+      "leased": 14,
       "review": 491,
       "ready": 1,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 59,
-          "leased": 0,
+          "queued": 58,
+          "leased": 1,
           "review": 20,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T10:29:41.078Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_chili_zagadki_chelovechestva:b010",
       "token": "ada-en-5498d95b-20261104-persistent",
       "expiresAt": "2026-11-04T10:29:15.129Z",
+      "generation": 1
+    },
+    "ada_en_20261104_aa57d219": {
+      "jobId": "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b008",
+      "token": "ada_token_aa57d219_c1c5",
+      "expiresAt": "2026-11-04T10:29:41.078Z",
       "generation": 1
     }
   },
@@ -2962,7 +2968,8 @@
       "token": "ada_token_aa57d219_c1c5",
       "jobIds": [
         "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b004",
-        "en:bulk:tour:tour_peru_8d:b002"
+        "en:bulk:tour:tour_peru_8d:b002",
+        "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_3_vzglyada_na_kosta_riku:b004",
@@ -2995,5 +3002,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T08:59:32.832Z"
+  "updatedAt": "2026-11-04T08:59:41.078Z"
 }

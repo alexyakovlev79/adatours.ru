@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_argentina_braziliya:b002",
+  "stableId": "tour_source_chili_argentina_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6ee50468ba0ea53cf6bbc336a41183511d62403b3684e0012d551864298863eb",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:51",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:2543e3aa4b3fb58c",
+      "field": "included",
+      "sourceTextSha256": "5af4f3aa6f7d7fee7a09250a793a95f3ad115c331dd8c00bcd951feeb22ad992",
+      "text": "Accommodation in 4★ standard category hotels with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:261",
+            "textSha256": "bce80a670a994458a5f88b1b6efc0ef501b03e9f4de6241ed90594f5627f7ec4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the brochure list marker because this assigned included-service field is rendered as its own list item."
+      }
+    },
+    {
+      "blockId": "tour:included:d38325b27dc56023",
+      "field": "included",
+      "sourceTextSha256": "94ea46f4a53fbbef4f88350df7635aeb2768fbe42fd3865793c49f5e5eb583b1",
+      "text": "All transfers according to the programme with a driver",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:262",
+            "textSha256": "fd9b5a672adece59b90bdb50233235241e6a5a634c3f3c58e560a6be8572a301"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the brochure list marker because this assigned included-service field is rendered as its own list item."
+      }
+    },
+    {
+      "blockId": "tour:included:0df1f17af63388af",
+      "field": "included",
+      "sourceTextSha256": "86bf006e798c32f947f6feb9d0e32451fd58f7e7dd92a97d3bb8cf09cf3ba2cf",
+      "text": "Guide services throughout the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:263",
+            "textSha256": "69a67e6ecf81c8b1776e3f2c2451b5afead6fe64b372b1b072aeecf2ad8bc6d6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the brochure list marker because this assigned included-service field is rendered as its own list item."
+      }
+    },
+    {
+      "blockId": "tour:included:62974eff5073e73c",
+      "field": "included",
+      "sourceTextSha256": "ad45c52ec1a781d715f53c387e2ea1a72116279f05bcad74ad38f98833b582f6",
+      "text": "English-speaking guides on the city tours in Buenos Aires and Santiago de Chile.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete verified Word describes the Santiago and Buenos Aires city tours but omits their guide-language clause. Translate the assigned RU inclusion with the owner's 03.11.2026 English-service adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:fc7884db7a5883c4",
+      "field": "included",
+      "sourceTextSha256": "415330758212300d5069e89ef170a1334eeb80a789da0bf1885eb26420a1ef02",
+      "text": "English-speaking guides in Puerto Natales and El Calafate, with group excursions.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-ecbee34ab85b",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The verified Word explicitly gives an English-speaking guide for the El Calafate group excursion, but has no combined language-and-group clause covering Puerto Natales; translate this assigned RU inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:e4cd7ff50d40de05",
+      "field": "included",
+      "sourceTextSha256": "a1a940c4774e2a86861b46f417cd919b76be7b79151ec46d473386f4caae1059",
+      "text": "Excursions according to the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:264",
+            "textSha256": "8058c199498ef455345413d4d7cba756ceb2d13199a1e4744fcc7752015e4514"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the brochure list marker because this assigned included-service field is rendered as its own list item."
+      }
+    },
+    {
+      "blockId": "tour:included:1f742c956964bb56",
+      "field": "included",
+      "sourceTextSha256": "71b85a2fa148af6a6c3c73446fc89c6b85da37dd34d8be6ef92a4346bff45038",
+      "text": "Meals according to the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VVb19fhYM4uGHIUqj8Vb14ySVdLL-qs9",
+        "documentSha256": "9fdbbd3080671e41cc722fff470a09cba94d9e99405241b2901cd1f0c38e2079",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:265",
+            "textSha256": "f2aeb244d30fdadfb20bbe3c8f2d7f822884aae9fba015e9676858b36dda4d8b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the brochure list marker because this assigned included-service field is rendered as its own list item."
+      }
+    }
+  ]
+}

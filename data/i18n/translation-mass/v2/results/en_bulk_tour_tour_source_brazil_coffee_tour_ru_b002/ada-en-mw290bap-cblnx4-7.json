@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b002",
+  "stableId": "tour_source_brazil_coffee_tour_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2fd954537e8970fd403d65dcee889365b192eca46d3f3083d54726f4a4511e2b",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:01cf01d57050544f",
+      "field": "notIncluded",
+      "sourceTextSha256": "8d35e502ebf00ec4b928aad73c57442aee9e04881c369036955432caa8dbaf79",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p197",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker; keep the approved Word exclusion text."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e6b96d0cdab1b31f",
+      "field": "notIncluded",
+      "sourceTextSha256": "643eb7a9191a8239e631c2655ceaf56ab3a8212aaf7070d90945d8cd4b3eab7a",
+      "text": "Domestic flights Rio de Janeiro – Iguazu – Rio de Janeiro.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word p198 includes a fare estimate of $650 per person, which is absent from the assigned RU exclusion. Translate the route-only RU item without introducing or changing a price.",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6"
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p199",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker for the host list item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p200",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker for the host list item."
+      }
+    },
+    {
+      "blockId": "tour:note:1ffa9a907dfaa903",
+      "field": "note",
+      "sourceTextSha256": "04e3cf2fcbfdb1786f2fce0bf4684ce1a727dffb7caac75836ca0d1f6d4b49ca",
+      "text": "The hotels may be replaced by others of the same category.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p127",
+            "textSha256": "c46f843d5cb913bdd68d9a144daceb52158c00b5f79737f80b316e6495c62e92"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word has no corresponding excursion-order clause in its conditions; translate the assigned RU condition.",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6"
+      }
+    },
+    {
+      "blockId": "tour:note:b945b35735fb6701",
+      "field": "note",
+      "sourceTextSha256": "a93ef08b7351443416a87e46145591263e83304a74a1434e673b88941944053f",
+      "text": "Ada Tours is not responsible for breakfasts missed because of early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw290bap-cblnx4",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word contains no missed-breakfast liability clause; translate the assigned RU condition.",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "8a88b9beacb7a325244388847f8df5b71f82b29cc3591d7c0ecaf59f410d6cc2",
+      "text": "Rio de Janeiro and Sugar Loaf",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "efdace39c17f6ede2afab7e59121fdaf36c599f2edc98a486728f6066aa6315f"
+          },
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "52e7420260c3b5ec74d4a21b09c3b207e86cf16e10389bce6d9965bef6f41675"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word arrival city name and the approved Sugar Loaf heading for the existing first-day title."
+      }
+    }
+  ]
+}

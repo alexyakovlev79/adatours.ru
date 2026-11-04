@@ -1,0 +1,160 @@
+{
+  "jobId": "en:bulk:tour:tour_source_antarktida_programma_na_ves_den:b002",
+  "stableId": "tour_source_antarktida_programma_na_ves_den",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "25456b4c155c433516085e37d6d12718b250bfdb6d43dc3e38d6779e64cc00cd",
+  "blocks": [
+    {
+      "blockId": "tour:included:dbf9bd74b9457aae",
+      "field": "included",
+      "sourceTextSha256": "a99d43123999e34b2ca4ef3c1c1c342519deb6cef5560f005a2126d58dc8aeaa",
+      "text": "Transfers listed in the itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-52870a61",
+        "wordAbsenceReason": "Word describes the outbound hotel-airport transfer in p25 and return hotel transfer in p37, but has no generic inclusion item matching the current RU wording.",
+        "wordEvidence": {
+          "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+          "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+          "inspected": "All OOXML paragraphs and tables"
+        }
+      }
+    },
+    {
+      "blockId": "tour:included:7a112ac0e3547bd0",
+      "field": "included",
+      "sourceTextSha256": "33d85a31c3da8681aaa718746f1f98a500befeba8e410f8fb4da8517dad5a70f",
+      "text": "All meals and beverages are included during the development of the program.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+        "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "3c7ef2177a8b1f8cea61e3eb9ba42e24a72d59917e6994f2fe2d12dc30c1fca6"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:86efb8645879afd2",
+      "field": "included",
+      "sourceTextSha256": "db3b1bf8c2815c09692db3d531d022719bd062ef8983baae57d7e3e145846206",
+      "text": "Flight Punta Arenas – Antarctica – Punta Arenas.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+        "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p15",
+            "textSha256": "abc7474cd28db6a77ce2f8a2176b60de8d30aed09859513725508e587eb65658"
+          },
+          {
+            "ref": "word/document.xml:p16",
+            "textSha256": "b118fa9580155eeceb4de0ab03af080f1b4dee341b6e41ae441d5a0536467f9a"
+          },
+          {
+            "ref": "word/document.xml:p36",
+            "textSha256": "2ed65930d227b68205ce20e2bfe7f4574c4addba86c9aea97f8f519e9ba9ef48"
+          },
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "03d288a0cd9aa55adbf5d0f2367df2cc9779d38d040eaf456390b8b1ece4fa1a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Summarise the verified outbound Antarctic flight and return to Punta Arenas as the included flight route."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:388614423cc605c2",
+      "field": "notIncluded",
+      "sourceTextSha256": "35c58d359ee97b327fb26a48940c3f11961153a8933fa179f4631fa4cf0b126b",
+      "text": "Flight to Punta Arenas before the excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-52870a61",
+        "wordAbsenceReason": "The verified Word has no explicit not-included item for the positioning flight to Punta Arenas.",
+        "wordEvidence": {
+          "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+          "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+          "inspected": "All OOXML paragraphs and tables"
+        }
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:b5c1c840c06e6031",
+      "field": "notIncluded",
+      "sourceTextSha256": "96fe5e52e9f50022ea25a0431b70ceacd8f887986c5581364b51ba4ededb3a37",
+      "text": "Meals outside the described itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-52870a61",
+        "wordAbsenceReason": "The verified Word states meals during the programme are included in p101, but has no equivalent not-included item for meals outside the itinerary.",
+        "wordEvidence": {
+          "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+          "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+          "inspected": "All OOXML paragraphs and tables"
+        }
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-52870a61",
+        "wordAbsenceReason": "The verified Word has no explicit not-included list item for personal expenses.",
+        "wordEvidence": {
+          "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+          "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+          "inspected": "All OOXML paragraphs and tables"
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:bc916564ace1ead6",
+      "field": "note",
+      "sourceTextSha256": "3ce2dc85a05ba14a5fe74a05298abf9b3f2ab287bda8c54f7d6a42d5a14e6aaf",
+      "text": "All activities are subject to weather conditions. These may change the order of the tour, the activities planned and the total time spent on King George Island. The final decision on whether activities can be carried out rests with the Operations Department.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+        "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p116",
+            "textSha256": "10b2c1164b188c773046d7a5498e7ac72405d0760e26e5f7166868162459b187"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:5aa2c628beab8b85",
+      "field": "note",
+      "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+      "text": "If necessary, Ada Tours may replace the listed hotels with other hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-52870a61",
+        "wordAbsenceReason": "The verified Word has no equivalent hotel-substitution note; translate the current RU condition unchanged in scope.",
+        "wordEvidence": {
+          "fileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+          "documentSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+          "inspected": "All OOXML paragraphs and tables"
+        }
+      }
+    }
+  ]
+}

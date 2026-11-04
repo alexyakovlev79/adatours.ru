@@ -309,7 +309,93 @@
         "claimedAt": "2026-11-04T07:44:41.644Z",
         "expiresAt": "2026-11-04T09:14:41.644Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-2ee259e72fda-010-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-2ee259e72fda-20261104",
+        "token": "ada-en-2ee259e72fda-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b001",
+          "stableId": "tour_brazil_three_ecosystems_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "69691a0f455c73e4a25036d37256ba21d953feb9ccab0f29d157a2ab941d5b89",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "1999bfad4138de70d188e47c30b893ca70412db84863252f543735184e337fd1",
+              "text": "Amazon, Savanna and Pantanal: 3 ecosystems in 8 days",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p2",
+                    "textSha256": "8cf10e4c8c1bbf6a38fd3c566b1667cbcfa6c0f12ddaa0364f6267434a634235"
+                  },
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "d0ec9285aa9481a452052efd8c6ae0ce1c8b1a41e7cf87514b685b222778642a"
+                  },
+                  {
+                    "ref": "word/document.xml:p4",
+                    "textSha256": "66f6864a0729fe4f1dcb1ca5ec0c1cb756b3caa3b7aabb9daf1d06ba2de3fe20"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the verified Word destination title, three-ecosystem subtitle and eight-day duration as the current single title, omitting its legacy2026 label."
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "caa25cc1da6ee5d2f574d31eb06e4d371f689ac6bc3f08079e573fe2587fb281",
+              "text": "Over 8 days, walk the forest trails of the southern Amazon, swim among fish in the clear waters of Bom Jardim and see the sandstone cliffs of Chapada dos Guimarães. Spend the final three nights in the Northern Pantanal, with canoeing, horseback rides, observation towers and a night safari.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified Word p6/p7 and the itinerary confirm the named activities, sandstone landscapes and three Pantanal nights, but there is no equivalent concise lead passage containing this current RU selection. Translate the current RU lead without importing other Word details.",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "7b09c2459d1da0818a342473ca5f1a24dd1ac71e8fa0d42879f49d6a3b941875",
+              "text": "USD 5,514 per person for 2–3 participants. The programme is available throughout 2027; exact dates are agreed at the time of booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "Verified exact selected Word p12/p15/p17 confirms USD5514 per person for2/3pax, but p13 explicitly says AllYear2026 while the current RU note says2027 and includes booking-date confirmation. Preserve the current RU price/year and attribute this as RU translation, not word_exact; the source edition conflict is recorded for master review.",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "72aa916794c52b3a31457eab3d5299f994d8114b8646f3d426c8f00a94c7f914",
+              "text": "Eco-tour",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-2ee259e72fda-20261104",
+                "wordAbsenceReason": "The verified Word is a three-ecosystem nature itinerary but contains no standalone equivalent product-format field for the current RU eco-tour label.",
+                "fileId": "1kNh04OFL-WUFvScuhfvqmz9QVHCFY2hA",
+                "documentSha256": "c35bca73e2de2ebb08f2f58da2537e279732b15834442420a4ff17620ce2ea08"
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T07:45:49.446Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

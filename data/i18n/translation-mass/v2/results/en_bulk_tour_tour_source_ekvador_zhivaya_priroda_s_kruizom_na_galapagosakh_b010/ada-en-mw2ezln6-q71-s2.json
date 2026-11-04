@@ -1,0 +1,147 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b010",
+  "stableId": "tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5fe39c53963f0749ec70180e796267a66191bc2ce3669ac62ae774fbcd9dc30c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:5babce32b19eff69",
+      "field": "itinerary.label",
+      "sourceTextSha256": "dd096aa9dfd436747b7a41c11d1b424de1c70489d126cc697b422f39a7792b8c",
+      "text": "Condor Park",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2ezln6-q71",
+        "wordAbsenceReason": "The exact Word 2027 itinerary does not mention Condor Park; translate the pinned RU place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:61525c89c94c00e4",
+      "field": "media.alt",
+      "sourceTextSha256": "c909873ba966e00014972bf245679af4e3f4e6e8f98a3543f9a7a23007cc4e35",
+      "text": "Urban buildings at the foot of a green volcanic massif beneath clouds, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2ezln6-q71",
+        "wordAbsenceReason": "The exact Word 2027 contains no image-specific alt text for these buildings below a green volcanic massif."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5f1dd9d9022d6862",
+      "field": "media.hover",
+      "sourceTextSha256": "f74ca42c4cff2c61beb430338aeb4b81f2e3a06ae06f1aaa20812889e2eb8e0f",
+      "text": "A town at the foot of a mountain in Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw2ezln6-q71",
+        "wordAbsenceReason": "The exact Word 2027 contains no image-specific hover caption for this mountain town photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b1bf3932f13f32a6f96c280e8c0ae1526d7a29104dfe049dc0c117cb9127405d",
+      "text": "El Ángel – Cotacachi-Cayapas – Imbabura",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:nonempty-p63",
+            "textSha256": "f5d8cfa0b088e57ed5c8fd007bf94a35483eced9685aa917136303d7f5536938"
+          },
+          {
+            "ref": "word/document.xml:nonempty-p68",
+            "textSha256": "02c7dc06cddac6069009b875ca2b8d50bab77eb1c1993c70e4ada56dacd6f77e"
+          },
+          {
+            "ref": "word/document.xml:nonempty-p69",
+            "textSha256": "28fc3b1c64ea098904686b29485947bfeb8463271a8d4abae68838acd2265902"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day route heading from the named Word destinations, preserving the RU heading's sequence without adding activities."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8db6e9185237b83d50c81c171708aafae23909ccc715bcccca3602e095af36e5",
+      "text": "Day 9 · A walk through the remarkable Polylepis forest, with its ancient “paper trees”, then Cuicocha, a lagoon inside a collapsed volcanic crater in the Cotacachi-Cayapas Ecological Reserve, about 200 m deep, with two islets, Teodoro Wolf and José María Yerovi. Overnight at Hacienda Cusín. (B, L, D)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:nonempty-p69",
+            "textSha256": "28fc3b1c64ea098904686b29485947bfeb8463271a8d4abae68838acd2265902"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dfc09b8ff68e51a0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bb627eb5fe3405432bf925402d8379f721bad051a2296d222a6b997dec4f3ec8",
+      "text": "El Ángel Ecological Reserve",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:nonempty-p68",
+            "textSha256": "02c7dc06cddac6069009b875ca2b8d50bab77eb1c1993c70e4ada56dacd6f77e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact reserve name appearing within the Word Day 8 paragraph as this standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b1523a377b3f0d98",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3a3da1649b8993932b09f36c5cfa252482328a26e877d674382c19ad75b334c4",
+      "text": "Cotacachi-Cayapas Ecological Reserve",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:nonempty-p69",
+            "textSha256": "28fc3b1c64ea098904686b29485947bfeb8463271a8d4abae68838acd2265902"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact reserve name in the Word Day 9 paragraph as this standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:eed050cce134971f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "921d53b745999df15f131cdec08f4986d4a488a7f381d83481907f2d0b6be50f",
+      "text": "Cuicocha Lake",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NmD-oJ_2s2ujK-P_L-EEdJDilYQymbHK",
+        "documentSha256": "f1f1388b94a34642c7b7c910a52a660367a50f1f8dbf75fbbec4729c3408a278",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:nonempty-p69",
+            "textSha256": "28fc3b1c64ea098904686b29485947bfeb8463271a8d4abae68838acd2265902"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word Cuicocha lagoon reference as a concise lake label, without altering the destination."
+      }
+    }
+  ]
+}

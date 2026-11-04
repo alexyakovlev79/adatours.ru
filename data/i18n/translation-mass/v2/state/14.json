@@ -539,7 +539,7 @@
         "expiresAt": "2026-11-04T07:46:59.758Z"
       },
       "checkpoint": {
-        "id": "ada_en_91a5d7c2e8b4_cp005_4",
+        "id": "ada_en_91a5d7c2e8b4_cp005_8",
         "format": "inline-v1",
         "ownerId": "ada_en_91a5d7c2e8b4",
         "token": "ada-en-token-91a5d7c2e8b4-20261104",
@@ -634,10 +634,86 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the verified Easter Island name from the departure heading for the existing route stop."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:dd1ef65a679378d4",
+              "field": "itinerary.label",
+              "sourceTextSha256": "79a7e4d346e5dcca6955b45c4928bcf9c8d57856b87a1a001d8a1f799678a211",
+              "text": "Ahu Akivi",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p28",
+                    "textSha256": "281b538e06e4f065e390750a2c3fec2606b761a0e364774883623dd9f1baf99e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract Ahu Akivi directly from the verified morning excursion paragraph for the existing route stop."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:bc2313c815a35d7f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8d5a5921e4f019fb6a3f47696e41ecd37f768621f381456de74895897ace760f",
+              "text": "Puna Pau Quarry",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p28",
+                    "textSha256": "281b538e06e4f065e390750a2c3fec2606b761a0e364774883623dd9f1baf99e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the verified Puna Pau quarry name as the existing location label, with label capitalization."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5981292f40cccb2d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "28f1c47ca609c53d7edf8a0bf9719b59677ae1b75400e3b821a97227b4b76b5f",
+              "text": "Tahai",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p28",
+                    "textSha256": "281b538e06e4f065e390750a2c3fec2606b761a0e364774883623dd9f1baf99e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract Tahai directly from the verified ceremonial-complex paragraph as the existing stop label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3d310a170b794362",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p26",
+                    "textSha256": "375a6b166ffb93df7d8f841f0773be0da5fe7d1e7b08fae0866c9294cf4a5fb1"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Santiago arrival name from the flight heading for the existing capital-city stop."
+              }
             }
           ]
         },
-        "at": "2026-11-04T06:17:30.938Z"
+        "at": "2026-11-04T06:17:45.148Z"
       },
       "submission": null,
       "review": null,

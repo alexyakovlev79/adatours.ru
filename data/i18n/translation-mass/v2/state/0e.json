@@ -449,7 +449,87 @@
         "claimedAt": "2026-11-04T06:09:47.047Z",
         "expiresAt": "2026-11-04T07:39:47.047Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_91a5d7c2e8b4_cp003_4",
+        "format": "inline-v1",
+        "ownerId": "ada_en_91a5d7c2e8b4",
+        "token": "ada-en-token-91a5d7c2e8b4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b009",
+          "stableId": "tour_mexico_oaxaca_city_break_five_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "6f0bf74e80c768412389bd959878694d501d0091585146d1161fe4c71bc408e1",
+          "sourceVerification": {
+            "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+            "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+            "modifiedTime": "2026-09-22T16:51:20.461Z",
+            "fileName": "Oaxaca City Break Tour_5d4n_2027_20%COM_ENG.docx",
+            "yearFolder": 2027,
+            "editionYear": null
+          },
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:4bba62b24698122e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "8c55ce7611964f45adea6774b2ff03f2659c0e15023c04495888f7b3f0c5a71f",
+              "text": "Oaxaca",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p13",
+                    "textSha256": "9b50253a07df5c36f1c29e87ae2559d5b7dd704bb3b4bc794f119353a5952803"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named Oaxaca stop from the verified arrival heading to label the existing route place."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:8cc8aea0845f29f7",
+              "field": "media.alt",
+              "sourceTextSha256": "ab9f662693ffb7847ff5dc146e2095e0e032560e5df82b4127fb9b81776a6900",
+              "text": "El Sol y la Luna restaurant sign on an ochre wall in Oaxaca, Mexico",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "No image-specific alt description of the El Sol y la Luna sign occurs in the verified Word; translate the existing RU media description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:06dc9130d087f0c8",
+              "field": "media.hover",
+              "sourceTextSha256": "42bd3b4dc29967158efbeb172ed4742d44d1a4bda1971cf2499a26c186addb6f",
+              "text": "Oaxaca: a painted restaurant sign on an ochre facade",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "No image-specific hover caption for the restaurant sign occurs in the verified Word; translate the existing RU media caption."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "959ef4398662189d2ec5533e27bbfc20f75f8114ccda9073b1f8bb8fc00933f5",
+              "text": "Stone platforms at Monte Albán surrounding a grassy plaza, Mexico",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_91a5d7c2e8b4",
+                "wordAbsenceReason": "The verified Word describes visiting Monte Albán but has no alt text describing this photograph; translate the existing RU image description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:10:39.025Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1736,
-    "leased": 12,
+    "queued": 1735,
+    "leased": 13,
     "review": 661,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1736,
-      "leased": 12,
+      "queued": 1735,
+      "leased": 13,
       "review": 661,
       "ready": 1,
       "retryable": 0,
@@ -305,8 +305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 56,
-          "leased": 0,
+          "queued": 55,
+          "leased": 1,
           "review": 21,
           "ready": 0,
           "retryable": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T14:03:16.674Z",
       "earliestRetryAt": null
     },
     "17": {
@@ -1412,6 +1412,12 @@
       "jobId": "en:bulk:tour:tour_source_amazoniya_kruiz_tukano:b005",
       "token": "token-b866232976e1-20261104",
       "expiresAt": "2026-11-04T14:03:06.903Z",
+      "generation": 1
+    },
+    "ada-en-mw23-translator-mw23ks7y": {
+      "jobId": "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b002",
+      "token": "token-mw23ks7y-amanda",
+      "expiresAt": "2026-11-04T14:03:16.674Z",
       "generation": 1
     }
   },
@@ -3635,8 +3641,15 @@
         "en:bulk:tour:tour_source_amazoniya_kruiz_tukano:b005"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw23-translator-mw23ks7y": {
+      "token": "token-mw23ks7y-amanda",
+      "jobIds": [
+        "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b002"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T12:33:06.903Z"
+  "updatedAt": "2026-11-04T12:33:16.674Z"
 }

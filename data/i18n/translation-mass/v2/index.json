@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1822,
-    "leased": 10,
+    "queued": 1821,
+    "leased": 11,
     "review": 577,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1822,
-      "leased": 10,
+      "queued": 1821,
+      "leased": 11,
       "review": 577,
       "ready": 1,
       "retryable": 0,
@@ -65,8 +65,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 57,
-          "leased": 0,
+          "queued": 56,
+          "leased": 1,
           "review": 18,
           "ready": 0,
           "retryable": 0,
@@ -97,7 +97,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T12:14:26.631Z",
       "earliestRetryAt": null
     },
     "11": {
@@ -1401,6 +1401,12 @@
       "token": "ada-en-701c2338f1e2-20261104",
       "expiresAt": "2026-11-04T12:14:03.638Z",
       "generation": 2
+    },
+    "ada-en-aea5dd24fb2c": {
+      "jobId": "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b004",
+      "token": "ada-en-token-aea5dd24fb2c-20261104",
+      "expiresAt": "2026-11-04T12:14:26.631Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -3260,7 +3266,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b020",
         "en:bulk:tour:tour_source_argentina_bariloche_i_buenos_ajres:b006",
-        "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b006"
+        "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b006",
+        "en:bulk:tour:tour_source_beliz_priklyuchenie_materik_ostrov:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki:b020",
@@ -3332,5 +3339,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T10:44:17.169Z"
+  "updatedAt": "2026-11-04T10:44:26.631Z"
 }

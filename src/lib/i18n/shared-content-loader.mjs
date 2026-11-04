@@ -99,6 +99,93 @@ async function attachAcceptedMass(records,base,snapshotRoot) {
   records.massSnapshot={sha:ACCEPTED_MASS_SNAPSHOT_SHA,packets:snapshots};
 }
 
+/** Explicitly authorized NOINDEX display of submitted EN drafts. This never
+ * marks a worker submission as QA-ready or releaseEligible, and never writes
+ * to the source queue. Exact Git receipts and live source blocks stay binding.
+ */
+async function attachReviewPreviewMass(records,base,snapshotRoot,env) {
+  if(!sharedEnglishContentEnabled(env)||env.PUBLIC_EN_RELEASE!=='0'||
+     env.EN_REVIEW_TRANSLATIONS_PREVIEW!=='1')fail('Review preview requires noindex EN staging');
+  const sha=env.EN_MASS_SNAPSHOT_SHA;
+  if(!/^[a-f0-9]{40}$/.test(sha??'')||
+     (await readFile(join(snapshotRoot,'.git/HEAD'),'utf8')).trim()!==sha)
+    fail('Mass review checkout must be detached at a declared exact SHA');
+  const index=await readJson(join(snapshotRoot,MASS_ROOT,'index.json'));
+  if(index.schemaVersion!==2||index.publicationEnabled!==false||index.dispatcherEnabled!==true)
+    fail('Review preview cannot bypass the queue safety gate');
+  const totals={sha,mode:'noindex-unreviewed-preview',queued:index.counts.queued,
+    submittedReview:index.counts.review,independentlyReady:index.counts.ready,
+    loadedReview:0,loadedReady:0,withheldConflicts:0,withheldInvalid:0,
+    sourceChanged:0,sourceMissing:0};
+  const seen=new Set();
+  for(const [sid,counts] of Object.entries(index.shards)){
+    if(!Object.values(counts.stages??{}).some(c=>c.review>0||c.ready>0))continue;
+    if(!/^[a-f0-9]{2}$/.test(sid))fail('Invalid mass-review shard');
+    const [state,definitions]=await Promise.all([
+      readJson(join(snapshotRoot,MASS_ROOT,'state',sid+'.json')),
+      readJson(join(snapshotRoot,MASS_ROOT,'jobs',sid+'.json'))
+    ]);
+    const jobs=new Map(definitions.jobs.map(j=>[j.jobId,j]));
+    for(const row of state.items.filter(x=>x.status==='review'||x.status==='ready')){
+      if(seen.has(row.jobId))fail('Duplicate mass-review job');
+      seen.add(row.jobId);
+      const job=jobs.get(row.jobId),rp=row.submission?.resultPath??'';
+      if(!job||!row.jobId.startsWith('en:bulk:tour:'+job.stableId+':')||
+         job.entityType!=='tour'||row.sourceFingerprint!==job.sourceFingerprint||
+         !allowedSource(job.source?.contentPath,'tours')||
+         !/^data\/i18n\/translation-mass\/v2\/results\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_.-]+\.json$/.test(rp)||
+         !/^[a-f0-9]{40}$/.test(row.submission?.blobSha??'')){
+        totals.withheldInvalid++;continue;
+      }
+      let result;
+      try{
+        const bytes=await readFile(join(snapshotRoot,rp));
+        if(gitBlob(bytes)!==row.submission.blobSha)throw Error('Immutable blob mismatch');
+        result=JSON.parse(bytes.toString('utf8'));
+        validateMassResult(job,result);
+        if(row.status==='ready'&&(row.review?.acceptedBlobSha!==row.submission.blobSha||
+           !MASS_QA.every(k=>row.review?.checks?.[k]===true)||!row.review?.reviewerId))
+          throw Error('Missing independent QA receipt');
+      }catch{totals.withheldInvalid++;continue;}
+      if(result.unresolvedConflicts?.length||result.sourceIssues?.length){
+        totals.withheldConflicts++;continue;
+      }
+      let sourceBytes;
+      try{sourceBytes=await readFile(join(base,job.source.contentPath));}
+      catch(error){
+        if(error.code!=='ENOENT')throw error;
+        totals.sourceMissing++;continue;
+      }
+      const currentHash=sha256(sourceBytes);
+      if(currentHash!==job.source.contentSha256)totals.sourceChanged++;
+      let prepared=records.get(job.stableId);
+      if(!prepared){
+        const canonicalBody=canonicalMarkdownBody(sourceBytes.toString('utf8'));
+        if(canonicalBody===undefined){totals.withheldInvalid++;continue;}
+        prepared={entityId:job.stableId,entityType:'tour',
+          sourceFingerprint:'sha256:'+currentHash,canonicalBody};
+        records.set(job.stableId,prepared);
+      }
+      if(prepared.entityType!=='tour'){totals.withheldInvalid++;continue;}
+      prepared.massSnapshotSha=sha;
+      const packet={status:row.status==='review'?'preview_review':'ready',
+        jobId:row.jobId,blocks:result.blocks,
+        receipt:{snapshotSha:sha,jobId:row.jobId,resultBlobSha:row.submission.blobSha,
+          sourceChanged:currentHash!==job.source.contentSha256,
+          ...(row.status==='review'?{pendingIndependentQA:true}:
+            {reviewerId:row.review.reviewerId,reviewedAt:row.review.at})}};
+      if(row.status==='review'){
+        prepared.previewMass=[...(prepared.previewMass??[]),packet];totals.loadedReview++;
+      }else{
+        prepared.acceptedMass=[...(prepared.acceptedMass??[]),packet];totals.loadedReady++;
+      }
+    }
+  }
+  if(seen.size!==index.counts.review+index.counts.ready)
+    fail('Mass review queue index disagrees with shards');
+  records.massReviewPreviewSnapshot=totals;
+}
+
 function pointerParts(path) {
   if(typeof path !== 'string' || !path.startsWith('/'))fail('Invalid text pointer');
   const parts=path.slice(1).split('/').map(part=>part.replace(/~1/g,'/').replace(/~0/g,'~'));
@@ -137,7 +224,8 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   if(prepared.entityId!==entry.data.id || prepared.entityType!==type)fail('Prepared translation identity mismatch');
   const sourceId=entry.data.id;
   const sourceFingerprint=prepared.sourceFingerprint ?? '';
-  if(prepared.stale) return {entry,applied:0,status:'stale',sourceId,sourceFingerprint,reason:prepared.reason};
+  if(prepared.stale && !prepared.previewMass?.length && !prepared.acceptedMass?.length)
+    return {entry,applied:0,status:'stale',sourceId,sourceFingerprint,reason:prepared.reason};
   // Use the body read from the current canonical file, never a translated or
   // historical snapshot. Accept only Astro's documented boundary trim; any
   // substantive store/file disagreement must not inherit the file's evidence.
@@ -192,7 +280,7 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
     const current=new Map(createStableBlockMap(sourceEntry,type).paths.map(slot=>[slot.blockId,slot]));
     const raw={...sourceEntry.data,__body:sourceEntry.body??''};
     for(const packet of prepared.acceptedMass) {
-      if(packet.status!=='ready' || packet.receipt?.snapshotSha!==ACCEPTED_MASS_SNAPSHOT_SHA)continue;
+      if(packet.status!=='ready' || packet.receipt?.snapshotSha!==(prepared.massSnapshotSha??ACCEPTED_MASS_SNAPSHOT_SHA))continue;
       let appliedBlocks=0,changedTexts=0;
       for(const block of packet.blocks) {
         const slot=current.get(block.blockId),sourceText=slot && getAt(raw,slot.path);
@@ -207,6 +295,29 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
       acceptedMass.push({...packet.receipt,appliedBlocks,changedTexts});
     }
   }
+
+  const previewMass=[];
+  if(prepared.previewMass?.length){
+    const current=new Map(createStableBlockMap(sourceEntry,type).paths.map(s=>[s.blockId,s]));
+    const raw={...sourceEntry.data,__body:sourceEntry.body??''};
+    const approvedIds=new Set((prepared.acceptedMass??[]).flatMap(p=>p.blocks.map(b=>b.blockId)));
+    for(const packet of prepared.previewMass){
+      if(packet.status!=='preview_review'||packet.receipt?.snapshotSha!==prepared.massSnapshotSha)continue;
+      let appliedBlocks=0,changedTexts=0;
+      for(const block of packet.blocks){
+        if(approvedIds.has(block.blockId))continue;
+        const slot=current.get(block.blockId),sourceText=slot&&getAt(raw,slot.path);
+        if(!slot||slot.field!==block.field||!safeText(block.text)||
+           typeof sourceText!=='string'||sha256(sourceText)!==block.sourceTextSha256)continue;
+        const prior=slot.path==='/format'?metadata.formatLabel:getAt(root,slot.path);
+        if(prior!==block.text)changedTexts++;
+        applyText(root,slot.path,block.text,metadata);appliedBlocks++;
+        if(!appliedPaths.has(slot.path)){appliedPaths.add(slot.path);translated++;}
+        const missingAt=missing.indexOf(slot.path);if(missingAt>=0)missing.splice(missingAt,1);
+      }
+      previewMass.push({...packet.receipt,appliedBlocks,changedTexts});
+    }
+  }
   if(!translated)return {entry,applied:0,status:'untranslated',sourceId,sourceFingerprint};
   const body=root.__body; delete root.__body;
   metadata.translatedFields=translated;
@@ -216,7 +327,8 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   // entry.id, data.id, slug, locale, relationships and every nontext value stay
   // canonical. The old demo materializers must not rewrite featureBand hrefs.
   return {entry:{...entry,data:root,body},applied:translated,status:missing.length?'partial':'translated',
-    sourceId,sourceFingerprint,sourceKind,missing,...(acceptedMass.length?{acceptedMass}:{})};
+    sourceId,sourceFingerprint,sourceKind,missing,...(acceptedMass.length?{acceptedMass}:{}),
+    ...(previewMass.length?{previewMass}:{})};
 }
 
 const preparedByRoot=new Map();
@@ -283,7 +395,10 @@ async function readPreparedEnglish(root,env) {
           ...(actual!==meta.sourceBlobSha?{reason:'canonical_source_changed'}:{})});
       }
     }
-    if(snapshotRoot)await attachAcceptedMass(records,base,snapshotRoot);
+    if(snapshotRoot){
+      if(env.EN_REVIEW_TRANSLATIONS_PREVIEW==='1')await attachReviewPreviewMass(records,base,snapshotRoot,env);
+      else await attachAcceptedMass(records,base,snapshotRoot);
+    }
     return records;
   })();
   preparedByRoot.set(cacheKey,promise);
@@ -292,7 +407,7 @@ async function readPreparedEnglish(root,env) {
 
 const receiptState=new Map();
 let receiptWrite=Promise.resolve();
-async function saveReceipt(root,collection,rows,env,massSnapshot) {
+async function saveReceipt(root,collection,rows,env,massSnapshot,massReviewPreviewSnapshot) {
   const key=resolve(root);
   const collections=receiptState.get(key)??new Map();
   collections.set(collection,rows); receiptState.set(key,collections);
@@ -306,7 +421,8 @@ async function saveReceipt(root,collection,rows,env,massSnapshot) {
       counts:{translated:entries.filter(x=>x.status==='translated').length,
         partial:entries.filter(x=>x.status==='partial').length,stale:entries.filter(x=>x.status==='stale').length,
         invalid:entries.filter(x=>x.status==='invalid').length,translatedFields:entries.reduce((n,x)=>n+x.applied,0)},
-      entries,...(massSnapshot?{acceptedMassSnapshot:massSnapshot}:{})};
+      entries,...(massSnapshot?{acceptedMassSnapshot:massSnapshot}:{}),
+      ...(massReviewPreviewSnapshot?{massReviewPreviewSnapshot}:{})};
     const file=join(key,'.astro/ada-en-shared-content.json');
     await mkdir(dirname(file),{recursive:true});
     await writeFile(file,JSON.stringify(receipt,null,2)+'\n');
@@ -332,6 +448,7 @@ export function withSharedEnglishContent(loader,collection,{env=process.env,root
         sourceName:original.data.name??original.data.title??'',displayName:result.entry.data.name??result.entry.data.title??'',
         sourceFingerprint:result.sourceFingerprint??translation.sourceFingerprint,
         ...(result.acceptedMass?{acceptedMass:result.acceptedMass}:{}),
+        ...(result.previewMass?{previewMass:result.previewMass}:{}),
         ...(result.reason?{reason:result.reason}:{}),...(result.missing?.length?{fallbackFields:result.missing}:{})});
       if(!result.applied)continue;
       const projected=result.entry;
@@ -341,7 +458,7 @@ export function withSharedEnglishContent(loader,collection,{env=process.env,root
       context.store.set({...original,data,body:projected.body,rendered,
         digest:context.generateDigest({data,body:projected.body,localeProjection:'shared-en-v1'})});
     }
-    await saveReceipt(base,collection,report,env,prepared.massSnapshot);
+    await saveReceipt(base,collection,report,env,prepared.massSnapshot,prepared.massReviewPreviewSnapshot);
     context.logger?.info?.('Shared EN '+collection+': '+report.filter(x=>x.applied).length+' translated entities, '+report.filter(x=>x.status==='stale').length+' stale fallbacks');
   }};
 }

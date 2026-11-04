@@ -255,184 +255,22 @@
     {
       "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "5a23043badb0084d08f6a0749e61cc6ece07bd46361309e8da7de915761a2547",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "claimedAt": "2026-11-04T05:48:58.754Z",
-        "expiresAt": "2026-11-04T07:18:58.754Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_4c0a9bc31e22_b002_cp8",
-        "format": "inline-v1",
-        "ownerId": "ada_en_4c0a9bc31e22",
-        "token": "ada_en_4c0a9bc31e22_token_20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b010",
-          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "5a23043badb0084d08f6a0749e61cc6ece07bd46361309e8da7de915761a2547",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:e205731ddfa1b4cf",
-              "field": "media.alt",
-              "sourceTextSha256": "faa72ac3cebe8d74e8ee38b5e2965ced6c5f785ba52b403baf5d24fcfbbaf342",
-              "text": "A moai with a red stone headdress by the shore at Tahai at sunset, Easter Island, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The exact Word p:27 names Tahai and red scoria but has no photo-specific description of this single statue, shoreline and sunset; translated the current RU alt text."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:b7b2dfffa562ac36",
-              "field": "media.hover",
-              "sourceTextSha256": "24030952df0133a5f1633aafd5dd5850d8844a18bf5504506e4a65c6773ced17",
-              "text": "Tahai on Easter Island: moai by the ocean in the evening light",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The exact Word p:27 describes the Tahai visit, but contains no equivalent image hover caption or evening lighting description; translated the current RU caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
-              "field": "itinerary.title",
-              "sourceTextSha256": "b224eea09f1a5891f42e977467a93c67a4dc91d4d6e8bcedd574306f53111337",
-              "text": "Santiago → Atacama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "p:30",
-                    "textSha256": "a35eb34c739500cc31dc40a2d794df7f10ccc004bd6331421ae2769254b9c466"
-                  }
-                ],
-                "transformation": "condense_route_label",
-                "rationale": "Remove the Word day number to fit the existing itinerary title field while retaining its exact route wording."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
-              "field": "itinerary.text",
-              "sourceTextSha256": "4b4316fc181a43416802c9cc957e83089d93eabb6c2a974e9ba48bae96ca9e66",
-              "text": "Private jet to Calama (~2 hours), road transfer to San Pedro de Atacama\n\nTransfer to the airport for the flight to Calama. Arrival, meet and greet at Calama airport, and transfer to San Pedro de Atacama — the driest place on Earth, known for its unforgettable sunsets and some of the clearest night skies on the planet.\n\n•  San Pedro de Atacama (1 night): Nayara Alto Atacama, Quitor, BB",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "p:31",
-                    "textSha256": "068536606ec5c4e9432f56d81b24e860108d0d68ac7e7791a0a16715d18efedf"
-                  },
-                  {
-                    "ref": "p:32",
-                    "textSha256": "50bd0698bfe11b77b4e45d786e81cc180c6c6d2a619104e8674f966364b754b2"
-                  },
-                  {
-                    "ref": "p:98",
-                    "textSha256": "799bd6a0725da5caf4ad71e1102c24e37de7efdb0570b10cdf89cff6b6fefb66"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:635a93bbe37ad2df",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
-              "text": "Santiago de Chile",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "p:30",
-                    "textSha256": "a35eb34c739500cc31dc40a2d794df7f10ccc004bd6331421ae2769254b9c466"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the existing RU location's full conventional English name for the Santiago place label; the Word identifies this departure city."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f686a837408dfc08",
-              "field": "itinerary.label",
-              "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
-              "text": "Calama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "p:31",
-                    "textSha256": "068536606ec5c4e9432f56d81b24e860108d0d68ac7e7791a0a16715d18efedf"
-                  },
-                  {
-                    "ref": "p:32",
-                    "textSha256": "50bd0698bfe11b77b4e45d786e81cc180c6c6d2a619104e8674f966364b754b2"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the airport destination Calama from the exact Word transfer text as the corresponding route place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:9d6b58a8d8d41b90",
-              "field": "itinerary.label",
-              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
-              "text": "San Pedro de Atacama",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
-                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
-                "paragraphs": [
-                  {
-                    "ref": "p:31",
-                    "textSha256": "068536606ec5c4e9432f56d81b24e860108d0d68ac7e7791a0a16715d18efedf"
-                  },
-                  {
-                    "ref": "p:32",
-                    "textSha256": "50bd0698bfe11b77b4e45d786e81cc180c6c6d2a619104e8674f966364b754b2"
-                  },
-                  {
-                    "ref": "p:98",
-                    "textSha256": "799bd6a0725da5caf4ad71e1102c24e37de7efdb0570b10cdf89cff6b6fefb66"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact English destination name San Pedro de Atacama from the selected Word itinerary and hotel list."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:ab9c4226618ec009",
-              "field": "media.alt",
-              "sourceTextSha256": "cdcdf96a0f2de54594f819dfc3c4f7a06508332e9a1255c24dcb1ca87f78c1c1",
-              "text": "Volcanic mountains reflected in calm water in the Atacama Desert, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_4c0a9bc31e22",
-                "wordAbsenceReason": "The selected Word p:30–33 describes the Atacama transfer but contains no image-specific description of volcanic mountains reflected in calm water; translated the current RU alt text."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T05:50:15.444Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_4c0a9bc31e22_b002",
+        "blobSha": "dc22e4068b09cdc7a77af041bf44fca7e6ccd3be",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_chile_argentina_private_grand_tour_17_days_b010/ada_en_4c0a9bc31e22_b002.json",
+        "at": "2026-11-04T05:55:50.986Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

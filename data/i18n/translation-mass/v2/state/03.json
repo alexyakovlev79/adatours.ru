@@ -165,7 +165,7 @@
         "expiresAt": "2026-11-04T07:25:12.931Z"
       },
       "checkpoint": {
-        "id": "ada-en-20261104-ef1fdb2517c4-submit-010-cp4",
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-010-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-ef1fdb2517c4",
         "token": "token-iwiao0re46l65ynbta4pbk",
@@ -269,10 +269,81 @@
                   "targetServiceLanguage": "English-speaking"
                 }
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p66",
+                    "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Rio de Janeiro place name from the verified Word welcome heading for this standalone itinerary label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:3a67ba293ad5bd5a",
+              "field": "media.alt",
+              "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+              "text": "A shaded street with trees and café tables in Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The verified Word 2027 contains no alt description for this specific shaded-street photograph with trees and café tables. Translate only the current RU image description.",
+                "wordFileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "wordDocumentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ab21523e047a380c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p66",
+                    "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Rio de Janeiro place name from the verified Word welcome heading for this standalone itinerary label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f35cd3f82e7ba910ba0998a2d732df9338fe0ab19b244381d56ed0117d095eeb",
+              "text": "Corcovado and Christ the Redeemer",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p79",
+                    "textSha256": "da50011c8162af39620f015e8672d4b17652d1c3a0b2ae55f09cc744c074d052"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Corcovado and Christ the Redeemer title phrase from Word Day 3 for the corresponding site day heading, without its day-number prefix."
+              }
             }
           ]
         },
-        "at": "2026-11-04T05:55:57.881Z"
+        "at": "2026-11-04T05:56:13.833Z"
       },
       "submission": null,
       "review": null,

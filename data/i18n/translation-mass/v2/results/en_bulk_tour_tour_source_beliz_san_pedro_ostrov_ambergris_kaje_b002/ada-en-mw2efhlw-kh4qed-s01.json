@@ -1,0 +1,160 @@
+{
+  "jobId": "en:bulk:tour:tour_source_beliz_san_pedro_ostrov_ambergris_kaje:b002",
+  "stableId": "tour_source_beliz_san_pedro_ostrov_ambergris_kaje",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "522617dfb83e62848897b0ae022dc2407987698872b2500b67327ac9931c97a3",
+  "blocks": [
+    {
+      "blockId": "tour:included:6fd57fbde97cc34e",
+      "field": "included",
+      "sourceTextSha256": "260d68e7b58f4c7233eb0201378be1d64ab5695c153aad33638e746e89ff3760",
+      "text": "Hotel tax.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:161",
+            "textSha256": "6cf4b0e4404f2e379a4f7b5480d805097ec472322bff8c73ed26ffc8d46797f7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the included hotel tax from the combined accommodation inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:762bf7d757653c22",
+      "field": "included",
+      "sourceTextSha256": "9108cce6b1b1ecb2a31007f3783a3e5bbc6c35462564caed4a9a4967fb352aea",
+      "text": "Breakfast",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:96",
+            "textSha256": "913d33c7fd39db8c8c4514669b011f617d911345592cc77b309b812667959720"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:34c6bff915d4cbae",
+      "field": "included",
+      "sourceTextSha256": "9cd64d96581c7122c11798bdb4ba27f504b3a90047cb63146b83a561bc78bc78",
+      "text": "Hotel shuttles",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:162",
+            "textSha256": "f375e17011bbbae7eb3aa4c6bea3714e3d272b9dbec9d32d05d2f968d0b04b38"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the existing service field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:4e285f8dcd44f885",
+      "field": "notIncluded",
+      "sourceTextSha256": "296f1e96d8e4a2191dbe746e46d007ecff4d349e08341906b944073ce43723ad",
+      "text": "Border fees",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:165",
+            "textSha256": "548263166077430f88437ed89ebfb818e9f0d04f5e684cbe526846132b7a9a45"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the existing service field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a1034776caaf033d",
+      "field": "notIncluded",
+      "sourceTextSha256": "7e1f336630ee58f9085a5609816590eb022a64011f1987c6cca20e286ec927af",
+      "text": "Departure taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:166",
+            "textSha256": "ea6cf876643a5ed8f1264c7af8445c0077449f30541970a4954938a45b5e8881"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the existing service field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional activities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:167",
+            "textSha256": "cb28ad2d762ce4aa4544d038a48c18fdc4f1cbedcd051ce2a448104b167faab7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the existing service field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:2f6323b27a973d0d",
+      "field": "notIncluded",
+      "sourceTextSha256": "bf731052fd97c88ddc9da64ee9cfca78ef87e9a90e5215e3c71716e93e10435b",
+      "text": "Bar, liquor and gift purchases",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:168",
+            "textSha256": "869c1ae7cd2884a339cfdf49e2189ad51e5bda0cb4e578df686cb8070e2e13ce"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the existing service field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:83b4164d37c0eff2",
+      "field": "notIncluded",
+      "sourceTextSha256": "874552b9b27e0ff2afbf8f0c48f9b44dc6f4b7ab14f1ecb7430d635add775e28",
+      "text": "Laundry and other personal items",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h7NB9hn8JkdNcsFuzl84PjLXb2O_BAzz",
+        "documentSha256": "81e44b6ea80ff0a95cb8c5bc7b127e6088b0c65116a346341383168991371f15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:169",
+            "textSha256": "f6f30cb33ff139a18afbf1111b400ee632fb87b06c57dd54914d74a5db6f74db"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the existing service field."
+      }
+    }
+  ]
+}

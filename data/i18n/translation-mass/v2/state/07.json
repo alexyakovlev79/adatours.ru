@@ -221,7 +221,123 @@
         "claimedAt": "2026-11-04T05:39:53.208Z",
         "expiresAt": "2026-11-04T07:09:53.208Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-ef1fdb2517c4-submit-004-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ef1fdb2517c4",
+        "token": "token-iwiao0re46l65ynbta4pbk",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b011",
+          "stableId": "tour_brazil_peru_argentina_group_15_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "bab53f549b2d7227a18e19849ea1421ecb6be7eea120054351ab4f7d8b053b86",
+          "wordEvidence": {
+            "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+            "sha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+            "shaVerified": true,
+            "modifiedTime": "2025-12-30T13:25:54.244Z",
+            "title": "Brazil, Peru & Argentina Group 10-20 pax.docx",
+            "yearFolder": 2027,
+            "editionYear": null,
+            "internalEditionObservations": [
+              {
+                "ref": "word/document.xml:p2",
+                "text": "           Group 10-20pax - 2026"
+              },
+              {
+                "ref": "word/document.xml:p97",
+                "text": "Brazil, Peru & Argentina 10-20 PAX 2024"
+              }
+            ],
+            "paragraphsFile": "/workspace/scratch/335ed4b6e466/ada_en_run/word_1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK.paragraphs.json"
+          },
+          "unresolvedConflicts": [
+            {
+              "kind": "edition_label_conflict",
+              "detail": "Selected exact-SHA source is in the 2027 queue with editionYear=null, while Word paragraph 2 says Group 10-20pax - 2026 and tariff heading paragraph 97 says 2024. This packet contains Lima/transfer prose, with no price or year fields; no commercial amendment is made. Master/independent review should confirm source edition."
+            }
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+              "text": "Lima",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "121226a8879e22f6fcfbb9180e3d01af28e4fd4de0696d50712fc7faedea826b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Lima place name from the verified Word day heading, excluding only its day-number prefix for this standalone site label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "33c56c0c93b1ecbf19698060b14cb4bd7a43598540158d1834968b2dfc5d7370",
+              "text": "We will have a panoramic view of the main streets, squares and avenues of the city. We will start with a panoramic view of the Miraflores district. We will start in the Parque del Amor, where we will observe the famous sculpture “The Kiss”, by the Peruvian artist Victor Delfin. Then, we will observe the impressive Huaca Pucllana, ceremonial center of the Lima culture. We will continue to the Plaza de Armas, where we will find the Government Palace and the Municipal Palace. We will visit the Cathedral and walk to the Convent of Santo Domingo, whose corridors were walked by San Martín de Porres and Santa Rosa de Lima in the 17th century and where their remains currently lie there.\n\nOvernight stay in Lima.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p45",
+                    "textSha256": "c73fb7c0904e6592ee930b86ae0a8adf08d90ad491abf1cbdd835bf9a550c64f"
+                  },
+                  {
+                    "ref": "word/document.xml:p46",
+                    "textSha256": "9fae86072491a4cb5840adffe6123661d74c4a2d66112a9de59b68106b72612d"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:34d610fa34bb7742",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+              "text": "Lima",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p44",
+                    "textSha256": "121226a8879e22f6fcfbb9180e3d01af28e4fd4de0696d50712fc7faedea826b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Lima place name from the verified Word day heading, excluding only its day-number prefix for this standalone site label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e15efc03d20fdb4a",
+              "field": "media.alt",
+              "sourceTextSha256": "c8efb23e0307fd2fb17b6d60f473893cb6c3b0ee96f9ca6ecee6e694b6e5d7eb",
+              "text": "Lima Cathedral with two towers beside a spacious square, Peru",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-ef1fdb2517c4",
+                "wordAbsenceReason": "The selected Word 2027-folder document describes Lima's cathedral but contains no alt field corresponding to this photograph of the cathedral and square. Translate the current RU alt text.",
+                "wordFileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "wordDocumentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8"
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T05:40:51.710Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

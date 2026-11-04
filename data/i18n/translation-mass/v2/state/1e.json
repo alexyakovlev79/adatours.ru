@@ -317,7 +317,113 @@
         "claimedAt": "2026-11-04T06:47:24.720Z",
         "expiresAt": "2026-11-04T08:17:24.720Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ck-ada-en-20261104-mw1ownhg-0a870a9f-010-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "token": "lease-mw1ownhg-b045904227256-f5e7d06aa5a72",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b018",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "aa77bb2889a29b5f8006ef251fe9e16f9c7900e593e2481a64cdf7ba7113ab03",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:15b0adbbafbb2266",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word 2027 describes Iguazú Falls but contains no exact Foz do Iguaçu city label; translate the current RU route label without changing the destination.",
+                "wordSource": {
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p71",
+                      "textSha256": "1a78b324e67d851ad1905917eac10dc28a71b6c25eac8a8c609a66447ad7e9f8"
+                    },
+                    {
+                      "ref": "word/document.xml#p73",
+                      "textSha256": "720d250a54770cf1bbcd1bff231bf9c0963b141c5c14063b7ff005b10ca6164e"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8069028efd253667",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6f506aa5126981a2b9f1df79ad94e94e7c4911315ba95a50cf770f5965c914c7",
+              "text": "Iguazú Bird Park",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p76",
+                    "textSha256": "d26470abd92301b90967c44a49e36ff01fd7b995f372d8055dbde78504fb680f"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose this route label from the Word Bird Park name and its explicitly stated Iguazú location."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:a2e68bd54debb87a",
+              "field": "media.alt",
+              "sourceTextSha256": "81affca3f8da7838d0d43c0938fd337e222b3f52b488e09750e1f61d926d4517",
+              "text": "A toucan with a bright orange bill perched on a fence, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word describes the Bird Park generally but has no exact alt caption for this existing toucan image; translate the current RU alt without adding bird-species claims.",
+                "wordSource": {
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p76",
+                      "textSha256": "d26470abd92301b90967c44a49e36ff01fd7b995f372d8055dbde78504fb680f"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "blockId": "tour:media_hover:0ce1e990d6bbb774",
+              "field": "media.hover",
+              "sourceTextSha256": "da7696fc1ef968fa347a2fcb7483aa821dc3476b9172c4c5da70c9e4b23224a2",
+              "text": "Brazil: a toucan on wooden railings in the bird park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+                "wordAbsenceReason": "The verified selected Word has no exact hover caption for this existing toucan photograph; translate the current RU observable image description.",
+                "wordSource": {
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p76",
+                      "textSha256": "d26470abd92301b90967c44a49e36ff01fd7b995f372d8055dbde78504fb680f"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:48:31.982Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

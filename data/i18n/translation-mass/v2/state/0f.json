@@ -503,7 +503,72 @@
         "claimedAt": "2026-11-04T06:58:24.722Z",
         "expiresAt": "2026-11-04T08:28:24.722Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-9c9ff2214505-en-bulk-tour-tour_sao_paulo_rio_october_11_days-b011-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-9c9ff2214505",
+        "token": "token-9c9ff2214505-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_sao_paulo_rio_october_11_days:b011",
+          "stableId": "tour_sao_paulo_rio_october_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "74f5fbef082a66e97a53521aa40e27d1d1425a3b45308a93bfeef3f6ea5923c8",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:13f6e5153a47b32a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "37444b460fe0f7058c18a525a286bc4be98a2192732dc704fa59081fa05bf241",
+              "text": "GRU Airport",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-9c9ff2214505",
+                "wordAbsenceReason": "The Word departure paragraph does not name the airport; GRU Airport appears in the embedded rates image word/media/image16.jpg. Translate the current RU route label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:c4a0feb56b8e5adc",
+              "field": "media.alt",
+              "sourceTextSha256": "ed23b6ca1a828be24be885c9b4e24739c287937475002f76b3d68915451b8e0d",
+              "text": "Passenger aircraft at a jet bridge at Guarulhos Airport, São Paulo, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-9c9ff2214505",
+                "wordAbsenceReason": "The verified Word has no matching image alt caption of an aircraft at a jet bridge; translate the current RU media text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:2a3b7de8561c0b76",
+              "field": "media.hover",
+              "sourceTextSha256": "63a96511a4c87684dfc928ba01e9d569d53bcf4756845558d9eb374882331271",
+              "text": "Guarulhos: aircraft beside the glass terminal and ground equipment on the apron",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-9c9ff2214505",
+                "wordAbsenceReason": "The verified Word has no matching hover caption about a glass terminal and apron equipment; translate the current RU media text."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "b18bd53134bfcd087ad1a58b926a023ee581193417d73f307e6afe716813135f",
+              "text": "Wave-pattern mosaic on the Copacabana promenade and Rio beach — illustration",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-9c9ff2214505",
+                "wordAbsenceReason": "The verified Word has no matching hero image caption for this illustration; translate the current RU alt text."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:59:59.571Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

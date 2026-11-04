@@ -348,7 +348,82 @@
         "claimedAt": "2026-11-04T06:23:19.287Z",
         "expiresAt": "2026-11-04T07:53:19.287Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-20261104-39fb6759e90b-b009-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-39fb6759e90b",
+        "token": "tok-39fb6759e90b-20261104-a7c3",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_cano_cristales_8_days:b009",
+          "stableId": "tour_colombia_cano_cristales_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "66fb0d54c0cba5c8788459b7546723575161083cc182d7a8ffa773ca50b6599e",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:003b3ec5425729c7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e624958247a4886c51337c7346cf3ba7e9c77c6f40b3bc309396298b052baf87",
+              "text": "Guayabero River",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p52",
+                    "textSha256": "020d74e92f8985f0009de10b7b97667feb8561d60f682ee0b2634be9db337df2"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:205321c086587216",
+              "field": "itinerary.label",
+              "sourceTextSha256": "722e1d0c7ce4c3c1fa9fc0498a9c756e0ffe9ad94ee250556d716ca49e3d6486",
+              "text": "Caño Cristales",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "8fa7c269dc2c7e821555bc0cc5ddec37c29ebf6523346f75dff79d196abe885a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:9989be712cc6e1b4",
+              "field": "media.alt",
+              "sourceTextSha256": "8646423706a1f4b9952088dd76c792fb234978ba34bc5fef1d71656e6d841b47",
+              "text": "Red and green aquatic vegetation beside the cascades of Caño Cristales, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "No matching photograph alternative text exists in the exact Word document; translate current RU media.alt."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:31c290caa93a7011",
+              "field": "media.hover",
+              "sourceTextSha256": "cdb813eca2fb16f6aa8e4a67105dafa1558bc7549c8cbe9875d4c90cc42b66f2",
+              "text": "Caño Cristales: colourful stretches of the riverbed and small waterfalls",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-39fb6759e90b",
+                "wordAbsenceReason": "No matching photograph hover caption exists in the exact Word document; translate current RU media.hover."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-04T06:24:05.041Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

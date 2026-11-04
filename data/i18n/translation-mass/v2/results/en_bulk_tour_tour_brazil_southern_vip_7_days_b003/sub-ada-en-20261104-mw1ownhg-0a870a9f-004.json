@@ -1,0 +1,233 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b003",
+  "stableId": "tour_brazil_southern_vip_7_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "da80431758abcfe7d5b5d3425d7dec694005fb273b2698cada7b9d1d36426308",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:d3fed4ff57afb02c",
+      "field": "notIncluded",
+      "sourceTextSha256": "b0ee9fdcfd1bfc1df3615f2cb173d39a558cea3f55bc0b46ceea84b08dced599",
+      "text": "Meals and beverages not specified in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p162",
+            "textSha256": "c125353ae8bbf63fd49d5696f9825cb31a4e6bf82c70029e8548e4451636d4ae"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the exact Word meals exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:80586f449792a7b5",
+      "field": "notIncluded",
+      "sourceTextSha256": "104650800075167101f5cbe69e62ddba5e0b0761d5777cf828065b7027047f28",
+      "text": "Gratuities for guides, drivers and service staff",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p163",
+            "textSha256": "77a53e997d554b4a2e9f11216085d68775d2bc99ce01911c24ee1528d4530680"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the exact Word gratuities exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:d038eafe7e719288",
+      "field": "notIncluded",
+      "sourceTextSha256": "9a440f5c984283e4a039a4a18f1f32c75baac27886597d9fa28fa3f6d34588ca",
+      "text": "Personal expenses and any services not expressly listed under “Included”.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word has an exclusion for personal expenses and services not expressly mentioned, but does not use this RU restriction to the Included section; translate the current RU clause without broadening its scope.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p164",
+              "textSha256": "ced3a07d68f367c807166ec67b6ffacdd47064cf5b0fad8493698db28ee188f7"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:ef5dc12f24413527",
+      "field": "note",
+      "sourceTextSha256": "5fa52b20e5c87bcf3952df1cef31e71dc223b18d29f29862127432f946705ac0",
+      "text": "The price of USD 10,043 per person is based on a private trip for 2 passengers. The programme does not provide separate SGL, DBL or TPL rates.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word commercial table gives USD 10,043 per person for a private arrangement for 2 passengers and no separate occupancy-rate table; it has no exact sentence stating the absence of SGL/DBL/TPL rates. Translate this current RU clarification without changing any price.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p135",
+              "textSha256": "fbf32ceee52021b06ef7312ccd2ff64c36887f6359090bf592da89214406c974"
+            },
+            {
+              "ref": "word/document.xml#p136",
+              "textSha256": "9e1b922aca344404760e9d528d1fbe4b5edb13eba0c25931a7350320f599db15"
+            },
+            {
+              "ref": "word/document.xml#p139",
+              "textSha256": "4c6a45befce6b41a053ec4dac1486cf5077242e22f5677b36a5ed7dd31822539"
+            },
+            {
+              "ref": "word/document.xml#p146",
+              "textSha256": "8931bd545158a268a2f4ecdd33860de2af9d1a2db2ddc649f756d2b3abbc4f1d"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:19dea510bf0fe508",
+      "field": "note",
+      "sourceTextSha256": "213186184fcd21b79fd90654ad76284a670a1acbab6b03708772cb3677486f24",
+      "text": "Accommodation along the route: 1 night in Bento Gonçalves (Spa do Vinho), 1 night in Gramado, 3 nights in Cambará do Sul and 1 night in Florianópolis. The names of the other hotels and room categories are confirmed at booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word accommodation table supplies the 1/1/3/1 night allocation, Spa do Vinho and Hotel to be confirmed entries, but no exact combined sentence or the RU booking-time category clarification; translate the current RU note.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p108",
+              "textSha256": "00d046331a4f26e2a099e6292056ff3baf061334264460f5172b31749db89c33"
+            },
+            {
+              "ref": "word/document.xml#p110",
+              "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+            },
+            {
+              "ref": "word/document.xml#p111",
+              "textSha256": "5f6f95c9ba5da412a664bd33f9934392209111614e835779f6eaacc5fdfa6e93"
+            },
+            {
+              "ref": "word/document.xml#p113",
+              "textSha256": "f4209122bfaf4ca1674d722a2231a5d74b393c78ca9be4b25aeeb51693b2a039"
+            },
+            {
+              "ref": "word/document.xml#p115",
+              "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+            },
+            {
+              "ref": "word/document.xml#p116",
+              "textSha256": "7f05085c31b80ff55458438ea29dd2f07155bfba95eeb1b4f8841aafd3382929"
+            },
+            {
+              "ref": "word/document.xml#p118",
+              "textSha256": "78ebc7d26b001809693e6812bfc5f6ccffddbd6738be014c4907ddd95e42c85c"
+            },
+            {
+              "ref": "word/document.xml#p120",
+              "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+            },
+            {
+              "ref": "word/document.xml#p121",
+              "textSha256": "7f05085c31b80ff55458438ea29dd2f07155bfba95eeb1b4f8841aafd3382929"
+            },
+            {
+              "ref": "word/document.xml#p123",
+              "textSha256": "35b757f7bc7167a2ebc19a605b56abae1b4372bafd056029adbcd9774658c481"
+            },
+            {
+              "ref": "word/document.xml#p125",
+              "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+            },
+            {
+              "ref": "word/document.xml#p126",
+              "textSha256": "7f05085c31b80ff55458438ea29dd2f07155bfba95eeb1b4f8841aafd3382929"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:b47988fa6559f709",
+      "field": "note",
+      "sourceTextSha256": "3655c767f27a72c2059fa6b44f929477ba2c65a6fd93ea567ab1c06201b9e50a",
+      "text": "Hotels may be substituted by others of a similar category and standard whenever necessary.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+        "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p149",
+            "textSha256": "c616f1b0af5f56bbc0d654ea485e4de1504034a7a029bcc416f1f861efc51113"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the leading list marker from the exact Word hotel-substitution condition."
+      }
+    },
+    {
+      "blockId": "tour:note:2aaf545f434353eb",
+      "field": "note",
+      "sourceTextSha256": "a8d68d871fdc2b07fb6f8e984d63bd748ecf06ae2b393787c04a1465e9f47b16",
+      "text": "The order of excursions and visits may change for operational reasons, while retaining the full content of the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word combines the operational-order condition with a separate weather caveat for the balloon and helicopter; the current RU block contains only the order/content condition. Translate that current RU clause without importing the separate weather condition into this field.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p150",
+              "textSha256": "539d7df9148c17b34bd0ec76cc257cb2c0fad272a910edfec2ffcfd493320cee"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:712744ab65e6f00d",
+      "field": "note",
+      "sourceTextSha256": "7bf0930b7be91087c0176863052d3397827aa610b9acb3a095c33c6c15fe6532",
+      "text": "If you leave the hotel early for a flight or excursion, an unused breakfast is non-refundable and no compensation is provided.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-20261104-mw1ownhg-0a870a9f",
+        "wordAbsenceReason": "The verified Word states that unused breakfasts due to early departures are non-refundable, but has no exact expanded sentence mentioning flights, excursions and compensation; translate this current RU note.",
+        "wordSource": {
+          "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+          "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p151",
+              "textSha256": "278a7de848ed4edfb90d3f8837a0bfe8a4ba3def60e4cdfd0a1781a060143b0e"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

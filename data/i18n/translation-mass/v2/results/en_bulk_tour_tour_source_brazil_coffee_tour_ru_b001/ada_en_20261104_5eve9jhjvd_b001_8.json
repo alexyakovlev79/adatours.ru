@@ -1,0 +1,161 @@
+{
+  "jobId": "en:bulk:tour:tour_source_brazil_coffee_tour_ru:b001",
+  "stableId": "tour_source_brazil_coffee_tour_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1ac10ba93b6a27cb87b401021578eda90c60abccc4430c3384a2131ec229af54",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "315b5624dcf80b5c8d158ae005dd5ff2ce8b340859732de06a098340585dc837",
+      "text": "8-Day Brazil Coffee Tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:3",
+            "textSha256": "d739fa019dbafca33f0d559d9272534655441838276d5d88a16bb0230c95b9e6"
+          },
+          {
+            "ref": "word/document.xml:p:7",
+            "textSha256": "e3b26491a85ba8b4a4971b87eb405668776baafa054e9dc59b8247d148a57840"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the approved tour name with its eight-day duration for the assigned title, without adding an edition year."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "df762253b19e6d5ff48a10879c603e608977fe534f9afe90c722c0ed2e081a26",
+      "text": "Discover Brazil through its vibrant cities, rich coffee traditions and spectacular natural wonders. Experience the energy of Rio de Janeiro, marvel at the breathtaking Iguazu Falls and enjoy a journey that combines Brazilian culture, flavours and unforgettable landscapes.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:18",
+            "textSha256": "7b79db02322a2b0e7ac94948ec0b2ca5ee49d6d16f91eb28b3d7e0831d45294b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "569ac1339a98577a60e7fda97063a11affc8d31f804eb815b77e96822844c836",
+      "text": "$3715",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:136",
+            "textSha256": "92366c08e27d62d5622a2bfcdd67522ca8c0530866c503c531b36156fa689e7a"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Retain the assigned amount exactly; remove only the Word table's space and thousands separator for this existing price label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a364c04b44dcc595",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eb01645e71f43a05f7bd5f49e5026b4b2a1cbe3b85a58f2b377eaabe8e4dcdd0",
+      "text": "Rio de Janeiro, 5 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:8",
+            "textSha256": "088f1eeed303610f1f92ace64e605c9ebfc1acdc0074f3ccb209f9db8e3aa610"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expand the Word route abbreviation 5N into 5 nights for this separate city label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ddf156903d7c8ef9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "09eb5c6b3a2808d2c5edf937412aa24fcb016bfb5e629504ec08315f68f38ac2",
+      "text": "Foz do Iguaçu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:8",
+            "textSha256": "088f1eeed303610f1f92ace64e605c9ebfc1acdc0074f3ccb209f9db8e3aa610"
+          },
+          {
+            "ref": "word/document.xml:p:109",
+            "textSha256": "05fbc86f63b8bd20fa7495a2da44f0aa09d706d44f9977632432b5bc62a342bc"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the full city name from the hotels table and expand the Word route's 2N into 2 nights."
+      }
+    },
+    {
+      "blockId": "tour:included:e267b25ba91f90de",
+      "field": "included",
+      "sourceTextSha256": "48d08eb34b79af8892eb4ee01d6cb46dcd04b3dd8eebd60fcad35f3d012e2c83",
+      "text": "Hotels with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:192",
+            "textSha256": "0300d812dd340ff3a8a77630d71c99ef48c9abb75b962dd0f3179b7a8ee04921"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved included accommodation item."
+      }
+    },
+    {
+      "blockId": "tour:included:d38172d42e029909",
+      "field": "included",
+      "sourceTextSha256": "d212db1402dbb9560791d64f088a733e4e18f941af5aef8d256aeaf39b112285",
+      "text": "Tours on a private basis with guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13XoC19tCoK_Mq8dXdh7THrWmh-l0ZW-n",
+        "documentSha256": "3ce7a275cea735af2fba5daebadc2c07e868ba91bb5e7bd389c2f3583bb5bbb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:193",
+            "textSha256": "cdd8c11cbae5334d2e4f41af00e6c102da4981e6de41c454720fca634a61ad48"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved private guided tours inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:87ad72d9a35d96c7",
+      "field": "included",
+      "sourceTextSha256": "d834ef975628422a531b7ea9284e8d173e2ac7e44a57e31f2ea8531822aa35dd",
+      "text": "Excursions listed in the main tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada_en_20261104_5eve9jhjvd",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lists specific included excursions by day and private tours generally, but has no separate standalone item with this exact scope statement; translated the assigned RU inclusion."
+      }
+    }
+  ]
+}

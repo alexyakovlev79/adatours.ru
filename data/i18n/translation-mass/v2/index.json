@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1154,
-    "leased": 13,
+    "queued": 1153,
+    "leased": 14,
     "review": 1221,
     "ready": 20,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1154,
-      "leased": 13,
+      "queued": 1153,
+      "leased": 14,
       "review": 1221,
       "ready": 20,
       "retryable": 0,
@@ -785,8 +785,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 53,
-          "leased": 0,
+          "queued": 52,
+          "leased": 1,
           "review": 30,
           "ready": 0,
           "retryable": 0,
@@ -817,7 +817,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T23:25:09.666Z",
       "earliestRetryAt": null
     },
     "09": {
@@ -1418,6 +1418,12 @@
       "jobId": "en:bulk:tour:tour_source_braziliya_gruppovoj_tur_na_13_dnej:b007",
       "token": "ada-en-mw2nn5fa-amanda-token",
       "expiresAt": "2026-11-04T23:24:55.704Z",
+      "generation": 1
+    },
+    "ada-en-mw2nlx3k-amanda": {
+      "jobId": "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b003",
+      "token": "ada-en-mw2nlx3k-amanda-token",
+      "expiresAt": "2026-11-04T23:25:09.666Z",
       "generation": 1
     }
   },
@@ -5482,7 +5488,8 @@
     "ada-en-mw2nlx3k-amanda": {
       "token": "ada-en-mw2nlx3k-amanda-token",
       "jobIds": [
-        "en:bulk:tour:tour_source_chili_santyago_pustynya_atakama_torres_del_pajne:b005"
+        "en:bulk:tour:tour_source_chili_santyago_pustynya_atakama_torres_del_pajne:b005",
+        "en:bulk:tour:tour_source_costa_rica_nicaragua_ru:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_chili_santyago_pustynya_atakama_torres_del_pajne:b005"
@@ -5532,5 +5539,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-04T21:55:02.607Z"
+  "updatedAt": "2026-11-04T21:55:09.666Z"
 }

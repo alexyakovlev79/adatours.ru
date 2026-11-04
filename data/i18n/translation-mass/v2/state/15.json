@@ -448,155 +448,22 @@
     {
       "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "7686e034687d97060e253c440e1026b2208fbb475b67177541dfdc35b9c8146a",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "claimedAt": "2026-11-04T06:46:50.268Z",
-        "expiresAt": "2026-11-04T08:16:50.268Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-39fb6759e90b-b004-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-39fb6759e90b",
-        "token": "tok-39fb6759e90b-20261104-a7c3",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_mexico_oaxaca_city_break_five_days:b004",
-          "stableId": "tour_mexico_oaxaca_city_break_five_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "7686e034687d97060e253c440e1026b2208fbb475b67177541dfdc35b9c8146a",
-          "blocks": [
-            {
-              "blockId": "tour:note:a60ce5430f546521",
-              "field": "note",
-              "sourceTextSha256": "6129e4637a759a8ae67bc1f39c6bfbfd525a7094b550f628e4ff961a9c7a59cf",
-              "text": "Airport transfers on days 1 and 5 are private; tours on days 2–4 and their transport are shared. Transport arrangements are confirmed at the time of booking.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word specifies private airport transfers on days 1 and 5 and shared tours on days 2–4, but has no matching consolidated transport-confirmation note; translate the current RU note."
-              }
-            },
-            {
-              "blockId": "tour:note:8e6f6b2877265dcc",
-              "field": "note",
-              "sourceTextSha256": "bd3f559c17a4594a76824360c7f6f9ba1b884cb472918e0bf2e2b795b91f1ba9",
-              "text": "Certified Bilingual Guide (English-Spanish Language) throughout the program.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p37",
-                    "textSha256": "89cf8d597eabecf6e061d3a45ca00805f08c391829ba70ceab76426997dedf83"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:note:541291a15ee3f244",
-              "field": "note",
-              "sourceTextSha256": "7b13c2d996f84e789b63902c61eb41a076369ce9d928f818fd15f398f1a8da56",
-              "text": "The tours on days 2–4 are included in the package. A cooking class, art galleries, additional tastings, evening activities and itinerary extensions can be arranged separately on request.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word describes optional add-ons and onward connections in separate day sections, but has no matching consolidated optional-services note; translate the current RU note."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "9d81fe23ce5e8caf7e6d1231a7dadd957d6935420f6db36a076d98cf94cb14c0",
-              "text": "Welcome to Oaxaca",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p13",
-                    "textSha256": "9b50253a07df5c36f1c29e87ae2559d5b7dd704bb3b4bc794f119353a5952803"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove the day-number prefix from the confirmed Word heading to fit the existing day-title field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a4836cca1208c95",
-              "field": "itinerary.text",
-              "sourceTextSha256": "efd2699b061ae10c96ce512182bf9d450afde683ea8db0bef3947f201ff7b146",
-              "text": "Your journey begins in Oaxaca, where every street reflects centuries of tradition. Upon arrival at Oaxaca International Airport, a bilingual representative will greet you for a smooth private transfer to your hotel in the historic center or nearby hotel zone. The rest of the day is at leisure—settle in, explore at your own pace, enjoy a sunset stroll, sip your first mezcal, or relax. Included: Private arrival transfer and overnight. Optional: Early check-in or evening experience (upon request).",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p15",
-                    "textSha256": "f55a2cbce0eab4b6b9cd05d7f0d3dae97ab031963f5bbf4e542e89376f707014"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a40b64faeb64e055",
-              "field": "itinerary.label",
-              "sourceTextSha256": "8c55ce7611964f45adea6774b2ff03f2659c0e15023c04495888f7b3f0c5a71f",
-              "text": "Oaxaca",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
-                "documentSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p13",
-                    "textSha256": "9b50253a07df5c36f1c29e87ae2559d5b7dd704bb3b4bc794f119353a5952803"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the confirmed Word destination name for the existing linked place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:cf93ccb825ed156a",
-              "field": "media.alt",
-              "sourceTextSha256": "c41c855e12a00a393c7be2e90aed5d2a893944d187a469ce7d3e3e50c34649c8",
-              "text": "Colourful woven textiles with geometric patterns at a market in Oaxaca, Mexico",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word contains no matching photograph alternative text; translate current RU media.alt."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:35f1089f92b38e1d",
-              "field": "media.hover",
-              "sourceTextSha256": "62039a4cc075baa85883179c9039d7662d539617c0195c137f0af7003988412e",
-              "text": "Oaxaca: brightly patterned fabrics and fringes on a market stall",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-39fb6759e90b",
-                "wordAbsenceReason": "The exact Word contains no matching photograph hover caption; translate current RU media.hover."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-04T06:47:37.894Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-39fb6759e90b-save-07",
+        "blobSha": "8dfc5d4bbeb5e83cb647f126ff1fffaa914de7df",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_mexico_oaxaca_city_break_five_days_b004/ada-en-20261104-39fb6759e90b-save-07.json",
+        "at": "2026-11-04T06:50:49.255Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

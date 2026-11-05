@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 645,
-    "leased": 0,
+    "queued": 644,
+    "leased": 1,
     "review": 1701,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 645,
-      "leased": 0,
+      "queued": 644,
+      "leased": 1,
       "review": 1701,
       "ready": 50,
       "retryable": 0,
@@ -1225,8 +1225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 7,
-          "leased": 0,
+          "queued": 6,
+          "leased": 1,
           "review": 52,
           "ready": 0,
           "retryable": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T12:22:30.396Z",
       "earliestRetryAt": null
     },
     "1e": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw3ezm03-amanda": {
+      "jobId": "en:bulk:tour:tour_source_vip_chili_5:b005",
+      "token": "tok-mw3ezm03-qerr24fcdds",
+      "expiresAt": "2026-11-05T12:22:30.396Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -6935,7 +6942,8 @@
         "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b010",
         "en:bulk:tour:tour_source_vazhnoe_brazilii:b006",
         "en:bulk:tour:tour_source_ves_ekvador_variant_1:b005",
-        "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b005"
+        "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b005",
+        "en:bulk:tour:tour_source_vip_chili_5:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b001",
@@ -6947,5 +6955,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:52:20.594Z"
+  "updatedAt": "2026-11-05T10:52:30.396Z"
 }

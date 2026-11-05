@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 532,
-    "leased": 0,
+    "queued": 531,
+    "leased": 1,
     "review": 1812,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 532,
-      "leased": 0,
+      "queued": 531,
+      "leased": 1,
       "review": 1812,
       "ready": 50,
       "retryable": 0,
@@ -625,8 +625,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 23,
-          "leased": 0,
+          "queued": 22,
+          "leased": 1,
           "review": 55,
           "ready": 0,
           "retryable": 0,
@@ -657,7 +657,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T17:13:25.366Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw3phxr8-amanda": {
+      "jobId": "en:bulk:tour:tour_source_solntse_tango_i_vino:b008",
+      "token": "tok-mw3phxr9-9ueveppdqi5",
+      "expiresAt": "2026-11-05T17:13:25.366Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -7242,7 +7249,8 @@
         "en:bulk:tour:tour_source_peru_i_boliviya:b001",
         "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b003",
         "en:bulk:tour:tour_source_neveroyatnaya_argentina:b006",
-        "en:bulk:tour:tour_source_peru_expeditoin_ru:b006"
+        "en:bulk:tour:tour_source_peru_expeditoin_ru:b006",
+        "en:bulk:tour:tour_source_solntse_tango_i_vino:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_vsya_argentina:b023",
@@ -7255,5 +7263,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T15:43:15.063Z"
+  "updatedAt": "2026-11-05T15:43:25.366Z"
 }

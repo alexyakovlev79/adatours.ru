@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b012",
+  "stableId": "tour_source_panama_kosta_rika_nikaragua",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3c6ef8d944947997631e9e5f2739fa75324b799bbb8c969f4a18bfcf21060ea2",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:97f28f2b349fadba",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b292c7425dd881c4a4844047d63cda82239da0fc2986de1bc9f07ef39f927dc9",
+      "text": "Managua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1xSUvByQMysRq1DkjIdWjLJetWEqNP1Uz",
+        "documentSha256": "6d918988caf6819273f7fa563c624d98f7d62e7d57832d8ea7a2a8d646884ee8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0113",
+            "textSha256": "586af0b22c5a503c7e3453007a48c4a20e967602969ecc154b9a01d870f384bd"
+          },
+          {
+            "ref": "word/document.xml#p0115",
+            "textSha256": "9a6f90d654b382e6688fb1b630435d233366a6bf5f2d4666fa14123c3a97ffd4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved capital city name from the corresponding Nicaragua itinerary paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b00b5f62ff40ddb1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "60088a1e966f9c888df836fbac6308bf6bd3490423d149774d0e8cffcbf749cf",
+      "text": "Masaya Volcano National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1xSUvByQMysRq1DkjIdWjLJetWEqNP1Uz",
+        "documentSha256": "6d918988caf6819273f7fa563c624d98f7d62e7d57832d8ea7a2a8d646884ee8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0113",
+            "textSha256": "586af0b22c5a503c7e3453007a48c4a20e967602969ecc154b9a01d870f384bd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact national park name from the corresponding approved day paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8375a2779932955f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9be2d12a9ce2dd0f3bcc960c3d2495546e1102e439398e82056573aba201a422",
+      "text": "Masaya",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1xSUvByQMysRq1DkjIdWjLJetWEqNP1Uz",
+        "documentSha256": "6d918988caf6819273f7fa563c624d98f7d62e7d57832d8ea7a2a8d646884ee8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0113",
+            "textSha256": "586af0b22c5a503c7e3453007a48c4a20e967602969ecc154b9a01d870f384bd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the city name from the approved reference to the Masaya craft market."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3a9940075bd86b20",
+      "field": "media.alt",
+      "sourceTextSha256": "925b190cf4dbaafc1ec6395fcadceef5084a6e857f3ebaebffdba40e026af048",
+      "text": "A colourful tourist road train and a cyclist on a street in Granada, Nicaragua",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3jr4ub-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word contains no image-specific caption for the tourist road train and cyclist in Granada; translated the assigned RU photo caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1f4f8a4aa0cf5f46",
+      "field": "media.hover",
+      "sourceTextSha256": "3c20190d51a3b738e6f0afe9f22cf6c6f117bbcbadaf40fdf8e95ad956a60e66",
+      "text": "Granada: a brightly coloured sightseeing road train beside a cyclist",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3jr4ub-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word contains no image-specific caption for the tourist road train and cyclist in Granada; translated the assigned RU photo caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d3f3e3faca40c3587b3fcde27ccd2e11894e6c09ab047322d0882ba9d5e2a54d",
+      "text": "Granada – Zopango Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1xSUvByQMysRq1DkjIdWjLJetWEqNP1Uz",
+        "documentSha256": "6d918988caf6819273f7fa563c624d98f7d62e7d57832d8ea7a2a8d646884ee8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0114",
+            "textSha256": "4c01af9b6e1cac3a93c09e9f52d11d21c70af0bded35024f0eb181d5118d39bc"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route title from the approved Granada Isletas excursion and its Zopango Island destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b617459dc32555e374787aadacbfcf21c43f3bf362a0e53d1cfd21f8eba1e5a3",
+      "text": "Day 13 · A boat ride among the Isletas of Granada, some 365 islets formed by an ancient eruption of Mombacho Volcano, enjoying the flora, fauna and tranquil lifestyle of Lake Nicaragua, with a chance to see monkeys. Arrive at the private island of Zopango, facing Mombacho Volcano: swim, explore, birdwatch or relax in a hammock, and enjoy a lunch of freshly grilled local fish. Return to your hotel. Overnight at Hotel Real La Merced. (B, L)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1xSUvByQMysRq1DkjIdWjLJetWEqNP1Uz",
+        "documentSha256": "6d918988caf6819273f7fa563c624d98f7d62e7d57832d8ea7a2a8d646884ee8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0114",
+            "textSha256": "4c01af9b6e1cac3a93c09e9f52d11d21c70af0bded35024f0eb181d5118d39bc"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0415e112f5186b0f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "10deb16480e36d1d663002a6b2e6d3f0e08fb7399cd7a7e71c54526835d255b5",
+      "text": "Granada",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1xSUvByQMysRq1DkjIdWjLJetWEqNP1Uz",
+        "documentSha256": "6d918988caf6819273f7fa563c624d98f7d62e7d57832d8ea7a2a8d646884ee8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0051",
+            "textSha256": "3248572c5b6c1107545b5d8fdc6f9b8a83b75cfbe3449255cc9e96550178b42c"
+          }
+        ]
+      }
+    }
+  ]
+}

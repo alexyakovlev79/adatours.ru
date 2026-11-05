@@ -1,0 +1,135 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_live:b007",
+  "stableId": "tour_source_kolumbiya_live",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ccf71291fc71e7442957adda167ca673e34b846fc1eb464712ec03be3a8cf0c0",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:683487398e2777aa",
+      "field": "media.hover",
+      "sourceTextSha256": "fb15ba802ad063345643e5b4b4e144b5616f27e6fdf91acb4dee9d08e176079d",
+      "text": "Bogotá: red, white and yellow buses on a busy street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zimjr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 has no matching image alt or hover description; translated the assigned RU image caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ae5d0e755169562e82af48b0d04ddb2b7b3139b5191b1a21f37c98a7ac84d46e",
+      "text": "Bogotá – Zipaquirá – Villa de Leyva",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "2f489e22e560d240017b168d54d1c1d50727c0642027218826ef64f0bc06dadd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composed the assigned three-stop route heading from the Day 3 Word passage; retained the RU heading's scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e353bad4dafdbb1526b9c75d59bd27984e34550520adfa1aedb564009a87e07e",
+      "text": "Day 3 · Breakfast, then a private full-day tour (12 hours) with an English-speaking guide through the Cundiboyacense highlands and their imposing mountains. Visit the Salt Cathedral of Zipaquirá, built inside a mine 180 metres deep and considered one of Colombia’s great wonders of engineering and religious art; the Basilica of Chiquinquirá; and Ráquira, known for its architecture and crafts. Continue to Villa de Leyva, a colonial town surrounded by mountains and desert, with one of the largest squares in Colombia. Typical lunch included. Overnight in Villa de Leyva.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "2f489e22e560d240017b168d54d1c1d50727c0642027218826ef64f0bc06dadd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:592d9bf6f24904d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6c3919a06689c7e3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e1f321c4e2a3350b055cb01775ad7309ca31bcc7f91f76d9289f4ef0e1b5144e",
+      "text": "Zipaquirá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "2f489e22e560d240017b168d54d1c1d50727c0642027218826ef64f0bc06dadd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the exact place name from the checked Word passage for this itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:02cd4e992c3a88ef",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f5a55ffa5e2b6db6ff8efdd57693be7017492d2416dbcca954b9e94628c38550",
+      "text": "Villa de Leyva",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Q09m42wkDEuSMhTW8fGBuIe2--u12XL1",
+        "documentSha256": "4e1ffa057ce368586dda8ab08a958d7cec01b19cd0ca85061167a544c893f3fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p40",
+            "textSha256": "cff81f3ba4978bc836beeb09f7dc77eab38fc1f2dc2b880210449e44ee21fa9b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ac84cb1f4f4f0301",
+      "field": "media.alt",
+      "sourceTextSha256": "faa0a8d73fc80a48228552132a9ccf44f80c1ec676d2b4a3ecb8cba1a73f6eab",
+      "text": "Courtyard with an arcade, tiled roofs and flowers in Villa de Leyva, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zimjr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 has no matching image alt or hover description; translated the assigned RU image caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e9a5524a3dcfdad0",
+      "field": "media.hover",
+      "sourceTextSha256": "038c347ac4bd6fd9ab02e3bf2e7431352568f6d33ede14b8652d88090d89f41b",
+      "text": "Villa de Leyva: a flowering garden inside a courtyard with white arches",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zimjr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 has no matching image alt or hover description; translated the assigned RU image caption."
+      }
+    }
+  ]
+}

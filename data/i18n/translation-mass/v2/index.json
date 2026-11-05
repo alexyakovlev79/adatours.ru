@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 544,
-    "leased": 2,
-    "review": 1798,
+    "leased": 1,
+    "review": 1799,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 544,
-      "leased": 2,
-      "review": 1798,
+      "leased": 1,
+      "review": 1799,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 16,
@@ -866,8 +866,8 @@
         "word_2027": {
           "held": 0,
           "queued": 23,
-          "leased": 1,
-          "review": 41,
+          "leased": 0,
+          "review": 42,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 0,
@@ -897,7 +897,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-05T17:06:04.644Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0b": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw3phxr8-amanda": {
-      "jobId": "en:bulk:tour:tour_source_mototur_cherez_braziliyu:b005",
-      "token": "tok-mw3phxr9-9ueveppdqi5",
-      "expiresAt": "2026-11-05T17:06:04.644Z",
-      "generation": 1
-    },
     "ada-en-mw3phs0k-amanda": {
       "jobId": "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b012",
       "token": "ada-en-mw3phs0k-amanda-token",
@@ -7237,10 +7231,11 @@
         "en:bulk:tour:tour_source_mototur_cherez_braziliyu:b005"
       ],
       "completedJobIds": [
-        "en:bulk:tour:tour_source_vsya_argentina:b023"
+        "en:bulk:tour:tour_source_vsya_argentina:b023",
+        "en:bulk:tour:tour_source_mototur_cherez_braziliyu:b005"
       ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T15:36:24.482Z"
+  "updatedAt": "2026-11-05T15:36:52.616Z"
 }

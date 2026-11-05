@@ -1,0 +1,72 @@
+{
+  "jobId": "en:bulk:tour:tour_source_viva_meksika:b016",
+  "stableId": "tour_source_viva_meksika",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5c2dfcd9e4399fc748b209a4216a04ecdf5fdcc54c6ea2b8a4e920387bde3675",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:557964c2582eea0a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "08074a8a85ff1f9ec1146d55d1411336ed50934d2cecee4697013c720f5aafe2",
+      "text": "Playa del Carmen",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[225]",
+            "textSha256": "b072f0b56d97052da30faefd3e9687a9a94db1c96b41ceb69b4798ca8ce49a42"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1d69dcc70278a005",
+      "field": "itinerary.label",
+      "sourceTextSha256": "65c89fc41ec8e4581b07c4827e8cc48c5b79709e5d40d444b2d12adcbe30a7c6",
+      "text": "Tulum",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[225]",
+            "textSha256": "b072f0b56d97052da30faefd3e9687a9a94db1c96b41ceb69b4798ca8ce49a42"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "1149bea956020953d5d3d53e133294b1d0abfa52c374ba270043fbcee76e74ba",
+      "text": "Pictured: Mexico City, the capital of Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no matching image alt text; translate the pinned RU description."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "4baf6550344aafd5406f63709c9b4397e41a13842d59125fb40f1087f77f5668",
+      "text": "\n## Programme and price\n\nVIVA MEXICO 2026\n\n12 days / 11 nights\n\nThe programme operates on Wednesdays and Fridays.\n\nThe programme starts in Mexico City.\n\nThree legendary regions and twelve unforgettable days bringing together culture, history and nature.\n\n● This comprehensive itinerary connects Mexico's most iconic destinations, from the majestic pyramids of Teotihuacan and the colonial elegance of Oaxaca to the mystical cenotes of the Yucatán and the turquoise shores of Cancún.\n\n● Carefully designed for travellers who want to experience Mexico in depth without rushing, this programme combines historical discovery, encounters with artisans, outdoor adventures and regional cuisine in one story-filled journey.\n\n● It is ideal for those who want more than a holiday: travellers seeking connection, context and unforgettable beauty, accompanied by experienced local guides throughout.\n\n● Stand beneath the Pyramid of the Sun in Teotihuacan.\n\n● Explore the Zócalo in Mexico City, Santo Domingo Church in Oaxaca, and the artisan neighbourhoods of Mexico City and Oaxaca.\n\n● Cruise the canals of Xochimilco and stroll through Coyoacán and San Ángel.\n\n● Wander the ruins of Monte Albán, Uxmal and Mitla.\n\n● Taste authentic mezcal at its source and meet Oaxaca's master artisans.\n\n● Swim in the cenotes of Santa Bárbara and visit Chichén Itzá.\n\n## Prices, dates and accommodation\n\nProgramme price per person in US dollars, by room occupancy:\n\n| DBL | SGL | TPL | CHLD (U11YO) |\n| --- | --- | --- | --- |\n| $2666 | $2932 | $2587 | $1229 |\n\nProgramme price for one traveller: $2,665 USD (this programme can be taken solo).\n\nThe programme is not available on the following dates: 28 March – 5 April, 11 June – 5 July, 15 July – 31 July, spring break, 29 March – 5 April, 15–31 July, 26 October – 3 November, 16 December – 4 January 2027.\n\nSpecial events: Day of the Dead, Formula 1, NASCAR and the Football World Cup.\n\nHotels or similar:\n\n| Number of nights | City | Hotel |\n| --- | --- | --- |\n| 4 | Mexico City | Casa Blanca 4* |\n| 4 | Oaxaca | Viktoria 4* |\n| 3 | Mérida | Gamma 4* |\n\n\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word paragraphs 6 and 237–265 are the 2027 edition with different prices ($2955/$3745/$2857/$1754, solo $4498), blackout dates and Oaxaca hotel (Casa Conzatti). No Word passage matches this pinned 2026 RU commercial body. Translate RU without importing Word prices, dates or hotel changes; commercial updates belong to the master."
+      }
+    }
+  ]
+}

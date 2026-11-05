@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre:b002",
+  "stableId": "tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1e8f69d6106ddbc957cd8a4d998025b903856cbdf83da6d3152bcdd57fb75925",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b4c984cb233a3f22",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5bb260315f36f1d9c232ab04fedbe8da109c30fc63bfda412f765264f3acef44",
+      "text": "Bento Gonçalves",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The route label is absent in its correct spelling: the verified Word uses 'Betu Goncalves' and 'Beto Gonçalves'; translate the pinned RU destination name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2eab04e7b4c747a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ed6eff2d9d5d6bdbcf782eb0acfccd81cc018a6271904bcedcb70891a9bead73",
+      "text": "Cambara do Sul",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[97]",
+            "textSha256": "39d00ce0538ac8d24086d629468c55cb54c649a94de5ded0d5252b8755ee86e9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:897edb58252e60bc:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d55dbe47448ba68b7000b28139fd57835f32b84db4d7eb6467cd38bd3e85d238",
+      "text": "Porto Alegre",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[94]",
+            "textSha256": "0809d6007b71d13793f88434d84ae593e458006b841dc5ec9afcd9896718626c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:bdc7f2adf9842c85",
+      "field": "included",
+      "sourceTextSha256": "7eebb926e4ef4995d220f433d6d087f1b6137de78f5d26140ddc2e6723e17841",
+      "text": "Accommodation at hotels according to the programs",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[78]",
+            "textSha256": "29c15af46c9a3edf6457afc2ff7f645be562497eb4676ae203b223021ee10456"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:included:e6e533131c016f31",
+      "field": "included",
+      "sourceTextSha256": "f560977632839ab60877f135927d4018eab4b205456f987ab6ea7fc81d99ddf6",
+      "text": "Excursions with an English speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[105]",
+            "textSha256": "63208de77b4df4e8ec16ea26e08bcc91ddf0faa34675242aeef69de5e6b52831"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:included:b70617522456dca0",
+      "field": "included",
+      "sourceTextSha256": "f2ba27bf02934f93e3b77f82df3629a4d93d812b30401e0d582bb438e6bcca94",
+      "text": "Transfers with drivers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[106]",
+            "textSha256": "b8886802a68afd7880b4ad85374f5266fc3f938b4e28296fc57c0058d0818ee5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:included:a7faf1867d58046d",
+      "field": "included",
+      "sourceTextSha256": "d4cdc455cee887eaad3e962eaacf0a28b0f921ccafdea860d225509667d9c2e1",
+      "text": "Local flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[107]",
+            "textSha256": "90dc39e7bdeebd211f45524bcbf2a58c9ebfbfcd0acc2046c8b022f893874172"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ddde98c8d71040e3",
+      "field": "notIncluded",
+      "sourceTextSha256": "07c5163e3b8bf062ed82917f4775dd39898f47335da33426f77643a55cca87ca",
+      "text": "Optional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[109]",
+            "textSha256": "75a7d71e68afa8339904edc63025f8e40960e8cf4b9438c2ebc976adc71b57d4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    }
+  ]
+}

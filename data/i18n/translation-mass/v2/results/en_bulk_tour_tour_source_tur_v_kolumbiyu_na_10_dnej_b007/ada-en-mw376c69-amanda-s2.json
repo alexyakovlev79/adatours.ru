@@ -1,0 +1,124 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_kolumbiyu_na_10_dnej:b007",
+  "stableId": "tour_source_tur_v_kolumbiyu_na_10_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "537b280d7130a87b1fb59b07681a28f02576bf4133215349e75317ce8caefa87",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9a5dbac0663cb4ac506e5d8dd32607f7e88fffdcacc12554101374f6e30350e8",
+      "text": "Hot-air balloon flight and flight to Cartagena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[58]",
+            "textSha256": "865de364acc9da6a4aab79c6023d9b80f47cb590c9d22876ea6f140da4e62d40"
+          },
+          {
+            "ref": "word/document.xml:p[66]",
+            "textSha256": "9e79093147f394ef9077f950c85770c82843fc43abdfc3073377ecf4249f2535"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "952d2868029892a8435ff6e2fc258a76606b8a7286adeba2128c384bc136a6ce",
+      "text": "Departure is planned for around 5 am. The day begins with a hot-air balloon flight over the coffee valley.\n\nAt dawn, plantations, eucalyptus trees, dirt roads and small haciendas gradually come into view below the balloon. Mist rises between the green hills as sunlight slowly reaches the slopes of the Andes.\n\nA second breakfast is planned after the flight. **It is not included in the price.**\n\nThe canopy activity and horseback ride today are included in the tour price. The route takes you between suspended platforms and zip lines above the green slopes.\n\nYou will then explore the coffee valley on horseback. The trail follows plantations, bamboo groves and small farms, with views of the Andes from the higher sections.\n\nAfter the activities, transfer to the airport for your flight to Cartagena. On arrival, you will be taken to **Sofitel Legend Santa Clara**.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 59, 61, 64 and 66 cover the balloon, second breakfast, canopy, riding and transfer, but omit the RU landscape details and explicit inclusion of canopy/riding; preserve the current RU terms and details in translation."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:29b0423f61356a83",
+      "field": "media.alt",
+      "sourceTextSha256": "20debe58ba63499d95b793a04efec3dc1eef35e6b745adba834ebc5f976f322e",
+      "text": "A street in Cartagena with arched entrances and wooden balconies, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word itinerary contains no corresponding image alt text or hover caption; translate the pinned RU media description only."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:c02a904587841bff",
+      "field": "media.hover",
+      "sourceTextSha256": "8b24d51e6fed0f9c0dc433b73e1ab3c74dca2ce5b45994b39096c5806399a110",
+      "text": "Cartagena: historic houses with balconies along a city street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word itinerary contains no corresponding image alt text or hover caption; translate the pinned RU media description only."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d9cabb53080378dcf3c55dadd71e6b7e7751f9bb8c6a2bb46939764c4948c048",
+      "text": "Cartagena: the Old Town, San Felipe and La Popa",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[74]",
+            "textSha256": "ba32500bebf438ca8fc2b15247f664ff9c47de8570cf51e320fefaf53a12acbe"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "25365b4309c8f378222157bba4202afcb2a7a4837ea84c9145a3e7ea1840000b",
+      "text": "After breakfast, your tour of Cartagena begins.\n\nThe route first takes you through Bocagrande, Castillogrande and Manga, before you head up La Popa hill. From the viewpoint, you can see the harbour, red rooftops and the old port. The 17th-century Santa Cruz monastery stands here, with its image of Our Lady of Candelaria.\n\nThe next major stop is San Felipe de Barajas fortress, the largest defensive structure built by the Spanish in the Americas.\n\nYou then follow the bastions and walls of the UNESCO-listed historic centre. You will also visit the neighbourhoods of Bocagrande, Castillogrande and Getsemaní.\n\nAnother stop is Las Bóvedas, or 'The Vaults'. Originally used to store ammunition, these spaces now sell souvenirs, jewellery, hammocks and paintings.\n\nThe tour ends with a return to your hotel along Santander Avenue, with views of the bastions and walls of the old town.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 72–78 describe Cartagena and its monuments, but lack the RU details about Manga, La Popa views and the Candelaria image; translate the pinned RU block to retain those details and its itinerary structure."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:60634e8523fe55ce",
+      "field": "media.alt",
+      "sourceTextSha256": "f9247acf2878c2c41966ce5574d837d929a18cf976ca417217a21573ecd2b867",
+      "text": "Illuminated gates and trees decorated with string lights in the evening in Cartagena, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word itinerary contains no corresponding image alt text or hover caption; translate the pinned RU media description only."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:78aef881aa10b0c1",
+      "field": "media.hover",
+      "sourceTextSha256": "2806e0ea5745e2025eec859d74a137443b62515e8e767efc817d579b9b9c5e34",
+      "text": "Cartagena: evening lights by the open gates and walkway",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word itinerary contains no corresponding image alt text or hover caption; translate the pinned RU media description only."
+      }
+    }
+  ]
+}

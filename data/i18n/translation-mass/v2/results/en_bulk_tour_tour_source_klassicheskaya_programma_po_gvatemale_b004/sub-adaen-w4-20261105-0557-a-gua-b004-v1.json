@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskaya_programma_po_gvatemale:b004",
+  "stableId": "tour_source_klassicheskaya_programma_po_gvatemale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0058a627c1c90b6ec24235029181e1cd8ebe9929124d11ff6c3e2707c9a697e3",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:d4520b0912f8cb13",
+      "field": "media.hover",
+      "sourceTextSha256": "f3176f6a8a23cb7818e03e67d9a01d9f66601c165e1de0a57b3375f2fa2ee70b",
+      "text": "Antigua Guatemala: archway between colourful façades, with a volcano in the background",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word itinerary does not contain an image-specific hover caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9cbeea6ee607159055cca9221d45fe4670c450624007474e983f183a9b9e7ebc",
+      "text": "Antigua – Chichicastenango – Lake Atitlán",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:17",
+            "textSha256": "b58fb502ef3237b8ab9df4937bc28ebf5297ac9f7310e7eed9658c1973a9ade4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Used the approved Day 2 destinations to compose a concise route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "01772cbfafa49e5c6bc480886af9ad53ae1d31bcb524e6342dda11ce58a329a3",
+      "text": "The great highland Maya market of Chichicastenango (Thursdays and Sundays only), one of the largest indigenous markets in the Americas, famous for its textiles and masks. Amid the misty cobbled streets and red-tiled roofs, visit the 16th-century church of Santo Tomás, built on the site of a Maya temple: its 18 steps, one for each month of the Maya Haab calendar, are still used for offerings of flowers, candles and incense, a striking blend of Maya and Catholic traditions. Then drive to Panajachel, on the shore of Lake Atitlán, with superb views of the lake on the final descent from Sololá. Overnight at Hotel Villa Santa Catarina. (B)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:17",
+            "textSha256": "b58fb502ef3237b8ab9df4937bc28ebf5297ac9f7310e7eed9658c1973a9ade4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Day 2 weekday marker and otherwise kept the approved English itinerary text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c505f8495d85d130",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0f9c9cf3126a3243a817cc833027300d5896a9ce52642e2f57cbda1dcd59efa7",
+      "text": "Antigua Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:16",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Converted the Antigua destination reference into a location label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a9c7a26c8f86d35f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7d02a0ccaf3d5c979d283f8d7c1b6567140b21465d7137eba0ada7f6ab3869cf",
+      "text": "Chichicastenango",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:17",
+            "textSha256": "b58fb502ef3237b8ab9df4937bc28ebf5297ac9f7310e7eed9658c1973a9ade4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Retained the indigenous market town name used in the approved Day 2 route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2d63adfbfd30d5b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "8d95775656ab138f8d8e511d07fcf667e09c843c47c525b82991ffa55b940341",
+      "text": "Lake Atitlán",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1u01AIZBrMnePKGELOLUBwZ133xpIPYMH",
+        "documentSha256": "e88235c95537f9f403d182ebcbced8daaa366421c23e2f5cb9d61c2bf5cead1c",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:17",
+            "textSha256": "b58fb502ef3237b8ab9df4937bc28ebf5297ac9f7310e7eed9658c1973a9ade4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the approved English toponym Lake Atitlán for this destination chip."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3955ccdaabe11c36",
+      "field": "media.alt",
+      "sourceTextSha256": "000ac3c14ddc7ff4b359399866c7cd9314a747eee48a730547c577e952888cfa",
+      "text": "A lake at the foot of a cone-shaped volcano, framed by trees and flowers",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word brochure does not describe this photograph for an image alt field."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:9775b0e1a7829293",
+      "field": "media.hover",
+      "sourceTextSha256": "ab988cbb9c46ec04a978b2b0dd5ac0f41aaa7829011e988349d52f8857d8ecbc",
+      "text": "A turquoise lake surrounded by greenery, with a tall volcanic peak behind it",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word text does not contain a photo hover caption for the lake image."
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "jobId": "en:bulk:tour:tour_source_antarktida_ekspress_vozdushnyj_kruiz:b009",
+  "stableId": "tour_source_antarktida_ekspress_vozdushnyj_kruiz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3b0c9d83fc300fdfd5f7e898db0dd62cd711bbcfe692b5ef3dd8a0132e6efbbc",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:6f0c063d64be1040",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4f2ced6ce890ac21bed76d4baeb27623c62a5f92161162aff81709c1501505e6",
+      "text": "Punta Arenas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "documentSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:22",
+            "textSha256": "6e59bceab3b9a5f592963828cdaf90c5bc2670207d685892b354e27d36809d6d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed Word wording as a concise label for the corresponding structured field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fdab7ee4189434f7",
+      "field": "media.alt",
+      "sourceTextSha256": "1a9a170ee8df2fef3631e43d0180810e0a9787ae657175c42b8bc736a52e56ae",
+      "text": "Dark rocky islands and a mountainous coast across the sea beneath clouds",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dke6z-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme has no alt caption describing these rocky islands and distant coast; translate the assigned RU photograph description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6f115fb7f803a570",
+      "field": "media.hover",
+      "sourceTextSha256": "9b35614c326629670d38c7a20164bd24af05594bf143914362c0417cfc46e420",
+      "text": "Rocky silhouettes above dark water beneath a low, overcast sky",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dke6z-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme has no hover caption describing these rocky silhouettes; translate the assigned RU photograph description."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "beb550c54af20c08c69da88de967ef49525583f5e388b7922838248f1cbad19b",
+      "text": "Expedition ship among the Antarctic ice",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dke6z-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme describes the ship but has no matching hero photograph caption; translate the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "366977480ff7c73c19db9ebfc5584295c3ed1acbcdf6204007737635fd135e3b",
+      "text": "\nThe main focus of this trip is exploring Antarctica from the water and ashore. You sail among icebergs and glaciers, take Zodiac excursions and watch penguins, seals, whales and seabirds. In summer, animals gather in particularly large numbers along the Antarctic Peninsula to breed and feed.\n\nThe scenery changes gradually along the route: sheltered bays and the Beagle Channel, open waters near Cape Horn, the Drake Passage crossing, then ice, fjords, snow-covered peaks and the Antarctic coast.\n\n\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dke6z-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has separate itinerary paragraphs but no equivalent standalone body with the seasonal breeding and feeding explanation and the gradual fjord landscape summary; translate the assigned RU body without adding facts."
+      }
+    }
+  ]
+}

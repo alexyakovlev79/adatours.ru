@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1009,
-    "leased": 3,
+    "queued": 1008,
+    "leased": 4,
     "review": 1358,
     "ready": 32,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1009,
-      "leased": 3,
+      "queued": 1008,
+      "leased": 4,
       "review": 1358,
       "ready": 32,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 43,
-          "leased": 0,
+          "queued": 42,
+          "leased": 1,
           "review": 36,
           "ready": 0,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:15:29.506Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_brazilii:b008",
       "token": "adaen-w2-20261105-0340-token-b",
       "expiresAt": "2026-11-05T02:10:14.393Z",
+      "generation": 1
+    },
+    "adaen-w4-20261105-0345-B": {
+      "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_v_brazilii:b011",
+      "token": "adaen-w4-20261105-0345-token-B",
+      "expiresAt": "2026-11-05T02:15:29.506Z",
       "generation": 1
     }
   },
@@ -5886,8 +5892,15 @@
         "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_brazilii:b008"
       ],
       "completedJobIds": []
+    },
+    "adaen-w4-20261105-0345-B": {
+      "token": "adaen-w4-20261105-0345-token-B",
+      "jobIds": [
+        "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_v_brazilii:b011"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:45:08.916Z"
+  "updatedAt": "2026-11-05T00:45:29.506Z"
 }

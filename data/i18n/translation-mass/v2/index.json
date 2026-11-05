@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 732,
-    "leased": 2,
+    "queued": 731,
+    "leased": 3,
     "review": 1614,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 732,
-      "leased": 2,
+      "queued": 731,
+      "leased": 3,
       "review": 1614,
       "ready": 50,
       "retryable": 0,
@@ -1065,8 +1065,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 46,
-          "leased": 0,
+          "queued": 45,
+          "leased": 1,
           "review": 41,
           "ready": 1,
           "retryable": 0,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T09:22:51.592Z",
       "earliestRetryAt": null
     },
     "1a": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_kolumbiya_stolitsy:b005",
       "token": "tok-mw38xoel-rki2edxcds9",
       "expiresAt": "2026-11-05T09:22:24.208Z",
+      "generation": 1
+    },
+    "ada-en-3d067bbf-amanda": {
+      "jobId": "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro_vodopady:b001",
+      "token": "ada-en-3d067bbf-20261105-identity",
+      "expiresAt": "2026-11-05T09:22:51.592Z",
       "generation": 1
     }
   },
@@ -6721,7 +6727,8 @@
     "ada-en-3d067bbf-amanda": {
       "token": "ada-en-3d067bbf-20261105-identity",
       "jobIds": [
-        "en:bulk:tour:tour_source_issledovanie_argentiny:b017"
+        "en:bulk:tour:tour_source_issledovanie_argentiny:b017",
+        "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro_vodopady:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_issledovanie_argentiny:b017"
@@ -6736,5 +6743,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T07:52:43.658Z"
+  "updatedAt": "2026-11-05T07:52:51.592Z"
 }

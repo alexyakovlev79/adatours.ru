@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 730,
-    "leased": 2,
+    "queued": 729,
+    "leased": 3,
     "review": 1616,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 730,
-      "leased": 2,
+      "queued": 729,
+      "leased": 3,
       "review": 1616,
       "ready": 50,
       "retryable": 0,
@@ -785,8 +785,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 38,
-          "leased": 0,
+          "queued": 37,
+          "leased": 1,
           "review": 45,
           "ready": 0,
           "retryable": 0,
@@ -817,7 +817,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T09:24:08.058Z",
       "earliestRetryAt": null
     },
     "09": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_kolumbiya_metropoliten:b005",
       "token": "tok-mw38ysi5-lh2afb786cl",
       "expiresAt": "2026-11-05T09:23:30.096Z",
+      "generation": 1
+    },
+    "ada-en-mw38xoel-amanda": {
+      "jobId": "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b001",
+      "token": "tok-mw38xoel-rki2edxcds9",
+      "expiresAt": "2026-11-05T09:24:08.058Z",
       "generation": 1
     }
   },
@@ -6712,7 +6718,8 @@
       "token": "tok-mw38xoel-rki2edxcds9",
       "jobIds": [
         "en:bulk:tour:tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu:b007",
-        "en:bulk:tour:tour_source_kolumbiya_stolitsy:b005"
+        "en:bulk:tour:tour_source_kolumbiya_stolitsy:b005",
+        "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu:b007",
@@ -6741,5 +6748,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T07:54:01.229Z"
+  "updatedAt": "2026-11-05T07:54:08.058Z"
 }

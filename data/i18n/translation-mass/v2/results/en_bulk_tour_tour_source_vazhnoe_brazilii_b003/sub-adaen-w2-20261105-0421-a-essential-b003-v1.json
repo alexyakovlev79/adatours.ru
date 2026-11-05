@@ -1,0 +1,123 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vazhnoe_brazilii:b003",
+  "stableId": "tour_source_vazhnoe_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d5da403fd50ab1be7938a19bd4888319f02eedf16e8bff861e403ba4ca38bace",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "table:12:row:0:cell:2:paragraph:4",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the list bullet from the approved Word exclusion Personal expenses while preserving the meaning."
+      }
+    },
+    {
+      "blockId": "tour:note:d96f78c9265cf8a6",
+      "field": "note",
+      "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
+      "text": "If necessary, Ada Tours may substitute other hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0421-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 confirms that hotels may be substituted with similar class hotels, but contains no exact Ada Tours administrative-note wording."
+      }
+    },
+    {
+      "blockId": "tour:note:05680faa947baa60",
+      "field": "note",
+      "sourceTextSha256": "13c996687256cf8f9c8b56f58533c646397f6b40a44244e857f789acaa4b3607",
+      "text": "The order of excursions may change, while the full tour programme will be maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0421-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word programme has no explicit note about reordering excursions while retaining all services."
+      }
+    },
+    {
+      "blockId": "tour:note:ef83dabc89561ff4",
+      "field": "note",
+      "sourceTextSha256": "b94b115e776b14bb2160fde513dac19a6cdad1eb036aee1a81a884276440b607",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when early check-out is required for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0421-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word programme has no corresponding note on breakfasts missed because of early hotel departure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "p:15",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "634b22509d0bbd738e23cb67b9a04c2af2598000481b9412b3f32328903a9fc1",
+      "text": "On arrival in Rio de Janeiro, your guide will meet you at the airport and take you to your hotel.\n\nBrazil’s second-largest city, Rio is famous for its green hills, beautiful bays, islands and long ocean beaches. The best known are Copacabana, Ipanema and Leblon.\n\nA black-and-white mosaic promenade stretches along Copacabana. From early morning until late at night, people play football and volleyball on the sand, exercise or simply relax by the sea.\n\nFor an active holiday, Rio offers surfing, diving, tennis, golf, rafting, hang-gliding and many other activities.\n\nOpen-air beach cafés serve coconut water, freshly squeezed juices and cold drinks; you may also hear local musicians performing nearby.\n\nAfter your transfer, check in and relax.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0421-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word includes a shorter Rio arrival and beaches description in two paragraphs, but not the full Russian editorial block including rafting and all the city activities."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "p:15",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:32772677f5079ec1",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro, including the bay, Sugarloaf Mountain and the city, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0421-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word programme has no photograph-specific alt text for this Rio panorama."
+      }
+    }
+  ]
+}

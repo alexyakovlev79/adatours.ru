@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b006",
+  "stableId": "tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "92a8c2ec613d0d3701b1547ba54fa9e8f4761fb3e4733dfb49a39f026e294fe0",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:a10fdfeb993e0d43",
+      "field": "itinerary.label",
+      "sourceTextSha256": "db8df318c3ba2d621b5cef1f2af2f498789062d02f89fef4b4c7cd7d9813b531",
+      "text": "Boca Chica",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:38",
+            "textSha256": "4d4baa0499730e90cbf0b416ee0624fec0600397a5ad19d5265add42d532934c"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The exact approved Word identifies days 5–6 as Boca Chica; removed the days enumeration to retain the location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:0f339254000f2bca",
+      "field": "media.alt",
+      "sourceTextSha256": "4229dcc193d2a5bb8cfb50d059727cda366e37245ae3723c977c468a99def1a8",
+      "text": "A floodlit stone cathedral with white towers at night in Panama City, Panama.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0810-b-panama-baru-b006",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word does not identify or caption this specific night photograph of Panama City's cathedral."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:473ea4f6683ef070",
+      "field": "media.hover",
+      "sourceTextSha256": "408ff4c9f68c698e1622f1d2efbc480b6540dabfaad25f132c2e8b6360b21f64",
+      "text": "Panama City: the cathedral's illuminated façade between two white towers.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0810-b-panama-baru-b006",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word contains no image hover caption for this particular illuminated Panama City cathedral."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c8c4d1a06ca4e44da5e8ff54c6d6cb6f4820f62424fdb3f188980630b36e2652",
+      "text": "Relaxing on a Private Island in Boca Chica",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:36",
+            "textSha256": "75bbc2772838c3795cb8e0c98a49e72d7883b9d7a0d1d25725f724520e766146"
+          },
+          {
+            "ref": "docx:paragraph:38",
+            "textSha256": "4d4baa0499730e90cbf0b416ee0624fec0600397a5ad19d5265add42d532934c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved English Word names Boca Chica, the private-island resort and the two-night leisure stay; expressed as a day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "209f69dbb356395bc309dd969441817f85e9159eac8dc3190a7029892fc0acef",
+      "text": "Enjoy two days without scheduled sightseeing excursions on a private island in Boca Chica.\n\nThe resort offers guided ecological trails, non-motorised water activities including kayaking and paddleboarding, and an outdoor yoga studio. Choose a guided nature walk, or simply spend the day beside the ocean.\n\nMeals include breakfast, lunch, snacks and a three-course dinner. Local beer, wine and cocktails are included.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:38",
+            "textSha256": "4d4baa0499730e90cbf0b416ee0624fec0600397a5ad19d5265add42d532934c"
+          },
+          {
+            "ref": "docx:paragraph:39",
+            "textSha256": "fe050c23debf2065e4fd2fe5e0e64bbefce637f66c48cc0d2150e4192724b67d"
+          },
+          {
+            "ref": "docx:paragraph:40",
+            "textSha256": "0fa9ae38bdf663a08ca07a68fe9e5cbb317d2a77d254a4cc94b9a6cf6e907274"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Combined the approved English Word passages for Days 5–6, including activities and meal inclusions, into one flowing itinerary section, retaining the no-mandatory-excursions statement from RU."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:113498af12d712c1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "db8df318c3ba2d621b5cef1f2af2f498789062d02f89fef4b4c7cd7d9813b531",
+      "text": "Boca Chica",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:38",
+            "textSha256": "4d4baa0499730e90cbf0b416ee0624fec0600397a5ad19d5265add42d532934c"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The approved Word section titled Days 5–6 Boca Chica supplies the exact location label without the day range."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:6d3e95ae32fbceab",
+      "field": "media.alt",
+      "sourceTextSha256": "186b2f8c9ca0977c4bd9eef1bbfc1c9998429cabab0395395ea0a3d0c96bf3ac",
+      "text": "Coconuts and palm fronds above the turquoise sea in Boca Chica, Panama.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0810-b-panama-baru-b006",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word does not caption the specific Boca Chica image with coconuts and palm fronds."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b1d5df77a7e45185",
+      "field": "media.hover",
+      "sourceTextSha256": "08b0bdbf163f21b39ad9b71abf369481730e41ac2cdaeb3ebaccc1f0e5397278",
+      "text": "Boca Chica, Panama: coconuts and palm fronds over turquoise water.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0810-b-panama-baru-b006",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word contains no hover caption of the coconut trees and turquoise sea photograph."
+      }
+    }
+  ]
+}

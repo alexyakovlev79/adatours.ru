@@ -1,5 +1,26 @@
 # Ada Tours: English site — progress and resume point
 
+## Текущий приоритет 05.11.2026 — publish-before-QA
+
+Прямым решением владельца независимая семантическая QA **перенесена
+на этап после выкладки**; задача
+`6aeb7f87aac08191afc7d34f35f32f66` отключена.
+Существующие валидные `review` и `ready` читаются прямо
+из `i18n/translation-mass-staging`. Базовый срез
+05.11.2026 05:42 UTC: `review=1577`, `ready=50`,
+`queued=771`, `held=1595`, `blocked_external=12`,
+`stale_source=1`. Всего 4006 Tour-пакетов.
+EN Pages до этого трижды падал из-за ошибочного запрета
+русского fallback в дочерних пунктах меню:
+[#41971152803](https://github.com/alexyakovlev79/adatours-en/actions/runs/41971152803),
+[#41972788440](https://github.com/alexyakovlev79/adatours-en/actions/runs/41972788440),
+[#41973604471](https://github.com/alexyakovlev79/adatours-en/actions/runs/41973604471).
+Новая проверка сохраняет английское главное меню и допускает
+непереведённые русские подписи внутри. Подтверждённую
+публикацию считать только по успешному новому Pages run.
+Текущий план — [38-publish-before-qa.md](38-publish-before-qa.md).
+
+
 Updated: 2026-11-03 (Europe/Moscow). Canonical source branch: `main`.
 
 ## Current checkpoint — 2026-11-03

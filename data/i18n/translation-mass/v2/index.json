@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1036,
-    "leased": 1,
+    "queued": 1035,
+    "leased": 2,
     "review": 1339,
     "ready": 27,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1036,
-      "leased": 1,
+      "queued": 1035,
+      "leased": 2,
       "review": 1339,
       "ready": 27,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 28,
-          "leased": 0,
+          "queued": 27,
+          "leased": 1,
           "review": 47,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T01:51:24.351Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru_ikitos:b004",
       "token": "adaen-w2-20261105-0310-token-a",
       "expiresAt": "2026-11-05T01:45:22.553Z",
+      "generation": 1
+    },
+    "ada-chat-3of5-20261105-0209-B": {
+      "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala:b005",
+      "token": "ada-chat-3of5-20261105-0209-B-token",
+      "expiresAt": "2026-11-05T01:51:24.351Z",
       "generation": 1
     }
   },
@@ -5701,7 +5707,8 @@
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b008",
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b003",
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b022",
-        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b004"
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b004",
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b008",
@@ -5813,5 +5820,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:21:04.025Z"
+  "updatedAt": "2026-11-05T00:21:24.351Z"
 }

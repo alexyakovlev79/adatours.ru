@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 530,
-    "leased": 0,
+    "queued": 529,
+    "leased": 1,
     "review": 1814,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 530,
-      "leased": 0,
+      "queued": 529,
+      "leased": 1,
       "review": 1814,
       "ready": 50,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 23,
-          "leased": 0,
+          "queued": 22,
+          "leased": 1,
           "review": 46,
           "ready": 3,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T17:14:32.551Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw3phxr8-amanda": {
+      "jobId": "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b018",
+      "token": "tok-mw3phxr9-9ueveppdqi5",
+      "expiresAt": "2026-11-05T17:14:32.551Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -7244,7 +7251,8 @@
         "en:bulk:tour:tour_source_neveroyatnaya_argentina:b006",
         "en:bulk:tour:tour_source_peru_expeditoin_ru:b006",
         "en:bulk:tour:tour_source_solntse_tango_i_vino:b008",
-        "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b010"
+        "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b010",
+        "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b018"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_vsya_argentina:b023",
@@ -7259,5 +7267,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T15:44:24.760Z"
+  "updatedAt": "2026-11-05T15:44:32.551Z"
 }

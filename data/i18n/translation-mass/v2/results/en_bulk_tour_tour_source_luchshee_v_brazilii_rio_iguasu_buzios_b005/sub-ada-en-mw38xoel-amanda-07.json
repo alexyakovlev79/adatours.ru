@@ -1,0 +1,160 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_rio_iguasu_buzios:b005",
+  "stableId": "tour_source_luchshee_v_brazilii_rio_iguasu_buzios",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ce7d0b07cd6fcdb72cafc19758cb77bcc1acde667cfe100924e36c01d4fa54a7",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p4",
+            "textSha256": "be813da43c020f86a4cb7783a15720a3a68e762b3048dcd72cd2b59df3a17bce"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract the Rio de Janeiro destination from the verified route heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5944401d442758b9",
+      "field": "media.alt",
+      "sourceTextSha256": "580eb9a51473cade9308804a658df08ce81fabc74dc43bd5289f6611d1a15946",
+      "text": "Christ the Redeemer seen from behind, overlooking Rio de Janeiro and the bay, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete SHA-verified Word contains no corresponding media.alt for the assigned RU field; translated from the pinned RU source.",
+        "wordVerified": {
+          "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+          "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+          "modifiedTime": "2026-10-21T20:32:43.104Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:media_hover:333d9385a7a896bf",
+      "field": "media.hover",
+      "sourceTextSha256": "831bc403a176a08fd93dba96822dae73015d940f68f33694fa1ba1130cefe1cf",
+      "text": "Corcovado: Christ the Redeemer above the city, Sugarloaf Mountain and the sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete SHA-verified Word contains no corresponding media.hover for the assigned RU field; translated from the pinned RU source.",
+        "wordVerified": {
+          "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+          "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+          "modifiedTime": "2026-10-21T20:32:43.104Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a996c0d36a56350483e2ca38e1e624229d1848ec06cb342e3ea36d13e4e36975",
+      "text": "Rio de Janeiro – Iguazu and the Brazilian side of the falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p4",
+            "textSha256": "be813da43c020f86a4cb7783a15720a3a68e762b3048dcd72cd2b59df3a17bce"
+          },
+          {
+            "ref": "word/document.xml#p93",
+            "textSha256": "30c8dbb0d942f837a43a681c44711718c87603e805c0cd8593029e54da3b58d4"
+          },
+          {
+            "ref": "word/document.xml#p95",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the existing day-title slot from the verified Rio to Foz route and Brazilian-side day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "21b37a971e41a77b16baf8320d52700f8ed11716f543cf34c3abf8caf0737505",
+      "text": "After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where you are welcomed and taken to your hotel. Then set off on a tour of the falls. On the border of Brazil, Argentina and Paraguay, within a national park of unique flora and fauna, 275 waterfalls, each with its own name, crash into the canyon of the Devil’s Throat; their name means “big water” in Guarani. The contrast between the calm, almost lazy river above the falls and the boiling torrents plunging into the gorge below is stunning: you could watch this spectacle for hours.\n\nOptional, at an additional cost: the Macuco Safari and the Bird Park (see Optional excursions).\n\nNot included: Flight Rio de Janeiro – Foz do Iguaçu\n\n**Helicopter flight over Iguazu Falls**\n\nOptional, at an additional cost.\n\nFlight duration is around 10 minutes. Price to be confirmed.\n\nAfter the programme, return to the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 Brazilian-side programme is used verbatim for the core day, optional Macuco Safari/Bird Park and excluded flight. Word contains no helicopter excursion, ten-minute flight duration, pending quote or final return sentence; these absent assigned RU details are translated and appended. Macuco remains optional as explicitly specified by Word.",
+        "wordVerified": {
+          "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+          "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+          "modifiedTime": "2026-10-21T20:32:43.104Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p4",
+            "textSha256": "be813da43c020f86a4cb7783a15720a3a68e762b3048dcd72cd2b59df3a17bce"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract the Rio de Janeiro destination from the verified route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p95",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:dab30c58171353c7",
+      "field": "media.alt",
+      "sourceTextSha256": "00ad24b89f7b0d9df661cb18093bc92953a0448199c3da935eb2ca0d654823f4",
+      "text": "Pictured: Iguazu Falls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete SHA-verified Word contains no corresponding media.alt for the assigned RU field; translated from the pinned RU source.",
+        "wordVerified": {
+          "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+          "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+          "modifiedTime": "2026-10-21T20:32:43.104Z"
+        }
+      }
+    }
+  ]
+}

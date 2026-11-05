@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej:b003",
+  "stableId": "tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e04a5f2c69b1177d9e5ad8aa1a421cdc4482beabc00e1251c92854837621a085",
+  "blocks": [
+    {
+      "blockId": "tour:note:d96f78c9265cf8a6",
+      "field": "note",
+      "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
+      "text": "If necessary, Ada Tours may replace the hotels with others of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete selected Word lists the hotels but contains no hotel-substitution condition; translate the current RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme remains unchanged.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete selected Word contains no clause allowing the order of excursions to change; translate the RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:ae482daa99427b98",
+      "field": "note",
+      "sourceTextSha256": "557246c9b96af1f9e9f293e8356eaf66a14fea7ae8231077db4c3159d40cf111",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts if an early flight or excursion requires an early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete selected Word contains no missed-breakfast liability clause; translate the current RU note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "151dc8e23d02cbed3486ec789accf84f383f12dd7016f158200fed7120fd5df3",
+      "text": "Arrival in Lima and Belmond Miraflores Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZKk6YevQ1wiUzBQfDwExNWW9qX9QhIWw",
+        "documentSha256": "1a8efa56c9e3f829b6247a56c90c86639469c8cc8b3af76ade3b6a727aab9ee9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "606bd1495e6590ab42b52ac7a4b61adfdf9f5c57084320d03c0bfe30175cc96e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the short arrival-day title from the Lima arrival and Belmond Miraflores Park transfer in Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2f690346671ea1c439203db6adb792b46ce84bf392abe749a05a6bdcc3e07077",
+      "text": "You arrive at Jorge Chávez Airport in Lima. An English-speaking guide will meet you at the exit, and an executive-class transfer will take you to **Belmond Miraflores Park** by the ocean.\n\nMiraflores stretches along high coastal cliffs. Park paths run above the ocean, with surfers and long lines of waves visible below. This part of the city has more open space and wider horizons than the historic centre.\n\nThe rooms at Belmond Miraflores Park face the ocean. On the rooftop, there is a heated swimming pool and a terrace overlooking the coastline.\n\nThe rest of the day is free after your flight. Relax at the hotel or walk along the Malecón promenade, where people stroll, cycle and watch the sunset.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "Word paragraph 18 provides the arrival and hotel transfer but omits Jorge Chávez, the named guide language, Miraflores setting, rooftop pool and free-day details. Translate the complete RU slot; service language follows the owner's EN adaptation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2db77ba7c1d1044c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZKk6YevQ1wiUzBQfDwExNWW9qX9QhIWw",
+        "documentSha256": "1a8efa56c9e3f829b6247a56c90c86639469c8cc8b3af76ade3b6a727aab9ee9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p17",
+            "textSha256": "a9f4469f25523a2cb5d40acd57823312ecfae2189af619df557712ab2b297ba8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city name from the Word Day 1 heading for the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:bee9c4c19f2842f3",
+      "field": "media.alt",
+      "sourceTextSha256": "bb639e3bd77703cbface6ddb7d809cdf7592c947e140a88db11fd628013f52e6",
+      "text": "Lima's oceanfront with a high cliff, a road and high-rise buildings, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word has no image-specific alt caption for this coastal photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3a9393329295e088",
+      "field": "media.hover",
+      "sourceTextSha256": "704931aac0036f4e5e877bf2d26dfb1031bec3af153b2178dbdfd6615179de46",
+      "text": "Lima: a beach and coastal road below the cliff and city buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word has no matching hover caption for this coastal photograph."
+      }
+    }
+  ]
+}

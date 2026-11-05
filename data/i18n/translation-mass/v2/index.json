@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 918,
-    "leased": 5,
+    "queued": 917,
+    "leased": 6,
     "review": 1430,
     "ready": 47,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 918,
-      "leased": 5,
+      "queued": 917,
+      "leased": 6,
       "review": 1430,
       "ready": 47,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 43,
-          "leased": 0,
+          "queued": 42,
+          "leased": 1,
           "review": 26,
           "ready": 3,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T04:57:04.195Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1370,6 +1370,12 @@
       "jobId": "en:bulk:tour:tour_source_kosta_rika_za_5_dnej:b002",
       "token": "adaen-w2-20261105-0519-token-b",
       "expiresAt": "2026-11-05T04:56:00.329Z",
+      "generation": 1
+    },
+    "ada-en-mw2zickh-amanda": {
+      "jobId": "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b003",
+      "token": "t-mw2zickh-tcdv30xix2",
+      "expiresAt": "2026-11-05T04:57:04.195Z",
       "generation": 1
     }
   },
@@ -6184,8 +6190,15 @@
         "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b005",
         "en:bulk:tour:tour_source_tur_v_krasochnuyu_braziliyu_2022:b012"
       ]
+    },
+    "ada-en-mw2zickh-amanda": {
+      "token": "t-mw2zickh-tcdv30xix2",
+      "jobIds": [
+        "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b003"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:26:00.329Z"
+  "updatedAt": "2026-11-05T03:27:04.195Z"
 }

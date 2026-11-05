@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1002,
-    "leased": 3,
+    "queued": 1001,
+    "leased": 4,
     "review": 1365,
     "ready": 32,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1002,
-      "leased": 3,
+      "queued": 1001,
+      "leased": 4,
       "review": 1365,
       "ready": 32,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 27,
-          "leased": 0,
+          "queued": 26,
+          "leased": 1,
           "review": 52,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:23:19.707Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004",
       "token": "adaen-w4-20261105-0345-token-B",
       "expiresAt": "2026-11-05T02:20:24.924Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0348-a": {
+      "jobId": "en:bulk:tour:tour_source_parad_chempionov_karnavala_v_rio:b002",
+      "token": "adaen-w2-20261105-0348-token-a",
+      "expiresAt": "2026-11-05T02:23:19.707Z",
       "generation": 1
     }
   },
@@ -5908,7 +5914,8 @@
       "token": "adaen-w2-20261105-0348-token-a",
       "jobIds": [
         "en:bulk:tour:tour_source_peru_i_boliviya:b004",
-        "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b002"
+        "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b002",
+        "en:bulk:tour:tour_source_parad_chempionov_karnavala_v_rio:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_peru_i_boliviya:b004",
@@ -5917,5 +5924,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:52:54.061Z"
+  "updatedAt": "2026-11-05T00:53:19.707Z"
 }

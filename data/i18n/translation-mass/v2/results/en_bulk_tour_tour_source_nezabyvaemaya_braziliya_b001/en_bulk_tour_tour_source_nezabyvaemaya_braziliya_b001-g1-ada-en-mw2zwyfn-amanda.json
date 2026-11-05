@@ -1,0 +1,174 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b001",
+  "stableId": "tour_source_nezabyvaemaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "514f6d263f2733ddd6960a25f82a7f45cb00d69f7f8d95d677f7b1b2da33b18f",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "ee2d8b0d781ac40be3e156c58b32ff8ff272df77556664de9666436abb8995b2",
+      "text": "Unforgettable Brazil",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:3",
+            "textSha256": "00436d96c297f5ee9d2b5c42c40fc11c0623f8b0dbdd5ac6e9e420c0e9075a3b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "5a95903c2686e61cc32b5e5ce412faba5bbac276e3fcac9c497bc74b0dc73ade",
+      "text": "Three of Brazil’s most unforgettable destinations in one journey: the green hills, golden beaches and iconic views of Rio de Janeiro, from Sugar Loaf to Christ the Redeemer; the thundering Iguazu Falls, from both the Brazilian and Argentine sides; and five relaxing days on the beaches of the Búzios peninsula.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:18",
+            "textSha256": "a2188edaae2334db974bed377d57065faa24ab8c9f279a0daa0715ed5de8bfa7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "4304f37c0de35fb9b21f5a642419173197d84959ac1767122d838e501c0ae4a6",
+      "text": "$4352",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:141",
+            "textSha256": "8df55c4cd0b23a9820db46fc2c4ff73fa397beb8bca7e3b56c167b7946d9aacc"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Preserve the existing RU price label $4352; the Word commercial table confirms the same USD amount."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c165ecc8a1f423b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2beea3e23ac67357d0e86010c3d4e796815ee4cfa2abf0bc3401c20beb043e45",
+      "text": "Rio de Janeiro, 4 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:8",
+            "textSha256": "a419cd173d541cb0d0dc8c2227295a441f41ebb2ebd53d95ce879c1e1e689c7f"
+          },
+          {
+            "ref": "word/document.xml:p:66",
+            "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expand the Word route abbreviation Rio (4N) using the confirmed full city name and retain the night count."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c8ffbd6fc38d01b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e571875ec720a5ede2d4198bb255ac215b15ee7139d2cb36d3e04b709cb2383d",
+      "text": "Foz do Iguaçu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:8",
+            "textSha256": "a419cd173d541cb0d0dc8c2227295a441f41ebb2ebd53d95ce879c1e1e689c7f"
+          },
+          {
+            "ref": "word/document.xml:p:99",
+            "textSha256": "f1b1999537b677d6f0efed587376fd2f0fbe4237ba6c859c85a4376a390ec927"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route label with the full arrival city name and the Word Iguaçu (2N) night count."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:abd5c0994ca2f60e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6311915e040061a9fd6cdb4b02e04ee1090cfdd6e71fffcce3fe3bc6831f5016",
+      "text": "Búzios, 5 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:8",
+            "textSha256": "a419cd173d541cb0d0dc8c2227295a441f41ebb2ebd53d95ce879c1e1e689c7f"
+          },
+          {
+            "ref": "word/document.xml:p:108",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expand the Word Búzios (5N) route abbreviation while preserving the confirmed five-night stay."
+      }
+    },
+    {
+      "blockId": "tour:included:636dccb3fb9a00fa",
+      "field": "included",
+      "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+      "text": "Hotels according to the programme or similar, with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:198",
+            "textSha256": "913c18b3b66b4f651239e38dc7acf45909336e7932e5936b53d51e86dcb226b6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the separately stored included-service entry."
+      }
+    },
+    {
+      "blockId": "tour:included:9863fe95b789b2c9",
+      "field": "included",
+      "sourceTextSha256": "6fd3ca247d2fd8b4246d5713b59528611b8dc1069c843d8d7a380fd346f0158f",
+      "text": "Excursions according to the programme with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:29",
+            "textSha256": "200a39979268c6289bfc5c4de5f9f99b17a955d695dd4b7fe0ef951586638471"
+          },
+          {
+            "ref": "word/document.xml:p:202",
+            "textSha256": "8058c199498ef455345413d4d7cba756ceb2d13199a1e4744fcc7752015e4514"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the Word excursion inclusion with its explicitly confirmed English-speaking guide language in a single included-service label."
+      }
+    }
+  ]
+}

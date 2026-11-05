@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b003",
+  "stableId": "tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4c53d1cc4009ca2ca30b9b2eb89f2135ee1654d904569534f0990c5de27b55e9",
+  "blocks": [
+    {
+      "blockId": "tour:included:1bd5128a9a5ded20",
+      "field": "included",
+      "sourceTextSha256": "06f2acd761a5c4c39a6babe347cd186a9c3cf792745e62f2754c8a0969dda361",
+      "text": "1 lunch.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word lists brunch and dinner on the train but has no separate item for one lunch; translate the assigned RU inclusion without changing its count."
+      }
+    },
+    {
+      "blockId": "tour:included:71934ba1654876e3",
+      "field": "included",
+      "sourceTextSha256": "2a36f514ccdf7cb2d89e092b1d29437d0c2698ec3801003dbe9438572d982b8c",
+      "text": "Lima: 2 nights with daily breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:170",
+            "textSha256": "00494db558f3b5d83a69bcc6c1f6d4562ce0de97f76ead0c96d7f75bd713544f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified Word accommodation inclusion; Word 2027 specifies two Lima nights, unlike the older RU wording."
+      }
+    },
+    {
+      "blockId": "tour:included:8dfc49dc2e13cf17",
+      "field": "included",
+      "sourceTextSha256": "b194f0f985961da45aada20a5d9e602fab19bcef52f4a7e9396c2b6b05783112",
+      "text": "3 nights in Cusco, with daily breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:174",
+            "textSha256": "e218c811ccc3d80d75f8c4de0bbf6732152231ad30d912ce4cc04b61895d49e2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Cusco accommodation component from the verified Word combined nights inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:df9526a9ee03bd45",
+      "field": "included",
+      "sourceTextSha256": "30f7beba415c0284dbe219f9c46428648f80bf075fcc2d032db232d6cc72f766",
+      "text": "1 night in Aguas Calientes, with daily breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:174",
+            "textSha256": "e218c811ccc3d80d75f8c4de0bbf6732152231ad30d912ce4cc04b61895d49e2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word 2027 overnight location and duration for this accommodation item; the older RU refers to Sacred Valley."
+      }
+    },
+    {
+      "blockId": "tour:included:859b9253a8b5b031",
+      "field": "included",
+      "sourceTextSha256": "d721917394b857d946144d73fbb3be0e4c37899c0e72a983624019756fb3e8ae",
+      "text": "Daily breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:24",
+            "textSha256": "8dd49a147d9cb140ea5f74c7e668dce9d5aca8d672578d3a6069db6bb3e65a79"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the daily breakfast component of the verified Word meals label."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:2cdb6fe75a7e109e",
+      "field": "notIncluded",
+      "sourceTextSha256": "36f196f2cdd22ee816d4da13672a3b24966e5bbc1ef3febb0df22fba29814f59",
+      "text": "Alcoholic and non-alcoholic drinks.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word excludes meals and drinks not mentioned, but has no equivalent item separating alcoholic and non-alcoholic drinks; translate the assigned RU exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5f7004d708c653a3",
+      "field": "notIncluded",
+      "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+      "text": "Tips.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:180",
+            "textSha256": "4013ae810cbb54733d08de0c0573d9d9ef5bfa976895fa0c04462d5447b5855b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract tips from the verified Word exclusion for personal expenses and tips."
+      }
+    },
+    {
+      "blockId": "tour:note:a437b98565de8d3c",
+      "field": "note",
+      "sourceTextSha256": "4380e9d680f2e77f19dd7498a3ff72fecabba2a5b18a663937ed001191469c16",
+      "text": "If necessary, we may replace a hotel with another of the same category. The order of excursions may change while retaining the full tour programme. Ada Tours is not responsible for breakfast missed because of an early hotel check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word confirms same-category hotel replacement but does not contain the combined RU note about excursion order and missed breakfast; translate that assigned note."
+      }
+    }
+  ]
+}

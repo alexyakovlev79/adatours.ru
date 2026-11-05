@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1044,
-    "leased": 1,
+    "queued": 1043,
+    "leased": 2,
     "review": 1331,
     "ready": 27,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1044,
-      "leased": 1,
+      "queued": 1043,
+      "leased": 2,
       "review": 1331,
       "ready": 27,
       "retryable": 0,
@@ -705,8 +705,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 28,
-          "leased": 0,
+          "queued": 27,
+          "leased": 1,
           "review": 45,
           "ready": 0,
           "retryable": 0,
@@ -737,7 +737,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T01:35:48.639Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala:b013",
       "token": "adaen-w1-20261105-0058-token-b",
       "expiresAt": "2026-11-05T00:42:22.254Z",
+      "generation": 1
+    },
+    "adaen-w4-20261105-0248-b": {
+      "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b005",
+      "token": "adaen-w4-20261105-0248-token-b",
+      "expiresAt": "2026-11-05T01:35:48.639Z",
       "generation": 1
     }
   },
@@ -5770,7 +5776,8 @@
         "en:bulk:tour:tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe:b005",
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b003",
         "en:bulk:tour:tour_source_mir_majya:b011",
-        "en:bulk:tour:tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya:b003"
+        "en:bulk:tour:tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya:b003",
+        "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_parad_chempionov_karnavala_v_rio:b001",
@@ -5783,5 +5790,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:05:26.174Z"
+  "updatedAt": "2026-11-05T00:05:48.639Z"
 }

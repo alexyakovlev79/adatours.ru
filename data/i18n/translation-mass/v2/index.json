@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 543,
-    "leased": 1,
+    "queued": 542,
+    "leased": 2,
     "review": 1800,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 543,
-      "leased": 1,
+      "queued": 542,
+      "leased": 2,
       "review": 1800,
       "ready": 50,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 17,
-          "leased": 0,
+          "queued": 16,
+          "leased": 1,
           "review": 58,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T17:07:24.709Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_peru_i_boliviya:b001",
       "token": "tok-mw3phxr9-9ueveppdqi5",
       "expiresAt": "2026-11-05T17:07:00.837Z",
+      "generation": 1
+    },
+    "ada-en-mw3phs0k-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b013",
+      "token": "ada-en-mw3phs0k-amanda-token",
+      "expiresAt": "2026-11-05T17:07:24.709Z",
       "generation": 1
     }
   },
@@ -7218,7 +7224,8 @@
       "token": "ada-en-mw3phs0k-amanda-token",
       "jobIds": [
         "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b007",
-        "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b012"
+        "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b012",
+        "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b013"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b007",
@@ -7239,5 +7246,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T15:37:16.025Z"
+  "updatedAt": "2026-11-05T15:37:24.709Z"
 }

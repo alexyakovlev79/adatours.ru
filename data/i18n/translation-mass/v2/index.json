@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 508,
-    "leased": 4,
+    "queued": 507,
+    "leased": 5,
     "review": 1832,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 508,
-      "leased": 4,
+      "queued": 507,
+      "leased": 5,
       "review": 1832,
       "ready": 50,
       "retryable": 0,
@@ -505,8 +505,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 22,
-          "leased": 0,
+          "queued": 21,
+          "leased": 1,
           "review": 55,
           "ready": 2,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:12:16.883Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_13_dnej:b011",
       "token": "tk-mw3trdxr-w8i0ji2aq",
       "expiresAt": "2026-11-05T19:12:00.301Z",
+      "generation": 1
+    },
+    "ada-en-mw3tx7a6-amanda": {
+      "jobId": "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b003",
+      "token": "token-mw3tx7a6-gsgdljq5u2d",
+      "expiresAt": "2026-11-05T19:12:16.883Z",
       "generation": 1
     }
   },
@@ -7351,7 +7357,8 @@
     "ada-en-mw3tx7a6-amanda": {
       "token": "token-mw3tx7a6-gsgdljq5u2d",
       "jobIds": [
-        "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b005"
+        "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b005",
+        "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b005"
@@ -7359,5 +7366,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:42:08.953Z"
+  "updatedAt": "2026-11-05T17:42:16.883Z"
 }

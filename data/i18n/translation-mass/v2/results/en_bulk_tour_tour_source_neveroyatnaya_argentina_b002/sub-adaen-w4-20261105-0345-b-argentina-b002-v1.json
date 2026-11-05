@@ -1,0 +1,109 @@
+{
+  "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b002",
+  "stableId": "tour_source_neveroyatnaya_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2a18dddf59ea807c8d6d9c3f6fd853d83d6421a44bf0661a9966f469fca220be",
+  "editorialNotes": [
+    "CRITICAL source-structure contradiction: RU /included/3 says domestic Aerolíneas Argentinas flights included; approved Word 2027 says they are NOT included. EN text follows Word but is still under the RU included path; commercial/content master must repair structured placement before publication. No RU/price changes performed."
+  ],
+  "blocks": [
+    {
+      "blockId": "tour:included:61d0f87a9ce3a6dd",
+      "field": "included",
+      "sourceTextSha256": "e8c6cd7a7294fc2f585cadee836524a719f3a31c32d9fbb983c6cb07e64eba72",
+      "text": "12 nights’ accommodation with breakfast and taxes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word lists twelve nights with breakfast and taxes in a combined inclusion list, not in this separate website structured field."
+      }
+    },
+    {
+      "blockId": "tour:included:e9620b3427be6d4e",
+      "field": "included",
+      "sourceTextSha256": "b800544b5105cc1cb248b977399cba43eeb765120aae847b5361902cf1497e4b",
+      "text": "Entrance fees to national parks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word includes national park entrance fees in a combined list, but not as a separate website included field."
+      }
+    },
+    {
+      "blockId": "tour:included:9bf19972ca14c7be",
+      "field": "included",
+      "sourceTextSha256": "3310b4f3641ffb2613d0fbb8ba469970f18eaf3d426e987acb416e6b994d6aaa",
+      "text": "All transfers and excursions mentioned in the itinerary",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word provides all transfers and excursions, but the separate website list-item wording does not exist as an independent paragraph."
+      }
+    },
+    {
+      "blockId": "tour:included:aa9fc680ec644c40",
+      "field": "included",
+      "sourceTextSha256": "266cd733664d1a4421d118d4c0eda9163ee2b142a2a6869dd1efb332ddeea247",
+      "text": "Domestic flights with Aerolíneas Argentinas are not included.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Critical commercial conflict: RU included-item claims domestic Aerolíneas Argentinas flights are included, but approved Word explicitly excludes all such flights. Used the approved negative commercial statement, while noting that the placement in the source included section is inconsistent and must be corrected by an independent editor before publication."
+      }
+    },
+    {
+      "blockId": "tour:included:55f62cff1197cfcc",
+      "field": "included",
+      "sourceTextSha256": "9c034597803a93ca8ec43e8611cd6b5c3f4c52a9bc443b10ca84cf26fd9d47dd",
+      "text": "Scheduled and private transfers in the service format specified for each itinerary day",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word specifies transfers in the programme, but does not have this standalone website item describing transfer service types by day."
+      }
+    },
+    {
+      "blockId": "tour:included:4cd15fba8fc8353a",
+      "field": "included",
+      "sourceTextSha256": "0c77fb6dd81ce87f3de968447115b1766d30fcc0b7502d206ff0ab0478c151ce",
+      "text": "Tango dinner show in Buenos Aires, with drinks included",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word confirms the tango dinner show and drinks, but not this standalone included-field formatting."
+      }
+    },
+    {
+      "blockId": "tour:included:48b67135c1fcd7ba",
+      "field": "included",
+      "sourceTextSha256": "3dbda79cdc53f489afe22c6d126941ca984f05da46cbab4a06445d7fea654381",
+      "text": "Lunch and drinks during the Tierra del Fuego National Park excursion",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word confirms a Tierra del Fuego National Park excursion with lunch and drinks, not this standalone website included field."
+      }
+    },
+    {
+      "blockId": "tour:included:af11e04a714e6376",
+      "field": "included",
+      "sourceTextSha256": "9833cb8ee0793fedddf21ca1d8be9a7ba697b0deb79a5054e268a11b016c25e9",
+      "text": "Lunch during the off-road 4x4 safari in Ushuaia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0345-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word confirms the 4x4 safari and barbecue lunch in Ushuaia, not a separate website included field."
+      }
+    }
+  ]
+}

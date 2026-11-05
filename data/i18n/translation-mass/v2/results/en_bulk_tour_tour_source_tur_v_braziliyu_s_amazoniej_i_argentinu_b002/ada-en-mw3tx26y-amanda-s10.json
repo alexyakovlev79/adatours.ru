@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b002",
+  "stableId": "tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "bb7becedb202e3ee7d6e6a015f9543afefece7e9604072d40652c42a91ecc1f2",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5",
+      "field": "itinerary.label",
+      "text": "Buenos Aires",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:51",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:339fa5d0b8d8c6ca",
+      "field": "included",
+      "text": "Accommodation in the selected hotels (or similar) with breakfast; full board at the ecolodge",
+      "sourceTextSha256": "bb605def6d47cca28f474676077cebc84464a708e02670381efc09f681b06393",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:173",
+            "textSha256": "3aa34c00e708a1ec3445b417c5b92d83283ac7dd088ad0b821e247c1a7e77b62"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the list marker from the approved Word accommodation item."
+      }
+    },
+    {
+      "blockId": "tour:included:f69f90b74e91deda",
+      "field": "included",
+      "text": "Excursions mentioned in the programme with an English-speaking guide, on a seat-in-bus (group) basis",
+      "sourceTextSha256": "03aead8cd48bb2bfe38b88123d61ce9c71975bd59b63c449519bcd52948c7eec",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:174",
+            "textSha256": "f153918a326d85bf86aea6f35b359a931d935201b62558bf2beec55968d4caf0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the list marker from the approved Word group-excursion item."
+      }
+    },
+    {
+      "blockId": "tour:included:4eba4a26406ba9e1",
+      "field": "included",
+      "text": "Transfers with a driver.",
+      "sourceTextSha256": "6860bc19bbe5b04c3e5dd423f20aae08dc502d7b0779697f03c95d1f6a74a4c7",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx26y-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word lists transfers but does not specify driver-only service in a matching item; translate the assigned RU transfer inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:8a3625b509b7225e",
+      "field": "included",
+      "text": "Entrance fee to the Brazilian side of the falls",
+      "sourceTextSha256": "68def1fa0c7502f43e14777062db95326678c230b7d315888bd1ea05d9986a04",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:176",
+            "textSha256": "28de34e016971cd72e99e7a8dfa36b9264013d74381d129b423d8aacb75c8f63"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved specific entrance inclusion rather than imply all unspecified tickets."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a23af6797cca146e",
+      "field": "notIncluded",
+      "text": "Flights Rio de Janeiro – Manaus / Manaus – Foz do Iguaçu / Foz do Iguaçu – Buenos Aires, approximately USD 750 per person.",
+      "sourceTextSha256": "1aef73939cca7e1a9cd199fe660112a445f24cfa858846c4e8978d28d982f286",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx26y-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word flight clause includes Salvador and a USD 1150 amount, so it does not match this assigned RU flight route and tariff. Translate the explicit RU block and preserve USD 750, as shared price and itinerary changes belong to the master."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "text": "Personal expenses",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:182",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the list marker from the approved Word personal-expenses exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "text": "Additional excursions.",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx26y-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no separate matching additional-excursions exclusion item; translate the assigned RU item."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 706,
-    "leased": 0,
+    "queued": 705,
+    "leased": 1,
     "review": 1642,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 706,
-      "leased": 0,
+      "queued": 705,
+      "leased": 1,
       "review": 1642,
       "ready": 50,
       "retryable": 0,
@@ -1185,8 +1185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 1,
-          "leased": 0,
+          "queued": 0,
+          "leased": 1,
           "review": 77,
           "ready": 0,
           "retryable": 0,
@@ -1217,7 +1217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T11:30:12.037Z",
       "earliestRetryAt": null
     },
     "1d": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw3dk0eb-amanda": {
+      "jobId": "en:bulk:tour:tour_venezuela_canaima_angel_falls_4_days:b005",
+      "token": "ada-mw3dk0eb-y9bxi4fice9",
+      "expiresAt": "2026-11-05T11:30:12.037Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -6775,8 +6782,15 @@
         "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b008",
         "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro:b008"
       ]
+    },
+    "ada-en-mw3dk0eb-amanda": {
+      "token": "ada-mw3dk0eb-y9bxi4fice9",
+      "jobIds": [
+        "en:bulk:tour:tour_venezuela_canaima_angel_falls_4_days:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T08:04:24.258Z"
+  "updatedAt": "2026-11-05T10:00:12.037Z"
 }

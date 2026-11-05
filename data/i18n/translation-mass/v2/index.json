@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 768,
-    "leased": 0,
+    "queued": 767,
+    "leased": 1,
     "review": 1580,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 768,
-      "leased": 0,
+      "queued": 767,
+      "leased": 1,
       "review": 1580,
       "ready": 50,
       "retryable": 0,
@@ -145,8 +145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 33,
-          "leased": 0,
+          "queued": 32,
+          "leased": 1,
           "review": 43,
           "ready": 1,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T07:19:34.527Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-w4-20261105-0830-A": {
+      "jobId": "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b021",
+      "token": "ada-w4-20261105-0830-A-tk-6da9",
+      "expiresAt": "2026-11-05T07:19:34.527Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -6590,7 +6597,8 @@
         "en:bulk:tour:tour_source_luchshee_v_kosta_rike:b008",
         "en:bulk:tour:tour_source_luchshee_brazilii_argentiny_i_chili:b011",
         "en:bulk:tour:tour_source_mototur_cherez_braziliyu:b007",
-        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b004"
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b004",
+        "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b021"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b010",
@@ -6605,5 +6613,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T05:49:04.798Z"
+  "updatedAt": "2026-11-05T05:49:34.527Z"
 }

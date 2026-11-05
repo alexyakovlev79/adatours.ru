@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 766,
-    "leased": 0,
+    "queued": 765,
+    "leased": 1,
     "review": 1582,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 766,
-      "leased": 0,
+      "queued": 765,
+      "leased": 1,
       "review": 1582,
       "ready": 50,
       "retryable": 0,
@@ -705,8 +705,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 18,
-          "leased": 0,
+          "queued": 17,
+          "leased": 1,
           "review": 54,
           "ready": 1,
           "retryable": 0,
@@ -737,7 +737,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T07:23:48.801Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-w4-20261105-0830-B": {
+      "jobId": "en:bulk:tour:tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu:b007",
+      "token": "ada-w4-20261105-0830-B-tk-6da9",
+      "expiresAt": "2026-11-05T07:23:48.801Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -6606,8 +6613,15 @@
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b021",
         "en:bulk:tour:tour_source_luchshee_v_kosta_rike:b012"
       ]
+    },
+    "ada-w4-20261105-0830-B": {
+      "token": "ada-w4-20261105-0830-B-tk-6da9",
+      "jobIds": [
+        "en:bulk:tour:tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu:b007"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T05:53:14.970Z"
+  "updatedAt": "2026-11-05T05:53:48.801Z"
 }

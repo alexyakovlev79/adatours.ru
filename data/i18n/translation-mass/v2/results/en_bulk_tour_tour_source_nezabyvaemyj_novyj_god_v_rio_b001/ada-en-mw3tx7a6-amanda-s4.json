@@ -1,0 +1,145 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_rio:b001",
+  "stableId": "tour_source_nezabyvaemyj_novyj_god_v_rio",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "71f4986718e8c7b4e8f43bf310c43576beb90f76f6b887c1eb9f1372f10697d1",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "b6e7a237dd52c16717426add23f2efeb59cbb4d2b0c8639b0c3266b0eaef77a5",
+      "text": "New Year in Rio de Janeiro 2027",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J1mozdyj9L_vLczZtAApysDln9ecDF4E",
+        "documentSha256": "90c21b6530702a7adb00f4ff695724d73f69ee4dae0d0c1e28fe53fbd469d678",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:1",
+            "textSha256": "735217021dd0c6be093b0412bd4d61e5404a787a218b0765be24552e702dc2ad"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "3f31dc4bcf39b6e6ea50d597bd994d10a0960987cb00b06aad1d10851bb46989",
+      "text": "Spend all 5 days of this short New Year tour in Rio, without changing hotels or taking domestic flights. See the city from its two main viewpoints, explore the historic centre, celebrate New Year on Copacabana and keep one day free for your own plans.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has a celebratory introduction and separate daily descriptions, but no equivalent concise logistical lead about five days in Rio with a free day; translate the assigned RU summary."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "a5a9b3712abe0a0a3f4e6450cc09e400664888c12521ef55abaf3c597e9e6d1e",
+      "text": "$2056",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J1mozdyj9L_vLczZtAApysDln9ecDF4E",
+        "documentSha256": "90c21b6530702a7adb00f4ff695724d73f69ee4dae0d0c1e28fe53fbd469d678",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:19",
+            "textSha256": "8ba0977a021b14db70af5e3d940e4e41faccccf22b1a6130792fe150b3d4f102"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Keep the assigned shared price unchanged; the verified Word double-occupancy cell confirms the same USD 2056 amount."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c165ecc8a1f423b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2beea3e23ac67357d0e86010c3d4e796815ee4cfa2abf0bc3401c20beb043e45",
+      "text": "Rio de Janeiro, 4 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J1mozdyj9L_vLczZtAApysDln9ecDF4E",
+        "documentSha256": "90c21b6530702a7adb00f4ff695724d73f69ee4dae0d0c1e28fe53fbd469d678",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:5",
+            "textSha256": "c786523235d396e16684da346c7b5a506ae1d1d5b57150d7868e3aa230130f24"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expand the verified Word route notation 4N into the existing English route label."
+      }
+    },
+    {
+      "blockId": "tour:included:a4f9a59323fbf9be",
+      "field": "included",
+      "sourceTextSha256": "003b5ff0b04c65ffcbf50a725a8b42c22c8d3ef41119f9338ab9a411c96462c0",
+      "text": "Accommodation in hotels by the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J1mozdyj9L_vLczZtAApysDln9ecDF4E",
+        "documentSha256": "90c21b6530702a7adb00f4ff695724d73f69ee4dae0d0c1e28fe53fbd469d678",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:79",
+            "textSha256": "4fccaa60d70f630eba37f5a5b5a39198962277b5323a74ef14055957c4781339"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:5b166c5b2ca78326",
+      "field": "included",
+      "sourceTextSha256": "331435c97e6758f1aef8de9ffbd29741a8e31da0c0caceb5a8697dabff0f9499",
+      "text": "SIB Transfers (with a driver only) according to the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J1mozdyj9L_vLczZtAApysDln9ecDF4E",
+        "documentSha256": "90c21b6530702a7adb00f4ff695724d73f69ee4dae0d0c1e28fe53fbd469d678",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:80",
+            "textSha256": "cbf2ad7c7662c7d456e2acfeb4676319a05212206d706de8c2fdbff664923a80"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:1f742c956964bb56",
+      "field": "included",
+      "sourceTextSha256": "71b85a2fa148af6a6c3c73446fc89c6b85da37dd34d8be6ef92a4346bff45038",
+      "text": "Meals according to the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J1mozdyj9L_vLczZtAApysDln9ecDF4E",
+        "documentSha256": "90c21b6530702a7adb00f4ff695724d73f69ee4dae0d0c1e28fe53fbd469d678",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:81",
+            "textSha256": "fbf35615c308444128e4340e335b73a42e0906c49824eeadf769d466cae8a99c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:7e9b1931643693dc",
+      "field": "included",
+      "sourceTextSha256": "d932ee916c20f0a7cc3073eee6cf7978c2ec110c57b08fd3e8ce2b6e467730d7",
+      "text": "SIB tours according to the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J1mozdyj9L_vLczZtAApysDln9ecDF4E",
+        "documentSha256": "90c21b6530702a7adb00f4ff695724d73f69ee4dae0d0c1e28fe53fbd469d678",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:82",
+            "textSha256": "44693adeab9e18e7d950cee0361c2cb6c8e759c65b0f15acc4176035aa01234c"
+          }
+        ]
+      }
+    }
+  ]
+}

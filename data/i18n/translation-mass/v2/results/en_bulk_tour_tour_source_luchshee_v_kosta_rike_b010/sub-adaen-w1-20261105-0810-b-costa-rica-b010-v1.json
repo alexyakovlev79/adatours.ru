@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_kosta_rike:b010",
+  "stableId": "tour_source_luchshee_v_kosta_rike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3f71103cb8f8d56c988cff7a19a86462aab9e968f7b83a52af62c770a107f59f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2b21eea082bfd708b3d5f0d7b1c1427042a93eebd5e8004bb282e8da8b1b9138",
+      "text": "Manuel Antonio – Corcovado",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:109",
+            "textSha256": "07d006e8fd886c39a484c32b49cb85c1da03a46b2249dff20609a71a181de2bd"
+          },
+          {
+            "ref": "docx:paragraph:119",
+            "textSha256": "fff37175263e5e6d4b1d5535f0e6b3ede208112c70386b56db879cb1a247a372"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The approved programme moves from Manuel Antonio in Days 8–9 to Corcovado and the Osa Peninsula on Day 10."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3926e0c8cb2ed408f56c89f1569ea3abca17a8605a5d72dd71cf392bfaa0b75b",
+      "text": "An early transfer to Sierpe, then a boat trip down the Sierpe River through mangrove wetlands to Rancho Corcovado, where a welcome cocktail awaits before lunch. The afternoon is free for nature trails and the best beach spots. Overnight at Rancho Corcovado. (B, L, D)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:122",
+            "textSha256": "c8805f7a7af5732397abbc26c367139607ddd045b70831d8905a28150c84a8b8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word Day 10 marker to fit the existing day-description field without altering the approved wording."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b509ccbd51cf37e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "029243b877d77800d42acd62f3e9405df9bae628e0a0768d658b8fad636c07d4",
+      "text": "Manuel Antonio",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:109",
+            "textSha256": "07d006e8fd886c39a484c32b49cb85c1da03a46b2249dff20609a71a181de2bd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:617ca0fdb0bf47c9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee9092f057c31f99f027781ced0e269f58f3e5a1939c397b598882cb4170cf71",
+      "text": "Corcovado National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:123",
+            "textSha256": "5e7b67b1bc472574f175b2919c8a2826708a5104c0e47f6445287f3150700dbe"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved English Word explicitly names Corcovado National Park in the Day 11 description, used as the location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:32b34e918256e80b",
+      "field": "media.alt",
+      "sourceTextSha256": "d92c917a4045f60dec0748c6055ed713ddf18780e7c4b8b177eaf46b5298b904",
+      "text": "A surfer carrying a board beside the waves at Manuel Antonio beach, Costa Rica.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0810-b-costa-rica-b010",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme has no alt caption for this specific surfer photograph; translated from RU media alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:883f95a0a6c4414d",
+      "field": "media.hover",
+      "sourceTextSha256": "892281d0f31082bcd6b75ef667cb3bd73188e43866c26e32e76bfc1c4cb844aa",
+      "text": "Manuel Antonio: a person with a surfboard on the forest-fringed coast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0810-b-costa-rica-b010",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word programme contains no hover caption for the photographed surfer; translated from RU metadata."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "374e8eaf7052e9a6ec6d718e7cce6728c5c8d482c6929a5874441302d9187ba2",
+      "text": "Corcovado",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:121",
+            "textSha256": "f86440c3ed491a540a56b56705816ad2e80a0f5525c75771b1e85a9ed54c1531"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The approved English Word names the Corcovado and Caño section; the day title refers specifically to Corcovado."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "005357637ff72f42173bca9b8ae0b9ada02fcb98b0616ca7a03bd1724480a004",
+      "text": "The Sirena Ranger Station lies in the heart of Corcovado National Park, a 50-minute boat ride from Drake Bay, with a wet landing on the beach: sandals are recommended. At the station, change into sturdier footwear to hike some of the park’s wildest terrain. Because Sirena is so remote, there is a greater chance of spotting some of the rarest rainforest wildlife: it rewards adventurous travellers with a true experience of what National Geographic has called “the most biologically intense place on Earth”. Overnight at Rancho Corcovado. (B, L, D)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XgRrOBovEvh9uK-1gkdTHrVH0L8lMJYv",
+        "documentSha256": "b4cd9fdc888faf8e964b8c93b6aac05fa5ad47a6d5e0006373340282bd5238bd",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:123",
+            "textSha256": "5e7b67b1bc472574f175b2919c8a2826708a5104c0e47f6445287f3150700dbe"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word Day 11 label while preserving the approved Sirena and Corcovado description."
+      }
+    }
+  ]
+}

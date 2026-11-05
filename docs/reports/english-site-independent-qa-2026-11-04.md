@@ -365,3 +365,24 @@ Urca/Sugar Loaf и Day 5 перелёт Rio → Foz do Iguaçu: дословны
 - **Ревизия b013:** `revisionId=qa-20261105-t7-luxury-b013-01`; новый путь `data/i18n/translation-mass/v2/results/en_bulk_tour_tour_luxury_brazil_11d_b013/qa-qa-20261105-t7-luxury-b013-01-9fc30cbf99dbb619.json`; старый immutable blob `e1cd1c8101be337ce05f291bda27d34759a79386`; исправлен только `tour:body:47f6c11f40afc686`. Подтверждён CAS commit `878e9f3457fdaf725de90c10188b94dcfaa47dc2`.
 
 **Граница:** RU, общие цены, медиа, Word, `main`, matching, чужие lease, публикация и GitHub Pages не изменялись. Это 8 пакетов, не QA всего каталога.
+
+
+## Независимый QA — проход 05.11.2026, reviewer `ada-independent-qa-20261105-0341`
+
+**Итог:** 2 ранее сохранённых пакета, 5 EN-блоков; 2 подтверждённых новых `ready`, исправленных ревизий нет. Проверены `word, meaning, facts, voice, structure, relations` по действующему `main`, точным frozen jobs, сохранённым результатам, соответствующим RU-файлам и прочитанным по точному `fileId` Word 2027. Все нижеуказанные SHA immutable результатов сверены с receipts, SHA RU blobs сверены с `job.source.sourceBlobSha`. Повторного хеширования двоичных DOCX не было: закреплённый документный SHA использован как контрольный, fileId и время изменения документа совпали с заданием. Ни цены, ни RU, ни Word не изменялись.
+
+### 1. Easter Island 2027 — `en:bulk:tour:tour_chile_easter_island_3_days_2027:b007`
+
+- **Решение:** `approve → ready`; CAS commit `ca7daf1d2fab059231a978691781af93782fef67`; accepted result blob `324f55ab12d2b52b4227bd089836fe1bf7358d08`; `sourceFingerprint=9b344936babe088e40e71fec993a4bee9b09509e21ce2fefacde11616a3346b4`; RU Git blob `bb3894bc42e3c717a967c1a1312e1e502a1f3bc3`.
+- **Word:** `fileId=1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5` (Easter_Island_3d2n_2027_ENG__20_.docx), закреплённый `documentSha256=e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492`; Drive modified `2026-10-22T14:03:05.061Z`, совпадает с frozen job.
+- **blockId:** `tour:media_hover:77871c8f58bdcbc6` (`/hero/hover`), RU-derived подпись фото `Easter Island: a row of moai against the sunset sky`: точное содержание и отсутствие соответствующей подписи в Word подтверждены. `tour:body:47f6c11f40afc686` (`/__body`): шесть строк тарифов по 1/2/3 гостям и SGL/DBL/TRL (`3279, 2151, 1701, 1959, 1509, 1492 USD`), Word подтверждает суммы и основу, отель 4★, услуги частного гида, исключённые авиабилеты и доплату за другой язык гида. RU/EN условия не стали новым обещанием. Таблица и все показатели сохранены.
+- **Семантический вывод:** три дня / две ночи, Rapa Nui; Word предлагает `Guides in other languages ... additional fee`, текущий RU конкретизирует русский язык за доплату — EN использует более общую, буквально подтверждённую Word 2027 формулировку, без изменения включённого англоговорящего гида. Маршрут и связи с экскурсиями в RU соответствуют документу. **Уверенность 99%**; прямые коммерческие суммы и условия подтверждены Word.
+
+### 2. Marble Caves & San Rafael 2027 — `en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b008`
+
+- **Решение:** `approve → ready`; CAS commit `4a7e93a836f9a346eb3be6daf12dc7de4b76eb45`; accepted result blob `b315f3c02d8524cdec38b340c77f603958d28e17`; `sourceFingerprint=421508b8073a279cad4fa71852481930728e407b727c18d3d9e0f541725120d3`; RU Git blob `7d1a7685949839b0906b7dd1cb8b8f8402c354fc`.
+- **Word:** `fileId=1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx` (MarbleCaves_2027_3D2N.docx), закреплённый `documentSha256=dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0`; Drive modified `2026-10-22T14:06:52.263Z`, совпадает с frozen job.
+- **blockId:** `tour:media_alt:68ebdd10346d3d20` (`/hero/alt`) и `tour:media_hover:77871c8f58bdcbc6` (`/hero/hover`): корректные RU-derived подписи иллюстрации Marble Caves / Lago General Carrera, не приписанные Word. `tour:body:47f6c11f40afc686` (`/__body`): две ночи в El Puesto Patagonia, Puerto Río Tranquilo; таблица `USD 2,000` на человека при двух путешественниках; прочие SGL/TPL, питание и даты требуют подтверждения.
+- **Семантический вывод:** Word прямо подтверждает отель, 2 ночи и тарифную базу `Price per person, based on 2 travellers`, **но не содержит сумму USD 2,000**. Число 2 000 подтверждено только действующим RU body и priceFrom и честно отмечено `ai_translation`, не `word_exact` / `word_aligned`. В EN не добавлены новые гарантийные коммерческие условия; Carretera Austral, San Rafael Glacier, Marble Caves, Cerro Castillo согласованы с текущим RU и Word. **Уверенность 98% в соответствии перевода источникам**; сумма 2 000 — факт действующего RU, а не подтверждённое новое предложение Word 2027.
+
+**Проверка границ:** никакого QA reject, возврата переводчикам, сброса очереди, изменений аренд, цен, RU, media, исходных Word, `main`, публикации или дополнительных очередей. `publicationEnabled=false`. Завершено 2 пакета, не весь каталог.

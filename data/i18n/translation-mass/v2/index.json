@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1026,
-    "leased": 2,
+    "queued": 1025,
+    "leased": 3,
     "review": 1345,
     "ready": 30,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1026,
-      "leased": 2,
+      "queued": 1025,
+      "leased": 3,
       "review": 1345,
       "ready": 30,
       "retryable": 0,
@@ -305,8 +305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 25,
-          "leased": 0,
+          "queued": 24,
+          "leased": 1,
           "review": 52,
           "ready": 0,
           "retryable": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:00:40.098Z",
       "earliestRetryAt": null
     },
     "17": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_meksika_lindo:b008",
       "token": "adaen-w4-20261105-0327-token-A",
       "expiresAt": "2026-11-05T02:00:28.918Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0318-a": {
+      "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b010",
+      "token": "adaen-w2-20261105-0318-token-a",
+      "expiresAt": "2026-11-05T02:00:40.098Z",
       "generation": 1
     }
   },
@@ -5823,7 +5829,8 @@
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b001",
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b002",
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala:b004",
-        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b008"
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b008",
+        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b005",
@@ -5845,5 +5852,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:30:28.918Z"
+  "updatedAt": "2026-11-05T00:30:40.098Z"
 }

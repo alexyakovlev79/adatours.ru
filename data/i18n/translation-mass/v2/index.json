@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 700,
-    "leased": 4,
+    "queued": 699,
+    "leased": 5,
     "review": 1644,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 700,
-      "leased": 4,
+      "queued": 699,
+      "leased": 5,
       "review": 1644,
       "ready": 50,
       "retryable": 0,
@@ -625,8 +625,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 30,
-          "leased": 0,
+          "queued": 29,
+          "leased": 1,
           "review": 48,
           "ready": 0,
           "retryable": 0,
@@ -657,7 +657,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T11:32:05.845Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_gvatemale:b009",
       "token": "ada-mw3dk0eb-y9bxi4fice9",
       "expiresAt": "2026-11-05T11:31:49.824Z",
+      "generation": 1
+    },
+    "ada-en-mw3dk3vd-amanda": {
+      "jobId": "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b008",
+      "token": "tok-mw3dk3vd-vc558bqmtf",
+      "expiresAt": "2026-11-05T11:32:05.845Z",
       "generation": 1
     }
   },
@@ -6814,7 +6820,8 @@
     "ada-en-mw3dk3vd-amanda": {
       "token": "tok-mw3dk3vd-vc558bqmtf",
       "jobIds": [
-        "en:bulk:tour:tour_source_luchshee_v_venesuele:b005"
+        "en:bulk:tour:tour_source_luchshee_v_venesuele:b005",
+        "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_venesuele:b005"
@@ -6843,5 +6850,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:01:57.596Z"
+  "updatedAt": "2026-11-05T10:02:05.845Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 873,
-    "leased": 9,
+    "queued": 872,
+    "leased": 10,
     "review": 1469,
     "ready": 48,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 873,
-      "leased": 9,
+      "queued": 872,
+      "leased": 10,
       "review": 1469,
       "ready": 48,
       "retryable": 0,
@@ -345,8 +345,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 25,
-          "leased": 0,
+          "queued": 24,
+          "leased": 1,
           "review": 48,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T05:11:56.110Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b008",
       "token": "ada-token-mw2zx6yi",
       "expiresAt": "2026-11-05T05:11:40.031Z",
+      "generation": 1
+    },
+    "ada-en-mw2zwyfn-amanda": {
+      "jobId": "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b001",
+      "token": "tok-mw2zwyfn-uhov7nk6gsf",
+      "expiresAt": "2026-11-05T05:11:56.110Z",
       "generation": 1
     }
   },
@@ -6320,7 +6326,8 @@
       "token": "tok-mw2zwyfn-uhov7nk6gsf",
       "jobIds": [
         "en:bulk:tour:tour_source_meksika_lindo:b004",
-        "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b016"
+        "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b016",
+        "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_meksika_lindo:b004",
@@ -6366,5 +6373,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:41:48.528Z"
+  "updatedAt": "2026-11-05T03:41:56.110Z"
 }

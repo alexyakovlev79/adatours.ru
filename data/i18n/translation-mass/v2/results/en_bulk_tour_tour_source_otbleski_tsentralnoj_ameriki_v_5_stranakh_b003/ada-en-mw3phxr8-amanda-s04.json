@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b003",
+  "stableId": "tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "43a5a5640c7b9f3492ec1b6b3cc9105098d615f2a8d61096ba7d7bdd8a6efb0a",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:1d9c1ddf5a411227",
+      "field": "notIncluded",
+      "sourceTextSha256": "f55bc46501f3b03d07961bc98a5ba157d7611f274138f18820725a03335dfa04",
+      "text": "Arrival and Departure Taxes",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "paragraph:131",
+            "textSha256": "b0e5b945420bad0c23d53e24815b04c0cd3062caf7882f3af3d679934120e554"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3phxr8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists hotel extras but has no general personal-expenses clause; translate the assigned canonical exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may replace a hotel with another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3phxr8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete selected Word has no same-category hotel substitution clause; translate the assigned canonical note."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3phxr8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete selected Word does not contain the excursion-order flexibility note; translate the assigned canonical note."
+      }
+    },
+    {
+      "blockId": "tour:note:b945b35735fb6701",
+      "field": "note",
+      "sourceTextSha256": "a93ef08b7351443416a87e46145591263e83304a74a1434e673b88941944053f",
+      "text": "Ada Tours is not responsible for missed breakfasts when an early flight or excursion requires an early hotel check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3phxr8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no missed-breakfast liability clause; translate the assigned canonical note without adding terms."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6ce1ca2c74889f576654efa5e9de094b1546528478f0267c6889db48e7304c2d",
+      "text": "Guatemala City – Antigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "paragraph:9",
+            "textSha256": "5323a46262643c9c9c16e2bf60cb537d058a93b0eed75e74c47eea503d4b417c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Adapt the cited Word wording to this specific route or place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "47a9e8bb7a95d05c45bab6f8a8d653371ce3db44330334c4b60a3cee1abf6f95",
+      "text": "Arrival at La Aurora International Airport. You will be met  at the airport in order to transfer  to Antigua. Overnight at Hotel Villa Colonial.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "paragraph:10",
+            "textSha256": "b2b20cf0c78acfbe8d74a87eae3eb3141e9ca6e8d9a29568a67c06a4d04c50af"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3a44e89961d0ffdf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c4487ded86c59c5a5a35f2eb03cf6f8fe9bdc4e5fd50c082ae37ac54eab748db",
+      "text": "Guatemala City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "paragraph:9",
+            "textSha256": "5323a46262643c9c9c16e2bf60cb537d058a93b0eed75e74c47eea503d4b417c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Adapt the cited Word wording to this specific route or place label."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 638,
-    "leased": 2,
+    "queued": 637,
+    "leased": 3,
     "review": 1706,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 638,
-      "leased": 2,
+      "queued": 637,
+      "leased": 3,
       "review": 1706,
       "ready": 50,
       "retryable": 0,
@@ -705,8 +705,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 17,
-          "leased": 0,
+          "queued": 16,
+          "leased": 1,
           "review": 55,
           "ready": 1,
           "retryable": 0,
@@ -737,7 +737,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T13:21:39.148Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_severnyj_pantanal_vodopady_reki:b006",
       "token": "token-mw3hj4bl-6y6avs72s5a",
       "expiresAt": "2026-11-05T13:21:28.931Z",
+      "generation": 1
+    },
+    "ada-en-mw3hjc7e-amanda": {
+      "jobId": "en:bulk:tour:tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu:b005",
+      "token": "token-mw3hjc7e-yt6f0aduixp",
+      "expiresAt": "2026-11-05T13:21:39.148Z",
       "generation": 1
     }
   },
@@ -6981,8 +6987,15 @@
         "en:bulk:tour:tour_source_severnyj_pantanal_vodopady_reki:b006"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw3hjc7e-amanda": {
+      "token": "token-mw3hjc7e-yt6f0aduixp",
+      "jobIds": [
+        "en:bulk:tour:tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T11:51:28.931Z"
+  "updatedAt": "2026-11-05T11:51:39.148Z"
 }

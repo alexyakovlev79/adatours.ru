@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_podlinnaya_braziliya:b003",
+  "stableId": "tour_source_podlinnaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "bd8592bc5bc5d018b8e761966686ff28ff213de837d5078964db8f3ab7349105",
+  "blocks": [
+    {
+      "blockId": "tour:note:ce73ba692a79ed1b",
+      "field": "note",
+      "sourceTextSha256": "9745ddce18c126e792776b53571032246d4c71e8e687a57f7a6717ea01b91ab9",
+      "text": "Availability and prices will be confirmed upon booking.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "important-information:availability-prices",
+            "textSha256": "dcee23f71175d37750abf164e2dc82259dbf3b787e2420ea6371f5a24f53f185"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved Word has the identical commercial note with an introductory list bullet, which is omitted here."
+      }
+    },
+    {
+      "blockId": "tour:note:f274324a6270205c",
+      "field": "note",
+      "sourceTextSha256": "14d754bf51be493e5d2f2ff3c6ef8df475ba23a6355ddb25953d2fb3194e9307",
+      "text": "Prices are not valid during holidays, New Year and Carnival.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "important-information:holiday-exclusions",
+            "textSha256": "92e08252cbd1c4c501fc81081d75e96eb1e43934306b734edb1c8f830810ffb0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved Word lists the same holiday exclusions with a bullet marker, which is removed for this note."
+      }
+    },
+    {
+      "blockId": "tour:note:5555e2c035fc5913",
+      "field": "note",
+      "sourceTextSha256": "c6ae1e20a9832c25fb189d0022a56b8d8f3a132e09ff69184ca761aaf9246040",
+      "text": "The stated duration is 13 days / 12 nights. The detailed itinerary covers Days 1–12; the allocation of the additional day and the exact day of the final flight to São Paulo will be confirmed upon booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0533-a-translation",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved 2027 Word states 13 days/12 nights but enumerates only Days 1–12; it does not contain the Russian editorial caveat about the additional day and final flight."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "days1-3:rio-title",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0ffb51c87afcea73bbd671a86a2ea0b9e8ee67cacb284a55d1a977e5f7b3334f",
+      "text": "Flight from São Paulo to Rio; on arrival, transfer to your hotel. Take the rest of your first day to discover the city at a relaxed pace.\n\nRio is surrounded by green hills, bays, islands and the ocean. Brazil’s second-largest city is one of those great metropolises where nature is always in view. Copacabana, Ipanema and Leblon stretch along the coast, and their black-and-white mosaic promenades are instantly recognisable. From early morning until late at night, people play football and volleyball on the golden sand, stroll or jog along the waterfront, and meet friends. Beach cafés serve cold coconut water, fresh juices and other drinks to the sound of local musicians. Those looking for an active holiday can try surfing, diving, rafting, tennis, golf, hang-gliding and other sports in Rio; local musicians frequently perform on the beaches, so the city begins to make an impression long before the first excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0533-a-translation",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word Day 1 supplies the initial São Paulo–Rio transfer, beach names and signature coastal atmosphere, but omits the Russian source's first-day pacing, detailed waterfront life and additional sports; those missing details are translated from RU while preserving the approved Word's core information."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:376c86191b98ed7d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+      "text": "São Paulo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "day1:flight-from-sao-paulo",
+            "textSha256": "8816e239debc069f7ab0ad5171c48120f346b984410d73b04561d1a052e10670"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word Day 1 explicitly names São Paulo as the point of origin; this field is the compact place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "days1-3:rio-title",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4882daca31b09108",
+      "field": "media.alt",
+      "sourceTextSha256": "cebee32d62c0b40d403a4a72f2cc7d72272273c10aa7a3f83e05b646349f42b6",
+      "text": "Photo: Sunset view over Rio de Janeiro.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0533-a-translation",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word Day 1 gives general Rio de Janeiro imagery but contains no image-specific caption or sunset description for this photograph."
+      }
+    }
+  ]
+}

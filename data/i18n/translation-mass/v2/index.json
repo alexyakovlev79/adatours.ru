@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 640,
-    "leased": 0,
+    "queued": 639,
+    "leased": 1,
     "review": 1706,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 640,
-      "leased": 0,
+      "queued": 639,
+      "leased": 1,
       "review": 1706,
       "ready": 50,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 27,
-          "leased": 0,
+          "queued": 26,
+          "leased": 1,
           "review": 50,
           "ready": 1,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T13:21:14.087Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw3hisv7-amanda": {
+      "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004",
+      "token": "tok-mw3hisv7-ohdi1lqhrx",
+      "expiresAt": "2026-11-05T13:21:14.087Z",
+      "generation": 2
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -6954,8 +6961,15 @@
         "en:bulk:tour:tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej:b002",
         "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b010"
       ]
+    },
+    "ada-en-mw3hisv7-amanda": {
+      "token": "tok-mw3hisv7-ohdi1lqhrx",
+      "jobIds": [
+        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:56:19.015Z"
+  "updatedAt": "2026-11-05T11:51:14.087Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 790,
-    "leased": 5,
+    "queued": 789,
+    "leased": 6,
     "review": 1555,
     "ready": 48,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 790,
-      "leased": 5,
+      "queued": 789,
+      "leased": 6,
       "review": 1555,
       "ready": 48,
       "retryable": 0,
@@ -585,8 +585,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 12,
-          "leased": 0,
+          "queued": 11,
+          "leased": 1,
           "review": 61,
           "ready": 0,
           "retryable": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T06:32:32.481Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -1370,6 +1370,12 @@
       "jobId": "en:bulk:tour:tour_source_little_mix_ru:b002",
       "token": "adaen-w2-20261105-0746-token-a",
       "expiresAt": "2026-11-05T06:31:04.504Z",
+      "generation": 1
+    },
+    "adaen-w1-20261105-0607-a": {
+      "jobId": "en:bulk:tour:tour_source_tropicheskij_novyj_god_v_brazilii:b003",
+      "token": "adaen-w1-20261105-0607-a-token",
+      "expiresAt": "2026-11-05T06:32:32.481Z",
       "generation": 1
     }
   },
@@ -6186,7 +6192,8 @@
         "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b002",
         "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b010",
         "en:bulk:tour:tour_source_ves_ekvador_galapagosskie_ostrova:b005",
-        "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b005"
+        "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b005",
+        "en:bulk:tour:tour_source_tropicheskij_novyj_god_v_brazilii:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b005",
@@ -6562,5 +6569,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T05:02:05.086Z"
+  "updatedAt": "2026-11-05T05:02:32.481Z"
 }

@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vpechatlenie_ot_surinama:b003",
+  "stableId": "tour_source_vpechatlenie_ot_surinama",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d588243db4da0b93dcb69ded16d108acda8d00fbcaf9e7677f076ba5f8d70094",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:608d610e824224ef",
+      "field": "notIncluded",
+      "sourceTextSha256": "4eca3e79867cac25daee19cd6004bdb7d31ae70078422ab7efa19b329da10e1e",
+      "text": "Entry card or e-visa",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1v4Kg0c01iPGjpPGM6jFrRnyVCcSfRV-F",
+        "documentSha256": "c6947cda05bee48db87592310b7d7463cdb28f1b3b8b487a6223e76968f7ec77",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0136",
+            "textSha256": "bd322b9d2b16b31fa4749b09d6a6f559ae88ba7119f9534da6a2b0477235a1a3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the list marker from the approved entry-card or e-visa exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:d96f78c9265cf8a6",
+      "field": "note",
+      "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
+      "text": "If necessary, Ada Tours may replace the hotels with other hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3jr4ub-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word does not contain this specific hotel-substitution clause; translated the assigned current RU note without changing its conditions."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3jr4ub-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word has no corresponding excursion-order change clause; translated the assigned current RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:ae482daa99427b98",
+      "field": "note",
+      "sourceTextSha256": "557246c9b96af1f9e9f293e8356eaf66a14fea7ae8231077db4c3159d40cf111",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when an early check-out is required for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3jr4ub-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word has no corresponding missed-breakfast liability clause; translated the assigned current RU note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9652089af7acb34d77f5a1ebf71576545f39b1828e6cc8bc8b7a674899a4e491",
+      "text": "Arrival in Suriname",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1v4Kg0c01iPGjpPGM6jFrRnyVCcSfRV-F",
+        "documentSha256": "c6947cda05bee48db87592310b7d7463cdb28f1b3b8b487a6223e76968f7ec77",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0065",
+            "textSha256": "e5065d9e7924dcd93aff2dba346fb68566911c8058125807fc06d84bf878b327"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the approved airport-arrival event in Suriname as this itinerary day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "977675ce696a6191908758b22658e48a5ccd0689bb3145c1ab75783f8e23f85d",
+      "text": "Day 1 · On arrival at Suriname’s airport, our driver meets you with a name board for the transfer to your hotel (45 minutes to 1 hour); your guide meets you in the lobby the next morning.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1v4Kg0c01iPGjpPGM6jFrRnyVCcSfRV-F",
+        "documentSha256": "c6947cda05bee48db87592310b7d7463cdb28f1b3b8b487a6223e76968f7ec77",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0065",
+            "textSha256": "e5065d9e7924dcd93aff2dba346fb68566911c8058125807fc06d84bf878b327"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:069633e6efa406ab",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a25b369b20c3fde62654aea654c55ea9ca8b06934269e35a0c3429ad9ab8c39d",
+      "text": "Paramaribo",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1v4Kg0c01iPGjpPGM6jFrRnyVCcSfRV-F",
+        "documentSha256": "c6947cda05bee48db87592310b7d7463cdb28f1b3b8b487a6223e76968f7ec77",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "af1c0ccbf5d606bf1e4fe30d8ae9c05f2d5a7443e6c3e81cb0a51edcd65db165"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d028ebf1e372005c",
+      "field": "media.alt",
+      "sourceTextSha256": "c052372e48055780603ad5ca06df44c0119d5702a98cfbd45e4abef3edf073ef",
+      "text": "An old wooden house with windows and a porch in Paramaribo, Suriname",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3jr4ub-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word contains no image-specific alt text for this old wooden house; translated the assigned current RU caption."
+      }
+    }
+  ]
+}

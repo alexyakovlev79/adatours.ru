@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b004",
+  "stableId": "tour_source_mechty_sbyvayutsya_na_karnaval",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5acff4e900d90759b82638668c566bddb73e1551185be97e39fe1988ed61e1c2",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:8d468a1c60d09bb2",
+      "field": "media.alt",
+      "sourceTextSha256": "36ff8f4fd001cd24cab10220ae21ccd81e1fc13540b6e299a6256db89ada2bfd",
+      "text": "People amid sea spray on a Rio de Janeiro beach at sunset, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word itinerary does not contain photographic alternative text for this beach image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1bfb6bc747f749cf",
+      "field": "media.hover",
+      "sourceTextSha256": "602725a3a2e3cd300e8287172ebfabbb16d5e698f8c75ed92d30e9d095d94c42",
+      "text": "Rio de Janeiro: swimming off the mountainous coast in the evening light",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word does not contain a hover caption for this specific coastal photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "cb4d9169f3ea889a1a820f69fbd27ed62b96e9d2233f2cef1364ea4554442311",
+      "text": "Sugar Loaf and Historic Rio",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p13",
+            "textSha256": "83ef638bae6ac7be3b876cc675a88f999f08e12f99fc3dc8dced68c7f7bb22a2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Adapt the approved Days 1–2 heading into the specific Day 2 itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "cc221331d7f4408e18238e6249509f2bb45506521372aa37347d5d2467ee8a3d",
+      "text": "Breakfast, then a 4-hour tour. The cable car stops first at Morro da Urca, with its wide observation deck, then continues to Sugar Loaf, with views of Copacabana, the bay, the surrounding mountains and islands, the bridge to Niterói and Christ the Redeemer. Continue to old Rio, with its historic churches, monasteries, the Metropolitan Cathedral and colonial buildings.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p17",
+            "textSha256": "d8bce4123c2c37b4e1aa15055df6bd5c12d0007b7608c0da7041dacf42e4b0cc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved English Day 2 itinerary paragraph, removing only its preceding day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p17",
+            "textSha256": "d8bce4123c2c37b4e1aa15055df6bd5c12d0007b7608c0da7041dacf42e4b0cc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination city and excursion context from the approved Day 2 itinerary."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:07172fd6ca3b791b",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro with Guanabara Bay, Sugar Loaf Mountain and the city, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word does not supply image-specific alternative text for this panoramic Rio photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:bec8b04e2a6eaf4a",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: Guanabara Bay and Sugar Loaf Mountain framed by city neighborhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word does not provide this photograph's hover caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "162dfc744db6ce4365c8250b14badf748f611392f4ee855e97be6ec66fd24fc8",
+      "text": "Free Time and Carnival at the Sambadrome",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "body:p26",
+            "textSha256": "9f1f595215093e6f99a0b525e28af3261fc22437e914e44677a9d12618593b2d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Describe the approved Day 3 free time followed by the evening Carnival at the Sambadrome."
+      }
+    }
+  ]
+}

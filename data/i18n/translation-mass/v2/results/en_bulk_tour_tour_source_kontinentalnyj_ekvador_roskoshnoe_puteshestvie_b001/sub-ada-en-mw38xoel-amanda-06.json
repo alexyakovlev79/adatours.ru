@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b001",
+  "stableId": "tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a4d7cfe5b1e3f26d8030d03d18a1b021ae354a02a49fcf747c3d3ba88847fee1",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "fd14e27ec7140bc63bb88f9c3ce183a4615f238b62441097c5fa80f2995c5dd7",
+      "text": "Mainland Ecuador",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p3",
+            "textSha256": "9750f0726a4973f9706d3e425fe7634cb05f7f58ec4b6dbc3441a331e2bb9e24"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "d1dc660e535bcc6ca3bd8529aecfd3852ffb622da561c7edaff9ff8b6beeb700",
+      "text": "Nine days of luxury across mainland Ecuador: the Royal Suite of Hotel Plaza Grande in colonial Quito, an Amazon cruise on the M/V Anakonda along the Napo River to the heart of Yasuní, the hot springs of Papallacta, a historic hacienda at the foot of Cotopaxi and a final city tour of Quito.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p18",
+            "textSha256": "b94e391b687d54d19d5ddf3e8abf6d0ded0f2a6bad54086652bb048294a44454"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "d9bfd82e04c3b6834cb5be6dc3ad281a627e76695a7ea0cd7cc4d03fb87bff5d",
+      "text": "$7,319",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The SHA-verified Word 2027 tariff table contains different prices and no $7,319 note. The worker is explicitly forbidden to change shared prices, so this pinned RU numeric price note is retained in English formatting; commercial reconciliation belongs to the commercial master.",
+        "wordVerified": {
+          "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+          "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+          "modifiedTime": "2026-10-27T18:19:15.831Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f0541bbf83cbdf6d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32734b2b9d1083b6f278caadf14c006e96dec83e80bc7557305451499d2f4750",
+      "text": "Quito",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p104",
+            "textSha256": "ef859221bb583220b58d1ca4d66f1ec513fa78a4c8713acf097cbafb1b481e62"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c876b6ed07f6092c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c530ce2990ca1c00ec4de04897ec93ff609ebabf5b2db473b8273cb2df869b2e",
+      "text": "Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p109",
+            "textSha256": "05c69dd53d6564210e11c68565add58fa95dd7059379e1464b713e1e8b12a4ce"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Use the Amazon regional name from the accommodation-table label, omitting its parenthetical Napo River detail."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0ce25a1e32239bb8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ca1a41dece428d718b84ea731a595420eb8274187eec1a30bd1b40d9120fa6b8",
+      "text": "Papallacta",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p49",
+            "textSha256": "96e7ec1ebb5a2159b8ceb6d3a0c2a2d6d4daa9c362d532af8014936998011535"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:87f9431e2cfce703",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f394be8c9d1979f613fd3dc866a8a53a491576facc7587336da75bffa42cd929",
+      "text": "Cotopaxi National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p93",
+            "textSha256": "e4c02da9b6aa72fc60d940e05c27ea156406ee4175000a4fd420940545d3a697"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract the established Cotopaxi National Park place name from the verified Day 8 paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f0541bbf83cbdf6d:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32734b2b9d1083b6f278caadf14c006e96dec83e80bc7557305451499d2f4750",
+      "text": "Quito",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "documentSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p124",
+            "textSha256": "ef859221bb583220b58d1ca4d66f1ec513fa78a4c8713acf097cbafb1b481e62"
+          }
+        ]
+      }
+    }
+  ]
+}

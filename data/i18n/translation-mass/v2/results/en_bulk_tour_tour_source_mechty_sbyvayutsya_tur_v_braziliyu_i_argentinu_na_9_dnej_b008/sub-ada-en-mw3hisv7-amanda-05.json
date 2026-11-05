@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b008",
+  "stableId": "tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "09b92d1b6c8aef7f1d75134a0d2fe8831599bece160463c0f2bb6d2da13f7522",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "811b761fdc05fe39446380b0fe5ab010fb513c29feb4efb48a013d11153c9212",
+      "text": "Rio de Janeiro – Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "c2d2dcbca614bb805121a922902d0c9e04e5092167b62ba69b7d105d2fa99d24"
+          },
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "2b0c7c7537028930588666266337a7eba60a1f074e73e2b129a72abdbb8ef66f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day route heading from the confirmed departure city and arrival at the Iguazu destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "bae824be1b62a90e95c4be5f48206c39fa715eedf485a0a962a060ac129326c4",
+      "text": "Transfer to the airport with a driver only. Flight to Foz do Iguaçu. On arrival at Foz do Iguaçu Airport, meet your driver.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word Day 4 paragraph combines breakfast, transfer, meeting signage and a long falls description; no standalone Word paragraph matches this RU driver-only transfer block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ck8kmnOfAWP51X7AI_Izny4uRB-G2Nsz",
+        "documentSha256": "18b94a8cc9205aed2a450dae5c9fd213d32b5e4e50d17b0ed25f50fe327f8a2d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p111",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b4af8d3ee5a70df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The assigned RU place label Puerto Iguazu is not named separately in the verified 2027 Word document."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5aa5948c69397db6",
+      "field": "media.alt",
+      "sourceTextSha256": "c67adb562fdfbb197745dc7b7b8c4a0fc47d9fc3c99f0320182ddf8b7c0eb052",
+      "text": "Iguazu Falls amid dense forest, viewed from a rocky riverbank",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word document has no matching photo alt text describing the falls as seen from this rocky riverbank."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5b62dc574920f1e6",
+      "field": "media.hover",
+      "sourceTextSha256": "4f8dbbf83b0db1cc2a7bd81ea8191a75ee9833e55019098267e8aff4afb76ed6",
+      "text": "Iguazu: green forest surrounds the cascades and drifting spray",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word document has no equivalent image hover caption for this forest-and-waterfall scene."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:38ae777b099865d2",
+      "field": "media.alt",
+      "sourceTextSha256": "e97efb8424710c31fbd8d0216ab8b0af93bde898fe386b7cbae17265aedeb815",
+      "text": "People playing with a ball on a Rio de Janeiro beach beside mountain peaks, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word document has no matching image alt text describing the people playing ball on this Rio beach."
+      }
+    }
+  ]
+}

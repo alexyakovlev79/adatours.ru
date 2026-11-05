@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 527,
-    "leased": 1,
+    "queued": 526,
+    "leased": 2,
     "review": 1816,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 527,
-      "leased": 1,
+      "queued": 526,
+      "leased": 2,
       "review": 1816,
       "ready": 50,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 22,
-          "leased": 0,
+          "queued": 21,
+          "leased": 1,
           "review": 47,
           "ready": 3,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:04:13.104Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b009",
       "token": "tk-mw3trdxr-w8i0ji2aq",
       "expiresAt": "2026-11-05T19:03:50.033Z",
+      "generation": 1
+    },
+    "ada-en-mw3trvql-amanda": {
+      "jobId": "en:bulk:tour:tour_source_pantanal_bonito:b005",
+      "token": "ada-token-mw3trvql-7ja3w02ycqx",
+      "expiresAt": "2026-11-05T19:04:13.104Z",
       "generation": 1
     }
   },
@@ -7274,8 +7280,15 @@
         "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b009"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw3trvql-amanda": {
+      "token": "ada-token-mw3trvql-7ja3w02ycqx",
+      "jobIds": [
+        "en:bulk:tour:tour_source_pantanal_bonito:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:33:50.033Z"
+  "updatedAt": "2026-11-05T17:34:13.104Z"
 }

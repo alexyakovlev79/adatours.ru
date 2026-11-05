@@ -1693,20 +1693,50 @@
     {
       "jobId": "en:bulk:tour:tour_source_meksika_lindo:b001",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "3d12c82f430deaa2ceffab56919d62512666ea9860aa6e2c546e4b98675d9827",
       "generation": 1,
       "attempts": 0,
       "lease": null,
       "checkpoint": null,
       "submission": {
-        "id": "sub-008515d4-04",
-        "blobSha": "854370395aeb15ea528fb0257e61cfe1577ee181",
-        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_meksika_lindo_b001/sub-008515d4-04.json",
-        "at": "2026-11-04T19:41:09.797Z"
+        "id": "qa-20261105-t5-mexico-b001-01",
+        "blobSha": "ac993677c3b8f86935dd2b54577a043d7f649fc5",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_meksika_lindo_b001/qa-qa-20261105-t5-mexico-b001-01-ac993677c3b8f869.json",
+        "at": "2026-11-05T00:32:05.905Z"
       },
-      "review": null,
-      "nextAttemptAt": null
+      "review": {
+        "reviewerId": "ada-independent-semantic-qa-20261105-t5",
+        "at": "2026-11-05T00:32:05.905Z",
+        "acceptedBlobSha": "ac993677c3b8f86935dd2b54577a043d7f649fc5",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
+      "nextAttemptAt": null,
+      "qaRevisions": [
+        {
+          "reviewerId": "ada-independent-semantic-qa-20261105-t5",
+          "at": "2026-11-05T00:32:05.905Z",
+          "previousSubmission": {
+            "id": "sub-008515d4-04",
+            "blobSha": "854370395aeb15ea528fb0257e61cfe1577ee181",
+            "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_source_meksika_lindo_b001/sub-008515d4-04.json",
+            "at": "2026-11-04T19:41:09.797Z"
+          },
+          "revisionId": "qa-20261105-t5-mexico-b001-01",
+          "changedBlockIds": [
+            "tour:priceNote:9b6b7f5cf7b1e557"
+          ],
+          "reason": "The current RU has an obsolete $1475 display label, while exact approved Word 2027 tariffs are per-person SGL $2372, DBL $1908, TPL $1855 for an 8-day / 7-night itinerary. Without changing the shared price or adding a new numeric commercial commitment, replace only the EN price-note text with a confirmation request; retain the Word 2027 exact title and lead intact.",
+          "confidence": 97
+        }
+      ]
     },
     {
       "jobId": "en:bulk:tour:tour_source_meksika_treugolnik_solntsa:b002",

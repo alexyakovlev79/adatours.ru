@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b007",
+  "stableId": "tour_source_neveroyatnaya_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "291e86d24e9c4da9da2d3ad4d2a356cc91a8ba37eaedef7d69ca6e51defa146c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "11c6cdd75f53fc48852f2711e1196ee5225f8f43b5f263630fc2f506e7090bfe",
+      "text": "Breakfast. Morning excursion to Tierra del Fuego National Park, with lunch and drinks in a large dining tent in the panoramic Cormorant Archipelago area. After a 25- to 40-minute drive, reach Ensenada Zaratiegui, home of the post office at the end of the world, for a short circular walk along the beach and through the forest, with views of Isla Redonda and the Chilean coast across the Beagle Channel. Continue to Lapataia Bay, where National Route 3 ends, the Lapataia and Ovando rivers, Laguna Verde and Lake Acigami (formerly Lake Roca).\n\nAfternoon · Sailing on the Beagle Channel from the tourist pier, around the Isla de los Pájaros, home to skuas, black-browed albatrosses, steamer ducks, geese and gulls; the Isla de los Lobos, with South American sea lions and fur seals; and the Les Eclaireurs Lighthouse, often mistaken for the “Lighthouse at the End of the World”, with colonies of imperial and rock cormorants. Return to the hotel (transfer not included).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:28",
+            "textSha256": "4a50b098ed829c733b72d78399fd49356313b5a23e3c0055e03e57100e191854"
+          },
+          {
+            "ref": "paragraph:29",
+            "textSha256": "67bd76790c8ba8630b80a298e79ca8edbe2de48e0c4e32f1ad1f290c7b751050"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Combine the two approved Day 4 Word paragraphs, stripping only the day prefix while preserving the afternoon section."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:005e4bc092f83d54",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+      "text": "Ushuaia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:26",
+            "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved programme has Ushuaia as the itinerary destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b78d142576e78d9d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "04a5c4fed1aa08b7d24e5afb0849f3a2ae98f0fa262d9aff59bace154463df3b",
+      "text": "Tierra del Fuego National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:28",
+            "textSha256": "4a50b098ed829c733b72d78399fd49356313b5a23e3c0055e03e57100e191854"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Day 4 passage names Tierra del Fuego National Park."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7032ba778fbcd55a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "72e080257b9dab5f4c45329ed8f8a920409c19511c0e28af7426a85d30fd3221",
+      "text": "Beagle Channel",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:29",
+            "textSha256": "67bd76790c8ba8630b80a298e79ca8edbe2de48e0c4e32f1ad1f290c7b751050"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Day 4 afternoon passage identifies the Beagle Channel."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a435d134ceb3317d",
+      "field": "media.alt",
+      "sourceTextSha256": "8592a6bc24659842f7083082dd660d2d75cb8aebe58abcdc338651017d083a4f",
+      "text": "Ushuaia and Tierra del Fuego",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0354-a-06",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word text contains no photo-specific alternative text for Ushuaia and Tierra del Fuego."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f6ce1e676dcaf821a440293021b3c40453b831fb26776d16466ad058bb2cfccd",
+      "text": "Ushuaia: Off-Road 4x4 Lakes Safari",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:30",
+            "textSha256": "649fed0db2786f52aa0c8f091612803f6172eaadfa9c0551f8b692e0a21bd217"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the approved Word Day 5 subject, off-road 4x4 lakes safari, as the itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ac9b25a7a898f680729b33cb5f4460850e803ebe61bc3f7c09ff3fb2c393dde4",
+      "text": "Breakfast. Full-day off-road 4x4 safari to the lakes, with lunch included. Along trails and across streams, reach the shore of Lake Fagnano, travel off-road through remote landscapes, then trek through the forest to Lake Escondido and its mountain refuge, observing beaver dams along the shore. Enjoy an Argentine barbecue with Malbec wine before returning to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:30",
+            "textSha256": "649fed0db2786f52aa0c8f091612803f6172eaadfa9c0551f8b692e0a21bd217"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved Word Day 5 itinerary, removing only the leading day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71b96948a77bc27e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+      "text": "Ushuaia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HRrfijHOz_uwumnHxmb3UiPbCknm8ktm",
+        "documentSha256": "8c72bce9bdf77305d17c983801dd12f5a51b1c635f4c95599f5ddec947963c7b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:26",
+            "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word itinerary section names Ushuaia."
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_romanticheskaya_braziliya:b009",
+  "stableId": "tour_source_romanticheskaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e4230dc593028ed39c4fb0cb06172c5ef0c72cb7cab15c80dab73cba1ab85e77",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1bdb95b4891d8accc0651a9cf019a11c3f4ce73b90891e94222594ebd31b2716",
+      "text": "Relaxing in Praia do Forte",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zwyfn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word ends on day 12 and has no day-13 title. Translate the current RU day-13 title without changing the existing itinerary structure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ba10d860b4dcdbe6ddfe375e7f8dc34d2cce3896c313340ccf38fcbc876bc390",
+      "text": "A free day to relax on the beach and at the hotel. There are no scheduled excursions today.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zwyfn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 describes free days 9–11 but has no day-13 entry or this specific two-sentence text. Preserve the current RU day and translate its content without changing duration."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2590b971f5e6cec1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tKXAIx2v18fZXV2VjC5Dpoqq_62rxh53",
+        "documentSha256": "bb29a3073e0501e40a001cf185e4bc8728591e56b29f83acceddc52f7e544d78",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:144",
+            "textSha256": "f1fb1c3e58e6a9d2058aa01e72dbb9687362906c125458a523e99074b92ad7b1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact destination name in the Word accommodation row for this standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2075fad79c077951",
+      "field": "media.alt",
+      "sourceTextSha256": "798f343dc36f82d73bf9143c7c44fee99cb059fd562d8b0292100591749c83e1",
+      "text": "A sandy beach with palm trees by the sea in Praia do Forte, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zwyfn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no alternative text for this sandy-beach and palm-tree photograph in Praia do Forte."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:303ed5a391fdeb22",
+      "field": "media.hover",
+      "sourceTextSha256": "1824e741e6acd5f6d2b9d3d9547a836720fb4379fc4719a557363e7a22b3ddb1",
+      "text": "Praia do Forte: waves along the sandy shore beneath the palm trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zwyfn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no hover caption describing waves and palms in this Praia do Forte photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tKXAIx2v18fZXV2VjC5Dpoqq_62rxh53",
+        "documentSha256": "bb29a3073e0501e40a001cf185e4bc8728591e56b29f83acceddc52f7e544d78",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:144",
+            "textSha256": "f1fb1c3e58e6a9d2058aa01e72dbb9687362906c125458a523e99074b92ad7b1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact destination name in the Word accommodation row for this standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ac25ef31167129407a18261170a5673373f312630f5c6255bc47d8fc324046e2",
+      "text": "Breakfast and a transfer to the airport in time for your international flight.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zwyfn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word places departure on day 12 and has no day-14 entry. Translate the current RU departure sentence while preserving the existing day-14 structure and without copying the conflicting Word day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f38f40050a2a654c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tKXAIx2v18fZXV2VjC5Dpoqq_62rxh53",
+        "documentSha256": "bb29a3073e0501e40a001cf185e4bc8728591e56b29f83acceddc52f7e544d78",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:144",
+            "textSha256": "f1fb1c3e58e6a9d2058aa01e72dbb9687362906c125458a523e99074b92ad7b1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact destination name in the Word accommodation row for this standalone place label."
+      }
+    }
+  ]
+}

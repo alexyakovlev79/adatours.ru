@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 641,
-    "leased": 0,
+    "queued": 640,
+    "leased": 1,
     "review": 1705,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 641,
-      "leased": 0,
+      "queued": 640,
+      "leased": 1,
       "review": 1705,
       "ready": 50,
       "retryable": 0,
@@ -585,8 +585,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 5,
-          "leased": 0,
+          "queued": 4,
+          "leased": 1,
           "review": 67,
           "ready": 1,
           "retryable": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T12:25:34.567Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw3ezm03-amanda": {
+      "jobId": "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b010",
+      "token": "tok-mw3ezm03-qerr24fcdds",
+      "expiresAt": "2026-11-05T12:25:34.567Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -6939,7 +6946,8 @@
         "en:bulk:tour:tour_source_vip_chili_5:b005",
         "en:bulk:tour:tour_source_udivitelnaya_salta:b005",
         "en:bulk:tour:tour_source_ves_mnogolikij_peru_ikitos:b011",
-        "en:bulk:tour:tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej:b002"
+        "en:bulk:tour:tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej:b002",
+        "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b001",
@@ -6955,5 +6963,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:55:26.753Z"
+  "updatedAt": "2026-11-05T10:55:34.567Z"
 }

@@ -1,0 +1,160 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b001",
+  "stableId": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "001fa2b78a67a07dd1ce4b30c28dcd404639b4695aac7a4cc29284d8fafd2ad3",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "ab7a5c1ef836e573ce95899194428907f1e0644b05eb61429dc357893859b1af",
+      "text": "South America tour: Brazil, Argentina, Chile and Uruguay",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "165f04f80c49efacb8b598ab1360611e3c471728bb9b2853d98a6a2da7e95f12"
+          },
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "548393aeeeb15e2a8cc867e2afa55c14e53f432ed13d2c09892bfef5f9a6f053"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "e763fa81e3c3eb8d21be10134e703e79a462f05e34acf730822a68540e5a81fc",
+      "text": "In 17 days, you will travel through 4 South American countries and see several very different parts of the continent. The journey begins in Santiago, then heads south through Chile to Puerto Natales and Torres del Paine. From Chilean Patagonia, the route continues into Argentina, to El Calafate, the Perito Moreno Glacier and Buenos Aires.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3txem9-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview describes the whole four-country journey, not this compact RU introduction tracing the initial Santiago–Puerto Natales–Torres del Paine–El Calafate–Buenos Aires sequence; translate the current RU lead, corroborated by Word days 1–8."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "8587adadd2cb9d71f57215dc863b4288de8b5b34b757fb2fcb7b8bfa797e7531",
+      "text": "2027 rate: from USD 6836 per person in double occupancy (DBL), with 4-star hotels. Full SGL/DBL/TRP rates are shown below.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3txem9-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word DBL table lists USD 6773 rather than the assigned RU USD 6836. Preserve the RU price note and tariff basis; commercial corrections belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:50297d7c25bbf812",
+      "field": "itinerary.label",
+      "sourceTextSha256": "167b8b96abd5e3a3d87673bc864b42e21096481d1d81de5f626110224e42230e",
+      "text": "Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "548393aeeeb15e2a8cc867e2afa55c14e53f432ed13d2c09892bfef5f9a6f053"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2c239e3e85ea91e6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c7fdccd56415a322fe18181e205bc05ba99a20f769bcc3d7814a5b5b38cfb4be",
+      "text": "Argentina and Patagonia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "7b50504c56f0d3a3481ee70c601cbd424faa7202b62a6433a2f332f823298912"
+          },
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "548393aeeeb15e2a8cc867e2afa55c14e53f432ed13d2c09892bfef5f9a6f053"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fdefc30ac5c85592",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d79105674d50860858cbe1f3c73e5be9522272ed100ad9941f1d2c75449c2df2",
+      "text": "Uruguay",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "548393aeeeb15e2a8cc867e2afa55c14e53f432ed13d2c09892bfef5f9a6f053"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d6acba7b81c4fa08",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a63eb465dc0bd00949b500458d687acf182437284a79bf3cf04de8afc341af85",
+      "text": "Brazil",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "548393aeeeb15e2a8cc867e2afa55c14e53f432ed13d2c09892bfef5f9a6f053"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:included:0f2dba6907330d9e",
+      "field": "included",
+      "sourceTextSha256": "eca03afc6ff7cc2f1c863a76ffcc5aa27c4cf583d672ceb12dec6dbafe54ec40",
+      "text": "Accommodation in 4-star hotels according to the programme, including breakfast.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p200",
+            "textSha256": "91c3fd268b490bd804a538a6d92a45dc302f7371665fa98faf8bcef7dd6c5d3e"
+          },
+          {
+            "ref": "word/document.xml:p244",
+            "textSha256": "2f27ffd9c4bce70b9c5aebdc80930123835e21d302b8fb6fa2ed8ae0a1ebc69e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kofe_tur_v_brazilii:b010",
+  "stableId": "tour_source_kofe_tur_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6ebdc5a9255360c183886827c656f496df997a260c4a64474724327484e58a70",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "85d4c569aeb8f38de6853a124e0486a0ad14494c5b57cdac9946978f983de26f",
+      "text": "Transfer to Visconde de Mauá, a mountain region known for its abundance of trails, rivers, waterfalls and natural pools of crystal-clear water. Its bucolic scenery comes with a touch of sophistication, thanks to charming inns, bars, restaurants and craft shops. Spend the day enjoying the waterfalls, to relax and have fun. Overnight at the Pousada Verde que te Quero Verde.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:47",
+            "textSha256": "e3b74d681cb3dc7cbfc23225100ff2e5f1f4dcd602733bff60051781f084a296"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word Day 8 marker; the approved nine-day wording aligns with the longer RU itinerary segment."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:30adad98fbc05101",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eb189057949d6f59c226dc9647a96ecf7a6a1954ce74923caf8cac123f09dd54",
+      "text": "Visconde de Mauá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:47",
+            "textSha256": "e3b74d681cb3dc7cbfc23225100ff2e5f1f4dcd602733bff60051781f084a296"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the approved destination spelling in the coffee tour programme."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:39e3f4c239346bd5",
+      "field": "media.alt",
+      "sourceTextSha256": "eec10ccba730f27654905f9a019ed27604d8dff97bb14da4cfb7720060a95d1a",
+      "text": "A clear natural pool amid rocks and forest in Visconde de Mauá, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word itinerary has no image-specific alternative text for the natural-pool photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:57dca7b802e997ab",
+      "field": "media.hover",
+      "sourceTextSha256": "0316362e14f42c62d4e7ba912e501ed4dc52c864ba13d2686de17cdebb6aaa12",
+      "text": "Visconde de Mauá: a mountain stream flows into a turquoise pool",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word itinerary does not contain this image hover caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e9108992530339a92bee5b4a97983b5961fded38477dc4e2d0b7d49978316ddd",
+      "text": "Visconde de Mauá – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:48",
+            "textSha256": "31ab421e48ebf7b1e0cf6d53b50aba47d74b30ee6553ed441065a7e000554edd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined Word destinations from the approved departure itinerary into a route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d691a14d946b57c1296b3cdae22aeb6d9c02af6b9c879a69ff32f8a1a67f8526",
+      "text": "After breakfast, transfer back to Rio de Janeiro for your flight home. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:48",
+            "textSha256": "31ab421e48ebf7b1e0cf6d53b50aba47d74b30ee6553ed441065a7e000554edd"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Day 9 marker and kept the approved return-transfer text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:99c0d88290b06bf7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:48",
+            "textSha256": "31ab421e48ebf7b1e0cf6d53b50aba47d74b30ee6553ed441065a7e000554edd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Preserved the approved arrival city name in the return-transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:556a5cc7004c9cf5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eb189057949d6f59c226dc9647a96ecf7a6a1954ce74923caf8cac123f09dd54",
+      "text": "Visconde de Mauá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:47",
+            "textSha256": "e3b74d681cb3dc7cbfc23225100ff2e5f1f4dcd602733bff60051781f084a296"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the approved mountain destination name from the preceding itinerary."
+      }
+    }
+  ]
+}

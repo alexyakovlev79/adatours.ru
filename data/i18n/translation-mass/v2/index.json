@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 906,
-    "leased": 8,
+    "queued": 905,
+    "leased": 9,
     "review": 1439,
     "ready": 47,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 906,
-      "leased": 8,
+      "queued": 905,
+      "leased": 9,
       "review": 1439,
       "ready": 47,
       "retryable": 0,
@@ -785,8 +785,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 43,
-          "leased": 0,
+          "queued": 42,
+          "leased": 1,
           "review": 40,
           "ready": 0,
           "retryable": 0,
@@ -817,7 +817,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T05:00:58.738Z",
       "earliestRetryAt": null
     },
     "09": {
@@ -1388,6 +1388,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_kosta_rike:b002",
       "token": "token-mw2zj4jr-th8oinee1ma",
       "expiresAt": "2026-11-05T05:00:42.201Z",
+      "generation": 1
+    },
+    "ada-en-mw2zimjr-amanda": {
+      "jobId": "en:bulk:tour:tour_source_kolumbiya_live:b007",
+      "token": "amanda-mw2zimjr-289a414f",
+      "expiresAt": "2026-11-05T05:00:58.738Z",
       "generation": 1
     }
   },
@@ -6229,7 +6235,8 @@
       "token": "amanda-mw2zimjr-289a414f",
       "jobIds": [
         "en:bulk:tour:tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi:b009",
-        "en:bulk:tour:tour_source_kolumbiya_2024_kulturnaya:b002"
+        "en:bulk:tour:tour_source_kolumbiya_2024_kulturnaya:b002",
+        "en:bulk:tour:tour_source_kolumbiya_live:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi:b009",
@@ -6262,5 +6269,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:30:52.757Z"
+  "updatedAt": "2026-11-05T03:30:58.738Z"
 }

@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vlyubites_v_argentinu:b001",
+  "stableId": "tour_source_vlyubites_v_argentinu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ba214114c1254ca915322435bc4492a4c3340be84d35bb24eeebe14dd65d96ff",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "9ac6439aabb8330f5cb4e2c78059f4b03ba6b7d0424e9537301234cfceebafde",
+      "text": "Argentina Tour: Buenos Aires, El Calafate, Salta and Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "466723f1edf88de7455b2825e1f90b08e709c599424d3e971e29ff4b47b9b862"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the destination-based tour title from the four stops in the Word route line, preserving their order."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "2c95c90306ff612866ff2ce7141874da15628e4dcbf8ac4073847b05744fd89d",
+      "text": "In 15 days, this itinerary brings together four very different sides of Argentina. Start in Buenos Aires, with its broad avenues, historic neighbourhoods and tango. Then head to Patagonia and the Perito Moreno Glacier, continue to the country's northwest for colourful mountains, colonial villages and salt flats, and finish your journey at Iguazu Falls.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "Word paragraph 17 is a shorter thematic overview and omits the broad avenues and colonial-village details in this RU lead. Translate the full current RU introduction using the Word place names."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "ae91e7f05efa0fc9be7bc7d4299f9691072078d97bf5fa97fd632756a01a8574",
+      "text": "$ 5,375",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p166",
+            "textSha256": "39afb565ca7fef4cb208eadd3c166342e0a7e8ab080ca6081d1220923153f0ed"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p36",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9b3f87db07393c2f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8bc4996c1c9528dc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6269b6b6909c4fe6a61adefe06d132c769df935fa9a35fd438c04b03ed604c74",
+      "text": "Salta",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p89",
+            "textSha256": "d82470117597d3b304cff315562867dbea38c790fe6bf24dd6d383327d2df381"
+          },
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "dee91413f9c0089e8d813d874c5ff217c14cfc10ff2a7d3c24ab2043832c8ef7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city name appearing in the Word Salta heading and arrival paragraph as the short route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:13e65fef2d14859a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7d4a23e09e99c675d020ec7b12d845f4aaa57403b2c21697fdd8e084ab7a67f3",
+      "text": "Iguazu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p51",
+            "textSha256": "03f9eba10c53baa396f0930833cd3cce44a641cfa9d6b5a0e2aa3fcf9d872e32"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:b88097889c4a6fe5",
+      "field": "included",
+      "sourceTextSha256": "5801dfcc08f362b54f793d7c797e01528158ad5dca70fa510b382dee52de16ad",
+      "text": "Accommodation in 4–5-star hotels with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p184",
+            "textSha256": "03c5d4b2452ab4c28c2cc0b6a71dfff24a853e2bfa8720863e2172330fa13ab2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the accommodation category and breakfast inclusion from Word; the RU slot does not contain a local-tax statement."
+      }
+    }
+  ]
+}

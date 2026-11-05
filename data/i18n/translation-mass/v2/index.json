@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 701,
-    "leased": 5,
-    "review": 1642,
+    "leased": 4,
+    "review": 1643,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 12,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 701,
-      "leased": 5,
-      "review": 1642,
+      "leased": 4,
+      "review": 1643,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 12,
@@ -1186,8 +1186,8 @@
         "word_2027": {
           "held": 0,
           "queued": 0,
-          "leased": 1,
-          "review": 77,
+          "leased": 0,
+          "review": 78,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 1,
@@ -1217,7 +1217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-05T11:30:12.037Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1d": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw3dk0eb-amanda": {
-      "jobId": "en:bulk:tour:tour_venezuela_canaima_angel_falls_4_days:b005",
-      "token": "ada-mw3dk0eb-y9bxi4fice9",
-      "expiresAt": "2026-11-05T11:30:12.037Z",
-      "generation": 1
-    },
     "ada-en-mw3dk3vd-amanda": {
       "jobId": "en:bulk:tour:tour_source_luchshee_v_venesuele:b005",
       "token": "tok-mw3dk3vd-vc558bqmtf",
@@ -6812,7 +6806,9 @@
       "jobIds": [
         "en:bulk:tour:tour_venezuela_canaima_angel_falls_4_days:b005"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_venezuela_canaima_angel_falls_4_days:b005"
+      ]
     },
     "ada-en-mw3dk3vd-amanda": {
       "token": "tok-mw3dk3vd-vc558bqmtf",
@@ -6844,5 +6840,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:01:14.122Z"
+  "updatedAt": "2026-11-05T10:01:42.280Z"
 }

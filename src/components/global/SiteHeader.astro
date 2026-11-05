@@ -11,7 +11,7 @@ import { countryPath, themePath, mainTourCountries } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { PILOT_ROOT_PATH } from '../../lib/i18n/pilot-html.mjs';
 import { uiText } from '../../lib/i18n/messages.mjs';
-import { sharedUiLocale, translateUiText, sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale, translateUiText, sharedInterestName, sharedCountryName } from '../../lib/i18n/shared-ui-locale.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
 import { buildInterestIndex } from '../../lib/interest-model.mjs';
 import { getVipCountryIndex } from '../../lib/vip-catalog';
@@ -48,7 +48,7 @@ const countryChildLinks: NavChild[] = countryEntries
   .sort(compareCountriesByPopularity(countryTourCounts))
   .map((country) => ({
     href: countryPath(country.data),
-    label: country.data.name,
+    label: sharedCountryName(country.data.slug, country.data.name, uiLocale),
   }));
 
 const interestChildLinks: NavChild[] = buildInterestIndex(themeEntries, tourEntries)
@@ -65,7 +65,7 @@ const interestMenuColumns = [0, 1].map((column) =>
 
 const miceChildLinks: NavChild[] = MICE_NAV_LINKS.slice(1).map(translateLink);
 const vipChildLinks: NavChild[] = (await getVipCountryIndex())
-  .map(({ href, entry }) => ({ href, label: entry.data.name }));
+  .map(({ href, entry }) => ({ href, label: sharedCountryName(entry.data.slug, entry.data.name, uiLocale) }));
 const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(translateLink);
 const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(translateLink);
 
@@ -81,7 +81,7 @@ const multiCountryBySlug = new Map<string, { slug: string; name: string }>();
 for (const entry of multiCountryTours) {
   for (const country of mainTourCountries(entry.data)) {
     multiCountryCounts.set(country.slug, (multiCountryCounts.get(country.slug) ?? 0) + 1);
-    multiCountryBySlug.set(country.slug, { slug: country.slug, name: country.name });
+    multiCountryBySlug.set(country.slug, { slug: country.slug, name: sharedCountryName(country.slug, country.name, uiLocale) });
   }
 }
 const multiCountryCountries = [...multiCountryBySlug.values()]

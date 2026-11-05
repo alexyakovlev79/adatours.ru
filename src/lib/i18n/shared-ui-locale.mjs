@@ -62,3 +62,9 @@ export function sharedInterestName(id, fallback, locale = sharedUiLocale()) {
   const key = 'interest.' + id;
   return locale === 'en' && Object.hasOwn(catalog.messages, key) ? uiText(locale, key) : fallback;
 }
+
+/** Display-only canonical EN country names shared by all site navigation. */
+export function sharedCountryName(slug, fallback, locale = sharedUiLocale()) {
+  const key = 'country.' + slug;
+  return locale === 'en' && Object.hasOwn(catalog.messages, key) ? uiText(locale, key) : fallback;
+}

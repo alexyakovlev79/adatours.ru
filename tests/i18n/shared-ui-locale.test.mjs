@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { sharedUiLocale, translateUiText, sharedInterestName } from '../../src/lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale, translateUiText, sharedInterestName, sharedCountryName } from '../../src/lib/i18n/shared-ui-locale.mjs';
 
 const staging = {
   EN_SHARED_CONTENT:'1', EN_STAGING_PAGES:'1', SITE_LOCALE:'en',
@@ -36,4 +36,15 @@ test('parameterised interface copy keeps the same counts and only translates kno
   assert.equal(translateUiText('4 дня путешествия','en'),'Your journey: 4 days');
   assert.equal(sharedInterestName('theme_nature','Природа','en'),'Nature');
   assert.equal(sharedInterestName('untranslated','Новое направление','en'),'Новое направление');
+});
+
+test('all 24 canonical dropdown country names are English and RU unaffected', () => {
+  const rows=[["brazil","Бразилия"],["argentina","Аргентина"],["peru","Перу"],["antarctica","Антарктида"],["belize","Белиз"],["bolivia","Боливия"],["venezuela","Венесуэла"],["guyana","Гайана"],["guatemala","Гватемала"],["honduras","Гондурас"],["dominican-republic","Доминикана"],["colombia","Колумбия"],["costa-rica","Коста-Рика"],["cuba","Куба"],["mexico","Мексика"],["nicaragua","Никарагуа"],["panama","Панама"],["paraguay","Парагвай"],["suriname","Суринам"],["uruguay","Уругвай"],["french-guiana","Французская Гвиана"],["chile","Чили"],["ecuador","Эквадор"],["el-salvador","Эль-Сальвадор"]];
+  assert.equal(rows.length,24);
+  for(const [slug,ru] of rows){
+    const en=sharedCountryName(slug,ru,'en');
+    assert.ok(en&&!/[\u0400-\u052F]/u.test(en),'Untranslated country menu: '+slug);
+    assert.equal(sharedCountryName(slug,ru,'ru'),ru);
+  }
+  assert.equal(sharedCountryName('french-guiana','Французская Гвиана','en'),'French Guiana');
 });

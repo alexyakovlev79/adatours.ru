@@ -159,6 +159,12 @@ if(!sharedHtml.includes('data-search-overlay')||!sharedHtml.includes('data-searc
 if(sharedContent && (!sharedHtml.includes('Travel interests') || !sharedHtml.includes('Send an enquiry')))
  fail('Shared interface reverted to Russian');
 if(sharedContent){
+ const dom=parse(sharedHtml),siteHeader=find(dom,x=>x.tagName==='header'&&attr(x,'data-site-header')!==null)[0];
+ const visible=x=>['script','style','svg'].includes(x?.tagName)?'':x?.nodeName==='#text'?x.value:(x?.childNodes??[]).map(visible).join(' ');
+ if(!siteHeader||/[\u0400-\u052F]/u.test(visible(siteHeader)))
+  fail('English main menu and submenus still contain Cyrillic text');
+}
+if(sharedContent){
  // Diagnose the generated common shell separately from the page-local form.
  // Its interactive modal link can be normalized by the shell optimizer; the
  // full shared form and each explicit page-local trigger are asserted above.

@@ -1,8 +1,7 @@
 ---
 import { withBase } from '../../lib/paths';
 import { formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
-import { getCollection } from 'astro:content';
-import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale, sharedCountryName } from '../../lib/i18n/shared-ui-locale.mjs';
 import { uiText } from '../../lib/i18n/messages.mjs';
 
 interface MenuCountry { slug: string; name: string; }
@@ -14,10 +13,8 @@ interface Props {
 }
 const { countries: sourceCountries, combinations, serverLinks = true } = Astro.props;
 const uiLocale = sharedUiLocale();
-const translatedNames = uiLocale === 'en'
-  ? new Map((await getCollection('countries',({data}) => data.locale === 'ru')).map(({data}) => [data.slug,data.name]))
-  : new Map<string,string>();
-const countries = sourceCountries.map(country => ({...country,name:translatedNames.get(country.slug) ?? country.name}));
+const countries = sourceCountries.map(country => ({...country,
+  name:sharedCountryName(country.slug,country.name,uiLocale)}));
 const bySlug = new Map(countries.map((country) => [country.slug, country]));
 const existing = new Set(combinations.map((row) => row.slugs.join('_')));
 const items = (serverLinks ? combinations : []).map((row) => ({
@@ -44,9 +41,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
         aria-label={uiText(uiLocale,'multi.combinationsWith',{country:country.name})}
       >
         <span class="mc-menu__country-name">
-          {country.name === 'Французская Гвиана'
-            ? <>Французская<br />Гвиана</>
-            : country.name}
+          {country.name}
         </span>
         <span class="mc-menu__arrow" aria-hidden="true">›</span>
       </button>

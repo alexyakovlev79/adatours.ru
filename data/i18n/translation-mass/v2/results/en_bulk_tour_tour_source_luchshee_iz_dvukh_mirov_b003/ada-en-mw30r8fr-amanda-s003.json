@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b003",
+  "stableId": "tour_source_luchshee_iz_dvukh_mirov",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b9d2e1759e826015482a94ee6a4dadb978ac784f89ba7c32c0e8ab5d23fdca40",
+  "blocks": [
+    {
+      "blockId": "tour:included:65b5d04fcdd550a0",
+      "field": "included",
+      "sourceTextSha256": "8c9d89d90c59fd7b6450ec8c7c08da672304e5f177c137a166a02ed64e58109b",
+      "text": "3 nights at Ramon’s Village, Jungle Deluxe;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines three nights, cabana category, tax and breakfast into one inclusion; the assigned RU splits these."
+      }
+    },
+    {
+      "blockId": "tour:included:9acfad0fc74a3c00",
+      "field": "included",
+      "sourceTextSha256": "6f7be9c0b966845a467678df9619cc1738fb5fccd3cc175c7fb9dacb38f65550",
+      "text": "Taxes and breakfast at Ramon’s Village;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines accommodation, tax and breakfast into one inclusion rather than this separate RU item."
+      }
+    },
+    {
+      "blockId": "tour:included:5981ea319e9f6c82",
+      "field": "included",
+      "sourceTextSha256": "146b2f4afdd7fef63afa4cd503eaf0b6a6e71b08a042cced537addbbe1ff38b1",
+      "text": "Local flight to Belize International Airport",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[152]",
+            "textSha256": "f6762966ca602e9ae2cacce3881b28a173ec41739ce91f64c79fef26abff9140"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the leading list marker from the exact Word item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:50d5d9469a678281",
+      "field": "notIncluded",
+      "sourceTextSha256": "fe58f62b33671e66a10de0ee084d9ca1a6b8096d0bba6525012c994af82049bf",
+      "text": "Border fees",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[155]",
+            "textSha256": "548263166077430f88437ed89ebfb818e9f0d04f5e684cbe526846132b7a9a45"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the leading list marker from the exact Word item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:958b4928cdac91ce",
+      "field": "notIncluded",
+      "sourceTextSha256": "5f643bf3aafa15a57d4439aa82f9e657ca26fb44eb411b340da962bbff4a811f",
+      "text": "Airport taxes;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lists departure taxes, not this broader airport-tax item in RU."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ddde98c8d71040e3",
+      "field": "notIncluded",
+      "sourceTextSha256": "07c5163e3b8bf062ed82917f4775dd39898f47335da33426f77643a55cca87ca",
+      "text": "Optional guided tours;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word says optional activities, while the assigned RU specifically says additional guided tours."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:2cb2e872e56308d5",
+      "field": "notIncluded",
+      "sourceTextSha256": "1a3ace31cc707f13f449b38776089e5fe0a1b3d614f9fe96ce46b91659cc7935",
+      "text": "Bar and gift purchases;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines bar, liquor and gifts; this assigned RU item omits liquor."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6700b2215da1c912",
+      "field": "notIncluded",
+      "sourceTextSha256": "87d9d5690fc0d359a0eead9412f97db45c0374f73a47f54d04666396389cca6d",
+      "text": "Laundry and other personal expenses;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word says personal items, whereas the RU item specifies personal expenses."
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_peru_expeditoin_ru:b002",
+  "stableId": "tour_source_peru_expeditoin_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2ccde3e6a5e773b16e4f6acae65089e3884a40583de79d2ce4c92481a113ad68",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:ae345d11e6a7bd4a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5778759e9dc062e7b9f6e49736c50335b3b928140004e2a2b4bf609a605cb8be",
+      "text": "Lake Titicaca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XrZzfxaD87HpTT-eN2AroxoaHB_haPhZ",
+        "documentSha256": "90d9d277cfc4f1997307081e08ca6496b6cbe32f9f53f5179fe064857a36b8be",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:45",
+            "textSha256": "3fd63e66e80ea273ed94001bee9d24fd3629f6386f3567adbc148e222c78dd05"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word names Lake Titicaca as the destination of the final tour segment."
+      }
+    },
+    {
+      "blockId": "tour:included:aeed6714727af1af",
+      "field": "included",
+      "sourceTextSha256": "409da3baed12f54d64a9e5f1def64414e24501c87d433e1d10d89332488edefd",
+      "text": "Included meals and beverages",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0248-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word specifically lists included breakfasts and lunches but does not specify beverages; fixed RU source additionally lists drinks as included."
+      }
+    },
+    {
+      "blockId": "tour:included:762bf7d757653c22",
+      "field": "included",
+      "sourceTextSha256": "9108cce6b1b1ecb2a31007f3783a3e5bbc6c35462564caed4a9a4967fb352aea",
+      "text": "Daily breakfasts",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XrZzfxaD87HpTT-eN2AroxoaHB_haPhZ",
+        "documentSha256": "90d9d277cfc4f1997307081e08ca6496b6cbe32f9f53f5179fe064857a36b8be",
+        "paragraphs": [
+          {
+            "ref": "docx:table:3:row:0:col:3:p:1",
+            "textSha256": "e4c74ebbf214820667fd88a1d588451f6c3a789dbbfbdd8acafa3d5bd2d903cc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word explicitly includes daily breakfast under meals."
+      }
+    },
+    {
+      "blockId": "tour:included:df3e53c256997964",
+      "field": "included",
+      "sourceTextSha256": "a84f1866d918678e2be1a034de7e1fbfafa71b404fb787ce19a73df8bdf6bf72",
+      "text": "Lunches as specified in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XrZzfxaD87HpTT-eN2AroxoaHB_haPhZ",
+        "documentSha256": "90d9d277cfc4f1997307081e08ca6496b6cbe32f9f53f5179fe064857a36b8be",
+        "paragraphs": [
+          {
+            "ref": "docx:table:3:row:0:col:3:p:1",
+            "textSha256": "e4c74ebbf214820667fd88a1d588451f6c3a789dbbfbdd8acafa3d5bd2d903cc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word specifies lunches as listed in the programme without claiming all lunches."
+      }
+    },
+    {
+      "blockId": "tour:included:7f7f93d4d3c77459",
+      "field": "included",
+      "sourceTextSha256": "2f0aa1ae39a707a5cd5487632862ab151b9771f0e2a0d09d147ee034ddaf5d38",
+      "text": "Arrival and departure airport transfers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XrZzfxaD87HpTT-eN2AroxoaHB_haPhZ",
+        "documentSha256": "90d9d277cfc4f1997307081e08ca6496b6cbe32f9f53f5179fe064857a36b8be",
+        "paragraphs": [
+          {
+            "ref": "docx:table:10:row:0:col:0:p:1",
+            "textSha256": "d180d1ad9d2080bd148a4d505629863847a39495ef87a7fceb620d663bcd79ed"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word explicitly includes airport arrival and departure transfers."
+      }
+    },
+    {
+      "blockId": "tour:included:9630ffee529a80d1",
+      "field": "included",
+      "sourceTextSha256": "cb321a23f07f9111f2a4a249a9b4060ea42b597d562e5b22ab9070e868158912",
+      "text": "City tour with an English-speaking guide",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0248-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word includes the city tour but does not explicitly state the guide’s language; the fixed Russian source specifies an English-speaking guide."
+      }
+    },
+    {
+      "blockId": "tour:included:c1bc9f5b77273440",
+      "field": "included",
+      "sourceTextSha256": "0b28d311bb4c53e76d5b958862bdb38f1ce8141be655f5cb4b3d73d28cd959c2",
+      "text": "One night of accommodation with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XrZzfxaD87HpTT-eN2AroxoaHB_haPhZ",
+        "documentSha256": "90d9d277cfc4f1997307081e08ca6496b6cbe32f9f53f5179fe064857a36b8be",
+        "paragraphs": [
+          {
+            "ref": "docx:table:10:row:0:col:0:p:8",
+            "textSha256": "a2f7dd4491bea45c9a1c256617d9191a521a60fc00917aa5d7999ff83b1d64b1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word lists one night in Lima and daily breakfast for the accommodation package."
+      }
+    },
+    {
+      "blockId": "tour:included:605203a0a333f94e",
+      "field": "included",
+      "sourceTextSha256": "8a32e2161eb2dcb02259489609c5b5fba053f85843094d69bb4cf6537ec8af5f",
+      "text": "Guided Cusco city tour and visit to the Sacsayhuamán Archaeological Park with an English-speaking guide",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0248-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word confirms the Cusco city tour and Sacsayhuamán visit but does not specify English-speaking guiding; that detail follows the RU source."
+      }
+    }
+  ]
+}

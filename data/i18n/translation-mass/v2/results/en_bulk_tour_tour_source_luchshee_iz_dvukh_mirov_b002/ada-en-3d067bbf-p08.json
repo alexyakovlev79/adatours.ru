@@ -1,0 +1,160 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b002",
+  "stableId": "tour_source_luchshee_iz_dvukh_mirov",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "19b9cf81964a0f40333e78d03d8d989ee5615a15ee5bdc0610fdccef7c67a409",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:77a6026a7fa3f874",
+      "field": "itinerary.label",
+      "sourceTextSha256": "58905205d12b2b0ce2d451e9aea7e76e5d00876e3b8c18743dff7581b6a43aaa",
+      "text": "San Pedro, Ambergris Caye",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "a90869127106c4bd1f19b68fa16a132e73d47618a6deb8e4bf1acb80f544e435"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:5dd96dd7816c75c9",
+      "field": "included",
+      "sourceTextSha256": "237ea6ba3ebf80d9c8207061dd960d90d3a902d426fbb00a4cf99fd3318f8ecd",
+      "text": "Meet & greet and transfer to the Cayo District",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p147",
+            "textSha256": "86ba3c4642cd6cebf774e88a1cda2e2dbeeb827b0d3846305b630aa848c303ba"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the assigned included-service item."
+      }
+    },
+    {
+      "blockId": "tour:included:ef90eb71ef2ab557",
+      "field": "included",
+      "sourceTextSha256": "efb396d0fca3b19154afbc11c0896a8f60d72e4bfdf05b34c819b73f7954705c",
+      "text": "5 nights at San Ignacio Resort Hotel, Garden View room;",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p148",
+            "textSha256": "7b506cde166a2543b5745b53e2cb2cb963702d7d90fcbe95c73471ae90d7563f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the verified combined accommodation line into the assigned stay/room item; taxes and breakfast remain in the next block."
+      }
+    },
+    {
+      "blockId": "tour:included:b81b5476baba3945",
+      "field": "included",
+      "sourceTextSha256": "31fda8925adfb88fab3df51c8e04e5f9fb1c345253c3a95d0801c39c5072838c",
+      "text": "Hotel taxes and breakfast at San Ignacio Resort Hotel;",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p148",
+            "textSha256": "7b506cde166a2543b5745b53e2cb2cb963702d7d90fcbe95c73471ae90d7563f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the included taxes and breakfast from the same verified hotel line into the existing separate service item."
+      }
+    },
+    {
+      "blockId": "tour:included:3cb3fd5493f36795",
+      "field": "included",
+      "sourceTextSha256": "0d8a476e85372c3def3f4d197d6ff627c2fde1024515ab73988841c599443744",
+      "text": "Guided tours of Caracol, ATM Cave, Barton Creek Cave and Tikal;",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p149",
+            "textSha256": "db54232d1b60c9fec8da79db3cb708bfdda3a72f7e03501a70aa5b5b39776c00"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the verified tour list into its guided-excursion item; lunch and entrance fees remain in the next block."
+      }
+    },
+    {
+      "blockId": "tour:included:473276a1a2a8b5fc",
+      "field": "included",
+      "sourceTextSha256": "d24d872f6d133c829a529dd3cbd611714ce9cf4fb21827ac3c347bdb063a418b",
+      "text": "Lunch and entrance fees on the specified tours;",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p149",
+            "textSha256": "db54232d1b60c9fec8da79db3cb708bfdda3a72f7e03501a70aa5b5b39776c00"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the lunch and entrance inclusions for the same four tours, preserving their scope."
+      }
+    },
+    {
+      "blockId": "tour:included:f15fec329716b894",
+      "field": "included",
+      "sourceTextSha256": "e6f3d040b94063918557031eecd36ad25bd547837546f4109202ea29ed68545c",
+      "text": "Land transfer to Belize City;",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p150",
+            "textSha256": "0333cfdf759f071987f8a00a5c9c53a795059f54efae64b4e4644d9f616dbb61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separate the verified combined transfer-and-flight line into the existing land-transfer item."
+      }
+    },
+    {
+      "blockId": "tour:included:60680a7b92682a11",
+      "field": "included",
+      "sourceTextSha256": "aa60415fa53bb259b2f02cfd00c4ee0fb34d6cacc96eee4dbbd19be4daef304c",
+      "text": "Local flight to San Pedro;",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p150",
+            "textSha256": "0333cfdf759f071987f8a00a5c9c53a795059f54efae64b4e4644d9f616dbb61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separate the verified combined transfer-and-flight line into the existing local-flight item."
+      }
+    }
+  ]
+}

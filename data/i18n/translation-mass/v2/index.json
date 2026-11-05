@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 843,
-    "leased": 10,
+    "queued": 842,
+    "leased": 11,
     "review": 1498,
     "ready": 48,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 843,
-      "leased": 10,
+      "queued": 842,
+      "leased": 11,
       "review": 1498,
       "ready": 48,
       "retryable": 0,
@@ -1025,8 +1025,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 45,
-          "leased": 0,
+          "queued": 44,
+          "leased": 1,
           "review": 38,
           "ready": 1,
           "retryable": 0,
@@ -1057,7 +1057,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T05:33:04.089Z",
       "earliestRetryAt": null
     },
     "0f": {
@@ -1400,6 +1400,12 @@
       "jobId": "en:bulk:tour:tour_source_ves_ekvador_galapagosskie_ostrova:b005",
       "token": "adaen-w1-20261105-0607-a-token",
       "expiresAt": "2026-11-05T05:32:45.754Z",
+      "generation": 1
+    },
+    "ada-en-mw30r8fr-amanda": {
+      "jobId": "en:bulk:tour:tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh:b001",
+      "token": "token-mw30r8fr-amanda",
+      "expiresAt": "2026-11-05T05:33:04.089Z",
       "generation": 1
     }
   },
@@ -6448,7 +6454,8 @@
     "ada-en-mw30r8fr-amanda": {
       "token": "token-mw30r8fr-amanda",
       "jobIds": [
-        "en:bulk:tour:tour_source_kosta_rika_dlya_lyubitelej_prirody:b002"
+        "en:bulk:tour:tour_source_kosta_rika_dlya_lyubitelej_prirody:b002",
+        "en:bulk:tour:tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kosta_rika_dlya_lyubitelej_prirody:b002"
@@ -6463,5 +6470,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T04:02:57.025Z"
+  "updatedAt": "2026-11-05T04:03:04.089Z"
 }

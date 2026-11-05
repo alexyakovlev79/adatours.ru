@@ -1308,20 +1308,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b007",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "blocked_external",
       "sourceFingerprint": "2c1ed6db716139e3ca5fbabb698f8a52ab47bb43cbcbd16c9331986247c279ec",
       "generation": 1,
-      "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-mw2zxaeg-amanda",
-        "token": "token-mw2zxaeg-69r46n6xwje",
-        "claimedAt": "2026-11-05T03:38:42.839Z",
-        "expiresAt": "2026-11-05T05:08:42.839Z"
-      },
+      "attempts": 1,
+      "lease": null,
       "checkpoint": null,
       "submission": null,
       "review": null,
-      "nextAttemptAt": null
+      "nextAttemptAt": null,
+      "lastFailure": {
+        "ownerId": "ada-en-mw2zxaeg-amanda",
+        "token": "token-mw2zxaeg-69r46n6xwje",
+        "generation": 1,
+        "failureStatus": "blocked_external",
+        "at": "2026-11-05T03:40:35.958Z"
+      }
     },
     {
       "jobId": "en:bulk:tour:tour_source_na_mototsiklakh_po_brazilii:b009",

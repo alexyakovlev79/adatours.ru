@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 587,
-    "leased": 2,
+    "queued": 586,
+    "leased": 3,
     "review": 1757,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 587,
-      "leased": 2,
+      "queued": 586,
+      "leased": 3,
       "review": 1757,
       "ready": 50,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 26,
-          "leased": 0,
+          "queued": 25,
+          "leased": 1,
           "review": 51,
           "ready": 1,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T14:25:28.123Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej:b012",
       "token": "token-mw3jr4ub-3p1770cwclv",
       "expiresAt": "2026-11-05T14:23:49.179Z",
+      "generation": 1
+    },
+    "ada-en-mw3jr16k-amanda": {
+      "jobId": "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b005",
+      "token": "token-mw3jr16k-bctm1pe8kk",
+      "expiresAt": "2026-11-05T14:25:28.123Z",
       "generation": 1
     }
   },
@@ -7113,7 +7119,8 @@
     "ada-en-mw3jr16k-amanda": {
       "token": "token-mw3jr16k-bctm1pe8kk",
       "jobIds": [
-        "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b007"
+        "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b007",
+        "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b007"
@@ -7128,5 +7135,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T12:55:20.699Z"
+  "updatedAt": "2026-11-05T12:55:28.123Z"
 }

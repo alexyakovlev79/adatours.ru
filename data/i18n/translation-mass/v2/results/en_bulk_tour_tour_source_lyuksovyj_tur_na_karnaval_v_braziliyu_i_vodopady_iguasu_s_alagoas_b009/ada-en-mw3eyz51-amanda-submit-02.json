@@ -1,0 +1,128 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b009",
+  "stableId": "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "23b40e0a6e44e2262217339328cf46c1e849314de77359cb43a61334987540c7",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:23be1d3dce9f6be1",
+      "field": "media.alt",
+      "sourceTextSha256": "5dc3148773d3b9fb3ebfa13509819ccb8dace8424186116b5701d9264be5ab8a",
+      "text": "Iguazu Falls behind overhanging foliage, with white torrents cascading over two rock ledges",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3eyz51-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no image-specific alt text describing foliage and two rock ledges."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:91e1859b556f5c08",
+      "field": "media.hover",
+      "sourceTextSha256": "84cc92410145d2bdcacf68284ead4fbd54acf3dc183dd7e839760908e78e2f6b",
+      "text": "Iguazu: cascades framed by green trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3eyz51-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no hover caption for this image of cascades framed by trees."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "14f2c52088f46dba16c42f2475b717b3159f2aadf09fdf0ae9d32e6cd8c5f82f",
+      "text": "Iguazu – Maceió, Alagoas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tC7yeDbT5HiCCrM2epBBJXPxLcqSDlXd",
+        "documentSha256": "dbfe7ef0fa23712ec928c80658c8de80bc4b7787cce261db4fbde2b9941f3b5a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "c2d2dcbca614bb805121a922902d0c9e04e5092167b62ba69b7d105d2fa99d24"
+          },
+          {
+            "ref": "word/document.xml#p0101",
+            "textSha256": "ddebcc400244b4aa3c18c12110db8194182e2c6aa010b3f76a0e6e8764df0f18"
+          },
+          {
+            "ref": "word/document.xml#p0102",
+            "textSha256": "a919697cb6278b052fea22282fff514570305c6343cba6aee616e0d380fd0704"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the verified Iguazu departure region with Maceio airport and Alagoas destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "048de89c26cece70ad28787915cbea53d312f3680671b2a5a0874279374113ae",
+      "text": "After breakfast, you can take another walk to the falls before departure.\n\nA transfer then takes you to the airport for your flight to Maceió via Rio de Janeiro. Domestic flights are paid for separately.\n\nOn arrival in Maceió, the beach part of your journey begins. A private transfer with English-speaking assistance takes you to Kenoa Exclusive Beach Spa & Resort, close to a nature reserve.\n\nAccommodation is in an Apoena Suite with breakfast. The 45 m² suite has a terrace with panoramic coastal views, an interior garden in the bathroom and a Japanese ofuro soaking tub made from aromatic cedar.\n\nThe rest of the day is free after your flight.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3eyz51-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word paragraphs 102 and 105 confirm the flight, hotel, suite and English-speaking transfer; the morning falls visit, reserve and 45 m² suite features are absent and translated from the assigned RU block. Service language follows the owner’s EN adaptation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:25c6390c55f06880",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tC7yeDbT5HiCCrM2epBBJXPxLcqSDlXd",
+        "documentSha256": "dbfe7ef0fa23712ec928c80658c8de80bc4b7787cce261db4fbde2b9941f3b5a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0120",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the exact city name from the verified accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ee3383f7798e5fa2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3eyz51-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word describes the Argentine falls but does not name Puerto Iguazu; the place label is translated from the assigned RU slot."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:90c59a7e5eec7978",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro with the bay, Sugarloaf Mountain and city buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3eyz51-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding image-specific alt description appears in the verified Word programme."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:a78ad9627d5f8550",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugarloaf Mountain among the city neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3eyz51-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding image hover caption appears in the verified Word programme."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 761,
-    "leased": 3,
+    "queued": 760,
+    "leased": 4,
     "review": 1584,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 761,
-      "leased": 3,
+      "queued": 760,
+      "leased": 4,
       "review": 1584,
       "ready": 50,
       "retryable": 0,
@@ -305,8 +305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 11,
-          "leased": 0,
+          "queued": 10,
+          "leased": 1,
           "review": 66,
           "ready": 0,
           "retryable": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T08:33:05.979Z",
       "earliestRetryAt": null
     },
     "17": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_solntse_tango_i_vino:b009",
       "token": "ada-en-mw375tlu-amanda-znsrx3m8j5j",
       "expiresAt": "2026-11-05T08:32:35.257Z",
+      "generation": 1
+    },
+    "ada-en-mw376iyr-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b009",
+      "token": "tok-mw376iyr-zg9ot4qmphr",
+      "expiresAt": "2026-11-05T08:33:05.979Z",
       "generation": 1
     }
   },
@@ -6653,7 +6659,8 @@
     "ada-en-mw376iyr-amanda": {
       "token": "tok-mw376iyr-zg9ot4qmphr",
       "jobIds": [
-        "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b011"
+        "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b011",
+        "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b011"
@@ -6661,5 +6668,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T07:02:56.931Z"
+  "updatedAt": "2026-11-05T07:03:05.979Z"
 }

@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b003",
+  "stableId": "tour_source_fordy_ognennoj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ede0c06f980ff4da3c535b9442e61573ad868a7f86b1811ebc895ab99e72b06f",
+  "blocks": [
+    {
+      "blockId": "tour:included:6966ba580d72f500",
+      "field": "included",
+      "sourceTextSha256": "ebcb7e1ae70c36f3a17aaf2f90beb270fb610fdad8647d390c7c274465ecaa42",
+      "text": "Visa fees",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[181]",
+            "textSha256": "830c419009c8a19412a05bbb98098bb8f9f1f4b11d3357dc604bba369aa93335"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word list marker to fit the existing included array entry."
+      }
+    },
+    {
+      "blockId": "tour:included:cb9d5b0207753975",
+      "field": "included",
+      "sourceTextSha256": "63266149ce1a4e061a0500c0a0e116ce33b652dbf21f7eeb0dc2baf293b55c55",
+      "text": "Lunch in Punta Arenas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[182]",
+            "textSha256": "856c3b716de023db7d7db64e7280d204cace807a1be4920d824e921679655be3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word list marker to fit the existing included array entry."
+      }
+    },
+    {
+      "blockId": "tour:included:96aae216cfd52579",
+      "field": "included",
+      "sourceTextSha256": "5533d006b801dd171075a77bda38b77d465edbc1fe2813a3ad16c16891046fee",
+      "text": "Optional travel insurance\n*If necessary, Ada Tours may replace the listed hotels with other hotels of the same category.*\n\n*If necessary, Ada Tours may change the order of excursions while retaining the tour programme.*\n\n*Ada Tours is not responsible for missed hotel breakfasts when early check-out is required for an early flight or excursion.*",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zickh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The insurance phrase is present in Word paragraph 183, but the three hotel, excursion-order and missed-breakfast caveats are absent from the full verified Word. This mixed block translates those RU caveats and retains its insurance meaning."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4f2ced6ce890ac21bed76d4baeb27623c62a5f92161162aff81709c1501505e6",
+      "text": "Punta Arenas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[67]",
+            "textSha256": "34bacb464b4506fa9b094878ef09d1f0e5e21716d30904c0e6d72643a814a82c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the destination name from the confirmed Day 1 heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9065ca70df2aa6a2e2f6792cb725e3df464f517cec73a740a2fec44283cffc62",
+      "text": "Day 1 · Punta Arenas. After a welcome toast and introductions to the captain and crew, the ship departs for one of the most remote corners of the planet. Overnight, it crosses the Strait of Magellan and enters the labyrinth of channels around the southern tip of Patagonia; the lights of Punta Arenas gradually fade as the ship enters the Whiteside Channel, between Dawson Island and Tierra del Fuego.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[67]",
+            "textSha256": "34bacb464b4506fa9b094878ef09d1f0e5e21716d30904c0e6d72643a814a82c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5655a43edcb50d70",
+      "field": "itinerary.label",
+      "sourceTextSha256": "832e77c5b0c4e0c74296c334a94b4e4cdbc2f8874f4896c6d7fba4604bd4dd64",
+      "text": "Punta Arenas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XruTmRohSlx78Q_2Zh0YrfpUdezFGfLs",
+        "documentSha256": "9b765297d64a9aea7f8e3947fd96699ad30168c73ee8a44c610101d30f4c237e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[67]",
+            "textSha256": "34bacb464b4506fa9b094878ef09d1f0e5e21716d30904c0e6d72643a814a82c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the destination name from the confirmed Day 1 heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:87d87bc8983bce45",
+      "field": "media.alt",
+      "sourceTextSha256": "c5e0b3fcf5feb0de94aa43bb6f41fb187a81cd2c64cf7df0ee206b96d12248c3",
+      "text": "Colourful houses by the sea in Punta Arenas under a cloudy sky, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zickh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified full Word contains no matching image alternative text for the colourful houses by the sea."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5d079278bc252443",
+      "field": "media.hover",
+      "sourceTextSha256": "94a55cd94e0558c641a219353b82538f657b197f70349d473df8e6fe61e3755b",
+      "text": "Punta Arenas: city rooftops and a ship off the coast",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zickh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified full Word contains no matching image hover caption for city rooftops and the ship."
+      }
+    }
+  ]
+}

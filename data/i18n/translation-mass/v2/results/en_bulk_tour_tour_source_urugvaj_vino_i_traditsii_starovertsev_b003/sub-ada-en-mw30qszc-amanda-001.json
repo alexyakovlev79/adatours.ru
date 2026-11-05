@@ -1,0 +1,155 @@
+{
+  "jobId": "en:bulk:tour:tour_source_urugvaj_vino_i_traditsii_starovertsev:b003",
+  "stableId": "tour_source_urugvaj_vino_i_traditsii_starovertsev",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "96505083f69cac338367691420c5b47133593ebeb6fe95a057fb51997ba75cf0",
+  "blocks": [
+    {
+      "blockId": "tour:note:d359fe81973a84a5",
+      "field": "note",
+      "sourceTextSha256": "6d127559ab2e21b1e87aa35ef8ecf5e37d5668dfc77c8ebcd1ec98e4bc868bfa",
+      "text": "Availability is confirmed at the time of booking.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OHSRjkvl7LMfQwLR1pRcd_rMBou4p8kM",
+        "documentSha256": "6b5bafbca5884d5e66d3f021e066d144e82a40473ac1546ed960d6e07fd16393",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p96",
+            "textSha256": "e56bc4fe399fd5c23973c714d9609795d5dd5251760383c400d668f48b82ea53"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the availability condition from the Word booking note; the RU slot contains no price statement."
+      }
+    },
+    {
+      "blockId": "tour:note:e3af986a1e8dc2ee",
+      "field": "note",
+      "sourceTextSha256": "9fe027d7f888a6634ee32239777f6990771be95c59d7bca17ffa495c3679e396",
+      "text": "All the hotels can be substituted by a similar class hotel",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OHSRjkvl7LMfQwLR1pRcd_rMBou4p8kM",
+        "documentSha256": "6b5bafbca5884d5e66d3f021e066d144e82a40473ac1546ed960d6e07fd16393",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p95",
+            "textSha256": "c98b25388045fb677eb2cbd7821cda15cbab874bc334648ee72bcaa8c5371561"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the leading asterisk used as a list marker in the Word hotel substitution condition."
+      }
+    },
+    {
+      "blockId": "tour:note:f0ee8356c726de03",
+      "field": "note",
+      "sourceTextSha256": "cf1826c3b08df8cb85635d8369fe2482d418156c449e8e48338dc596aca322f9",
+      "text": "Ada Tours may change the order of the excursions while keeping the tour programme unchanged.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete selected Word contains no clause about changing the order of excursions; translate the current RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when an early flight or excursion requires an early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The complete selected Word contains no missed-breakfast liability clause; translate the current RU note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "34dfc0662af392029356b120f991562535bec774fa00bc51683dbd2cb7246bd4",
+      "text": "Montevideo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OHSRjkvl7LMfQwLR1pRcd_rMBou4p8kM",
+        "documentSha256": "6b5bafbca5884d5e66d3f021e066d144e82a40473ac1546ed960d6e07fd16393",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p6",
+            "textSha256": "da0b84eb6083cade80b92bd6bf07dea3f318a9d912a9a034e48df7cb162db48d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination name from the Word Day 1 heading as the short itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "642429c099fa69a85b77be3b4bb9dfca50cca36dcd6b2cf4690b27e5b7288159",
+      "text": "Arrival in Montevideo.\n\nReception at Carrasco International Airport and  city tour visiting the most interesting spots in Montevideo. Its coast with magnificent beaches is on the banks of the Río de la Plata where an excellent bay forms a natural port of deep water. Montevideo has a great variety of cultural, gastronomic, and recreational offerings. Enjoy must-see strolls in fresh air on the rambla, plazas, and parks while also getting to know the important buildings of the city. On this panoramic tour, we observe the main tourist attractions of the city: Plaza Independencia, Palacio Legislativo, Mercado Agrícola, Monumento a la Carreta, Monumento a la Palabra, Montevideo, Carrasco and much more. A guided tour of the most important picturesque neighborhoods of the city. Lunch included at the traditional Mercado Puerto.\n\nAt the end of the tour transfer check-in at the hotel. Time at your own leisure in the evening.\n\nTransfer to dinner to Primuseum. Located in the heart of Montevideo's Ciudad Vieja, this original restaurant offers a unique experience. The best way to experience it is by enjoying a fine selection of typical Uruguayan dishes, wines, and a tango or milonga show. Primuseum is a mansion dating back to 1870, housing a collection of over 3000 antiques and 300 primus stoves. During the evening, it dresses up for the occasion, offering visitors a unique experience where gastronomy, culture, and tango harmoniously blend. You will indulge in local cuisine paired with the finest Uruguayan wines, including the flagship Tannat.\n\nReturn to the hotel. Accommodation in Montevideo.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OHSRjkvl7LMfQwLR1pRcd_rMBou4p8kM",
+        "documentSha256": "6b5bafbca5884d5e66d3f021e066d144e82a40473ac1546ed960d6e07fd16393",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p7",
+            "textSha256": "8a07fa54cec6606258417fea6019a5dd05a6da053b08ef7d63c8e11769b13201"
+          },
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "34fefae5e89ec0b0ef1fc4d12fc66ea2c343374daf59ef2897c494ef86537f78"
+          },
+          {
+            "ref": "word/document.xml:p12",
+            "textSha256": "f7cf672e79ce1c0b465df649665bd3f47fd5edc252cf0ae09fc517bb57303bc8"
+          },
+          {
+            "ref": "word/document.xml:p13",
+            "textSha256": "ec1127147cc201ef0bb1d9a887edb875c50b09f78e9da5aff7d176520fce907d"
+          },
+          {
+            "ref": "word/document.xml:p20",
+            "textSha256": "421f510d13b35740575290ec4b88cfa5ded1253fa851f77e1f339d9e65a0c1ed"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fffb9580d906260a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "34dfc0662af392029356b120f991562535bec774fa00bc51683dbd2cb7246bd4",
+      "text": "Montevideo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OHSRjkvl7LMfQwLR1pRcd_rMBou4p8kM",
+        "documentSha256": "6b5bafbca5884d5e66d3f021e066d144e82a40473ac1546ed960d6e07fd16393",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p6",
+            "textSha256": "da0b84eb6083cade80b92bd6bf07dea3f318a9d912a9a034e48df7cb162db48d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination name in the Word Day 1 heading for the corresponding place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2c7512b3642d6eb9",
+      "field": "media.alt",
+      "sourceTextSha256": "76c29408ab8bfce05123bc62558f244e38e2297f73fb4df1788d79a7b4cc2bfa",
+      "text": "Square with palm trees and the tower of Palacio Salvo in Montevideo, Uruguay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word has no image-specific alt caption describing this square and Palacio Salvo tower; translate the RU alt text."
+      }
+    }
+  ]
+}

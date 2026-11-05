@@ -1,0 +1,113 @@
+{
+  "jobId": "en:bulk:tour:tour_source_meksika_lindo:b002",
+  "stableId": "tour_source_meksika_lindo",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3c2245bba2821592b122d3c37b819964590293fc10c201daa5c7643fd0978ae8",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:5d447b91599bb9f7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b9dc4c16b2380ac60fd5abf16411a11a27f3ad92a2d21b18c209fe5a18cdc40c",
+      "text": "Cancún",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjc7e-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This image caption or contextual route label is absent from the selected Word document."
+      }
+    },
+    {
+      "blockId": "tour:included:9c8b1813bf14a9d2",
+      "field": "included",
+      "sourceTextSha256": "a5a83afbdefbb62228bd75a92cfed2a4929797f8367643a6d2af4cbe5492686c",
+      "text": "5 nights in standard rooms at the listed hotels or similar.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjc7e-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The assigned RU five-night inclusion has no exact Word counterpart: Word describes seven overnight stays. Preserve the existing assigned duration and accommodation conditions within worker scope."
+      }
+    },
+    {
+      "blockId": "tour:included:ac53dfcf8290e1af",
+      "field": "included",
+      "sourceTextSha256": "27a178465bd763e80ba4fd44e9b35bcccaf45bfedf82f045692758085cc8f7b4",
+      "text": "Daily breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjc7e-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The standalone RU daily-breakfast inclusion is absent from this selected Word's day-by-day inclusion lists."
+      }
+    },
+    {
+      "blockId": "tour:included:2f7c752e26cf1618",
+      "field": "included",
+      "sourceTextSha256": "b58b8ea488a3f7db0e189701db64c32b8c9564e7b3ae8641afdfa302bd7c5d5b",
+      "text": "1 lunch as specified in the itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjc7e-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word includes Lunch on Day 8 but does not contain the standalone RU one-lunch summary. Translate the RU summary without changing quantity."
+      }
+    },
+    {
+      "blockId": "tour:included:45126f3372a17d4f",
+      "field": "included",
+      "sourceTextSha256": "37c5fb5a4abac7ecb3c4cb1a949ebaf9a0e39cc050a2d9ad947376d904613e05",
+      "text": "All shared transfers and excursions specified in the itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjc7e-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The RU consolidated shared-transfer and excursion inclusion is absent verbatim from Word, which splits shared and private transfers by day. Preserve the assigned scope."
+      }
+    },
+    {
+      "blockId": "tour:included:3f5f073b10978afc",
+      "field": "included",
+      "sourceTextSha256": "27955d4855c33d07cfd910b0eb285713c172a36555aad4190bce0dec68f7caf8",
+      "text": "Entrance fees to the sites listed in the itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjc7e-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has separate entrance inclusions for individual days but no single corresponding all-sites summary. Translate the assigned RU inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:fd21bea01e36f2ed",
+      "field": "included",
+      "sourceTextSha256": "60039ad48539a0e352bfb4d52884acab1ae71a3440038567775351eff6abacb7",
+      "text": "Certified bilingual guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+        "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+        "paragraphs": [
+          {
+            "ref": "Day 02 / Included / Certified bilingual guide",
+            "textSha256": "75e246d8bcd5e664c4b77454f542188adab6ba6576a206538f7b562da326a12b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the bullet marker from the approved Word inclusion; the Word guide is bilingual in English and Spanish."
+      }
+    },
+    {
+      "blockId": "tour:included:f68ede36ee988e30",
+      "field": "included",
+      "sourceTextSha256": "1b5e6cf23152e07704cd463ce65bd2f6fdfd0504cb38ebc9c6cda23a408cfe46",
+      "text": "VAT and hotel taxes.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjc7e-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The RU VAT and hotel-tax inclusion is absent from the selected Word's inclusion lists."
+      }
+    }
+  ]
+}

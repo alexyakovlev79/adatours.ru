@@ -1,0 +1,172 @@
+{
+  "jobId": "en:bulk:tour:tour_source_populyarnye_napravleniya_venesuely:b004",
+  "stableId": "tour_source_populyarnye_napravleniya_venesuely",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "05b8322dfd3bac172d26690202e14c03939064ae5ca1358036ffb3bae43fdd13",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9fcddc03104c4babe040e6881446eb9486ec70ddd4c3303702af3128c7712d2e",
+      "text": "Arrival in Caracas. Meeting with the Russian-speaking guide and transfer to the hotel. Check-in and short rest. In the afternoon, sightseeing tour of downtown Caracas. We will visit the Capitol, which houses the historic Declaration of Independence of Venezuela; the Cathedral of Caracas; the Casa Amarilla, formerly a royal prison and now home to the Ministry of Foreign Affairs; and the birthplace of the national hero and liberator Simón Bolívar. We will also see the National Pantheon, the most sacred building in the city and the resting place of Venezuela’s most distinguished figures.\n\nNext, we drive to the El Mirador viewpoint, offering a panoramic view of the city’s modern business district, and stop at the iconic Caracas Sphere sculpture — one of the city’s landmarks.Lunch in a traditional restaurant (not included) and return to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:17",
+            "textSha256": "da638e9d9696638fb200305f2e80307a66c1c75a7356ef901a3a26cfd2423b7b"
+          },
+          {
+            "ref": "word/document.xml:p:18",
+            "textSha256": "4e8e30cba7680b48021bde107304005a1fb485b3c52d650686b5af9b298bc51f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6a6a6905889e4c6b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "text": "Caracas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:16",
+            "textSha256": "90f4635cad593f86367f8f678cccb7eb3a787e6674e8e96d9437630c24c9ebf0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word Day 1 city name as the existing place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:dd9b50d14631a179",
+      "field": "media.alt",
+      "sourceTextSha256": "b2b37d366397224ed6f67c266f2d6e37c80dd30dc350a9dbd85f0fdbcba96c03",
+      "text": "Panorama of Caracas with high-rise buildings, densely built hillsides and green mountains, Venezuela",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no image-specific description of the high-rise buildings and densely built slopes in this photograph; translate the assigned RU alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:59a25ffdcdd9ae7c",
+      "field": "media.hover",
+      "sourceTextSha256": "c4c6b7c46f4a6a35bbdfe42c0754b0c5ca485d431c5cc9343268192d8d049d0e",
+      "text": "Caracas: the city at the foot of a green mountain ridge",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no hover caption for this city and ridge photograph; translate the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e1e448be86d2191b1053d7459c02067de7831b0019b28dd68edc0f2a9097659c",
+      "text": "Historic Caracas and Ávila National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:17",
+            "textSha256": "da638e9d9696638fb200305f2e80307a66c1c75a7356ef901a3a26cfd2423b7b"
+          },
+          {
+            "ref": "word/document.xml:p:19",
+            "textSha256": "3c3fcb83867a7422e0283e8b260b816a39e92cd1bdb3e6796c57d7d3f53d5c7e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing heading from the verified Word historic Caracas visit and Ávila National Park heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ef7c67d2c8e508b63076d38007a0286b3a4bbfbcba05fc8b444c2b6590606d01",
+      "text": "After breakfast, we drive in 4x4 vehicles to the top of the mountain in Ávila National Park. In clear weather, the views of Caracas and the Caribbean Sea are stunning. You can stroll around, buy souvenirs, enjoy strawberries with cream, and taste hot cocoa.\n\nWe then take an excursion to the Humboldt Hotel.\n\nBuilt in 1956, it was the world’s first seven-star hotel and one of South America’s most famous landmarks of the 20th century. The hotel is renowned for its museum-like rooms, fine restaurants, and the Gaviota bar and club, adorned with bronze seagull sculptures. The walls and floors are decorated with original mosaics, and the unique lighting and structural design were created by architect Tomás Sanabria. The Humboldt Hotel combines mountain comfort with timeless elegance and history.\n\nLunch is available at the hotel (not included).\n\nReturn and rest.\n\nMeals: Breakfast",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "f32f742bc72038aca83009fa6e11115bd2d8254b865eaf7da8f7ca96f09a7e9c"
+          },
+          {
+            "ref": "word/document.xml:p:21",
+            "textSha256": "66b23173a65508fb6a68176956c6e19595c7b1d9e8cb64215bc1054db387775a"
+          },
+          {
+            "ref": "word/document.xml:p:22",
+            "textSha256": "7e5f64792f8f8126aca57f508361aa6833db87c8759d1c5311f582754dd352af"
+          },
+          {
+            "ref": "word/document.xml:p:23",
+            "textSha256": "efefb8b5e42754cedfea8c1f2944fe889c144ce5389d5c84e15332cc14439cdc"
+          },
+          {
+            "ref": "word/document.xml:p:24",
+            "textSha256": "173beb998e30cba27d8e6b9905919b81480cb0ef2bbd5de5176d36314bd466bf"
+          },
+          {
+            "ref": "word/document.xml:p:25",
+            "textSha256": "a4a14bed1bba214b90f451484801aa8c6c922d2b3edeba3c4b263e24c486cd78"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9270a280141e6d18",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "text": "Caracas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:16",
+            "textSha256": "90f4635cad593f86367f8f678cccb7eb3a787e6674e8e96d9437630c24c9ebf0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word city name as the existing itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:66d211eb891d423d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ffda9518741b4f1587cf7985743637b0bb9f85a02914e155095ca7fad7cd95f4",
+      "text": "Ávila National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:19",
+            "textSha256": "3c3fcb83867a7422e0283e8b260b816a39e92cd1bdb3e6796c57d7d3f53d5c7e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified Word national park name as the existing itinerary place label."
+      }
+    }
+  ]
+}

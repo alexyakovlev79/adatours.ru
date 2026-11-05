@@ -1,0 +1,167 @@
+{
+  "jobId": "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro_vodopady:b001",
+  "stableId": "tour_source_karnaval_v_rio_de_zhanejro_vodopady",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "bae6b3fe883a7951aa2d7833a2b7246c788fb93986b9d567c1f093d7465d0a42",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "eb8ac02a273f65c1ed5f5aaad605cfb9ba456984315ca4793815284f9c0a7661",
+      "text": "Brazil Tour: Rio Carnival and Iguazu Falls | 8 days",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1afbczzwgor5hGPk2dHj95eKO-v1-W7Pw",
+        "documentSha256": "47acd6b8d3701d40e31d4ce0e6b29f1e38fac681fb8152801d10223f83025e28",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p2",
+            "textSha256": "33e4191527d522c4a58b3efefd8532f52ee78864f71c90b4b97e6d89f79e6781"
+          },
+          {
+            "ref": "word/document.xml:p6",
+            "textSha256": "e3b26491a85ba8b4a4971b87eb405668776baafa054e9dc59b8247d148a57840"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the confirmed Word tour name and duration into the existing RU title field without changing the product."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a99d7e906b7f347109947d502ee7fffb9a0ee2866133dfc7c1178ce0dfab3291",
+      "text": "In 8 days, you will see 2 very different sides of Brazil. First comes Rio de Janeiro during Carnival: Sugar Loaf, the historic centre, Corcovado, Christ the Redeemer and a night at the Sambadrome. The route then takes you to Iguazu, where the vast waterfall complex can be explored from 2 sides, Brazilian and Argentine.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview is shorter and omits the RU lead's historic centre and Corcovado wording. This specific editorial lead is absent; translated RU with its itinerary details confirmed in Word days 2 and 4."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "6e9b83f7a0c456bef2a57eedb47f9d93ee8b9d5763cbd7aab9f2b122858c58e7",
+      "text": "$2981",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1afbczzwgor5hGPk2dHj95eKO-v1-W7Pw",
+        "documentSha256": "47acd6b8d3701d40e31d4ce0e6b29f1e38fac681fb8152801d10223f83025e28",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p122",
+            "textSha256": "83fb2c4dfdd3179aa5d9251ca61ef56356c0d12d8910329105221683511396ba"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Preserve the existing RU price note exactly; the same 2981 USD amount is in the Word DBL 3-star price cell. No price basis or tariff changes."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c165ecc8a1f423b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2beea3e23ac67357d0e86010c3d4e796815ee4cfa2abf0bc3401c20beb043e45",
+      "text": "Rio de Janeiro, 4 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1afbczzwgor5hGPk2dHj95eKO-v1-W7Pw",
+        "documentSha256": "47acd6b8d3701d40e31d4ce0e6b29f1e38fac681fb8152801d10223f83025e28",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p104",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p105",
+            "textSha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word city cell and its four-night count into the assigned route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c7413b236ba1a7e0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "de53600b9dcbf23ce4361e54d9fc58a3d64c8dbe6d5ba29cc72bf11dc173d192",
+      "text": "Foz do Iguaçu, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1afbczzwgor5hGPk2dHj95eKO-v1-W7Pw",
+        "documentSha256": "47acd6b8d3701d40e31d4ce0e6b29f1e38fac681fb8152801d10223f83025e28",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p109",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p110",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word city cell and its three-night count into the assigned route label."
+      }
+    },
+    {
+      "blockId": "tour:note:1094a3b405265982",
+      "field": "note",
+      "sourceTextSha256": "88000bae1b4949cfac18197beacaf13580b7db9fec995d485a284cbf908ff76c",
+      "text": "5–12 February",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1afbczzwgor5hGPk2dHj95eKO-v1-W7Pw",
+        "documentSha256": "47acd6b8d3701d40e31d4ce0e6b29f1e38fac681fb8152801d10223f83025e28",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p7",
+            "textSha256": "f89c8d4f275119b83836ed116202e5d4163fdcdf21f57a2e9f063b74f430c238"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Render the assigned RU numeric day/month range in unambiguous English, preserving dates and omitting an unassigned year."
+      }
+    },
+    {
+      "blockId": "tour:included:2750a3ed266f1d6a",
+      "field": "included",
+      "sourceTextSha256": "d3d953bb372ad557be35f9acab6bade46a46981756a8a24bdb77c3081c46e501",
+      "text": "Accommodation in the selected hotels, with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1afbczzwgor5hGPk2dHj95eKO-v1-W7Pw",
+        "documentSha256": "47acd6b8d3701d40e31d4ce0e6b29f1e38fac681fb8152801d10223f83025e28",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p153",
+            "textSha256": "d5886c2273504f228151d1e87a839dddeb3704cf7c1ffeb598e9cfb5fceeec3a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker for the standalone included-services array item."
+      }
+    },
+    {
+      "blockId": "tour:included:29ac633833b2ff90",
+      "field": "included",
+      "sourceTextSha256": "981987c7789a96543dd473edfebaeee822fd16e200371bb7578a6159eeaf86f3",
+      "text": "Excursions as per the programme with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1afbczzwgor5hGPk2dHj95eKO-v1-W7Pw",
+        "documentSha256": "47acd6b8d3701d40e31d4ce0e6b29f1e38fac681fb8152801d10223f83025e28",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p154",
+            "textSha256": "3990a8f102b3bdf7022e9efd1ebe8d14e7970415e72dbb3154e8d82246a22bbc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker; retain the verified English-speaking guide service wording."
+      }
+    }
+  ]
+}

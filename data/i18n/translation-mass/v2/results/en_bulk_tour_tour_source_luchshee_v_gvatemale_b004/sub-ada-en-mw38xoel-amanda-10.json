@@ -1,0 +1,154 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_gvatemale:b004",
+  "stableId": "tour_source_luchshee_v_gvatemale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0ee747276da859c1f06eb6986fab4e24d7f661030392ef557637d860f701161f",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:1d9c1ddf5a411227",
+      "field": "notIncluded",
+      "sourceTextSha256": "f55bc46501f3b03d07961bc98a5ba157d7611f274138f18820725a03335dfa04",
+      "text": "Airport taxes.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists arrival and departure taxes, but no separate airport-tax field with this exact scope; translate the pinned RU exclusion without broadening it.",
+        "wordVerified": {
+          "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+          "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+          "modifiedTime": "2026-10-28T14:23:47.444Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word combines personal expenses with hotel extras; this separate short personal-expenses field is translated from the assigned RU.",
+        "wordVerified": {
+          "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+          "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+          "modifiedTime": "2026-10-28T14:23:47.444Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:8df01e141279b18e",
+      "field": "note",
+      "sourceTextSha256": "8055c6ecf875a51012fcd9ac65efe82cf329a33aff36e8018f112709fa6d282f",
+      "text": "Chichicastenango market can only be visited on Thursdays or Sundays.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p58",
+            "textSha256": "f32b01cc0b6f67715e41e6e28a80570cac90b9407a1493b0a33b750c0ad7ca33"
+          },
+          {
+            "ref": "word/document.xml#p78",
+            "textSha256": "f829d8b3aaa4a7f167c374f23519b3dc7999ba568a46eab889be377402b9fd95"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Render the verified Thursday/Sunday-only market restriction as a short standalone operational note."
+      }
+    },
+    {
+      "blockId": "tour:note:b7f9e66621906906",
+      "field": "note",
+      "sourceTextSha256": "74245fd62d89db8b22791aeee3eaff198c87a2241c0be6e72dfe1a7c5a3ecace",
+      "text": "Ada Tours may replace the listed hotels with others of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete verified Word contains no hotel-substitution clause; translate this assigned RU note with its original condition.",
+        "wordVerified": {
+          "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+          "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+          "modifiedTime": "2026-10-28T14:23:47.444Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:571ee1ad8f5acb16",
+      "field": "note",
+      "sourceTextSha256": "e6d2b0fddd0247d4b771121e4ef0540f1c6d4641ad4db92cd4a2b4e4816dc93d",
+      "text": "The order of excursions may change while retaining the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete verified Word contains no excursion-reordering clause; translate the assigned RU note while retaining the programme-preservation condition.",
+        "wordVerified": {
+          "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+          "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+          "modifiedTime": "2026-10-28T14:23:47.444Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:note:50c74b165e439549",
+      "field": "note",
+      "sourceTextSha256": "87c5d8ed10345bb675f9426a2ca1cee4462bd17e594a55b680338310e57405b3",
+      "text": "Ada Tours is not responsible for breakfasts missed when an early flight or excursion requires an early hotel check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete verified Word contains no early-flight or early-excursion missed-breakfast liability clause; translate the assigned RU condition.",
+        "wordVerified": {
+          "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+          "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+          "modifiedTime": "2026-10-28T14:23:47.444Z"
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6ce1ca2c74889f576654efa5e9de094b1546528478f0267c6889db48e7304c2d",
+      "text": "Guatemala City – Antigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+        "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p67",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the arrival-day route title from the verified Guatemala City airport and Antigua transfer."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "946f150170f1f527e21c7fd4c619d56089364fa838b67f4b1017d4a9c72fff05",
+      "text": "Arrival at La Aurora International Airport in Guatemala City and transfer to Antigua.\n\nYou will be met on arrival. The journey is around 40 km and takes approximately 1 hour.\n\nToday, your guide will explain the upcoming route and the practical arrangements for your trip in detail.\n\nOvernight at Hotel Villa Colonial.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38xoel-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word Day 1 supplies the arrival, Antigua transfer and Villa Colonial wording, retained verbatim as excerpts. The 40 km/approximately 1 hour distance and guide briefing are absent from Word, so those assigned RU details are translated and inserted without changing the route or hotel.",
+        "wordVerified": {
+          "fileId": "1MfFMYvTkHizz2y7XQmdC0cIjNgd0tmbg",
+          "documentSha256": "6b70cdb5215914c19cd6bc79a5d4c698a88b0e6c19b74d40038b528f5c446250",
+          "modifiedTime": "2026-10-28T14:23:47.444Z"
+        }
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 972,
-    "leased": 7,
+    "queued": 971,
+    "leased": 8,
     "review": 1390,
     "ready": 32,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 972,
-      "leased": 7,
+      "queued": 971,
+      "leased": 8,
       "review": 1390,
       "ready": 32,
       "retryable": 0,
@@ -505,8 +505,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 44,
-          "leased": 0,
+          "queued": 43,
+          "leased": 1,
           "review": 34,
           "ready": 1,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:53:46.937Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b004",
       "token": "adaen-w1-20261105-0418-token-c",
       "expiresAt": "2026-11-05T02:53:28.638Z",
+      "generation": 1
+    },
+    "adaen-w4-20261105-0414-a": {
+      "jobId": "en:bulk:tour:tour_source_kolumbiya_stolitsy:b003",
+      "token": "adaen-w4-20261105-0414-token-a",
+      "expiresAt": "2026-11-05T02:53:46.937Z",
       "generation": 1
     }
   },
@@ -5995,7 +6001,8 @@
       "token": "adaen-w4-20261105-0414-token-a",
       "jobIds": [
         "en:bulk:tour:tour_source_kolumbiya_live:b004",
-        "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b007"
+        "en:bulk:tour:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh:b007",
+        "en:bulk:tour:tour_source_kolumbiya_stolitsy:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kolumbiya_live:b004",
@@ -6023,5 +6030,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T01:23:28.638Z"
+  "updatedAt": "2026-11-05T01:23:46.937Z"
 }

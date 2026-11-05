@@ -2024,20 +2024,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_ves_ekvador_i_gorbatye_kity:b003",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "blocked_external",
       "sourceFingerprint": "df5ad1392f38f10acaf4860aafc8955c30f81ea2f1b25287ac938bdb2d8a7edb",
       "generation": 1,
-      "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-mw3jr4ub-amanda",
-        "token": "token-mw3jr4ub-3p1770cwclv",
-        "claimedAt": "2026-11-05T12:55:59.231Z",
-        "expiresAt": "2026-11-05T14:25:59.231Z"
-      },
+      "attempts": 1,
+      "lease": null,
       "checkpoint": null,
       "submission": null,
       "review": null,
-      "nextAttemptAt": null
+      "nextAttemptAt": null,
+      "lastFailure": {
+        "ownerId": "ada-en-mw3jr4ub-amanda",
+        "token": "token-mw3jr4ub-3p1770cwclv",
+        "generation": 1,
+        "failureStatus": "blocked_external",
+        "at": "2026-11-05T12:56:54.808Z"
+      }
     },
     {
       "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru_ikitos:b012",

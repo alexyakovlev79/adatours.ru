@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 704,
-    "leased": 2,
+    "queued": 703,
+    "leased": 3,
     "review": 1642,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 704,
-      "leased": 2,
+      "queued": 703,
+      "leased": 3,
       "review": 1642,
       "ready": 50,
       "retryable": 0,
@@ -1145,8 +1145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 13,
           "ready": 0,
           "retryable": 0,
@@ -1177,7 +1177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T11:30:38.103Z",
       "earliestRetryAt": null
     },
     "1c": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_venesuele:b005",
       "token": "tok-mw3dk3vd-vc558bqmtf",
       "expiresAt": "2026-11-05T11:30:23.899Z",
+      "generation": 1
+    },
+    "ada-en-mw3dke6z-amanda": {
+      "jobId": "en:bulk:tour:tour_guatemala_discover_8_days:b002",
+      "token": "tok-nzvzgbs0f47mw3dke6z",
+      "expiresAt": "2026-11-05T11:30:38.103Z",
       "generation": 1
     }
   },
@@ -6802,8 +6808,15 @@
         "en:bulk:tour:tour_source_luchshee_v_venesuele:b005"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw3dke6z-amanda": {
+      "token": "tok-nzvzgbs0f47mw3dke6z",
+      "jobIds": [
+        "en:bulk:tour:tour_guatemala_discover_8_days:b002"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:00:23.899Z"
+  "updatedAt": "2026-11-05T10:00:38.103Z"
 }

@@ -1440,20 +1440,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b011",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "blocked_external",
       "sourceFingerprint": "0db6c73963e1b023e18283a0bc65b4e78042d139f49177d5a3562b98a4c46c10",
       "generation": 1,
-      "attempts": 0,
-      "lease": {
-        "ownerId": "adaen-w4-20261105-0248-b",
-        "token": "adaen-w4-20261105-0248-token-b",
-        "claimedAt": "2026-11-05T00:02:15.095Z",
-        "expiresAt": "2026-11-05T01:32:15.095Z"
-      },
+      "attempts": 1,
+      "lease": null,
       "checkpoint": null,
       "submission": null,
       "review": null,
-      "nextAttemptAt": null
+      "nextAttemptAt": null,
+      "lastFailure": {
+        "ownerId": "adaen-w4-20261105-0248-b",
+        "token": "adaen-w4-20261105-0248-token-b",
+        "generation": 1,
+        "failureStatus": "blocked_external",
+        "at": "2026-11-05T00:03:03.116Z"
+      }
     },
     {
       "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_v_brazilii:b007",

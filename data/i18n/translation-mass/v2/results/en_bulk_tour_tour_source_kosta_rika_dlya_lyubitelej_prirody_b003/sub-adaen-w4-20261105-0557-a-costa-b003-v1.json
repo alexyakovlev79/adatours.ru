@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kosta_rika_dlya_lyubitelej_prirody:b003",
+  "stableId": "tour_source_kosta_rika_dlya_lyubitelej_prirody",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6ba269e6956186d71b09918bd820ca0bb68560e7ccfd7946ff19ad7e7957152f",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:958b4928cdac91ce",
+      "field": "notIncluded",
+      "sourceTextSha256": "5f643bf3aafa15a57d4439aa82f9e657ca26fb44eb411b340da962bbff4a811f",
+      "text": "Arrival and departure taxes.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "documentSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "paragraphs": [
+          {
+            "ref": "docx:table:9:not-included:taxes",
+            "textSha256": "cfe81af04d94dc7d9642a10090535a2b497a77dd4829698fed5ea7b5c93d989b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the list marker from the approved Word exclusion on taxes."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:817bf44d4bacef2a",
+      "field": "notIncluded",
+      "sourceTextSha256": "104199d10ae2e2cc6271faa4e4b7c852ce1ac651a42d54c3587e6d054c860b36",
+      "text": "Hotel extras (laundry, phone calls, room service, etc.).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "documentSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "paragraphs": [
+          {
+            "ref": "docx:table:9:not-included:extras",
+            "textSha256": "19b566e92891646a1bdea5526b62e4e5930d97a81741011c9977a1d63a52568d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the list marker while preserving approved exclusions for personal hotel expenses."
+      }
+    },
+    {
+      "blockId": "tour:note:bb189747c31f20ec",
+      "field": "note",
+      "sourceTextSha256": "f0c509560d3a8ec3187e02544e363fa87c59d0a29dcf2ff5427a2b9ce2ab1f91",
+      "text": "Ada Tours may substitute hotels with other properties of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word programme does not contain this same-category hotel substitution note."
+      }
+    },
+    {
+      "blockId": "tour:note:80d2ed11276533ef",
+      "field": "note",
+      "sourceTextSha256": "55379aed07b2e9467f3a3ba4b6a6e3596d1440d48c9760ca43042defa76c4e16",
+      "text": "Ada Tours may change the order of excursions while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word programme does not state this specific right to reorder excursions."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when early check-out is required for a flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This specific missed-breakfast condition is absent from the approved English Word brochure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "documentSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:13",
+            "textSha256": "4dbcde2c1197c1ff04e25b034fa550a84b0f3c7f91ef452abb711bf6dc7a3048"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the approved location of the first-night airport transfer in San José."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fc8b15e4b701260cca1c8ab9c56776fe2c8009844d4499a7bfabb9d10f5b2fda",
+      "text": "Arrival at Juan Santamaría International Airport, where you are met for the transfer to your hotel. Overnight at Hotel Palma Real.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "documentSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:16",
+            "textSha256": "c5fa6704841e83313c9898bef6d54bcbffd11d3aca3e7f8609584c20a21aded9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Day 1 marker and retained the approved English hotel and transfer."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0fa333293e1d31c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ecf1d4aaf87efa0e77b1e87aa624616c6ff82b4b7a23f4960dea213038d53667",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "documentSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:13",
+            "textSha256": "4dbcde2c1197c1ff04e25b034fa550a84b0f3c7f91ef452abb711bf6dc7a3048"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the approved first-day San José area place name in the itinerary."
+      }
+    }
+  ]
+}

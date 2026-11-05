@@ -1,0 +1,138 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b009",
+  "stableId": "tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b0e22931bebc552c5fa0cc2640e12129adf32fe413f7d5c523e09e46dda799d8",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "741df7ac39d1ae523e065998af71ef9ad02a579bf6286c023e1c5048a2326bb6",
+      "text": "Boquete – Bocas del Toro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p63",
+            "textSha256": "0f0eb00c96fe8250b316428377c597b9d889d20fa6960ea0fc117c94feb3e540"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Remove the day number and format the existing Word route label with an en dash."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4961cd06c3c40751d5ea4594e7725e75b48e6209d6618171236de8c576f0ded9",
+      "text": "After breakfast, begin the journey to the Caribbean coast.\n\nThe drive to Bocas del Toro takes about 4 hours.\n\nContinue with a private boat transfer.\n\nColón is the archipelago’s main island; accommodation is at Azul Paradise Bastimentos Island Punta Vieja.\n\nThe archipelago has many small islands, mangrove lagoons and short boat routes.\n\nColourful wooden houses, piers and small waterfront establishments are typical of the area.\n\nStay at Azul Paradise Bastimentos Island Punta Vieja.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 64–67 give a much shorter transfer and hotel entry and do not contain the RU geography, mangrove lagoons or waterfront description; translate the current RU version without importing Word's potentially misleading Colon-hotel connection."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:08b7e26b0bfb6d48",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df09cc49177a016b9eda7a2b8e309e13bdfd1c2b64a37f9f0e162fc143f4338a",
+      "text": "Boquete",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "20750f6098e9cae261d983d43699371b9c560364085d88a5dc9ec27e9162e880"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Retain the place name from the confirmed Word Boquete heading, removing the day and descriptive parenthesis."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0bfcba7e9adc2e98",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3a823cd6ac66d0e7d165344fd6f44e90653279d10979d33709c813e92e60ce97",
+      "text": "Bocas del Toro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "89fc34ca7e0271f1ced5c183a0dc11081e7a80edae197190098b461672999c4d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Retain the place name from the confirmed Word destination heading, removing the day number."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5e4dc84707868af9",
+      "field": "media.alt",
+      "sourceTextSha256": "440fe434bec6537cd72547afd59d4222556f52251df4072a52f46b796dd0d196",
+      "text": "Tropical shore with a pier and coral reefs in the turquoise waters of Bocas del Toro, Panama",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme has no corresponding image alt description of the shoreline, pier and reefs."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3a824195e583b08b",
+      "field": "media.hover",
+      "sourceTextSha256": "04413c4d6f29c1a4abadac6bd999288c72d8ef113d18db8061175d16c0066221",
+      "text": "Bocas del Toro, Panama: an aerial view of the coast and reefs",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme contains no matching hover caption for this aerial coastal photo."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a4e1d23786f88cd4083fe006f2bc26e9bb42697a1c3b1f414dfe7586774665db",
+      "text": "Free day in Bocas del Toro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "89fc34ca7e0271f1ced5c183a0dc11081e7a80edae197190098b461672999c4d"
+          },
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "af2caa29b72ef6607a1725f223df95df2c43b636ee55dcb929f645e889228d60"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the Word destination heading and free-time entry into a concise day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7133b4c8b18a1cb6d0f077c163a6d87b66c93cd42069d136e1507aedbc97365a",
+      "text": "The entire day is free.\n\nRelax beside the Caribbean Sea or choose optional activities independently.\n\nSnorkelling and discovering the marine environment are the main activities here.\n\nIn the clear water, you may see coral reefs, starfish, sponges, tropical fish and small rays.\n\nSea turtles may also be seen.\n\nThe water is darker in the quieter mangrove lagoons.\n\nDolphins sometimes appear near the islands.\n\nThere is no scheduled sightseeing programme for this day.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 78–79 describe free time and selected marine life, but omit the RU snorkelling, sponges, rays, turtles, darker mangrove water and explicit lack of a scheduled excursion; translate the complete assigned RU block."
+      }
+    }
+  ]
+}

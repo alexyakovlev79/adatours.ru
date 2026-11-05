@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_viva_meksika:b001",
+  "stableId": "tour_source_viva_meksika",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "67913bd0a4915e20f5934004d4839e50b6a60079e11b1d4d197d9a3efd17a694",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "116a27806cd2c2fde70c9619993decbc63dbfd7389b4af12accbba08a1d2d0af",
+      "text": "Viva Mexico: Mexico City, Oaxaca and the Yucatán in 12 Days",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The Word title is simply VIVA MEXICO 2027; this full destination-based RU title has no exact Word equivalent. Translate the RU title without importing a year."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "bae61e0c233449d06b87decf6c94e18774440fe68d35ca756cb93f7fa436071a",
+      "text": "12 days in Mexico: Mexico City and Teotihuacan, Oaxaca and artisan workshops, Mérida, Uxmal, cenotes and Chichén Itzá.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word uses a longer multi-paragraph introduction; no equivalent concise lead lists exactly these RU highlights. Translate the current RU lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "6ffb4fab69e339cad5e1b574e3549f545b6f8b45ae4d1c786af4e00247bd2220",
+      "text": "Price per person based on TPL accommodation. DBL — $2666, SGL — $2932, child under 11 — $1229. Terms for individual participation are shown in the programme table.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The Word 2027 tariff table lists different DBL, SGL and child prices. The assigned RU price note is not present in Word; preserve the current RU amounts and accommodation basis because price changes belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:note:f454ea8903308b73",
+      "field": "note",
+      "sourceTextSha256": "6f7605b5eb894ee070612308f96e3fd6415a13b9d26f3dc937a7378dcca9d093",
+      "text": "Wednesdays and Fridays, 2026",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The Word confirms Wednesdays and Fridays but is headed 2027; it contains no 2026 date statement. Translate the assigned RU year unchanged."
+      }
+    },
+    {
+      "blockId": "tour:included:a66c8f9b617e129c",
+      "field": "included",
+      "sourceTextSha256": "753c59f142fe4d3af5d4d982b0c7817e430c61f512b0a84f8f055ea0754885ac",
+      "text": "11 Nights' Accommodation in Standard Room with Daily Breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p268",
+            "textSha256": "6cbb2f54ed997a9a9261873e4715fcb2be89185577321a3df31cb328c6e83148"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the bullet marker from the Word inclusion for eleven nights in a standard room with daily breakfast."
+      }
+    },
+    {
+      "blockId": "tour:included:cc2f0750c63e1c02",
+      "field": "included",
+      "sourceTextSha256": "f6225e03cc5f8664446f5bfebba86aa4cc70797412fcb4f5cf199411ff8d1e17",
+      "text": "Daily breakfast and 1x lunch are indicated in the itinerary.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p269",
+            "textSha256": "ffd4ee9d1060fcfcb9d2201e58e721874095c7fdeb01fa7ad324b457e71aa18d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the bullet marker from the Word inclusion for daily breakfast and one lunch."
+      }
+    },
+    {
+      "blockId": "tour:included:197190a699c7034c",
+      "field": "included",
+      "sourceTextSha256": "0846d1ba2b49a23de953f6c4e52b6e3c5e251a2b6ad418c88eb60741282e9df7",
+      "text": "All Transfers & Excursions (Shared Basis)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p270",
+            "textSha256": "8ac809b4bb293aaa439d5de5e46a2c0022a511ffa7ca802cbd5f9aca013ed2a4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the bullet marker from the Word inclusion for shared transfers and excursions."
+      }
+    },
+    {
+      "blockId": "tour:included:96608f93d22fcddd",
+      "field": "included",
+      "sourceTextSha256": "6db99d97e8f029fb776d174a3f0ba6511beb38ea4988769caf025b04121c37ea",
+      "text": "Entry Fees to the Mentioned Sites",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p271",
+            "textSha256": "5619730f21f24bbb0d871c7e2e1281a1ee6087620105dfad9c2ae8861c7fcba1"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the bullet marker from the Word entry-fee inclusion for the sites mentioned in the programme."
+      }
+    }
+  ]
+}

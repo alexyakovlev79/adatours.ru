@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_meksika_lindo:b003",
+  "stableId": "tour_source_meksika_lindo",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d57c0fbcfea9dda448e2576d483b79567bd61d32b84e4320b4d36fd4c5455f07",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:ae939939356013f5",
+      "field": "notIncluded",
+      "sourceTextSha256": "6eb11a273be775eb0b2567991d5fd2f8a4218e83af6416fafc2e312904d4db9d",
+      "text": "International and domestic flights, including the Mexico City–Mérida flight.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0354-a-02",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The 2027 Word excludes the domestic flight but has no matching combined exclusion of international and domestic airfares; preserve the RU flight scope."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:619b7ac5323e1d19",
+      "field": "notIncluded",
+      "sourceTextSha256": "3ef6050edb198d2b91e82e9df7e4416ce6cbc5fe54f28f7eb79596b6acc9213a",
+      "text": "Services and meals not expressly included in the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0354-a-02",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 lists exclusions separately by day and lacks a single comprehensive programme-level services-and-meals exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:28ab821db4cf1538",
+      "field": "notIncluded",
+      "sourceTextSha256": "5492251e5f7369725cd1a1caf0987707f1e9dca55bc7782f3676c463e43a4c7d",
+      "text": "Meals other than the lunch included on the Chichén Itzá excursion.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+        "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:91",
+            "textSha256": "d368dcbc462e20627e7e13a847b16b3fd2e50ae6cc56589dbedcb8b547971797"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "The approved 2027 Word explicitly includes lunch at Chichen Itza; exclude only other meals, not the included lunch."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e794d8959e7f029a",
+      "field": "notIncluded",
+      "sourceTextSha256": "c9afd898f56e171a500697b460a1ee22af7b7c4f45bb74164ccdd46dd19ff388",
+      "text": "Drop-off in the Tulum hotel zone or Bahía Petempich is not included.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+        "documentSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+        "paragraphs": [
+          {
+            "ref": "paragraph:87",
+            "textSha256": "e5066f252a998c47704a3be4bde67ce6584763bf9b00545073cd9f718775ca5f"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "The approved Word includes Riviera Maya transfers, but excludes Tulum hotel zone and Bahia Petempich drop-off; do not carry over the obsolete RU USD 30 charge."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:219239be88fb8f7c",
+      "field": "notIncluded",
+      "sourceTextSha256": "cbf0a4d05c3ebde343c5e00089885c927e2b45c4009ae18ee95a8b35da52a410",
+      "text": "Personal expenses, including phone calls, laundry and drinks.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0354-a-02",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lists personal expenses but does not specify phone calls, laundry or drinks in a comparable exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e6a44bb771b5458a",
+      "field": "notIncluded",
+      "sourceTextSha256": "1d5cd0b7e0c8763a89f03160460d6c8523d1d91702cfa78e4462c0e3716e7cf4",
+      "text": "Tips for housekeeping staff, drivers and guides.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0354-a-02",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The 2027 Word lists tips generically and does not specify the exact housekeeping, driver and guide recipients."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:2407daca12a419fc",
+      "field": "notIncluded",
+      "sourceTextSha256": "3a68e87ce80c443086b1709f7d24686e11d8a2eb2a8e1a4ec276e6fea45984af",
+      "text": "Optional English-speaking assistance, if requested as an additional service.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0354-a-02",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word has no separate optional-language assistance exclusion; translate the RU item using the agreed English-speaking guide localization."
+      }
+    },
+    {
+      "blockId": "tour:note:1ffa9a907dfaa903",
+      "field": "note",
+      "sourceTextSha256": "04e3cf2fcbfdb1786f2fce0bf4684ce1a727dffb7caac75836ca0d1f6d4b49ca",
+      "text": "If necessary, Ada Tours may replace the listed hotels with hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0354-a-02",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The 2027 Word contains no general hotel-substitution clause, so translate the current RU contract note."
+      }
+    }
+  ]
+}

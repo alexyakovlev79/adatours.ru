@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 707,
-    "leased": 0,
+    "queued": 706,
+    "leased": 1,
     "review": 1641,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 707,
-      "leased": 0,
+      "queued": 706,
+      "leased": 1,
       "review": 1641,
       "ready": 50,
       "retryable": 0,
@@ -865,8 +865,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 31,
-          "leased": 0,
+          "queued": 30,
+          "leased": 1,
           "review": 34,
           "ready": 1,
           "retryable": 0,
@@ -897,7 +897,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T09:33:36.669Z",
       "earliestRetryAt": null
     },
     "0b": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw38ysi5-amanda": {
+      "jobId": "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro:b008",
+      "token": "tok-mw38ysi5-lh2afb786cl",
+      "expiresAt": "2026-11-05T09:33:36.669Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -6760,7 +6767,8 @@
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b012",
         "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b001",
         "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro:b005",
-        "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b008"
+        "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b008",
+        "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kolumbiya_live:b012",
@@ -6776,5 +6784,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T08:03:29.642Z"
+  "updatedAt": "2026-11-05T08:03:36.669Z"
 }

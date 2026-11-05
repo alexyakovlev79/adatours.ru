@@ -404,7 +404,7 @@
     {
       "jobId": "en:bulk:tour:tour_luxury_brazil_11d:b013",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "1b71bd626415c6861184f1c48e49c9b8935a47127e2fd09651e929b68de0a7c9",
       "generation": 1,
       "attempts": 0,
@@ -415,13 +415,43 @@
         "at": "2026-11-04T06:56:56.968Z"
       },
       "submission": {
-        "id": "ada_en_4c0a9bc31e22_b009",
-        "blobSha": "e1cd1c8101be337ce05f291bda27d34759a79386",
-        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_luxury_brazil_11d_b013/ada_en_4c0a9bc31e22_b009.json",
-        "at": "2026-11-04T07:08:45.143Z"
+        "id": "qa-20261105-t7-luxury-b013-01",
+        "blobSha": "9fc30cbf99dbb619ff45a3526833fbbe544e1cbb",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_luxury_brazil_11d_b013/qa-qa-20261105-t7-luxury-b013-01-9fc30cbf99dbb619.json",
+        "at": "2026-11-05T02:22:59.224Z"
       },
-      "review": null,
-      "nextAttemptAt": null
+      "review": {
+        "reviewerId": "adaen-independentqa-20261105-t7",
+        "at": "2026-11-05T02:22:59.224Z",
+        "acceptedBlobSha": "9fc30cbf99dbb619ff45a3526833fbbe544e1cbb",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
+      "nextAttemptAt": null,
+      "qaRevisions": [
+        {
+          "reviewerId": "adaen-independentqa-20261105-t7",
+          "at": "2026-11-05T02:22:59.224Z",
+          "previousSubmission": {
+            "id": "ada_en_4c0a9bc31e22_b009",
+            "blobSha": "e1cd1c8101be337ce05f291bda27d34759a79386",
+            "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_luxury_brazil_11d_b013/ada_en_4c0a9bc31e22_b009.json",
+            "at": "2026-11-04T07:08:45.143Z"
+          },
+          "revisionId": "qa-20261105-t7-luxury-b013-01",
+          "changedBlockIds": [
+            "tour:body:47f6c11f40afc686"
+          ],
+          "reason": "Word 2027 explicitly includes VIP access to Sugar Loaf. Frozen RU editorial body presented the same service as optional. Revised only EN body to reflect approved Word 2027 commercial scope; preserved other promises and prior immutable receipt.",
+          "confidence": 99
+        }
+      ]
     },
     {
       "jobId": "en:bulk:tour:tour_patagonia_lakes_lakeshore_chalet_10_days:b005",

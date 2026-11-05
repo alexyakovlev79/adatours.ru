@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b001",
+  "stableId": "tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "804deca84afe0fc7ca07f8ddcbfa2d31d5fcd7fa77d664344811a01b78bd54ff",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "8c3c62c384cbd42e6880f7eec7d5904d2e804267bc4a851188296b2d79e2eaa2",
+      "text": "Central  America Highlights  2027",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:0",
+            "textSha256": "6e1e068f5e3dd36fe4bb46018a70b5efa271d421607e7a413956c5222b2f29b0"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "375a7dfa3b76469ed25e7325d5014197ad1a45a5eff1edfdb47df13a5e1be76a",
+      "text": "Travel through 5 countries: Guatemala, Honduras, El Salvador, Nicaragua and Costa Rica. Over 19 days, your group will journey from colonial cities and Maya monuments to volcanoes, Caribbean rainforests, cloud forests and Pacific beaches.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains the five-country route and daily itinerary but no equivalent compact overview paragraph; translate the assigned RU lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "4e20de0a09c032b05ed14bb813d10e0233487ba25924af220a1652a252e5001d",
+      "text": "$10780",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The assigned current shared price is USD 10780; the verified Word tariff table has different figures, so preserve this RU-derived price label unchanged for the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:aac3d8057ab5d7e7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ebaff32c553c1c1c2a6a7d131d5a691c2d4cf822517f5bcd150f2ef323972643",
+      "text": "Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "8ee7507ba8e346303f027f64d315cd93c5d01683d97dcde9402f840f58bd3522"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the existing country route label from the verified Word five-country route, retaining its order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f303d9f20c9bd604",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fe72f2584061c35c019cfd63604307e0afdd901d5746012386439832ce36f477",
+      "text": "Honduras",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "8ee7507ba8e346303f027f64d315cd93c5d01683d97dcde9402f840f58bd3522"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the existing country route label from the verified Word five-country route, retaining its order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:81cf4fbe413d82a6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f9638d61817f45d50d040b52a87ec567129101d4db5cae07f76ef5c5174219b6",
+      "text": "El Salvador",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "8ee7507ba8e346303f027f64d315cd93c5d01683d97dcde9402f840f58bd3522"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the existing country route label from the verified Word five-country route, retaining its order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:37fe1b9e42cbbdb5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ab4dfd1bd57d8c5909500c72738f5ffeff43ab48bb7610a988e61fc329c40c8e",
+      "text": "Nicaragua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "8ee7507ba8e346303f027f64d315cd93c5d01683d97dcde9402f840f58bd3522"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the existing country route label from the verified Word five-country route, retaining its order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bd78334bf644c911",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f53dcb0859bd05bd37be0e530f10950205fd1dd90fc24ec6004564b5bbeab0a9",
+      "text": "Costa Rica",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "8ee7507ba8e346303f027f64d315cd93c5d01683d97dcde9402f840f58bd3522"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the existing country route label from the verified Word five-country route, retaining its order."
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b001",
+  "stableId": "tour_source_mechty_sbyvayutsya_na_karnaval",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "69552d3adf5aff79e1e9fe10772dec74be4b07e172082cbcc3b003c51fe1dc1a",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "f590975f5858b3b28fdae88fa0622a4c674987de0f9c94bdbf7eaf055b299232",
+      "text": "Brazil Carnival Tour: Rio de Janeiro, Iguazu Falls and Argentina | 10 Days",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0318-a-p002",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 brochure has the poetic title Dreams Come True at Carnival but not this route-specific catalogue title."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "b25a87f0dfa6d847fb1cb6dbea3ad14b76f99cde55b7a583556b2841aa41f6f7",
+      "text": "This is a group tour with a guaranteed departure.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0318-a-p002",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word 2027 lists Group tour but does not independently promise a guaranteed departure in its text."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "b61e60ed91349a0c58edd5b9bcae6068037816fa67050309dd24e79871a52fa2",
+      "text": "$ 3,725",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "table:10:rate-dbl-3star",
+            "textSha256": "b8e3d5f91e48eb7c3c6a848391f19e55e58a781645d43f2b6833a63e47e59b67"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4c165ecc8a1f423b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2beea3e23ac67357d0e86010c3d4e796815ee4cfa2abf0bc3401c20beb043e45",
+      "text": "Rio de Janeiro, 4 nights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0318-a-p002",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact standalone catalogue route label does not appear as a paragraph in the approved Word 2027 brochure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e51b4b2c857f5b36",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fe6a76222703a326cb891d8faf4204941e8b3cdda04601b279dcebb173afc140",
+      "text": "Iguazu Falls, 2 nights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0318-a-p002",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact standalone catalogue route label does not appear as a paragraph in the approved Word 2027 brochure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:710e3aef7b5379c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9560cce6cd8665492f67be0c56e8efef93fc0d4ced596b54778ffcc05b3dccda",
+      "text": "Buenos Aires, 3 nights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0318-a-p002",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact standalone catalogue route label does not appear as a paragraph in the approved Word 2027 brochure."
+      }
+    },
+    {
+      "blockId": "tour:included:2750a3ed266f1d6a",
+      "field": "included",
+      "sourceTextSha256": "d3d953bb372ad557be35f9acab6bade46a46981756a8a24bdb77c3081c46e501",
+      "text": "Accommodation in the selected hotels, with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "table:12:included-accommodation",
+            "textSha256": "d5886c2273504f228151d1e87a839dddeb3704cf7c1ffeb598e9cfb5fceeec3a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the decorative dash and spaces used for the list item in the original 2027 Word brochure; the wording is preserved."
+      }
+    },
+    {
+      "blockId": "tour:included:9863fe95b789b2c9",
+      "field": "included",
+      "sourceTextSha256": "6fd3ca247d2fd8b4246d5713b59528611b8dc1069c843d8d7a380fd346f0158f",
+      "text": "Excursions as per the programme with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17tvMvwnQl7oTwvOCUFmiD2HdTwp9dsHI",
+        "documentSha256": "a41a63498dc8015e26cd3c2579e936fae68eb51f79d0231b278b675f2c7a8e9b",
+        "paragraphs": [
+          {
+            "ref": "table:12:included-excursions",
+            "textSha256": "3990a8f102b3bdf7022e9efd1ebe8d14e7970415e72dbb3154e8d82246a22bbc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the decorative dash and spaces used for the list item in the original 2027 Word brochure; the wording is preserved."
+      }
+    }
+  ]
+}

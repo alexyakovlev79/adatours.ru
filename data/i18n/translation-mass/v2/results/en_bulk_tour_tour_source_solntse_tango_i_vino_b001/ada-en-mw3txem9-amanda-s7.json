@@ -1,0 +1,172 @@
+{
+  "jobId": "en:bulk:tour:tour_source_solntse_tango_i_vino:b001",
+  "stableId": "tour_source_solntse_tango_i_vino",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "aa473b969a31cf68b68fcc0168e15a872d9083dcd5ac017fb5dd15a00697291b",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "0d1ddc35e6582fe3eda741109f0e700d747096e6e0a6b5a577cbf7f92a64516e",
+      "text": "12-day tour of Brazil, Argentina and Chile with Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p7",
+            "textSha256": "23002a4c9caf0f8cfebcbd45e1ddb362502def8c057bc12e7e416409f61ae72a"
+          },
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "e1b55509773d92e3b40b6f63335e509deeba92c54b5ce33046b3ce3f9db64db7"
+          },
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "c2d2dcbca614bb805121a922902d0c9e04e5092167b62ba69b7d105d2fa99d24"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a3817d4b5da23e48f8cda92364189c13c3d1d8c6a319cb594bf4a52996dbe975",
+      "text": "**2026 departure dates:** 9 January; 16 January; 23 January; 6 February; 27 February; 13 March; 20 March; 10 April; 8 May; 22 May; 29 May; 12 June; 26 June; 10 July; 24 July; 31 July; 14 August; 28 August; 25 September; 2 October; 23 October; 6 November; 27 November; 11 December.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3txem9-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word is labelled 2027 and contains no corresponding 2026 departure-date list. Translate the assigned RU dates exactly, retaining 2026; changing dates is outside this worker's scope."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "142674222b16cba1c307f824f24f0b9f8a4aaad32e0d2ec1a9a15b660e05f99b",
+      "text": "$4885",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3txem9-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word commercial table contains different 2027 rates and does not contain the assigned RU $4885 price note. Preserve the immutable RU amount without updating shared prices."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0d5afc7b7beb5194",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c7958d305e7a8881ae0786977517f08844c6f27bcd8a9f441020a7acb9c5774f",
+      "text": "Rio de Janeiro (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p126",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p127",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9c22d8e2b99be8f4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0147fead2a7e573e5e5bc050bd9f3594a5438dfdc16f7ca09def24e6264cf379",
+      "text": "Foz do Iguaçu (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p131",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p132",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:237c019b8a02d241",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2eee92874422efaf1d764f5b8b262640334bac6f280bc69717400541276e8b9c",
+      "text": "Buenos Aires (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p136",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          },
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:84de3e594f5a56da",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9e817bf26e40080ec809fc6cff138f63f151c3954b861ca0d995a4fb5e6d438c",
+      "text": "Santiago de Chile (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p141",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          },
+          {
+            "ref": "word/document.xml:p142",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    },
+    {
+      "blockId": "tour:included:45f29ca8e175841a",
+      "field": "included",
+      "sourceTextSha256": "132311d7fd49ba899ec62902ff7f5a7ac69e424042bf0f8be2005b0461c26aaa",
+      "text": "Hotel accommodation",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p288",
+            "textSha256": "b1e86ea322f4a6d923b5732abc76e2b94ec110f022326f079473129eec5ce381"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding verified Word passage for this specific field without changing its factual scope."
+      }
+    }
+  ]
+}

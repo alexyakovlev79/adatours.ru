@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 762,
-    "leased": 3,
+    "queued": 761,
+    "leased": 4,
     "review": 1583,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 762,
-      "leased": 3,
+      "queued": 761,
+      "leased": 4,
       "review": 1583,
       "ready": 50,
       "retryable": 0,
@@ -345,8 +345,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 23,
-          "leased": 0,
+          "queued": 22,
+          "leased": 1,
           "review": 50,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T08:32:35.257Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b011",
       "token": "tok-mw376iyr-zg9ot4qmphr",
       "expiresAt": "2026-11-05T08:31:52.869Z",
+      "generation": 1
+    },
+    "ada-en-mw375tlu-amanda": {
+      "jobId": "en:bulk:tour:tour_source_solntse_tango_i_vino:b009",
+      "token": "ada-en-mw375tlu-amanda-znsrx3m8j5j",
+      "expiresAt": "2026-11-05T08:32:35.257Z",
       "generation": 1
     }
   },
@@ -6636,7 +6642,8 @@
     "ada-en-mw375tlu-amanda": {
       "token": "ada-en-mw375tlu-amanda-znsrx3m8j5j",
       "jobIds": [
-        "en:bulk:tour:tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii:b006"
+        "en:bulk:tour:tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii:b006",
+        "en:bulk:tour:tour_source_solntse_tango_i_vino:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii:b006"
@@ -6658,5 +6665,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T07:02:27.717Z"
+  "updatedAt": "2026-11-05T07:02:35.257Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 784,
-    "leased": 3,
+    "queued": 783,
+    "leased": 4,
     "review": 1561,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 784,
-      "leased": 3,
+      "queued": 783,
+      "leased": 4,
       "review": 1561,
       "ready": 50,
       "retryable": 0,
@@ -1065,8 +1065,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 54,
-          "leased": 0,
+          "queued": 53,
+          "leased": 1,
           "review": 33,
           "ready": 1,
           "retryable": 0,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T06:45:05.199Z",
       "earliestRetryAt": null
     },
     "1a": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_venesuele:b007",
       "token": "adaen-w1-20261105-0810-b-token",
       "expiresAt": "2026-11-05T06:44:46.527Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0812-a": {
+      "jobId": "en:bulk:tour:tour_source_chili_zagadki_chelovechestva:b004",
+      "token": "adaen-w2-20261105-0812-token-a",
+      "expiresAt": "2026-11-05T06:45:05.199Z",
       "generation": 1
     }
   },
@@ -6570,8 +6576,15 @@
         "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b008",
         "en:bulk:tour:tour_source_luchshee_v_rio_de_zhanejro:b007"
       ]
+    },
+    "adaen-w2-20261105-0812-a": {
+      "token": "adaen-w2-20261105-0812-token-a",
+      "jobIds": [
+        "en:bulk:tour:tour_source_chili_zagadki_chelovechestva:b004"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T05:14:46.527Z"
+  "updatedAt": "2026-11-05T05:15:05.199Z"
 }

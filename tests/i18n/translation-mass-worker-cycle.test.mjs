@@ -95,7 +95,7 @@ test('failed submit does not claim a second job or change submissionId',async()=
  assert.equal(f.state.saved,1);
  assert.equal(f.state.claimed,2);
  assert.deepEqual(f.calls.filter(x=>x.action==='submit').map(x=>x.submissionId),
-  ['same_submission','same_submission']);
+  Array(MAX_INLINE_RETRIES+2).fill('same_submission'));
 });
 test('after Git receipt, a failed next claim resumes by start only',async()=>{
  const f=fake(),initial=await cycle({}, {},f.gateway,{action:'start',...credentials});

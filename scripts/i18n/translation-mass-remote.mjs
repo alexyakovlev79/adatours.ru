@@ -7,6 +7,8 @@ const BRANCH='i18n/translation-mass-staging';
 const ROOT='data/i18n/translation-mass/v2';
 const CAS_ATTEMPTS=2;
 const REF_ACK_ATTEMPTS=2;
+// Separate concurrent workers with a new random delay after each failed CAS.
+const retryJitterMs=()=>3000+Math.floor(Math.random()*27001);
 const clean=x=>JSON.stringify(x,null,2)+'\n';
 const un=r=>{if(r?.isError)throw Error(JSON.stringify(r));return r?.result||r?.structuredContent||r};
 const valid=x=>typeof x==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(x);
@@ -92,7 +94,8 @@ export async function runEnMassTranslation(tools,core,args={}){
      activeOwners:Object.keys(index.activeOwners||{}).length,
      ...(args.ownerId?resultFor(index,args.ownerId):{})};
    }
-   if(!index.dispatcherEnabled||!index.translationMassLaunchAllowed)
+   // Stop new claims without blocking submit/renew of an existing lease.
+   if(action==='claim'&&(!index.dispatcherEnabled||!index.translationMassLaunchAllowed))
     return{status:'gate_closed',head:base,stage:index.stage};
    if(assigned&&assigned.token!==args.token)return{status:'owner_token_conflict',head:base};
    const active=index.activeOwners?.[args.ownerId];
@@ -235,10 +238,10 @@ export async function runEnMassTranslation(tools,core,args={}){
     retryAfterMs:3600000,reason:message.slice(0,240)};
    if(transient.test(message)&&!conflict.test(message))
     return{status:'transport_retryable',retryable:true,
-     retryAfterMs:30000,reason:message.slice(0,240)};
+     retryAfterMs:retryJitterMs(),reason:message.slice(0,240)};
    if(!conflict.test(message))throw error;
    if(attempt===CAS_ATTEMPTS-1)return{status:'cas_contention',retryable:true,
-    retryAfterMs:30000,reason:message.slice(0,240)};
+    retryAfterMs:retryJitterMs(),reason:message.slice(0,240)};
   }
  }
 }

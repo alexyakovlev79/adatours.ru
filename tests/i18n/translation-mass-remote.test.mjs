@@ -45,6 +45,7 @@ test('GitHub transport and internal GraphQL errors are resumable, not external j
   const out=await runEnMassTranslation({mcp__GitHub__fetch:async()=>{throw Error(message)}},
    {},{action:'claim',ownerId:'worker_one',token:'stable_token'});
   assert.equal(out.status,'transport_retryable');assert.equal(out.retryable,true);
+  assert.ok(out.retryAfterMs>=3000&&out.retryAfterMs<=30000);
  }
 });
 test('permission failures are not silently retried and 429 is a timed continuation',async()=>{

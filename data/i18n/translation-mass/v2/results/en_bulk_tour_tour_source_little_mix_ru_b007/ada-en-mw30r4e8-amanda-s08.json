@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_little_mix_ru:b007",
+  "stableId": "tour_source_little_mix_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ce1bbbc8197e1c61c50c6f93669aaf991e0ab2eb9e43c6af1ddd9e59c43acb96",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e78910fd8e91fb61c38d0806a4021ab5293ab1c5021a3f3bcf4e77eeea8bd83c",
+      "text": "São Paulo – Salvador",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p8",
+            "textSha256": "d338fd2bf9ea6f8e922a1f2f64fd1348e850ef3f978df8697336a28797f6a304"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use approved city names while retaining the São Paulo-to-Salvador route of this pinned RU transfer block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "63471a638d737cc50ca373cb45ceeaf8cf736b5c870ed42a9b2b689752d95544",
+      "text": "After breakfast, transfer to the airport at the scheduled time.\n\nThe São Paulo – Salvador flight is paid for separately.\n\nOn arrival, you will be met and transferred to your hotel.\n\nSalvador is known for its particularly strong Afro-Brazilian heritage.\n\nMusic, dance, cuisine and religious traditions are prominent in the city's culture.\n\nEven outside festival periods, you can watch capoeira, try acarajé, a bean-and-shrimp dish fried in dendê oil, and discover candomblé traditions.\n\nCoastal resort areas near Salvador offer beaches and all-inclusive hotels.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "gpt-6.1",
+        "runId": "ada-en-mw30r4e8-amanda",
+        "wordAbsenceReason": "The approved Word has a Rio-to-Salvador flight instead of this São Paulo-to-Salvador transfer, and omits this full cultural and resort paragraph. Translate the pinned RU block to retain its route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:be0d464e13b05515",
+      "field": "itinerary.label",
+      "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+      "text": "São Paulo",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:14755d46b6f87dd3",
+      "field": "media.alt",
+      "sourceTextSha256": "11df269f59fe577fac0821e7c243b3a9bb72c283203347bfe69a3f5f8ad22e8e",
+      "text": "Bright colonial facades and a yellow church on a street in Salvador, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "gpt-6.1",
+        "runId": "ada-en-mw30r4e8-amanda",
+        "wordAbsenceReason": "The selected Word programme contains no image ALT or hover captions; this field is translated from its pinned RU source."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:732f13d3c87437b2",
+      "field": "media.hover",
+      "sourceTextSha256": "7a19d7235b457b62e43de73539f8c09b244af1d79bad438cd53fe019cc82c918",
+      "text": "Salvador: colourful houses along a cobbled street",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "gpt-6.1",
+        "runId": "ada-en-mw30r4e8-amanda",
+        "wordAbsenceReason": "The selected Word programme contains no image ALT or hover captions; this field is translated from its pinned RU source."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d7932d47cdd0b89bd6f53ee1cc950e305d6b28b34f755b3417210011442b84e0",
+      "text": "Salvador – Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p108",
+            "textSha256": "033408aaa6fe18e124eb21b87748cd46102b6f1a8de3d7ff34bf4dd57518e115"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Short field label drawn from the corresponding approved English Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "21af4331ecab80837fa5f0ec6462832c3226551c0819165140c2d37bf954c06b",
+      "text": "After breakfast, a private half-day city tour tracing the city’s development from its beginnings to the vibrant cultural capital it is today: towards the mouth of the immense bay, along elegant tree-lined avenues, to the Pelourinho, a UNESCO World Heritage Site and one of the largest ensembles of colonial architecture in South America. From the Municipal Square, beside the towering Lacerda Elevator, with views across the bay to the Lower City, stroll through narrow, lively streets of colourful buildings to the Church of São Francisco, with its exuberant gilded Baroque interior, and the Pelourinho square, discovering capoeira, acarajé and the living traditions of Candomblé. After the tour, transfer to Praia do Forte and check in for your beach stay.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p108",
+            "textSha256": "033408aaa6fe18e124eb21b87748cd46102b6f1a8de3d7ff34bf4dd57518e115"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word day-number marker because the canonical itinerary owns day numbering; retain the exact approved narrative."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d07ef8222c1488c8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+          }
+        ]
+      }
+    }
+  ]
+}

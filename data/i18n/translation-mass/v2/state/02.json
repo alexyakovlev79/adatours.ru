@@ -97,7 +97,7 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b010",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "d130b2048fb173f8cb878653bf78757e69c6e2352ca7ab96756488edb7e33182",
       "generation": 1,
       "attempts": 0,
@@ -108,13 +108,44 @@
         "at": "2026-11-03T21:24:34.551Z"
       },
       "submission": {
-        "id": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010",
-        "blobSha": "84429f98e67700a0091ed337a3b197f56b842976",
-        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b010/sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010.json",
-        "at": "2026-11-03T21:24:38.924Z"
+        "id": "qa-20261105-t6-agribusiness-b010-01",
+        "blobSha": "593e05ab4b739fdd1950b4d533a36b01e311c67a",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b010/qa-qa-20261105-t6-agribusiness-b010-01-593e05ab4b739fdd.json",
+        "at": "2026-11-05T01:30:04.203Z"
       },
-      "review": null,
-      "nextAttemptAt": null
+      "review": {
+        "reviewerId": "adaen-independentqa-20261105-t6",
+        "at": "2026-11-05T01:30:04.203Z",
+        "acceptedBlobSha": "593e05ab4b739fdd1950b4d533a36b01e311c67a",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
+      "nextAttemptAt": null,
+      "qaRevisions": [
+        {
+          "reviewerId": "adaen-independentqa-20261105-t6",
+          "at": "2026-11-05T01:30:04.203Z",
+          "previousSubmission": {
+            "id": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010",
+            "blobSha": "84429f98e67700a0091ed337a3b197f56b842976",
+            "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b010/sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010.json",
+            "at": "2026-11-03T21:24:38.924Z"
+          },
+          "revisionId": "qa-20261105-t6-agribusiness-b010-01",
+          "changedBlockIds": [
+            "tour:itinerary_title:ab3fd6cac362f6b0",
+            "tour:itinerary_text:c3205ac1e20a266d"
+          ],
+          "reason": "Original heading implied a booked helicopter flight and programme phrasing sounded like a third-party summary. Word offers an optional 30-minute helicopter ride, while current RU requires booking confirmation of price, inclusion and departure point; these terms are preserved in direct Ada Tours voice.",
+          "confidence": 99
+        }
+      ]
     },
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b009",

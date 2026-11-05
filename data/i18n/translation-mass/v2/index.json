@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 521,
-    "leased": 2,
+    "queued": 520,
+    "leased": 3,
     "review": 1821,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 521,
-      "leased": 2,
+      "queued": 520,
+      "leased": 3,
       "review": 1821,
       "ready": 50,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 23,
-          "leased": 0,
+          "queued": 22,
+          "leased": 1,
           "review": 51,
           "ready": 2,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:08:14.748Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b007",
       "token": "tk-mw3trdxr-w8i0ji2aq",
       "expiresAt": "2026-11-05T19:07:46.265Z",
+      "generation": 1
+    },
+    "ada-en-mw3tx26y-amanda": {
+      "jobId": "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b007",
+      "token": "lease-mw3tx26y-3p5ljbo6be2",
+      "expiresAt": "2026-11-05T19:08:14.748Z",
       "generation": 1
     }
   },
@@ -7299,8 +7305,15 @@
         "en:bulk:tour:tour_source_pantanal_bonito:b005",
         "en:bulk:tour:tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady:b007"
       ]
+    },
+    "ada-en-mw3tx26y-amanda": {
+      "token": "lease-mw3tx26y-3p5ljbo6be2",
+      "jobIds": [
+        "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b007"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:37:46.265Z"
+  "updatedAt": "2026-11-05T17:38:14.748Z"
 }

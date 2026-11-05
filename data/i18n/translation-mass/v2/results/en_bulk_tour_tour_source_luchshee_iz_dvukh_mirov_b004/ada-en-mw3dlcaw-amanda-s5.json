@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b004",
+  "stableId": "tour_source_luchshee_iz_dvukh_mirov",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "43b50fc75ac23608231c7b7560212029881fd528a0e12cff9badd7a35393d1da",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:e8628d048a68abc2",
+      "field": "notIncluded",
+      "sourceTextSha256": "3b9bd4cc13103e24bd64860b1c3400b1ff2e719d04fecefc79d6da2970933d56",
+      "text": "Entertainment",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p161",
+            "textSha256": "21f1e4aa9184105fe7aafe6a2e86f9b3cbe3489cb995a43e793292bce052552a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Composed a concise route label from the exact matching Word itinerary passages."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:354f89c7605ac896",
+      "field": "notIncluded",
+      "sourceTextSha256": "7ea53985531728547751f6c1733fdb9eabeb9648501315753cfab2695c028fec",
+      "text": "Liquor",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p159",
+            "textSha256": "869c1ae7cd2884a339cfdf49e2189ad51e5bda0cb4e578df686cb8070e2e13ce"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the liquor exclusion from the exact Word list item for bar, liquor and gift purchases."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:3afefa9659a887f3",
+      "field": "notIncluded",
+      "sourceTextSha256": "51cb8103cdbc33efe2b63996b53376372e1016455ed6821441df35f648862858",
+      "text": "Gratuities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p162",
+            "textSha256": "6ddb1788ffa8f4d1e32bd7a9b7f6e9c27494828cf0b801de7233eede0afd3e62"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the gratuities exclusion label from the Word item for gratuities and tips."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:76e6041a8b3e1e04",
+      "field": "notIncluded",
+      "sourceTextSha256": "239350bfca096f3279661eb026faeef43e8d28ded1d8a23e585e6d1565c696f9",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p163",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Composed a concise route label from the exact matching Word itinerary passages."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:04a11dfe6c198cb9",
+      "field": "notIncluded",
+      "sourceTextSha256": "058f3518d9e1693ccf3c60c86b49c025ff082ef5b89b4f26620a90eab614de2e",
+      "text": "Gratuities and tips to bellhops, guides or drivers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p162",
+            "textSha256": "6ddb1788ffa8f4d1e32bd7a9b7f6e9c27494828cf0b801de7233eede0afd3e62"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Composed a concise route label from the exact matching Word itinerary passages."
+      }
+    },
+    {
+      "blockId": "tour:note:b7f9e66621906906",
+      "field": "note",
+      "sourceTextSha256": "74245fd62d89db8b22791aeee3eaff198c87a2241c0be6e72dfe1a7c5a3ecace",
+      "text": "We may replace the listed hotels with other hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dlcaw-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has hotel names and booking availability conditions but no clause about replacing hotels; translated this assigned RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:80d2ed11276533ef",
+      "field": "note",
+      "sourceTextSha256": "55379aed07b2e9467f3a3ba4b6a6e3596d1440d48c9760ca43042defa76c4e16",
+      "text": "We may change the order of excursions while keeping the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dlcaw-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no clause about changing the order of excursions; translated the assigned RU programme-preservation note."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "We are not responsible for hotel breakfasts missed when you check out early for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dlcaw-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has breakfast inclusions but no early-checkout missed-breakfast liability clause; translated this assigned RU note."
+      }
+    }
+  ]
+}

@@ -161,9 +161,16 @@ if(sharedContent && (!sharedHtml.includes('Travel interests') || !sharedHtml.inc
 if(sharedContent){
  const dom=parse(sharedHtml),siteHeader=find(dom,x=>x.tagName==='header'&&attr(x,'data-site-header')!==null)[0];
  const visible=x=>['script','style','svg'].includes(x?.tagName)?'':x?.nodeName==='#text'?x.value:(x?.childNodes??[]).map(visible).join(' ');
- const remaining=siteHeader?visible(siteHeader).split(/\n|(?<=[.!?])\s+/u).filter(x=>/[\u0400-\u052F]/u.test(x)).slice(0,12):[];
+ const remaining=[];
+ const collect=node=>{
+  if(['script','style','svg'].includes(node?.tagName))return;
+  if(node?.nodeName==='#text'&&/[\u0400-\u052F]/u.test(node.value))
+   remaining.push(node.value.trim().slice(0,150));
+  for(const child of node?.childNodes??[])collect(child);
+ };
+ if(siteHeader)collect(siteHeader);
  if(!siteHeader||remaining.length)
-  fail('English main menu and submenus still contain Cyrillic text: '+remaining.map(x=>x.trim().slice(0,180)).join(' | '));
+  fail('English main menu and submenus still contain Cyrillic text: '+remaining.slice(0,20).join(' | '));
 }
 if(sharedContent){
  // Diagnose the generated common shell separately from the page-local form.

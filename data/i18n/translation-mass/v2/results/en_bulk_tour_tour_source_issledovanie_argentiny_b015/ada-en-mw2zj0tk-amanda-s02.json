@@ -1,0 +1,128 @@
+{
+  "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b015",
+  "stableId": "tour_source_issledovanie_argentiny",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0fbb697344173f1d84f1ba6dcd09985b47cdef64ee0dd1a24a435dfcd3334c45",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:15b0adbbafbb2266",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zj0tk-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word describes the Brazilian side of Iguazú but has no separate Foz do Iguaçu route label. Translated the assigned RU place name."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4f04ccb69e5751d1",
+      "field": "media.alt",
+      "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
+      "text": "Iguazú Falls from the Brazilian side",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zj0tk-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no image alt text corresponding to this assigned RU media caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b9f85c48bdc80aba",
+      "field": "media.hover",
+      "sourceTextSha256": "be9a0e545edf81dcf68229a44d07d5819d5d8972f86dc037f142f912edbbb5f8",
+      "text": "The Brazilian side of Iguazú: a panorama of the cascades",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zj0tk-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no image hover caption corresponding to this assigned RU media description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:02b05f9c4c806e6e",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e94a996a1733ac3cde6379131caf9754422c45f0632e07fda222c4f8676166f5",
+      "text": "Iguazú – Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:128",
+            "textSha256": "39e16eb57fc39b4d57852b79e5c9f86867feec373cd86a8bd96986a8b221d9fa"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Used the flight route from the verified Word, omitting the services inclusion label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:25152ad0c634f823",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3a8856d76e292bc673d07e1918d47201762720a0c705856c2eeb5da1f8a36d1a",
+      "text": "Day 15 · Transfer to the airport for your Aerolíneas Argentinas flight to Buenos Aires. Reception and private transfer to your hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:124",
+            "textSha256": "51cb151b302e4c545289353c28e5efab99d86a6adfd94a600b556e0b4896a156"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6a4d51e389ed025a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7d4a23e09e99c675d020ec7b12d845f4aaa57403b2c21697fdd8e084ab7a67f3",
+      "text": "Iguazú",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:111",
+            "textSha256": "0978a05c651db94a57ec538b102e6bcf667c170c187a9a514f1e2839a8f34715"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2bb8d165b968a83",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1SPGT__blzqTlUv3YSanLfbodva2V_yP1",
+        "documentSha256": "62fcfbb0d7f13629ff21d0de097b1227ecf846e24881389aa85a2197394ffab6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:123",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d1b6d922dc76b926",
+      "field": "media.alt",
+      "sourceTextSha256": "5cc5a55ad83b919f64eef91775f2a3a8d7d7666db97367792d88ca92f5fe70a6",
+      "text": "In the photo: Casa Rosada, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw2zj0tk-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no image alt caption for Casa Rosada. Translated the existing RU caption without adding details."
+      }
+    }
+  ]
+}

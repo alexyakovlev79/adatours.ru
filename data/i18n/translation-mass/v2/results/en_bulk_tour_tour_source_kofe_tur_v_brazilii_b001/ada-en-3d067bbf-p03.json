@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kofe_tur_v_brazilii:b001",
+  "stableId": "tour_source_kofe_tur_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7b7ccc70a445e12954fc70f7b83ebddfff2388e3a47cb1b10f353b6b7513b8af",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "a2ffd1f2f5ebabcd6ea913dce7775515ca656b5e94a4d99cbaa7dc6cd729d9fd",
+      "text": "Tailor-made Coffee Tour in Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word title is Brazil Coffee Tour + Visconde de Maua 2027; the RU title's tailor-made product wording has no exact Word equivalent. Translate the assigned title without adding locations or dates."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "68c9f0f9ca06ca6f93a1017008ab954747542db244e5d53b9ee18b55abd229bc",
+      "text": "This itinerary combines classic Rio de Janeiro, both sides of Iguazu Falls and the historic Coffee Valley in the state of Rio de Janeiro.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview additionally describes Visconde de Maua and uses a different promotional paragraph. This precise one-sentence RU lead is absent; its route is confirmed by Word days 1-7."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "4c005ef1a10db4412491e072c6f0cdc7f9e761078380f30096b6d46629362806",
+      "text": "$5596",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p136",
+            "textSha256": "75c93c93cfbfc52fe17af82bcdcc223624bc587e952a6b4cd8fc9198b80e8724"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Keep the existing price note unchanged; its amount is corroborated in the Word 3-star DBL cell. Do not adopt a different tariff."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "efdace39c17f6ede2afab7e59121fdaf36c599f2edc98a486728f6066aa6315f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed arrival city name for its route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da9a00be9c2cdec0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7aa65fe510b5abedc5fc31d346dc0dd9edeac5a417d1553c9d2a16dd3ff00aa5",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "5ed3e62977cb76e6ee4c5be3eac96b81d36852ba3f5abdef977cfad0f3d58d9c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed Brazilian overnight city name for its route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p95",
+            "textSha256": "00ff65dd0031235d64c75600f76d49de029aa89c766b1a50cc9d274896068811"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed return city from Word day 6."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cdda0e1e7db89ece",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6547704fc9e4a68ac93d48e6e2d66888c8cc9bb8d2e721366a0108f619cebae3",
+      "text": "Coffee Valley",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p8",
+            "textSha256": "e5200d8ce1be81c9827109964c7b99867fa5d760717b42dea338fda086e3636c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:26b0b7f539bb32d2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eb189057949d6f59c226dc9647a96ecf7a6a1954ce74923caf8cac123f09dd54",
+      "text": "Visconde de Mauá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1OhEhcYR0MsOB9VDh2r70cTk5ervY4jyq",
+        "documentSha256": "fa5f9b1cfa4937ff2d1ec35c36bdb2da3e141f42389db27955663e3781369f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p51",
+            "textSha256": "843123c88a54a1cc58c3384ca49413bd0f15f739b922149f4aa36bd53c937438"
+          }
+        ]
+      }
+    }
+  ]
+}

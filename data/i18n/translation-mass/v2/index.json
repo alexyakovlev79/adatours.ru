@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 482,
-    "leased": 2,
+    "queued": 481,
+    "leased": 3,
     "review": 1860,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 482,
-      "leased": 2,
+      "queued": 481,
+      "leased": 3,
       "review": 1860,
       "ready": 50,
       "retryable": 0,
@@ -625,8 +625,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 19,
-          "leased": 0,
+          "queued": 18,
+          "leased": 1,
           "review": 59,
           "ready": 0,
           "retryable": 0,
@@ -657,7 +657,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:22:04.868Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b007",
       "token": "token-mw3tx7a6-gsgdljq5u2d",
       "expiresAt": "2026-11-05T19:21:37.569Z",
+      "generation": 1
+    },
+    "ada-en-mw3tx26y-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b002",
+      "token": "lease-mw3tx26y-3p5ljbo6be2",
+      "expiresAt": "2026-11-05T19:22:04.868Z",
       "generation": 1
     }
   },
@@ -7339,7 +7345,8 @@
         "en:bulk:tour:tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady:b008",
         "en:bulk:tour:tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii:b002",
         "en:bulk:tour:tour_source_tur_v_braziliyu_na_13_dnej:b008",
-        "en:bulk:tour:tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu:b002"
+        "en:bulk:tour:tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu:b002",
+        "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b007",
@@ -7401,5 +7408,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:51:56.490Z"
+  "updatedAt": "2026-11-05T17:52:04.868Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 758,
-    "leased": 3,
+    "queued": 757,
+    "leased": 4,
     "review": 1587,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 758,
-      "leased": 3,
+      "queued": 757,
+      "leased": 4,
       "review": 1587,
       "ready": 50,
       "retryable": 0,
@@ -585,8 +585,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 10,
-          "leased": 0,
+          "queued": 9,
+          "leased": 1,
           "review": 62,
           "ready": 1,
           "retryable": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T08:34:44.711Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_tur_v_kolumbiyu_na_10_dnej:b007",
       "token": "tok-mw376c69-24bmi3etdya",
       "expiresAt": "2026-11-05T08:33:58.203Z",
+      "generation": 1
+    },
+    "ada-en-mw376iyr-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_k_mestam_sily:b006",
+      "token": "tok-mw376iyr-zg9ot4qmphr",
+      "expiresAt": "2026-11-05T08:34:44.711Z",
       "generation": 1
     }
   },
@@ -6659,7 +6665,8 @@
       "token": "tok-mw376iyr-zg9ot4qmphr",
       "jobIds": [
         "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b011",
-        "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b009"
+        "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b009",
+        "en:bulk:tour:tour_source_tur_v_braziliyu_k_mestam_sily:b006"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b011",
@@ -6668,5 +6675,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T07:04:36.290Z"
+  "updatedAt": "2026-11-05T07:04:44.711Z"
 }

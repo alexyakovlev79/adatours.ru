@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1001,
-    "leased": 3,
+    "queued": 1000,
+    "leased": 4,
     "review": 1366,
     "ready": 32,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1001,
-      "leased": 3,
+      "queued": 1000,
+      "leased": 4,
       "review": 1366,
       "ready": 32,
       "retryable": 0,
@@ -345,8 +345,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 27,
-          "leased": 0,
+          "queued": 26,
+          "leased": 1,
           "review": 46,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:24:48.270Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004",
       "token": "adaen-w4-20261105-0345-token-B",
       "expiresAt": "2026-11-05T02:20:24.924Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0348-a": {
+      "jobId": "en:bulk:tour:tour_source_populyarnye_napravleniya_venesuely:b008",
+      "token": "adaen-w2-20261105-0348-token-a",
+      "expiresAt": "2026-11-05T02:24:48.270Z",
       "generation": 1
     }
   },
@@ -5909,7 +5915,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_peru_i_boliviya:b004",
         "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b002",
-        "en:bulk:tour:tour_source_parad_chempionov_karnavala_v_rio:b002"
+        "en:bulk:tour:tour_source_parad_chempionov_karnavala_v_rio:b002",
+        "en:bulk:tour:tour_source_populyarnye_napravleniya_venesuely:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_peru_i_boliviya:b004",
@@ -5919,5 +5926,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:54:27.001Z"
+  "updatedAt": "2026-11-05T00:54:48.270Z"
 }

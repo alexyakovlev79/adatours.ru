@@ -1,0 +1,155 @@
+{
+  "jobId": "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b002",
+  "stableId": "tour_source_surinam_gajana_frantsuzskaya_gviana",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0f6103053daeadfcd72d7a16badee0c2831f7c230a886f67f0d66ebdd5a84e17",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:bbd51fc550eaad8d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5eb58c01e13f3498725eab9cdeeba358f00aaeb03d6fd43409fcb6d38376f439",
+      "text": "Cayenne",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RFRm0McMyAEpAHP-9_WVBkxVR5w3VAaI",
+        "documentSha256": "52f0d9ccd8cb2aa2519654a44a24c9bd5a3a20eeb166b13603988ae06d85d929",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "a69b2c0f401a001bf2e8d8a45e6b8998892c203727942a55e1e8a3fa07100d32"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic name from the verified Word passage for the assigned standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:65bdf60bca1709c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bcf409e44107e1eb5c2d080a7e4d3345eeefad685bc40d7554bf0d0afa7b76fe",
+      "text": "Kourou",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RFRm0McMyAEpAHP-9_WVBkxVR5w3VAaI",
+        "documentSha256": "52f0d9ccd8cb2aa2519654a44a24c9bd5a3a20eeb166b13603988ae06d85d929",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p76",
+            "textSha256": "e242e3d8821516c742d484e8490b4b4fbf1d75818526a0664f586c8751a5ac02"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic name from the verified Word passage for the assigned standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:75ee3641d5fbb905",
+      "field": "itinerary.label",
+      "sourceTextSha256": "185a7027cb964debe46fc13a81fa2a9d86426da566772c1d348f4f5d03d9878c",
+      "text": "Suriname rainforest",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RFRm0McMyAEpAHP-9_WVBkxVR5w3VAaI",
+        "documentSha256": "52f0d9ccd8cb2aa2519654a44a24c9bd5a3a20eeb166b13603988ae06d85d929",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p104",
+            "textSha256": "6b3d80f3065cc350fee9d566435c2fbf91286e737a465f236827f309d109090c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Express the verified Kabalebo rainforest location as the assigned wider Suriname rainforest route label."
+      }
+    },
+    {
+      "blockId": "tour:included:e1d234ce1e2e9d43",
+      "field": "included",
+      "sourceTextSha256": "f12d1c16625901246b890d478984d2b19536979fb808d90067d569931d2b645d",
+      "text": "Hotels 4★ with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RFRm0McMyAEpAHP-9_WVBkxVR5w3VAaI",
+        "documentSha256": "52f0d9ccd8cb2aa2519654a44a24c9bd5a3a20eeb166b13603988ae06d85d929",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p182",
+            "textSha256": "db0c9f075cb62ddb5406611aa2ec834547679a2568051a5a020bd2c491557dd6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved Word accommodation inclusion; retain its four-star category exactly as in Word."
+      }
+    },
+    {
+      "blockId": "tour:included:f9a8f0fad8f46278",
+      "field": "included",
+      "sourceTextSha256": "4dabe9e17bd4463b35c0d1734249d25de514b6adfec3cbb961279cab484f5bc4",
+      "text": "Overland transport in air-conditioned cars or minibuses.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hjirn-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word lists transfers but does not specify the assigned air-conditioned car or minibus wording; translate this source-bound RU transport detail without changing shared transport data."
+      }
+    },
+    {
+      "blockId": "tour:included:4f8ec45deb993baf",
+      "field": "included",
+      "sourceTextSha256": "c12c606ffa87e5b04c8f37c35576a168c9bc66d422240fd9141dc55a1e49383c",
+      "text": "English-speaking guide (a local guide in each country)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RFRm0McMyAEpAHP-9_WVBkxVR5w3VAaI",
+        "documentSha256": "52f0d9ccd8cb2aa2519654a44a24c9bd5a3a20eeb166b13603988ae06d85d929",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p185",
+            "textSha256": "5958b076a56b0a6a1e20c6c7188f77011fe0e1e6b6ce2d943ef7526dd31b3dd5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved Word guide inclusion, retaining its local-guide condition."
+      }
+    },
+    {
+      "blockId": "tour:included:1f742c956964bb56",
+      "field": "included",
+      "sourceTextSha256": "71b85a2fa148af6a6c3c73446fc89c6b85da37dd34d8be6ef92a4346bff45038",
+      "text": "Meals as mentioned",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RFRm0McMyAEpAHP-9_WVBkxVR5w3VAaI",
+        "documentSha256": "52f0d9ccd8cb2aa2519654a44a24c9bd5a3a20eeb166b13603988ae06d85d929",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p187",
+            "textSha256": "ce47d77db6bb934728c9658cda3dc1ffc0f20d42a4a0dade4f0a56c6901b65dc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract only the meals condition from the verified meals-and-excursions inclusion for the assigned meals field."
+      }
+    },
+    {
+      "blockId": "tour:included:3c9933ec54626fc7",
+      "field": "included",
+      "sourceTextSha256": "a49ba454a13a7dc70a44f8f5788a8e09e1baf418e8a0e13bc2033223816adaa9",
+      "text": "Return flight to Kaieteur",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RFRm0McMyAEpAHP-9_WVBkxVR5w3VAaI",
+        "documentSha256": "52f0d9ccd8cb2aa2519654a44a24c9bd5a3a20eeb166b13603988ae06d85d929",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p69",
+            "textSha256": "d584a11d33d8ebe3d8510646ed90835ca2c8183f8c3fa31264103c68e01b56f1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Kaieteur return-flight inclusion from the verified Day 2 services line for this assigned single-flight field."
+      }
+    }
+  ]
+}

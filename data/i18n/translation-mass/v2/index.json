@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 583,
-    "leased": 2,
+    "queued": 582,
+    "leased": 3,
     "review": 1759,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 583,
-      "leased": 2,
+      "queued": 582,
+      "leased": 3,
       "review": 1759,
       "ready": 50,
       "retryable": 0,
@@ -505,8 +505,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 25,
-          "leased": 0,
+          "queued": 24,
+          "leased": 1,
           "review": 52,
           "ready": 2,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T14:27:25.318Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej:b006",
       "token": "token-mw3jr4ub-3p1770cwclv",
       "expiresAt": "2026-11-05T14:27:03.703Z",
+      "generation": 1
+    },
+    "ada-en-mw3jr16k-amanda": {
+      "jobId": "en:bulk:tour:tour_source_pantanal_bonito:b003",
+      "token": "token-mw3jr16k-bctm1pe8kk",
+      "expiresAt": "2026-11-05T14:27:25.318Z",
       "generation": 1
     }
   },
@@ -7115,7 +7121,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b007",
         "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b005",
-        "en:bulk:tour:tour_source_mir_majya:b001"
+        "en:bulk:tour:tour_source_mir_majya:b001",
+        "en:bulk:tour:tour_source_pantanal_bonito:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b007",
@@ -7135,5 +7142,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T12:57:15.815Z"
+  "updatedAt": "2026-11-05T12:57:25.318Z"
 }

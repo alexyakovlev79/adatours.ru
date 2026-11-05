@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b010",
+  "stableId": "tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9b9f3193797538441e4e4b5dbaa1a8ecb44de9dba9b5f4510c071b048cf5e118",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "fe3dd80fee93cd4122fe54f3ec6e36284130ccae6930b18b81ac59d2fd627d07",
+      "text": "Copán – San Salvador",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p34",
+            "textSha256": "a09f0eb92198439e8dbf5d5516d615f371351dbc80b9ea311ef11495edd8e7f5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Remove the day number and country aside from the confirmed Word route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ae8e3553d41e1b308f2d909584710e970d9ee6bff4c07a9eb9ac8ff58575fd14",
+      "text": "Visit the famous Mayan ruins of Copan. The main value of Copan is the unreal beauty and accuracy of art on stelae. This site of the Mayan civilization was called Athens of Mesoamerica. There you will even find a stelae made in three dimensions. A true work of art is considered to be the Mayan Staircase with hieroglyphs during the classical period. Each of its 63 steps is decorated with complex letters, and balustrades with the image of snakes and birds are erected on the sides. Transfer to San Salvador. Overnight at Hotel Barceló San Salvador. (Meals: B)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p35",
+            "textSha256": "a5c3148f24aa17a6df1a1a8a07c666e6f7e8747845449b7c21d6e31845d3dd5d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f06f1e6654d9b2ed",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c3278614ed9c2ffe5b8fc4a5e682095397935ac5ccdfb13b842bf9b82acd7251",
+      "text": "Copán Ruinas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p31",
+            "textSha256": "0f19762279abf2047af07083b444efcb2c575a452876d29b6834d24efdb26351"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed Copan Ruinas place name from the Word overnight entry without retaining the hotel brand."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:86d892a846dd7999",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9aa068f5fb28b0d23775e9532fe3bbda0bcb4e420f6e0ec32e9ec858faefc986",
+      "text": "San Salvador",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p34",
+            "textSha256": "a09f0eb92198439e8dbf5d5516d615f371351dbc80b9ea311ef11495edd8e7f5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the arrival city from the confirmed Word day route."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c5c5f631cbb04958",
+      "field": "media.alt",
+      "sourceTextSha256": "89723a0e725d5e33b6ed80b3f544bd602058eccb2816d2512ab079f987121e29",
+      "text": "Carved stone relief with a figure on a wall at the Copán ruins, Honduras",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word document has no image alt text describing the carved figure in this wall relief."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d91fb6f7c501b9ae",
+      "field": "media.hover",
+      "sourceTextSha256": "37660bfa2dd0337581950a5814399404dea7b09ba91a6c62b9d7dd10beecdda3",
+      "text": "Copán: an ancient relief made of multicoloured stone blocks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word document has no corresponding hover caption describing the coloured stone blocks in this relief."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a5c4aedf89d4c86b6ba22d1f1eba7bffbc2a92e78327dea2412aa4469f38227a",
+      "text": "San Salvador – San Andrés – Joya de Cerén",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P1tA4tiURFtiX4l72DYZkMA1VX3Wv8HN",
+        "documentSha256": "98e6aa82d0ce412f409e398b93b890ab239ddc7d48ba7e9d90c01fd49586bdbe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "b7f6a4d71ec62bfaf4cfd251523a8469d035fe3a89126c0eb77bd7c2374ed9c0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Condense the confirmed Word city-tour and archaeological-site heading into the assigned route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "93f268375fd564aba6c6fd8b7dcc856ea29d5a1078f15873af9cd009a161b41a",
+      "text": "In the morning, take a tour of San Salvador. In the historic centre, see El Rosario Church with its bright, modern interior, the National Palace, the National Theatre and the Metropolitan Cathedral.\n\nContinue to the archaeological sites of Joya de Cerén and San Andrés. The history of these settlements is closely tied to volcanic activity. Discover evidence of Maya life and see how eruptions both destroyed and preserved traces of the ancient culture.\n\n**Overnight:** Barceló San Salvador.  \n**Meals:** breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3hisv7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 38 confirms the stops, hotel and breakfast but has no equivalent passage describing volcanic activity and the destruction and preservation of settlements; retain the specific current RU narrative and Markdown structure."
+      }
+    }
+  ]
+}

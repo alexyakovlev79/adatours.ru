@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_solntse_tango_vino_i_atakama:b011",
+  "stableId": "tour_source_solntse_tango_vino_i_atakama",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "485e5ad54d8fa2a9f268da3772b2b48ba42c8a134a24b1c1d06b1dab53bcefd6",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:7f68434554416cd0",
+      "field": "itinerary.label",
+      "text": "Santiago de Chile",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[99]",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5b7314dd73692e8b",
+      "field": "itinerary.label",
+      "text": "Los Flamencos National Reserve",
+      "sourceTextSha256": "fdeb82224988222216997ad3f9bb33fec8fabac5ec01fc60d0072d64c4fb9d8f",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[109]",
+            "textSha256": "460fd8bbaa329f08a42f17929342fb4076239aeb3648c3c1723e9a24108de51f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the reserve's exact name from the confirmed Day 12 paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:62d5a6d9e4e19a4f",
+      "field": "media.alt",
+      "text": "Dark blue high-altitude lake beside the dry slopes of the Atacama, Chile",
+      "sourceTextSha256": "892251439c25785a04deb774d35e53f1211d9c59b6d440f56e407befdc57cb23",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3n8odx-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word contains the itinerary but no image-specific alternative text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b68af254263174e1",
+      "field": "media.hover",
+      "text": "Atacama, Chile: a mountain lagoon among ochre slopes with patches of snow",
+      "sourceTextSha256": "c7846018ce8b73c6e7a80679673b3124302e328b3b892a5f5708935502e0f09e",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3n8odx-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no image-specific hover caption describing this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:77f3326e62bd8a0b",
+      "field": "media.alt",
+      "text": "Santiago de Chile",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[99]",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "text": "High-altitude lagoons, Socaire and the Atacama Salt Flat",
+      "sourceTextSha256": "7c2fd0654e2e7ceb2582af0001982cd61c12a402ecaba63a52f616dd1743b0b4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[110]",
+            "textSha256": "2b26d64c5ae47ba629bc075323fef9ea553469791d06132d46446352d826a9f0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the day heading from the destinations explicitly named in Word Day 13."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "text": "Day 13 · After breakfast, full-day excursion to the high-altitude lagoons of Miscanti and Miñiques, lunch in Socaire, a small village about 100 km south-east of San Pedro, then the Atacama Salt Flat, the Chaxa Lagoon and the National Flamingo Reserve, home to three of the world’s six flamingo species. Continue to Toconao and its San Lucas Church and bell tower. Return to San Pedro.",
+      "sourceTextSha256": "a79e349361b041abd487321297a1dd9b8fc648435fa32531cf2cf5db25a55193",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[110]",
+            "textSha256": "2b26d64c5ae47ba629bc075323fef9ea553469791d06132d46446352d826a9f0"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fe30279ea3d4152f",
+      "field": "itinerary.label",
+      "text": "San Pedro de Atacama",
+      "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[108]",
+            "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+          }
+        ]
+      }
+    }
+  ]
+}

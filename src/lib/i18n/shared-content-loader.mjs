@@ -2,7 +2,8 @@
  *
  * This is a build-local projection, never another catalogue or source file.
  * IDs, routes, arrays, prices, media and relations belong to the RU entry.
- * Missing/unapproved/stale text keeps its canonical Russian value.
+ * Missing/invalid/stale text keeps its canonical Russian value.
+ * Saved worker translations may appear in the noindex EN output before manual QA.
  */
 import {readFile, mkdir, writeFile} from 'node:fs/promises';
 import {resolve, join, dirname} from 'node:path';
@@ -99,13 +100,14 @@ async function attachAcceptedMass(records,base,snapshotRoot) {
   records.massSnapshot={sha:ACCEPTED_MASS_SNAPSHOT_SHA,packets:snapshots};
 }
 
-/** Explicitly authorized NOINDEX display of submitted EN drafts. This never
- * marks a worker submission as QA-ready or releaseEligible, and never writes
- * to the source queue. Exact Git receipts and live source blocks stay binding.
+/** Owner-authorized NOINDEX publication of submitted EN text, before optional
+ * independent semantic QA. It never forges QA-ready or releaseEligible status
+ * and never changes the staging queue. Git receipts and source blocks bind it.
  */
 async function attachReviewPreviewMass(records,base,snapshotRoot,env) {
   if(!sharedEnglishContentEnabled(env)||env.PUBLIC_EN_RELEASE!=='0'||
-     env.EN_REVIEW_TRANSLATIONS_PREVIEW!=='1')fail('Review preview requires noindex EN staging');
+     (env.EN_PUBLISH_SUBMITTED_TRANSLATIONS!=='1' && env.EN_REVIEW_TRANSLATIONS_PREVIEW!=='1'))
+    fail('Publishing submitted translations requires noindex EN staging');
   const sha=env.EN_MASS_SNAPSHOT_SHA;
   if(!/^[a-f0-9]{40}$/.test(sha??'')||
      (await readFile(join(snapshotRoot,'.git/HEAD'),'utf8')).trim()!==sha)
@@ -113,7 +115,8 @@ async function attachReviewPreviewMass(records,base,snapshotRoot,env) {
   const index=await readJson(join(snapshotRoot,MASS_ROOT,'index.json'));
   if(index.schemaVersion!==2||index.publicationEnabled!==false||index.dispatcherEnabled!==true)
     fail('Review preview cannot bypass the queue safety gate');
-  const totals={sha,mode:'noindex-unreviewed-preview',queued:index.counts.queued,
+  const totals={sha,mode:env.EN_PUBLISH_SUBMITTED_TRANSLATIONS==='1'
+    ?'noindex-direct-publish-before-qa':'noindex-unreviewed-preview',queued:index.counts.queued,
     submittedReview:index.counts.review,independentlyReady:index.counts.ready,
     loadedReview:0,loadedReady:0,withheldConflicts:0,withheldInvalid:0,
     sourceChanged:0,sourceMissing:0};
@@ -396,7 +399,8 @@ async function readPreparedEnglish(root,env) {
       }
     }
     if(snapshotRoot){
-      if(env.EN_REVIEW_TRANSLATIONS_PREVIEW==='1')await attachReviewPreviewMass(records,base,snapshotRoot,env);
+      if(env.EN_PUBLISH_SUBMITTED_TRANSLATIONS==='1'||env.EN_REVIEW_TRANSLATIONS_PREVIEW==='1')
+         await attachReviewPreviewMass(records,base,snapshotRoot,env);
       else await attachAcceptedMass(records,base,snapshotRoot);
     }
     return records;

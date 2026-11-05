@@ -5,6 +5,7 @@ import path from 'node:path';
 import {parse} from 'parse5';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
 import uiCopy from '../../src/data/i18n/ui-copy.json' with {type:'json'};
+import {primaryEnglishMenuLabels} from './verify-en-primary-navigation.mjs';
 const root=path.resolve(process.argv[2]||'pages-site');
 const fail=m=>{throw Error('Shared EN output: '+m)};
 const find=(n,p)=>{const r=[];const visit=x=>{if(p(x))r.push(x);for(const c of x.childNodes??[])visit(c)};visit(n);return r};
@@ -159,18 +160,11 @@ if(!sharedHtml.includes('data-search-overlay')||!sharedHtml.includes('data-searc
 if(sharedContent && (!sharedHtml.includes('Travel interests') || !sharedHtml.includes('Send an enquiry')))
  fail('Shared interface reverted to Russian');
 if(sharedContent){
- const dom=parse(sharedHtml),siteHeader=find(dom,x=>x.tagName==='header'&&attr(x,'data-site-header')!==null)[0];
- const visible=x=>['script','style','svg'].includes(x?.tagName)?'':x?.nodeName==='#text'?x.value:(x?.childNodes??[]).map(visible).join(' ');
- const remaining=[];
- const collect=node=>{
-  if(['script','style','svg'].includes(node?.tagName))return;
-  if(node?.nodeName==='#text'&&/[\u0400-\u052F]/u.test(node.value))
-   remaining.push(node.value.trim().slice(0,150));
-  for(const child of node?.childNodes??[])collect(child);
- };
- if(siteHeader)collect(siteHeader);
- if(!siteHeader||remaining.length)
-  fail('English main menu and submenus still contain Cyrillic text: '+remaining.slice(0,20).join(' | '));
+ // Only the top-level site UI must be translated. Untranslated countries,
+ // themes and country combinations keep the owner's RU fallback policy.
+ const labels=primaryEnglishMenuLabels(sharedHtml);
+ if(labels.length<8||labels.some(label=>/[\u0400-\u052F]/u.test(label)))
+  fail('English primary menu missing or untranslated: '+labels.join(' | '));
 }
 if(sharedContent){
  // Diagnose the generated common shell separately from the page-local form.

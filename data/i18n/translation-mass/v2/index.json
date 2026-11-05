@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 913,
-    "leased": 9,
+    "queued": 912,
+    "leased": 10,
     "review": 1431,
     "ready": 47,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 913,
-      "leased": 9,
+      "queued": 912,
+      "leased": 10,
       "review": 1431,
       "ready": 47,
       "retryable": 0,
@@ -105,8 +105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 24,
-          "leased": 0,
+          "queued": 23,
+          "leased": 1,
           "review": 37,
           "ready": 0,
           "retryable": 0,
@@ -137,7 +137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T04:58:17.536Z",
       "earliestRetryAt": null
     },
     "12": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_klassicheskaya_programma_po_gvatemale:b002",
       "token": "token-mw2zj4jr-th8oinee1ma",
       "expiresAt": "2026-11-05T04:57:42.202Z",
+      "generation": 1
+    },
+    "ada-en-mw2zik0k-amanda": {
+      "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_rio:b009",
+      "token": "tok-mw2zik0k-vcztc27hz6q",
+      "expiresAt": "2026-11-05T04:58:17.536Z",
       "generation": 1
     }
   },
@@ -6219,7 +6225,8 @@
     "ada-en-mw2zik0k-amanda": {
       "token": "tok-mw2zik0k-vcztc27hz6q",
       "jobIds": [
-        "en:bulk:tour:tour_source_nezabyvaemyj_parad_chempionov_v_brazilii:b002"
+        "en:bulk:tour:tour_source_nezabyvaemyj_parad_chempionov_v_brazilii:b002",
+        "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_rio:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_nezabyvaemyj_parad_chempionov_v_brazilii:b002"
@@ -6248,5 +6255,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:28:11.292Z"
+  "updatedAt": "2026-11-05T03:28:17.536Z"
 }

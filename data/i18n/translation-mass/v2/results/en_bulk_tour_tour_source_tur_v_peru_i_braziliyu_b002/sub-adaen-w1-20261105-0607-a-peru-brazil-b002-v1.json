@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b002",
+  "stableId": "tour_source_tur_v_peru_i_braziliyu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3ef977f7f0ed934e04b8b2ec00b3fe4f47f77ea0fd79fc43538a4b269041c9fd",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:5d0c8dd5666e3011",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d9d0734bae7f38aa77bfe62795b625e2b206267a5180121c1d97a4e22dfa0d27",
+      "text": "Rio de Janeiro (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "Hotels & prices/Accommodation/Rio de Janeiro",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "Hotels & prices/Accommodation/Rio de Janeiro/nights-2",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Rio de Janeiro destination name and its two-night hotel allocation from the Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c135434269af90f0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3945b71b52ee6509a9b6b4682a2e29da554248b0f33bbc0ffffb397a546296ea",
+      "text": "Búzios (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "Hotels & prices/Accommodation/Búzios",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          },
+          {
+            "ref": "Hotels & prices/Accommodation/Búzios/nights-2",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Búzios destination name and its two-night hotel allocation from the Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:included:79de4e0dde3895a8",
+      "field": "included",
+      "sourceTextSha256": "da3134fd080ad3b40dce5a244ab76e8855573922d00942284d7da3ebe1c640ab",
+      "text": "Accommodation in standard rooms in the hotels of the programme, with breakfast",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "What’s included/Included/Accommodation",
+            "textSha256": "928d934fd9e75d41799c8e4c047f04ce02418f75ba1f1302c3f224557ef4255e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:5ba5b14ebaa09a00",
+      "field": "included",
+      "sourceTextSha256": "ba32733c7f1b173321265b76a6eafa1134443d8f39218a0787ed84ea370752b1",
+      "text": "Private guided excursions in Lima, Cusco, Puno, Rio de Janeiro and Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "What’s included/Included/Private guided excursions",
+            "textSha256": "26b75dbdeb32808a0999b6d1414c80eb941fbf6236d7cdcff8e39a3ab319a068"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:9614f738c890f9d0",
+      "field": "included",
+      "sourceTextSha256": "25a07a516f70d469b2e7c0d310883544b892af2f30d2b286342bf3d0e9222ff4",
+      "text": "Guided excursions in Puno and Machu Picchu with an English-speaking guide",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "chatgpt-adaen-w1-20261105-0607-a-b002-v1",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The 2027 Word describes guided visits to Puno and Machu Picchu separately, but does not contain one included-service line specifying an English-speaking guide at both locations; the source RU service is translated here."
+      }
+    },
+    {
+      "blockId": "tour:included:97740d46e6ad0d25",
+      "field": "included",
+      "sourceTextSha256": "f9ab5bec2c9e4bd81303008eff2c7249e545d8500d0b21337c1995b88b8b8c48",
+      "text": "Shared tours to Machu Picchu and by bus from Cusco to Puno",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "What’s included/Included/Shared tours",
+            "textSha256": "0ca1edf148ff58255b094f5e6aa53fa8b0088ba2a0d88ca5c00bea9d2c2a1b81"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:49304e706fe3426d",
+      "field": "included",
+      "sourceTextSha256": "daafd4bf438785f6b399a60443e34bd86e3a7f0f751a743c490bdd7e5c7accbc",
+      "text": "Tourist bus Cusco – Puno with lunch",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "Day by day/Days 5–6/Included/Tourist bus",
+            "textSha256": "58c7ee1a6897fd56a26aae6a08366be6eff01b3a2f733bda6ee93598eae4a793"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:fbe78d60211c1e97",
+      "field": "included",
+      "sourceTextSha256": "bb28a414b2ade31f07738c47077d7c7d9bc7df3be8bcfaeb08756553aac7e73a",
+      "text": "All transfers with drivers",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "What’s included/Included/All transfers",
+            "textSha256": "89ea233fec4a095d1702e22a3ac04abb1d61bb53dbd81d57528e9b38051c0122"
+          }
+        ]
+      }
+    }
+  ]
+}

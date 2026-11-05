@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 632,
-    "leased": 6,
-    "review": 1708,
+    "leased": 5,
+    "review": 1709,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 14,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 632,
-      "leased": 6,
-      "review": 1708,
+      "leased": 5,
+      "review": 1709,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 14,
@@ -186,8 +186,8 @@
         "word_2027": {
           "held": 0,
           "queued": 26,
-          "leased": 1,
-          "review": 50,
+          "leased": 0,
+          "review": 51,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 2,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-05T13:21:14.087Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "14": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw3hisv7-amanda": {
-      "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004",
-      "token": "tok-mw3hisv7-ohdi1lqhrx",
-      "expiresAt": "2026-11-05T13:21:14.087Z",
-      "generation": 2
-    },
     "ada-en-mw3hjbe4-amanda": {
       "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre:b011",
       "token": "tok-mw3hjbe4-y1j5z9oxtck",
@@ -6997,7 +6991,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004"
+      ]
     },
     "ada-en-mw3hj4bl-amanda": {
       "token": "token-mw3hj4bl-6y6avs72s5a",
@@ -7042,5 +7038,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T11:53:28.582Z"
+  "updatedAt": "2026-11-05T11:53:38.183Z"
 }

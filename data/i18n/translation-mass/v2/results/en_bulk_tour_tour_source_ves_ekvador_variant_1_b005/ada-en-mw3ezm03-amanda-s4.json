@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_ekvador_variant_1:b005",
+  "stableId": "tour_source_ves_ekvador_variant_1",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5307ed2a3d8d8d4705795ef1d95d62b701e8c5df51fc2bd97eaf434f74e9ba70",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:50ccd7f376e24bfa",
+      "field": "media.hover",
+      "sourceTextSha256": "9eadd924f0265a51d6858f20507538410d515f0443d997887decb3e4a9d23a16",
+      "text": "Quito: the pointed towers of the basilica against a densely built hillside",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no image caption describing the basilica towers and hillside. Translate the assigned RU hover text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "96c905ec56448b9277facab76628aa6f4abca6d115fd9bfc99c9b3cad6f9adb4",
+      "text": "Mindo Tropical Forest",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Y4W_V6wb7wqBWqEZo8sw1stQEdezBe7T",
+        "documentSha256": "6a4bba776b6d1e18b0847d99efcebc677240ac639b68eff7bf0d45567f0350cf",
+        "paragraphs": [
+          {
+            "ref": "p:78",
+            "textSha256": "1aac6336837f1bc311c845fb9f003d78f30e095ffc4e8d8debb59f24942bca5b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Create a short day title from the verified Mindo forest programme; retain the place identity."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "711b8f92ad319ca7d22aca257c02c68a8341e1a6e1c4f03a7ddf6822e25b3144",
+      "text": "Breakfast at the hotel.\n\nToday you head to the tropical forest of **Mindo**.\n\nThe route follows the Pan-American Highway north, passing the Mitad del Mundo monument once again.\n\nOn the way, stop at a viewpoint overlooking the extinct **Pululahua** volcano. It offers views of the crater, described as the largest in Ecuador.\n\nAfter the highest point of the route, the road descends towards Mindo. Highland scenery gradually gives way to lush tropical vegetation.\n\nIn Mindo, visit a **butterfly farm**, where you can see different species and observe stages of their development.\n\nThe area is also home to many hummingbirds.\n\nContinue with a walk through the cloud forest. Hawks may be seen overhead, while woodpeckers can be heard among the trees.\n\nMindo is also home to partridges, American kestrels, guans, hummingbirds, cocks-of-the-rock and buntings.\n\nThe plant life is equally varied, with cedars, avocado trees, white, yellow and black cinnamon trees, red myrtle, cecropia, coriaria and nettles.\n\nNext comes a **canopy ride above the forest**.\n\nTravel over the treetops in a cable-car cabin, approximately **30 metres above the ground**. Safety equipment is used for the activity.\n\nAfter the canopy ride, continue your walk through the tropical forest.\n\nAnother stop is a garden of **orchids**. More than **4,200 orchid species** grow in Ecuador, and the flower is considered one of the country's symbols.\n\nAfter lunch, discover how chocolate is made at a small family-run chocolate factory.\n\nReturn to Quito in the evening.\n\nFree evening.\n\nAccommodation at **Mercure 4***. Breakfast included.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p:78 is a shorter Mindo programme and lacks the assigned RU route via Pululahua, detailed flora and fauna, 4,200 orchids and Mercure hotel. Word lists Finlandia instead. Translate the current assigned RU details and preserve its hotel, recording the conflict for independent review rather than silently changing shared facts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0f58e8c4e1e8fb1f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "730be8762f922f2e19182a2065f65b5f853209a55b549a576af83a79719c1598",
+      "text": "Mindo",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Y4W_V6wb7wqBWqEZo8sw1stQEdezBe7T",
+        "documentSha256": "6a4bba776b6d1e18b0847d99efcebc677240ac639b68eff7bf0d45567f0350cf",
+        "paragraphs": [
+          {
+            "ref": "p:45",
+            "textSha256": "75219310901ce30f93b2c832993da22a8658d514cdd551435208eaf92afc73cb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5500a6184e9a01f2",
+      "field": "media.alt",
+      "sourceTextSha256": "2e1983206f85d4a50027cb1b6d90647b31ce6f5e842b95e33dc1575426c16456",
+      "text": "A rocky river flowing through Mindo's dense, humid forest, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent image alt text about a rocky river. Translate the assigned RU description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7d357c43b16f2740",
+      "field": "media.hover",
+      "sourceTextSha256": "4ce4d4d6734b47665dd927f809ef7b79f7cf169e7f6a3c9587c0f76f808a8af2",
+      "text": "Mindo: a forest stream and mist above green hills",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent image hover caption about a stream and mist. Translate the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "362a34e1973f6075ed5d11f925577c914ca588db8cef247dc9ecc2cfeae5625c",
+      "text": "Quilotoa Crater Lake",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Y4W_V6wb7wqBWqEZo8sw1stQEdezBe7T",
+        "documentSha256": "6a4bba776b6d1e18b0847d99efcebc677240ac639b68eff7bf0d45567f0350cf",
+        "paragraphs": [
+          {
+            "ref": "p:75",
+            "textSha256": "5e3b5e1329298074655e92486db72dbd29f1044fc02caf7e3eb62f84ab582176"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e2fbe449fe93ac2473ec06f86dfb737c98ccedcb2e6f46c9b117eda6a9e0fe7d",
+      "text": "Breakfast at the hotel.\n\nToday you travel to **Quilotoa Crater Lake**.\n\nFrom Quito, follow the Pan-American Highway towards the Cotopaxi Valley.\n\nThe first stop is a **rose plantation**. Flowers of many sizes and colours are grown here for export around the world.\n\nDuring the visit, see how the roses are cut, selected and packed.\n\n**Please note:** the plantation is not visited on weekends or public holidays.\n\nContinue towards Quilotoa.\n\nOn the way, visit an artisan workshop in the village of **Tigua**, the birthplace of a local style of naïve painting in which Andean landscapes are painted on sheepskin.\n\nAfter Tigua, the road heads towards the Central Andes along the **Pujilí Route**, passing through the village of Quilotoa.\n\nOn arrival, walk to the viewpoint overlooking the crater lake.\n\nFrom here, you can see the water inside the volcanic crater and the surrounding mountain slopes.\n\nThe programme includes a walk through the local Indigenous community.\n\nIf you wish, and time permits, you can walk down to the lakeshore.\n\nYou can go **kayaking** on the lake and ride **mules** back up.\n\nKayaking and mule rides are **not included in the price**.\n\nOn the return journey to Quito, visit an Indigenous family in the Andean highlands to learn about local everyday life.\n\nReturn to Quito after the tour.\n\nAccommodation at **Mercure 4***. Breakfast included.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p:79 lacks the RU rose-plantation visit and closure rule, Pujilí route, Indigenous family visit and explicit paid kayaking/mules. Word also lists Finlandia rather than Mercure. Translate the current RU programme with its limitations and hotel unchanged; disclose the Word differences for review."
+      }
+    }
+  ]
+}

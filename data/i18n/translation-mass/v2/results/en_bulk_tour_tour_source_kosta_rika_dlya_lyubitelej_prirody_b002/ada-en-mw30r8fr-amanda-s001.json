@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kosta_rika_dlya_lyubitelej_prirody:b002",
+  "stableId": "tour_source_kosta_rika_dlya_lyubitelej_prirody",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a89f174936a1efc7cfab28c478b63f00bd5e622106984ada8f47795f73f97a77",
+  "blocks": [
+    {
+      "blockId": "tour:included:58069c46dcff365e",
+      "field": "included",
+      "sourceTextSha256": "fcc033460fcdae93a6aeabf8a69946f32a49e04b226fbbaaa63f23b533f7c970",
+      "text": "Transfers;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lists transportation and transfers within day summaries rather than this standalone transfer inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:bdc7f2adf9842c85",
+      "field": "included",
+      "sourceTextSha256": "7eebb926e4ef4995d220f433d6d087f1b6137de78f5d26140ddc2e6723e17841",
+      "text": "Hotel accommodation;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines lodging and local taxes; this RU block separately lists hotel accommodation."
+      }
+    },
+    {
+      "blockId": "tour:included:be7dfe3602a9b256",
+      "field": "included",
+      "sourceTextSha256": "dce1a5be4eed7a533f84e8b4fffd3dd422ad679ddf39895024c9bc6628345de5",
+      "text": "Tortuguero–San José flight;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word 2027 has no Tortuguero–San José flight inclusion; translated from the pinned RU block without changing shared services."
+      }
+    },
+    {
+      "blockId": "tour:included:63474772e94debff",
+      "field": "included",
+      "sourceTextSha256": "5f7e5e18f99d1e408ca4dde3681b85a6799d3b6f3f4260bb2f4f8a25f8a84923",
+      "text": "Guided tours;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines guided tours with guide language and itinerary qualification; this RU block is a standalone inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:05dc94600b7d4ebd",
+      "field": "included",
+      "sourceTextSha256": "10c0bb020ae6ba98a2b1a04cc0a41ac9504976fd2ef4f9dd2f736b765e397149",
+      "text": "Accommodation taxes;",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word combines lodging and local taxes rather than this standalone accommodation-tax inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:8fa3e1df161fe458",
+      "field": "included",
+      "sourceTextSha256": "362f7fec191bdb673f3e2c7eff463f4ca623f3b338d39ca36ef9bac13071aa3b",
+      "text": "Meals: B = breakfast, L = lunch, D = dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30r8fr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word meal inclusion includes an itinerary qualification; this RU block only defines the meal abbreviations."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e108efe42c53b26f",
+      "field": "notIncluded",
+      "sourceTextSha256": "1aa6a6c04fa59bc92a10d18cfb641acec481751eeb4e25c6015a7db23528b7d4",
+      "text": "Optional activities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "documentSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[143]",
+            "textSha256": "cb28ad2d762ce4aa4544d038a48c18fdc4f1cbedcd051ce2a448104b167faab7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the list marker from the exact Word inclusion/exclusion item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e862a5cfda8be8dd",
+      "field": "notIncluded",
+      "sourceTextSha256": "f3b256de461b40a523b4397930141b1a0766ea2d29a9ad4538ac7de07ea93e0e",
+      "text": "Tortuguero National Park entrance fee (USD 17 per person)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "documentSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[142]",
+            "textSha256": "f46e0e851f2833125aaab0e7b25b4c96e65efb165af3baf88d8a09a24eb5f7ea"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the list marker from the exact Word inclusion/exclusion item."
+      }
+    }
+  ]
+}

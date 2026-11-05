@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_peru_i_boliviya:b006",
+  "stableId": "tour_source_peru_i_boliviya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4dbace3c41ebfc88c51d059c60998c0bb7c424913e781042229c54ce865a5fab",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5a5f331e5c92c82fc8bf86a9dc7a8d58e008928b96acd49c39627aa2a64ac674",
+      "text": "Cusco – Puno",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p104",
+            "textSha256": "dd8ee9b15a05a51d4af13fef977606b2ce8133ff7ced12b3f11d72d836890368"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the two verified endpoints of the Day 5 bus journey for its itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e07dd249e2275bf327e24b02a1af42b6c0a95b8ca5556fb4aa99be863e9b55a8",
+      "text": "Day 5 · Breakfast and transfer to the bus station for a scenic bus journey from Cusco to Puno, with stops at Pikillaqta, the baroque church of Andahuaylillas and the Temple of Wiracocha at Raqchi. Lunch in Sicuani, then the climb to the La Raya pass, at more than 4,300 metres, where the scenery changes dramatically. Arrival in Puno, a port city at more than 3,800 metres on the shores of Lake Titicaca and the departure point for the famous floating islands. Reception and transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p104",
+            "textSha256": "dd8ee9b15a05a51d4af13fef977606b2ce8133ff7ced12b3f11d72d836890368"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ebe1b3dd813e8a53",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p40",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:150af842b7ae3899",
+      "field": "itinerary.label",
+      "sourceTextSha256": "93918da548154ed9157a2b3f63138aadbebf123c03985f778e93de1ce9d23f3b",
+      "text": "Puno and Lake Titicaca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p104",
+            "textSha256": "dd8ee9b15a05a51d4af13fef977606b2ce8133ff7ced12b3f11d72d836890368"
+          },
+          {
+            "ref": "word/document.xml#p49",
+            "textSha256": "c5fcb2ab783fae42bfb14a3ea436b668e9a795f313a252e2983ed947a4126cd6"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified city and lake names in the assigned place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b89b25b69a94ccda",
+      "field": "media.alt",
+      "sourceTextSha256": "2b740141674dbf11fb47f08b09b4bd1caa4da8723288081fb93c741aa742a95d",
+      "text": "A reed boat and residents of a floating Uros island, Lake Titicaca, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3trvql-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word document describes Uros but has no equivalent alt caption for this image; translated the assigned RU visual text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f03a6c4281a34f81",
+      "field": "media.hover",
+      "sourceTextSha256": "bcb01754f647e6d1615b01b5679f22e5a946a0c49c1e632b092ccb50dfa34f4c",
+      "text": "Uros: residents in colourful clothing and a boat beside the reed shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3trvql-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This image-specific hover caption is absent from the verified Word 2027; translated the assigned RU text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4d9b755946318181933c37b90c173336510f3a6bb57382e8787cee726a91b78d",
+      "text": "Puno – Lake Titicaca – Copacabana – La Paz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p104",
+            "textSha256": "dd8ee9b15a05a51d4af13fef977606b2ce8133ff7ced12b3f11d72d836890368"
+          },
+          {
+            "ref": "word/document.xml#p105",
+            "textSha256": "402f4fcd6f2e9b1a95d65bae0ae4087b85b26129bacba9e7d9314ac7b60e4fa1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Identify the verified Day 6 sequence of Puno, Lake Titicaca, Copacabana and La Paz as a route title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1d13715a53e7b4b6f72abf2ad0ed04a2207ef42df5826421b8195aa529956ddb",
+      "text": "Day 6 · In the morning, a short boat ride to the Uros Islands, the famous floating islands made entirely of totora reeds, the same material the islanders use to build their boats and which they even eat. Although fishing remains important, tourism and handicrafts are today a major source of income. After the excursion, tourist bus from Puno to Copacabana, on the Bolivian shore of the lake, and on to La Paz, where your driver meets you for the transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p105",
+            "textSha256": "402f4fcd6f2e9b1a95d65bae0ae4087b85b26129bacba9e7d9314ac7b60e4fa1"
+          }
+        ]
+      }
+    }
+  ]
+}

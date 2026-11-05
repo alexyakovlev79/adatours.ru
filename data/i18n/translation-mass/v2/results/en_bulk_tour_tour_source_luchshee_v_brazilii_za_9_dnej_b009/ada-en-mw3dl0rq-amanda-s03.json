@@ -1,0 +1,122 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_za_9_dnej:b009",
+  "stableId": "tour_source_luchshee_v_brazilii_za_9_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a83485e429d5c46376a005d1700f775ec0b9d317c96c099f1ea2cd02f81c972f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3ec4237e362b6ca2ef0071eacdd984821155c85e3cd19800d5490fc5c41b532f",
+      "text": "Day 9 · After breakfast, transfer to Rio de Janeiro airport for your international flight home. End of services.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p119",
+            "textSha256": "21620c97d7fc4466a229100ddebf5e20434f4c28832a33adcb341dd8b77d0495"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:99c0d88290b06bf7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p3",
+            "textSha256": "be813da43c020f86a4cb7783a15720a3a68e762b3048dcd72cd2b59df3a17bce"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact place name from the Word route for a standalone itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5e4a559f1db2ad84",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p116",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3b8adb0cb2df3624",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panorama of Rio de Janeiro with the bay, Sugar Loaf Mountain and urban buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dl0rq-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No matching photo-specific alt text for this city panorama exists in the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:909a5594e156e8d3",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugar Loaf among the city neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dl0rq-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not contain this image-specific hover caption for the Rio panorama."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "79f7948af211bf152b4da5398388b0b758d2517151d15e4d0d21258511270e09",
+      "text": "Best of Brazil in 9 days",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YTFE-QLcHPadQ7cGxvJDd5R7kZ5eXqu9",
+        "documentSha256": "4ef905b54d78f4c81cc26a43352b770559458761ec18b5d2b0b9fe08769ab2b9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p2",
+            "textSha256": "5a3944bb918a049c3206587bc1343715b484380f3ff165e05c2818dc2c9de340"
+          },
+          {
+            "ref": "word/document.xml#p6",
+            "textSha256": "197633bd6a87d53f50d65d11f684806a5964bc738a2f821a98b66d39b8d15451"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the Word programme name and nine-day duration into a concise contextual hero label."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "608f6eb021aa7dfd060b2521d4e0a00058d1a8f468f95dd271556e922c434114",
+      "text": "\n\nThe price is per person sharing a DBL room in a 4-star hotel, for a group of 3 guests.\n\n## Trip highlights\n\nRio introduces you to 2 of the city's main viewpoints. Reach Sugar Loaf by cable car via Urca Hill, then take the train through Tijuca Forest up Corcovado to the statue of Christ the Redeemer.\n\nAt Iguazu, excursions cover both the Brazilian and Argentine sides. On the Brazilian side, Macuco Safari and the Bird Park can be booked at an additional cost. The following day, the route explores the Argentine National Park, with walkways and viewing platforms close to the cascades and the Devil's Throat.\n\nThe final part of the trip is devoted to Búzios. After the busy sightseeing days, there are 2 full free days to relax on the coast.\n\n## Tour format\n\nAccommodation is in hotels along the route.\n\nExcursions are in a group with an English-speaking guide.\n\nTransfers are in a group with a driver.\n\nDomestic flights Rio de Janeiro – Iguazu – Rio de Janeiro are not included in the tour price. Fares start at US$650.\n\nAdditional excursions at Iguazu are also charged separately.\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dl0rq-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no complete counterpart to this page-specific Markdown summary, including the group-transfer format and 4-star DBL/three-guest price note; translate the fixed RU summary without changing commercial figures."
+      }
+    }
+  ]
+}

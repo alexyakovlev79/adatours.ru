@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 504,
-    "leased": 3,
+    "queued": 503,
+    "leased": 4,
     "review": 1837,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 504,
-      "leased": 3,
+      "queued": 503,
+      "leased": 4,
       "review": 1837,
       "ready": 50,
       "retryable": 0,
@@ -665,8 +665,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 22,
-          "leased": 0,
+          "queued": 21,
+          "leased": 1,
           "review": 58,
           "ready": 1,
           "retryable": 0,
@@ -697,7 +697,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:13:40.345Z",
       "earliestRetryAt": null
     },
     "06": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe:b009",
       "token": "lease-mw3tx26y-3p5ljbo6be2",
       "expiresAt": "2026-11-05T19:12:59.135Z",
+      "generation": 1
+    },
+    "ada-en-mw3tx7a6-amanda": {
+      "jobId": "en:bulk:tour:tour_source_populyarnye_napravleniya_venesuely:b002",
+      "token": "token-mw3tx7a6-gsgdljq5u2d",
+      "expiresAt": "2026-11-05T19:13:40.345Z",
       "generation": 1
     }
   },
@@ -7353,7 +7359,8 @@
       "token": "token-mw3tx7a6-gsgdljq5u2d",
       "jobIds": [
         "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b005",
-        "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b003"
+        "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b003",
+        "en:bulk:tour:tour_source_populyarnye_napravleniya_venesuely:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b005",
@@ -7362,5 +7369,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:43:32.423Z"
+  "updatedAt": "2026-11-05T17:43:40.345Z"
 }

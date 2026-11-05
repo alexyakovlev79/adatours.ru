@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 724,
-    "leased": 2,
+    "queued": 723,
+    "leased": 3,
     "review": 1622,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 724,
-      "leased": 2,
+      "queued": 723,
+      "leased": 3,
       "review": 1622,
       "ready": 50,
       "retryable": 0,
@@ -625,8 +625,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 32,
-          "leased": 0,
+          "queued": 31,
+          "leased": 1,
           "review": 46,
           "ready": 0,
           "retryable": 0,
@@ -657,7 +657,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T09:26:28.099Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_belize:b005",
       "token": "tok-mw38xoel-rki2edxcds9",
       "expiresAt": "2026-11-05T09:25:58.498Z",
+      "generation": 1
+    },
+    "ada-en-mw38ysi5-amanda": {
+      "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b009",
+      "token": "tok-mw38ysi5-lh2afb786cl",
+      "expiresAt": "2026-11-05T09:26:28.099Z",
       "generation": 1
     }
   },
@@ -6743,7 +6749,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_kolumbiya_live:b012",
         "en:bulk:tour:tour_source_kolumbiya_metropoliten:b005",
-        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b006"
+        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b006",
+        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kolumbiya_live:b012",
@@ -6753,5 +6760,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T07:56:20.953Z"
+  "updatedAt": "2026-11-05T07:56:28.099Z"
 }

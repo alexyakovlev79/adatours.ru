@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 798,
-    "leased": 6,
+    "queued": 797,
+    "leased": 7,
     "review": 1546,
     "ready": 48,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 798,
-      "leased": 6,
+      "queued": 797,
+      "leased": 7,
       "review": 1546,
       "ready": 48,
       "retryable": 0,
@@ -265,8 +265,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 38,
-          "leased": 0,
+          "queued": 37,
+          "leased": 1,
           "review": 50,
           "ready": 0,
           "retryable": 0,
@@ -297,7 +297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T06:17:27.119Z",
       "earliestRetryAt": null
     },
     "16": {
@@ -1376,6 +1376,12 @@
       "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_za_9_dnej:b008",
       "token": "token-mw30r8fr-amanda",
       "expiresAt": "2026-11-05T05:36:20.314Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0746-a": {
+      "jobId": "en:bulk:tour:tour_source_kolumbiya_live:b008",
+      "token": "adaen-w2-20261105-0746-token-a",
+      "expiresAt": "2026-11-05T06:17:27.119Z",
       "generation": 1
     }
   },
@@ -6542,7 +6548,8 @@
     "adaen-w2-20261105-0746-a": {
       "token": "adaen-w2-20261105-0746-token-a",
       "jobIds": [
-        "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b010"
+        "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b010",
+        "en:bulk:tour:tour_source_kolumbiya_live:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_luchshee_v_tsentralnoj_amerike:b010"
@@ -6550,5 +6557,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T04:46:22.097Z"
+  "updatedAt": "2026-11-05T04:47:27.119Z"
 }

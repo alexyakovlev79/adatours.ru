@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 908,
-    "leased": 8,
+    "queued": 907,
+    "leased": 9,
     "review": 1437,
     "ready": 47,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 908,
-      "leased": 8,
+      "queued": 907,
+      "leased": 9,
       "review": 1437,
       "ready": 47,
       "retryable": 0,
@@ -265,8 +265,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 42,
-          "leased": 0,
+          "queued": 41,
+          "leased": 1,
           "review": 46,
           "ready": 0,
           "retryable": 0,
@@ -297,7 +297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T05:00:18.502Z",
       "earliestRetryAt": null
     },
     "16": {
@@ -1389,6 +1389,12 @@
       "token": "token-mw2zj4jr-th8oinee1ma",
       "expiresAt": "2026-11-05T05:00:06.232Z",
       "generation": 3
+    },
+    "ada-en-mw2zj0tk-amanda": {
+      "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b015",
+      "token": "ada-token-mw2zj0tk-4xj58hliei",
+      "expiresAt": "2026-11-05T05:00:18.502Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -6238,7 +6244,8 @@
     "ada-en-mw2zj0tk-amanda": {
       "token": "ada-token-mw2zj0tk-4xj58hliei",
       "jobIds": [
-        "en:bulk:tour:tour_source_ikonicheskaya_kolumbiya:b001"
+        "en:bulk:tour:tour_source_ikonicheskaya_kolumbiya:b001",
+        "en:bulk:tour:tour_source_issledovanie_argentiny:b015"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ikonicheskaya_kolumbiya:b001"
@@ -6258,5 +6265,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:30:12.050Z"
+  "updatedAt": "2026-11-05T03:30:18.502Z"
 }

@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme:b006",
+  "stableId": "tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7510fb71886b067f4a599e58c1bfdbef8ff001c79436fdd7c61588661f5b35e4",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:55a39a0c5a7f9419",
+      "field": "itinerary.label",
+      "sourceTextSha256": "09b8bd0fdd011b778802307665971e4912feb3e715fc4654f4c4b67d5481da73",
+      "text": "Tatio Geysers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10SuUcENPA6fb2Bg3OfXhRJwBedK0Ovr0",
+        "documentSha256": "45b29f6cf478b9dde3180e807d21eb26b02f70b25f9c7771c1779a44b66c17b6",
+        "paragraphs": [
+          {
+            "ref": "text:The Tatio Geysers",
+            "textSha256": "b53ba3423a1ff64c96f4ea8870ada2507d9cabba8f9e36e071af3e9a105f3e30"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The route label uses the geyser-field name explicitly given in the Word."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:401b2ffc5ed8a304",
+      "field": "media.alt",
+      "sourceTextSha256": "ed971025758f3f3158c03c02d8ee64c6ef43087de36ced407f0ea97fc759ec7b",
+      "text": "Red and blue cable car cabins above Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3trdxr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no image caption describing these red and blue cable car cabins."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5242b0aa50cebd66",
+      "field": "media.hover",
+      "sourceTextSha256": "58fea5a52c19c7dc3078413e458e3c3a5d44938b867668a8225a38d281f92243",
+      "text": "Santiago: cable car cabins with high-rise buildings and mountains in the background",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3trdxr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no hover caption describing these cabins, buildings and mountain backdrop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2057ab6ec5d63d5894b4dd669740fb5d2439bce2f6ea51b0a07bbd55455e5381",
+      "text": "Flight to Patagonia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10SuUcENPA6fb2Bg3OfXhRJwBedK0Ovr0",
+        "documentSha256": "45b29f6cf478b9dde3180e807d21eb26b02f70b25f9c7771c1779a44b66c17b6",
+        "paragraphs": [
+          {
+            "ref": "text:Day 5: Santiago-Puerto Natales",
+            "textSha256": "6c6a9e592cce00de4300cfb898f697a65ebd4f3d2f8f860c5e3f1039a9dd1962"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The day heading identifies the transfer stage from Santiago to Puerto Natales in Patagonia."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b18b48ded73ca0ef7cffcf9596cbec58042f11999c1cff089afc74b95804a8ae",
+      "text": "Breakfast in the hotel. Transfer to the Airport. Transfer  form the  Airport to Puerto Natales and accommodation in  the hotel in the middle of the national park. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "10SuUcENPA6fb2Bg3OfXhRJwBedK0Ovr0",
+        "documentSha256": "45b29f6cf478b9dde3180e807d21eb26b02f70b25f9c7771c1779a44b66c17b6",
+        "paragraphs": [
+          {
+            "ref": "text:Breakfast in the hotel. Transfer to the Airport. Transfer  form the  Airport to Puerto Nat",
+            "textSha256": "05f9c96037ce3f156a2cfba8d593cfced34150d136cd15f42cab7b2be307725d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f1f6ee1063fb857a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10SuUcENPA6fb2Bg3OfXhRJwBedK0Ovr0",
+        "documentSha256": "45b29f6cf478b9dde3180e807d21eb26b02f70b25f9c7771c1779a44b66c17b6",
+        "paragraphs": [
+          {
+            "ref": "text:Grey HotelTorres del Paine National Park Dbl St BB",
+            "textSha256": "8b64c36d7d7cdfabd4f10c5a3e4035a055120aeb1fef60bfe99e3c9d8bef3aa5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route label combines Puerto Natales from the corresponding day heading and Torres del Paine from the Word hotel location."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:33a232a8e86cd43c",
+      "field": "media.alt",
+      "sourceTextSha256": "934333c91631dfd058910f3114a2f6c92212e1bec61bcb2ee383c2046cef7b61",
+      "text": "Colourful houses on the Puerto Natales waterfront with mountains in the background, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3trdxr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no image caption describing these waterfront houses and mountains."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "802128752e4ffb3d6de102771688328ecb186bf5ce80d017045682453dfed52e",
+      "text": "Torres del Paine and Grey Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10SuUcENPA6fb2Bg3OfXhRJwBedK0Ovr0",
+        "documentSha256": "45b29f6cf478b9dde3180e807d21eb26b02f70b25f9c7771c1779a44b66c17b6",
+        "paragraphs": [
+          {
+            "ref": "text:An amazing adventure to the glacier is expecting us coming really near the Grey Glacier. ",
+            "textSha256": "a9866580c3979182d11aa874d27484f1189a60adfef4a1f05787d159ccbe0d52"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The day heading combines Torres del Paine from the Word day-six heading and its Grey Glacier navigation."
+      }
+    }
+  ]
+}

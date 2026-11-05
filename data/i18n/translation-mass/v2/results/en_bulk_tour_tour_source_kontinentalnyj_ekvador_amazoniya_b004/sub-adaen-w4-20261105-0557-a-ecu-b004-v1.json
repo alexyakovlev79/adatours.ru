@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b004",
+  "stableId": "tour_source_kontinentalnyj_ekvador_amazoniya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "29c2c8c5be3f4b9eaa55e4f314402c71e609ce607198712206bc7ae4ea983738",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:6cd05403b549dd47",
+      "field": "notIncluded",
+      "sourceTextSha256": "06399f00a9dc278b23cb2332aafa6de645d993e84b9881645bb6d6697a2398ba",
+      "text": "Medical insurance.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Medical insurance is not listed as an individual exclusion in the approved English Word."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:49e5b52fa3755257",
+      "field": "notIncluded",
+      "sourceTextSha256": "a486bbdbc92f71298c725622e3cdca8306daedc80a9a355fb312b3d4a7d0de64",
+      "text": "Trip cancellation insurance.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word does not separately list trip cancellation insurance as excluded."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5f7004d708c653a3",
+      "field": "notIncluded",
+      "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+      "text": "Tips.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "docx:table:9:not-included:tips",
+            "textSha256": "092e272390d2bed5301e0011caad34c697ea8d094db2cc5c951d0dde0c5b4e4f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separated the approved combined tips and personal expenses exclusion into its tips component."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "docx:table:9:not-included:tips",
+            "textSha256": "092e272390d2bed5301e0011caad34c697ea8d094db2cc5c951d0dde0c5b4e4f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separated the personal expenses component from the approved exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:4df1450f9a893805",
+      "field": "notIncluded",
+      "sourceTextSha256": "1793393652e8e6045c5c1fbfa8221efb6558ccc716f6b3870956fbbde8cc12fc",
+      "text": "Additional services.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w4-20261105-0557-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word programme contains no independent exclusion named additional services."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:beec35fc2e9cb9f9",
+      "field": "notIncluded",
+      "sourceTextSha256": "0640fece548101ef2f622ea91cd818501caff47fb785fa0fae3cf86c1b3af5a0",
+      "text": "Flights Quito – Coca – Quito (USD 275; children under 12 USD 70).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "docx:table:9:not-included:flights",
+            "textSha256": "d7fe05dfc46a7743ac659379b9f05d53f0d15a72ac9881623d773e0a8d97340e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the list marker while preserving the approved Word flight fare and ages."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:b81b2c4395c6826e",
+      "field": "notIncluded",
+      "sourceTextSha256": "0a96d42e431f7c98da6342300c4fa4d9e7cfa7b0191a5f575d21476487469c06",
+      "text": "Indigenous information centre (USD 10, payable on site).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "docx:paragraph:53",
+            "textSha256": "33eb7461ca005757ff4c829a5acfce0a439790701f6c43be91f8709ee014fffa"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the on-site information-centre fee from the approved exclusions list."
+      }
+    },
+    {
+      "blockId": "tour:note:1c191f0b040b001f",
+      "field": "note",
+      "sourceTextSha256": "3bcd5797f7261dfedb873516c6273c9477228748a4ee21d1b222fe2221bc3af9",
+      "text": "There are no arrivals or departures at Sacha Lodge on Sundays. Hotel and excursion availability and applicable rates are confirmed for the specific travel dates.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+        "documentSha256": "87afcc4c9d5462d83391bdc5c8985cc70240d79b07b778f38b7389f98677ed04",
+        "paragraphs": [
+          {
+            "ref": "docx:table:5:health-entry",
+            "textSha256": "af45c09258d9a4f8ffbfc361c6873681bd2287e6d5a28adc8c27aa0fd3859fe7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combined the approved Sunday restriction with source-specific booking availability wording."
+      }
+    }
+  ]
+}

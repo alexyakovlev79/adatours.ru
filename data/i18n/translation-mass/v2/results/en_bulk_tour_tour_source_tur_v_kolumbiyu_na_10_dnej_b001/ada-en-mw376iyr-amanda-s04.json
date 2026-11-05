@@ -1,0 +1,185 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_kolumbiyu_na_10_dnej:b001",
+  "stableId": "tour_source_tur_v_kolumbiyu_na_10_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "301c43f6d03ff733ceaa9aad1150e7ab55d7b188107372b72fd97a251c2e7505",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "86da1139263dad96d67b18e80561ad26d4299e727655b36dcc6378a493b1f45f",
+      "text": "Luxury Colombia: Coffee, Culture and Paradise Beaches",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p2",
+            "textSha256": "e131a0763db635ccf9d921ac53eb96361792e0bef8495e66997abcb2fb674356"
+          },
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "85da11e98b06ce18c66656ff2a660a00c2a084d89b7e336cbc2f476ae8fe378a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the programme title from its two Word heading lines, omitting the historical edition year."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a792c3921b7caf10891123491fe06c86d0810d507e626af3b392d891ecbe4ab7",
+      "text": "Ten days in Colombia: museums and historic neighbourhoods in Bogotá, Lake Guatavita, Zipaquirá's Salt Cathedral, the Cocora Valley and a coffee farm. After a hot-air balloon flight, the journey continues to Cartagena and ends with three nights on Barú Island.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376iyr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary confirms these activities but provides no corresponding concise lead paragraph; translated the assigned RU summary without adding facts."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "a97bf5f0fe8a5857b414c6bf7a5181a97da84e68966ab5147d83b3146f716fc1",
+      "text": "The cost is calculated for your selected dates; availability, hotels and rates are confirmed when booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376iyr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word tariff table contains fixed prices but no equivalent date-dependent availability and booking-confirmation note; translated the assigned RU note without changing any tariff."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5b265ebf717f5962",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1f73c37e84075f64a35bf7ff66e195e334ed2f21be2edf0aa2bc5ae67fecb832",
+      "text": "Bogotá — 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p19",
+            "textSha256": "09e7e508b92b9653ff722b3fa72e9092184af974c39340fe091c1266d90c0e95"
+          },
+          {
+            "ref": "word/document.xml:p24",
+            "textSha256": "33c694f38a8727aa482281136fe9000de94a04d4d4dec8a561343c608d854814"
+          },
+          {
+            "ref": "word/document.xml:p32",
+            "textSha256": "8d1c3d71cac17ba2d12296d4669aee6af41d5f0b81a31f9257ac94139d59b4fc"
+          },
+          {
+            "ref": "word/document.xml:p42",
+            "textSha256": "afa8db6e9e4caa1791d72748f53b23af97836d0844c0d086cb58a2813b57f318"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Derive the three-night route label from the Word day sequence, arrival on Day 1 and departure on Day 4."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1fecd68c083c26bf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ea834a8c094a7ad1e4e455c14e2f48c92ef1dd33b8e1f5bc1a928b1ac233f4b2",
+      "text": "Pereira — 1 night",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p42",
+            "textSha256": "afa8db6e9e4caa1791d72748f53b23af97836d0844c0d086cb58a2813b57f318"
+          },
+          {
+            "ref": "word/document.xml:p57",
+            "textSha256": "ea1cad92fdadfc1f04cbdaa6936fced3584170e3e043af2cc296947f7541e68e"
+          },
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "9e79093147f394ef9077f950c85770c82843fc43abdfc3073377ecf4249f2535"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Derive the one-night route label from the Word arrival on Day 4 and flight to Cartagena on Day 5."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:93f130c2e333c335",
+      "field": "itinerary.label",
+      "sourceTextSha256": "83932c765c6e9cf61352c52f469f135e05d6c863b5c3982aabca8c62a96fd9e2",
+      "text": "Cartagena — 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "9e79093147f394ef9077f950c85770c82843fc43abdfc3073377ecf4249f2535"
+          },
+          {
+            "ref": "word/document.xml:p70",
+            "textSha256": "e703788a11929c77d2815990360c0392c2dc25a20650ab90dea919faba69ac62"
+          },
+          {
+            "ref": "word/document.xml:p80",
+            "textSha256": "9b9967063c64bb4484ee60022f678f095d8f72694c5bab716a3f1c4e79ef911d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Derive the two-night route label from the Word arrival on Day 5 and island departure on Day 7."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fff27326d669d201",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2365a1e68dfb09ccfe6128a49bbeda3283d3624ab45c8dc83dcdfa2198ae03b2",
+      "text": "Barú — 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p81",
+            "textSha256": "b4115f6ae55c08289758ae6ca640aee0b2c5dfda00f58c6c085198664e7c2d8e"
+          },
+          {
+            "ref": "word/document.xml:p87",
+            "textSha256": "da7f2a521d60a42a38d94229cb411f403a0b89c523dc2859b87d62ab8b8dea1d"
+          },
+          {
+            "ref": "word/document.xml:p89",
+            "textSha256": "e014496f01ab5281d4f065132998f10743d4be313da1abdb8874ff0ec6f5f9d7"
+          },
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "e90974eb1b624ddb91f232a0db90c145acf5848b409f137d02e7766812bc3976"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Derive the three-night route label from the Word island arrival on Day 7 and departure on Day 10."
+      }
+    },
+    {
+      "blockId": "tour:included:05f9858bda478680",
+      "field": "included",
+      "sourceTextSha256": "4bd2ccee481ea968b60510002081c074f5ad564aa14dc8d2ccdcef955e8f41bc",
+      "text": "Accommodation in hotels with breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376iyr-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word inclusion list says accommodation according to programme; it has no single equivalent breakfast-inclusive line, though breakfasts appear in the itinerary. Translated the assigned RU inclusion."
+      }
+    }
+  ]
+}

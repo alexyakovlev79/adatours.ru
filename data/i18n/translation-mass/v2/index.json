@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 639,
-    "leased": 1,
+    "queued": 638,
+    "leased": 2,
     "review": 1706,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 639,
-      "leased": 1,
+      "queued": 638,
+      "leased": 2,
       "review": 1706,
       "ready": 50,
       "retryable": 0,
@@ -465,8 +465,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 12,
-          "leased": 0,
+          "queued": 11,
+          "leased": 1,
           "review": 43,
           "ready": 22,
           "retryable": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T13:21:28.931Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1347,6 +1347,12 @@
       "token": "tok-mw3hisv7-ohdi1lqhrx",
       "expiresAt": "2026-11-05T13:21:14.087Z",
       "generation": 2
+    },
+    "ada-en-mw3hj4bl-amanda": {
+      "jobId": "en:bulk:tour:tour_source_severnyj_pantanal_vodopady_reki:b006",
+      "token": "token-mw3hj4bl-6y6avs72s5a",
+      "expiresAt": "2026-11-05T13:21:28.931Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -6968,8 +6974,15 @@
         "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw3hj4bl-amanda": {
+      "token": "token-mw3hj4bl-6y6avs72s5a",
+      "jobIds": [
+        "en:bulk:tour:tour_source_severnyj_pantanal_vodopady_reki:b006"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T11:51:14.087Z"
+  "updatedAt": "2026-11-05T11:51:28.931Z"
 }

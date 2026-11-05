@@ -296,3 +296,72 @@ Word `Day 9: Rio de Janeiro` подтверждает Corcovado, поезд че
 - `blockId`: `tour:media_hover:5c2211839f7369cc` (`/itinerary/7/images/0/hover`); `tour:itinerary_title:ab3fd6cac362f6b0` (`/itinerary/8/title`); `tour:itinerary_text:c3205ac1e20a266d` (`/itinerary/8/text`); `tour:itinerary_label:99c0d88290b06bf7` (`/itinerary/8/places/0`); `tour:itinerary_label:cb706626bb0814b2` (`/itinerary/8/places/1`); `tour:media_alt:de9c412b439489f5` (`/itinerary/8/images/0/alt`); `tour:itinerary_title:f76823f601bc2496` (`/itinerary/9/title`); `tour:itinerary_text:d1bf136a4a3c936a` (`/itinerary/9/text`).
 
 **Контроль после прохода:** `index.json` при последнем чтении `2026-11-05T01:30:04.203Z`: `ready=35`, `review=1392`, `queued=967`, `leased=7`, `held=1595`, `blocked_external=10`, `retryable=0`, `stale_source=0`, `failed_final=0`, всего `4006`. Счётчики могут измениться вследствие одновременной работы переводчиков. Полный каталог не проверен.
+
+
+### Независимая QA — проход t7 (05.11.2026, 05:26 МСК)
+
+**8 ранее сохранённых пакетов, 57 блоков; 8 `review → ready`, из них одна `revise_and_approve` с новым неизменяемым EN-результатом; непроверенных по техническим причинам среди этих восьми — 0.** Отдельный reviewer `adaen-independentqa-20261105-t7`. Все восемь статусов `ready` и равенство `review.acceptedBlobSha === submission.blobSha` подтверждены повторным чтением соответствующих exact state-shards. Для каждого проверены frozen RU-блоки, immutable result, действующий RU source Git SHA, Word 2027 по точному Drive fileId, происхождение фрагментов, смысл, факты/условия, голос Ada Tours, структура, связи/маршрут и применимость решения English-speaking для RU-derived. Все шесть `word, meaning, facts, voice, structure, relations` утверждены после проверки, не по одной формальной валидации.
+
+Нормативы прочитаны из актуального `main`: editorial `5426b00b9220b66b4969b18a8867ce4bcaa2d370`; queue `32c36a4d27d445feacd3f362f5304013021db30f`; worker `ca92225d88c1ec92516aa9ebc1a00656f43ef80f`; QA `fa6ee9b6520b7ba97c79c8d270d618497390b065`; QA adapter `15f8e1e6d5e5e23fbac45813e6c5a1a2a657afe2`; core `6a2539330250a8db9a724b6c975b78b5dd9d1102`.
+
+**Общие подтверждения:** RU `src/content/tours/luxury-brazil-11d.md`, frozen/current Git blob `a5b91571ae2edc8ff0ef88fbb46cd9a9c64ab412`; документ Word 2027 `fileId=1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K`, название `Luxury Brazil 11d10n 2027 ENG com 20% (1).docx`, pinned SHA-256 `5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f`, фактический `modifiedTime=2026-10-21T20:49:36.876Z` совпал с frozen job. Word DOCX прочитан через Google Drive как текст; **новое вычисление двоичного SHA-256 DOCX/хешей всех параграфов не выполнялось**. Разграничены прямой Word-текст и дополнительные фразы RU, без ложной атрибуции Word. Ценовые поля и общие условия каталога не изменены и этим проходом целиком не утверждались; в самом Word указано 11D/10N, но таблица с числом ночей по трём городам суммируется в 8, поэтому не заявляется независимое подтверждение полной коммерческой матрицы; это не затрагивает вынесенные в выбранные 57 блоков факты о днях 5–11. `publicationEnabled=false`.
+
+#### b011 · `en:bulk:tour:tour_luxury_brazil_11d:b011` · 8 блоков
+
+Дни 9–11: свободный Бузиос и выезд в аэропорт Рио. Подтверждены дословные Word 2027 `Days 9–10` и `Day 11`, отсутствие обещания включённого авиабилета, маршрут и медиаподписи из RU. Нумерация `/itinerary/18–20` относится к канонической структуре с встроенными экскурсиями, а не к 18–20 дню. **98%**, без ревизии.
+
+- Принятый immutable result SHA `b75b41dccc1a2da02c53a27146e9d3ffff957ef7`; CAS переход подтверждён отдельным чтением exact state-shard; `sourceFingerprint` `e2b2a0845ff1e7abd8cfae990103deba650229502a2e65a8ef98081b65a5a17e`.
+- `blockId` + точный путь: `tour:itinerary_title:f76823f601bc2496` (`/itinerary/18/title`); `tour:itinerary_text:d1bf136a4a3c936a` (`/itinerary/18/text`); `tour:itinerary_label:cab21dc886360ea3` (`/itinerary/18/places/0`); `tour:media_alt:fd31b33ef7f8ca3c` (`/itinerary/18/images/0/alt`); `tour:media_hover:1afceff678bddc71` (`/itinerary/18/images/0/hover`); `tour:itinerary_label:75069196db31c486` (`/itinerary/19/places/0`); `tour:itinerary_title:359c7c25395d1837` (`/itinerary/20/title`); `tour:itinerary_text:5a8704e80dc128a8` (`/itinerary/20/text`).
+
+#### b010 · `en:bulk:tour:tour_luxury_brazil_11d:b010` · 8 блоков
+
+Пляжи Бузиоса: João Fernandes, Geribá, Ferradura, Rua das Pedras, рестораны Chez Françoise/Le Relais La Borie, Místico/Abracadabra, La Gare и Restaurante 74/Casas Brancas подтверждены исходным RU и Word-рекомендациями. Расширенные RU-описания не объявлены дословными Word. **98%**, без ревизии.
+
+- Принятый immutable result SHA `f2eb0e17e25d40d949fac719fc7fe2673d5e62d9`; CAS commit `e39c607a96bddbfc100de5ebcd9b9fd3cacbb24d`; `sourceFingerprint` `221866acf94949947b041fb4331deb717c38d64e98e83e6c222fdb4563858ac6`.
+- `blockId` + точный путь: `tour:itinerary_label:3fa8c2af53ae2e7a` (`/itinerary/16/places/1`); `tour:itinerary_label:2deac72961a68de2` (`/itinerary/16/places/2`); `tour:media_alt:15e3aedc74aaf2f1` (`/itinerary/16/images/0/alt`); `tour:itinerary_title:ab3fd6cac362f6b0` (`/itinerary/17/title`); `tour:itinerary_text:c3205ac1e20a266d` (`/itinerary/17/text`); `tour:itinerary_label:5e4a559f1db2ad84` (`/itinerary/17/places/0`); `tour:media_alt:e955bd3be489d38c` (`/itinerary/17/images/0/alt`); `tour:media_hover:112155de392fa5fd` (`/itinerary/17/images/0/hover`).
+
+#### b012 · `en:bulk:tour:tour_luxury_brazil_11d:b012` · 8 блоков
+
+Последние метки Бузиос → Рио и 6 подписей медиа: сохранены канонические направления, точные названия из Word, медиаподписи взяты из RU; не добавлены услуги и цены. **99%**, без ревизии.
+
+- Принятый immutable result SHA `a93a9f6fe0cdda3bef97538b7b61704b95d84ae8`; CAS commit `2c453c82632ea0fcd3a8fc6192292b3b602da48b`; `sourceFingerprint` `85d24448555b1e1a8e3010250dedaf6ee0da83b27169fc8a9dafe5b5bf3239a0`.
+- `blockId` + точный путь: `tour:itinerary_label:f5d290ec03357301` (`/itinerary/20/places/0`); `tour:itinerary_label:71c343059cadf68d` (`/itinerary/20/places/1`); `tour:media_alt:22bcc9bf29ed4b31` (`/itinerary/20/images/0/alt`); `tour:media_hover:bc2b0977d091f196` (`/itinerary/20/images/0/hover`); `tour:media_alt:68ebdd10346d3d20` (`/hero/alt`); `tour:media_hover:77871c8f58bdcbc6` (`/hero/hover`); `tour:media_alt:b867c4e3adb4049f` (`/gallery/0/alt`); `tour:media_hover:beff32bfdca6ae65` (`/gallery/0/hover`).
+
+#### b008 · `en:bulk:tour:tour_luxury_brazil_11d:b008` · 8 блоков
+
+Игуасу, бразильская и аргентинская стороны: `Brazilian Falls`, прогулка и Bird Park, Devil’s Throat; текст в Word 2027 подтверждён, остальное — отдельные корректные RU-derived подписи и места. Соседний ExcursionRef не переопределён. **98%**, без ревизии.
+
+- Принятый immutable result SHA `3cdb64928214c123122d77f699536177aa296f84`; CAS commit `b19418bbd73441dcaa84673bbfb52936a6ff6dbe`; `sourceFingerprint` `b4d14d1963658fa23b6a825e4c47537cb0e1ee47cdb3f08627384779ec0491e2`.
+- `blockId` + точный путь: `tour:itinerary_title:e1dddf681303f0bd` (`/itinerary/12/title`); `tour:itinerary_text:b9ad3e14216c2f08` (`/itinerary/12/text`); `tour:itinerary_label:3171d63b67303d8f` (`/itinerary/12/places/0`); `tour:media_alt:4bfd3b79da5d9fd5` (`/itinerary/12/images/0/alt`); `tour:media_hover:c5f93ca194abdc07` (`/itinerary/12/images/0/hover`); `tour:itinerary_label:d98ef24cb0612c37` (`/itinerary/13/places/0`); `tour:itinerary_label:b3b89ebdb189c304` (`/itinerary/14/places/0`); `tour:itinerary_title:ed497b2a669f6ce4` (`/itinerary/15/title`).
+
+#### b013 · `en:bulk:tour:tour_luxury_brazil_11d:b013` · 1 блоков
+
+**Содержательное исправление в новой immutable EN-ревизии.** В исходном RU-редакционном блоке VIP-доступ на Sugar Loaf фигурировал как возможная дополнительная услуга, но точный Word 2027 прямо включает его в программу (`Included: Sugar Loaf with VIP access`, `VIP access at Sugar Loaf`). Исправлена только EN `body`: `VIP access to Sugar Loaf is included in the programme`, устранён второй оборот `option to add VIP access`. Fast Track Gold и дополнительные экскурсии оставлены только как запросные опции. Прежний результат сохранён в `qaRevisions`. Новая версия независимо перепроверена по шести критериям. Выбор Word 2027 против старого RU, **уверенность 99%** (не гарантия иных договорных условий).
+
+- Принятый immutable result SHA `9fc30cbf99dbb619ff45a3526833fbbe544e1cbb`; CAS commit `878e9f3457fdaf725de90c10188b94dcfaa47dc2`; `sourceFingerprint` `1b71bd626415c6861184f1c48e49c9b8935a47127e2fd09651e929b68de0a7c9`.
+- `blockId` + точный путь: `tour:body:47f6c11f40afc686` (`/__body`).
+
+#### b009 · `en:bulk:tour:tour_luxury_brazil_11d:b009` · 8 блоков
+
+Аргентинская сторона Игуасу: подтверждён дословный абзац Word о Day 7 и ресторане Itaipu, подробности RU про 55 500 га, 150 м × 82 м, Devil’s Throat и сравнение сторон удержаны как RU-derived, без ложного Word-provenance. Day 8 Iguazu → Rio → Búzios содержит трансфер без обещания включённого авиабилета, длительность полёта и дороги соответствует RU. **97%**, без ревизии.
+
+- Принятый immutable result SHA `e8a77152e87e02e4d3d765749a062bd0ef1217cd`; CAS commit `95e3895ea85b68e12523dc7d2b1f604236679651`; `sourceFingerprint` `7529de9f5fa2d505f7460be23fd9fbc141b1f4448848b675854fb2276ab2d3e1`.
+- `blockId` + точный путь: `tour:itinerary_text:2e780f63f4172747` (`/itinerary/15/text`); `tour:itinerary_label:3f69d9050d7522b8` (`/itinerary/15/places/0`); `tour:itinerary_label:374fc01d904e511f` (`/itinerary/15/places/1`); `tour:media_alt:73ee8850a7ea4519` (`/itinerary/15/images/0/alt`); `tour:media_hover:61e3cdeb413027fb` (`/itinerary/15/images/0/hover`); `tour:itinerary_title:2fb5525f94c7ffcd` (`/itinerary/16/title`); `tour:itinerary_text:fb5db666cae6efb7` (`/itinerary/16/text`); `tour:itinerary_label:bed427377c4bc61f` (`/itinerary/16/places/0`).
+
+#### b006 · `en:bulk:tour:tour_luxury_brazil_11d:b006` · 8 блоков
+
+Подпись Copacabana, Angra dos Reis / Ilha Grande как необязательные направления, Rio de Janeiro, пять маршрутных меток — проверены по Word и RU; базовая программа не превращает дополнительные острова во включённую услугу. **99%**, без ревизии.
+
+- Принятый immutable result SHA `5b1cca55360848ee8d6f153dbd0865e9ff574418`; CAS commit `8150ac8868adeb5de7998c1bbf7eeab3fa4f5b0a`; `sourceFingerprint` `8842d3ac5720dce0b9f9f221f5eeda5258f61e822891573a074fd8b9f6a49ec0`.
+- `blockId` + точный путь: `tour:media_alt:f335a51f9392f79b` (`/itinerary/3/images/0/alt`); `tour:itinerary_label:4cb587815d265c26` (`/itinerary/4/places/0`); `tour:itinerary_label:7938a35c2064272c` (`/itinerary/4/places/1`); `tour:itinerary_label:696f370bdf2bbd56` (`/itinerary/5/places/0`); `tour:itinerary_label:062dd16d241c1979` (`/itinerary/6/places/0`); `tour:itinerary_label:29a39cd2b9c1e241` (`/itinerary/7/places/0`); `tour:itinerary_label:9ff83dc440f221f1` (`/itinerary/8/places/0`); `tour:itinerary_label:462ec9428b244b36` (`/itinerary/9/places/0`).
+
+#### b007 · `en:bulk:tour:tour_luxury_brazil_11d:b007` · 8 блоков
+
+Urca/Sugar Loaf и Day 5 перелёт Rio → Foz do Iguaçu: дословный Word 2027 подтверждает трансфер в аэропорт, встречу гидом по прибытии и сопровождение в гостиницу. Уточняющие RU-фотоописания не приписаны Word; не обещано включение авиабилета. **99%**, без ревизии.
+
+- Принятый immutable result SHA `f861261c51758fb4064158bf38e47090ac3ee972`; CAS commit `900aba8d89885250afe8befe3416ab3ceeffac3b`; `sourceFingerprint` `231330dac9587a44b007822dbed8ded3de776b91c3e41a31b54b9b053c141c5c`.
+- `blockId` + точный путь: `tour:itinerary_label:e3f81e98946cd23b` (`/itinerary/10/places/0`); `tour:itinerary_label:fb6ccd0ca7211ca8` (`/itinerary/10/places/1`); `tour:itinerary_title:9d160262ccf40bb8` (`/itinerary/11/title`); `tour:itinerary_text:b04d5d61d358e759` (`/itinerary/11/text`); `tour:itinerary_label:2a305b40321085a3` (`/itinerary/11/places/0`); `tour:itinerary_label:6b66db7ec4dbcee3` (`/itinerary/11/places/1`); `tour:media_alt:eafed5fee3a9ce49` (`/itinerary/11/images/0/alt`); `tour:media_hover:f2921dad1dce3c6b` (`/itinerary/11/images/0/hover`).
+
+- **Ревизия b013:** `revisionId=qa-20261105-t7-luxury-b013-01`; новый путь `data/i18n/translation-mass/v2/results/en_bulk_tour_tour_luxury_brazil_11d_b013/qa-qa-20261105-t7-luxury-b013-01-9fc30cbf99dbb619.json`; старый immutable blob `e1cd1c8101be337ce05f291bda27d34759a79386`; исправлен только `tour:body:47f6c11f40afc686`. Подтверждён CAS commit `878e9f3457fdaf725de90c10188b94dcfaa47dc2`.
+
+**Граница:** RU, общие цены, медиа, Word, `main`, matching, чужие lease, публикация и GitHub Pages не изменялись. Это 8 пакетов, не QA всего каталога.

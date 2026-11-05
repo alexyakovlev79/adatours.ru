@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii:b005",
+  "stableId": "tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "82445475931a6ddfa75129b31fb0e9682c8991bb52b42b7b458f8ef9016d9bd2",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:fe3533015efbb4fd",
+      "field": "media.hover",
+      "sourceTextSha256": "05465945ec2c80744b24ef058ad97e404d7e2351eebe0b395af983a4aaeaf2d2",
+      "text": "Rio from above: Christ the Redeemer overlooking the city and coastal mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0058-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word 2027 describes Christ the Redeemer and Rio city views but does not contain this specific image hover caption; the current RU media description is translated."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ff4d579cdd555372cb86d450d9c7c35acebfa64d88cb59ac22fa437dddbd4904",
+      "text": "Rio de Janeiro – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "body:p:37",
+            "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route title combines the Rio origin with the approved Word 2027 Day 4 flight destination Foz do Iguaçu."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3133afddabda48a182e5badc8ae28ff2a7b564732a5d080f3857926290b7ec35",
+      "text": "Breakfast and transfer to the airport for your flight to Foz do Iguaçu. Meeting and transfer to your hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "body:p:37",
+            "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The approved Word 2027 Day 4 itinerary is preserved after removing the day-number prefix."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "table:10:row:1:cell:0:p:0",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "table:10:row:2:cell:0:p:0",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b4af8d3ee5a70df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0058-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word 2027 mentions only the Argentine side of Iguazu Falls and does not name Puerto Iguazú in its programme text; the confirmed RU place label supplies the missing locality."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:abee35d9714b310d",
+      "field": "media.alt",
+      "sourceTextSha256": "18cef867a34d17d5637c6e2e41f254a68318a332a42f41148a057add0fcebe3a",
+      "text": "Photo: View of Rio de Janeiro",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w1-20261105-0058-b",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word 2027 has no matching image alt caption for the Rio photograph; this short accessibility description is translated from the unchanged RU source."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "337b4fbdb94ee769b975fb8b7311e0d8d4806fd28f146cfd91ac2aa0b465272c",
+      "text": "Brazilian side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "body:p:38",
+            "textSha256": "439f2698462129937aeed2a5625e8237464f79ce8edcfcf86b67982686fb5ba6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Word 2027 explicitly describes the Brazilian side of the falls in the Iguazu Falls itinerary; this is its concise day title."
+      }
+    }
+  ]
+}

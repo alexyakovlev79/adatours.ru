@@ -1,0 +1,135 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b001",
+  "stableId": "tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "41e16fc29530b2a125a92d325925380c9fb47c57daab8630677b416ece8c4789",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "91751515db12062f98bbf105b0fd4baae8282d50326e70798992dacfc40c9647",
+      "text": "Brazil and Argentina tour: from Manaus (Amazon) to Iguaçu",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word title is different: Rio, Amazon, Salvador, Iguaçu & Buenos Aires. Translate the existing RU title without changing the route or its geography."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "69dbd0a301bb5328f37d2c2f5b9dd90e694e3cfb1c8e8469d21a732a0f7a88ad",
+      "text": "Over 14 days, this route takes you through two countries and several very different regions of South America. Your journey starts in Rio de Janeiro, heads into the Amazon, continues to Salvador and the beaches of Praia do Forte, then visits Iguaçu Falls before ending in Buenos Aires.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact RU lead is absent from the verified Word. Its route and 14-day duration are confirmed by the Trip overview and day-by-day programme; translate the existing lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "22571f8ae46b91a664da578712419c4713b9898bc3cb3ca5dc7feb4a628712a1",
+      "text": "$3260",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The current RU price note $3260 is absent from Word, whose commercial table shows SGL $7,627, DBL $4,796 and TRP $4,760. Preserve the current price; changes belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "p:65",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e627aedc2c33b81f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b92443299e337620a456e7e406ecf78abb03f476d60829dc83e6b74f77389c47",
+      "text": "Manaus",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "p:74",
+            "textSha256": "24a8c49bf23684af842d20d72c99b66771458f50d5725eab2e18ab1e9c2732f5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:22963c6194f4a794",
+      "field": "itinerary.label",
+      "sourceTextSha256": "278845a92734b4b9ff11da938e2e193a3a98bb421649aacb9c9b740fc9dec4ed",
+      "text": "Salvador",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "p:131",
+            "textSha256": "5ad4a23bc13eaf92e9c035b1d3edbb92582a99f2dbe64525009755f989eedfb2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:04a47c3761275412",
+      "field": "itinerary.label",
+      "sourceTextSha256": "407a82c1c928218c6f894e4e13e3c1f9327de5ba60a4a5607ebdd17ca96791c8",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "p:46",
+            "textSha256": "03eff2cee57d84cbe195ac726c14adbecaf3af4fe358467a2007550c1eaade6e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b4a101a4607d4777",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "p:136",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    }
+  ]
+}

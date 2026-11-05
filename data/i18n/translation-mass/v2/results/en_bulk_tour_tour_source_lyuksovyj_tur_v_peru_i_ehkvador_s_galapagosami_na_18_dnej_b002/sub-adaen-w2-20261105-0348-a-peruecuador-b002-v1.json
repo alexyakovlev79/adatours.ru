@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej:b002",
+  "stableId": "tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "536d40747099cd8b82096029d6ccf9463d880f730657c2da9863a751a2364ffd",
+  "blocks": [
+    {
+      "blockId": "tour:included:bd5793f22356bd62",
+      "field": "included",
+      "sourceTextSha256": "b6543199a22a9385c2543099324d9d9b2747de2943e1b75f0b25758b526b74cb",
+      "text": "Accommodation in hotels along the route",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No consolidated accommodation inclusion label appears in the approved Word programme; hotels are described day by day."
+      }
+    },
+    {
+      "blockId": "tour:included:a360b583212c7206",
+      "field": "included",
+      "sourceTextSha256": "bfe863b01a709ba0ff3de738772039eef94909ecaf16f5bf721515d22a436412",
+      "text": "Excursions included in the itinerary",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes individual excursions but does not contain this standalone included-services label."
+      }
+    },
+    {
+      "blockId": "tour:included:203183860e7bc78e",
+      "field": "included",
+      "sourceTextSha256": "b086500f13d67bcef405cc02d1fe46f44c861a537caca79ae3a1bc1d31d57194",
+      "text": "Guide services",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word provides guide references throughout the itinerary but lacks the consolidated included-services list entry."
+      }
+    },
+    {
+      "blockId": "tour:included:3b012b474a10f34d",
+      "field": "included",
+      "sourceTextSha256": "e5ae0a61ed1d925fa1d5ab875e0fb6b4cf36f7ab1aa9153d93cb7a009df6d6a0",
+      "text": "Transfers",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Transfers are detailed by day in Word, without an identical standalone entry in a global inclusions list."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:78563862a3425fe2",
+      "field": "notIncluded",
+      "sourceTextSha256": "67af0bfb50ba4f0ab9bba36f86010abce90a73fa4e541feb4c1959eb07ebecc3",
+      "text": "Optional activities",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No standalone exclusion label for optional activities appears in the approved English Word document."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6b1f45924470a6d0",
+      "field": "notIncluded",
+      "sourceTextSha256": "ef6eed83a3131d9c2f5b6335196d83cf07eeef0a5f53ac0b9bbace98933d8058",
+      "text": "International flights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word itinerary has flight details but does not list this as a standalone global exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:01e068eec1431711",
+      "field": "notIncluded",
+      "sourceTextSha256": "2d9bacc9abc36735aed6b92b79b9feffae6c96aebc829947ecd9dd725b4433ed",
+      "text": "Lunch in Lima on Day 2",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:p15",
+            "textSha256": "2c3b5045ec7258a8577d6dd88ed4ba1df3bf490a4cb4503bb751ab8e19ab3e56"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word confirms lunch cost is not included after the Day 2 city tour; extract the exclusion as an item label."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:4d8c43e13003a047",
+      "field": "notIncluded",
+      "sourceTextSha256": "d4f1f977254b303d1dc4ffe0bc6142e9935f13b6a979f7872a9516934bfbf999",
+      "text": "Dinner at Rafael restaurant on Day 2",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+        "documentSha256": "893ef12b5c52871f7de0a0501ac7ed1a0a04c193a30eb5165e448592c1bc3ba0",
+        "paragraphs": [
+          {
+            "ref": "docx:p20",
+            "textSha256": "bdc40633b81c4fa2a7e64b8a14f34e8a34c444c66d51f383e6487b18482e5eb1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word confirms the Day 2 dinner booking and that dinner cost is not included; extract the exclusion label."
+      }
+    }
+  ]
+}

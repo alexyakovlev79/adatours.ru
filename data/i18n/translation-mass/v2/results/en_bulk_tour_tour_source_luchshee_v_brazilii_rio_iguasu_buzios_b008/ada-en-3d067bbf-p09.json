@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_brazilii_rio_iguasu_buzios:b008",
+  "stableId": "tour_source_luchshee_v_brazilii_rio_iguasu_buzios",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "80167429b0c0ae716b3af2dfe0c4930d1de5b2563802e03917988c04f01ed0e3",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:2c4b068ae9457f73",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p51",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:35861bcd23dd2d90",
+      "field": "media.alt",
+      "sourceTextSha256": "6ff42f6d17aaa76bf33d4df442ad0c849267b8718655387034c896b182e5e054",
+      "text": "A narrow passage between brightly coloured houses with a sea view in Búzios, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This image alt description is absent from the verified Word programme. Translate the assigned RU visual description only."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:4f7511bc030723fa",
+      "field": "media.hover",
+      "sourceTextSha256": "a0e527428ff51157a1ceb0024cdfac462ed031b696f0f3029b3c88159e02303d",
+      "text": "Búzios: colourful houses along a passage leading to the sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This image hover caption is absent from the verified Word programme. Translate the RU caption without changing media."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1a4f51772dbb538827a72c6315a8c768e8bc5bbc08786fbf4d3ad33a9f79ebf0",
+      "text": "Búzios – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p116",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          },
+          {
+            "ref": "word/document.xml:p119",
+            "textSha256": "46f6f3d9772cc9edb81ce84790941cb45c652f48f507a7f60db2b1c353257279"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the confirmed departure resort and airport city into the assigned route title without importing the Word day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3ec4237e362b6ca2ef0071eacdd984821155c85e3cd19800d5490fc5c41b532f",
+      "text": "After breakfast, transfer from Búzios to Rio de Janeiro Airport.\n\nThen take your international flight home.\n\nThis marks the end of the programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes this transfer on Day 8, while the fixed RU block belongs to itinerary index 10. No Word paragraph matches that day context; translate the current RU block without importing the Word day number, duration or schedule."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3fa8c2af53ae2e7a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p119",
+            "textSha256": "46f6f3d9772cc9edb81ce84790941cb45c652f48f507a7f60db2b1c353257279"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed airport city name for the assigned places label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2deac72961a68de2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1uABQ0zRQzYr2BAfQJdxCiSzAnVokBp8V",
+        "documentSha256": "c497465aaf05b3457cbd5e1645cb363f7f38a48fdfe238375a666b96a483bdaf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p51",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5a250e63584f7dbd",
+      "field": "media.alt",
+      "sourceTextSha256": "d1c39b693b4021c90f73f8552aa746e23dd110e72000af3fd2cf000873c8e5f4",
+      "text": "Rio de Janeiro in the evening",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no matching image alt description. Translate the assigned RU alt text only."
+      }
+    }
+  ]
+}

@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 654,
-    "leased": 2,
-    "review": 1691,
+    "leased": 1,
+    "review": 1692,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 13,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 654,
-      "leased": 2,
-      "review": 1691,
+      "leased": 1,
+      "review": 1692,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 13,
@@ -146,8 +146,8 @@
         "word_2027": {
           "held": 0,
           "queued": 30,
-          "leased": 1,
-          "review": 45,
+          "leased": 0,
+          "review": 46,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 1,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-05T12:09:49.864Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "13": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw3eyz51-amanda": {
-      "jobId": "en:bulk:tour:tour_source_meksika_lindo:b007",
-      "token": "token-mw3eyz51-sc421zpwce",
-      "expiresAt": "2026-11-05T12:09:49.864Z",
-      "generation": 1
-    },
     "ada-en-mw3ezm03-amanda": {
       "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b001",
       "token": "tok-mw3ezm03-qerr24fcdds",
@@ -6928,7 +6922,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_meksika_lindo:b007"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_meksika_lindo:b007"
+      ]
     },
     "ada-en-mw3ezm03-amanda": {
       "token": "tok-mw3ezm03-qerr24fcdds",
@@ -6939,5 +6935,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:40:19.495Z"
+  "updatedAt": "2026-11-05T10:42:01.461Z"
 }

@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi:b004",
+  "stableId": "tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a199ac3053b233fc5ab5b4d96dc6daa97f8e84864a9fb6b331c17aa3a669528a",
+  "blocks": [
+    {
+      "blockId": "tour:note:a6ee24da085098e0",
+      "field": "note",
+      "sourceTextSha256": "39acd0d02295319996150571b8c5fe8260e65f4d9603ea80a1c310482f1be309",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed because of early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified 2027 Word conditions and exclusions do not include this missed-breakfast liability clause. Translate the fixed RU note without changing its conditions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "18SzywAPCgdKEUPkYKDL05UCtQOGhj0Ob",
+        "documentSha256": "5ad921988e8413d36aee91207a7e895c91209d186124ccf72d0324c033d3ee8e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p36",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2f572a6a96ffe2ed64a4c1c4c4246cfb33a3f3c1500e170781f09d7e59ba1b17",
+      "text": "Meet at Santiago Airport and transfer to the hotel.\n\nAfter checking in, begin a private sightseeing tour of Santiago with an English-speaking guide, lasting about 4 hours.\n\nThe evening is free. You may choose to have dinner at a restaurant serving local cuisine.\n\nOvernight at the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word day 1 is a condensed paragraph, with no separate check-in or overnight sentence and no specified guide language. Translate the assigned expanded RU block; adapt the service language to English under the agreed rule."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1fa62c13fcc2747b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact full place label Santiago de Chile is absent from Word, which uses Santiago. Translate the established RU place label without changing its identity."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:93ff9fd36152070f",
+      "field": "media.alt",
+      "sourceTextSha256": "34756cdb52ffd44d97a891fb8a191e6504e00210d588dfd9bc422f85acca237a",
+      "text": "Cable cars against a backdrop of the city and snow-capped mountains, Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This specific image alt text is absent from the verified Word programme and tables. Translate only the assigned RU description; do not change the image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6f3d5192aa3f75287ea4e4f5dbe93a7cace51fd454fbd5e9ae555bf9d9e25105",
+      "text": "Valparaíso and Viña del Mar",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "18SzywAPCgdKEUPkYKDL05UCtQOGhj0Ob",
+        "documentSha256": "5ad921988e8413d36aee91207a7e895c91209d186124ccf72d0324c033d3ee8e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p63",
+            "textSha256": "e686e5eb98baca84f887b73b8a07fa663f1dc915a63c799e21da1dbafe718ca0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed two-city destination wording from the Word days 1-2 heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "233d7f01bc43cc63a455742e9d522372e2e783f5021dcaca0b0279f6899c5d1f",
+      "text": "After breakfast, we set off for the Pacific coast.\n\nThe first part of the day is spent in Valparaíso, a UNESCO World Heritage city. The group tour is led by an English-speaking guide and includes a walk through the city streets.\n\nWe then head to Viña del Mar, where we stroll along the waterfront and watch the pelicans.\n\nAfter returning to Santiago, you can choose to visit a winery near the capital. The visit includes a Chilean wine tasting, a walk through the vineyards and an introduction to the estate's history.\n\nOvernight at the hotel in Santiago.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word day 2 contains a compressed description and places the optional wine tour on the way back, whereas the assigned RU block explicitly says after returning. Translate the full RU block and preserve its optional status and overnight sentence; do not label this wording as Word-exact."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:64a59c99ac2fc504",
+      "field": "itinerary.label",
+      "sourceTextSha256": "87fe574bd51f17d5205651d78ebdd2145a78f6fd10f8d39d01b4fadbc57f4cb6",
+      "text": "Valparaíso and Viña del Mar",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "18SzywAPCgdKEUPkYKDL05UCtQOGhj0Ob",
+        "documentSha256": "5ad921988e8413d36aee91207a7e895c91209d186124ccf72d0324c033d3ee8e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p63",
+            "textSha256": "e686e5eb98baca84f887b73b8a07fa663f1dc915a63c799e21da1dbafe718ca0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed Word spelling of both cities for the existing places label."
+      }
+    }
+  ]
+}

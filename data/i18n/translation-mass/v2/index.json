@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 877,
-    "leased": 10,
+    "queued": 876,
+    "leased": 11,
     "review": 1465,
     "ready": 48,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 877,
-      "leased": 10,
+      "queued": 876,
+      "leased": 11,
       "review": 1465,
       "ready": 48,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 25,
-          "leased": 0,
+          "queued": 24,
+          "leased": 1,
           "review": 50,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T05:10:28.407Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1400,6 +1400,12 @@
       "jobId": "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b005",
       "token": "tok-mw2zxbrp-zgue8hqsuq",
       "expiresAt": "2026-11-05T05:09:27.344Z",
+      "generation": 1
+    },
+    "ada-en-mw2zwyfn-amanda": {
+      "jobId": "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b016",
+      "token": "tok-mw2zwyfn-uhov7nk6gsf",
+      "expiresAt": "2026-11-05T05:10:28.407Z",
       "generation": 1
     }
   },
@@ -6325,7 +6331,8 @@
     "ada-en-mw2zwyfn-amanda": {
       "token": "tok-mw2zwyfn-uhov7nk6gsf",
       "jobIds": [
-        "en:bulk:tour:tour_source_meksika_lindo:b004"
+        "en:bulk:tour:tour_source_meksika_lindo:b004",
+        "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b016"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_meksika_lindo:b004"
@@ -6361,5 +6368,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:40:21.001Z"
+  "updatedAt": "2026-11-05T03:40:28.407Z"
 }

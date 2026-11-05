@@ -1,0 +1,166 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_parad_chempionov_v_brazilii:b002",
+  "stableId": "tour_source_nezabyvaemyj_parad_chempionov_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6179166dd83427ad4fb53fa9f407f33b6542d194652ceee3d1319d1acf16b573",
+  "blocks": [
+    {
+      "blockId": "tour:included:00bd9f4990727adc",
+      "field": "included",
+      "sourceTextSha256": "4811bf77bfc5893315b50d8a70895be754a5caac93ac0f7bd60de68d605debda",
+      "text": "Accommodation in the selected hotels: three nights each in Rio de Janeiro, Foz do Iguaçu and Búzios, with breakfast included.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p169",
+            "textSha256": "a575ca096b6968ceaf8f3f7873e00d29dfbfe22eb31d67ba9cca46c0b2ba3883"
+          },
+          {
+            "ref": "document.xml:p23",
+            "textSha256": "4785d2af58ac425bc8190cf1ecfceb4f1a5bce149dc00cc9befe5e2227d6cab2"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combines the Word accommodation inclusion with its confirmed three-night stay in each city."
+      }
+    },
+    {
+      "blockId": "tour:included:9863fe95b789b2c9",
+      "field": "included",
+      "sourceTextSha256": "6fd3ca247d2fd8b4246d5713b59528611b8dc1069c843d8d7a380fd346f0158f",
+      "text": "Excursions as per the programme with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p170",
+            "textSha256": "3990a8f102b3bdf7022e9efd1ebe8d14e7970415e72dbb3154e8d82246a22bbc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word list marker for the structured included/notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:included:320516829ced474c",
+      "field": "included",
+      "sourceTextSha256": "b9b38d0a60442cf3e01ca87227f6efb421194648aa45171dfff13a518530801c",
+      "text": "Transfers as per the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p171",
+            "textSha256": "2bc2808a303189f994e8b0ff96649c86256648fe285733d01454b1ed4a80f80e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word list marker for the structured included/notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:included:4f06fb7b499fd774",
+      "field": "included",
+      "sourceTextSha256": "5a75144cffd699818f33523bb2925f072ae83886e8fec0570fefc9b5247e76bc",
+      "text": "Champions Parade ticket",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p172",
+            "textSha256": "39b53c588628fdce2cb7d98f5b5ec04eadd008f1004114c68eb3bdb98a38768d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word list marker for the structured included/notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:included:efbe5a92072e672e",
+      "field": "included",
+      "sourceTextSha256": "a73a5925b7c9c0fcec4b161ec8c6ad82e0e36dd3a0fdd519363069921dbe3bbe",
+      "text": "Transfer hotel – Sambadrome – hotel",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p173",
+            "textSha256": "3bdbb5d33cbfb25cb8f7dec508af823cc0265743a7899468d522f75c7eb63036"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word list marker for the structured included/notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p178",
+            "textSha256": "2f6be32eb10f897da0ecfed24140c8d7f0f27f710569bc5282b94ea8d0358463"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word list marker for the structured included/notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a262b2c81923f509",
+      "field": "notIncluded",
+      "sourceTextSha256": "0431a0cc3979ad406879b0c7f306c0bb7852e7e2fd6c4910dd2c911997ac5b8d",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p177",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word list marker for the structured included/notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1e41a112f8f8488a",
+      "field": "notIncluded",
+      "sourceTextSha256": "ab7a7c573e866c7ca636ace43656f420d33263a112c208a7e149519478b461d0",
+      "text": "Domestic flights Rio – Iguazu – Rio (from USD 500 per person)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J-T_oASR49ex-y5KLtkmroop29Ht-g0S",
+        "documentSha256": "18020884060aa6ecc4683f20840290a3298f6c039bbfde810458aa4232496fbf",
+        "paragraphs": [
+          {
+            "ref": "document.xml:p176",
+            "textSha256": "0d8978dd381286a555293c52e225cac28e44bee0ac56dfe35b9900558b226aa4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word list marker for the structured included/notIncluded field."
+      }
+    }
+  ]
+}

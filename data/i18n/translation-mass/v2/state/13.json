@@ -1006,11 +1006,16 @@
     {
       "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b004",
       "stage": "word_2027",
-      "status": "queued",
+      "status": "leased",
       "sourceFingerprint": "04a4741841f62859080a3cd2a9d9be5b69e8fcb9caee611d3d54d0b5efe770da",
-      "generation": 0,
+      "generation": 1,
       "attempts": 0,
-      "lease": null,
+      "lease": {
+        "ownerId": "adaen-w1-20261105-0535-b",
+        "token": "adaen-w1-20261105-0535-token-b",
+        "claimedAt": "2026-11-05T02:20:27.102Z",
+        "expiresAt": "2026-11-05T03:50:27.102Z"
+      },
       "checkpoint": null,
       "submission": null,
       "review": null,
@@ -1318,16 +1323,11 @@
     {
       "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "queued",
       "sourceFingerprint": "403c7d017cb54c688046b264b2a4212905a38f1c559eb3f7e2d466ec8decd923",
       "generation": 1,
-      "attempts": 0,
-      "lease": {
-        "ownerId": "adaen-w4-20261105-0345-B",
-        "token": "adaen-w4-20261105-0345-token-B",
-        "claimedAt": "2026-11-05T00:50:24.924Z",
-        "expiresAt": "2026-11-05T02:20:24.924Z"
-      },
+      "attempts": 1,
+      "lease": null,
       "checkpoint": null,
       "submission": null,
       "review": null,

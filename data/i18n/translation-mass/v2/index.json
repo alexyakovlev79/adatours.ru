@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 935,
-    "leased": 3,
+    "queued": 934,
+    "leased": 4,
     "review": 1415,
     "ready": 47,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 935,
-      "leased": 3,
+      "queued": 934,
+      "leased": 4,
       "review": 1415,
       "ready": 47,
       "retryable": 0,
@@ -625,8 +625,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 42,
-          "leased": 0,
+          "queued": 41,
+          "leased": 1,
           "review": 36,
           "ready": 0,
           "retryable": 0,
@@ -657,7 +657,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T04:34:12.655Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_peru_i_boliviya:b007",
       "token": "adaen-w1-20261105-0533-token-a",
       "expiresAt": "2026-11-05T04:27:49.321Z",
+      "generation": 1
+    },
+    "adaen-w4-20261105-0557-a": {
+      "jobId": "en:bulk:tour:tour_source_kolumbiya_metropoliten:b007",
+      "token": "adaen-w4-20261105-0557-a-token",
+      "expiresAt": "2026-11-05T04:34:12.655Z",
       "generation": 1
     }
   },
@@ -6128,7 +6134,8 @@
     "adaen-w4-20261105-0557-a": {
       "token": "adaen-w4-20261105-0557-a-token",
       "jobIds": [
-        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b007"
+        "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b007",
+        "en:bulk:tour:tour_source_kolumbiya_metropoliten:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie:b007"
@@ -6136,5 +6143,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:02:41.465Z"
+  "updatedAt": "2026-11-05T03:04:12.655Z"
 }

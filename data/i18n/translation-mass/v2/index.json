@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 952,
-    "leased": 3,
+    "queued": 951,
+    "leased": 4,
     "review": 1411,
     "ready": 35,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 952,
-      "leased": 3,
+      "queued": 951,
+      "leased": 4,
       "review": 1411,
       "ready": 35,
       "retryable": 0,
@@ -425,8 +425,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 43,
-          "leased": 0,
+          "queued": 42,
+          "leased": 1,
           "review": 34,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T03:50:56.566Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_issledovanie_argentiny:b004",
       "token": "adaen-w1-20261105-0535-token-b",
       "expiresAt": "2026-11-05T03:50:27.102Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0519-b": {
+      "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b005",
+      "token": "adaen-w2-20261105-0519-token-b",
+      "expiresAt": "2026-11-05T03:50:56.566Z",
       "generation": 1
     }
   },
@@ -6070,8 +6076,15 @@
         "en:bulk:tour:tour_source_issledovanie_argentiny:b004"
       ],
       "completedJobIds": []
+    },
+    "adaen-w2-20261105-0519-b": {
+      "token": "adaen-w2-20261105-0519-token-b",
+      "jobIds": [
+        "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T02:20:27.102Z"
+  "updatedAt": "2026-11-05T02:20:56.566Z"
 }

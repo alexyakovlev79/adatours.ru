@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 1043,
-    "leased": 2,
-    "review": 1331,
+    "leased": 1,
+    "review": 1332,
     "ready": 27,
     "retryable": 0,
     "blocked_external": 8,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 1043,
-      "leased": 2,
-      "review": 1331,
+      "leased": 1,
+      "review": 1332,
       "ready": 27,
       "retryable": 0,
       "blocked_external": 8,
@@ -506,8 +506,8 @@
         "word_2027": {
           "held": 0,
           "queued": 47,
-          "leased": 1,
-          "review": 30,
+          "leased": 0,
+          "review": 31,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-05T00:42:22.254Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "02": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "adaen-w1-20261105-0058-b": {
-      "jobId": "en:bulk:tour:tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala:b013",
-      "token": "adaen-w1-20261105-0058-token-b",
-      "expiresAt": "2026-11-05T00:42:22.254Z",
-      "generation": 1
-    },
     "adaen-w4-20261105-0248-b": {
       "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b005",
       "token": "adaen-w4-20261105-0248-token-b",
@@ -5626,7 +5620,8 @@
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ekvador_zhivaya_priroda:b001",
-        "en:bulk:tour:tour_source_chili_argentina:b007"
+        "en:bulk:tour:tour_source_chili_argentina:b007",
+        "en:bulk:tour:tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala:b013"
       ]
     },
     "adaen-w4-20261105-0125-a": {
@@ -5790,5 +5785,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:05:48.639Z"
+  "updatedAt": "2026-11-05T00:06:39.802Z"
 }

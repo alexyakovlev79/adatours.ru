@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_peru_i_boliviya:b004",
+  "stableId": "tour_source_peru_i_boliviya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9facac16a305096507f7dc2d356797beba4afa41252ea1253924d87ca5b39a02",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "77c9d68dacf63575b2c419f8065d0d964b337e9cdb02a5b3d542e0c975a2e41c",
+      "text": "Breakfast and transfer to the airport for your flight to Cusco; reception and transfer to the hotel. In the afternoon, climb to the Archaeological Park of Sacsayhuamán in the upper part of Cusco: Tambomachay, a spring believed to have been a place of worship; Q’enqo, a stone labyrinth with a sacrificial altar carved into the rock; the fortress of Sacsayhuamán, with its massive stones and a wonderful view over Cusco; and the Puka Pukara watchtower, before returning to the city and your hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "docx:p25",
+            "textSha256": "7d8f7b823ddb39b27a74aa20c104fcf341f868b48ae34fe1d2290bd0fa80b245"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3729c1c18e7a1230",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "docx:p21",
+            "textSha256": "d83f37f07ba749820f3daa76ddbb9df0384b7d9e001ca3cef421bf8e16c7570a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Lima location label from the Day 2 route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4b95ef2522a2a500",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "docx:p21",
+            "textSha256": "d83f37f07ba749820f3daa76ddbb9df0384b7d9e001ca3cef421bf8e16c7570a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Cusco location label from the Day 2 route heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8260fc04c81f1dae",
+      "field": "media.alt",
+      "sourceTextSha256": "0f81c9e8988b786053efdc5faaa7e3047d2c10c609a70b8a736659cd4ce94b8a",
+      "text": "Curving mosaic benches and flower beds in Lima’s Parque del Amor overlooking the Pacific coast, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word itinerary does not contain any image-specific alternative text for Parque del Amor."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cfb4642060a3c26c",
+      "field": "media.hover",
+      "sourceTextSha256": "0b8c709143f3f6c663046132b5e1d5743a26872b3fbdc12455462bdef83b6937",
+      "text": "Lima: mosaic benches at Parque del Amor above the ocean",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "adaen-w2-20261105-0348-a",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word itinerary has no image hover caption for Parque del Amor in Lima."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "18809c18c3fe3e770a5b8d8df472c4812926840cf4950523f9c72fac3ddd2287",
+      "text": "Cusco – Machu Picchu – Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "docx:p30",
+            "textSha256": "e92e7cc33ed9de544ae66d76d1d8782ba97325f46afca50bb7c555236092ccef"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Remove the DAY BY DAY prefix from the Word heading while preserving the exact route sequence."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "5528ef8635ad4fa1d1d852b4a84643ca218eb3142f35b9b9be5e4addefbf7479",
+      "text": "Breakfast and transfer to the train station for the journey to the small town of Aguas Calientes, then a 30-minute bus ride up to Machu Picchu. This Inca city, a maze of finely built stone temples, houses and fountains, is spectacularly set on a ridge between two peaks; long hidden by dense vegetation, it was brought to international attention by Hiram Bingham in 1911. Guided tour, lunch in the afternoon and return to Cusco by train.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "docx:p34",
+            "textSha256": "d7262ffbb4ebaf1b36a5a7edd0f8f1efd29ff22e036d680f8f4dde8d63ed1b7a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f2563a41dbf176bf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "docx:p30",
+            "textSha256": "e92e7cc33ed9de544ae66d76d1d8782ba97325f46afca50bb7c555236092ccef"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Cusco from the approved Word itinerary Day 3 route heading."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 912,
-    "leased": 9,
+    "queued": 911,
+    "leased": 10,
     "review": 1432,
     "ready": 47,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 912,
-      "leased": 9,
+      "queued": 911,
+      "leased": 10,
       "review": 1432,
       "ready": 47,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 42,
-          "leased": 0,
+          "queued": 41,
+          "leased": 1,
           "review": 27,
           "ready": 3,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T04:58:39.278Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_rio:b009",
       "token": "tok-mw2zik0k-vcztc27hz6q",
       "expiresAt": "2026-11-05T04:58:17.536Z",
+      "generation": 1
+    },
+    "ada-en-mw2zickh-amanda": {
+      "jobId": "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b005",
+      "token": "t-mw2zickh-tcdv30xix2",
+      "expiresAt": "2026-11-05T04:58:39.278Z",
       "generation": 1
     }
   },
@@ -6212,7 +6218,8 @@
     "ada-en-mw2zickh-amanda": {
       "token": "t-mw2zickh-tcdv30xix2",
       "jobIds": [
-        "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b003"
+        "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b003",
+        "en:bulk:tour:tour_source_galapagosskie_ostrova_na_vip_yakhte:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_fordy_ognennoj_zemli:b003"
@@ -6251,5 +6258,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:28:32.268Z"
+  "updatedAt": "2026-11-05T03:28:39.278Z"
 }

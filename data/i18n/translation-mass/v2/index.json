@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 653,
-    "leased": 1,
+    "queued": 652,
+    "leased": 2,
     "review": 1693,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 653,
-      "leased": 1,
+      "queued": 652,
+      "leased": 2,
       "review": 1693,
       "ready": 50,
       "retryable": 0,
@@ -1225,8 +1225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 11,
-          "leased": 0,
+          "queued": 10,
+          "leased": 1,
           "review": 48,
           "ready": 0,
           "retryable": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T12:12:37.975Z",
       "earliestRetryAt": null
     },
     "1e": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b009",
       "token": "token-mw3eyz51-sc421zpwce",
       "expiresAt": "2026-11-05T12:12:10.132Z",
+      "generation": 1
+    },
+    "ada-en-mw3ezm03-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b010",
+      "token": "tok-mw3ezm03-qerr24fcdds",
+      "expiresAt": "2026-11-05T12:12:37.975Z",
       "generation": 1
     }
   },
@@ -6930,7 +6936,8 @@
     "ada-en-mw3ezm03-amanda": {
       "token": "tok-mw3ezm03-qerr24fcdds",
       "jobIds": [
-        "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b001"
+        "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b001",
+        "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b001"
@@ -6938,5 +6945,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T10:42:30.405Z"
+  "updatedAt": "2026-11-05T10:42:37.975Z"
 }

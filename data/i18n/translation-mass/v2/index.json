@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 502,
-    "leased": 3,
+    "queued": 501,
+    "leased": 4,
     "review": 1839,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 502,
-      "leased": 3,
+      "queued": 501,
+      "leased": 4,
       "review": 1839,
       "ready": 50,
       "retryable": 0,
@@ -505,8 +505,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 21,
-          "leased": 0,
+          "queued": 20,
+          "leased": 1,
           "review": 56,
           "ready": 2,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:14:27.520Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_severnyj_pantanal_vodopady_reki:b003",
       "token": "ada-en-mw3txem9-amanda-token",
       "expiresAt": "2026-11-05T19:13:56.122Z",
+      "generation": 1
+    },
+    "ada-en-mw3tx26y-amanda": {
+      "jobId": "en:bulk:tour:tour_source_podlinnaya_braziliya:b007",
+      "token": "lease-mw3tx26y-3p5ljbo6be2",
+      "expiresAt": "2026-11-05T19:14:27.520Z",
       "generation": 1
     }
   },
@@ -7332,7 +7338,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b007",
         "en:bulk:tour:tour_source_tropicheskaya_braziliya:b002",
-        "en:bulk:tour:tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe:b009"
+        "en:bulk:tour:tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe:b009",
+        "en:bulk:tour:tour_source_podlinnaya_braziliya:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b007",
@@ -7366,5 +7373,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:44:20.173Z"
+  "updatedAt": "2026-11-05T17:44:27.520Z"
 }

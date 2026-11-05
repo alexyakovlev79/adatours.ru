@@ -1,0 +1,193 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_venesuele:b001",
+  "stableId": "tour_source_luchshee_v_venesuele",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2a731e9760dc2fe82e240091bd709bdcf80ea4c375be2051eab5cfd1562e5c61",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "117318a15c3046b823167ea84bc4088598f665cea7194ca04e6893efcac78d31",
+      "text": "Popular Destinations of Venezuela: 12 days / 11 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[3]",
+            "textSha256": "09a2e2c73c2a33fcbddab806cdf9dcefd852a5026d1c323bc08a3104a79be04e",
+            "text": "Popular Destinations of Venezuela 202712 days / 11 nights"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separate the verified Word title, year and duration into a readable title while keeping the twelve-day itinerary."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "39108f6856a89e9a340e6d0cbc74022ed5becec21a4058c159cfaac99c77f951",
+      "text": "You will get acquainted with the capital of Venezuela — Caracas,\ntake a cable car ride to Ávila National Park and visit the historic Humboldt Hotel,\ntravel to the German settlement Colonia Tovar,\nvisit the Santa Teresa rum estate, famous for producing the best Venezuelan rum,\nexplore Canaima National Park and the world’s highest waterfall — Angel Falls,\nand finish your journey relaxing on the Caribbean island of Margarita.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[9]",
+            "textSha256": "46f325bb9932f97eab2db0faa7507c33eb583f79a713f322bc94114a1ed67ebc",
+            "text": "You will get acquainted with the capital of Venezuela — Caracas,"
+          },
+          {
+            "ref": "word/document.xml:w:p[10]",
+            "textSha256": "35a6228e50fde8f19d6cfc1d5806f74f5514458d9125e08ac814a39d6efab855",
+            "text": "take a cable car ride to Ávila National Park and visit the historic Humboldt Hotel,"
+          },
+          {
+            "ref": "word/document.xml:w:p[11]",
+            "textSha256": "3d31a376729f0dc860899c35cfe8a1da702ec657f4ef4023065b82d9b3497c34",
+            "text": "travel to the German settlement Colonia Tovar,"
+          },
+          {
+            "ref": "word/document.xml:w:p[12]",
+            "textSha256": "32b9cb4f2cb24ed4cd2db1febfc332a55e88d8f47c14eb1db988ce599aae13d8",
+            "text": "visit the Santa Teresa rum estate, famous for producing the best Venezuelan rum,"
+          },
+          {
+            "ref": "word/document.xml:w:p[13]",
+            "textSha256": "abe38a6c89147bbd0d424d7351856b23534e19768fea8d9c2885817c79a8e5bd",
+            "text": "explore Canaima National Park and the world’s highest waterfall — Angel Falls,"
+          },
+          {
+            "ref": "word/document.xml:w:p[14]",
+            "textSha256": "f1090150615dc5706df49813577f28efab99dff68225ddfc7c3f516299653509",
+            "text": "and finish your journey relaxing on the Caribbean island of Margarita."
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "b7e419f34024a5fb654e6bf11c1af26df97da2bb4a5954082f639359abf13c49",
+      "text": "$3390",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qzfc-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The assigned current RU price of $3390 is absent from Word 2027, which states USD 4744; preserve the assigned amount because price changes belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:047ec44b6925b863",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "text": "Caracas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[17]",
+            "textSha256": "90f4635cad593f86367f8f678cccb7eb3a787e6674e8e96d9437630c24c9ebf0",
+            "text": "Day 1: Caracas"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract only the verified destination name from the Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5da3144def4720e2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bf9bc7c156734e2865c3dbf4a947c8b9117b45e62ba47c7e851d86fd832a03a3",
+      "text": "Angel Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[41]",
+            "textSha256": "3c07bc21c6f84c20c881d5d9bd149013b085cc4a6ce6f7aa4cb9cf27cc762194",
+            "text": "Day 5: Full-Day Excursion to Angel Falls"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract only the verified destination name from the Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c79b2613e3c96091",
+      "field": "itinerary.label",
+      "sourceTextSha256": "740fdc42decb6c3f03da66547191591d42373a71d305bdf6ec28ce27f18d5f2f",
+      "text": "Canaima National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[34]",
+            "textSha256": "8706c0c8d4e83af9b4af88b35b91e9bd14048291c2ce809ece2834b9e7e87a83",
+            "text": "Early transfer to the airport. Flight to Canaima National Park."
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the park name explicitly present in the verified Word flight paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fe6c83017a4967e5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "78f4b59398936aef3d95db692cb960f8caae5620933aee5c6692fc780d6d11c5",
+      "text": "Margarita Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[60]",
+            "textSha256": "cfad691a6e681543a7ac4c982af114fb6e84352edbfd8e16c5d3e32ba6965520",
+            "text": "Day 7: Margarita Island"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract only the verified destination name from the Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:included:5cb0b9fe4d7f527b",
+      "field": "included",
+      "sourceTextSha256": "09eb8c7ca1fe143e863f9893da47b5df149e8c4223d343357ed9129f8fe77940",
+      "text": "Twin accommodation as per the program (4★ hotels, posada, premium camp)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[88]",
+            "textSha256": "37cb1dea865f37e83fef916d355d3c1cea9c8604b03effb06de97f26c2fcd3ae",
+            "text": "✔ Twin accommodation as per the program (4★ hotels, posada, premium camp)"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word check-mark list marker from the assigned accommodation inclusion."
+      }
+    }
+  ],
+  "unresolvedConflicts": [
+    {
+      "field": "priceNote",
+      "ru": "$3390",
+      "word": "4’744 USD",
+      "action": "Retained assigned RU amount; commercial master owns price changes."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_iz_dvukh_mirov:b011",
+  "stableId": "tour_source_luchshee_iz_dvukh_mirov",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3c6a8a9a619c709d84cf022bfea20306d95bd5d865689b8b1e5d28040b225d66",
+  "blocks": [
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "e7302c0dd10879d50e4cbd563734546ab7173c2ed1e7a8f6132c95dc28f56480",
+      "text": "\n## Hotels and prices\n\nAccommodation: 5 nights at San Ignacio Resort Hotel, Garden View room; 3 nights at Ramon’s Village, Jungle Deluxe cabana. Hotel taxes and breakfast included.\n\n| Occupancy | Price per person |\n|---|---:|\n| SGL, 1 guest | $8,404 |\n| DBL, 2 guests | $4,910 |\n| TPL, 3 guests | $4,103 |\n\n",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "documentSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[99]",
+            "textSha256": "be404de21f6b4d93a51d44f35b731b9262d80a58a59d624a92523ac2a1aab732",
+            "text": "Hotels & prices   Per person in USD"
+          },
+          {
+            "ref": "word/document.xml:w:p[109]",
+            "textSha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+            "text": "5"
+          },
+          {
+            "ref": "word/document.xml:w:p[110]",
+            "textSha256": "df67570d36830318ff12ebd8b46b5bc338ca858b2bc3abe4d167b5286c62b9c4",
+            "text": "San Ignacio Resort Hotel"
+          },
+          {
+            "ref": "word/document.xml:w:p[111]",
+            "textSha256": "629f84e2a300f65eea5e994c735dc2d0940226ad70399fddbe562789bc6214ae",
+            "text": "Garden View room"
+          },
+          {
+            "ref": "word/document.xml:w:p[114]",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+            "text": "3"
+          },
+          {
+            "ref": "word/document.xml:w:p[115]",
+            "textSha256": "263c6bbeec350b363ee7673750ea28254cc16f3fae9abfd02e639b142e7f0acf",
+            "text": "Ramon’s Village"
+          },
+          {
+            "ref": "word/document.xml:w:p[116]",
+            "textSha256": "ac24bbc49a994e477a205866fa51f979800b32cae8816fdc1dfbf2f35cbe414d",
+            "text": "Jungle Deluxe cabana"
+          },
+          {
+            "ref": "word/document.xml:w:p[117]",
+            "textSha256": "a08b17034afc1eb5bbeeb10e3970483ee001a61010f237dbf47406daa876dbae",
+            "text": "Hotel taxes and breakfast included."
+          },
+          {
+            "ref": "word/document.xml:w:p[120]",
+            "textSha256": "17f13a7313b37f542fe4b0e0b7acad43c8034a8641b639812c7a939956e70048",
+            "text": "SINGLE · 1 PAX"
+          },
+          {
+            "ref": "word/document.xml:w:p[121]",
+            "textSha256": "f50f0750aa4525976ed71711dd49a1599f1b9c8242a989171aa6106609d174c0",
+            "text": "DOUBLE · 2 PAX"
+          },
+          {
+            "ref": "word/document.xml:w:p[122]",
+            "textSha256": "9924e04087c29e6a85d44b4b3f90df13bd7765fbc231033f31df884747e87ca6",
+            "text": "TRIPLE · 3 PAX"
+          },
+          {
+            "ref": "word/document.xml:w:p[124]",
+            "textSha256": "d64039ac8595125c1b0e15e12cd17497232b5c8860ce992ee59f537e2e3914c2",
+            "text": "US$ 8,404"
+          },
+          {
+            "ref": "word/document.xml:w:p[125]",
+            "textSha256": "1accd7883b6e033f04118926e17a21fffeddde43300738bcc5513dec19ffb5b5",
+            "text": "US$ 4,910"
+          },
+          {
+            "ref": "word/document.xml:w:p[126]",
+            "textSha256": "52c636ca71ac9cfa5d52a0d30e0ad9f410f9c99774e55b41463e27366fe27b69",
+            "text": "US$ 4,103"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Compose the assigned accommodation and tariff block from the verified Word hotel and per-person USD tables, preserving all prices, nights, room categories, taxes and breakfast."
+      }
+    }
+  ]
+}

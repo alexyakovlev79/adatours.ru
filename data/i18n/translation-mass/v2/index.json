@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 526,
-    "leased": 1,
+    "queued": 525,
+    "leased": 2,
     "review": 1817,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 526,
-      "leased": 1,
+      "queued": 525,
+      "leased": 2,
       "review": 1817,
       "ready": 50,
       "retryable": 0,
@@ -545,8 +545,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 15,
-          "leased": 0,
+          "queued": 14,
+          "leased": 1,
           "review": 63,
           "ready": 1,
           "retryable": 0,
@@ -577,7 +577,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:05:36.826Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_pantanal_bonito:b005",
       "token": "ada-token-mw3trvql-7ja3w02ycqx",
       "expiresAt": "2026-11-05T19:04:13.104Z",
+      "generation": 1
+    },
+    "ada-en-mw3trdxr-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god:b010",
+      "token": "tk-mw3trdxr-w8i0ji2aq",
+      "expiresAt": "2026-11-05T19:05:36.826Z",
       "generation": 1
     }
   },
@@ -7271,7 +7277,8 @@
     "ada-en-mw3trdxr-amanda": {
       "token": "tk-mw3trdxr-w8i0ji2aq",
       "jobIds": [
-        "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b009"
+        "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b009",
+        "en:bulk:tour:tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b009"
@@ -7286,5 +7293,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:35:29.383Z"
+  "updatedAt": "2026-11-05T17:35:36.826Z"
 }

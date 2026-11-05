@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 870,
-    "leased": 9,
+    "queued": 869,
+    "leased": 10,
     "review": 1472,
     "ready": 48,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 870,
-      "leased": 9,
+      "queued": 869,
+      "leased": 10,
       "review": 1472,
       "ready": 48,
       "retryable": 0,
@@ -585,8 +585,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 17,
-          "leased": 0,
+          "queued": 16,
+          "leased": 1,
           "review": 56,
           "ready": 0,
           "retryable": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T05:13:44.337Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_rajskaya_braziliya:b005",
       "token": "tok-mw2zwyfn-uhov7nk6gsf",
       "expiresAt": "2026-11-05T05:13:14.001Z",
+      "generation": 1
+    },
+    "ada-en-mw2zxuio-amanda": {
+      "jobId": "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b005",
+      "token": "ada-en-mw2zxuio-amanda-token",
+      "expiresAt": "2026-11-05T05:13:44.337Z",
       "generation": 1
     }
   },
@@ -6341,7 +6347,8 @@
       "token": "ada-en-mw2zxuio-amanda-token",
       "jobIds": [
         "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b014",
-        "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b003"
+        "en:bulk:tour:tour_source_panama_kosta_rika_nikaragua:b003",
+        "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh:b014",
@@ -6372,5 +6379,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:43:14.001Z"
+  "updatedAt": "2026-11-05T03:43:44.337Z"
 }

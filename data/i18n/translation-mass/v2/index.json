@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1023,
-    "leased": 2,
+    "queued": 1022,
+    "leased": 3,
     "review": 1345,
     "ready": 32,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1023,
-      "leased": 2,
+      "queued": 1022,
+      "leased": 3,
       "review": 1345,
       "ready": 32,
       "retryable": 0,
@@ -585,8 +585,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 24,
-          "leased": 0,
+          "queued": 23,
+          "leased": 1,
           "review": 49,
           "ready": 0,
           "retryable": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:03:35.844Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b014",
       "token": "adaen-w4-20261105-0327-token-A",
       "expiresAt": "2026-11-05T02:02:39.009Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0318-a": {
+      "jobId": "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b010",
+      "token": "adaen-w2-20261105-0318-token-a",
+      "expiresAt": "2026-11-05T02:03:35.844Z",
       "generation": 1
     }
   },
@@ -5826,7 +5832,8 @@
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej:b002",
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala:b004",
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b008",
-        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b010"
+        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b010",
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_novyj_god:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b005",
@@ -5850,5 +5857,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:33:25.352Z"
+  "updatedAt": "2026-11-05T00:33:35.844Z"
 }

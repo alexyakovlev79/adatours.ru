@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni:b003",
+  "stableId": "tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "000972a0d189b35394c8e6720614632b4d465d9281f733c87732be8ca6aa9d37",
+  "blocks": [
+    {
+      "blockId": "tour:included:56ef2eb1e4127600",
+      "field": "included",
+      "text": "Box lunch and dinner on Day 9; other meals specified in the programme.",
+      "sourceTextSha256": "bd528c319c7de8281855518e86e689527957bd26b120b14e265e2f153aa63333",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:116",
+            "textSha256": "7f904830f43b8a59004440c2c70a540474fda9e40f13faff4187da30ff06c07b"
+          },
+          {
+            "ref": "word/document.xml:p:239",
+            "textSha256": "1fd01aaa130af671cf9cf7a4e80c5909b3c7e3b83f8b9be0358ea5e8322e9b68"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combine the Day 9 meal inclusion with the general approved meal inclusion, without altering service scope."
+      }
+    },
+    {
+      "blockId": "tour:included:7ff04522935afb4c",
+      "field": "included",
+      "text": "El Calafate Balcón Experience / Laberinto excursion with Mil Outdoor on Day 3.",
+      "sourceTextSha256": "db093351c8fba2c9bed5ae2b147bdc02401a05cfd2e3f1d008d5eb7812f46cf8",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx26y-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes the viewpoint and Laberinto excursion but has no matching Day 3 Mil Outdoor inclusion statement. Translate the explicit current RU inclusion without changing its service status."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e990c44901e4172f",
+      "field": "notIncluded",
+      "text": "All international and domestic flights.",
+      "sourceTextSha256": "6701a667b09ed0eb6891abdcd3cee86ba1e5b8654742cfe3c742807bba2b632d",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:242",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          },
+          {
+            "ref": "word/document.xml:p:243",
+            "textSha256": "399a81fa0cb678fff40cdc75a79d966228c8fff57c267ede6a5a198ed8ce5c0f"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combine the two approved flight exclusion categories; leave shared fares untouched."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:8efcf81b081ed594",
+      "field": "notIncluded",
+      "text": "Flights Buenos Aires – El Calafate, Punta Arenas – Santiago, Santiago – Calama and Calama – Santiago. The current fare is determined when booking.",
+      "sourceTextSha256": "0be699dca6c5095a141b0dd4a5c4ae5e3b98700a1f839cf8d5d4f2ab73ab9033",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx26y-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word confirms the four flight exclusions separately but has no matching booking-time fare sentence; translate the assigned RU summary without importing Word prices."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:7bc57309a4172923",
+      "field": "notIncluded",
+      "text": "Ice trekking and the Maipo Valley wine tour.",
+      "sourceTextSha256": "4de39208c9c51967b1bb487f4affcd5db3a6f221b7208f2d7e5e4d4defc2cb2e",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:81",
+            "textSha256": "89a16d4d4cbc86d96b15fcc7c472a29966df88716c86bc427e6e899ff7774746"
+          },
+          {
+            "ref": "word/document.xml:p:104",
+            "textSha256": "6e175fbd9a61da38ef91bb4806ddd692d5a5b83c859c4cd136906953dcb8b028"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Summarise the two approved optional activities as exclusions, without importing optional tariff figures."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:4c2f1a77a1c6559a",
+      "field": "notIncluded",
+      "text": "Meals not specified in the programme and beverages.",
+      "sourceTextSha256": "eb6fa347224d8753117bd94a367dd8d93c03c062ff47779621d09738291abe32",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:245",
+            "textSha256": "de9a52d1dee37d133fb95bc18478b6bfb8c56cc11833cbc97f7133995a14f475"
+          },
+          {
+            "ref": "word/document.xml:p:246",
+            "textSha256": "3d08ac1b1e4c5da1df2556ca472925b2408b717a8d97542d9fc0b46f0a5ecc35"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combine the approved meal and beverage exclusions into the assigned field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5347d4793eb2f269",
+      "field": "notIncluded",
+      "text": "Personal expenses, porter services and tips.",
+      "sourceTextSha256": "2c2cb7db0806b90ba283e839251941f22c9b6e5dccbf98cbefcddd67db299cf7",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx26y-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists extras, porters and tips but has no complete matching personal-expenses sentence; translate this RU exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:abc8ac78795e889c",
+      "field": "note",
+      "text": "Rio de Janeiro and Iguazu are not included in this itinerary.",
+      "sourceTextSha256": "0fc76efcd069af9b9284ae7bcf8bbf8da7e465b25fd9175d1221b1145de11335",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx26y-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word route excludes Rio and Iguazu but contains no matching explicit negative route note; translate the assigned RU clarification."
+      }
+    }
+  ]
+}

@@ -161,8 +161,9 @@ if(sharedContent && (!sharedHtml.includes('Travel interests') || !sharedHtml.inc
 if(sharedContent){
  const dom=parse(sharedHtml),siteHeader=find(dom,x=>x.tagName==='header'&&attr(x,'data-site-header')!==null)[0];
  const visible=x=>['script','style','svg'].includes(x?.tagName)?'':x?.nodeName==='#text'?x.value:(x?.childNodes??[]).map(visible).join(' ');
- if(!siteHeader||/[\u0400-\u052F]/u.test(visible(siteHeader)))
-  fail('English main menu and submenus still contain Cyrillic text');
+ const remaining=siteHeader?visible(siteHeader).split(/\n|(?<=[.!?])\s+/u).filter(x=>/[\u0400-\u052F]/u.test(x)).slice(0,12):[];
+ if(!siteHeader||remaining.length)
+  fail('English main menu and submenus still contain Cyrillic text: '+remaining.map(x=>x.trim().slice(0,180)).join(' | '));
 }
 if(sharedContent){
  // Diagnose the generated common shell separately from the page-local form.

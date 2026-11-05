@@ -1,14 +1,16 @@
 ---
+import { translateUiText } from '../../lib/i18n/shared-ui-locale.mjs';
 interface Props {
   compact?: boolean;
   label?: string;
 }
 const { compact = false, label = 'Поиск' } = Astro.props;
+const displayLabel = translateUiText(label);
 ---
 <button
   class:list={['search-trigger', { 'search-trigger--compact': compact }]}
   type="button"
-  aria-label={label}
+  aria-label={displayLabel}
   aria-haspopup="dialog"
   aria-controls="site-search"
   data-search-open
@@ -17,7 +19,7 @@ const { compact = false, label = 'Поиск' } = Astro.props;
     <circle cx="11" cy="11" r="6.5"></circle>
     <path d="m16 16 5 5"></path>
   </svg>
-  <span>{label}</span>
+  <span>{displayLabel}</span>
 </button>
 <style>
   .search-trigger{display:inline-flex;align-items:center;gap:8px;padding:8px 0;border:0;color:inherit;background:transparent;font-family:var(--font-display);font-size:.74rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase;cursor:pointer;opacity:.95;transition:opacity 180ms ease}

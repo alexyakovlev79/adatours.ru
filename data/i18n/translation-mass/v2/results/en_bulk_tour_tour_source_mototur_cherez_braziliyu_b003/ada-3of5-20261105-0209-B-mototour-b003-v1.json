@@ -1,0 +1,155 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mototur_cherez_braziliyu:b003",
+  "stableId": "tour_source_mototur_cherez_braziliyu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9dedce819c799a944de54335f9856c56eb7ce31968d5abe6eb1048d37dcb8be3",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:a262b2c81923f509",
+      "field": "notIncluded",
+      "sourceTextSha256": "0431a0cc3979ad406879b0c7f306c0bb7852e7e2fd6c4910dd2c911997ac5b8d",
+      "text": "International flights.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NDHkDxn8_3zE94P6kpbmYro9kIkHq7_P",
+        "documentSha256": "050fc8ce3f036af49a8660c99a055335b21106c4f2cd6fb7b8c5010592063c2b",
+        "paragraphs": [
+          {
+            "ref": "table:14:r0:c2:p1",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved excluded international flights line without its decorative bullet."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:cc75b91f7b2eaccf",
+      "field": "notIncluded",
+      "sourceTextSha256": "d626bece2a54a2f066d8d670ea03b18d68a176f15c6bcfceab78f77fe97ccfe9",
+      "text": "Additional meals not mentioned in the programme.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NDHkDxn8_3zE94P6kpbmYro9kIkHq7_P",
+        "documentSha256": "050fc8ce3f036af49a8660c99a055335b21106c4f2cd6fb7b8c5010592063c2b",
+        "paragraphs": [
+          {
+            "ref": "table:14:r0:c2:p2",
+            "textSha256": "5428c4c6fafa86d8d669eedb05398d27bd52041fd32f4bbf155eb178e2224884"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Expand the approved exclusion of meals not mentioned into a clear standalone label."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NDHkDxn8_3zE94P6kpbmYro9kIkHq7_P",
+        "documentSha256": "050fc8ce3f036af49a8660c99a055335b21106c4f2cd6fb7b8c5010592063c2b",
+        "paragraphs": [
+          {
+            "ref": "table:14:r0:c2:p3",
+            "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the approved personal-expenses exclusion without the leading bullet."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:76e1682fd039b9dd",
+      "field": "notIncluded",
+      "sourceTextSha256": "3a3b67e998d92d0e80922a82e31d8227b447c783ba3765938d81999a9d579469",
+      "text": "Tolls along the route.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NDHkDxn8_3zE94P6kpbmYro9kIkHq7_P",
+        "documentSha256": "050fc8ce3f036af49a8660c99a055335b21106c4f2cd6fb7b8c5010592063c2b",
+        "paragraphs": [
+          {
+            "ref": "table:14:r0:c2:p4",
+            "textSha256": "56460096f6030c7f964d91d4c551c6e977c6dc5a0682f3c9126e8f7248d903de"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Apply the approved exclusion of road tolls along the motorcycle route."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a5cd000bdedbdcdd",
+      "field": "notIncluded",
+      "sourceTextSha256": "298708b95725516a8f65226746b558a75c145a3cc21f92c20761d351a3055d97",
+      "text": "Additional luggage charges.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word includes luggage transportation but does not expressly mention extra baggage fees, which appear in the Russian source."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:88f1d21af52140b4",
+      "field": "notIncluded",
+      "sourceTextSha256": "f0ca35fce0235c6fd1640602a6eb9ef79af2a86348d309a1b55885c91de48915",
+      "text": "Triumph 900 motorcycle insurance; a USD 2,000 credit-card deposit is required.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NDHkDxn8_3zE94P6kpbmYro9kIkHq7_P",
+        "documentSha256": "050fc8ce3f036af49a8660c99a055335b21106c4f2cd6fb7b8c5010592063c2b",
+        "paragraphs": [
+          {
+            "ref": "table:14:r0:c2:p5",
+            "textSha256": "6421379d608ec6d3caf18ef582d1ea3ac35b0c73db23c502e8ed2795f4b59ddc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retain the approved motorcycle insurance exclusion and unchanged deposit amount."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:3959374c2797d603",
+      "field": "notIncluded",
+      "sourceTextSha256": "ef4b54524000d3fd3ca52c3bd1a118b660ae3c938a5cfe3b61510380ab09b248",
+      "text": "Extra nights after returning the motorcycle, if required.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NDHkDxn8_3zE94P6kpbmYro9kIkHq7_P",
+        "documentSha256": "050fc8ce3f036af49a8660c99a055335b21106c4f2cd6fb7b8c5010592063c2b",
+        "paragraphs": [
+          {
+            "ref": "body:p68",
+            "textSha256": "672f76e2c8c4dec6a80b63be70dbb1730ba1ae36b797f5ef620923906d811431"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved Day 12 paragraph states that additional São Paulo nights can be booked on request."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:4e1be36993665cd7",
+      "field": "notIncluded",
+      "sourceTextSha256": "83e7f1c246d7fbedb9d8e7aefc86acf170b332d8067923063fe7bacc517994d4",
+      "text": "Optional visit to the Bohemia Brewery.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NDHkDxn8_3zE94P6kpbmYro9kIkHq7_P",
+        "documentSha256": "050fc8ce3f036af49a8660c99a055335b21106c4f2cd6fb7b8c5010592063c2b",
+        "paragraphs": [
+          {
+            "ref": "body:p48",
+            "textSha256": "a486546f958e31a341b5ed08e12b9e01a3cd934c6a558091f178fe348b885ce1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Treat the optional Bohemia Brewery visit in the approved Petrópolis day as an additional activity."
+      }
+    }
+  ]
+}

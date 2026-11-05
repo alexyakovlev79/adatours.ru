@@ -485,7 +485,7 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b004",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "d9dd4623515392c1d2c1e40c37abc3180f30a2a0c08c837cfafbfb6b4225bf77",
       "generation": 1,
       "attempts": 0,
@@ -496,13 +496,43 @@
         "at": "2026-11-04T06:23:16.216Z"
       },
       "submission": {
-        "id": "ada-en-20261104-8526ba7437bc-tour_colombia_complete_11_days-b004",
-        "blobSha": "03d8566e0d25db32bdc846a90f8a82d87eeced8a",
-        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_complete_11_days_b004/ada-en-20261104-8526ba7437bc-tour_colombia_complete_11_days-b004.json",
-        "at": "2026-11-04T06:47:13.455Z"
+        "id": "qa-20261105-t5-colombia-b004-01",
+        "blobSha": "363e1844a4507cb4ae48cc0b84dfdaeb722fe8a4",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_complete_11_days_b004/qa-qa-20261105-t5-colombia-b004-01-363e1844a4507cb4.json",
+        "at": "2026-11-05T00:31:18.718Z"
       },
-      "review": null,
-      "nextAttemptAt": null
+      "review": {
+        "reviewerId": "ada-independent-semantic-qa-20261105-t5",
+        "at": "2026-11-05T00:31:18.718Z",
+        "acceptedBlobSha": "363e1844a4507cb4ae48cc0b84dfdaeb722fe8a4",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
+      "nextAttemptAt": null,
+      "qaRevisions": [
+        {
+          "reviewerId": "ada-independent-semantic-qa-20261105-t5",
+          "at": "2026-11-05T00:31:18.718Z",
+          "previousSubmission": {
+            "id": "ada-en-20261104-8526ba7437bc-tour_colombia_complete_11_days-b004",
+            "blobSha": "03d8566e0d25db32bdc846a90f8a82d87eeced8a",
+            "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_complete_11_days_b004/ada-en-20261104-8526ba7437bc-tour_colombia_complete_11_days-b004.json",
+            "at": "2026-11-04T06:47:13.455Z"
+          },
+          "revisionId": "qa-20261105-t5-colombia-b004-01",
+          "changedBlockIds": [
+            "tour:note:86ab84107d29b126"
+          ],
+          "reason": "The exact approved Word 2027 route and hotel table both show 11 days, 10 nights and one Cartagena night. An obsolete RU explanatory note says the hotel table has two Cartagena nights, so remove that misleading claim from EN while retaining the request for final confirmation.",
+          "confidence": 99
+        }
+      ]
     },
     {
       "jobId": "en:bulk:tour:tour_colombia_essential_5_days:b006",

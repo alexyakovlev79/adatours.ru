@@ -1,0 +1,118 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b013",
+  "stableId": "tour_source_ves_mnogolikij_peru_i_senor_sipan",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "50e8293ceda24f34d7180955141a3e87d67b42ad4ec977ac7bbd11381e9cc037",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "cbb08422bcedcb99e626581d752e51df36676ef614af9c464a1fcb1bebe01120",
+      "text": "Lima and departure",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p125",
+            "textSha256": "86e7e5bc517b6428a68d0059e2301168be959d6a635d894707d5a3395f9285e3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose a short day title from Lima and the airport departure described in the corresponding Word day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7d88eae57ed2f84d49f309012ac36c8ee1be3d8e897468a19c087141b196d8f9",
+      "text": "Transfer to the airport at the scheduled time.\n\nIf the schedule allows, you can visit the **Larco Herrera Museum** on the way.\n\nFounded in the early 20th century, the museum occupies an 18th-century mansion built in the colonial style for a viceroy of Peru.\n\nIts collection contains more than **45,000 objects**, including ceramics, textiles, jewellery, gold, mummies and a well-known collection of erotic pottery.\n\nThe exhibition introduces the history and daily life of the Inca, Moche, Nazca and Chimú cultures.\n\n**Admission:** $65 per person.\n\nThe museum also has a restaurant serving Peruvian cuisine, **Café del Museo**.\n\nAfter the visit, continue your transfer to the airport.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "Word Day 14 and the optional Larco table confirm the airport visit, $65 and 45,000 objects, but omit the RU foundation date and erotic pottery details; translate the complete RU slot without adding the Word breakfast or changing the day numbering."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fc541b32975a1c3f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p36",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:17458de821d5d8b3",
+      "field": "media.alt",
+      "sourceTextSha256": "32c1f25818b7f69ffca511490c3bf681796c72fba37e3e65e909d3d6702879d9",
+      "text": "Square in Lima with flowerbeds, palm trees and yellow historic façades, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word contains no image-specific alt text for the Lima square photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6bc115924f62f96f",
+      "field": "media.hover",
+      "sourceTextSha256": "c7afa479502671f04a2e229ced190ec840af511f4c71926eeb075620fe1c8116",
+      "text": "Lima from above: the main square framed by colonial buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word contains no matching hover caption describing this aerial view of Lima."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "8785b2050e8cef6c9b167244db4966eac8bdbc1bd8a1e5481131a7657ec1e564",
+      "text": "Person in a hat and patterned shirt in a stone doorway at Machu Picchu, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word contains no image-specific alt caption describing this person and doorway."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "6569b85b05ebb2e6e4876a1b10bd107c3ab07b5958820b41250a81691990bea1",
+      "text": "Machu Picchu: a view through an ancient stone doorway",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The selected Word contains no matching hover caption for the stone doorway photograph."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "f1485d44795f60ba5240ac71bba817e6efaf7c37cc0ef2e7316f27e7081dedc7",
+      "text": "This is one of the most comprehensive itineraries through Peru. You begin with the capital on the Pacific coast and Lima's main landmarks, then head up into the Andes to explore the Inca legacy. After Machu Picchu, the route continues through Lake Titicaca, Colca and Arequipa. The northern section adds a very different chapter of history: the Chimú civilisation, the vast adobe city of Chan Chan, the Temples of the Sun and the Moon, Huaca Rajada and the Lord of Sipán Museum.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw30qszc-amanda",
+        "model": "gpt-6.1",
+        "wordAbsenceReason": "The Word overview is a different fourteen-day summary with additional Sacred Valley and optional Nazca details; no complete matching passage exists for this RU introduction, so translate the current RU scope."
+      }
+    }
+  ]
+}

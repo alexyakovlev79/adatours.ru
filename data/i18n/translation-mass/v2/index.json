@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 928,
-    "leased": 5,
+    "queued": 927,
+    "leased": 6,
     "review": 1420,
     "ready": 47,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 928,
-      "leased": 5,
+      "queued": 927,
+      "leased": 6,
       "review": 1420,
       "ready": 47,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 41,
-          "leased": 0,
+          "queued": 40,
+          "leased": 1,
           "review": 37,
           "ready": 1,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T04:43:05.314Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1370,6 +1370,12 @@
       "jobId": "en:bulk:tour:tour_source_kontinentalnyj_ekvador_amazoniya:b004",
       "token": "adaen-w4-20261105-0557-a-token",
       "expiresAt": "2026-11-05T04:42:51.663Z",
+      "generation": 1
+    },
+    "adaen-w2-20261105-0519-b": {
+      "jobId": "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro:b004",
+      "token": "adaen-w2-20261105-0519-token-b",
+      "expiresAt": "2026-11-05T04:43:05.314Z",
       "generation": 1
     }
   },
@@ -6089,7 +6095,8 @@
     "adaen-w2-20261105-0519-b": {
       "token": "adaen-w2-20261105-0519-token-b",
       "jobIds": [
-        "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b005"
+        "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b005",
+        "en:bulk:tour:tour_source_karnaval_v_rio_de_zhanejro:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b005"
@@ -6167,5 +6174,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T03:12:51.663Z"
+  "updatedAt": "2026-11-05T03:13:05.314Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 553,
-    "leased": 0,
+    "queued": 552,
+    "leased": 1,
     "review": 1791,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 553,
-      "leased": 0,
+      "queued": 552,
+      "leased": 1,
       "review": 1791,
       "ready": 50,
       "retryable": 0,
@@ -385,8 +385,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 13,
-          "leased": 0,
+          "queued": 12,
+          "leased": 1,
           "review": 53,
           "ready": 1,
           "retryable": 0,
@@ -417,7 +417,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T16:10:03.510Z",
       "earliestRetryAt": null
     },
     "19": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw3n8odx-amanda": {
+      "jobId": "en:bulk:tour:tour_source_vazhnoe_brazilii:b001",
+      "token": "tok-mw3n8odx-9zej4bmas6e",
+      "expiresAt": "2026-11-05T16:10:03.510Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -7187,7 +7194,8 @@
         "en:bulk:tour:tour_source_tropicheskaya_braziliya:b005",
         "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b008",
         "en:bulk:tour:tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god:b002",
-        "en:bulk:tour:tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre:b012"
+        "en:bulk:tour:tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre:b012",
+        "en:bulk:tour:tour_source_vazhnoe_brazilii:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_solntse_tango_vino_i_atakama:b011",
@@ -7199,5 +7207,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T14:39:54.453Z"
+  "updatedAt": "2026-11-05T14:40:03.510Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1027,
-    "leased": 1,
+    "queued": 1026,
+    "leased": 2,
     "review": 1345,
     "ready": 30,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1027,
-      "leased": 1,
+      "queued": 1026,
+      "leased": 2,
       "review": 1345,
       "ready": 30,
       "retryable": 0,
@@ -905,8 +905,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 25,
-          "leased": 0,
+          "queued": 24,
+          "leased": 1,
           "review": 40,
           "ready": 0,
           "retryable": 0,
@@ -937,7 +937,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:00:28.918Z",
       "earliestRetryAt": null
     },
     "0c": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru_ikitos:b004",
       "token": "adaen-w2-20261105-0310-token-a",
       "expiresAt": "2026-11-05T01:45:22.553Z",
+      "generation": 1
+    },
+    "adaen-w4-20261105-0327-A": {
+      "jobId": "en:bulk:tour:tour_source_meksika_lindo:b008",
+      "token": "adaen-w4-20261105-0327-token-A",
+      "expiresAt": "2026-11-05T02:00:28.918Z",
       "generation": 1
     }
   },
@@ -5830,7 +5836,8 @@
     "adaen-w4-20261105-0327-A": {
       "token": "adaen-w4-20261105-0327-token-A",
       "jobIds": [
-        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b006"
+        "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b006",
+        "en:bulk:tour:tour_source_meksika_lindo:b008"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_mechty_sbyvayutsya_na_karnaval:b006"
@@ -5838,5 +5845,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:29:40.366Z"
+  "updatedAt": "2026-11-05T00:30:28.918Z"
 }

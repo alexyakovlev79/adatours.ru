@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 545,
-    "leased": 2,
-    "review": 1797,
+    "leased": 1,
+    "review": 1798,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 545,
-      "leased": 2,
-      "review": 1797,
+      "leased": 1,
+      "review": 1798,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 16,
@@ -546,8 +546,8 @@
         "word_2027": {
           "held": 0,
           "queued": 16,
-          "leased": 1,
-          "review": 61,
+          "leased": 0,
+          "review": 62,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 0,
@@ -577,7 +577,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-05T17:04:23.255Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "03": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw3phs0k-amanda": {
-      "jobId": "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b007",
-      "token": "ada-en-mw3phs0k-amanda-token",
-      "expiresAt": "2026-11-05T17:04:23.255Z",
-      "generation": 1
-    },
     "ada-en-mw3phxr8-amanda": {
       "jobId": "en:bulk:tour:tour_source_mototur_cherez_braziliyu:b005",
       "token": "tok-mw3phxr9-9ueveppdqi5",
@@ -7225,7 +7219,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b007"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b007"
+      ]
     },
     "ada-en-mw3phxr8-amanda": {
       "token": "tok-mw3phxr9-9ueveppdqi5",
@@ -7239,5 +7235,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T15:36:04.644Z"
+  "updatedAt": "2026-11-05T15:36:16.400Z"
 }

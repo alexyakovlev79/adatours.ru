@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b005",
+  "stableId": "tour_source_ves_mnogolikij_peru_i_senor_sipan",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3e3a4643413a19ef272d61f6251bb4a26f276d2c968dffa50ed8c7ce5ee31b8c",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:234e8f6a9111fa88",
+      "field": "media.alt",
+      "sourceTextSha256": "6c586c70ab5cada5fbc388c95ac5b2388fa110fe2682231d6b5cb5f3990d767a",
+      "text": "Lima, the capital of Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word identifies Lima but contains no equivalent photo alt text. Translate the current RU alt description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9ba1f29db3473e6c7e5afd683a21e1efed2f78d929442ee4355157c85e8b8d25",
+      "text": "Lima – Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p:59",
+            "textSha256": "f0f2ab39ed655d2ad482866f9784d824003bcdc84410ab4dc2c6077f79e594c4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "421e20ae8bb41cfec51ad53aa6ef81134b1091ff0229f72f09bd25a034004a1c",
+      "text": "After breakfast, transfer to the airport for your flight to Cusco.\n\nOn arrival, you will be met and transferred to your hotel.\n\nIn the afternoon, begin a tour of the archaeological sites around the city.\n\nThe first stop is **Sacsayhuamán**. The complex was considered a sacred Inca site where, according to legend, people from other tribes were not allowed to enter.\n\nNext, visit **Qorikancha**, the Temple of the Sun. In the 15th century, its interiors were covered in gold and its altar took the form of a golden disc. After the Spanish arrived, part of the complex was destroyed and a monastery was built above it. An earthquake later damaged the Spanish buildings, revealing the massive Inca walls that survived underneath.\n\nContinue to **Tambomachay**, a water temple and site of ritual bathing. Specially built channels fed water into its pools.\n\nNearby stands **Puka Pukara**, the Red Fortress, which served as a defensive complex.\n\nReturn to the hotel after the tour. Overnight in Cusco.\n\n**Optional:** a visit to Cusco Cathedral before the main tour, lasting about **40 minutes**, for a supplement of **$25**.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p:77 condenses this day and omits the golden-disc altar and the legend excluding other tribes. Its optional table p:220 charges $30, while the assigned RU block says $25. Preserve the current RU amount and 40-minute visit without changing prices; retain the fuller RU text as an AI translation with this explicit conflict."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2e6ee52839086702",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p:36",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f2563a41dbf176bf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p:140",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cbdbd9ce2a70a8ae",
+      "field": "media.alt",
+      "sourceTextSha256": "21136aef5bb3d935307eae8cd6cfd726c0fa16d283191a4cba013673d2f99c0f",
+      "text": "A square in Cusco with a stone church, flowerbeds and a tourist bus, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no image-specific alt text about a stone church, flowerbeds and a tourist bus. Translate the assigned RU description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8e98b9bb70b4b717",
+      "field": "media.hover",
+      "sourceTextSha256": "d83b8c7d0f87f80df4bb500e4b5d958621ff2a2f600fd36b623dc986faa7610f",
+      "text": "Cusco: a church façade and flowerbeds beside a busy square",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no matching hover caption about a church façade and flowerbeds. Translate the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "18809c18c3fe3e770a5b8d8df472c4812926840cf4950523f9c72fac3ddd2287",
+      "text": "Cusco – Machu Picchu – Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p:78",
+            "textSha256": "317f3ff9c5792f24490add2eac667164d360ef050ad531c788be5a03f8c255c3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    }
+  ]
+}

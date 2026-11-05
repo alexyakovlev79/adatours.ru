@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 977,
-    "leased": 6,
-    "review": 1386,
+    "leased": 5,
+    "review": 1387,
     "ready": 32,
     "retryable": 0,
     "blocked_external": 10,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 977,
-      "leased": 6,
-      "review": 1386,
+      "leased": 5,
+      "review": 1387,
       "ready": 32,
       "retryable": 0,
       "blocked_external": 10,
@@ -506,8 +506,8 @@
         "word_2027": {
           "held": 0,
           "queued": 44,
-          "leased": 1,
-          "review": 33,
+          "leased": 0,
+          "review": 34,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-05T02:45:16.613Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "02": {
@@ -1370,12 +1370,6 @@
       "jobId": "en:bulk:tour:tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni:b009",
       "token": "adaen-w2-20261105-0348-token-a",
       "expiresAt": "2026-11-05T02:41:17.957Z",
-      "generation": 1
-    },
-    "adaen-w4-20261105-0414-a": {
-      "jobId": "en:bulk:tour:tour_source_kolumbiya_live:b004",
-      "token": "adaen-w4-20261105-0414-token-a",
-      "expiresAt": "2026-11-05T02:45:16.613Z",
       "generation": 1
     }
   },
@@ -5990,9 +5984,11 @@
       "jobIds": [
         "en:bulk:tour:tour_source_kolumbiya_live:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_kolumbiya_live:b004"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T01:16:56.364Z"
+  "updatedAt": "2026-11-05T01:17:44.081Z"
 }

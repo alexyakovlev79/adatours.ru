@@ -1,0 +1,154 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b001",
+  "stableId": "tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c64987d35a5c0645c03c4c228fe238381944567dd9abce4f1a617a0b3ce8c1ed",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "166c4cbede2f7480fd703f9397574f3d332b726c4b998b120ae99272945256f1",
+      "text": "Luxury Panama tour: 12 days of VIP travel | Ada Tours",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p1",
+            "textSha256": "74eb7d65de8bd662ef877ba42fe4410a4d5f964a85779dbb45c52c4fa8fc2778"
+          },
+          {
+            "ref": "word/document.xml:p2",
+            "textSha256": "88dcc80c98d7f9dece9072495befac6cb682c044839fb0505bc8d9fada71d5fc"
+          },
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "1c200c150873f50217841a057942026bd422bed9fc4a3c34e2a5c763c9d1b765"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the tour title from the confirmed luxury/VIP name and duration, omitting the historical brochure year and retaining the site brand suffix."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "72b8dffb2b0a4c523b29d9fecfef59c9c6d9c68043fd6229ad0c7be7534cc977",
+      "text": "This premium itinerary explores several sides of Panama: its modern capital and the Panama Canal, the Chagres jungle and an Emberá village, a private island in the Pacific, the coffee-growing region of Boquete, Barú Volcano and the Caribbean waters of the Bocas del Toro archipelago.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38ysi5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary confirms these stops in separate day sections but contains no matching introductory lead paragraph; translate the assigned RU overview without adding services."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "da9a20d06693dd5f8db36b56973ed269831bd5e9d0463e54174c1046087a979e",
+      "text": "$12098",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38ysi5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 99 quotes USD 13915 for 2 people, not the assigned RU priceNote of $12098. No matching priceNote exists in Word; preserve the pinned RU value exactly, with commercial changes reserved for the master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:240c4ada4f3aa59f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b9d6186ac4fb83e7f1cc43ba8dd34adb41042813d0203581d11f6e7f1552900c",
+      "text": "Panama City – Boca Chica – Boquete – Barú Volcano – Bocas del Toro – Panama City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p34",
+            "textSha256": "c077763f83dd7c687fd1273766b08c7b6a4772e48f5a97d802588d329bf41f12"
+          },
+          {
+            "ref": "word/document.xml:p42",
+            "textSha256": "20750f6098e9cae261d983d43699371b9c560364085d88a5dc9ec27e9162e880"
+          },
+          {
+            "ref": "word/document.xml:p58",
+            "textSha256": "bf5f9787c8fd0c171a3196253314a7bde9c1db8821c28c162c531387c17040e0"
+          },
+          {
+            "ref": "word/document.xml:p62",
+            "textSha256": "0f0eb00c96fe8250b316428377c597b9d889d20fa6960ea0fc117c94feb3e540"
+          },
+          {
+            "ref": "word/document.xml:p80",
+            "textSha256": "d672380cb7c82308783e049ea6a88256619c757d7599376c05df6aca96085fe9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the confirmed place or activity named in this Word passage as the assigned concise label."
+      }
+    },
+    {
+      "blockId": "tour:included:f38e4eb7673ca3a7",
+      "field": "included",
+      "sourceTextSha256": "748760988a5de18a1828fd2dbc2a2f76c225ca69cae5fe849e71ff2bc9ab334d",
+      "text": "Guide service on days 1–3; an English-speaking guide is available on request.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38ysi5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 103 confirms guide service on days 1–3 but does not contain the RU on-request language clause. Translate that clause from RU, adapting the service language to English under the owner decision."
+      }
+    },
+    {
+      "blockId": "tour:included:8f14f1739659729f",
+      "field": "included",
+      "sourceTextSha256": "55aa20f76aeffb0aef1ebdc0e2375afbb041177713f471028f913b002a6aeaf2",
+      "text": "Private transfers.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw38ysi5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 104 only says Transfers, with private format specified separately in the itinerary rather than in this inclusion. Translate the assigned RU inclusion without expanding it."
+      }
+    },
+    {
+      "blockId": "tour:included:636dccb3fb9a00fa",
+      "field": "included",
+      "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+      "text": "Hotel accommodation according to the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p105",
+            "textSha256": "f838a4ebfe38887af3ff68aed02a23fc0e4ff6a84e1f84cdb6bbcc9d329d2ac8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:9f08e164ce8ed597",
+      "field": "included",
+      "sourceTextSha256": "4afab422daab820554451616ef8b028278c715279e279cb6fee49d6d05f7712d",
+      "text": "Excursions  according to the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1p53SieUHoWHQc516BD37iA1sZiMMH_V8",
+        "documentSha256": "405eb58ad145e974eaff118cb5b6c5373277a3a6d2eafcd2696b4446b8cda139",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p106",
+            "textSha256": "1f6edde8a8235cc7fe3d4540fda553e51d4637ddd8f969d7c5cd3eb44bb2d428"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_rajskaya_braziliya:b011",
+  "stableId": "tour_source_rajskaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e33e7860212b129a6a14c1d6fd6325d63a252f116a8fda653941157d85339177",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:141d9de3140b65ca",
+      "field": "media.alt",
+      "sourceTextSha256": "8b04cdab9566f58a9d64f38a6124b54e5f50461109dc1881800ef6a4ae7d8913",
+      "text": "Waves on a sandy beach beside the rocks of Fernando de Noronha, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no alt text for this photograph of waves, sand and rocks; translate the assigned RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b2d6fe2727a100a1",
+      "field": "media.hover",
+      "sourceTextSha256": "46d91688f0c624bddc66cd5dc39cdc402aabcf1c0d7e2db3f08e35ee0e828f81",
+      "text": "Fernando de Noronha: turquoise sea beside a beach with rocks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no hover caption for this rocky beach photograph; translate the assigned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2cd8cf66de7d86fe0178d8743393ea2d6f0da9d01ba260709861de6dfa5e8afa",
+      "text": "Fernando de Noronha – Recife",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:118",
+            "textSha256": "f4d13bd2e9b5e433887d70692bf1f63fff978be54188698c5c2d74817a224515"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing transfer route title from the verified Word departure flight to Recife and its Fernando de Noronha section."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "65fb81375a389ba9d070a5b0eca8dc3a421e5dbd4a72c3de0c289075fc7b234c",
+      "text": "Breakfast and, at the appointed time, transfer to the airport for your flight to Recife. From Recife there are flights to Rio, São Paulo and Europe. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:118",
+            "textSha256": "f4d13bd2e9b5e433887d70692bf1f63fff978be54188698c5c2d74817a224515"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word numbered-day marker; the canonical itinerary node supplies its day number. Preserve the verified transfer paragraph verbatim."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c79de30e31aa5a66",
+      "field": "itinerary.label",
+      "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+      "text": "Recife",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:139",
+            "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e2641aaa794c7d9e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "812612c4cb7dace904af42fc42833743222459666fa62cbc3df5ed993d38d273",
+      "text": "Fernando de Noronha",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:114",
+            "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ae6c663cc1ec5067",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panorama of Rio de Janeiro with the bay, Sugarloaf Mountain and urban buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no caption describing this particular Rio panorama; translate the assigned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:24c7d80c3779e0c8",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugarloaf Mountain among the city’s neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3tx7a6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no hover caption for this city and bay image; translate the assigned RU caption."
+      }
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vazhnoe_brazilii:b006",
+  "stableId": "tour_source_vazhnoe_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7b3dc146bfb0a1995f3c1039043e22f39eade4c75baac5c3d97e9c3cdfcec5e9",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:798e46a8e2b23822",
+      "field": "media.hover",
+      "sourceTextSha256": "9c7149bba632dc33cbcd225f2ca0502941a50f085a16ffd828093e65e1d2098d",
+      "text": "The Brazilian Amazon: a boat's wake between forested riverbanks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word describes Amazon activities but contains no image-specific caption of a wake between forested banks. Translate the exact RU hover text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "eeec94e6ba78a521f18626c27ab48ca2fcd1bafbc0c78cea0c712263ec882539",
+      "text": "Manaus – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "p:98",
+            "textSha256": "390bd39db6f9f78946e8f1ae40fec937b5eaa2adb7d73cbbea605a436707b8eb"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "766cee4fe1b9f3368cea83a1f558f7d0f81528d18d0f5280548872a0859da699",
+      "text": "After breakfast, transfer to the airport for your flight to Foz do Iguaçu.\n\nOn arrival, you will be met and taken straight to the Brazilian side of the falls.\n\nIguaçu lies near the borders of Brazil, Argentina and Paraguay and comprises around 275 major cascades.\n\nIts name means “big water” in the Tupi-Guarani language.\n\nThe falls are within a national park rich in flora and fauna. Their present landscape is linked to ancient volcanic processes and shifts in the rock formations. As you approach the main cascades, the river's calm flow changes abruptly, plunging into the canyon.\n\nThe main section is the Devil's Throat, where the water drops about 72 m.\n\nViewing platforms offer a panorama of the falls and bring you close enough to feel the thick spray in the air.\n\nThis is a private tour with an English-speaking guide.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word p:102 covers the flight and Brazilian falls but omits the RU geological explanation, 72 m height and viewing-platform details. Translate the current RU block rather than mislabel an expanded text as word_exact; preserve its existing private format."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "p:128",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:34222ca2d5086cf4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "p:85",
+            "textSha256": "eaa04da2a9c2bccad2e9e9615e7057fdbc58de9554d3cb58bbef6b216a950535"
+          },
+          {
+            "ref": "p:88",
+            "textSha256": "336b7a8f378318e64b27502026297091388b9f21cf6e0b2b12d5ce6308908ab0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:14bd2a179b3e7c0d",
+      "field": "media.alt",
+      "sourceTextSha256": "a40c48b59c728c116d656fe413b703574769a11f36b092b1720f300633806fec",
+      "text": "Passengers wearing life jackets in a motorboat in front of the cascades of Iguaçu Falls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent image alt text describing passengers in life jackets. Translate the assigned RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5d465234499d48eb",
+      "field": "media.hover",
+      "sourceTextSha256": "6b21fded457debd9b3686d2013455334adbedbb7450edaedb89aee286acb3ed9",
+      "text": "Boat trip near Iguaçu Falls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3ezm03-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word does not contain this specific photo caption. Translate the existing RU hover text, without changing the media or included services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1c26f0bb98450328b796ed86b80cf94bdfa4e9a3ea498b27d81a725f0acd0e9e",
+      "text": "The Argentine side of Iguaçu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "p:103",
+            "textSha256": "400cfc8804665a7667143618153095bd35e68960aa1c245d079ac55bc40b9329"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word passage for this field, preserving its factual meaning and route context."
+      }
+    }
+  ]
+}

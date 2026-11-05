@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 1004,
-    "leased": 3,
+    "queued": 1003,
+    "leased": 4,
     "review": 1363,
     "ready": 32,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1004,
-      "leased": 3,
+      "queued": 1003,
+      "leased": 4,
       "review": 1363,
       "ready": 32,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 42,
-          "leased": 0,
+          "queued": 41,
+          "leased": 1,
           "review": 37,
           "ready": 0,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T02:20:24.924Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_peru_i_boliviya:b004",
       "token": "adaen-w2-20261105-0348-token-a",
       "expiresAt": "2026-11-05T02:18:44.086Z",
+      "generation": 1
+    },
+    "adaen-w4-20261105-0345-B": {
+      "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004",
+      "token": "adaen-w4-20261105-0345-token-B",
+      "expiresAt": "2026-11-05T02:20:24.924Z",
       "generation": 1
     }
   },
@@ -5894,7 +5900,8 @@
         "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_v_brazilii:b011",
         "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_v_brazilii:b012",
         "en:bulk:tour:tour_source_neveroyatnaya_argentina:b002",
-        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b003"
+        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b003",
+        "en:bulk:tour:tour_source_neveroyatnaya_argentina:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_v_brazilii:b011",
@@ -5912,5 +5919,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T00:50:07.107Z"
+  "updatedAt": "2026-11-05T00:50:24.924Z"
 }

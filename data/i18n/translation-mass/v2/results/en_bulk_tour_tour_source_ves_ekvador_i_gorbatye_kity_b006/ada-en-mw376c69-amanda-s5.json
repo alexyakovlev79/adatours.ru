@@ -1,0 +1,129 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_ekvador_i_gorbatye_kity:b006",
+  "stableId": "tour_source_ves_ekvador_i_gorbatye_kity",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "418acb5a07cdc1f02cef05a3ebad47ec939edd4af8b4871fa42d8dd87fb04f0e",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:980266b4da7ee0fb",
+      "field": "media.alt",
+      "sourceTextSha256": "09fc1e815446b9df2841555bec5a39d1db590c0ac7efa934e1968691f7663db5",
+      "text": "Traditional huts and carved poles at the Intiñán Museum with mountains in the background, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent image alt text or hover caption; translate the pinned RU media description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d7688d2bdcbc9ba1",
+      "field": "media.hover",
+      "sourceTextSha256": "e195e50af80228d9b12daced5cee003d18deeab7e7f27a247fb1d4b3514bf105",
+      "text": "Intiñán: an open-air museum courtyard with thatched roofs",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent image alt text or hover caption; translate the pinned RU media description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "07ede37c4ad27bcd5f8e379010b9c4dd6d45020aa754c601a6524d036539eca8",
+      "text": "13 August 2027. Rose plantation, Tigua, Quilotoa and Baños",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 78 names Tigua, Quilotoa and Baños but has no rose plantation in its day title; preserve the pinned RU title and date rather than invent a Word-exact match."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b132e16d5a027a6a37f92c65ebc2a881975d64d45bdf578dc134a97da8ae04fd",
+      "text": "Breakfast at the hotel. Depart Quito via the Cotopaxi valley, Tigua and Quilotoa for Baños. The day lasts 11 hours including transfers; Quito to Quilotoa takes about 3.5 hours, and Quilotoa to Baños about 3.5 hours. The excursion reaches an altitude of 3,900 m, with the overnight stay at 1,800 m; temperatures during the excursion are around +10 °C.\n\nFree evening in Baños. Accommodation: La Floresta 3*. Meals: breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word paragraph 78 gives about 10 hours and omits the RU altitude, temperature and Quito–Quilotoa transfer details; preserve the pinned RU 11-hour specification and full logistics in translation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:106b71bd02723b95",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1841b2eb5a8c802ca001958a595081812272bda35448e01f519bae4cd59b35b2",
+      "text": "Tigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[78]",
+            "textSha256": "7fd3e500e54dcbfafaf12187ea15b7996234e46c42d516c3e102ef82b81f5c60"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:63ca461a7e6a468a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "37e94ee8cb1feda04ccec00cd5ffe98fcf81caf83695dca7c1a813fd6840f6d6",
+      "text": "Lake Quilotoa",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[40]",
+            "textSha256": "26848a03b42eb3280d43b2001d2f4c55572600423947078c5ff8b9772f0468ce"
+          },
+          {
+            "ref": "word/document.xml:p[41]",
+            "textSha256": "0d7ac0462e5ab8abd53156f5b2e0d001814fe1e8ccd29d028dca678a7ed5eb61"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the corresponding destination or service label from the verified Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d1894c0dff27747f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0af265a8d4b48bcbc2b9d5003f7318db34fc5857d83b7b1bddfc713170c5e748",
+      "text": "Baños",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[43]",
+            "textSha256": "275315b2c25b578494309994038177a26ccb1aeab647990c5ba5b4514e7ff965"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:e0a74a4d0f5c6e83",
+      "field": "media.alt",
+      "sourceTextSha256": "58b74800f6f840da11f017f88e3a0f23a77c9de3c7fc90cf967e87c239bc0dc5",
+      "text": "Colourful paintings at the entrance to a rural workshop in Tigua, with mountains in the background, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw376c69-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent image alt text or hover caption; translate the pinned RU media description."
+      }
+    }
+  ]
+}

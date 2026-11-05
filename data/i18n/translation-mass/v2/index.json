@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 501,
-    "leased": 3,
+    "queued": 500,
+    "leased": 4,
     "review": 1840,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 501,
-      "leased": 3,
+      "queued": 500,
+      "leased": 4,
       "review": 1840,
       "ready": 50,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 19,
-          "leased": 0,
+          "queued": 18,
+          "leased": 1,
           "review": 50,
           "ready": 3,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-05T19:14:43.780Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_podlinnaya_braziliya:b007",
       "token": "lease-mw3tx26y-3p5ljbo6be2",
       "expiresAt": "2026-11-05T19:14:27.520Z",
+      "generation": 1
+    },
+    "ada-en-mw3trvql-amanda": {
+      "jobId": "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b009",
+      "token": "ada-token-mw3trvql-7ja3w02ycqx",
+      "expiresAt": "2026-11-05T19:14:43.780Z",
       "generation": 1
     }
   },
@@ -7316,7 +7322,8 @@
         "en:bulk:tour:tour_source_podlinnaya_braziliya:b011",
         "en:bulk:tour:tour_source_peru_i_boliviya:b006",
         "en:bulk:tour:tour_source_priklyuchenie_v_gvianakh:b002",
-        "en:bulk:tour:tour_source_solntse_tango_vino_i_atakama:b008"
+        "en:bulk:tour:tour_source_solntse_tango_vino_i_atakama:b008",
+        "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_pantanal_bonito:b005",
@@ -7368,5 +7375,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:44:35.292Z"
+  "updatedAt": "2026-11-05T17:44:43.780Z"
 }

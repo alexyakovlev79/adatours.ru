@@ -1,0 +1,171 @@
+{
+  "jobId": "en:bulk:tour:tour_source_rajskaya_braziliya:b001",
+  "stableId": "tour_source_rajskaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f2136b17137fd71bfb650b7f1995415e8ef2a1062cb3d30faf94cc4f66080ae4",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "774912eb586ebeb9a6c62f965c5844e58fe37f2b5a084d4b1545ad4fc1155442",
+      "text": "Paradise Brazil",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "line 52",
+            "textSha256": "27946a34f214612ae718baad89c6827c69fe5130ef90c2389ce143c27ea9910a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "ff08cc95946b1d86dd516a4484ff3b970f6eee9a95a04837d898a2dee9d1ee85",
+      "text": "From the rhythm of Rio to the roar of Iguazu and the crystal-clear waters of Fernando de Noronha, discover Brazil at its most vibrant, wild and breathtaking, from iconic cities to untouched tropical shores. In Pernambuco, in the northeast, turquoise water, white sand and palm trees line some of Brazil’s finest beaches, such as Porto de Galinhas, while the islands of Fernando de Noronha, a protected marine reserve with remarkably clear water and rich marine life, are a mecca for divers.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "line 2",
+            "textSha256": "b96c48d371c0fc8f667f2801e1efb44ad6401e44c62032d82266923a82b95283"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2893d52c0ba0ceb381dcbcf29d6d19e79c8a98bef4584219a1c7263c04d68f99",
+      "text": "$6669",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3n8bjf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word text extraction does not contain the RU price-note value $6669; this shared commercial value is preserved verbatim without any price change."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a2490c091d79367",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+      "text": "Rio de Janeiro, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "line 100",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "line 101",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route label combines the city and its exact night count from the verified Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a8c44c221a7f5e28",
+      "field": "itinerary.label",
+      "sourceTextSha256": "42065d70b768c9d05060e7b7ead1d823feb0c43e27c1df8eb25b1aa6b36700ed",
+      "text": "Iguazu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "line 105",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "line 106",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route label combines the city and its exact night count from the verified Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3e4badd04a386560",
+      "field": "itinerary.label",
+      "sourceTextSha256": "27fb3bcb3d4e3bc10f4d2d646525cccc801df705c8a2b1bf00d57b148539076b",
+      "text": "Recife, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "line 110",
+            "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
+          },
+          {
+            "ref": "line 111",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route label combines the city and its exact night count from the verified Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:055de9d74bede2d9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "092a759e78b8dbfd0d72eeafe0280475d6cb5e0c054844d4102d6e523336798a",
+      "text": "Porto de Galinhas, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "line 115",
+            "textSha256": "660462991187fe099319662bccd0418970a8ad3aade279bfff8b658fa960fbc5"
+          },
+          {
+            "ref": "line 116",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route label combines the city and its exact night count from the verified Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:45f86501ac5a226d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f114a7de1d4f35f1db042f37d4ab025af382a4ebfaa2525ba280cc730f28b72a",
+      "text": "Fernando de Noronha, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "110QB8YuxE7RbLrXRIa-hDqIhM8q6veBB",
+        "documentSha256": "65bd9143328064c94f858ca5f5a4e5b0bf6d23a98373ca836f9a15aa86d19cec",
+        "paragraphs": [
+          {
+            "ref": "line 120",
+            "textSha256": "737c16b358524ba75c512cf224bbcec025229d1e7f9f74ee48450ba083d8709b"
+          },
+          {
+            "ref": "line 121",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Route label combines the city and its exact night count from the verified Word accommodation table."
+      }
+    }
+  ]
+}

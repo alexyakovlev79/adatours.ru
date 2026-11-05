@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_venesuele:b008",
+  "stableId": "tour_source_luchshee_v_venesuele",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ae6eb03adc0606021bc963c77d418f1638140b69ff478455b278d0d0a987b981",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:c40b97b2fc535237",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "text": "Caracas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:16",
+            "textSha256": "90f4635cad593f86367f8f678cccb7eb3a787e6674e8e96d9437630c24c9ebf0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word destination name as a compact place label without the day number or surrounding prose."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6184ef19b4da7d8f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "55d25f261c604074fe246c327b0632f41866bbb458cfd4122259cd5a7e25858c",
+      "text": "Canaima and Angel Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:12",
+            "textSha256": "abe38a6c89147bbd0d424d7351856b23534e19768fea8d9c2885817c79a8e5bd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word destination name as a compact place label without the day number or surrounding prose."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e890c1465456484d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fb97739f84ddccf66672c27c129a32014ae4e9a50d6e600873fdeaebc5c824df",
+      "text": "Margarita Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:59",
+            "textSha256": "cfad691a6e681543a7ac4c982af114fb6e84352edbfd8e16c5d3e32ba6965520"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word destination name as a compact place label without the day number or surrounding prose."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a85737547b236d51",
+      "field": "media.alt",
+      "sourceTextSha256": "61ac91a70770e61d76b35d16b7223a61ab8f425b8d68ed6adce969d8a4ffe7df",
+      "text": "Dense red-brick housing on the slopes of Caracas, Venezuela",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dk3vd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word has no image alt text for hillside red-brick housing in Caracas."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:22d13ef0484d178d",
+      "field": "media.hover",
+      "sourceTextSha256": "a1aadcc31603616ea7fac57a24b27b040cef8fb8de73fe35381aa03056bced67",
+      "text": "Caracas: homes and a narrow street on a hillside",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dk3vd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word has no hover caption describing this residential hillside."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "329e481b538d7fdb7d6c9a4f932e7c5a286d9b6ae139025cb5b155eb3af98281",
+      "text": ", Monday–Thursday. Margarita Island",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dk3vd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word has Days 8–10 on Margarita, but no corresponding Monday–Thursday heading for this RU schedule."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "683440898f1d9f0b276c348afe74282154617cfd004d4eaf1cfb345c0a0e944c",
+      "text": "Relax at your all-inclusive hotel by the sea.\n\nIf you wish, you can book an optional sightseeing tour of Margarita Island.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw3dk3vd-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word paragraphs 66–67 include an island sightseeing tour on one of the days; this RU block makes it an optional extra. Preserve that assigned inclusion distinction instead of claiming the Word version."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:08fec1707e1edda9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fb97739f84ddccf66672c27c129a32014ae4e9a50d6e600873fdeaebc5c824df",
+      "text": "Margarita Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+        "documentSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:59",
+            "textSha256": "cfad691a6e681543a7ac4c982af114fb6e84352edbfd8e16c5d3e32ba6965520"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word destination name as a compact place label without the day number or surrounding prose."
+      }
+    }
+  ]
+}

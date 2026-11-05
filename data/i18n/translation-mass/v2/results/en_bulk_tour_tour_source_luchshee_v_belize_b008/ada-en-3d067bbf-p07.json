@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_belize:b008",
+  "stableId": "tour_source_luchshee_v_belize",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "54c60568cce2ee474361b3ae073929251f91feae0e6df2e5654976ca00f6f188",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "bc9d3fc81c69cf959de6a69e605480a1683d34d23a6ba522d18349910b7b4fba",
+      "text": "Cave tubing, the zoo and San Pedro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p84",
+            "textSha256": "a4f74fe53d4fe02d93c07bc0bfe7b42d93ba65a9a1e66f570be52365ed9701d4"
+          },
+          {
+            "ref": "word/document.xml:p88",
+            "textSha256": "86f98a72938b6e44532c59deb0a583c400d236ab369556810fead198169a1a1f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Condense the confirmed Word day 5 activities and ferry destination into the assigned day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2647537a74b76943cb7a0ecf03941c8166954e6c1b26451126ecf06d81a02310",
+      "text": "Day 5 · Pick-up from your hotel for a guided tour combining cave tubing and The Belize Zoo. Float along the river through the jungle and into beautiful underground caves, then visit The Belize Zoo to meet a variety of native wildlife. Lunch and park fees included.\n\nContinue to Belize City for the ferry to the picturesque island of San Pedro, on Ambergris Caye, and a taxi to your hotel. (Meals: B, L)\n\n3 nights at Sunbreeze Hotel, standard room, tax and breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p87",
+            "textSha256": "042fb3641dbb4767b2ea44cbeada23fcbadaaf996a30f30afdd52159096de63d"
+          },
+          {
+            "ref": "word/document.xml:p88",
+            "textSha256": "86f98a72938b6e44532c59deb0a583c400d236ab369556810fead198169a1a1f"
+          },
+          {
+            "ref": "word/document.xml:p191",
+            "textSha256": "ffe2d58f4f655033b7424c10b9834bd21e42264518c7391646b3ea1032494137"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retain the verified Word day 5 passages and the full Sunbreeze accommodation line, removing only its list marker for inclusion in the day text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d808967e670511ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+      "text": "Ambergris Caye",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p51",
+            "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b3bc2f794e6e150d",
+      "field": "media.alt",
+      "sourceTextSha256": "59c04d9420673fab81fd763792b1186199660fab5a9435063fe4b37b319dcdc5",
+      "text": "Wooden piers over the clear waters of Ambergris Caye, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding image alt description occurs in the verified Word. Translate only the assigned RU visual description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:c05aebb238017c8e",
+      "field": "media.hover",
+      "sourceTextSha256": "3637a716021f3eb37ceed169565a72340cc905d1f0c03d474bb0aaa045723ad2",
+      "text": "Ambergris Caye: piers and a sailing boat in the turquoise Caribbean Sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding image hover caption occurs in the verified Word. Translate the RU caption without adding excursion promises."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1ba6e1fa11ae15b2ef84fa30e59bda92ac1b2b4891ee575802bbb1cf580c4324",
+      "text": "San Pedro and sea excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p97",
+            "textSha256": "a90869127106c4bd1f19b68fa16a132e73d47618a6deb8e4bf1acb80f544e435"
+          },
+          {
+            "ref": "word/document.xml:p152",
+            "textSha256": "24367073ebc70705727a65fa3df8162f6a6abbdce483e85b45f622f38072eda8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed island town and optional marine-activity section to render the assigned day label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "38363687f334d280dafd92161c17f6d603866ca23e9f414bc93be18119fcf490",
+      "text": "A free day on Ambergris Caye. Spend it on the beach or choose optional activities at an additional cost: snorkelling at Hol Chan and Shark Ray Alley, Mexico Rocks reef, or Coral Gardens with a chance to see manatees, sunset snorkelling, or a sunset boat trip.\n\n**Meals:** breakfast.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-3d067bbf-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word groups days 6-7 and lists detailed marine activities in a separate table. There is no single-day paragraph with the full RU selection and meal heading; translate this assigned RU block, retaining optional paid status and the possibility, rather than a guarantee, of manatee sightings."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f7a498dac4132fc4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+      "text": "Ambergris Caye",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17X8DmzkNLv9uRIzkWSMGxKof8iLO97xP",
+        "documentSha256": "b9a333690bcc8e95cc037f61dd1ab6c5f3b58ebee3f656be46484582f1e20bbb",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p51",
+            "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+          }
+        ]
+      }
+    }
+  ]
+}

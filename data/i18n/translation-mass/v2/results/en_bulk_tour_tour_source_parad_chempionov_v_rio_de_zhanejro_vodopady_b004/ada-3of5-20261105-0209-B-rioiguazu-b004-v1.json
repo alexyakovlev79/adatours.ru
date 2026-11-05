@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady:b004",
+  "stableId": "tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3c0dd42e3bbbb4fd209e891426b28528fc426bd0930031cf2ccb6d691e8e7b05",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:3e05f900f02a5ccc",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "A shady tree-lined street with outdoor café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word has no alt text for this particular street photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:4cfc035145f3c464",
+      "field": "media.hover",
+      "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+      "text": "Rio de Janeiro: a sidewalk café under leafy trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word does not contain this photograph's hover description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "864bd5621bb67b0c2b10f8cd1d1f6d6ab62e2f87aecfcc05d12eccd720788f26",
+      "text": "Sugar Loaf, Historic Rio and the Champions Parade",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KsikDN7oW4Z8uYH2xGZizgIiaGjErsAh",
+        "documentSha256": "71b89954fae8de5f7669635faf670b16b3b7357b204d2691a8732d56631626f3",
+        "paragraphs": [
+          {
+            "ref": "body:p17",
+            "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
+          },
+          {
+            "ref": "body:p18",
+            "textSha256": "3c32c738943f94f1bee1984f6fc735d78388232a4d0672379c0f52a64f965e98"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the Day 2 itinerary heading from both approved English paragraphs about Sugar Loaf, old Rio and the parade."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fb868f843364b136e73e9dea66e7332b233d41c70edcae5141ad15197b107247",
+      "text": "Breakfast, then a 4-hour tour: the cable car to Morro da Urca, with its wide observation deck, and on to Sugar Loaf, with views of Copacabana, the bay, the islands, the bridge to Niterói and Christ the Redeemer, then old Rio, with its historic churches, monasteries, Metropolitan Cathedral and colonial buildings. Rest in the afternoon before the big night.\n\nThe Parade of Champions at the Sambadrome: the winning samba schools of Carnival 2027 parade once more, with their spectacular costumes and floats, in a joyful, festive night of music and dance. Transfer back to the hotel after the parade.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KsikDN7oW4Z8uYH2xGZizgIiaGjErsAh",
+        "documentSha256": "71b89954fae8de5f7669635faf670b16b3b7357b204d2691a8732d56631626f3",
+        "paragraphs": [
+          {
+            "ref": "body:p17",
+            "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
+          },
+          {
+            "ref": "body:p18",
+            "textSha256": "3c32c738943f94f1bee1984f6fc735d78388232a4d0672379c0f52a64f965e98"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retain both approved Day 2 paragraphs in full, removing only the day and evening list markers."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KsikDN7oW4Z8uYH2xGZizgIiaGjErsAh",
+        "documentSha256": "71b89954fae8de5f7669635faf670b16b3b7357b204d2691a8732d56631626f3",
+        "paragraphs": [
+          {
+            "ref": "body:p17",
+            "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination city clearly established by the approved Day 2 itinerary."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cd17bb476de86159",
+      "field": "media.alt",
+      "sourceTextSha256": "00cd98ad813b549bda5135ae1966e0876bbf98a6ab5b2201f2736a67bfc67538",
+      "text": "The cable car ascending Sugar Loaf Mountain in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-3of5-20261105-0209-B",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved English Word does not specify alternative text for this Sugar Loaf cable-car image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2cb492b9fdba414c90c9d7620abc19207db2943ad4291ce6d9904e03a5e101fe",
+      "text": "Corcovado and Christ the Redeemer",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KsikDN7oW4Z8uYH2xGZizgIiaGjErsAh",
+        "documentSha256": "71b89954fae8de5f7669635faf670b16b3b7357b204d2691a8732d56631626f3",
+        "paragraphs": [
+          {
+            "ref": "body:p27",
+            "textSha256": "ffe644114b7bc0fc8797d9c5bbb041352b1c927afd2aa65ff1b8dcc05e1192bc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination Corcovado and the statue described in the approved Day 3 excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "119eea7a506c036807c823199ed0cc7b47702c6e19ea0fc1ca1f957e2ecb3917",
+      "text": "Breakfast, then a 4-hour excursion to Corcovado: an open train climbs through the Tijuca Forest to the statue of Christ the Redeemer (38 m), at about 710 m, inaugurated in 1931, with a breathtaking panorama of the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the Maracanã Stadium and Sugar Loaf. We recommend watching the sunset from the rocks of Arpoador, and seafood at the Marius restaurant in the evening (around USD 130 per person).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KsikDN7oW4Z8uYH2xGZizgIiaGjErsAh",
+        "documentSha256": "71b89954fae8de5f7669635faf670b16b3b7357b204d2691a8732d56631626f3",
+        "paragraphs": [
+          {
+            "ref": "body:p27",
+            "textSha256": "ffe644114b7bc0fc8797d9c5bbb041352b1c927afd2aa65ff1b8dcc05e1192bc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the complete approved English Day 3 paragraph, removing only the numbered-day prefix."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 434,
-    "leased": 3,
+    "queued": 433,
+    "leased": 4,
     "review": 1907,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 434,
-      "leased": 3,
+      "queued": 433,
+      "leased": 4,
       "review": 1907,
       "ready": 50,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 15,
-          "leased": 0,
+          "queued": 14,
+          "leased": 1,
           "review": 64,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T06:05:41.682Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_k_mestam_sily:b002",
       "token": "ada-en-mw4he32r-amanda-token",
       "expiresAt": "2026-11-06T06:05:24.669Z",
+      "generation": 1
+    },
+    "ada-en-mw4he47t-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_6dnej:b003",
+      "token": "tok-mw4he47t-tktazazkxf",
+      "expiresAt": "2026-11-06T06:05:41.682Z",
       "generation": 1
     }
   },
@@ -7546,8 +7552,15 @@
         "en:bulk:tour:tour_source_tur_v_braziliyu_k_mestam_sily:b002"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw4he47t-amanda": {
+      "token": "tok-mw4he47t-tktazazkxf",
+      "jobIds": [
+        "en:bulk:tour:tour_source_tur_v_braziliyu_na_6dnej:b003"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T04:35:24.669Z"
+  "updatedAt": "2026-11-06T04:35:41.682Z"
 }

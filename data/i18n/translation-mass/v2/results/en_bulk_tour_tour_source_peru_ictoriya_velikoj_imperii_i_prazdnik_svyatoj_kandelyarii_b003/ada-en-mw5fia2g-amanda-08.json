@@ -1,0 +1,128 @@
+{
+  "jobId": "en:bulk:tour:tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii:b003",
+  "stableId": "tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3bbd5a4e43963437d3d1712b3971e01d516c8c386b426aca158bfa7398af39ad",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:4e60fef3faaf9c3c",
+      "field": "notIncluded",
+      "sourceTextSha256": "23411cef6e59cb9da348c9b423cd7be7a0052a27e9ccc7ded4e46cf2e19efd04",
+      "text": "Nazca National Park entrance ticket – $10.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fia2g-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The pinned RU block specifies a $10 Nazca National Park entrance. The verified Word lists a separate $15 Nazca Lines entrance and $10 airport tax (paragraphs 88, 172, 214), so no equivalent of this exact fee exists. Translate the pinned RU without changing the amount or substituting another charge; shared price corrections belong to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:f9f6f8d1b649b8c9",
+      "field": "notIncluded",
+      "sourceTextSha256": "8cd0534c2c498fd58f5403bae6a88e21b2993d5d5e0f6c36977efb4800e2eb08",
+      "text": "Paracas reserve entrance ($ 6)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1TxH9LDDzR5Bfjb0u_5CBmF_2N5kGi2ad",
+        "documentSha256": "f5bcdb16d7149a4bd3f317cf9a84459111ff3c55704127c6f94c74b7323f2964",
+        "paragraphs": [
+          {
+            "ref": "paragraph:215",
+            "textSha256": "ffcdb01a1d4dee75dc29b5d9ea47827527ecf7c9732509684d74681e00395207"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for this separate excluded-service field."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may replace a hotel with another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fia2g-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent of this RU note block at /notes/0; translated the pinned RU text."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fia2g-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent of this RU note block at /notes/1; translated the pinned RU text."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when an early flight or excursion requires early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fia2g-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no equivalent of this RU note block at /notes/2; translated the pinned RU text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1TxH9LDDzR5Bfjb0u_5CBmF_2N5kGi2ad",
+        "documentSha256": "f5bcdb16d7149a4bd3f317cf9a84459111ff3c55704127c6f94c74b7323f2964",
+        "paragraphs": [
+          {
+            "ref": "paragraph:96",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "69ca838c80090f2c76663192fc0bca5b1ec960cc2e512394fae5a31a8a2575e7",
+      "text": "Day 1 · Arrival at Jorge Chávez Airport in Lima; meet and greet and transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1TxH9LDDzR5Bfjb0u_5CBmF_2N5kGi2ad",
+        "documentSha256": "f5bcdb16d7149a4bd3f317cf9a84459111ff3c55704127c6f94c74b7323f2964",
+        "paragraphs": [
+          {
+            "ref": "paragraph:52",
+            "textSha256": "b2556865fe94da7b580aa41643b15beb4957c6d6c27845824446083c0f1e3fe9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2db77ba7c1d1044c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1TxH9LDDzR5Bfjb0u_5CBmF_2N5kGi2ad",
+        "documentSha256": "f5bcdb16d7149a4bd3f317cf9a84459111ff3c55704127c6f94c74b7323f2964",
+        "paragraphs": [
+          {
+            "ref": "paragraph:96",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          }
+        ]
+      }
+    }
+  ]
+}

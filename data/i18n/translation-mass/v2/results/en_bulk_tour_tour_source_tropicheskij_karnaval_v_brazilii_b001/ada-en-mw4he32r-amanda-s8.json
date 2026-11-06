@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tropicheskij_karnaval_v_brazilii:b001",
+  "stableId": "tour_source_tropicheskij_karnaval_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e46abde133dcd22af7723a2dc582ed3c6f5c92e43056e7e5e31d85c26fd3f01d",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "1782238fe0c2bfe72685d11954c0690d317356ed151da8f92283338023e655e4",
+      "text": "Brazil Tour: Rio Carnival and a Beach Holiday | 12 Days",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word title is 'Tropical Carnival in Brazil'; it has no matching full SEO title combining the destination, Carnival, beach holiday and 12-day duration. Translate the pinned RU title using the programme's confirmed scope."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "2b6e7ffa768695f2fc5bd4ee6ebaec6e645241b23739a14f82ca9789c930899e",
+      "text": "Rio Carnival is the highlight of this trip, but the journey continues beyond it.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word overview confirms Carnival followed by a beach holiday but does not contain this concise lead sentence; translate the pinned RU lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "68e920abbdceb0b134a67cec76be266ab472f96a469c80735cd6cb7bd082330b",
+      "text": "$3688",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[122]",
+            "textSha256": "5ce039f59b57c5ceca32ad3667fb3e24a86f88fc378cb5f1efcf66702711d15c"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Preserve the existing RU display amount exactly; remove only the Word's internal space and thousands separator from the matching USD amount."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0010141711c9f59d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "302d421f3d7bdfc284b1efc0d13dee118beded26e3bc3c09362ecdfc9cf46ef2",
+      "text": "Rio de Janeiro (4 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[18]",
+            "textSha256": "dd2f253039c5539735430f7f8b9f9f7dc6a530318ddb4b0cea606b83296fe6b7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route label from the explicit four nights in Rio de Janeiro in the verified Word overview."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:17b24d34a272923c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4f9cebf0bbd3f547739836237b7a22f6c1d338a5b9f265a90ac22529dfa4b21b",
+      "text": "Búzios (7 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[18]",
+            "textSha256": "dd2f253039c5539735430f7f8b9f9f7dc6a530318ddb4b0cea606b83296fe6b7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route label from the explicit seven nights in Búzios in the verified Word overview."
+      }
+    },
+    {
+      "blockId": "tour:note:6460f4eea7fda3be",
+      "field": "note",
+      "sourceTextSha256": "d72fc8bf951729e5ff32639616640634021ed69ca3b7184b76010a8fc92322d8",
+      "text": "5–16 February",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[21]",
+            "textSha256": "b18e340913c9ae4ad095b28552c4a1179adb5c081d5c3e1e45da92e1d73cf351"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Render the confirmed date range with an unambiguous named month, retaining the RU field scope without adding a year."
+      }
+    },
+    {
+      "blockId": "tour:included:2750a3ed266f1d6a",
+      "field": "included",
+      "sourceTextSha256": "d3d953bb372ad557be35f9acab6bade46a46981756a8a24bdb77c3081c46e501",
+      "text": "Accommodation in the selected hotels, with breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[153]",
+            "textSha256": "d5886c2273504f228151d1e87a839dddeb3704cf7c1ffeb598e9cfb5fceeec3a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    },
+    {
+      "blockId": "tour:included:29ac633833b2ff90",
+      "field": "included",
+      "sourceTextSha256": "981987c7789a96543dd473edfebaeee822fd16e200371bb7578a6159eeaf86f3",
+      "text": "Excursions as per the programme with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[154]",
+            "textSha256": "3990a8f102b3bdf7022e9efd1ebe8d14e7970415e72dbb3154e8d82246a22bbc"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 339,
-    "leased": 3,
+    "queued": 338,
+    "leased": 4,
     "review": 2001,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 339,
-      "leased": 3,
+      "queued": 338,
+      "leased": 4,
       "review": 2001,
       "ready": 50,
       "retryable": 0,
@@ -105,8 +105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 9,
-          "leased": 0,
+          "queued": 8,
+          "leased": 1,
           "review": 52,
           "ready": 0,
           "retryable": 0,
@@ -137,7 +137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T13:39:39.896Z",
       "earliestRetryAt": null
     },
     "12": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_ves_ekvador_i_gorbatye_kity:b001",
       "token": "tok-mw4xe5eg-57vdkywptzw",
       "expiresAt": "2026-11-06T13:39:26.827Z",
+      "generation": 1
+    },
+    "ada-en-mw4xeqdh-amanda": {
+      "jobId": "en:bulk:tour:tour_source_vazhnoe_brazilii:b002",
+      "token": "token-mw4xeqdh-3m4wxoociqq",
+      "expiresAt": "2026-11-06T13:39:39.896Z",
       "generation": 1
     }
   },
@@ -7815,7 +7821,8 @@
       "jobIds": [
         "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b012",
         "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b003",
-        "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b009"
+        "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b009",
+        "en:bulk:tour:tour_source_vazhnoe_brazilii:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b012",
@@ -7825,5 +7832,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T12:09:32.862Z"
+  "updatedAt": "2026-11-06T12:09:39.896Z"
 }

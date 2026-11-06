@@ -1,0 +1,154 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_13_dnej:b002",
+  "stableId": "tour_source_tur_v_braziliyu_na_13_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "02908741fb63d57ebdea8a37b8a5d6a942ebdf409c2a86eeea04b3628e0866ab",
+  "blocks": [
+    {
+      "blockId": "tour:included:a16a477f830ac179",
+      "field": "included",
+      "sourceTextSha256": "67996a977ff68205aa798ef94026f30e94c56da02e757c722f3b1a1ab3b8b963",
+      "text": "Accommodation in hotels and pousadas according to the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p215",
+            "textSha256": "efc3a2aa45a24cd8ed6764669d4f2d948175d72ddeabf52105e1fa72dbf5ab9e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove list formatting and retain the Word service description in the assigned field."
+      }
+    },
+    {
+      "blockId": "tour:included:661c09e91532239d",
+      "field": "included",
+      "sourceTextSha256": "bea28f1de531b875ce2d2a5fd188ae9ddd1f3d7484755f4c146712a29da5879d",
+      "text": "Excursions with an English-speaking guide in Rio de Janeiro and Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p216",
+            "textSha256": "be84b758aa96f6a4460c95ba1eea1b230836f184efa7c614c0f7d9e6e7e103c8"
+          },
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "78d1b84530c1adcecec95c0e68d957dc8d15ba5eff83317c4bf6b1c82b876cba"
+          },
+          {
+            "ref": "word/document.xml:p91",
+            "textSha256": "1998f0ae5510f1c194aa9f89feff646c1518bfc225b71dd198e4baf56796de97"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove list formatting and retain the Word service description in the assigned field."
+      }
+    },
+    {
+      "blockId": "tour:included:3fc7acd2d0936cd9",
+      "field": "included",
+      "sourceTextSha256": "9e6316d88d1b2c7465dee04d62c68711e640a1abfef112f61172f258b02a11a3",
+      "text": "Excursions with English-speaking guides in the Pantanal and Bonito.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ho6dg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word specifies local guides in the Pantanal and an English-speaking guide for Bonito, but has no combined service-language line for these two destinations; translate the assigned RU line without changing its service scope."
+      }
+    },
+    {
+      "blockId": "tour:included:4eba4a26406ba9e1",
+      "field": "included",
+      "sourceTextSha256": "6860bc19bbe5b04c3e5dd423f20aae08dc502d7b0779697f03c95d1f6a74a4c7",
+      "text": "Transfers with driver",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p218",
+            "textSha256": "75def9523beb7f715cc9b9e73e6dda4bd39628bb769257d77dc890cfb65f5628"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove list formatting and retain the Word service description in the assigned field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p223",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove list formatting and retain the Word service description in the assigned field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:299d216eef8aa51b",
+      "field": "notIncluded",
+      "sourceTextSha256": "be4b20e8413637fba0e33dd0653fda980697fdeacd0297e37edfb6260180f420",
+      "text": "Domestic flights Rio de Janeiro – Iguazu – Campo Grande – Rio de Janeiro, from $600.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ho6dg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word quotes $950 rather than the assigned RU $600; changes to commercial amounts belong to the commercial master. Preserve the assigned RU amount and route without modifying prices."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6e52608d112e92b1",
+      "field": "notIncluded",
+      "sourceTextSha256": "1e7b740da431890dd85d53a213bd78601935c27039cb0c0012087ff01916403b",
+      "text": "Food and drinks during transfers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p224",
+            "textSha256": "4228aa0822b188545ba7a5145e0393b0f4a74c8dff9ddf2a3f27b68275f628d1"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove list formatting and retain the Word service description in the assigned field."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "Hotels can be changed for similar ones.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p167",
+            "textSha256": "59563d9b77775ce9911f149f95e35f494397e72c885e8a0259614d1a9e96c68e"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 478,
-    "leased": 0,
+    "queued": 477,
+    "leased": 1,
     "review": 1866,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 478,
-      "leased": 0,
+      "queued": 477,
+      "leased": 1,
       "review": 1866,
       "ready": 50,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 19,
-          "leased": 0,
+          "queued": 18,
+          "leased": 1,
           "review": 58,
           "ready": 1,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T05:44:01.151Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw4gmo58-amanda": {
+      "jobId": "en:bulk:tour:tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni:b005",
+      "token": "ada-token-mw4gmo58-hust222nib7",
+      "expiresAt": "2026-11-06T05:44:01.151Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -7395,8 +7402,15 @@
         "en:bulk:tour:tour_source_rajskaya_braziliya:b011",
         "en:bulk:tour:tour_source_romanticheskaya_braziliya:b003"
       ]
+    },
+    "ada-en-mw4gmo58-amanda": {
+      "token": "ada-token-mw4gmo58-hust222nib7",
+      "jobIds": [
+        "en:bulk:tour:tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni:b005"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-05T17:54:36.512Z"
+  "updatedAt": "2026-11-06T04:14:01.151Z"
 }

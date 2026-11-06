@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_venezuela_canaima_angel_falls_4_days:b007",
+  "stableId": "tour_venezuela_canaima_angel_falls_4_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c834af3fe93ffc8a129ed68896b4d5268264a989a1ee89bdddf080828b19614f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:f21d1145887aa544",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bd23ed5f395598ef73eb9332381b2e6f7dd43673524cefea2bbf16b8d3f86726",
+      "text": "Canaima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tHIW9z-qNCjM-DWY_dFZ5mjV1KtslBh9",
+        "documentSha256": "29a97c9ab88c3704dacaec1af332ab623ca371e1b777ea21b79cdf1a53f6d6fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[11] (zero-based)",
+            "textSha256": "11d634f6690cd41d05317c3018a3839e36632b5a783e846987cfee647374c572"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the matching place name from the verified Word day heading or description for this itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5ff12935300dd3a4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c248adbb78f1ab8e41fa37a26fe8518a003c8a169f951386b037133181c48374",
+      "text": "Canaima Lagoon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tHIW9z-qNCjM-DWY_dFZ5mjV1KtslBh9",
+        "documentSha256": "29a97c9ab88c3704dacaec1af332ab623ca371e1b777ea21b79cdf1a53f6d6fa",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[12] (zero-based)",
+            "textSha256": "8960ac1cd1f9ecb3bbdeabf29a5c6c6ddb3010f076748aeb448091178586f3cf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the matching place name from the verified Word day heading or description for this itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_title:ed1122de0b3446d6",
+      "field": "contentBlock.title",
+      "sourceTextSha256": "9c6a591c477a7f7c7bb0edf439d74d6c63389c76639f4846dd84fe885428b530",
+      "text": "Kavac and a flight over Angel Falls — 562 USD",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 lists Kavac with an Angel Falls fly-by at USD 676; this RU heading specifies 562 USD. No Word passage matches the complete heading with its protected RU price; translate RU without changing the amount."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:cc6b3bf5de993321",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "786d673ab676b12bbc1eceb15556e213402776bdd596f963d1006bdb406653ba",
+      "text": "Optional full-day excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 lists a full-day Kavac experience, but has no separate sentence matching this short RU content-block description; translate the RU description."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_title:1d387f8b7c36a404",
+      "field": "contentBlock.title",
+      "sourceTextSha256": "94d747204ca4831a6de76063ad2de9b5c79c28d34676231456056ee4f49b5a6b",
+      "text": "Pozo Azul — 88 USD",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 lists Pozo Azul at USD 108; the complete RU heading uses 88 USD and has no matching Word passage. Preserve the protected RU amount."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:79714af1d704110d",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "309e00c0ae258ae524f602bd7a7d054df48aeb3c410f5c4893845bec936d6e75",
+      "text": "Optional trip to the Blue Pool.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 lists Pozo Azul but provides no separate description of a trip to the Blue Pool; this explanatory sentence is absent."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_title:4064df57c421ee48",
+      "field": "contentBlock.title",
+      "sourceTextSha256": "d39c09ab162657078437829ac7e4339813c8abf1200ff7d762c1d7dcd196b3d7",
+      "text": "Kuravaina and Pozo Azul — 125 USD",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 lists Kuravaina Trek and Pozo Azul at USD 151; no complete Word heading matches the protected RU amount of 125 USD."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:e08b82317a894ae9",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "12971db8a6fe13461b15108e2ad314565132eb23b4ab0966ef6cdc4afba30fb2",
+      "text": "Optional trek including a visit to the Blue Pool.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 lists the Kuravaina trek and Pozo Azul but has no separate explanatory sentence matching this RU block."
+      }
+    }
+  ]
+}

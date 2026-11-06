@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 251,
-    "leased": 6,
+    "queued": 250,
+    "leased": 7,
     "review": 2086,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 251,
-      "leased": 6,
+      "queued": 250,
+      "leased": 7,
       "review": 2086,
       "ready": 50,
       "retryable": 0,
@@ -65,8 +65,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 10,
-          "leased": 0,
+          "queued": 9,
+          "leased": 1,
           "review": 64,
           "ready": 1,
           "retryable": 0,
@@ -97,7 +97,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T21:42:07.128Z",
       "earliestRetryAt": null
     },
     "11": {
@@ -1376,6 +1376,12 @@
       "jobId": "en:bulk:tour:tour_source_vpechatlenie_ot_surinama:b006",
       "token": "tok-mw5eq9gl-p8a43",
       "expiresAt": "2026-11-06T21:41:46.921Z",
+      "generation": 1
+    },
+    "ada-en-mw5eq26f-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_kofejnye_fazendy:b007",
+      "token": "ada-en-token-z4b95xbm61c-mw5eq26f",
+      "expiresAt": "2026-11-06T21:42:07.128Z",
       "generation": 1
     }
   },
@@ -8071,7 +8077,8 @@
     "ada-en-mw5eq26f-amanda": {
       "token": "ada-en-token-z4b95xbm61c-mw5eq26f",
       "jobIds": [
-        "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b014"
+        "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b014",
+        "en:bulk:tour:tour_source_tur_v_braziliyu_na_kofejnye_fazendy:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b014"
@@ -8099,5 +8106,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T20:11:59.970Z"
+  "updatedAt": "2026-11-06T20:12:07.128Z"
 }

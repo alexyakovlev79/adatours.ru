@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej:b006",
+  "stableId": "tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f7f6e49cf3aab0cebe8a2cdf45773867c0621d6231853fd32ea957bc24346545",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c5612a9d52d733c1440d99a56351bb4036065a3d6bb0bfd509b6573c33fc7ec2",
+      "text": "After breakfast, your private city tour begins.\n\nThe route follows broad avenues to La Boca, then continues to San Telmo, with its historic buildings and cafés.\n\nAt Plaza Dorrego, you can see antique shops and the market.\n\nThe next major stop is Plaza de Mayo and Casa Rosada.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word city-tour paragraph does not include Plaza Dorrego or this specific condensed sequence and breakfast introduction; translate this RU-specific block without replacing it with the longer shared city-tour description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6e2c17522473fe4c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YQY3Iv_TkB5nRtwq1dxB6FlgIpk3UeNf",
+        "documentSha256": "1b9106131b1da5900bfbfa3e1a4e2ca66b0447f7f0d7d66e7f96309da6c4fa3a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "96e597cd4bafcd8ae67aa2ed06fd6d13e4c3b543516b1c4af7049d54242b6717"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ecf6dfe77673f9e4",
+      "field": "media.alt",
+      "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
+      "text": "Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no photograph alt text for this itinerary image; translate the fixed RU alt caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b78f923f9fa5599b",
+      "field": "media.hover",
+      "sourceTextSha256": "561494d23a588b7c63eeb09064d4687dfd58c608d2da6bf66252b6e0aa0d679e",
+      "text": "Buenos Aires: cityscape",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no image hover caption for this cityscape; translate the fixed RU image caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d6cbd5ed5971144d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YQY3Iv_TkB5nRtwq1dxB6FlgIpk3UeNf",
+        "documentSha256": "1b9106131b1da5900bfbfa3e1a4e2ca66b0447f7f0d7d66e7f96309da6c4fa3a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p9",
+            "textSha256": "96e597cd4bafcd8ae67aa2ed06fd6d13e4c3b543516b1c4af7049d54242b6717"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d6cb7c32483e5f6b942f69a10522a8161a2271b06994188a5cb5713950141b2a",
+      "text": "Free day",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YQY3Iv_TkB5nRtwq1dxB6FlgIpk3UeNf",
+        "documentSha256": "1b9106131b1da5900bfbfa3e1a4e2ca66b0447f7f0d7d66e7f96309da6c4fa3a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p24",
+            "textSha256": "c90ed686267d2486e982274dc21b78757d33e0c557b913142c4da38f27b0abcf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the free-day wording from the Word breakfast/free-day paragraph as a short itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "91935245e80229852466ac9b5978cced434ff07e98c4364aaf8b84e0a1baf5a4",
+      "text": "Breakfast in the hotel. Free day for optional tours",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1YQY3Iv_TkB5nRtwq1dxB6FlgIpk3UeNf",
+        "documentSha256": "1b9106131b1da5900bfbfa3e1a4e2ca66b0447f7f0d7d66e7f96309da6c4fa3a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p24",
+            "textSha256": "c90ed686267d2486e982274dc21b78757d33e0c557b913142c4da38f27b0abcf"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7a611df869cde5d6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YQY3Iv_TkB5nRtwq1dxB6FlgIpk3UeNf",
+        "documentSha256": "1b9106131b1da5900bfbfa3e1a4e2ca66b0447f7f0d7d66e7f96309da6c4fa3a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p23",
+            "textSha256": "da89824d8a3b39fb749ae5806c41c0c62b7edb1acdc70939dc54b888e1bb11bc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    }
+  ]
+}

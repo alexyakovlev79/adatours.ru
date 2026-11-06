@@ -1,0 +1,138 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b008",
+  "stableId": "tour_source_ves_mnogolikij_peru_i_senor_sipan",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3af5a53e3381dcaa5721998544462261f08eb3b760469a2a73ba9a5df74e22e3",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:0d806cc9dbbeccd7",
+      "field": "media.alt",
+      "sourceTextSha256": "3245cb72aa43f482964137a9103b25bd6268355d9ac02e8b4d9358600bda2c01",
+      "text": "Cusco, Peru",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "3acda4127c73be29f25cd26c90ff2182a9007cd67106e17a7353bc5029c598be"
+          },
+          {
+            "ref": "word/document.xml:p141",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9660c3b2a1a4004b6e7464f24d7ad9197a20acd6ab3eb64bcfda66a024fc7081",
+      "text": "Puno and Lake Titicaca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p97",
+            "textSha256": "ab8a0fa9f688a22080a41095be4863da5facbb292a17abf899fa461752f9021b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "affaa584bf93c233f0ed2ebd524f59c971c6d8af50007613af5984c211b842fd",
+      "text": "After breakfast, you will travel to Lake Titicaca, at an altitude of almost **4,000 metres**.\n\nThe lake is home to more than **30 floating Uros Islands**, built from reeds.\n\nThe Aymara people living here make their living from fishing, tourism and crafts, weaving baskets, furniture and boats.\n\nDuring the tour, you can take a ride on a traditional reed boat accompanied by a local resident.\n\nThe islanders continue to preserve their own customs and traditions.\n\nAfter the tour, return to Puno. Overnight at a 3* hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word p97 includes Taquile and lunch but lacks the full assigned RU Uros-only account, specific island count, Aymara description and 3-star overnight; translate the assigned RU block without adding the extra Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5995547f03477b79",
+      "field": "itinerary.label",
+      "sourceTextSha256": "93918da548154ed9157a2b3f63138aadbebf123c03985f778e93de1ce9d23f3b",
+      "text": "Puno and Lake Titicaca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p97",
+            "textSha256": "ab8a0fa9f688a22080a41095be4863da5facbb292a17abf899fa461752f9021b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cdfef64a81ace3e7",
+      "field": "media.alt",
+      "sourceTextSha256": "0c4097bd9c871a579023ac7db516de0cedfac77c8dbdbd24697b0775231ff99d",
+      "text": "Women in bright skirts on a floating reed island of the Uros, Lake Titicaca, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no matching photograph alt text describing the women and their clothing on the Uros reed island."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:aac251c1cc44cccb",
+      "field": "media.hover",
+      "sourceTextSha256": "9a4a44cfc40291ccffa56a610b188c9756fa6daa0d24a78dff255589cf700f93",
+      "text": "Uros Islands: residents in colourful clothing among reed buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no corresponding image hover caption describing residents' clothing and reed buildings."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9f9c2ce6bea293e35b859c05195b3ece2f25236b70845a9e43ec73a3bafe5014",
+      "text": "Puno – Colca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p107",
+            "textSha256": "9dca9ad6aa783091d079a17ade5d48217d62f2ce81b6000065d36583acc4bfa7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "369b717f1cfa7c31d51e34a6356eb7ce7dae0a6bdb0589205fb0f14764fbe53a",
+      "text": "After breakfast, you will travel by bus to the Colca Canyon.\n\nThe canyon is about **3,500 metres** deep. Nearby are 2 active volcanoes whose activity is associated with the formation of this landscape.\n\nSeveral stops at viewpoints are planned along the way.\n\nAt **Lake Lagunillas**, you may see pink flamingos.\n\nA tea stop at the **Canchis** restaurant is planned to help with acclimatisation.\n\nAnother viewpoint offers a panorama of 3 volcanoes.\n\nAt the end of the day, arrive in **Chivay** and check in at **Colca Llacta 3***.\n\nYou can visit the hot springs if you wish. Time is set aside for lunch.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p105 condenses this route and omits the assigned canyon depth, two active volcanoes and Canchis tea stop. Translate the complete assigned RU narrative, preserving its hotel and optional hot springs."
+      }
+    }
+  ]
+}

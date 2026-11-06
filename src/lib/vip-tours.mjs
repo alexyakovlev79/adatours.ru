@@ -6,7 +6,10 @@ const dataOf = (value) => value?.data ?? value ?? {};
 const idOf = (value) => dataOf(value).id ?? dataOf(value).slug ?? dataOf(value).title ?? '';
 
 export function hasVipInTitle(value) {
-  return /\bVIP\b/i.test(dataOf(value).title ?? '');
+  const data = dataOf(value);
+  // Translation is presentation only: preserve the canonical RU VIP classification.
+  const canonicalTitle = data._i18n?.sourceName ?? data.title ?? '';
+  return /\bVIP\b/i.test(canonicalTitle);
 }
 
 const priceOf = (value) => {

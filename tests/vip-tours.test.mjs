@@ -11,6 +11,15 @@ import { buildInterestHub, INTERESTS } from '../src/lib/interest-model.mjs';
 import destinationCatalog from '../src/data/catalog/destinations.json' with { type: 'json' };
 import { tourFilterTitle, vipFilterTitle, vipFilterDescription } from '../src/lib/vip-copy.mjs';
 
+test('English title translations preserve the canonical RU VIP selection', () => {
+  const translated = { data: { id: 'vip-colombia', locale: 'ru', title: 'Colombia: coffee and Caribbean',
+    _i18n: { sourceName: 'Колумбия VIP: Богота, кофейный регион, Картахена и остров Бару' } } };
+  const ordinary = { data: { id: 'ordinary', locale: 'ru', title: 'Колумбия: путешествие' } };
+  assert.equal(hasVipInTitle(translated), true);
+  assert.equal(hasVipInTitle(ordinary), false);
+  assert.deepEqual(selectVipTours([translated, ordinary]).entries.map((row) => row.data.id), ['vip-colombia']);
+});
+
 test('all fifteen interests have VIP copy and grammar; landscapes and animals stay separate', () => {
   for (const theme of INTERESTS) {
     assert.ok(vipFilterTitle(undefined, theme).length > 10);

@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej:b009",
+  "stableId": "tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7886f9dfbbf6a08a8eab193eb294cee82bf153785fc68b1d5a6092416183b20c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8e0d04ff662a4bd8fef9459a0241f340cf96107fed4f02d6d86a49d0ecc08a39",
+      "text": "\tBreakfast at the hotel. Visit Rio Sucuri and start snorkeling. Our dive begins in the east of the river. We will walk along the trail in the forest of ciliary rivers; You'll get to know the rich flora and, if you're lucky, you'll be able to see other wildlife such as mutum, oudoo, nail monkey, kutia, and queishada. Walk along village trails over 1.6 miles. The clearest freshwater rivers in the world, rich in aquatic fauna and flora.\n\nAt the spring, put on your mask and let the current carry you downstream. There is little need to swim actively: you can look down at underwater plants, fish and the pale riverbed. The clarity of the water comes from the local limestone and the small amount of clay, allowing you to drift gently with the river, almost without effort.\n\n\tOptional exclusive tour (not included) additional cost of 350 USD/person (total 8 people per day) we head to Abismo Anhumas, located 20 km west of Bonito, which is like a trip to the center of the Earth!. It is a 72-meter abyss that ends in an underground lake that is home to incredible stalactite formations. The first part of the exercise is a descent of 5 meters with a descent through a narrow gap in the ground. Then the abyss widens and a giant crater opens up under your feet: a descent of 72 meters leads to a crystal clear lake where you can snorkel. In addition to the amazing feeling of descending into one of the largest underwater caves in Brazil, it is a very exclusive experience, with only two groups of eight people descending per day. ",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dsin2-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word supplies the Rio Sucuri and optional Anhumas paragraphs but has no matching RU explanation of drifting with the current, the pale riverbed, limestone and low clay content. These assigned RU details are translated as a supplement; the USD 350 optional price is unchanged.",
+        "wordPassages": {
+          "kind": "word_exact",
+          "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+          "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p0050",
+              "textSha256": "8874591805c9b1c445c0236c322701d1b3bf48be933aa86ae46e41e8a8e4cd37"
+            },
+            {
+              "ref": "word/document.xml#p0052",
+              "textSha256": "21ab48f39e9235ccd4b7337c52f99f392d76bb6de19ce90319bf6010e3804432"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da85b211ddea9cdc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "de6738182fbee1100962b5c995a837c3dcc6831cd58b9948be7dcb02e2b71558",
+      "text": "Bonito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0048",
+            "textSha256": "ea7308cedd8375d729bd9a8f9f43b518e00ef4b333fc88ea1f37c28bf713593f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Bonito destination name from the approved Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:97f9dfcfc0308d80",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2cad7dd6639fce62573c77cd10b41613b14fac2dd81ef375303ccc51df91ebf2",
+      "text": "Sucuri River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0050",
+            "textSha256": "8874591805c9b1c445c0236c322701d1b3bf48be933aa86ae46e41e8a8e4cd37"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the river name in the Word Rio Sucuri paragraph as an English destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:18654f371e049b46",
+      "field": "media.alt",
+      "sourceTextSha256": "f5d9c007c9ace47950ddfb353618c7933cc216c189a68b656e812f92db775539",
+      "text": "A vivid blue lake beneath numerous stalactites in a cave in Bonito, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dsin2-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word contains no image-specific alt text for this current RU cave photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8ca65e6e412c4e68",
+      "field": "media.hover",
+      "sourceTextSha256": "86fd1db223dd5adee20f5a41b51cea3a0c6065218808b12dc2e4952b658e93ee",
+      "text": "Bonito: deep blue water beneath the cave ceiling",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dsin2-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word contains no image-specific hover caption for this current RU cave photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5cbdd532aa98b4726e96384257ee42408ffe3ffb86d3262b5735770d579f3d86",
+      "text": "Blue Cave Grotto and Estancia Mimosa",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0055",
+            "textSha256": "f59c62f85ac28a0014ee8f3568bb518b7f1bf0db2ed2b2c6bd1ac3430176683b"
+          },
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "26fb7d6f89d5dd3fa9ccb2907a1543f7b89b958bcc5c4cb3a6fde54f2e1ce97d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the itinerary title from the two visits named in the approved Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "958835e8e3a2dff8cb71a40590e027d5063bcf858ae15345667cc3fa5f30dda5",
+      "text": "\tIn the morning, after breakfast, we will visit the Blue Cave Grotto, which makes a lasting impression due to its geological structure and sky-blue water. This cave has attracted the attention of both tourists and explorers from all over the world.  The sun's rays penetrate through the water, creating a spectacular spectacle. The grotto is one of the largest flooded caves in the world. In 1992, an expedition of Brazilian paleontologists discovered the fossilized remains of mammals buried at the bottom of a cave - a prehistoric giant sloth and a saber-toothed tiger.  \n\nAfter a visit to the Estancia Mimosa farm. In the main house of the ranch, after a cozy reception, it's time to go for an exciting walk through the gallery forest on the Mimoso River. We will reach 8 waterfalls of different sizes and shapes, with stops for swimming under the waterfalls or in the natural pools. Along the trail there are small caves, suspended wooden trails, observatories, a small boat ride and a 6-meter diving board. Swimming behind the waterfalls, you can discover the secrets of beautiful caves with mysterious landscapes. After hiking, a delicious lunch is served in the main building, and then you can relax in the hammocks. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0055",
+            "textSha256": "f59c62f85ac28a0014ee8f3568bb518b7f1bf0db2ed2b2c6bd1ac3430176683b"
+          },
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "26fb7d6f89d5dd3fa9ccb2907a1543f7b89b958bcc5c4cb3a6fde54f2e1ce97d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e76e79a04920fc1e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "de6738182fbee1100962b5c995a837c3dcc6831cd58b9948be7dcb02e2b71558",
+      "text": "Bonito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0054",
+            "textSha256": "38b52c35ddf53d096e38841df992560cdace1dc862fb82752880b8c24af00c92"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Bonito destination from the approved Word day heading."
+      }
+    }
+  ]
+}

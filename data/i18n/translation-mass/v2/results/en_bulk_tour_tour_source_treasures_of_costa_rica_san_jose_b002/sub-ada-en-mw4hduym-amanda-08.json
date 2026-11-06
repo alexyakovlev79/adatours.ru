@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_source_treasures_of_costa_rica_san_jose:b002",
+  "stableId": "tour_source_treasures_of_costa_rica_san_jose",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c614352c43b40734ff3fde1ed201805bf1bb07b054277718e76e988a107ddc3a",
+  "blocks": [
+    {
+      "blockId": "tour:included:45f29ca8e175841a",
+      "field": "included",
+      "sourceTextSha256": "132311d7fd49ba899ec62902ff7f5a7ac69e424042bf0f8be2005b0461c26aaa",
+      "text": "Lodging",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p138",
+            "textSha256": "caf8a75305d435b7d1ab5a5fa9a584cc1c1892b25a0d890297949e339159ddd9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separates lodging from the combined Word lodging-and-local-taxes inclusion because the existing schema has separate items."
+      }
+    },
+    {
+      "blockId": "tour:included:2a8a62a996956d23",
+      "field": "included",
+      "sourceTextSha256": "9a3868584eccf7c1da6d0f4a989bbec30cdcb7f6f0d20425a717d9a207ed0875",
+      "text": "Flights San José – Palmar Sur – San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "e87f195290642ee9a1251af5c0d51ae76086e0e353a70f54f2e78dae06217fca"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word bullet marker because the included/excluded list supplies its own formatting."
+      }
+    },
+    {
+      "blockId": "tour:included:5cb71b494ee62e05",
+      "field": "included",
+      "sourceTextSha256": "e510885c9b0231d4566dc7801f0afb8978778e7f3d3a4448e25d0d3ca966794d",
+      "text": "Guided tours as per the itinerary, with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p136",
+            "textSha256": "310f03f10ae7b97e7bbae31b280fd842ff5e5c640ddba463c6cec2e15960bf2e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word bullet marker because the included/excluded list supplies its own formatting."
+      }
+    },
+    {
+      "blockId": "tour:included:afe5d53512439986",
+      "field": "included",
+      "sourceTextSha256": "2a41ca8b45cae2b19d1f3f53b24d095bcdb61358590fda1a57c00d855e4d9b98",
+      "text": "Local taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p138",
+            "textSha256": "caf8a75305d435b7d1ab5a5fa9a584cc1c1892b25a0d890297949e339159ddd9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separates local taxes from the combined Word lodging-and-local-taxes inclusion to match the existing separate list item."
+      }
+    },
+    {
+      "blockId": "tour:included:53ba067e87482570",
+      "field": "included",
+      "sourceTextSha256": "3711417a054ed6cd3b5f4025c17b1e7dff1312ddb7b446aa7044f6a4d8826abb",
+      "text": "Meals according to the itinerary (B = breakfast, L = lunch, D = dinner)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p139",
+            "textSha256": "27e10b772903a6654df5ac89fb3903c6d8a29bc7a819519f1c1b964219ad72f8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word bullet marker because the included/excluded list supplies its own formatting."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:489966e4b689c256",
+      "field": "notIncluded",
+      "sourceTextSha256": "514cce5a11cb57748bf6b35ab361bcbbc1b3b6935eb70bc3e7ce6debe7e6bad4",
+      "text": "Optional activities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p142",
+            "textSha256": "cb28ad2d762ce4aa4544d038a48c18fdc4f1cbedcd051ce2a448104b167faab7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word bullet marker because the included/excluded list supplies its own formatting."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1d9c1ddf5a411227",
+      "field": "notIncluded",
+      "sourceTextSha256": "f55bc46501f3b03d07961bc98a5ba157d7611f274138f18820725a03335dfa04",
+      "text": "Arrival and departure taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p143",
+            "textSha256": "cfe81af04d94dc7d9642a10090535a2b497a77dd4829698fed5ea7b5c93d989b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word bullet marker because the included/excluded list supplies its own formatting."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Hotel extras (laundry, phone calls, room service, etc.)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p145",
+            "textSha256": "19b566e92891646a1bdea5526b62e4e5930d97a81741011c9977a1d63a52568d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the Word bullet marker because the included/excluded list supplies its own formatting."
+      }
+    }
+  ]
+}

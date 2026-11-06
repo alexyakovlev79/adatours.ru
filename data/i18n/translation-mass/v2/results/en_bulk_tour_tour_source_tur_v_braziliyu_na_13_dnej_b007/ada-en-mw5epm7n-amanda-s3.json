@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_13_dnej:b007",
+  "stableId": "tour_source_tur_v_braziliyu_na_13_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "70c5bddc24deed37354e451d1829da36f85c72f3dc213ca08eb824c630b4f09d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1ae1021f6c286be26ac5e182b971f47e856498cc1eb69b97a03b6355aa0d377a",
+      "text": "Corcovado and Christ the Redeemer",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p78",
+            "textSha256": "31820b4e4765a4de486362eb3c897c0278af8ca39707934a6e2b2b90fa37e227"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Form a short itinerary heading from the Corcovado visit and Christ the Redeemer statue in the Word day-three paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "611b596695517c5be5ec5146a2d44348b86f8c2b131eb975e7dafaadf1d7750c",
+      "text": "Day 3 · After breakfast, a tour through the city to the station, where an eco-friendly train climbs through the Tijuca Forest, home to monkeys, exotic animals and birds, to the top of Corcovado. At 710 metres above sea level stands the symbol of Rio, the 38-metre statue of Christ the Redeemer, built in 1931, with a breathtaking panorama of the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, Maracanã Stadium and Sugar Loaf.\n\n**Helicopter flight over Rio de Janeiro**\n\nOptional.\n\nFlights lasting from 6 to 13 minutes are available.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Corcovado paragraph from Word 2027 is retained verbatim; the optional 6–13-minute helicopter flight is absent from Word and is translated from the fixed RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c75fd89c24a49c49",
+      "field": "media.alt",
+      "sourceTextSha256": "b3b23c7d1f2073d63b87818c25a9438d91aeea6c0b67d64686817b28f1dc178b",
+      "text": "Christ the Redeemer statue in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This photograph-specific alt caption is absent from the selected Word; translate the fixed RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ff4d579cdd555372cb86d450d9c7c35acebfa64d88cb59ac22fa437dddbd4904",
+      "text": "Rio de Janeiro – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the same two route endpoints as the corresponding Word section heading, with ordinary title capitalisation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e5893879dd9ec5a7c7775b4e352d2919e4338323c9036c19cf8b8a7de0069bb5",
+      "text": "Day 4 · After breakfast, transfer to Rio de Janeiro airport for your flight to Foz do Iguaçu; your driver meets you on arrival for the transfer to your hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "d3bc1101dbff45978321b5c98eba49b840371735d5f8d0cf9997b360c79603ed"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    }
+  ]
+}

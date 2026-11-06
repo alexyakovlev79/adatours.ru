@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_romanticheskaya_braziliya:b005",
+  "stableId": "tour_source_romanticheskaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "46e07f1d604b0b5aa66232d0b92fc5e61f0c4dd3396ab0e7b314d1751d55a18d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "cd935bf4ed4437fcc7a0f2b0abc3a7165f51f609215b5d37aaec6ba5480d912c",
+      "text": "Rio de Janeiro – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tKXAIx2v18fZXV2VjC5Dpoqq_62rxh53",
+        "documentSha256": "bb29a3073e0501e40a001cf185e4bc8728591e56b29f83acceddc52f7e544d78",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p85",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Converts the Word route heading from display capitals to a standard itinerary route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4eb048bc30011c9d7afb802190ec9e9be341d14b75a065b8d68d39b0ebe95f50",
+      "text": "After breakfast, transfer to the airport for your flight to Foz do Iguaçu; arrival and check-in at the hotel, then free time. At the meeting point of Brazil, Paraguay and Argentina, the falls take their name from the Guarani word for “big water”: formed by the Iguazu River, they consist of some 275 separate falls, surrounded by the rainforest of Iguazu National Park, home to about 2,000 plant species and 400 bird species, including parrots and toucans. The highest, the Devil’s Throat, plunges some 80 metres.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tKXAIx2v18fZXV2VjC5Dpoqq_62rxh53",
+        "documentSha256": "bb29a3073e0501e40a001cf185e4bc8728591e56b29f83acceddc52f7e544d78",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p89",
+            "textSha256": "779bccdffec968b2832a5fc764d9d3f37e3fc1920811062dc1f39d3a7bddd68d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removes only the separately rendered day marker and preserves the confirmed Word arrival-day text."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:74dbac8fcac564bb",
+      "field": "media.alt",
+      "sourceTextSha256": "7a5051979a13716c111454fdbb7e60065d869569b0ac89173c8181082f119ffc",
+      "text": "A rocky shore and sailboats in Guanabara Bay, Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching image caption describing this rocky shore and sailboats in Guanabara Bay."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:9313f115f48c797e",
+      "field": "media.hover",
+      "sourceTextSha256": "fd4f578a284e8685c8aaafb548bb563c91fe437c8bef93f37eeee8be91f73f15",
+      "text": "Guanabara Bay in Rio de Janeiro: calm water, sailboats and rocks along the shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No hover caption for this specific Guanabara Bay image is present in the Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a9a96f7b386b206c70e689b2cc0e24afff72d6458a8b7331b3f589ff1fd08563",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1tKXAIx2v18fZXV2VjC5Dpoqq_62rxh53",
+        "documentSha256": "bb29a3073e0501e40a001cf185e4bc8728591e56b29f83acceddc52f7e544d78",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p132",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0bdb580b5ce5058d1ed8aee716deaddd7c3c5ad274fc8d31c9d02baadb8b5217",
+      "text": "After breakfast, an unforgettable day on the Brazilian side of the falls: hundreds of cascades, ending at a platform where the mightiest of them, the Devil’s Throat, thunders into the Iguazu River, leaving you wet with spray and high with emotion. Then the Macuco Safari: a jeep ride through the rainforest, followed by a speedboat ride at high speed right up to the falling water. Adrenaline guaranteed! After the water fun, visit the Bird Park, walking inside huge aviaries where toucans, macaws and many other colourful birds fly freely around you. A well-deserved rest at your hotel after this eventful day.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tKXAIx2v18fZXV2VjC5Dpoqq_62rxh53",
+        "documentSha256": "bb29a3073e0501e40a001cf185e4bc8728591e56b29f83acceddc52f7e544d78",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "dcf3024383b8aedc7f25422fc1cec94dafcfbdb403c2a8fe31d90fc1e8be35ec"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removes the redundant day marker while preserving the Word programme including Macuco Safari and Bird Park."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:80ba047123020f04",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguazu Falls and a rainbow above the river, surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes the falls but has no corresponding image alt caption for this rainbow photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:58ce7d859be7d262",
+      "field": "media.hover",
+      "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+      "text": "Iguazu in Brazil: cascading waterfalls, a rainbow and green riverbanks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching hover caption describing this photograph of the falls, rainbow and green riverbanks."
+      }
+    }
+  ]
+}

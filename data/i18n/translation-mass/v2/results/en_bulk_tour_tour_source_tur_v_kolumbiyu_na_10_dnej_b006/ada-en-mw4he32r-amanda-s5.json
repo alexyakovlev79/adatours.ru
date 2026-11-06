@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_kolumbiyu_na_10_dnej:b006",
+  "stableId": "tour_source_tur_v_kolumbiyu_na_10_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "12e7f5f8c7edcf4ff5d3e98dd852a5709b63efa886fe4b8da680735e7deb9bc5",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:10d22f0b6834196d",
+      "field": "media.hover",
+      "sourceTextSha256": "8b942744d75439dd26b74cc2cfde754dbb3c63b880ccf1512b2fa6f27dd6a009",
+      "text": "Colombia: horse riding across grassy hillsides",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions horse riding but has no corresponding image hover caption describing grassy hillsides; translate the pinned RU metadata."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ad06e39d61e4305a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2ddfb00db2ab9c93e5c2d1e4c29d29ef3e1fecaf08864ae854b32d00f3997249",
+      "text": "Salento",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[46]",
+            "textSha256": "19a3dadaabfcc5dc9d8eae0549cb9b03c4dca498304ba4699bdf3e7ebf5ec13f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the place name Salento from the verified Word heading for the matching place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:04f56067fefdae8f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "abba556698855679d7057615e2d3513bff0d3e21662f1fa81e8991a1f73462b0",
+      "text": "End of day 4",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no standalone closing label for day 4; translate the pinned RU structural label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:4190db5625377fc6",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5eed0f38cb8f6359fa797260e01fca2cca2450b12841fa788c1038f000430071",
+      "text": "Transfer to your hotel in Pereira",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[54]",
+            "textSha256": "fe9b2f7d71fba4072a3bf444aca9b9bbb85767ddd354c792818c71b86bf5c5fc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed hotel transfer in the Pereira itinerary as a short heading for the corresponding programme segment."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:074838b4ee14c008",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f371d309d37b0676d91163ba1b499d8bc4032cbe8b25df71422193911c8dc2e7",
+      "text": "After the programme, transfer to **Visus Hotel Boutique & Spa** and check in.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word paragraph 54 names the transfer to Visus Hotel Boutique & Spa but does not contain the full RU sentence including accommodation after the programme. Translate the missing sentence structure and check-in detail from the pinned RU."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a8a016e5a0c1cf18",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+      "text": "Pereira",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[42]",
+            "textSha256": "afa8db6e9e4caa1791d72748f53b23af97836d0844c0d086cb58a2813b57f318"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Pereira from the verified day 4 route heading as the corresponding place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:e2cfacf7faf7aa8b",
+      "field": "media.alt",
+      "sourceTextSha256": "5bf3d99f1596e916c5de2d5bd74be8ecccf7c8722cb34f00c1f79f1cbce26f63",
+      "text": "A large cathedral with Gothic windows among the buildings of Pereira, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No matching architectural image alt text is present in the verified Word; translate the pinned RU metadata."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:14606f9aa1a3d8e7",
+      "field": "media.hover",
+      "sourceTextSha256": "bcb9122191d1f40abf71e0e5ac3393d656ba5163c53801971a3a994202f93306",
+      "text": "Pereira: a stone cathedral with tall pointed windows",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No matching architectural image hover caption is present in the verified Word; translate the pinned RU metadata."
+      }
+    }
+  ]
+}

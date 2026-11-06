@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_udivitelnaya_salta:b003",
+  "stableId": "tour_source_udivitelnaya_salta",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9bd4e658d667a3a1133bb726460d57850b82aa72b0a5c789f7ac6624ca4cb2a9",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:f33169ed00481ef7",
+      "field": "notIncluded",
+      "sourceTextSha256": "e924e89bb68f57d6240bb579908e80ea7e2e006d184c0b9f4343977ff62b9a77",
+      "text": "Laundry services",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GBTFB6lGh67Jqvgp0pTe33IdOawkTMWE",
+        "documentSha256": "612ed85d44dc08b9d1f0acc206561daf6e6891701e36b085e009c8516e057f8f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p153",
+            "textSha256": "cd2e55cbf365a57ac989f671c0690784119df6adc8af440dc544b3a7230ecbb8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the cited Word service or place wording in this field, removing only list formatting."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:b0d5ca7ea8df7929",
+      "field": "notIncluded",
+      "sourceTextSha256": "abe77836dd16e446643abe3bea96e1bb21ed51339d4b7014af790a4174fecdd4",
+      "text": "Lunch on the main square in Cafayate.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ho6dg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word excludes lunch at a local restaurant but does not specify the main square; translate the assigned RU exclusion with its existing location."
+      }
+    },
+    {
+      "blockId": "tour:note:e3af986a1e8dc2ee",
+      "field": "note",
+      "sourceTextSha256": "9fe027d7f888a6634ee32239777f6990771be95c59d7bca17ffa495c3679e396",
+      "text": "If necessary, Ada Tours may replace hotels with others of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ho6dg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no same-category hotel-substitution clause; translate this assigned RU note preserving its condition and scope."
+      }
+    },
+    {
+      "blockId": "tour:note:f0ee8356c726de03",
+      "field": "note",
+      "sourceTextSha256": "cf1826c3b08df8cb85635d8369fe2482d418156c449e8e48338dc596aca322f9",
+      "text": "The order of excursions may be changed, while the full programme is maintained.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GBTFB6lGh67Jqvgp0pTe33IdOawkTMWE",
+        "documentSha256": "612ed85d44dc08b9d1f0acc206561daf6e6891701e36b085e009c8516e057f8f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p136",
+            "textSha256": "d0213115835f0ff0fa56b981f253a6c39e80c0133fb530d5728def374a0cf39d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the cited Word service or place wording in this field, removing only list formatting."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "We are not responsible for hotel breakfasts missed because of early-morning flights or excursions.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GBTFB6lGh67Jqvgp0pTe33IdOawkTMWE",
+        "documentSha256": "612ed85d44dc08b9d1f0acc206561daf6e6891701e36b085e009c8516e057f8f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p138",
+            "textSha256": "ab4b459af8c6589d11164cbb22935b67de667ef22ea8fd9b6f3b1363e553a891"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the cited Word service or place wording in this field, removing only list formatting."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c0b1e59288a3580fd00f9df5971c1fdaa3e025d58072d90f96147f27abb7148c",
+      "text": "Salta – Cafayate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GBTFB6lGh67Jqvgp0pTe33IdOawkTMWE",
+        "documentSha256": "612ed85d44dc08b9d1f0acc206561daf6e6891701e36b085e009c8516e057f8f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p62",
+            "textSha256": "c42a87971ac5b65e182bccb53bcf0790d39d48fa3ff60a0adf9a36d140da327d"
+          },
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "f6a6d4b3485755430a2920e55c20d6fff2ddc6767ce949a7ef2ea01613d0d1ea"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the cited Word service or place wording in this field, removing only list formatting."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f0d8673ecbb15c35e2b42d2b372b676a1a642af85a73b4f146340db41e57dbff",
+      "text": "Day 1 · Arrival at Salta International Airport, where your private guide welcomes you for the transfer to Cafayate (approx. 3 hours). Begin your exploration of Cafayate, one of Argentina’s renowned wine-producing towns, with a visit to a local winery to discover the main stages of wine production, from vineyard cultivation and harvesting to processing and the making of different varieties.\n\nEnjoy free time to explore the town and its surrounding vineyards, with lunch at a local restaurant (not included), followed by a visit to the Wine Museum. Overnight in Cafayate.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1GBTFB6lGh67Jqvgp0pTe33IdOawkTMWE",
+        "documentSha256": "612ed85d44dc08b9d1f0acc206561daf6e6891701e36b085e009c8516e057f8f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "f6a6d4b3485755430a2920e55c20d6fff2ddc6767ce949a7ef2ea01613d0d1ea"
+          },
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "9c57fad226aaf97b497a32bf2a0991eb8b773c49486f2416e6df28f8561dda7b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6b8ab249ab9c90c3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6269b6b6909c4fe6a61adefe06d132c769df935fa9a35fd438c04b03ed604c74",
+      "text": "Salta",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1GBTFB6lGh67Jqvgp0pTe33IdOawkTMWE",
+        "documentSha256": "612ed85d44dc08b9d1f0acc206561daf6e6891701e36b085e009c8516e057f8f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p96",
+            "textSha256": "fb397a42956ccd3dcdc21d0d7b1f78a394519175a30e8d2f6c03e57c39e49b1b"
+          }
+        ]
+      }
+    }
+  ]
+}

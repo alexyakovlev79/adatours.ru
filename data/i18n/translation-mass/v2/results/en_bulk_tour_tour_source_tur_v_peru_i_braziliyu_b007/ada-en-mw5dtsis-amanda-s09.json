@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b007",
+  "stableId": "tour_source_tur_v_peru_i_braziliyu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "96de3f603d6c9545c0bc60a1892854831852428fed792d426a883662c747031a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5a5f331e5c92c82fc8bf86a9dc7a8d58e008928b96acd49c39627aa2a64ac674",
+      "text": "Cusco – Puno",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[81] (zero-based)",
+            "textSha256": "a625b4376e22e696e0538de0f5affbf662c9cb539796b15ea06b6dca9332a2ca"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route heading uses the Cusco–Puno tourist-bus route explicitly named in the approved services for this day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "949dbb41b26f244a57bdb4260d87210740f154cea125680b03462ef82e378d3b",
+      "text": "Breakfast and tourist bus to Puno (shared, with an English-speaking guide) across the Peruvian highlands: the small but beautiful church of Andahuaylillas; Raqchi, the temple of the god Wiracocha, with its high walls and passageways; a buffet lunch; the La Raya pass, the natural border between Cusco and Puno; and the museum of Pucará, famous for its clay bull figures. Arrival in Puno (about 3,830 m) in the evening, after a journey of about 10 hours, and transfer to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[79] (zero-based)",
+            "textSha256": "c75fc857700b0f6f19e777410f6894149f469561684b8eacb5b64d144db834ba"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Day 5 list prefix; the approved bus itinerary, stops, meal, duration and hotel transfer are unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ebe1b3dd813e8a53",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[126] (zero-based)",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:150af842b7ae3899",
+      "field": "itinerary.label",
+      "sourceTextSha256": "93918da548154ed9157a2b3f63138aadbebf123c03985f778e93de1ce9d23f3b",
+      "text": "Puno and Lake Titicaca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[75] (zero-based)",
+            "textSha256": "15854f23b5f8be55df1cee8825c98bca4c29528fc8e44784846ae7f6ef829bf9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The combined place label uses the two locations explicitly named in the approved Cusco–Puno–Lake Titicaca section heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e3087de26ad64f05",
+      "field": "itinerary.label",
+      "sourceTextSha256": "924310c5f84949abf949d3bdd269c1d30dd020b628405bc541fe3d3b59336cf6",
+      "text": "Raqchi",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[79] (zero-based)",
+            "textSha256": "c75fc857700b0f6f19e777410f6894149f469561684b8eacb5b64d144db834ba"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "This label reproduces the exact archaeological-site name in the approved Day 5 bus itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e8734889a4c5af60",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f3f8271b7057814652b7c95024db8d45bfee06711e081d0f1b250c713efddbae",
+      "text": "Andahuaylillas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[79] (zero-based)",
+            "textSha256": "c75fc857700b0f6f19e777410f6894149f469561684b8eacb5b64d144db834ba"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "This label reproduces the exact town name in the approved Day 5 bus itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c4a2165f4c42262d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ef98492a6a232ab7eb3ef783335656dbd470f338286a89681e122f66c8dc8063",
+      "text": "La Raya Pass",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[79] (zero-based)",
+            "textSha256": "c75fc857700b0f6f19e777410f6894149f469561684b8eacb5b64d144db834ba"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The label names the pass explicitly identified as La Raya pass in the approved Day 5 bus itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5251034c5d99248f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0bd59c3cfc743507203ec75d5a619eab6d2ba2c72eb60c4873aebeff0efdd3a5",
+      "text": "Sicuani",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dtsis-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word's Day 5 bus itinerary mentions a buffet lunch without naming Sicuani; this town label is present in the assigned RU source only."
+      }
+    }
+  ]
+}

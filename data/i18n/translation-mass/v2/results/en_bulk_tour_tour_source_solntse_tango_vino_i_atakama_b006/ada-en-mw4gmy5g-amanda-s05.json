@@ -1,0 +1,179 @@
+{
+  "jobId": "en:bulk:tour:tour_source_solntse_tango_vino_i_atakama:b006",
+  "stableId": "tour_source_solntse_tango_vino_i_atakama",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8e00146ab1985301b7ab69bf7456724093e8adb72cfdac6f0efdbc9b24782bd4",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:af5b5ec6b27fbc68",
+      "field": "media.hover",
+      "sourceTextSha256": "011331ca0981e33e05baa7fd78b64afec278c2561c5d408e38870c1628b00c25",
+      "text": "Macaws side by side on a branch, with yellow breasts and blue wings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gmy5g-amanda",
+        "model": "gpt-6",
+        "wordAbsenceReason": "The full Word includes a general Bird Park description but no photograph-specific macaw colours or pose."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "337b4fbdb94ee769b975fb8b7311e0d8d4806fd28f146cfd91ac2aa0b465272c",
+      "text": "Brazilian side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0073",
+            "textSha256": "d1941b71a82f3d29a2c92784e711fc0a38f8684002436534aa4599a86412bcbf"
+          },
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "fc5098a92594696ba53bde341a0c6a287abc1c239b7882dec3dc6482e6e35113"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding Word passage as a concise label for this itinerary field without changing its facts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "cd8ca6879af0c5f227e807f5d807b2ee19dd4f44c0952bbf4d9683abb10deeea",
+      "text": "Day 5 · Breakfast. Excursion to the Brazilian side of the falls, along the canyon of the Iguaçu River, within a national park of unique flora and fauna. The 275 waterfalls, each with its own name, merge and crash into the Devil’s Throat gorge in a halo of rainbows; on the way to this most powerful of the falls, you pass many smaller cascades.\n\n**Macuco Safari at Iguazu Falls in Brazil**\n\nOptional Macuco Safari: USD 135 per person.\n\n**Bird Park in Iguazu**\n\nOptional Bird Park visit: USD 60 per person.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "fc5098a92594696ba53bde341a0c6a287abc1c239b7882dec3dc6482e6e35113"
+          },
+          {
+            "ref": "word/document.xml#p0223",
+            "textSha256": "5848ad8476b1d4203a6aad4912f9a74d17909e79f328d88185ebcb8b0c47d2ee"
+          },
+          {
+            "ref": "word/document.xml#p0224",
+            "textSha256": "d02093a6fba894ebed49ec964f9277dcbd0a57b46d6b160d64532f2648f42e07"
+          },
+          {
+            "ref": "word/document.xml#p0225",
+            "textSha256": "c2f5090555773bfc569456fab2e5ff140c8db827d67877ad721c3cfba5bbaa5d"
+          },
+          {
+            "ref": "word/document.xml#p0228",
+            "textSha256": "88c842f0ae9ba9e38bbfb19849822d9a14f1b162e5ccb0827494bd4b66a02fce"
+          },
+          {
+            "ref": "word/document.xml#p0229",
+            "textSha256": "d02093a6fba894ebed49ec964f9277dcbd0a57b46d6b160d64532f2648f42e07"
+          },
+          {
+            "ref": "word/document.xml#p0230",
+            "textSha256": "211e7f63bb26bb1de71c2f9e9c196e9e46fcd9edbd01e29f48741f5c0ea788b2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Keep the Word's day-five description verbatim and combine its optional excursion labels with their exact per-person prices in the assigned day block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0072",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding Word passage as a concise label for this itinerary field without changing its facts."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8f6b598b88a23d73",
+      "field": "media.alt",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0072",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding Word passage as a concise label for this itinerary field without changing its facts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6de05f681f31b6aa7accc4eb9a67c6de61026c8227ec91bf8b6cbd474d340b76",
+      "text": "Argentine side of Iguazu – Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "c8700e7968bd4dfd2efa0f0db2774ff4278934df3ff0971da0a142e306e9b15d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding Word passage as a concise label for this itinerary field without changing its facts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a5cead3bd84d7a88b05ecf648794dc1d7374bb5d55693a2d584171bb997d1d86",
+      "text": "Day 6 · Breakfast. Excursion to the Argentine side of the falls, across the Tancredo Neves Bridge over the Iguazu River. In a 55,500-hectare national park, walkways take you close to and even directly beneath the falls, to see the birth of the waterfalls and the famous Devil’s Throat, the largest of all, and to admire them from viewing platforms high above. Then transfer to the airport for your flight to Buenos Aires, where a driver meets you for the transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "c8700e7968bd4dfd2efa0f0db2774ff4278934df3ff0971da0a142e306e9b15d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:815d9c8f5f606210",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_ekvador_galapagosskie_ostrova:b001",
+  "stableId": "tour_source_ves_ekvador_galapagosskie_ostrova",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4c3e02c1d931a62052645cc954979916248d43be563f2e6b7b8283cf06666986",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "24be73c3a1e9eeed5dd1eb03366b08b0601217537bd3a27a21c40d8ac253c6cb",
+      "text": "The Amazon & the Galápagos",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+        "documentSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[2] (zero-based)",
+            "textSha256": "c02cc22cc7c608adb7b70f503e2838d552793e8e3010ca0d49805e8ce9bac47d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "41a5caeba159d87ff110d29ec78e72cbafa323e44f168c164a472df3c0106cfa",
+      "text": "Discover Ecuador’s most iconic destinations, including the magnificent Amazon Basin, one of the most biodiverse regions on the planet: colonial Quito and the Equator, Quilotoa and the waterfalls of Baños, two nights at a lodge on the Napo River, the hot springs of Papallacta and an unforgettable journey through the Galápagos Islands.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+        "documentSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[17] (zero-based)",
+            "textSha256": "051744cdca7944d04d6b0c0ae31d4dba966750c6629bd19dffe6ab94b1669984"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "64a649c02ba0e53e286155dbe2f7141743178a4894c41a62dd534b0bcdefe06c",
+      "text": "2027 programme rate: USD 4,260 per person sharing a double room. International and domestic flights, insurance and admission to Galápagos National Park are charged separately.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word has no equivalent of the current RU USD 4,260 double-room price note (its table lists different rates). Translate the assigned current RU commercial note without altering prices; rate reconciliation belongs to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1cefc34afe77c7e1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b529438b4debe78fbe8ed3a79523365148cbfd4e459d71667e1e60d52971a9ba",
+      "text": "Quito — 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+        "documentSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[117] (zero-based)",
+            "textSha256": "ef859221bb583220b58d1ca4d66f1ec513fa78a4c8713acf097cbafb1b481e62"
+          },
+          {
+            "ref": "word/document.xml:p[118] (zero-based)",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route stop and night count from the Quito row of the Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:effc8fb722d70c35",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a826787aca2df21e48fc92bc5c76c027026e9e87a0e634da7ac839872a0057b5",
+      "text": "Baños — 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+        "documentSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[122] (zero-based)",
+            "textSha256": "275315b2c25b578494309994038177a26ccb1aeab647990c5ba5b4514e7ff965"
+          },
+          {
+            "ref": "word/document.xml:p[123] (zero-based)",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route stop and night count from the Baños row of the Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ea4659b063b0927d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7dc04f27efb7e938bbb13df836a3be3a6019f05a21cb2caa08917f299b27a300",
+      "text": "Casa del Suizo, Amazon — 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+        "documentSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[127] (zero-based)",
+            "textSha256": "05c69dd53d6564210e11c68565add58fa95dd7059379e1464b713e1e8b12a4ce"
+          },
+          {
+            "ref": "word/document.xml:p[128] (zero-based)",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          },
+          {
+            "ref": "word/document.xml:p[129] (zero-based)",
+            "textSha256": "3d73020d1c9ca132efc510e4c5069507b989d9e162dac1652fb91ac529da18ce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the lodge, Amazon location and two-night stay from the Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7d7e56cbdc6b411b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "deedae0b49234282e77900879974d2826f41bd98896edb9cbcafde666e29bbf3",
+      "text": "Papallacta — 1 night",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+        "documentSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[132] (zero-based)",
+            "textSha256": "96e7ec1ebb5a2159b8ceb6d3a0c2a2d6d4daa9c362d532af8014936998011535"
+          },
+          {
+            "ref": "word/document.xml:p[133] (zero-based)",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the place label and one-night stay from the Papallacta row of the Word accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0e69e986b0035898",
+      "field": "itinerary.label",
+      "sourceTextSha256": "befa04c20997737c7a6005385a12013c31a4d71695035f40e43766b9acd91310",
+      "text": "Santa Cruz, Galápagos — 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+        "documentSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[137] (zero-based)",
+            "textSha256": "21b0a5ceb54ed5d588e57bf712e9c41ed1fd6f9270a14121af86f3f442c78055"
+          },
+          {
+            "ref": "word/document.xml:p[138] (zero-based)",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route stop and three-night stay from the Santa Cruz row of the Word accommodation table."
+      }
+    }
+  ]
+}

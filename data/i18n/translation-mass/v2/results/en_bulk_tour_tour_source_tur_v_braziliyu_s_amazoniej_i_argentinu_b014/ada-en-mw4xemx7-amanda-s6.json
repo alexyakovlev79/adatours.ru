@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b014",
+  "stableId": "tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c00cc751049fe8ec0caea4110248e450a8612196511691220507719a34b48b82",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:9af609afadc19399",
+      "field": "media.alt",
+      "sourceTextSha256": "30366dcbdd3caaf93bb3947538aa36a3e9cb31debcd43ff24df7fe5261246c56",
+      "text": "The Buenos Aires Obelisk and Argentina’s flag against a backdrop of city buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word mentions the Obelisk in p109 but has no corresponding photograph caption with the Argentine flag and surrounding buildings."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6be696e3714c6026",
+      "field": "media.hover",
+      "sourceTextSha256": "d0fef4931f82186c58e64d76b666f5a85f8035f2a17ea0b30a9a71891e2311f5",
+      "text": "Buenos Aires: the white Obelisk beside a flying Argentine flag",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word has no matching image hover caption about the white Obelisk and flying Argentine flag."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "944f2ec4f971f103a52d1add30f8f171b18bb750e07e79e0fe9cccdcb5d976fb",
+      "text": "Buenos Aires: flight home",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p112",
+            "textSha256": "b7a7a6684af9a74bcf6a330189d6f90ea378ae6f61b033606c8f4a889952cda2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b6e0b1f5bf0a0347ef85668f65d5dd4850d21822651fd83b516b83ea1c8ac975",
+      "text": "After breakfast, transfer to Buenos Aires airport for your international flight home. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p112",
+            "textSha256": "b7a7a6684af9a74bcf6a330189d6f90ea378ae6f61b033606c8f4a889952cda2"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word Day 14 prefix from the verified departure paragraph; the assigned RU itinerary retains its own day ordering."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:748238cba351036c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:22b3bd3bfcfecf9e",
+      "field": "media.alt",
+      "sourceTextSha256": "5c51e8aff29673aeb7bb205e39f41686393bb37dc65a893a3fe981fc3537fe98",
+      "text": "Argentina’s Congress building behind a fountain and monument in Buenos Aires",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p109 names the National Congress but does not contain the photograph's fountain-and-monument alt description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:78643d43ab815eba",
+      "field": "media.hover",
+      "sourceTextSha256": "6f9bcdf129069c26e0063e025be7a427d9f912ce5ecc5dc3377e85d055ca70c5",
+      "text": "Buenos Aires in the evening: the illuminated Congress building and a fountain in the square",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word does not contain this evening photograph's illuminated Congress and fountain hover caption."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "48bf4fc16ac20d58be184bf35b539a5dc83b2885a6407c7f3a2afc984e65a2b6",
+      "text": "A quiet forest river with floating plants and reflections of sunset light, Amazonia, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word describes the Amazon itinerary but contains no equivalent hero image alt description of a forest river at sunset."
+      }
+    }
+  ]
+}

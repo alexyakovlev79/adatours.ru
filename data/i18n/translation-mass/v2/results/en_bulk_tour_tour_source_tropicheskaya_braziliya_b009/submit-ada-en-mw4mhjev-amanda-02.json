@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tropicheskaya_braziliya:b009",
+  "stableId": "tour_source_tropicheskaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f6a80324cfb090b8f1b05035df5944f4afb1f52497ac5d64e06b89c47ae4e82f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1a4f51772dbb538827a72c6315a8c768e8bc5bbc08786fbf4d3ad33a9f79ebf0",
+      "text": "Búzios – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "ed1a888697e7af704d19cb3b37c0716ba0f6b1518154d81b80d1f22171eae340"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Used the verified Word place names for the assigned route or place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7bbc85381789930f9d392e01316981858c47a00aa04f1d765a57a99703982cf6",
+      "text": "Breakfast at the hotel and transfer to Rio de Janeiro airport for your international flight. End of the programme.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p102",
+            "textSha256": "a4c31997872b59c591a2b9a6dbc30b4cd9b31d78d00e645bc1512768fdcec2a4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removed the Day 12 marker for the assigned itinerary text field; retained the complete Word service wording."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71ebc4b75bbcacf1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "ed1a888697e7af704d19cb3b37c0716ba0f6b1518154d81b80d1f22171eae340"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the verified Word place names for the assigned route or place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1a5b1479106435fc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FeAD_8WczmKKQ4jxgvr9hiaHab59FR57",
+        "documentSha256": "ba35efbf7596cf7ff7022733ac724ec3cacc4ae31f23f22df32a1f85167e338b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "ed1a888697e7af704d19cb3b37c0716ba0f6b1518154d81b80d1f22171eae340"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the verified Word place names for the assigned route or place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:9613414aa0909d10",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "A shady street with trees and café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhjev-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word 2027 programme contains no corresponding image-specific alt or hover caption; translated from the pinned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:390af136ed65d277",
+      "field": "media.hover",
+      "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+      "text": "Rio de Janeiro: a pavement café beneath the trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhjev-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word 2027 programme contains no corresponding image-specific alt or hover caption; translated from the pinned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "4a89cff0ea7b7fbbbee9e2bf84705fed5be348f91bdc20c21819be010b60fe7f",
+      "text": "Blue sea beside a rocky coast with dense greenery and a mountain peak, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhjev-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word 2027 programme contains no corresponding image-specific alt or hover caption; translated from the pinned RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "40a82a83656fb08cd0561da52c427ced828e0b75b1c646d785f8e744b3bd13dc",
+      "text": "A green, rocky coast above the blue sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhjev-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word 2027 programme contains no corresponding image-specific alt or hover caption; translated from the pinned RU caption."
+      }
+    }
+  ]
+}

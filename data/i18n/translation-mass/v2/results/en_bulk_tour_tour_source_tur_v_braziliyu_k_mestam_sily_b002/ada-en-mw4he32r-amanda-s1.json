@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_k_mestam_sily:b002",
+  "stableId": "tour_source_tur_v_braziliyu_k_mestam_sily",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b5d518c9b24ee33b171146d214138f43c231df9c128bf60a0f7fc3c7d355d29d",
+  "blocks": [
+    {
+      "blockId": "tour:included:661c09e91532239d",
+      "field": "included",
+      "sourceTextSha256": "bea28f1de531b875ce2d2a5fd188ae9ddd1f3d7484755f4c146712a29da5879d",
+      "text": "Guided tours with an English-speaking guide in Rio de Janeiro and Iguazu.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes guided tours in Rio de Janeiro and Iguazu but does not specify their guide language. This RU-derived service-language detail is adapted under editorial rule 4.1."
+      }
+    },
+    {
+      "blockId": "tour:included:bc315e6ae3b2119c",
+      "field": "included",
+      "sourceTextSha256": "1200484323131d641d4e176502b9d1c89e44937dd2c0091ff11b47c7e9b9299f",
+      "text": "Paraty tour with English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uYRboHNcRXT7cdBOvgHyqLOB5CO0dFLj",
+        "documentSha256": "5ca44e0917619e6cfc4f145271ad5de41ee5b340f983d88a219d4dc3adf3aca4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[161]",
+            "textSha256": "d9406b582c5322aa772b163ec69d23442aa3a1b3b7bf8f0afbfd41287be939d7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    },
+    {
+      "blockId": "tour:included:1c819226176056ac",
+      "field": "included",
+      "sourceTextSha256": "6a5fdd4b8563560dc3327688a47fd62294fc96f2865db407969d1e1513fd9588",
+      "text": "Driver accompaniment in Visconde de Mauá.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uYRboHNcRXT7cdBOvgHyqLOB5CO0dFLj",
+        "documentSha256": "5ca44e0917619e6cfc4f145271ad5de41ee5b340f983d88a219d4dc3adf3aca4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[160]",
+            "textSha256": "4e12ef409df29433487ef8bccc63e02ba9b33751952c874357f036a8b3371b98"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    },
+    {
+      "blockId": "tour:included:5f45bd3a14980cb2",
+      "field": "included",
+      "sourceTextSha256": "07e5bd651765772cc6e2fc96e11cfea285a0f44a8e0c07ed0485baa55320f38f",
+      "text": "Airport – hotel – airport transfers with driver.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uYRboHNcRXT7cdBOvgHyqLOB5CO0dFLj",
+        "documentSha256": "5ca44e0917619e6cfc4f145271ad5de41ee5b340f983d88a219d4dc3adf3aca4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[160]",
+            "textSha256": "4e12ef409df29433487ef8bccc63e02ba9b33751952c874357f036a8b3371b98"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uYRboHNcRXT7cdBOvgHyqLOB5CO0dFLj",
+        "documentSha256": "5ca44e0917619e6cfc4f145271ad5de41ee5b340f983d88a219d4dc3adf3aca4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[166]",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6e52608d112e92b1",
+      "field": "notIncluded",
+      "sourceTextSha256": "1e7b740da431890dd85d53a213bd78601935c27039cb0c0012087ff01916403b",
+      "text": "Food and drinks during transfers.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word excludes meals and beverages not mentioned in the programme, but contains no standalone exclusion specifically for food and drinks during transfers; this precise scope is translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:019bb714e694242b",
+      "field": "notIncluded",
+      "sourceTextSha256": "909c12ee5d5bebd7e72266ef6a6d1a2762f4e2a134ac3ab90da8b13fc1566984",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uYRboHNcRXT7cdBOvgHyqLOB5CO0dFLj",
+        "documentSha256": "5ca44e0917619e6cfc4f145271ad5de41ee5b340f983d88a219d4dc3adf3aca4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[164]",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:aaa5f6680ff9b137",
+      "field": "notIncluded",
+      "sourceTextSha256": "37f25935591a73706908867c072a45dfb1dc647f09e71d2e67bc1256f2f88d72",
+      "text": "Domestic flights Rio de Janeiro – Iguazu – Rio de Janeiro, from $700.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1uYRboHNcRXT7cdBOvgHyqLOB5CO0dFLj",
+        "documentSha256": "5ca44e0917619e6cfc4f145271ad5de41ee5b340f983d88a219d4dc3adf3aca4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[153]",
+            "textSha256": "fd35ab501fb3201a9565fcfe6903838e103149c74e4c0ead73e76553517f014c"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    }
+  ]
+}

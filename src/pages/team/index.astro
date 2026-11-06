@@ -84,16 +84,18 @@ const colleagues = team.members;
     <div class="team-grid">
       {colleagues.map((person) => (
         <article class="team-member" id={person.id}>
-          <img
-            class="team-member__photo"
-            src={withBase(person.photo.src)}
-            alt={imageCaption(person.photo.src, person.photo).alt}
-            title={imageCaption(person.photo.src, person.photo).hover}
-            width={person.photo.width}
-            height={person.photo.height}
-            loading="lazy"
-            decoding="async"
-          />
+          {person.photo && (
+            <img
+              class="team-member__photo"
+              src={withBase(person.photo.src)}
+              alt={imageCaption(person.photo.src, person.photo).alt}
+              title={imageCaption(person.photo.src, person.photo).hover}
+              width={person.photo.width}
+              height={person.photo.height}
+              loading="lazy"
+              decoding="async"
+            />
+          )}
           <h3>{person.name}</h3>
           <p class="team-member__role">{person.role}</p>
           <div class="team-member__bio">

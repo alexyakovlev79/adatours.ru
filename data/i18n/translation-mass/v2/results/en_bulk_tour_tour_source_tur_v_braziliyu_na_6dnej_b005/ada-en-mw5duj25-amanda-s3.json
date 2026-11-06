@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_6dnej:b005",
+  "stableId": "tour_source_tur_v_braziliyu_na_6dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ac7fd9661c71f0410af0223fa62512e088b0c94194196a57ddb70f9f0bb2ec17",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4844a4f185b00cdca94d3955b231e6fa76a43b824f880a64a0b44eae59c481c5",
+      "text": "After breakfast, another half-day excursion (4 hours), through the lush Tijuca Forest, one of the largest urban forests in the world, home to an extraordinary variety of tropical flora and fauna, to the summit of Corcovado, where Christ the Redeemer overlooks the city. Named one of the New Seven Wonders of the World, the monument offers breathtaking panoramic views of Rio, its famous beaches, mountains and Guanabara Bay.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:77",
+            "textSha256": "256641ec005b0571c96da8ac8975e09b3072616435a94c7b05aad421c7cd7f34"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the day-number prefix because the website supplies the day number; retained the approved Corcovado description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:65",
+            "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the city name from the approved Welcome to Rio de Janeiro heading as the separate website place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:04136f19654dae6c",
+      "field": "media.alt",
+      "sourceTextSha256": "80499c427bc16f026b7b3c0bf6e6b14056749297c3996bb092b32b13cfa543b9",
+      "text": "Christ the Redeemer statue above the clouds on Corcovado, Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document contains no alternative text for this specific photograph above the clouds."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e98760e3fddf876b",
+      "field": "media.hover",
+      "sourceTextSha256": "1724aec131bb6817c78d520c8c54b21bde841a1a867d6e9a0973e768bd919df0",
+      "text": "Rio de Janeiro: the silhouette of Christ the Redeemer above a sea of clouds",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document contains no image-specific hover description of the statue above the clouds."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "811b761fdc05fe39446380b0fe5ab010fb513c29feb4efb48a013d11153c9212",
+      "text": "Rio de Janeiro – Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:59",
+            "textSha256": "c2ca3f79e2b01f490b2c1d03236bc7970600f96c97567688b37db49ea8d24e05"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composed the website route heading from the approved Rio de Janeiro–Foz do Iguaçu flight route, using the established Iguazu destination label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f4ac9b8b891e14c63d9c5fba3d186561309973e0280ffe857445a6112af827a8",
+      "text": "After breakfast, transfer to Rio de Janeiro airport for your flight to Foz do Iguaçu, where your driver meets you for the transfer to your hotel. In the afternoon, discover the Brazilian side of the magnificent Iguazu Falls on a guided tour: scenic walkways along the canyon offer spectacular views of countless cascades surrounded by lush Atlantic rainforest, culminating at the impressive Devil’s Throat, where you feel the power of the water and admire the rainbows in the spray. Recommended optional activities: a thrilling Macuco Safari boat adventure or a visit to the colourful Bird Park.\n\nA DVD recording of the trip can be ordered.\n\n**Bird Park in Iguazu**\n\nOptional. Cost: $50 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word Day 4 paragraph is retained without its day prefix; it lacks the RU DVD option and the RU Bird Park quote of $50 per person. These missing details are translated from the immutable RU block without changing the price."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:65",
+            "textSha256": "232d7365019b33b0e17bb6cfece6d945686540459419b5c6ec24f67ee02829ae"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the city name from the approved Welcome to Rio de Janeiro heading as the separate website place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:85",
+            "textSha256": "64b70115976f64be4ac280aa82ee482e3618c869d71a37ba4d50c05135b7d3ba"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the exact destination name from the approved Day 4 airport-transfer paragraph for the website place label."
+      }
+    }
+  ]
+}

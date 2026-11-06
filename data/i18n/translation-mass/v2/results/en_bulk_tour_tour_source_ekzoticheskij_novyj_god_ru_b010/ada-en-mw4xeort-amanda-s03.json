@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b010",
+  "stableId": "tour_source_ekzoticheskij_novyj_god_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2e81dfbbd8068faa77f410f276407618de01c37e0abd8399cb3258c9aa14a1f8",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "79bccdb5c31f78f931cdd403e7bbbbbe2fda32d911cade27554f5eac3226ce36",
+      "text": "Breakfast. Take a boat trip on the Amazon and fish for piranhas with a rod from the boat. Visit a caboclo village to learn about local daily life, traditions and customs.\n\nWalk through the jungle around the village and discover its flora and fauna. Your guide explains forest survival skills, shows you how to distinguish poisonous plants from edible ones, and introduces traditional archery.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeort-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word 2027 contains no matching jungle boat, piranha-fishing, caboclo-village or survival-skills programme paragraph; these details are translated from the assigned RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2301d971ead14606",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "9d8b431e1754a6fb263951fc3500d3dd541b7ad6a5ad501a3ba81fd4233660d1"
+          },
+          {
+            "ref": "word/document.xml#p0005",
+            "textSha256": "0a0b2fd25f3a8d4d80aa716776ea653af4eef5ad1903837c431f5c99ed3908bd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the named Manaus stop and Amazon jungle region from the selected Word."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68842f9ba7b25e91",
+      "field": "media.alt",
+      "sourceTextSha256": "a82c3b668d652027012be93d58ce24ef66fce248b1dca944f3603d2f915a8b9e",
+      "text": "Tree trunks and their reflections in the flooded igapó forest, Amazon, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeort-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no image-specific alternative text for this flooded-forest photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5c2da28ddc8a3059",
+      "field": "media.hover",
+      "sourceTextSha256": "d8a611aa8edf0a03ad55e5763b556fe7239f7b1ae9c717a0ae1baefea42aafe8",
+      "text": "Amazon: calm water among the trees of the flooded forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeort-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no image-specific hover caption for this flooded-forest photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "358d798d0fed5667a76c9c96beb58485d1ab430b346021a232df19ad8c4b9980",
+      "text": "8 January 2027. Manaus – Rio de Janeiro – Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "80a8fd495a116513d64caec97487e5b242dbad942c2f948452a28317533cdfd2"
+          },
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "81b42d308b979188b020458b8723d10b7f33d81d9c7eb2ae6e1e8b753d184f58"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expands the Word day heading's unambiguous 08/01 date using the document's 2027 travel year."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f47051834b5ff47c6e2aaee7e3f377cdb8df27d7d55cf22b310a6dc67984575c",
+      "text": "Transfer from the lodge to the airport and flight from Manaus to Rio de Janeiro. On arrival, transfer to Búzios and check in at your hotel on the tropical coast.\n\nTo use the included transfer, your flight from Manaus must depart after 14:30. An earlier departure requires a private transfer at an additional cost.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeort-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph p0083 covers the basic airport/Rio/Búzios transfer but omits the current RU after-14:30 condition and private-transfer surcharge; the complete block is translated from RU to retain that missing qualification."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:465159675cc547c8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d020a6a41eab085156708848794c28ad5e3e467f46bc6cab67a75ba8034605a8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the city name without the overnight count from the Word route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0eee8abe862fb12d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+        "documentSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "9d8b431e1754a6fb263951fc3500d3dd541b7ad6a5ad501a3ba81fd4233660d1"
+          },
+          {
+            "ref": "word/document.xml#p0005",
+            "textSha256": "0a0b2fd25f3a8d4d80aa716776ea653af4eef5ad1903837c431f5c99ed3908bd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the named Manaus stop and Amazon jungle region from the selected Word."
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_solntse_tango_vino_i_atakama:b005",
+  "stableId": "tour_source_solntse_tango_vino_i_atakama",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d722d7410c54b3ba32a4e6dd4cb07ad1bf4f44c1220d8d9d513a3f683bdf6476",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:c8e3a80e2c678b92",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro with the bay, Sugarloaf Mountain and city buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggpn4-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word describes Rio and Sugarloaf but does not contain this image-specific panoramic caption; translated from the assigned RU alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:be624751210e7813",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugarloaf Mountain among the city neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggpn4-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no matching image hover caption about the bay, Sugarloaf and city blocks; translated from the pinned RU."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "811b761fdc05fe39446380b0fe5ab010fb513c29feb4efb48a013d11153c9212",
+      "text": "Rio de Janeiro – Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[80]",
+            "textSha256": "75a0f44417149d4ce26d553c2966b9adcc0a60b7c03248eede188335555b608f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the verified Rio de Janeiro to Iguazu flight leg for the existing itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6f8026eb80d55e3a78e2bbc26a85160f1ed4297251ba96ed668946c7b6ca260d",
+      "text": "Day 4 · Breakfast at the hotel. Transfer to the airport and flight to Iguazu, where a driver meets you with a sign bearing your names for the transfer to the hotel.\n\nOn the Iguazu River, at the border between Brazil and Argentina, 275 cascades plunge into the gorge known as the Devil’s Throat; their name means “big water” in Guarani. Walkways and paths bring you remarkably close to the falls, even to the edge of the Devil’s Throat amid clouds of spray, and their roar can be heard for kilometres. Viewing platforms reveal them from both the Brazilian and the Argentine sides.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[77]",
+            "textSha256": "9df1279a39ae6eff2c99a99e7404d52f99cb91366bec66b2ddf761fbf206cf8d"
+          },
+          {
+            "ref": "word/document.xml:p[78]",
+            "textSha256": "2a636388d4934fbcb68727c533c3b0c796aa98bf0632685cc8a3a1461f9b9347"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[37]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZL0KyYvLLXKgj6FssZ-poR-LXjew42px",
+        "documentSha256": "634fdbcaa6a57ae7477a290d5e564a90ed5c304f99e9b1a602084cc7c3bec8d2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[73]",
+            "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the place name from the Word section heading using normal place-name capitalization."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b4af8d3ee5a70df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggpn4-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word covers the Argentine side of the falls but does not explicitly provide the Puerto Iguazú place label; translated from the pinned RU geographical label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:02fb8b7c431bde1d",
+      "field": "media.alt",
+      "sourceTextSha256": "e716340f0f91ce312b237973d1b5ec51bb2f25897ef571e9f9d2af0af135a678",
+      "text": "Two blue-and-yellow macaws on a branch among green foliage",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggpn4-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no corresponding image-specific alt caption describing two macaws on a branch; translated from the assigned RU."
+      }
+    }
+  ]
+}

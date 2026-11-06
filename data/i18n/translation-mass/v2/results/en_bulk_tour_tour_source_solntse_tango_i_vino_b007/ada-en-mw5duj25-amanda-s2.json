@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_solntse_tango_i_vino:b007",
+  "stableId": "tour_source_solntse_tango_i_vino",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ff21bfdf259bb16238c3f55baff7840c479df5fd2e2ad6527d199aba4dada62d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7448486bc1b6c510e093859e9a8014b41ce152380848a62ff1927d671484a16e",
+      "text": "Buenos Aires and tango show",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:95",
+            "textSha256": "ad047a690a09b0ed803c57085d71342e3cef396f2e8eba0dd5a4497e146da18b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Adapted the combined Word city-tour-and-tango heading to the website's separate Buenos Aires day heading, without adding services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3d05c27653ac70a6f17991528f4364291bee3b88aa315569e683508c1fa02869",
+      "text": "Breakfast. City tour (3 hours) with an English-speaking guide, discovering a capital of elegant architecture, museums, galleries and theatres: the old district of La Boca; historic San Telmo, with its bars, restaurants and antiques market on Plaza Dorrego; Plaza de Mayo, the heart of the city, with the Casa Rosada, the presidential palace associated with Eva Perón; the 67-metre Obelisk, symbol of the city, on Avenida 9 de Julio, one of the widest avenues in the world; elegant Recoleta, with its famous cemetery and the colonial-style church of El Pilar; and modern Puerto Madero and the Lezama and 3 de Febrero parks.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:98",
+            "textSha256": "9b13b86aa0d8978adc2047d7c27fc1ddbb003ddfc784693d02a5d1fc08ebd9c8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the day-number prefix because the website supplies the day number; the approved city-tour paragraph is preserved."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7cc4a40a90d0192d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:45",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a2fdd7bc8bd4576f",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguazu Falls and a rainbow over the river, surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme has no image-specific alternative text describing this Iguazu rainbow photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5c62484370077f45",
+      "field": "media.hover",
+      "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+      "text": "Iguazu in Brazil: cascading waterfalls, a rainbow and green riverbanks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document has no image-specific hover caption for the waterfall photograph used here."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:45",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3264ae3505245fd1f82b6cc1e9cac8983742e15efb844776f6a50b3a436ac537",
+      "text": "Breakfast. Free day to explore the city on your own or join an optional excursion.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:100",
+            "textSha256": "a795756523193a241345af599ed70f62da52c99daa9252171be7813fe8cd2ff9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word day-number prefix because it is represented separately in the website itinerary; all approved free-day wording is retained."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fee6a8b6a89f30bf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1DMIc4Lqk8YLPIAI6ApWDyg-EBSRf3zSe",
+        "documentSha256": "6b34a033d8eec5ff1c367f3d5055fa7c2b4fe2aa5579dbc039c39cdf453c0d7c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:45",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    }
+  ]
+}

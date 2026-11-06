@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 363,
-    "leased": 2,
+    "queued": 362,
+    "leased": 3,
     "review": 1978,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 363,
-      "leased": 2,
+      "queued": 362,
+      "leased": 3,
       "review": 1978,
       "ready": 50,
       "retryable": 0,
@@ -345,8 +345,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 11,
-          "leased": 0,
+          "queued": 10,
+          "leased": 1,
           "review": 62,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T08:39:05.144Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b002",
       "token": "tok-mw4mhtm1-7wmvlzzuskh",
       "expiresAt": "2026-11-06T08:38:26.544Z",
+      "generation": 1
+    },
+    "ada-en-mw4mglo7-amanda": {
+      "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru:b010",
+      "token": "ada-token-mw4mglo7-46797p8h4b",
+      "expiresAt": "2026-11-06T08:39:05.144Z",
       "generation": 1
     }
   },
@@ -7658,7 +7664,8 @@
         "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b007",
         "en:bulk:tour:tour_source_tur_v_kolumbiyu_na_10_dnej:b008",
         "en:bulk:tour:tour_source_ves_ekvador_i_galapagosskie_ostrova:b001",
-        "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b004"
+        "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b004",
+        "en:bulk:tour:tour_source_ves_mnogolikij_peru:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej:b008",
@@ -7744,5 +7751,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T07:08:58.432Z"
+  "updatedAt": "2026-11-06T07:09:05.144Z"
 }

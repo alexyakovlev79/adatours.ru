@@ -1,0 +1,147 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_chili_5:b004",
+  "stableId": "tour_source_vip_chili_5",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a4075b75c745b954e483b626897ffc36854895e5bde1a9196c1742d07c31d65c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:1fa62c13fcc2747b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b638b629eeec8275",
+      "field": "media.alt",
+      "sourceTextSha256": "f4f988d5f40d56e9cd18c3d11118970919dba749626fdad502498032e880a68d",
+      "text": "Panorama of Santiago with high-rise buildings against the snow-covered Andes, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This specific photograph's visual alt description is not present in the selected Word; translate the RU image caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8be43a71f54e4a3e",
+      "field": "media.hover",
+      "sourceTextSha256": "67c30f371d54136d1bccd6c3f6b922c493ee2eb2c64b5e74ac11ea041a396ff3",
+      "text": "Santiago: city towers at the foot of the snowy Andes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no hover caption for this panorama; translate the fixed RU visual description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "434ea675c71febad1c49ee2a387e784939e7681bf9a7678a73eef4c14e7ddf8e",
+      "text": "Santiago and the Maipo Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          },
+          {
+            "ref": "word/document.xml:p68",
+            "textSha256": "f730f7e924b011e1048bf790684d3d6b67b31fce2a3bc88c0d96968167873bc6"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the city and valley names from the Word city-tour paragraph into the corresponding short heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ccaa0aa5c6707495a6e4ef40f0b1b82ba02f719c3e6e739549f3a62ad9198232",
+      "text": "Day 2 · After breakfast, a half-day city tour: the historic centre with the Plaza de Armas, the Post Office, the Municipality, La Moneda Palace and Santa Lucía Hill, then the modern residential neighbourhoods and new commercial districts in the east of the city. Continue to the Maipo Valley for a taste of Chile’s celebrated wines.\n\nIn the evening, we recommend some of the city’s finest restaurants: Boragó, Ambrosía, Peumayén or Aquí Está Coco for delicious seafood.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p68",
+            "textSha256": "f730f7e924b011e1048bf790684d3d6b67b31fce2a3bc88c0d96968167873bc6"
+          },
+          {
+            "ref": "word/document.xml:p69",
+            "textSha256": "ca028f56f2babbcc6e1e63be883ece5ae790cdffe7c50af32617a772986a46b4"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cdaa2982734c0db0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d5f735c67e061e29",
+      "field": "itinerary.label",
+      "sourceTextSha256": "40b85fcb155abfe021b1aa39497c5eddc9a8bc858720a879f1b9400fd7a8117a",
+      "text": "Maipo Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "6b00af7f912f8c721a189baaa9aafafe9efdf8d2cb409b3cf7dfeda68663b742"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fa9cb716f5eb374c",
+      "field": "media.alt",
+      "sourceTextSha256": "ed971025758f3f3158c03c02d8ee64c6ef43087de36ced407f0ea97fc759ec7b",
+      "text": "Red and blue cable car cabins above Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This image-specific alt caption describing the cable car cabins is absent from Word; translate the fixed RU caption."
+      }
+    }
+  ]
+}

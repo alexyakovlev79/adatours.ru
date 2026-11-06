@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru_i_senor_sipan:b010",
+  "stableId": "tour_source_ves_mnogolikij_peru_i_senor_sipan",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6ed13c008f2ecfce74f01de8a68fe4de515dd4c1b1212ad7120275a9cf4c96dd",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4a380dc7d246e129df02ad4a09609a670421eec6f151c80d2c3fa730caf77819",
+      "text": "Arequipa – Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p115",
+            "textSha256": "6dd890aa0b68c912c0445899ee1ed8cbd0a2101b677c98893bafb492d07e72c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding city or free-day label from the verified Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4bc51d52d7bc57f2b057d0301243f7f71865127ca7798e18fdd1fc9f195ae93e",
+      "text": "After breakfast, a tour of the White City, a fine example of colonial architecture. Founded by the Spaniards in the 16th century in a fertile valley at more than 2,300 m, surrounded by the Misti, Chachani and Pichu Pichu volcanoes, Arequipa takes its nickname from the white volcanic stone of its buildings, and its historic centre has been a UNESCO World Heritage Site since 2000. Visit the main square, the Yanahuara viewpoint and the Santa Catalina Monastery, founded in the late 16th century, a city within the city of some 20,000 square metres, with a church, galleries, gardens and a gallery of religious art. Transfer to the airport and flight to Lima; transfer to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p115",
+            "textSha256": "6dd890aa0b68c912c0445899ee1ed8cbd0a2101b677c98893bafb492d07e72c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding exact Word day paragraph without its day-number prefix; Word 2027 governs the content."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fadfaa5b8f5e25e3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p115",
+            "textSha256": "6dd890aa0b68c912c0445899ee1ed8cbd0a2101b677c98893bafb492d07e72c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding city or free-day label from the verified Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2ed01978207691df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7286d1fea0015426458df99d175911e96863889ca390402b04d58e5c4d86ef70",
+      "text": "Arequipa",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p115",
+            "textSha256": "6dd890aa0b68c912c0445899ee1ed8cbd0a2101b677c98893bafb492d07e72c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding city or free-day label from the verified Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:6db2f57589ffd1c3",
+      "field": "media.alt",
+      "sourceTextSha256": "c67cef4def5d40fbcd4cff9da395d43004b4de92b8fb55e27a90e848bc4a5ddc",
+      "text": "Airport access road with the terminal and control tower in Lima, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ghf2p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no matching airport image alt or hover text; translate the canonical RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:de2a9ffe924c6fdf",
+      "field": "media.hover",
+      "sourceTextSha256": "dfc4e0400f999dd930fc94abc983b2230956edb7c87a9dd366c203a32ede9716",
+      "text": "Lima: airport access road, terminal and control tower",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ghf2p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no matching airport image alt or hover text; translate the canonical RU image description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "100cc41933937cf7635a1858066ff5d96ec9bcb6d1de707b6ea084a68605fa31",
+      "text": "Lima: a free day",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p116",
+            "textSha256": "56a389093afa91de0b8487bdd34931cf5a2e86fd87b9776e86ebee0dc6691b51"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding city or free-day label from the verified Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f7380b67fe300bda50a26c25cb875c7f4e6785d50a29819d3aa865a9a1f6b7a9",
+      "text": "A free day in Lima, or an optional full-day excursion to Paracas and the Nazca Lines (see Optional excursions).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "p116",
+            "textSha256": "56a389093afa91de0b8487bdd34931cf5a2e86fd87b9776e86ebee0dc6691b51"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding exact Word day paragraph without its day-number prefix; Word 2027 governs the content."
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_ekvador_variant_1:b003",
+  "stableId": "tour_source_ves_ekvador_variant_1",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "07a7781dff4085ff3f8ae16111a9134f01029c9e124d6bc5fe6613348953e0e3",
+  "blocks": [
+    {
+      "blockId": "tour:note:e3af986a1e8dc2ee",
+      "field": "note",
+      "sourceTextSha256": "9fe027d7f888a6634ee32239777f6990771be95c59d7bca17ffa495c3679e396",
+      "text": "Hotel as listed or similar.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Y4W_V6wb7wqBWqEZo8sw1stQEdezBe7T",
+        "documentSha256": "6a4bba776b6d1e18b0847d99efcebc677240ac639b68eff7bf0d45567f0350cf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[98] (1-based)",
+            "textSha256": "8afe9a44d85ef56741a3ede0bf46965bd732c6e099aa72a88d5701ed8970d250"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme is maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gn04k-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word states general itinerary changes but contains no equivalent specific note on retaining the programme when excursion order changes; translate the assigned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "We are not responsible for hotel breakfasts missed due to early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gn04k-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The complete verified Word contains no specific missed-breakfast responsibility condition; translate the assigned RU note without adding terms."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "66ebd240c42ee345ffdcea49539edfe62d01824025cd3cde53923f253a55bba6",
+      "text": "Arrival in Quito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Y4W_V6wb7wqBWqEZo8sw1stQEdezBe7T",
+        "documentSha256": "6a4bba776b6d1e18b0847d99efcebc677240ac639b68eff7bf0d45567f0350cf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[67] (1-based)",
+            "textSha256": "72b618cad51725906f8c7a8ca2f698deea873f83456a2e74164c464b2662f0a8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use a concise arrival-day heading for the airport welcome and transfer to Quito stated in the Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a0a04c8b39acae590198cf32d3c06e331f14da715290d76da9ed0b79a0239671",
+      "text": "Day 1 · Welcome to Ecuador! Our staff meet you at the international airport for the transfer to your hotel (about one hour), with panoramic views of the Andean landscape on the way. Overnight at Hotel Finlandia 4★.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Y4W_V6wb7wqBWqEZo8sw1stQEdezBe7T",
+        "documentSha256": "6a4bba776b6d1e18b0847d99efcebc677240ac639b68eff7bf0d45567f0350cf",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[67] (1-based)",
+            "textSha256": "72b618cad51725906f8c7a8ca2f698deea873f83456a2e74164c464b2662f0a8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7de6d2d82fca1471",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9b62ba596270cbc35c7ee0ca8b134de75628d9f70a6ebf67fcb281ed6b95483a",
+      "text": "Quito & Cotopaxi Volcano",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gn04k-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word covers Quito but has no standalone combined Quito and Cotopaxi place label; translate the existing assigned RU entity label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:0fda3352fe3c46ef",
+      "field": "media.alt",
+      "sourceTextSha256": "190b1e81297df19f37c49b5f3d52f42b0e994ff6669828649368912c9da81379",
+      "text": "City neighbourhoods with a snow-covered volcano in the background, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gn04k-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no caption for this specific photograph; translate its assigned RU image text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:4c2140c373fccba7",
+      "field": "media.hover",
+      "sourceTextSha256": "bf5bbbbae959419da348d74d7277ad4c5e3930166debfbe113356222ce29492c",
+      "text": "Ecuador: houses beside green slopes beneath a snow-covered summit",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gn04k-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no caption for this specific photograph; translate its assigned RU image text."
+      }
+    }
+  ]
+}

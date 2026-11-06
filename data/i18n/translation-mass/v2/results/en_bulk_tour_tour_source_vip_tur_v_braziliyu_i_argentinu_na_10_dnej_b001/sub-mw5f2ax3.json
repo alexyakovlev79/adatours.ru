@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej:b001",
+  "stableId": "tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8540657babc8d93d5a78a35d965776223eb6ab56796a46849326b3f53995069c",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "947345c858f2f18339a8b3c747470206b3e699dd9d73ff7931547c103a27584c",
+      "text": "Luxury Brazil & Argentina 2026",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1jR4BTbGSF1NkLxCIpC2TXcQycDLTokG1",
+        "documentSha256": "584681fb797de7ee42d6f333e9eec93ef146f7f77ad1e8b2e6c434de956a4131",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "text": "Luxury Brazil & Argentina 2026",
+            "textSha256": "4650966959d779e83b04b651b444919765d96998835001dbad0a5d8b5199aeef"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "ccd7318d6c3f2cdff640916948dcc246b19ca7f227e85b282c1d923498de5ff1",
+      "text": "This 10-day journey takes you through Rio de Janeiro, Iguazu Falls and Buenos Aires. In Rio, you will see the city from Sugarloaf Mountain and Corcovado, with the option to add a helicopter flight, a boat trip, culinary workshops and an evening show. The route then explores both sides of Iguazu Falls. The final days focus on Buenos Aires, tango, Argentine cuisine and optional trips to the pampas or Montevideo.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epvfu-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word contains detailed days and optional activities but no equivalent concise lead covering the complete route; translate the pinned RU lead, preserving optional services."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "497e27504607831df8bbd5f3e3af60ef31eb87e0c6985a5d5c6abdcb6a7302bb",
+      "text": "$7873",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epvfu-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The pinned shared RU price is $7873; the Word contains different commercial tariffs. Preserve this source price and leave tariff changes to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jR4BTbGSF1NkLxCIpC2TXcQycDLTokG1",
+        "documentSha256": "584681fb797de7ee42d6f333e9eec93ef146f7f77ad1e8b2e6c434de956a4131",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p4",
+            "text": "Rio de Janeiro – Iguazu Waterfalls – Buenos Aires (10d\\9 nights)",
+            "textSha256": "3538ba4ceae9099904e7e9814315ec3f0c9e9a45bdb66f7ccb8b4a1d6dd0e61c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the first city from the confirmed Word route line."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e9bfedca42d876c1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "36d8911a3192feb1c049349eedd1561043cdf44ef868f7654ebe54ebf4272587",
+      "text": "Iguazu Waterfalls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jR4BTbGSF1NkLxCIpC2TXcQycDLTokG1",
+        "documentSha256": "584681fb797de7ee42d6f333e9eec93ef146f7f77ad1e8b2e6c434de956a4131",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p4",
+            "text": "Rio de Janeiro – Iguazu Waterfalls – Buenos Aires (10d\\9 nights)",
+            "textSha256": "3538ba4ceae9099904e7e9814315ec3f0c9e9a45bdb66f7ccb8b4a1d6dd0e61c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the waterfall stop from the confirmed Word route line."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jR4BTbGSF1NkLxCIpC2TXcQycDLTokG1",
+        "documentSha256": "584681fb797de7ee42d6f333e9eec93ef146f7f77ad1e8b2e6c434de956a4131",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p4",
+            "text": "Rio de Janeiro – Iguazu Waterfalls – Buenos Aires (10d\\9 nights)",
+            "textSha256": "3538ba4ceae9099904e7e9814315ec3f0c9e9a45bdb66f7ccb8b4a1d6dd0e61c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the final city from the confirmed Word route line."
+      }
+    },
+    {
+      "blockId": "tour:included:5cb0b9fe4d7f527b",
+      "field": "included",
+      "sourceTextSha256": "09eb8c7ca1fe143e863f9893da47b5df149e8c4223d343357ed9129f8fe77940",
+      "text": "Accommodation in hotels according to the program",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jR4BTbGSF1NkLxCIpC2TXcQycDLTokG1",
+        "documentSha256": "584681fb797de7ee42d6f333e9eec93ef146f7f77ad1e8b2e6c434de956a4131",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p141",
+            "text": "- Accommodation in hotels according to the program",
+            "textSha256": "23f183bcc24ae97ecd828403e161e2124f51874ddf42bb30e3ba332788a9ef3e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker for the existing inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:ed05a7458b33bf84",
+      "field": "included",
+      "sourceTextSha256": "31cca4e9f2163b00b23c32aae367095e1e1c2ff35e69e46d455cc5853f07779b",
+      "text": "Excursions according to the program with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1jR4BTbGSF1NkLxCIpC2TXcQycDLTokG1",
+        "documentSha256": "584681fb797de7ee42d6f333e9eec93ef146f7f77ad1e8b2e6c434de956a4131",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p142",
+            "text": "- Excursions according to the program with an English-speaking guide",
+            "textSha256": "075b577c04e8e9b81f51d8c634a549787ec0f54b28b03354406c6231dcb73130"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word list marker; retain its English-speaking guide service."
+      }
+    }
+  ]
+}

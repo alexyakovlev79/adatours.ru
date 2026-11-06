@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b003",
+  "stableId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7c7a8660fd804ba7aa568ed908d7f678f1c6493f7918f7b957769333d12d21cd",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:32e871e2c80dc004",
+      "field": "notIncluded",
+      "sourceTextSha256": "8b78627af6b42141437e764266be70e9bde9b626a779ed0e1aaec02f3b589171",
+      "text": "Personal expenses and tips.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[267] (zero-based)",
+            "textSha256": "4013ae810cbb54733d08de0c0573d9d9ef5bfa976895fa0c04462d5447b5855b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the verified Word list marker and add sentence punctuation for this standalone exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:54e53e7a7327c1ad",
+      "field": "notIncluded",
+      "sourceTextSha256": "55057c3e4c0f31fa241e8b23ebb53692dcf2ed31d93926a72eaf74cb3a478f80",
+      "text": "Domestic flights Lima – Cusco, La Paz – Uyuni and Calama – Santiago de Chile, **from $450**.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists these three excluded domestic flights but does not include the RU from-$450 amount; preserve the full pinned RU commercial condition."
+      }
+    },
+    {
+      "blockId": "tour:note:d96f78c9265cf8a6",
+      "field": "note",
+      "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
+      "text": "If necessary, Ada Tours may replace the hotels with others of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word permits similar-class hotel substitutions but has no full Ada Tours if-necessary note matching this RU sentence."
+      }
+    },
+    {
+      "blockId": "tour:note:05680faa947baa60",
+      "field": "note",
+      "sourceTextSha256": "13c996687256cf8f9c8b56f58533c646397f6b40a44244e857f789acaa4b3607",
+      "text": "The order of excursions may change while preserving the full tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no note allowing excursions to be reordered while retaining the complete programme."
+      }
+    },
+    {
+      "blockId": "tour:note:ef83dabc89561ff4",
+      "field": "note",
+      "sourceTextSha256": "b94b115e776b14bb2160fde513dac19a6cdad1eb036aee1a81a884276440b607",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed when an early flight or excursion requires an early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no note disclaiming responsibility for hotel breakfasts missed due to early check-out for flights or excursions."
+      }
+    },
+    {
+      "blockId": "tour:note:8e7eed940d73350f",
+      "field": "note",
+      "sourceTextSha256": "00a7e0a0dccbed0804750e14ac4b1727d0e58d790014a5c3a75f2095f272ff24",
+      "text": "Easter Island: optional 3-day / 2-night extension.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[229] (zero-based)",
+            "textSha256": "57646ebd021d84706789f9d194111c742455f4938954642be5e0e95f02aa5fce"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Easter Island extension heading as a standalone note, preserving the optional extension and 3-day, 2-night duration."
+      }
+    },
+    {
+      "blockId": "tour:note:4a6f23b3d62292fa",
+      "field": "note",
+      "sourceTextSha256": "37c5866e621ca1715d9729f2e017a6bbb917b4e06cd542055c859026459c5277",
+      "text": "The tour price depends on the number of participants and room arrangements; all 6 rates per person are listed in the “Tour price 2027” section.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has six numeric rates by party size and room type, but does not contain the RU site-specific cross-reference to the Tour price 2027 section."
+      }
+    },
+    {
+      "blockId": "tour:note:097a42bb1f0bfd38",
+      "field": "note",
+      "sourceTextSha256": "0ede1e37b5857bb571fc7edba3390b4aae6792570e0c980dedcdbd89b080fa5c",
+      "text": "The final price is confirmed after the services have been agreed and flight prices checked for the booking date.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word confirms availability and prices upon booking, but lacks the full RU condition about agreeing services and checking flight prices for the booking date."
+      }
+    }
+  ]
+}

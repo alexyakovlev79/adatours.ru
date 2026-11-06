@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru:b002",
+  "stableId": "tour_source_ves_mnogolikij_peru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a3786ef150515c967a60f440cc4c724a81cda1c4295753060ed9543a672803ef",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:ed8926bc038b8c1e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5aeab7fa12e9b8a6f6310139464e1f754706b3d100a2ce79ee2d1fcab2c6dab0",
+      "text": "Nazca (optional)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p4",
+            "textSha256": "80ae9d47b044b9a428ca285d0387af6437768d6cfad42444ab3be78680271187"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the optional Nazca route stop explicitly listed in the Word route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8137954c6a092cbb:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:7c866f2737b25227",
+      "field": "included",
+      "sourceTextSha256": "1d8876aff6496b460841069a9247e6e30aab8d735593de49423421f9d890675b",
+      "text": "Domestic flights Lima – Cusco and Arequipa – Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p241",
+            "textSha256": "43dc092a4494aec444f06a1263039f5ca68e408229606dd5e0c83a7e4534563d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the two flight legs assigned to this specific included-services block from the broader Word flight list."
+      }
+    },
+    {
+      "blockId": "tour:included:88d9af287676c17f",
+      "field": "included",
+      "sourceTextSha256": "de510e2435bea9ab8e467a8b3255422c7160d9938e368e4625af807275c26b8c",
+      "text": "Meals as per the itinerary",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p243",
+            "textSha256": "e236ba73fc2817c73c3c920ab5f621662816c2a602683307e18b158b68b2244e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word list marker for the dedicated included-meals field."
+      }
+    },
+    {
+      "blockId": "tour:included:f7966f8961e8babb",
+      "field": "included",
+      "sourceTextSha256": "eb8d6a0d7e764166d24f5c88e6194e0eb6adb7748dde2e08bab3177e9bf7bd5f",
+      "text": "The Feast and Parade of the Virgin of Candelaria",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnuue-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified 2027 Word contains no Candelaria festival or parade passage; this translates the specific assigned RU inclusion without adding dates or details."
+      }
+    },
+    {
+      "blockId": "tour:included:8730b7a2aee11a76",
+      "field": "included",
+      "sourceTextSha256": "64185409345d84a32f2803e4f3a2d6787a4ca4f79a80863ab1f986c8d8ea9d4e",
+      "text": "Excursions with a guide as per the itinerary",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p244",
+            "textSha256": "59e2f734ce0011f058cd1cd90968f81e60fd87bd8b773341655e5db914b43ffe"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the list marker from the corresponding approved Word inclusion; retains its stated guide arrangement."
+      }
+    },
+    {
+      "blockId": "tour:included:7636c2c7de34e9de",
+      "field": "included",
+      "sourceTextSha256": "1b4dff75e7aeaa9373bb4836bf67f889740a66da1506638167c8e8148fdd3361",
+      "text": "Expedition-class train ticket to Machu Picchu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p245",
+            "textSha256": "1cb66050951da6d28660302fe6aecd4913168394582aed8e88a50bbc8082ba38"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word list marker for the dedicated included train-ticket field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e88f6ef2fb160ef1",
+      "field": "notIncluded",
+      "sourceTextSha256": "e728475ca4c2d08f0bd58e250c0b3884e2a1125cfb301269bad8aff084ccf30b",
+      "text": "Excess baggage fees",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+        "documentSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p251",
+            "textSha256": "ecc39c5f617d6c60edc253b7c787bb1b120802d825d3f32635e2d94b1565fd13"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word list marker for the dedicated excluded baggage-fees field."
+      }
+    }
+  ]
+}

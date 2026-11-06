@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_treasures_of_costa_rica_san_jose:b006",
+  "stableId": "tour_source_treasures_of_costa_rica_san_jose",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9b5e5a06988ae6c842a783ea3fb79e02e55dd12f1c4d63981292d5bb67da5f32",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:06f3c31e846e487b",
+      "field": "media.hover",
+      "sourceTextSha256": "75bd95815cc230398787f4a166b9e53aae187caff1f7bea9b7992c759f116bb4",
+      "text": "Caño Island, Costa Rica: a green shoreline surrounded by blue water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document contains no image-specific hover caption for this Caño Island shoreline photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d4c7829bc6754f3a016be7e59f811603af56a12094c88f54a41e030086521c01",
+      "text": "Return to San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:82",
+            "textSha256": "a155480925cd1b79500fc33ae13b6c8e1e1ac8d484d2b0248f94142010bdb8b2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the return-to-San-José part of the combined Word day heading for the website's separate departure-day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "25eee4a5d861e300ff0e5766bb03ca96fbe3d70e06d8db5bd159b6aeb25cc78c",
+      "text": "Flight back to San José and transfer to Juan Santamaría International Airport. (B)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:86",
+            "textSha256": "64df49fc8f3b7f91f3634215494ecb403127264539a45b83a955d20766c12818"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Word day-number prefix because itinerary numbering is displayed separately; retained the approved return flight and airport transfer."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:02b4d9279a98c860",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ecf1d4aaf87efa0e77b1e87aa624616c6ff82b4b7a23f4960dea213038d53667",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:97",
+            "textSha256": "21573c7445c312a4e6845118416b58233827217f416c5103e4db0230ff89f16f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:e2f7f524b17d3753",
+      "field": "media.alt",
+      "sourceTextSha256": "edd71494562b257db7bc44ade26c1ba47c22b34a65c3bf83f29f540d13e72019",
+      "text": "Long yellow building above a stone staircase in San José, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document has no alternative text describing this yellow-building photograph in San José."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:a52d7a3418309fa4",
+      "field": "media.hover",
+      "sourceTextSha256": "5d47826948a1d90e6e4fde9307666ed3c4abb5567a1df3014703bd61380c4f02",
+      "text": "San José: a yellow façade with many windows and a staircase",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document has no image-specific hover description of the yellow façade and staircase."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "d2e5e34609d0bb310121cc55c5af6aab6847d65cb44672897a0d93d1bbc1be44",
+      "text": "Calm river reflecting tropical forest in Tortuguero, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word tour covers Corcovado and Caño Island and has no caption for this Tortuguero hero image; translated the immutable RU photo description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "8a331f3ee22456a907206fe3444448f3e4c5089481739bcdc18a1707e0e88024",
+      "text": "Tortuguero: green riverbanks and clouds reflected in the river",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5duj25-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word tour has no Tortuguero image hover caption; translated the immutable RU photograph description without changing the image or its location."
+      }
+    }
+  ]
+}

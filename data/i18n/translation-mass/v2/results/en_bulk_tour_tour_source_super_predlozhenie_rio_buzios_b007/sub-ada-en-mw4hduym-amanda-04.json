@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_super_predlozhenie_rio_buzios:b007",
+  "stableId": "tour_source_super_predlozhenie_rio_buzios",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a650e3e151327422903727504021d7c40e6928cd9bbadda0f344101272f9f24e",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "034738ab09764664679d350432b5e7e53c6f72b80efeda040e087a87605c38bf",
+      "text": "Private transfer (driver only) from your hotel in Búzios to Rio de Janeiro international airport (Galeão) for your flight home. End of services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17pr1fP88LHXbDJPOAXc_wEEVUO3TQJuz",
+        "documentSha256": "b4a384d7b80806b3140697dc45eee3dd1b70558ddfe239f25e2cc59247b988c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p104",
+            "textSha256": "864ac0b95e90f7dcab3020083c8ad716de6d8b72165a2a5408fef75fcf6f3fe0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removes the separately rendered day marker while preserving the exact Word transfer and end-of-services wording."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3fa8c2af53ae2e7a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17pr1fP88LHXbDJPOAXc_wEEVUO3TQJuz",
+        "documentSha256": "b4a384d7b80806b3140697dc45eee3dd1b70558ddfe239f25e2cc59247b988c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "ed1a888697e7af704d19cb3b37c0716ba0f6b1518154d81b80d1f22171eae340"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extracts the Rio de Janeiro destination name from the confirmed destination pair."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2deac72961a68de2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "17pr1fP88LHXbDJPOAXc_wEEVUO3TQJuz",
+        "documentSha256": "b4a384d7b80806b3140697dc45eee3dd1b70558ddfe239f25e2cc59247b988c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p100",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:522b6305749c72ff",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "A shaded street with trees and café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No matching caption describing this tree-lined street and cafe tables appears in the Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cba90e7dbafcfc37",
+      "field": "media.hover",
+      "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+      "text": "Rio de Janeiro: a pavement café beneath the trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word brochure contains no hover caption for this specific pavement cafe photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "60ac30a1c753bf27dee8c137c49f78654c429ee44cda890833a715f44e6045cb",
+      "text": "A tall sandcastle on a beach in Búzios, with boats in the blue bay, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The brochure contains no image alt text identifying the sandcastle and boats in this hero photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "9dad6707f93db00b6c7ea1b3f1eb0adaea430286fcdaa55bb1964b38b08108b1",
+      "text": "Búzios: a sandcastle on the shore of the bay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding photograph caption for the sandcastle on the bay."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "ae6d37b35bb91d568c95228a88444d30cd548684482fb3b5f9d59a9f69223535",
+      "text": "**Programme year:** 2027",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "17pr1fP88LHXbDJPOAXc_wEEVUO3TQJuz",
+        "documentSha256": "b4a384d7b80806b3140697dc45eee3dd1b70558ddfe239f25e2cc59247b988c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p32",
+            "textSha256": "940dba58d1bf140323bfbe1c61eaa6a689ffe56a659fc6f0771bc492ebd31812"
+          },
+          {
+            "ref": "word/document.xml:p33",
+            "textSha256": "5313e5bf17148de844ff74be3663d47c6e361ca469b30a36337701233c89a15e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the authoritative Word 2027 programme year and a translated field label instead of the older RU year."
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vsya_argentina:b016",
+  "stableId": "tour_source_vsya_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d26999190d3876c42601ab8af39bf437fb1fe3075aa50f14ab90f7885698e02f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:25152ad0c634f823",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ff7e0b2ef3f53dd828b114ad419aaefcf25a07f0e7fc4c38f7114681f42d6345",
+      "text": "Breakfast at the hotel. Full-day “Great Circle” excursion with an English-speaking guide and private transport. Follow the Limay River valley to the Amphitheatre viewpoint, 35 km from the hotel, overlooking rivers and peninsulas, then continue among rock formations towards Cuyín Manzano. Reach the Traful viewpoint over Lake Traful and the village of Villa Traful, ideal for lunch, tea or local chocolates, then Villa La Angostura, on Lake Correntoso, before returning to Bariloche.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p:146",
+            "textSha256": "d1bc70b4299d526f673cfe739f5954c42d7df24cf365b94002ecd8c32d7993af"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removed the Word day prefix to fit the existing itinerary text field; retained the complete Word excursion wording."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e417ed990ecb8ce2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7cc6a35b73304ba63e4543dce1f9d0a412e692af23e94e33354dca577daf970d",
+      "text": "Bariloche",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p:48",
+            "textSha256": "2f002781e3adeef826724fc2a3d6585ad46f23ac3c327c9bf823d423747ab59b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:906c28bbeb530805",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c6d7704a461cc6caea509f97814cb537363e5c3e061fe7545d0860d23d0bdad2",
+      "text": "Villa Traful",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p:146",
+            "textSha256": "d1bc70b4299d526f673cfe739f5954c42d7df24cf365b94002ecd8c32d7993af"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual English label derived from the corresponding Word itinerary passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8ff70315ec27ed57",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1e80fda8bdce37c272ceef198859ef6aa147ec68036b483802ae2f95f0a46a0b",
+      "text": "Villa La Angostura",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p:146",
+            "textSha256": "d1bc70b4299d526f673cfe739f5954c42d7df24cf365b94002ecd8c32d7993af"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual English label derived from the corresponding Word itinerary passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:82cdcc3c72944876",
+      "field": "media.alt",
+      "sourceTextSha256": "d1be66f38f013cf34d064a918ae06c753669a26af0e719d5a05a83384d81cfdd",
+      "text": "A blue lake among wooded slopes and rocky mountains, Traful, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5gh1gk-amanda",
+        "wordAbsenceReason": "Word has no alt text describing this specific lake photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1b250fd369bf9125",
+      "field": "media.hover",
+      "sourceTextSha256": "0a0b22c6b806e8cc6bfd00da6436fcca8c724358e111f133e11a1ec0dd499db6",
+      "text": "Traful, Argentina: a blue lake among wooded slopes and rocky mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5gh1gk-amanda",
+        "wordAbsenceReason": "Word has no hover text describing this specific lake photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:bc85cd73333c2baf",
+      "field": "itinerary.title",
+      "sourceTextSha256": "eb896b6ed83f132cbbfecbf26f5485d01296d69204a48b7a8786d706c4fad55d",
+      "text": "Bariloche and Cerro Campanario",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p:142",
+            "textSha256": "7201917dc58d9ab3fff9eedbb7a990347fe6457d996fcb5f2de736b8d6bd56bf"
+          },
+          {
+            "ref": "p:147",
+            "textSha256": "a2a84c8d8b1824895421bb3f98856ebdb56bc8f35d973fcc290a5d280ee3ab01"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Contextual English label derived from the corresponding Word itinerary passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:99d4ebb0270da8fa",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9655431d98e8b213d8bf72907377a14ab6be879dfd2f6aed7bb8550b268df057",
+      "text": "Panoramic tour of about 65 km by car. Stop at Playa Bonita, facing Huemul Island, then go up Cerro Campanario (1,050 m) for an unforgettable view of Lakes Moreno and Nahuel Huapi, El Trébol Lagoon, the San Pedro and Llao Llao peninsulas, Victoria Island and the peaks of Otto, López, Goye and Cerro Catedral.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p:147",
+            "textSha256": "a2a84c8d8b1824895421bb3f98856ebdb56bc8f35d973fcc290a5d280ee3ab01"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removed the Word day prefix for insertion into the canonical itinerary field without changing the excursion wording."
+      }
+    }
+  ]
+}

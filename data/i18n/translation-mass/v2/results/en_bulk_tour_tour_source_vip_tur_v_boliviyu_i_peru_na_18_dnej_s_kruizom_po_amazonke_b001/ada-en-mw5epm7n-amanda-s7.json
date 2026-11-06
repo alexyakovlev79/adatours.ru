@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_tur_v_boliviyu_i_peru_na_18_dnej_s_kruizom_po_amazonke:b001",
+  "stableId": "tour_source_vip_tur_v_boliviyu_i_peru_na_18_dnej_s_kruizom_po_amazonke",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ff744db86014d308292d52627479b1ab169a9ed3291b72ef139dd28c0dd00d61",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "b6da67c53a165eedd8e80933dcf6701e601cd6780d2a7ee8d82612ce9c3dd8a9",
+      "text": "VIP Tour in Peru",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1MX9F07-wY2F7S59mJUKxbcI3jUXsUWlc",
+        "documentSha256": "98ddf32dee7e7d9dcf7b9474a6cd81fe96405715968095f52c0f3301805e5adc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p2",
+            "textSha256": "0c6e3e8dc1e281242946c3351a3efd452f9be3a43458c21965daad422118f256"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "9ce62d179c33fe88d1578cdb5dcfd10eef5a4154e5f8917823152d6fe1e4c32a",
+      "text": "Over 18 days, this journey brings together very different parts of Peru and Bolivia. Begin in Lima with its colonial centre, Miraflores, the Larco Museum and contemporary cuisine. Then head to the Amazon for four days aboard Aria Amazon. From the jungle, travel up into the Andes to Cusco, the Sacred Valley and Machu Picchu, continue to Lake Titicaca, and cross into Bolivia for the Uyuni Salt Flat and an optional visit to the Altiplano lagoons.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word contains no introductory overview corresponding to this RU lead. Translate the overview using the confirmed four-day cruise in Word p34 and retaining the optional status of the lagoon visit in p96."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8137954c6a092cbb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MX9F07-wY2F7S59mJUKxbcI3jUXsUWlc",
+        "documentSha256": "98ddf32dee7e7d9dcf7b9474a6cd81fe96405715968095f52c0f3301805e5adc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p3",
+            "textSha256": "95f518e39e0f97c31dc0787ff1b0a931361e9ced63a23a5b5f3501fd11c5e4fe"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:04b8f612f1ae57df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5a669ccb6034e1570a4827438d4cd872e695f36e318269fd3c3b986b82204d29",
+      "text": "Iquitos (Amazon)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MX9F07-wY2F7S59mJUKxbcI3jUXsUWlc",
+        "documentSha256": "98ddf32dee7e7d9dcf7b9474a6cd81fe96405715968095f52c0f3301805e5adc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p26",
+            "textSha256": "473904f41899f030633dc8b98c0ff8591c30ba16506567981b8b87df204fe358"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Form the route label from the Iquitos and Amazon names in the corresponding Word heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:10b9affb31d6a916",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MX9F07-wY2F7S59mJUKxbcI3jUXsUWlc",
+        "documentSha256": "98ddf32dee7e7d9dcf7b9474a6cd81fe96405715968095f52c0f3301805e5adc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p42",
+            "textSha256": "084dce8b889e5bc5305b128e882f912868189676f0a17c1f4c18e6828e9f4ee6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0afab8f7d8295e58",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+      "text": "Machu Picchu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MX9F07-wY2F7S59mJUKxbcI3jUXsUWlc",
+        "documentSha256": "98ddf32dee7e7d9dcf7b9474a6cd81fe96405715968095f52c0f3301805e5adc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p48",
+            "textSha256": "5f55ca595ccb45420ffca0f84d8f40d62462200a0230d2e8545d108045d816a0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:45638e9b08a604d1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
+      "text": "Puno",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MX9F07-wY2F7S59mJUKxbcI3jUXsUWlc",
+        "documentSha256": "98ddf32dee7e7d9dcf7b9474a6cd81fe96405715968095f52c0f3301805e5adc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p84",
+            "textSha256": "0eb372fd6197293f3a14454b599dea380679a4092d7218071d5f4601d91b6258"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:32d7b9d28ab90e4b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bc2c16db06e2776f191dacf5d03b9ac7154970d9f85282e5f058cb3ccfb85f4b",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1MX9F07-wY2F7S59mJUKxbcI3jUXsUWlc",
+        "documentSha256": "98ddf32dee7e7d9dcf7b9474a6cd81fe96405715968095f52c0f3301805e5adc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p84",
+            "textSha256": "0eb372fd6197293f3a14454b599dea380679a4092d7218071d5f4601d91b6258"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    }
+  ]
+}

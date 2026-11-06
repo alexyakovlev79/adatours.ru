@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_chili_5:b008",
+  "stableId": "tour_source_vip_chili_5",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4a64213b7ef076bdc7c24c5ea69cc502618637aba95f93da13d2196e5329f5d0",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:e683576c6e3e6406",
+      "field": "media.hover",
+      "sourceTextSha256": "0391ef2bebfc80358339d8e70f18591a3c7d8ffb149e18e02e5f66374152da9e",
+      "text": "Machuca, Chile: small houses in a high-altitude landscape",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes Machuca but has no hover caption for this exact photograph of houses in the high-altitude landscape; translate the RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:86e7830d3c4bbb5d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "09b8bd0fdd011b778802307665971e4912feb3e715fc4654f4c4b67d5481da73",
+      "text": "El Tatio Geysers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0092",
+            "textSha256": "4d4f283a7e5bd60a5af6ad105968f9babdf12c4a3ad31721c431680326834f72"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed geothermal-site name from the approved Word excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c027dacdc64c5088fdbc5da412daf565a8f7f16c29d44433940e3131e9436d86",
+      "text": "Santiago – Puerto Natales",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "f57b3dd3f1b7543ac35a39a8722fda47242980276325b02a248ba17777088e22"
+          },
+          {
+            "ref": "word/document.xml#p0107",
+            "textSha256": "b87a30301c7182713e5af9a1f0edc9c674ad010878a949c7635484765d7bd602"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage to form the corresponding standalone field without adding services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a123974f800db52aff7e87362ce46319f7427050793801b7c8438180dc97c378",
+      "text": "Day 6 · Breakfast and transfer to the airport for your flight to Puerto Natales. On arrival, transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "f57b3dd3f1b7543ac35a39a8722fda47242980276325b02a248ba17777088e22"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:635a93bbe37ad2df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0065",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          },
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "22dbfd8bc53d1be067e40e225d71c15645ad3149180620a6d183e7b4dd290564"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Expand the Word's Santiago location label to the country's conventional unambiguous name, as required by the assigned RU place field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5d171705f0c8fd48",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0102",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          },
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "f57b3dd3f1b7543ac35a39a8722fda47242980276325b02a248ba17777088e22"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage to form the corresponding standalone field without adding services."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c8c6cf26cac87226",
+      "field": "media.alt",
+      "sourceTextSha256": "97e733c39306f42fca10393174d9130ceaaec972dd2304d97c55173ca91f1d1d",
+      "text": "Puerto Natales",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "f57b3dd3f1b7543ac35a39a8722fda47242980276325b02a248ba17777088e22"
+          },
+          {
+            "ref": "word/document.xml#p0142",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the location name confirmed in the approved Word; this assigned alt contains only the place name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "30f2b9a3c919df19d0b10a6fde38376936b15dd015ab56ea1e49592dc0ad2524",
+      "text": "Torres del Paine, Grey Glacier and the Milodón Cave",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word confirms Torres del Paine and Grey Glacier but has no Milodón Cave wording for this expanded RU itinerary heading; translate the assigned heading without attributing the absent cave wording to Word."
+      }
+    }
+  ]
+}

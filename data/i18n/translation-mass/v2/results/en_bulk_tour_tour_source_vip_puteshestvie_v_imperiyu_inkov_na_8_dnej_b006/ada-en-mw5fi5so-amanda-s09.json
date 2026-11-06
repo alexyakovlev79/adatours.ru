@@ -1,0 +1,163 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej:b006",
+  "stableId": "tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b29f68cb4921ccade9b0c9f609ca883859a0c3ae94b16c2667de208963e39838",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:7fee1c6e293d559a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "aabc3d75f8dd6cdb9215569c4b7369e7fb7792f3b76e955a5dfa5b2da1200457",
+      "text": "Moray",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZKk6YevQ1wiUzBQfDwExNWW9qX9QhIWw",
+        "documentSha256": "1a8efa56c9e3f829b6247a56c90c86639469c8cc8b3af76ade3b6a727aab9ee9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[42] (zero-based)",
+            "textSha256": "de574a12a78d98be57d6cabd4138ec525f9f71170456f178e7caf42f363a46b9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the archaeological site's approved name from the Word Sacred Valley itinerary paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:08e82869bc5e4dd5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b4c6bebfd71b2b94bd747fa837982544ac8f840f7fdd49f2718bf59280737ef7",
+      "text": "Maras",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZKk6YevQ1wiUzBQfDwExNWW9qX9QhIWw",
+        "documentSha256": "1a8efa56c9e3f829b6247a56c90c86639469c8cc8b3af76ade3b6a727aab9ee9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[47] (zero-based)",
+            "textSha256": "c0c19cec3cc0ebec97bfc160a440c8ca7314a01ffec3673e65d1e0793fc8cb34"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the locality name from the Word Maras Salt Mines paragraph as the itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:edd9ff5602d2613d",
+      "field": "media.alt",
+      "sourceTextSha256": "0c650aed4444f6a871ef21b09088bb65f78b1de7ff3137d84d915d62081e6731",
+      "text": "The circular terraces of Moray on a green mountainside, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word describes Moray but has no alt text for this specific photograph and its green slope; translate RU."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:0ea90b7811fff6fd",
+      "field": "media.hover",
+      "sourceTextSha256": "93eebb4cda3f38cb97ca89fa1870b9cab1d189058e0388f8d77955a66d822369",
+      "text": "Moray, Peru: concentric terraces among green hills",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word has no hover caption describing this particular image of Moray's terraces; translate the RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4cf1a7609609995264ccb7de17c7d51396ca12641f472b17de560982c320cdb8",
+      "text": "Hiram Bingham and Machu Picchu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZKk6YevQ1wiUzBQfDwExNWW9qX9QhIWw",
+        "documentSha256": "1a8efa56c9e3f829b6247a56c90c86639469c8cc8b3af76ade3b6a727aab9ee9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[57] (zero-based)",
+            "textSha256": "1ab75aab596ba3197431361014884139dc7b82f57bdcdc86582404c5f3bcbae8"
+          },
+          {
+            "ref": "word/document.xml:p[64] (zero-based)",
+            "textSha256": "46338414b26c8791e5fb9082014b5a24f65f8eed4693fade4a9a55485bc43447"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the activity heading from the Word Machu Picchu day title and its Hiram Bingham train paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d68315496e3302208bcd1790236e6b0f54817a54de10b2e68a485ba02efca018",
+      "text": "Breakfast at the hotel. At the mentioned time, meet at the hotel with your guide and transfer to the railway station.\n\nA train trip away to see one of the New Seven Wonders of the World. We arrive at the Aguas Calientes station where our staff will assist us on boarding the bus to go up the winding road to Machu Picchu, amid a spectacular view of the Urubamba River and its canyon.  The Lost City of the Incas, Machu Picchu, will astonish us with its terraces, ceremonial shrines, steps and urban areas. Energy is all around us.\n\nMost archaeologists believe that Machu Picchu was constructed as an estate for the Inca emperor Pachacuti (1438–1472). The Incas built the estate around 1450 but abandoned it a century later at the time of the Spanish conquest. Although known locally, it was not known to the Spanish during the colonial period and remained unknown to the outside world until American historian Hiram Bingham brought it to international attention in 1911.\n\nIn the afternoon we will return to Aguas Calientes. We will embark in one of the most spectacular rides on board the exclusive Hiram Bingham deluxe train where we will have dinner. The experience on board is purely first class. The train’s incredible classic style goes perfectly with the dining room arrangement, making it easy to taste the delightful dishes carefully prepared for us by experienced chefs. The landscapes are breathtaking and while we follow the Urubamba River course getting closer and closer to the canyon, we’ll arrive at Aguas Calientes. \n\nTransfer to Cuzco to Belmond Palacio Nazarenas hotel located in the medieval building. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZKk6YevQ1wiUzBQfDwExNWW9qX9QhIWw",
+        "documentSha256": "1a8efa56c9e3f829b6247a56c90c86639469c8cc8b3af76ade3b6a727aab9ee9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[58] (zero-based)",
+            "textSha256": "f092447053e13c16e273599929c4061a3cf31629b79d4db8f9c3b41139a55d1b"
+          },
+          {
+            "ref": "word/document.xml:p[61] (zero-based)",
+            "textSha256": "ef4c153ca997c5bc8a33c8df247f1ada64f13d1a031900e66f99cebe689436e5"
+          },
+          {
+            "ref": "word/document.xml:p[62] (zero-based)",
+            "textSha256": "1ce53a3482679b1df166bc81990a63e9ba98d6a0717a3a8abdd40b80c4e7306a"
+          },
+          {
+            "ref": "word/document.xml:p[64] (zero-based)",
+            "textSha256": "46338414b26c8791e5fb9082014b5a24f65f8eed4693fade4a9a55485bc43447"
+          },
+          {
+            "ref": "word/document.xml:p[65] (zero-based)",
+            "textSha256": "7df68be6bec5c4483883a3f3388e2cfcfe645ed90013872992d40bdf81a24150"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:db8f62d0879433a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+      "text": "Machu Picchu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZKk6YevQ1wiUzBQfDwExNWW9qX9QhIWw",
+        "documentSha256": "1a8efa56c9e3f829b6247a56c90c86639469c8cc8b3af76ade3b6a727aab9ee9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[57] (zero-based)",
+            "textSha256": "1ab75aab596ba3197431361014884139dc7b82f57bdcdc86582404c5f3bcbae8"
+          },
+          {
+            "ref": "word/document.xml:p[61] (zero-based)",
+            "textSha256": "ef4c153ca997c5bc8a33c8df247f1ada64f13d1a031900e66f99cebe689436e5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the approved destination name from the Word day heading and guided-visit paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d376729f8068cedf",
+      "field": "media.alt",
+      "sourceTextSha256": "0dff2d797b28a6888ceaa400fd2b797145d2766e44eb20e3168a2f6aac7b2c8d",
+      "text": "The stone ruins of Machu Picchu and a mountain peak seen through an opening in an ancient wall, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word has no alt text describing this photograph's wall opening and mountain view; translate the RU alt text."
+      }
+    }
+  ]
+}

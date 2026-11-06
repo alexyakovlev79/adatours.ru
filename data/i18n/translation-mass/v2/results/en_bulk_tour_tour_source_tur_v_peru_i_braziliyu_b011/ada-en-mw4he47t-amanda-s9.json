@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b011",
+  "stableId": "tour_source_tur_v_peru_i_braziliyu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "59a3c3a21b41e5d694f7116fb2c3fcb71db5940b2b5bdfb86f54c23c73e7fb15",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:d8c70125fca1f9f4",
+      "field": "media.hover",
+      "sourceTextSha256": "fb0f9493592e8cb2e867d52b20a692b0fa87f857743c753cd7c1cc50ab85e4c2",
+      "text": "Lapa: lights by the arches against the backdrop of Rio at night",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he47t-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no photo-specific hover caption describing the illuminated Lapa arches against Rio at night."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "0f37daa2cfb4e5c1453b92fb6531179db2c947064d2847ffe18de92bf65660de",
+      "text": "Rio de Janeiro: Corcovado",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p103",
+            "textSha256": "b2dcb5036356bcbaa5f6b8f59b50193359e7b7c7ced8a854353450d97ed6f36e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the Word city heading and the Corcovado excursion name into the existing day-title format."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8833c942df391cb83b564bc9c0256ec0ec9e532252e1cd70b603fc3a40732745",
+      "text": "Day 10 · Breakfast and excursion to Corcovado and the statue of Christ the Redeemer, at 710 m: the ascent passes through gardens full of tropical trees to the foot of Rio’s most famous landmark, with an impressive view over the city. Return to the hotel. Optional: a helicopter flight over Rio, and in the evening, we recommend the seafood of the Marius restaurant (see Optional excursions).",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p103",
+            "textSha256": "b2dcb5036356bcbaa5f6b8f59b50193359e7b7c7ced8a854353450d97ed6f36e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:465159675cc547c8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:60bb3de01280da9a",
+      "field": "media.alt",
+      "sourceTextSha256": "d805f1b4f3e25c0b2a847d3379998079091804cb1eb1c2decb3e12f477b41722",
+      "text": "Christ the Redeemer in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he47t-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no corresponding photo alt text naming the statue and its location in Rio de Janeiro, Brazil."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "3f15dbdd6d405e148f60f9704276c764497c9a5cdac9bf7ab8eb0505c5d73370",
+      "text": "Rio de Janeiro – Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p107",
+            "textSha256": "2565610f8c73543c3f62e001f402171b529e9512cc11607cfc89ffd982b5fc48"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the exact two destinations from the Word route heading without its section prefix."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7e6960ba67adfa1c3339905003297c5457fc020537e909fac540f92f69552405",
+      "text": "Day 11 · Breakfast, transfer to Búzios (without a guide) and check-in at the hotel. A former fishing village about 170 km from Rio de Janeiro, Búzios charms with its picturesque landscapes, lush vegetation and scenic beaches of warm golden sand and clear ocean water, framed by forested hills, coastal cliffs and colourful sunsets. The climate is dry and mild, with temperatures generally between 20 and 30 °C.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p111",
+            "textSha256": "1ee8a0938e6cac7ca3cb086fa0316f14b3272e443697eb23e59d659a4eae2b43"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71c343059cadf68d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p101",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    }
+  ]
+}

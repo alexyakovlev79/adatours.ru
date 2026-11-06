@@ -1,0 +1,158 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej:b010",
+  "stableId": "tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "52b6025ed0ecc2582ae6f05fc8c65b2ac5e426677e22bd5f8db92199ef337fe1",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:c56e08e3448c89bb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fa917896805d477d1a5dc36a9a3fa035ea686f3e2e07aa923eac9a3b300546bf",
+      "text": "Blue Cave Grotto (Bonito)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0054",
+            "textSha256": "38b52c35ddf53d096e38841df992560cdace1dc862fb82752880b8c24af00c92"
+          },
+          {
+            "ref": "word/document.xml#p0055",
+            "textSha256": "f59c62f85ac28a0014ee8f3568bb518b7f1bf0db2ed2b2c6bd1ac3430176683b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the verified Word passage to form the corresponding standalone field without adding services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7977390eb9c26f98",
+      "field": "itinerary.label",
+      "sourceTextSha256": "affbb87955f898fd7b3db4c3becb006c0b66f57cb07f49da7b5fd149e1ef0da4",
+      "text": "Mimoso River Waterfalls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "26fb7d6f89d5dd3fa9ccb2907a1543f7b89b958bcc5c4cb3a6fde54f2e1ce97d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Form the place label from the Word description of the Mimoso River and its eight waterfalls."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4e9a70abe5e265d3",
+      "field": "media.alt",
+      "sourceTextSha256": "40122592171c3ec4de59883eb912e2107d4d0e3cf67bd47e32db0d923ce919de",
+      "text": "Scuba divers in clear green water among rocks and forest near Bonito, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no alt caption for this specific photograph of scuba divers in green water; translate the assigned RU alt."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e75afcca03700eed",
+      "field": "media.hover",
+      "sourceTextSha256": "825c8dacca7e2a7e654c0dec4e53ea13ab30fe0f0944cd2f49159d1b345c93b8",
+      "text": "Bonito: diving in clear water beside a green riverbank",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no image-specific hover description of this diving scene; translate the RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4c4b406c20a8230fc913ce075e22eb69bdf984c7a843eb6e22efd9a602057868",
+      "text": "Bonito – Campo Grande – Recife – Porto de Galinhas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0059",
+            "textSha256": "e9161f1aaa917ef032f16215e5c822b277a3537d6d5124ceaddf7c22d72a075d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove the day number and date from the verified Word route heading to fit the standalone itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "dbcfe2555cc586eab7f249a804eef43290f419a38585560743860578b8f99747",
+      "text": "Transfer to the airport. Flight to Recife. Transfer to your hotel in Porto de Galinhas. Time for rest. The town is located in the south of the state, 60 km from the city of Recife. The town is known for its magnificent beaches, some of the most beautiful in the country. Clear turquoise water, clean white sand and palm trees on the shore give a unique flavor to this old colonial town.\n\nHotel Nannai Muro Alto, Double Bungalow with sea view, HB",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0060",
+            "textSha256": "fc75f3db31c7a3d74920d935a5b3c7f1e28214ab7e2e6c8d65c3a6d563e92020"
+          },
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "c4c80f1b0ee1c81db478c274f3b2a782247d33c235399ad830292a1ee5487485"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c09319119d70a868",
+      "field": "itinerary.label",
+      "sourceTextSha256": "de6738182fbee1100962b5c995a837c3dcc6831cd58b9948be7dcb02e2b71558",
+      "text": "Bonito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0054",
+            "textSha256": "38b52c35ddf53d096e38841df992560cdace1dc862fb82752880b8c24af00c92"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the canonical location name from the verified Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a13ae99da8664ada",
+      "field": "itinerary.label",
+      "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+      "text": "Recife",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1XweR0wgz82d9UkNMNgftRQuCuTKLoqmT",
+        "documentSha256": "571c5926244ace7761d782ecedda1bc4aa822123d7c9023e8fbfe2d267ae24a6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0059",
+            "textSha256": "e9161f1aaa917ef032f16215e5c822b277a3537d6d5124ceaddf7c22d72a075d"
+          },
+          {
+            "ref": "word/document.xml#p0060",
+            "textSha256": "fc75f3db31c7a3d74920d935a5b3c7f1e28214ab7e2e6c8d65c3a6d563e92020"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination name confirmed in the verified Word flight and route passages."
+      }
+    }
+  ]
+}

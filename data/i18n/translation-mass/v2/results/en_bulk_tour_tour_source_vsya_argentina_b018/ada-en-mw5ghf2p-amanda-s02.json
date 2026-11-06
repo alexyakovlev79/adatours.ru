@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vsya_argentina:b018",
+  "stableId": "tour_source_vsya_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f35c9c058b22b202108bbb9c8b325d33255ff65ef55739cd63ae194f7eed48c6",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:fae1b2994bf8ef44",
+      "field": "media.alt",
+      "sourceTextSha256": "9fc7a5021fb98f2e55bdb7fcd9d169c86acb4399d72fbe1fb96291225ac02cb1",
+      "text": "A turquoise mountain lake with a small house and bridge beneath jagged, snow-covered Patagonian peaks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ghf2p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme contains no corresponding image alt text or hover caption; translate this RU media description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6a3a45f225465476",
+      "field": "media.hover",
+      "sourceTextSha256": "9f0a5c2e755fd5205b1479978ed31d321f05e30a74f5c6ba9508553db51c834c",
+      "text": "Patagonia: a lakeside house beneath towering mountain peaks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ghf2p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme contains no corresponding image alt text or hover caption; translate this RU media description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:0a54ad54d36b0a7d",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b87c150eb4050fec267f540aaac1a09eae4cb6cf6f739cbb2e5f24ed797913de",
+      "text": "Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p161",
+            "textSha256": "7f64d5e28659b0ac6b31407e7c502ebac5b3f5a4a5356b603f951ac4f146dcde"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named place as the corresponding itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:cad8c23d0530c6f0",
+      "field": "itinerary.text",
+      "sourceTextSha256": "04d5a7bbead6fcc20dd739f2bc155f23411e7ff57eab6b5a2f07fc11dbdfdc98",
+      "text": "After breakfast, excursion to the Perito Moreno Glacier, one of the most accessible glaciers in the world, in a UNESCO World Heritage Site. Its ice front rises about 60 metres above the water and can be admired from numerous viewpoints along the shore. Every few years the glacier blocks the channel between Lago Argentino and Brazo Rico; the water builds up, carves a tunnel through the ice and, over two to three days, the arch finally collapses with a thunderous roar. Bring a packed lunch; there is also a restaurant in the park.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p161",
+            "textSha256": "7f64d5e28659b0ac6b31407e7c502ebac5b3f5a4a5356b603f951ac4f146dcde"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the matching glacier excursion paragraph, removing only its Word day-number prefix to fit the existing itinerary block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:571c41bccc21ec35",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p242",
+            "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named place as the corresponding itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fe81e2896210d369",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a4ffba6e54b553d326d56ed595a04741b3b5f80fa0d2d205e8bdce32b901f3e1",
+      "text": "Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "p161",
+            "textSha256": "7f64d5e28659b0ac6b31407e7c502ebac5b3f5a4a5356b603f951ac4f146dcde"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the named place as the corresponding itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:21a08dec895e42a7",
+      "field": "media.alt",
+      "sourceTextSha256": "24627cf9c0d2294c000d683db63b531a0e57a6a758d21073bed21937b914fb63",
+      "text": "Perito Moreno Glacier facing viewing walkways with visitors, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ghf2p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme contains no corresponding image alt text or hover caption; translate this RU media description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7d509b61be5d0bbf",
+      "field": "media.hover",
+      "sourceTextSha256": "214cd401dedea9a6182b9749cfdb59a92f9e67809ef548d2f753b07d1695d418",
+      "text": "Perito Moreno in Argentina: a blue ice wall beyond the walkways",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ghf2p-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme contains no corresponding image alt text or hover caption; translate this RU media description."
+      }
+    }
+  ]
+}

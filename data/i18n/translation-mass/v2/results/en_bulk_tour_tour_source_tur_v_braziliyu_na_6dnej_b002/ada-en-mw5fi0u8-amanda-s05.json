@@ -1,0 +1,113 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_6dnej:b002",
+  "stableId": "tour_source_tur_v_braziliyu_na_6dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3f2d92942d88b260e5ffe316a0e799efa30ee7b860c2cf7da279796845469131",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional excursions.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aKUm5mY8arrLqAGswI5gl59L21i1ILtG",
+        "documentSha256": "bee8687334c0be6aacdec4e7a8a7f28659fb1aeffa6849b756b7d2e30327d1e3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[168] (zero-based)",
+            "textSha256": "2f6be32eb10f897da0ecfed24140c8d7f0f27f710569bc5282b94ea8d0358463"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list dash and add sentence punctuation for the standalone not-included item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:58d2dbd877890039",
+      "field": "notIncluded",
+      "sourceTextSha256": "9f47503ba269e178919d0075a6404af4daec3674e3df51592830dbd4144decfd",
+      "text": "Domestic flight Rio de Janeiro – Iguaçu – Rio de Janeiro, from $300.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word excludes the Rio to Foz do Iguaçu flight but contains neither the RU round-trip route nor the from-$300 amount; preserve the complete pinned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6e52608d112e92b1",
+      "field": "notIncluded",
+      "sourceTextSha256": "1e7b740da431890dd85d53a213bd78601935c27039cb0c0012087ff01916403b",
+      "text": "Food and drinks during transfers.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word excludes meals and beverages not mentioned, but has no matching exclusion specifically covering food and drinks during transfers."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may replace the hotel with another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word allows substitution by a similar-class hotel but lacks the complete Ada Tours if-necessary note; translate that RU note without changing the category."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while preserving the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no note allowing excursions to be reordered while preserving the tour programme."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed when an early flight or excursion requires an early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no liability note concerning missed breakfasts due to early check-out for flights or excursions."
+      }
+    },
+    {
+      "blockId": "tour:highlight_title:5f9edba6a60dbf77",
+      "field": "highlight.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions Rio within headings and narrative, but does not have this exact standalone highlight heading."
+      }
+    },
+    {
+      "blockId": "tour:highlight_text:4aa31883f71bb810",
+      "field": "highlight.text",
+      "sourceTextSha256": "cd9080357b67e5b45761f3b2ddd136e9f19158cee5fdd73480243b2d5d7f2489",
+      "text": "The programme includes Sugar Loaf, Urca Hill, a sightseeing tour of the central districts and the statue of Christ the Redeemer on Corcovado.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word Days 2-3 describe these visits separately; there is no matching combined highlight sentence about Sugar Loaf, Urca Hill, central districts and Corcovado."
+      }
+    }
+  ]
+}

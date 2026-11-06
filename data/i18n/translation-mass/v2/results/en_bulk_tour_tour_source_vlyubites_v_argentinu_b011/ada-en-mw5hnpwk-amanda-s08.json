@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vlyubites_v_argentinu:b011",
+  "stableId": "tour_source_vlyubites_v_argentinu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7d21e1ce59c8e4294c1b170b26d1394a5ba134265d2d03fa668dbf9e6927b3e4",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ffa70704263215b85e3cbec2049c0f31983e923f369d2312a9faf97589a9436d",
+      "text": "Salta – Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[84] (nonempty, zero-based)",
+            "textSha256": "2ee206cfdcfd45e0024742457e7d219eab5b65f04e14266403ddfec51f5b2a17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Salta–Puerto Iguazú flight segment from the approved flight routing for the concise day title or place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ea2d63b059897f3cb4c50dbdcc00a7454869113bc6b3df540525778d511b75bf",
+      "text": "Day 11 · Transfer from the hotel to the airport for your flight to Puerto Iguazú; on arrival, transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[78] (nonempty, zero-based)",
+            "textSha256": "3c491ab5a93713b4110c8349cc2cf885a15ebe84dcaaf7594529efc91ba034c5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:51dd03be73520c36",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnpwk-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word names the Brazilian side of Iguazu but does not contain this separate Foz do Iguaçu canonical-place label; translate the assigned RU label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d5bc9e3b0938e59f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[115] (nonempty, zero-based)",
+            "textSha256": "2e20689ae9b945b78658eff381b2cd70db74d13021c9c1b55dfd20091415dbb1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f7be2bc7241dd7b0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6269b6b6909c4fe6a61adefe06d132c769df935fa9a35fd438c04b03ed604c74",
+      "text": "Salta",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[84] (nonempty, zero-based)",
+            "textSha256": "2ee206cfdcfd45e0024742457e7d219eab5b65f04e14266403ddfec51f5b2a17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Salta–Puerto Iguazú flight segment from the approved flight routing for the concise day title or place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d5be9a92f1b48062",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguazu Falls and a rainbow above the river, surrounded by tropical rainforest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnpwk-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified pinned Word has no image-specific alt caption for this falls-and-rainbow photograph; translate the exact RU description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:579d6a0b72f12d34",
+      "field": "media.hover",
+      "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+      "text": "Iguazu in Brazil: cascading waterfalls, a rainbow and green riverbanks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnpwk-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified pinned Word has no image-specific hover caption for this falls-and-rainbow photograph; translate the exact RU description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "dec7b838b75a9aeac039755eb70056d8504594667a6a8a05091385cfe9a1a033",
+      "text": "Argentine side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZGWvI0Qr65nWVX5SI85UAm2W6vLpWCaW",
+        "documentSha256": "0baf25fe5c92a21392ac70cc09009cb07ab1e7fd0ad5032d8a0e93d1b93aad13",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[79] (nonempty, zero-based)",
+            "textSha256": "83de38a40b32ed68ab273620f89368db30f8afb476a125ff643709c6291f6879"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Condense the approved Day 12 Argentine-side visit into the existing itinerary title without adding activities."
+      }
+    }
+  ]
+}

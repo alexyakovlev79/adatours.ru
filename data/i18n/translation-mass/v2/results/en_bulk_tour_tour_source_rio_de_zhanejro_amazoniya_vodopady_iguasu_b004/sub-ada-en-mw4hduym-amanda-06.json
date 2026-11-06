@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu:b004",
+  "stableId": "tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "962d796d17d7b1b15a9a7736be0bb623f91dd3005687f3440e6a473d7cba7d60",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p111",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:07172fd6ca3b791b",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panorama of Rio de Janeiro with the bay, Sugar Loaf and city buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes Rio viewpoints but has no matching alt caption for this particular panorama."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:bec8b04e2a6eaf4a",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugar Loaf among the city neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no image hover caption describing this Rio panorama."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "354ec617901ab72368bf927235067d0fa28cefbe933b1a4136f403ecc77f53fa",
+      "text": "Rio de Janeiro – Manaus",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p81",
+            "textSha256": "eaa04da2a9c2bccad2e9e9615e7057fdbc58de9554d3cb58bbef6b216a950535"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extracts the two cities for this flight leg from the Word regional route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f98af6c3fa6f57c5f42d6e72ea5fe7ff33a1bc812730c88653befbe62f5da4e9",
+      "text": "Transfer to the airport for your flight to Manaus, where your guide meets you and takes you to the port. Continue by boat to your jungle lodge for dinner.\n\nPlease note: arrive in Manaus on flights landing before 13:00 to join the regular transfer, and leave on flights departing after 14:00; otherwise a private transfer is charged by the lodge.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p85",
+            "textSha256": "a9a5eaff2ea5ec2e79fa275a363050accf8f61dee16817e9c02f6feec54cba5e"
+          },
+          {
+            "ref": "word/document.xml:p88",
+            "textSha256": "622425d1d3b46640e8cda62574300b488cf37370c7fbe95e2a2f2a1ac3d224d1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Keeps the Word transfer and lodge-arrival wording plus flight-time conditions; the optional shared excursion description is kept outside this day-specific block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p111",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f556df13e9dca200",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "documentSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p116",
+            "textSha256": "ae3c923b7464986811bc370523960ebf9f3cf234cdedaedb9c927ee4adc21c20"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the city and region from the accommodation label to match the existing destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b45eae09fd307668",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "A shaded street with trees and café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no image alt caption describing this shaded Rio street and cafe tables."
+      }
+    }
+  ]
+}

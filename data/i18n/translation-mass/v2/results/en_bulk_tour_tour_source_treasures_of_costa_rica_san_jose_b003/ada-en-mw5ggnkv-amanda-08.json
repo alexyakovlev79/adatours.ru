@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_treasures_of_costa_rica_san_jose:b003",
+  "stableId": "tour_source_treasures_of_costa_rica_san_jose",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "88587cbf5f27f4a4d5c39e700e945f675da72af7627adfd89553a5b8cc156f09",
+  "blocks": [
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may replace the hotel with another of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The website's same-category hotel substitution clause is absent from the verified Word document."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while retaining the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The website's excursion-order clause is absent from the verified Word document."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when an early flight or excursion requires an early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The website's missed-breakfast liability clause for early check-out is absent from Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "04d4ca452b4c3e1296c45d495e6366b7d6bde8172c52561580926fd67153bb18",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p62",
+            "textSha256": "1b4e563b95dd8f94c097e6598c81839f0b2bad7dc6b1e5901bcc672dd0aae225"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified San José destination name from the Word regional heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "169f9035d7541a5f384edd30c4c7ce147c7fbf9d773d2f94979c4a10a7430ad9",
+      "text": "Arrival at Juan Santamaría International Airport, where you are met for the transfer to your hotel. Overnight at Hotel Palma Real.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "c5fa6704841e83313c9898bef6d54bcbffd11d3aca3e7f8609584c20a21aded9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 1 marker. The confidently matched Word 2027 governs the EN programme under editorial section 1.5–1.6, including its Hotel Palma Real wording; shared RU hotel data is untouched."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0fa333293e1d31c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ecf1d4aaf87efa0e77b1e87aa624616c6ff82b4b7a23f4960dea213038d53667",
+      "text": "San José",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P8eG9RBRya59XJpUW2w3P1AnaaUBSCRX",
+        "documentSha256": "d5b6af0bfa0b6e6ab64c5dd3d42cb41271a119010e5b66f704f6a523cf850a2a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p62",
+            "textSha256": "1b4e563b95dd8f94c097e6598c81839f0b2bad7dc6b1e5901bcc672dd0aae225"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified San José place spelling from the Word regional heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:db9a5f02b4833863",
+      "field": "media.alt",
+      "sourceTextSha256": "f995c88dac49d8cbb0b78d5ea2569902e4e1f6073f1285561d679e2b94dd4375",
+      "text": "An illuminated historic building behind a fountain in the evening in San José, Costa Rica",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The website's photographic alt text describing the illuminated building and fountain is absent from Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:57352469ce49fed2",
+      "field": "media.hover",
+      "sourceTextSha256": "54c72d392d82687168d0bb1efb2e2acf83b5ff40d9592c933700c9c7ac41bd47",
+      "text": "San José: an illuminated façade and a fountain in the square at night",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The website's image hover caption about the illuminated façade and square fountain is absent from Word."
+      }
+    }
+  ]
+}

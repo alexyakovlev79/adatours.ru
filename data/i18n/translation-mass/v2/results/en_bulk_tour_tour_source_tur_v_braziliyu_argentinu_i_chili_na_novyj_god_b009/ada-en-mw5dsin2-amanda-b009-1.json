@@ -1,0 +1,184 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god:b009",
+  "stableId": "tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5ec46d4b2be078ff331775db66e8a7e89912e12113271d4aef1b36bc13441c0a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a47f17680b079b8c285c754f5b100fe6d252ef54fa3f7fa0b64c3a8904052558",
+      "text": ", 4 January. Brazilian side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+        "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "a9c87de3fcf72374b510f8483ae8c556318ef6b63d9319dbf97028b3ddd43e20"
+          },
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "c5f9c8d14bf1594c13a2641f34cd4e6931b589b7266efdb677f1cf8205e6616e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the approved Word date and visit description as the label for the Brazilian falls day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "92f10165953c66f3513adc467e9f6ff429643ab7f00a7348fe897e30b3f0be18",
+      "text": "Today after the breakfast in your Hotel, you will visit the Brazilian side of the magnificent Iguaçu Falls . Following the walkways which border the canyon of the Iguassu River, you will enjoy the sight of hundreds of small waterfalls. At the end of this Trail you will arrive right in front of the huge and impressing Devils Throat, the strongest and most powerful of all waterfalls. You will feel the waterfalls with the splashing water around you and the whole area around is full of beautiful rainbows.\n\nAt the end of the tour your guide will drop you off at your Hotel.\n\n**Iguazu Falls excursion in Brazil — Macuco Safari**\n\nOptional\n\nPrice: $130 per person.\n\n**Exotic Bird Park in Iguazu**\n\nOptional\n\nPrice: $50 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dsin2-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The approved Word supplies the Brazilian falls narrative but does not contain the current RU Macuco Safari $130 and Bird Park $50 add-ons; these are translated from this job without changing their prices.",
+        "wordPassages": {
+          "kind": "word_exact",
+          "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+          "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p0062",
+              "textSha256": "c5f9c8d14bf1594c13a2641f34cd4e6931b589b7266efdb677f1cf8205e6616e"
+            },
+            {
+              "ref": "word/document.xml#p0063",
+              "textSha256": "92dbeedf644b3f016ca044a1001b92e9f277c0aea8f73a2ea9321d3a1cb96a67"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+        "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "a9c87de3fcf72374b510f8483ae8c556318ef6b63d9319dbf97028b3ddd43e20"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination label from the approved Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:80ba047123020f04",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguazu Falls and a rainbow over the river, surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dsin2-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no image-specific alt text for the current RU photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:58ce7d859be7d262",
+      "field": "media.hover",
+      "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+      "text": "Iguazu in Brazil: waterfalls, a rainbow and green riverbanks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dsin2-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no image-specific hover caption for the current RU photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "548bb8a554da906e930dc5747833703f883188a5795a162873c9692b504212a7",
+      "text": ", 5 January. Argentine side of Iguazu and flight to Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+        "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "bed77bc8043c1a86fb87a834bc4e96268d75ac9a741df5f88f95c0e0578447b6"
+          },
+          {
+            "ref": "word/document.xml#p0079",
+            "textSha256": "e8c0c739cfb6ed79f234ca981e1326b94a6e460eb30a7c0671b9d2f2effd4b59"
+          },
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "59abf4d138f5ac80a5b941986960659563ccedf585ef6ed929b07f016ba053e7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the day label using the approved Word date, Argentine falls visit and onward flight."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c1b6bfccbf758fff34c200265c17bfd1eb0c0399abe503b06b33d7dab4343c2c",
+      "text": "Good Morning! After breakfast in your hotel, our guide will pick you up for a full day adventure to the Argentinian Side of the Iguazu Nationalpark. The Argentinean side is very different from the Brazilian one; there are the three trails leading you through the nature in the parc:\n\nThe Lower Circuit: At a length of 1,700 meters, runways venture into the lush jungle to take direct contact with the breaking of the Dos Hermanas, Chico and Ramirez. Walking down a runway you can be at the foot of a huge seawall water which is the fall of Salto Bosetti and you will enjoy the steep falls in the Saltos Alvar Nuñez, Elenita and Lanusse.\n\nThe Upper Circuit: a walk of 1,300 meters, elevated runways will take you on the fall line of several major jumps, reaching the edge thereof. It provides an overview of the whole area from a greater height.\n\nThe Devil's Throat: Accessed through the Rainforest with the Ecological Train arriving at the Devil's Throat Station. From there, after a 1,000 meters walk, you will reach the enormous 'Devil's Throat'.\n\nYou will walk around next to the falls to have a close look of the falls. You can feel the strength of the water and enjoy the 55.500 hectares of natural beauty! \n\nAfterwards you will have a transfer out to airport to take your flight to Buenos Aires. Upon arrival, a driver will be waiting for you to drive you to your hotel. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+        "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0079",
+            "textSha256": "e8c0c739cfb6ed79f234ca981e1326b94a6e460eb30a7c0671b9d2f2effd4b59"
+          },
+          {
+            "ref": "word/document.xml#p0081",
+            "textSha256": "ed7db5ee2085eb07423cb2804c3d11be86353712cbebcb3a7e9d89b5df317df9"
+          },
+          {
+            "ref": "word/document.xml#p0083",
+            "textSha256": "7c386f58f8594ad918a23f07864bc54717452f928aa8f9bf9128d34a39f4c497"
+          },
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "e44962e857883b8225dbc1dc68fee6a62a7ce05dd3c1ae0378152c67d953b9f2"
+          },
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "260b6294d9c13647c1f373ac342d5a41f9fb15e81a3e7eddc9086e432c516011"
+          },
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "59abf4d138f5ac80a5b941986960659563ccedf585ef6ed929b07f016ba053e7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:815d9c8f5f606210",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+        "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0142",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    }
+  ]
+}

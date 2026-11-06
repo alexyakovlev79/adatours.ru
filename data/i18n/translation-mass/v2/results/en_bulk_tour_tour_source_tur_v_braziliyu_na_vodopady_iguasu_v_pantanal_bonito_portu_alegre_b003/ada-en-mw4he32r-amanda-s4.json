@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre:b003",
+  "stableId": "tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "317c29fd3e1c8e07a95b973d53d63b8b0d40256ffd92afd28049b40ea8877aed",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:fb3be0217dc951d3",
+      "field": "notIncluded",
+      "sourceTextSha256": "b95c86e0a45f42513f29f337a1ec10b77c709481cc43441c58bf66cfdf3e11d4",
+      "text": "Meal and drinks during the transfers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[110]",
+            "textSha256": "2ac6996f417890baadc27be932926932cbb00531cf3cfa69c7998714571207f8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching service or exclusion from the verified Word paragraph, preserving the pinned RU field scope."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may replace a hotel with another of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word lists the hotels but contains no same-category hotel substitution clause; this condition is translated from the pinned RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the full tour programme is retained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no excursion-order flexibility clause; the condition is translated from the pinned RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:ae482daa99427b98",
+      "field": "note",
+      "sourceTextSha256": "557246c9b96af1f9e9f293e8356eaf66a14fea7ae8231077db4c3159d40cf111",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when an early check-out is required for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no missed-breakfast responsibility clause; the complete condition is translated from the pinned RU note."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[82]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city name in the verified Word accommodation table as the corresponding itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0ce0857546e3c4b950faa992fa8867f4a2d559e533e29e57c52d6166cc2ba170",
+      "text": "Arrival in Rio de Janeiro. Your driver will meet you at the airport and take you to your hotel. Your first views of Brazil begin along the way: green mountains, palm trees and the ocean. In the evening, thousands of lights illuminate the city, and cafés along the famous beaches serve drinks made with fresh tropical fruit.\n\nCheck in to **Fairmont Copacabana** and relax after your flight.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 11–14 confirm arrival and Fairmont Copacabana but describe a guide rather than the pinned RU driver and lack the exact scenic/night-time narrative. Translate this RU-specific block without adding the Word-only guide, currency-exchange or SIM services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1GzfhwH_6OGv0K1Ib76-uyTgvSPPnqdsm",
+        "documentSha256": "9177a3e9eb967778236a2bc1fee45788255b1cebafaf1c7ad4165cb8bc7fe5c8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[82]",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed city name from the Word accommodation table for this place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ca086567faa1ffaa",
+      "field": "media.alt",
+      "sourceTextSha256": "9e20ce2085a0d7f149b076f94e9aa67d9b93e1f73fdb4a89835de9cc1ac9dc25",
+      "text": "Fish above the pale riverbed in the clear waters of Brazil's Sucuri River",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he32r-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no matching image alt description; translate the pinned RU image metadata."
+      }
+    }
+  ]
+}

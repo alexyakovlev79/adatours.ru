@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_chili_5:b010",
+  "stableId": "tour_source_vip_chili_5",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "60a50da2fd182eeee2b7b7f5b9fe684a24df26e6285ca2be2c0013657c399c75",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d13bb1ad3630c64acbb3ae4008302300af53db11b53d6362ad4335e0b96877a8",
+      "text": "Day 8 · Breakfast and private transfer to the airport for your flight to Santiago.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[106]",
+            "textSha256": "769ad7e0919400de4e3e0329352fc70c4135c7865afc9a80556dec6907157fbb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:08b384b294fe6a62",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[66]",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:669039e7fce13950",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[103]",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          },
+          {
+            "ref": "word/document.xml:p[143]",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the two verified Word place names into the existing itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ba7e88e7e352336d",
+      "field": "media.alt",
+      "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
+      "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggpn4-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no image-specific caption about the towers and pedestrians in Santiago; translated from the pinned RU alt."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6f3d5192aa3f75287ea4e4f5dbe93a7cace51fd454fbd5e9ae555bf9d9e25105",
+      "text": "Valparaíso and Viña del Mar",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[117]",
+            "textSha256": "9790a995a7b6664a0b9d5b193538c11e9925ebbefcf4773a9e31eb0cfdb8ad75"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the matching place or overnight label from the verified Word paragraph without changing its meaning."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7bb8c45a65f39f006fd083247acf433245c643c5224f34bffeec3a4219c229c0",
+      "text": "Day 9 · After breakfast, a 9-hour excursion to Viña del Mar and Valparaíso, through the olive groves, orchards and vineyards of the Curacaví and Casablanca valleys (120 km from Santiago). Built on 42 hills, Valparaíso is famous for its architecture and listed as a UNESCO World Heritage Site, its levels linked by historic funiculars, stairways and footpaths. Visit Sotomayor Square and the Naval Headquarters, a national monument, then walk to Cerro Concepción along the Gervasoni and Atkinson promenades, with a magnificent view over the port. Continue to Viña del Mar, the “Garden City”, with its beautiful beaches and dramatic rocks: the Flower Clock, Reñaca Beach, the waterfront and the Fonck Museum. Stop for lunch, then return to Santiago.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[115]",
+            "textSha256": "7ae6205061ff0036a2d0ad945fa5240c506ec087d93e2d5a4dc351bd235c8ea8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:95e0ce86d5940665",
+      "field": "itinerary.label",
+      "sourceTextSha256": "87fe574bd51f17d5205651d78ebdd2145a78f6fd10f8d39d01b4fadbc57f4cb6",
+      "text": "Valparaíso and Viña del Mar",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[117]",
+            "textSha256": "9790a995a7b6664a0b9d5b193538c11e9925ebbefcf4773a9e31eb0cfdb8ad75"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the matching place or overnight label from the verified Word paragraph without changing its meaning."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ce3f500a625e881a",
+      "field": "media.alt",
+      "sourceTextSha256": "8391063c136794857b7c8ed548212e000d5f2b2e1c3ff4f8ef556327f2d3de31",
+      "text": "A staircase and a blue wooden house on a hillside above the streets of Valparaíso, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggpn4-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word describes Valparaíso but has no corresponding image caption identifying a blue wooden house and staircase; translated from the assigned RU alt."
+      }
+    }
+  ]
+}

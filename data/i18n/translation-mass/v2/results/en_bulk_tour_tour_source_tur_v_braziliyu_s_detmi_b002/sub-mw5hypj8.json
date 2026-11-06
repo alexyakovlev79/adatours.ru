@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_detmi:b002",
+  "stableId": "tour_source_tur_v_braziliyu_s_detmi",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "afb60bb2fbc7c5a80330878151e3a1a226b24ed151c33fda30379f8fcc95a117",
+  "blocks": [
+    {
+      "blockId": "tour:included:e28631d4985d71bd",
+      "field": "included",
+      "sourceTextSha256": "2f5fdb20fad5b88a7e5e9ab88bceb7a4722a542210f9aa7c709ec4792a8cd72a",
+      "text": "Transfer to the hotel in Rio de Janeiro with an English-speaking guide.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hocz6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists transfers with driver but does not contain this exact standalone transfer provision from RU; guide service language follows the required EN adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:2a7bdfbad3a59515",
+      "field": "included",
+      "sourceTextSha256": "61c3f7a952c0d5f89c127af695270d6157a3d8a924eccc94d50ea1388c8cd998",
+      "text": "Transfer to the hotel in Iguazu with an English-speaking guide.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hocz6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists transfers with driver but does not contain this exact standalone transfer provision from RU; guide service language follows the required EN adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:ea8129be041efd02",
+      "field": "included",
+      "sourceTextSha256": "a8eccc4d1627c54a6244fb1fd32c2bac09ed1a223cd01ad8d8703246b8978c95",
+      "text": "Transfers to the airports and Búzios with a driver.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hocz6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists transfers with driver but does not contain this exact standalone transfer provision from RU; guide service language follows the required EN adaptation."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Wg4CyjW-F-4jP-6VYSBThNCA6HQv8N6s",
+        "documentSha256": "b936157aa44b6a009aa825195f687b59c733dcbf23dc375deb73da08e388eb01",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p200",
+            "textSha256": "9fac777fd8c0a41fa92f95282f516f02c3378b8e74a1a7ae073a056e295f10f3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker to fit the standalone notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:419302de6fdd472b",
+      "field": "notIncluded",
+      "sourceTextSha256": "ab9739e0b56faafbf2867687fc5061a7cd562708c2e95bebb4dc6d39ca709830",
+      "text": "Domestic flight Rio de Janeiro - Iguazu - Rio de Janeiro, from USD 450.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hocz6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 gives a different domestic flight fare (USD 650); this fixed RU block retains USD 450 because commercial price changes are owned by the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6e52608d112e92b1",
+      "field": "notIncluded",
+      "sourceTextSha256": "1e7b740da431890dd85d53a213bd78601935c27039cb0c0012087ff01916403b",
+      "text": "Food and beverages during transfers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Wg4CyjW-F-4jP-6VYSBThNCA6HQv8N6s",
+        "documentSha256": "b936157aa44b6a009aa825195f687b59c733dcbf23dc375deb73da08e388eb01",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p201",
+            "textSha256": "cdf259dee014bbde5494f7a95a006dc248eeecf38a800a341199618683546da0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word list marker to fit the standalone notIncluded field."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may replace a hotel with another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hocz6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word lacks this specific standalone RU hotel substitution or excursion-order condition; translated from the immutable RU block."
+      }
+    },
+    {
+      "blockId": "tour:note:05680faa947baa60",
+      "field": "note",
+      "sourceTextSha256": "13c996687256cf8f9c8b56f58533c646397f6b40a44244e857f789acaa4b3607",
+      "text": "The order of excursions may change while the full tour programme is maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hocz6-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word lacks this specific standalone RU hotel substitution or excursion-order condition; translated from the immutable RU block."
+      }
+    }
+  ]
+}

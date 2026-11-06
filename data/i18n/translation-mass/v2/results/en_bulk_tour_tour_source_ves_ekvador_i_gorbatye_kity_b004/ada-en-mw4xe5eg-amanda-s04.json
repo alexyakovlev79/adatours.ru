@@ -1,0 +1,154 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_ekvador_i_gorbatye_kity:b004",
+  "stableId": "tour_source_ves_ekvador_i_gorbatye_kity",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "672f54aa379fbede4f7b09799d7adf3a86b1677b99a189a8aeb74fa7379b2de6",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:6fb2ef3c75c504a5",
+      "field": "notIncluded",
+      "sourceTextSha256": "fc9b89acd558c2756f99963923cfd9f0e5dcdb1e0ee13ea312854574f6eb5971",
+      "text": "Personal expenses;",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0175",
+            "textSha256": "092e272390d2bed5301e0011caad34c697ea8d094db2cc5c951d0dde0c5b4e4f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract only the personal-expenses item from the combined Word exclusions, without duplicating tips."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6dd71ba7a519cca8",
+      "field": "notIncluded",
+      "sourceTextSha256": "6f88131f6c0d9a0bb877e6e08a74859abfa559dc99ee90351e876e41be44dd5b",
+      "text": "Services not described.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0176",
+            "textSha256": "c36bd6d435b78f8b9a55894c504d6c3aa4a10755191ae7e6d12d349aefcc8b72"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the verified Word passage to form the corresponding standalone field without adding services."
+      }
+    },
+    {
+      "blockId": "tour:note:c93d1a1b7d21bbd2",
+      "field": "note",
+      "sourceTextSha256": "4d0f0b6cea6b1d5510d333f618031e7b6988a98814ec2d60a629e7728072bd4d",
+      "text": "NOTE: The first flight from the Galápagos to Quito or Guayaquil arrives at approximately 15:00. Allow at least 4 hours to connect with an international flight. Your international flight should depart in the evening; otherwise, stay one night in Quito or Guayaquil and fly home the following day. Let us know if you would like us to arrange an additional airport–hotel–airport transfer and an extra night in Quito or Guayaquil at the end of the programme. Ecuador has international airports in both Quito and Guayaquil.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not contain the RU note on 15:00 flight arrivals, the four-hour international connection or optional extra overnight; translate this assigned supplementary note."
+      }
+    },
+    {
+      "blockId": "tour:note:9a7d3adae184dc1b",
+      "field": "note",
+      "sourceTextSha256": "58b653e93fa6a1752ba7181446a06f9b9bd3490c33aa61c87b953e2822e62477",
+      "text": "Rates before booking and the tour itinerary may change without prior notice.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word does not include this specific pre-booking rate and itinerary-change clause; translate the RU note without changing any tariff."
+      }
+    },
+    {
+      "blockId": "tour:note:b553d78272fc46ab",
+      "field": "note",
+      "sourceTextSha256": "7241f8fd1298c7b7918b30f8a591f5c3abe3885c83db7f57bc85c97344388a3c",
+      "text": "Guaranteed departure, maximum 16 participants.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0157",
+            "textSha256": "416bdebeee04dcb2bee1e6c1db268dd6ed725ae4310972a3ddf3018f1b21ce57"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The verified Word 2027 explicitly sets a guaranteed departure with maximum 16, superseding the older RU maximum 15."
+      }
+    },
+    {
+      "blockId": "tour:note:a4306f2154dcbaf8",
+      "field": "note",
+      "sourceTextSha256": "dfadd8d047c0ede6d10e2f668221f170f7eecd5d89314319d11055a51518d343",
+      "text": "On 17 August, one of the two Galápagos itineraries will operate, to be confirmed after booking.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "bf2f49b24201489530a5d5a5e1b8eef4a4d4af727c299f85a7bef5043b01a9e1"
+          },
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "daef3b8d85e49c59ee04b7a0bc29d97e9d7d37e6b8c9c71fe2f4bef9dc2c6482"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Form the calendar-day note from the confirmed 11 August start and Day 7 alternative island itinerary, preserving confirmation after booking."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "72357e8fa90e3bf9583a67c0b41f26f177a787d9ff6232f08299cbdc32391603",
+      "text": "11 August 2027. Arrival in Quito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "bf2f49b24201489530a5d5a5e1b8eef4a4d4af727c299f85a7bef5043b01a9e1"
+          },
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "972744b9d1e225ad70000d524cd0cc26718c7a727755b565c6f50e35408713c0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the verified programme start date and the Day 1 arrival to create the itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "04dcd261b91c7378eb4f5559a807c73422e49c3c71cb42c2a2da0be7c7c888c8",
+      "text": "Day 1 · Arrival in Quito and transfer to your hotel (about one hour). In the evening, a welcome dinner with your guide to go over the tour and answer your questions. Overnight at Hotel Finlandia 4★. (D)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "972744b9d1e225ad70000d524cd0cc26718c7a727755b565c6f50e35408713c0"
+          }
+        ]
+      }
+    }
+  ]
+}

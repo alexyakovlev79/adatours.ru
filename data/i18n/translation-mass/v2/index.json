@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 313,
-    "leased": 1,
+    "queued": 312,
+    "leased": 2,
     "review": 2029,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 313,
-      "leased": 1,
+      "queued": 312,
+      "leased": 2,
       "review": 2029,
       "ready": 50,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 3,
-          "leased": 0,
+          "queued": 2,
+          "leased": 1,
           "review": 72,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T21:12:29.112Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1346,6 +1346,12 @@
       "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god:b009",
       "token": "ada-token-mw5dsin3-i5blc7kv90e",
       "expiresAt": "2026-11-06T21:12:21.282Z",
+      "generation": 1
+    },
+    "ada-en-mw5dslx2-amanda": {
+      "jobId": "en:bulk:tour:tour_source_viva_meksika:b011",
+      "token": "ada-token-mw5dslx2-lmkphipbzbp",
+      "expiresAt": "2026-11-06T21:12:29.112Z",
       "generation": 1
     }
   },
@@ -7870,8 +7876,15 @@
         "en:bulk:tour:tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god:b009"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw5dslx2-amanda": {
+      "token": "ada-token-mw5dslx2-lmkphipbzbp",
+      "jobIds": [
+        "en:bulk:tour:tour_source_viva_meksika:b011"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T19:42:21.282Z"
+  "updatedAt": "2026-11-06T19:42:29.112Z"
 }

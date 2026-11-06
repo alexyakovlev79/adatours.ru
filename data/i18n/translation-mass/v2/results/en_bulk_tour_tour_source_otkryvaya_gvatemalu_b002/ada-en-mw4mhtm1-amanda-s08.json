@@ -1,0 +1,170 @@
+{
+  "jobId": "en:bulk:tour:tour_source_otkryvaya_gvatemalu:b002",
+  "stableId": "tour_source_otkryvaya_gvatemalu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "63a6ae449fc30c0aee220720b878557b7aa1276e7da095c97df5844520374859",
+  "blocks": [
+    {
+      "blockId": "tour:included:2b7c3f8368745ecd",
+      "field": "included",
+      "sourceTextSha256": "aa7af993703dff1f6b7a5eb9e33341c17efe5a2b82d89e0f4a78e2ed82378cf0",
+      "text": "Hotel accommodation with breakfast.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0024",
+            "textSha256": "e9f41621ec88e8135cb01f0bde294fac4a0c9b2a31183ebb8590cd9501c8aa0e"
+          },
+          {
+            "ref": "word/document.xml#p0150",
+            "textSha256": "caf8a75305d435b7d1ab5a5fa9a584cc1c1892b25a0d890297949e339159ddd9"
+          },
+          {
+            "ref": "word/document.xml#p0151",
+            "textSha256": "d1703e443b88c86e9dcc432042c114ef39755c676980ef74e995f69b48d8fde1"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combine the approved lodging and daily-breakfast terms into the corresponding accommodation service label."
+      }
+    },
+    {
+      "blockId": "tour:included:6b1d7ca8744de00b",
+      "field": "included",
+      "sourceTextSha256": "bb93cb63ad2ab87334b432024f55c172f5d2f5256789cc4630777fb6af3f0f6b",
+      "text": "English-speaking guide services.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0148",
+            "textSha256": "310f03f10ae7b97e7bbae31b280fd842ff5e5c640ddba463c6cec2e15960bf2e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the matching approved Word wording into this concise field, preserving its meaning."
+      }
+    },
+    {
+      "blockId": "tour:included:5cb71b494ee62e05",
+      "field": "included",
+      "sourceTextSha256": "e510885c9b0231d4566dc7801f0afb8978778e7f3d3a4448e25d0d3ca966794d",
+      "text": "Guided tours as per the itinerary, with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0148",
+            "textSha256": "310f03f10ae7b97e7bbae31b280fd842ff5e5c640ddba463c6cec2e15960bf2e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching approved Word wording into this concise field, preserving its meaning."
+      }
+    },
+    {
+      "blockId": "tour:included:eed4c5beaf26e988",
+      "field": "included",
+      "sourceTextSha256": "0e0f6f8ae6c3050cf6d0bb372a2cf47f46dc68354ea9df77d1c2ec07753b15e2",
+      "text": "Transportation",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0146",
+            "textSha256": "7adcd88bd5f2d63149a36e82547ad9c9d32330fefacfb560b6f08b4814695de9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching approved Word wording into this concise field, preserving its meaning."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:fd8057d60d219873",
+      "field": "notIncluded",
+      "sourceTextSha256": "aa7af993703dff1f6b7a5eb9e33341c17efe5a2b82d89e0f4a78e2ed82378cf0",
+      "text": "Optional activities",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0154",
+            "textSha256": "cb28ad2d762ce4aa4544d038a48c18fdc4f1cbedcd051ce2a448104b167faab7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the first actual Word exclusion in this notIncluded slot; the RU list incorrectly repeats included services."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:d81a5d227c61e4fc",
+      "field": "notIncluded",
+      "sourceTextSha256": "bb93cb63ad2ab87334b432024f55c172f5d2f5256789cc4630777fb6af3f0f6b",
+      "text": "Arrival and departure taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0155",
+            "textSha256": "cfe81af04d94dc7d9642a10090535a2b497a77dd4829698fed5ea7b5c93d989b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the second actual Word exclusion in this notIncluded slot; the RU list incorrectly repeats included services."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:e56de892d52fd3fa",
+      "field": "notIncluded",
+      "sourceTextSha256": "e510885c9b0231d4566dc7801f0afb8978778e7f3d3a4448e25d0d3ca966794d",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0156",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the third actual Word exclusion in this notIncluded slot; the RU list incorrectly repeats included services."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:850540603799ad46",
+      "field": "notIncluded",
+      "sourceTextSha256": "0e0f6f8ae6c3050cf6d0bb372a2cf47f46dc68354ea9df77d1c2ec07753b15e2",
+      "text": "Hotel extras (laundry, phone calls, room service, etc.)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+        "documentSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0157",
+            "textSha256": "19b566e92891646a1bdea5526b62e4e5930d97a81741011c9977a1d63a52568d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the fourth actual Word exclusion in this notIncluded slot; the RU list incorrectly repeats included services."
+      }
+    }
+  ]
+}

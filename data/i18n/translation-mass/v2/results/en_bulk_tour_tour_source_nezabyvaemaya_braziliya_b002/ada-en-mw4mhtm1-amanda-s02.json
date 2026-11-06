@@ -1,0 +1,113 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b002",
+  "stableId": "tour_source_nezabyvaemaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ac8e90e62c4019e30f5d7d9438e9642c3933f488961eaf837726ca263be5e79e",
+  "blocks": [
+    {
+      "blockId": "tour:included:905008e4916d7cdb",
+      "field": "included",
+      "sourceTextSha256": "9baf2e6eac569388d0da22067bf76bf8cd0c765a34774921d5e489024e98a92a",
+      "text": "Transfer to your hotel in Rio de Janeiro with an English-speaking guide.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhtm1-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word confirms the hotel transfer and English-speaking excursions, but has no exact transfer-guide phrase; translate RU with the authorized guide-language adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:4eba4a26406ba9e1",
+      "field": "included",
+      "sourceTextSha256": "6860bc19bbe5b04c3e5dd423f20aae08dc502d7b0779697f03c95d1f6a74a4c7",
+      "text": "Transfers with a driver.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhtm1-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word specifies driver-only transfers for Rio–Búzios; the assigned RU field is the general driver-transfer service label."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "15E4HkI1G4S-zKt0g19tBE_BObALGLGw0",
+        "documentSha256": "803a2ca7d5d58e767e1daa4cbe5ecca24598c425481262d266f876b28399f24a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0206",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the matching approved Word wording into this concise field, preserving its meaning."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:585ed22c50db301d",
+      "field": "notIncluded",
+      "sourceTextSha256": "24638ae52f732bb117650007ae30c093c4c25fee6d5faa4178930ccaa1acaf81",
+      "text": "Domestic flights Rio de Janeiro – Iguazu – Rio de Janeiro, from $450.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhtm1-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word 2027 quotes flights from $650; this assigned RU price is $450. Translate the fixed current commercial field without changing prices; the difference belongs to the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6e52608d112e92b1",
+      "field": "notIncluded",
+      "sourceTextSha256": "1e7b740da431890dd85d53a213bd78601935c27039cb0c0012087ff01916403b",
+      "text": "Food and drinks during transfers.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhtm1-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word excludes food and drinks not mentioned in the programme; it has no exact transfer-specific exclusion. Translate the assigned RU exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:5a68bbfc8a20dca0",
+      "field": "note",
+      "sourceTextSha256": "fab155a27b5f58a7bb025ac3452cea80951d8b5264eb04bf74815438c990eccd",
+      "text": "We may replace a listed hotel with another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhtm1-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word states hotels according to the programme or similar but does not contain this exact same-category substitution condition. Translate the current RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while keeping the tour programme intact.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhtm1-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not state this excursion-order condition. Translate the assigned current RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:a6ee24da085098e0",
+      "field": "note",
+      "sourceTextSha256": "39acd0d02295319996150571b8c5fe8260e65f4d9603ea80a1c310482f1be309",
+      "text": "We are not responsible for hotel breakfasts missed because of an early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhtm1-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word does not contain the missed-breakfast liability clause. Translate this assigned RU note without adding conditions."
+      }
+    }
+  ]
+}

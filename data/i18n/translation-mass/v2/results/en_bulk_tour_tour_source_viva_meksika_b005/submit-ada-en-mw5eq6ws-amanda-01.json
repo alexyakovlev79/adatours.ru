@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_viva_meksika:b005",
+  "stableId": "tour_source_viva_meksika",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f41f7ff030af2e7869830b1f1d3c8c445dd1584ac2ea953020e902df47e94e3c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "42c6ed56afbdae341eda789313f6573c703daeb3f05103d8e7f1d26a86efd130",
+      "text": "Overnight in Mexico City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "9759467d453b88ffc778addc4925af6858904046338583b7787440cecd18218e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the overnight location from the confirmed Word day inclusion line."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:46b96af946ffd90c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
+      "text": "Teotihuacan",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "a939b998f5ca8cc5701143717a2eb7783bce29be3ddae88b099c0c375cf69bac"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact place name from the confirmed Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:90a336c35e4dc85b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d6caecbb04aaa0ccab22e4d1d06407e4b10dec9e47f87583cf0648f6d605ed33",
+      "text": "Mexico City (Teotihuacan ruins)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "ca1a77678b75605c6eaa3a1f725dcf80f8a440300e8d44484a3eafb2df30e6b1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the RU place label with the approved Teotihuacan spelling; Mexico City is the confirmed route city."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2dd710ea34d7bc78",
+      "field": "itinerary.label",
+      "sourceTextSha256": "af3ea316a27534c8a9b381cd563b5de82bde52e0663e2bb6fcd506cf73db0f51",
+      "text": "Shrine of Guadalupe",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "a939b998f5ca8cc5701143717a2eb7783bce29be3ddae88b099c0c375cf69bac"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact shrine label from the confirmed Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:484bcc3130774ffd",
+      "field": "media.alt",
+      "sourceTextSha256": "cd52cca11b95c68b1b0ddf9fd751c6af654b04afeb8033ce369a2e45d195949f",
+      "text": "Pyramid and stone platforms along a broad avenue in Teotihuacan, Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq6ws-amanda",
+        "model": "gpt-6",
+        "wordAbsenceReason": "The selected Word has itinerary prose but no corresponding photograph alt text; translate this RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:4639c69c9f745c83",
+      "field": "media.hover",
+      "sourceTextSha256": "d52d871887176c25a909cdaa8af192b1996b0f995f811e52d06089537bce3c6a",
+      "text": "Teotihuacan: pyramids and an ancient avenue",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq6ws-amanda",
+        "model": "gpt-6",
+        "wordAbsenceReason": "The selected Word has no corresponding image hover caption; translate the RU caption without adding visual facts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5bb963aeb2f0c070",
+      "field": "itinerary.label",
+      "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
+      "text": "Teotihuacan",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "a939b998f5ca8cc5701143717a2eb7783bce29be3ddae88b099c0c375cf69bac"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact place name from the confirmed Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:071d5c70ab01cf41",
+      "field": "itinerary.label",
+      "sourceTextSha256": "af3ea316a27534c8a9b381cd563b5de82bde52e0663e2bb6fcd506cf73db0f51",
+      "text": "Shrine of Guadalupe",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "a939b998f5ca8cc5701143717a2eb7783bce29be3ddae88b099c0c375cf69bac"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact shrine label from the confirmed Word day heading."
+      }
+    }
+  ]
+}

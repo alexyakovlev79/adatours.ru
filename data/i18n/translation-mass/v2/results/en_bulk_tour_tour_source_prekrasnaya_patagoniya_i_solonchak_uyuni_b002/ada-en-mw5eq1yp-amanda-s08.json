@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni:b002",
+  "stableId": "tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "347c96b9ef82c60b8f8cb373cd50a30afea77f83940632fb678266ac7d060285",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:c3530d89c58fc1b8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cfee424add7b58aa5f0ad7e4287cb97be5e078f480688bd19438e19d11c0fcfa",
+      "text": "Uyuni — 1 night",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[113]",
+            "textSha256": "62362f693568eff2b84906d5e5a162eb0cd32b7210b27217af1338a4442321ac"
+          },
+          {
+            "ref": "word/document.xml:w:p[165]",
+            "textSha256": "8a49ac80ec41f137688fc7af90e7d36fa1c77dfff81ccd5bb275cfdb65b2e328"
+          },
+          {
+            "ref": "word/document.xml:w:p[167]",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the Uyuni place name and its table night count into the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6fa085c9cdaba050",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4b17a400c70f0dfcd96fa372f81bf90e9198952f7c6a61954c918b3fa28c1f06",
+      "text": "Santiago — 1 night",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[170]",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          },
+          {
+            "ref": "word/document.xml:w:p[172]",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the final Santiago stay and its table night count into the existing route label."
+      }
+    },
+    {
+      "blockId": "tour:included:2eb5f04da8d39b64",
+      "field": "included",
+      "sourceTextSha256": "b16bfa10341a025d8a055b5ecee787bfb543f650185456f7520bcc0231dcde01",
+      "text": "Accommodation with breakfast at the listed hotels or hotels of a similar category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq1yp-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word accommodation line does not contain the RU same-category replacement clause; translated the complete RU item."
+      }
+    },
+    {
+      "blockId": "tour:included:278359d2ca48f085",
+      "field": "included",
+      "sourceTextSha256": "76c0cd0ffe5e2ca20fe7909fed74cd333a29730589da77ced2bd6bc2411d8854",
+      "text": "Tours as mentioned in the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[238]",
+            "textSha256": "7380bcf7359ec6e3f92d016a39120ecb13fddc29da0e346d9b5b87c2bc9afc5d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the list marker from the corresponding Word included-services item."
+      }
+    },
+    {
+      "blockId": "tour:included:4ee1adee42c6b754",
+      "field": "included",
+      "sourceTextSha256": "abb975c8658d24c74234c7ae3b569d56fd5acfe6b2f6b9cd5ae22e175ecf9469",
+      "text": "An English-speaking guide in Buenos Aires; English-speaking guides and shared tours on the other sections of the trip.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq1yp-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word states English-speaking guides and describes private/shared tours by day, but has no full counterpart to this segmented RU guide-language item. Adapted service language to English under owner decision 03.11.2026."
+      }
+    },
+    {
+      "blockId": "tour:included:68c3236a9211c081",
+      "field": "included",
+      "sourceTextSha256": "8ef27c30346044e018d2483d7d5cb0f2730d858fda2e36be6b6af7a09c6717db",
+      "text": "Transfers from / to airports",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1X7vYrKfJejOIcKnAqLzOpNNqMi_FS0Mx",
+        "documentSha256": "d6a0fea61270c4c20d307d3029b9c8fc090134a96b082cedfc3ed496b503946f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:w:p[239]",
+            "textSha256": "25756b95ac75c3fbdac8b7ea039a774c6f5a9d46c7ba7e34469ad819d64d5c40"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the list marker from the corresponding Word airport-transfer item."
+      }
+    },
+    {
+      "blockId": "tour:included:f52fb34c86ec55d1",
+      "field": "included",
+      "sourceTextSha256": "1b25f682304365ac0dcaf4055ab9ce1039b10319b398cd840e78c65ba1e13098",
+      "text": "Bus journeys from El Calafate to Puerto Natales and from Puerto Natales to Punta Arenas airport.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq1yp-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word includes these two bus sectors in separate day sections, but has no standalone combined bus-journeys inclusion matching this field."
+      }
+    },
+    {
+      "blockId": "tour:included:c420e646c26efdd3",
+      "field": "included",
+      "sourceTextSha256": "0dfbdfc8f495bf9bd4df53df8f08a347751eaa6774db54b0a3b638088c7e2f9b",
+      "text": "Dinner and tango show in Buenos Aires.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq1yp-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word describes the dinner and tango show within the Buenos Aires day, but has no standalone inclusion with this complete city-specific wording."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 185,
-    "leased": 7,
+    "queued": 184,
+    "leased": 8,
     "review": 2151,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 185,
-      "leased": 7,
+      "queued": 184,
+      "leased": 8,
       "review": 2151,
       "ready": 50,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 6,
-          "leased": 0,
+          "queued": 5,
+          "leased": 1,
           "review": 73,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T22:02:11.049Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej:b003",
       "token": "ada-en-mw5fi5so-amanda-session",
       "expiresAt": "2026-11-06T22:01:56.785Z",
+      "generation": 1
+    },
+    "ada-en-mw5fhrrp-amanda": {
+      "jobId": "en:bulk:tour:tour_source_ves_mnogolikij_peru:b006",
+      "token": "token-mw5fhrrp-809dfw4jwbu",
+      "expiresAt": "2026-11-06T22:02:11.049Z",
       "generation": 1
     }
   },
@@ -8226,7 +8232,8 @@
     "ada-en-mw5fhrrp-amanda": {
       "token": "token-mw5fhrrp-809dfw4jwbu",
       "jobIds": [
-        "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b011"
+        "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b011",
+        "en:bulk:tour:tour_source_ves_mnogolikij_peru:b006"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b011"
@@ -8282,5 +8289,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T20:32:03.251Z"
+  "updatedAt": "2026-11-06T20:32:11.049Z"
 }

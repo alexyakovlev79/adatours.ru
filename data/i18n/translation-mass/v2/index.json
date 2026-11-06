@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 248,
-    "leased": 6,
+    "queued": 247,
+    "leased": 7,
     "review": 2089,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 248,
-      "leased": 6,
+      "queued": 247,
+      "leased": 7,
       "review": 2089,
       "ready": 50,
       "retryable": 0,
@@ -225,8 +225,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 10,
-          "leased": 0,
+          "queued": 9,
+          "leased": 1,
           "review": 69,
           "ready": 0,
           "retryable": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T21:42:54.559Z",
       "earliestRetryAt": null
     },
     "15": {
@@ -1376,6 +1376,12 @@
       "jobId": "en:bulk:tour:tour_source_parad_chempionov_karnavala_v_rio:b006",
       "token": "ada-en-mw5eq1yp-amanda-97k07u01zap",
       "expiresAt": "2026-11-06T21:42:39.519Z",
+      "generation": 1
+    },
+    "ada-en-mw5eq6ws-amanda": {
+      "jobId": "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b002",
+      "token": "token-mw5eq6ws-4sl5o5bqez2",
+      "expiresAt": "2026-11-06T21:42:54.559Z",
       "generation": 1
     }
   },
@@ -8066,7 +8072,8 @@
     "ada-en-mw5eq6ws-amanda": {
       "token": "token-mw5eq6ws-4sl5o5bqez2",
       "jobIds": [
-        "en:bulk:tour:tour_source_viva_meksika:b005"
+        "en:bulk:tour:tour_source_viva_meksika:b005",
+        "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_viva_meksika:b005"
@@ -8106,5 +8113,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T20:12:47.468Z"
+  "updatedAt": "2026-11-06T20:12:54.559Z"
 }

@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_severnyj_pantanal_vodopady_reki:b001",
+  "stableId": "tour_source_severnyj_pantanal_vodopady_reki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d5ac48df05ab1d1dd51b9de875fb54f034d22cfc614eaee2fab12cbcc0c330c6",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "1dbbbc67996ff50f2f65ca55c67b3279611181af80c3888a1cacc69a03a1730a",
+      "text": "Tailor-made Brazil tour: Northern Pantanal — Waterfalls and Rivers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:2",
+            "textSha256": "b9405c7148643ae7857dd6886a97ac30a9c19e7e0b2f0c767ec2052133503cca"
+          },
+          {
+            "ref": "word/document.xml:p:20",
+            "textSha256": "86fb19eb38fd954ff5bc2ebeb7826a0a2f626c2d6e38b0307cb943f3efa8d7e3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose a concise title or park label from the confirmed Word names; retain the RU tailor-made product framing."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "3f3554b1140445ac069b7851e6e943e44600c7f69eabb3693cbd629026c61c87",
+      "text": "This route combines the clear rivers around Bom Jardim, the waterfalls and sandstone canyons of Chapada dos Guimarães with the wildlife of the Northern Pantanal. In 5 days, you can go snorkelling, walk the national park trails, drive part of the Transpantaneira and spend 2 days around Porto Jofre, where the programme focuses on watching jaguars.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gmo58-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word overview and Days 1–5 use a different sequence and omit the exact RU Bom Jardim, Transpantaneira and national-park trail summary; translate the current RU lead without changing the route."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "3758bd1348f57b3e29a618956e60ad1bb54a49fed29490178e41683008522f48",
+      "text": "$4595",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:116",
+            "textSha256": "7561c6489542b0537fddf1fe32e45a7ed0848243586a62c1ef473b75056dc3ff"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Retain the current RU price note unchanged; the Word DBL amount is the same USD 4,595, with spacing and separator omitted to preserve the field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:70d90edb0715adb7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a2104752adf834a1a84e1c3eb73ec14edff7fd60b562acf7dd8f95b9a3498e57",
+      "text": "Cuiabá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:51",
+            "textSha256": "2a9a014dedd491043731b49e73d398a848430b90b1227d86b771c0da58b831f3"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:aeab39e3af9d6146",
+      "field": "itinerary.label",
+      "sourceTextSha256": "152cb203818d9720a6961be82ccc7c6e71c15c63e07fb4c2aae31c1c61fd6759",
+      "text": "Bom Jardim",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gmo58-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Bom Jardim is not named in the selected Word, which uses Nobres; preserve and translate the current RU route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:64403a0e6ca0abc9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0e801e9e2e470ea660a0a181930ed8b69373772b809a46cc7a180a39242979cc",
+      "text": "Chapada dos Guimarães National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:75",
+            "textSha256": "8a7b02b9a45b16fc31539e82b6a5e615ad93da0cabaf2abac3f16932bff74d74"
+          },
+          {
+            "ref": "word/document.xml:p:78",
+            "textSha256": "4353d579d47d0783bb9e8a6b933d4de337d751ad0356b167abba035cf8d4a772"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose a concise title or park label from the confirmed Word names; retain the RU tailor-made product framing."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ccdaf76325d16d55",
+      "field": "itinerary.label",
+      "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
+      "text": "Pantanal",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:8",
+            "textSha256": "eca839902f399e2e9e2adbc13160863157f6728c9da453f7408f248cd152a0f7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:69c42ab778724079",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d5639c5e079fbb5f00135b9879ff5255427325a71f6a61caf689118f4340441f",
+      "text": "Porto Jofre",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:36",
+            "textSha256": "1ff41c340eabfe29db754872d5f9bc5a38c15df1d2aca6678e739675f7dbbb2c"
+          }
+        ]
+      }
+    }
+  ]
+}

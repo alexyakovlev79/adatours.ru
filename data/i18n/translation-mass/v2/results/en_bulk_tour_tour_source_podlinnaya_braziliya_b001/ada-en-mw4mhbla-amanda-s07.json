@@ -1,0 +1,169 @@
+{
+  "jobId": "en:bulk:tour:tour_source_podlinnaya_braziliya:b001",
+  "stableId": "tour_source_podlinnaya_braziliya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6d6d252b3752ff0a98e98c79baa767326c8b916204d0640627987c5921c8f92a",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "be835667a87caaf3da34c44dfea3ea11c81086f84c71f9ee73cfead9a0902478",
+      "text": "Brazil Tour: Rio de Janeiro, Manaus, Salvador and Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[66] (zero-based)",
+            "textSha256": "8816e239debc069f7ab0ad5171c48120f346b984410d73b04561d1a052e10670"
+          },
+          {
+            "ref": "word/document.xml:p[76] (zero-based)",
+            "textSha256": "09ab4ec0ebc6088192f174bd877ce213a0692281d9daddc8949950b89c8cd39e"
+          },
+          {
+            "ref": "word/document.xml:p[87] (zero-based)",
+            "textSha256": "369466ebb309b53ca5ed2642296e6a45ae4ff648eb37aa121a513acf6bf28d4d"
+          },
+          {
+            "ref": "word/document.xml:p[97] (zero-based)",
+            "textSha256": "f9a0825f9170e4d49271ead254cd7915cdc5897914e8f9b5907a218bafea1222"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Forms the assigned descriptive title from the four destinations explicitly confirmed in the Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "38c6c3f48b5f745816b94138e0254d15ab9cea7d730444b107396e4b754a6471",
+      "text": "This itinerary reveals several very different sides of Brazil. Begin in Rio de Janeiro with Copacabana, Corcovado and Sugar Loaf, then travel to the Amazon for rainforest, riverside villages and wildlife after dark along the water. Next comes Salvador, with its Afro-Brazilian culture and Pelourinho, before the journey ends at Iguazu, where you can see the falls from both the Brazilian and Argentine sides. The flight to Rio at the start and the return flight at the end are routed through São Paulo.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhbla-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview is a different promotional paragraph and lacks this complete ordered lead with São Paulo start/end connections; translated from assigned RU."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "9bd6b6294ebcaa351499cba666354835f18c2af10ac677fccb74a4ad87563c61",
+      "text": "USD 5,576 per person, 4-star hotels, DBL; domestic flights cost an additional USD 1,590 NET.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhbla-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word confirms USD 5,576 DBL and flights from USD 1,590 but omits the RU NET designation; translated from the assigned RU price note, preserving both amounts and NET without changing common tariffs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0810b8ef0b86478e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5c69ff8881d7657aea2e47a72b938f9c958811a68860e3c6be9fff729887050b",
+      "text": "São Paulo → Rio de Janeiro (4 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[66] (zero-based)",
+            "textSha256": "8816e239debc069f7ab0ad5171c48120f346b984410d73b04561d1a052e10670"
+          },
+          {
+            "ref": "word/document.xml:p[110] (zero-based)",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml:p[111] (zero-based)",
+            "textSha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word São Paulo-to-Rio arrival leg with the four-night Rio accommodation entry."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:aaffd981d73fd724",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bff3609ff485bdc8c3bfeaee4b5f42f636c7e38dae6724bf58771f2fecbee08a",
+      "text": "Manaus (2 nights)",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mhbla-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word accommodation table calls the two-night stop Amazon rather than Manaus and has no identical label; translated from the assigned RU route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:427d9dee9cae8adc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "777927ee291aea5ca16167e198c5c8921db07a53ba7ec5cfc8a44aed5649e98e",
+      "text": "Salvador (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[120] (zero-based)",
+            "textSha256": "5ad4a23bc13eaf92e9c035b1d3edbb92582a99f2dbe64525009755f989eedfb2"
+          },
+          {
+            "ref": "word/document.xml:p[121] (zero-based)",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the destination and three-night count from the same Word accommodation table row."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fde7e7be9104af2f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fb4aa92d105e047515f779c71ff434de9085c2d3035823f600bab2c5c2a40f04",
+      "text": "Foz do Iguaçu (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[125] (zero-based)",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p[126] (zero-based)",
+            "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the destination and three-night count from the same Word accommodation table row."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:df6b05b435b7f43b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bb16ece261b18b433b7125c7aa2a86a30e081940e534257fbe8c2e7442a110c5",
+      "text": "São Paulo — end of tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1AkjbUdpN8xr2VTalw-zdGUEMGHU_f9Yo",
+        "documentSha256": "e4be2b9dd25fb90962a6d829afe4781b01d9a8543dc5d4b6d323c4b2fc4d7ae7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[100] (zero-based)",
+            "textSha256": "942f15a73cecf31578d0b94285c07c49d1f35acc3af3cdf200229df3f372dbbc"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Condenses the confirmed final flight to São Paulo and end-of-services wording into the assigned route label."
+      }
+    }
+  ]
+}

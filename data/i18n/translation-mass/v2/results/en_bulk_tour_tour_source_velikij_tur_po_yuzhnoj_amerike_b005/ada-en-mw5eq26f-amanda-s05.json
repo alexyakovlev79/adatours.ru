@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b005",
+  "stableId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "72132fdd073c1726ae04bcd1af7b8011db0947a716f182bc823f466574d7db74",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:d6ecd096323ee38d",
+      "field": "media.alt",
+      "sourceTextSha256": "0e34622be4ba2b961c53bb6f1ee5d182d5b20d229c16fcc1ee65f1351dcfcf51",
+      "text": "Plaza Mayor (Main Square), Lima, Peru — colonial architecture",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq26f-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word discusses Lima but has no image-specific alt text for this Plaza Mayor photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9ba1f29db3473e6c7e5afd683a21e1efed2f78d929442ee4355157c85e8b8d25",
+      "text": "Lima – Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0071",
+            "textSha256": "f0277e244bcb6a36e1611680c39799b06ff53b6a631a2028f03b220a6e31d6cb"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding Word itinerary wording as a concise title or place label, without adding programme content."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b74c630d15e9593489e56a6c29a508c613c98020942ffeb01c78ad0bb0670f60",
+      "text": "Day 3 · Breakfast and flight to Cusco; reception and transfer to the hotel. In the afternoon, visit the Archaeological Park of Sacsayhuamán in the upper part of Cusco: Tambomachay, a spring-water site believed to have been a place of worship; Q’enqo, a stone labyrinth with a sacrificial altar at its centre; the fortress of Sacsayhuamán, with its massive stones and a wonderful view over Cusco; and the Puka Pukara tower, before returning to the city.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "148559c66e5fef7fcd815457dd8d3b992dd664062e2e7959507e663217dc5272"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f2563a41dbf176bf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "148559c66e5fef7fcd815457dd8d3b992dd664062e2e7959507e663217dc5272"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding Word itinerary wording as a concise title or place label, without adding programme content."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a387eea769aa648b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3b882b1784fd0899b3734e701b276ac510e27c1a30c61f3736b53015d07ca093",
+      "text": "Coricancha",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq26f-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word Day 3 does not name Coricancha; this standalone place label is translated from the pinned RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:13a3ed97d928fd9d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b2ebe8d30d29cea54d6c73b10a76156e2f4e7aecdc5f3fc41354e0c167adbee2",
+      "text": "Q’enqo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "148559c66e5fef7fcd815457dd8d3b992dd664062e2e7959507e663217dc5272"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding Word itinerary wording as a concise title or place label, without adding programme content."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:40e92c0a9073c683",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0d5d14a885b92a75dc072996785916778db36a2f8b7720cda215972816828d9b",
+      "text": "Puka Pukara",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "148559c66e5fef7fcd815457dd8d3b992dd664062e2e7959507e663217dc5272"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding Word itinerary wording as a concise title or place label, without adding programme content."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4603915f7d098c0c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "01b2e21a207778d74a83d21303aecb0302997b67f3365f3582ac609f884d1ff3",
+      "text": "Tambomachay",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "148559c66e5fef7fcd815457dd8d3b992dd664062e2e7959507e663217dc5272"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the corresponding Word itinerary wording as a concise title or place label, without adding programme content."
+      }
+    }
+  ]
+}

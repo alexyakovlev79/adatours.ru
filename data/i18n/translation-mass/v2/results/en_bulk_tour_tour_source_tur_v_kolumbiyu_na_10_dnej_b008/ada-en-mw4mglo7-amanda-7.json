@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_kolumbiyu_na_10_dnej:b008",
+  "stableId": "tour_source_tur_v_kolumbiyu_na_10_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ba4cefce45806c53718a8d893f0e41e49b188358547bbb58ce21c6e0e5abf28c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a6d95b4a579be7e1ffcbf99111b93eee1007ea61e159bc47e6bb40ac633b816a",
+      "text": "Cartagena – Barú Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:81",
+            "textSha256": "b4115f6ae55c08289758ae6ca640aee0b2c5dfda00f58c6c085198664e7c2d8e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the assigned concise field from these verified Word passages, preserving the documented destination and service scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "98464b65dfd0c5c2c2894cd2248903479dd0d24398c63df743735ef9749e9071",
+      "text": "After breakfast, transfer to **Marina Santa Cruz**.\n\nFrom Pegasos Pier, a speedboat crosses Cartagena Bay and Bocachica, passing the old Spanish forts of San Fernando and San José. Gradually, the city shoreline falls behind and the Rosario Islands appear on the horizon.\n\nYou will then arrive on Barú Island. Guests are welcomed with a cocktail and accommodated at **Las Islas**, in a bungalow with a private pool.\n\nBarú is ideal for a quiet beach holiday: white sand, the warm Caribbean Sea, wooden piers and coral lagoons. Nearby lies a national underwater park, Colombia's largest protected marine area.\n\nYou can go kayaking and diving here. The coastal waters are home to various species of coral, sponges, crustaceans, molluscs and tropical fish.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word paragraph 81 supplies the boat route and private-pool bungalow; the RU welcome cocktail, underwater-park description and species list are absent. Translate this expanded RU field, retaining the confirmed hotel and transfer identities."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c65b4b95b071db90",
+      "field": "media.alt",
+      "sourceTextSha256": "ce830f41b1102d980f70ad3c9c0f21a1e809190003da1bceae68c2c64da0b582",
+      "text": "Illuminated stone church façade with towers and a clock in Cartagena, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the verified Word; translated from the assigned RU media text field."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:bd1cb4549920d513",
+      "field": "media.hover",
+      "sourceTextSha256": "b26e301c8729a0184256ca012ece9d70ddde6a06666549ec79a595e527f5f787",
+      "text": "Cartagena: a church façade and clock illuminated at night",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the verified Word; translated from the assigned RU media text field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f11d9a7192d04e68",
+      "field": "itinerary.label",
+      "sourceTextSha256": "72900d92ec31611ba76247979863f26484474a7c32b9837afc7a6df9d008172d",
+      "text": "Days 8–9",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:87",
+            "textSha256": "da7f2a521d60a42a38d94229cb411f403a0b89c523dc2859b87d62ab8b8dea1d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the assigned concise field from these verified Word passages, preserving the documented destination and service scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "cdd7344ff4ec6c183181bbe9214571b5aba09dc9df405240f1930c75d21c8fcd",
+      "text": "Relax on Barú Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "documentSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:88",
+            "textSha256": "a2b61c7d586246e7bd65717fe09fcdc55a94c0d717fce4a082f2534abad5b0a5"
+          },
+          {
+            "ref": "word/document.xml:p:81",
+            "textSha256": "b4115f6ae55c08289758ae6ca640aee0b2c5dfda00f58c6c085198664e7c2d8e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the assigned concise field from these verified Word passages, preserving the documented destination and service scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "373c94cfda752506412be90bdd543f1ed541dbba091745aa7ce4c1431481db4b",
+      "text": "These 2 days have no packed sightseeing schedule.\n\nAfter the Andes, Bogotá and Cartagena, the pace of the journey slows. Mornings begin by the sea, with beaches, boats beside wooden piers, palm trees and the warm Caribbean breeze nearby.\n\nYou can spend the day by the water, go diving, kayak among the mangroves or take a walk around the island.\n\nAnother option is a trip to Laguna Encantada. Hidden among the mangroves, it is known for its calm, emerald-green water.\n\nWith free time, you can decide how much activity to include at the end of the route and how long to spend on the beach.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 87-88 contain only the free-days heading and 'Enjoy your time on the luxury island'; the mangrove, kayaking and Laguna Encantada narrative is absent, so translate the assigned RU free-time description."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b3e6b86ae9399c3a",
+      "field": "media.alt",
+      "sourceTextSha256": "04d8edde6cdaeb8df28507dbce2b4fc82d30ed8319469d3ffd025f4ff0600d25",
+      "text": "Clear turquoise sea beside a low island shoreline, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the verified Word; translated from the assigned RU media text field."
+      }
+    }
+  ]
+}

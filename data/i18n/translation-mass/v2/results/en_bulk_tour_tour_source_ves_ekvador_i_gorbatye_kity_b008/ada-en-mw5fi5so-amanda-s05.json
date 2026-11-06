@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_ekvador_i_gorbatye_kity:b008",
+  "stableId": "tour_source_ves_ekvador_i_gorbatye_kity",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "63a204914abdd36c62ec868f1961a3cea633558d6c43609960a318080e69b918",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:a382c6feb99f1c13",
+      "field": "media.hover",
+      "sourceTextSha256": "c645431f73a60f7641830d57f28ceaa78e1f6e4ac53d683c35e337bb54ed27de",
+      "text": "Pastaza Canyon: a fast-flowing river between green mountain slopes",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word mentions Pastaza Canyon but has no image-specific description of the river and slopes; translate the RU hover caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7a52cbb595d902cfafb5668c010512623a85e5cdd5cfa4c370b53aebb7d0b44f",
+      "text": "15 August 2027. Flight to the Galápagos and Santa Cruz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[20] (zero-based)",
+            "textSha256": "bf2f49b24201489530a5d5a5e1b8eef4a4d4af727c299f85a7bef5043b01a9e1"
+          },
+          {
+            "ref": "word/document.xml:p[88] (zero-based)",
+            "textSha256": "bf97c9b2638cba9e9502b6bc4ace8722e8e3f7761e1d604cecb872273f11db28"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the flight-day route heading from Word Day 5; 15 August is the fifth day of the 11–21 August departure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d5f617b3459acc3901595e4f97caf6e4d916ac84c54845048cf663a6c0b90334",
+      "text": "After breakfast, transfer to the airport. Flight to the Galápagos. At Baltra, your guide meets you for the short bus ride and boat crossing of the Itabaca Channel to Santa Cruz, then across the island to Puerto Ayora, the landscape changing from red, rocky lowlands to the lush highlands. In the highlands, watch giant tortoises of all ages in their natural habitat on a private farm, and walk through the lava tunnels, formed by flowing lava as its surface cooled. Lunch in the highlands, then free time in Puerto Ayora. Overnight at Hotel Fiesta 4★. (B, L)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[88] (zero-based)",
+            "textSha256": "bf97c9b2638cba9e9502b6bc4ace8722e8e3f7761e1d604cecb872273f11db28"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day-number prefix because the itinerary renders its own numbered day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0389baf92170759b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7bc4c2a74f4d8d62ccc0c2c9e4c830535fbc2f20ebe0989eba64b06f75d30106",
+      "text": "Baltra Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[88] (zero-based)",
+            "textSha256": "bf97c9b2638cba9e9502b6bc4ace8722e8e3f7761e1d604cecb872273f11db28"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word arrival location Baltra as a standalone island label for the itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c22ffd98f7820a2d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ccab6280a13c28f3ce62a204613af80c077712177fd54ac16ae6395024723353",
+      "text": "Santa Cruz Island (Galápagos)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[84] (zero-based)",
+            "textSha256": "2d7421f6f7815a327d78d0059cafc47a98f726d8b0896ff40c88fa49dfc9e847"
+          },
+          {
+            "ref": "word/document.xml:p[88] (zero-based)",
+            "textSha256": "bf97c9b2638cba9e9502b6bc4ace8722e8e3f7761e1d604cecb872273f11db28"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the standalone island label from the Word Galápagos section and its Santa Cruz transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2323c809358cc079",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fa3ef80e790f260b644d45d40c45f19065f87f2beec3c9dfe11d90aef4352bc3",
+      "text": "Puerto Ayora",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h",
+        "documentSha256": "8d3ae8a0168a2fadfdfdb1e93f537fbd2fd3aa63e7f5c8d44cb00819dfd37405",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[88] (zero-based)",
+            "textSha256": "bf97c9b2638cba9e9502b6bc4ace8722e8e3f7761e1d604cecb872273f11db28"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact town name from the approved Word Galápagos arrival paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a7ada53b4ccf24ef",
+      "field": "media.alt",
+      "sourceTextSha256": "0ca53102c718f11a5d15091fd73c4e1c52deef8e0df41e1b3dfa67dbc6117d84",
+      "text": "Cacti on the rocky coast of Baltra Island, Galápagos, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word has no alt text describing the cacti and rocky coast in this specific photograph; translate the RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7fccb02a75ee9b83",
+      "field": "media.hover",
+      "sourceTextSha256": "52653b53937f5d8ff6fcad09ad8f4ef979e70a7ec7fe29aea6123cbaefc51c93",
+      "text": "Baltra: a dry volcanic shore beside turquoise water",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word has no hover caption describing this photograph of the Baltra shoreline; translate the RU caption."
+      }
+    }
+  ]
+}

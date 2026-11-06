@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 469,
-    "leased": 4,
+    "queued": 468,
+    "leased": 5,
     "review": 1871,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 469,
-      "leased": 4,
+      "queued": 468,
+      "leased": 5,
       "review": 1871,
       "ready": 50,
       "retryable": 0,
@@ -545,8 +545,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 12,
-          "leased": 0,
+          "queued": 11,
+          "leased": 1,
           "review": 66,
           "ready": 1,
           "retryable": 0,
@@ -577,7 +577,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T05:46:53.892Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu:b001",
       "token": "tok-mw4gng4m-2d4jvwlyoda",
       "expiresAt": "2026-11-06T05:46:35.657Z",
+      "generation": 1
+    },
+    "ada-en-mw4gn04k-amanda": {
+      "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_kofejnye_fazendy:b001",
+      "token": "tok-mw4gn04k-5mtiquni03m",
+      "expiresAt": "2026-11-06T05:46:53.892Z",
       "generation": 1
     }
   },
@@ -7444,7 +7450,8 @@
     "ada-en-mw4gn04k-amanda": {
       "token": "tok-mw4gn04k-5mtiquni03m",
       "jobIds": [
-        "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b011"
+        "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b011",
+        "en:bulk:tour:tour_source_tur_v_braziliyu_na_kofejnye_fazendy:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b011"
@@ -7472,5 +7479,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T04:16:45.650Z"
+  "updatedAt": "2026-11-06T04:16:53.892Z"
 }

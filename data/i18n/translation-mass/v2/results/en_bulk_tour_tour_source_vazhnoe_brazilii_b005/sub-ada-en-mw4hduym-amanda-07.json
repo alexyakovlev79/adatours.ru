@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vazhnoe_brazilii:b005",
+  "stableId": "tour_source_vazhnoe_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "169bd41e88c8ec3083601fc7eff9c4432ba3e00aa4ef0c7408efbdf77d25259e",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f556df13e9dca200",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p124",
+            "textSha256": "ae3c923b7464986811bc370523960ebf9f3cf234cdedaedb9c927ee4adc21c20"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the city and region from the confirmed Amazon accommodation label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7ee703d9a860221e",
+      "field": "media.alt",
+      "sourceTextSha256": "79b2c2ca1e2a9c06459cf8bef8c617f23292c6622f8df331f4534dbf8e0f66f4",
+      "text": "A river bend amid tropical forest, Amazon, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no matching photographic alt caption for the river bend surrounded by rainforest."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f2479ca44d3ccc7b",
+      "field": "media.hover",
+      "sourceTextSha256": "a5bf1ca11e8b11d69358989fc098a741ed9ba0ba574cb398563428c4ba19b1b4",
+      "text": "The Amazon in Brazil: a river winds through dense tropical forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding hover caption for the winding river image appears in the Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b92443299e337620a456e7e406ecf78abb03f476d60829dc83e6b74f77389c47",
+      "text": "Manaus",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p86",
+            "textSha256": "eaa04da2a9c2bccad2e9e9615e7057fdbc58de9554d3cb58bbef6b216a950535"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extracts the Manaus place name from the Word Amazon route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b341f580beb5a8ef6d56b2207a42fea965789e6cb8ccd15efe5eb8e4c53c662d",
+      "text": "A day at the lodge to enjoy the activities of your choice.\n\nFull board",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p92",
+            "textSha256": "53506ee3f9a11a6daf1952cb0076ea73a952018cd919f574dbe3b2d976bfd519"
+          },
+          {
+            "ref": "word/document.xml:p128",
+            "textSha256": "d5c7396270bf2268f3f62d079e80fdefaf793c9ba0a1f43296f80ed839af36ec"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removes the redundant day marker and adds the exact full-board accommodation label applicable to the lodge stay."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b6948027e464fb2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p124",
+            "textSha256": "ae3c923b7464986811bc370523960ebf9f3cf234cdedaedb9c927ee4adc21c20"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the city and region from the confirmed Amazon accommodation label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4b1188f94e411900",
+      "field": "media.alt",
+      "sourceTextSha256": "0493746c9cd7c8ab1835b87f359b230cca5187dfc6ecb135aac78f4bcb66deb8",
+      "text": "A boat travels along a river through tropical forest, Amazon, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word lodge-activity text has no alt caption identifying this specific boat and river photograph."
+      }
+    }
+  ]
+}

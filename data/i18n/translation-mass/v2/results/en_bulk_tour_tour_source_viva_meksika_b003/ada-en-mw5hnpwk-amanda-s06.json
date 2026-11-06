@@ -1,0 +1,158 @@
+{
+  "jobId": "en:bulk:tour:tour_source_viva_meksika:b003",
+  "stableId": "tour_source_viva_meksika",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "93a4cb1ac3ab207810f71b485249ee58e553af9fa3d0e40b3b605d794eca396d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fdc2583c09263ab7f316ac093656f3833e809bdf6af5e76514f2bc2d661d75d7",
+      "text": "Private Transfer In • Day at Leisure or Optional Tours.\n\nAs you step off the plane at Mexico City International Airport, a friendly, bilingual host will be there to greet you—holding a sign with your name and offering a warm welcome to one of the world’s most vibrant cities. You’ll be transferred comfortably to your hotel in the heart of the capital. The rest of the day is yours. Unwind, soak in the atmosphere, or head out for a first taste of the city. Maybe it’s a golden-hour walk through tree-lined plazas or a drink on a rooftop terrace—however you begin, Mexico City is ready to enchant you from the very start. Included: Private Arrival Transfer and Overnight Optional: Early check-in or evening experience (ask for available options)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[31] (nonempty, zero-based)",
+            "textSha256": "ec2ddfaf87dc99917db8edd13b7565e09730a49307a1f1bda7dc3800a209343a"
+          },
+          {
+            "ref": "word/document.xml:p[32] (nonempty, zero-based)",
+            "textSha256": "ee2f96db57a9884e5ee2b4e2af4ddba814f3e01b7e045beb68d5d62dc5f835f5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2141c79819815b21",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d6caecbb04aaa0ccab22e4d1d06407e4b10dec9e47f87583cf0648f6d605ed33",
+      "text": "Mexico City (Teotihuacan ruins)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[22] (nonempty, zero-based)",
+            "textSha256": "b72cf52b9756ed4bc4c4862f6e52957b0b60665f11cfbdf9334f4e37e2847977"
+          },
+          {
+            "ref": "word/document.xml:p[30] (nonempty, zero-based)",
+            "textSha256": "205b685ec1914964a8c9065802e46812a5fedd5ddd18c633e45d90a2f28542e9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the existing canonical location label from the approved Mexico City and Teotihuacan place names; no additional visit is implied."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4b5e49c00db51850",
+      "field": "media.alt",
+      "sourceTextSha256": "04f30e40fcc580d05dd80063a61fdeceed0c7d770244062b960ffcefbdd311ca",
+      "text": "Yellow Volkswagen Beetle taxi on a street in Mexico City, Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnpwk-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified pinned Word has no image-specific alt or hover description for this Volkswagen taxi photograph; translate the exact RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:69962fe8c1c3b98b",
+      "field": "media.hover",
+      "sourceTextSha256": "9f7d119c57c3f60448ed04d170d3c1661d60b6dbfb0805da727e128971467d81",
+      "text": "Mexico City: a yellow Volkswagen taxi in city traffic",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnpwk-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified pinned Word has no image-specific alt or hover description for this Volkswagen taxi photograph; translate the exact RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "807157fd687bc57652af7d071362a40dec382d217a21937ad34c5ead8dc57191",
+      "text": "Timeless Streets & Cultural Treasures",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[33] (nonempty, zero-based)",
+            "textSha256": "3d337193dbca0a5fbf51f20e92c0dfa4ba2b450ae95f74336cdaad393d755466"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove the day-number prefix from the approved title to fit the existing itinerary title field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "42c6ed56afbdae341eda789313f6573c703daeb3f05103d8e7f1d26a86efd130",
+      "text": "Overnight in Mexico City.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[41] (nonempty, zero-based)",
+            "textSha256": "c46eed13e932fa26cf1904e74dcbeea083e8d85528049dde4a40d981f105e1d6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract only the approved overnight-in-Mexico-City statement for this concise text field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:26568100e65191e7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d6caecbb04aaa0ccab22e4d1d06407e4b10dec9e47f87583cf0648f6d605ed33",
+      "text": "Mexico City (Teotihuacan ruins)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[22] (nonempty, zero-based)",
+            "textSha256": "b72cf52b9756ed4bc4c4862f6e52957b0b60665f11cfbdf9334f4e37e2847977"
+          },
+          {
+            "ref": "word/document.xml:p[30] (nonempty, zero-based)",
+            "textSha256": "205b685ec1914964a8c9065802e46812a5fedd5ddd18c633e45d90a2f28542e9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the existing canonical location label from the approved Mexico City and Teotihuacan place names; no additional visit is implied."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e4d18d5f07ada0c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3e5ef0ec22320eaf1c5670614fe168bfce09e45029e59e502aac82f2aba4ca17",
+      "text": "Zócalo, Mexico City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[23] (nonempty, zero-based)",
+            "textSha256": "0e051d2861adb139fbf4b73411f7753716d8e78ed01845201ae804a793bd666d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Zócalo and Mexico City location name from the approved highlights label."
+      }
+    }
+  ]
+}

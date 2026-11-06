@@ -1,0 +1,135 @@
+{
+  "jobId": "en:bulk:tour:tour_source_severnyj_pantanal_vodopady_reki:b005",
+  "stableId": "tour_source_severnyj_pantanal_vodopady_reki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f18dec1381e547b094e68d96b9b28d45af8009094f24df3ffeeff36d6e0760f7",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:2816cf71d83857f5",
+      "field": "media.alt",
+      "sourceTextSha256": "ecfeca18b49b6d7796ba7b8cac625d7bf9339fc5677fc8ede8afde64c3f060c7",
+      "text": "A tall waterfall in a rock amphitheatre in Chapada dos Guimarães National Park, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dtsis-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme has no image-specific alternative text or hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e19f2193a8ef1218",
+      "field": "media.hover",
+      "sourceTextSha256": "af5da14e8ac36c6b9c7d7b7f09bd7dd4af4b3ce77186866016ecde7e345bfeb5",
+      "text": "Chapada dos Guimarães: a narrow waterfall drops from a reddish cliff",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dtsis-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme has no image-specific alternative text or hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ddbeedb19b72eedd8eca94158ae46354f893d15059b40a10d376899103789379",
+      "text": "Cuiabá – Pantanal – Porto Jofre",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[67] (zero-based)",
+            "textSha256": "deb23c34ef0ae75ca3d1ca7da74239714e00bbefad41054d5a6aad802160734b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route heading combines Cuiabá, the Northern Pantanal and Porto Jofre, explicitly named in the corresponding transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ac84f63a6092d1dc7f3f7ba1369cf32df2ab8e442127ae1463d53e369cf96bb1",
+      "text": "After breakfast, an early departure from Cuiabá for Porto Jofre, the gateway to the Northern Pantanal, along a scenic road that shows the transition from savanna to wetlands. In the afternoon, your first boat safari from the lodge, gliding along the rivers to spot herons, caimans and a wide variety of birdlife, in one of the richest wildlife areas of South America. Overnight at the Santa Rosa Lodge, with lunch and dinner.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[67] (zero-based)",
+            "textSha256": "deb23c34ef0ae75ca3d1ca7da74239714e00bbefad41054d5a6aad802160734b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Day 2 list prefix because the website stores the day number separately; the remaining approved programme paragraph is unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:38c112d76ef282e3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
+      "text": "Pantanal",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[8] (zero-based)",
+            "textSha256": "eca839902f399e2e9e2adbc13160863157f6728c9da453f7408f248cd152a0f7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6a32de130c8ede78",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a2104752adf834a1a84e1c3eb73ec14edff7fd60b562acf7dd8f95b9a3498e57",
+      "text": "Cuiabá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[51] (zero-based)",
+            "textSha256": "2a9a014dedd491043731b49e73d398a848430b90b1227d86b771c0da58b831f3"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d8897fa3313f7b52",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f94c94b804a194ea0acc992eae7108767ed3dce86afdcbbfe92a007633fe474f",
+      "text": "Porto Jofre",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+        "documentSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[36] (zero-based)",
+            "textSha256": "1ff41c340eabfe29db754872d5f9bc5a38c15df1d2aca6678e739675f7dbbb2c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c109cfad9671e93c",
+      "field": "media.alt",
+      "sourceTextSha256": "821ff7a37d9c54f86868be5b3263a6fa32c0435af36e5a54317e93fbf50b3dc2",
+      "text": "A flock of white and pink birds above the water and green shore of the Pantanal, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dtsis-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme has no image-specific alternative text or hover caption for this photograph."
+      }
+    }
+  ]
+}

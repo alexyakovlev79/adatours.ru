@@ -269,16 +269,17 @@ test('glob wrapper restores raw-body evidence after Astro trim and recompiles tr
 });
 
 
-test('submitted review previews display only source-hash-matched text and keep canonical facts',()=>{
+test('saved worker text publishes on noindex without independent QA while retaining source facts',()=>{
   const source=fixture(),slot=createStableBlockMap(source,'tour').paths.find(s=>s.path==='/title');
   const sha='e'.repeat(40);
   const prepared={entityId:source.data.id,entityType:'tour',sourceFingerprint:'preview',
     massSnapshotSha:sha,previewMass:[{status:'preview_review',blocks:[{
       blockId:slot.blockId,field:slot.field,sourceTextSha256:digest(source.data.title),
-      text:'Preview English title'}],receipt:{snapshotSha:sha,pendingIndependentQA:true,jobId:'test:b001'}}]};
+      text:'Preview English title'}],receipt:{snapshotSha:sha,independentQARequired:false,workerSubmitted:true,jobId:'test:b001'}}]};
   const projected=projectSharedEnglishEntry(source,'tours',prepared);
   assert.equal(projected.entry.data.title,'Preview English title');
-  assert.equal(projected.previewMass[0].pendingIndependentQA,true);
+  assert.equal(projected.previewMass[0].independentQARequired,false);
+  assert.equal(projected.previewMass[0].workerSubmitted,true);
   assert.equal(projected.acceptedMass,undefined);
   assert.equal(projected.entry.data.priceFrom,source.data.priceFrom);
   assert.equal(projected.entry.data.hero.src,source.data.hero.src);

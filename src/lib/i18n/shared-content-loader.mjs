@@ -100,9 +100,9 @@ async function attachAcceptedMass(records,base,snapshotRoot) {
   records.massSnapshot={sha:ACCEPTED_MASS_SNAPSHOT_SHA,packets:snapshots};
 }
 
-/** Owner-authorized NOINDEX publication of submitted EN text, before optional
- * independent semantic QA. It never forges QA-ready or releaseEligible status
- * and never changes the staging queue. Git receipts and source blocks bind it.
+/** Owner-authorized NOINDEX publication of saved EN text with no independent
+ * semantic QA gate. Historical QA-ready receipts remain verified separately.
+ * The Git receipt, source hashes and immutable worker queue stay authoritative.
  */
 async function attachReviewPreviewMass(records,base,snapshotRoot,env) {
   if(!sharedEnglishContentEnabled(env)||env.PUBLIC_EN_RELEASE!=='0'||
@@ -116,7 +116,7 @@ async function attachReviewPreviewMass(records,base,snapshotRoot,env) {
   if(index.schemaVersion!==2||index.publicationEnabled!==false||index.dispatcherEnabled!==true)
     fail('Review preview cannot bypass the queue safety gate');
   const totals={sha,mode:env.EN_PUBLISH_SUBMITTED_TRANSLATIONS==='1'
-    ?'noindex-direct-publish-before-qa':'noindex-unreviewed-preview',queued:index.counts.queued,
+    ?'noindex-saved-translation-direct':'noindex-unreviewed-preview',queued:index.counts.queued,
     submittedReview:index.counts.review,independentlyReady:index.counts.ready,
     loadedReview:0,loadedReady:0,withheldConflicts:0,withheldInvalid:0,
     sourceChanged:0,sourceMissing:0};
@@ -175,7 +175,7 @@ async function attachReviewPreviewMass(records,base,snapshotRoot,env) {
         jobId:row.jobId,blocks:result.blocks,
         receipt:{snapshotSha:sha,jobId:row.jobId,resultBlobSha:row.submission.blobSha,
           sourceChanged:currentHash!==job.source.contentSha256,
-          ...(row.status==='review'?{pendingIndependentQA:true}:
+          ...(row.status==='review'?{independentQARequired:false,workerSubmitted:true}:
             {reviewerId:row.review.reviewerId,reviewedAt:row.review.at})}};
       if(row.status==='review'){
         prepared.previewMass=[...(prepared.previewMass??[]),packet];totals.loadedReview++;

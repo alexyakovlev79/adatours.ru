@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_santyago_pustynya_atakama_torres_del_pajne:b004",
+  "stableId": "tour_source_chili_santyago_pustynya_atakama_torres_del_pajne",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "af1e0f4a217c4f39aad59bc42034109dd985b197c8a17c22f0247ea959b65dcf",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:adcc66f1bf55579b",
+      "field": "media.alt",
+      "sourceTextSha256": "76fb1c700aa1e82a559b7d66d0ad1d20ea1d4923f5ad796a463fd232b67565bb",
+      "text": "Cars on a street among high-rise buildings in Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cc610ccbe6e52380",
+      "field": "media.hover",
+      "sourceTextSha256": "07dc08589445f5059c989ee6dd2ddf77f63fce4647357304cdd6bbfcb17f5800",
+      "text": "Santiago: city traffic beside glass towers",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4ddaa55ba2bf2434dbe3eab0de8c8c382a2cfa5819fcbe78dee0791198f5a963",
+      "text": "Santiago – Calama – San Pedro de Atacama",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11dZZY9nzo2l-3_o4buXsObukJwohBqqI",
+        "documentSha256": "4b89edfeaed97b23dfa028da3a8d8e647bbf3a6d93d611b8d51bf9da78cae4a3",
+        "paragraphs": [
+          {
+            "ref": "p:67",
+            "textSha256": "bf5b1342d02ce26b4dfbfb163a7da5125a0bd499d8acbbd2a73b6d82ebfbdb50"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composes the route from the departure, arrival airport and final destination stated in Word Day 2."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "53a737d33f4a252ad2fe22d5fccf5d20c3d876f9acb8963ab0c8ee62baec3caa",
+      "text": "Breakfast at the hotel. Transfer from your hotel in Santiago to the airport for your flight to Calama. Upon arrival, meeting at Calama Airport and take a shared transfer to San Pedro de Atacama. In the afternoon, enjoy a half-day excursion to the Moon Valley (Valle de la Luna). Just a few kilometers from San Pedro de Atacama, amid the dramatic rock formations and unusual shapes of the Cordillera de la Sal (Salt Mountains), lies Moon Valley, a true geological wonder and part of Los Flamencos National Reserve.\n\nDuring the excursion, you will admire the fascinating landscape and extraordinary rock formations, which create the feeling of walking across the surface of the moon. In the afternoon, enjoy breathtaking views of the Andes mountain range and its volcanoes. As the sun sets, golden and red hues spread across the desert, revealing a truly spectacular panorama.\n\nTransfer to your hotel and check-in.\n\n**Included:** entrance fee to Moon Valley and a cocktail.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Preserves the matching English narrative from Word paragraphs 67–68; the explicit closing hotel transfer/check-in sentence is absent there and is translated from RU. The day-specific entrance fee and cocktail are retained from Word paragraph 69."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cdaa2982734c0db0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11dZZY9nzo2l-3_o4buXsObukJwohBqqI",
+        "documentSha256": "4b89edfeaed97b23dfa028da3a8d8e647bbf3a6d93d611b8d51bf9da78cae4a3",
+        "paragraphs": [
+          {
+            "ref": "p:36",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the Word city name with the assigned country qualifier retained in the Russian place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:acf610b233f43b0c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
+      "text": "Calama",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11dZZY9nzo2l-3_o4buXsObukJwohBqqI",
+        "documentSha256": "4b89edfeaed97b23dfa028da3a8d8e647bbf3a6d93d611b8d51bf9da78cae4a3",
+        "paragraphs": [
+          {
+            "ref": "p:67",
+            "textSha256": "bf5b1342d02ce26b4dfbfb163a7da5125a0bd499d8acbbd2a73b6d82ebfbdb50"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the arrival-airport city name from Word Day 2."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dd679548fee7f6c2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+      "text": "San Pedro de Atacama",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "11dZZY9nzo2l-3_o4buXsObukJwohBqqI",
+        "documentSha256": "4b89edfeaed97b23dfa028da3a8d8e647bbf3a6d93d611b8d51bf9da78cae4a3",
+        "paragraphs": [
+          {
+            "ref": "p:117",
+            "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:903401f16587b0da",
+      "field": "media.alt",
+      "sourceTextSha256": "e672f68dcd4c4ec96d56f4cb9dd4dc1906ef64d315cc787804bfd29a08046f73",
+      "text": "A pink flamingo beside a high-altitude lagoon against the dry mountains of the Atacama, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    }
+  ]
+}

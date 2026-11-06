@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_novyj_god_v_brazilii:b005",
+  "stableId": "tour_source_nezabyvaemyj_novyj_god_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b52cd938b10f602cbb2d0c697ec095a37d832cfedab6c42ddad85fe1e5fd3c5d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C5tNZtAea96Jz3Gf3OcetOPNp6mpGdvV",
+        "documentSha256": "b74a215cbc3582edd334965291943e2859b79d147b0aa16484f2c0eed893a7b0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "120e0e8ba724e31698b75fad8d944378cf225c5df14932e1d16ff00ac06372a3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the exact Word destination name from its dated day heading for the matching place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:947656569b3448cf",
+      "field": "media.alt",
+      "sourceTextSha256": "97da9e44f62a7d0c344edcd808744e3a7d706b7d8218fd55cab59427212f8576",
+      "text": "Cable car to Sugarloaf Mountain in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5ggjrt-amanda",
+        "wordAbsenceReason": "The selected Word contains no photo-specific ALT or hover caption matching this image; translated the pinned RU description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b54a5ccb438f26a790b67928cb82aa1ed04186b463f5558667266fa9e5d1faf3",
+      "text": "2 January. Flight from Rio to Iguazu",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5ggjrt-amanda",
+        "wordAbsenceReason": "The Word flight heading is dated 03/01, while the pinned RU heading is 2 January. Translated the RU heading to preserve its date and route; no exact matching dated heading exists in Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "30d5aba2eac124b1f53b79e4396783f3bc1fa631585e81517790459798e29397",
+      "text": "After breakfast in your hotel you will be taken to the airport where it is time to say goodbye to the Marvellous City. However with the next stop being one of the natural wonders of the world, there is no time for tears. Board your flight to Iguazu Falls, arrival and transfer to the hotel. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1C5tNZtAea96Jz3Gf3OcetOPNp6mpGdvV",
+        "documentSha256": "b74a215cbc3582edd334965291943e2859b79d147b0aa16484f2c0eed893a7b0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p69",
+            "textSha256": "bf0d2bb92da5f093fc57fc595bb45d9b7bd77f5f1d3b598c6e6a8a05d5e5d546"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz de Iguacu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C5tNZtAea96Jz3Gf3OcetOPNp6mpGdvV",
+        "documentSha256": "b74a215cbc3582edd334965291943e2859b79d147b0aa16484f2c0eed893a7b0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p68",
+            "textSha256": "2e8338cfd684e6a7566af30a2a2c83a7dfe15e69ed9ce0a7a481062d3eea2feb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracted the destination name as spelled in the Word flight-stage heading for this place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b4af8d3ee5a70df",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5ggjrt-amanda",
+        "wordAbsenceReason": "The complete selected Word names Foz de Iguacu and the Argentine falls but contains no standalone Puerto Iguazu destination name; translated the pinned RU place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:eb1b6cc113a6194e",
+      "field": "media.alt",
+      "sourceTextSha256": "e764463d290f29cc1b3cd0ee20397ade483ece86f8804423ffee1e99a06e6b41",
+      "text": "Powerful Iguazu cascades above a green rocky islet and a churning river, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5ggjrt-amanda",
+        "wordAbsenceReason": "The selected Word contains no photo-specific ALT or hover caption matching this image; translated the pinned RU description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:9e8ad69e6091f705",
+      "field": "media.hover",
+      "sourceTextSha256": "a2f3d1b32c075242587095b0d3af716afe8edf0e048f1d1cb043087b6ac88917",
+      "text": "Iguazu: waterfalls around green rocks above a rushing current",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5ggjrt-amanda",
+        "wordAbsenceReason": "The selected Word contains no photo-specific ALT or hover caption matching this image; translated the pinned RU description."
+      }
+    }
+  ]
+}

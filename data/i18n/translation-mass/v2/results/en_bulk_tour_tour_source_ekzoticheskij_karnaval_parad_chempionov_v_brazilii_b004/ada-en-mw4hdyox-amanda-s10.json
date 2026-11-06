@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii:b004",
+  "stableId": "tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "eb27d71e0866558ce581d27737ccd311a1cbba02d38d5dd3a9fb416d4512d70c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "15af71a39470fb7f7f05d26ee7df7f785fc910bbc32c4420f0763aa83065c3dd",
+      "text": "Sugar Loaf and the Parade of Champions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "p:67",
+            "textSha256": "c5e6ebfcb3135cf8cc77d18e4412162153810f49c5550ded9d2c60ccdcc85d68"
+          },
+          {
+            "ref": "p:68",
+            "textSha256": "3c32c738943f94f1bee1984f6fc735d78388232a4d0672379c0f52a64f965e98"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combines the two confirmed activities from the matching day as its standalone title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b8492f51ac42e8125da7c70c3fac6ea76e3ca16d5531c85aec726e72c718903e",
+      "text": "After breakfast, begin a 4-hour tour of Sugar Loaf. The first stop is Morro da Urca, with its spacious observation deck. The cable car then takes you higher to Sugar Loaf itself. From here you can see the bay, Copacabana, the surrounding mountains and islands, the bridge to Niterói and the statue of Christ the Redeemer.\n\nNext, head into Rio's old central districts. You will see several historic churches and monasteries, the city's main cathedral and colonial-era buildings. The contrast with the first part of the tour is immediate: narrow streets, squares and historic architecture replace the ocean and mountains.\n\nRest after the tour, as the main event of the trip begins in the evening. A transfer from your hotel takes you to the Sambadrome for the Parade of Champions. Throughout the night, Brazil's leading samba schools parade along the avenue. Huge moving floats, costumes, percussion bands, dancers and thousands of participants come together in one large show. A jury assesses each school's performance, its design, music, costumes and overall production.\n\nA return transfer to your hotel is arranged after the parade. The parade continues late into the night, so the day's schedule deliberately allows time to rest before leaving for the Sambadrome and after returning.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraphs 67–69 contain a condensed tour and parade account; the assigned detailed old-town contrast, jury description and rest-schedule explanation are absent. Translated the full current RU block while retaining its 4-hour duration and both transfers."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "p:126",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d677a7d9116bdde9",
+      "field": "media.alt",
+      "sourceTextSha256": "00cd98ad813b549bda5135ae1966e0876bbf98a6ab5b2201f2736a67bfc67538",
+      "text": "Pictured: the cable car to Sugar Loaf",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2cb492b9fdba414c90c9d7620abc19207db2943ad4291ce6d9904e03a5e101fe",
+      "text": "Corcovado and Christ the Redeemer",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "p:79",
+            "textSha256": "ffe644114b7bc0fc8797d9c5bbb041352b1c927afd2aa65ff1b8dcc05e1192bc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the confirmed mountain and statue names from the corresponding Word excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b9905423a2862da08c76fcb556229cc39b7ee2c7dcad9ecbdfce09afe50ec567",
+      "text": "Breakfast, then a 4-hour excursion to Corcovado: an open train climbs through the Tijuca Forest to the statue of Christ the Redeemer (38 m), at about 710 m, inaugurated in 1931, with a breathtaking panorama of the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the Maracanã Stadium and Sugar Loaf.\n\nThe train ride through Tijuca is also part of the experience: the cityscape gradually changes outside the windows, giving way to dense tropical greenery near the summit.\n\n**Activity: helicopter flight over Rio de Janeiro**\n\nOptional extra.\n\nPrices for the different options are available on request. The recommended 9–10-minute flight circling the statue of Christ the Redeemer is also priced on request, including the transfer.\n\nThe minimum group size is 4 people; you may be joined by other travellers.\n\nDepending on the option selected, the flight lasts from 10 to 30 minutes.\n\nFor the evening, you can choose the Marius seafood restaurant, at an approximate cost of $130 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Preserves the matching core excursion wording from Word paragraph 79, without importing its additional sunset suggestion. The assigned 9–10-minute helicopter option, minimum 4-person group, 10–30-minute range and price-on-request terms are absent from Word, which offers a different private 30-minute flight at USD 641. Those gaps are translated from RU and its $130 Marius estimate is retained; no Word flight price is imported."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1gzyxUGrrRXJIW6t-txPO8L86FtsN6Zqy",
+        "documentSha256": "4b23f855eb0de76861b499ab303a60875c5255eca1b177e3ccbd6923fab639e8",
+        "paragraphs": [
+          {
+            "ref": "p:126",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8a40e648522cbf07",
+      "field": "media.alt",
+      "sourceTextSha256": "d7e338ddb7f377cba65dce90b8b198aae9aed89e86d7a970ae9a73ec26c24fa3",
+      "text": "The statue of Christ the Redeemer above Rio de Janeiro, the lagoon and the ocean, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh:b002",
+  "stableId": "tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2736c202c9a4efa7929c370790f64d15b0234190c93e07f19bc3281c27525c2e",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:72581a9af864b9b7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7768534ba928763ebed8b75fb98574f3cb121fdc56caa196702749c6b96d702b",
+      "text": "Monteverde",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p131",
+            "text": "Monteverde",
+            "textSha256": "2d18cc2a5385b05ba0618c6bb6d7fee1046d9c2d8be71e9f451804d98bcfd8ce"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:542d5f2da26abe66",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7df3aa1de09a51cebf7d5b9ecd2ef979a0bfb131f0c177c9649854665f9fc267",
+      "text": "North Pacific coast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p103",
+            "text": "Day 7 · After breakfast, transfer to the North Pacific coast. Overnight at Hotel Pasatiempo. (B)",
+            "textSha256": "03479f1cfc107b7cc49f62c8333e17769e74ab23d5f7c534642df185bc7b4eeb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the coast name from the confirmed day 7 transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:adbf0458536dda1d:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "241af220ccfff8f4830fd042af257eebc4aaa520ba17d18471ebcb9cfbecc35e",
+      "text": "Liberia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p105",
+            "text": "Day 9 · Transfer to Daniel Oduber International Airport in Liberia. (B)",
+            "textSha256": "3cf490a3dea4cd25fa21e7f98b65f7b7a02b17e071a5a7554cb137ea8f0f41a5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the arrival airport city as the route label."
+      }
+    },
+    {
+      "blockId": "tour:included:eed4c5beaf26e988",
+      "field": "included",
+      "sourceTextSha256": "0e0f6f8ae6c3050cf6d0bb372a2cf47f46dc68354ea9df77d1c2ec07753b15e2",
+      "text": "Transportation",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p167",
+            "text": "–   Transportation",
+            "textSha256": "7adcd88bd5f2d63149a36e82547ad9c9d32330fefacfb560b6f08b4814695de9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word bullet marker for the existing list item."
+      }
+    },
+    {
+      "blockId": "tour:included:8a3625b509b7225e",
+      "field": "included",
+      "sourceTextSha256": "68def1fa0c7502f43e14777062db95326678c230b7d315888bd1ea05d9986a04",
+      "text": "Entrance fees",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p168",
+            "text": "–   Entrance fees",
+            "textSha256": "580b1eadbb1339f9effda97d9dedae0c686d21b2101fda94ca59d86bf3dd4da5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word bullet marker for the existing list item."
+      }
+    },
+    {
+      "blockId": "tour:included:5cb71b494ee62e05",
+      "field": "included",
+      "sourceTextSha256": "e510885c9b0231d4566dc7801f0afb8978778e7f3d3a4448e25d0d3ca966794d",
+      "text": "Guided tours as per the itinerary, with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p169",
+            "text": "–   Guided tours as per the itinerary, with an English-speaking guide",
+            "textSha256": "310f03f10ae7b97e7bbae31b280fd842ff5e5c640ddba463c6cec2e15960bf2e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word bullet marker for the existing list item."
+      }
+    },
+    {
+      "blockId": "tour:included:43b9200d470004f3",
+      "field": "included",
+      "sourceTextSha256": "887748c2426db13e804d3d0c8bd4925a14b2fe15dc2bcc4175aaefabb10a5ced",
+      "text": "Lodging and local taxes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p170",
+            "text": "–   Lodging and local taxes",
+            "textSha256": "caf8a75305d435b7d1ab5a5fa9a584cc1c1892b25a0d890297949e339159ddd9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word bullet marker for the existing list item."
+      }
+    },
+    {
+      "blockId": "tour:included:3410140c1ef1a6ff",
+      "field": "included",
+      "sourceTextSha256": "79b5c62d8bebb909421fdb9e5c9733e8919474525ddb8d95aa2b3271458965de",
+      "text": "Meals according to the itinerary (B = breakfast)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1pKs6gG3JSDjkEIQt_H_n6ktc0pmyvl57",
+        "documentSha256": "22a955d9713aa4fc095afbcb7f033721711ee4096fb57c2746b6d8fe8e5e7e3f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p171",
+            "text": "–   Meals according to the itinerary (B = breakfast)",
+            "textSha256": "d1703e443b88c86e9dcc432042c114ef39755c676980ef74e995f69b48d8fde1"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Word bullet marker for the existing list item."
+      }
+    }
+  ]
+}

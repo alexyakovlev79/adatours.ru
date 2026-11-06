@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b009",
+  "stableId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6bf4ec47e455a799bd203be0774cecc04a1a027f78c48f268d163c103b2dbdbd",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7a00bde5f876f49862d59599225756c4384ace9d8d7f1536c96760176fd78601",
+      "text": "Puno – Copacabana – La Paz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p93",
+            "textSha256": "2729a31ce707211c65eeaac4a580339243f11bb32cdb66def85dabbe6bde43f3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Match the approved Word route and itinerary passage to this field while removing its day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6eafb2b703bcdb480991ae63a120d050e6604a07beb96c10d2ef65a2514b1877",
+      "text": "After breakfast, tourist bus from Puno to Copacabana, on the Bolivian shore of Lake Titicaca, and on to La Paz, where your driver meets you for the transfer to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p93",
+            "textSha256": "2729a31ce707211c65eeaac4a580339243f11bb32cdb66def85dabbe6bde43f3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Match the approved Word route and itinerary passage to this field while removing its day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:681e2c4d27f75cd4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c1e12f487c822fe88df6274ce2d6fef64645ff9d61d370b2f91c830a847effcf",
+      "text": "Copacabana",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p93",
+            "textSha256": "2729a31ce707211c65eeaac4a580339243f11bb32cdb66def85dabbe6bde43f3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Match the approved Word route and itinerary passage to this field while removing its day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dda0a5a2fb7a2e97",
+      "field": "itinerary.label",
+      "sourceTextSha256": "72da86964b748cd13f9aa0c5b2fc5640ab61783e2e7870c3c5a6c3fbdd8b589a",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "cb6a0d8131c88e79f3b421059a6c669460f6fe8bd200026cd261e338f26a0374"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:1929aac06c04fb77",
+      "field": "media.alt",
+      "sourceTextSha256": "1e75a4ac93c60799cbca1d6d7ba1dca47b694d3e07b493d5aa70510de35b6021",
+      "text": "Boats on Lake Titicaca in front of Copacabana, Bolivia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hoh83-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word document has no image-specific alt/hover caption or this exact page label; translated the pinned RU field."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cc0718d9cc0dea28",
+      "field": "media.hover",
+      "sourceTextSha256": "370a3d752eeacb5b8854fb23062d44ae85390cc634c40e52ace29c84c7b0a5b2",
+      "text": "Copacabana, Bolivia: waterfront houses and boats on the blue waters of Lake Titicaca",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hoh83-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word document has no image-specific alt/hover caption or this exact page label; translated the pinned RU field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "bc2c16db06e2776f191dacf5d03b9ac7154970d9f85282e5f058cb3ccfb85f4b",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "cb6a0d8131c88e79f3b421059a6c669460f6fe8bd200026cd261e338f26a0374"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "06a1c04020a82d4563dc5980ee6ba64a59e56461278c4c822a7e9d6ba7bc1f5e",
+      "text": "“City tour by the heights – Charming La Paz”. Start with the street of the embroiderers, where colourful folk costumes are displayed, then the historic centre: the Witches’ Market and its Andean mystical items, the Church of San Francisco, Plaza Murillo with the Executive and Legislative Palaces and the Metropolitan Cathedral, and the Killi Killi viewpoint.\n\nRide the cable car for a beautiful panorama over the city, on one of the longest urban cable car networks in the world, then visit the impressive Valley of the Moon, 10 km from the centre, whose curious formations, shaped by wind and heavy rain, create a lunar landscape. Return to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p94",
+            "textSha256": "187882123dc283001688c16d83c2c08b9d078873bf41d5427af685105072f1d1"
+          },
+          {
+            "ref": "word/document.xml:p95",
+            "textSha256": "141aa2a6616703a21659c425ca5e03799d63edd5f5dd469306c5ba83a8d8bcdb"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Match the approved Word route and itinerary passage to this field while removing its day marker."
+      }
+    }
+  ]
+}

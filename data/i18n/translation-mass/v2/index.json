@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 388,
-    "leased": 2,
+    "queued": 387,
+    "leased": 3,
     "review": 1953,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 388,
-      "leased": 2,
+      "queued": 387,
+      "leased": 3,
       "review": 1953,
       "ready": 50,
       "retryable": 0,
@@ -145,8 +145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 29,
-          "leased": 0,
+          "queued": 28,
+          "leased": 1,
           "review": 46,
           "ready": 1,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T08:30:17.462Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1352,6 +1352,12 @@
       "jobId": "en:bulk:tour:tour_source_podlinnaya_braziliya:b006",
       "token": "ada-en-mw4mhbla-qi4j5yccx4a",
       "expiresAt": "2026-11-06T08:29:39.154Z",
+      "generation": 1
+    },
+    "ada-en-mw4mhtm1-amanda": {
+      "jobId": "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b002",
+      "token": "tok-mw4mhtm1-7wmvlzzuskh",
+      "expiresAt": "2026-11-06T08:30:17.462Z",
       "generation": 1
     }
   },
@@ -7686,7 +7692,8 @@
     "ada-en-mw4mhtm1-amanda": {
       "token": "tok-mw4mhtm1-7wmvlzzuskh",
       "jobIds": [
-        "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b012"
+        "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b012",
+        "en:bulk:tour:tour_source_nezabyvaemaya_braziliya:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej:b012"
@@ -7694,5 +7701,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T07:00:09.547Z"
+  "updatedAt": "2026-11-06T07:00:17.462Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 422,
-    "leased": 5,
+    "queued": 421,
+    "leased": 6,
     "review": 1917,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 422,
-      "leased": 5,
+      "queued": 421,
+      "leased": 6,
       "review": 1917,
       "ready": 50,
       "retryable": 0,
@@ -145,8 +145,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 30,
-          "leased": 0,
+          "queued": 29,
+          "leased": 1,
           "review": 46,
           "ready": 1,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T06:09:24.291Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1370,6 +1370,12 @@
       "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre:b003",
       "token": "ada-en-mw4he32r-amanda-token",
       "expiresAt": "2026-11-06T06:09:08.751Z",
+      "generation": 1
+    },
+    "ada-en-mw4helc2-amanda": {
+      "jobId": "en:bulk:tour:tour_source_mir_majya:b004",
+      "token": "tok-mw4helc2-7w4s9s77g1m",
+      "expiresAt": "2026-11-06T06:09:24.291Z",
       "generation": 1
     }
   },
@@ -7587,7 +7593,8 @@
       "token": "tok-mw4helc2-7w4s9s77g1m",
       "jobIds": [
         "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b006",
-        "en:bulk:tour:tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej:b009"
+        "en:bulk:tour:tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej:b009",
+        "en:bulk:tour:tour_source_mir_majya:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas:b006",
@@ -7606,5 +7613,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T04:39:17.253Z"
+  "updatedAt": "2026-11-06T04:39:24.291Z"
 }

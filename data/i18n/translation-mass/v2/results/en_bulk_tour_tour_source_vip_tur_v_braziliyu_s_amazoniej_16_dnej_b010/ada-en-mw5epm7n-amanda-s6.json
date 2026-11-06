@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej:b010",
+  "stableId": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "17c522628e4c4104b87bd118a5f157448b1190c86a84e6b3f91ec3b36bad01b0",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:204cb96ca0f855fc",
+      "field": "media.alt",
+      "sourceTextSha256": "c338fb4610ddb28e46f31e00ee40a07171a5b3d152b178fe33e54a802a644649",
+      "text": "Two chairs under a parasol on the wooden terrace at Mirante do Gavião Lodge, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no alt caption for this lodge-terrace image; translate the fixed RU visual caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6b17d265158f4895",
+      "field": "media.hover",
+      "sourceTextSha256": "c707c0e164c00e6d67a3ef5fb4c0b7f5ec457d1a59e456f05f28373a64652640",
+      "text": "Brazilian Amazon: the lodge terrace beside the river and a motorboat",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This photograph-specific hover caption is absent from Word; translate the fixed RU visual description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "96836744fe4afe5852f3968635689d741bc3677f412487561abd14572bb25c81",
+      "text": "Manaus – Recife – Porto de Galinhas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p80",
+            "textSha256": "4f20bb65de9213787732ad526edc2cf37a43561a6924a27018ca683f5c2144c5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the three route endpoints from the matching Word arrival-day heading without its date or broader region label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a3e296f5e3f6c73fe957766618e44c0d63cad9e1625a2bca9a2682f350e461e8",
+      "text": "After breakfast, transfer to the airport for your flight to Recife.\n\nTransfer to the airport. Flight to Recife. Transfer to your hotel in Porto de Galinhas. Time for rest. The town is located in the south of the state, 60 km from the city of Recife. The town is known for its magnificent beaches, some of the most beautiful in the country. Clear turquoise water, clean white sand and palm trees on the shore give a unique flavor to this old colonial town.\n\nHotel Nannai Muro Alto, Double Bungalow with sea view, HB\n\nThe centre of Porto de Galinhas is livelier. Muro Alto is protected by a long reef, so the water behind it is calmer. At low tide, you can see the pale seabed and small fish.\n\nThere are cafés and shops in the resort centre. At low tide, **jangadas**, the local flat-bottomed boats, leave the shore for the natural pools among the reefs.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Retain Word paragraphs p81–p82 verbatim for the transfer, 60 km location and hotel/half-board basis. The breakfast introduction, Muro Alto reef and jangada details are absent from Word and are translated from the fixed RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7f41c2ededaf64d3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p47",
+            "textSha256": "9464de2fc6ce1eff4d672a3761a8d11d76b4d39aecd1b689cd315fec1e19ba01"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the existing combined city-and-region label using the Manaus and Amazon names in the Word heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a13ae99da8664ada",
+      "field": "itinerary.label",
+      "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+      "text": "Recife",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p80",
+            "textSha256": "4f20bb65de9213787732ad526edc2cf37a43561a6924a27018ca683f5c2144c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6569a745fbafc57a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "efedf0ef69adccd5467a3633cbd4dbe5b23440dc80c233ad78d862756bab2082",
+      "text": "Porto de Galinhas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p80",
+            "textSha256": "4f20bb65de9213787732ad526edc2cf37a43561a6924a27018ca683f5c2144c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8da8ded4a7c67319",
+      "field": "media.alt",
+      "sourceTextSha256": "7d45df1fb689788c930a70c811b9947f7c586fe2b92d10dfd3592cfce5bc6b30",
+      "text": "Small sailing boats beside the beach at Porto de Galinhas, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word has no alt text for this particular beach and sailing-boat image; translate the fixed RU caption."
+      }
+    }
+  ]
+}

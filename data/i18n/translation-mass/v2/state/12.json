@@ -1453,20 +1453,22 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "blocked_external",
       "sourceFingerprint": "ccd2d58f3e87cff8635c242b88f4640406677c14be88f2f6a96f79e72e5f693d",
       "generation": 2,
-      "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-mw4mgrjy-amanda",
-        "token": "ada-en-mw4mgrjy-amanda-token",
-        "claimedAt": "2026-11-06T06:57:23.328Z",
-        "expiresAt": "2026-11-06T08:27:23.328Z"
-      },
+      "attempts": 2,
+      "lease": null,
       "checkpoint": null,
       "submission": null,
       "review": null,
-      "nextAttemptAt": null
+      "nextAttemptAt": null,
+      "lastFailure": {
+        "ownerId": "ada-en-mw4mgrjy-amanda",
+        "token": "ada-en-mw4mgrjy-amanda-token",
+        "generation": 2,
+        "failureStatus": "blocked_external",
+        "at": "2026-11-06T07:00:01.739Z"
+      }
     },
     {
       "jobId": "en:bulk:tour:tour_source_neveroyatnaya_argentina:b003",

@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_viva_meksika:b014",
+  "stableId": "tour_source_viva_meksika",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6a89efe575cc18ea8c043d6194d2894b9f2cf18b7b1c7ae5c08b84f0f060c364",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:d9f98db90e0a42b9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3c576274d32f4dd78b3c71d7c491471ad379842e9e605b84d3815c877c6285a8",
+      "text": "Mérida",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p187",
+            "textSha256": "3c361edbe2e2ee5362fb3fb6cea635a787428dad09610be7a989f73cf4c99f11"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ca472e1e7267bd0f",
+      "field": "media.alt",
+      "sourceTextSha256": "f40a2577b374d9b4afff5bcc791f52931c9f7d84ce4ef141362fa3a94a044c3d",
+      "text": "Turquoise water in a Santa Bárbara cenote beneath a limestone vault, Yucatán, Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p212 describes cenotes generally but has no matching photograph alt caption for turquoise water beneath a limestone vault."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1da15127ebcd5bce",
+      "field": "media.hover",
+      "sourceTextSha256": "0161831507876335d8491236a09a72c6acc2b55aa228f228bbbc81babc906769",
+      "text": "Santa Bárbara cenotes: a beam of light above clear water and a wooden staircase",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word contains no matching image hover text about a light beam, clear water and wooden staircase."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:26a2d416d3aa1498",
+      "field": "itinerary.label",
+      "sourceTextSha256": "70341f5dcab8b8c45083bf4263521636f6d15d7f3faaea02c9fc8b4873f2ab2d",
+      "text": "Santa Bárbara Cenotes",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p208",
+            "textSha256": "c69b08f5108ad014f6f46619a67dbd71444b2d135bb42d9b28cfb63d9deeaf23"
+          },
+          {
+            "ref": "word/document.xml:p212",
+            "textSha256": "828edb575b1222939506d777f526ee4dfa17bc05b457b6b316bd42439a5af3bb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f2a9aeb187abe666",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3c576274d32f4dd78b3c71d7c491471ad379842e9e605b84d3815c877c6285a8",
+      "text": "Mérida",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p187",
+            "textSha256": "3c361edbe2e2ee5362fb3fb6cea635a787428dad09610be7a989f73cf4c99f11"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "cf5557f5e094a719d5578cfa87263b78c4955d16709f2fafc74ba95875cee328",
+      "text": "Chichen Itzá, Cenote & Valladolid:",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p222",
+            "textSha256": "010125fe88cfb7b05e80453c52ab3bc0d5a654b6b4071e7ef0c809bcea99a404"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Strip only the DAY 12 prefix and surrounding whitespace from the verified Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "78c3b90cdb7a4151cbc93f0ae522c1f52c4c627ba0d1b70c2fd8d953bfb042dd",
+      "text": "Continue to the Riviera Maya. Overnight accommodation is not included; an extended stay can be arranged.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p225 and p234 support the Riviera Maya continuation and optional overnight extension but have no standalone counterpart to this concise assigned RU closing note. Translate that note without adding the rest of the Word day's activities."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:afea6c35b7e40d33",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cec1121709ac8799cc56df7afd3641d9a82aa791d0f5c16b3d1fef237b2860ce",
+      "text": "Chichen Itzá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1RZXTx3gPs8RLSz8QYKVvvgprA3u0jEP2",
+        "documentSha256": "4b1601ca5b7d5e495bcacfd6a157e95407813d7cc05f2248938d1e029a134fda",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p222",
+            "textSha256": "010125fe88cfb7b05e80453c52ab3bc0d5a654b6b4071e7ef0c809bcea99a404"
+          },
+          {
+            "ref": "word/document.xml:p228",
+            "textSha256": "5437feff5fd8e9591c9b116eef82c82f75664c4413686af175c1459974d07b40"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    }
+  ]
+}

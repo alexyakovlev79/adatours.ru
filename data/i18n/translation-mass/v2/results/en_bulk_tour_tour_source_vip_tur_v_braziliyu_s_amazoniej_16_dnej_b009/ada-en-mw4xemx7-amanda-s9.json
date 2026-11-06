@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej:b009",
+  "stableId": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "62ca8b20e6080dcbf74c0d333b3a8230d1a4975561161a5d44f2eec4612b6b6e",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4915fb731fc5e541418b12dbe51c2e7f2a5befb5f28eb4f2242c36a6eac9640a",
+      "text": "After breakfast at Camu Camu, you will board a boat and travel to the communities of **Santo Antônio and Tiririca**.\n\nStart with a walk through the equatorial rainforest and an introduction to life in the local village.\n\nLunch is prepared in a traditional house. Freshly caught Amazonian fish is grilled over an open fire and served straight away.\n\nThe boat then heads to Tiririca Beach, deep within the archipelago.\n\n**Anavilhanas National Park** consists of hundreds of elongated islands. Between them, the Rio Negro splits into numerous channels, and the dark water along the banks reflects the forest.\n\nAfter relaxing and swimming at the beach, continue to the giant **Macucu** tree, which local guides describe as the largest on the island.\n\nOn the way back, the boat passes through an area inhabited by pink dolphins. They usually surface for a few seconds before disappearing beneath the dark water again.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word p68–69 supports the route but omits the full assigned RU island-and-channel description, freshly caught open-fire meal and dolphin surfacing account. Translate the complete assigned RU block, retaining its named stops."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cb216c11963665e3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9ef37b890242cacb13a6e91a09cf036dbcbd7e6e1928599a87da1b43877aded5",
+      "text": "Santo Antônio (Amazonia)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p68",
+            "textSha256": "42977e11a327973abbac27ac7dbbac75e0e2d7338e5c105073e364b677fd3a96"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:90f51e6713fd2776",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7da4a2b1bee3ba51a9c7d55c7305ad347b615ed2e55d67acd784671d5c4c3d60",
+      "text": "Tiririca (Amazonia)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p68",
+            "textSha256": "42977e11a327973abbac27ac7dbbac75e0e2d7338e5c105073e364b677fd3a96"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7897983d88eb0ca6",
+      "field": "media.alt",
+      "sourceTextSha256": "6d3ca319bea0dc978b4f9d6b519777bb6e8c124e56bfde8a257296f612ed46be",
+      "text": "Forested islands of the Anavilhanas Archipelago in the dark waters of the Rio Negro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word names Anavilhanas but has no matching alt caption describing forested islands in dark Rio Negro water."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:18de48fef42f9571",
+      "field": "media.hover",
+      "sourceTextSha256": "4f43b941fac1654cba511acae372376276a1c115ebba4addf52a20e7a838ca56",
+      "text": "Anavilhanas from above: green islands and broad river channels",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no corresponding aerial image hover caption for green islands and broad channels."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "32953d6c4d1ffc67d6e0ed35a047592e2f7e02c9ca783feed0e1b40e806b8400",
+      "text": "Amazonia, pink dolphins and return to Manaus",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p74",
+            "textSha256": "ffa7fc5fa28c0bd43a7490155d0ac2963a42ee0044fca55fe63399e9335bc25c"
+          },
+          {
+            "ref": "word/document.xml:p72",
+            "textSha256": "c31a4d1fd7ee16ea57bb88a207705bc05d0331b21cc4f035e447556205115094"
+          },
+          {
+            "ref": "word/document.xml:p73",
+            "textSha256": "10dfe7652b9d179547751e41cca4f0b673e46f263c88a7e3ce4fd413ed76cf83"
+          },
+          {
+            "ref": "word/document.xml:p74",
+            "textSha256": "ffa7fc5fa28c0bd43a7490155d0ac2963a42ee0044fca55fe63399e9335bc25c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "252e25244dce16f9f53d4d66ab88ba55d40b3399d0f5a9adea061d86878b0d09",
+      "text": "After breakfast, you can add a tour of Novo Airão on a hotel bicycle or by car.\n\nAnother option is swimming with Amazonian pink dolphins. Before you enter the water, your guide explains their behaviour. The dolphins live freely and approach people of their own accord.\n\nDuring the encounter, you can feed the dolphins and take photographs. Staff remain nearby throughout.\n\nYou then check out and travel to Manaus. The journey in an air-conditioned vehicle takes about **2.5 hours**.\n\nFor the shared transfer, your flight from Manaus must depart **after 14:30**. If your flight is earlier, a private transfer is charged separately.\n\n**Meeting of the Rivers!!!**\n\nOptional",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word p56 and p72–77 support the optional activities, transfer time and flight cutoff, but do not contain the assigned RU guide briefing, free-living approach behaviour and staff-supervision statements or its final standalone optional heading. Translate the complete assigned RU block without inventing a price or additional inclusion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0eee8abe862fb12d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and Amazonia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FIx3kvMbizd0FbMoalKWXALRfaLja6zD",
+        "documentSha256": "4ee3307f26243730a620301a027ce380d996c2ddbd6a02de69c7f7797383696a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p54",
+            "textSha256": "ba754d236ae9421e07f67649c21ee2a17e62ce7cf2d4c845ab306444c904fabc"
+          },
+          {
+            "ref": "word/document.xml:p73",
+            "textSha256": "10dfe7652b9d179547751e41cca4f0b673e46f263c88a7e3ce4fd413ed76cf83"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    }
+  ]
+}

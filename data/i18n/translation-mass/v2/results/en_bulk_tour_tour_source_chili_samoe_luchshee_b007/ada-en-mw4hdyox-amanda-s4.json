@@ -1,0 +1,157 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_samoe_luchshee:b007",
+  "stableId": "tour_source_chili_samoe_luchshee",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "82121857b547bff8b41da714b7a4af21000a84220a655705e666473046e89cdd",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:36917c7b8fc732b9",
+      "field": "media.alt",
+      "sourceTextSha256": "388eb1d73354854b9a8974be23a4a352bc398697cae8dfec3441904d77405f48",
+      "text": "Pictured: Puerto Natales in Chilean Patagonia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d4711d15cb9cf944f0af5a47d92dd8b9c39c923ee75b2006d0f7202aabbb2636",
+      "text": "Torres del Paine and Milodón Cave",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "p:100",
+            "textSha256": "63bdf3f0213584ab36acb90ac243a12ae7a0d9a95a6aad6617f35edb74622cec"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the excursion name in the matching Day 6 Word passage as a standalone title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6b1d867562f5684153836da00fb093dc95043f6bdb77bda9df2ae19c2cd3a82f",
+      "text": "Full-day shared tour.\n\nAt 7:00 a.m., you will be picked up from your hotel and depart for the Milodón Cave Natural Monument, where a prehistoric mammal lived approximately 12,000 years ago. We will then continue the tour, enjoying incredible views of Soffa Lagoon, Cordillera Prat, Lago Porteño, Cerro Mesa, and Toro Lake. We will make a stop at Grey Viewpoint, followed by a visit to the village of Río Serrano.\n\nThe tour continues with a hike around Grey Lake, passing through a lenga forest to reach the lakeshore, where you may see icebergs that have broken away from the glacier. Lunch at a local restaurant. After lunch, visit the viewpoints overlooking Pehoé Lake and Salto Grande, followed by a pleasant walk to the 18-meter-high waterfall. The tour continues with visits to viewpoints overlooking Nordenskjöld Lake, Laguna Amarga, and Sarmiento Lake.\n\nReturn to Puerto Natales, arriving at approximately 6:45 p.m.\n\n**Included:** entrance fees to Torres del Paine and Milodón Cave, lunch.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "p:100",
+            "textSha256": "63bdf3f0213584ab36acb90ac243a12ae7a0d9a95a6aad6617f35edb74622cec"
+          },
+          {
+            "ref": "p:101",
+            "textSha256": "c098f6066475678dece3336f5fb7ab6238049d7ee29e994c770e38863d9f59da"
+          },
+          {
+            "ref": "p:102",
+            "textSha256": "8028ed3f9d38161a2ff4bd142b833f0b6efc87dba774e17cb3065ab85421da15"
+          },
+          {
+            "ref": "p:104",
+            "textSha256": "e993421bc89b96d6f161f74e5e35f7406a5302b449d552dafe44a55579848d77"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Preserves the matching day narrative while removing its heading; extracts the entrance fees and lunch from the Word inclusion summary without adding adjacent-day transfers or breakfast."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5d171705f0c8fd48",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "p:154",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          },
+          {
+            "ref": "p:98",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines confirmed base town and national park names for the assigned place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2afdee82ce682e83",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c1396b57b2ffab559eac79f8b05dccf894edd995996ea11e7096f982e546aa05",
+      "text": "Milodón Cave",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "p:100",
+            "textSha256": "63bdf3f0213584ab36acb90ac243a12ae7a0d9a95a6aad6617f35edb74622cec"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the cave name from the corresponding Word excursion passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8af170c5f62d5d7d",
+      "field": "media.alt",
+      "sourceTextSha256": "06dad04776a3a46fbf352406c556d7ac3a431534bd87a3057f4d4ad1c751eb2f",
+      "text": "Jagged peaks of Torres del Paine above a blue lake, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5aad08e198a2721f",
+      "field": "media.hover",
+      "sourceTextSha256": "8e8cb80437c1713961fced5e66622e6b1a5373e173795a7edb70ec70a835dd21",
+      "text": "Torres del Paine: mountain peaks above a lake and grassy shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9ddecec0e203ef5027d6742fc42a36c832acb03624b8a8afa59442f320c075fc",
+      "text": "Puerto Natales – Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nqTgTvMmGudhc-qOcbzhshcQ-UDs3BVR",
+        "documentSha256": "f75142c5738e0ce190cb4c175066bba95254fdd21637da80d754a9b7f5068a81",
+        "paragraphs": [
+          {
+            "ref": "p:103",
+            "textSha256": "0410c36f9b504d97396c342dd1c710e8c0a9e5de1aaf90f651238c9d0523d7c0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composes the transfer route from the origin and destination specified in Word Day 7."
+      }
+    }
+  ]
+}

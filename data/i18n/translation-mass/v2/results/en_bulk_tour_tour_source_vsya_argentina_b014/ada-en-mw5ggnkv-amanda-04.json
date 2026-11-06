@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vsya_argentina:b014",
+  "stableId": "tour_source_vsya_argentina",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4a20c74856b0c653d195698eda919c6873617f142e83fc195184c8841a133b69",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:72f776fa4223af8b",
+      "field": "media.hover",
+      "sourceTextSha256": "3cfc2edffc65a3935ed37044790211ed8ff8183f0f0a269801c2ec31c690f28b",
+      "text": "Luján Valley: vineyards against the snow-covered Andes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Website image hover caption describing the photographed landscape is absent from Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "66ff5f76d30b94c5fe1fed0365194a8914c248587c2177de32a965bf0cda6ac9",
+      "text": "Uco Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p130",
+            "textSha256": "1eedaad5f77436e6011002d3a261380498e0bcfcbdbcff776c0c645bec4888e3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified Uco Valley destination name from the Word regional heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a185b7008ea046980955e0c0803fd269c7eb9e1e3cbe732e8e30f98ce90b83bb",
+      "text": "Another day of wine takes you to the Uco Valley. After breakfast, you visit two wineries to continue discovering Argentine winemaking.\n\nLunch with views of the Andes is included. The excursion is a group tour with an English-speaking guide. Return to Mendoza.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word day 13 confirms two wineries, lunch and the English-speaking group tour, but the website's expanded summary and return-to-Mendoza sentence are not a matching Word passage; translate the assigned RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:594cd1489999822c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+      "text": "Mendoza",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p45",
+            "textSha256": "053c8714516dced29c62894d7cdafc680b38ff7c5eaa88b95b38850f4741a7a5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Reuse the exact verified Word place spelling as the website route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3337ccf927d5e424",
+      "field": "itinerary.label",
+      "sourceTextSha256": "064cffe00a5bcbcf0832fcceeb8ea1a806f5dfc5e402ecb44725447ab52a11f5",
+      "text": "Uco Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p130",
+            "textSha256": "1eedaad5f77436e6011002d3a261380498e0bcfcbdbcff776c0c645bec4888e3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the verified Uco Valley name for the website place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:af07df3a770c5fe0",
+      "field": "media.alt",
+      "sourceTextSha256": "3229259d8a9605a9b8ec6390ec842eb21c844865349c25faa0169811bec16e7b",
+      "text": "Neat rows of vineyards in the Uco Valley beneath dark clouds at the foot of the mountains, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The website's descriptive image alt text about vineyard rows, clouds and mountain foothills has no matching passage in Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7029842780b2903b",
+      "field": "media.hover",
+      "sourceTextSha256": "60699b14d1a595cb83758ee2e860f5047c925cdd8ea140d555e1d1436e0e9268",
+      "text": "Uco Valley: vineyards in front of a mountain range",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5ggnkv-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The website's image hover caption is not present in the verified Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e6087274cdb0f09abc1858e262df2c070535391e65638b1bc5cd0cc24c2eecd6",
+      "text": "Mendoza – Bariloche, Victoria Island and the Arrayanes Forest",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1FaTVbIYgfiYl-ut9575PFgfdNPdHN6QN",
+        "documentSha256": "d4030a398e5fbb701d18edbbb78a59c05f7d96112287e439104c87c9800e0fb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p145",
+            "textSha256": "ff06f7015c761f081b69a886cfb490337af94a43dad0667359e52e88c49de29f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the website day heading from the verified flight to Bariloche, Victoria Island visit and Arrayanes Forest excursion; departure Mendoza is confirmed by the regional route."
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vazhnoe_brazilii:b007",
+  "stableId": "tour_source_vazhnoe_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5db38286432057686f67228b4306d3f4850d1ebbd06d07f27bbfc8b2de7b193c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "745683cef16b6fddc7f7553c7a10cf92608f1242d950ee0c9789d1856acbf78d",
+      "text": "After breakfast, you will be picked up from your hotel and driven across the border into Argentina.\n\nThe crossing follows the Tancredo Neves Bridge over the Iguazu River. After crossing the border, continue through the natural park on the Argentine side.\n\nThe Argentine side offers a different perspective on the falls. Here, the paths run closer to individual cascades and, in places, bring you almost directly above the falling water.\n\nYou will see the source of the Devil's Throat and walk through the natural park around the falls.\n\nThe main difference today is how close you get to the water. While the Brazilian side offers a broad view of the entire front of the falls, the Argentine side lets you approach individual torrents and feel their force at close range.\n\nReturn to your hotel after the tour.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Verified Word paragraph 104 contains the bridge crossing and Devil's Throat, but the expanded RU comparison of viewing paths and return to the hotel is absent. Translate the assigned RU account without importing Word day numbering."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:60417d6735d09d06",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The standalone Puerto Iguazu place label is absent from verified Word, which describes the Argentine-side visit without naming this town. Translate the assigned RU geographical label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:072446e4fd681aec",
+      "field": "media.alt",
+      "sourceTextSha256": "8d8571ed94b77a14dbf42def2a902c493c6c02089e52e69f7c1b69b627336e26",
+      "text": "Broad cascades of Iguazu Falls and churning water in a gorge with green, rocky banks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the verified Word; translated from the assigned RU media text field."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1cfbef382349820b",
+      "field": "media.hover",
+      "sourceTextSha256": "6a77f9a366b4f3926abad2cd72bfa8f4d2fd8e59052d8c55604b65429207f03f",
+      "text": "Iguazu: waterfalls and foaming currents in a green gorge",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the verified Word; translated from the assigned RU media text field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:129",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1e385fdecede11b86191af2a92e8492860ae971e41c82df99845f0961e5c53a9",
+      "text": "At the scheduled time, transfer to the airport for your flight home.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:105",
+            "textSha256": "0967925cd53c21818f7fe1ea564377ce5c4bb3b0372e9a90d9d7fc60761221ea"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the assigned concise field from these verified Word passages, preserving the documented destination and service scope."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0f8f1524af76a74c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:129",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a2fdd7bc8bd4576f",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguazu Falls and a rainbow over the river surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the verified Word; translated from the assigned RU media text field."
+      }
+    }
+  ]
+}

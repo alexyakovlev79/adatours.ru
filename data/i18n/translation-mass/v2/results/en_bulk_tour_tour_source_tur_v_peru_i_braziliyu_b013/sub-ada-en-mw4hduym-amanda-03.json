@@ -1,0 +1,122 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b013",
+  "stableId": "tour_source_tur_v_peru_i_braziliyu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "00c083b511838724e3a9b9fae43a3fc405379d46ff2d85db66d370582985fca3",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "63128a48d099970e2deab79a093bd950fdccb5ddc00bf84bc0593a5f3d8bea48",
+      "text": "Búzios – airport",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p113",
+            "textSha256": "88f6696d295a934339471ca976a20a4aa69747f7f4e3a6c80fabf3f73acc8871"
+          },
+          {
+            "ref": "word/document.xml:p110",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the named final resort and airport transfer from the Word departure paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0937dd4162ee4349d26d0c8e097daf2d77ac2116d167010c16181ed0cebe3dc0",
+      "text": "Breakfast and, at the scheduled time, transfer to the airport (without a guide) for your international flight home.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p113",
+            "textSha256": "88f6696d295a934339471ca976a20a4aa69747f7f4e3a6c80fabf3f73acc8871"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Removes the day marker supplied separately by the existing itinerary without changing the Word departure service."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da641d5ad1c6931d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p110",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d20082b101daf5ae",
+      "field": "media.alt",
+      "sourceTextSha256": "6ff42f6d17aaa76bf33d4df442ad0c849267b8718655387034c896b182e5e054",
+      "text": "A narrow passage between brightly coloured houses with a view of the sea in Búzios, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The brochure does not contain an alt caption describing this specific passage between colourful houses in Buzios."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e6fb1573b7141076",
+      "field": "media.hover",
+      "sourceTextSha256": "a0e527428ff51157a1ceb0024cdfac462ed031b696f0f3029b3c88159e02303d",
+      "text": "Búzios: colourful houses along a passage to the sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no corresponding photograph hover text for the colourful houses and passage to the sea."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "022436ab8a412106ad9ae519fc7ee391d9c96669862556b5dd0da357d1de67e1",
+      "text": "In the photo: the Inca city of Machu Picchu in Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hduym-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word names Machu Picchu but contains no matching alt caption for the existing hero photograph."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "4ef86119d17abf0f2a6decc68a3e49c985c4be0c0a33e7b84022b8dde8bda3de",
+      "text": "From the timeless landscapes of the Andes to the endless horizons of the Brazilian coast, this journey brings together the soul of Peru and the vibrant spirit of Brazil. Discover ancient cultures and sacred landscapes before experiencing the power of the Iguaçu Falls, the energy of Rio and the laid-back beauty of Búzios.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p11",
+            "textSha256": "490cfb8e6aacba7df802f9016293fde7c143934ea75813a2ec35f6dc3f204447"
+          }
+        ]
+      }
+    }
+  ]
+}

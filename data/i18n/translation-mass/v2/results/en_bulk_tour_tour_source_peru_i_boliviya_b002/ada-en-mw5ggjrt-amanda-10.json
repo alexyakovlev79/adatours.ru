@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_peru_i_boliviya:b002",
+  "stableId": "tour_source_peru_i_boliviya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "70c343052684f8498b1132e8f82f6dfa66e7d22832f39d4c0fe422e4b88c1ad5",
+  "blocks": [
+    {
+      "blockId": "tour:included:2fdc96af75581acb",
+      "field": "included",
+      "sourceTextSha256": "d779d535fa290c703fe44517ad7638b14d30b1ea2eb3b816deac092cc5935d05",
+      "text": "Transfers airport – hotel – airport",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p232",
+            "textSha256": "2c650819353474cc13f3b7890ff4ca0e3adfd2e99f6a24cbc3316655f41eaf07"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word list marker to fit the existing included or excluded service item."
+      }
+    },
+    {
+      "blockId": "tour:included:45f29ca8e175841a",
+      "field": "included",
+      "sourceTextSha256": "132311d7fd49ba899ec62902ff7f5a7ac69e424042bf0f8be2005b0461c26aaa",
+      "text": "Accommodation in the hotels of the selected option",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p233",
+            "textSha256": "c98382310fc8c03bd433bd6b1ed617ac8d21e526fc8051fba4af9795a29b4447"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word list marker to fit the existing included or excluded service item."
+      }
+    },
+    {
+      "blockId": "tour:included:6b1d7ca8744de00b",
+      "field": "included",
+      "sourceTextSha256": "bb93cb63ad2ab87334b432024f55c172f5d2f5256789cc4630777fb6af3f0f6b",
+      "text": "Guide service during the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p234",
+            "textSha256": "4e1651e7142121903e6206320db867c54cec1ea8ad4e390b99f88e0cd18692c3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word list marker to fit the existing included or excluded service item."
+      }
+    },
+    {
+      "blockId": "tour:included:1f742c956964bb56",
+      "field": "included",
+      "sourceTextSha256": "71b85a2fa148af6a6c3c73446fc89c6b85da37dd34d8be6ef92a4346bff45038",
+      "text": "Meals according to the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p235",
+            "textSha256": "f2aeb244d30fdadfb20bbe3c8f2d7f822884aae9fba015e9676858b36dda4d8b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word list marker to fit the existing included or excluded service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:9b7c322878399ed7",
+      "field": "notIncluded",
+      "sourceTextSha256": "d2d65171d008d2cb7df08a616b3f010a9a75d71d97e517e8f78a2501581a114c",
+      "text": "International and domestic flights.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5ggjrt-amanda",
+        "wordAbsenceReason": "The selected Word excludes international flights but does not explicitly state the combined exclusion of domestic flights. Translated the pinned RU exclusion without altering its commercial scope."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:cc75b91f7b2eaccf",
+      "field": "notIncluded",
+      "sourceTextSha256": "d626bece2a54a2f066d8d670ea03b18d68a176f15c6bcfceab78f77fe97ccfe9",
+      "text": "Meals and drinks not mentioned",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p240",
+            "textSha256": "3023640e93651d06f3f887efc2fa547ab5afb2b81bed54fb43ad410637719301"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the Word list marker to fit the existing included or excluded service item."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional excursions.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5ggjrt-amanda",
+        "wordAbsenceReason": "The selected Word lists included excursions but has no corresponding optional-excursion exclusion; translated the pinned RU exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "All hotels can be changed to hotels of the same category.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1JFhFQ1H9vVjPxnhewy7--h81HNTXlX5R",
+        "documentSha256": "a524f527ad49267cf67a4cd15fbebff027aadae4a0c82dff167a0dcb39e72bf4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p172",
+            "textSha256": "bd71c4364464ee18fb80f20fbbdd143b7db857ab8bbd5369034a553585e29777"
+          }
+        ]
+      }
+    }
+  ]
+}

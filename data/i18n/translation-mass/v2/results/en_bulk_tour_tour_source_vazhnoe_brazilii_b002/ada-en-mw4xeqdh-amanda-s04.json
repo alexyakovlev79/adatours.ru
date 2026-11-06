@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vazhnoe_brazilii:b002",
+  "stableId": "tour_source_vazhnoe_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9d8427b7ee03f6d0487d6b5d126efb38c164de0af4cbfcf673bba27e73a6c215",
+  "blocks": [
+    {
+      "blockId": "tour:included:f69f90b74e91deda",
+      "field": "included",
+      "sourceTextSha256": "03aead8cd48bb2bfe38b88123d61ce9c71975bd59b63c449519bcd52948c7eec",
+      "text": "Guided group excursions.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeqdh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word confirms shared lodge activities but specifies private Rio touring, so it has no equivalent blanket group-excursion inclusion. Translate the assigned RU field without extending its scope."
+      }
+    },
+    {
+      "blockId": "tour:included:1f742c956964bb56",
+      "field": "included",
+      "sourceTextSha256": "71b85a2fa148af6a6c3c73446fc89c6b85da37dd34d8be6ef92a4346bff45038",
+      "text": "Meals according to the programme",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p163",
+            "textSha256": "f2aeb244d30fdadfb20bbe3c8f2d7f822884aae9fba015e9676858b36dda4d8b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    },
+    {
+      "blockId": "tour:included:e4cd7ff50d40de05",
+      "field": "included",
+      "sourceTextSha256": "a1a940c4774e2a86861b46f417cd919b76be7b79151ec46d473386f4caae1059",
+      "text": "Excursions according to the programme with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p162",
+            "textSha256": "be84b758aa96f6a4460c95ba1eea1b230836f184efa7c614c0f7d9e6e7e103c8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    },
+    {
+      "blockId": "tour:included:86c846626886574f",
+      "field": "included",
+      "sourceTextSha256": "8373000791027201859c5dcd5710f377f8fb2f1d895f48be91ad22bce687e0a9",
+      "text": "Amazon lodge accommodation with full board.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "476c040b42d8ab4572474f5e4fd5b741ab2b16aee52356ce7f7cc1a26181430f"
+          },
+          {
+            "ref": "word/document.xml:p93",
+            "textSha256": "9c09f428b7f2c391949e5be1d59a1561388df1588942cd5bde27cff081059cd5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Condense the confirmed Amazon lodge accommodation and full-board services into the existing inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:7f01578e93771c69",
+      "field": "included",
+      "sourceTextSha256": "0bfa49b4f0e029d88327c85ec85f851b64b80ab7f8b881fe74be6a08d5a01ad9",
+      "text": "Included lodge activities.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "476c040b42d8ab4572474f5e4fd5b741ab2b16aee52356ce7f7cc1a26181430f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:01cf01d57050544f",
+      "field": "notIncluded",
+      "sourceTextSha256": "8d35e502ebf00ec4b928aad73c57442aee9e04881c369036955432caa8dbaf79",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p166",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:9c2961f450b235cb",
+      "field": "notIncluded",
+      "sourceTextSha256": "38b63dba96880c8fca4b59228496d5b0b0faf13a4e1e6b9abf59e8f500e83fad",
+      "text": "Domestic flights Rio de Janeiro – Manaus – Foz do Iguaçu.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p155",
+            "textSha256": "a746e32cff1e7700012f7f5367b7474c8569db6d8880cefd715668bf82f21b01"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract only the domestic flight route from the confirmed exclusion, keeping fare figures outside this text field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+        "documentSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p168",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    }
+  ]
+}

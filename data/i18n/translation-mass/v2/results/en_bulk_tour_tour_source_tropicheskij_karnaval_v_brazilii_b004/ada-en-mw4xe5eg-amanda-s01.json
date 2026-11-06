@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tropicheskij_karnaval_v_brazilii:b004",
+  "stableId": "tour_source_tropicheskij_karnaval_v_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e942194a1c2dfe9ba2d59878ba6311e6e608e1f821d03529427f22cd25d4d0aa",
+  "blocks": [
+    {
+      "blockId": "tour:contentBlock_text:7190b9797964e9e1",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "f5559f9460b30d4e092d983f6d37c82f568c72a4da3e4ac3bb7fe5af683ad550",
+      "text": "Breakfast, then a 4-hour tour: the cable car to Morro da Urca, with its wide observation deck, and on to Sugar Loaf, with views of Copacabana, the bay, the islands, the bridge to Niterói and Christ the Redeemer, then old Rio, with its historic churches, monasteries, Metropolitan Cathedral and colonial buildings. In the evening, you can have dinner at Fogo de Chão, the Brazilian steakhouse overlooking Sugar Loaf (around USD 75).",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0067",
+            "textSha256": "0c66bb621490156d81f5ce4e8060736f7b432a760f4d999cf03aa630c3002cd2"
+          },
+          {
+            "ref": "word/document.xml#p0068",
+            "textSha256": "142d035b5f60e070b0865c62f6b87a84cdc82b4ee05c1336d2676566861b6668"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Strip the day marker and retain the Word's optional dinner alongside the Sugar Loaf tour; helicopter has its own separate block."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_title:ff05c18b80b2fa48",
+      "field": "contentBlock.title",
+      "sourceTextSha256": "a5d81b333032cd279803730f321533d6f56860a922a23d1d43a6ae3f90a33827",
+      "text": "Optional: helicopter flight over Rio",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0068",
+            "textSha256": "142d035b5f60e070b0865c62f6b87a84cdc82b4ee05c1336d2676566861b6668"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word passage to form the corresponding standalone field without adding services."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:5e486accbc16ad97",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "532e1cb4cd7d72df9a4038d8e9250852dc9f66b85aeaaf93ea686a8553829b19",
+      "text": "You can add a helicopter flight lasting 10 to 30 minutes. After take-off, the city streets, beaches and yachts in the bay lie below you. The route passes over Ipanema, Leblon, Copacabana, the Botanical Garden, Rodrigo de Freitas Lagoon and Avenida Niemeyer. Sugar Loaf and Christ the Redeemer then come into view. From the air, you can see how closely Rio's ocean, green areas, rocky peaks and buildings sit together. Familiar places form a single panorama, with beaches stretching almost continuously along the neighbourhoods.\n\n**Duration:** 10 to 30 minutes.\n\n**Price:** from USD 230.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p0068 gives only a brief optional helicopter mention and starting price; the detailed flight route and duration are absent and translated from the assigned RU block."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:278d2ed4d8ade8aa",
+      "field": "media.alt",
+      "sourceTextSha256": "f4a582051dac2fa1bbc4c2eaf8ba2d60e6dda7b97e9ed2bb8d8b22d105a1e983",
+      "text": "Cable car to Sugar Loaf in Rio",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word contains no caption describing this specific itinerary photograph; translate the assigned RU image alt."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "162dfc744db6ce4365c8250b14badf748f611392f4ee855e97be6ec66fd24fc8",
+      "text": "Free time and Carnival at the Sambadrome",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "1d6d9a84ba315146e5e44533ef43b007c4aaacd6f91bfe2b78152e3064354dac"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the verified Word passage to form the corresponding standalone field without adding services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6d9475eecf87eee0ce621368cbd266371ad9b0740cfe9266891d848b6c681e40",
+      "text": "Day 3 · Breakfast and free time to rest before the Carnival. In the evening, transfer to the Sambadrome, where the top samba schools of Rio parade all night, competing in spectacular costumes and floats: an explosion of music, dance and emotion. Transfer back to the hotel after the parade.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "1d6d9a84ba315146e5e44533ef43b007c4aaacd6f91bfe2b78152e3064354dac"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1904Q2BJr19nIyxXgsR-fO6dXsqdBDUfi",
+        "documentSha256": "92997fb1bb17cd67f26e5028b6c1165b04a5dcb690a3d816a04642df1ac0a14c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3465de2c11c44aea",
+      "field": "media.alt",
+      "sourceTextSha256": "8fa187ee5251413f1ae46d1b18705f19a4b440789d2a2bde140f8d0df7ed02e0",
+      "text": "Street Carnival participant in a blue costume with large feathers",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xe5eg-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "No corresponding description of this specific Carnival photograph is present in the selected Word; translate the RU alt."
+      }
+    }
+  ]
+}

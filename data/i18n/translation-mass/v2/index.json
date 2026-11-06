@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 124,
-    "leased": 9,
+    "queued": 123,
+    "leased": 10,
     "review": 2210,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 124,
-      "leased": 9,
+      "queued": 123,
+      "leased": 10,
       "review": 2210,
       "ready": 50,
       "retryable": 0,
@@ -1025,8 +1025,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 3,
-          "leased": 0,
+          "queued": 2,
+          "leased": 1,
           "review": 80,
           "ready": 1,
           "retryable": 0,
@@ -1057,7 +1057,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T22:28:30.492Z",
       "earliestRetryAt": null
     },
     "0f": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_vsya_argentina:b002",
       "token": "tok-mw5ggjrt-g43l64eb12g",
       "expiresAt": "2026-11-06T22:27:50.515Z",
+      "generation": 1
+    },
+    "ada-en-mw5ggr1g-amanda": {
+      "jobId": "en:bulk:tour:tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej:b007",
+      "token": "ada-en-mw5ggr1g-amanda-token",
+      "expiresAt": "2026-11-06T22:28:30.492Z",
       "generation": 1
     }
   },
@@ -8425,7 +8431,8 @@
     "ada-en-mw5ggr1g-amanda": {
       "token": "ada-en-mw5ggr1g-amanda-token",
       "jobIds": [
-        "en:bulk:tour:tour_source_viva_meksika:b012"
+        "en:bulk:tour:tour_source_viva_meksika:b012",
+        "en:bulk:tour:tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_viva_meksika:b012"
@@ -8461,5 +8468,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T20:58:23.896Z"
+  "updatedAt": "2026-11-06T20:58:30.492Z"
 }

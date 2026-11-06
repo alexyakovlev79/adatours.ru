@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b002",
+  "stableId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "64021ad8ea623b6ca22936a9bb0ea0f9331143c54142a8c5e3ab99c64ddf2b05",
+  "blocks": [
+    {
+      "blockId": "tour:included:18533f293812f646",
+      "field": "included",
+      "sourceTextSha256": "6907f657ec57a45d7176c1ec5fdc42b4c9cadcf1c60e8626302badd74d3765de",
+      "text": "Tourist bus Cusco – Puno (shared) with lunch",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "db76d7d61de65b239123a74f2629f9a9c7bf65d88c1fb8921e752799e9f4d8a9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the complete confirmed tourist bus inclusion from the Word day summary."
+      }
+    },
+    {
+      "blockId": "tour:included:8a3625b509b7225e",
+      "field": "included",
+      "sourceTextSha256": "68def1fa0c7502f43e14777062db95326678c230b7d315888bd1ea05d9986a04",
+      "text": "Entrance fees to museums and Machu Picchu, including the Vistadome train",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0261",
+            "textSha256": "6494d1c2ac898e6835386539159ff72428d1a1f898a65132c5759ea883aefeca"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved Word inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:4eba4a26406ba9e1",
+      "field": "included",
+      "sourceTextSha256": "6860bc19bbe5b04c3e5dd423f20aae08dc502d7b0779697f03c95d1f6a74a4c7",
+      "text": "Transfers between hotels and airports with driver",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0260",
+            "textSha256": "25a9edef055d427f5939e3858b9999e4c7acab0af7f71e6740f9a1f33b1ed251"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved Word inclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1d9c1ddf5a411227",
+      "field": "notIncluded",
+      "sourceTextSha256": "f55bc46501f3b03d07961bc98a5ba157d7611f274138f18820725a03335dfa04",
+      "text": "Airport taxes.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq6ws-amanda",
+        "model": "gpt-6",
+        "wordAbsenceReason": "The selected Word exclusions do not contain a separate airport-tax item; preserve this specific RU exclusion as a gap translation."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:da756b777306942e",
+      "field": "notIncluded",
+      "sourceTextSha256": "8aa20f6b3d403b060491185c5c34717a5009ff46c170cb841649ff5440474bad",
+      "text": "Meals and beverages not mentioned",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0266",
+            "textSha256": "e6f4c2b54fdf91fd897e429a9f69e19c814d75a128eefa625bc88966aa9b1f99"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved Word exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0265",
+            "textSha256": "2f6be32eb10f897da0ecfed24140c8d7f0f27f710569bc5282b94ea8d0358463"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved Word exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1e2e0a5cf77da154",
+      "field": "notIncluded",
+      "sourceTextSha256": "cfd520efea0846d5100771a11806f99ebd3b067c95a491d4d9502de9699cd202",
+      "text": "Excess baggage.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5eq6ws-amanda",
+        "model": "gpt-6",
+        "wordAbsenceReason": "The selected Word exclusions contain no excess-baggage item; preserve this specific RU exclusion as a gap translation."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:019bb714e694242b",
+      "field": "notIncluded",
+      "sourceTextSha256": "909c12ee5d5bebd7e72266ef6a6d1a2762f4e2a134ac3ab90da8b13fc1566984",
+      "text": "International and domestic flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1DlvieRFQtbPhDADN4y0-elcPotlc5xVc",
+        "documentSha256": "63afd78b41eb7f5d6604aee9365bbbf4ae0e2c44c841e9ae61acc140bb7e7708",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0264",
+            "textSha256": "59b4f8bab6ca98b009f8dd1f3f6935e8b23d5f91ceaad024a8013b46a206abcd"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the list marker from the approved Word flight exclusion."
+      }
+    }
+  ]
+}

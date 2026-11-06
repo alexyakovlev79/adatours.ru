@@ -1,0 +1,78 @@
+{
+  "jobId": "en:bulk:tour:tour_source_urugvaj_vino_i_traditsii_starovertsev:b006",
+  "stableId": "tour_source_urugvaj_vino_i_traditsii_starovertsev",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "384eb07d069b703c44a2f9e8633c60febc19bb78d3e54607133c9219cb2a0ecf",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:2ac997c5efa5cf13",
+      "field": "itinerary.label",
+      "sourceTextSha256": "8afb5880f11dcd25e4ec87ffa8a805185cb28b05dd7958b2bcd3533e5092f9e7",
+      "text": "Colonia del Sacramento",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1OHSRjkvl7LMfQwLR1pRcd_rMBou4p8kM",
+        "documentSha256": "6b5bafbca5884d5e66d3f021e066d144e82a40473ac1546ed960d6e07fd16393",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p46",
+            "text": "Day 4: Anglo Museum & Colonia del Sacramento",
+            "textSha256": "1846e2ec7137359dae529d3979ea3fb4b34d55182f046656d6a54da67c86d31b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the canonical place name from the Word day 4 heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:f8c54d747fe83bc3",
+      "field": "media.alt",
+      "sourceTextSha256": "e2fa2b0ee87209538ee44b711979607c65e04388b73f299b3057b607aed530e8",
+      "text": "Cobbled street in Colonia del Sacramento with lit lamps and an old cart, Uruguay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epvfu-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word contains no description of this image; translate its pinned RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:81e2367358d78f93",
+      "field": "media.hover",
+      "sourceTextSha256": "881fc70903e6a2b8a11824d223a2a9af4497988f6a502b98bb6b7f854b89e55a",
+      "text": "An evening street in Colonia del Sacramento with a view of the water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epvfu-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word contains no image hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "1582e2e5ededd444098ce70f4fd2ac27f39f0d8abd1a47139920bf007713bc65",
+      "text": "Uruguay: Wine and Old Believer Traditions",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epvfu-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word title is Wine & Traditions 2026; this descriptive image alt retains the pinned RU reference to Old Believer traditions without adding an edition year."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "eab1afcf45fa9fd5a1954b2198c09dbb4d5dcf82922ca1511453ed59182ecd32",
+      "text": "\n\n## What to expect\n\nMontevideo stands on the Río de la Plata. The city grew around a natural deepwater bay and has preserved old squares, historic buildings and neighbourhoods that you can explore on a leisurely drive along the coast. The Rambla promenade follows the waterfront, while restaurants, markets and tango in the Old Town keep local culinary traditions alive.\n\nBodega Spinoglio lies about 30 minutes from the capital. This 19th-century winery is surrounded by vineyards and a park of more than 6,000 m². Its historic buildings now house modern equipment, while the underground cellar retains its thick stone walls. It contains old oak barrels bearing the stamp of the renowned Adolphe Fruhinsholz cooperage in Nancy, whose dimensions are considered unusual for Uruguay. During your visit, you will explore the vineyard, winery and century-old cellar, then taste 4 wines with cheeses, bread and snacks selected by the chef.\n\nAnother key stop is San Javier, a Russian settlement on the Uruguay River. In 1913, 300 families arrived here under the leadership of Vasily Lubkov. With the involvement of José Espalter, then Minister of Development and Agriculture, the settlers received land and began building a new life. During the trip, you can meet local residents and hear family stories about migration and the settlement's early years.\n\nIn Fray Bentos, the story centres on a large industrial complex that is now a UNESCO World Heritage Site. It preserves the memory of the Liebig company, which operated from 1863, and Anglo Uruguay, which continued until 1979. Your journey ends in Colonia del Sacramento, with its cobbled streets and mix of Portuguese and Spanish colonial architecture.\n\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epvfu-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has separate detailed itinerary passages on Montevideo, Spinoglio, San Javier, Fray Bentos and Colonia, but no equivalent of the RU editorial overview body with this heading and scope; translate the pinned overview without copying full days."
+      }
+    }
+  ]
+}

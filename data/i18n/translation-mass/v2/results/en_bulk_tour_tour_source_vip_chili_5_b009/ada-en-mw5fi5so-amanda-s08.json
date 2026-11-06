@@ -1,0 +1,155 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vip_chili_5:b009",
+  "stableId": "tour_source_vip_chili_5",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a60f0f6328d338829bb24a33014eecccc75cb350e7b1af5fa7b8a2cd7c3652a3",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9800b610246de1c0137d0d7794d6671012f63ff9fb99f3242010fcb5fa7bb75e",
+      "text": "A full day in Torres del Paine, starting with a boat excursion that takes you really close to the Grey Glacier. Back at the pier, continue past Laguna Sofía, the Prat range, Lake Porteño, Cerro Mesa and Lago del Toro, then stop at the Pehoé viewpoint and walk to the 18-metre Salto Grande waterfall. Visit the viewpoints of Lake Nordenskjöld, Laguna Amarga and Lake Sarmiento, and return to the hotel in the evening.\n\nIncluded: Transfers · Full-day Torres del Paine tour with Grey Glacier navigation, entrance fees and lunch · Breakfast",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[104] (zero-based)",
+            "textSha256": "d0bca6bc1aca27346a46e8571ed40a1f36e5193319d053d7bd1c6fe61e4a3274"
+          },
+          {
+            "ref": "word/document.xml:p[106] (zero-based)",
+            "textSha256": "ca97d1a06f51135375461d2fd0c6085119dcaa46fd9cc2f252e24259f7951214"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day-number prefix and retain the approved Word excursion plus its explicitly included entrance fees, navigation and lunch."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:59dcf023838026aa",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[103] (zero-based)",
+            "textSha256": "f57b3dd3f1b7543ac35a39a8722fda47242980276325b02a248ba17777088e22"
+          },
+          {
+            "ref": "word/document.xml:p[102] (zero-based)",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the combined itinerary label from the Word arrival town and national park heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:17e47871a01d0801",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a148a0f4e0598947c62bfc57a896fc730014ce57c7125bd304521d503b8a0f36",
+      "text": "Grey Glacier",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[48] (zero-based)",
+            "textSha256": "c37250fceef0e160e1409578fcba96f87a81da687cc31cbedb3be07efb2dff68"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a624b18b4fc03af4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c1396b57b2ffab559eac79f8b05dccf894edd995996ea11e7096f982e546aa05",
+      "text": "Mylodon Cave",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "The selected Word 2027 Patagonia programme does not mention Mylodon Cave; translate this existing RU place label without adding it to the approved Word excursion text."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:53921d0594c22bb3",
+      "field": "media.alt",
+      "sourceTextSha256": "06dad04776a3a46fbf352406c556d7ac3a431534bd87a3057f4d4ad1c751eb2f",
+      "text": "The jagged peaks of Torres del Paine above a blue lake, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word has no alt text describing this specific photograph of mountain peaks and a lake; translate the RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:2b7cd761a7d1756b",
+      "field": "media.hover",
+      "sourceTextSha256": "8e8cb80437c1713961fced5e66622e6b1a5373e173795a7edb70ec70a835dd21",
+      "text": "Torres del Paine: mountain peaks above a lake and grassy shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-mw5fi5so-amanda",
+        "wordAbsenceReason": "Word contains no photograph-specific hover caption for these peaks and grassy shore; translate the RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:59de57cee535ecbc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[103] (zero-based)",
+            "textSha256": "f57b3dd3f1b7543ac35a39a8722fda47242980276325b02a248ba17777088e22"
+          },
+          {
+            "ref": "word/document.xml:p[102] (zero-based)",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the combined itinerary label from the Word arrival town and national park heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9ddecec0e203ef5027d6742fc42a36c832acb03624b8a8afa59442f320c075fc",
+      "text": "Puerto Natales – Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1nHB-5Xavr6R_fNkR408Fk_Ch8G6c2l00",
+        "documentSha256": "f30e74c88d9ecd8c21cebe8c69f0e733dd98d406ac3056d25ae9d00ef819452c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[103] (zero-based)",
+            "textSha256": "f57b3dd3f1b7543ac35a39a8722fda47242980276325b02a248ba17777088e22"
+          },
+          {
+            "ref": "word/document.xml:p[105] (zero-based)",
+            "textSha256": "769ad7e0919400de4e3e0329352fc70c4135c7865afc9a80556dec6907157fbb"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Form the flight route title from the Word Puerto Natales arrival and subsequent flight back to Santiago."
+      }
+    }
+  ]
+}

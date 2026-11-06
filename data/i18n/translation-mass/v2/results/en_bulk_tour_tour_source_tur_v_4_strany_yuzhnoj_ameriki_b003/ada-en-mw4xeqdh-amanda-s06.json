@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b003",
+  "stableId": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ee5eaff9e5d3bd9a4885a197cd5355a718a580becadf117470f234f56099d698",
+  "blocks": [
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, we may replace the hotel with another in the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeqdh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 lists hotels but contains no corresponding same-category substitution clause; translate the assigned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme remains the same.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeqdh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 has seasonal scheduling information but no equivalent rearrangement clause; translate the assigned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "We are not responsible for missed hotel breakfasts when an early flight or excursion requires early check-out.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeqdh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 does not contain the missed-breakfast responsibility clause; translate the assigned RU condition."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p165",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "00215d33a4b2c17696f0809cf763bc791ab081b6965d724ae4884de5526380cd",
+      "text": "Day 1 · Arrival at Santiago de Chile airport and transfer to your hotel with your private guide.\n\nSantiago combines fine dining, beautifully landscaped gardens, a famous seafood market and the stunning backdrop of the Andes. In recent years the city has invested in new cultural centres, museums and green parks: the upscale neighbourhoods of Vitacura and El Golf are home to stylish art galleries, while the historic Barrio Brasil is known for its vibrant public art.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "249d10252348f65b8f23e0fec61ba7b981f5c83bd0ce9bbd43f8658603d4a93f"
+          },
+          {
+            "ref": "word/document.xml:p68",
+            "textSha256": "6f3a9d519cf0b27a74a9d28e859612755e4bae97f7675a3be2dbc3ba8d3b34fd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1fa62c13fcc2747b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p165",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the corresponding service or place wording from the verified Word paragraph for this structured field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ebe5a79c8e0c7e21",
+      "field": "media.alt",
+      "sourceTextSha256": "f6fae72b13f278afc6f60314b32a77abf8580c1c13f9ab1d869cf1bf23fd3f20",
+      "text": "High-rise buildings in Santiago beneath the snow-covered Andes, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeqdh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 has no matching photograph alt caption; translate the assigned RU image description."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f0bb17da5f1072e5",
+      "field": "media.hover",
+      "sourceTextSha256": "78bc8a437eddb7790e3d9cc888d84aab4ada5082b9aeafb88e1adf6ee9de0d5b",
+      "text": "Santiago: glass towers against snow-covered mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xeqdh-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The checked Word 2027 has no matching photograph hover caption; translate the assigned RU image description."
+      }
+    }
+  ]
+}

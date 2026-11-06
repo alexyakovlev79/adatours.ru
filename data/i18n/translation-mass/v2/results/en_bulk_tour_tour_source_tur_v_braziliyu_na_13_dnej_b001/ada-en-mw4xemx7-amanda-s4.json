@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_na_13_dnej:b001",
+  "stableId": "tour_source_tur_v_braziliyu_na_13_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6922c302cc5c5302c0ad36956dc33b9c7d84c85a6f08f1b08cfa370d83842a6e",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "6e2885e4f9b9128006ec53343b1fbe7e4cb59bf08b324d0edc247534905bdaf1",
+      "text": "Brazil tour to Iguazu Falls with a beach stay in Búzios",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "3e6d4d375450d4e05e3eaa1de32f901628c230e5fe892eb18f3c5e0f50994457"
+          },
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a0c3c40c0862a3711d769381c04828c6c04c20825bf368566020da63f3598757",
+      "text": "This itinerary brings together very different sides of Brazil. First, you will see Rio de Janeiro from Sugar Loaf and Corcovado, then travel to Iguazu Falls. After the cities and major sights, the journey turns to nature: the Pantanal, Bonito, tropical forests, rivers, caves and waterfalls. The final days are spent on the beaches of Búzios.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word p18 has a different overview and does not contain the assigned RU lead's full sequence of Sugar Loaf, Corcovado, forests, caves and waterfalls. Translate the assigned lead while retaining verified destination names."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2c03e1b663b7565ae5dbb1dc60c2e91564bec9ba1db6a35deb57303c1c0def87",
+      "text": "$6326",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4xemx7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The exact assigned RU price note $6326 is not present in verified Word pricing paragraphs. Preserve the assigned value unchanged; commercial changes belong to the master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ee50bb31f066a0a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "68dd2fdbc60b13d3b755f1538c7422f3fdaa16b53b328656d3b536d2dd63d9db",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p60",
+            "textSha256": "491ba80b4f5546ff6f7e85a64790e5d64c3e1eaceaee012f077da30e756ccaf3"
+          },
+          {
+            "ref": "word/document.xml:p90",
+            "textSha256": "d3bc1101dbff45978321b5c98eba49b840371735d5f8d0cf9997b360c79603ed"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the corresponding itinerary or media label using the names in the verified Word paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ccdaf76325d16d55",
+      "field": "itinerary.label",
+      "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
+      "text": "Pantanal",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p43",
+            "textSha256": "eca839902f399e2e9e2adbc13160863157f6728c9da453f7408f248cd152a0f7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0264afb4a0c6ec9b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "de6738182fbee1100962b5c995a837c3dcc6831cd58b9948be7dcb02e2b71558",
+      "text": "Bonito",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "b667c9060e564e33124610a339d8f92083427275817142b01d42f1e4aee899cd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a6b4f0f7ed04f9d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hIAlpmZ9IBugAW_fsoFMBPWgV9NbtKmB",
+        "documentSha256": "a096eff6f291c2ade973c733a6afb53ee8ad52a08612fee9f75bb722630be362",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p52",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    }
+  ]
+}

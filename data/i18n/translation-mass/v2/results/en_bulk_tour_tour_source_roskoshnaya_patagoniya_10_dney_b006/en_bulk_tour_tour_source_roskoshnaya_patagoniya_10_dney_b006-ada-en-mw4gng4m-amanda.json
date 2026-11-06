@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_roskoshnaya_patagoniya_10_dney:b006",
+  "stableId": "tour_source_roskoshnaya_patagoniya_10_dney",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "24d2babd3881572a858d0d70fdf779474ffe20ff614110a1a4f30bcd7ac11f6c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:52df89754f07f6ed",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J3iiKe3a157uLe4QAeKgqNdlhrMV3lAa",
+        "documentSha256": "bbf1a3725054166e3cac6cd237c74995a895196c4c2890cbef8d6e6a2b5017bd",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[46]",
+            "textSha256": "ee61a390454ae1a37f28441ff65422316af79b9f116719735d72e1fb454a6113"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the full El Calafate place name from the confirmed day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:270601adae8f5b22",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7c23851037d843547ded8c51de18c116fa84d8466693ce6f636296ce52b1e596",
+      "text": "Perito Moreno",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J3iiKe3a157uLe4QAeKgqNdlhrMV3lAa",
+        "documentSha256": "bbf1a3725054166e3cac6cd237c74995a895196c4c2890cbef8d6e6a2b5017bd",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[47]",
+            "textSha256": "abdd15a67336dcd16c1b52b2e8d363b84bafc3b31e91ba23b6992691b0dce993"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Perito Moreno glacier name from the confirmed excursion text."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d1d4f4f61f8a5441",
+      "field": "media.alt",
+      "sourceTextSha256": "71b68eeec335fcba2389e5b439181be8acc10220f7c709b12abe410a008ea792",
+      "text": "Sightseeing boat in front of the tall blue wall of Perito Moreno Glacier, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gng4m-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word programme does not contain this image-specific caption or this separate editorial field; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3a9f9d3efa7dea34",
+      "field": "media.hover",
+      "sourceTextSha256": "ff972cfa0c95f26b24c7a1aed2261654819694a699f46d8adad950e984e6288e",
+      "text": "Perito Moreno, Argentina: a tourist boat beside the glacier",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4gng4m-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word programme does not contain this image-specific caption or this separate editorial field; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d65b6a1e41da1423460bdaf820bce16fa004d57521afb066dff9e2d02e206a73",
+      "text": "El Calafate – Puerto Natales",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J3iiKe3a157uLe4QAeKgqNdlhrMV3lAa",
+        "documentSha256": "bbf1a3725054166e3cac6cd237c74995a895196c4c2890cbef8d6e6a2b5017bd",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[50]",
+            "textSha256": "784f595ff7c232631b00b599ab022ab00601e52b647575784410ac02cda50420"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the transfer route without the day prefix and country parenthesis."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fe407f94e1bb906ee555e987d9f030502703b426c5bdd89522e6df29588268f0",
+      "text": "Breakfast at the hotel. Private transfer (apprx. 4 hours) from El Calafate (Argentina) to Puerto Natales (Chile).  Along the road that runs through the mountain peaks and the steppe landscape, you can meet various  animals of the local fauna-llamas, hares, foxes, alpacas. Arrival in Puerto Natales and transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J3iiKe3a157uLe4QAeKgqNdlhrMV3lAa",
+        "documentSha256": "bbf1a3725054166e3cac6cd237c74995a895196c4c2890cbef8d6e6a2b5017bd",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[51]",
+            "textSha256": "e5b0ea1fd8e870ffbb4effa69d77063c9729c8366b46d148f9798b7847349646"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bbc1826c787617ab",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J3iiKe3a157uLe4QAeKgqNdlhrMV3lAa",
+        "documentSha256": "bbf1a3725054166e3cac6cd237c74995a895196c4c2890cbef8d6e6a2b5017bd",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[46]",
+            "textSha256": "ee61a390454ae1a37f28441ff65422316af79b9f116719735d72e1fb454a6113"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the El Calafate place name from the confirmed day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4e6ecd115d653e48",
+      "field": "itinerary.label",
+      "sourceTextSha256": "97e733c39306f42fca10393174d9130ceaaec972dd2304d97c55173ca91f1d1d",
+      "text": "Puerto Natales",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J3iiKe3a157uLe4QAeKgqNdlhrMV3lAa",
+        "documentSha256": "bbf1a3725054166e3cac6cd237c74995a895196c4c2890cbef8d6e6a2b5017bd",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[50]",
+            "textSha256": "784f595ff7c232631b00b599ab022ab00601e52b647575784410ac02cda50420"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Puerto Natales place name from the confirmed transfer heading."
+      }
+    }
+  ]
+}

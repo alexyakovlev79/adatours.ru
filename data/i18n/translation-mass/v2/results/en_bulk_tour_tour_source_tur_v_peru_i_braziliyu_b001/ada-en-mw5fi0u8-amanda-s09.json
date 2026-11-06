@@ -1,0 +1,168 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_peru_i_braziliyu:b001",
+  "stableId": "tour_source_tur_v_peru_i_braziliyu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b31cec68efd96c58c811f6bc8150b824a1feb6428604304c3e7cc7aa640bbade",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "0b04e2d25e3dd9c06c3fba8f6e83de72cdea8b9613c5168613016e8de2049c3a",
+      "text": "Peru and Machu Picchu, Rio de Janeiro and a beach holiday in Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word uses the short title Peru & Brazil and does not contain the full RU title specifying Machu Picchu, Rio and a beach holiday."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "6c49b4647a5f977a5cdad177b7ef5b362b6f645b36ba6fb143533da89a0ac083",
+      "text": "Peru and Brazil in one journey offer an unusual combination of ancient history, mountain landscapes, major cities, waterfalls and the ocean. The route begins with Lima, Cusco, Machu Picchu and Lake Titicaca. You then fly to Brazil, where Iguaçu, Rio de Janeiro and a few days on the coast of Búzios await.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5fi0u8-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word overview is different and omits the complete sequential RU lead naming Lima, Cusco, Machu Picchu and Lake Titicaca before the Brazil section; translate the pinned RU lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "4fdde6bfcdcfe36262113a0cedcb2bbe9300e450ca84df253108d731f3c90ca7",
+      "text": "$6048",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[169] (zero-based)",
+            "textSha256": "3146064410313ff010177fc1a538a993d95ac4e812baec14297a6154fc808f8a"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Preserve the RU amount $6048; the verified Word DBL tariff is $ 6,048, the same amount with different spacing and grouping."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7ffe47a8c8fefab4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d8a7fb85672e6376aff339b3c64569514080f8beff5d2a605377b377592bc97a",
+      "text": "Lima (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[123] (zero-based)",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          },
+          {
+            "ref": "word/document.xml:p[124] (zero-based)",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified Word accommodation-table city and corresponding night count into the matching standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9aa3bb4f9bd9f53d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2975b276d55b62a64ac11fd6448b5c9d039b870d6bc1dd295abe28e75208ad61",
+      "text": "Cusco (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[126] (zero-based)",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          },
+          {
+            "ref": "word/document.xml:p[127] (zero-based)",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified Word accommodation-table city and corresponding night count into the matching standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e570c0acbad6960a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6bbb3295f8e15d5c228561c4e470319af2df23c7b9809054c8d3a12b0b7a475f",
+      "text": "Puno (1 night)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[129] (zero-based)",
+            "textSha256": "eaa2b06926bcdcab6d01ec90c9eefd7a4cf618005067226766455ed2570f7b01"
+          },
+          {
+            "ref": "word/document.xml:p[130] (zero-based)",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified Word accommodation-table city and corresponding night count into the matching standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:206a643ae60e7bdc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d947608f2f547cb2aff2d7487c62fd6ceb0f3d074256b472a0784128e253b953",
+      "text": "Lima (1 night)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[132] (zero-based)",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          },
+          {
+            "ref": "word/document.xml:p[133] (zero-based)",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified Word accommodation-table city and corresponding night count into the matching standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da44029d6e030002",
+      "field": "itinerary.label",
+      "sourceTextSha256": "26aaac1b66ce5ddc04aa321d9b5b1f7beaf242ffa9ed3078102d68210a322498",
+      "text": "Foz do Iguaçu (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1t7h2_7VUtM7VWovMtTNnF828V4XGmhh0",
+        "documentSha256": "66bd2b4964978bc597a4a080aa8a66d093695ce29dec7e2dae35b01323a5973b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[135] (zero-based)",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml:p[136] (zero-based)",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the verified Word accommodation-table city and corresponding night count into the matching standalone route label."
+      }
+    }
+  ]
+}

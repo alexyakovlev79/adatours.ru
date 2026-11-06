@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 306,
-    "leased": 4,
+    "queued": 305,
+    "leased": 5,
     "review": 2033,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 306,
-      "leased": 4,
+      "queued": 305,
+      "leased": 5,
       "review": 2033,
       "ready": 50,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 12,
-          "leased": 0,
+          "queued": 11,
+          "leased": 1,
           "review": 65,
           "ready": 1,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T21:15:42.660Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_venezuela_canaima_angel_falls_4_days:b002",
       "token": "ada-en-mw5dtjtv-amanda-token-pxxk4sjfv0d",
       "expiresAt": "2026-11-06T21:15:26.130Z",
+      "generation": 1
+    },
+    "ada-en-mw5dslx2-amanda": {
+      "jobId": "en:bulk:tour:tour_source_treasures_of_costa_rica_san_jose:b004",
+      "token": "ada-token-mw5dslx2-lmkphipbzbp",
+      "expiresAt": "2026-11-06T21:15:42.660Z",
       "generation": 1
     }
   },
@@ -7895,7 +7901,8 @@
     "ada-en-mw5dslx2-amanda": {
       "token": "ada-token-mw5dslx2-lmkphipbzbp",
       "jobIds": [
-        "en:bulk:tour:tour_source_viva_meksika:b011"
+        "en:bulk:tour:tour_source_viva_meksika:b011",
+        "en:bulk:tour:tour_source_treasures_of_costa_rica_san_jose:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_viva_meksika:b011"
@@ -7930,5 +7937,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T19:45:34.434Z"
+  "updatedAt": "2026-11-06T19:45:42.660Z"
 }

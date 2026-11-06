@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 471,
-    "leased": 5,
-    "review": 1868,
+    "leased": 4,
+    "review": 1869,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 471,
-      "leased": 5,
-      "review": 1868,
+      "leased": 4,
+      "review": 1869,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 16,
@@ -1066,8 +1066,8 @@
         "word_2027": {
           "held": 0,
           "queued": 17,
-          "leased": 1,
-          "review": 68,
+          "leased": 0,
+          "review": 69,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 1,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-06T05:44:14.118Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1a": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw4gmy5g-amanda": {
-      "jobId": "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b004",
-      "token": "ada-token-mw4gmy5g",
-      "expiresAt": "2026-11-06T05:44:14.118Z",
-      "generation": 1
-    },
     "ada-en-mw4gn04k-amanda": {
       "jobId": "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b011",
       "token": "tok-mw4gn04k-5mtiquni03m",
@@ -7442,7 +7436,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_surinam_gajana_frantsuzskaya_gviana:b004"
+      ]
     },
     "ada-en-mw4gn04k-amanda": {
       "token": "tok-mw4gn04k-5mtiquni03m",
@@ -7470,5 +7466,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T04:16:03.962Z"
+  "updatedAt": "2026-11-06T04:16:15.651Z"
 }

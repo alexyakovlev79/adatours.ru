@@ -1,0 +1,133 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_detmi:b007",
+  "stableId": "tour_source_tur_v_braziliyu_s_detmi",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c1768cbe8273dea96588b21a6e42e5db207b0fdfa7afeb749ef39c2d44ce9fe8",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b3258e8c59d9b130d19330261977f0ccc76c704d816f77de97c3b371db204cca",
+      "text": "Day 7 · After breakfast, transfer to the airport for your flight to Rio de Janeiro, where your guide meets you and accompanies you on the coastal drive to Búzios, through beautiful rainforest scenery.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Wg4CyjW-F-4jP-6VYSBThNCA6HQv8N6s",
+        "documentSha256": "b936157aa44b6a009aa825195f687b59c733dcbf23dc375deb73da08e388eb01",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p103",
+            "textSha256": "f5211031323df359dffdcaaee2465812b7dbe790673cee8e0844a9ce6dff93da"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f82a47102d58c1a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Wg4CyjW-F-4jP-6VYSBThNCA6HQv8N6s",
+        "documentSha256": "b936157aa44b6a009aa825195f687b59c733dcbf23dc375deb73da08e388eb01",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p99",
+            "textSha256": "150716ca401c1b2e5dba55ae65134a61fb985defc431558b7295a861b1ae643d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract Rio de Janeiro from the Word route heading for the existing city label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0f8f1524af76a74c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he47t-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word refers to the destination as Iguazu and has no exact Foz do Iguaçu city label; translate the assigned RU city name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2c4b068ae9457f73",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Wg4CyjW-F-4jP-6VYSBThNCA6HQv8N6s",
+        "documentSha256": "b936157aa44b6a009aa825195f687b59c733dcbf23dc375deb73da08e388eb01",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p102",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:acbd389dbe2fcf81",
+      "field": "media.alt",
+      "sourceTextSha256": "81982dfc3dd83c3bf8847e4b1f7a662982f196d657f863aecc84becefa354946",
+      "text": "A wooden staircase with handrails descends to the green shore of a bay in Búzios, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he47t-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no photo-specific alt text describing a wooden staircase down to this bay in Búzios."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:786f4cb74c3b113d",
+      "field": "media.hover",
+      "sourceTextSha256": "4fff9bd4f00dba5c4ef2f83860b48b3c127113da867ed40bfb851b1ca55298e4",
+      "text": "Búzios: wooden steps down to the sea amid dense greenery",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4he47t-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no corresponding image hover caption about wooden steps to the sea amid greenery."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7fd33f3ead7f8b4cdbf17aa65d0e4ff432fc3c3cdc176a1e0a7699b7e2324328",
+      "text": "Búzios",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Wg4CyjW-F-4jP-6VYSBThNCA6HQv8N6s",
+        "documentSha256": "b936157aa44b6a009aa825195f687b59c733dcbf23dc375deb73da08e388eb01",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p102",
+            "textSha256": "3c9d8c2bccedeb549474a7183c46fae18c7dada218e708fac6158c9d8a248390"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0f22cda0c285e2dff2d8c17a6123fd5926e49bc7cd02ba9200d0dce832306a27",
+      "text": "Days 8–11 · A former fishing village about 170 km east of Rio, Búzios has an intimate feel, a mild climate, exotic vegetation and picture-perfect beaches, with golden sands, crystal-clear water, green hills, rocky cliffs and beautiful sunsets. Besides relaxing by the sea, surfing, scuba diving, water-skiing and kayaking are popular; a boat trip with a local fisherman reveals turtles, tropical fish and, in season, even whales. In the evening, chic restaurants and stylish bars open their doors along the cobbled streets: the perfect family spot to unwind after your Brazilian journey.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Wg4CyjW-F-4jP-6VYSBThNCA6HQv8N6s",
+        "documentSha256": "b936157aa44b6a009aa825195f687b59c733dcbf23dc375deb73da08e388eb01",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p104",
+            "textSha256": "4dc667ac254b0aae1f82f5aa52dbbdc695828b21683ac0d4554fa5fba2857804"
+          }
+        ]
+      }
+    }
+  ]
+}

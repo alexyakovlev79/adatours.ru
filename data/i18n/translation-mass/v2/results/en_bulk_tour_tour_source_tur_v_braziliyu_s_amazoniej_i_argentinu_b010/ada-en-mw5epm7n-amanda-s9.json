@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu:b010",
+  "stableId": "tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4b521e60fbd8d9421ea96a1bb1d726411c9ce3cf205ce907e2984687404a0fbc",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:26c5f2fe7a3e125a",
+      "field": "media.hover",
+      "sourceTextSha256": "f088738e64d5dd2a2cee37954d10c1a5479422a26e5306ba66d2bbef5b54fdb8",
+      "text": "Salvador: capoeira and musicians on the beach",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no hover caption for this specific beach photograph; translate the RU visual description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "34fab2af7c82402300da10efc1f4c426a62bf6eec97687f4fb77f42ce91c8492",
+      "text": "Salvador – Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p85",
+            "textSha256": "6f962a5909ce49127a73072623a5479ea0303095afae2f8106ed80cb3f6a3635"
+          },
+          {
+            "ref": "word/document.xml:p89",
+            "textSha256": "18bb4dbcb2b5a4c3cbdead31b8a9ad16c7929f850701a8ccdd305b88daa95c2d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Salvador section name and Praia do Forte destination from the corresponding Word day-trip paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1b3aa2e7081c781aa26614400189b1463636f078740e2f107de31b880bf67463",
+      "text": "Day 8 · After breakfast, full-day trip (shared) to the relaxing beaches of Praia do Forte.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p89",
+            "textSha256": "18bb4dbcb2b5a4c3cbdead31b8a9ad16c7929f850701a8ccdd305b88daa95c2d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:74d14250d1e94b9f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f9638d61817f45d50d040b52a87ec567129101d4db5cae07f76ef5c5174219b6",
+      "text": "Salvador",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p132",
+            "textSha256": "5ad4a23bc13eaf92e9c035b1d3edbb92582a99f2dbe64525009755f989eedfb2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d07ef8222c1488c8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p89",
+            "textSha256": "18bb4dbcb2b5a4c3cbdead31b8a9ad16c7929f850701a8ccdd305b88daa95c2d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the geographic label from the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:10b59e1cfb0dcf92",
+      "field": "media.alt",
+      "sourceTextSha256": "616c6a6343da33b8ae86791c687b14af7bf84b86530c286796533d9126420c81",
+      "text": "A church and colourful colonial façades along a cobbled street in Salvador, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no alt caption for this specific Salvador street photograph; translate the fixed RU caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:a2f44b3060f4a09b",
+      "field": "media.hover",
+      "sourceTextSha256": "5ab614518523652bac6489015bc86d0054175ba73858bcd622514b65a5a27a5d",
+      "text": "Salvador: colourful houses and an ornate church façade on a city street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5epm7n-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The selected Word contains no hover caption for this particular street photograph; translate the fixed RU visual description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f924f2bf192ab8107bc137593f52119b5c33206d9498c5a79c2dfa34fd9b9a05",
+      "text": "Salvador – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1P3ewH7_BgelQIugsOUGNzkVJbuAvfvxO",
+        "documentSha256": "a207e3e7a588d09678d507ed1e71cb7e7a5b4c5f370f2f1567b029da38a19e4c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p102",
+            "textSha256": "9f19ae24521b8d2cb9baefd0e416d137768c81a40ef4f2ea91ce5c1441a8553f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the first two endpoints of the Word flight route for the existing Salvador–Foz do Iguaçu itinerary heading."
+      }
+    }
+  ]
+}

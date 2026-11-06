@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_ekzoticheskuyu_braziliyu:b002",
+  "stableId": "tour_source_tur_v_ekzoticheskuyu_braziliyu",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b5f27e856c25b614056650f6e79080c0694a9eae1550fca8d6b2c788720f281c",
+  "blocks": [
+    {
+      "blockId": "tour:included:7cadc3a8136774e1",
+      "field": "included",
+      "sourceTextSha256": "c49e5447ab71c1c2c8c3c68d8e356d5da8ad4fc76bf2f326be55c707505b75be",
+      "text": "Excursions with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1rWl3ytlBDVuq3xIqgigjQ36lMfAkNtOe",
+        "documentSha256": "5bc2ae2c2e8a0577e39b7d4f3498354e5754b85fd969c626f42f6343dd17cdb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p29",
+            "textSha256": "afffd37e59d888699e625f2723859965707bcd0762c1e9c46c5068633af5c2b7"
+          },
+          {
+            "ref": "word/document.xml:p211",
+            "textSha256": "8058c199498ef455345413d4d7cba756ceb2d13199a1e4744fcc7752015e4514"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combines the approved guide-language heading and excursion inclusion to express this service label."
+      }
+    },
+    {
+      "blockId": "tour:included:a3d9a0279f8557d6",
+      "field": "included",
+      "sourceTextSha256": "5371489a55552cc2460650c367ebe5cb504ddf0f2e56c92eb9abab090f0253c9",
+      "text": "Group excursions with an English-speaking guide in Manaus",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnuue-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word confirms English-speaking Amazon guides but has no corresponding standalone group-excursion inclusion; translates this RU service label."
+      }
+    },
+    {
+      "blockId": "tour:included:a96b3de50cadbe0a",
+      "field": "included",
+      "sourceTextSha256": "ebf94d114c6482e07255de1a8d6f7dbfd2d03f2f301e7732f251d077c97af974",
+      "text": "Transfer to your hotel in Rio de Janeiro with an English-speaking guide",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnuue-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word arrival paragraph states the hotel transfer without this guide-language detail; translate the RU service label with the owner's English-service adaptation."
+      }
+    },
+    {
+      "blockId": "tour:included:90cdf2764914f6c4",
+      "field": "included",
+      "sourceTextSha256": "1f907e974646fc7fa6b1c3f3ace5f8aac3d699dd76d7bb90f1377817bc058c14",
+      "text": "Transfers with a driver",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnuue-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes driver transfers on individual days but contains no equivalent standalone driver-only inclusion; translates the assigned RU label."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ddde98c8d71040e3",
+      "field": "notIncluded",
+      "sourceTextSha256": "07c5163e3b8bf062ed82917f4775dd39898f47335da33426f77643a55cca87ca",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1rWl3ytlBDVuq3xIqgigjQ36lMfAkNtOe",
+        "documentSha256": "5bc2ae2c2e8a0577e39b7d4f3498354e5754b85fd969c626f42f6343dd17cdb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p216",
+            "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word list marker for the dedicated additional-excursions exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:2691823854ea116c",
+      "field": "notIncluded",
+      "sourceTextSha256": "d2dbe58eeba95d79b574987768c96e764b192a5b714c17de29aff4e941880d35",
+      "text": "Domestic flights Rio de Janeiro – Foz do Iguaçu – Manaus – Rio de Janeiro from $ 990 per person, not included.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1rWl3ytlBDVuq3xIqgigjQ36lMfAkNtOe",
+        "documentSha256": "5bc2ae2c2e8a0577e39b7d4f3498354e5754b85fd969c626f42f6343dd17cdb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p164",
+            "textSha256": "81c233a4d1b778a56bb11c9f6803783e9467f833d33f517d0d1ad942d86ceda8"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes only the list marker; preserves the full flight route, price, basis and exclusion in the Word."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:fb3be0217dc951d3",
+      "field": "notIncluded",
+      "sourceTextSha256": "b95c86e0a45f42513f29f337a1ec10b77c709481cc43441c58bf66cfdf3e11d4",
+      "text": "Food and drinks during transfers",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnuue-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word excludes unspecified meals and drinks more broadly but lacks the transfer-specific RU clause; translate that exact assigned exclusion."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may replace a hotel with another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnuue-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word says hotels or similar but contains no corresponding full replacement clause; translate the assigned RU condition without changing category."
+      }
+    }
+  ]
+}

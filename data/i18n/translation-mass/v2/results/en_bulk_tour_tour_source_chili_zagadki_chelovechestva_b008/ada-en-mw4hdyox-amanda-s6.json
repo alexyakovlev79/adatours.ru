@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chili_zagadki_chelovechestva:b008",
+  "stableId": "tour_source_chili_zagadki_chelovechestva",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "376724bfdf8cfa51006c5a479a8f18e1d02c1088e4fd680768df6a4a94e4ae90",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:8d77f54d9fb0ecd0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79a7e4d346e5dcca6955b45c4928bcf9c8d57856b87a1a001d8a1f799678a211",
+      "text": "Ahu Akivi",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "p:102",
+            "textSha256": "6914c497c680397c9d675a17fdad7b84c84db48b43da4e92db38393547362718"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the platform name from the matching central-island excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:723a83f75a54bbcb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "8d5a5921e4f019fb6a3f47696e41ecd37f768621f381456de74895897ace760f",
+      "text": "Puna Pau Quarry",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "p:102",
+            "textSha256": "6914c497c680397c9d675a17fdad7b84c84db48b43da4e92db38393547362718"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the quarry name from the matching central-island excursion."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:125d5af61ad564b9",
+      "field": "media.alt",
+      "sourceTextSha256": "47eea36ba922df7ebffa6f50fd4d87da57f1e543bf87ff7f60dc4e27f7c4228c",
+      "text": "A row of stone moai on the Ahu Akivi platform, Easter Island, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:882fe77161a6cbe1",
+      "field": "media.hover",
+      "sourceTextSha256": "942b5f5eed3c3442bf67b88bab42ca409a1178f007e0a846ea4a6a35ad708c80",
+      "text": "Ahu Akivi: moai statues on a grassy slope",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4hdyox-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific caption is absent from the selected Word document; translated from the assigned Russian block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "10f7d9b963c851b0ef1f2d04dbca53a8f2a578bf50430911870439cf00b8a9ec",
+      "text": "Easter Island – Santiago",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "p:89",
+            "textSha256": "82acd933d9a86d48a13194e9fe1f19467c515033fd067dfc021f91e880939abb"
+          },
+          {
+            "ref": "p:110",
+            "textSha256": "a30168189ec50ead7466b214d48dab56075bbc1b169e35ce05b0ef0b4d3a958b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the confirmed island origin with the destination in Word Day 8."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a786c5fc29c6c79944e35e62fca5106b14d95b3d8673d164184f950091e1af9e",
+      "text": "Transfer to the airport for your flight to Santiago. On arrival, meeting and transfer to the hotel. Free time.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "p:110",
+            "textSha256": "a30168189ec50ead7466b214d48dab56075bbc1b169e35ce05b0ef0b4d3a958b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word day-number prefix because the itinerary position is stored separately."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:08b384b294fe6a62",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "p:36",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the Word city name with the country qualifier retained from the assigned place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:95166e24db7fc34e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e41062add057645e926bf42391b44b831d40619296fa430b370f4633481e7939",
+      "text": "Easter Island",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "14AAbfo5YDnuc5m2l8N9kqCernkGn65ZE",
+        "documentSha256": "13546ae91b87ef2aad0954b34c28d86bb676d1aa4e414f9fc8931d0d5d0629b0",
+        "paragraphs": [
+          {
+            "ref": "p:89",
+            "textSha256": "82acd933d9a86d48a13194e9fe1f19467c515033fd067dfc021f91e880939abb"
+          }
+        ]
+      }
+    }
+  ]
+}

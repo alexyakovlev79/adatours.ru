@@ -1,0 +1,165 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_4_strany_yuzhnoj_ameriki:b004",
+  "stableId": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4c546b06209706a9e313351f4d613b40216769e3a75c75b5d6eb9bca7ef38dc0",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[164] (zero-based)",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9ce3c6b53d95c4316a553f7a318a2e6fa60c1e81e70c4482b465d1a01476e7fd",
+      "text": "Breakfast at the hotel. City tour of Santiago’s most interesting sites, beginning with a general view of the city from halfway up San Cristóbal Hill.\n\nContinue to the historic centre to visit the Main Square, the Cathedral, the Central Post Office and the City Hall, and see La Moneda, the Government House. The tour ends in East Santiago, with its modern office buildings, apartments, shopping centres and restaurants. Return to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[68] (zero-based)",
+            "textSha256": "12eaa0ac10badd6ce76be234a31e1105a7ec2a1f06639d6ac8e4f26ccb8a436d"
+          },
+          {
+            "ref": "word/document.xml:p[69] (zero-based)",
+            "textSha256": "66d5780b3594e491a35176ceeac2a7541471415763babe6928191c26a6955d59"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Only the Day 2 prefix is removed because the website stores the day number separately; both approved programme paragraphs are otherwise unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cdaa2982734c0db0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[164] (zero-based)",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2391c244cca0595c",
+      "field": "media.alt",
+      "sourceTextSha256": "ec45a940b43433a343555b09586cfec1d65f4cf3f4ea9b54c43fcde203cd66bd",
+      "text": "Pictured: Santiago de Chile, the capital of Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5dtsis-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word programme contains city descriptions, but no image-specific alternative text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f8b2c3e1069af9e735d7c797b81d62c88f7c92370fbcc776f7ca89850708f923",
+      "text": "Santiago de Chile – Puerto Natales",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[164] (zero-based)",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          },
+          {
+            "ref": "word/document.xml:p[169] (zero-based)",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          },
+          {
+            "ref": "word/document.xml:p[79] (zero-based)",
+            "textSha256": "e443bf2ea13bf4313a944dee3385f92ee62255a45080b692f8aabffe2d839b0b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route label combines the confirmed Santiago departure city with the Puerto Natales destination of the Day 3 transfer."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "39de756c4d816973920b4e9fae823775e964152b3948326021389d9790441dfa",
+      "text": "Transfer to the airport and flight to Punta Arenas. Private transfer to the bus station and shared bus to Puerto Natales, where a private car transfers you to your hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[79] (zero-based)",
+            "textSha256": "e443bf2ea13bf4313a944dee3385f92ee62255a45080b692f8aabffe2d839b0b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the Day 3 prefix because the website has a separate day-number field; the approved transfer description is unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a4026493ef5c2258",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+      "text": "Puerto Natales & Torres del Paine",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[169] (zero-based)",
+            "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+          },
+          {
+            "ref": "word/document.xml:p[39] (zero-based)",
+            "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The existing combined place label joins the two locations explicitly named in the verified Word itinerary and accommodation table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fc612a5d1e781a90",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1tL8rORSfz4CoqnMwj7pS8zoSc7bwa57M",
+        "documentSha256": "ab68209110fffc145b516391bf0e33879712ea1e9d30e68f1f8f3d33a06bc487",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[164] (zero-based)",
+            "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
+          }
+        ]
+      }
+    }
+  ]
+}

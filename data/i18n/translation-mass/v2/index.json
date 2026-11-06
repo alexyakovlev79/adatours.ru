@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 351,
-    "leased": 3,
+    "queued": 350,
+    "leased": 4,
     "review": 1989,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 351,
-      "leased": 3,
+      "queued": 350,
+      "leased": 4,
       "review": 1989,
       "ready": 50,
       "retryable": 0,
@@ -825,8 +825,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 9,
-          "leased": 0,
+          "queued": 8,
+          "leased": 1,
           "review": 66,
           "ready": 0,
           "retryable": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-06T13:34:17.315Z",
       "earliestRetryAt": null
     },
     "0a": {
@@ -1358,6 +1358,12 @@
       "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_v_brazilii:b011",
       "token": "tok-mw4xeort-2s3zh4ra7s",
       "expiresAt": "2026-11-06T13:33:50.950Z",
+      "generation": 1
+    },
+    "ada-en-mw4xeqdh-amanda": {
+      "jobId": "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b012",
+      "token": "token-mw4xeqdh-3m4wxoociqq",
+      "expiresAt": "2026-11-06T13:34:17.315Z",
       "generation": 1
     }
   },
@@ -7788,8 +7794,15 @@
         "en:bulk:tour:tour_source_ekzoticheskij_karnaval_v_brazilii:b011"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw4xeqdh-amanda": {
+      "token": "token-mw4xeqdh-3m4wxoociqq",
+      "jobIds": [
+        "en:bulk:tour:tour_source_velikij_tur_po_yuzhnoj_amerike:b012"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T12:03:50.950Z"
+  "updatedAt": "2026-11-06T12:04:17.315Z"
 }

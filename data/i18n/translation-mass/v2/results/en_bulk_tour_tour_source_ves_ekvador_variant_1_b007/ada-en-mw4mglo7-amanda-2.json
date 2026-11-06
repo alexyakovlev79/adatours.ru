@@ -1,0 +1,52 @@
+{
+  "jobId": "en:bulk:tour:tour_source_ves_ekvador_variant_1:b007",
+  "stableId": "tour_source_ves_ekvador_variant_1",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0d6de77b700f8f68c119b13aef32a5da1bffd6ad86698beda0c489d230212134",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "b837a5fe91b489f763fb49e4e4e76979c54c77585363dec6f323931c6e92f92d",
+      "text": "Small lake on green highland terrain beneath a snow-covered Andean peak, Ecuador",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific alt text is absent from the verified Word document; translated from the assigned RU field."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "84254b106a8e046e25cd221f867478e3a4842e0804867584314d10b4fe8477cc",
+      "text": "The Ecuadorian Andes: water and green slopes beneath a snowy mountain",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Image-specific hover caption is absent from the verified Word document; translated from the assigned RU field."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "564f1a807b90cf8e62fd6f45289469d1b954778175a27a064098b4f836cccd45",
+      "text": "\n\nThe programme includes private transfers and excursions with an English-speaking guide-interpreter or guide-driver. All 4 nights are at **Mercure 4*** in Quito, with breakfast. In just a few days, you will see colonial architecture, the Andes, tropical vegetation and a crater lake. The drives between excursions reveal how quickly Ecuador's altitude and natural zones change.\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw4mglo7-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "This complete RU introductory paragraph is absent from Word. Verified Word specifies Hotel Finlandia 4-star, whereas immutable RU specifies Mercure 4-star; retain the assigned RU hotel and flag the discrepancy for independent review. Guide language follows owner-approved EN localisation."
+      }
+    }
+  ],
+  "unresolvedConflicts": [
+    {
+      "field": "body",
+      "issue": "RU hotel Mercure 4* conflicts with verified 2027 Word Hotel Finlandia 4*. RU hotel preserved; requires independent review."
+    }
+  ]
+}

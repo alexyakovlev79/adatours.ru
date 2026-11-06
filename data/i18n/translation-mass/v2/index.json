@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 390,
-    "leased": 5,
-    "review": 1949,
+    "leased": 4,
+    "review": 1950,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 390,
-      "leased": 5,
-      "review": 1949,
+      "leased": 4,
+      "review": 1950,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 16,
@@ -306,8 +306,8 @@
         "word_2027": {
           "held": 0,
           "queued": 3,
-          "leased": 1,
-          "review": 73,
+          "leased": 0,
+          "review": 74,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-06T08:27:15.705Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "17": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw4mglo7-amanda": {
-      "jobId": "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej:b008",
-      "token": "ada-token-mw4mglo7-46797p8h4b",
-      "expiresAt": "2026-11-06T08:27:15.705Z",
-      "generation": 2
-    },
     "ada-en-mw4mgrjy-amanda": {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b004",
       "token": "ada-en-mw4mgrjy-amanda-token",
@@ -7670,7 +7664,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej:b008"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej:b008"
+      ]
     },
     "ada-en-mw4mgrjy-amanda": {
       "token": "ada-en-mw4mgrjy-amanda-token",
@@ -7702,5 +7698,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-06T06:58:12.651Z"
+  "updatedAt": "2026-11-06T06:59:00.439Z"
 }

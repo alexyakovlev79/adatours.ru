@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b017",
+  "stableId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e02cfd78cf42f103fb75b1f495e98c4b2f4930e32d6d4b7a769188eda6542491",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:6bcd09812a756174",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "fb0187fc46a606d0ec0d4c4e058689c4922ca37fbb89aadbd772f2a1c0fdfadb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city name from the final-day Word heading without its day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:7c971c95bcc01fc5",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4c9d41c9b7a5fc40f6fd429208484d12d729e6e211d75ba89a01a4f18575186d",
+      "text": "After breakfast, check out and meet with the driver to transfer to the Airport for a flight back home.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "d8b88f512124f2933b2e9f6b0b4fe9bdc1f341645164fd523d747220a9ab4843"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b49dbd0aef04df90",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "fb0187fc46a606d0ec0d4c4e058689c4922ca37fbb89aadbd772f2a1c0fdfadb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination name from the Day 21 heading for the location field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8336064cd5f01b82",
+      "field": "media.alt",
+      "sourceTextSha256": "c8efb23e0307fd2fb17b6d60f473893cb6c3b0ee96f9ca6ecee6e694b6e5d7eb",
+      "text": "Lima Cathedral, with two towers beside a broad square in Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word Lima itinerary includes no caption for the cathedral photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:361fcf14a878fd9f",
+      "field": "media.hover",
+      "sourceTextSha256": "896384db3c33a16b7903243b87ae3e9b647e0dc785316e31a45a41347308d60c",
+      "text": "Lima’s cathedral, palm trees and street lamps on the city square",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word Lima itinerary does not describe this particular view of the square."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "60bfd478549642a157ecef9d079442bf00341c6d65b9653491d7477738ab468d",
+      "text": "Two women in red hats sit on a stone wall beside an old arch overlooking a mountain valley in Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word itinerary contains no caption for the photograph of the women at the stone arch."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "986795578b4c55a78dd2c5e6bca816c74da9e20da8ca19340fe6e0cbbc45f491",
+      "text": "Women by a stone arch in the Peruvian Andes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word itinerary does not contain a hover caption for the photograph at the arch."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "242abbfb579bf072cf34f0f45d3429ba6d6aceed40ac362a49b38b6c80a31165",
+      "text": "Lima brings together modern neighbourhoods, colonial architecture and Peruvian cooking. In Cusco, the legacy of the Inca Empire survives in the streets, temples and stonework. Machu Picchu appears amid mountains and clouds, and on Lake Titicaca life goes on aboard the floating Uros Islands. The scenery changes again after the Andes, when you travel to Puerto Maldonado and the Amazon rainforest.\n\nThe itinerary also includes Paracas, Aguas Calientes and Puerto Maldonado.\n\n## Peru’s ancient civilisations and landscapes from the Pacific to the Amazon\n\nThis itinerary takes in several distinct sides of Peru. In Lima, the colonial centre and modern Miraflores show two sides of the capital. In the desert, you’ll see the Huacachina Oasis and fly over the Nazca Lines. Arequipa and Colca Canyon bring volcanic landscapes, hot springs and a chance to spot Andean condors.\n\nThe route then climbs to Lake Titicaca. Visit the floating Uros Islands and Taquile Island, learn about local traditions and see the high plains of the Altiplano. Follow the Sun Route to Cusco, the former capital of the Inca Empire, then continue to the Sacred Valley and Machu Picchu.\n\nThe final major leg takes you into the Peruvian Amazon. Over several days around Puerto Maldonado, you can explore the rainforest with a guide, cross suspension bridges above the forest floor, travel by canoe and boat, watch for birds and other wildlife, and learn how local communities live.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word document opens with Day 1 and gives these places separate daily descriptions. It has no equivalent cross-itinerary overview or section heading."
+      }
+    }
+  ]
+}

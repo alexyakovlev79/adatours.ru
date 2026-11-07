@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_patagoniya_i_chilijskie_fordy:b005",
+  "stableId": "tour_source_patagoniya_i_chilijskie_fordy",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "613d5e3742f5dd6080f3586ff8fa6d954244a5b61a385ec049609df11421691a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:30c421b1d80effcd",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3fec90265eae92d316e5af7bd5620834cf39860739c2e651728c26b6e85ba509",
+      "text": "Gulf of Corcovado",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0005",
+            "textSha256": "0adb28a974ba2632a2b4f4831df604adf1943c443dfc98697e3248a4c22e84b5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Takes the gulf’s name from the Day 1 departure paragraph for a standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:db8c74c6257084b5",
+      "field": "media.alt",
+      "sourceTextSha256": "a0a8bf591e7dcaf5dce9517217d37edb817424c990c040419a33f472085596df",
+      "text": "A red tugboat on blue water off the mountainous coast of Puerto Montt, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Day 1 identifies Puerto Montt as the embarkation port but the Word has no alt text about the red tugboat and mountainous shore."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:0a4140eb79ef3dec",
+      "field": "media.hover",
+      "sourceTextSha256": "cb7d0539e380637c8242650db51f44b2f2f4a70762b63c60a8c9e0ffff9e63c4",
+      "text": "Puerto Montt: a tugboat in front of green coastal mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no caption for the tugboat and the green coastal mountains in this Puerto Montt image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d33b2a16a2ca432772164d6c7e51e474ed3da12f94ebf15a8b20bd36b0588046",
+      "text": "Puyuhuapi Channel",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "a17de624c60db3ae811ea9a1a0184785ff4b43138e27c20c866f4fe7790a3a84"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the day-number prefix from the Word heading to retain the title used by the itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "43e402c02f2205e6cdde3ee1dd31afdb31405389018073d71142bd1eea34991d",
+      "text": "We continue south to visit the area around Puerto Aysen and Puyuhuapi in the Aysén region. As we cruise and explore the area, we see the landscape unfold with its many fjords, islands, and channels. We hope to visit either Puerto Cisnes, Puyuhuapi, or Magdalena Island, with the possibility to see dolphins, whales, cormorants, sea lions, and river otters. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "ccca74fbc9cf2906c713bba603cf2df30689a1d8d61737a647f916a4cc354a9c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:719418beefdfd8f2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4387704b7954a24a384835b32797ae966c39e64f6635ae09da717d750283aa85",
+      "text": "Puerto Aysen",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "ccca74fbc9cf2906c713bba603cf2df30689a1d8d61737a647f916a4cc354a9c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Retains the place name as given in the Day 2 paragraph for its own itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:64af5861e0a208be",
+      "field": "itinerary.label",
+      "sourceTextSha256": "01436f30ecfd970a437151ab0188aed743d8ff74e1a183e5bd74bfa553ff1c67",
+      "text": "Puyuhuapi",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "ccca74fbc9cf2906c713bba603cf2df30689a1d8d61737a647f916a4cc354a9c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Retains the place name as given in the Day 2 paragraph for its own itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:640fba3ee8f20fe7",
+      "field": "media.alt",
+      "sourceTextSha256": "2782acdbbce2e6502f567180ba986e4eb67986b894d77b4652c06c972281ae08",
+      "text": "A red-and-white lighthouse and seabirds on a rocky islet off Ushuaia, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions Ushuaia as the final port but gives no corresponding alt text for this lighthouse and the seabirds on the rocky islet."
+      }
+    }
+  ]
+}

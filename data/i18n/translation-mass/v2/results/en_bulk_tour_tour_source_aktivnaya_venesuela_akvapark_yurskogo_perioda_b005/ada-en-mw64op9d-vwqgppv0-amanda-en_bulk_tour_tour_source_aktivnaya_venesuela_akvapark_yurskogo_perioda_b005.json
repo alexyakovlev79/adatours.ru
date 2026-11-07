@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda:b005",
+  "stableId": "tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1eb58dbfc975c0eeb9d4a2dc9dbeb989c25c9eda3f9a091f29ac511f56f5976d",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:2fbaf2d583663a80",
+      "field": "media.alt",
+      "sourceTextSha256": "d53532e616ebe211f986f3a690d50d86e743ba35ccff06571b648933a8963cae",
+      "text": "Dense city blocks in Caracas at the foot of green mountains, Venezuela",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word gives the airport arrival and Caracas sightseeing programme on Day 1. It contains no caption about the city's dense buildings and green mountains in this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:78db067a24f69c59",
+      "field": "media.hover",
+      "sourceTextSha256": "a3964b76495d5a50bf4b138c4f7e6529ace3ca42230dcc889fac1209ad8a472b",
+      "text": "Caracas from above: high-rise buildings and residential areas on the slopes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Day 1 in the selected Word has no matching caption or description of a view from above showing high-rises and residential areas on the slopes."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "73951fec969ad8c8baa19a178b27bef83f44b5a9fe7c49ec84d61cf951118e6f",
+      "text": "Tuesday: San Francisco de Yuruni",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "a9c48e68e0efcecc513b11ae460361992ca0271f32db8100d5ef423c3328e70a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number from the Day 2 heading and retain its weekday and the Word spelling of the destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9f0585bb24df05a1c814c17b450b34631ab4d8a91c5501fff1f0614452f1b5cb",
+      "text": "Early transfer and flight to Puerto Ordaz. Meeting and long transfer to the Brazilian border, to San Francisco, with a stop for lunch along the way. Arrival at the camp, check-in, and preparation for the ascent. Dinner.\n\nMeals: breakfast, lunch, dinner",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0013",
+            "textSha256": "cd0e925b0e5f9e87a35c0859ec035a0c95639e3e1a0f4444251847c38d16b95a"
+          },
+          {
+            "ref": "word/document.xml#p0014",
+            "textSha256": "63ef427629a22812ff7e32b9df6abb7dbbf61142194131336391fa00c527d409"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:80c7e3c88aa5f0be",
+      "field": "itinerary.label",
+      "sourceTextSha256": "77a2f431924e497f2a8d19f2fc9f4c5a18bb69f5f49e2f48a4bd0644ff68b0cf",
+      "text": "San Francisco de Yuruni",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "a9c48e68e0efcecc513b11ae460361992ca0271f32db8100d5ef423c3328e70a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination from the Day 2 heading and preserve the spelling used in the selected Word programme."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:488eec4961809c79",
+      "field": "media.alt",
+      "sourceTextSha256": "2343f96a1d4b6fbaf07a0e406a9eaf3043c79326d9398ad6edb34e3253a382ba",
+      "text": "San Francisco de Yuruani in the savannah with table-top mountains in the background, Venezuela",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word describes the Day 2 transfer and camp check-in. It does not describe this settlement photograph or the table-top mountains in its background."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e33151f4add0ae1a",
+      "field": "media.hover",
+      "sourceTextSha256": "7ad6b9b02f6865faadf02f6a1e5fb8cfeef8978a3cd925c320ebb1072ef8f41d",
+      "text": "San Francisco de Yuruani: low houses on a grassy plain",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word does not caption this Day 2 image or identify the low houses and grassy plain described in the pinned Russian hover text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "947310196ae26803e35f3ef1dc0ae4eb92a0aa2db1ad47f58c3464ac2dddae24",
+      "text": "Wednesday: Start of the Mount Roraima trek",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0015",
+            "textSha256": "3d324e41c61b7d709b2c2d02a7838e69018d17e3b69ad0c50a526d658cad22a1"
+          },
+          {
+            "ref": "word/document.xml#p0016",
+            "textSha256": "73e349637037f6ae298987bf18dfdcca10bb0b748fbd2950f472aa01d31181fd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the weekday from the Day 3 heading and the start of the Mount Roraima trek described in its opening paragraph."
+      }
+    }
+  ]
+}

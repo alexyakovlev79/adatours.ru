@@ -1,0 +1,145 @@
+{
+  "jobId": "en:bulk:tour:tour_source_rybalka_v_pantanale:b003",
+  "stableId": "tour_source_rybalka_v_pantanale",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b99006d2a9fd3004c0e83a2fb73c583ed2c3ecaed3bb275ee76a7994dd76d7b0",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:e306ce6ca55803d7",
+      "field": "notIncluded",
+      "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+      "text": "Personal expenses.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NTEhPdIzkMz5ac_AbhtaFRSFkFLyP0ry",
+        "documentSha256": "e8e5cac1da662313e154de08f2615ba05104473e7e9efa7c53ffa8f8a3213eb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "1d0d220167eafa7cac6fd665ac1385866708df5110ba0ea17a199016d1ea952d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word includes personal expenses in its exclusions sentence; extract only this item into its dedicated list field."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may substitute another hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word identifies the lodge and package but contains no same-category hotel substitution clause."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme remains the same.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word contains no provision about rearranging excursions while retaining the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed when you check out early for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word specifies meals and check-out times but has no liability notice for breakfasts missed due to early departure."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "38368957d4b293d63b09383a82b0282e683ecea824dec0e62b4b9e2b07f46ea9",
+      "text": "Arrival",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NTEhPdIzkMz5ac_AbhtaFRSFkFLyP0ry",
+        "documentSha256": "e8e5cac1da662313e154de08f2615ba05104473e7e9efa7c53ffa8f8a3213eb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "8924b544987f13aa846f34cf71f1482cc0b0b5233a8f5ef4b8096d113b3300a4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the arrival label from the first day of the two-day fishing programme."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "68f0aa7883aafe284a32dd8f5f9dbb89607ab118dd226f24e09272f149cf4e1a",
+      "text": "**2-DAY FISHING PROGRAM**\n\nCheck-in after 18:00",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NTEhPdIzkMz5ac_AbhtaFRSFkFLyP0ry",
+        "documentSha256": "e8e5cac1da662313e154de08f2615ba05104473e7e9efa7c53ffa8f8a3213eb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0019",
+            "textSha256": "ddcb9e8faf1f226f902e869b04c67fb423d8d81d37723c909bc2516cf1030ed8"
+          },
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "8924b544987f13aa846f34cf71f1482cc0b0b5233a8f5ef4b8096d113b3300a4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retain the Word programme heading and the first-day check-in line without the day and arrival prefixes."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d00aa238d1ad5198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f94c94b804a194ea0acc992eae7108767ed3dce86afdcbbfe92a007633fe474f",
+      "text": "Porto Jofre",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NTEhPdIzkMz5ac_AbhtaFRSFkFLyP0ry",
+        "documentSha256": "e8e5cac1da662313e154de08f2615ba05104473e7e9efa7c53ffa8f8a3213eb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "04986d6bf8b15cdd756a8496d0df431cf9ceb9df77e424b1fd565e637fca3dfb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place name from the approved Porto Jofre Lodge package heading for the itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e2a6e76c16475c55",
+      "field": "itinerary.label",
+      "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
+      "text": "Pantanal",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1NTEhPdIzkMz5ac_AbhtaFRSFkFLyP0ry",
+        "documentSha256": "e8e5cac1da662313e154de08f2615ba05104473e7e9efa7c53ffa8f8a3213eb4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "659e0af7dfeff6c9edf79a465c333832c993638251970875afe591f27d6d5990"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the region named in the approved package title as the standalone itinerary place label."
+      }
+    }
+  ]
+}

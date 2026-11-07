@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_sokrovishcha_bolivii:b008",
+  "stableId": "tour_source_sokrovishcha_bolivii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1082acb5f15e6e5aac1f6b94363d996709197be722191d2edd553d4551e17a25",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:d4744c5f089bdae4",
+      "field": "media.hover",
+      "sourceTextSha256": "3cb5280404dea26a90f2e771b16bc7a19bb7e417ad08805fac8341c62794890e",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-b636735b5996462e8f96510f828dcd10",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word 2026 describes the Potosí mine visit in paragraph 0037 but provides no caption for cars on a narrow street at the foot of the mountain."
+      },
+      "text": "Potosí: cars on a narrow street at the foot of the mountain"
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9a05c263fc7ccb58f02c5519be41607afbb2bb6bac84563fedf2337d89ce9ab7",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YP08hkivzMKzfoqc41RZ0VT57EyTri1_",
+        "documentSha256": "6a7c83af5974efb1fed6575ad61b4bde3e6fb576e5a34cce97a807a181fc9428",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "bc12106a5833eeaf903a524eb8b4a5c29877f378fffca4cdcfec5a6715f1fa5a"
+          },
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "98e85ac405b1b1bda23b61bec59323462b17f03340920fa187d9aa51b8f20599"
+          },
+          {
+            "ref": "word/document.xml#p0044",
+            "textSha256": "2f15cb29cee8649ae48b0fa8d5578c1334f7405b6b090b51a8b2525d28c8fb5e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses Word place names from the Day 7 heading and adds the high-altitude lagoons described in the same day’s itinerary."
+      },
+      "text": "Uyuni, Colchani, Incahuasi Island and the High-Altitude Lagoons"
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "390c828e66b4e770f8939ad451f1b941da99f3ab020d1153086770c8a46a0896",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-b636735b5996462e8f96510f828dcd10",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word 2026 paragraphs 0041 and 0044 cover the shared route. They do not contain the full RU itinerary block, which describes the landscape transition and specifies dinner at Hotel Los Flamencos. The Word description also includes a different summit panorama and vicuñas."
+      },
+      "text": "After breakfast at 10:00, visit the train cemetery, where old steam locomotives once used to carry minerals stand.\n\nContinue to Colchani to see how salt is dried, ground and packaged and to buy salt handicrafts if you wish. On the salt flat, see the salt mounds, natural springs and the Salt Museum, which is built entirely of salt blocks.\n\nLunch is served in the centre of the salt flat. The route continues to Incahuasi Island, where giant cacti grow, some more than 100 years old. The summit has sweeping views over the salt flat. On the way to the island, you’ll see the salt mounds, places where groundwater comes to the surface and the Salt Museum. In Colchani you can follow the entire salt processing cycle, from drying to grinding and packaging.\n\nAfter crossing the salt flat from north to south, follow a chain of volcanoes to Lípez, with a view of Ollagüe Volcano. Within a single day the white expanse of Uyuni gives way to dry desert, volcanoes and high-altitude lakes. Continue to Eduardo Avaroa National Reserve and the Cañapa, Hedionda and Honda lagoons, where three Andean flamingo species occur. Overnight at Hotel Los Flamencos, with dinner at the hotel."
+    },
+    {
+      "blockId": "tour:itinerary_label:3559cb86a0bec905",
+      "field": "itinerary.label",
+      "sourceTextSha256": "da1eb150ed67b377bf160e5ccd2ff403d5419f7f5304bf95ca5c19c8c311c26f",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YP08hkivzMKzfoqc41RZ0VT57EyTri1_",
+        "documentSha256": "6a7c83af5974efb1fed6575ad61b4bde3e6fb576e5a34cce97a807a181fc9428",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "98e85ac405b1b1bda23b61bec59323462b17f03340920fa187d9aa51b8f20599"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the documented English form of the place name in the itinerary paragraph as a standalone label."
+      },
+      "text": "Uyuni"
+    },
+    {
+      "blockId": "tour:itinerary_label:d7fa3ecf12011e95",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f491bc522202a11cd172fb2fb73a7db5c4ae03cca0b5b48d7a0e338af034a779",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YP08hkivzMKzfoqc41RZ0VT57EyTri1_",
+        "documentSha256": "6a7c83af5974efb1fed6575ad61b4bde3e6fb576e5a34cce97a807a181fc9428",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "98e85ac405b1b1bda23b61bec59323462b17f03340920fa187d9aa51b8f20599"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the documented English form of the place name in the itinerary paragraph as a standalone label."
+      },
+      "text": "Colchani"
+    },
+    {
+      "blockId": "tour:itinerary_label:8b7dba8a45a3f037",
+      "field": "itinerary.label",
+      "sourceTextSha256": "336c08dbbc33744a24d5fbab86311b4355fa5e8dd67a37110e48c477b6865931",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1YP08hkivzMKzfoqc41RZ0VT57EyTri1_",
+        "documentSha256": "6a7c83af5974efb1fed6575ad61b4bde3e6fb576e5a34cce97a807a181fc9428",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "98e85ac405b1b1bda23b61bec59323462b17f03340920fa187d9aa51b8f20599"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the documented English form of the place name in the itinerary paragraph as a standalone label."
+      },
+      "text": "Incahuasi Island"
+    },
+    {
+      "blockId": "tour:media_alt:6a62a352a8223524",
+      "field": "media.alt",
+      "sourceTextSha256": "43cf7e3dec37fdb153b94c12b169b8372c31d3ae2593690caff6c39083281840",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-b636735b5996462e8f96510f828dcd10",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word 2026 mentions lunch in paragraph 0041 but provides no accessibility description of the diners, the vehicle or the setting pictured."
+      },
+      "text": "Travellers at a table set for lunch beside a four-wheel drive on Bolivia’s Uyuni Salt Flat"
+    },
+    {
+      "blockId": "tour:media_hover:0b52815ed83fae3a",
+      "field": "media.hover",
+      "sourceTextSha256": "b1f200366a56866cc8c5b63986fe50c5fee71edd7d0d768e184917e7c2bdf6a2",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-b636735b5996462e8f96510f828dcd10",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word 2026 mentions lunch in the centre of the salt flat in paragraph 0041 but has no caption describing a lunch next to the vehicle."
+      },
+      "text": "Uyuni, Bolivia: lunch beside the vehicle on a white salt flat"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_karnaval_5_stran:b009",
+  "stableId": "tour_source_karnaval_5_stran",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b516c57cecbf43b97ea71d0d4601057ff67efc41a71d4b653f1f8db9c12549e1",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:5a1c6edb450a48de",
+      "field": "media.alt",
+      "sourceTextSha256": "260fbcd2272616ef56120e7d4cb5d746847a2a2d98862fbbc2bd42aaa4c27250",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw68i0kp-9eaib69xfj",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Buenos Aires city-tour passage names Casa Rosada but provides no image caption describing the flower bed or foreground."
+      },
+      "text": "The pink Casa Rosada behind a flower bed in Buenos Aires, Argentina"
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e7e4c8761d4ae283fc089e181c52b83ca7a238808371fb48f63798d736103415",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "6b3e86120cc59b20b63552269a7fdfc149af8ae5af48be3258cad95c964ef0b2"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Use the approved route heading and omit the day prefix because the website renders its own itinerary day number."
+      },
+      "text": "Buenos Aires – Santiago, Chile"
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ac85d7b7cddf07d68a0d9ba3b18a86fb870941f5e7c0f403bb87913bbe664478",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "0eba0b8a07cb5ad8fe5a517ac2acecad95fa5f69dabe2d2c2c3bf743a249462f"
+          }
+        ]
+      },
+      "text": "Breakfast at the hotel. Transfer to Buenos Aires airport for your flight to Santiago. Upon arrival, a driver will meet you and take you to your hotel."
+    },
+    {
+      "blockId": "tour:itinerary_label:7991947c43aeb0de",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "6b3e86120cc59b20b63552269a7fdfc149af8ae5af48be3258cad95c964ef0b2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved transfer heading supplies Santiago, Chile as the destination. Use the city and country as the standalone location label."
+      },
+      "text": "Santiago, Chile"
+    },
+    {
+      "blockId": "tour:media_alt:d1259d70718732b2",
+      "field": "media.alt",
+      "sourceTextSha256": "13dfdbfce6571abc7b3225bec9444209777dd460cf4892f87a390fa648e27429",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw68i0kp-9eaib69xfj",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The document names Buenos Aires in route headings and Argentina in the country list, with no corresponding photo alt label."
+      },
+      "text": "Buenos Aires, Argentina"
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "976a155c8e4520fa5b3c8a648a8527e864d31c94c0fcedb202e4837644984a93"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Keep the city and country from the approved city-tour heading and omit the day prefix used separately in the itinerary."
+      },
+      "text": "Santiago, Chile"
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2e7a1136d939b10f427b3ee6aa4f7b92cd80ab9b77c5ecae2e77ac6bd9237567",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "8b939f652978a2b75610df21894650a09cbcbf8fda4ee83ee297c0662e9a2df3"
+          },
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "6bd4d82c6530f48985949afdfd04d139feeb631310af51cf9cab66d5f7223f3f"
+          },
+          {
+            "ref": "word/document.xml#p0091",
+            "textSha256": "1138f6d845a6bfc07e1c8d2cfc2429b47a3838fab38ab73ec08b639af15e9ef8"
+          }
+        ]
+      },
+      "text": "Breakfast at the hotel.\n\nYou will enjoy a city tour with An English-speaking guide. The tour begins in the city center with a visit to the La Moneda government building, recognized as a historic monument. It was erected in 1799 during the final years of Spanish rule to house the royal mint and was built in the traditional neoclassical style. In the mid-19th century, the building was repurposed for the Chilean government, and since then, Palacio de La Moneda has been the residence of the country's government. Next, you will visit Plaza de Armas, Santiago's central square, where the history of the city began. The square is home to the Governor’s House of Chile, the Santiago Municipality, the Main Post Office, the Royal Audience building, and the Cathedral. Afterward, you will ascend Santa Lucia Hill, offering a magnificent panorama of the entire city. The tour continues with visits to the modern districts of Santiago: Vitacura, Las Condes, and Providencia, followed by a drive along the Mapocho River, where you will admire the majestic architecture of Santiago's main avenues.\n\nFor an additional fee, you can visit the vineyards in the Maipo Valley with a wine tasting. The cost is $230 per person (minimum 2 people)."
+    },
+    {
+      "blockId": "tour:itinerary_label:a807dfee0c6eab0a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "976a155c8e4520fa5b3c8a648a8527e864d31c94c0fcedb202e4837644984a93"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city and country from the approved city-tour heading as the standalone location label."
+      },
+      "text": "Santiago, Chile"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b005",
+  "stableId": "tour_source_fantasticheskaya_kolumbiya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "709435c0dd608281e0018f3ac0710b3790ee4ea89815f6e78c350598119e2a44",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:e4df219acac9c591",
+      "field": "media.alt",
+      "sourceTextSha256": "99b425940a0ea1467187dfb4ec2c436769093d6531cf6772a50daa71fe1849a9",
+      "text": "A metro train beside a stone church, with high-rises in the background in Medellín, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word city-tour text mentions the metro but has no alt description for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:48c6401110712484",
+      "field": "media.hover",
+      "sourceTextSha256": "2e291f121f2e909af5ccd68a14059ba4e2fd096b5815a628e98763b4c5e4a5f6",
+      "text": "Medellín: the metro, a church with towers and surrounding city buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word city-tour description has no hover caption for this image of the metro and church."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b265ff2529565a0ad7c6d5b323264d6741a8da8e8f93563f7ef54a52ae676454",
+      "text": "Medellín – Pereira",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0095",
+            "textSha256": "8a36dc660bc182df5cc4445584b0eb9a9963ac30e2911989696c9a9f1f4e1ea9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the route from the matching Word heading, restore the local accent and omit the day number handled by the website."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "26cf407b828479fad7ead72a048c20af1805230e2cd1f9992c2a52f3c634c42e",
+      "text": "Breakfast at the Hotel. Transfer to Rionegro International Airport to take the flight (not included), to the city of Pereira. Arrival in Pereira, welcome and assistance at the International Airport Matecaña and transfer to the hotel. Check-in and accommodation.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0098",
+            "textSha256": "150c03bfd2a2181b1af369c5093a008baa741b258545d93b2a5a2e466ee860b9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:236cbd9627418ae1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0183",
+            "textSha256": "d0b73dae2195e351caefbab16f601f55351165caeb86d0632484e61a3a91767f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the locally accented city name from the Word accommodation list for this itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d2d3c9f6d6a80a55",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+      "text": "Pereira",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0095",
+            "textSha256": "8a36dc660bc182df5cc4445584b0eb9a9963ac30e2911989696c9a9f1f4e1ea9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination name from the matching route heading for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:94000fd7bdef925c",
+      "field": "media.alt",
+      "sourceTextSha256": "6af4493dac851cb3a752b79d0191621c02e5942611bddccc073fc22369f9757c",
+      "text": "A Gothic church and elevated metro tracks among the buildings of Medellín, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The transfer day in Word has no alt text for the photograph of the church and elevated metro tracks."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:0246da9b3bcd8adb",
+      "field": "media.hover",
+      "sourceTextSha256": "92fb86bc86eebad0f8692f6f830a5a3842668dd3c622ba5ca1c0b7143ba2fa62",
+      "text": "Medellín: a church beside the metro line, with the city and mountains behind it",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word transfer section has no corresponding hover caption for the church and metro image."
+      }
+    }
+  ]
+}

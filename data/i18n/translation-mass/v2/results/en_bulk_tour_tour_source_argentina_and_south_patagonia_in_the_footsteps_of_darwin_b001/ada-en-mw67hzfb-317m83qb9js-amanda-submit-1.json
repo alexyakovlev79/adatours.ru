@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b001",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f63d66c890efdc8efb8e24d84466391c1a76ba47f1c4adc2e5dc24a74ae74d70",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "6d1bfe158cdf1974f580089ad51d08dfbd23cf07333db3fa63cb35200d73fef0",
+      "text": "Aconcagua Trek",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "3ec470ccc52a5292203251e0e809d4d7969017871dd3c0c8e189439a9e831ea2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "af3c23ecc4982182ae719489d3aeab88c8b351a45b39338b1fba887051046fb5",
+      "text": "Aconcagua rises to 6,962 m. The expedition allows time for gradual acclimatisation, several high camps and reserve days in case of poor weather or other circumstances. Porters carry part of the equipment.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzfb-317m83qb9js-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word overview and day-by-day itinerary do not contain a single equivalent lead covering high camps, partial porter transport and reserve days."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "aac34a31868bdab30191459917670c038dbc600b7f9e2ce09487c731f4e5d446",
+      "text": "Expedition",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "ff873519f0faef30741c6c29a1ab1fe5cc1a12166b7c5d15d360aa9b65bd5287"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the expedition format from the approved programme overview."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d528ae90267ce1e5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+      "text": "Mendoza",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "6f4b8cbe21b2359472b31cc0faa2d6cf4722a3169b8f2eca68068f173aa5eae4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the route stop from the approved day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:835ac035f01a11b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "646ad7aa145dee6103bd25054a779d0e989fbfbb14117ff57077e6e4f8eddcad",
+      "text": "Puente de Inca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0017",
+            "textSha256": "68a4e7eacabc354565f363900176cabb52820278e726bbbd41e943579a6848ed"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the approved place name from the Day 2 heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b413cca3cf244569",
+      "field": "itinerary.label",
+      "sourceTextSha256": "10064c71bfd1e49c5c68cbdf0f46e812a6ac19c2f29f125365e8a9958ebe923e",
+      "text": "Confluencia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "910271d3aad5255a2155a76beaa25d6adbdbe5e96a13839caf51d57d7e653d5b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the approved place name from the Day 3 heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8212520ff9800992",
+      "field": "itinerary.label",
+      "sourceTextSha256": "560ef7a6e20a40d86f188c09561da04bc5dfbb73d207203a25564a3825bf6cad",
+      "text": "Plaza Francia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0025",
+            "textSha256": "0bc71f5dad2f587c6de14c20d429f2020aafaa24cb4a40f61cb016b2846b0944"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the approved place name without the itinerary heading's activity descriptor."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:119dc2f319eb23e4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a7601156c4a99a851cd753a3673c0e66ce9924ed3c0f4b3597202f8290bbcf12",
+      "text": "Plaza de Mulas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "d4efc6711ec5a62995ee3b6c84682e1ead89590b197fd5e47aa50bb54a888ee1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the approved place name from the Day 5 heading."
+      }
+    }
+  ]
+}

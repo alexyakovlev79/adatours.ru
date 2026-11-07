@@ -1,0 +1,171 @@
+{
+  "jobId": "en:bulk:tour:tour_source_opyt_brazilii:b007",
+  "stableId": "tour_source_opyt_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f76e43114b836abe2d8e19957ec4b7d05056a3fbb22efb69f5c21ac027fcb008",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:fccd262c357ba0de",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The exact city name appears in the Word route overview and is reused as the itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:60417d6735d09d06",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary visits the Argentine side of Iguazú Falls but does not name Puerto Iguazú as a place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:af1f5e1e3602929d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eb189057949d6f59c226dc9647a96ecf7a6a1954ce74923caf8cac123f09dd54",
+      "text": "Visconde de Mauá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the accented place name from the Word route overview for the standalone destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:02ecf1dfd888473e",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "A shady street with trees and café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word describes Rio de Janeiro but contains no alt text for this photograph of a shaded street."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:63c43f38f0d54932",
+      "field": "media.hover",
+      "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+      "text": "Rio de Janeiro: a pavement café under the trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The 2026 Word programme has no hover caption for this photograph of an outdoor café."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "278888d872fd52ce49e2f3d8784f350745cdf19807078acdecb6759b8243e2c2",
+      "text": "Visconde de Mauá and its waterfalls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          },
+          {
+            "ref": "word/document.xml#p0068",
+            "textSha256": "ec94fbe2351f25d489d6a68e95934720585aefe6c2449a7812a3dd433cb78c5e"
+          },
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "873aca76c960a026b44b42333b7690cf909db2c9c0e9de930c1afdbe328c53a4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The Word day heading names Visconde de Mauá and its opening paragraph identifies the area's waterfalls; the website heading combines these."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7ab0d333c0674d8b7b366f445cbceaf280174550aa9e0f988e503fde1c4ce9d7",
+      "text": "Breakfast at the hotel. The Visconde de Maua region is famous for hiking, beautiful rivers, waterfalls and natural pools with crystal clear water.\n\nThe village of Maringa is the main shopping center of the region,  and if you want to go to a restaurant or just walk along a noisy street, don’t forget this  name.\n\nVila da Maromba is known as the village of waterfalls, which are  the most beautiful and popular in the region.\n\nOur driver is taking us into a natural protected area where we can discover 12 waterfalls in 1 easy hike. This place looks like the Garden of Eden. The beautiful falling water, surrounded by untouched nature and flowers, the amazing trees that form a complicated communication system with their roots and their main mother tree, the softly falling water and birds chirping around create an atmosphere that cleanses and inspires.  Brazilians believe that bathing in waterfalls cleanses not only the body but also the soul. You will find moments of solitude with mother nature! You can hike further up to see all 12 waterfalls in this system, and bathe in as many as you like.\n\nThe most popular waterfall  in the region is Escorrega. In addition to the beautiful natural pool, the waterfall has a natural slide. If you are courageous enough  you can experience sliding down or even jumping from a  7-meter cliff, but you can just walk along the bottom of the waterfall with a beautiful natural pool.⠀\n\nVarious optional activities can be done in this region:  climbing mountains, horseback riding,  bathing  in a natural pool, hiking and more!",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "873aca76c960a026b44b42333b7690cf909db2c9c0e9de930c1afdbe328c53a4"
+          },
+          {
+            "ref": "word/document.xml#p0070",
+            "textSha256": "3af3a8730baa56614b2ea35fb7c51bab229a53611c4b2ddd36bfec2016660871"
+          },
+          {
+            "ref": "word/document.xml#p0071",
+            "textSha256": "655739f06a199f5fe00e4c0f8cf49c236aaa55db6763e1f6d63651ff0985a1e1"
+          },
+          {
+            "ref": "word/document.xml#p0072",
+            "textSha256": "328c9a1249bb92812ea3699accdfd1a3c13699efc14b5421656fe89ab41b4dcb"
+          },
+          {
+            "ref": "word/document.xml#p0073",
+            "textSha256": "508973686d669729a16922a9ce9786032535a0b3216859b38acd71bdfa1a8ee6"
+          },
+          {
+            "ref": "word/document.xml#p0074",
+            "textSha256": "fbe2f3d847c040f8086bb73a56e52f2ec66366cf575bfc638227d50fc75689de"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7fcaccb285e4797c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "20cbc78e10fcd5d16099e2b6d35efe63da3335e3e193c7754e56e56a11a47fc1",
+      "text": "Maringá (Visconde de Mauá)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0070",
+            "textSha256": "3af3a8730baa56614b2ea35fb7c51bab229a53611c4b2ddd36bfec2016660871"
+          },
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The Word day narrative names the village and the route supplies the regional name; the website place label combines both."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 357,
-    "leased": 0,
+    "queued": 356,
+    "leased": 1,
     "review": 2459,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 353,
-      "leased": 0,
+      "queued": 352,
+      "leased": 1,
       "review": 120,
       "ready": 0,
       "retryable": 0,
@@ -996,8 +996,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 17,
-          "leased": 0,
+          "queued": 16,
+          "leased": 1,
           "review": 0,
           "ready": 0,
           "retryable": 0,
@@ -1017,7 +1017,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T10:26:41.752Z",
       "earliestRetryAt": null
     },
     "0e": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw6661p3-gsvlk8obwt-amanda": {
+      "jobId": "en:bulk:tour:tour_brazil_south_12d:b004",
+      "token": "ada-en-token-mw6661p3-gsvlk8obwt-kzjt4bxtsg",
+      "expiresAt": "2026-11-07T10:26:41.752Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -9065,8 +9072,15 @@
         "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b003",
         "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b005"
       ]
+    },
+    "ada-en-mw6661p3-gsvlk8obwt-amanda": {
+      "token": "ada-en-token-mw6661p3-gsvlk8obwt-kzjt4bxtsg",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_south_12d:b004"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T08:30:30.042Z"
+  "updatedAt": "2026-11-07T08:56:41.752Z"
 }

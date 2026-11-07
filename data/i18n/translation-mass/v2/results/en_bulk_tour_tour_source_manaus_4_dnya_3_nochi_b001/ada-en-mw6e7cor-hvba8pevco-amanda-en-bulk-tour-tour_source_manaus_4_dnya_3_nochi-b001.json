@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_manaus_4_dnya_3_nochi:b001",
+  "stableId": "tour_source_manaus_4_dnya_3_nochi",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3601a52a994376fd814ddc9996ba2c20b866c65c5b7f349c06051bebaa0b9815",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "11fa20e0f3e06626477a48007c46bff461d58b688b975786cf7d7b67d79dbe2c",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "d6c2e8f87879ae81e45938f26dfebad6c20e8ebe8f38cf725f271446ae945906"
+          },
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "837e1dd1ab605a2f3401d28044fbe45955395f6d307ee54c1f34c183d6ccc962"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word title and duration appear on separate lines and together form the page title."
+      },
+      "text": "Manaus: 4 days / 3 nights"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "b126ec82ebaf44047d09b41ad2160b14d82cd9d7239c43ba2051afb1d63c9194",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7cor-hvba8pevco-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word has no standalone lead. Lodge activities and optional excursions appear in separate itinerary and excursion sections."
+      },
+      "text": "Spend four days at a lodge in the Amazon rainforest. Take boat trips through the flooded igapó forest, learn about Caboclo life and try fishing on the Amazon’s tributaries. Activities at the lodge are included. Optional outings include a visit with pink river dolphins, a trip to the Meeting of the Waters, a jungle hike with survival skills and a visit to the Monkey Forest."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "b932e41d5e582297f1a12e2d29976145d0dae535f5be7c41f393b1fdf5a27bc9",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7cor-hvba8pevco-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The matched Word quotes different occupancy-based rates and does not contain the current site amount. The source price is retained verbatim."
+      },
+      "text": "$1298"
+    },
+    {
+      "blockId": "tour:itinerary_label:e627aedc2c33b81f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b92443299e337620a456e7e406ecf78abb03f476d60829dc83e6b74f77389c47",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "d6c2e8f87879ae81e45938f26dfebad6c20e8ebe8f38cf725f271446ae945906"
+          }
+        ]
+      },
+      "text": "Manaus"
+    },
+    {
+      "blockId": "tour:itinerary_label:f71202a958287b68",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bf35e13d17eb3862a8db21a927b52cb4feb8b292a55a445baf35645733ef4cdd",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "eaf703de995786385be374d65bc3b25e3d079fd182ec6c751353485c604abb1b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The arrival paragraph identifies the lodge reached after arriving in Manaus."
+      },
+      "text": "Amazon lodge"
+    },
+    {
+      "blockId": "tour:included:5a36b57155005f4d",
+      "field": "included",
+      "sourceTextSha256": "07a20debf8e27ed2d82e4ea58c2c052a84420c6e622706726762a8573d0346f2",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0052",
+            "textSha256": "32142ca04b44e20f15c6edd429fa20ae21a62672b84b42193da60cba42337247"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The first line of the Word inclusions names the equivalent accommodation benefit."
+      },
+      "text": "Accommodation in selected hotels or similar"
+    },
+    {
+      "blockId": "tour:included:106af3392eba36fd",
+      "field": "included",
+      "sourceTextSha256": "da91cb14da3941660f4a3bff1255161a06dd4bf448347569b756c6a6ba6c84ee",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0053",
+            "textSha256": "bcc4bbfc151d654b91b09563e1e67580ddb9a493dccf15e8773acb559ad191fd"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The Word inclusion states which excursions are covered. The list marker is rendered separately."
+      },
+      "text": "Excursions mentioned in the program"
+    },
+    {
+      "blockId": "tour:included:4f1fdd2ac82f205a",
+      "field": "included",
+      "sourceTextSha256": "7eb41e0b4f1028ece8f5697a9627d3b6d079f29084756e67893720185daf2e95",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0054",
+            "textSha256": "0a5bd914dc897268b965f31765c7fa6dbf929031e71690d9c67e00c437caf7b9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The Word inclusion lists entrance fees. The list marker is rendered separately."
+      },
+      "text": "Entrance fees"
+    }
+  ]
+}

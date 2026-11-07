@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskij_paragvaj:b001",
+  "stableId": "tour_source_klassicheskij_paragvaj",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "489aa83c5714ee6a4db0d1422619c7ed24b86d7e9c0b7a7c7297e4506849dac4",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "39ddf2eaf91de6c89e0e8a6e770b0959354cd4c88592791836e752dee42de701",
+      "text": "\t\t• Nsa Sra de Copacabana 680 / 916 Rio de Janeiro • Brazil • Tel. +552134356408 •",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/footer1.xml#p0001",
+            "textSha256": "d8dba1530bb2b226fb8ddb64ac753ee3b42719c6523bb6a36cbf18c5fe3cb50f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "be9d25b521b8c83f6883257206ba8304a78445d0bb83d96c344b085c60ad315f",
+      "text": "This eight-day journey takes you from Paraguay’s capital to the plains of the Chaco and the country’s southeast. Visit Asunción, Mercado Pettirossi, Mennonite colonies, sites from the Chaco War, Jesuit missions, a yerba mate factory and the Itaipu hydroelectric dam.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hiq1-1zrghxdha0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word gives the route and daily programme but has no equivalent eight-day introductory paragraph that includes Mercado Pettirossi and the other sites together."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "c91ef055d50cc706846d3128122da7443b60666ecff7005c31316fc9e1ac301c",
+      "text": "$3903",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hiq1-1zrghxdha0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word table has no matching $3903 entry. The existing price string is retained verbatim under the commercial data lock."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6590c4430c2dec07",
+      "field": "itinerary.label",
+      "sourceTextSha256": "02af373c5969d80f6d3d359a5b66fb1b80d46de331cdb1045713cf1272787390",
+      "text": "Asunción",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "847865d32dd902b662b060799f0f27bb0d0c03f04dac6976d8531d6b0d8b7a99"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The name is preserved from the matching itinerary heading as a standalone label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:25e5b42dd87e1378",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b4b85aefbe168afdb88bd6a005e1673b46d5fabbc6293de4ac3b507da02cf403",
+      "text": "Chaco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "451cf2fa6022ddfa4a6660e17f3e3c208e24f8fc31f68c2982746c8b6f4479ae"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The name is preserved from the matching itinerary heading as a standalone label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c1cedc81f7536175",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1121332ffea7458a0d04f2691092ca1bb40e95f1675d01f6384064671660f3e2",
+      "text": "Jesuit Missions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/footer1.xml#p0002",
+            "textSha256": "5f576598138069ff4ea66c1cf5065b062296952dd5e48ecbdc5680a6b796526c"
+          },
+          {
+            "ref": "word/document.xml#p0044",
+            "textSha256": "1e06454c23cb4d6846a07399f5fd22e3ecfe478868e9bf240bc27f01b0a242aa"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The name is preserved from the matching itinerary heading as a standalone label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a1e678140751cbff",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4fd372616beba8067d774d40e1110b1a0b476abccafc8b98034b8358b0ac5b23",
+      "text": "Triple Frontier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/footer1.xml#p0002",
+            "textSha256": "5f576598138069ff4ea66c1cf5065b062296952dd5e48ecbdc5680a6b796526c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The name is preserved from the matching itinerary heading as a standalone label."
+      }
+    },
+    {
+      "blockId": "tour:included:07067b478e9f2b90",
+      "field": "included",
+      "sourceTextSha256": "adf4399135b19a54bd2a899b23ebc2a1f681817871219f500c8efe868cd432fc",
+      "text": "Transfer IN from Asunción airport to hotel in Asunción",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "a46e85d534fd7b7477b3c8e258bef41dba1a46165a6dfc58efe85e01336478b3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The content field renders its own list marker, so the Word bullet and tab are removed."
+      }
+    }
+  ]
+}

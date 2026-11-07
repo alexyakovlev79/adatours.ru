@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b007",
+  "stableId": "tour_source_beliz_strastnyj_nablyudatel_za_ptitsami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "03ac4b1eefbb31b752339694ef3c915671b45b04a8dbb6bcdd2869ea8e34b9ae",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:cb03ad805771c267",
+      "field": "media.hover",
+      "sourceTextSha256": "f00cb7a247c3323bc9da2ef26c5372049f69212b0221bce890fb6bfc99ff1abd",
+      "text": "Crooked Tree Wildlife Sanctuary, Belize: birds by the lagoon at dawn",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word describes the Crooked Tree visit without a caption about the lagoon at dawn."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "14b20dbb57abba9ac4817cbc1b7fa49ebd30405a93eba6ebe2703f04bc0f04d6",
+      "text": "St. Herman’s Cave and the Inland Blue Hole",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "f04613e89523268bbde29d2d82d89a321b3a6e1715e4fb1f4d486a82dbb263f6"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Builds a short heading from the two sites named in the Day 03 Word narrative."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2463d2a6e4f4dfe8762df317618bd0a229da705d7b28d41c725baa3e141edc8c",
+      "text": "Today, you will be road transferred to Dangriga, with a stop en route to explore St. Herman’s Cave and the Inland Blue Hole National Park. Lunch and park fees are included.\n\nOvernight at Pelican Beach Resort.\nBreakfast and lunch are included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "f04613e89523268bbde29d2d82d89a321b3a6e1715e4fb1f4d486a82dbb263f6"
+          },
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "d80e253d030875123ad936838a94f44618624870442ffcefda46542def3b2788"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7b247633f4ec9fff",
+      "field": "itinerary.label",
+      "sourceTextSha256": "35e0e8d2ef8dfd53944479c8dd7dbb34857fae5edf7f5ba32df150f93d97783e",
+      "text": "St. Herman’s Cave",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "f04613e89523268bbde29d2d82d89a321b3a6e1715e4fb1f4d486a82dbb263f6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the cave name from the Day 03 Word description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ee0044c661fdd81e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9758e7bc3431232c6ceff972dd4a92f10197930fe1dd103fe9ff2cb4b36dd768",
+      "text": "Inland Blue Hole National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "f04613e89523268bbde29d2d82d89a321b3a6e1715e4fb1f4d486a82dbb263f6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the park name as it appears in the Day 03 Word description."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2e0d54b7f0f3831a",
+      "field": "media.alt",
+      "sourceTextSha256": "59857000c8bb10b7825b6a277038d072fc6171e2de32b340a687567be5de7f46",
+      "text": "Dark entrance to St. Herman’s limestone cave among trees, roots and mossy rocks in Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word gives the cave visit and admission details without describing this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:944fb374450a6cbf",
+      "field": "media.hover",
+      "sourceTextSha256": "ae5f89e5637108f7fb2546fed9e404866bdb1486c31d70214be8572faf0678b8",
+      "text": "St. Herman’s Cave: an entrance shaded by tropical forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word itinerary has no hover caption about the forest shade at the cave entrance."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1a4f837a947e6558b4fbd66b538fdff003f545e7cf5f91e51e7409f9f3cbe8e7",
+      "text": "Cockscomb Basin Wildlife Sanctuary",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0025",
+            "textSha256": "5cb4207c8d5f463611d554bdd2da364447111df2630de3f4d9f8dc5f584f0c25"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the sanctuary name used in the Day 04 Word description."
+      }
+    }
+  ]
+}

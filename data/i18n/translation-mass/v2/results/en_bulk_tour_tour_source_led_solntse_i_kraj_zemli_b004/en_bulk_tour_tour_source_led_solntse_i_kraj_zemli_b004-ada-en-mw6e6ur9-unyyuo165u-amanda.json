@@ -1,0 +1,138 @@
+{
+  "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b004",
+  "stableId": "tour_source_led_solntse_i_kraj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c549609fa3d4e8fdb1b7a6997a973977c22f37e10c818648d133c27a3379bf55",
+  "blocks": [
+    {
+      "blockId": "tour:note:a566294992256878",
+      "field": "note",
+      "sourceTextSha256": "9e43c6c36d32a7106bbab67c9f879618ba88282d32306203a2d47a9ad251357f",
+      "text": "Prices are subject to change, the final cost of the tour will be indicated when confirming all services and checking the cost of flights on the date of booking the tour.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0101",
+            "textSha256": "db4e2e27ebed927669622a022b951ddd9aa0e17e89d1fed7c296ae742794c808"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the leading Word footnote marker while retaining the full price condition as written."
+      }
+    },
+    {
+      "blockId": "tour:note:e77794dda227f2c8",
+      "field": "note",
+      "sourceTextSha256": "975e619b6002ae37d00892a5a6cf2324133ad66d0aeda0441d9674ee1073f54d",
+      "text": "The host is not responsible for missed breakfasts at the hotels when checking out in the early morning in case of an early flight or excursion.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0102",
+            "textSha256": "e1f43d38fab5c406966c4a18fb79f70fb07b19aeec8ee3af0704217838cac6ef"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the leading Word footnote marker while retaining the full breakfast condition as written."
+      }
+    },
+    {
+      "blockId": "tour:note:75f9ae9592c39346",
+      "field": "note",
+      "sourceTextSha256": "c6d6bd5c29569798b8e9ae226cf6ad6a6ce0cc7f286a674d625bfde0b87ed44d",
+      "text": "Your hotel for the two nights in Ushuaia will be confirmed at booking. The current price list does not specify the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0013, p0021 and p0029 name historical category-specific hotels, but provide no note about the unnamed Ushuaia hotel in the current price list or its confirmation at booking."
+      }
+    },
+    {
+      "blockId": "tour:note:570d417e126ac335",
+      "field": "note",
+      "sourceTextSha256": "51bd7685f31d3c7a9b3b718d431fba4227c6f3fe1d54429b8e0e6a7811636419",
+      "text": "SGL means single occupancy, DBL means double occupancy, and TRL means triple occupancy. Prices are per person and depend on the number of travellers.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0006–p0011 gives a per-person heading and abbreviated column labels, using TRP for triple, but does not contain the current note explaining TRL or the role of group size."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "98cf5e803d87577aee693ed1b90f1527d83d196800ae189d0b5682baf3017dc6",
+      "text": "Buenos Aires: Arrival",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "c05b03b2409d664c98f64c3d05088ae8e869e5ca04c77ed95f167ca8c628aae3"
+          },
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "aa5c95d0ac52bf23122027f8af40eca0a17e46b09ca737b782bcb8b2380aefa0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses the Buenos Aires day heading and the arrival explicitly described in the matching itinerary paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ac71479f220a49d5a2548b894f2c0c6f27937ccd963172818987a9b0e9c568cd",
+      "text": "Arrival at Buenos Aires airport. Private transfer with driver to the hotel. Stay for two nights.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0039 gives the matching arrival and transfer verbatim but does not include the two-night stay. The duration is given separately in the hotel table, so no complete single Word paragraph matches the assigned block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:086c00a2bb054f75",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "c05b03b2409d664c98f64c3d05088ae8e869e5ca04c77ed95f167ca8c628aae3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the standalone place label from the confirmed Word Day 1 heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:63610b4462f76022",
+      "field": "media.alt",
+      "sourceTextSha256": "13ff273f4479cd33482ae3608444faa65be5f61939a33d524c38d3cf0bc8c9ea",
+      "text": "High-rise buildings on the waterfront in Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Buenos Aires arrival and city-tour text at p0038–p0043 contains no alt text for this waterfront photograph."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 269,
-    "leased": 9,
+    "queued": 268,
+    "leased": 10,
     "review": 2538,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 265,
-      "leased": 9,
+      "queued": 264,
+      "leased": 10,
       "review": 199,
       "ready": 0,
       "retryable": 0,
@@ -316,8 +316,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 5,
-          "leased": 0,
+          "queued": 4,
+          "leased": 1,
           "review": 10,
           "ready": 0,
           "retryable": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:07:08.876Z",
       "earliestRetryAt": null
     },
     "17": {
@@ -1394,6 +1394,12 @@
       "jobId": "en:bulk:tour:tour_source_karnaval_5_stran:b003",
       "token": "ada-en-mw67hzzw-z293wwf1e7-5dh5u8ee8s8",
       "expiresAt": "2026-11-07T11:06:50.696Z",
+      "generation": 1
+    },
+    "ada-en-mw67hul8-dg2khvjhx0j-amanda": {
+      "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b011",
+      "token": "lease-mw67hul8-dg2khvjhx0j-qpmilcwgg3",
+      "expiresAt": "2026-11-07T11:07:08.876Z",
       "generation": 1
     }
   },
@@ -9355,7 +9361,8 @@
     "ada-en-mw67hul8-dg2khvjhx0j-amanda": {
       "token": "lease-mw67hul8-dg2khvjhx0j-qpmilcwgg3",
       "jobIds": [
-        "en:bulk:tour:tour_source_krasota_venesuely:b010"
+        "en:bulk:tour:tour_source_krasota_venesuely:b010",
+        "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b011"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_krasota_venesuely:b010"
@@ -9406,5 +9413,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T09:37:01.238Z"
+  "updatedAt": "2026-11-07T09:37:08.876Z"
 }

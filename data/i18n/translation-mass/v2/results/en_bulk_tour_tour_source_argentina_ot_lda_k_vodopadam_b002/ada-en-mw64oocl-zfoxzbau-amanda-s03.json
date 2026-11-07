@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b002",
+  "stableId": "tour_source_argentina_ot_lda_k_vodopadam",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "10377749d02f3e91f0a53491ebd5ac0f037c6b6c54b4df0238611c2218153e8c",
+  "blocks": [
+    {
+      "blockId": "tour:included:ba6c8e94b5d275df",
+      "field": "included",
+      "sourceTextSha256": "8c8a8e354017b469da6f94f196692e136b6e3673374f90665d885b3f971137c0",
+      "text": "Private transfers with driver only",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0115",
+            "textSha256": "22a800ed3cf7d34a132ea6f7049e059911438bd149246ff525f61be846a979cd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:5e2b1fdb0a4868be",
+      "field": "included",
+      "sourceTextSha256": "0f303d4b49f999400c229962dba1e64ce43a881b8454f0148cc04bf07849226d",
+      "text": "Private tours with an English-speaking guide in Buenos Aires and Iguazú, as listed in the itinerary.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0116",
+            "textSha256": "280c7b85da1308482f0e02fa893d9c8703714f0660b0c9be9c4dcacb62a4181a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separate the private Buenos Aires and Iguazú services from the shared El Calafate tour in the same Word inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:6fe4a0bc290fc69d",
+      "field": "included",
+      "sourceTextSha256": "6bb6fca1d46fe37e85ca5518516a6860cddd393d80f7ac63d5e1aa77303e3a1f",
+      "text": "Shared tour with an English-speaking guide in El Calafate.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0116",
+            "textSha256": "280c7b85da1308482f0e02fa893d9c8703714f0660b0c9be9c4dcacb62a4181a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separate the shared Calafate service from the private tours in the same Word inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:b7ca3639f62735e6",
+      "field": "included",
+      "sourceTextSha256": "0af30d3461cb357a1411b83a95bf6b2efc9ca3ade80b7ecd08d7a992771e01a9",
+      "text": "Admission tickets as listed in the itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word inclusion names national park entrance fees only and does not state the current broader itinerary-wide admission item."
+      }
+    },
+    {
+      "blockId": "tour:included:c420e646c26efdd3",
+      "field": "included",
+      "sourceTextSha256": "0dfbdfc8f495bf9bd4df53df8f08a347751eaa6774db54b0a3b638088c7e2f9b",
+      "text": "Tango show with dinner in Buenos Aires.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "03fd76d88c1fd473d71db602a6bdeeb4d5c16a3c1c73cd59809516179362d1fa"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Render the Word itinerary’s Tango Porteño dinner and show as the corresponding city-level inclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional tours",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0123",
+            "textSha256": "8d864252e0eb3f5a9818cf4f2ea209c308066601e0f77d4412e74ec1f82a5dfa"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:0b2ddf3e62a69483",
+      "field": "notIncluded",
+      "sourceTextSha256": "7e4cf6ec2d1c8c5bca8d26c43279f0c6f40bac8211f82f2b28738fbfd26d9a58",
+      "text": "Tigre and the Northern Zone: $100 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word gives the optional Tigre and Northern Zone tour name but does not quote the website’s $100 per person for it."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a9ffde8e30f0d46e",
+      "field": "notIncluded",
+      "sourceTextSha256": "a92d6a41fe1e75b8fb65fdde045d556620761e19888708a23faa63e320ac9e0f",
+      "text": "Fiesta Gaucha: $250 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes Fiesta Gaucha at Santa Susana Ranch but gives no $250 per-person rate for the excursion."
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b012",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6e3bc072c9afc1edfc2198328e11291558e1ce77ce1d99810d779c7613e74bed",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:11b1e5914d1ad908",
+      "field": "media.alt",
+      "sourceTextSha256": "2006e02207e6125b64f3fec56334f4f88896bcf680d96ae9f966efd389c57151",
+      "text": "Climbers walk toward tents on a rocky high-altitude slope at Nido de Cóndores, Aconcagua, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word names Nido de Cóndores but contains no caption for the climbers walking toward the tents on this slope."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3fa90c332083d7ac",
+      "field": "media.hover",
+      "sourceTextSha256": "c3e6bed3b930eae319392cfa43aaa9c60adba3b1a3dd35a7df5aab5e6fb79bc5",
+      "text": "Nido de Cóndores, Aconcagua, Argentina: climbers heading toward tents on a rocky high-altitude slope",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary contains no hover caption describing the climbers approaching the tents in this image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "638267c1540dcd069f249ca8ddf1dcc91b2d087b9044efb36d451018ec988b7d",
+      "text": "Nido de Cóndores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "6fd2d38cd2e2d2cede6e0978ddde3e967fdefb0b172f8c4b594a0f1084a127e5"
+          },
+          {
+            "ref": "word/document.xml#p0070",
+            "textSha256": "1c8c21314a8ce91293a835cce3540def80f5b6c051552517eefa1475eb87d7ad"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the official camp name from the Word arrival heading for the acclimatization day at Camp 2."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6b6d85c8d9c4a15250960cce01e8984eec002fdfb93f14f87b7af8beb9553876",
+      "text": "This day is dedicated to improving acclimatization to the altitude. The guide may suggest different activities depending on the group’s condition. We will take advantage of this time to rest and give our bodies more opportunities to adapt.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0070",
+            "textSha256": "1c8c21314a8ce91293a835cce3540def80f5b6c051552517eefa1475eb87d7ad"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the inline Word day heading so that its unchanged itinerary body fits the site's separate title and text fields."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3d42a4b47a58b834",
+      "field": "itinerary.label",
+      "sourceTextSha256": "638267c1540dcd069f249ca8ddf1dcc91b2d087b9044efb36d451018ec988b7d",
+      "text": "Nido de Cóndores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "6fd2d38cd2e2d2cede6e0978ddde3e967fdefb0b172f8c4b594a0f1084a127e5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the camp name from the Word heading for use as a standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fea197f4ff886e31",
+      "field": "media.alt",
+      "sourceTextSha256": "602ff7dfa41490fe39217bc8ceaff3b058c512ae332916ab2c5d653957917d42",
+      "text": "A climber rests beside a red tent at Nido de Cóndores, Aconcagua, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word text does not caption the resting climber and red tent shown in this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:01ae71a10c973722",
+      "field": "media.hover",
+      "sourceTextSha256": "b4da2c9ede1db095f05b1a9b0708e7f58f52651cd36d91db967dc7814b265dfb",
+      "text": "Nido de Cóndores, Aconcagua: a rest beside a tent on the mountain plateau",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word has no hover caption for the tent and plateau in this specific camp photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5530478b1b3d30dade67db5cf668f193b67d0f761cf3cf2c8b53a830eb86fa83",
+      "text": "Nido de Cóndores – Berlin–Cólera (5,900 m) – Nido de Cóndores",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word has a general Camp 2 acclimatization day and a separate one-way ascent to Camp 3, but no matching 5,900 m out-and-back heading."
+      }
+    }
+  ]
+}

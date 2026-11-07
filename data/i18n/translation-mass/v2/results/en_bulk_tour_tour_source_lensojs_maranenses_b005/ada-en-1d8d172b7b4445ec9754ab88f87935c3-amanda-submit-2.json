@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lensojs_maranenses:b005",
+  "stableId": "tour_source_lensojs_maranenses",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7837f7b327458d6f1f0b7ee0af49ce8040e68dffe45295a7c3d59b0556f0f35a",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:41ad35344982a815",
+      "field": "media.hover",
+      "sourceTextSha256": "9d7b488ca2450ace9570c1d540924441afada770f3f1f865cbfd6d478f072eeb",
+      "text": "Lençóis Maranhenses: lagoons between pale sand dunes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The verified Word contains no caption for this website itinerary photo; translate the pinned RU image text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5e0491695f3dd690bf3e36717f2d2a1405162d3141b7f384d3497f31e3d0d80e",
+      "text": "Barreirinhas – Preguiças River – São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "c7ae17261783e2e93a6459fb30624c85601c99888fd9bb6b0a35c48bdbc40e7b"
+          },
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "6a4139a718b635baf9eb5a73ea8b9ffa03f85aa3b050484f8ed5409a8b1fd164"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the departure point, river route and return destination of the verified day in the site’s itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "253a8905c667eacc5fc25b0999953eea57b037468949006af68bfac52504d2c7",
+      "text": "Breakfast at the hotel. At 8:30 AM, we will embark on a motorboat tour along the Preguiças River. Our first stop will be in Vassouras, also known as \"Little Lençóis,\" where you can enjoy a refreshing coconut water, take photos of the local monkeys, explore a quaint fishing village, and climb the 160 steps leading to the Pérgula Lighthouse, which offers stunning views of the surrounding region, including the dunes, the river and its sources, the ocean, and the local vegetation. Afterward, we will return to São Luís. Accommodation at the Luzeiros Hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "6a4139a718b635baf9eb5a73ea8b9ffa03f85aa3b050484f8ed5409a8b1fd164"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dbe30a22a047bcd0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+      "text": "São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "6a4139a718b635baf9eb5a73ea8b9ffa03f85aa3b050484f8ed5409a8b1fd164"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the return destination explicitly named in the corresponding Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:92ae7d8066ed8291",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6e667fb5a9e887789091966d624a2699b5d59d30110d7cf750f4f74b79565fb0",
+      "text": "Barreirinhas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "c7ae17261783e2e93a6459fb30624c85601c99888fd9bb6b0a35c48bdbc40e7b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place name in the corresponding Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4fdc6f23ef452a30",
+      "field": "itinerary.label",
+      "sourceTextSha256": "81a74118841227ec7f4cbb3616710b6b44d7fcac84c278cadcb503de34e4aaba",
+      "text": "Preguiças River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "6a4139a718b635baf9eb5a73ea8b9ffa03f85aa3b050484f8ed5409a8b1fd164"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the river name explicitly given in the corresponding Word day."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:724a8faba5a4b82c",
+      "field": "media.alt",
+      "sourceTextSha256": "1c92c9621ed04f87b1f9970d71a88d683a9b218b3cd092a83dc321436a1169ec",
+      "text": "Red windows and metal balconies on a blue-tiled façade in São Luís, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The verified Word contains no caption for this website itinerary photo; translate the pinned RU image text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:551fc83e9e072984",
+      "field": "media.hover",
+      "sourceTextSha256": "cd3fc403512aef62526f79f31564b488b7526095db40b262f4bbe3ff972776e5",
+      "text": "São Luís: patterned tiles around red windows",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The verified Word contains no caption for this website itinerary photo; translate the pinned RU image text."
+      }
+    }
+  ]
+}

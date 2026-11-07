@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b008",
+  "stableId": "tour_source_fantasticheskaya_kolumbiya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "abdb31097c8b6beab40973296904597ce80e1eed7160031dcba98294d5440cd0",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:d84bc7ac4b1697f3",
+      "field": "media.hover",
+      "sourceTextSha256": "00512ce4a5c6882a83a8c8b2a4e451a1b4f2da9d7600988747a450dfb11cee66",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw68i0kp-9eaib69xfj",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Santa Marta city-tour and trek paragraphs contain no caption for the pictured coastal settlement, boats and mountains."
+      },
+      "text": "Santa Marta: a coastal settlement and boats framed by mountains"
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "98e143942998da8468691880fe31b9862dc1fd377f839a2536027cbf78709db9",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0122",
+            "textSha256": "cc140dff83087c6856967f9d760dfbf296992707387fdbf1f375a3c63edd35c5"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The itinerary component displays the day number separately. Use the confirmed route from the Day 9 heading without its day prefix or final colon."
+      },
+      "text": "Santa Marta • Mamey • Cabaña de Adan Camp 1"
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1360b78d831c3092d3e3412d677b8397f36cc757426ecf28a071c81bac9f1f23",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0124",
+            "textSha256": "9cce5fd8e72a8d73041a4639b39b117dfbf04f9e368a0ce9b4ad6989641bfcb0"
+          },
+          {
+            "ref": "word/document.xml#p0125",
+            "textSha256": "953140cd86fb3ebce8d29adcb03c445809d368776856e7213527432a9e8a3ccd"
+          },
+          {
+            "ref": "word/document.xml#p0126",
+            "textSha256": "391a1a1b434dbd011a38bfb86cc21db3474b2eb0f9a1fc0e1f06fa6004f57ed4"
+          },
+          {
+            "ref": "word/document.xml#p0127",
+            "textSha256": "bc4b4ca5bf4b1f2f40d1581051e90f1822b4bf4010ecac5d9612a08c08c25116"
+          },
+          {
+            "ref": "word/document.xml#p0128",
+            "textSha256": "26c5343fb7b1ec102969a650ac39b91f24eee14c31d2aa38508137187de64021"
+          },
+          {
+            "ref": "word/document.xml#p0129",
+            "textSha256": "c615d2a759292372e0f88403316be44e304225e5f696fd292e0001b91c14af10"
+          }
+        ]
+      },
+      "text": " Breakfast at the hotel. At 10:00 am, transfer from hotel to the point Aguacatero where a Pick up 4x4 will take us to Mamey. Lunch in the village (Included). Our first camping day will start with a walk along the river. At the first stop, we will take a bath in a natural pool. From this point, the steepest hill begins, continuing until reaching Cabañas de Adam where we will enjoy the spectacular natural pool and waterfall. There we will spend the night in hammocks. Dinner at the camp (Included). \n\nDuration: 3 hours. \n\nDistance: 7.6 km. \n\nAltitude: 450 m.\n\nRemark: Accommodation in hammocks/beds/marquees with mosquito nets and blankets\n\nOptional: Mules for luggage transport"
+    },
+    {
+      "blockId": "tour:itinerary_label:c412d2d4a47a2e13",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32c8dc5297665ad8f4f10fd6404a0105bdce4aa7f012589240107ed1e70d55b3",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0122",
+            "textSha256": "cc140dff83087c6856967f9d760dfbf296992707387fdbf1f375a3c63edd35c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the first place name from the approved Day 9 route as this standalone location label."
+      },
+      "text": "Santa Marta"
+    },
+    {
+      "blockId": "tour:itinerary_label:097e03c7a8707319",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0c3e44fca214439cacc319470f5a24d5595de781176cc1d207619f8e451fd275",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0122",
+            "textSha256": "cc140dff83087c6856967f9d760dfbf296992707387fdbf1f375a3c63edd35c5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the second place name from the approved Day 9 route as this standalone location label."
+      },
+      "text": "Mamey"
+    },
+    {
+      "blockId": "tour:media_alt:783f4a16814c93b5",
+      "field": "media.alt",
+      "sourceTextSha256": "441f826f80607d06a951d63c6bbed61c95bf61cf34ed94173f1c2fcc3f615e4b",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw68i0kp-9eaib69xfj",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Santa Marta and Day 9 Word sections do not describe the image of a palm-lined beach, rocky shore and turquoise bay."
+      },
+      "text": "Palm-lined beach with coastal rocks and a turquoise bay near Santa Marta, Colombia"
+    },
+    {
+      "blockId": "tour:media_hover:7aa4995829d4d288",
+      "field": "media.hover",
+      "sourceTextSha256": "0d9efc1d03b3ed2c8ee7f3ec43baebdbf8047b819c93b3b58648ba248dd8bca6",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw68i0kp-9eaib69xfj",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Day 9 Word programme contains no photo caption describing the tropical shore, palms and rocks visible in this image."
+      },
+      "text": "Santa Marta: a tropical shore with palms and rocks beside clear water"
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c216eb86f305cea25c5f9dec9e9e2c2298f89d1e3c645957164920eb92b170b4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0131",
+            "textSha256": "1829b85ee1b56f066c6faca0b86cecddc43b7c6a5e2db34cd9a5761d23d535e9"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The itinerary component displays the day number separately. Use the confirmed route from the Day 10 heading without its day prefix or final colon."
+      },
+      "text": "Camp 1 • Mutanzi • Camp 2/3"
+    }
+  ]
+}

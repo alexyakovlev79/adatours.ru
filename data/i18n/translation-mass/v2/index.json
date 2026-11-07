@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 845,
-    "leased": 18,
-    "review": 3076,
+    "leased": 17,
+    "review": 3077,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 845,
-      "leased": 18,
-      "review": 259,
+      "leased": 17,
+      "review": 260,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -768,8 +768,8 @@
         "ai_only": {
           "held": 0,
           "queued": 24,
-          "leased": 1,
-          "review": 11,
+          "leased": 0,
+          "review": 12,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T18:00:23.284Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "08": {
@@ -1394,12 +1394,6 @@
       "jobId": "en:bulk:tour:tour_source_ekvador_s_udovolstviem:b010",
       "token": "lease-129f6e0fc18aceb79b572048381bf579ea7076ba",
       "expiresAt": "2026-11-07T17:58:27.376Z",
-      "generation": 1
-    },
-    "ada-en-worker-mw6mah5i-b5sxublmwl": {
-      "jobId": "en:bulk:tour:tour_source_ekvador_s_udovolstviem:b002",
-      "token": "ada-en-lease-d2fwcnszx7qvl6viwldw",
-      "expiresAt": "2026-11-07T18:00:23.284Z",
       "generation": 1
     },
     "ada-en-20261107-44no3njm7js": {
@@ -10966,7 +10960,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_ekvador_s_udovolstviem:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_ekvador_s_udovolstviem:b002"
+      ]
     },
     "ada-en-work-20261107162733338-r7kuchgsaf": {
       "token": "run-59p50wj8ibi-slrefv7pds",
@@ -10980,5 +10976,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T16:34:37.379Z"
+  "updatedAt": "2026-11-07T16:34:44.319Z"
 }

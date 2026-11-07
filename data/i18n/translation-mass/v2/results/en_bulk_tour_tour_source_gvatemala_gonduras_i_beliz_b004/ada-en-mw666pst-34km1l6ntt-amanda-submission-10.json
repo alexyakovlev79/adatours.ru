@@ -1,0 +1,129 @@
+{
+  "jobId": "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b004",
+  "stableId": "tour_source_gvatemala_gonduras_i_beliz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "eaf93a29101351128999f4c6d344cc2b4ef575ccb052cd466f0b53d4ed1508b3",
+  "blocks": [
+    {
+      "blockId": "tour:note:fa518fb6ca5d16fd",
+      "field": "note",
+      "sourceTextSha256": "2253b56f9414ebc35c617a262388d8d97ba730a60451e62473bc3e9b007aa674",
+      "text": "If necessary, Ada Tours may replace a listed hotel with another hotel in the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word notes that hotels are subject to availability but do not specify replacement with a hotel in the same category."
+      }
+    },
+    {
+      "blockId": "tour:note:80d2ed11276533ef",
+      "field": "note",
+      "sourceTextSha256": "55379aed07b2e9467f3a3ba4b6a6e3596d1440d48c9760ca43042defa76c4e16",
+      "text": "Ada Tours may change the order of excursions while keeping the tour programme intact.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word notes and itinerary do not contain a clause allowing the order of excursions to change."
+      }
+    },
+    {
+      "blockId": "tour:note:55a737dccbaf76bf",
+      "field": "note",
+      "sourceTextSha256": "752c3a9fa63293644da2999344f67f094b2b894d5893a5b1359114d3eee060aa",
+      "text": "Ada Tours is not responsible for missed breakfasts when an early flight or excursion requires an early departure from the hotel.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word lists daily breakfast according to the hotel plan but has no clause on missed breakfasts due to early departures."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "65a21d86ed75bc381930239b46549ec93535a597386315be5706a053d76313ee",
+      "text": "Antigua, Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "680f0a5dc97fdd4377ec45faacf909754723832147dd0882e3c0bae7dd9737fa"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the day marker already supplied by the itinerary layout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4221fcdf1db862183214d5bbca7a2fe75031d5abbd4f629e23c6e9561d901f48",
+      "text": "Upon arrival you will be transferred to the city of Antigua, Guatemala, one of the oldest and most beautiful cities in Central America, and a witness to the grandeur of colonial Spain with its cobblestone streets and beautiful buildings of classical architecture. The city of Antigua is included in the UNESCO World Heritage List. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "27bd1583e6a1ca2d07b731ae043245b1681fc46421e0f11370cd4ae5233a9503"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:89b31d56eb18a399",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0f9c9cf3126a3243a817cc833027300d5896a9ce52642e2f57cbda1dcd59efa7",
+      "text": "Antigua, Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "680f0a5dc97fdd4377ec45faacf909754723832147dd0882e3c0bae7dd9737fa"
+          },
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "27bd1583e6a1ca2d07b731ae043245b1681fc46421e0f11370cd4ae5233a9503"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the city and country from the Day 01 heading and arrival passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:9a025b8b519b3f52",
+      "field": "media.alt",
+      "sourceTextSha256": "f0a063ac47384b1d044103942758bc9b73ebd1402f713014d5d05a434f82d4f2",
+      "text": "Historic church with a carved white façade against a mountain backdrop in Antigua, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word describes Antigua’s architecture generally without a caption for this church photo."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1cc2196c6acb59b3",
+      "field": "media.hover",
+      "sourceTextSha256": "a17953832998ce9e76e5f84d0a255c265f672f5f8dd35b670b51f2978539159b",
+      "text": "Antigua, Guatemala: a historic church with a carved white façade and mountains behind it",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word arrival section has no hover caption describing the carved façade or mountains in this photograph."
+      }
+    }
+  ]
+}

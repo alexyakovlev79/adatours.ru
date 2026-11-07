@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_south_12d:b002",
+  "stableId": "tour_brazil_south_12d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "fcbf27269c9dff8b8314d95575c162b124828deed3e42f235eed6f4aaa39f633",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:e127e4f6995d4eea",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a483b2c55e207670835a549527c5a16302051bcff6fcaaac4e2c41a31ad0a709",
+      "text": "Praia Grande",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0053",
+            "textSha256": "eddd6fd9719bc45d5d7671bdd19b3bbb22452b4e2083f92b79a9eea1cbba3409"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the destination from the Day 8 route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2eab04e7b4c747a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ed6eff2d9d5d6bdbcf782eb0acfccd81cc018a6271904bcedcb70891a9bead73",
+      "text": "Cambará do Sul",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "d3abbd379ea5de5d0c35a88d5acb0c93e7136084b58078d31ca08516200103bf"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the place name from the Day 8 description as the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:41b692a098076acb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "31078d7ff208026ecc9f265bc7eefd315224141c28415f9efaa371365100f575",
+      "text": "Florianópolis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0010",
+            "textSha256": "c6f27dbee9e7c6ce37c1597d8c755cb1203c1aed403ca599130694ebed027fbe"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The hotel table contains the destination’s accented Portuguese spelling, used here as a route label."
+      }
+    },
+    {
+      "blockId": "tour:included:9df9d0471c26e771",
+      "field": "included",
+      "sourceTextSha256": "0200daadacbea3c06c2724304c07a2cf4d5ad7ecbab0babd97384173daa2860a",
+      "text": "Accommodation in hotels as per the program with breakfast included",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "4bb8586431b8f6f58f0f0313488c21572b22f5fc49a0f4e1120c386592bda929"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:be3a0903334ab77c",
+      "field": "included",
+      "sourceTextSha256": "35ece710c57988015afe6d526547628c0bdc0ee47546442ca63f4e4381d50854",
+      "text": "Excursions as per the itinerary with English-speaking guides in Rio and Iguazu and throughout the rest of the route.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists guided excursions without identifying service languages by destination; the RU service language is localized as English per the editorial contract."
+      }
+    },
+    {
+      "blockId": "tour:included:b1de37495f0271cc",
+      "field": "included",
+      "sourceTextSha256": "5e8e91c6d41c29363eca8555ba5b4e266cf01dab7bb9652feb63db61629a3ada",
+      "text": "Transfers with a driver",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0096",
+            "textSha256": "78cfc952a6e10e5803c089fb2de0b23d16157298580acdaca65a078a87689df7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:100719996eabd877",
+      "field": "notIncluded",
+      "sourceTextSha256": "37c91b46cf2b34f85f056d131b6996ba5569bcf57a0c0fbbc0fe83dd2ade66e4",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0099",
+            "textSha256": "9fac777fd8c0a41fa92f95282f516f02c3378b8e74a1a7ae073a056e295f10f3"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:26e7d871e3f67d0a",
+      "field": "notIncluded",
+      "sourceTextSha256": "61a8bc8db4794a695674fbbe8015f58f9ac3588d0a40a119efeaea9b26a6712a",
+      "text": "Domestic flights from Rio de Janeiro via Iguazu to Porto Alegre, from USD 600.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists the same domestic flights but gives no starting fare for that exclusion."
+      }
+    }
+  ]
+}

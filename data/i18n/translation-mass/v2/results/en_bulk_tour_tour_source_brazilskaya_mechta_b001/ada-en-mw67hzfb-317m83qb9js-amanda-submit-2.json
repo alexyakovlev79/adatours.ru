@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_brazilskaya_mechta:b001",
+  "stableId": "tour_source_brazilskaya_mechta",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d6ccecba4f7700680c08e4fb8653a40e94b058e923e73899e37fc2cc9c94c994",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "9b2a74bec3faf0f9c8ad265700858bef8e51c4db625ff456734e104e5fcb2dd7",
+      "text": "Brazilian Dream\n Rio de Janeiro, Tropical Island & Historical Paraty",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "3fcad44535dab313aabab4e047f686d10d1685358570bc7419ded3209ef57658"
+          },
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "d3eaed8f46d861bdd5931a5c7f9679382c7570d10bec62cc730d86b5bfb41ac8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "98a80527ec2119d4c451b572386ff034f5825623e8460c704ed68820a545ad0d",
+      "text": "Spend a week seeing three sides of Brazil. Start in Rio de Janeiro with Corcovado, Christ the Redeemer, Sugarloaf Mountain and the historic city centre. Then head to the Green Coast for the islands and beaches of Angra dos Reis, a boat trip around the bay and a transfer to historic Paraty. The last few days take you through the Atlantic Forest, past waterfalls and old distilleries, and into the coves of Saco de Mamanguá.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzfb-317m83qb9js-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word introduction describes the destinations separately and has no equivalent one-week lead combining the Rio landmarks, Angra boat trip and final Paraty activities."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "049f257c9a4adf8c1b4c9f2469f1cfc95a86afb61ffb6a8ca3f4f5243db6a3ad",
+      "text": "$1615",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzfb-317m83qb9js-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The 2026 Word tariff table lists different figures by hotel and occupancy and contains no matching $1615 note; the current source string is preserved verbatim."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "afa40fdc2531789350a117c8193f03ac15926960859f73e10c64d3c178c1b247"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the route stop from the approved itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4443ab3fb7a20d85",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
+      "text": "Angra dos Reis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "7d013c602a1f04c3ce1f532f0d0294c35548d730c93f73d8f7b3eefe68d5d490"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the route stop from the approved itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4f7b87002ded9a49",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3b696c0580339afaf47c3619acb2af48388a438e1e30fda7e50da2cfbc5c80e8",
+      "text": "Paraty",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "81f651b3dcc7dcc6c96ae31b986c865cb5afde791a5151e67429bf732d7f8f8b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the route stop from the approved itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:included:636dccb3fb9a00fa",
+      "field": "included",
+      "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658",
+      "text": "Accommodation in hotels according to the program,",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "14caac13f7e73b18459849bec9ebce46d901ee613be8cdf543bd076d50fd9212"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:69c58212aa07c1a3",
+      "field": "included",
+      "sourceTextSha256": "d86188d36963ecd7529886809b4ab58a61f18a99bc02fa5dbf1bc1c4749f21ff",
+      "text": "Guided tours according to the program ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "b93c8cc9bd59006e7126326c15226ed8441386949f15834e95f697c528319118"
+          }
+        ]
+      }
+    }
+  ]
+}

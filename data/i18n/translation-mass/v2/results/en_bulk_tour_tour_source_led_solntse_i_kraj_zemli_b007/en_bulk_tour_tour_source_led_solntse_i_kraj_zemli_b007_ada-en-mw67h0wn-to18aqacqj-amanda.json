@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b007",
+  "stableId": "tour_source_led_solntse_i_kraj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "2233dec90544c197d312778fab9e3afbe074efd37193d13d98a41e2f006cb884",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:6d7c6a463c8de1f5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b87c150eb4050fec267f540aaac1a09eae4cb6cf6f739cbb2e5f24ed797913de",
+      "text": "Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p53",
+            "textSha256": "ec8408fa6f0bcc1f1772d1c1200411ccf2c0ffe8bcc2690cd8b2aebc424a029c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The excursion sentence gives the glacier’s English name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:39f44ff627c2d649",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6d99a328cae20e95c5d6b1d2871e00badc06d102aedc57f5d37a246ace6f385e",
+      "text": "Lake Argentina",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p54",
+            "textSha256": "ea8ce74228dfa8d3a88a7f92afb8815bf55af733ec42ee6e8ef84166d2b77a83"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The glacier description gives the name of the receiving lake."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:bb762e421b905244",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "87843a1a681917a1a39ed8df694aa055729f6e9146667babcfd689b13f6a52ae",
+      "text": "Breakfast at the hotel. Group excursion to the Perito Moreno Glacier with an English-speaking guide. Private tours with an English-speaking guide in Calafate and Ushuaia are available for a total supplement of $700 per person, with a minimum of two participants.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Day 4 covers the group glacier tour but does not include the private Calafate and Ushuaia option, its $700 supplement or minimum group size."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:27aa247c3437d234",
+      "field": "media.alt",
+      "sourceTextSha256": "338707fe1bc156389ec1bf556287148f960bc6f5b5abc8263030024b6638671b",
+      "text": "The ice wall of Perito Moreno Glacier and floating chunks of ice near the shore, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The glacier description discusses calving but gives no image-specific alt text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "fca21c204f461862563864f65d54e827beaf841bcdd97b61aea1b40d81076b58",
+      "text": "Calafate – Ushuaia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p56",
+            "textSha256": "ec8912188c24259a821709efd5d26ef977aeafdc72f871195664447aa985c36c"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed the numbered day prefix from the transfer heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0684efb0716e505cc36b01a5bfb4ef5473dd6b67a11c2e9efc4bc78090756a8f",
+      "text": "Transfer to Calafate airport for your flight to Ushuaia. On arrival, transfer to the hotel. You will spend two nights in Ushuaia. The flight is charged separately, and the hotel is confirmed when you book.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word transfer paragraph omits the hotel confirmation condition and does not consolidate the two-night stay and separate airfare into this day’s instructions."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bbc1826c787617ab",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p56",
+            "textSha256": "ec8912188c24259a821709efd5d26ef977aeafdc72f871195664447aa985c36c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The day heading identifies Calafate as the departure point."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71b96948a77bc27e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+      "text": "Ushuaia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p56",
+            "textSha256": "ec8912188c24259a821709efd5d26ef977aeafdc72f871195664447aa985c36c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The day heading identifies Ushuaia as the arrival point."
+      }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b009",
+  "stableId": "tour_source_gvatemala_gonduras_i_beliz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ecbf190816a49c0c0092cb6f942f7deb66e6c9ce612126fb4bc0551f41ebf1bc",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f0bf98de9fc56e5dca7271996c16e65b38678b832d8df320833b11ce80515bb8",
+      "text": "In Flores, we’ll have a visit to the remarkable archaeological site of Yaxha and Topoxte. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "48ac8bb5046b84e8663466eab69e3f3c5ed8ffe0cf85dd9a0eefae9ce37629fd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f52072558ac4ba51",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9a7fc7d30092e3d837ebf67109ce02c78e6492b3745eaa441e485e93f795af36",
+      "text": "Tikal & Flores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "f5dad877bed4133a6dd7ec0ba26f757b84b5a1edef87a006bd12142d108ebb73"
+          },
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "9ba758cf69e89a241dd2ae26f4d6d99d7c106e52e066e3cfe7b8e5424a22aaff"
+          },
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "fd0dc7b6a5f63b6269aad697e5e731f820f19c8fa152e1f7fd44dbc8548798ca"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Builds the shared place label from the Flores stop and Tikal Archaeological Complex named in the Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d62f9415ee00380d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "59213fb58fefce93bb0cd6e2ab6376d20c340a147545199e8b92e224ddfd0be6",
+      "text": "Topoxte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "48ac8bb5046b84e8663466eab69e3f3c5ed8ffe0cf85dd9a0eefae9ce37629fd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the site name from the Day 07 Word passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ce3d787065394402",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b472512ffd8a02eab43060109f62dffbb19d23b3cad7f683172956d51b86dd88",
+      "text": "Yaxha",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "48ac8bb5046b84e8663466eab69e3f3c5ed8ffe0cf85dd9a0eefae9ce37629fd"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the site name from the Day 07 Word passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d3962892096e4d68",
+      "field": "media.alt",
+      "sourceTextSha256": "79ba857944f70646563a5dab7ec23b91ee51ce4e0c0e82beed5b5d2eed687435",
+      "text": "Wide yellow-and-white stairway leading to a church in Flores, Guatemala",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word itinerary does not caption the photograph of the church stairway in Flores."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3392ed605f626d23",
+      "field": "media.hover",
+      "sourceTextSha256": "aaffcdddced05422089e93c5b2975c4d795d9205d81d651d2c9bd96cceee4665",
+      "text": "Flores: white-edged steps and colorful flags in front of the church",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word itinerary has no hover caption describing the stairs and flags outside the church."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c568cc93b1ec8c1270fa2c187be3f3cb8c95713293d0a2c29064d60c2d0f26b8",
+      "text": "Tikal Archaeological Complex",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "fd0dc7b6a5f63b6269aad697e5e731f820f19c8fa152e1f7fd44dbc8548798ca"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the day marker because the itinerary template supplies its own numbering."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e78efa475938104e82d4d177dd8a5636aea93ecac17cf9cbe7dd796af516cc01",
+      "text": "The day begins with a visit to the Tikal archaeological complex, where you will immerse yourself in the world of the Maya and uncover the mysteries of its ancient ruins. After the tour, you will leave this place with unforgettable impressions of this historical treasure and the stunning photos that you captured at Tikal.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "a3056fb6aa8ab9395cbffee7b29251e74a7f443445b27ff0134d2b9a42a59323"
+          }
+        ]
+      }
+    }
+  ]
+}

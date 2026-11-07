@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_priklyucheniya_v_amazonke:b004",
+  "stableId": "tour_source_priklyucheniya_v_amazonke",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f6b58de14e5a49735c9b6fd9972d2154db60920b456c9427c2964fc0e11c4091",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:f556df13e9dca200",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word day entries describe the forest activities but do not supply this combined Manaus and Amazon location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:9791288424a548b4",
+      "field": "media.alt",
+      "sourceTextSha256": "a82c3b668d652027012be93d58ce24ef66fce248b1dca944f3603d2f915a8b9e",
+      "text": "Tree trunks reflected in the waters of a flooded igapó forest in the Brazilian Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary contains no accessibility description of this particular photograph or its reflected tree trunks."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:09cd1ca6ff679417",
+      "field": "media.hover",
+      "sourceTextSha256": "d8a611aa8edf0a03ad55e5763b556fe7239f7b1ae9c717a0ae1baefea42aafe8",
+      "text": "The Amazon: still water among the trees of a flooded forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary does not supply a hover caption for this photograph of the flooded forest."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "fc832439862ea5d211d35843ddae701d8eb304490c4ed8a73bb212aeaf229168",
+      "text": "Return and Dolphin Encounter",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "f89ede4935b983f0ff1d5ccf6c44bcfbf348997f50594c34feff187cfea936a3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word combines the day heading and narrative; use the two main actions as the short day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7343ed3743d08ecdd5bce17a44d907b6402f476620f7eab3c600c35ad012b1a8",
+      "text": "Return to the base camp, meeting with dolphins at \"Vila do Acajatuba,\" and return to the hotel pier.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "f89ede4935b983f0ff1d5ccf6c44bcfbf348997f50594c34feff187cfea936a3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Omit the Word day-number prefix because the itinerary already supplies the day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8da1d4d24a9339b1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1abc5abf0251dde477c7a212ced94b761a2a1f2e11fd7549c3efcc9a0bb67ce0",
+      "text": "Vila do Acajatuba",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "f89ede4935b983f0ff1d5ccf6c44bcfbf348997f50594c34feff187cfea936a3"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the village name from the Word day entry as the short location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b7dfb8a005666bb6",
+      "field": "media.alt",
+      "sourceTextSha256": "2690fd7aeeacc017881c25453a86253cc3e7dcf8ed8670dbf0787b68d05a8806",
+      "text": "Vila do Acajatuba, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word gives the village name in the itinerary, but has no accessibility description for the site’s village photo."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "48c9ff63991939aaecd060f5d5313b2f05c3aa1cb57914a39f6f462db5c6ee32",
+      "text": "Aerial view of a winding river through dense forest in the Brazilian Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word has no accessibility description for the hero photograph or its aerial view of the winding river."
+      }
+    }
+  ]
+}

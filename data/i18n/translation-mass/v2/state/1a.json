@@ -853,11 +853,16 @@
     {
       "jobId": "en:bulk:tour:tour_source_chudesa_beliza:b002",
       "stage": "word_2026",
-      "status": "queued",
+      "status": "leased",
       "sourceFingerprint": "c124b7fadc73e7859ce671bcb0b3f692c63cafe25269654edf3bd8494a5690c6",
-      "generation": 0,
+      "generation": 1,
       "attempts": 0,
-      "lease": null,
+      "lease": {
+        "ownerId": "ada-en-9fde710c1170-amanda",
+        "token": "lease-9fde710c117048328e3c8b573e74ddad",
+        "claimedAt": "2026-11-07T08:23:31.486Z",
+        "expiresAt": "2026-11-07T09:53:31.486Z"
+      },
       "checkpoint": null,
       "submission": null,
       "review": null,

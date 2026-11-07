@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 255,
-    "leased": 8,
+    "queued": 254,
+    "leased": 9,
     "review": 2553,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 251,
-      "leased": 8,
+      "queued": 250,
+      "leased": 9,
       "review": 214,
       "ready": 0,
       "retryable": 0,
@@ -1156,8 +1156,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 9,
-          "leased": 0,
+          "queued": 8,
+          "leased": 1,
           "review": 12,
           "ready": 0,
           "retryable": 0,
@@ -1177,7 +1177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:10:30.518Z",
       "earliestRetryAt": null
     },
     "1c": {
@@ -1388,6 +1388,12 @@
       "jobId": "en:bulk:tour:tour_source_mechta_bolivii:b002",
       "token": "lease-mw67hul8-dg2khvjhx0j-qpmilcwgg3",
       "expiresAt": "2026-11-07T11:10:22.838Z",
+      "generation": 1
+    },
+    "ada-en-mw67ig6q-vbiyes86r5": {
+      "jobId": "en:bulk:tour:tour_source_mechta_bolivii:b009",
+      "token": "ada-token-2kzqz1kmc0h-2jjdfy2hr22",
+      "expiresAt": "2026-11-07T11:10:30.518Z",
       "generation": 1
     }
   },
@@ -9422,7 +9428,8 @@
       "token": "ada-token-2kzqz1kmc0h-2jjdfy2hr22",
       "jobIds": [
         "en:bulk:tour:tour_source_issleduya_beliz:b001",
-        "en:bulk:tour:tour_source_braziliya_argentina_i_chili:b001"
+        "en:bulk:tour:tour_source_braziliya_argentina_i_chili:b001",
+        "en:bulk:tour:tour_source_mechta_bolivii:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_issleduya_beliz:b001",
@@ -9431,5 +9438,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T09:40:22.838Z"
+  "updatedAt": "2026-11-07T09:40:30.518Z"
 }

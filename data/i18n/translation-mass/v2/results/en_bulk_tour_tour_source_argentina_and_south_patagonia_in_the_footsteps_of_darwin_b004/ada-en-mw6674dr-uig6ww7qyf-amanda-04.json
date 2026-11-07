@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b004",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "836171b195945bacc79eae1aaa57fa593c94c222ed034d0e51e71b65e6cc1f5c",
+  "blocks": [
+    {
+      "blockId": "tour:note:1ffa9a907dfaa903",
+      "field": "note",
+      "sourceTextSha256": "04e3cf2fcbfdb1786f2fce0bf4684ce1a727dffb7caac75836ca0d1f6d4b49ca",
+      "text": "If necessary, Ada Tours may replace the listed hotels with others in the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word lists Mendoza accommodation and gives an itinerary-change clause, but contains no hotel-substitution condition guaranteeing the same category.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:note:b9eabddb9b8d5a4a",
+      "field": "note",
+      "sourceTextSha256": "4c770c2676e8caaa618a632bef0cd04ea4d4401eefbeeb0b57c0004f13397c14",
+      "text": "The order of excursions and other parts of the programme may change for safety reasons, while the overall route stays the same.",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word safety note grants discretion over changes due to weather or force majeure, but does not give the separate RU condition about reordering activities while keeping the route’s overall sequence.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:note:b945b35735fb6701",
+      "field": "note",
+      "sourceTextSha256": "a93ef08b7351443416a87e46145591263e83304a74a1434e673b88941944053f",
+      "text": "Ada Tours is not responsible for missed breakfasts if you check out early for a flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word does not include a condition on breakfasts missed because of early hotel checkout for a flight or excursion.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "01f87a55cb5d678de58369430dccb060b72de2a7b169898dc1badda61071d20e",
+      "text": "Mendoza, 760 m",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "6f4b8cbe21b2359472b31cc0faa2d6cf4722a3169b8f2eca68068f173aa5eae4"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Retain the place and altitude in the Day 1 Word heading as a compact website title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1e40eef7d8346893d73aa1b2b40de35a222f318c5a374df3a805801058446eff",
+      "text": "Transfer from Mendoza airport or bus station to your hotel and check in.\n\nThe guides will check each participant’s personal equipment and, if needed, help you rent or buy anything you’re missing from local shops. In the evening, the group will meet to discuss the upcoming expedition.",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "Day 1 in the Word describes airport pickup, hotel accommodation and a group meeting, but lacks the bus-station pickup option and the personal equipment check and rental or purchase assistance in this RU block.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1a8bbd006f50e30e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+      "text": "Mendoza",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "6f4b8cbe21b2359472b31cc0faa2d6cf4722a3169b8f2eca68068f173aa5eae4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city in the Day 1 Word heading as the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:f636d16802c390f8",
+      "field": "media.alt",
+      "sourceTextSha256": "f41c047c5997b5ca058dc09e5f80a809206d3e1b5097f086fff1fbd1c7ad7557",
+      "text": "The snow-covered summit of Aconcagua above a rocky valley in the Andes, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word describes views of the south face during the trek, but provides no alt text for the snowy summit above the rocky valley in this image.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:874ac27d9791d7fb",
+      "field": "media.hover",
+      "sourceTextSha256": "229b6550def4becb7ede007830a815665f33c1d60bc815fb86cb0b06329aa742",
+      "text": "Aconcagua, Argentina: snowy slopes beyond a reddish-brown mountain valley",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word includes no caption describing the snowy slopes beyond the reddish-brown mountain valley shown in this image.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b008",
+  "stableId": "tour_source_gvatemala_gonduras_i_beliz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8bca96ab7dcf3a4c31a6c0465a97adfac2773d4034c57d5ef63df92862721a95",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:4fe2a2b6002f363f",
+      "field": "media.hover",
+      "sourceTextSha256": "37660bfa2dd0337581950a5814399404dea7b09ba91a6c62b9d7dd10beecdda3",
+      "text": "Copán: an ancient relief made of multicoloured stone blocks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hiq1-1zrghxdha0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word file contains no matching image caption or accessibility text for this image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "08ac32f56c96c1a4f9d44063c59a7788fbd940ca02af0b2c6c2b55dd5718e6cb",
+      "text": "Rio Dulce – Flores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0030",
+            "textSha256": "244a8696b05955fd6e939060dc436779016ba2f82c7d79a9778d7be872becbb1"
+          },
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "f5dad877bed4133a6dd7ec0ba26f757b84b5a1edef87a006bd12142d108ebb73"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The itinerary heading and description give the two endpoints of the same day's route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "51e95b972185d885df76025bf25866efd8e6497dc4625f1b353400dd8fa24e2f",
+      "text": "After breakfast, you will have a cruise along the Rio Dulce River, where you can discover the local flora and fauna. As we approach the Caribbean coast, we will sail through the impressive Rio Dulce Canyon. Then, we continue to Flores, the capital of the Peten region (duration: 3 hours). On the way, we will stop for lunch. In the evening, we arrive in Flores.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "f5dad877bed4133a6dd7ec0ba26f757b84b5a1edef87a006bd12142d108ebb73"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5dafee2b2f3d154c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9a7fc7d30092e3d837ebf67109ce02c78e6492b3745eaa441e485e93f795af36",
+      "text": "Tikal & Flores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "9ba758cf69e89a241dd2ae26f4d6d99d7c106e52e066e3cfe7b8e5424a22aaff"
+          },
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "fd0dc7b6a5f63b6269aad697e5e731f820f19c8fa152e1f7fd44dbc8548798ca"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The Word itinerary identifies both sites in the existing combined place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e1e6ae140678b3e1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2b9bb9cfdd5b644017e4b08f9a608245f405d1d8019bf6711aad20158da80859",
+      "text": "Rio Dulce",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0030",
+            "textSha256": "244a8696b05955fd6e939060dc436779016ba2f82c7d79a9778d7be872becbb1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The name is preserved from the matching itinerary heading as a standalone label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d4e6032b0e8f5a94",
+      "field": "media.alt",
+      "sourceTextSha256": "226c7c88c09aa2dde153286797903119fc9932af23249da4e0cc22732eabeec5",
+      "text": "A boat on the lake near Flores, Guatemala, in the orange light of the low sun",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hiq1-1zrghxdha0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word file contains no matching image caption or accessibility text for this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:96380655a32bbe04",
+      "field": "media.hover",
+      "sourceTextSha256": "460be8ea94d4372027018171e0d5bf6aac8802c918ebee2b5bb541a237641e83",
+      "text": "Flores: a boat and a trail of sunlight across the lake",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hiq1-1zrghxdha0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word file contains no matching image caption or accessibility text for this image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "22ad62a21152294cd471c87fd202d9faefa3cfb0201c6e261304d5b7a5fc3e3d",
+      "text": "Flores – Yaxha and Topoxte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "9ba758cf69e89a241dd2ae26f4d6d99d7c106e52e066e3cfe7b8e5424a22aaff"
+          },
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "48ac8bb5046b84e8663466eab69e3f3c5ed8ffe0cf85dd9a0eefae9ce37629fd"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The heading and its programme paragraph identify the starting point and both archaeological sites."
+      }
+    }
+  ]
+}

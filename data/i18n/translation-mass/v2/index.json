@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 259,
-    "leased": 7,
+    "queued": 258,
+    "leased": 8,
     "review": 2550,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 255,
-      "leased": 7,
+      "queued": 254,
+      "leased": 8,
       "review": 211,
       "ready": 0,
       "retryable": 0,
@@ -156,8 +156,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 6,
-          "leased": 0,
+          "queued": 5,
+          "leased": 1,
           "review": 6,
           "ready": 0,
           "retryable": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:09:41.755Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_klassicheskij_paragvaj:b001",
       "token": "lease-z1lxdts2q4dx4ru13lhqjt",
       "expiresAt": "2026-11-07T11:09:28.720Z",
+      "generation": 1
+    },
+    "ada-en-mw67hj8f-2stxffvsl16-amanda": {
+      "jobId": "en:bulk:tour:tour_source_issleduya_beliz:b005",
+      "token": "lease-mw67hj8f-mtd6ycxvdz",
+      "expiresAt": "2026-11-07T11:09:41.755Z",
       "generation": 1
     }
   },
@@ -9385,7 +9391,8 @@
       "token": "lease-mw67hj8f-mtd6ycxvdz",
       "jobIds": [
         "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b004",
-        "en:bulk:tour:tour_source_issleduya_beliz:b008"
+        "en:bulk:tour:tour_source_issleduya_beliz:b008",
+        "en:bulk:tour:tour_source_issleduya_beliz:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b004",
@@ -9418,5 +9425,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T09:39:35.434Z"
+  "updatedAt": "2026-11-07T09:39:41.755Z"
 }

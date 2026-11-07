@@ -1,0 +1,161 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vkusy_brazilii:b001",
+  "stableId": "tour_source_vkusy_brazilii",
+  "locale": "en",
+  "sourceFingerprint": "6d24ddd8625782b065e4eed2989aeb309672c75460ae7c122e8f2e80e328ffb0",
+  "status": "review",
+  "releaseEligible": false,
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "0c6be8d23517b1f212df0b69a9026600e48a8c0ba831b1c05bd72c75dc721f56",
+      "text": "Flavors of Brazil ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "30f0fd483bdf3d724d9e4ff3b571ba123de93b831bc24563f5aba926234b96c4"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "3c15b1e45528124d6aac0691a677edf3e4a732136a8eae783dfbae43740995b0",
+      "text": "Spend eight days in Brazil, from the city of Rio de Janeiro to a car-free island and on to colonial Paraty. In Rio, you’ll go up Sugarloaf Mountain and Corcovado and see the beaches, the bay and the historic centre. Then head to Ilha Grande for a day on the water, swimming and visiting beaches. Spend the last two nights in Paraty, where cobbled streets and white eighteenth-century houses sit between the mountains and the ocean.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "amanda-ada-en-translator-20261107",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The matched 2026 Word document has a route line and separate destination descriptions, but no corresponding concise overview that follows the activities and duration in this website lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "3232ca8e8f33f2f3e3501d0ca70696891efa06361947c65078d4a69d0b53d81c",
+      "text": "USD 3,480 per person based on double occupancy. Arena Leme: 3 nights, Asalem: 2 nights, Sandi: 2 nights.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          },
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "d5723b78f491c798082fa573ef3868526a9cc1cc70735d19bb28a703a111b2f7"
+          },
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "246bc4e506d3ddb10dff36cd57a4db612ab3abf8d396946479254809cadc0116"
+          },
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "fd6d19ccc58d1cabc56fb17c14ecb0bcba87971267e586798a349e1767f6b8fc"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Read the DBL column against the same hotel and service row, preserving the USD 3,480 figure, the per-person basis from the Russian note and all three unchanged hotel night counts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0d5afc7b7beb5194",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c7958d305e7a8881ae0786977517f08844c6f27bcd8a9f441020a7acb9c5774f",
+      "text": "Rio de Janeiro (3 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "da907c5c90723054c81ad7197336e3c08360cb0bb9eae248887be08066d9bb8c"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract Rio de Janeiro and its existing three-night duration from the route summary for the standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9378fa80e9df58fc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "60dea58e7522457cfc02d4a186fba9f3affb43c920b84ae5e5122ca4647161f8",
+      "text": "Ilha Grande (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "da907c5c90723054c81ad7197336e3c08360cb0bb9eae248887be08066d9bb8c"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract Ilha Grande and its existing two-night duration from the route summary for the standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:59dffa9c3847f93b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "886dff545068a74681b6947e1f8235da4d6db15d57a062318c720b4805b2feca",
+      "text": "Paraty (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "da907c5c90723054c81ad7197336e3c08360cb0bb9eae248887be08066d9bb8c"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract Paraty and its existing two-night duration from the route summary for the standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:included:b94fe88837dc5c2d",
+      "field": "included",
+      "sourceTextSha256": "f9ee0b3bac4ab09d76c43bf6c6ef2d2f2afeab094e883c0db7f7e625e4591d4c",
+      "text": "Accommodation in  Hotels including breakfast",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0052",
+            "textSha256": "6282dce4eddb1c71670aee011c6ce86d4020df03ac4c6a1a5b819965864a924f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:3ffe2408f9c66cba",
+      "field": "included",
+      "sourceTextSha256": "51684888228985af2bf2bd4ebbc73aa8fbcd5bd821a1a5f3b63275ed9b2f6cae",
+      "text": "Private Transfers  driver only",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0055",
+            "textSha256": "cb1e6315a70be3d2ba64378a1f1f4c1e32ffa7b0d66e100ef55d26bfa2f3934d"
+          }
+        ]
+      }
+    }
+  ]
+}

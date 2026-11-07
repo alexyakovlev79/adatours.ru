@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_meksika_den_mertvykh:b006",
+  "stableId": "tour_source_meksika_den_mertvykh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "11f9d71b614628db5d38114e027c8e9042856873c9716a3ab49eb2ce4fc7352a",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:7f25894bb8a313f1",
+      "field": "media.alt",
+      "sourceTextSha256": "04f30e40fcc580d05dd80063a61fdeceed0c7d770244062b960ffcefbdd311ca",
+      "text": "Yellow Volkswagen Beetle taxi on a street in Mexico City, Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word covers the city itinerary but contains no caption for the photograph of a yellow Beetle taxi."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:2903be9c0e09ce1b",
+      "field": "media.hover",
+      "sourceTextSha256": "9f7d119c57c3f60448ed04d170d3c1661d60b6dbfb0805da727e128971467d81",
+      "text": "Mexico City: a yellow Volkswagen taxi in city traffic",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word provides no hover text for this photograph of a yellow Volkswagen in traffic."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "475c311a5e3c022029ca372f052bb2b582316e27ca813bd2eb5497645923fb0b",
+      "text": ", 30 October. Basilica of Guadalupe, Teotihuacan and Puebla",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "5a3f0378fd4e8b29be8d11fbdbe93d14d210ed661d5b7372a579f97899ad6511"
+          },
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "115739c1060d7e33076aaf8f6f5964ce45571fd33b8394093d789d5437a179cb"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Retain the Word date and destination sequence, spelling out the basilica name from the day description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "82a240e04eb063f418ac5356189e2b03679510dac77b96ce213d8b6b22ce9997",
+      "text": "Breakfast in hotel. \n\nNext stop is the impressive Basilica of Guadalupe, one of the most important pilgrimage sites in the Catholic world, where the Virgin of Guadalupe is said to have appeared to an Indian named Juan Diego in 1531, and an image of her was miraculously imprinted on his cloak. We will have time to explore the New Basilica of Guadalupe (the Old Basilica, built in 1700, is slowly sinking) and see the mantle of Juan Diego. We will then continue to Teotihuacan, \"The City of the Gods\", located 50 kilometers northeast of Mexico City, are the must-see archaeological ruins, home to the massive Pyramids of the Sun and Moon, which dominate the skyline of the complex. It was the largest ancient city in the country and the capital of the Aztec people, who ruled the largest empire of pre-Hispanic times. Guarded by mountains, this magnificent city is believed to have been founded in the early first century A.D. and reached its peak around 500 A.D., when its influence extended as far north as Guatemala and as far north as present-day Texas. \n\nContinuing to Puebla, on arrival we will visit a cemetery to start immersing ourselves in the traditions of the Day of the Dead. \n\nGamma Señorial Puebla www.gammahoteles.com 2 Night / Std-Room ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "72b60693d6122de62d731ac61cfd5d3f4ae732c345861da5c31dc6020fb50729"
+          },
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "115739c1060d7e33076aaf8f6f5964ce45571fd33b8394093d789d5437a179cb"
+          },
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "1e5457ff2ccd3f337aa828054cc493789fb2108aff426b819e2247831381c24e"
+          },
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "787c863debd6e683e8e44afe111cfb1171b8f22b676f8c49282b3ee43e5b4e11"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d6c59b5902958677",
+      "field": "itinerary.label",
+      "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
+      "text": "Teotihuacan",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "5a3f0378fd4e8b29be8d11fbdbe93d14d210ed661d5b7372a579f97899ad6511"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract the archaeological destination from the approved Day 4 route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9c01a43964dd367a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0ce36b2a9f6ea7f755c4ee5377cc96ea59a5f5ddeab669a7dbb6ad15a54d8c74",
+      "text": "Puebla",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "5a3f0378fd4e8b29be8d11fbdbe93d14d210ed661d5b7372a579f97899ad6511"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extract the final destination from the approved Day 4 route heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8ef9fd4afe064488",
+      "field": "media.alt",
+      "sourceTextSha256": "cd52cca11b95c68b1b0ddf9fd751c6af654b04afeb8033ce369a2e45d195949f",
+      "text": "Pyramid and stone platforms along a broad avenue in Teotihuacan, Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word describes the site and its pyramids but has no caption for this photograph of the avenue and stone platforms."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:beb2396304bd5ce7",
+      "field": "media.hover",
+      "sourceTextSha256": "cf3e5a33d3ef49962127c795ea298d5467455ecafdccbbdb3b54569ba79b0333",
+      "text": "Teotihuacan: ancient stepped structures and a pyramid against the mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word supplies no hover caption for this photograph of the stepped structures and mountains."
+      }
+    }
+  ]
+}

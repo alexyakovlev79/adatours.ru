@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_opyt_brazilii:b001",
+  "stableId": "tour_source_opyt_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8badeb9305fc9a703e0b93ad50dc7c379c2101fb4f3892d2852d88a783a0f7ed",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "e86540d13a36d9d9645e284d6da9c1fc792010510df63abc2a544fd9b0450c2d",
+      "text": "Brazil experience",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "1b09ab5f3c8e23224e363cd6c7235894bea506cbdb01b773fdc12a5753d6577f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "3858a2f271165e80470ce15a503ee1a41f74eca56d5d9f5adf987ace2b346875",
+      "text": "We visit Rio de Janeiro, with its green mountains, infinite beaches and joyful energy, the Iguazu Falls, where we are amazed at the power and greatness of nature, the hilly ecological region of Visconde de Maua with fruit trees and paradise waterfalls and the historical  village of Paraty with amazing  natural pools of seawater between huge rocks.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "06213e29f73ad297c8dd526d93b3f1b7209b00867634dad08f84b45e56891abe"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "7fcf9da23297759753c239f74e64952e4c11f9d868648d42922cd3d5bef61323",
+      "text": "$3395",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The exact Word tariff table contains a different double-occupancy figure. The canonical price note is a protected value and is copied verbatim without changing commercial data."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8a2490c091d79367",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
+      "text": "Rio de Janeiro, 3 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Split the first route segment into its own field and expand the approved 3n shorthand."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c8ffbd6fc38d01b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e571875ec720a5ede2d4198bb255ac215b15ee7139d2cb36d3e04b709cb2383d",
+      "text": "Foz do Iguaçu, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Split the approved Foz do Iguaçu segment into its own field and expand the 2n shorthand."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d44b0b739f70885b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4845d661d799fe075eb30e7e91071ac6974a2c637554f44365fe5832ef18c8f6",
+      "text": "Visconde de Mauá, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the approved spelling and duration from the corresponding Word route segment."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6a02dee2d11c20be",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c8fef18c528a816bae9120a2f2d002e02bde15c86cc2a55a2616773295fe94e9",
+      "text": "Paraty, 2 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the last segment of the Word route and expand its 2n shorthand."
+      }
+    },
+    {
+      "blockId": "tour:included:762c19cc76dfdcdf",
+      "field": "included",
+      "sourceTextSha256": "cc75ca0cd54c13305842eead9c02d2864958e63ad30d4e5258059775723c67b1",
+      "text": "Accommodation at mentioned hotels or similars",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "05bf98cd52c079fe56f18c2ba1809a65f7a8ee64ebb2abcdd662dd778548b3b3"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy:b002",
+  "stableId": "tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "274c2784e699d4a8d7926fd48665f4f70697d3b5bba1c18ef90f3a26175ba4c8",
+  "blocks": [
+    {
+      "blockId": "tour:included:c2f00f23312f7a1a",
+      "field": "included",
+      "sourceTextSha256": "24d4f845a56606a7d92a2035e0c1a00d187a088c156f000b50e1e9f2c2cbc708",
+      "text": "Excursions as per program",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0065",
+            "textSha256": "2dcb324323b4137ec77733057075f0d13116ab1cd9f4aeda6dde4520f52e2346"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the check mark from the approved included item without altering the wording."
+      }
+    },
+    {
+      "blockId": "tour:included:7995db533c1a78c2",
+      "field": "included",
+      "sourceTextSha256": "a474c2ba98ea9a60ca890d3d3f181b8bbbc0c90b212c99be257d809a86d7ef53",
+      "text": "Domestic flights from Caracas to Puerto Ordaz and from Canaima to Caracas.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0013 and p0052 cover the relevant flights in their day entries and p0064 gives a generic included domestic-flights line, but no included line lists these two routes together."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ddde98c8d71040e3",
+      "field": "notIncluded",
+      "sourceTextSha256": "07c5163e3b8bf062ed82917f4775dd39898f47335da33426f77643a55cca87ca",
+      "text": "Additional excursions",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0068",
+            "textSha256": "9790566f04f66f459ca6138beda78fc518cafaab220db5d2644ce96dbc408059"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the bullet marker from the approved excluded item without altering its wording."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ca454c970fc41d14",
+      "field": "notIncluded",
+      "sourceTextSha256": "5cc88a93cfb801313dfdd3e4164e67d84d6d67a36d1db713075e5cea05442503",
+      "text": "Return flights between Margarita Island and Caracas, from USD 120.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word exclusions at p0067–p0076 do not include the Margarita Island return flight or its USD 120 starting price."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5b3539b80860f456",
+      "field": "notIncluded",
+      "sourceTextSha256": "3be3d1203e557a584c497dfc7145120ff1c8dbf334ffcac5ce1e1f70beeda91c",
+      "text": "An English-speaking guide accompanying you throughout the tour.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0069 excludes a Russian guide for the entire tour, while p0066 includes English-speaking guides in the programme. No Word entry gives the separate full-tour escort in English. The guide language follows the authorised EN localisation of the current RU exclusion."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:c533e980a08905f1",
+      "field": "notIncluded",
+      "sourceTextSha256": "2d8281578daa459763f179626ce3f54d0e1f5568a5c2c8b0cb5cd4a67d658dd3",
+      "text": "Cessna charter from Puerto Ordaz to Canaima: aircraft for 5 or 10 people, USD 2,500 per group.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0041 mentions the charter in the itinerary but neither it nor the exclusions at p0067–p0076 gives the Cessna aircraft capacities or the per-group USD 2,500 charge."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:3c43b2a6f25ff0f4",
+      "field": "notIncluded",
+      "sourceTextSha256": "d42a824754cc4ed780a0ea9e3be78025da98243d78e7a710d38d9e140e0dfdbc",
+      "text": "Canaima National Park entrance fee, USD 40 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0071 gives the USD 40 fee but omits the per-person basis specified in the current RU exclusion. The amount and currency are preserved."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:c29c6e43e6727a3d",
+      "field": "notIncluded",
+      "sourceTextSha256": "11b511742f463319eba8f54834d2884721dfe1c233b0e5f17b64c5924fe227e9",
+      "text": "Medical insurance",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0072",
+            "textSha256": "23a0a4787ca707f00df173f35250408acb79ab2cfb860ab5e3335ea63374bd09"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the bullet marker from the approved medical insurance exclusion."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 277,
-    "leased": 8,
+    "queued": 276,
+    "leased": 9,
     "review": 2531,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 273,
-      "leased": 8,
+      "queued": 272,
+      "leased": 9,
       "review": 192,
       "ready": 0,
       "retryable": 0,
@@ -676,8 +676,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 6,
-          "leased": 0,
+          "queued": 5,
+          "leased": 1,
           "review": 7,
           "ready": 0,
           "retryable": 0,
@@ -697,7 +697,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:05:13.452Z",
       "earliestRetryAt": null
     },
     "06": {
@@ -1388,6 +1388,12 @@
       "jobId": "en:bulk:tour:tour_source_lensojs_maranenses:b005",
       "token": "4e576e1349714194980bfdfd23b739a2",
       "expiresAt": "2026-11-07T11:04:54.335Z",
+      "generation": 1
+    },
+    "ada-en-mw67h0wn-to18aqacqj-amanda": {
+      "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b007",
+      "token": "lease-yzi4k87s5f-jakzkcbwd5i",
+      "expiresAt": "2026-11-07T11:05:13.452Z",
       "generation": 1
     }
   },
@@ -9307,7 +9313,8 @@
     "ada-en-mw67h0wn-to18aqacqj-amanda": {
       "token": "lease-yzi4k87s5f-jakzkcbwd5i",
       "jobIds": [
-        "en:bulk:tour:tour_source_kolumbiya_c_kofe:b006"
+        "en:bulk:tour:tour_source_kolumbiya_c_kofe:b006",
+        "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kolumbiya_c_kofe:b006"
@@ -9374,5 +9381,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T09:35:07.511Z"
+  "updatedAt": "2026-11-07T09:35:13.452Z"
 }

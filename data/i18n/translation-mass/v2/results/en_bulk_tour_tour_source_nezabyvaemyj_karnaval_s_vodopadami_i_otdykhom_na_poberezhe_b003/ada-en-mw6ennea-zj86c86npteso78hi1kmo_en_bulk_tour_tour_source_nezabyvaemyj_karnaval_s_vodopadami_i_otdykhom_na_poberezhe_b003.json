@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b003",
+  "stableId": "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a9155f9e94374ca58f9a4d00f64a849cc14c886b2e9495ebb7f56182f533375f",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:6f5e0a35fbf475f4",
+      "field": "notIncluded",
+      "sourceTextSha256": "6d2c353df6f90f98086e486b4b6dc27db40cf69ee372a6ec074de63c553a7405",
+      "text": "Helicopter flight over Rio, from US$150. Recommended option: US$250 per person.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Day 2 gives the starting price of US$150 but has no mention of the recommended US$250-per-person option. This line preserves both amounts from the RU exclusions."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:5d5c6bc684dcd8ad",
+      "field": "notIncluded",
+      "sourceTextSha256": "c0f54677ee88b59e7ee5d8737802e1cee5c818b088b5eca12ef91d2964aa3dd7",
+      "text": "Dinner at Marius, US$130 per person.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0052",
+            "textSha256": "caadbd8ab760794a028bf21b06d8a53fe9f17605262f5b09ace42e755be84156"
+          },
+          {
+            "ref": "word/document.xml#p0053",
+            "textSha256": "54388a628ddea54d8ff74ac7c90ebdd3900b64acc3981a288e1bdb9c0d75be88"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 4 recommendation names the restaurant and confirms the per-person price. The exclusions list needs the service and price as a concise standalone label."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:8bf3ba2e0449d3a8",
+      "field": "notIncluded",
+      "sourceTextSha256": "6a9b6c170433324b7e83a6778124a67bb039f56012727664d23e949e3eb80fcd",
+      "text": "Bird Park, US$65 per person.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "76c7a9b57827761a1526d6f9282a1bc0ccf1f55ad18634a3eb4415ee5ed02147"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 6 optional excursion names the Bird Park and gives the exact per-person price. The exclusions list needs only the service and its price."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:032447f7237389db",
+      "field": "notIncluded",
+      "sourceTextSha256": "68acf191b3630613e119d12805bdb7aeaf515cb149b771fe5fe641fa588697a1",
+      "text": "Helicopter flight over the falls, US$170 per person.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0064",
+            "textSha256": "fed2f23a7cca2c723f355ae2abbf78c3a4fbdb14b05a7d42ea1d31bdf2054a46"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 6 optional helicopter activity gives the exact per-person price. This retains the activity and price in the exclusions list format."
+      }
+    },
+    {
+      "blockId": "tour:note:5a68bbfc8a20dca0",
+      "field": "note",
+      "sourceTextSha256": "fab155a27b5f58a7bb025ac3452cea80951d8b5264eb04bf74815438c990eccd",
+      "text": "Ada Tours may substitute a hotel of the same category for the hotel listed.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0097",
+            "textSha256": "03095997a3235c6620947f6a48dd365d809afa88cfe632e06921a37a84d2566d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The first sentence of the Word terms establishes the same-category substitution rule. This note keeps that rule separate from the unrelated hotel-standard and force-majeure clauses."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme remains the same.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has a general clause about programme adjustments due to unexpected events. It contains no separate assurance that only the order of excursions may change while the programme is retained."
+      }
+    },
+    {
+      "blockId": "tour:note:a6ee24da085098e0",
+      "field": "note",
+      "sourceTextSha256": "39acd0d02295319996150571b8c5fe8260e65f4d9603ea80a1c310482f1be309",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed because of early checkout for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions breakfasts and early travel in the daily itinerary but contains no clause about responsibility for hotel breakfasts missed after early checkout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "727286c5046da7a820085cd3e627a3af5ee5307eeec1f06296fd1732460aecda",
+      "text": "Arrival in Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "afa40fdc2531789350a117c8193f03ac15926960859f73e10c64d3c178c1b247"
+          },
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "5b888f7ffadfb4508633ce8ba478e55507587b6f70843cc65e317eb75f4c9bc6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 1 heading supplies the city and its opening sentence identifies arrival as the event. Together they form the standalone day title."
+      }
+    }
+  ]
+}

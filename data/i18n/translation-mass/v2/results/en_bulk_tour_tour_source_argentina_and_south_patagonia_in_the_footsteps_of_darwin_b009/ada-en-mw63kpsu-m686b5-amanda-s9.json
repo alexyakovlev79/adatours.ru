@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b009",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4fb58eccdf43965f85bacb509b1c6033422cfc26e1ac0ddc943d27ec1b0b22f1",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:f148a79de3ec52da",
+      "field": "itinerary.label",
+      "sourceTextSha256": "dccf181b5b21cc33a09a7dbb25aa0d0bc4d723be259b65108906a9677d515efb",
+      "text": "Bonete Peak",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word programme has no Bonete Peak stop or location label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3192e81fcb52a8c0",
+      "field": "media.alt",
+      "sourceTextSha256": "49d1a95a4c739d9095166ebd9e61e288dcfbabf0f61562994777b0c0b4e53704",
+      "text": "Hikers on a rocky slope below a large snow-covered mountain in the Aconcagua area, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word expedition contains no alt text for this image of hikers on a rocky slope."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:2e0ed6cfbdddb943",
+      "field": "media.hover",
+      "sourceTextSha256": "2c72d2232be97e26dddf4e44a6a9222770ca467cfd3244d43e719d78b29a047e",
+      "text": "Aconcagua area, Argentina: hikers on a rocky slope below a large snow-covered mountain",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word expedition contains no hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "09ff24bc32aa86d859e752960e7470361f9586b302f543b3ad7a046c4f8700bd",
+      "text": "Plaza de Mulas – Camp Canadá (4,910 m) – Plaza de Mulas",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word covers the equipment carry but lists Camp 1 at 5,050 m and has no matching round-trip title with the current itinerary elevation of 4,910 m."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "34b943699e2b8a6563d3c34c1e560a38258e4b526cf7cc2ca34e955fd71c02e3",
+      "text": "An acclimatisation hike to Camp Canadá to drop off some of the equipment. Return to base camp after lunch.\n\nMeals: breakfast, afternoon snack and dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word covers the equipment carry and return but lists lunch instead of an afternoon snack and does not say the return takes place after lunch."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2325135055b5a6f8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a7601156c4a99a851cd753a3673c0e66ce9924ed3c0f4b3597202f8290bbcf12",
+      "text": "Plaza de Mulas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "2359779cabc0c4bb27b129946de43574cd284299879fb505fdb306bce1c88a4b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the base camp’s exact name from the itinerary heading for the location label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b8d2431a47ba64a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "36c12f6e926d99283f7d32e8b90fa593997538ba9f913940a93811bad1c10c50",
+      "text": "Camp Canadá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "99fee1c74c7320c8812a763223be85f314bf3ebcb454147226cd62203d4c4e72"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the camp designation with the proper name supplied by the Word heading; the location label contains no altitude."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ef5122adc4eaf016",
+      "field": "media.alt",
+      "sourceTextSha256": "c3b833b955f0b2f8083969410e8eeb2170d8afbecc0155d1ed88d1cff5638dd7",
+      "text": "Climber sorting gear among the tents at Camp Canadá on Aconcagua, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word expedition does not contain alt text for this photograph of a climber sorting gear among tents."
+      }
+    }
+  ]
+}

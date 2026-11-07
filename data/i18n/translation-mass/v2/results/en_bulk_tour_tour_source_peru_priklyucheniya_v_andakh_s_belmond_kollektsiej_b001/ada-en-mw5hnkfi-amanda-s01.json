@@ -1,0 +1,133 @@
+{
+  "jobId": "en:bulk:tour:tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej:b001",
+  "stableId": "tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3afa407c142f09f276f6479daa5a72ed5e3d6dbfbb9e258e959cfcfc0f8d93f8",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "36aa2385cc0d5c581a1ab72f50e7bdeb524f064b7dcc2458f4a0d07059563060",
+      "text": "Peru tour to Machu Picchu on the Belmond Hiram Bingham train",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnkfi-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word title does not include the complete RU title's Peru and Belmond wording."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "511a885a2b3a62c4498404cc193172f863032db977310d9eda57d122fe8762fa",
+      "text": "This 6-day journey brings together Lima, Cusco, the Sacred Valley and Machu Picchu. Explore the capital's colonial centre and the Larco Museum, visit Chinchero, Moray and Ollantaytambo, and travel to Machu Picchu on the luxurious Hiram Bingham train. The programme also includes gourmet dinners at Casa Moreyra and the MAP restaurant.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnkfi-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview describes a different seven-day structure and has no corresponding six-day lead with Larco, Chinchero, Moray, Ollantaytambo, Casa Moreyra and MAP. This block translates the immutable RU lead without changing its facts."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "50bb06c6687421d33a94359858bf1adb4af89f1e8edf561e8dc81a578b6bbb29",
+      "text": "$4720",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw5hnkfi-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word commercial table has seasonal category prices, with no exact $4720 label; the assigned RU amount is preserved for the commercial master."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8137954c6a092cbb",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+      "text": "Lima",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p37",
+            "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:10b9affb31d6a916",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p40",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9213bdd56c716fed",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f8be62bdaaa80b6d04da49af393d92aabc253c303b9b642797669af6b8eb0ed0",
+      "text": "Sacred Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p98",
+            "textSha256": "0c8841f64f5126cf5bff9d6161afae003d5569e3b4b85ebae05c3495889e03a1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word table's SACRED VALLEY location label in normal title case."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0afab8f7d8295e58",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+      "text": "Machu Picchu",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "a0f44a8110a7777fbf0277e9845c181e280e59750973a6ce48a30a93c580fe2a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:10b9affb31d6a916:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1aBhwdZQpVpBOZPuHurWOgUq90Z69rGvz",
+        "documentSha256": "62d8d9e3d707d029bb16bd966ee6621ef746263ec4744023efe9eda5670cd155",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p40",
+            "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
+          }
+        ]
+      }
+    }
+  ]
+}

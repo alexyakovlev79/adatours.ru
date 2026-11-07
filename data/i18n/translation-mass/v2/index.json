@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 0,
-    "leased": 2,
-    "review": 2815,
+    "leased": 1,
+    "review": 2816,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 0,
-      "leased": 2,
-      "review": 469,
+      "leased": 1,
+      "review": 470,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 2,
@@ -1077,8 +1077,8 @@
         "word_2026": {
           "held": 0,
           "queued": 0,
-          "leased": 1,
-          "review": 13,
+          "leased": 0,
+          "review": 14,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T15:57:14.657Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1a": {
@@ -1347,12 +1347,6 @@
       "token": "lease-o8oi8d3u5i-da48jficpfe",
       "expiresAt": "2026-11-07T14:29:49.191Z",
       "generation": 1
-    },
-    "ada-en-amanda-mw6hx0fd-8c8ojd2ac8x": {
-      "jobId": "en:bulk:tour:tour_source_rybalka_v_pantanale:b002",
-      "token": "worker-gljyzcxwil5-xxijjhepjek",
-      "expiresAt": "2026-11-07T15:57:14.657Z",
-      "generation": 2
     }
   },
   "ownerAssignments": {
@@ -10089,9 +10083,11 @@
       "jobIds": [
         "en:bulk:tour:tour_source_rybalka_v_pantanale:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_rybalka_v_pantanale:b002"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T14:27:14.657Z"
+  "updatedAt": "2026-11-07T14:27:41.231Z"
 }

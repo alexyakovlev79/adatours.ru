@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_po_uruguayu_i_paragvayu_16_dnej:b017",
+  "stableId": "tour_source_tur_po_uruguayu_i_paragvayu_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e7ce805250d79a475e8c5eebaa12d74116d2d53ebe37a7bcf7e241d3bc62c3ed",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:d40dfc898d1f9aa4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b4b85aefbe168afdb88bd6a005e1673b46d5fabbc6293de4ac3b507da02cf403",
+      "text": "Chaco",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0123",
+            "textSha256": "a494636080ef561b678b08aebb8338b317a64b49400b346279f95ba03d761cc9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:80726ee4a2014ff7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5e3abdde291d8b878ccd53fc3b384a65b0b27a8626cf79b55f6545b386f14dd0",
+      "text": "Ciudad del Este",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0064",
+            "textSha256": "553ff4f4cf69f85b5f28b0462af4be5f8241c1222a9b0b23a4fe1ef61aefdb59"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Paraguayan arrival city named in the Day 13 transfer description."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2e9aae17d0a7d02c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0064",
+            "textSha256": "553ff4f4cf69f85b5f28b0462af4be5f8241c1222a9b0b23a4fe1ef61aefdb59"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Brazilian destination from the Day 13 transfer and use its Portuguese spelling."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ec2729595019ad69",
+      "field": "media.alt",
+      "sourceTextSha256": "6f5e2e13ca03d7a9db0f6aaf75867354ad17f87cded378ce76cb2db724f9573e",
+      "text": "Visitors on a viewing walkway among the Iguazu Falls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word describes the falls but contains no alt text for this viewing walkway photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d7c9a1eff4018e22",
+      "field": "media.hover",
+      "sourceTextSha256": "96c290069d9ae49afbd0a974217c19fa142fe7659861ed13feffc6677bf46cbf",
+      "text": "Iguazu Falls from a viewing walkway above the cascades",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word describes the falls but contains no hover caption for this viewing walkway photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6b3629f85b171aaa189220e668a01b1b6ca05e158771def0ff9da5efdedda3e4",
+      "text": "Brazilian Side of Iguazu, Macuco Boat Safari and Parque das Aves",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0068",
+            "textSha256": "c67e52e5d605296bb6656de3f95f833db7d798f36c29fee5dc3e246dc5ef2bec"
+          },
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "fc0de41263abe19738ad5428c8dd36a147561a464095c9825f30abfaa45c6a0e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the corresponding Word day heading with the two named itinerary stops that follow it."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3e636e2dcfc09a1d5ce42748b63d158f74a5fcea686abce5e6da33e448e39130",
+      "text": "Witness the majestic panorama of the falls from Brazil’s breathtaking viewpoints.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "fc0de41263abe19738ad5428c8dd36a147561a464095c9825f30abfaa45c6a0e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:15b0adbbafbb2266",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0064",
+            "textSha256": "553ff4f4cf69f85b5f28b0462af4be5f8241c1222a9b0b23a4fe1ef61aefdb59"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination named in the adjacent Word transfer and restore its Portuguese diacritic."
+      }
+    }
+  ]
+}

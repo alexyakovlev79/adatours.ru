@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b008",
+  "stableId": "tour_source_led_solntse_i_kraj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "764aa90ed046ef4af7b66d893561420555f2fd5bf3be9e5f0656ed9ef3defe64",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:87c5d8cb5113dbde",
+      "field": "media.alt",
+      "sourceTextSha256": "b232feedb5c024eb3181f8a6000435d64631523c11551105c5e0f2091ffa72f8",
+      "text": "Buildings and boats along the Ushuaia waterfront, with forest and mountains behind them, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The verified Word has no text caption for this website itinerary photo; translate the pinned RU image text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:13495917f7261457",
+      "field": "media.hover",
+      "sourceTextSha256": "db7cfa58c3f4f15b6e74ba86f74f1b82a84851f80933398ad246f848fc4a7824",
+      "text": "Ushuaia: waterfront houses beneath the mountains of Tierra del Fuego",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The verified Word has no text caption for this website itinerary photo; translate the pinned RU image text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6d8edca1059cabfd30945ece939b10fd1bcebb6fb1fd2a404bd3adeedbe88aa5",
+      "text": "Ushuaia: Tierra del Fuego National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0058",
+            "textSha256": "a28964d7a0bee8deaf5f3aee801585250ff9cb13512a7f664a376e264a166da7"
+          },
+          {
+            "ref": "word/document.xml#p0059",
+            "textSha256": "127777b1804803db28402ad08a579f64d1a83407b633c55603003bb830bc835e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the city heading with the park named in the day’s programme, using the standard spelling of the park."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8033ba0b013367c9126ba478a8ef6fc8b55e0331bd4caebeebe186beb78616fb",
+      "text": "Breakfast at the hotel. Join a group tour of Tierra del Fuego National Park with an English-speaking guide. You can also book a trip to Martillo Island for a walk among the penguins at $300 per person in a group. The transfer to the port takes about 20 minutes, followed by about two hours on the water. The optional trip is paid for separately.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word paragraphs p0059, p0061–p0062 and p0089 spread the day programme, optional fee and group guiding across separate passages. No standalone equivalent combines only these details and the explicit separate-payment condition in this RU block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5dfd2dfb75550881",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+      "text": "Ushuaia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0058",
+            "textSha256": "a28964d7a0bee8deaf5f3aee801585250ff9cb13512a7f664a376e264a166da7"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination named in the verified Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b9b1b624df0d1c7f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "04a5c4fed1aa08b7d24e5afb0849f3a2ae98f0fa262d9aff59bace154463df3b",
+      "text": "Tierra del Fuego National Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0059",
+            "textSha256": "127777b1804803db28402ad08a579f64d1a83407b633c55603003bb830bc835e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the standard spelling of the national park named in the verified Word itinerary."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:909b7ba814930bee",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "8033ba0b013367c9126ba478a8ef6fc8b55e0331bd4caebeebe186beb78616fb",
+      "text": "Breakfast at the hotel. Join a group tour of Tierra del Fuego National Park with an English-speaking guide. You can also book a trip to Martillo Island for a walk among the penguins at $300 per person in a group. The transfer to the port takes about 20 minutes, followed by about two hours on the water. The optional trip is paid for separately.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word paragraphs p0059, p0061–p0062 and p0089 spread the day programme, optional fee and group guiding across separate passages. No standalone equivalent combines only these details and the explicit separate-payment condition in this RU block."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:19771f18335524b3",
+      "field": "media.alt",
+      "sourceTextSha256": "8cba103da2b87e44b337a54d168b8fdfa6781d34b22e9540b72f01882c206d3b",
+      "text": "View from a boat deck of Ushuaia’s harbour and city buildings below the mountains, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The verified Word has no text caption for this website itinerary photo; translate the pinned RU image text."
+      }
+    }
+  ]
+}

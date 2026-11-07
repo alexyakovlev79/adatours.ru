@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vkusy_brazilii:b005",
+  "stableId": "tour_source_vkusy_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ae9e5cc7c78bf3d01300a9a1fe2ebcb97c54c627ed849c9b6db57974e94bdf74",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:fada3d4353a682b2",
+      "field": "media.hover",
+      "sourceTextSha256": "965794a4c5683818347ee51db0f942d01eba2662bdfa8cbde66d12fd7ae81876",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzzw-z293wwf1e7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary describes Corcovado and its panorama but has no separate caption for this image of the viewpoint."
+      },
+      "text": "Corcovado: the viewpoint by the statue overlooks Rio and the ocean"
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a6dcd7e0282a733f1a0aa74c88c2b05e031bd862649dc9c37b697c6f9ec231e3",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "ac3a1159d29a2976dd42742da8260b8a509d83659087e245ec44946014387c3f"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Retain the Word route heading and omit the day number already supplied by the itinerary structure."
+      },
+      "text": "Rio de Janeiro – Ilha Grande"
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2a2821cd886cb1e9e31c89f75c6079d424cbd3f9213f574241f375a9b3d2e518",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzzw-z293wwf1e7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The corresponding Word day describes a ferry and an optional beach outing. It contains no equivalent for the current RU two-leg private-boat transfer and car-free island description."
+      },
+      "text": "Breakfast at the hotel. The transfer to Ilha Grande has two legs, first by car and then by private boat. After you arrive, check in at your hotel and take some time to relax.\n\nIlha Grande is near Rio de Janeiro. The island is car-free, with plenty of beaches, tropical greenery and places to relax by the water. Taking a boat is one of the main ways to explore the coast."
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "ac3a1159d29a2976dd42742da8260b8a509d83659087e245ec44946014387c3f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place name from the corresponding Word day heading as a standalone itinerary place label."
+      },
+      "text": "Rio de Janeiro"
+    },
+    {
+      "blockId": "tour:itinerary_label:500b37a8cfd5f37e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b8294d936f9c2224e493c1fb4df41336a9462ae5f680acbac32d2a68e698ce87",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "ac3a1159d29a2976dd42742da8260b8a509d83659087e245ec44946014387c3f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place name from the corresponding Word day heading as a standalone itinerary place label."
+      },
+      "text": "Ilha Grande"
+    },
+    {
+      "blockId": "tour:media_alt:289edfbfff1789d0",
+      "field": "media.alt",
+      "sourceTextSha256": "7bad166200120c6472f9ccbf99550b7b3193a9b6be7695b593f1e726e5a51b9f",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzzw-z293wwf1e7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word mentions the beaches of Ilha Grande but does not provide alt text describing the palms, rocks and clear water in this photo."
+      },
+      "text": "Palms, sand and large rocks by clear seawater on Ilha Grande, Brazil"
+    },
+    {
+      "blockId": "tour:media_hover:3f5598e24f35732c",
+      "field": "media.hover",
+      "sourceTextSha256": "010c3cc3fa08804db5c3e5194250ba857f7a304b5473e58ff97a492737aa1bdc",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzzw-z293wwf1e7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary has no image caption for the palm-lined shore with rocks at the water’s edge."
+      },
+      "text": "Ilha Grande: a palm-lined shore with rocks at the water's edge"
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "90189bcacddc5561d6c7441153c024a5433bbdc514ac65819f704bfbb370a9cf",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzzw-z293wwf1e7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word Day 5 heading is simply Ilha Grande and the body names the Blue Lagoon and nearby beaches. There is no equivalent standalone heading for the boat trip."
+      },
+      "text": "Boat trip around Ilha Grande"
+    }
+  ]
+}

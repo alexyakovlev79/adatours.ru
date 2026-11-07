@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_brazilskaya_mechta:b007",
+  "stableId": "tour_source_brazilskaya_mechta",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1c6177eec2e34d871b7248fa6c3c8a3c340c4db5c253320c8dea5b0af88c238d",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:226f02ee11f9e3eb",
+      "field": "media.hover",
+      "sourceTextSha256": "6093b6c76e4ec8a388211f8ae4e997bef8bc3aa71558d91615ed03dc3dd2b5fc",
+      "text": "Paraty: islands and forested peninsulas in the blue sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzfb-317m83qb9js-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme contains no hover caption for this image of Paraty’s islands and peninsulas."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4e7fc27f4259f98b1a2f5bc3c8674bef7d9d460aa8ce40c980e25035ff948be2",
+      "text": "Paraty – Rio de Janeiro or Sao Paulo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "81f651b3dcc7dcc6c96ae31b986c865cb5afde791a5151e67429bf732d7f8f8b"
+          },
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "5e71d240155fba2cc504ca5b018a6ad630513a462623150504061a851234464f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the approved Day 7 starting point with the two onward airports named in the transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "dfa9b0e98c31215769d5979000600997e86354770056aa866d34f9fbb7cff58a",
+      "text": "Transfer to Rio de Janeiro or Sao Paulo for your outbound flight ( it’s 4 hours till Rio and 5.5 till Sao Paulo)",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "5e71d240155fba2cc504ca5b018a6ad630513a462623150504061a851234464f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f82a47102d58c1a2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "5e71d240155fba2cc504ca5b018a6ad630513a462623150504061a851234464f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts one of the onward flight destinations from the approved transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a11d8010bcc5ed0a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3b696c0580339afaf47c3619acb2af48388a438e1e30fda7e50da2cfbc5c80e8",
+      "text": "Paraty",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0",
+        "documentSha256": "dde235f9159e183263d65edea234304359363ba1e25d8bdf2a9385e250312723",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "81f651b3dcc7dcc6c96ae31b986c865cb5afde791a5151e67429bf732d7f8f8b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the starting point from the approved Day 7 heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:9ed6b3838591168d",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro with the bay, Sugarloaf Mountain and city buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzfb-317m83qb9js-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme contains no alt text for this specific panorama of Rio de Janeiro."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e790a931a642413c",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugarloaf Mountain seen from above the city",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzfb-317m83qb9js-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme contains no hover caption for this specific panorama of Rio de Janeiro."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "ece94c2172bc277a3d44825302a3c87e45a6ca778afaf291f1f0cf799aefe937",
+      "text": "Sailing yachts off the coast of Angra dos Reis in low sunlight, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hzfb-317m83qb9js-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme contains no alt text for this specific image of yachts off Angra dos Reis."
+      }
+    }
+  ]
+}

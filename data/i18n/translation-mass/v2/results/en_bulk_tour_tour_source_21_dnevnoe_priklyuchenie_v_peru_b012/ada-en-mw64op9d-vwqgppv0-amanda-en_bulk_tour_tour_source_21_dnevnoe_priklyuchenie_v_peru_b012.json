@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b012",
+  "stableId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "59daee6fab5700d0f137ac8ef6bda9f603c6676e76ac2bfa381b35b805b4900a",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:73c851de379ab864",
+      "field": "media.alt",
+      "sourceTextSha256": "17a2f4bbcb73ac8e574650df1b1f4aba3e382c7ab3081b91c5f0797c78767551",
+      "text": "Broad stone terraces and a stairway above the ruins of Ollantaytambo, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The selected Word's Day 13 names Ollantaytambo as the rail departure point. It does not caption the ruins or describe the broad terraces and stairway shown in this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b5fad7f7f6ed4ce8",
+      "field": "media.hover",
+      "sourceTextSha256": "3fd68168d680999bff9430f59651f417be74acf7ce792a34ce4a788e082abf5b",
+      "text": "Ollantaytambo, Peru: a view from above of the terraces and ancient buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Day 13 describes the transfer through Ollantaytambo, with no caption for an elevated view of the terraces and ancient buildings in this image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "aec93c6d1e0e16c6bd5fc2834cc7013e3851570d973593d30d634256dcca44b3",
+      "text": "Machu Picchu – Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0060",
+            "textSha256": "b21ddd6729b408d62ce0a0a9fe74b4f3d6d1638d6fd474d56354db339e2df477"
+          },
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "ca1038b224c41419802ae51678f6382fbbfae6c8de8a209337741bd4b827986b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Day 14 site named in the heading with the rail destination specified in the afternoon itinerary, keeping the route order."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6dac6df75b7b1b3e4dc9d04ef127f179baac2aea4f7ea797d09bc62824308b5f",
+      "text": "Begin your day with a morning guided tour of the iconic Machu Picchu, one of the Seven Wonders of the World. Explore the ancient Incan citadel, discovering its impressive temples, plazas, and terraces. Your knowledgeable guide will share fascinating insights into the history, culture, and significance of this UNESCO World Heritage site as you wander through the mystical ruins and take in the breathtaking views of the surrounding mountains. Lunch is included.\n\nAfter your memorable visit, enjoy a scenic train journey back to Cusco in the afternoon. As you travel through the stunning Andean landscape, take in the beautiful vistas of valleys, rivers, and mountains that make this region so unique. Upon arriving in Cusco, you’ll have the rest of the evening free to explore this vibrant city at your own pace.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "ce1d2cb7ad8529e98baaf23dd3e451baa5ad8456c03b94dc7e3fbc471601d4b1"
+          },
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "ca1038b224c41419802ae51678f6382fbbfae6c8de8a209337741bd4b827986b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2c152bff39cdc633",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "text": "Cusco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "ca1038b224c41419802ae51678f6382fbbfae6c8de8a209337741bd4b827986b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the afternoon train destination from the Day 14 paragraph for the first itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fc952d761bb85dfe",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c5c38498f05c6389917c63bb64ecb3f512eda1c64598c859b292a56a7906dfe7",
+      "text": "Machu Picchu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0060",
+            "textSha256": "b21ddd6729b408d62ce0a0a9fe74b4f3d6d1638d6fd474d56354db339e2df477"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number and punctuation from the Word heading to obtain the site name for the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ef603ff697413e2c",
+      "field": "media.alt",
+      "sourceTextSha256": "d53e5b326d5edf819fdbebdd5c789a458eda28c9588bbcf7529a77efa623d058",
+      "text": "Stone terraces and ruins at Machu Picchu below steep green peaks, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Day 14 text mentions ruins, terraces and mountain views but has no caption identifying the particular steep green peaks and stonework in this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:772a241282c127ef",
+      "field": "media.hover",
+      "sourceTextSha256": "2442028696faa8d96328ae856af792a5cdc503f2b4d96f7ab0ea84bbf4ea0f09",
+      "text": "Machu Picchu: a sunlit view of the ancient city among the mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64op9d-vwqgppv0-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word's Day 14 describes a guided visit and views of surrounding mountains, with no caption matching the sunlit view in this image."
+      }
+    }
+  ]
+}

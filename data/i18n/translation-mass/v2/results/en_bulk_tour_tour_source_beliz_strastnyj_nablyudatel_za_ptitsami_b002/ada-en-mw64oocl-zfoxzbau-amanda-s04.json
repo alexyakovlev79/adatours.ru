@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b002",
+  "stableId": "tour_source_beliz_strastnyj_nablyudatel_za_ptitsami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d5f316c95740b9a28e1c87f702b40016f1cfbf61d0f14f919faabb8044b90905",
+  "blocks": [
+    {
+      "blockId": "tour:included:b2615d5bb449de29",
+      "field": "included",
+      "sourceTextSha256": "00147059abb0ee4b9eb5140e44b6d751c9e1035d200f3242926da67900c4f7aa",
+      "text": "Meet and greet at the airport.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "5f4d962bb251079cffb3ec49f7f359a3f75f9bce12e58528b4ccc5b7bdaa7c00"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word inclusion lists meet and greet, and the arrival itinerary identifies the airport."
+      }
+    },
+    {
+      "blockId": "tour:included:268de8b14e3547dc",
+      "field": "included",
+      "sourceTextSha256": "6452bcdf7bc2fd24eab2c79b35caad9c0bff98d154eaf380f56bbd599747c5b8",
+      "text": "2 nights at Best Western Biltmore Plaza in a standard room.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "2c7f3e8bde3eed78884064ba80c9573fb5e94bdbd3da7d897f52a81a9474360b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the verified Word hotel inclusion into the accommodation field and the separate tax and meal field."
+      }
+    },
+    {
+      "blockId": "tour:included:0a91eb5bb7ec3e73",
+      "field": "included",
+      "sourceTextSha256": "1b750a74b78f83b36983b119a9afc9b47317a6b95c7ccaa51554234f78ccf7af",
+      "text": "Hotel taxes and breakfast at Best Western Biltmore Plaza.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "2c7f3e8bde3eed78884064ba80c9573fb5e94bdbd3da7d897f52a81a9474360b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the tax and meal information from the Word inclusion in its own field."
+      }
+    },
+    {
+      "blockId": "tour:included:ea4f4a08423db736",
+      "field": "included",
+      "sourceTextSha256": "d01f731919f8fc95f100d41a61d88f017413e22526461a2f54a78fccf9e4a968",
+      "text": "Guided tours of Crooked Tree and Altun Ha, St. Herman’s Cave and the Inland Blue Hole in St. Herman’s Blue Hole National Park, Cockscomb Basin Wildlife Sanctuary, birdwatching along the Hummingbird Highway, Tikal and the Belize Zoo.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "09c99dc7004622fbc2cddcd3e776b538590e51e9cda9d20c3ef16a4e60a001d4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separate the tour list from its lunch and entrance-fee clause and expand names from the corresponding itinerary; the Word’s Tika entry is Tikal."
+      }
+    },
+    {
+      "blockId": "tour:included:d2107fea3cbe97c1",
+      "field": "included",
+      "sourceTextSha256": "930fe6460e40caca66b67e1b734b8d093b23e22e91291a2a3a8f4d5e4dbc7b26",
+      "text": "Lunches and entrance fees on tours where listed in the itinerary.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "09c99dc7004622fbc2cddcd3e776b538590e51e9cda9d20c3ef16a4e60a001d4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the lunch and admission terms from the combined tour-list item and retain the itinerary scope."
+      }
+    },
+    {
+      "blockId": "tour:included:23a6c2997fb539a9",
+      "field": "included",
+      "sourceTextSha256": "c433b58ec418db39a62001604ced4d071037aa14c6f300a6670597283bfbe6ae",
+      "text": "3 nights at Pelican Beach Resort in an air-conditioned room.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "ecf7ec32c51085b6f5d008a6e1d324047dbbaadae5842f42fb6900a658cc8cb6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the hotel inclusion and expand the Word abbreviation A/C for the separate accommodation field."
+      }
+    },
+    {
+      "blockId": "tour:included:c85161080d7a958c",
+      "field": "included",
+      "sourceTextSha256": "43e65c24f851b1f279dcc8975e9decf6ffccff98f4b2fc8f310d1bca1b309a07",
+      "text": "Hotel taxes and continental breakfast at Pelican Beach Resort.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "ecf7ec32c51085b6f5d008a6e1d324047dbbaadae5842f42fb6900a658cc8cb6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the tax and meal terms from the combined Pelican Beach Resort inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:bc7ca9a0ee87bb2c",
+      "field": "included",
+      "sourceTextSha256": "338cf0ee1f4bfbf7d85a969f2957d2bb08c2075c34300d2ce9d4efac9e3be58a",
+      "text": "2-day / 1-night Tikal package: private transfers to and from Tikal, 1 lunch, 1 breakfast and 1 night at Jungle Lodge.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0091",
+            "textSha256": "48c6ffb8b593cf7937c58a0f19442f43f2f104f10ee2fb4b6f9faacf95bb0401"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the list marker and format the corresponding inclusions as a website list entry without changing the package terms."
+      }
+    }
+  ]
+}

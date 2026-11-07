@@ -1,0 +1,160 @@
+{
+  "jobId": "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b015",
+  "stableId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ec4cebd57e5ee53e4a9272962c52704ccdacb0ca1c4af27dfc532652fa81ee88",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:0a54ad54d36b0a7d",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2d72038b2aba8d27697ad9b98efb563e77803a9bd8d7077978fcddcd5e8656a4",
+      "text": "Puerto Maldonado to Tres Chimbadas Lake",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0077",
+            "textSha256": "e3269ecb7245434c7f24d62967e91a18722681b52e4936cd7da09c88459f3eaf"
+          },
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "e1733dd05f3367eb330d0c0687c0b41335f23d44b959e7fa1f4c8bf80f0852fa"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the itinerary base from the day heading with the lake named as the boat destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:cad8c23d0530c6f0",
+      "field": "itinerary.text",
+      "sourceTextSha256": "873edfa636ed6ede194f3b740ef01f88f16b6029decd55dd3c6e7c1369b7768d",
+      "text": "Explore the Tambopata River further with a boat ride to the Tres Chimbadas Lake, where you can try to spot giant river otters and other wildlife. You’ll also enjoy the serene beauty of this remote location.\n\nVisit a nearby native village to learn about the traditions, customs, and daily life of the local indigenous communities. Experience cultural exchanges and see local artisans at work. Back at the lodge, relax and enjoy a final dinner, perhaps accompanied by a local performance or storytelling session about Amazonian myths and legends.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "e1733dd05f3367eb330d0c0687c0b41335f23d44b959e7fa1f4c8bf80f0852fa"
+          },
+          {
+            "ref": "word/document.xml#p0079",
+            "textSha256": "9d507a074ba420df684273e58a5541a1985d87c733e75e84569a5953eaf17cea"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:952f3e376a2acb7e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cfd768eea9e7062bef04af0cbb6b0134aa583513b854f3b73e0538e355de848c",
+      "text": "Puerto Maldonado",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0077",
+            "textSha256": "e3269ecb7245434c7f24d62967e91a18722681b52e4936cd7da09c88459f3eaf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the itinerary base from the Word heading as a standalone location label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:046fabc1a0ae37d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "28a4ddda3735ae39dd6d3db2e5ea9f940777010e970674d10ceb4fb0229493c7",
+      "text": "Tres Chimbadas Lake",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "e1733dd05f3367eb330d0c0687c0b41335f23d44b959e7fa1f4c8bf80f0852fa"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the lake name from the confirmed boat itinerary for the destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:311be3d23563ad84",
+      "field": "media.alt",
+      "sourceTextSha256": "25b5380a7d1461488423e233821c0806e1cd1463e340e96cc9466f724fc18e76",
+      "text": "Wooden motorboat by the riverbank in Puerto Maldonado, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word itinerary includes a boat trip but provides no caption describing this motorboat photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f5a2f64a9cec1aea",
+      "field": "media.hover",
+      "sourceTextSha256": "fe721a3dcea770f52db123ef52c5e1e434619bf714b73e9d6953f2f3e6059169",
+      "text": "Puerto Maldonado, Peru: a boat under trees beside the broad river",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word itinerary contains no matching hover caption for this riverbank view."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:21fcb8c1e191652d",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9e4edfb28fe7b15f8509026125a3acb12af6fdb3b564be2f1ae9f5a053715d72",
+      "text": "Puerto Maldonado to Lima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0081",
+            "textSha256": "541c43014df5b9eadf4ba688c119142627b1e8e7ba9ed02072cad1a389c0b4c7"
+          },
+          {
+            "ref": "word/document.xml#p0083",
+            "textSha256": "2537001bf6426989cc3f2b0687c4dc73a43db7192f51100032626cc90f5144d2"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word departure base with the confirmed arrival city for the transfer-day title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:418d1a436ccf17b9",
+      "field": "itinerary.text",
+      "sourceTextSha256": "3d0db921b3ae491fcdf4b4a70ecfe224e9587fbe1379410aa587c3852fae844d",
+      "text": "After breakfast, enjoy a final, short excursion or nature walk in the early morning to soak in the sounds of the rainforest one last time. If you have time, visit the lodge’s small naturalist shop for unique handicrafts or souvenirs.\n\nTransfer back to the Puerto Maldonado airport by boat and vehicle for your flight. Arrival in Lima, meet with the driver and transfer to the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0082",
+            "textSha256": "eaa46ed82a3e52b79aaa1cd1b0f932fd8e7f1b308143208dbc507b34456d4867"
+          },
+          {
+            "ref": "word/document.xml#p0083",
+            "textSha256": "2537001bf6426989cc3f2b0687c4dc73a43db7192f51100032626cc90f5144d2"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_south_12d:b004",
+  "stableId": "tour_brazil_south_12d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "6a139f5a1aadd4f6da6557c4c3f0bd300f7ac827f664ce720458b5dd8015d73c",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:3cd7e989c5be4d03",
+      "field": "media.hover",
+      "sourceTextSha256": "313aba5485550185f19af538fc5341550142ecc8100e77c5ce39e3e9c76c5963",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Day 1 Word narrative mentions Ipanema’s promenade but contains no caption for this image."
+      },
+      "text": "Ipanema Beach and Rio’s patterned promenade"
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "8a88b9beacb7a325244388847f8df5b71f82b29cc3591d7c0ecaf59f410d6cc2",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:body/p[13]",
+            "textSha256": "2761e66f6ae858e96cd438fd1964d5840f2bcc73de1ac2ba1caa1c4000641c80"
+          }
+        ]
+      },
+      "text": "City Tour and Sugarloaf Mountain (4 hours)"
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "35469ba02823d91c7d92d1de51339ce61053d631c0390ecaf552e68be2cd02b1",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:body/p[12]",
+            "textSha256": "8b939f652978a2b75610df21894650a09cbcbf8fda4ee83ee297c0662e9a2df3"
+          },
+          {
+            "ref": "word/document.xml:body/p[14]",
+            "textSha256": "329b15172a5dea25c50cb1db4707e115822d88dfa3e27389845ceb0607c11c37"
+          }
+        ]
+      },
+      "text": "Breakfast at the hotel.\n\nThe first stop is on Urca Mountain, with a wide viewing area. A cable car ride will take you up to Urca Mountain, the stop between ground level and Sugarloaf. Once arriving at the top of Sugarloaf Mountain you will see the captivating beauty of Rio from a different angle. To your left you can see Copacabana beach stretching out into the distance, and on the horizon the faint outlines of Two Brothers and Gávea mountains. Below you are the intimate Red Beach, while to your right you can see across Guanabara Bay to Niteroi and, nearer by, Botafogo and central neighborhoods, with the unmistakable silhouette of Christ the Redeemer casting its eternal gaze over the city. From this point we gain a different perspective on Rio and can truly appreciate its beauty. After descending the mountain by cable car, you will head into the Historical Center with its colonial architecture including many old churches still in use. The cobbled streets and bright colors are a stark contrast to the whitewashed, sun-soaked streets of Ipanema but in many ways are part of the authentic, nearly forgotten historical Rio, and one can almost feel the hustle and bustle of hundreds of years ago when these streets were filled with merchants and citizens of the Portuguese Empire, locals, immigrants etc."
+    },
+    {
+      "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:body/p[10]",
+            "textSha256": "14235775568d92144e5f005a0a96ed82d1ce92732b1e2fd6ea0cea33516d6aee"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 2 prefix to obtain the standalone location label."
+      },
+      "text": "Rio de Janeiro"
+    },
+    {
+      "blockId": "tour:itinerary_label:471bc7f7691d6e1a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c20fa275ecbe6a0d6c918b2133e0ffc8929360be9e40d9e18c29cdf8fd581bcf",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:body/p[13]",
+            "textSha256": "2761e66f6ae858e96cd438fd1964d5840f2bcc73de1ac2ba1caa1c4000641c80"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Retain only the named landmark from the Day 2 activity heading."
+      },
+      "text": "Sugarloaf Mountain"
+    },
+    {
+      "blockId": "tour:media_alt:6f53b41fcc94e5e4",
+      "field": "media.alt",
+      "sourceTextSha256": "c68a7f91f7345e1320b24d7f789fc8573e01f87b81ffacdc35cafe5be8de5699",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Day 2 Word section describes Sugarloaf and the city tour and supplies no alt text for this aviary photo."
+      },
+      "text": "Blue-and-yellow macaws and a red parrot on wooden branches in a green mesh aviary"
+    },
+    {
+      "blockId": "tour:media_hover:358f48072a64daff",
+      "field": "media.hover",
+      "sourceTextSha256": "27b08d460fd9782bb1e268b795045267807c9a31d16cb4e866ef9a0e3686620f",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary has no hover caption for this Day 2 photo. Its later Bird Park text describes a different context."
+      },
+      "text": "Macaws on branches amid the greenery of an aviary"
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "72dba9e23cdbacf6daa14de66a493e19b8ed558026945b84ba10cc8635d9a958",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:body/p[17]",
+            "textSha256": "f06cd63d416a84dcae53c8a7f496ffedf5240126a20392bbc9b341ca5084f7e9"
+          }
+        ]
+      },
+      "text": "Tour to Corcovado Mountain + Christ the Redeemer Statue (4 hours)"
+    }
+  ]
+}

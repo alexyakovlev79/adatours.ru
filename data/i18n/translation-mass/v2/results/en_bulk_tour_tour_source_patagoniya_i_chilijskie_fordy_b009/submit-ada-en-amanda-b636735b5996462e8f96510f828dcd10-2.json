@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_patagoniya_i_chilijskie_fordy:b009",
+  "stableId": "tour_source_patagoniya_i_chilijskie_fordy",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "8c9ec4681c938298aa9e9cb120a9870d6670ef9227975e4e7b7fd59bda2cd4da",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:8aa16f0d2c3d81fa",
+      "field": "itinerary.label",
+      "sourceTextSha256": "043d0a08edf1f358142645d9e14c9610be66c4e45c856892890c2876f47a8472",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "2dc8ac4df1f2613d2b02605bc91f97776e0c011a7ea86b2c93231016a4dec0bb"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extracts the exact Word itinerary place name while omitting the surrounding day label and other locations."
+      },
+      "text": "Strait of Magellan"
+    },
+    {
+      "blockId": "tour:itinerary_label:0b7abe01faec54f1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2c9cc3d078770d9104dfc12652451fbb76112e179c002c6ca86f3b0e73f425f0",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "2dc8ac4df1f2613d2b02605bc91f97776e0c011a7ea86b2c93231016a4dec0bb"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extracts the exact Word itinerary place name while omitting the surrounding day label and other locations."
+      },
+      "text": "Tierra del Fuego"
+    },
+    {
+      "blockId": "tour:media_alt:757f80c7be5b80a2",
+      "field": "media.alt",
+      "sourceTextSha256": "e831cbbfde00ee50fc15ccbedc2d3a8fa7f5154212351b92aebcbe08f8e544b0",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-b636735b5996462e8f96510f828dcd10",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word 2026 discusses possible whale sightings in paragraph 0019 but has no alt text describing the whale at the surface and the mountain backdrop."
+      },
+      "text": "A humpback whale surfaces against the mountains of Francisco Coloane Marine Park, Chile"
+    },
+    {
+      "blockId": "tour:media_hover:4efb12177727f766",
+      "field": "media.hover",
+      "sourceTextSha256": "a0b5b4f55002210ffe9148c4f61810fe47e8e6602f93f028619d5a6ac99fbe61",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-b636735b5996462e8f96510f828dcd10",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word 2026 names the marine park and whales in paragraph 0019 but has no matching caption for the waves and misty mountainous shore."
+      },
+      "text": "Francisco Coloane Marine Park, Chile: a whale among the waves off a misty mountain shore"
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7bda26d6bf6a72038979a16b3e19e83df33a56abe213e1a16ac8b666eb45b445",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "34fd1d5f64f13d8eb0875429e7a82e61a5d3ca0b89595e445d26f965160db08a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Keeps the two named locations from the Word day heading and drops the day number."
+      },
+      "text": "Beagle Channel & Garibaldi Fjord"
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "436ea51b8a2ff54d8363942c1b5bdac3e8d539da8dc9d5854f667d3be7fe9090",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "82885c3f88cc4f8748a491740ea7b74d24d9d0199a1e7091369aa98b4f7402a2"
+          }
+        ]
+      },
+      "text": "The Beagle Channel is a striking narrow passage in the archipelago of Tierra del Fuego, a region originally named after the fires that burned in local native settlements when the first European explorers arrived. Dividing Chile and Argentina, the passage showcases ice formations along the snow-dusted Darwin Range. We will sail along Glacier Alley, home to the Holanda, Italia, Francia, Alemania, and Romanche glaciers, aiming to explore the Garibaldi Fjord."
+    },
+    {
+      "blockId": "tour:itinerary_label:9258a6a18c4b5b36",
+      "field": "itinerary.label",
+      "sourceTextSha256": "85e3cd07361823860314d154e334bbbd66f87e466b7e86532672bb49570107f5",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "34fd1d5f64f13d8eb0875429e7a82e61a5d3ca0b89595e445d26f965160db08a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extracts the exact Word itinerary place name while omitting the surrounding day label and other locations."
+      },
+      "text": "Beagle Channel"
+    },
+    {
+      "blockId": "tour:itinerary_label:79ed381b93011499",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7262fda36b6631b4b5038863932ddd302b777d525a8a6a8506f61635925ff77d",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ZW8hZsznNmUzC5Xod7IRp3SbUNS1sVZm",
+        "documentSha256": "8bcf76a8f062a72db42f2c5f23405332a8ba029350b23d38ab3616350b2f259f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "34fd1d5f64f13d8eb0875429e7a82e61a5d3ca0b89595e445d26f965160db08a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extracts the exact Word itinerary place name while omitting the surrounding day label and other locations."
+      },
+      "text": "Garibaldi Fjord"
+    }
+  ]
+}

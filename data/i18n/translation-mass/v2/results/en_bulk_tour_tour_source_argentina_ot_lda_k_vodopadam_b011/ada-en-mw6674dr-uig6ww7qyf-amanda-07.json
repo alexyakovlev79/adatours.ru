@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b011",
+  "stableId": "tour_source_argentina_ot_lda_k_vodopadam",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ea4ba3e8f8ebb53bc6299af85990e3226954812adb7421bcb7e646df42c22c24",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0106",
+            "textSha256": "307eb6bf2c006126065138f588cb1e4cd7d07ac7d34e30c9430c5e0c779c5025"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city from the final day heading as the standalone itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "448c751c33c67f938b9ad12cb09505d24252a5ae8ecbf92b63b7459ad1384f4a",
+      "text": "Private transfer from hotel to the airport.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0107",
+            "textSha256": "f0241174298b59c238de318e0079e0a419a7cc92115051a2c0affc591639bd32"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ffe3d969b9d1dcee",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0106",
+            "textSha256": "307eb6bf2c006126065138f588cb1e4cd7d07ac7d34e30c9430c5e0c779c5025"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city from the final day heading as the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5d4cfb58ac05acf7",
+      "field": "media.alt",
+      "sourceTextSha256": "3bdc7b9cfb796c0c434b130576455142a4d5a23a195d8f3bb608fcac32d51f82",
+      "text": "A wide avenue with tree-lined walkways in central Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word sightseeing text names a broad avenue, but gives no alt text for the avenue and its green walkways in this image.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:9d5de48f1aacdf8f",
+      "field": "media.hover",
+      "sourceTextSha256": "d1e2b6b0bf5427302a16621cb1a86d1c570db90af5b1710be80a44ef58d82d77",
+      "text": "Buenos Aires from above: a multi-lane avenue between city blocks",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word discusses the city avenue during the guided tour but has no caption for the aerial view between city blocks.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "0c2432ccb4a2e9bb2e7e1fe576d04256fd95c2d428e36e42f7827d969e0315e7",
+      "text": "Illustration of the cascades on the Argentine side of Iguazú Falls amid subtropical forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word describes the Argentine falls circuits but contains no alt text identifying this image as an illustration of cascades and subtropical forest.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "0c2432ccb4a2e9bb2e7e1fe576d04256fd95c2d428e36e42f7827d969e0315e7",
+      "text": "Illustration of the cascades on the Argentine side of Iguazú Falls amid subtropical forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word describes the Argentine falls circuits but contains no matching caption for the illustrated cascades in the forest.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "63b5e9fa0f0eeb14bd5df69aea4072c52f5612504ba071f010181b504b10a8b8",
+      "text": "\nOver 10 days, you’ll see three very different sides of Argentina. Start in Buenos Aires with its historic neighbourhoods, Plaza de Mayo and the Casa Rosada, then spend an evening at a tango show. Next, head south to El Calafate and the Perito Moreno Glacier. Finish in subtropical Iguazú, where you can see the same waterfall system from both the Argentine and Brazilian sides.\n\nThe contrast between the regions is especially clear in this order. The capital offers architecture and city culture. Around El Calafate, you’ll find cold air, open Patagonian landscapes and ice. In Iguazú, there’s dense greenery, humid air and the constant sound of falling water.\n\nOn your free day in Buenos Aires, you can explore independently or choose an optional trip to Tigre, a ranch day with a Fiesta Gaucha, or a ferry trip to Colonia del Sacramento in Uruguay.\n\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word has no standalone overview matching the RU body. The optional Uruguayan ferry destination in the overview follows the verified Word’s specific Day 3 entry for Colonia del Sacramento.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    }
+  ]
+}

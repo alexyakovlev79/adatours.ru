@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 122,
-    "leased": 8,
-    "review": 2686,
+    "leased": 7,
+    "review": 2687,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 118,
-      "leased": 8,
-      "review": 347,
+      "leased": 7,
+      "review": 348,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -477,8 +477,8 @@
         "word_2026": {
           "held": 0,
           "queued": 1,
-          "leased": 1,
-          "review": 8,
+          "leased": 0,
+          "review": 9,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T14:11:12.883Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "01": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw6e6me8-dmgxzgogttv-amanda": {
-      "jobId": "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b004",
-      "token": "93b57wtlkzg4i5k2rlftfwmw6e6me8",
-      "expiresAt": "2026-11-07T14:11:12.883Z",
-      "generation": 2
-    },
     "ada-en-amanda-b636735b5996462e8f96510f828dcd10": {
       "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b010",
       "token": "ac338effd027a45afd1ca617eb7b8fc9352424f1794954cf",
@@ -9755,7 +9749,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b004"
+      ]
     },
     "ada-en-amanda-b636735b5996462e8f96510f828dcd10": {
       "token": "ac338effd027a45afd1ca617eb7b8fc9352424f1794954cf",
@@ -9801,5 +9797,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T12:42:32.660Z"
+  "updatedAt": "2026-11-07T12:42:58.877Z"
 }

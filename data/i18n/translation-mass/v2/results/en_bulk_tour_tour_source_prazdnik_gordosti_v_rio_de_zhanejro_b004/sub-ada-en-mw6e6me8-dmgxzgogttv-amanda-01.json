@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b004",
+  "stableId": "tour_source_prazdnik_gordosti_v_rio_de_zhanejro",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "28906c337ce5ed3de4e18b982d6b6eb89d3989a31e910ab6094994b3996dafe8",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "77b040b9aa7e0642768f7e637e24c2cf5c171ba929f818fc70e3539706af392a",
+      "text": "Rio de Janeiro: Sugarloaf Mountain",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0049",
+            "textSha256": "27b3bb4dd92fd586851d928f11ba7766dcec63b597ce651cf4582fc83048e1b1"
+          },
+          {
+            "ref": "word/document.xml#p0050",
+            "textSha256": "1d8f126a0bc28b4c1406dd894490a8112f8fa1e3b5fd084ec0709bc454df4da4"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word day location and its Sugarloaf tour heading into the short itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "de22b0f5b52e44a8b41539ee7e52c3dbca158aab6baa7a453c4c975e599545d4",
+      "text": "After breakfast in your hotel you will be taken to the mythical Sugarloaf mountain, protruding abruptly from out of the ground like an asteroid just fallen from space. A magnificent cable car ride will take you up to Urca Mountain, the stop off between ground level and Sugarloaf. From there you can enjoy a smooth cocktail or sample some of Brazil’s many signature dishes. Once arriving to the top of Sugarloaf mountain you will see the captivating beauty of Rio from a different angle, To your left you can see Copacabana beach stretching off into the distance, and on the horizon the faint outlines of Two Brothers and Gávea mountains. Below you is the quaint and intimate Red Beach, while to your right you can see across Guanabara Bay to Niterói and, closer in, Rio’s Botafogo and central neighbourhoods, with the unmistakable silhouette of Christ the Saviour casting its eternal gaze over the city. This trip is essential to gain a different perspective on Rio, and to truly understand its beauty. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0051",
+            "textSha256": "db2c0db558f4546467c54dc5cab018bf30d61e7bf2462b3169f7fad80b334ad8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0049",
+            "textSha256": "27b3bb4dd92fd586851d928f11ba7766dcec63b597ce651cf4582fc83048e1b1"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word day number to retain the destination name for the separate place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b45eae09fd307668",
+      "field": "media.alt",
+      "sourceTextSha256": "75fd43cb29c400a658e713826ce4d4c6aed9071cc3ae170d5e7410691bc48e1e",
+      "text": "Shady street with trees and café tables in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6me8-dmgxzgogttv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The original Word has no image description for the site's café street photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7d79c315121388be",
+      "field": "media.hover",
+      "sourceTextSha256": "ecba5fbddfc6c7478d232c03b457a75cca1e62c5e52462774926ac960e4a9f4b",
+      "text": "Rio de Janeiro: sidewalk café beneath the trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6me8-dmgxzgogttv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The original Word has no image hover caption for the site's café street photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e6d7036bb7760499f6805108d7e387b4b633aeaecc6df8c107a1a652cf270c22",
+      "text": "Angra dos Reis and Ilha Grande",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0054",
+            "textSha256": "71f5230f729709aca19a85d823256bcc21f6abefe5d7c7817e2f3fc0b89e2a7f"
+          },
+          {
+            "ref": "word/document.xml#p0055",
+            "textSha256": "1c142cc2da3ff857a94918b39415fd8e2a1037a3d5cc02ce4845f3d00bb3dbfc"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses the two named destinations from the Word island excursion as the concise itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "735ced01c00ed3efa8bca108ed6f5e2becef695d341abc232fd2a16d83c5bd79",
+      "text": "After breakfast at hotel you will go on a Tropical Islands trip. Enjoy a wonderful full day tour at Angra dos Reis and Ilha Grande on a boat. Your driver will pick you up at your hotel in the morning and you will go on a tour to discover amazing islands between 10 AM and 4 PM. Your driver will then bring you back to your hotel in Rio.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0055",
+            "textSha256": "1c142cc2da3ff857a94918b39415fd8e2a1037a3d5cc02ce4845f3d00bb3dbfc"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:42b1d5c35e6d34c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
+      "text": "Angra dos Reis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0055",
+            "textSha256": "1c142cc2da3ff857a94918b39415fd8e2a1037a3d5cc02ce4845f3d00bb3dbfc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the named Angra dos Reis stop from the Word excursion paragraph for its individual place label."
+      }
+    }
+  ]
+}

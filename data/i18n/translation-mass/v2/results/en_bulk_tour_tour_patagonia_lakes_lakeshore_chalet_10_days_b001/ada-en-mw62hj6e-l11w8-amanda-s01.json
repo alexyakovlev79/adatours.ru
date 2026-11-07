@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_patagonia_lakes_lakeshore_chalet_10_days:b001",
+  "stableId": "tour_patagonia_lakes_lakeshore_chalet_10_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "660b09b19c3ba6b0f6b366d48c18e18e2438f2169f176e32a4ed85cf003a9f13",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "cc9269086d08bd1547b913e0340bad4dd08a5859dd8797133ab976bff516315e",
+      "text": "Patagonia Lakes Experience – Lakeshore Chalet",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1C9WW594JL3xCG-3R5St1xKVPOPM8uQJ_",
+        "documentSha256": "31aaa792a28dca4313e40dbe1cd054fc1f7fa55083c87c0cb2dbce9eb4fbafb7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "a6265de13c18425514a115990813196118dfe36363b2753a4d5136170a1c1f7b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "7039e932e4baea78c6eb7e09eebb32786c35db6962b3102e0dc21e784f4be32f",
+      "text": "Spend ten days in the lake district of Argentine Patagonia at Lakeshore Chalet on Lake Nahuel Huapi. The trip includes five full days of fly fishing on the Limay River and a day aboard a private boat. Meals, wine, transfers, fishing guides, gear and licences are included. The price is USD 39,780 for a group of up to six guests.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw62hj6e-l11w8-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word opening overview omits the Limay River, transfers, gear, licences and group price. They appear separately in the itinerary, inclusions and price line. There is no complete Word counterpart for the current RU lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "01e4214c1b7cb0a3bc69e40b651ac8fa2448ceab6ad1d3cafc4f1cca76088146",
+      "text": "USD 39,780 for the entire group of up to six guests. The number of nights charged will be confirmed at booking.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw62hj6e-l11w8-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word group price matches, but the duration line says nine nights and the included accommodation says ten. Word has no booking-confirmation wording for the number of nights charged. The current RU note resolves the wording without changing the tariff."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "a56838e3f5f6db1c36160d5571ee519668b5402d7d1d0562a2f7f78fce79c885",
+      "text": "Private trip for a group of up to six guests",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C9WW594JL3xCG-3R5St1xKVPOPM8uQJ_",
+        "documentSha256": "31aaa792a28dca4313e40dbe1cd054fc1f7fa55083c87c0cb2dbce9eb4fbafb7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "6c77e6a609c6066f0b54fa7cad97f9f91d78f11ee6aea0822ec51c4e7017cdb2"
+          },
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "84ea8f4a678945f0ad36a8bb54338fc2674fdadbb87c6542230be82d0f4fb830"
+          },
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "101a858ff51818348b2186921408c748e11d2b63cbf48212d790be26b1e490b9"
+          },
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "260c756659c344dcb7bfa78c6518d8c3571bd73dcc4f83ee5852bec1a46f3726"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Forms a short format label from the group limit, exclusive package and explicitly private transfer and boat services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:16dc6e77772d53de",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7cc6a35b73304ba63e4543dce1f9d0a412e692af23e94e33354dca577daf970d",
+      "text": "Bariloche",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C9WW594JL3xCG-3R5St1xKVPOPM8uQJ_",
+        "documentSha256": "31aaa792a28dca4313e40dbe1cd054fc1f7fa55083c87c0cb2dbce9eb4fbafb7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "a13d808d663ec5b0147ea9a97856fd9f1961c41c6d3777c5661cda47d90b11af"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the arrival place from the Day 1 heading for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6b38c1665059bdab",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f423d4ff6a23bc5bf64ceb3d18d89ec4554fb543393e94ff0e80e3b34afc626f",
+      "text": "Lakeshore Chalet, Lake Nahuel Huapi",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C9WW594JL3xCG-3R5St1xKVPOPM8uQJ_",
+        "documentSha256": "31aaa792a28dca4313e40dbe1cd054fc1f7fa55083c87c0cb2dbce9eb4fbafb7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "101a858ff51818348b2186921408c748e11d2b63cbf48212d790be26b1e490b9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combines the accommodation and lake named together in the Day 1 description into one route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b07f2ff736e7951f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d37a3364b8baf3e3abea53a94066aa043ec977570fa33d9de8ee05ee6cfd524d",
+      "text": "Limay River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C9WW594JL3xCG-3R5St1xKVPOPM8uQJ_",
+        "documentSha256": "31aaa792a28dca4313e40dbe1cd054fc1f7fa55083c87c0cb2dbce9eb4fbafb7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0011",
+            "textSha256": "8ee52601ed844d342d4f8c880110e7fa25c874806fc9ac14a1bbf1289d05671e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the river name from the Day 2 heading for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:16dc6e77772d53de:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7cc6a35b73304ba63e4543dce1f9d0a412e692af23e94e33354dca577daf970d",
+      "text": "Bariloche",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1C9WW594JL3xCG-3R5St1xKVPOPM8uQJ_",
+        "documentSha256": "31aaa792a28dca4313e40dbe1cd054fc1f7fa55083c87c0cb2dbce9eb4fbafb7",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "101a858ff51818348b2186921408c748e11d2b63cbf48212d790be26b1e490b9"
+          },
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "645c0bc6872525dc86fc7b3ae6a0ab1d454fbd87e1ac2d078563f9583291b25f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the city named in the airport transfer description and retains it as the departure route label."
+      }
+    }
+  ]
+}

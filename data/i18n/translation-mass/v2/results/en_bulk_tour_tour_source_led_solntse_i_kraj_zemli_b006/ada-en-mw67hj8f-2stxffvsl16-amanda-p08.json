@@ -1,0 +1,187 @@
+{
+  "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b006",
+  "stableId": "tour_source_led_solntse_i_kraj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c5ad25660eb39cd3d096611bf0d82e5c82f821d57ccd6c38c7385ebaaf514dca",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e894168a8dc1ed97ad2ca90c7c6d39984b68d8497929d0c6c4e079032a842d1a",
+      "text": "Buenos Aires → El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0048",
+            "textSha256": "a0a0c3fe694c6c915bbf80e5bead40b6e94a923c51ceed33d824633e52c4f9f1"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the two route stops in the Word heading and the site's full city name in the itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "071ab53851844c675c9926fcf6de67d4169a245593b38207eed119bd091d39c4",
+      "text": "Breakfast at the hotel. Private transfer with driver to the airport for your flight to Calafate. On arrival in El Calafate, a private driver will take you to your hotel. You’ll stay in El Calafate for two nights. The flight is charged separately.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hj8f-2stxffvsl16-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word transfer paragraph does not state the two-night stay or separate airfare charge within the day text. The stay is confirmed in the hotel table and the flight is listed under additional charges.",
+        "wordBasis": {
+          "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+          "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p0049",
+              "textSha256": "064a90e0da743e6ebebddb8a32833de80457fb44484c6fdb4adc1127544a86f2"
+            },
+            {
+              "ref": "word/document.xml#p0013",
+              "textSha256": "0f98cb48e9b0746622e69a627908f3b11f1909e22868f4d84b08b03c983124d6"
+            },
+            {
+              "ref": "word/document.xml#p0021",
+              "textSha256": "d39bf93378fb22fe4a99cd3ca192b1864515e8271970ea46e4cc149d57fdb1c0"
+            },
+            {
+              "ref": "word/document.xml#p0029",
+              "textSha256": "4e0af3bb5bcfb0db46abca1f7d48714c5d0c72ea8a55f11bd74ee2b7fc13c448"
+            },
+            {
+              "ref": "word/document.xml#p0094",
+              "textSha256": "ecfe8fbc43ea5f299aab1019b7dc52dcb8cbcfe39de2133e57ba2b053fb5eb1a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7a611df869cde5d6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0048",
+            "textSha256": "a0a0c3fe694c6c915bbf80e5bead40b6e94a923c51ceed33d824633e52c4f9f1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b369606664b728e8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0048",
+            "textSha256": "a0a0c3fe694c6c915bbf80e5bead40b6e94a923c51ceed33d824633e52c4f9f1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the full destination name El Calafate for the site link to the city named Calafate in the Word heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a06519bd80bccecd",
+      "field": "media.alt",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hj8f-2stxffvsl16-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word's transfer section has no English alt caption for the Buenos Aires image attached to the site's itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d0f524fa0463e237e2239f45bcb69dae563dbd298a4ee8145fda57d48c2fbc48",
+      "text": "El Calafate · Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0051",
+            "textSha256": "2ad79c39d098b1186a4022f2ce5d64ae1ac5524ec5f25bc67ff2fc4340e41a37"
+          },
+          {
+            "ref": "word/document.xml#p0052",
+            "textSha256": "7cb536c42384d16a4666ce82f736ac5a3890f9a45f91408b00dde673f68f91ba"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word itinerary heading's destination and the glacier name specified for the excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "87843a1a681917a1a39ed8df694aa055729f6e9146667babcfd689b13f6a52ae",
+      "text": "Breakfast at the hotel. Group excursion to the Perito Moreno Glacier with an English-speaking guide. Private excursions with an English-speaking guide in El Calafate and Ushuaia are available for a combined supplement of $700 per person, with a minimum of two participants.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hj8f-2stxffvsl16-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word confirms the group excursion and its guide language. It does not give the site's private-excursion option, the combined $700 supplement or the two-person minimum, so that part comes from current RU with the approved guide-language adaptation.",
+        "wordBasis": {
+          "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+          "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p0052",
+              "textSha256": "7cb536c42384d16a4666ce82f736ac5a3890f9a45f91408b00dde673f68f91ba"
+            },
+            {
+              "ref": "word/document.xml#p0089",
+              "textSha256": "fb18b3c9819117467fd43a448c3ee9e804346d7a791a48d57163d61a50920c66"
+            },
+            {
+              "ref": "word/document.xml#p0093",
+              "textSha256": "7408a3bdf15120ed8d16576dce42b7790490da1407a62107059f11bac4e8c5cc"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:52df89754f07f6ed",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0051",
+            "textSha256": "2ad79c39d098b1186a4022f2ce5d64ae1ac5524ec5f25bc67ff2fc4340e41a37"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the full destination name El Calafate for the site link to the city named Calafate in the Word heading."
+      }
+    }
+  ]
+}

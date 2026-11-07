@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 383,
-    "leased": 4,
+    "queued": 382,
+    "leased": 5,
     "review": 2429,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 379,
-      "leased": 4,
+      "queued": 378,
+      "leased": 5,
       "review": 90,
       "ready": 0,
       "retryable": 0,
@@ -316,8 +316,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 11,
-          "leased": 0,
+          "queued": 10,
+          "leased": 1,
           "review": 4,
           "ready": 0,
           "retryable": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T09:52:03.568Z",
       "earliestRetryAt": null
     },
     "17": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b008",
       "token": "en-lease-mw64ox4q-iryg56g3wh-y6m9pif1ncq",
       "expiresAt": "2026-11-07T09:51:48.767Z",
+      "generation": 1
+    },
+    "ada-en-mw64oocl-zfoxzbau-amanda": {
+      "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b002",
+      "token": "en-mw64oocl-zfoxzbau-u16gd0urnrj",
+      "expiresAt": "2026-11-07T09:52:03.568Z",
       "generation": 1
     }
   },
@@ -9028,7 +9034,8 @@
       "token": "en-mw64oocl-zfoxzbau-u16gd0urnrj",
       "jobIds": [
         "en:bulk:tour:tour_source_argentina_and_brazil_ru:b008",
-        "en:bulk:tour:tour_source_argentina_and_brazil_ru:b010"
+        "en:bulk:tour:tour_source_argentina_and_brazil_ru:b010",
+        "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_argentina_and_brazil_ru:b008",
@@ -9037,5 +9044,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T08:21:56.212Z"
+  "updatedAt": "2026-11-07T08:22:03.568Z"
 }

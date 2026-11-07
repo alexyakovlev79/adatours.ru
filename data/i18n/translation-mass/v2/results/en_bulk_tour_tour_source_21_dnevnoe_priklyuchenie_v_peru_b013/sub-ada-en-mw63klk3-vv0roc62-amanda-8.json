@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b013",
+  "stableId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c91d1aa99b7ff0b55cfcaf9580b3e1fe6177a0fdc8de1be76546fea938424538",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:02b05f9c4c806e6e",
+      "field": "itinerary.title",
+      "sourceTextSha256": "06251522365ae38b0bd8554c5851bda32a58735af620e3bc1ec7b96bebe5e7d2",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0064",
+            "textSha256": "39e4c26e1de68d742780ccdf956e84d96cb3e341c096a7a7bd177be34dcf5b2e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the numbered day marker from the Word heading because the site displays its own day number."
+      },
+      "text": "Cusco / Puerto Maldonado"
+    },
+    {
+      "blockId": "tour:itinerary_text:25152ad0c634f823",
+      "field": "itinerary.text",
+      "sourceTextSha256": "ef5bad7efc38d60a0c69908d32b81aa919833e3c702956f179713f487aa65df2",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63klk3-vv0roc62-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The matching Word paragraphs p0065–p0067 put lodge check-in before the boat trip to reach the lodge. They do not provide an exact passage matching the current transfer and check-in sequence."
+      },
+      "text": "After breakfast, transfer to the airport for your flight to Puerto Maldonado, where the Amazon leg of your trip begins.\n\nOn arrival, you’ll be met and taken to Inkaterra Hacienda Concepción, an eco-lodge in the rainforest. Part of the journey is by boat along the Tambopata River. Once you’ve checked in, enjoy a welcome drink and a short briefing on the area and the lodge’s environmental initiatives.\n\nAfter dinner, head out with a guide on a night walk. As darkness falls, insects, amphibians and other nocturnal animals become active. You may see some of them in their natural habitat."
+    },
+    {
+      "blockId": "tour:itinerary_label:5b3ad68bdf237ff5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0064",
+            "textSha256": "39e4c26e1de68d742780ccdf956e84d96cb3e341c096a7a7bd177be34dcf5b2e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the departure city named in the Word route heading as the linked place label."
+      },
+      "text": "Cusco"
+    },
+    {
+      "blockId": "tour:itinerary_label:ce0b358b8ad00b48",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cfd768eea9e7062bef04af0cbb6b0134aa583513b854f3b73e0538e355de848c",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0064",
+            "textSha256": "39e4c26e1de68d742780ccdf956e84d96cb3e341c096a7a7bd177be34dcf5b2e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination named in the Word route heading as the separate linked place label."
+      },
+      "text": "Puerto Maldonado"
+    },
+    {
+      "blockId": "tour:media_alt:49559d75ad3c62e9",
+      "field": "media.alt",
+      "sourceTextSha256": "c14d2f50c71a98e47983b02360583e12cf6dd2cca13af372e7f0598f1c6bb9b9",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63klk3-vv0roc62-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word contains no alt text for the photograph showing the church and roofs around the square from above."
+      },
+      "text": "An old church and tiled roofs around a square seen from above, Cusco, Peru"
+    },
+    {
+      "blockId": "tour:media_hover:dc713f401fe3d517",
+      "field": "media.hover",
+      "sourceTextSha256": "6ee0ee1e5e4e1dd2ecf8e35678c975aa52666c599056e4db869f1dcb2da55e7d",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63klk3-vv0roc62-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word contains no hover caption for the photograph showing the square and surrounding tiled roofs."
+      },
+      "text": "Cusco, Peru: an old church and tiled roofs around a square seen from above"
+    },
+    {
+      "blockId": "tour:itinerary_title:bc85cd73333c2baf",
+      "field": "itinerary.title",
+      "sourceTextSha256": "cfd768eea9e7062bef04af0cbb6b0134aa583513b854f3b73e0538e355de848c",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0069",
+            "textSha256": "a24dc3c393a7c0581d014febf9ef2e1c0573516ceb3762384beaaddd75b7f195"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the numbered day marker from the Word heading because the site displays its own day number."
+      },
+      "text": "Puerto Maldonado"
+    },
+    {
+      "blockId": "tour:itinerary_text:99d4ebb0270da8fa",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7b1d8b49c1d986f0bc6c5ecb5d0e7d8bc2db5d4e9e25853bebc5158f3fb5d6f9",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0070",
+            "textSha256": "d68a0df0a3764bffd792ad87963a00bde6f187830b571e064da620bd13b348a4"
+          },
+          {
+            "ref": "word/document.xml#p0071",
+            "textSha256": "e8ddedf31c87b7cda4e74f91b85cfe30ff6ef61c9cc2c3d6c4c125a64b474ff3"
+          }
+        ]
+      },
+      "text": "After breakfast, you’ll head out on a guided nature walk through the lush forest. Your guide will introduce you to the rich flora and fauna of the rainforest, explaining the medicinal properties of plants and the behavior of native animals. You may encounter monkeys, exotic birds, and colorful butterflies.\n\n In the afternoon, embark on a canoe excursion along the river to explore the surrounding jungle waterways. This is a great opportunity to see wildlife like capybaras, caimans, and river birds. After returning to the lodge, enjoy a traditional Amazonian dinner, followed by a relaxed evening in the lodge's main area."
+    }
+  ]
+}

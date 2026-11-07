@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 123,
-    "leased": 7,
+    "queued": 122,
+    "leased": 8,
     "review": 2686,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 119,
-      "leased": 7,
+      "queued": 118,
+      "leased": 8,
       "review": 347,
       "ready": 0,
       "retryable": 0,
@@ -516,8 +516,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 9,
-          "leased": 0,
+          "queued": 8,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T14:12:32.660Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_meksika_yuzhnoe_priklyuchenie_kratkij_marshrut:b009",
       "token": "ada-en-mw6e6ur9-unyyuo165u-0kgecu6orvwl",
       "expiresAt": "2026-11-07T14:12:09.272Z",
+      "generation": 1
+    },
+    "ada-en-amanda-mw6e6hz0-xucf82egvw": {
+      "jobId": "en:bulk:tour:tour_source_meksika_yuzhnoe_priklyuchenie_kratkij_marshrut:b007",
+      "token": "lease-gdgej09z35v-xp7wa9z195g",
+      "expiresAt": "2026-11-07T14:12:32.660Z",
       "generation": 1
     }
   },
@@ -9737,7 +9743,8 @@
     "ada-en-amanda-mw6e6hz0-xucf82egvw": {
       "token": "lease-gdgej09z35v-xp7wa9z195g",
       "jobIds": [
-        "en:bulk:tour:tour_source_krasota_venesuely:b013"
+        "en:bulk:tour:tour_source_krasota_venesuely:b013",
+        "en:bulk:tour:tour_source_meksika_yuzhnoe_priklyuchenie_kratkij_marshrut:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_krasota_venesuely:b013"
@@ -9794,5 +9801,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T12:42:25.667Z"
+  "updatedAt": "2026-11-07T12:42:32.660Z"
 }

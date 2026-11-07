@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_s_kano_kristales_i_ne_tolko:b005",
+  "stableId": "tour_source_kolumbiya_s_kano_kristales_i_ne_tolko",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b4e721dbec828da0b158f44328ab9c0daa424f0e4dbb8c30fbe2f569a4737c81",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:6e835b19586c8e71",
+      "field": "notIncluded",
+      "sourceTextSha256": "294e2c4039e98eb9b0665c55e9b7cf2d88254b496a2f8a19bf10434acd4ce2a9",
+      "text": "International and domestic flights, except the included Bogotá–La Macarena–Bogotá flights.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1K9Zer9TqHqs8kkv6rQK7iXdnkcLyKM8i",
+        "documentSha256": "9bfd2c4e13e8a3fedfa0a41d1086cf7efcc0c5e69681bda0bf60642f398283e0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p160",
+            "textSha256": "16d512c7736403362acf602688ec106794fda8189460dfa0a2edb3b33d03357b"
+          },
+          {
+            "ref": "word/document.xml:p189",
+            "textSha256": "e2c81d0a1344546068f0801f3152bd6670bf3f96f630253285f8561128177273"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Combines the named included air route with the exclusion of other unspecified flights."
+      }
+    },
+    {
+      "blockId": "tour:note:fa518fb6ca5d16fd",
+      "field": "note",
+      "sourceTextSha256": "2253b56f9414ebc35c617a262388d8d97ba730a60451e62473bc3e9b007aa674",
+      "text": "If necessary, Ada Tours may substitute a hotel of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word accommodation and service terms list hotel nights, with no equivalent condition for substituting a hotel of the same category."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while keeping the tour itinerary intact.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word day-by-day itinerary contains no general condition authorising changes to the order of excursions."
+      }
+    },
+    {
+      "blockId": "tour:note:97e52e6fdb8c6ac4",
+      "field": "note",
+      "sourceTextSha256": "4201f701902b5dedf1b3756a1fbfaafab623ae356a06f5ced31f29d0ca1d0e9b",
+      "text": "If you check out early for a flight or excursion, you may miss breakfast at the hotel. Ada Tours does not reimburse missed breakfasts in these circumstances.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word terms list included breakfasts but contain no equivalent clause for missed breakfast after early checkout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c6705bcbd09ec76b4da3d7323ec9518d85068abd5772ba035171f343d207fa7f",
+      "text": "Monday or Wednesday: Bogotá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1K9Zer9TqHqs8kkv6rQK7iXdnkcLyKM8i",
+        "documentSha256": "9bfd2c4e13e8a3fedfa0a41d1086cf7efcc0c5e69681bda0bf60642f398283e0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p70",
+            "textSha256": "be84a22091e7cd614cc6416cb197f7e97c582cb3c2c11acec6f093606373275b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the weekday alternatives and city from the Word arrival heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "73a90d8af8f96098f9de0d107adfde3c3ce5261c1cb0dd529856429ecf670461",
+      "text": "Arrival in Bogota! Welcome and assistance at El Dorado International Airport. Transfer to the hotel, Check-in, and accommodation.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1K9Zer9TqHqs8kkv6rQK7iXdnkcLyKM8i",
+        "documentSha256": "9bfd2c4e13e8a3fedfa0a41d1086cf7efcc0c5e69681bda0bf60642f398283e0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p72",
+            "textSha256": "19c02ebc52b3f8acc92e15d2738d9c4489a5042324c6d2fdbea2ea4b537e9174"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2b7a8bc5ae06d536",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1K9Zer9TqHqs8kkv6rQK7iXdnkcLyKM8i",
+        "documentSha256": "9bfd2c4e13e8a3fedfa0a41d1086cf7efcc0c5e69681bda0bf60642f398283e0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p70",
+            "textSha256": "be84a22091e7cd614cc6416cb197f7e97c582cb3c2c11acec6f093606373275b"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the city name from the Word arrival heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:1e6c1857ac4d5444",
+      "field": "media.alt",
+      "sourceTextSha256": "e642f0bb415e540771e747b7f0a1ba49948e46d7084e386db7d31f0c2ac41f2e",
+      "text": "Twin-towered cathedral and neighbouring buildings on a square in Bogotá, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word arrival and Bogotá city tour contain no caption for this image of a cathedral with two towers and adjacent buildings."
+      }
+    }
+  ]
+}

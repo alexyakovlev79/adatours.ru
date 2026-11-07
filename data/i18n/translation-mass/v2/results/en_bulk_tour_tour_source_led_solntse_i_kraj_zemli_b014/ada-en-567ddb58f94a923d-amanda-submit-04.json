@@ -1,0 +1,102 @@
+{
+  "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b014",
+  "stableId": "tour_source_led_solntse_i_kraj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f42cefe35585d8c10e0bc95562bf1d619b7854323ce43174dfec684d93ba9ac6",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "02e138cc5cddad9510e49be3df8733a00e24d49c65b5a085265d6881be52dd68",
+      "text": "Breakfast at the hotel. Transfer with driver to Rio de Janeiro Airport for your flight home.\n\nAdditional charges:\n\nInternational flight",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0083",
+            "textSha256": "e3bc2e8b4a6afd312a08ded59a8cfba88c4880c9cb4cb135f9ebea84c33c31b5"
+          },
+          {
+            "ref": "word/document.xml#p0092",
+            "textSha256": "82d78dd6fc59e194decc85634ead34609cabc3683da7d02e20a66535b94871b2"
+          },
+          {
+            "ref": "word/document.xml#p0096",
+            "textSha256": "d95e7c18e431e80e25b49936e93548da534aeded0af26f75c85091aff266fd37"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71ebc4b75bbcacf1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0082",
+            "textSha256": "ef6b181122c2b103943cd3a1039dc1ce9ea6fa52a0529df5e9bf19b8bdfc149b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number from the corresponding heading for the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:aad45735199c8b8e",
+      "field": "media.alt",
+      "sourceTextSha256": "d1c39b693b4021c90f73f8552aa746e23dd110e72000af3fd2cf000873c8e5f4",
+      "text": "Rio de Janeiro in the evening",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word describes Rio de Janeiro but provides no alt text for the itinerary photo of the city in the evening."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "c23947645bcdc09a83c22295fdff479b5f3e4b05f777f511932143ccd617f3bf",
+      "text": "Coastal scenery in Tierra del Fuego, Argentina, with snow-covered mountains and trees",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word describes Ushuaia but provides no alt text for the cover image of the Tierra del Fuego coast."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "f8acee86fb46aa3690ccc35dcd960557eea8f314dac1ba654ccd084db33b0b14",
+      "text": "Tierra del Fuego: a quiet shoreline below snow-covered peaks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word provides no hover caption for the Tierra del Fuego cover image."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "8e3eb2be25c8c5f00557b8cf03d77c65b065fb758c18cd9d33299d828522e82d",
+      "text": "## Hotels and prices per person\n\nDeparture: **28 February to 11 March 2027**, 12 days / 11 nights. All prices are in US dollars. The number of travellers applies to the whole trip. SGL, DBL and TRL indicate room occupancy.\n\n| Hotels | 1 traveller, SGL | 2 travellers, SGL | 2 travellers, DBL | 3 travellers, SGL | 3 travellers, DBL | 3 travellers, TRL |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| 3* | $7091 | $5388 | $4175 | $5166 | $3953 | $3802 |\n| 4* | $8396 | $6693 | $4950 | $6471 | $4704 | $4485 |\n| 5* | $10616 | $8914 | $6150 | $8692 | $5908 | $5421 |\n\n**3-star hotels:** Ker Recoleta, Buenos Aires (2 nights); Solares Del Sur Patagonia, El Calafate (2 nights); Viale Tower, Foz do Iguaçu (2 nights); Nobile Design Copacabana, Rio de Janeiro (3 nights).\n\n**4-star hotels:** 474 Buenos Aires Hotel (2 nights); Calafate Parque Hotel (2 nights); Vivaz Cataratas, Foz do Iguaçu (2 nights); Arena Leme, Rio de Janeiro (3 nights).\n\n**5-star hotels:** DoubleTree by Hilton Buenos Aires (2 nights); Xelena, El Calafate (2 nights); DoubleTree by Hilton Foz (2 nights); Miramar by Windsor, Rio de Janeiro (3 nights).\n\nEvery option also includes **2 nights in Ushuaia**. The hotel there is confirmed at booking. Hotels may be replaced with others of the same category.\n\nFlights are charged separately. Private tours with an English-speaking guide in Ushuaia and El Calafate carry a supplement of **$700 per person**, with a minimum of 2 travellers. The optional trip to Martillo Island costs **$300 per person as part of a group** and includes a transfer of about 20 minutes to the port and a boat trip of about 2 hours. The final tour price is confirmed once services and flights have been checked for the booking date.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word has an older tariff table with different hotel and occupancy details. It does not contain the current 28 February to 11 March 2027 table and associated commercial terms."
+      }
+    }
+  ]
+}

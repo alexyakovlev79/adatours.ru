@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b011",
+  "stableId": "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "593c59d2137b2eeee46c21956aa8468e3fd75367a1ce519353300ca2a7b149ff",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9aff82e9965edef1212f103a0c2a87f0f0ea39172da31b4d971cceb65ec63b1d",
+      "text": "Angra dos Reis -Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "p:61",
+            "textSha256": "f34fd3fd47343e94c68815201e381024a11457519d5d828d0d278d27ef066b64"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 12 marker and retain the route from the verified Word heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a5af1c5e5015e3bc9a53ec30f8acb3be2708f73e129a64717b5cc5a314e1f58e",
+      "text": "After breakfast, transfer to the airport in Rio de Janeiro for your international flight.\n\nOn the way, you’ll see the familiar hills and coastal neighbourhoods again. This is the final leg of a 12-day itinerary that takes you through Rio, Carnival and Iguazu Falls before a beach stay.\n\nYou return to the city where the trip began, with a different view of Rio after visiting several regions. You’ve seen the Sambadrome at night and Rio from its viewpoints by day, taken in the full sweep of Iguazu Falls and seen the cascades up close from the Argentine walkways, then spent several days among the islands of Angra. Those changes of scene shape the route.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 12 confirms breakfast and the airport transfer in p:62. It contains no counterpart to the two closing paragraphs about the experience and sequence of the trip."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71ebc4b75bbcacf1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "p:61",
+            "textSha256": "f34fd3fd47343e94c68815201e381024a11457519d5d828d0d278d27ef066b64"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Take the arrival city from the verified Day 12 heading as the destination label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3a98965b78bebe8d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
+      "text": "Angra dos Reis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "p:61",
+            "textSha256": "f34fd3fd47343e94c68815201e381024a11457519d5d828d0d278d27ef066b64"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Take the departure city from the verified Day 12 heading as the destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ab4e85f2f0efc0a0",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panorama of Rio de Janeiro with its bay, Sugarloaf Mountain and city buildings, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7c6c3c3ce853b0fe",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugarloaf Mountain framed by city neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "299de8fb758809dce50bd9f642c4e8b5fe82738ba781c836455b434f50eedd7f",
+      "text": "Woman in a Carnival costume with red feathers in Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "381a5f6c66a31e0b238836824a72c1a3c8f8502a513e628dc8dfaa0d9c51396f",
+      "text": "Rio Carnival: long red feathers frame an embroidered headdress",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_adventure_17d:b018",
+  "stableId": "tour_brazil_adventure_17d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "75e357c403366003dec7b422886c91a0c7f1ce00387e40f42a45ec1e0e559396",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:b57e41506f786d1c",
+      "field": "media.alt",
+      "sourceTextSha256": "05ed4638fa980fe50eef646a7af58fc49723efa97bc52cf3412f44bc6cd0468b",
+      "text": "Dunes of Lençóis Maranhenses in warm light beneath a cloudy sky, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word describes the dunes and sunset but provides no alt text for this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:ffa73938112a6ad1",
+      "field": "media.hover",
+      "sourceTextSha256": "5b327bb6f702b14fbf78a7ce2a8aa07c7ae26d469fd9f3a2fd61fcdd8e1ac78f",
+      "text": "Lençóis Maranhenses, Brazil: pale ripples of sand and long shadows",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word provides no hover caption describing these ripples and shadows."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:02b05f9c4c806e6e",
+      "field": "itinerary.title",
+      "sourceTextSha256": "dca845305479df88d9e8a1b23e61e9949e175ba5900a8dc6c8fa7b307cf36269",
+      "text": "Preguiças River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "f4c6ec3f62105cea3aeea28ce63e44057cb756a26f116ed3cb0bfd0eebb455a9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the river’s name from the Day 15 boat itinerary as the short title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:25152ad0c634f823",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1cb2d7465235bbc9a97946df84e43d4744a7d2c0c2f961e8770c5c38bbd5d39d",
+      "text": "After breakfast, set out by motorboat on the Preguiças River at 8:30 a.m. It is one of the region’s main waterways. Mangroves and sandy stretches line the banks, alongside small villages where fishing and the river shape daily life.\n\nYour first stop is Vassouras, known as Little Lençóis. You can buy fresh coconut water among the dunes, and capuchin monkeys accustomed to people can be seen near the boardwalks.\n\nContinue by boat to the fishing village and the Preguiças Lighthouse. It takes 160 steps to reach the viewing platform, with views of the dunes, the winding river, the Atlantic and the green coastline. After lunch, transfer back to São Luís.\n\nToday you’ll see the region from the water. After yesterday’s dunes, the focus shifts to the river and its mangrove banks. Small settlements line the Preguiças, boats are part of everyday transport, and fishing remains part of local life. The view from the lighthouse brings the different landscapes of Lençóis Maranhenses together.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Day 15 has a boat itinerary but no 8:30 departure, no identified capuchins by the boardwalks and no closing comparison of the river and dune landscapes."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:916ece4c449c0749",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6e667fb5a9e887789091966d624a2699b5d59d30110d7cf750f4f74b79565fb0",
+      "text": "Barreirinhas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0093",
+            "textSha256": "0468a6f2b8234df73965d29f7ddb07c7ff2cd7c72513f6d4a34549266d44cfc0"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the town name from the Day 15 route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:193bb45deec6bac8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+      "text": "São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0097",
+            "textSha256": "d80a324365f32a7ce330b0dde800c1aeecfb8ccf6a3e9f8dec788298c917f21d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the accented city name from the Day 16 route heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:a237c93e140aa69d",
+      "field": "media.alt",
+      "sourceTextSha256": "46307de3233065ceae8f376952bebf2f2a3cae126d868fa3d36874e2a755c8c5",
+      "text": "People in a narrow boat on a clear turquoise river in Bonito, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary provides no alt text for this photograph of a narrow boat on a clear river in Bonito."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cd6f1a5c972ec697",
+      "field": "media.hover",
+      "sourceTextSha256": "9921b9b71060610191eb05d35e2c79dcf77ca9a2aca9cbec66b267546a3a4852",
+      "text": "Bonito: a boat ride amid greenery and clear water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary provides no hover caption for this image of a boat on clear water in Bonito."
+      }
+    }
+  ]
+}

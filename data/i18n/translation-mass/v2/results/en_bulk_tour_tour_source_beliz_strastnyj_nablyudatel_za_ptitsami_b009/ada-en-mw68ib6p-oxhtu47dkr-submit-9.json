@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b009",
+  "stableId": "tour_source_beliz_strastnyj_nablyudatel_za_ptitsami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b691b7c3a844e139f1b22902c5abbe07a8517df8bac9d5b46d276618aeb7542c",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:8b0bf3720826ec64",
+      "field": "media.hover",
+      "sourceTextSha256": "d0bfe58af6fd90e67acaa292d40dfb5337ac815b98133acdab49060b2b91fcb3",
+      "text": "Dangriga: boats on the Caribbean shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word identifies Dangriga on the route but has no hover caption for this photograph of boats on the shore."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4d1ec7090144256b7f4f0efab3a07e3be7eb507e14480616ff9a2c1cf54ddfbe",
+      "text": "Dangriga – Cayo District",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "f39f18ca51a924c6d37200e8768ec100c658c1fc2e462ab297131ab2ec3c4317"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the departure town and destination district from the Word transfer description as the route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "210b0352331ef9b4b758f6a466b4cb45ff97694adedded34d4f379b446c72822",
+      "text": "You will be road transferred from Dangriga to the Cayo District, with a scenic stop along the Hummingbird Highway for some bird watching. A delicious lunch will be enjoyed at a local restaurant along the way.\n\nOvernight at Cahal Pech Village.\nBreakfast and lunch are included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "f39f18ca51a924c6d37200e8768ec100c658c1fc2e462ab297131ab2ec3c4317"
+          },
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "efc8e5c821b19dd5b424993435dc91204439ca8ceb2669c886fa3d7c40a99a58"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:363c4f59941495c8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3d3b8fdb871bd22f1bd555b045de4b4b9c060d4ac5d04bd04ca968952a74d7f6",
+      "text": "Cayo District",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "f39f18ca51a924c6d37200e8768ec100c658c1fc2e462ab297131ab2ec3c4317"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the district named in the Word transfer description as the destination label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6ba9ac59956a1b7b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f130130d664c81d141d0aa9b5df04b54c8518a6da1ea3399055de0a35bd6ec13",
+      "text": "Dangriga",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "f39f18ca51a924c6d37200e8768ec100c658c1fc2e462ab297131ab2ec3c4317"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the departure town named in the Word transfer description as the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:85d1c046c444f144",
+      "field": "media.alt",
+      "sourceTextSha256": "e050afe5bea20698dc4ea058bbc2c1fed92f4cc13dfdb92ee294d5068a64b4d7",
+      "text": "Palm trees by a bay with a pointed green mountain in the background",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word transfer description does not supply an accessibility description of this photograph of the bay and mountain."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8bd44ec3eedcfa50",
+      "field": "media.hover",
+      "sourceTextSha256": "ece4272972d95b0a9cb7f5aeebfc60bcd505c5d869e1dc114e20cdc4d7770d5a",
+      "text": "Blue water, palm trees and a tall green mountain by the shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word does not contain a hover caption or any description of the shore scene in this website image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9cfece5fdc4f008d08f186c7d852423f4a283e30e39b6b93cb008460c7ff2b20",
+      "text": "Tikal",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "8a92cb2b3097b9211a16feb30e339a39ee485560617f83f72f6bad961767f6d5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the site named in the Word itinerary as the short day heading."
+      }
+    }
+  ]
+}

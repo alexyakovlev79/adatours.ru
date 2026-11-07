@@ -1,0 +1,129 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechta_bolivii:b004",
+  "stableId": "tour_source_mechta_bolivii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "487b2067be88532312e56ef9af8b7d157f887cde6125f808bcb869e5fa65084e",
+  "blocks": [
+    {
+      "blockId": "tour:note:7273202bd58ef807",
+      "field": "note",
+      "sourceTextSha256": "aa0f517a69bb6125a62d76fac63158be14b2160fe554ff21bdc819b78bf2bf7f",
+      "text": "Ada Tours may replace the listed hotels with others in the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word lists the accommodation and exclusions, but contains no same-category hotel substitution clause."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change as long as the tour programme is followed.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word lists the itinerary by day, but contains no clause allowing a change in the order of excursions."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for breakfasts missed when you check out of a hotel early for a flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word includes hotel breakfasts, but contains no liability clause about breakfasts missed due to early checkout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "bc2c16db06e2776f191dacf5d03b9ac7154970d9f85282e5f058cb3ccfb85f4b",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "6153112476af0a5b8461f1fa0a778ddc42d02734460d28748ccacb5d2dddff17"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day marker to use the verified city name as an itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c80a4ea33ad5448078f8482069ada858bf38dc6c466bffee3e0a9a006a9db552",
+      "text": "Arrival in La Paz and pick up from the airport. Transfer to the hotel.\n\nAccommodation at the hotel in La Paz & Overnight.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "51fd68e1b43a35b67d0854999053d626d82e324cd29251d3fb64ebbab7430588"
+          },
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "c2f598dce86bd0f3b8e0b78426cbde19a65c37ce1763d1eff602575b6942b7e2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b3ff33d58e7c946d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "72da86964b748cd13f9aa0c5b2fc5640ab61783e2e7870c3c5a6c3fbdd8b589a",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "6153112476af0a5b8461f1fa0a778ddc42d02734460d28748ccacb5d2dddff17"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day marker to use the verified city name as a place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4449350861b4e830",
+      "field": "media.alt",
+      "sourceTextSha256": "cba3000147cb85322cfc5d25f15facc1f6a4cea2ed8e987d69b85e9e11e650a0",
+      "text": "Two yellow cable car cabins above the dense cityscape and mountain ridges of La Paz, Bolivia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:df14be44213acf8f",
+      "field": "media.hover",
+      "sourceTextSha256": "d3e146ff9332a2589094e50b3ba4811906b680b8369dbd88524dcca22f6d89a9",
+      "text": "La Paz from the cable car",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    }
+  ]
+}

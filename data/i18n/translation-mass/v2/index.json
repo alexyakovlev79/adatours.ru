@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 195,
-    "leased": 5,
+    "queued": 194,
+    "leased": 6,
     "review": 2616,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 191,
-      "leased": 5,
+      "queued": 190,
+      "leased": 6,
       "review": 277,
       "ready": 0,
       "retryable": 0,
@@ -1236,8 +1236,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 3,
-          "leased": 0,
+          "queued": 2,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:31:56.290Z",
       "earliestRetryAt": null
     },
     "1e": {
@@ -1370,6 +1370,12 @@
       "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b010",
       "token": "lease-th4lipn0dfqk72hlfpmdks",
       "expiresAt": "2026-11-07T11:31:42.946Z",
+      "generation": 1
+    },
+    "ada-en-mw68hy68-7ndzh670bzw": {
+      "jobId": "en:bulk:tour:tour_source_pantanal_4dnya_3_nochi:b004",
+      "token": "worker-cmzeojv7m05-steia4ttvp",
+      "expiresAt": "2026-11-07T11:31:56.290Z",
       "generation": 1
     }
   },
@@ -9540,8 +9546,15 @@
         "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b010"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw68hy68-7ndzh670bzw": {
+      "token": "worker-cmzeojv7m05-steia4ttvp",
+      "jobIds": [
+        "en:bulk:tour:tour_source_pantanal_4dnya_3_nochi:b004"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T10:01:42.946Z"
+  "updatedAt": "2026-11-07T10:01:56.290Z"
 }

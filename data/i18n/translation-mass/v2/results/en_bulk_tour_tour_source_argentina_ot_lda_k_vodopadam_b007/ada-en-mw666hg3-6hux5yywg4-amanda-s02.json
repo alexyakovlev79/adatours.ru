@@ -1,0 +1,150 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b007",
+  "stableId": "tour_source_argentina_ot_lda_k_vodopadam",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "deb1e49bab28c87e82b04974b5b4c988a8c1fbe1765bced211c6e0baf3a17f04",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:613aad58a04287f8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p69",
+            "textSha256": "b4dfa1f29887b2bf76b4f32408b550c21e421e1e0cc1c2599c527397afb1ac3a"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the named place from the matching Word itinerary heading or excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:52df89754f07f6ed",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p69",
+            "textSha256": "b4dfa1f29887b2bf76b4f32408b550c21e421e1e0cc1c2599c527397afb1ac3a"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the named place from the matching Word itinerary heading or excursion."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:05d7ebc607058012",
+      "field": "media.alt",
+      "sourceTextSha256": "fa78bf902a8edc8a627d0c58a1c2d533689e1087a7765266ff8cf323966a5a2f",
+      "text": "Blue icebergs on a turquoise lake below wooded mountain slopes in Patagonia, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word transfer section contains no caption describing the blue icebergs and wooded slopes shown in this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5922801ccc403065",
+      "field": "media.hover",
+      "sourceTextSha256": "e637d661f8bd4803af4e2939eb73e176442f9e5807d9790822996dd6418664ce",
+      "text": "Patagonian lake with icebergs and wooded mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word transfer section contains no hover caption for this Patagonian lake photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5d13d7524b75656431a8cfc6d19ce1bb6716e2f0011a9896e3317a3cafd4452c",
+      "text": "El Calafate and the Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p72",
+            "textSha256": "6b4b5587b8865ce46c0b6dcd689c888f021fc4a01540522cf0b2201488daf4d1"
+          },
+          {
+            "ref": "word/document.xml:p73",
+            "textSha256": "74ec86aecfd700d6919350049c4c243126aa1e840c24a868afdbe309c0c92d5c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word day location with the excursion's named glacier."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "457caff0042b9ee743f58da2c0e8883e4d203a19fc860487a794475ba5e73326",
+      "text": "Take in the rare and breathtaking beauty of the Perito Moreno Glacier, one of the UNESCO JEWELS. The tour guide will pick you up at your hotel in the morning for a full day tour on the Perito Moreno Glacier. On the way to the park, they will explain the importance of the glacier and share interesting details and facts about the park and Perito Moreno. Your first stop will be at a series of walkways for views of the glacier and to take photos. From there the bus will continue and you will get to see the amazing views and natural beauty that the park has to offer. You will get to walk along the walkways to see the glacier and watch as the chunks of ice break off and crash into the water. At the end of the day the bus will take you back to your hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p73",
+            "textSha256": "74ec86aecfd700d6919350049c4c243126aa1e840c24a868afdbe309c0c92d5c"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bbc1826c787617ab",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p72",
+            "textSha256": "6b4b5587b8865ce46c0b6dcd689c888f021fc4a01540522cf0b2201488daf4d1"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the named place from the matching Word itinerary heading or excursion."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1a50c73a947c7886",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a4ffba6e54b553d326d56ed595a04741b3b5f80fa0d2d205e8bdce32b901f3e1",
+      "text": "Perito Moreno Glacier",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p73",
+            "textSha256": "74ec86aecfd700d6919350049c4c243126aa1e840c24a868afdbe309c0c92d5c"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the named place from the matching Word itinerary heading or excursion."
+      }
+    }
+  ]
+}

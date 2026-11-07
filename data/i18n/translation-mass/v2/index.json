@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 450,
-    "leased": 4,
+    "queued": 449,
+    "leased": 5,
     "review": 2362,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 446,
-      "leased": 4,
+      "queued": 445,
+      "leased": 5,
       "review": 23,
       "ready": 0,
       "retryable": 0,
@@ -356,8 +356,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 14,
-          "leased": 0,
+          "queued": 13,
+          "leased": 1,
           "review": 0,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T09:16:23.592Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1364,6 +1364,12 @@
       "jobId": "en:bulk:tour:tour_brazil_adventure_17d:b002",
       "token": "lease-elx0dkr93pmvorkmtj6h",
       "expiresAt": "2026-11-07T09:16:05.433Z",
+      "generation": 1
+    },
+    "ada-en-mw63kk80-3da948-amanda": {
+      "jobId": "en:bulk:tour:tour_brazil_adventure_17d:b011",
+      "token": "f8859654d6b065a73c6fb87533138fa09da33336ff15e0e4",
+      "expiresAt": "2026-11-07T09:16:23.592Z",
       "generation": 1
     }
   },
@@ -8844,7 +8850,8 @@
     "ada-en-mw63kk80-3da948-amanda": {
       "token": "f8859654d6b065a73c6fb87533138fa09da33336ff15e0e4",
       "jobIds": [
-        "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b010"
+        "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b010",
+        "en:bulk:tour:tour_brazil_adventure_17d:b011"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b010"
@@ -8866,5 +8873,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T07:46:17.710Z"
+  "updatedAt": "2026-11-07T07:46:23.592Z"
 }

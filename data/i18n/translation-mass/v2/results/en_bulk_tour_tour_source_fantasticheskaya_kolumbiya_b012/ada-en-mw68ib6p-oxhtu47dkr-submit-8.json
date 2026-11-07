@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b012",
+  "stableId": "tour_source_fantasticheskaya_kolumbiya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "71a6b954c02c7c703d0ae66e2f31a0e11af510578f7facf501ef93b850e572b3",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:d7f1fe35caf639df",
+      "field": "media.alt",
+      "sourceTextSha256": "025823ef5c42d9c3f675a43d5fc1a780d17417c3c3206440dd66f35dae7fe699",
+      "text": "A cyclist in a square in front of a yellow building and a church in Cartagena, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word mentions Cartagena but does not describe the cyclist, buildings or square in this website photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:dd02ad6d7604970a",
+      "field": "media.hover",
+      "sourceTextSha256": "68d2002847aabfde3460e88c9efbd63d736bb098639acbd9fbbaf3e80cc0c8e7",
+      "text": "Cartagena: a cyclist beside historic façades and plants in the square",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word does not provide a hover caption for this photograph of the cyclist and historic façades."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5a295522d76b87c7",
+      "field": "media.alt",
+      "sourceTextSha256": "85053d2c7ec095653397d91168efd0b9811b080ba9e5951cee754ca71a920416",
+      "text": "Colourful beach huts with thatched roofs on the Rosario Islands, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary describes the Rosario Islands trip but does not supply an accessibility description of these beach huts."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:eefc7066d4fba2c8",
+      "field": "media.hover",
+      "sourceTextSha256": "844a8c346f0320d9de2ad3a5e0a1fec8947ccfd4c7dafd7d8bffb6b4f168a70e",
+      "text": "Rosario Islands: colourful huts along the Caribbean shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word describes the boat trip and island visit but does not provide a hover caption for the shoreline photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:02b05f9c4c806e6e",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+      "text": "Cartagena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0171",
+            "textSha256": "f340bc4636b315ad3943763c0315e49b29c64119aa0f53e93045072a74178ba4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day marker and trailing colon because this field is the short itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:25152ad0c634f823",
+      "field": "itinerary.text",
+      "sourceTextSha256": "14512a3219bf41f2208376924fba0844c8f6693e4cfdb225adae8a4339de3a45",
+      "text": "Breakfast at the Hotel. Free Morning and then transfer to the Airport to take the flight to your hometown.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0173",
+            "textSha256": "650264596da0b05306fd61dab0777bb05b1d0a490e2616f028218db6d803c72e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:240e18dacaec4790",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+      "text": "Cartagena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0171",
+            "textSha256": "f340bc4636b315ad3943763c0315e49b29c64119aa0f53e93045072a74178ba4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city from the Word day heading as the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2f3588ea78f5f10f",
+      "field": "media.alt",
+      "sourceTextSha256": "4e16981e3e02cd2abd60f637b8578f3e1d64623967dc748709be98e9a81aac64",
+      "text": "A long city beach and high-rise buildings by the sea in Cartagena, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word describes the airport departure but does not describe the beach and buildings in this itinerary photograph."
+      }
+    }
+  ]
+}

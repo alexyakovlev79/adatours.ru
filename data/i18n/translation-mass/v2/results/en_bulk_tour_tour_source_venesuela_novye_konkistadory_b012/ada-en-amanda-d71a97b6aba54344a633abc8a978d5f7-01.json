@@ -1,0 +1,107 @@
+{
+  "jobId": "en:bulk:tour:tour_source_venesuela_novye_konkistadory:b012",
+  "stableId": "tour_source_venesuela_novye_konkistadory",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0f7cf3a1282158ccb413e1093d392e6e62f0070489b79ae654443e4703d90a4c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:cb6f13966e23f0c9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "e421073760ebdf8c5e0506d7ff5246052b4acfd1798e0989ccfc4a82c1038e22"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city name in the Word day 12 title as the itinerary place label."
+      },
+      "text": "Caracas"
+    },
+    {
+      "blockId": "tour:itinerary_label:d970c997ae1f42db",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3c576274d32f4dd78b3c71d7c491471ad379842e9e605b84d3815c877c6285a8",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0071",
+            "textSha256": "9320365b33a4b82c77a84841de102a91be9a1cc33da11cdd1444f743b7b1ad09"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the accented Word spelling as the standalone label for the existing RU place field. The cited paragraph documents the place spelling."
+      },
+      "text": "Mérida"
+    },
+    {
+      "blockId": "tour:media_alt:909c414fc8033ee4",
+      "field": "media.alt",
+      "sourceTextSha256": "0d43e242282b49e8d5c2d9de217833ae3cd752f5047b1a530ed18dcd4b4c9ee9",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-d71a97b6aba54344a633abc8a978d5f7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word program lists wildlife that may be seen, but contains no matching description for this image."
+      },
+      "text": "A spotted wild cat lies on a stone pedestal among greenery"
+    },
+    {
+      "blockId": "tour:media_hover:c4e84ed017cddbb3",
+      "field": "media.hover",
+      "sourceTextSha256": "bbc87df1a8a56db6515c79e7570f0abdb0a6a0b06b5abc06d6a7fd7b7f4b68f1",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-d71a97b6aba54344a633abc8a978d5f7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word program has no hover caption corresponding to the resting spotted cat in this image."
+      },
+      "text": "A spotted cat rests on a stone beneath thick foliage"
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "6106a8f95716fcb911c20394e67c957502dcca9289bfee237b61cde23f8bc283",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "bc8a5258332cf2f412a7d3f53f65954518a5889ed3db1b8a3254da0ab22e540d"
+          },
+          {
+            "ref": "word/document.xml#p0078",
+            "textSha256": "e98496fe7e8f03438c260fae470876bcfb1d2d4b914f39fb2ed1b7f2cd0351fe"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Retain the approved Word tour title and the country name from the program, in the same country-plus-title format as the RU hero alt text."
+      },
+      "text": "Venezuela: New Conquistadors"
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "f31bb129a4f207895a89c62664f3c97a00868986c5077d8f2a86313330517f0c",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-d71a97b6aba54344a633abc8a978d5f7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word introduction presents the highlights without a corresponding standalone section heading."
+      },
+      "text": "\n\n## Trip highlights\n\n"
+    }
+  ]
+}

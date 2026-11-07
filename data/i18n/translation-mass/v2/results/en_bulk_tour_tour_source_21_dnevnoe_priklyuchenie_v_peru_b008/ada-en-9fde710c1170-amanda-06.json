@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b008",
+  "stableId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3fcb604c603a9e470d62182fdc428ba68af9f964613b6507142fcc10a27d2306",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:1a1506d6c88a20b1",
+      "field": "media.alt",
+      "sourceTextSha256": "cfdeef8385c0342fc62c10eb810bc035a6192a8173d63257b1bd6da52455108f",
+      "text": "Reed huts and a tall bird figure on a floating Uros island on Lake Titicaca, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word lake itinerary explains how the islands are made but contains no caption for the bird figure."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cf3c2d9b964a89b3",
+      "field": "media.hover",
+      "sourceTextSha256": "6d363c75e33924c3b115c70bf4a7d9b004b2ad9a605b2c2b54648c69e3b34451",
+      "text": "Uros Islands on Lake Titicaca: reed buildings by the water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word lake itinerary contains no hover caption for these reed buildings."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7c820c226605c2531bcefc36bc51e31da61a4a929f1dd520c3e60776e540d73f",
+      "text": "Lake Titicaca: Uros and Taquile Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "0808b1ded3b504740c03718526d76b17aef1a4cb640783464ff2dd648a994a6a"
+          },
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "a4b285d4fa0c42a195a677d3582bff5bfee99217e8b0f2051e644c2c6702a697"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the lake and the two islands named in the consecutive Word itinerary paragraphs."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7895e38fc2a5f53434571ec1799ed2b76e17fd103d4428126ece02d6f13b8218",
+      "text": "Embark on an unforgettable full-day boat tour of Lake Titicaca, the highest navigable lake in the world. Your adventure begins with a visit to the Uros Floating Islands, a unique group of islands made entirely of totora reeds. Here, you’ll have the chance to meet the indigenous Uros people, learn about their traditional way of life, and explore the islands that have been built and maintained by the community for centuries.\n\nNext, continue to Taquile Island, renowned for its rich cultural heritage and stunning landscapes. On the island, you can immerse yourself in the local traditions, including the famous weaving techniques that have been passed down through generations. You’ll also enjoy panoramic views of the lake and the surrounding mountains. In the late afternoon, return to Puno.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "0808b1ded3b504740c03718526d76b17aef1a4cb640783464ff2dd648a994a6a"
+          },
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "a4b285d4fa0c42a195a677d3582bff5bfee99217e8b0f2051e644c2c6702a697"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ec3083ad4d2efa9b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "93918da548154ed9157a2b3f63138aadbebf123c03985f778e93de1ce9d23f3b",
+      "text": "Puno and Lake Titicaca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "995d55e7d3c043744c419477e4da82e1a63552ad21c72d5124832cdf3e12c3a9"
+          },
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "0808b1ded3b504740c03718526d76b17aef1a4cb640783464ff2dd648a994a6a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the day’s base in the Word heading with the lake named in the excursion paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fc12a6223c4aecaf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e650684f4fbb4f87d155740fd8d867c5449bac635b78ae23219ee6ff26135914",
+      "text": "Uros Floating Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "0808b1ded3b504740c03718526d76b17aef1a4cb640783464ff2dd648a994a6a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the proper name from the Word visit description as the standalone location label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:e75d0fe2740b8ebe",
+      "field": "itinerary.label",
+      "sourceTextSha256": "811a01d1b60629a2e618f7fe0a4fa5ecf4b5f2ca838c9e71e57be4c1eae1d41a",
+      "text": "Taquile Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "a4b285d4fa0c42a195a677d3582bff5bfee99217e8b0f2051e644c2c6702a697"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the island name as written in Word for the standalone destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:47e866a624197be0",
+      "field": "media.alt",
+      "sourceTextSha256": "7c776a86d8a947c305f5f575a2ebe512cd8f2417c9fc08ed498840c04a3ac7f6",
+      "text": "Reed houses and a boat beside a floating Uros island on Lake Titicaca, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word lake itinerary has no corresponding caption for the photograph of the reed houses and boat."
+      }
+    }
+  ]
+}

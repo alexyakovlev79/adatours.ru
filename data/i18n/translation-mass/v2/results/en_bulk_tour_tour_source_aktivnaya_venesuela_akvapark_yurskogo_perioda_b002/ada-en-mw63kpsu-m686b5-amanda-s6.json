@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda:b002",
+  "stableId": "tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e917bfe3175a35672988cf036e33a8db60bc72245c7cda3d962a8725e124b5da",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:1c632e9569496f6f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ae601e68a23a96a93404f9f5567030104d40798988dfa2b3fce601a09e360d58",
+      "text": "Angel Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0046",
+            "textSha256": "4509fafc5f43f24dc0080d40880bc3fc081e90417d739d1ef3877936b92f9913"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the waterfall’s English name from the Day 10 itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:59243d5f6821e4dc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1890a0c9832476e7478bfbe80ee5382bf92a3691f0d3c717e9569ff95d642fff",
+      "text": "Caracas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "f01f3b8270c8aa02e35d6e13e25b359a13a0bd74b3c6989040f3236333065cda"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the city name from the Day 1 itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:included:d6eb50dc4a4c9f3e",
+      "field": "included",
+      "sourceTextSha256": "8ec703944ee6682eaf9a6c097241cf061596d92fbcb1b56f819a7fe0c2a7b152",
+      "text": "Accommodation as per the itinerary: four-star hotels, posadas, camps, tents and hammocks.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word inclusion mentions posadas, camps and tents, but does not give the four-star hotel category or include hammocks in that line."
+      }
+    },
+    {
+      "blockId": "tour:included:320516829ced474c",
+      "field": "included",
+      "sourceTextSha256": "b9b38d0a60442cf3e01ca87227f6efb421194648aa45171dfff13a518530801c",
+      "text": "Transfers according to the itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word inclusions give a general transportation line and no separate transfer inclusion matching this field."
+      }
+    },
+    {
+      "blockId": "tour:included:f7f4e57e96ecd637",
+      "field": "included",
+      "sourceTextSha256": "a53826e60f7fdf25a2f77d184fecbb2e282b7a8ff4554270762a17ca9caa871f",
+      "text": "Domestic flights, except for the separately listed charter flight from Puerto Ordaz to Canaima.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word lists domestic flights and describes the Canaima charter in the itinerary, but does not include the separately stated charter exception in the inclusions."
+      }
+    },
+    {
+      "blockId": "tour:included:999aa7e1cf0882c2",
+      "field": "included",
+      "sourceTextSha256": "63306246e65765d130e03a5d14cf702e72247120da21260c04826abe99da21a9",
+      "text": "Meals as per program",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "08e00b91785dac7db6cb96c27fa0f3ca723f25cf8f85d74344e93fd174f74251"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the source checklist marker for the site’s existing list field."
+      }
+    },
+    {
+      "blockId": "tour:included:d425b51506ae39a4",
+      "field": "included",
+      "sourceTextSha256": "c11d89dc9dcdd159ebdeb61b709663aba4489d45c72d7237104ab723741b69f6",
+      "text": "English-speaking guides",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "e2e0d829801d803384571c705eea4b53e17bfdb72cf439efc272bb447ca8360e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The source inclusion pairs guides with hotel representatives. The site’s short label names the guides only."
+      }
+    },
+    {
+      "blockId": "tour:included:f0bb1c07613a06fb",
+      "field": "included",
+      "sourceTextSha256": "ba7c9afde30576306028418fdb67841b9bec0c4df1b75144c720b2704094b3a2",
+      "text": "English-speaking guide in Caracas.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word inclusions mention English-speaking guides in general and do not provide a city-specific guide line for Caracas; the service language is localized from RU per the editorial contract."
+      }
+    }
+  ]
+}

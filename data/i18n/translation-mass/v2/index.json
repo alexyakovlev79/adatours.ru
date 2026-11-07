@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 120,
-    "leased": 8,
-    "review": 2688,
+    "leased": 7,
+    "review": 2689,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 116,
-      "leased": 8,
-      "review": 349,
+      "leased": 7,
+      "review": 350,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -1317,8 +1317,8 @@
         "word_2026": {
           "held": 0,
           "queued": 10,
-          "leased": 1,
-          "review": 6,
+          "leased": 0,
+          "review": 7,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1337,7 +1337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T14:11:49.761Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     }
   },
@@ -1359,12 +1359,6 @@
       "token": "lease-i2or6gjy0tipfumuvxtr9s",
       "expiresAt": "2026-11-07T14:11:40.115Z",
       "generation": 2
-    },
-    "ada-en-mw6e7cor-hvba8pevco-amanda": {
-      "jobId": "en:bulk:tour:tour_source_braziliya_argentina_i_chili:b012",
-      "token": "lease-o8oi8d3u5i-da48jficpfe",
-      "expiresAt": "2026-11-07T14:11:49.761Z",
-      "generation": 1
     },
     "ada-en-567ddb58f94a923d-amanda": {
       "jobId": "en:bulk:tour:tour_source_issleduya_beliz:b007",
@@ -9786,7 +9780,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_braziliya_argentina_i_chili:b012"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_braziliya_argentina_i_chili:b012"
+      ]
     },
     "ada-en-567ddb58f94a923d-amanda": {
       "token": "567ddb58f94a923dfb2f051145a2b9272602784c",
@@ -9807,5 +9803,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T12:43:22.095Z"
+  "updatedAt": "2026-11-07T12:43:33.732Z"
 }

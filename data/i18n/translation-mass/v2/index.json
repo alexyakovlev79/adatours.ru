@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 349,
-    "leased": 7,
-    "review": 2460,
+    "leased": 6,
+    "review": 2461,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 345,
-      "leased": 7,
-      "review": 121,
+      "leased": 6,
+      "review": 122,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -917,8 +917,8 @@
         "word_2026": {
           "held": 0,
           "queued": 8,
-          "leased": 1,
-          "review": 5,
+          "leased": 0,
+          "review": 6,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -937,7 +937,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T10:27:02.167Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0c": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw666hg3-6hux5yywg4-amanda": {
-      "jobId": "en:bulk:tour:tour_source_karnaval_5_stran:b001",
-      "token": "sy1awumvf7pgy513zgwgbrzh1sanfw9ih92p7020qoja5atmb89c3w6ws4gfgxi3s",
-      "expiresAt": "2026-11-07T10:27:02.167Z",
-      "generation": 1
-    },
     "ada-en-mw666fr7-b94f97z9ij-amanda": {
       "jobId": "en:bulk:tour:tour_source_klassicheskij_paragvaj:b003",
       "token": "lease-mw666fr7-b94f97z9ij-xqc92eyt8an",
@@ -9124,7 +9118,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_karnaval_5_stran:b001"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_karnaval_5_stran:b001"
+      ]
     },
     "ada-en-mw666fr7-b94f97z9ij-amanda": {
       "token": "lease-mw666fr7-b94f97z9ij-xqc92eyt8an",
@@ -9163,5 +9159,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T08:58:16.908Z"
+  "updatedAt": "2026-11-07T08:58:26.123Z"
 }

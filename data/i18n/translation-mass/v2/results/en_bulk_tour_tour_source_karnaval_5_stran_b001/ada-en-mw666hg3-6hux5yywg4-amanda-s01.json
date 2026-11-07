@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_karnaval_5_stran:b001",
+  "stableId": "tour_source_karnaval_5_stran",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0728ea793b6b8b50c3733c168367745a4ca6bb2c0cfdc2a27a459cd492e391fd",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "7be3dadad2aa29ab4447a700c92c08967af469fc653960f10c46e2402ddd9bd1",
+      "text": "5 Countries Tour",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p1",
+            "textSha256": "c5579b5cf78ae94d838923388817b3ddf1d2eddbf4969a43c5c08b9d60c41106"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "e50e441bf4bf9318b9ab84bc27fbe38697063ceaf9a1f564a05a6632378cf7b5",
+      "text": "We invite you to experience the famous Carnival in Rio de Janeiro, one of the most grandiose and vibrant cultural events on the planet! See the widest waterfalls in the world, Iguazu Falls, the exquisite architecture of Buenos Aires, natural wonders like the Uyuni Salt Flats and the floating Uros Islands on Lake Titicaca. And finally, visit the renowned and mysterious Machu Picchu. The best of Latin America – all in one tour!",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p23",
+            "textSha256": "09749be8ea9697d15c7a9a7be8752a6c4c8ed4adafc3c01c55ff1f6dd56f2c24"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
+      "text": "Private",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The pinned Word itinerary has group service lines and no matching label for the canonical site's private tour format."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p5",
+            "textSha256": "3cb006b562922d377843ef5f2fdcdc195d2569e08aae13c3f053e84ca49399db"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the first city from the itinerary overview and omits the number of nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ee50bb31f066a0a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "68dd2fdbc60b13d3b755f1538c7422f3fdaa16b53b328656d3b536d2dd63d9db",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p50",
+            "textSha256": "89dfbd18df92b27370d53558553e1e0299f99483c1efd8c03b821d90f822baa4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the day number from the single-city heading to recover the exact destination name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p5",
+            "textSha256": "3cb006b562922d377843ef5f2fdcdc195d2569e08aae13c3f053e84ca49399db"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the city from the itinerary overview and omits the number of nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9b111b2acac09c96",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+      "text": "Santiago de Chile",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p5",
+            "textSha256": "3cb006b562922d377843ef5f2fdcdc195d2569e08aae13c3f053e84ca49399db"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the city from the itinerary overview and omits the number of nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:76aa895a43d4eb29",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+      "text": "San Pedro de Atacama",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p5",
+            "textSha256": "3cb006b562922d377843ef5f2fdcdc195d2569e08aae13c3f053e84ca49399db"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the city from the itinerary overview and omits the number of nights."
+      }
+    }
+  ]
+}

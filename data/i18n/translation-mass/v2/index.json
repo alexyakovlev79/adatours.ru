@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 192,
-    "leased": 8,
+    "queued": 191,
+    "leased": 9,
     "review": 2616,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 188,
-      "leased": 8,
+      "queued": 187,
+      "leased": 9,
       "review": 277,
       "ready": 0,
       "retryable": 0,
@@ -796,8 +796,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 10,
-          "leased": 0,
+          "queued": 9,
+          "leased": 1,
           "review": 10,
           "ready": 0,
           "retryable": 0,
@@ -817,7 +817,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:32:24.024Z",
       "earliestRetryAt": null
     },
     "09": {
@@ -1388,6 +1388,12 @@
       "jobId": "en:bulk:tour:tour_source_sokrovishcha_bolivii:b004",
       "token": "lease-pl62r2envjisiol4nxpxumw68ibtc",
       "expiresAt": "2026-11-07T11:32:13.970Z",
+      "generation": 1
+    },
+    "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877": {
+      "jobId": "en:bulk:tour:tour_source_manaus_4_dnya_3_nochi:b004",
+      "token": "adcc93d1-5384-4520-ad27-e62820cc67ef",
+      "expiresAt": "2026-11-07T11:32:24.024Z",
       "generation": 1
     }
   },
@@ -9579,8 +9585,15 @@
         "en:bulk:tour:tour_source_sokrovishcha_bolivii:b004"
       ],
       "completedJobIds": []
+    },
+    "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877": {
+      "token": "adcc93d1-5384-4520-ad27-e62820cc67ef",
+      "jobIds": [
+        "en:bulk:tour:tour_source_manaus_4_dnya_3_nochi:b004"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T10:02:13.970Z"
+  "updatedAt": "2026-11-07T10:02:24.024Z"
 }

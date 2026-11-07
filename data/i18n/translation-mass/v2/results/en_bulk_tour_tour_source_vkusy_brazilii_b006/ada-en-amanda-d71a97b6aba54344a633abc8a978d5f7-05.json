@@ -1,0 +1,147 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vkusy_brazilii:b006",
+  "stableId": "tour_source_vkusy_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9c94bd9a25f6a0d566f4b7f0b4895dedc44b824b85166c502d6d3394793f7610",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b469ad76976eba218b0abc7d34c187dc3a770f2751c14fcc27e38ac789c31e78",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "27887153aa5c4897cf61078f389945143ecb8f106a21c1176cc0bb5413d2618a"
+          },
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "1ce16b18f3b759571da5fd4f368d873f6e5042f15f7fc59f455ba6b08d861dfd"
+          },
+          {
+            "ref": "word/document.xml#p0054",
+            "textSha256": "348f892b0ac0ef4b7f500a9b2846c08907206878f7fc794f452180b66330f61c"
+          }
+        ]
+      },
+      "text": "Breakfast at the hotel. Today you will go on a journey to the Blue Lagoon (\"lagoa azul\") and the surrounding beaches.\n\nThe Blue Lagoon is a paradise with calm, shallow water with various shades of blue. The lagoon is also home to many small, colorful fish. \n\nSIB Tours and Transfers in Ilha Grande (no guide)"
+    },
+    {
+      "blockId": "tour:itinerary_label:bbfcc311375b1af8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b8294d936f9c2224e493c1fb4df41336a9462ae5f680acbac32d2a68e698ce87",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "613789b2c8633de1628e3eb5b3ca5458b577187942e2333636d3e0281538bdf9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the name from the Word source as the standalone label for this field."
+      },
+      "text": "Ilha Grande"
+    },
+    {
+      "blockId": "tour:media_alt:1aec73f8117db727",
+      "field": "media.alt",
+      "sourceTextSha256": "0872e5cdc94539dcc786dec1e1a9a0d85ebb59bec76e795164256518d20d8e2b",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-d71a97b6aba54344a633abc8a978d5f7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word program has no caption corresponding to the photograph of a couple dining by torchlight."
+      },
+      "text": "A couple at a seaside table by torchlight on Ilha Grande, Brazil"
+    },
+    {
+      "blockId": "tour:media_hover:ca09a72863b46a58",
+      "field": "media.hover",
+      "sourceTextSha256": "091f57a32f0d927ac481522b817cb7f5a0b01e9d91fc58f0afd3ef6bbba5e011",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-d71a97b6aba54344a633abc8a978d5f7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word program has no hover caption for this photograph of a torch-lit dinner on the shore."
+      },
+      "text": "Ilha Grande: a seaside dinner beside a lit torch"
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1a4f27576ed652e6f1d6b334e597c5685e22e1ab9fbd527f23deb30ad0ba98e4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "23f1c31014dcf3522f4dab6f6ef639b39b78259b40b82ed8be47a6c5b22cad9a"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Remove the day number and retain the two exact place names of the route heading."
+      },
+      "text": "Ilha Grande – Paraty"
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7ddf2e316b9f1cee0a48df0aec0c94c8e47c7c1185d60dfee5b70e2c9d1a9924",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-d71a97b6aba54344a633abc8a978d5f7",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The current day 6 block specifies a private boat and car and a distinct historical account. Word p0039 describes a ferry instead and p0019 gives a different account, so no single compatible passage preserves the current transport basis and copy."
+      },
+      "text": "After breakfast, travel to Paraty in two stages, first by private boat and then by car. Check in at your hotel on arrival.\n\nParaty is about 125 miles from Rio and is known for its well-preserved eighteenth-century Portuguese colonial buildings. In the late 1700s, gold from the state of Minas Gerais was carried over the mountains to Paraty and shipped from there to Portugal.\n\nA more convenient route through Rio eventually took over, helping Paraty retain its historic buildings. The town later became a resort that draws visitors for its colonial architecture, beaches and coastal scenery."
+    },
+    {
+      "blockId": "tour:itinerary_label:fddf82bba28c41b5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3b696c0580339afaf47c3619acb2af48388a438e1e30fda7e50da2cfbc5c80e8",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "23f1c31014dcf3522f4dab6f6ef639b39b78259b40b82ed8be47a6c5b22cad9a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the name from the Word source as the standalone label for this field."
+      },
+      "text": "Paraty"
+    },
+    {
+      "blockId": "tour:itinerary_label:6c3e4621849c1a12",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b8294d936f9c2224e493c1fb4df41336a9462ae5f680acbac32d2a68e698ce87",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "23f1c31014dcf3522f4dab6f6ef639b39b78259b40b82ed8be47a6c5b22cad9a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the name from the Word source as the standalone label for this field."
+      },
+      "text": "Ilha Grande"
+    }
+  ]
+}

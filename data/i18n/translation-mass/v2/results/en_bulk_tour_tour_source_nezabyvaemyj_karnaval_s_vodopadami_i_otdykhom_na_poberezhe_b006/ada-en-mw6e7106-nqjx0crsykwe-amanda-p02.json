@@ -1,0 +1,142 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b006",
+  "stableId": "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "fa5b00a3aebb7dcac1dace0b93db704d348bbf17111f077011c9a93c91a73f3b",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0048",
+            "textSha256": "0ca65d3f2dff50c69bb9a78009aaa6991a30c618a7f69c64dd2dc9d09d423abb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 4 heading supplies the city name for the separate itinerary place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7783c1d9e6692dd0",
+      "field": "media.alt",
+      "sourceTextSha256": "35ee1a3dba7ebc3344318315307a8c8a7b0399274ac6b7fdde3e2df8c26c032e",
+      "text": "Christ the Redeemer on the summit of Corcovado amid the green mountains of Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 4 describes the monument and Corcovado but contains no alt text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e1bb4bd1b7f7e1d7",
+      "field": "media.hover",
+      "sourceTextSha256": "639cf3e5281be421c4e6d16fc32765f3e94650baeb20696a352e2ed2145ef283",
+      "text": "Corcovado, Rio de Janeiro: Christ the Redeemer above the forested mountain slopes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 4 contains an excursion narrative but no dedicated hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "193d37e615f81da4f18e2a4af394b7ad9c2b6d41297f908bde6668e092bc085c",
+      "text": "Rio de Janeiro – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "285e7da98a773b6b2f95a65685cfc4f1a4ffdb789f2bb5fded36365797b418e6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The itinerary template renders the day number separately, so the route heading excludes the Word day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d85c4c3f9d616d57ac5b72a3855a1c4610e7bc825a09757f21f2c58a343ac749",
+      "text": "Breakfast at the hotel; Transfer to the airport, flight to Foz de Iguacu, where you will be picked up and taken to your hotel.\n\nIguazú is a system of 275 waterfalls stretching for nearly 3 kilometres. The falls are linked to ancient volcanic activity and the basalt plateau. You can feel the humidity as you approach the national park and hear the roar of the water before reaching the main viewpoints.\n\nThe next two days are devoted to different sides of the falls. The Brazilian side gives you a view of the whole system, while the paths and boardwalks on the Argentine side take you much closer to individual cascades.\n\nThe change of scene is striking after Carnival at night and several days in the city. Here the humid forest, the rush of the river and the constant spray set the scene. Photographs can hardly convey the scale of Iguazú: the cascades stretch for nearly 3 kilometres, and the view changes at every turn along the trail. That is why the itinerary allows three nights at the falls.",
+      "provenance": {
+        "kind": "ai_translation",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0058",
+            "textSha256": "0166e31c130caedcf81a687cbb3fb2ad9d46de4c1472a35e65e1ec9f28b0a1de"
+          }
+        ],
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 5 provides the opening transfer only. Days 6–7 describe the two sides, but the geology, viewpoints, contrast with Carnival and explanation of the three-night stay have no equivalent continuous passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2a305b40321085a3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "285e7da98a773b6b2f95a65685cfc4f1a4ffdb789f2bb5fded36365797b418e6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 5 route heading names the point of departure; use it as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "285e7da98a773b6b2f95a65685cfc4f1a4ffdb789f2bb5fded36365797b418e6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 5 route heading names the arrival city; use it as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5cdca6b10f2d61e8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 7 visits the Argentine side of the falls but does not name Puerto Iguazú as a separate place."
+      }
+    }
+  ]
+}

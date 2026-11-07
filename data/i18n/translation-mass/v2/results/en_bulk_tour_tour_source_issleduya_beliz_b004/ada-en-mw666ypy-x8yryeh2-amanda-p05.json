@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_issleduya_beliz:b004",
+  "stableId": "tour_source_issleduya_beliz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9878456d2c738882215c9b4e54229930916f9fede66b216418390456b4751b93",
+  "blocks": [
+    {
+      "blockId": "tour:included:7af80ca6f2de4a4c",
+      "field": "included",
+      "sourceTextSha256": "3977226d310c68d18f13e0371037e21b6ac88447c0f1a6ca8a2e23cdd9425e10",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "8c4c545565cda0f865215f26694df84a8d4e5e1971804f688bfc2640ae9e4b84"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the corresponding hotel stay from the Word inclusions and remove the list marker."
+      },
+      "text": "3 nights at Azure del Mar (Ocean View Cabana)"
+    },
+    {
+      "blockId": "tour:included:d96c1f1becc7c7ea:2",
+      "field": "included",
+      "sourceTextSha256": "b214a469a197244e4dc48e8cdea5cf4bf8c01241daa1e5361726b4a51d233e04",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "8c4c545565cda0f865215f26694df84a8d4e5e1971804f688bfc2640ae9e4b84"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the breakfast inclusion from the Word list without the checkbox marker."
+      },
+      "text": "Daily breakfast"
+    },
+    {
+      "blockId": "tour:included:ad54f7d81debd551",
+      "field": "included",
+      "sourceTextSha256": "a1a7ec3ba8ab7db43abde875fc347911f562e718a987198ba3e965804391db27",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "8c4c545565cda0f865215f26694df84a8d4e5e1971804f688bfc2640ae9e4b84"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the shared snorkeling inclusion without the checkbox marker."
+      },
+      "text": "Full-day shared snorkeling tour in Southern Belize"
+    },
+    {
+      "blockId": "tour:included:99a0f0867ce9fa85",
+      "field": "included",
+      "sourceTextSha256": "064da5c0ec6e0bab7f1ae9bb6b8b18edb1dfa44dfbc105e6ba2b2bb571028e04",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "8c4c545565cda0f865215f26694df84a8d4e5e1971804f688bfc2640ae9e4b84"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Extract the domestic flight inclusion without the checkbox marker."
+      },
+      "text": "Local flight from Placencia to BZE"
+    },
+    {
+      "blockId": "tour:notIncluded:324d70374f3a6d02",
+      "field": "notIncluded",
+      "sourceTextSha256": "17068c68140dcaf6294134bfd6deda33049f709aae1ba56896524b2ac483d0d9",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666ypy-x8yryeh2-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word package has inclusion lists, but no standalone exclusion for additional activities."
+      },
+      "text": "Additional activities"
+    },
+    {
+      "blockId": "tour:notIncluded:b1961e3ad2e2ba92",
+      "field": "notIncluded",
+      "sourceTextSha256": "261e79b99c24ac4e2872e413f38eb5c116fdd7eb5a43f6d3c51b921e433e921d",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666ypy-x8yryeh2-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word package does not give a corresponding list item excluding international flights."
+      },
+      "text": "International flights"
+    },
+    {
+      "blockId": "tour:notIncluded:817bf44d4bacef2a",
+      "field": "notIncluded",
+      "sourceTextSha256": "104199d10ae2e2cc6271faa4e4b7c852ce1ac651a42d54c3587e6d054c860b36",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666ypy-x8yryeh2-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word package has no corresponding list item for personal expenses."
+      },
+      "text": "Personal expenses"
+    },
+    {
+      "blockId": "tour:note:fa518fb6ca5d16fd",
+      "field": "note",
+      "sourceTextSha256": "2253b56f9414ebc35c617a262388d8d97ba730a60451e62473bc3e9b007aa674",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666ypy-x8yryeh2-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word document does not state the same-category hotel substitution condition."
+      },
+      "text": "If necessary, Ada Tours may replace a listed hotel with another hotel in the same category."
+    }
+  ]
+}

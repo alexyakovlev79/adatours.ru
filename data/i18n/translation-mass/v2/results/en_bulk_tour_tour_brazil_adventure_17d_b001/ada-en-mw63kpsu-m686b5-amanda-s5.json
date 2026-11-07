@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_adventure_17d:b001",
+  "stableId": "tour_brazil_adventure_17d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "9201abc5508f4766f8a24a910640fe02d874e4ba9e994c3dcc3f3acda98a8e9c",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "1669d7fac7f9ee76e38e9e636ccf7c7cc9e36193c379433aedfba86e2a8dafe3",
+      "text": "Brazil Adventures",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "9caddfb70d22ae148d2953e56918e6e0795db651941b90b2e9871ef047a41f4f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "55691566ba2704eabefe64b2f6df12cc2d5be88e81252fe1f0414cb718d0e366",
+      "text": "Over 17 days, you’ll travel through several very different regions of Brazil. Start in Rio de Janeiro, with its oceanfront, Corcovado, Sugarloaf Mountain and the Tijuca Forest. Then continue to Ilha Grande, Iguaçu Falls, the wetlands of the Pantanal, and the clear rivers and caves of Bonito. Finish in north-eastern Brazil, among the colonial streets of São Luís and the white dunes of Lençóis Maranhenses.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word document supplies a route list and separate day descriptions but has no equivalent introductory overview combining these sights."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
+      "text": "Private",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word overview does not give the tour a private-format label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "7556263a99f66c3b8a2fde76c34cace543c4cd030733a5511a5f9c1eeb062465"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Isolate the city name from the opening itinerary route list."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a0e8c2a0a3ce8784",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f3a478c001390a5f29404849aba0e8a8ad524699c11987af6bdf62d1c375a709",
+      "text": "Ilha Grande",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "7556263a99f66c3b8a2fde76c34cace543c4cd030733a5511a5f9c1eeb062465"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Isolate the island name from the opening itinerary route list."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da9a00be9c2cdec0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7aa65fe510b5abedc5fc31d346dc0dd9edeac5a417d1553c9d2a16dd3ff00aa5",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "9cc16a70b07db86a2daf75cdf34c9b06c6f2d9512376f4fdbaef9f8a3e506b9d"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the place name from the Day 8 route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ccdaf76325d16d55",
+      "field": "itinerary.label",
+      "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
+      "text": "Pantanal",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "7556263a99f66c3b8a2fde76c34cace543c4cd030733a5511a5f9c1eeb062465"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Isolate the wetland region name from the opening itinerary route list."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0264afb4a0c6ec9b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "de6738182fbee1100962b5c995a837c3dcc6831cd58b9948be7dcb02e2b71558",
+      "text": "Bonito",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ON2xDdTtKzlITPE6VgHsjHfXZ0cOllJh",
+        "documentSha256": "448821740ca8a854bbdbf9466b704f9e63f3f5fb430ea3ae2c686b46c0c3be49",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "7556263a99f66c3b8a2fde76c34cace543c4cd030733a5511a5f9c1eeb062465"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Isolate the destination name from the opening itinerary route list."
+      }
+    }
+  ]
+}

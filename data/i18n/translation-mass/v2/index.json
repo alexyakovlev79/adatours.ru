@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 189,
-    "leased": 11,
-    "review": 2616,
+    "leased": 10,
+    "review": 2617,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 185,
-      "leased": 11,
-      "review": 277,
+      "leased": 10,
+      "review": 278,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -437,8 +437,8 @@
         "word_2026": {
           "held": 0,
           "queued": 9,
-          "leased": 1,
-          "review": 3,
+          "leased": 0,
+          "review": 4,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T11:31:42.946Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "00": {
@@ -1364,12 +1364,6 @@
       "jobId": "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b012",
       "token": "lease-z1lxdts2q4dx4ru13lhqjt",
       "expiresAt": "2026-11-07T11:24:01.260Z",
-      "generation": 1
-    },
-    "ada-en-mw68hnvk-wlftbe5ij7-amanda": {
-      "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b010",
-      "token": "lease-th4lipn0dfqk72hlfpmdks",
-      "expiresAt": "2026-11-07T11:31:42.946Z",
       "generation": 1
     },
     "ada-en-mw68hy68-7ndzh670bzw": {
@@ -9575,7 +9569,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b010"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b010"
+      ]
     },
     "ada-en-mw68hy68-7ndzh670bzw": {
       "token": "worker-cmzeojv7m05-steia4ttvp",
@@ -9621,5 +9617,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T10:02:57.166Z"
+  "updatedAt": "2026-11-07T10:03:19.630Z"
 }

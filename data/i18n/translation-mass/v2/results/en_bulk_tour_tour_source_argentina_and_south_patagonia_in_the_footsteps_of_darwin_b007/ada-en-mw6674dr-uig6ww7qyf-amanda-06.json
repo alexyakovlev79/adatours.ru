@@ -1,0 +1,140 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b007",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "27320654284678f41f446c7bcf4445dc012919e6c105935c449ff3404f45a6ca",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:57f2279116ea9d3f",
+      "field": "media.alt",
+      "sourceTextSha256": "c1c10b6a6aff1eb5cb3d8c156e8228f5aebc4791415489de2e0dab794b7f9fc5",
+      "text": "The snowy south face of Aconcagua and its glaciers above a rocky valley on the approach to Plaza Francia, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word’s Day 4 text mentions the south face, but contains no image description of the snow and glaciers above the rocky valley on the approach.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:10d359ddc5a1924e",
+      "field": "media.hover",
+      "sourceTextSha256": "f91726e3f5487d8eac9ed9e4c34c430517af2b733de2e5d4e4b4ce4d5248c819",
+      "text": "Plaza Francia: view of the south face of Aconcagua",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Day 4 text names the viewpoint and the south face, but contains no matching standalone caption for the image.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f76c4f903d8620d49f0497607313f98ac9d81754cf29a60e8c36ba01ba09867b",
+      "text": "Confluencia – Plaza de Mulas, 4,300 m",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "d4efc6711ec5a62995ee3b6c84682e1ead89590b197fd5e47aa50bb54a888ee1"
+          },
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "78004fe1dc81cffaeb03143a6735442375982dfdbcaf9f821f64a247eb8cdfd9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the short website title from the Day 5 starting point and destination and use the altitude in the confirmed Word heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "25a8f8d7dcecd8b227876e9f4f4e789634bca086640c331f53044b74023c8798",
+      "text": "After an early breakfast, we say goodbye to Confluencia and start an 8-to-9-hour hike, crossing the “Playa Ancha” and climbing the steep “Cuesta Brava.” We will arrive at Plaza de Mulas, the largest camp in Aconcagua Park, a true city in the heart of the mountain. The staff will welcome us with a well-deserved welcome meal after the effort made.\n\nAccommodation: Double/triple tent or Dorm Dome – Meals included: Breakfast, packed lunch, and Dinner",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "78004fe1dc81cffaeb03143a6735442375982dfdbcaf9f821f64a247eb8cdfd9"
+          },
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "55ae3f59adbca8832792982311535d655541208f0ab4cbac6440807e961fea63"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7397e8fe1864c323",
+      "field": "itinerary.label",
+      "sourceTextSha256": "10064c71bfd1e49c5c68cbdf0f46e812a6ac19c2f29f125365e8a9958ebe923e",
+      "text": "Confluencia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "78004fe1dc81cffaeb03143a6735442375982dfdbcaf9f821f64a247eb8cdfd9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the starting place named in the Day 5 Word text as the standalone itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0ee0d395b17128e8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a7601156c4a99a851cd753a3673c0e66ce9924ed3c0f4b3597202f8290bbcf12",
+      "text": "Plaza de Mulas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "d4efc6711ec5a62995ee3b6c84682e1ead89590b197fd5e47aa50bb54a888ee1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination named in the Day 5 Word heading as the standalone itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cfb786d1b888606a",
+      "field": "media.alt",
+      "sourceTextSha256": "e9254524d2e6a6c343ccaa5543933e5d5630f29718d9877a10ec309341950374",
+      "text": "Hikers with backpacks approach the tents at Plaza de Mulas camp near Aconcagua, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word’s Day 5 itinerary describes arriving at the camp, but contains no alt text for the photograph of the hikers and tents.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e1e06fa2dde71c78",
+      "field": "media.hover",
+      "sourceTextSha256": "c7daf3526dea13d1137252cb5ef428bd9ad43d27527913fce7a092d50ebf22aa",
+      "text": "Plaza de Mulas: hiking through a rocky valley to base camp",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Day 5 Word entry gives the route and camp arrival, but contains no caption for the photo of the rocky valley.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    }
+  ]
+}

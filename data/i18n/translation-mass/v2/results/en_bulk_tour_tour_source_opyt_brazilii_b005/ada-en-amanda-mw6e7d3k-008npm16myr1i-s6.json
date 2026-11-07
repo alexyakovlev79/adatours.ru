@@ -1,0 +1,175 @@
+{
+  "jobId": "en:bulk:tour:tour_source_opyt_brazilii:b005",
+  "stableId": "tour_source_opyt_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7f5701136abf0420e73aa33ec2bec2ef839ac4d9e2fc9cc1c11bb8519c882c37",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:b2f0e19acda78198",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "278f24167afb43dfd3fec8ef651604625d1c355ab4036dc0efa7c71946187952"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the city name from the Word day heading for the itinerary place label."
+      },
+      "text": "Rio de Janeiro"
+    },
+    {
+      "blockId": "tour:media_alt:10e8fb9997c05459",
+      "field": "media.alt",
+      "sourceTextSha256": "98f6dca0e095ad7c731a59c556b280edf98b21054e9c4aac700da5d741d7116a",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word describes the statue and summit in itinerary prose but contains no alt text for the photograph showing visitors."
+      },
+      "text": "Christ the Redeemer statue and visitors at the summit of Corcovado, Rio de Janeiro, Brazil"
+    },
+    {
+      "blockId": "tour:media_hover:fada3d4353a682b2",
+      "field": "media.hover",
+      "sourceTextSha256": "965794a4c5683818347ee51db0f942d01eba2662bdfa8cbde66d12fd7ae81876",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word describes the summit views in prose and contains no hover caption for this photograph of the viewing platform."
+      },
+      "text": "Corcovado: the lookout beside the statue above Rio and the ocean"
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7899fb2dfe186d642b067c2478e27baba37d1d130315f8d7be4f9232298ae9f8",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "49e2f3c0c4de151e5f0ba44cd1c1466432a1de5b71828db7d638b545d42afb0b"
+          },
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "6598423e868ece5a4bd49176c3a448f3d3582a10d642fb5f6a866f679628803a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word day route with its confirmed visit to the Brazilian side of the falls."
+      },
+      "text": "Rio de Janeiro – Foz do Iguaçu and the Brazilian Side of the Falls"
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c39989d8234834b9158bd603212bcfdd0f3af78575e523e7790bf39a06402a13",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0039",
+            "textSha256": "4672a5a543c640372e41b96ff96608c07549045335e77d15bb3de137196677fb"
+          },
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "6598423e868ece5a4bd49176c3a448f3d3582a10d642fb5f6a866f679628803a"
+          },
+          {
+            "ref": "word/document.xml#p0041",
+            "textSha256": "d9c608c9ca481e868ab394ce9fe43ac28a7fddf470752d4999c2544e5ea5a377"
+          },
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "d8cbfa2a18bed406d899b734a0655de7e0e3e136929ca90970d4e15720f39c39"
+          },
+          {
+            "ref": "word/document.xml#p0043",
+            "textSha256": "c047b829539b45b99737b4f4cc55318dbcbd46fcab01e5899598a96726570671"
+          },
+          {
+            "ref": "word/document.xml#p0050",
+            "textSha256": "efaae6c637f6b91fb291d31c8cdeab047dd2568c0ea24e12df8cdab99c3ea665"
+          },
+          {
+            "ref": "word/document.xml#p0051",
+            "textSha256": "f911f7e98b347154d23e8f95ec8e104813386169237d8d14e75e8bab78c83d44"
+          },
+          {
+            "ref": "word/document.xml#p0053",
+            "textSha256": "f9d3acc9d910ebbdbed30cdd78ccb4c7d98f34888a45cc9568314a3d0f59a150"
+          },
+          {
+            "ref": "word/document.xml#p0054",
+            "textSha256": "41a9a2e428fb9ad21151f1d3d72463a7afb228d006f3e217c62cce3c49fce977"
+          }
+        ]
+      },
+      "text": "After breakfast your driver will drive you to the airport in time for your flight to Foz de Iguacu where you will be welcomed and transferred to your hotel by a driver.\n\nAfter that you will go on an adventurous guided tour to visit the amazing falls from the Brazilian side.  \n\nFoz de Iguacu Falls are located on the borders of Brazil, Argentina and Paraguay – there are over 260 large waterfalls, the widest on earth, tumbling down from the lazy Parana river.  The Falls are located in the National Park that formed after a volcanic eruption, and the displacement of the earth plaques.  The name Iguazu means \"big water\" in the local Indian dialect of the Tupi-Guarani tribe. The strongest waterfall is the \"Garganta del Diablo\" or \"Devil's Throat\" tumbling down 72 meters into the abyss. \n\nThere are two circuits:  the Upper and the Lower Circuit.\n\nThe Upper circuit, a walk of 1,300 meters, provides a panoramic view above the waterfalls while the Lower Circuit brings you through the Jungle to the impressive Garganta del Diablo fall after walking on the 1.000 mts. footbridge.\n\n\tOptional: Macuco Safari \n\nYou will go on a tour through the jungle, and then get to a wonderful boat ride. In the jungle you will ride in an open jeep for about 3 kilometers, accompanied by a guide who will tell you a lot of interesting things about the ecology of the region. Then you will go on foot to the banks of the Iguazu River, from where they will take you by motor boat close to the waterfalls. You are expected by splashes and rainbows, the sea of ​​delight and unique photos \n\n\tOptional: Bird Park\n\n\tYou will enter the huge open-air cages, where amazing, fairytale birds of outlandish colors freely fly or walk among the rainforest"
+    },
+    {
+      "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "49e2f3c0c4de151e5f0ba44cd1c1466432a1de5b71828db7d638b545d42afb0b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the city of departure from the Word route heading."
+      },
+      "text": "Rio de Janeiro"
+    },
+    {
+      "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "d802ac71136af3b265a1af6c98859d0091965e493b7bdc057de1e4a53632af4b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the named destination from the overview route for the itinerary place label."
+      },
+      "text": "Foz do Iguaçu"
+    },
+    {
+      "blockId": "tour:media_alt:fc481bc7538bf19a",
+      "field": "media.alt",
+      "sourceTextSha256": "a086421980249438bf49f2f2a2fe5158b880cc1be5e855e883b3a42db75414f1",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word describes walking routes but has no alt text for the photograph of visitors standing on the viewing walkways."
+      },
+      "text": "Visitors on viewing walkways above the water in front of the Iguaçu Falls cascades"
+    }
+  ]
+}

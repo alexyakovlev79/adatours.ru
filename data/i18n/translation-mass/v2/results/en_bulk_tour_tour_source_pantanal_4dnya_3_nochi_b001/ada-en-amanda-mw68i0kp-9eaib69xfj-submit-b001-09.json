@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_source_pantanal_4dnya_3_nochi:b001",
+  "stableId": "tour_source_pantanal_4dnya_3_nochi",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "bcb6f81a0e9438fbd667aa550b2da57dd96a1a613e9135062d79346b26ebdefc",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "89d86e43bfdca28525011971c5190e0ad4350cfbc1fb482f5f6bdbb714bd523c",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KTUolNRAKG66sEhtMWrWRxbXHQvHBXa1",
+        "documentSha256": "3335de61e0649559d758d223538fc498082e8a9b23d4eee81cdd9cb4b2991005",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "e33060b71b40251a56b374bf9fd81b951107662b7a317be36603c5ba30a68101"
+          },
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "5eaa7a78f4be50d31aab04b5baa85154bbb6399ed949c70008b29242a3e4276f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the approved programme name and its separate duration line in the title field that displays both on the site."
+      },
+      "text": "Pantanal: 4 days / 3 nights"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "8f3abb76b3e544bade97e3d4e5c2c9cf425e9f8bc83e51ae99afd46e6b13ac0b",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw68i0kp-9eaib69xfj",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The DOCX introduces the wetland and lists activities within the daily itinerary, but it has no standalone overview combining the habitat and the three ways of exploring it."
+      },
+      "text": "The Pantanal stretches across a vast wetland in central South America and is one of Brazil’s main natural regions. Its lakes, rivers, grasslands and riverside forests are home to many birds, mammals and reptiles. Over four days, you explore this landscape from the water, on horseback and on a 4x4 safari."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "276faddd370cdc893304fafba6cd05f25690998ae739b2ea4a4d287eba0ddbd3",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KTUolNRAKG66sEhtMWrWRxbXHQvHBXa1",
+        "documentSha256": "3335de61e0649559d758d223538fc498082e8a9b23d4eee81cdd9cb4b2991005",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "18181fc72e5132d10700a5061025a014fc2350ca480d3ca8e67cabe122b41832"
+          },
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          },
+          {
+            "ref": "word/document.xml#p0014",
+            "textSha256": "142264c8c975b6f382ccd8fb0665c87081a6a5f451d2b736d2335491cbf18524"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "The Word table confirms the same $3,809 double-occupancy amount. Keep the exact existing RU price-note string and leave all shared pricing fields untouched."
+      },
+      "text": "$3809"
+    },
+    {
+      "blockId": "tour:itinerary_label:ccdaf76325d16d55",
+      "field": "itinerary.label",
+      "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1KTUolNRAKG66sEhtMWrWRxbXHQvHBXa1",
+        "documentSha256": "3335de61e0649559d758d223538fc498082e8a9b23d4eee81cdd9cb4b2991005",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0005",
+            "textSha256": "eca839902f399e2e9e2adbc13160863157f6728c9da453f7408f248cd152a0f7"
+          }
+        ]
+      },
+      "text": "Pantanal"
+    },
+    {
+      "blockId": "tour:itinerary_label:4d1c9e5459198953",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a02407961c4f3197e8ad48cf5b164c12d48ae89a10535f7f64161b34d5df1a77",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KTUolNRAKG66sEhtMWrWRxbXHQvHBXa1",
+        "documentSha256": "3335de61e0649559d758d223538fc498082e8a9b23d4eee81cdd9cb4b2991005",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "75125023c69dc6c9e88ab01aafaa35f5e3f04942c79a22202ada8c582099e0d5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the accommodation type from the Word inclusions as the short route label, without replacing it with a new property name."
+      },
+      "text": "Lodge"
+    },
+    {
+      "blockId": "tour:included:881fec3f134da452",
+      "field": "included",
+      "sourceTextSha256": "63409d490fbf904acf52a98850343a5326fec08bfc5dea27f8503ffbbe30acd9",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1KTUolNRAKG66sEhtMWrWRxbXHQvHBXa1",
+        "documentSha256": "3335de61e0649559d758d223538fc498082e8a9b23d4eee81cdd9cb4b2991005",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "75125023c69dc6c9e88ab01aafaa35f5e3f04942c79a22202ada8c582099e0d5"
+          }
+        ]
+      },
+      "text": "\tAccommodation at lodge according to the program"
+    },
+    {
+      "blockId": "tour:included:90056ad6cdeeb689",
+      "field": "included",
+      "sourceTextSha256": "40cd838f6f756ec4c15a8632ea2615411bd1c84b66986f2ef342b5236944c555",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1KTUolNRAKG66sEhtMWrWRxbXHQvHBXa1",
+        "documentSha256": "3335de61e0649559d758d223538fc498082e8a9b23d4eee81cdd9cb4b2991005",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "5a9396bae61f22a028cab6dbb7a65c19b31ee7893e63764ff983bca4fdb4abcf"
+          }
+        ]
+      },
+      "text": "\tExcursions according to the program with english guide"
+    },
+    {
+      "blockId": "tour:included:eed4c5beaf26e988",
+      "field": "included",
+      "sourceTextSha256": "0e0f6f8ae6c3050cf6d0bb372a2cf47f46dc68354ea9df77d1c2ec07753b15e2",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1KTUolNRAKG66sEhtMWrWRxbXHQvHBXa1",
+        "documentSha256": "3335de61e0649559d758d223538fc498082e8a9b23d4eee81cdd9cb4b2991005",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "792f2b7947c4d9ad802b124c69420bee21bd9e05cf711cfbae002b56a87f1fbc"
+          }
+        ]
+      },
+      "text": "\tTransfers"
+    }
+  ]
+}

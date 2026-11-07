@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b012",
+  "stableId": "tour_source_beliz_strastnyj_nablyudatel_za_ptitsami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0200d1c98aa6e826250f3a88eba6a55709ffc602c038b51aaa9bc0c28b91f00f",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "82f114a8e6922436f7097a839ef5ac6c2dd7934df3de7cb9b06715bc5fe21cc1",
+      "text": "You will be road transferred from San Ignacio to Belize City, with a stop at the Belize Zoo for a short tour. Lunch and park fees are included. Afterward, you will be dropped off at the Water Taxi terminal in time to board a ferry to the island of San Pedro.\n\nOvernight at Sunbreeze Hotel.\nBreakfast and lunch are included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "e0fb2961dc43226fad9356500596c75f1c95c4355469206ad858037d914a9958"
+          },
+          {
+            "ref": "word/document.xml#p0058",
+            "textSha256": "0e3aadd84836cbae263660bbc038d09735d525219def70acd6bb69c67d4259ef"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f71f1a6c00e8610c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+      "text": "Ambergris Caye",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0074",
+            "textSha256": "6ede79f1a9093c15a6ca89764223722e776be6a5672c14e860cfa27a84c40d7a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the island name from the Word departure-day paragraph as a place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5ab2f45945c96b4d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f620218cdd77b2ad60567710712d6da201d3153494d15437fde9773420ec1211",
+      "text": "Belize City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "e0fb2961dc43226fad9356500596c75f1c95c4355469206ad858037d914a9958"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the city name from the Word transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0009ad6dc329f357",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f4d2a89f40902e205d875b4061508c2d455053b9a699e6bf4d16943953c3fe07",
+      "text": "San Ignacio",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "e0fb2961dc43226fad9356500596c75f1c95c4355469206ad858037d914a9958"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the departure town name from the Word transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d90aee30177cdd6e",
+      "field": "media.alt",
+      "sourceTextSha256": "4775f7a23b045d51085468fefbe412acfbf0a914a58a4f83756d47bdebab365f",
+      "text": "Sailboat on turquoise water off Ambergris Caye, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word identifies Ambergris Caye but has no caption describing the sailboat in this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:23d0ff6b3ff6aa2a",
+      "field": "media.hover",
+      "sourceTextSha256": "874d28fe1402daf01720fe50edd429a940722d08b62df499bc1c977c313fa99b",
+      "text": "Ambergris Caye: a sailboat on clear turquoise water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word contains no hover caption describing the sailboat on the clear turquoise sea."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ae2ae40d68cf10d72413f2d86e8479dea9221dc3fcd133d0804fbd1ba7d53256",
+      "text": "Hol Chan Marine Reserve and Shark Ray Alley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "7eca5c321a631fae9b9efc11f1c9e8a256fbc4ccdf301e0bf639950f87c07d3c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the two destinations from the Word snorkeling paragraph as the heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a3432f98515160b452eccab92e49809493a14e440ee3be3200e992b7a49b2c98",
+      "text": "You will go on a half-day snorkeling trip to the beautiful Hol Chan Marine Reserve and Shark Ray Alley, with park fees and gear included.\n\nOvernight at Sunbreeze Hotel.\nBreakfast is included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "7eca5c321a631fae9b9efc11f1c9e8a256fbc4ccdf301e0bf639950f87c07d3c"
+          },
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "e49f42415800c1720072127cbb854e0d22559231bf28a4b3520d3d4c114edb6d"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b001",
+  "stableId": "tour_source_fantasticheskaya_kolumbiya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e227e740448531fcb143ffc5da2879aa48ad2e3a224104595bf6c738384934d1",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "dba5f0e0cd4316dbc1efaa4ba807bf08f2c2fd0ca98056ddaf457c5f22913a1e",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "a175cc74ac1cfcef58e91d561073e3f0f74cd598f2574ec33ac0d5678078e170"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the leading list marker and normalize the spacing in the confirmed Word title."
+      },
+      "text": "Fantastic Colombia 2026"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "4a16465ac314da11a747937115f92f94e081db7cadb564eebb42003b1d8fd9cf",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67i24v-mdmn2y41su",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The verified Word has a route list and daily entries, with no corresponding lead paragraph for the website.",
+        "wordContext": {
+          "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+          "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p0001",
+              "textSha256": "7b86d712ff491bbc26cfd72017cab2aaeadcee4128b43316e27c19dbeee7c1d6"
+            },
+            {
+              "ref": "word/document.xml#p0002",
+              "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+            }
+          ]
+        }
+      },
+      "text": "The route links Bogotá, Medellín, Pereira’s coffee region, Santa Marta, a four-day trek to the Lost City, Cartagena and the Rosario Islands. In Bogotá, you’ll visit La Candelaria, the Gold Museum, the Botero Museum and the underground Salt Cathedral of Zipaquirá. In Medellín, the itinerary takes in squares, parks, the cable car and Comuna 13. You’ll then visit the Cocora Valley and a coffee farm, head to the Caribbean coast, trek through the mountain territory of the Tayrona and spend the final days in Cartagena."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "d1592994232abfe1d77809dedbecf10204ed51e86bdcc156e8eabb80b0c40662",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "05ed8ba64ec9072f57fcf8be25609f08a5826c42489ed85a1aa157d99090ae2b"
+          },
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          },
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "d569b53ac9e7585f2ad2ddfe0eadc424e30f17659ff3c9fb21936e87b0d07858"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Preserve the current RU price note exactly. The amount matches the per-person DBL entry in the first hotel tier."
+      },
+      "text": "$4643"
+    },
+    {
+      "blockId": "tour:itinerary_label:74d81c18ef32e157",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Select the confirmed place name from the Word route list for its individual label."
+      },
+      "text": "Bogotá"
+    },
+    {
+      "blockId": "tour:itinerary_label:991e17d2ef70ddb6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Select the confirmed place name from the Word route list for its individual label."
+      },
+      "text": "Medellín"
+    },
+    {
+      "blockId": "tour:itinerary_label:8db5589f74023dd3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Select the confirmed place name from the Word route list for its individual label."
+      },
+      "text": "Pereira"
+    },
+    {
+      "blockId": "tour:itinerary_label:df3749050aeeb231",
+      "field": "itinerary.label",
+      "sourceTextSha256": "32c8dc5297665ad8f4f10fd6404a0105bdce4aa7f012589240107ed1e70d55b3",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Select the confirmed place name from the Word route list for its individual label."
+      },
+      "text": "Santa Marta"
+    },
+    {
+      "blockId": "tour:itinerary_label:3e03527f480e3e16",
+      "field": "itinerary.label",
+      "sourceTextSha256": "914be213e40f04ee2437abc5851e2a33c26cda3b82c9a3857ad73fc44d8ea053",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Select the confirmed place name from the Word route list for its individual label."
+      },
+      "text": "Ciudad Perdida"
+    }
+  ]
+}

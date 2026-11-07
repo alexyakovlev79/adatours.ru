@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 439,
-    "leased": 5,
-    "review": 2372,
+    "leased": 4,
+    "review": 2373,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 435,
-      "leased": 5,
-      "review": 33,
+      "leased": 4,
+      "review": 34,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -517,8 +517,8 @@
         "word_2026": {
           "held": 0,
           "queued": 17,
-          "leased": 1,
-          "review": 0,
+          "leased": 0,
+          "review": 1,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T09:14:41.664Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "02": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw63kmhy-1powes-amanda": {
-      "jobId": "en:bulk:tour:tour_brazil_adventure_17d:b004",
-      "token": "ada-en-mw63kmhy-2ua1vg56c5j2uw828ipzp2",
-      "expiresAt": "2026-11-07T09:14:41.664Z",
-      "generation": 1
-    },
     "ada-en-mw63klk3-vv0roc62-amanda": {
       "jobId": "en:bulk:tour:tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda:b006",
       "token": "lease-mw63klk3-vv0roc62-3y3ahoocgy",
@@ -8890,9 +8884,11 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_adventure_17d:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_brazil_adventure_17d:b004"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T07:48:59.341Z"
+  "updatedAt": "2026-11-07T07:49:07.522Z"
 }

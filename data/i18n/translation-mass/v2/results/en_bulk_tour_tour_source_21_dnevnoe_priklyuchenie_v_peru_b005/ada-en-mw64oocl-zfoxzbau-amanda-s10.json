@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_21_dnevnoe_priklyuchenie_v_peru:b005",
+  "stableId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c7feb9b38562c54878778d5dfe49acd30eede05e59749d336859e0136499f644",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:e7b390d049683fcf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "224c8b76176e1704e6c8775b384d533a2b39786dbf68502ff20a162180032e62",
+      "text": "Nazca Lines and Ballestas Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0013",
+            "textSha256": "2e36e329d1458469d27ba06a9c0f8f64727fdcf2384ed0aa90c933622905a2a8"
+          },
+          {
+            "ref": "word/document.xml#p0019",
+            "textSha256": "da470b53485abb74817c3e3360513becf95ddce431981250a2a8c73f02ac3b6f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the two named sites from the Word itinerary to match the existing shared place label without changing the route."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:420e51bd37664df8",
+      "field": "media.alt",
+      "sourceTextSha256": "f2c784d7fd6737b04b9e90cf1ecb649845d39860983cb9802ecedfc1917297fa",
+      "text": "An oasis with a lake, palm trees and low buildings amid high sand dunes near Ica, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word describes the lagoon and dunes but supplies no alt caption for this photograph, which also shows palms and buildings."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:d9a651af994d6c8c",
+      "field": "media.hover",
+      "sourceTextSha256": "5d36a6472cc4f827fcdd84aaf041694995536cdc740f6335cc4980af87eaa361",
+      "text": "Ica: a green oasis among golden dunes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no hover caption for the website photograph of the oasis and dunes."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cbe71815d3352f84",
+      "field": "media.alt",
+      "sourceTextSha256": "a610735dd3ef5d4e71a584721e0a51e78cedfdc4418a654cf9ec465951232333",
+      "text": "The hummingbird geoglyph with a long beak and outstretched wings in the Nazca Desert, Peru",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word mentions the Nazca Lines but contains no alt text for this image of the hummingbird geoglyph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f53fb187f05bc0a7",
+      "field": "media.hover",
+      "sourceTextSha256": "c4beb6138764927ecdd8cbec10e11d27a662186ccdf065cf8b2491d3bf80d1bf",
+      "text": "Nazca: the outline of a hummingbird on the desert floor",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "There is no corresponding hover caption in the verified Word for this image of the Nazca hummingbird."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4734edd4a0367fa9c97426d5786b92856acfee81e31a5cb8ef6fa3f2df2ea2ca",
+      "text": "Nazca to Arequipa",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "8d63e8f71c8d079623b6423e2cbb9ceaa44c74c174f1362c1994117c6937d942"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day marker and express the slash as a route connector for the itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "87e9192c4c86ce8bdd182c08e61dc7edcb7137297a198ccbf88f31f3db13879c",
+      "text": "In the morning, after breakfast, embark on a breathtaking flight over the Nazca Lines, the world-famous geoglyphs etched into the desert floor. From the air, you’ll have an unparalleled view of these mysterious shapes, including animals, plants, and geometric figures, that have puzzled archaeologists for centuries. The flight offers a unique perspective of these ancient symbols and is a must-do experience for anyone visiting Nazca.\n\nBus to Arequipa: After the flight, board a bus for a scenic journey to Arequipa, a beautiful colonial city known for its stunning architecture and surrounded by majestic mountains. The bus ride will take approximately 9 hours, so sit back and relax as you pass through diverse landscapes.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0022",
+            "textSha256": "b659f7ef4ee631ae3c911c3579bffe83c1aef6f1fabd306164074fa82bb21bad"
+          },
+          {
+            "ref": "word/document.xml#p0023",
+            "textSha256": "a3427928aad61e29951ee38382be71cef4665bbee06d8749590ce6c592bc7325"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f7ee9789d5b7a79e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "224c8b76176e1704e6c8775b384d533a2b39786dbf68502ff20a162180032e62",
+      "text": "Nazca Lines and Ballestas Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IJ-ifZl_wfTwk-xMrqNJcO6OBMQunbcA",
+        "documentSha256": "e72781a19f85cef319201422e08f82b1f3826c037805c98f97b2081b4eed559c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0013",
+            "textSha256": "2e36e329d1458469d27ba06a9c0f8f64727fdcf2384ed0aa90c933622905a2a8"
+          },
+          {
+            "ref": "word/document.xml#p0019",
+            "textSha256": "da470b53485abb74817c3e3360513becf95ddce431981250a2a8c73f02ac3b6f"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the two named sites from the Word itinerary to match the existing shared place label without changing the route."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 1,
-    "leased": 2,
+    "queued": 0,
+    "leased": 3,
     "review": 2814,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1,
-      "leased": 0,
+      "queued": 0,
+      "leased": 1,
       "review": 2345,
       "ready": 50,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 1,
-          "leased": 0,
+          "queued": 0,
+          "leased": 1,
           "review": 69,
           "ready": 3,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T15:52:03.303Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1353,6 +1353,12 @@
       "token": "lease-o8oi8d3u5i-da48jficpfe",
       "expiresAt": "2026-11-07T14:29:49.191Z",
       "generation": 1
+    },
+    "ada-en-reconcile-20261107-mw6hrq41": {
+      "jobId": "en:bulk:tour:tour_source_ekzoticheskij_karnaval_v_brazilii:b015",
+      "token": "ada-en-recovery-6o0etwswa0305o7rx36xwrx",
+      "expiresAt": "2026-11-07T15:52:03.303Z",
+      "generation": 2
     }
   },
   "ownerAssignments": {
@@ -10075,7 +10081,8 @@
       "token": "ada-en-recovery-6o0etwswa0305o7rx36xwrx",
       "jobIds": [
         "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b007",
-        "en:bulk:tour:tour_source_ekzoticheskij_karnaval_v_brazilii:b008"
+        "en:bulk:tour:tour_source_ekzoticheskij_karnaval_v_brazilii:b008",
+        "en:bulk:tour:tour_source_ekzoticheskij_karnaval_v_brazilii:b015"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b007",
@@ -10084,5 +10091,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T14:21:54.653Z"
+  "updatedAt": "2026-11-07T14:22:03.303Z"
 }

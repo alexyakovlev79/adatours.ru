@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b001",
+  "stableId": "tour_source_gvatemala_gonduras_i_beliz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "89cec717d9faefe15a08f28e66d735b6c5aa33872371693631fd16a2ee61792b",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "8c2e48760e96369325cc80607f1e72b6c956bf1d5ec0111417798e32474c56ae",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "3cc61aff38b516215f28392d3246039c54af0224ac534f1cb9778459cd46cf7b"
+          }
+        ]
+      },
+      "text": "Guatemala, Honduras, and Belize 2026"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "a656b1eeb2989078ac2a2849e9f9ef3e2aa0938035155bfa35af0c4181a8411d",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hy68-7ndzh670bzw",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word opens with a route line and then goes directly to the day-by-day itinerary; it has no standalone overview paragraph."
+      },
+      "text": "Travel through three Central American countries in 12 days: Guatemala, Honduras and Belize. Visit colonial Antigua, Chichicastenango’s market, Lake Atitlán and the archaeological sites of Copán, Yaxhá and Tikal. Then cruise the Río Dulce and explore Belize’s Caribbean islands and underwater world."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2a7192ac9613bf7c7d3e9b6e2ac8e470b1303ad6e03d4b6b8d6a4c63c3273677",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hy68-7ndzh670bzw",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word tariff lists $ 8407 per person in DBL and does not contain the current shared $6166 price note; the note is preserved verbatim."
+      },
+      "text": "$6166"
+    },
+    {
+      "blockId": "tour:itinerary_label:bba7b228d371da77",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6f77ea077ac52d3606553c05922471d2567cfddc66298fa8c83ebf280ccf7c31",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "45863008e5be935a78125b9e28aa81354328a11b32a9c16f5feff8e7b5200c13"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "This route label extracts the city from the itinerary route summary."
+      },
+      "text": "Antigua"
+    },
+    {
+      "blockId": "tour:itinerary_label:656ba94c1f1a1fc0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "056774be74575a8f8659686c635aa094d3d8750f00b63ef7a36203af8e8af10e",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "6c826c1d6ec17cf0d141637b6701c602e58c6bb65d4f2de46bb05137edf71067"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "This route label retains the lake name without the parenthetical activity details."
+      },
+      "text": "Lake Atitlán"
+    },
+    {
+      "blockId": "tour:itinerary_label:7305d855c6a74fda",
+      "field": "itinerary.label",
+      "sourceTextSha256": "521d5d755b1a9fc31f0000a3f78b46551b8042daf90a6beb40b5c1f4ba649ef6",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0097",
+            "textSha256": "40635524c597ed9bab9bbb85d82132df11492a9898a9b5b0d0a4fa03ea334d21"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "This route label retains the city and country without the hotel name."
+      },
+      "text": "Copán, Honduras"
+    },
+    {
+      "blockId": "tour:itinerary_label:d67f1fe94c6cfc86",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2b9bb9cfdd5b644017e4b08f9a608245f405d1d8019bf6711aad20158da80859",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0098",
+            "textSha256": "7332baaaa760382afe28964604396c34c9df5ccd9b9517e4c6806b5b387443bc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "This route label retains the destination without the hotel name."
+      },
+      "text": "Río Dulce"
+    },
+    {
+      "blockId": "tour:itinerary_label:35164c304ce1131a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9cfece5fdc4f008d08f186c7d852423f4a283e30e39b6b93cb008460c7ff2b20",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12uDMZAqQGH9VL8FjRk-8guIpgAY6s0Mn",
+        "documentSha256": "0cff51871c98e953b9da3b12e9ecfe83782ea1ae31303ea44f1d62cc39f83dea",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0038",
+            "textSha256": "fd0dc7b6a5f63b6269aad697e5e731f820f19c8fa152e1f7fd44dbc8548798ca"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "This route label retains the site name without the day and site descriptor."
+      },
+      "text": "Tikal"
+    }
+  ]
+}

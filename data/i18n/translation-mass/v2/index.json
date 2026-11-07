@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 348,
-    "leased": 7,
-    "review": 2461,
+    "leased": 6,
+    "review": 2462,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 344,
-      "leased": 7,
-      "review": 122,
+      "leased": 6,
+      "review": 123,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -597,8 +597,8 @@
         "word_2026": {
           "held": 0,
           "queued": 11,
-          "leased": 1,
-          "review": 5,
+          "leased": 0,
+          "review": 6,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T10:27:10.673Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "04": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw666fr7-b94f97z9ij-amanda": {
-      "jobId": "en:bulk:tour:tour_source_klassicheskij_paragvaj:b003",
-      "token": "lease-mw666fr7-b94f97z9ij-xqc92eyt8an",
-      "expiresAt": "2026-11-07T10:27:10.673Z",
-      "generation": 1
-    },
     "ada-en-mw666pst-34km1l6ntt-amanda": {
       "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b006",
       "token": "lease-oxtviexvu5o0c8p6vh0ieio",
@@ -9134,7 +9128,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_klassicheskij_paragvaj:b003"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_klassicheskij_paragvaj:b003"
+      ]
     },
     "ada-en-mw666pst-34km1l6ntt-amanda": {
       "token": "lease-oxtviexvu5o0c8p6vh0ieio",
@@ -9166,5 +9162,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T08:58:33.220Z"
+  "updatedAt": "2026-11-07T08:58:43.068Z"
 }

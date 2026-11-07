@@ -1,0 +1,147 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lensojs_maranenses:b004",
+  "stableId": "tour_source_lensojs_maranenses",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "710115732c77fd7ee9f5c5d86d0fedba606228fb28438b649fdc33ec85b85056",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:96e6c65852181eef",
+      "field": "media.alt",
+      "sourceTextSha256": "6c7c5dc83f83a44ab92b97ea9bb7c55d24106a2a52b7879687c6dc9bacc8e9fc",
+      "text": "Cobblestone street lined with blue-tiled façades in São Luís, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word city description mentions streets and tilework but supplies no caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:e62b17b95b8fb71d",
+      "field": "media.hover",
+      "sourceTextSha256": "9648d1d1c717c9bb2319e81b12fbf455cfdb1ef21fbe2ffbd26123647f7e7564",
+      "text": "São Luís: a street lined with historic tiled façades",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary has no hover caption for this street photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "073e7f0ed65bb558d08c227e9be1651e04f5baba9f3806b9ae62ea1ac07ae4f1",
+      "text": "São Luís – Barreirinhas – Lençóis Maranhenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p19",
+            "textSha256": "af7ca2559c6944b1d6e7c9cfbbdb1fc432de980bc7bd0b329aa89a0822a4fec0"
+          },
+          {
+            "ref": "word/document.xml:p20",
+            "textSha256": "d780fe6c4b43323075d39490b5a65eabae3e013295801d45f22ae30ee738110a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the transfer heading and the national park named in the same day’s programme."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "79161f108840eabc43005b58816cd0070f92a01bec7abca86a564aa5fb958441",
+      "text": "Breakfast at hotel. In the morning, at 7:00 AM, you will depart for Barreirinhas (a 4-hour drive) along a well-maintained road. Along the way, you will pass by local plantations. Barreirinhas is a peaceful and charming town located on the banks of the Preguiças River. Nearby, Lençóis Maranhenses National Park is a natural wonder, featuring breathtaking sand dunes. From March to September, the rainwater forms stunning blue lagoons between the dunes. At 2:00 PM, you will depart in a 4x4 vehicle to the heart of Lençóis, where we will visit Lago Azul and have the opportunity to swim in the lagoons. We will stay until the late afternoon to enjoy the spectacular sunset over the dunes. In the evening, we return to Barreirinhas, where you can relax by the hotel pool, take a leisurely stroll through the peaceful streets, or enjoy the river view at a local restaurant. Accommodation at Porto Preguiças Resort.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p20",
+            "textSha256": "d780fe6c4b43323075d39490b5a65eabae3e013295801d45f22ae30ee738110a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:06125f03bbbdd605",
+      "field": "itinerary.label",
+      "sourceTextSha256": "91507cdf9e954c2ed542902141c676f62fea4fca6189ef6ea6814582f61ccf01",
+      "text": "Lençóis Maranhenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p20",
+            "textSha256": "d780fe6c4b43323075d39490b5a65eabae3e013295801d45f22ae30ee738110a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The itinerary identifies Lençóis Maranhenses as the national park visited that day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:520776d77bb37f04",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+      "text": "São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p15",
+            "textSha256": "08f8841f6379ea216af8cdea521d5d7f4a8043430aa0688fc30cef76f2de8f91"
+          },
+          {
+            "ref": "word/document.xml:p19",
+            "textSha256": "af7ca2559c6944b1d6e7c9cfbbdb1fc432de980bc7bd0b329aa89a0822a4fec0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The city-tour paragraph gives the accented name of the departure city."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b7cc651b453b3a9e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6e667fb5a9e887789091966d624a2699b5d59d30110d7cf750f4f74b79565fb0",
+      "text": "Barreirinhas",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p19",
+            "textSha256": "af7ca2559c6944b1d6e7c9cfbbdb1fc432de980bc7bd0b329aa89a0822a4fec0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The transfer heading gives Barreirinhas as the destination."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b74e87fb65c73c7e",
+      "field": "media.alt",
+      "sourceTextSha256": "21912c41ec4d6abfb069e925fa6ad233eb7088784d360361cea405ea3f4a1e99",
+      "text": "White dunes and winding blue lagoons in Lençóis Maranhenses, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme describes the park but supplies no alt text for this photograph."
+      }
+    }
+  ]
+}

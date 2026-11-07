@@ -1,0 +1,111 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chudesa_beliza:b002",
+  "stableId": "tour_source_chudesa_beliza",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c124b7fadc73e7859ce671bcb0b3f692c63cafe25269654edf3bd8494a5690c6",
+  "blocks": [
+    {
+      "blockId": "tour:included:a7f3570d77a649e4",
+      "field": "included",
+      "sourceTextSha256": "5ecbe1bfdb2e2f0b351fc0a15857e99222c38518de45fe3c74200b7318cb4333",
+      "text": "English-speaking guide on excursions.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word activity list mentions guided tours but does not have an inclusion specifying the language of the guide."
+      }
+    },
+    {
+      "blockId": "tour:included:04a28c38e9a4c833",
+      "field": "included",
+      "sourceTextSha256": "8e990d3740d35a1baa994464cdcde3e7dd51c6487f871104e9ff47bcc3273db0",
+      "text": "An alternative guide language is available on request for an additional charge.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "Word lists guided activities without the separate optional guide-language surcharge. This wording preserves that option and its charge alongside included English guiding."
+      }
+    },
+    {
+      "blockId": "tour:included:3fafb4bfbd63bb3b",
+      "field": "included",
+      "sourceTextSha256": "5df9cc17ab741e8bda0ba027a296dd10553c352c7ac518f8f98a220fd348e616",
+      "text": "Round-trip shared water taxi between Belize City and San Pedro on Ambergris Caye.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "Word lists a round-trip ferry to Ambergris Caye but does not specify San Pedro or shared water-taxi service in that inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:ee0246d8daf8ef5d",
+      "field": "included",
+      "sourceTextSha256": "eb719d64b3baf84caae1c37ade7cc5284626292c70a26a737c79e1f9a054349b",
+      "text": "Entrance tickets for the activities listed in the itinerary.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word activity list gives fees for individual visits but contains no corresponding general admission line."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:6664c0519b770b9c",
+      "field": "notIncluded",
+      "sourceTextSha256": "4f24f9cb0057ce34976bb59edb7a7b9a42f3a85d7120a4b8222fb58146bdfc4d",
+      "text": "Meals not specified",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1s6PF87Ij7LQFalrtY3TngIN9JMclNKBf",
+        "documentSha256": "c6eb8f6ac9719b5c3481945b3d680d49f0e3cc13fc38e55c9cfdfefa28af5995",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0049",
+            "textSha256": "129be360280490a822678408db0ed9d2421595de483b4fcb8c64009d62263303"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ddde98c8d71040e3",
+      "field": "notIncluded",
+      "sourceTextSha256": "07c5163e3b8bf062ed82917f4775dd39898f47335da33426f77643a55cca87ca",
+      "text": "Additional excursions.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word exclusions contain no standalone line for additional excursions."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:34400357a31f829a",
+      "field": "notIncluded",
+      "sourceTextSha256": "31fd6ade54ace5ce3d2c6d2364db9433ca9e59586585e52780a2a3efd5a8fcbf",
+      "text": "Medical services.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word exclusions mention travel insurance but do not list medical services separately."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:7e686354af3f1d8b",
+      "field": "notIncluded",
+      "sourceTextSha256": "cc13f795063f640fee58d537ced21fa0835834abbdbc3878a5025fcc96e158dd",
+      "text": "Alcoholic and non-alcoholic drinks.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word exclusions mention drinks under personal expenses but do not distinguish alcoholic and non-alcoholic drinks as a standalone line."
+      }
+    }
+  ]
+}

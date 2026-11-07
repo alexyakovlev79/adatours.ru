@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 272,
-    "leased": 10,
-    "review": 2534,
+    "leased": 9,
+    "review": 2535,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 268,
-      "leased": 10,
-      "review": 195,
+      "leased": 9,
+      "review": 196,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -797,8 +797,8 @@
         "word_2026": {
           "held": 0,
           "queued": 10,
-          "leased": 1,
-          "review": 9,
+          "leased": 0,
+          "review": 10,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -817,7 +817,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T11:03:23.048Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "09": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw67h36m-jmfvto930u-amanda": {
-      "jobId": "en:bulk:tour:tour_source_kolumbiya_s_kano_kristales_i_ne_tolko:b012",
-      "token": "t-vwra6pkzm5-c4x54hln7z6",
-      "expiresAt": "2026-11-07T11:03:23.048Z",
-      "generation": 1
-    },
     "ada-en-mw67hul8-dg2khvjhx0j-amanda": {
       "jobId": "en:bulk:tour:tour_source_krasota_venesuely:b010",
       "token": "lease-mw67hul8-dg2khvjhx0j-qpmilcwgg3",
@@ -9333,7 +9327,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_kolumbiya_s_kano_kristales_i_ne_tolko:b012"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_kolumbiya_s_kano_kristales_i_ne_tolko:b012"
+      ]
     },
     "ada-en-1d8d172b7b4445ec9754ab88f87935c3-amanda": {
       "token": "4e576e1349714194980bfdfd23b739a2",
@@ -9402,5 +9398,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T09:36:08.510Z"
+  "updatedAt": "2026-11-07T09:36:15.235Z"
 }

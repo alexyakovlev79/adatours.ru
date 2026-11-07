@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 116,
-    "leased": 8,
-    "review": 2692,
+    "leased": 7,
+    "review": 2693,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 112,
-      "leased": 8,
-      "review": 353,
+      "leased": 7,
+      "review": 354,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -157,8 +157,8 @@
         "word_2026": {
           "held": 0,
           "queued": 0,
-          "leased": 1,
-          "review": 11,
+          "leased": 0,
+          "review": 12,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T14:11:26.230Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "13": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-amanda-b636735b5996462e8f96510f828dcd10": {
-      "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b010",
-      "token": "ac338effd027a45afd1ca617eb7b8fc9352424f1794954cf",
-      "expiresAt": "2026-11-07T14:11:26.230Z",
-      "generation": 2
-    },
     "ada-en-mw6e7106-nqjx0crsykwe-amanda": {
       "jobId": "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b012",
       "token": "7ysemg0i11ru2gfun4vnyfq1m4xnwt7lkv3cj1bcutt4grvej9nnmq",
@@ -9767,7 +9761,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b010"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b010"
+      ]
     },
     "ada-en-mw6e7106-nqjx0crsykwe-amanda": {
       "token": "7ysemg0i11ru2gfun4vnyfq1m4xnwt7lkv3cj1bcutt4grvej9nnmq",
@@ -9818,5 +9814,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T12:44:23.223Z"
+  "updatedAt": "2026-11-07T12:44:32.829Z"
 }

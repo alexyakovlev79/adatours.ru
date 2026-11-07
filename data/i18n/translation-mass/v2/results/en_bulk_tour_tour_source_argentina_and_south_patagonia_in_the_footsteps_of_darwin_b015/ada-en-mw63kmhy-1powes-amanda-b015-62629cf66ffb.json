@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b015",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "62629cf66ffbcf1bb33856ebd7f19df327aa8c5ee4f99c3473d80233bd8644af",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:bde208e9d368a30e",
+      "field": "media.hover",
+      "sourceTextSha256": "5a95dcbb270c3073d68f0e525b2da2d52a821282c0a080575f454f62c4a59e79",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kmhy-1powes-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word describes the summit panorama but has no hover caption for this image of two climbers."
+      },
+      "text": "Aconcagua, Argentina, with two climbers on the rocky summit above the surrounding mountains"
+    },
+    {
+      "blockId": "tour:itinerary_title:bc85cd73333c2baf",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9edd2297d2b0caaa8bf4b599d7ec4c701ec73d5814272bbfc81961d9c22d06d0",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0095",
+            "textSha256": "fc99a41b8ff6670fe15a2404aa719f5ea106ad6fbd3d1f1774dfa09397a37c8f"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day marker from the approved Word heading because the itinerary supplies the day number."
+      },
+      "text": "Return to Plaza de Mulas – Altitude: 4300 m."
+    },
+    {
+      "blockId": "tour:itinerary_text:99d4ebb0270da8fa",
+      "field": "itinerary.text",
+      "sourceTextSha256": "eea9a2eb5b7cfc5248f9a1fee81a159abbdb6ee8bd7aa1c4adf7c41e6a820a24",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0096",
+            "textSha256": "e5dee12be4cc54d433c4835cb0ec35c077bdf275b4f3c0c48937808211c453f5"
+          },
+          {
+            "ref": "word/document.xml#p0097",
+            "textSha256": "9930f2e6be159a7f3619c5a343b0c4109d5acf30521b23ffb447e67143481696"
+          }
+        ]
+      },
+      "text": "We return from Camp 3 to Plaza de Mulas to enjoy a well-deserved dinner and celebrate the climb in the comfort of Base Camp.\n\nAccommodation: Double/triple tent or Dorm Dome – Meals included: Breakfast, Lunch, and Dinner"
+    },
+    {
+      "blockId": "tour:itinerary_label:4b66fc1ae5be0836",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3dd79eb3896452fb2e5724bfe2a231f7ee226bca607a8bdc29e309c40ad92d8f",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "6ea962770ac0e530bb3bb647629c6e02b8ea30129a6c79f70fcfed594ef571c2"
+          },
+          {
+            "ref": "word/document.xml#p0096",
+            "textSha256": "e5dee12be4cc54d433c4835cb0ec35c077bdf275b4f3c0c48937808211c453f5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the approved Word name for Camp 3, which is the starting point of the descent."
+      },
+      "text": "Plaza Cólera"
+    },
+    {
+      "blockId": "tour:itinerary_label:1efec76ba7559399",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a7601156c4a99a851cd753a3673c0e66ce9924ed3c0f4b3597202f8290bbcf12",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0095",
+            "textSha256": "fc99a41b8ff6670fe15a2404aa719f5ea106ad6fbd3d1f1774dfa09397a37c8f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the base camp name from the approved return heading for the itinerary place label."
+      },
+      "text": "Plaza de Mulas"
+    },
+    {
+      "blockId": "tour:media_alt:450788c9a7302f5d",
+      "field": "media.alt",
+      "sourceTextSha256": "4f39cbc625459cdf032efe199adc11fd684aeb4b0ffb4dfb602f26f04dd0a7de",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kmhy-1powes-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word describes the descent but has no alt text for the image of three climbers on the rocky slope."
+      },
+      "text": "Three climbers with backpacks descend a rocky slope on Aconcagua, Argentina"
+    },
+    {
+      "blockId": "tour:media_hover:840fe6e0a8820fdb",
+      "field": "media.hover",
+      "sourceTextSha256": "a1840f57abf3bc9d4e3cd51e67fce7fba6a669bd1a56fd8a4504e60e395afc68",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kmhy-1powes-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word descent description contains no hover caption for this specific view of the valley."
+      },
+      "text": "Aconcagua descent towards a wide valley between rocky mountains"
+    },
+    {
+      "blockId": "tour:itinerary_title:c4b9450eed473263",
+      "field": "itinerary.title",
+      "sourceTextSha256": "285d181afcc8ff17a8ab32bf0226cd5df083a1b7f4cd1071d2880d040793e6b8",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0100",
+            "textSha256": "a37ddd262dddf114f3376cae2aa57e7368c60e62ba640ff90cd6493e3607602a"
+          },
+          {
+            "ref": "word/document.xml#p0101",
+            "textSha256": "ffd59fef455c0b1b5bc3930164d4ba40c1a80b8e99e8175814c855df1c450ab2"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the approved heading and the origin named in its itinerary text to populate the route label without the day number."
+      },
+      "text": "Plaza de Mulas – Puente de Inca – Mendoza"
+    }
+  ]
+}

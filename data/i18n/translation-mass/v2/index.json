@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 248,
-    "leased": 7,
+    "queued": 247,
+    "leased": 8,
     "review": 2561,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 244,
-      "leased": 7,
+      "queued": 243,
+      "leased": 8,
       "review": 222,
       "ready": 0,
       "retryable": 0,
@@ -76,8 +76,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 10,
-          "leased": 0,
+          "queued": 9,
+          "leased": 1,
           "review": 4,
           "ready": 0,
           "retryable": 0,
@@ -97,7 +97,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:12:14.246Z",
       "earliestRetryAt": null
     },
     "11": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_krasota_venesuely:b003",
       "token": "lease-mw67hj8f-mtd6ycxvdz",
       "expiresAt": "2026-11-07T11:11:54.816Z",
+      "generation": 1
+    },
+    "ada-en-mw67i24v-mdmn2y41su": {
+      "jobId": "en:bulk:tour:tour_source_issleduya_beliz:b010",
+      "token": "lease-mw67i24v-mdmn2y41su-wylf56wybrt",
+      "expiresAt": "2026-11-07T11:12:14.246Z",
       "generation": 1
     }
   },
@@ -9391,7 +9397,8 @@
     "ada-en-mw67i24v-mdmn2y41su": {
       "token": "lease-mw67i24v-mdmn2y41su-wylf56wybrt",
       "jobIds": [
-        "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b006"
+        "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b006",
+        "en:bulk:tour:tour_source_issleduya_beliz:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b006"
@@ -9441,5 +9448,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T09:42:07.914Z"
+  "updatedAt": "2026-11-07T09:42:14.246Z"
 }

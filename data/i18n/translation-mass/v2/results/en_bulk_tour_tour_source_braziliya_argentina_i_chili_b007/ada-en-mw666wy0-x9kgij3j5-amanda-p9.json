@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_argentina_i_chili:b007",
+  "stableId": "tour_source_braziliya_argentina_i_chili",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "cfd0b6fe7535feeddf1ef5957e8458d08a77e84d8e572fa35978e390e0c267d1",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6de05f681f31b6aa7accc4eb9a67c6de61026c8227ec91bf8b6cbd474d340b76",
+      "text": "Argentine Side of Iguazú Falls – Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11GRQZ373HPCQTp1NGqV0UCD193qgTNLs",
+        "documentSha256": "ba47deec183761b673436a5d0c9752aa2a2e81a81a4963df316e203c04e2b4b5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0048",
+            "textSha256": "d8b1dd6468bf914eec7b65204ed498aa5e09cdb33cfd52f9778803fe0a160d2f"
+          },
+          {
+            "ref": "word/document.xml#p0049",
+            "textSha256": "5e36673a545f19ecb5faf614cc6fa81bb476539b5d0351ccf1a973fab33352e4"
+          },
+          {
+            "ref": "word/document.xml#p0050",
+            "textSha256": "a2dd4c3c18bb77ca1b432f82d91af69ca2158d0b97a54f6258f4cafeb42e335a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the heading’s destination with the Argentine side of the falls identified in the day’s opening paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "85c0f0f948a01fa4aac48a6f684f12c5f89f4d30602e547582767b939da5cc8a",
+      "text": "After breakfast you will go to the Argentinian side of Waterfall. The Argentinean side is different from the Brazilian; you will walk on paths through the falls which give you the opportunity to have a look under the falls. You feel the strength of the falling water from up close and enjoy the 55.500 hectares natural park surrounding this spectacular beauty! Within the park, take the train to the marvelous devil's throat the strongest of all the waterfalls. Stand directly above the falling water and admire the strength of this natural phenomenon.\n\nAfter that you will be transferred to the airport for your flight to Buenos Aires. Arrival in Buenos Aires. Transfer to the hotel in Buenos Aires. Accommodation and rest in the hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "11GRQZ373HPCQTp1NGqV0UCD193qgTNLs",
+        "documentSha256": "ba47deec183761b673436a5d0c9752aa2a2e81a81a4963df316e203c04e2b4b5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0049",
+            "textSha256": "5e36673a545f19ecb5faf614cc6fa81bb476539b5d0351ccf1a973fab33352e4"
+          },
+          {
+            "ref": "word/document.xml#p0050",
+            "textSha256": "a2dd4c3c18bb77ca1b432f82d91af69ca2158d0b97a54f6258f4cafeb42e335a"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7cc4a40a90d0192d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11GRQZ373HPCQTp1NGqV0UCD193qgTNLs",
+        "documentSha256": "ba47deec183761b673436a5d0c9752aa2a2e81a81a4963df316e203c04e2b4b5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0048",
+            "textSha256": "d8b1dd6468bf914eec7b65204ed498aa5e09cdb33cfd52f9778803fe0a160d2f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the onward destination from the approved Word route heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:6be895d301700d1f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word heading names Foz do Iguaçu on the Brazilian side and its Argentine falls paragraph does not name Puerto Iguazú."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:14e731e059163a24",
+      "field": "media.alt",
+      "sourceTextSha256": "33e976c42a5d050e9d105447caac38f9d76c8b5a01b147d2fd390563ca3767b3",
+      "text": "The illuminated Obelisk in Buenos Aires at dusk, surrounded by buildings and trails of car lights",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word mentions the Obelisk on the next day’s city tour but does not caption this dusk photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:cca20a175d41581e",
+      "field": "media.hover",
+      "sourceTextSha256": "7ea67bc0a34513860d6437563027ea83d51770d04281e80f000943511078c57d",
+      "text": "Buenos Aires around the Obelisk at dusk",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary has no hover caption describing this photograph of the Obelisk."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11GRQZ373HPCQTp1NGqV0UCD193qgTNLs",
+        "documentSha256": "ba47deec183761b673436a5d0c9752aa2a2e81a81a4963df316e203c04e2b4b5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0052",
+            "textSha256": "3d56fe6dc62e8ae1b365e9489911ce6a4a9268415741d59cc0e5c96be33f03ca"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day number because the itinerary supplies it separately."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1ae0d790753588d9e38adb111b8c30741c993e82d7ec2ee68fab2d0999becad8",
+      "text": "After breakfast, our guide will pick you up at your hotel for a half day city tour in Buenos Aires. This panoramic tour will take you through the highlights of South America's most European and cosmopolitan city. We'll drive along 9 de Julio Avenue where the renowned Colón Theater and the Obelisk, symbols of our city, are located. We'll visit Plaza de Mayo, surrounded by important historic buildings like the Casa Rosada, the Cathedral and the City Hall. We'll also visit Plaza San Martin, Alvear and Plaza del Congreso. The tour will drive us along the old fashion Avenida de Mayo and the dynamic Avenida Corrientes. Explore neighborhoods filled with colors and history, like La Boca and San Telmo, and the sumptuous neighborhoods of Palermo, Recoleta and the modern Puerto Madero, a busy gastronomic and entertainment area. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "11GRQZ373HPCQTp1NGqV0UCD193qgTNLs",
+        "documentSha256": "ba47deec183761b673436a5d0c9752aa2a2e81a81a4963df316e203c04e2b4b5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0053",
+            "textSha256": "264769d13e004839d52fc09dd9628301cb3c666c9e165e6977863eb6b9025700"
+          }
+        ]
+      }
+    }
+  ]
+}

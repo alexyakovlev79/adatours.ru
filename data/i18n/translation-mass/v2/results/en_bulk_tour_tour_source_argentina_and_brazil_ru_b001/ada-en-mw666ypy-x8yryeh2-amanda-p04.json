@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_brazil_ru:b001",
+  "stableId": "tour_source_argentina_and_brazil_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "fbdd0d7af2bacea84b40e6fa10145f2b2a4b25f20504e0a9ef76a990af88d45b",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "00847f4419563c897748d45e05e633e7512f473d8732a0f03f250be5d68a3b35",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "00f31ba9e89915647e3cb678c8e2f9de0955ca3a796340dc55d97b26547963b9"
+          }
+        ]
+      },
+      "text": "ICE TO SUN 2026"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "aa47833eac3a8717975a3efa958ad975d955b332682c26d3a06a72d1948d6513",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0014",
+            "textSha256": "014c879ed5afacd356bea22393bd8a75e6d2fdefc4abced16968864351c82dfa"
+          },
+          {
+            "ref": "word/document.xml#p0016",
+            "textSha256": "e793552ec9428179bb2124889f3e90222daf11632495fa6469d83d8450e7bc0d"
+          },
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "The three-star table has a double-occupancy column for two travellers; use only the pricing basis, without replacing the RU amount."
+      },
+      "text": "The price is per person, based on double occupancy at a 3-star hotel for a group of two."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "c13a4cb6ac4e62da665562a95b324898c50d0cbc255b92883adc3385d9254c87",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666ypy-x8yryeh2-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The current RU price note is not present as that amount in the Word tariff table. Retain the existing price."
+      },
+      "text": "$3230"
+    },
+    {
+      "blockId": "tour:itinerary_label:3874728e73e17549",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ed7a56fa3a44af67a5e2d7f3ad6329352e635c0bb96eb660d0afaaf912596b8a",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "f201a575a3b0bdf894205e60d391b9dc31013aa8360eb328c2f97a5195ba9354"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Buenos Aires stop and expand the nights abbreviation from the Word route summary."
+      },
+      "text": "Buenos Aires (2 nights)"
+    },
+    {
+      "blockId": "tour:itinerary_label:cd3df18fbc9945f2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b8362197d599d445fcc13ca84d6c9c7b8f751f4df79ef50abcdb016d4654a961",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "f201a575a3b0bdf894205e60d391b9dc31013aa8360eb328c2f97a5195ba9354"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Calafate stop and expand the nights abbreviation from the Word route summary."
+      },
+      "text": "Calafate (2 nights)"
+    },
+    {
+      "blockId": "tour:itinerary_label:da44029d6e030002",
+      "field": "itinerary.label",
+      "sourceTextSha256": "26aaac1b66ce5ddc04aa321d9b5b1f7beaf242ffa9ed3078102d68210a322498",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "f201a575a3b0bdf894205e60d391b9dc31013aa8360eb328c2f97a5195ba9354"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Foz de Iguazu stop and expand the nights abbreviation from the Word route summary."
+      },
+      "text": "Foz de Iguazu (2 nights)"
+    },
+    {
+      "blockId": "tour:itinerary_label:0d5afc7b7beb5194",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c7958d305e7a8881ae0786977517f08844c6f27bcd8a9f441020a7acb9c5774f",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "f201a575a3b0bdf894205e60d391b9dc31013aa8360eb328c2f97a5195ba9354"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Extract the Rio de Janeiro stop and expand the nights abbreviation from the Word route summary."
+      },
+      "text": "Rio de Janeiro (3 nights)"
+    },
+    {
+      "blockId": "tour:included:9cbc4781a176463c",
+      "field": "included",
+      "sourceTextSha256": "f9dba4786fce70b030e41367889897611a671807eae34082a1670263c3dae8e6",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0148",
+            "textSha256": "1ebc67103b0e3e189d3ca26f2902153fc0dc0f1c5770aa5802a3db6c8f2b5875"
+          }
+        ]
+      },
+      "text": "Accommodation in hotels stated in the program,"
+    }
+  ]
+}

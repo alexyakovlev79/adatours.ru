@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b008",
+  "stableId": "tour_source_beliz_strastnyj_nablyudatel_za_ptitsami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "bf2c3229a1979d579b7975be1ba0eeb09c4a73299a02b20893209a816374a63c",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "dc9f105ff2886555858285b08eb29370308ecfda262f41297b2f385d6f6159cc",
+      "text": "Today, you will enjoy a full-day guided tour of the Cockscomb Basin Wildlife Sanctuary, with lunch and park fees included.\n\nOvernight at Pelican Beach Resort.\nContinental breakfast and lunch are included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0025",
+            "textSha256": "5cb4207c8d5f463611d554bdd2da364447111df2630de3f4d9f8dc5f584f0c25"
+          },
+          {
+            "ref": "word/document.xml#p0026",
+            "textSha256": "0f144ae0d0c219fd1b8b1cdfaff876422a8001a69181eaebaf8c09b2fd70d5a8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:20c26237c371e885",
+      "field": "itinerary.label",
+      "sourceTextSha256": "1a4f837a947e6558b4fbd66b538fdff003f545e7cf5f91e51e7409f9f3cbe8e7",
+      "text": "Cockscomb Basin Wildlife Sanctuary",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0025",
+            "textSha256": "5cb4207c8d5f463611d554bdd2da364447111df2630de3f4d9f8dc5f584f0c25"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the full sanctuary name from the approved Day 4 guided-tour paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:bd2f31c0fbc35370",
+      "field": "media.alt",
+      "sourceTextSha256": "87005a2f21a28eaf3eb8e3906810c41d153b2b05e8d9b8b74124ceeabc2bfad1",
+      "text": "A forest trail among tree roots and palms in Cockscomb Basin, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The sanctuary tour paragraph has no alt text for this forest trail photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:46ba936ca8eca12c",
+      "field": "media.hover",
+      "sourceTextSha256": "7f1edebd0280ccb4ed6a1307d8fe8ee1a90c4529557b4be8829f8a247c4851c3",
+      "text": "Cockscomb Basin, Belize: a narrow trail through dense tropical forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme does not caption the particular narrow trail in this image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f130130d664c81d141d0aa9b5df04b54c8518a6da1ea3399055de0a35bd6ec13",
+      "text": "Dangriga",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "f04613e89523268bbde29d2d82d89a321b3a6e1715e4fb1f4d486a82dbb263f6"
+          },
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "f39f18ca51a924c6d37200e8768ec100c658c1fc2e462ab297131ab2ec3c4317"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the town named in the arrival and onward transfer paragraphs to label the intervening free day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2d867ed4216d129602e1774c4f4de0bf43415d3b9c15f60272570693bc81e770",
+      "text": "A free day to relax and enjoy at your leisure!\n\nOvernight at Pelican Beach Resort.\nContinental breakfast is included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "13ebae45fca493b032c26314903b9434e3b95cd0f2ce01177647496d6b59be67"
+          },
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "9667de447f224b904b1a29d7d34ba979beb58b806b669ab2d73c5e685c2786c3"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ba3123ad4910516a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f130130d664c81d141d0aa9b5df04b54c8518a6da1ea3399055de0a35bd6ec13",
+      "text": "Dangriga",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "f04613e89523268bbde29d2d82d89a321b3a6e1715e4fb1f4d486a82dbb263f6"
+          },
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "f39f18ca51a924c6d37200e8768ec100c658c1fc2e462ab297131ab2ec3c4317"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the town name documented immediately before and after the free day."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:47e6a499f5512529",
+      "field": "media.alt",
+      "sourceTextSha256": "d1994db9dbf6d369b6aef3f838321e426c87620592f317917cf54ccb23277f37",
+      "text": "Wooden fishing boats on the sand beside palms and low buildings in Dangriga, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme mentions Dangriga but has no caption describing the boats in this website photograph."
+      }
+    }
+  ]
+}

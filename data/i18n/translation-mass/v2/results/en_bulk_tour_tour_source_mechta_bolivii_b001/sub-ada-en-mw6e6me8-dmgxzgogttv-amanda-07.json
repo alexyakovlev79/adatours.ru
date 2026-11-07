@@ -1,0 +1,153 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mechta_bolivii:b001",
+  "stableId": "tour_source_mechta_bolivii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "95f7c8add8398b4a6bf08b9c53b3b1994f82b4b4e7fc9a54cbf6265030f387d8",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "006dccace7875b465ee8b73c228cd4222cf98137ffffc755354cabf9d353b1c1",
+      "text": "Bolivia Dream 2026",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "085c30a53670a2e2b2830488eb2fa4c13c422822d0203f27c6b8bbf129159b24"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "bfaa0c0fbd0daa96a7431b0f2bff506650046e7b80c3efa33350c31dbe24822b",
+      "text": "The route takes in Bolivia’s highland landscapes, Lake Titicaca, Sun Island, the Uyuni Salt Flats, Andean lagoons and the Siloli Desert. Along the way you’ll see ancient Inca sites, Incahuasi’s giant cacti, flamingos, volcanoes, geysers and hot springs, and take a sightseeing tour of La Paz.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6me8-dmgxzgogttv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word has a short route line followed by day-by-day descriptions, but no corresponding introductory paragraph combining the landmarks and activities in this existing lead."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "d79f68d3a62208f400eb46a44d964501b7a6a94a0fb0becd82ce954ad63d3826",
+      "text": "$2998",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "cc726c315001d29ac12e0985bd51e18f7a6d511be592844ecf0717fa8d26383a"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Keeps the existing compact display amount and currency, which match the approved Word tariff, without changing the underlying tariff or adding any price."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:32d7b9d28ab90e4b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bc2c16db06e2776f191dacf5d03b9ac7154970d9f85282e5f058cb3ccfb85f4b",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "68e9e709a81f256c235e393ecda99558453c7e81139589ba71229ebdf893656a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Takes the first stop from the approved Word route line for this dedicated route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c2a84ee9cefeafee",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6de1420667074e595e7cfd3eb61d07d1062282145b852467a80dc908b25db28d",
+      "text": "Sun Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "68e9e709a81f256c235e393ecda99558453c7e81139589ba71229ebdf893656a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Takes the island stop from the approved Word route line for this dedicated route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:32d7b9d28ab90e4b:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bc2c16db06e2776f191dacf5d03b9ac7154970d9f85282e5f058cb3ccfb85f4b",
+      "text": "La Paz",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "68e9e709a81f256c235e393ecda99558453c7e81139589ba71229ebdf893656a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Takes the return stop from the approved Word route line for this dedicated route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8f708626c2e06129",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f4c442d6a045e1919a15e897e0ad295cc6535f4e342e1332e2e75b2b133264c7",
+      "text": "Uyuni Salt Desert",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "68e9e709a81f256c235e393ecda99558453c7e81139589ba71229ebdf893656a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Takes the salt-flat stop from the approved Word route line for this dedicated route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d5edfa8e17c18439",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5cde78f16e9b0509b182add1802a22f3ca52b855c27606b223108524172ffa68",
+      "text": "Colorful Lagoons",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "139nvt1nXNhubAnOXPH1YDOpcBsyaxHqz",
+        "documentSha256": "cd2439976cb8da55c20549b6738e3e9dde0069f022109a0691ee12b27f727877",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "68e9e709a81f256c235e393ecda99558453c7e81139589ba71229ebdf893656a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Takes the lagoon stop from the approved Word route line for this dedicated route label."
+      }
+    }
+  ]
+}

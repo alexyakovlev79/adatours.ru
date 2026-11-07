@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vkusy_brazilii:b002",
+  "stableId": "tour_source_vkusy_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "303f27257f8143645c87386f43fd20f4ddf8f84d6b1fc8d40a2d03c240642b61",
+  "blocks": [
+    {
+      "blockId": "tour:included:33655b2fa7b66c77",
+      "field": "included",
+      "sourceTextSha256": "c1bc095ec7c2c19f62eec0ec1e5804f4a53b966eed468ea4f2cb77b058cb0c9f",
+      "text": "Private tours in Rio de Janeiro with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0053",
+            "textSha256": "a7eac2a07b55ce84bd9d5950ea9eb48a415a565842108d51e6a9a92e55cd37d5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separates the Rio de Janeiro inclusion from the combined Word line, retaining its private format and English-speaking guide."
+      }
+    },
+    {
+      "blockId": "tour:included:2a21ae7ae6b86aa2",
+      "field": "included",
+      "sourceTextSha256": "13888471908c745281606c90b00756d4f793a9962610b333e7dde80b05969bd7",
+      "text": "Private tour in Paraty with an English-speaking guide",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0053",
+            "textSha256": "a7eac2a07b55ce84bd9d5950ea9eb48a415a565842108d51e6a9a92e55cd37d5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Separates the Paraty inclusion from the combined Word line, retaining its private format and English-speaking guide."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:c111f6ab8aec4a91",
+      "field": "notIncluded",
+      "sourceTextSha256": "0a97cb4868c9bf4ced266637159577b7d23e1e76c40241d1da3ee4942edbadda",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0059",
+            "textSha256": "451e4f1debd3c46b08c1d6c34c79a7ae42ba4b5b91e971c981554d99b82ba0e9"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:ff66835875b1838d",
+      "field": "notIncluded",
+      "sourceTextSha256": "ad52cf8d12eaa3ed5de18584abe1429ca220558abe3f2349dcd4cc62bb67e35b",
+      "text": "Insurance",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6me8-dmgxzgogttv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word exclusions list international flights, tips and personal expenses, with no corresponding insurance entry."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:610e72c9549f710d",
+      "field": "notIncluded",
+      "sourceTextSha256": "8e0a0e9870739528fa2811d9e0d2b773f7b03cda9eb0d768b10a69a66bed918b",
+      "text": "Tips",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0060",
+            "textSha256": "5b636d1911c90aaece121bd8aa6d91b99cd33650d0891057f1a264948a3fe268"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts tips from the combined Word exclusion for the existing separate tips field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:a0b0ac37984ff5a4",
+      "field": "notIncluded",
+      "sourceTextSha256": "0e4fcf37992068351109d852434de959046cb7898faede243dc02bc300996ac6",
+      "text": "Personal Expenses",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0060",
+            "textSha256": "5b636d1911c90aaece121bd8aa6d91b99cd33650d0891057f1a264948a3fe268"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts personal expenses from the combined Word exclusion for the existing separate expenses field."
+      }
+    },
+    {
+      "blockId": "tour:note:d96f78c9265cf8a6",
+      "field": "note",
+      "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
+      "text": "If necessary, Ada Tours may substitute hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6me8-dmgxzgogttv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word identifies accommodation and gives a price-availability note, but has no corresponding note on hotel substitutions."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while keeping the full tour programme intact.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6me8-dmgxzgogttv-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word gives the day-by-day plan but has no corresponding note about changing the excursion order."
+      }
+    }
+  ]
+}

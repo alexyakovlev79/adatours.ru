@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b003",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "037e241e5a670a48d41caccaedd5d1f09c6a34164b7bd5bdbdcb4531af6d0bfa",
+  "blocks": [
+    {
+      "blockId": "tour:included:7e91b440dbee3579",
+      "field": "included",
+      "sourceTextSha256": "95fc7f3b83f7bcd4cbddbb2de9239dcf0b60686effc541800b8a5ce0e9e2f6c0",
+      "text": "Up to 15 kg of your personal mountain equipment is transported by mule from Puente de Inca to Plaza de Mulas and Confluencia (Base Camp), round trip.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0133",
+            "textSha256": "eb82aa6be7ad0d16cbc1d515c05ab4b8724a03853b9207cf3bf543a1972c2a93"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:e0b4b327d0cf0be7",
+      "field": "included",
+      "sourceTextSha256": "53bbb5609e9e05ac195d7d95066c9e16da368fc20dce9f172852e592ebff9f42",
+      "text": "Professional mountain guides",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0113",
+            "textSha256": "4ce8e100c117277d94779068e004a07c01fd51a97b744638533f9a2a637f5f19"
+          },
+          {
+            "ref": "word/document.xml#p0114",
+            "textSha256": "fd00ab6ac27df9a3c225cb85d0e448e51fe560521425360cae05938766e98273"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word guide-service heading as an inclusion label and identify the mountain speciality described in the following paragraph."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:7e73ee5cf2e99a54",
+      "field": "notIncluded",
+      "sourceTextSha256": "faa8840288118db93c168cca09e6e073fb081c39fc926c107b2d91bc5c454b20",
+      "text": "Aconcagua Park entry permit (climbing fee). The permit fee is non-refundable.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word exclusions identify the permit fee but do not state the non-refundable condition that is explicit in the RU source."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:f3eec2a8293b4c9b",
+      "field": "notIncluded",
+      "sourceTextSha256": "588cdc6330e1682d08382da2a2008c1c7097df1fc483bec81cac6e4998db985f",
+      "text": "Extra expenses resulting from abandoning the expedition or from unused reserve days due to bad weather.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0160",
+            "textSha256": "9c894bec28cb85433f3942404e14c7d5b75344fd0522c4ebfb788f5c18cbfbdd"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:1285da6b1be342b1",
+      "field": "notIncluded",
+      "sourceTextSha256": "4c6862320a691c16f03908545e253e3faf780d09639de132079a290b0dcbeae0",
+      "text": "Extra accommodation nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0161",
+            "textSha256": "f21901ae97e52153a564e1ec9a5615abebdd08c6b09ccb6a637474850cf6244e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Isolate the extra accommodation nights from the composite Word exclusion list for this individual field."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:8d256cfcbb6bde4c",
+      "field": "notIncluded",
+      "sourceTextSha256": "8ab186a543a073120dcbea774dbd333dd42681357af0724da4822b49dca87be9",
+      "text": "Personal mountaineering equipment and sleeping bag",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word exclusions list personal mountain equipment but do not specifically mention the sleeping bag as the RU exclusion does."
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:bfc916f1ca24cf0d",
+      "field": "notIncluded",
+      "sourceTextSha256": "88587592e65ddcae56126076b4bf0734f669d57d6bddcf4dda11e8091174fa5e",
+      "text": "Mandatory insurance covering rescue and helicopter evacuation, with appropriate clauses included to guarantee full coverage in case of emergency.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0159",
+            "textSha256": "514fd5fc4989d67f7c7003d8d293418873b50a90987340f0d2593839f2fa1e31"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:c0310a476db4f428",
+      "field": "notIncluded",
+      "sourceTextSha256": "cb2ebd597c8defe3eca7cbe8971835cd53c6d9cb24b45ada016ec1a026190902",
+      "text": "Meals and drinks not specified in the itinerary (e.g., lunches and dinners in Mendoza City or Uspallata).",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0166",
+            "textSha256": "a9bdbcff87c398edf25f41fdbb34fb31d4cb5f1dd25a764b9a0de8daea5ea405"
+          }
+        ]
+      }
+    }
+  ]
+}

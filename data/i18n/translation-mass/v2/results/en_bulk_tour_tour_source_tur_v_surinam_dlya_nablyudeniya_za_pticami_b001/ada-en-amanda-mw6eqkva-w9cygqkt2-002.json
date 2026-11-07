@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami:b001",
+  "stableId": "tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami",
+  "locale": "en",
+  "sourceFingerprint": "8f4d20606f3d4ace1ec3c0035a92ccd13e6772e8184b6d17ea603fcd40a9e1d9",
+  "status": "review",
+  "releaseEligible": false,
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "3433f4e74b518cf5a5c6a73ae3cdf53e2b3d93aa01d7219d8829a55c8c1f222c",
+      "text": "The Best Birding Tour Suriname",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "10rEu3o1Ap7c8jmAmzo8yB8XGaEPnvpVq",
+        "documentSha256": "dbde3da714ceada5078e1349a1727d90d462f0562177edde7abc9a51363e7f51",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "50fb54c697c09dbdafde716b15d38d08ee5f0e7a4f5e63cb6645b1efee7b578b"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "cd09defd3bac32c8502bcf76d15a2cd30d39f76b1f58cfa56d8c7db800bd8b6d",
+      "text": "Suriname remains one of South America’s least-explored birding destinations. Tropical forest covers most of the country, and its low population density and small number of visitors help preserve the natural areas of the Guiana Shield. On this private, eight-day tour, you’ll go out each day when birds are most active. The route takes you through open savanna, riverside forest, former plantations, secondary forest and stretches of the Atlantic coast. You’ll walk early in the morning, watch birds during the day and head out again in the evening as nocturnal species become active.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "amanda-ada-en-translator-20261107",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The matched 2026 Word document moves directly from the title, duration and price to Day 1 and contains no standalone overview of Suriname, the habitats or the birding schedule."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
+      "text": "Private",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "amanda-ada-en-translator-20261107",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The matched 2026 Word document describes guided daily activities but does not explicitly identify the tour format or supply a private-tour label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bc434df4f5d2c49e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a25b369b20c3fde62654aea654c55ea9ca8b06934269e35a0c3429ad9ab8c39d",
+      "text": "Paramaribo",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "amanda-ada-en-translator-20261107",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The matched 2026 Word document names the Day 1 airport and Palulu Camping, but does not name Paramaribo or provide a matching city label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cd11f2705f669aea",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b229d7e2c1c3a2c0adec6a4d0f4cd9074fd0819754117d5547fc3acacb057d83",
+      "text": "Palulu Camping",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10rEu3o1Ap7c8jmAmzo8yB8XGaEPnvpVq",
+        "documentSha256": "dbde3da714ceada5078e1349a1727d90d462f0562177edde7abc9a51363e7f51",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0005",
+            "textSha256": "d1373781ab6eab6e5c2821e58beefa067a47293259a005f6fa3b99324b79946c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact campsite name from the Day 1 heading as the standalone route stop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:69cf04174aa3464f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2b6c02a9a3459c9450f6aeb4b87ff25d1943d80df2d9bf889b1f6efa35801519",
+      "text": "Kraka",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10rEu3o1Ap7c8jmAmzo8yB8XGaEPnvpVq",
+        "documentSha256": "dbde3da714ceada5078e1349a1727d90d462f0562177edde7abc9a51363e7f51",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0010",
+            "textSha256": "1bd06ce83bd5bcc01de5371789d215e66f7dfcb2ebc1d83cb29c97764737c07e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact place name from the Day 2 heading as the standalone route stop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5fa2c8da935b985d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "63dba888ac80ef8891ec758f07eac0ac4f8d37d7f02ca39d687a1a2caebf492c",
+      "text": "Saramacca River",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10rEu3o1Ap7c8jmAmzo8yB8XGaEPnvpVq",
+        "documentSha256": "dbde3da714ceada5078e1349a1727d90d462f0562177edde7abc9a51363e7f51",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0010",
+            "textSha256": "1bd06ce83bd5bcc01de5371789d215e66f7dfcb2ebc1d83cb29c97764737c07e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact river name from the Day 2 heading as the standalone route stop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5b889e2b0269d923",
+      "field": "itinerary.label",
+      "sourceTextSha256": "16e97d5c880f254b3673b6046bf6b7f4245a890d79a250354dd95174780666aa",
+      "text": "Zintete Lodge",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "10rEu3o1Ap7c8jmAmzo8yB8XGaEPnvpVq",
+        "documentSha256": "dbde3da714ceada5078e1349a1727d90d462f0562177edde7abc9a51363e7f51",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0010",
+            "textSha256": "1bd06ce83bd5bcc01de5371789d215e66f7dfcb2ebc1d83cb29c97764737c07e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact lodge name from the Day 2 heading as the standalone route stop."
+      }
+    }
+  ]
+}

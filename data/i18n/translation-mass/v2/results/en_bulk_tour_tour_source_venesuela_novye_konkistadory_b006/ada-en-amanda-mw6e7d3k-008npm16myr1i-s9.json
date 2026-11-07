@@ -1,0 +1,151 @@
+{
+  "jobId": "en:bulk:tour:tour_source_venesuela_novye_konkistadory:b006",
+  "stableId": "tour_source_venesuela_novye_konkistadory",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "668ee5f6ed679a692a787e15a82703636c2d34b8ef5045e360823ea8d5732822",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:3a2f20ed56c472de",
+      "field": "media.hover",
+      "sourceTextSha256": "862ed947e7eec2441e1e7d8f3331b6a79e3fd1aa8ccb72cd129aeaa60485256d",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word covers the Choroní coastline but has no hover caption for the pictured palms at Playa Grande."
+      },
+      "text": "Choroní, Venezuela: palm trees beside the sands of Playa Grande"
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "fd4f9f94819c78ed1db249f204227cb53a78f24f704b5b78ffdc623a934a9733",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "ffb13082e525ecda03e9512f1b4c3d861abd0f694620d5f1220bd62e803d1962"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses the matching Word route and retains the weekday from the current itinerary heading."
+      },
+      "text": "Wednesday: Choroní to Caracas"
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6f252f692aa4a74d438eb12e561ae13ec3e054b47ff0af07709f91ed5db63089",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "992de3e73d6709e7c6da4af5a6b5a664388429e3cc9da1bb2d6a088296a1f44c"
+          },
+          {
+            "ref": "word/document.xml#p0030",
+            "textSha256": "8a7010ef3744f235f7a15441230f79a1e996ee508a2b9990e63661f042b5ff7e"
+          }
+        ]
+      },
+      "text": "Breakfast. In the afternoon, transfer to Caracas. Check-in at a hotel near the airport and rest.\n\nMeals: breakfast"
+    },
+    {
+      "blockId": "tour:itinerary_label:555c50e7bc33635f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "ffb13082e525ecda03e9512f1b4c3d861abd0f694620d5f1220bd62e803d1962"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the destination from the Word route heading for the place label."
+      },
+      "text": "Caracas"
+    },
+    {
+      "blockId": "tour:itinerary_label:ff06247eb154edf2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c0c4da0b9db6224dc9ff4b408e0e32f742c384290085164cf42aff44a3c8e7d4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "ffb13082e525ecda03e9512f1b4c3d861abd0f694620d5f1220bd62e803d1962"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the starting place from the Word route heading for the place label."
+      },
+      "text": "Choroní"
+    },
+    {
+      "blockId": "tour:media_alt:8326d7f20b2bdd1b",
+      "field": "media.alt",
+      "sourceTextSha256": "968a3e23eacf012140ff73e8ba1e34f2361f1d8a2df686ed3bf786e94c4c8c3d",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word itinerary covers a city tour in Caracas but contains no alt text for this panoramic mountain backdrop."
+      },
+      "text": "Panorama of densely built Caracas against the mountains, Venezuela"
+    },
+    {
+      "blockId": "tour:media_hover:653ee345f569cf0b",
+      "field": "media.hover",
+      "sourceTextSha256": "3fecff29503f27e431f5326e46615a1c045e79b4206418f10f58f4d47a34200a",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word itinerary contains no hover caption describing the buildings and neighbourhoods in this specific image."
+      },
+      "text": "Caracas: high-rises and residential neighbourhoods below the mountainside"
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4e4fc075c70e0182d35271db80cb72747b8b324112ed317f30e85b9ced92d08d",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "f9f2aef709932f5ebb749522bb4d09f54a510c05b934f9acf932003cd976394b"
+          },
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "684c8fba601d14ffc04ab31abc3688aef4846fcf2fbb0dca5fddf072ac650588"
+          },
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "01e0c61799f9c87eef0a5de4f50fdc7f28621860faaf8a28bda7db9f52051412"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses the Word itinerary's lagoon and waterfall stops while retaining the weekday and the shorter scope of the current heading."
+      },
+      "text": "Thursday: Canaima Lagoon and El Sapo Waterfall"
+    }
+  ]
+}

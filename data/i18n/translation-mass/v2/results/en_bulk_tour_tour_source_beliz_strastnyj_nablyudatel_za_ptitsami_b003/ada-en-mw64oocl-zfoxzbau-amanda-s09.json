@@ -1,0 +1,162 @@
+{
+  "jobId": "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b003",
+  "stableId": "tour_source_beliz_strastnyj_nablyudatel_za_ptitsami",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "395094c1e098320568e32c1ecb6e7291a52f8d62f42a18f4f5c04429f4d7c8ce",
+  "blocks": [
+    {
+      "blockId": "tour:included:e0f07ff62b46bf58",
+      "field": "included",
+      "sourceTextSha256": "84f428390378b82551d4f4595e8e7661a8b3ead7cf7e662d87ebc80603752747",
+      "text": "3 nights at Cahal Pech Village in a standard room.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0092",
+            "textSha256": "af7b18a4ccd4468922fb5d3f972ad321dc8eeaddc41ed2391c056e0c35bd8fbf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the combined Word hotel inclusion and expand STD for the accommodation field."
+      }
+    },
+    {
+      "blockId": "tour:included:a612a2d6f576499d",
+      "field": "included",
+      "sourceTextSha256": "05d2b5f5c0ee744560d4ecff890d57e0eaaec1743b546e817b5ec6a2ec61823f",
+      "text": "Hotel taxes and breakfast at Cahal Pech Village.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0092",
+            "textSha256": "af7b18a4ccd4468922fb5d3f972ad321dc8eeaddc41ed2391c056e0c35bd8fbf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the tax and meal terms into their separate inclusion field."
+      }
+    },
+    {
+      "blockId": "tour:included:889486504d6f0e23",
+      "field": "included",
+      "sourceTextSha256": "62a0ef071b40ca909cee74c1a4a2d33a62f20b72375f3089a5461af210b1ba44",
+      "text": "Transfer to Belize City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0093",
+            "textSha256": "0e9604d2670d3f24f873864fe0f03747e6e4db9c29396190fd637708e542bc37"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word bullet marker while preserving the transfer label exactly."
+      }
+    },
+    {
+      "blockId": "tour:included:46dba30f90225e1b",
+      "field": "included",
+      "sourceTextSha256": "c2f07c65a2ec013f6d4c477d4d7a97fabff972dabba47f54ff3eb5217b5affaf",
+      "text": "Boat to San Pedro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "7ade2e45c259820936413a3714e49cf4c0938432c74fb5e39c807f52b7bfc186"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the boat leg from the taxi leg in the combined Word inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:ab741b88af573d19",
+      "field": "included",
+      "sourceTextSha256": "6141c2706371371e623e55205cfebae355a9df3da531d89d9fdd8ff14e2d03e6",
+      "text": "Taxi to the hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "7ade2e45c259820936413a3714e49cf4c0938432c74fb5e39c807f52b7bfc186"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the taxi leg from the boat leg in the combined Word inclusion."
+      }
+    },
+    {
+      "blockId": "tour:included:d64edffc01294587",
+      "field": "included",
+      "sourceTextSha256": "f54d6050ba859a7656e3079af2b3fad3bf2a45050c0759ac3d0089ceb5c58c87",
+      "text": "4 nights at Sunbreeze Hotel in a standard room.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0095",
+            "textSha256": "bb6b8505922f6fa55086d834100e0b4d2465b54c6f09399c2980399a0151201a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Split the combined Word hotel inclusion and expand STD for the accommodation field."
+      }
+    },
+    {
+      "blockId": "tour:included:faab6c6cfa40dcb7",
+      "field": "included",
+      "sourceTextSha256": "450c20f505f79db64fdd6909bb302dbb5077eaf51060d68556d6667994f85c9c",
+      "text": "Hotel tax and breakfast at Sunbreeze Hotel.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0095",
+            "textSha256": "bb6b8505922f6fa55086d834100e0b4d2465b54c6f09399c2980399a0151201a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the tax and meal terms into their separate inclusion field."
+      }
+    },
+    {
+      "blockId": "tour:included:1c3968d3ca21e6ab",
+      "field": "included",
+      "sourceTextSha256": "be48afe23a9b51e72a456cd60a62b4b4c8f4029c7934e333685c1acc53a208c7",
+      "text": "Boat to Belize City.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1l9zSLDdzC_DTtK8YBJGtPViBNQXBYmXo",
+        "documentSha256": "4223f95fc6b19535845e0d0be9aa8409adbbeb6cc2728dba875ebe959397f102",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0096",
+            "textSha256": "9d3a443245750da93279b2e3a50ef3c60e83abc13c8cb5a832d15bed4e891ca9"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word bullet marker while preserving the return boat leg."
+      }
+    }
+  ]
+}

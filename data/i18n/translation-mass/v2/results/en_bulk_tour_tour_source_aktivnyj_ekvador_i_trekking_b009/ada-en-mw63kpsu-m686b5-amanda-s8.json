@@ -1,0 +1,138 @@
+{
+  "jobId": "en:bulk:tour:tour_source_aktivnyj_ekvador_i_trekking:b009",
+  "stableId": "tour_source_aktivnyj_ekvador_i_trekking",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a48aa9454ab5c50c6ffb9afa49484c2de14d4c56b0b387158f38f9dd17f0985a",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:f4611e544098687f",
+      "field": "media.hover",
+      "sourceTextSha256": "f602e6dfd726618df946fd2e56d248fa0d1b1b4b98cda43f07c8279bf571ebad",
+      "text": "Illinizas: snowy and rocky peaks above golden grass",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word covers the Illinizas trek but does not contain a hover caption describing the photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "e1c00e27116029a78e429f029d5e7b39c9be678c75b68650e55fa978c417f47d",
+      "text": "Trek around the Quilotoa Crater",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aMNBOgd-6s71uwS-aEM_gfDEmhLQHHzx",
+        "documentSha256": "7c5d98482c31f50b5ee1a0833d504bfd399821348a9b7fe122728d6546d59b4d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0136",
+            "textSha256": "83ff9ea42f025b380a2f1c33ca4e17b2113435373b8fe76a66baabeaaabc120e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Remove the Word day number because the itinerary template renders it separately."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1532449975c64e440a02303d20a9f88d9ed008752786fcf8ddd09fc7d49adb71",
+      "text": "Drive into the Central Andes to reach Quilotoa, a crater lake formed by a major volcanic eruption thousands of years ago. The lake is about 250 m deep on average and is known for its bright turquoise water.\n\nThe hike follows the upper rim of the crater and takes about 4–5 hours. The lake stays in view from different points along the caldera rim, and the colour of the water shifts with the light. Afterwards, continue south into Chimborazo Province. On arrival, you’ll have time to relax.\n\n**Accommodation:** Chimborazo Lodge.  \n**Meals:** Breakfast, packed lunch and dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary covers the hike but does not contain the current description of the lake remaining in view from the rim and the water changing colour with the light."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:71cfeb2e00338d02",
+      "field": "itinerary.label",
+      "sourceTextSha256": "37e94ee8cb1feda04ccec00cd5ffe98fcf81caf83695dca7c1a813fd6840f6d6",
+      "text": "Quilotoa Lake",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aMNBOgd-6s71uwS-aEM_gfDEmhLQHHzx",
+        "documentSha256": "7c5d98482c31f50b5ee1a0833d504bfd399821348a9b7fe122728d6546d59b4d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0138",
+            "textSha256": "1c9700aee926eb51e0b5466feecaf7de849b98b1a856042e0101599e7c928468"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use an English location label from the Word description of Quilotoa as a crater lake."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:6b275f4f503466d1",
+      "field": "media.alt",
+      "sourceTextSha256": "37e94ee8cb1feda04ccec00cd5ffe98fcf81caf83695dca7c1a813fd6840f6d6",
+      "text": "Quilotoa Lake",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word program names Quilotoa but has no dedicated alt text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "336140d98bdd0b2640c98d50e61d8d66d711aa6db62beae94c26a58582316344",
+      "text": "Chimborazo and the Papallacta Hot Springs",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aMNBOgd-6s71uwS-aEM_gfDEmhLQHHzx",
+        "documentSha256": "7c5d98482c31f50b5ee1a0833d504bfd399821348a9b7fe122728d6546d59b4d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0146",
+            "textSha256": "e25153d45448ab6aeacc89bed786c8e5ffbde8ebf5efa2d0f72b2b201ac4fb06"
+          },
+          {
+            "ref": "word/document.xml#p0148",
+            "textSha256": "32e2e4581ec1aeebc0eea349dda86a0c6ad3b98c0d88a7335e2543684eb85201"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The Word heading names the Chimborazo trek. The following itinerary names Papallacta Hot Springs as the second stop for this heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1fbd232b3e764decb49655710e617fe75af28c6f6dc9e9d7d9d974d211d07593",
+      "text": "After breakfast, set out on a trek around the base of Chimborazo. The trail crosses high-altitude wetlands where you may see alpacas and vicuñas and leads to a mountain refuge at around 5,000 m.\n\nAfter the trek, drive to Papallacta, about four hours away. Your guide may change the route if the weather, trail conditions or how participants are feeling makes it unsafe.\n\nPapallacta sits at about 3,220 m on one of the routes from the highlands to the Ecuadorian Amazon. It has a cool, humid climate, with average temperatures of around 10–14°C depending on the season. In 1542, Francisco de Orellana crossed the Andes along the route known as the Cinnamon Trail. His expedition went on to reach the Amazon River.\n\nSpend the rest of the day at Termas de Papallacta, beside the Papallacta River. The complex has nine hot pools and three cold pools. The springs range from about 30 to 70°C and the pools from about 36 to 40°C. The water contains sulfates, sodium, calcium and magnesium chloride. The resort describes the water as having anti-inflammatory, soothing, antiallergic and diuretic properties.\n\n**Accommodation:** Termas de Papallacta.  \n**Meals:** Breakfast and packed lunch.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kpsu-m686b5-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word covers the same stops but has no equivalent integrated block retaining the current route safety wording and attributed resort claims without adding different historical or health claims."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dede6864a80ab167",
+      "field": "itinerary.label",
+      "sourceTextSha256": "855fca0a179d5f73afb2095613ad7625aabc3ad1a5bf4de92c39657fbec32dd2",
+      "text": "Chimborazo Volcano",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1aMNBOgd-6s71uwS-aEM_gfDEmhLQHHzx",
+        "documentSha256": "7c5d98482c31f50b5ee1a0833d504bfd399821348a9b7fe122728d6546d59b4d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0147",
+            "textSha256": "af1528601a91044fe30f83478e1410fdedc34165202282e274914ac52deff56b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place name and feature type stated in the opening paragraph of the Chimborazo trek."
+      }
+    }
+  ]
+}

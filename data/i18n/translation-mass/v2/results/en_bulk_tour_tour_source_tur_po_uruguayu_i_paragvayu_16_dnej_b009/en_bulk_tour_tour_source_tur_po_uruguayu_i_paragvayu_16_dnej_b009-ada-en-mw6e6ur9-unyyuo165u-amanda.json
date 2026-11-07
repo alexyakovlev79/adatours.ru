@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_po_uruguayu_i_paragvayu_16_dnej:b009",
+  "stableId": "tour_source_tur_po_uruguayu_i_paragvayu_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d11886f6c2dd05e32ac530e9d6cf417068834d6d9daac33d661f3f4abb113b91",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:1a8ab293b2bc58c0",
+      "field": "media.alt",
+      "sourceTextSha256": "ca3e1edc1d7fc3eb865b1962a60ea6b2851675452ce82ead9d290448592e0bb2",
+      "text": "A cobbled street between old stone walls in Colonia del Sacramento, Uruguay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Colonia itinerary at p0011 mentions cobbled streets but has no standalone alt text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3e8f23e3afb374aa",
+      "field": "media.hover",
+      "sourceTextSha256": "a0d539af9c76b017f3d65052303c068c2061c5fccdba5e91f2fa0dcbc7c17be8",
+      "text": "Colonia del Sacramento, Uruguay: a cobbled street between old stone walls",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Colonia itinerary at p0011 mentions cobbled streets but has no separate hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c5f6bcc559adce7be48f6be9fe811886945570df48c30bb8e5976dd6359eeae7",
+      "text": "Canelones, Tannat Tasting and Transfer to Punta del Este",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0017",
+            "textSha256": "645140e5717f108ccdfae8d542f0e61f79614b9d0f54b3c4d6a5ac487cc5cdf4"
+          },
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "62b0ce00420a25f350ec0f6bf6b31e71748223e81dc7fdd454b149c43f6cdf05"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Builds the day label from the Word route heading and the Canelones winery, Tannat tasting and onward journey explicitly described."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6408718a6001fe208c681ac744335296779ac85caeb5788d3aedfd4c9c9809eb",
+      "text": "This morning takes you into Uruguay’s beautiful countryside to a boutique winery in the renowned Canelones Wine Region. Enjoy a tasting of exceptional Tannat wines followed by a gourmet vineyard lunch surrounded by rolling vines. In the afternoon, continue to the glamorous seaside resort of Punta del Este, South America’s beloved playground of beaches, art and sophisticated lifestyle.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "62b0ce00420a25f350ec0f6bf6b31e71748223e81dc7fdd454b149c43f6cdf05"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9f266b84fbc808bc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ad5c7140d6d8bf20637a72ee514ce39f76ed7c26afb7d895a69d72abe83468fc",
+      "text": "Canelones",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "62b0ce00420a25f350ec0f6bf6b31e71748223e81dc7fdd454b149c43f6cdf05"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the place name in the approved paragraph’s Canelones Wine Region for the separate itinerary label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b742425fb2a5b39c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "548812dbe2a09a9f8898efa4a7e5835999f2cc621b9856059f76f62c0f8219e5",
+      "text": "Punta del Este",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0114",
+            "textSha256": "c120b5cdab433de94ae142f5010b778f4adea6588c89a4ba20f14419e81f1ca1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c1ec7515b69efa5f",
+      "field": "media.alt",
+      "sourceTextSha256": "40113b50742b22a45e2c975aa2308bb96bffda88cc759714bb0bca0df3b90eac",
+      "text": "The La Mano finger sculpture on the beach at sunset in Punta del Este, Uruguay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Punta del Este itinerary at p0022 names La Mano but contains no alt text describing the sunset photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:189784744773b393",
+      "field": "media.hover",
+      "sourceTextSha256": "8d00bdcf30eff6509549c454fc842686cbe3fd506d999cc9f421d937d8d72147",
+      "text": "Punta del Este: the fingers of La Mano in the sand at sunset",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Punta del Este itinerary at p0022 names La Mano but contains no hover caption describing the sunset photograph."
+      }
+    }
+  ]
+}

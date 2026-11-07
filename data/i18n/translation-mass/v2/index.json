@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 1088,
-    "leased": 8,
-    "review": 2843,
+    "leased": 7,
+    "review": 2844,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 1088,
-      "leased": 8,
-      "review": 26,
+      "leased": 7,
+      "review": 27,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -168,8 +168,8 @@
         "ai_only": {
           "held": 0,
           "queued": 31,
-          "leased": 1,
-          "review": 2,
+          "leased": 0,
+          "review": 3,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -177,7 +177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T16:50:52.349Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "13": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261107-a8bd0e536de9": {
-      "jobId": "en:bulk:tour:tour_brazil_mice_7_days:b004",
-      "token": "en-vez1f0ybdorgqwmzypkfer",
-      "expiresAt": "2026-11-07T16:50:52.349Z",
-      "generation": 1
-    },
     "ada-en-amanda-mw6jtrrh-orrrrikrq6j": {
       "jobId": "en:bulk:tour:tour_antarctica_discovery_learning_11_days:b008",
       "token": "lease-6nyxcckggvnos6u58vuj7",
@@ -10221,7 +10215,9 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_mice_7_days:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_brazil_mice_7_days:b004"
+      ]
     },
     "ada-en-f8804ba1-147d-4106-9470-50bbc2568386": {
       "token": "290b94e9-92d9-4876-b9e6-986865234fc6",
@@ -10255,5 +10251,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T15:24:13.021Z"
+  "updatedAt": "2026-11-07T15:24:19.601Z"
 }

@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 402,
-    "leased": 5,
-    "review": 2409,
+    "leased": 4,
+    "review": 2410,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 398,
-      "leased": 5,
-      "review": 70,
+      "leased": 4,
+      "review": 71,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -1077,8 +1077,8 @@
         "word_2026": {
           "held": 0,
           "queued": 13,
-          "leased": 1,
-          "review": 0,
+          "leased": 0,
+          "review": 1,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T09:44:57.058Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1a": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-9fde710c1170-amanda": {
-      "jobId": "en:bulk:tour:tour_patagonia_lakes_lakeshore_chalet_10_days:b011",
-      "token": "lease-9fde710c117048328e3c8b573e74ddad",
-      "expiresAt": "2026-11-07T09:44:57.058Z",
-      "generation": 1
-    },
     "ada-en-mw64op9d-vwqgppv0-amanda": {
       "jobId": "en:bulk:tour:tour_source_beliz_strastnyj_nablyudatel_za_ptitsami:b011",
       "token": "ada-mw64op9d-vwqgppv0-6ljnlsk2xzvesepi8jyma5",
@@ -8967,7 +8961,9 @@
       "jobIds": [
         "en:bulk:tour:tour_patagonia_lakes_lakeshore_chalet_10_days:b011"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_patagonia_lakes_lakeshore_chalet_10_days:b011"
+      ]
     },
     "ada-en-mw64op9d-vwqgppv0-amanda": {
       "token": "ada-mw64op9d-vwqgppv0-6ljnlsk2xzvesepi8jyma5",
@@ -8999,5 +8995,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T08:16:02.063Z"
+  "updatedAt": "2026-11-07T08:16:34.473Z"
 }

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 280,
-    "leased": 7,
+    "queued": 279,
+    "leased": 8,
     "review": 2529,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 276,
-      "leased": 7,
+      "queued": 275,
+      "leased": 8,
       "review": 190,
       "ready": 0,
       "retryable": 0,
@@ -1196,8 +1196,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 7,
-          "leased": 0,
+          "queued": 6,
+          "leased": 1,
           "review": 3,
           "ready": 0,
           "retryable": 0,
@@ -1217,7 +1217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T11:04:15.068Z",
       "earliestRetryAt": null
     },
     "1d": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b006",
       "token": "lease-mw67i24v-mdmn2y41su-wylf56wybrt",
       "expiresAt": "2026-11-07T11:04:05.667Z",
+      "generation": 1
+    },
+    "ada-en-mw67hj8f-2stxffvsl16-amanda": {
+      "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b004",
+      "token": "lease-mw67hj8f-mtd6ycxvdz",
+      "expiresAt": "2026-11-07T11:04:15.068Z",
       "generation": 1
     }
   },
@@ -9346,8 +9352,15 @@
         "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b006"
       ],
       "completedJobIds": []
+    },
+    "ada-en-mw67hj8f-2stxffvsl16-amanda": {
+      "token": "lease-mw67hj8f-mtd6ycxvdz",
+      "jobIds": [
+        "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b004"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T09:34:05.667Z"
+  "updatedAt": "2026-11-07T09:34:15.068Z"
 }

@@ -1,0 +1,141 @@
+{
+  "jobId": "en:bulk:tour:tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda:b008",
+  "stableId": "tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1da3cd8c8b3fc49fbf1432c83cca4ec4a2e1f8171c4da7ddedab8aed1a415bc5",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:75c10132678567a9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ddac17435b793c4f951a24a71917c46e1ac246bcf2b8f59e5833719322d57bb8",
+      "text": "Roraima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "7c2cb9882fa215aa10495071d3d1f579e68f2e503f09ce7802355e0bef120268"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the mountain name from the matching itinerary section for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2ee54b489d3a2d30",
+      "field": "media.alt",
+      "sourceTextSha256": "375dd2299e62813daf1e8c0a53ff236ea190d13f8055f83c3dbf168b7685ac33",
+      "text": "The rocky Tek River below the flat summit of Mount Roraima, Venezuela",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The previous day mentions the Rio Tek campsite but provides no alt text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:0c8a342196f5838f",
+      "field": "media.hover",
+      "sourceTextSha256": "c0c42e5c24425dd227450f7812f8dde0599d402a9945b6bd7f755a443bbebed4",
+      "text": "Roraima, Venezuela: a rocky river in front of the tabletop mountain",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word itinerary does not include the site's hover caption for the Tek River image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a9bd5a39bb65d71af7cab071b386b3259db8edc01838e9d208c0c18f5597e5ad",
+      "text": "Day 7 (Sunday): Roraima – San Francisco de Yuruni",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "7c2cb9882fa215aa10495071d3d1f579e68f2e503f09ce7802355e0bef120268"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "01926467e7e053d491614fa01775231dfe27e54ee9d7b0d659ea107b3095e009",
+      "text": "Breakfast. Return to Parai Tepuy, where a driver in a 4x4 awaits the group. Refreshing drinks will be offered. Transfer to the camp in San Francisco de Yuruni. Rest and dinner.\n\nMeals: breakfast, lunch (packed), dinner",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "6523de59b9cc1c05961b3cb16c3382561fc6fb6c09fc248ffc540ac375615a2c"
+          },
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "14abb423bfbf5828679d0c8142f52ad2f5b25496635912201be1be0a35291cc8"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fb9404a21344827d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "77a2f431924e497f2a8d19f2fc9f4c5a18bb69f5f49e2f48a4bd0644ff68b0cf",
+      "text": "San Francisco de Yuruni",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "7c2cb9882fa215aa10495071d3d1f579e68f2e503f09ce7802355e0bef120268"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the settlement name from the matching route heading for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fa346c89974748b4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ddac17435b793c4f951a24a71917c46e1ac246bcf2b8f59e5833719322d57bb8",
+      "text": "Roraima",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "7c2cb9882fa215aa10495071d3d1f579e68f2e503f09ce7802355e0bef120268"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the mountain name from the matching route heading for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c3e7f0531971e27c",
+      "field": "media.alt",
+      "sourceTextSha256": "8d00c1739da94a5ac5d5ecfd0eef04ff3dacaf054778a36d0ffbc695d1b265e6",
+      "text": "A trail across a grassy plain towards Mount Roraima, Venezuela",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The corresponding Word section contains no alt description for the image of a trail across grassland."
+      }
+    }
+  ]
+}

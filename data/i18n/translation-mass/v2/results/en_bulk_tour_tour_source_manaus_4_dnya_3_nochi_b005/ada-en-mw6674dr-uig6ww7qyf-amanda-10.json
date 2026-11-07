@@ -1,0 +1,110 @@
+{
+  "jobId": "en:bulk:tour:tour_source_manaus_4_dnya_3_nochi:b005",
+  "stableId": "tour_source_manaus_4_dnya_3_nochi",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "753bda35f6b3a02150216436e2f22267db076fa0666bcdf77a5f558ba0b121fd",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "5c2ae4330c669455a26326049d1851e6604571a67dbf86c7b47ef7ea43f11769",
+      "text": "After breakfast in the hotel, you will be transferred to the airport. ",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0047",
+            "textSha256": "4d8805bdbaa63434e6042496c1615082319cf54626d10b4265ab3248eb03a130"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0b6948027e464fb2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "documentSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "d6c2e8f87879ae81e45938f26dfebad6c20e8ebe8f38cf725f271446ae945906"
+          },
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "821d4a3a05ff80b6d12e240bd47771f56c58b2977cbfec432cda588bd985c7f5"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the named city and Amazon region used throughout the Word programme into the existing combined website place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ea1e9fc589b117b5",
+      "field": "media.alt",
+      "sourceTextSha256": "65a187fbcf5039e769ac350a333a6bfe0887c56142145e0fc498970659fae50b",
+      "text": "A person with a suitcase at a covered airport entrance next to parked cars",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Day 4 Word paragraph describes the airport transfer but contains no image description of the covered entrance, luggage or parked cars.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b90390cb6904d41c",
+      "field": "media.hover",
+      "sourceTextSha256": "4c33df7175749a1fd95e7b0457b1c84a88d32832308de68a123445f9ab335e07",
+      "text": "Airport entrance: luggage, cars and passengers under the canopy",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word gives the airport transfer in the Day 4 itinerary but contains no caption for the curbside scene.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "05d4f2cd82fe69eaa174c37be20f161416c9be2035579d4117f29bb4d5278cea",
+      "text": "Smiling children with painted faces and feather headdresses",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word describes community visits but contains no hero image description of the smiling children, face paint or feather headdresses.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "3c06f0e6b23f3b74a73a7035ba25d6e6e3a4ef8f989b9759fcce0f045061546e",
+      "text": "Children in bright feather headdresses with designs painted on their faces",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word’s community visit passages do not provide a matching caption for the face paint and colourful feather headdresses in this image.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "1482dbd6155d07ad299a4ccf0987e0109ea44d8f42bcc62a01750a528ee23f40",
+      "text": "\n\n## Optional excursions\n\n**Pink Dolphin Watching in the Amazon**\n\nPrice: **$141 per person**, minimum 2 participants.\n\n**Meeting of the Waters**\n\nPrice including lunch: **$251 per person**.\n\n**Trekking and Survival in the Amazon Rainforest**\n\nPrice: **$268 per person**.\n\n**Monkey Forest: Canoe Trip in the Amazon**\n\nPrice: **$90 per person**.\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "wordAbsenceReason": "The Word’s optional activities section identifies the same four experiences but has different rates and applies its minimum to the whole list. There is no matching Word block with the current site’s commercial figures and conditions, which are preserved from RU.",
+        "runId": "ada-en-mw6674dr-uig6ww7qyf-amanda",
+        "model": "ChatGPT"
+      }
+    }
+  ]
+}

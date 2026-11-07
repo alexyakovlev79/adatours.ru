@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_klassicheskij_paragvaj:b005",
+  "stableId": "tour_source_klassicheskij_paragvaj",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f8ecde10c245981e9bf46a9780e50b9a79ccee3b2b198a84ec49773649ebc61d",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:d341b10fb5323f7c",
+      "field": "media.hover",
+      "sourceTextSha256": "4a349585fbbd2f8f1743f70f9a49426d856832159af0e825f7077025eefdc04a",
+      "text": "Asunción: city lights beneath an orange sky",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hnvk-wlftbe5ij7-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word arrival program has no hover text for this photograph of the city at dusk."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f03ebbc4b6575d1bd1ff022be2d2d8dcdaab52275b41f2fee50a1f4ee2317856",
+      "text": "Asunción – Chaco – Filadelfia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0027",
+            "textSha256": "1efbedbb5b2639c307be5db1020df26a8ddf5a57f72780c6408c1986d6421d1f"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Use the same three places from the approved heading, in order, without the day-number prefix."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "26530170587259c22ef467e28df8e82e767d661cbfae7be3b9ad6adfa428f735",
+      "text": "Early in the morning starts the journey to Filadelfia, the principal town in the heart of the Chaco region. The Chaco begins after crossing the bridge Remanso - one of the two bridges which connect the East and the West of the Country. Along the way we make several stops, so we can observe nature and wildlife and get a first impression of the unique nature of Chaco. We will visit a native indigenous village, the Toba Qom, and the beautiful salt lake “Laguna Capitán”. In the winter there are hundreds of Andean flamingos here! In the evening we reach Filadelfia.\n\nO/B Hotel Florida 3*+ in Filadelfia",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "d4259e66079bbf6684ad71b369a8e0261e7e72d6bddb9f57d64ff30d4a1c6191"
+          },
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "992bc28e69f0e58dfa0df80f4de143c1c643fba6cd6d5aaf0c4cbaa2ec633e6d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:66f9c35eb2e365af",
+      "field": "itinerary.label",
+      "sourceTextSha256": "02af373c5969d80f6d3d359a5b66fb1b80d46de331cdb1045713cf1272787390",
+      "text": "Asunción",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0027",
+            "textSha256": "1efbedbb5b2639c307be5db1020df26a8ddf5a57f72780c6408c1986d6421d1f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the departure city in the approved Word day heading as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ec0a099e4d51e04c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "b4b85aefbe168afdb88bd6a005e1673b46d5fabbc6293de4ac3b507da02cf403",
+      "text": "Chaco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0027",
+            "textSha256": "1efbedbb5b2639c307be5db1020df26a8ddf5a57f72780c6408c1986d6421d1f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the region in the approved Word day heading as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:490a68b07075d19f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "409c59c5fc407a43bf4fffc73e32e0bfd6f25520f9a24ac8c304b1137829740d",
+      "text": "Filadelfia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "12adB-t0jZI7NAH2Uj1xktcUJsOe-S-J2",
+        "documentSha256": "c6bd18e318fc183a7ea62e78c03e3d6b7045a9e3f4d0baccc52ce8e087dd7610",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0027",
+            "textSha256": "1efbedbb5b2639c307be5db1020df26a8ddf5a57f72780c6408c1986d6421d1f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the destination in the approved Word day heading as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b8a2d1b0e50c0c3d",
+      "field": "media.alt",
+      "sourceTextSha256": "6c9374d50ae7f2dfeca03c06a62cd8ada3828900952667206dec4850db69f1bd",
+      "text": "A pink historic building with a tower, a flag and palm trees in Asunción, Paraguay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hnvk-wlftbe5ij7-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary gives no caption for this photograph of a historic building in Asunción."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:78e268ef737dff40",
+      "field": "media.hover",
+      "sourceTextSha256": "93be1751738342f080e04436c35946a92c36a91a436c7d3a77441d35c3cfceb0",
+      "text": "Asunción: a historic façade with a tower and the Paraguayan flag",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hnvk-wlftbe5ij7-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary gives no hover text for this photograph of the historic façade."
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 122,
-    "leased": 7,
+    "queued": 121,
+    "leased": 8,
     "review": 2687,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 118,
-      "leased": 7,
+      "queued": 117,
+      "leased": 8,
       "review": 348,
       "ready": 0,
       "retryable": 0,
@@ -436,8 +436,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 7,
-          "leased": 0,
+          "queued": 6,
+          "leased": 1,
           "review": 6,
           "ready": 0,
           "retryable": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T14:13:06.217Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_meksika_yuzhnoe_priklyuchenie_kratkij_marshrut:b007",
       "token": "lease-gdgej09z35v-xp7wa9z195g",
       "expiresAt": "2026-11-07T14:12:32.660Z",
+      "generation": 1
+    },
+    "ada-en-mw6e6me8-dmgxzgogttv-amanda": {
+      "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b003",
+      "token": "93b57wtlkzg4i5k2rlftfwmw6e6me8",
+      "expiresAt": "2026-11-07T14:13:06.217Z",
       "generation": 1
     }
   },
@@ -9747,7 +9753,8 @@
     "ada-en-mw6e6me8-dmgxzgogttv-amanda": {
       "token": "93b57wtlkzg4i5k2rlftfwmw6e6me8",
       "jobIds": [
-        "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b004"
+        "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b004",
+        "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b004"
@@ -9797,5 +9804,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T12:42:58.877Z"
+  "updatedAt": "2026-11-07T12:43:06.217Z"
 }

@@ -1,0 +1,124 @@
+{
+  "jobId": "en:bulk:tour:tour_source_meksika_den_mertvykh:b004",
+  "stableId": "tour_source_meksika_den_mertvykh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e744406557bd262e54ab8fb4f80d1838e5659fc77978ddd24fd3a2beefcd8590",
+  "blocks": [
+    {
+      "blockId": "tour:note:1ffa9a907dfaa903",
+      "field": "note",
+      "sourceTextSha256": "04e3cf2fcbfdb1786f2fce0bf4684ce1a727dffb7caac75836ca0d1f6d4b49ca",
+      "text": "If necessary, Ada Tours may replace the listed hotels with others in the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word accommodation inclusion mentions similar hotels but gives no standalone replacement policy specifying the same category."
+      }
+    },
+    {
+      "blockId": "tour:note:7097c9cfacb951d3",
+      "field": "note",
+      "sourceTextSha256": "8b7d20d191a108ae5c1b72754af2ad144999f700c6a6b55371f557c3b3317fe5",
+      "text": "Ada Tours may change the order of excursions while keeping all activities in the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary lists the visits in order but gives no separate policy for rearranging them without shortening the tour."
+      }
+    },
+    {
+      "blockId": "tour:note:97e52e6fdb8c6ac4",
+      "field": "note",
+      "sourceTextSha256": "4201f701902b5dedf1b3756a1fbfaafab623ae356a06f5ced31f29d0ca1d0e9b",
+      "text": "If you check out early for a flight or excursion, you may miss breakfast at the hotel. Ada Tours does not provide compensation for a missed breakfast in these circumstances.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word lists the included breakfasts but gives no policy about early checkout or compensation for missed breakfasts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ea84555299b897765904aa4a545c059b2de34580eb01c7cc3b5485edbc8de399",
+      "text": "(Oct 27) - Arrival Mexico City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p11",
+            "textSha256": "2c55ce1d04168fae148031a99dc10df10e0ed89db32b12fa587987a77326b083"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removed only the numbered day prefix, keeping the original date and arrival wording."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0b132a203269063cd83c16a96867e8d2318f950aee60e1a09eddf6ec1aa96719",
+      "text": "Arrival at Mexico City International Airport. Reception and transfer to your hotel.\n\nStay three nights in a standard room at the Royal Reforma.\n\nSpend the rest of the day resting after your flight or exploring the city independently.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word lists the airport transfer and Royal Reforma room but does not include the free time for rest or independent exploration."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2141c79819815b21",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d6caecbb04aaa0ccab22e4d1d06407e4b10dec9e47f87583cf0648f6d605ed33",
+      "text": "Mexico City (Teotihuacan ruins)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p12",
+            "textSha256": "3ea7933be48644a7d4808bb6adcc735a667a76b9134a803e4d70d11924c81e55"
+          },
+          {
+            "ref": "word/document.xml:p34",
+            "textSha256": "5f51dd726f73dde53993d1ad315fcb34dec357b8ea3334ed524d7f1697a9fe01"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combined the city and archaeological site to retain the scope of the existing place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:435ad69d3ed4afd2",
+      "field": "media.alt",
+      "sourceTextSha256": "4c0d8ee2c9d040ed19184a3d79356a41fdd612fef65848b5427b02265062d114",
+      "text": "Visitors on the long stairway of a stepped stone pyramid in Mexico",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word describes archaeological pyramids but supplies no alt text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f17c2a2a590c41e8",
+      "field": "media.hover",
+      "sourceTextSha256": "1f9a61bf11c22a21cb8670675c2005ca4082acd3a92e99afeecf352b9856b883",
+      "text": "Stone pyramid with visitors on its steps",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67h0wn-to18aqacqj-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word supplies no hover caption for the photograph of the pyramid steps."
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vkusy_brazilii:b007",
+  "stableId": "tour_source_vkusy_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "01624316d93bf1d76391863a7a4e306caa5836fec0c380d91cf91ffc75fc5050",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:0f9c0884678ecce0",
+      "field": "media.alt",
+      "sourceTextSha256": "aac415b3ab9977655be2c94e6cda53c511ab5c70fa3ad093d79f92596c5ccd8b",
+      "text": "Colourful doors on old Paraty houses reflected in water on a cobbled street, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0019 and p0046 describe Paraty’s streets and buildings but provide no alt text for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:57f58fc9f258ccf0",
+      "field": "media.hover",
+      "sourceTextSha256": "cacd0d2d60296326c6e7fc5f2825f571b87e85945547e9a93653a750ca7bcf68",
+      "text": "Paraty: colourful façades and their reflections on a quiet street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0019 and p0046 describe Paraty’s streets and buildings but provide no hover caption for this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "db61de8b3e9006af8cd4d9dcacf3af5313dbb1729580a3f2787825a04eceb8ac",
+      "text": "Paraty’s Historic Centre",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0019",
+            "textSha256": "27f8f478ed13c8e55fbaaf5cb80423edd455157c361b6d3c8a2c2d6b9d43bc75"
+          },
+          {
+            "ref": "word/document.xml#p0046",
+            "textSha256": "2b8c439254086d32343e396a08ad9936441a28968547ff710555ebfce5916168"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses the town and colonial centre described in Word to form the separate historic centre heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c20fcc97ba9ed9fb804918ffce940b255bef7ce36f66e02ea8cecd375e723c59",
+      "text": "Breakfast. Take a guided tour of the historic centre.\n\nParaty is one of Brazil's most appealing and exquisitely preserved historical towns. Paraty's colonial center is remarkable not only for its centuries-old architecture, but also for its lack of vehicles and traffic. The irregular cobblestone streets are closed to motor vehicles, making it a delightful place to stroll about. Elegant white buildings adorned with fanciful multi-hued borders and latticed windows blend harmoniously with the natural beauty that envelops the town.\n\nThe white houses stand against green mountains, with the ocean close by. Paraty has long drawn painters, sculptors and other artists, attracted by its historic buildings and the surrounding landscape. UNESCO recognises Paraty as one of the most significant examples of Portuguese colonial architecture. The historic centre feels like an open-air museum, where a walk takes you past houses and streets that retain the appearance of earlier centuries.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "Word p0046 supplies the historic-centre paragraph, reproduced verbatim within this block, but Word p0041 instead offers beaches on Day 7 and the Word city tour on Day 8 lacks the same-day breakfast, the artists and UNESCO details. No complete Word paragraph matches this current itinerary block."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a11d8010bcc5ed0a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3b696c0580339afaf47c3619acb2af48388a438e1e30fda7e50da2cfbc5c80e8",
+      "text": "Paraty",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "81f651b3dcc7dcc6c96ae31b986c865cb5afde791a5151e67429bf732d7f8f8b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the city name from the Word Day 7 heading for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:cfc5dc4b17da3fab",
+      "field": "media.alt",
+      "sourceTextSha256": "5772f6aba8e639c1ae344bbf946e44abded7992dd79d8b95288185485e9ef4fd",
+      "text": "Blue latticed windows and a red geometric pattern on a white façade in Paraty, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The colonial architecture paragraph at p0046 mentions latticed windows but has no alt text for this white façade photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:3d16918b26f329ac",
+      "field": "media.hover",
+      "sourceTextSha256": "dbb221eb6e34d6e2d33671ea948945b44427ecc026014d883cd23e8868f5ba84",
+      "text": "Paraty: a white colonial façade with blue windows and red decoration",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The colonial architecture paragraph at p0046 mentions latticed windows but has no hover caption for this white façade photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "12ff7ca6ebd0d72374a441d4aa888dbb7afececbcc3df888213fdb2cc0f7ccee",
+      "text": "Paraty – Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0043",
+            "textSha256": "38f0f2cd7e25adfe41107123513e43c36790f289d845754868ea2ac47d45247f"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Keeps the two place names from the Word heading and omits its day number and separately listed onward and tour activities."
+      }
+    }
+  ]
+}

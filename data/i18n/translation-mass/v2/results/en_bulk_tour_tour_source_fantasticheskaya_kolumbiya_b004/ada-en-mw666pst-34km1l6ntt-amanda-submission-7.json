@@ -1,0 +1,166 @@
+{
+  "jobId": "en:bulk:tour:tour_source_fantasticheskaya_kolumbiya:b004",
+  "stableId": "tour_source_fantasticheskaya_kolumbiya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "589c2c627fa71072b8a950bfda58664392cc5a88b73f8621d7ffb3989110e333",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:592d9bf6f24904d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+          },
+          {
+            "ref": "word/document.xml#p0084",
+            "textSha256": "0b52cf9ffbf5183f94ab86a40e91e09e48431d533c910b71e90c7cb9538e2824"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the departure city from Day 03 with the spelling in the approved Word route summary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b26439bfaf85aea9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0002",
+            "textSha256": "ac064ed727a0c128f8e8359dd0a11d1c605cda7cb9a414b37e76b0f9247d9c11"
+          },
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "90f82cfc2b264fe8793df112bbb38cfb734db30b825af3e65b293efc2b8fe994"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the accented destination name from the Word summary and Day 03 description."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ffaeac8218df14c2",
+      "field": "media.alt",
+      "sourceTextSha256": "ca8dfa9d6906b68e2997291bfd7b4bd8fc7fc33d595526940923438680df17cd",
+      "text": "Rows of colorful buses packed closely together on a street in Bogotá, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The complete Word document has no caption for the photograph of buses on a Bogotá street."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:122c40f80a539718",
+      "field": "media.hover",
+      "sourceTextSha256": "fb15ba802ad063345643e5b4b4e144b5616f27e6fdf91acb4dee9d08e176079d",
+      "text": "Bogotá: red, white and yellow buses on a busy street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666pst-34km1l6ntt-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word has no hover caption describing the bus colors or the street scene in the photo."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6523386ec31bd30c32649b6f9e099b1f01f79748c0acf88e683a624c4f76afe9",
+      "text": "Medellín – Peñol and Guatape",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "c38c28edc4f6b59aee8c69b87b0a04d53db7adc5f3c06a647d83a5ce19645f17"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the day prefix and trailing punctuation supplied by the itinerary layout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "67d3ea59771d05c1ce76515b8329cf36f7e1c9ecdec7a5f550de4c75db9748cc",
+      "text": "Breakfast at Hote. Tour to the Orient: Piedra del Peñol and Reservoirs Area. The new town of El Peñol is a fundamental starting point to get to know the past of this area. The visit will continue to the majestic Piedra del Peñol, which is one of the most interesting natural attractions of Colombia. Later we will visit the town of Guatape, famous for the details of the basement of the houses where we will take a tour by motorcycle taxi. Afterward, we will visit the Peñol- Guatape reservoir, by boat (additional cost). There we can enjoy a unique landscape. (Lunch is not included)\n\nDuration: 8 Hours - Days of Operation: Every day\n\nIncludes: Tour as described, motorcycle taxi tour, bilingual guide, transportation and, local Medical Assistance Card.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0091",
+            "textSha256": "939b05ef75332e15c1dfa05ae2d9ef7d185498681337879e9becf3ca5d1150b1"
+          },
+          {
+            "ref": "word/document.xml#p0092",
+            "textSha256": "51fdc0b7f210ce8dcb96a626d5dec8499a9d1f150be24502d38cd6c189cd6353"
+          },
+          {
+            "ref": "word/document.xml#p0093",
+            "textSha256": "debf9ee4f29c751e65d1ad7766238cb72610e08c3be61e7ff00e7ae192f39bbb"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b8831ad1254cc62b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "99476be8814b1e0dcf810a7bef506b2ee93a1b7bda57588de7cb47ca00d1cf9f",
+      "text": "Medellín",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "c38c28edc4f6b59aee8c69b87b0a04d53db7adc5f3c06a647d83a5ce19645f17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the departure city from the Day 04 Word heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:393206f6871ba443",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ed8dee78bdba6a188ae4c84b7fb31ffe2abbdfacb6324702481c0d48881b2e73",
+      "text": "Guatape",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1iuGMyhodvGoM8gyS7ZJ4gsN9oDKyB9uK",
+        "documentSha256": "63814dda4bd0e902b9f27fb0f2b19994a4f90a34bf146deb65715785841b0953",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "c38c28edc4f6b59aee8c69b87b0a04d53db7adc5f3c06a647d83a5ce19645f17"
+          },
+          {
+            "ref": "word/document.xml#p0091",
+            "textSha256": "939b05ef75332e15c1dfa05ae2d9ef7d185498681337879e9becf3ca5d1150b1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the destination name with the spelling used in the Word day heading and narrative."
+      }
+    }
+  ]
+}

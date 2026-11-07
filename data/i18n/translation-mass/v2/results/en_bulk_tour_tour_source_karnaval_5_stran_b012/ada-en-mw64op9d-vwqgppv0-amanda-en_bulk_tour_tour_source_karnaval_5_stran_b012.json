@@ -1,0 +1,168 @@
+{
+  "jobId": "en:bulk:tour:tour_source_karnaval_5_stran:b012",
+  "stableId": "tour_source_karnaval_5_stran",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ebc6c122b94ccda19cab3871a8d801be5b50709b2b149f13c80cac7c5bfa3b0b",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7047b33a1f29a0f936f3a68dafca8fd5e3920e8efec7e2f270158f4b194c4dc9",
+      "text": "Uyuni (Bolivia Jeep Tour through the Salt Flats)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0102",
+            "textSha256": "f585d55c15b07df0541078308ec4c4324bf12e8342825752f3b2ea1c178f4b59"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number and colon from the corresponding Word heading and retain the approved itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "67041ea808a05f074f11e7967ecb5e6ea39cf88a53d9dab120449eefd78d05b1",
+      "text": "Breakfast. Then we will head towards smaller but equally beautiful lagoons—Onda, Chiarkota, Hedionda, and Cañapa—with a stop at the viewpoint of Volcan Ollagüe. The volcano is still active, with smoke rising from its crater, creating a majestic sight. Next, your journey will take you to the Chiguana Salt Flats, which are notable for their large deposits of sodium and potassium nitrate, making them particularly unique.\n\nFinally, you will visit the largest salt flat on Earth, Salar de Uyuni. Located in the southern part of Bolivia on a high plateau at an altitude of 3,650 meters, its total area is about 11,000 square kilometers. In the center of the lake, the salt crust is up to 10 meters thick. During the dry season, the lake is a vast salt desert. The salt reserves here are estimated to be around 10 billion tons. During the rainy season, the lake is covered by a thin layer of water, creating the world's largest mirror.\n\nOn the way to the Great Salt Valley of Uyuni, you will see how salt is extracted and processed in the town of Colchani. After that, you will visit a place called \"Eyes of Water,\" where you can observe geological formations and the salt processing procedure. Next, on Fish Island, you will see several giant cacti and enjoy the view of the salt flats. Lunch (boxed lunch) is included. You will spend the night in the town of Uyuni.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "cff871df39cc3724568bf49c64eb205c231b0343a6fa573768a7ad224344ff17"
+          },
+          {
+            "ref": "word/document.xml#p0104",
+            "textSha256": "99c6b9d165cd99907acf5572e5cf5bbc385a765d58f3100384ed82c626d50ab4"
+          },
+          {
+            "ref": "word/document.xml#p0105",
+            "textSha256": "a7f681b6047f373c1542052de841a744b327395b538578e3f86ac8496dd3c31e"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d298e82053ed8850",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9c48b4d843bf6710fc307bd8417c6e31a5e802ab1cac378628b3a228e01200b1",
+      "text": "Onda Lagoon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "cff871df39cc3724568bf49c64eb205c231b0343a6fa573768a7ad224344ff17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the first of the four lagoons named in the Word route and pair it with the site's label type."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:043eabd842c80a07",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c0b1cca72bf7779c424e24b5716d14776191f4417a88186569a152cdc0895a7d",
+      "text": "Chiarkota Lagoon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "cff871df39cc3724568bf49c64eb205c231b0343a6fa573768a7ad224344ff17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the second lagoon name from the Word itinerary and supply the geographic feature type given by the same sentence."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:65e3ac645229a18e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "4cd4ada0dc71fdb018df1d30a3b97aa2efd43d189c306c7a34be34ddad5add10",
+      "text": "Hedionda Lagoon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "cff871df39cc3724568bf49c64eb205c231b0343a6fa573768a7ad224344ff17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the third lagoon name from the Word itinerary and retain the feature type for this individual stop."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a33fde3ecef7e687",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e23a35efd87293810d7a4623d7c3df23ffafacfe4c6da0d6adff0b2ab26e4f2c",
+      "text": "Cañapa Lagoon",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "cff871df39cc3724568bf49c64eb205c231b0343a6fa573768a7ad224344ff17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the fourth lagoon in the Word itinerary, preserving its spelling and specifying the feature type."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:248e38fcf76f28ee",
+      "field": "itinerary.label",
+      "sourceTextSha256": "508184e8567551abce05b4ea040178e2f1bfa9460d3849a2c0b0a2e3475c0a3b",
+      "text": "Ollagüe Volcano",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "cff871df39cc3724568bf49c64eb205c231b0343a6fa573768a7ad224344ff17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the volcano named in the Word's viewpoint stop and render the geographic feature type in English."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:15ad30ddce2c921f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0dce7b84e63084d81c1cd934a43335db16850db52f3a5a11acf890932bcea324",
+      "text": "Chiguana Salt Flats",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "cff871df39cc3724568bf49c64eb205c231b0343a6fa573768a7ad224344ff17"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the salt flats named as the next stop after the Ollagüe viewpoint in the Word's travel paragraph."
+      }
+    }
+  ]
+}

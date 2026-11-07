@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b011",
+  "stableId": "tour_source_led_solntse_i_kraj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d77af09817aac3c732919afc2d3055e0c1f674b1d398e0e99954b67516848c33",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "8941653ee5ddee01db57f896b3ae9df949572908892d353ed5e622b5b46e37f4",
+      "text": "Breakfast. Take a private tour of the Brazilian side of Iguazu Falls with an English-speaking guide. After the tour, your driver takes you to the airport for your flight to Rio de Janeiro. On arrival, transfer to your hotel for a three-night stay. The flight is paid for separately.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 9 splits the visit and transfer across p:41–43 without specifying three nights or separate airfare in the day text. The private format, stay and airfare terms appear elsewhere in the Word."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:375a897dc0673843",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz de Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "p:36",
+            "textSha256": "2a8b381dd0ad92bf1bf8e425b7ddf60b4e53b62fae507a95a677886df6894452"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number to use the verified destination name as the standalone label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:99c0d88290b06bf7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "p:45",
+            "textSha256": "a350a0d6d9c971fde72bdada64063b56499eaeaf2cafdf660e5fb81f3ad322e7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number to use the verified city name as the standalone label."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:2dcb6af32f3eac36",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "8941653ee5ddee01db57f896b3ae9df949572908892d353ed5e622b5b46e37f4",
+      "text": "Breakfast. Take a private tour of the Brazilian side of Iguazu Falls with an English-speaking guide. After the tour, your driver takes you to the airport for your flight to Rio de Janeiro. On arrival, transfer to your hotel for a three-night stay. The flight is paid for separately.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 9 splits the visit and transfer across p:41–43 without specifying three nights or separate airfare in the day text. The private format, stay and airfare terms appear elsewhere in the Word."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:22c54e0264551e3e",
+      "field": "media.alt",
+      "sourceTextSha256": "1490adc9f200a80d4930f395bc1593f5e61e8f50f45c7b1e3fa5e31a70bc3ebc",
+      "text": "Walkways on the Brazilian side of Iguazu Falls facing cascades and a cloud of spray",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:458d982190a6c66b",
+      "field": "media.hover",
+      "sourceTextSha256": "be3536c2c2ac53d11971e463be6b04f19a62cad42b877188befcfecf1ed385d7",
+      "text": "Brazilian side of Iguazu Falls: walkways above the rushing water",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "5833a8f92a882b023777d48a16e2389454ac716e890170a01d1a8db0911b6146",
+      "text": "Rio de Janeiro: Sugarloaf and the Old Town",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "p:45",
+            "textSha256": "a350a0d6d9c971fde72bdada64063b56499eaeaf2cafdf660e5fb81f3ad322e7"
+          },
+          {
+            "ref": "p:46",
+            "textSha256": "5027ae9cb083742cb71069ae311caba0327f4b59684a0ffc3a895e143ba81ebb"
+          },
+          {
+            "ref": "p:47",
+            "textSha256": "d55b87b0a9c29c864e9ff4ec209e44694aa44d38a6a3dfa2ec6975b92e9c4f2e"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the city heading and the two confirmed stops in the Day 10 text into the corresponding route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d18d3e28d9cb660e113c5222fc449dc2a35913e0d30ac9a1becd7b63368bc313",
+      "text": "Breakfast at the hotel. Half-day excursion to Sugarloaf with an English-speaking guide.  The first stop will be on Mount Urka, which has a wide observation deck where you can have a snack in a restaurant or bar. On Sugarloaf Mountain itself, there is a smaller platform, but it offers a beautiful view of Rio, Copacabana Beach, the bay, the surrounding mountains, islands in the ocean, the Niterói Bridge, and the statue of Christ.\n\nThen by car you will go to the central areas of old Rio, where you will admire several ancient churches, monasteries, the main Cathedral of the city, as well as buildings built in the colonial style.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "p:46",
+            "textSha256": "5027ae9cb083742cb71069ae311caba0327f4b59684a0ffc3a895e143ba81ebb"
+          },
+          {
+            "ref": "p:47",
+            "textSha256": "d55b87b0a9c29c864e9ff4ec209e44694aa44d38a6a3dfa2ec6975b92e9c4f2e"
+          }
+        ]
+      }
+    }
+  ]
+}

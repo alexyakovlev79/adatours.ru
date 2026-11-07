@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda:b004",
+  "stableId": "tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "cabd5a95ac8d648d3b02f5bec5506cc6d07075a9278b55eb050aa39ea0db2f09",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:72e12230faaba761",
+      "field": "notIncluded",
+      "sourceTextSha256": "7d6c36638f3e40c0636ef0cb1ed36d1bce135b5810f07cc72ae1e53efc0fcddd",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kmhy-1powes-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word exclusions mention a single tent supplement, but give no rental terms for the tent, sleeping mat and sleeping bag."
+      },
+      "text": "A single-person tent, sleeping mat and sleeping bag are available to rent."
+    },
+    {
+      "blockId": "tour:notIncluded:d8d7a3352d01a846",
+      "field": "notIncluded",
+      "sourceTextSha256": "4b4d51aec09f0f06f805ed53acbe059904ed1d1c1687bb363b5d699591f74b44",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "e5cb314fa0fa44bfa58fdfd6b39b4cdc91cec51e00359ddc20e3a4f4183a84e3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word bullet glyph because this is already a structured exclusion."
+      },
+      "text": "Single room or single tent supplement"
+    },
+    {
+      "blockId": "tour:note:5aa2c628beab8b85",
+      "field": "note",
+      "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kmhy-1powes-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word note says hotels are confirmed at booking subject to availability, but has no same-category substitution clause."
+      },
+      "text": "If necessary, Ada Tours may replace the hotels listed with others in the same category."
+    },
+    {
+      "blockId": "tour:note:eeb2832b5b22895b",
+      "field": "note",
+      "sourceTextSha256": "05c7ec663a3193acbebd1bc1bd009ffff1b5c7055788a0c60dc32eddf5f368c5",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0081",
+            "textSha256": "19346c81f21a8614813430b17a9d63efc59d2f240a2bf14c9e234b86866d3121"
+          }
+        ]
+      },
+      "text": "The tour operator reserves the right to modify excursions while maintaining the overall tour order."
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63kmhy-1powes-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word notes do not address missed breakfasts caused by early departure for a flight or excursion."
+      },
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when you check out early for a flight or excursion."
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "418a5006a551f9466fcf9c7fd6ba80cb4190d1e9ce279cdc0e586d3c20c9d8a9",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "f01f3b8270c8aa02e35d6e13e25b359a13a0bd74b3c6989040f3236333065cda"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The itinerary already supplies the day number. Keep only the weekday and destination for the title field."
+      },
+      "text": "Monday: Caracas"
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "25ccf93665ac714fe15bdb3d144a9c357a7203f8bf17ea7c9ecb590db7585aa0",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0011",
+            "textSha256": "c2e36923fcd29bf068ecef6e733b6f41c2c852fd1b939d6c781ec709f738f2ec"
+          }
+        ]
+      },
+      "text": "Arrival in Caracas. Meeting and transfer to the hotel. After a short rest, you will go on a sightseeing tour of Caracas. Return to the hotel and rest."
+    },
+    {
+      "blockId": "tour:itinerary_label:6a6a6905889e4c6b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "f01f3b8270c8aa02e35d6e13e25b359a13a0bd74b3c6989040f3236333065cda"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the city name from the approved day heading for the itinerary place label."
+      },
+      "text": "Caracas"
+    }
+  ]
+}

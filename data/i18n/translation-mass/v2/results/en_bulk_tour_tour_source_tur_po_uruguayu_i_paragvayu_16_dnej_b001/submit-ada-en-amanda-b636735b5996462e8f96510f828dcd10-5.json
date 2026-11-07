@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_source_tur_po_uruguayu_i_paragvayu_16_dnej:b001",
+  "stableId": "tour_source_tur_po_uruguayu_i_paragvayu_16_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "c668accd8d7c2c9a741d1046479109ab244683238bcecbaea3ec6967ef487781",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "3495965cde073c33293ecad4ec8ce5ef0fc98357a571a9f943fa02d2f212a1c0",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "fae129bc75ce1be21579b38a852474e1dc80cf4347fbab724bb75b118dbe4b84"
+          },
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "23e82b05735ed6f982d4f2c28284b85903063ee165abbf3bc39d10e7856c2a23"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Preserves the Word tour title, expands the documented duration into a readable label and keeps the year from the current RU title."
+      },
+      "text": "Uruguay & Paraguay 2026: Hidden Gems of South America | 16 Days"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "3960f6a7628304d4c658dd93410c1f2dacbcef0634bf0f4b23faabaae94672e4",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-b636735b5996462e8f96510f828dcd10",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word 2026 supplies a thematic subtitle in paragraph 0002 and a separate duration in paragraph 0003, but contains no matching lead about the variety of regions covered."
+      },
+      "text": "Over 16 days, this itinerary takes you through several very different parts of South America."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "36c3c5017096198e86857a4d3457f7a848702ba05833d5acd5620507c3fab6e4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0097",
+            "textSha256": "f634f363531411133b2ec52327391d99bdfcce860d20ff6a1315e63f21297fc5"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Keeps the existing RU price note with the same amount and currency symbol found in the Word tariff cell, without changing structured pricing."
+      },
+      "text": "$6336"
+    },
+    {
+      "blockId": "tour:itinerary_label:a6e3b45baab152a6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "34dfc0662af392029356b120f991562535bec774fa00bc51683dbd2cb7246bd4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "e8894945492227a5d4d2ac0870b831c191ecc61d43558c703ae6f58dbc86514f"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the place name from the Word itinerary as a standalone route label."
+      },
+      "text": "Montevideo"
+    },
+    {
+      "blockId": "tour:itinerary_label:45bc3338ccf14a60",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cadfd43860c2d2aba0781dd8d607798a8dd0c24d3f3f3496c477aff72946fbac",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0010",
+            "textSha256": "0dc82bb51d437242aefb92ffce505d16437d41ef590657814bb7c5dbd868d761"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the place name from the Word itinerary as a standalone route label."
+      },
+      "text": "Colonia del Sacramento"
+    },
+    {
+      "blockId": "tour:itinerary_label:cff9b24abbef8695",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ad5c7140d6d8bf20637a72ee514ce39f76ed7c26afb7d895a69d72abe83468fc",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0018",
+            "textSha256": "62b0ce00420a25f350ec0f6bf6b31e71748223e81dc7fdd454b149c43f6cdf05"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the place name from the Word itinerary as a standalone route label."
+      },
+      "text": "Canelones"
+    },
+    {
+      "blockId": "tour:itinerary_label:4e475975349690f9",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e5b0d3322e2e2f945b7f7a0c8deb18803662fff554773d346d5c8a2596be62d7",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0017",
+            "textSha256": "645140e5717f108ccdfae8d542f0e61f79614b9d0f54b3c4d6a5ac487cc5cdf4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the place name from the Word itinerary as a standalone route label."
+      },
+      "text": "Punta del Este"
+    },
+    {
+      "blockId": "tour:itinerary_label:6590c4430c2dec07",
+      "field": "itinerary.label",
+      "sourceTextSha256": "02af373c5969d80f6d3d359a5b66fb1b80d46de331cdb1045713cf1272787390",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1k2MYPb70n77NNF2lXxAQzRffs5BuiXbp",
+        "documentSha256": "c5f5b8cce9971d37195cb8eab75ea4d0bba951e8067c83794871df47706803f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0030",
+            "textSha256": "6f74e586578bb7d5322e39748f9952836f4f57a16132ee942c1da36c077b0418"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the place name from the Word itinerary as a standalone route label."
+      },
+      "text": "Asunción"
+    }
+  ]
+}

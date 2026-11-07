@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_kolumbiya_c_kofe:b001",
+  "stableId": "tour_source_kolumbiya_c_kofe",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d4299a2900c9d0ecd6847ade81b98a91d6d6ffb33c98817e3ec12442ce811edd",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "cdde0d7fee5d8c04e45849bb01ac28fd2f9e3184704991413a3679d029ab2b2d",
+      "text": "Colombia with Coffee",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mnDjZT51maF4e7B1nt4ljcUE6BK2g9FO",
+        "documentSha256": "ac4278d3758476862ac03fbb9dc130eb72cde2648c6cbd68c4e843523b6394d5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0049",
+            "textSha256": "1149162f45ed66127ea2ed9ff6104748cd74935d5b8df3cd49fe619009c16d44"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "f3f417a8af5ed74c4ec67cd2c306b0c53961d63de3027774c4b218ffc5c8cba5",
+      "text": "This tour combines Bogotá with Colombia’s coffee region. In the capital, visit La Candelaria, the Gold Museum, Bolívar Square and Monserrate, then head to the Salt Cathedral of Zipaquirá. The trip continues to Pereira, a coffee farm, Salento and the Cocora Valley.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68ib6p-oxhtu47dkr",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word describes these stops across Days 2–5 but has no equivalent opening paragraph summarising this route."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2bcac35a3eb880b46c2c8336d5da33074d555a0c6ddc6aab735c9312d3ea1576",
+      "text": "$1500",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mnDjZT51maF4e7B1nt4ljcUE6BK2g9FO",
+        "documentSha256": "ac4278d3758476862ac03fbb9dc130eb72cde2648c6cbd68c4e843523b6394d5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Keep the existing RU display amount and currency exactly as given, with the same 1500 amount present in the Word table."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:74d81c18ef32e157",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mnDjZT51maF4e7B1nt4ljcUE6BK2g9FO",
+        "documentSha256": "ac4278d3758476862ac03fbb9dc130eb72cde2648c6cbd68c4e843523b6394d5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0059",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9c2975cde0136f8c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "e1f321c4e2a3350b055cb01775ad7309ca31bcc7f91f76d9289f4ef0e1b5144e",
+      "text": "Zipaquirá",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mnDjZT51maF4e7B1nt4ljcUE6BK2g9FO",
+        "documentSha256": "ac4278d3758476862ac03fbb9dc130eb72cde2648c6cbd68c4e843523b6394d5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0020",
+            "textSha256": "9a1463b5e9a1a493a6a4529bcb38cae57a4fed188e0c107b2cb4c1691c9a87bc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the town name in the Word description as the short route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8db5589f74023dd3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
+      "text": "Pereira",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mnDjZT51maF4e7B1nt4ljcUE6BK2g9FO",
+        "documentSha256": "ac4278d3758476862ac03fbb9dc130eb72cde2648c6cbd68c4e843523b6394d5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:52e3bac962a72651",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2ddfb00db2ab9c93e5c2d1e4c29d29ef3e1fecaf08864ae854b32d00f3997249",
+      "text": "Salento",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mnDjZT51maF4e7B1nt4ljcUE6BK2g9FO",
+        "documentSha256": "ac4278d3758476862ac03fbb9dc130eb72cde2648c6cbd68c4e843523b6394d5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "a68209bedb3a0ecc5049a43856a4c7aafdedb803f0172b00db7f7f6e7ea4481d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the town name in the Word description as the short route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7dfca8dd973c8794",
+      "field": "itinerary.label",
+      "sourceTextSha256": "29aa9a091d71ab6f550bc1ab8b5c8e49bd145a52e99adc8fa8fc36e6dfb5a373",
+      "text": "Cocora Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mnDjZT51maF4e7B1nt4ljcUE6BK2g9FO",
+        "documentSha256": "ac4278d3758476862ac03fbb9dc130eb72cde2648c6cbd68c4e843523b6394d5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "34a979ec24660a53e3ee1eab6a32502396a16cef0504d7e7b9667a9714235faa"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the valley name in the Word itinerary as the short route label."
+      }
+    }
+  ]
+}

@@ -16,8 +16,8 @@
   "counts": {
     "held": 1122,
     "queued": 107,
-    "leased": 8,
-    "review": 2701,
+    "leased": 7,
+    "review": 2702,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 17,
@@ -39,8 +39,8 @@
     "word_2026": {
       "held": 0,
       "queued": 103,
-      "leased": 8,
-      "review": 362,
+      "leased": 7,
+      "review": 363,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -277,8 +277,8 @@
         "word_2026": {
           "held": 0,
           "queued": 4,
-          "leased": 1,
-          "review": 9,
+          "leased": 0,
+          "review": 10,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -297,7 +297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-07T14:11:34.115Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "16": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw6e7106-nqjx0crsykwe-amanda": {
-      "jobId": "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b012",
-      "token": "7ysemg0i11ru2gfun4vnyfq1m4xnwt7lkv3cj1bcutt4grvej9nnmq",
-      "expiresAt": "2026-11-07T14:11:34.115Z",
-      "generation": 2
-    },
     "ada-en-567ddb58f94a923d-amanda": {
       "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b001",
       "token": "567ddb58f94a923dfb2f051145a2b9272602784c",
@@ -9785,7 +9779,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b012"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_gvatemala_gonduras_i_beliz:b012"
+      ]
     },
     "ada-en-amanda-mw6e7d3k-008npm16myr1i": {
       "token": "lease-i2or6gjy0tipfumuvxtr9s",
@@ -9837,5 +9833,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T12:46:41.551Z"
+  "updatedAt": "2026-11-07T12:46:50.016Z"
 }

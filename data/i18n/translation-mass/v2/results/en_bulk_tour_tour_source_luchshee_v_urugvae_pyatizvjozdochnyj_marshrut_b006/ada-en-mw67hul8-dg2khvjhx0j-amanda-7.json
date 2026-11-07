@@ -1,0 +1,144 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_urugvae_pyatizvjozdochnyj_marshrut:b006",
+  "stableId": "tour_source_luchshee_v_urugvae_pyatizvjozdochnyj_marshrut",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "dcae9ad555d74816ccabc88e643ed426c2f2c107aeee34c17a571be10bb5eff0",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9eb5747827210f598a23357e9d495f9de80385c8f62cc88b58a9c7ee8366a3a1",
+      "text": "Garzón Winery – Reserva Tour & Gourmet Lunch\n After breakfast, visit Bodega Garzón, one of Uruguay’s most prestigious wineries.\n Enjoy the Reserva Tour, including a guided visit through the facilities and wine tastings along the way.\n Continue with a four-course seasonal lunch, featuring local fresh ingredients and paired wines.\n Return to the hotel. Overnight.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1eoNz2uJYrujjfdoWduZq-cNqIrAhrxRB",
+        "documentSha256": "e0e7a550a737f0b8ec5cff6707b2c8518f564dde34cac49d7867d51c9d4c63fe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "c83b869553170c6593db8cea2f65ddf088dfb01295b6a0c6ef39d582b1043833"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9ae27605c2a07d68",
+      "field": "itinerary.label",
+      "sourceTextSha256": "548812dbe2a09a9f8898efa4a7e5835999f2cc621b9856059f76f62c0f8219e5",
+      "text": "Punta del Este",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1eoNz2uJYrujjfdoWduZq-cNqIrAhrxRB",
+        "documentSha256": "e0e7a550a737f0b8ec5cff6707b2c8518f564dde34cac49d7867d51c9d4c63fe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "501c10ddcb386a3a7f9d80d8ae964272fdba72215eee07bc5783bc5fdf528ccf"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 5 marker to use the verified city name as a destination label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3ad5f2c85bcb875d",
+      "field": "media.alt",
+      "sourceTextSha256": "2eb2ec9596232c5a52d2a8dabbce295c4bb4818aa0d831a41450446dc0fb478b",
+      "text": "Sculpted fingers protruding from the sand in Punta del Este, Uruguay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6f9b91d31c697a78",
+      "field": "media.hover",
+      "sourceTextSha256": "e76236eb73ca88832160a939e1d676cd242c51ee33ac86556ae193b1e9bb01bd",
+      "text": "Punta del Este: a person on the giant hand sculpture",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hul8-dg2khvjhx0j-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word does not provide the matching standalone image caption or alt text."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "83e98ea99de6d28ac1e0df4ec592d7ffcc4aeaa372f7c8c958bbcc4d64d1da76",
+      "text": "Punta del Este → Montevideo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1eoNz2uJYrujjfdoWduZq-cNqIrAhrxRB",
+        "documentSha256": "e0e7a550a737f0b8ec5cff6707b2c8518f564dde34cac49d7867d51c9d4c63fe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "6d714c283233023b46eb9f93b10fbc370f0421b7b0f0c414bd112d8ee552dff1"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 6 marker and use the verified route for the itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "9395542735e8032983d5ab23654cf40c768d9df2df217e7ef5065d234cc72cb0",
+      "text": "Breakfast at the hotel.\n At the scheduled time, private transfer to the Montevideo Airport or Port.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1eoNz2uJYrujjfdoWduZq-cNqIrAhrxRB",
+        "documentSha256": "e0e7a550a737f0b8ec5cff6707b2c8518f564dde34cac49d7867d51c9d4c63fe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "73bec474f327b63a5f140f17f288d0f0a38a4ab732d46e09014e042655e934ac"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:cbad1aeb5e734834",
+      "field": "itinerary.label",
+      "sourceTextSha256": "34dfc0662af392029356b120f991562535bec774fa00bc51683dbd2cb7246bd4",
+      "text": "Montevideo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1eoNz2uJYrujjfdoWduZq-cNqIrAhrxRB",
+        "documentSha256": "e0e7a550a737f0b8ec5cff6707b2c8518f564dde34cac49d7867d51c9d4c63fe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "6d714c283233023b46eb9f93b10fbc370f0421b7b0f0c414bd112d8ee552dff1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the arrival city from the verified Day 6 heading as the destination label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:efc1a3c60599b95f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "548812dbe2a09a9f8898efa4a7e5835999f2cc621b9856059f76f62c0f8219e5",
+      "text": "Punta del Este",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1eoNz2uJYrujjfdoWduZq-cNqIrAhrxRB",
+        "documentSha256": "e0e7a550a737f0b8ec5cff6707b2c8518f564dde34cac49d7867d51c9d4c63fe",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "501c10ddcb386a3a7f9d80d8ae964272fdba72215eee07bc5783bc5fdf528ccf"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 5 marker to use the verified city name as a destination label."
+      }
+    }
+  ]
+}

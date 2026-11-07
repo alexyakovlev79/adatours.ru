@@ -1,0 +1,149 @@
+{
+  "jobId": "en:bulk:tour:tour_source_pantanal_za_5_dnej:b001",
+  "stableId": "tour_source_pantanal_za_5_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "30fcc58ca94cff2d18d2cc21715749713d3ef5193e18a8f3b0c3bf294329ea94",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "d19b4f5aaee78bf2ba979411aaa2c10a23630c9cf902bc1a650ae370a1fea522",
+      "text": "Pantanal",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "eca839902f399e2e9e2adbc13160863157f6728c9da453f7408f248cd152a0f7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "395fb5d961aea8ff701299aadec628dea924300775cacf637d227d60d2bdcbf8",
+      "text": "The Pantanal is one of Brazil’s best-known natural regions and the world’s largest tropical wetland. Its vast expanse of open grasslands, marshes, rivers and lakes is home to capybaras, caimans and a wide variety of birds. If you’re lucky, you may also spot a jaguar or a giant otter.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word describes the wetlands and wildlife in separate daily entries but has no equivalent introductory summary stating the world’s largest tropical wetland."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "2520256b89216d49345ebfac69e0a15895f01a92ca77d53102de8978a6869970",
+      "text": "$4145",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "e80d8b64e313dc542ebebe56659de55b15ef9331abed49c34651e74a6037dae0"
+          },
+          {
+            "ref": "word/document.xml#p0014",
+            "textSha256": "958cdd0998b8031878a3f47f2dcb3dbb00b6557465e656e79737474d9d4d987a"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "Retain the exact current price note format. The Word double-occupancy row confirms the same dollar amount without a tariff change."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:09fbd991a6b446d6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "6d2d610a7617abe29802c0ec0af040bd89f4b718c2484d2cd3223e2d15ac1b8a",
+      "text": "Pantanal, 4 nights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "826beb9decceaf70c201c17bffe0f809f87bb0b73bcd948d31d086c569b6c6d6"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Expand the Word route shorthand (4n) to the full number of nights in the standalone route label."
+      }
+    },
+    {
+      "blockId": "tour:included:881fec3f134da452",
+      "field": "included",
+      "sourceTextSha256": "63409d490fbf904acf52a98850343a5326fec08bfc5dea27f8503ffbbe30acd9",
+      "text": "Accommodation at lodge according to the program",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0061",
+            "textSha256": "39e636ee51e5339358859bf19e72377600557a7ccd7a38ed75724d157e4c75e5"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:90056ad6cdeeb689",
+      "field": "included",
+      "sourceTextSha256": "40cd838f6f756ec4c15a8632ea2615411bd1c84b66986f2ef342b5236944c555",
+      "text": "Excursions according to the program with english guide",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "b5173396d576ad63332d76b7b669d23adaaa410a44f3d735923955943c860234"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:included:eed4c5beaf26e988",
+      "field": "included",
+      "sourceTextSha256": "0e0f6f8ae6c3050cf6d0bb372a2cf47f46dc68354ea9df77d1c2ec07753b15e2",
+      "text": "Transfers",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "c417cb88e3fdd02c335b9b4a6b8a34268d5636e897f5436d5394ed79378a2fd1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:notIncluded:932e49e702c2e19f",
+      "field": "notIncluded",
+      "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+      "text": "Optional excursions",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "737569968bded0d9fae93ec9050834a952e198e2afbbc2e1c46d54276d4167da"
+          }
+        ]
+      }
+    }
+  ]
+}

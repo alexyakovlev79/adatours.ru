@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_source_krasota_venesuely:b006",
+  "stableId": "tour_source_krasota_venesuely",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "7858d3620f99296422234925dd7f4e4b315cdac61ba5e7ebf49e1db0510a0336",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:3a2f20ed56c472de",
+      "field": "media.hover",
+      "sourceTextSha256": "862ed947e7eec2441e1e7d8f3331b6a79e3fd1aa8ccb72cd129aeaa60485256d",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hy68-7ndzh670bzw",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word lists beaches and activities around Choroní but has no caption for the Playa Grande photograph."
+      },
+      "text": "Choroní, Venezuela: Palm trees by the sandy Playa Grande beach"
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "557adeff6144b84aa49744e51113d700f8513ff3346772169a26b3f03cb81acd",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "ffb13082e525ecda03e9512f1b4c3d861abd0f694620d5f1220bd62e803d1962"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The itinerary title field omits the day number, which is rendered separately."
+      },
+      "text": "Choroní – Caracas"
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "7eb297e1d87671c97c3def3737a1c6294552822599c5a9c3ae39e968a8ba4b4e",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "992de3e73d6709e7c6da4af5a6b5a664388429e3cc9da1bb2d6a088296a1f44c"
+          },
+          {
+            "ref": "word/document.xml#p0030",
+            "textSha256": "8a7010ef3744f235f7a15441230f79a1e996ee508a2b9990e63661f042b5ff7e"
+          }
+        ]
+      },
+      "text": "Breakfast. In the afternoon, transfer to Caracas. Check-in at a hotel near the airport and rest.\n\nMeals: breakfast"
+    },
+    {
+      "blockId": "tour:itinerary_label:555c50e7bc33635f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "ffb13082e525ecda03e9512f1b4c3d861abd0f694620d5f1220bd62e803d1962"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The itinerary place label uses the destination from the Day 3 heading."
+      },
+      "text": "Caracas"
+    },
+    {
+      "blockId": "tour:itinerary_label:ff06247eb154edf2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c0c4da0b9db6224dc9ff4b408e0e32f742c384290085164cf42aff44a3c8e7d4",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0028",
+            "textSha256": "ffb13082e525ecda03e9512f1b4c3d861abd0f694620d5f1220bd62e803d1962"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The itinerary place label uses the departure town from the Day 3 heading."
+      },
+      "text": "Choroní"
+    },
+    {
+      "blockId": "tour:media_alt:f6e18ec4d9578eb9",
+      "field": "media.alt",
+      "sourceTextSha256": "61ac91a70770e61d76b35d16b7223a61ab8f425b8d68ed6adce969d8a4ffe7df",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hy68-7ndzh670bzw",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word contains no alternative text for this city photograph."
+      },
+      "text": "Closely packed red-brick homes on the hillsides of Caracas, Venezuela"
+    },
+    {
+      "blockId": "tour:media_hover:5b2920a69c8bb9fc",
+      "field": "media.hover",
+      "sourceTextSha256": "a1aadcc31603616ea7fac57a24b27b040cef8fb8de73fe35381aa03056bced67",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68hy68-7ndzh670bzw",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The approved Word contains no hover caption for this city photograph."
+      },
+      "text": "Caracas: Homes and a narrow street on a hillside"
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "bf07eabf6bc38b39dee2018abf6cd428b8e77475ab95195195ad441c1e6b6dfb",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1IgOoSRM9m4NSRbNEWVJq97Dku6-GhUKW",
+        "documentSha256": "9ccbae2e6ea6bf357b5954eed1ff058ccc99be97a012ee4bfb335e15d5122bcc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "f9f2aef709932f5ebb749522bb4d09f54a510c05b934f9acf932003cd976394b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The itinerary title field omits the day number, which is rendered separately."
+      },
+      "text": "Canaima – Anatolia Island and Sapo & Acha Waterfalls"
+    }
+  ]
+}

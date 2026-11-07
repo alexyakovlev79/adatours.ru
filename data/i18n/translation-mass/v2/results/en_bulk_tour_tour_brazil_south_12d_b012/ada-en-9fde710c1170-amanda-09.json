@@ -1,0 +1,118 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_south_12d:b012",
+  "stableId": "tour_brazil_south_12d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1d2c65843fa125ebdb8711fd2f6e46ff60b4cec2ba527cb20fc382b6cc48456a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0ce651495cd84449c7ca223f71e4fb7e38bf6d03653de3e66255319996d81f05",
+      "text": "Breakfast at the hotel. Transfer to Florianopolis Airport at the appointed time.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "e0bed5b4580e2cdc87c56f8635c5b9b7709680d33e162562512e747e08a05bb2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:096d010afc380bf1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "31078d7ff208026ecc9f265bc7eefd315224141c28415f9efaa371365100f575",
+      "text": "Florianópolis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1mwBCLjdQ_ReHtQR9UqJrK2nYkNWdj7BD",
+        "documentSha256": "4174591599436636adecbb62e791d3d34027c88d96b97f5c39db255192a4b8a8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "b8b075c40662e45b3000267711a1b2effea469b1d27f87a29402fee97290afa0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city in the Word departure heading with the established Portuguese spelling and accent."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:4909f31201a443b6",
+      "field": "media.alt",
+      "sourceTextSha256": "7c07907b2f84b6aa113f41e549841eec9b38dea062af6398da46a5d4a328d1a5",
+      "text": "Low-rise houses, boats and a wooden jetty along a calm shore in Florianópolis, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word Florianópolis itinerary contains no caption for this view of boats, houses and the jetty."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:2df7033b936a4b68",
+      "field": "media.hover",
+      "sourceTextSha256": "d4240fd630e78f938463fcd57afba4a2613d4243561addefc51ae8ca448ea237",
+      "text": "Florianópolis: waterfront houses and a boat jetty",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word city itinerary provides no hover caption for the harbour photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "7158e5b8c002b9c1e6078d7e8a5d295d9dbf1723f04464b84e8da5fd7512cf08",
+      "text": "Beach beside green hills in Florianópolis, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word itinerary mentions several beaches but does not caption this photograph of a beach and hills."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "3d7bb08ebf982922e520ad1cc8dc768ca4d4e2ac878f633472bead9e32ed15f5",
+      "text": "Florianópolis, Brazil: sandy beach beside green hills",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word free-day entry mentions the beach but contains no matching image caption."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2d3207e6164ecdeb",
+      "field": "media.alt",
+      "sourceTextSha256": "fb3404c32ecbe41a6ba986357c60920dc4a1096b262925e13d613199cac6db59",
+      "text": "Street in Gramado, Brazil, with steep-roofed houses and colourful flower beds",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word description mentions Gramado’s architecture without a caption for this street photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:a2c7f1071b1c2149",
+      "field": "media.hover",
+      "sourceTextSha256": "4f8835621c0a27ccac6284248ec4d4a207eb3bbf1c3014572469838961ab0038",
+      "text": "Gramado: flower beds and houses along a city street",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-9fde710c1170-amanda",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word Gramado entry has no caption describing these street-side flower beds and houses."
+      }
+    }
+  ]
+}

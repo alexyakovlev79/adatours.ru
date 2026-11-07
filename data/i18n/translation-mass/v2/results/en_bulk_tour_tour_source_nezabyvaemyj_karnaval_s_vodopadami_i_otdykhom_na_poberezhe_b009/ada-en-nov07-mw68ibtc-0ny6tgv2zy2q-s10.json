@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe:b009",
+  "stableId": "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0a6c406abc64dd48ae232f97a53755583ede0e80c009f05b37205a9abfd2cfc3",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:0c9517c267ab928b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
+      "text": "Angra dos Reis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0071",
+            "textSha256": "d50dacb8cbb1ff5591dee1c62a5f5ac48aeae47e3cc3ec03556899d4fd0c78b2"
+          },
+          {
+            "ref": "word/document.xml#p0072",
+            "textSha256": "5a2a2efbab702798da01ac71e4f156fa6b3122d309b6737e26b57c1869464894"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the final coastal destination from the approved day heading and transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ee3383f7798e5fa2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word names Foz do Iguaçu and describes the Argentine side, but does not give Puerto Iguazú as a place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:5b141d1dd60296d6",
+      "field": "media.alt",
+      "sourceTextSha256": "8631a95a0d17f925709cf94619dd4d960f61f52ebad30bf663a2b91967a8143e",
+      "text": "Streams from Iguaçu Falls flow around a small ledge covered in greenery",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The approved Word gives no alt text for the close-up photograph of the falls and ledge."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:58440be49f42170a",
+      "field": "media.hover",
+      "sourceTextSha256": "ea5d6408f72dc9a4d3c93efa702f11568c75187b3d51b859e3eaaed0f46bcfe1",
+      "text": "Iguaçu Falls up close: rushing water around a green rock ledge",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The approved Word gives no hover caption for the close-up photograph of the falls and ledge."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6fb163790110665a2acddba36b804ea41bd3412374cebd4356b35a09c620b009",
+      "text": "Leisure time in Angra dos Reis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0074",
+            "textSha256": "1ad5c6efa98f9266eb6343ead8d38d2f1f03dfbc4eca5ccbfa26139c53e44535"
+          },
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "be3647b8c31cd88e13e1c15cfed49a38e96761790f6d9a86ebd4aa873c1bde9c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The approved day heading identifies Angra dos Reis and the accompanying text describes these days as leisure time."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "11c261a5cc2d8d9084bf4a22dbbbd67b1533d6c0977f524864774590036beb8f",
+      "text": "Relax on the tropical coast. Leisure time.\n\n*In Angra dos Reis, hotels are of  all-inclusive system.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "be3647b8c31cd88e13e1c15cfed49a38e96761790f6d9a86ebd4aa873c1bde9c"
+          },
+          {
+            "ref": "word/document.xml#p0076",
+            "textSha256": "e5665420361814a705e550a9846defc2af3bd1aa9d5f32ae7db541372a3d4e87"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b1d0777bf3238368",
+      "field": "itinerary.label",
+      "sourceTextSha256": "cffaca484e4e404f577fd630926ba88f543bf06f020ac90b7747aeda243cdebc",
+      "text": "Angra dos Reis",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "19eN6sJ-EnpIGAbsAvS7i87ELAX2zlEJT",
+        "documentSha256": "bc1548f5e301df7d0b2bb9f09c3c9d31974bc731d0c665bcf36cf75877f5eed3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0074",
+            "textSha256": "1ad5c6efa98f9266eb6343ead8d38d2f1f03dfbc4eca5ccbfa26139c53e44535"
+          },
+          {
+            "ref": "word/document.xml#p0076",
+            "textSha256": "e5665420361814a705e550a9846defc2af3bd1aa9d5f32ae7db541372a3d4e87"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the place from the approved heading and hotel passage without the day number."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:2ff898057a0faee3",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguaçu Falls and a rainbow over the river, surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word refers to rainbows at Iguaçu in the itinerary but gives no alt text for this particular photograph."
+      }
+    }
+  ]
+}

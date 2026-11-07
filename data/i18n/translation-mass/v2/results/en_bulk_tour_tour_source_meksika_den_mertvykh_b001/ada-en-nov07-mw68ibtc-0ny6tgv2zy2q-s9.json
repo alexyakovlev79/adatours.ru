@@ -1,0 +1,195 @@
+{
+  "jobId": "en:bulk:tour:tour_source_meksika_den_mertvykh:b001",
+  "stableId": "tour_source_meksika_den_mertvykh",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "f04b7e69306c07acea780852cccd7b519c297c350867676dc8b9c286635ce94c",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "9800677b2124d18abc3fa78104c11ba7d351139e0bea879c3f826ed3a2517f80",
+      "text": "Day of the Dead in Mexico",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "42e8e30c58419dd4d246d0f567311ed18070d832de225413d6d8c4563c00a5de"
+          },
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "38ec2233418ed7f8481bc11d56c7a4def26cc1e7f6cdba90f3a15452bc9d237a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the approved country and trip names into the single title field, omitting the separate edition year."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "227aa9348bcbe4d2d95770c7fdf12050f3bb802847b7dca601edc8d6a5bf8405",
+      "text": "This nine-day trip runs once a year around Día de los Muertos. You'll visit Mexico City, Teotihuacán, Puebla, Cholula, Atlixco, Mixquic and Xochimilco, along with museums dedicated to Frida Kahlo and Diego Rivera. The trip centres on 31 October and 1 and 2 November, when flowers, candles and altars fill streets, homes and cemeteries as families remember those who have died.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word contains the day-by-day visits and dates, but has no equivalent opening paragraph summarising the route and observances."
+      }
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "00db6f4c8187953443580e3c14204204101da40feceb2cfbd06e9bff029f414f",
+      "text": "$2,015 per person in a group of six, based on double occupancy",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0074",
+            "textSha256": "9c78a4866d54f9caf6c6f7170306394cd42af2b2ca8a0b4e7d617420805fcccb"
+          },
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "be8ccf3950f8ed9e0468ebd3ce5e64cd242ad5abf0cc06e02aadfc242c8d2a7c"
+          },
+          {
+            "ref": "word/document.xml#p0077",
+            "textSha256": "c35e5ff3452f0003653bd7dfb72d5c2c7bc9bf19607d552798a4f54677f35a28"
+          },
+          {
+            "ref": "word/document.xml#p0080",
+            "textSha256": "79167261d3317e3ddb196ec3873bb928e61778ba1e4510d6775f85f2b2ef3748"
+          },
+          {
+            "ref": "word/document.xml#p0082",
+            "textSha256": "e1c1b59d3bd6337ea82dedf3735d4ffcd969a550e3a662e7fc6b2e5b40479707"
+          }
+        ],
+        "transformation": "compose_tariff_summary",
+        "rationale": "The Word tariff table confirms USD per person for six travellers in double occupancy; its 2,016 figure differs from the current shared RU amount of 2,015, which is preserved unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dea9c008fe6d0176",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3eb12a5b2cd25ddcf32f60badfbfcd936b3f187a4ccde398d14e60654b836149",
+      "text": "Mexico City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0010",
+            "textSha256": "df70c7f77067b9b2b495a635bcbf3032d4e4fae6851c8867122d735f8c59dc7c"
+          },
+          {
+            "ref": "word/document.xml#p0011",
+            "textSha256": "c704f70ad45e468d2002041e4821ec070c59da9fbcd71140da86b5ae288ed3c0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The approved arrival heading and airport paragraph establish the first location."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ce6994969b4972d6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "262041f62365429a732b1a92d84fefe8edb6aebf6066c59eda06b768c2655981",
+      "text": "Teotihuacán",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "5a3f0378fd4e8b29be8d11fbdbe93d14d210ed661d5b7372a579f97899ad6511"
+          },
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "115739c1060d7e33076aaf8f6f5964ce45571fd33b8394093d789d5437a179cb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The itinerary and day heading name this site, using the standard accented spelling for the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bf2af5fff40a3b2a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0ce36b2a9f6ea7f755c4ee5377cc96ea59a5f5ddeab669a7dbb6ad15a54d8c74",
+      "text": "Puebla",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "5a3f0378fd4e8b29be8d11fbdbe93d14d210ed661d5b7372a579f97899ad6511"
+          },
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "1e5457ff2ccd3f337aa828054cc493789fb2108aff426b819e2247831381c24e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the final city in the approved route heading, confirmed by its itinerary paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:4de2bd94f7c72f28",
+      "field": "itinerary.label",
+      "sourceTextSha256": "de941191551bedb0616d1684d284dd3caae477b84b305b5eef6133038cc46fba",
+      "text": "Atlixco",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0043",
+            "textSha256": "36ac5122f84b3bcfe49f269c2ac0485f005f8eac9dfe7459418e4bc25526552c"
+          },
+          {
+            "ref": "word/document.xml#p0045",
+            "textSha256": "aebd87d2658e9d9037a0e6a3bf40d247a2d8f3783977bc07f1148ec4de92f278"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the location from the approved route heading and visit paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:221cdff5d2924ca1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c2326506fe01bda9a5c1acef391ddcc3b705e416ad765781e33a58eacfdf58a1",
+      "text": "Mixquic",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1W39Ux1IuGkBZdZjC32cTXr1MLIc1XR3s",
+        "documentSha256": "45ea92d6f0e23a68bf9f95ec8bb8f98505ae1e056470ebbfab6c2189a38f53b8",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0043",
+            "textSha256": "36ac5122f84b3bcfe49f269c2ac0485f005f8eac9dfe7459418e4bc25526552c"
+          },
+          {
+            "ref": "word/document.xml#p0046",
+            "textSha256": "d1baba52219f315fdb338cf9a4e69d566bd3b293d4914c81682573bddfc359cb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the location from the approved route heading and visit paragraph."
+      }
+    }
+  ]
+}

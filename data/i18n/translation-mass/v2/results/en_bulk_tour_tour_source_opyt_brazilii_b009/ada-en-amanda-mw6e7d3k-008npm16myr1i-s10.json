@@ -1,0 +1,145 @@
+{
+  "jobId": "en:bulk:tour:tour_source_opyt_brazilii:b009",
+  "stableId": "tour_source_opyt_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4e35c50b6b961e7431efd597031a4f303746a8b81af50152018915e72adcd8eb",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:c00852a0d5b3fe65",
+      "field": "media.hover",
+      "sourceTextSha256": "cacd0d2d60296326c6e7fc5f2825f571b87e85945547e9a93653a750ca7bcf68",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word has no hover caption describing the façades and reflections pictured on this Paraty street."
+      },
+      "text": "Paraty: bright façades and their reflections on a quiet street"
+    },
+    {
+      "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+      "field": "itinerary.title",
+      "sourceTextSha256": "12a6c85dcf70ed7b23d3d237148d44a7cf9adc1daf97afd6b23dc7a162a96c02",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0084",
+            "textSha256": "3099f1c6dc019b729f03210825268ecaba03011b32acd1d6788d071b062026dc"
+          },
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "32175b0f37db0c1831915a7cd3dda1fce2d01ffd29b8ea07a5a53af4b0608266"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the Word day heading with Trindade, the destination described in the first itinerary paragraph."
+      },
+      "text": "Paraty and Trindade"
+    },
+    {
+      "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2bfaaafc4290639ed34d312e66e2fd5aaf7d3f81c2e7e935be9d41890a0f4c25",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0085",
+            "textSha256": "32175b0f37db0c1831915a7cd3dda1fce2d01ffd29b8ea07a5a53af4b0608266"
+          },
+          {
+            "ref": "word/document.xml#p0086",
+            "textSha256": "1f1e83109eb4dd91c656280abb382c9504607942056828116b7a0770c79896fe"
+          }
+        ]
+      },
+      "text": "Trindade is a paradisiacal cove located 27 km from Paraty, with 04 ocean beaches and 01 natural pool in the middle of the sea. Transportation is carried out in vans or minibuses, with guides specialized in the history, ecology and caiçara culture of the region. Arrival at Vila de Trindade after 30 minutes of driving. First stop at Praia do Cepilho – ideal place for photos; Praia dos Ranchos – where it has a bar and restaurant structure; Praia do Meio – great for swimming and at the end of it begins the trail to Praia do Caixa D´aço, which lasts 25 minutes.\n\nThe last stop on the tour is the Caixa D´aço Natural Pool, a set of rocks that form a pool in the middle of the sea, a great place for bathing and snorkeling. To get there, it's another 30 minutes along the trail through the Atlantic Forest. You can go to and from the Caixad'aço Natural Pool using an aluminum fisherman's boat that can be hired directly at Praia do Meio - optional/not included. On the way back from visiting the Natural Pool, we stop for lunch at Praia dos Ranchos (optional) at the Vagalume restaurant."
+    },
+    {
+      "blockId": "tour:itinerary_label:f38ef95d59ae2fce",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3b696c0580339afaf47c3619acb2af48388a438e1e30fda7e50da2cfbc5c80e8",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0084",
+            "textSha256": "3099f1c6dc019b729f03210825268ecaba03011b32acd1d6788d071b062026dc"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the city name from the Word day heading for the itinerary place label."
+      },
+      "text": "Paraty"
+    },
+    {
+      "blockId": "tour:media_alt:fcabeacf45f5c3d4",
+      "field": "media.alt",
+      "sourceTextSha256": "2b80cf3cbcf2e7583ff7602ca9005eff0bf9742e80a788356dde933102437220",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word describes the historic town generally but contains no alt text for the specific photographed colonial house."
+      },
+      "text": "White colonial house with a long wrought-iron balcony and colourful trim in Paraty, Brazil"
+    },
+    {
+      "blockId": "tour:media_hover:8a46ffc31cdb618e",
+      "field": "media.hover",
+      "sourceTextSha256": "12b89a03581795013ac6a1fd89da79e4dd3c884fc34d5ab1da0192326cca3677",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-mw6e7d3k-008npm16myr1i",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word contains no hover caption describing the photographed corner façade, doors and balcony."
+      },
+      "text": "Paraty: historic corner façade with arched doors and a balcony"
+    },
+    {
+      "blockId": "tour:itinerary_title:f76823f601bc2496",
+      "field": "itinerary.title",
+      "sourceTextSha256": "12ff7ca6ebd0d72374a441d4aa888dbb7afececbcc3df888213fdb2cc0f7ccee",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "9d04868baa1111b46e02367e5c82afc1d2e64ceeef27443478b40028589e2128"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word day-number prefix from the corresponding departure route heading."
+      },
+      "text": "Paraty – Rio de Janeiro"
+    },
+    {
+      "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "0494912602f593a3c9dbe70419bf38b28c8972a82b8febcc357e4da70a83f64c",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "b66f79351e537a0ae3c220e601b702587d4714cfaee3141f2fee3f5e8f01c246"
+          }
+        ]
+      },
+      "text": "Breakfast at the hotel. Transfer to the airport of Rio de Janeiro. "
+    }
+  ]
+}

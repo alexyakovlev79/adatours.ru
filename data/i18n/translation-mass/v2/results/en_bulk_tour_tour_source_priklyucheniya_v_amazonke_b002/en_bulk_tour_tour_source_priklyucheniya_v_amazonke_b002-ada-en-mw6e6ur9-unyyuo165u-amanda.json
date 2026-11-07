@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_priklyucheniya_v_amazonke:b002",
+  "stableId": "tour_source_priklyucheniya_v_amazonke",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1720b403c8a13a89b62721366f01bb9a5ed9bdf632b77402294e62c190d6bba4",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:d8584a8facf52944",
+      "field": "notIncluded",
+      "sourceTextSha256": "c6a2d0e7db4cdc80d4306010f4528d15fbf8c9f60dba6cc1dbd9c50b9650c799",
+      "text": "Hotel accommodation.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word itinerary at p0019 and p0040 uses the hotel as a departure or return point, but has no separate exclusion for hotel accommodation."
+      }
+    },
+    {
+      "blockId": "tour:note:d11c7693ebb71fbd",
+      "field": "note",
+      "sourceTextSha256": "55627dba8d260c32caee0c326360a5cb93b45fb99d36aca99b097085482532a8",
+      "text": "If necessary, Ada Tours may substitute another hotel in the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word notes at p0056–p0061 cover equipment and personal belongings. They give no hotel substitution condition."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change while the tour programme is maintained.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word notes at p0056–p0061 do not contain the current condition allowing the excursions to be reordered while keeping the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours is not responsible for hotel breakfasts missed when you check out early for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word notes at p0056–p0061 provide no condition for breakfasts missed because of early hotel checkout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2f42925747924043d4bb8e4d4885f60216a51c7fb3df233847f38653f63a6fa9",
+      "text": "Base Camp, Canoeing and Traditional Fishing",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0019",
+            "textSha256": "06b50be4d814359a02d77f151726d5dbe4e8fea6efa7459a91c0b0dec66df0b7"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Uses the base camp, canoeing and local fishing methods listed in the approved Day 1 programme to form the standalone label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6345feedf8c81d93af6a4f5c3c3695b81ae9bc83ec64275d9aae6b5401cd637c",
+      "text": "Departure from the hotel to the base camp; introduction to local life. You will acquire the skills to navigate a canoe and fish using local methods such as nets, arrows, spears, and cast nets. The day ends with an overnight stay in hammocks at the base camp.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0019",
+            "textSha256": "06b50be4d814359a02d77f151726d5dbe4e8fea6efa7459a91c0b0dec66df0b7"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the inline Day 1 numbering because this text appears in a separately titled itinerary node."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:407949ede7418f4c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word title and itinerary identify the Amazon, but give no standalone Manaus and the Amazon place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fbba5a2022d5e87a",
+      "field": "media.alt",
+      "sourceTextSha256": "0493746c9cd7c8ab1835b87f359b230cca5187dfc6ecb135aac78f4bcb66deb8",
+      "text": "A boat travels along a river through the rainforest in the Brazilian Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e6ur9-unyyuo165u-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word itinerary includes river transport at p0047 but gives no alt text describing this photograph."
+      }
+    }
+  ]
+}

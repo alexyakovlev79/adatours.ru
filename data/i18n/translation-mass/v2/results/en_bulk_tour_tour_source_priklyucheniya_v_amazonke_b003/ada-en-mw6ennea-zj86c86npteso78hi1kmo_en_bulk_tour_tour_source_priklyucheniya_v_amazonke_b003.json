@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_source_priklyucheniya_v_amazonke:b003",
+  "stableId": "tour_source_priklyucheniya_v_amazonke",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e5d7f32cc071a00a6a9f12fd80a62c5aad3e135d3073d49fc78fa6ddaa94e2e7",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:181f3709fd494ec0",
+      "field": "media.hover",
+      "sourceTextSha256": "9c7149bba632dc33cbcd225f2ca0502941a50f085a16ffd828093e65e1d2098d",
+      "text": "Brazilian Amazon: a boat’s wake between forested banks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Day 1 describes river activities but the Word gives no caption for the image showing a wake between forested banks."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6c46ee46ce8d7ed1a11677f2bc58bc089cb4bf80bd1be91a384d058d3ffcd83e",
+      "text": "Jungle Survival Basics",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0024",
+            "textSha256": "116de8d8643e1780eb337cc88c5b97811f7e9f7e7beb3ed39bdf068f07fbb14b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word paragraph has no separate descriptive title. This label captures its practical instruction in finding water, making fire and building shelter."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "d91bd3e59493fa24878ea2c5e78e756ae7a7d5ebe26d2e83b5da557c9776bac0",
+      "text": "Explore the jungle with step-by-step instructions and demonstrations on how to find water, start a fire, and obtain salt. Your instructor will teach you to recognize types of vegetables, fruits, set traps, build shelters, and administer first aid in the jungle. You will also be introduced to a new activity: tree climbing with bound legs. Afterward, you'll have lunch consisting of chicken, fish, cassava, lemon, and fruits. After lunch, you'll put your newly acquired skills into action. In the evening, dinner will be served in the jungle. Nighttime will feature lectures on Amazon legends, jungle knowledge, and local traditions. You'll spend the night in hammocks with mosquito nets tied between trees.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0024",
+            "textSha256": "116de8d8643e1780eb337cc88c5b97811f7e9f7e7beb3ed39bdf068f07fbb14b"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Day 2 prefix only because the day number is already supplied by the structured itinerary; the Word paragraph wording is retained."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:264db2f5af3105c7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+      "text": "Manaus and the Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word identifies the Amazon jungle but has no standalone location label pairing Manaus with the Amazon as this RU field does."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:0864a4ac3c063570",
+      "field": "media.alt",
+      "sourceTextSha256": "79b2c2ca1e2a9c06459cf8bef8c617f23292c6622f8df331f4534dbf8e0f66f4",
+      "text": "A river bend in the tropical forest of the Brazilian Amazon",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word describes the Amazon forest but contains no alt text for the river bend in this image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7773da354803d19b",
+      "field": "media.hover",
+      "sourceTextSha256": "a5bf1ca11e8b11d69358989fc098a741ed9ba0ba574cb398563428c4ba19b1b4",
+      "text": "Brazilian Amazon: a river winding through dense tropical forest",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6ennea-zj86c86npteso78hi1kmo",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word has no caption for the river winding through dense forest in this image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d36c7b873f1922c295ecdafd62e2ff74a3299326a902ed854668c7d0716c9d3d",
+      "text": "Practising Your Skills in the Jungle",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "f38ac104da6fa10da673eca846119c65514c6205dad9fc18e66c246289ac4321"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Day 3 paragraph describes putting the learned jungle skills to use. This concise heading reflects that activity without adding an event."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "774187007f6ce6773f990917214e057c2981b6681fb78cf6a50b1faf34a85a0a",
+      "text": "Explore the jungle, find food, have lunch and dinner there, receive hands-on guidance, and put your skills to use. At night, you'll sleep in hammocks with mosquito nets strung between trees again.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC",
+        "documentSha256": "5da1edce302ba603a4decc2f3663ae33d1ab0fb058d704483807757096764696",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "f38ac104da6fa10da673eca846119c65514c6205dad9fc18e66c246289ac4321"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Day 3 prefix only because the day number is already supplied by the structured itinerary; the Word paragraph wording is retained."
+      }
+    }
+  ]
+}

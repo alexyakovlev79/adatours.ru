@@ -1,0 +1,147 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b013",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "a9c9736eecd6085ea412e54a66ca4f202e1c05531aa9def7d78ff71d1d6083cc",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "23af25b147f6f4835a5d5e9c8975ad620f87dfae3ed38bc6f1bdc8e0e075ef7d",
+      "text": "Take an acclimatization hike to the third high camp, Berlin–Cólera, to drop off food and cooking equipment.\n\nReturn to Nido de Cóndores after lunch.\n\nMeals: breakfast, afternoon snack and dinner.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word day 11 describes acclimatization at Camp 2 generally and does not specify this Camp 3 supply carry, return after lunch or afternoon snack."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:716010edc1964656",
+      "field": "itinerary.label",
+      "sourceTextSha256": "638267c1540dcd069f249ca8ddf1dcc91b2d087b9044efb36d451018ec988b7d",
+      "text": "Nido de Cóndores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "6fd2d38cd2e2d2cede6e0978ddde3e967fdefb0b172f8c4b594a0f1084a127e5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact camp name from the Word day heading as a standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5d511e62081ab4cf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3dd79eb3896452fb2e5724bfe2a231f7ee226bca607a8bdc29e309c40ad92d8f",
+      "text": "Plaza Cólera",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "6ea962770ac0e530bb3bb647629c6e02b8ea30129a6c79f70fcfed594ef571c2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word heading's name for the same third high camp in the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7006132fa64337bd",
+      "field": "media.alt",
+      "sourceTextSha256": "c2ff5c4be3ad3a5a1c00de42bd6ff29523873f3aa47653c3d62fb82f164540d1",
+      "text": "Two climbers with their gear on the rocky slopes of Berlin–Cólera, Aconcagua, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word document does not contain a caption identifying the two climbers and their gear in this specific photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:40e7c7e43297ae5d",
+      "field": "media.hover",
+      "sourceTextSha256": "6dc0a0cc71d1df34a4a1f27cb12bc0f74f7d8c23ce0cd14ccccc04bd55116198",
+      "text": "Berlin–Cólera, Aconcagua: climbers and gear among the rocks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word document has no hover caption describing the climbers and gear among the rocks in this photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "1411b32ccd9a680694534c5c46d066ad35cdb6c178ac787f00cf0e77b538f5fc",
+      "text": "Nido de Cóndores to Camp 3 (Plaza Cólera), 5,970 m",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "6fd2d38cd2e2d2cede6e0978ddde3e967fdefb0b172f8c4b594a0f1084a127e5"
+          },
+          {
+            "ref": "word/document.xml#p0075",
+            "textSha256": "6ea962770ac0e530bb3bb647629c6e02b8ea30129a6c79f70fcfed594ef571c2"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the preceding camp name with the Word ascent heading, including the approved elevation for Camp 3."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:936a34ccc6e7c635",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2cdad6a0d2f4fa40ac33f15607c05f4a2ee032874abbcb19acf4998ff70a904f",
+      "text": "We begin a four-hour hike to Camp 3, located on the North Ridge. This is the last camp before the summit attempt. Upon arrival, we will set up our tents, eat, and rest to be in optimal condition. The Guide will individually check each group member and give final recommendations. We will also plan\n\nthe strategies for the final ascent to ensure success in reaching the summit.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0076",
+            "textSha256": "f847d9810d62c6e1ce92e873cc68723f8c7f00cb7dea9c86e09a6db823a2ac20"
+          },
+          {
+            "ref": "word/document.xml#p0077",
+            "textSha256": "341372a36d22179da4325d4d4181fa3f4788441c35e83132e5476c019033e195"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:780694d625f014e0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "638267c1540dcd069f249ca8ddf1dcc91b2d087b9044efb36d451018ec988b7d",
+      "text": "Nido de Cóndores",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "6fd2d38cd2e2d2cede6e0978ddde3e967fdefb0b172f8c4b594a0f1084a127e5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact camp name from the Word day heading as a standalone place label."
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_brazil_ru:b006",
+  "stableId": "tour_source_argentina_and_brazil_ru",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "054a90a7b4b1b3f27294de40a08dcf58f9c760e4f8a1be6b322487458131b65a",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2e66c37a5152c39783e045eb37ea8b133ca9c7e01b889fb2168eda721ed9a67e",
+      "text": "El Calafate – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0117",
+            "textSha256": "4350dcf5b5e1b1c8e405f5d9979daecc78d4526c2e41cd203b43ddf513555c8a"
+          },
+          {
+            "ref": "word/document.xml#p0155",
+            "textSha256": "5fdeed57c2dac3df34cd24a89abe79d852ff01ea56168e908a622fcc90a8a3c6"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the corresponding Word day heading and disambiguate the destination with the Brazilian city name given in the domestic flight route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "dd5c829df503d01f86f1b9f333da48c746e6a141b25aa6973bef6d9210b6f81c",
+      "text": "Breakfast in the hotel. Private transfer without guide to the airport to board your  flight to Iguazu.\n\nMeeting with driver and transfer to the selected hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0118",
+            "textSha256": "3ce24ae0b43a7605618b6012730168a1031e8e92c3325e8d5fd108b38059044e"
+          },
+          {
+            "ref": "word/document.xml#p0119",
+            "textSha256": "616a8777cd49d8dff43819acc17adcde3373837631bf5959f01449501fc0df9d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:8e423711fb104e1d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0155",
+            "textSha256": "5fdeed57c2dac3df34cd24a89abe79d852ff01ea56168e908a622fcc90a8a3c6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the full name of the Brazilian city from the domestic flight route for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bbc1826c787617ab",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0109",
+            "textSha256": "afc4fb7b858bacc9488e47304888e3017cf38e23128cfef426d556fa0b2c7513"
+          },
+          {
+            "ref": "word/document.xml#p0117",
+            "textSha256": "4350dcf5b5e1b1c8e405f5d9979daecc78d4526c2e41cd203b43ddf513555c8a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the full geographic name for Calafate, the city identified in both matching Word route headings."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5cdca6b10f2d61e8",
+      "field": "itinerary.label",
+      "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word itinerary describes the Argentine side but does not name Puerto Iguazú as a standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:b36b0145b313bf1c",
+      "field": "media.alt",
+      "sourceTextSha256": "5a6d9532c91cc87217a5306d30e879538b8c4da370880744ca1a069ca25c2a8d",
+      "text": "Iguazú Falls cascading on both sides of a fast-flowing river between green cliffs",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word describes the waterfalls without providing alt text for this particular image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:435bcb23f313e67e",
+      "field": "media.hover",
+      "sourceTextSha256": "d1299e0dcba95cf4b58db0615392249d42078e51771a95860453ddb468786116",
+      "text": "Iguazú Falls: cascades over a rocky riverbed with a cloud of spray in the distance",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-1794039321060441144-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The waterfall passages do not contain this image-specific hover caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "dec7b838b75a9aeac039755eb70056d8504594667a6a8a05091385cfe9a1a033",
+      "text": "The Argentine side of Iguazú Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+        "documentSha256": "046a553d22cf6f38f89c3756a0f6c853da91382a6b38920541cb22fff05ab1b3",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0121",
+            "textSha256": "3636140e378dc7a7c627e223e88557775e57bcabdb59f1d326b64e43e38c05d1"
+          },
+          {
+            "ref": "word/document.xml#p0122",
+            "textSha256": "c5864ae744d08b1ba254492bbe7066007ecd6035b1f009512d9510936fb017bf"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the named destination from the day heading with the Argentine side specified in the excursion description."
+      }
+    }
+  ]
+}

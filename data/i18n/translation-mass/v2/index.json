@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1122,
-    "queued": 3,
-    "leased": 2,
+    "queued": 2,
+    "leased": 3,
     "review": 2812,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 3,
-      "leased": 0,
+      "queued": 2,
+      "leased": 1,
       "review": 2343,
       "ready": 50,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 1,
-          "leased": 0,
+          "queued": 0,
+          "leased": 1,
           "review": 77,
           "ready": 1,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-07T15:51:30.585Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1353,6 +1353,12 @@
       "token": "lease-o8oi8d3u5i-da48jficpfe",
       "expiresAt": "2026-11-07T14:29:49.191Z",
       "generation": 1
+    },
+    "ada-en-reconcile-20261107-mw6hrq41": {
+      "jobId": "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b007",
+      "token": "ada-en-recovery-6o0etwswa0305o7rx36xwrx",
+      "expiresAt": "2026-11-07T15:51:30.585Z",
+      "generation": 2
     }
   },
   "ownerAssignments": {
@@ -10070,8 +10076,15 @@
         "en:bulk:tour:tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy:b006",
         "en:bulk:tour:tour_source_vkusy_brazilii:b006"
       ]
+    },
+    "ada-en-reconcile-20261107-mw6hrq41": {
+      "token": "ada-en-recovery-6o0etwswa0305o7rx36xwrx",
+      "jobIds": [
+        "en:bulk:tour:tour_source_ekzoticheskij_novyj_god_ru:b007"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-07T14:21:08.132Z"
+  "updatedAt": "2026-11-07T14:21:30.585Z"
 }

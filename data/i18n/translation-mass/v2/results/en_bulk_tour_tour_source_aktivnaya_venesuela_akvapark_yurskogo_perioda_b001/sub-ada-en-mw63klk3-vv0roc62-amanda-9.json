@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda:b001",
+  "stableId": "tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0dcca45393b0ecec08645279949ff823d26e0a7336ea0a42af2c44598dcb1887",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "a703e738f1bd94ad5da9f01b1269f1530d3f7a081229724d9a3dacda5991c403",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0001",
+            "textSha256": "feb0fb905891fd03bed8dde6de5e33ab44555670c57d6e596e1e6ced8d916770"
+          }
+        ]
+      },
+      "text": "Jurassic Waterpark 2026"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "2653328325864e23b2b9bef4c35afee5846e0114ebca1275cf8be98cf422ff7e",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63klk3-vv0roc62-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word p0003–p0005 confirms the duration and main sights but does not provide a single introduction covering the Gran Sabana, six-day trek, Pemón villages and route sequence."
+      },
+      "text": "Spend 12 days exploring Venezuela on an active itinerary that takes you from Caracas to the Gran Sabana for a six-day trek on Roraima. Visit Indigenous Pemón villages, explore the tepui plateau with its quartz and endemic plants, then continue to Canaima National Park and visit Salto Ángel (Angel Falls)."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "28454428ba4f7782776e9e93d1153664a7e1b50be9927b91d6c23411e00f2491",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw63klk3-vv0roc62-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word quotation at p0058 is USD 4,875 per person based on four travellers. It does not contain the current site price note of $3955, which is preserved verbatim."
+      },
+      "text": "$3955."
+    },
+    {
+      "blockId": "tour:itinerary_label:047ec44b6925b863",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ee5400eec5b34c56e85dcc8a4d8fd2467e9f49c08efa6bb1ec973ff8a04631fb",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0009",
+            "textSha256": "f01f3b8270c8aa02e35d6e13e25b359a13a0bd74b3c6989040f3236333065cda"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city named in the first Word day heading for the separate linked route label."
+      },
+      "text": "Caracas"
+    },
+    {
+      "blockId": "tour:itinerary_label:70320db7e0f82cfc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "77a2f431924e497f2a8d19f2fc9f4c5a18bb69f5f49e2f48a4bd0644ff68b0cf",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0012",
+            "textSha256": "a9c48e68e0efcecc513b11ae460361992ca0271f32db8100d5ef423c3328e70a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the village identified in the Word day heading, with the spelling used by the current site place label."
+      },
+      "text": "San Francisco de Yuruani"
+    },
+    {
+      "blockId": "tour:itinerary_label:15e5f844c8a7362b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ddac17435b793c4f951a24a71917c46e1ac246bcf2b8f59e5833719322d57bb8",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0015",
+            "textSha256": "3d324e41c61b7d709b2c2d02a7838e69018d17e3b69ad0c50a526d658cad22a1"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the named destination in the Word day heading as the separate linked route label."
+      },
+      "text": "Roraima"
+    },
+    {
+      "blockId": "tour:itinerary_label:e1af4f6d5c9641c7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d987a2097370e3662ccdc843a56752843a7bbf10d9ed6adc9168cf7a722c01a0",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "c54dffc5c0ce79556695a981c0b7a5c5b01514f7095a04351c29cae397cf6e13"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city named in the Word day heading as the separate linked route label."
+      },
+      "text": "Puerto Ordaz"
+    },
+    {
+      "blockId": "tour:itinerary_label:79815585793871ae",
+      "field": "itinerary.label",
+      "sourceTextSha256": "bd23ed5f395598ef73eb9332381b2e6f7dd43673524cefea2bbf16b8d3f86726",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d-zGdzaSwTuFrgGrsDHYR-aTbeXngYf8",
+        "documentSha256": "6a98593b9f2f595f693db8c50b12d83ecf0ac81cd9addafceeb1d084f96fef96",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0040",
+            "textSha256": "59d7dd62a736d786a3d7d2b6c34ffea7575d00221c47fa8b11f66eaf472b59ec"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the first destination identified in the Word day heading as the separate linked route label."
+      },
+      "text": "Canaima"
+    }
+  ]
+}

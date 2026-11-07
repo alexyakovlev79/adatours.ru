@@ -1,0 +1,128 @@
+{
+  "jobId": "en:bulk:tour:tour_source_braziliya_argentina_i_chili:b006",
+  "stableId": "tour_source_braziliya_argentina_i_chili",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0f147d57d21dab3e1eec465e5c4d3b1a83af6bbe770ecce5991bf077549d5076",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:fa1a6a22bde53990",
+      "field": "media.alt",
+      "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
+      "text": "Iguazú Falls from the Brazilian side",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word covers both sides of the falls but provides no alt text for this image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6e4eb549545036b7a1f2eb727baa303a46caca23121ecdb40739dc76794ea133",
+      "text": "Brazilian Side of Iguazú Falls, Bird Park and Macuco Safari",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11GRQZ373HPCQTp1NGqV0UCD193qgTNLs",
+        "documentSha256": "ba47deec183761b673436a5d0c9752aa2a2e81a81a4963df316e203c04e2b4b5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0043",
+            "textSha256": "5c769b1e944f3d24ed5379ba549f7e4955a16b566a486d3e5bbd6730d3cbd429"
+          },
+          {
+            "ref": "word/document.xml#p0044",
+            "textSha256": "9f14b26ecdf77b5aa9691b9f9b2ca00aff74aff2496d33fde0f2c5f3af892049"
+          },
+          {
+            "ref": "word/document.xml#p0045",
+            "textSha256": "43892cb162c0d4dddedde83ed70bb58fe4150bed12fe74b20a811287fc4b14f9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the three named activities from consecutive Word paragraphs into one itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a49ab6a4dc61ce693f7574fcc1bd5e8fc8c68a614e6ae0365e96daa77c5b6682",
+      "text": "After breakfast, you’ll visit the Brazilian side of Iguazú Falls.\n\nThe path follows the edge of the cascades, where more than 250 streams spill over the rock. Sunlight and spray often create rainbows above the canyon.\n\nAt the end of the walk, you’ll reach the most powerful cascade, Devil’s Throat, which drops about 80 m. A walkway takes you close to the water before you climb to the upper viewing platform. Admission is included. Spray reaches the path here, and the roar of the falls makes it hard to hear a conversation.\n\n**Iguazú Bird Park**\n\nThe itinerary then takes you to the Bird Park next to Iguaçu National Park.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "Word paragraph 0043 incorrectly attributes the water to the Amazon River and ends with a hotel drop-off. The verified Word has no fact-compatible equivalent for the current block’s walk followed by the Bird Park."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:fccd262c357ba0de",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "11GRQZ373HPCQTp1NGqV0UCD193qgTNLs",
+        "documentSha256": "ba47deec183761b673436a5d0c9752aa2a2e81a81a4963df316e203c04e2b4b5",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0042",
+            "textSha256": "89dfbd18df92b27370d53558553e1e0299f99483c1efd8c03b821d90f822baa4"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Strip the itinerary day marker from the Word heading for the website place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:695d592192fb316d",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguazú Falls and a rainbow over the river, surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary mentions rainbows at the falls but supplies no alt text for this website image of the river and forest."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:ec7385c76ceead6b",
+      "field": "media.hover",
+      "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+      "text": "Iguazú Falls in Brazil: cascading water, a rainbow and green riverbanks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no hover caption for this photograph of the cascades and riverbanks."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:dfbb15a037923f34",
+      "field": "media.alt",
+      "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+      "text": "Iguazú Falls and a rainbow over the river, surrounded by tropical forest, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Word itinerary mentions rainbows at the falls but supplies no alt text for this website image of the river and forest."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1bae9e545b704360",
+      "field": "media.hover",
+      "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+      "text": "Iguazú Falls in Brazil: cascading water, a rainbow and green riverbanks",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64oocl-zfoxzbau-amanda",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The verified Word has no hover caption for this photograph of the cascades and riverbanks."
+      }
+    }
+  ]
+}

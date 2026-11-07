@@ -1,0 +1,139 @@
+{
+  "jobId": "en:bulk:tour:tour_source_led_solntse_i_kraj_zemli:b009",
+  "stableId": "tour_source_led_solntse_i_kraj_zemli",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "44279d8662b415b5fb45a08d9fe8da55036ba7b6230f2d9c201f3ab98dbc0d83",
+  "blocks": [
+    {
+      "blockId": "tour:media_hover:b99d3e7c18b27549",
+      "field": "media.hover",
+      "sourceTextSha256": "0e94be402d3c11f38459b3d6a2c444c3e3a0edcc4da847b33b0b31e70fcb8165",
+      "text": "Ushuaia: harbour and mountains seen from the deck of a boat",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary references navigation near Ushuaia but has no hover caption for the view of the harbour and mountains from the deck."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a50fc82a8f09f5e0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9a280ad0003c72a72aa738840c0d464e3b4a82c80532461772f0b25b05579fa5",
+      "text": "Martillo Island",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p62",
+            "textSha256": "5d309cc36ede806c129b9bb8eddb6c6af8464872ea4c3f70f0c24cdf6cf0b48a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the name of the island in the Word penguin excursion with the spelling reflected in the Russian place name."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "06b74f4724e6e91a706e7a4badc1450e3af47728f247140830a66f0a42977de6",
+      "text": "Ushuaia – Foz de Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p65",
+            "textSha256": "64dec3da5d2284d5fcc92d30617cd056252bf39030be9d1e4c8dc911656311bd"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the Word day number and retains the original route."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:2e780f63f4172747",
+      "field": "itinerary.text",
+      "sourceTextSha256": "bf7a2b50979272fc32e89bc8ea857ea2ccf0da182c39484f96e4359ca6af0eca",
+      "text": "Breakfast at the hotel. Private transfer with driver to the airport for your flight to Iguazu. Upon arrival, transfer with a driver to the hotel",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "c66d8b17d1391ec53d23bf6c582067329f08216b589d37b6d203c639dbc81fe1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a2d4bab58281ef11",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+      "text": "Ushuaia",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p65",
+            "textSha256": "64dec3da5d2284d5fcc92d30617cd056252bf39030be9d1e4c8dc911656311bd"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts one of the two city names in the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0f8f1524af76a74c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz de Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1toSSMiiBRRdgl81lfswrJT-0WTAz385j",
+        "documentSha256": "a0446a7b1aaed39c679d1f5e4e3b955fcd6a1651814b03475d3d29912eb8fd4e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p65",
+            "textSha256": "64dec3da5d2284d5fcc92d30617cd056252bf39030be9d1e4c8dc911656311bd"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts one of the two city names in the corresponding Word itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7654b2a6859483fc",
+      "field": "media.alt",
+      "sourceTextSha256": "7524b10cc5ff4a481f6ea704aaa581e476ada055e0dd51c3c9f57adc91e95535",
+      "text": "Yellow wooden house with a steep roof against the snowy mountains of Ushuaia, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word transfer passage has no caption describing the yellow wooden house with a steep roof against the snowy mountains."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:5531f7739ebc2b7c",
+      "field": "media.hover",
+      "sourceTextSha256": "53d40cb2a6c31a2070e3d03498fae2abdc668c96f67d736c0f58b43fb91c6380",
+      "text": "Ushuaia: yellow facade under a gabled roof with snowy mountains behind it",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word Ushuaia sections do not contain a hover caption for this photograph of a yellow facade and snowy mountains."
+      }
+    }
+  ]
+}

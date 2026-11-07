@@ -1,0 +1,156 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin:b005",
+  "stableId": "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "cd7eab176b63241579b6f739e54d5fc3afcc01a93cb89b91500babaa9c473c39",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d9a8993894d56c922b23b52a79c0f74296020c25956615f6e659c702578bfddb",
+      "text": "Mendoza / Puente de Inca – Altitude: 2700 m.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "68a4e7eacabc354565f363900176cabb52820278e726bbbd41e943579a6848ed"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the pinned Word day heading, retaining the stated route and elevation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fb2641882841938ee7980ae49cc49ccc826ed495a5a6583e799c647eb880467d",
+      "text": "After breakfast, we head to the  office where we will receive the entry permits already arranged beforehand, and we can also finalize payments and hand over vouchers if necessary. Once this is done, a minibus will take us to our logistics center in Puente de Inca. We will organize the loads, which will be transported by mules, and stay overnight there.\n\nTransport: Mendoza – Puente de Inca – Meals included: Breakfast and Dinner",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "68a4e7eacabc354565f363900176cabb52820278e726bbbd41e943579a6848ed"
+          },
+          {
+            "ref": "word/document.xml:p21",
+            "textSha256": "f1f6f57558844899bcead6b3b6ae3398b193e1784b2f4e69c4fa9b6eb727e284"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Moves the leading Word day heading to the separate title field and retains the remaining itinerary and service line verbatim."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:f65ae2fc371f3a33",
+      "field": "itinerary.label",
+      "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+      "text": "Mendoza",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "68a4e7eacabc354565f363900176cabb52820278e726bbbd41e943579a6848ed"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the starting place from the matching Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:d7ef830ee0c3962b",
+      "field": "itinerary.label",
+      "sourceTextSha256": "646ad7aa145dee6103bd25054a779d0e989fbfbb14117ff57077e6e4f8eddcad",
+      "text": "Puente de Inca",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p18",
+            "textSha256": "68a4e7eacabc354565f363900176cabb52820278e726bbbd41e943579a6848ed"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Extracts the overnight stop from the matching Word day heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:86c2c702166e6f5b",
+      "field": "media.alt",
+      "sourceTextSha256": "1fabeb6dc5b06cbbbe261f23bf25c12c5cf3dbed51d0e0a3054773959b76db9a",
+      "text": "Mountain valley near Mendoza with flowers in the foreground and a snow-covered peak, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word itinerary for the transfer does not contain a caption describing the valley, foreground flowers or snow-covered peak."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:61c03023f5b6aee4",
+      "field": "media.hover",
+      "sourceTextSha256": "2e86c89c994bd9799b35209349f7460956858742331c4e173d44b1f773b0041b",
+      "text": "Andes near Mendoza: flowers and a trail below snow-covered slopes",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666hg3-6hux5yywg4-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word transfer passage does not have a hover caption for the photograph of flowers, a trail and snowy mountain slopes."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b8a6852e7a5ae54c5b452ec5950314a07c53fd9f93ad908bfbd4aa647e87b488",
+      "text": "Puente de Inca / Confluencia – Altitude: 3390 m.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p22",
+            "textSha256": "910271d3aad5255a2155a76beaa25d6adbdbe5e96a13839caf51d57d7e653d5b"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extracts the pinned Word day heading, retaining the stated route and elevation."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "94e9f8f0f06f94e1a04b4c81a8b6b862b6110a15eecc99ab906ab484b8761c3d",
+      "text": "After a night in Puente de Inca, we will be transported to the entrance of the park called Horcones. We will present the permits at the ranger station and begin a trek lasting 4 to 5 hours to reach Confluencia. During almost the entire trek we will contemplate the imposing south face of Aconcagua.\n\nTransport: Puente de Inca – Horcones – Accommodation: Double/triple tent or Dorm Dome – Meals included: Breakfast, packed lunch, and Dinner",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1HgcuwMUxK68f-s5379kXSQKF_OX9Y-Sx",
+        "documentSha256": "7d0e77f248460d4856acd78ba4810982df618bae5589ea04f99e893251613982",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p22",
+            "textSha256": "910271d3aad5255a2155a76beaa25d6adbdbe5e96a13839caf51d57d7e653d5b"
+          },
+          {
+            "ref": "word/document.xml:p23",
+            "textSha256": "2197a90debe7ca2a437029977adf25c338ab20e7cf9e9e31dd64918c065e1c9e"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Moves the leading Word day heading to the separate title field and retains the remaining itinerary and service line verbatim."
+      }
+    }
+  ]
+}

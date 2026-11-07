@@ -1,0 +1,125 @@
+{
+  "jobId": "en:bulk:tour:tour_source_prazdnik_gordosti_v_rio_de_zhanejro:b006",
+  "stableId": "tour_source_prazdnik_gordosti_v_rio_de_zhanejro",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "e0fe0f5c4bfcc4bb5bc833f12322a1758d0ffd867027742fac67a0807dedd98e",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "6fb091382e568065f3211f2388aa3e79c0b98f49042fa717128e7475a0549b31"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Remove the Day 6 marker so the city remains a standalone itinerary heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "5345840dcec0722b6bd44aeb750f0902a2059fd399f0742fecaa1cf4d8400c8b",
+      "text": "Transfer to the airport with driver only to take your flight back home.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0063",
+            "textSha256": "33817d3edbf8ae4681aebd9e5ec185c4e0b3dd1cd5bfe0e8b7633cec4e0ba93f"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:31416ee0d00bcea4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1Fyq5-HJuoHbRRLgC68Gfn6FbhrmQwPXF",
+        "documentSha256": "e4b0c73c3978be865a831624b1ae09b87af06b19f0ef4d7677b3556ed73efffc",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0062",
+            "textSha256": "6fb091382e568065f3211f2388aa3e79c0b98f49042fa717128e7475a0549b31"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The Day 6 heading supplies the city name for this separate place field."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:3abc552a0fcd3372",
+      "field": "media.alt",
+      "sourceTextSha256": "7a5051979a13716c111454fdbb7e60065d869569b0ac89173c8181082f119ffc",
+      "text": "Rocky shore and sailboats in Guanabara Bay, Rio de Janeiro, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified Word mentions Guanabara Bay in the itinerary but has no caption for this shore photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:787bdaf55ed66fa9",
+      "field": "media.hover",
+      "sourceTextSha256": "fd4f578a284e8685c8aaafb548bb563c91fe437c8bef93f37eeee8be91f73f15",
+      "text": "Guanabara Bay, Rio de Janeiro: calm water, sailboats and rocks along the shore",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word has no hover text for this photograph of sailboats and the rocky shoreline."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "bad1d6780bf7d6b168a704c336705c70778c1977a969f0a77e886f973e2b84e1",
+      "text": "Green flip-flops with Brazilian flags and a coconut with a straw on the sand by the sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The verified programme does not contain the hero image caption describing these beach items."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "ee7aa4c9985c4d55f139db035f2995cbf5a4be32fe39699b9ec2ca820b78518d",
+      "text": "On the beach: Brazilian-flag flip-flops and a coconut by the sea",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word has no hover caption corresponding to the hero photo of flip-flops and a coconut."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "acbae550405f0d3ec844f6e6f1ac6391379030a403147b9755674b41c8f5560c",
+      "text": "The itinerary is based in one city, so you spend little time in transit and get to see several sides of Rio.\n\nVisit Christ the Redeemer on Corcovado and Sugarloaf Mountain, take a boat trip to the tropical islands of Angra dos Reis and Ilha Grande, and spend an evening at one of Rio's LGBTQIA+ bars. There's also a free day. Excursions are led by an English- or Spanish-speaking guide.\n\nIn the morning, you can ride through the Tijuca Forest to Christ the Redeemer. In the afternoon, stroll along the seafront, then head to Ipanema for music and nightlife. Rio is known for its lively nights, progressive arts scene and major Pride events. Its bars, clubs, cafés and beaches bring together people from all walks of life, and that openness is part of the city today. A beach party, a drag brunch with a caipirinha or a quiet sunset for two can all fit into the same trip.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-a14d0606-b6fe-4d7e-a104-240f602fd877",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word covers individual days but has no standalone overview combining the single-city itinerary, Rio's Pride culture, its arts scene and the free-time examples in the Russian body."
+      }
+    }
+  ]
+}

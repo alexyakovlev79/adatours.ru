@@ -1,0 +1,136 @@
+{
+  "jobId": "en:bulk:tour:tour_source_vkusy_brazilii:b003",
+  "stableId": "tour_source_vkusy_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d14214b04e5be704462c5120a8da9950390df8d0c4e481bad2095d0d6fd62626",
+  "blocks": [
+    {
+      "blockId": "tour:note:ae482daa99427b98",
+      "field": "note",
+      "sourceTextSha256": "557246c9b96af1f9e9f293e8356eaf66a14fea7ae8231077db4c3159d40cf111",
+      "text": "Ada Tours is unable to take responsibility for hotel breakfasts missed when guests check out early for a flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word includes breakfast in the accommodation but contains no policy for breakfasts missed because of early check-out."
+      }
+    },
+    {
+      "blockId": "tour:note:32810a9892eb2e88",
+      "field": "note",
+      "sourceTextSha256": "0033d1c4114fd2efd3bbdf4f500b49814feaf678d12bb58fc778a2207110ebb1",
+      "text": "Prices may change. The final tour price is confirmed once services have been agreed and fares checked for the booking date.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The pinned Word contains a general booking and price-variation note, but does not specify the current conditions of agreeing services and rechecking fares for the booking date."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "15aa5399a390d8f12a0abd0a8154dbd22a39ef70dd471be1793c9a6e5cf385c0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Day 1 prefix, which the itinerary displays separately from the heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "4e8aaa58d3c9d0d612fa5a497fe91eb47d47437218cb452e9f0297f9d431c0a9",
+      "text": "After arriving at the international airport in Rio de Janeiro, our driver will wait for you and drive you to your Hotel.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0023",
+            "textSha256": "effc4c153889cf20252564bc3af2baff99e2564a14df6c9153e92ec579046563"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0021",
+            "textSha256": "15aa5399a390d8f12a0abd0a8154dbd22a39ef70dd471be1793c9a6e5cf385c0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the city named in the Day 1 Word heading as the place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:0e7ff6894d65dc7e",
+      "field": "media.alt",
+      "sourceTextSha256": "ada3323b3396caf6ebebaae3446244139fff8dbf87a9cfac194c7be330ecdacc",
+      "text": "A woman beside a stone railing at a viewpoint above Rio de Janeiro and the bay, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The Word programme describes Rio viewpoints but provides no alt text for this photograph of a woman by a stone railing."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:8b7a8ecf301476a2",
+      "field": "media.hover",
+      "sourceTextSha256": "9c5024bb4c9bd656a9f98bdf41a69ca362d4d99284819f181b87b9eebd935d43",
+      "text": "Rio de Janeiro from a viewpoint overlooking the city and the bay",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-567ddb58f94a923d-amanda",
+        "model": "ChatGPT Codex",
+        "wordAbsenceReason": "The Word programme provides no hover caption for this city and bay photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c2e1d345341c42f31c7d64d57b701b9857863052b722a68abfcd88f223eac523",
+      "text": "Sugarloaf Mountain and Old Rio",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "documentSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0026",
+            "textSha256": "617e6b2b938fba92fe5df9ed1f2e2d40da91d8cc2ec38abdb56ccea291b3f93e"
+          },
+          {
+            "ref": "word/document.xml#p0027",
+            "textSha256": "7f5fefd84671c10f32485f9e93ac26ecdc5457016754930c31a810f52f05b4d2"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the two named parts of the Word tour to form the corresponding itinerary label."
+      }
+    }
+  ]
+}

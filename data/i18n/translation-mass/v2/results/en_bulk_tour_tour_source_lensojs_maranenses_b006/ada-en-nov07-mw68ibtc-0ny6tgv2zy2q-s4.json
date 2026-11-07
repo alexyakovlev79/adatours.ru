@@ -1,0 +1,137 @@
+{
+  "jobId": "en:bulk:tour:tour_source_lensojs_maranenses:b006",
+  "stableId": "tour_source_lensojs_maranenses",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4f5c488701b6f69b6c7b90c83f87110945faf9c648fd42c89d6bec2940588097",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+      "text": "São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "e7b788fc5d49c4ba5b3be4611a2c3b345da93dbbb52e61750400d43e1ad872da"
+          },
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "6a4139a718b635baf9eb5a73ea8b9ffa03f85aa3b050484f8ed5409a8b1fd164"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day number and use the fully accented destination spelling found in the approved itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "83dd1c1b0283fbf862571f298098ed2ce61b3d26388bc22c7ab31dfb28ab94e5",
+      "text": "After breakfast, you will be transferred to the airport.\n\nEND OF SERVICES.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0034",
+            "textSha256": "1b054773afdd061bcce0a62d40a53161b0d0fa0ce893f0fcc48c6f4a86806c12"
+          },
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "cf547a5597feef105a6cf99a226da8038a77740b7413794ccfe8f0cd4600c1ea"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b6f1f9330289c605",
+      "field": "itinerary.label",
+      "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+      "text": "São Luís",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "documentSha256": "bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0029",
+            "textSha256": "6a4139a718b635baf9eb5a73ea8b9ffa03f85aa3b050484f8ed5409a8b1fd164"
+          },
+          {
+            "ref": "word/document.xml#p0033",
+            "textSha256": "e7b788fc5d49c4ba5b3be4611a2c3b345da93dbbb52e61750400d43e1ad872da"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The single place label uses the accented spelling from the approved preceding day and final destination heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:6466b8f995c33977",
+      "field": "media.alt",
+      "sourceTextSha256": "0813d7ed694edc084d4aa1cc6a4aea4c4c114246f04d38528616d209aef647a3",
+      "text": "A cobbled street in São Luís with tiled façades, blue doors and balconies, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "No alt text for the São Luís street photograph appears in the approved Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:b6863dcedf9b74fb",
+      "field": "media.hover",
+      "sourceTextSha256": "07e3e9eeb5fe3402c2d7e4b325d8ebc304a0e9ffc3bd9c241f9d0535914bc752",
+      "text": "São Luís: historic houses with patterned tiles and arched blue doors",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "No hover caption for the São Luís street photograph appears in the approved Word."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "e2948fb0710f65812054564e7efee84fe49443565f118801f11948ddc74d4365",
+      "text": "Visitors on a sand spit between lagoons in Lençóis Maranhenses, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "No alt text for the photograph of visitors among the lagoons appears in the approved Word."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:77871c8f58bdcbc6",
+      "field": "media.hover",
+      "sourceTextSha256": "741a52c6a94fad30dd7ecfa3abbf5b827e5d2fe44479a1ef53b8528fd56dd59b",
+      "text": "Lençóis Maranhenses, Brazil: white sand and blue lagoons",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "No hover caption for the hero photograph appears in the approved Word."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "e4eb16f09afa0d41722690edf2a32197e8e36304e2dcd236226b5d0936cd6e0d",
+      "text": "\n\n## Trip highlights\n\nSão Luís is the city stop on this route, with a historic centre, old façades, markets, churches and an Atlantic coastline. You can add a separate four-hour city tour.\n\nBarreirinhas is the starting point for the dunes of Lençóis Maranhenses. From March to September, rainwater forms blue lagoons between the dunes. We take you by 4x4 to Lagoa Azul, where you can swim and watch the sun set.\n\nThe next day you travel along the Preguiças River. You'll see Vassouras, known as Little Lençóis, a fishing village and a lighthouse reached by 160 steps.\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-nov07-mw68ibtc-0ny6tgv2zy2q",
+        "model": "gpt-6.1-sol",
+        "wordAbsenceReason": "The Word provides separate daily accounts and an optional tour in paragraphs 7, 13–14, 19 and 29, but has no standalone trip highlights section corresponding to this RU body."
+      }
+    }
+  ]
+}

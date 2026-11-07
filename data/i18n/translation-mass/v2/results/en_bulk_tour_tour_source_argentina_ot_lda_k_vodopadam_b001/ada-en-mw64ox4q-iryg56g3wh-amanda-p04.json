@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_argentina_ot_lda_k_vodopadam:b001",
+  "stableId": "tour_source_argentina_ot_lda_k_vodopadam",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ab4c107a1bbea9bc00fccf1d03fa6cfabc6c5da58085f7f471c00036677b299d",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "407c648f0421fabb6f25352e2250defd0b2bf5936b9121f048c1b5d75841fe01",
+      "text": "FROM ICE TO WATERFALLS 2026",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "c813459c455ec97b1343aff6ad4da4bf642b18dea8a90c034b9d931a901c9372"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "28755ec115d0a30d105d0f580d485f1f3a3ffc4b873f3537e1e2b373d1e4f06b",
+      "text": "Over 10 days, travel from Buenos Aires to El Calafate and the Perito Moreno Glacier, then see Iguazu Falls from both the Argentine and Brazilian sides.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word documents these stops day by day but does not provide a matching introductory summary that covers the full route."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
+      "text": "Private",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw64ox4q-iryg56g3wh-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word distinguishes private and regular services at activity level and contains no standalone label for the tour format field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0025",
+            "textSha256": "9299c22e5474706a9a9dca6bb2fb9d99399055af0eedf38353ec9471e69711f5"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the city name from the first Word day heading for the route list."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9b3f87db07393c2f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+      "text": "El Calafate",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0068",
+            "textSha256": "b4dfa1f29887b2bf76b4f32408b550c21e421e1e0cc1c2599c527397afb1ac3a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination from the Word heading for the Buenos Aires to El Calafate travel day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:13e65fef2d14859a",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7d4a23e09e99c675d020ec7b12d845f4aaa57403b2c21697fdd8e084ab7a67f3",
+      "text": "Iguazu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0097",
+            "textSha256": "cd6400d3b748b6c654909b325a4f544e2ac5a5d7b7004503b1e0a746e9949029"
+          },
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "9e07520533f38d4f34aae2eb18a345673d3779fc8098f858d935b396fb5ae795"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word itinerary's Iguazu spelling as the route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0103",
+            "textSha256": "9e07520533f38d4f34aae2eb18a345673d3779fc8098f858d935b396fb5ae795"
+          },
+          {
+            "ref": "word/document.xml#p0106",
+            "textSha256": "307eb6bf2c006126065138f588cb1e4cd7d07ac7d34e30c9430c5e0c779c5025"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the Word itinerary name for the final return stop in the route list."
+      }
+    },
+    {
+      "blockId": "tour:included:e577fd5f98fc0aa0",
+      "field": "included",
+      "sourceTextSha256": "2253ce74d9b55c57e5f0ad8e31509c38baba73ced3b46ca37dd07e2a6f46f8fa",
+      "text": "9 nights of accommodation in 4* the hotels, breakfast and local taxes are included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1J9Ax6akkHi6jnxLIoHIRGgZf3hRzrm_k",
+        "documentSha256": "c6d6e80854c6d87486270926cef9868eaf56bdfd8454b79b6a51dead0ca67450",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0114",
+            "textSha256": "29e40d645c77bb03e266fc2cfd60f8a3d47b430b6d36881d8f558b231001f65b"
+          }
+        ]
+      }
+    }
+  ]
+}

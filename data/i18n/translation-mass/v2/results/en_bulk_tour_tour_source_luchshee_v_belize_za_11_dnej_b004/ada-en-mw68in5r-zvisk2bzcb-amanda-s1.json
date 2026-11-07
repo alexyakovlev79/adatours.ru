@@ -1,0 +1,145 @@
+{
+  "jobId": "en:bulk:tour:tour_source_luchshee_v_belize_za_11_dnej:b004",
+  "stableId": "tour_source_luchshee_v_belize_za_11_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "5244e6fa92a3066a8c82647b172f097befd912c04787262b273d7d27d8b9d502",
+  "blocks": [
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68in5r-zvisk2bzcb-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word programme lists breakfast arrangements but contains no policy on breakfasts missed due to early checkout."
+      },
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when an early flight or excursion requires an early checkout."
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "d800b1e1138a729c826da0218de92591f9f71de55a50253b456b2c80088c5bf2",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d_EzlienPJ2AYbyTSFM5tUqiJS2ecG09",
+        "documentSha256": "00a796d81cc6f82abad66d5c84697a7f37ffb0af91d58f058b54f997c0ba8273",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "825ccf4c422b9456ef5b77c64f0253a9e06b8c34aae3ec0796bb62bd8335ebec"
+          },
+          {
+            "ref": "word/document.xml#p0005",
+            "textSha256": "73876dcaa49e99b18d72c1e8d3e1c796a5f807af035d2187e379b3ced618b122"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combines the arrival heading with the Western Belize destination stated in the transfer paragraph."
+      },
+      "text": "Arrival in Belize – Western Belize"
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fe26506d7331392823e45c18187ddc7e8ff2f7b461b0d6ed2d3b450ed5ea98b3",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d_EzlienPJ2AYbyTSFM5tUqiJS2ecG09",
+        "documentSha256": "00a796d81cc6f82abad66d5c84697a7f37ffb0af91d58f058b54f997c0ba8273",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0005",
+            "textSha256": "73876dcaa49e99b18d72c1e8d3e1c796a5f807af035d2187e379b3ced618b122"
+          }
+        ]
+      },
+      "text": "Welcome to Belize! Upon arrival at Belize International Airport, you will be met and greeted by a representative and privately transferred to your lodge in Western Belize. The remainder of the day is at leisure to relax and enjoy the natural surroundings."
+    },
+    {
+      "blockId": "tour:media_alt:6e07b50d107d8996",
+      "field": "media.alt",
+      "sourceTextSha256": "5bf495775c71b5205cdf91b4b2b1df504067b1a94e936832a384e5796099ce0f",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68in5r-zvisk2bzcb-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word programme has no caption identifying the ceramic vessels at this cave entrance."
+      },
+      "text": "Ceramic vessels at the entrance to a cave passage near San Ignacio, Belize"
+    },
+    {
+      "blockId": "tour:media_hover:02e45d269633315f",
+      "field": "media.hover",
+      "sourceTextSha256": "bc971d6105974a865585275c7906276e1bd33201a6824339ac6362acf78ae1ce",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw68in5r-zvisk2bzcb-amanda",
+        "model": "GPT-6.1 Sol",
+        "wordAbsenceReason": "The Word programme does not contain a hover caption for the San Ignacio cave photograph."
+      },
+      "text": "San Ignacio, Belize: clay vessels among the rocks inside a cave"
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a7c8b3e0be9e9447b477a36db16df361ef5e90b8dcc001901a141a802b2e8a58",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d_EzlienPJ2AYbyTSFM5tUqiJS2ecG09",
+        "documentSha256": "00a796d81cc6f82abad66d5c84697a7f37ffb0af91d58f058b54f997c0ba8273",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "5105f008d6f007baa0054fcb5a4766492f437c6be264fac3e9b96a0590d0a49c"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Removes the day number because the itinerary already provides it separately."
+      },
+      "text": "Caracol Maya Site with Rio Frio Cave & Rio On Pools"
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c74a96501feea6dd2e0a15302db4880ca1bef420f0bc036f5394824fa78e886d",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1d_EzlienPJ2AYbyTSFM5tUqiJS2ecG09",
+        "documentSha256": "00a796d81cc6f82abad66d5c84697a7f37ffb0af91d58f058b54f997c0ba8273",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "960d0d04f0acafa62611e4f974d730298a7e601bdd5ba799021efcba064c6b19"
+          }
+        ]
+      },
+      "text": "Enjoy a full-day excursion to Caracol, the largest Maya site in Belize. Walk through ancient courtyards, plazas, ball courts and climb Caana, the tallest Maya structure in the country. On your return, stop at Rio Frio Cave and Rio On Pools in the Mountain Pine Ridge for a refreshing swim and relaxation before heading back to your lodge."
+    },
+    {
+      "blockId": "tour:itinerary_label:d80466a5b129d498",
+      "field": "itinerary.label",
+      "sourceTextSha256": "844e42e2abdc2d898c16910843b667361f6db78a1dabf03ed0ad5390046d3a47",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1d_EzlienPJ2AYbyTSFM5tUqiJS2ecG09",
+        "documentSha256": "00a796d81cc6f82abad66d5c84697a7f37ffb0af91d58f058b54f997c0ba8273",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "5105f008d6f007baa0054fcb5a4766492f437c6be264fac3e9b96a0590d0a49c"
+          },
+          {
+            "ref": "word/document.xml#p0008",
+            "textSha256": "960d0d04f0acafa62611e4f974d730298a7e601bdd5ba799021efcba064c6b19"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Uses the site name from the matching itinerary day for the linked place label."
+      },
+      "text": "Caracol"
+    }
+  ]
+}

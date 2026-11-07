@@ -1,0 +1,146 @@
+{
+  "jobId": "en:bulk:tour:tour_source_karnaval_5_stran:b010",
+  "stableId": "tour_source_karnaval_5_stran",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "3d88eff76d7ab40d9325b2d8e34e5cd9161a10ab48c5a7778a8deb31ad6be900",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:5fce48d567cc5627",
+      "field": "media.alt",
+      "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
+      "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Santiago city tour describes historic buildings but has no caption for the street photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:ae94fe015ae2f2c3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "40b85fcb155abfe021b1aa39497c5eddc9a8bc858720a879f1b9400fd7a8117a",
+      "text": "Maipo Valley",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0091",
+            "textSha256": "1138f6d845a6bfc07e1c8d2cfc2429b47a3838fab38ab73ec08b639af15e9ef8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the name of the valley from the optional vineyard visit paragraph without copying pricing."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7cd248bb05cbc6e0e698ca37b05a813d82c7de33f63c66cbd0ff3bcd98494690",
+      "text": "Santiago, Chile – San Pedro de Atacama",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0093",
+            "textSha256": "bf6b745f36f1bde57d7023601b5051f5d264c873c96bd683f0a7184ad70d5b1a"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day number, since the itinerary template supplies the day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "12486f3559538851de179b61b2ca9c16bb51fbe59a44871719f43be4f569b40f",
+      "text": "You will have a transfer to the airport for your flight to Calama. From there, you will be transferred to San Pedro de Atacama, in the far north of Chile.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "ae0c04d1dffe0e828460748f9e5e0d292cc1d820864ec05a6cdcd17924d5d020"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bd42dfc80020ab03",
+      "field": "itinerary.label",
+      "sourceTextSha256": "722722d75ab7263bb33c6d07d41d96dbb32a1ffa8aff065debdef75d08d9319b",
+      "text": "Calama",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "ae0c04d1dffe0e828460748f9e5e0d292cc1d820864ec05a6cdcd17924d5d020"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination of the flight from the airport transfer paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3fd2f094b63379a4",
+      "field": "itinerary.label",
+      "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+      "text": "San Pedro de Atacama",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0094",
+            "textSha256": "ae0c04d1dffe0e828460748f9e5e0d292cc1d820864ec05a6cdcd17924d5d020"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the destination of the onward transfer from Calama."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:c354e8d34977793c",
+      "field": "media.alt",
+      "sourceTextSha256": "b21d12198ccf38e457380eb95bd7ceb601e1d7a7f571cd08a2e5e17d792f17c2",
+      "text": "A blue lake with a rocky shore surrounded by snow-capped mountains",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw666wy0-x9kgij3j5-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word transfer section contains no caption for this mountain lake photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "b49fc121aad11b29ec63f4e1d0bb9c163b07345f2a983f32083cc8d3a6352b8f",
+      "text": "San Pedro de Atacama – Uyuni (Bolivia, Jeep Tour)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1cf7wueRDIZK0ocnEAfXaDl1_yBCdjFNh",
+        "documentSha256": "41f369baf395231c6d90ef1b3b1f76b6222a6a8eda59a301c61a48727be5e51a",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0096",
+            "textSha256": "dea9aee857b471830dea95448ed18749e87f25ebc2c0ca7c68e8286513481118"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the Word day number, keeping the approved route and the type of tour."
+      }
+    }
+  ]
+}

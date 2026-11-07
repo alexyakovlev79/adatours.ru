@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_source_chudesa_beliza:b001",
+  "stableId": "tour_source_chudesa_beliza",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "b481262c45e17a21b67b450a8d0c7862d3cff77ceaccc913e0df9b788209d453",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "546266fd1c15b70498caa07f01bcc82580b444d561b44ac4ff3dacaad03208e3",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The title Belize Adventure identifies a variant with a different cave and hotel offering. It does not give the guide-language detail of this RU title."
+      },
+      "text": "6-Day Belize Tour with an English-Speaking Guide"
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "feb4abee547c38783f03214054e413c6a462e87dfd362cae68dd3c9100a2d717",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word introduction is a generic overview of a different itinerary and does not cover the Barton Creek canoe trip or the named Caana and San Pedro stops."
+      },
+      "text": "This route takes you through Mountain Pine Ridge, Maya archaeological sites, Barton Creek Cave, Ambergris Caye and Belize City. Over six days, you’ll visit Caracol and the Caana pyramid, canoe along an underground river, take a water taxi to San Pedro and explore Hol Chan Marine Reserve."
+    },
+    {
+      "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+      "field": "priceNote",
+      "sourceTextSha256": "a30228c8e6e541886355db89d7b27e4a11897d89a9c35d3104d4b0ea0da467c0",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word tariff table gives $3,667 and $4,246 per person on a double basis for its own four-star hotel options. It contains no $4566 price note for this programme."
+      },
+      "text": "$4566"
+    },
+    {
+      "blockId": "tour:itinerary_label:9558193651db1743",
+      "field": "itinerary.label",
+      "sourceTextSha256": "eca6c5c603f551021db73cf5d0b3714d153edce3207f345e18ce4ae5a2b655e7",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1s6PF87Ij7LQFalrtY3TngIN9JMclNKBf",
+        "documentSha256": "c6eb8f6ac9719b5c3481945b3d680d49f0e3cc13fc38e55c9cfdfefa28af5995",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:body/p[14]",
+            "textSha256": "df4fcb8b68f2e021139830db17c721a919a65c4502236a650697995c81f8324a"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Use the geographic name in the Word itinerary without the reserve descriptor."
+      },
+      "text": "Mountain Pine Ridge"
+    },
+    {
+      "blockId": "tour:itinerary_label:e57e370ed286794f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a23a576a261f1cb33e9b0c4ce835790c16b55a095da3a11661139a715410a706",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word names Ambergris Caye but does not give the combined label with San Pedro used in the RU route."
+      },
+      "text": "San Pedro, Ambergris Caye"
+    },
+    {
+      "blockId": "tour:itinerary_label:7440956a7d276eb7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0aa31abfb9296aa9fcb853387c347c945722efe9c825004a269b1c988065edba",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1s6PF87Ij7LQFalrtY3TngIN9JMclNKBf",
+        "documentSha256": "c6eb8f6ac9719b5c3481945b3d680d49f0e3cc13fc38e55c9cfdfefa28af5995",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:body/p[36]",
+            "textSha256": "43d741c273eda4e992bd3d404981ba693464328cb92ff5e97ac6e51d5783dbb7"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "Use the place named on the Word return journey as a standalone label."
+      },
+      "text": "Belize City"
+    },
+    {
+      "blockId": "tour:included:0fd32c84dd903fb9",
+      "field": "included",
+      "sourceTextSha256": "c599f57e3c835748c150e8ab8eadfb7207ddf386963dd7b17d6cb2f4ebd2ec26",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word inclusions do not confirm accommodation and its separate tariff table describes four-star hotels. It has no equivalent five-star inclusion."
+      },
+      "text": "Accommodation in 5-star hotels"
+    },
+    {
+      "blockId": "tour:included:5acfd85a1b095fff",
+      "field": "included",
+      "sourceTextSha256": "098c8644bf1f55288b2f0725fc7f595c53da90897faf612b10df72c03fa2b700",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6661p3-gsvlk8obwt-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word inclusions itemise specific transfers for a different programme without the equivalent all-ground-transport clause."
+      },
+      "text": "All ground transport for the excursions and transfers in the programme"
+    }
+  ]
+}

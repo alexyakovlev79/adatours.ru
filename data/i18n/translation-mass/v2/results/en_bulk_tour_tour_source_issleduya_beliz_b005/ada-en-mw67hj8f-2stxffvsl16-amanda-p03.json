@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_issleduya_beliz:b005",
+  "stableId": "tour_source_issleduya_beliz",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "009a4eb1338b8914361deeeb6ee5ccd998596a0f48b49bcef99d74867ee9fe93",
+  "blocks": [
+    {
+      "blockId": "tour:note:f0ee8356c726de03",
+      "field": "note",
+      "sourceTextSha256": "cf1826c3b08df8cb85635d8369fe2482d418156c449e8e48338dc596aca322f9",
+      "text": "Ada Tours may change the order of the excursions while keeping the tour programme intact.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hj8f-2stxffvsl16-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word itinerary and package lists do not state an option to reorder the excursions while retaining the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:64d02759479179f7",
+      "field": "note",
+      "sourceTextSha256": "68babc2b96391a49bab60e7959a09c3adcbd424248b10123a98cca4d5309ba74",
+      "text": "Ada Tours accepts no responsibility for missed hotel breakfasts when an early flight or excursion requires you to check out early.",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hj8f-2stxffvsl16-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word document lists breakfast in the packages but does not state a liability exclusion for early checkout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "f85448e3405b1824835fb3cf9e7d38f520d3c1c54258e48a8a4efc995e18c38e",
+      "text": "Arrival in Belize",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0003",
+            "textSha256": "825ccf4c422b9456ef5b77c64f0253a9e06b8c34aae3ec0796bb62bd8335ebec"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day-number prefix already supplied by the itinerary layout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "2f4876ada6a4faf1a324b3d1349a04881f2ff0e544a13e44382ec13da9893817",
+      "text": "Welcome to Belize! Upon arrival at Belize International Airport, you will be greeted by a representative holding a sign with your name. You will travel approximately 60 minutes by road to the river dock, followed by a scenic 60-minute riverboat transfer to your jungle lodge. Dinner is included this evening.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0004",
+            "textSha256": "7a46be710412b66f56fd2e747542480dbaf80ed8cc56a382d40c3cbe6ca930b2"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:ef4f97b9c72e8292",
+      "field": "media.alt",
+      "sourceTextSha256": "02cafc72ef42c2cb654785afe8b390a310cb15aaf4e9e7b90bff4df671c4c3a4",
+      "text": "A bicycle beside a purple wooden house with green trim in Belize City, Belize",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hj8f-2stxffvsl16-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "There is no Word photo caption identifying the bicycle and purple house with green trim in Belize City."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:07d33008b48f12b7",
+      "field": "media.hover",
+      "sourceTextSha256": "ded2270df98e2fb7976dfab782c46fb41072f031966070e8a649b9b481487fff",
+      "text": "Belize City, with a colourful wooden house and a bicycle by the wall",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw67hj8f-2stxffvsl16-amanda",
+        "model": "ChatGPT",
+        "wordAbsenceReason": "The Word arrival description gives no hover caption for the Belize City house and bicycle image."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "ca39f0742c198a8a33659106efb0c915d4318da02d459dc438a4c73096fde12c",
+      "text": "Activities at the Jungle Lodge",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0006",
+            "textSha256": "17b24b0b443eea45811de31b59c7d853a320591c5427bc90c8710550ea3a52e0"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove the day-number prefix already supplied by the itinerary layout."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "6b606f2716ba5897080683b28a7656c26ea6c13156c41cd3f0e43018491e1f73",
+      "text": "Today you will enjoy activities included in your all-inclusive stay. Options include sunrise canoeing, jungle sunrise walks, Maya jungle medicine and village experiences, river safaris, birdwatching excursions, visits to the Lamanai Maya ruins, sunset cocktail cruises, and night wildlife tours. Breakfast, lunch, and dinner are included.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ynOq1mJrTOVwVltEmC6l4hX0sIRdVGXB",
+        "documentSha256": "aa96a2f549af7aae1a3de8f322af4f47ef9073415a79b28725d903318b71660f",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0007",
+            "textSha256": "7cdcfedfacb3cc9856c21864d3b4275edc8c5ac92ab74ab334e571822ce2a2bd"
+          }
+        ]
+      }
+    }
+  ]
+}

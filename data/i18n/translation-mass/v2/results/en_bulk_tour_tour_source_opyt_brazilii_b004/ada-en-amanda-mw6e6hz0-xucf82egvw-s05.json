@@ -1,0 +1,152 @@
+{
+  "jobId": "en:bulk:tour:tour_source_opyt_brazilii:b004",
+  "stableId": "tour_source_opyt_brazilii",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "99e49bd41317d0f9125b55c04029f685acf27006f43b17955995ccb8ccf6a106",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:38e2fbf0faf244ea",
+      "field": "media.alt",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0026",
+            "textSha256": "6557dfdf60d1db8c946efab1bdff510bee448dbe93283431a73827ff980b30f8"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the confirmed arrival city's name as the short photo alt label, without the Word day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+      "field": "itinerary.title",
+      "sourceTextSha256": "4b27925713a8b600cf0a69ff22070e470b73ad003a01bcf9f4bb2a9064d16133",
+      "text": "Sugarloaf Mountain and Rio’s Historic Centre",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "2fb0e80f9ad9c77c244022fb28ae3683a55e5c5e8789722a072a3d6d28beaa88"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Use the two Day 2 visits in the Word passage to form the itinerary heading for this field."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:569e72e117968fcc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "55a491bc1660ba4d192958a3d06f9d6ec892e63d2a1a9a6cd7199c08525efa55",
+      "text": "After breakfast at the hotel you will go to a very special place in Rio with your guide, the Sugarloaf. A cable car ride will take you up to Urca Mountain, the stop between ground level and Sugarloaf. Once arriving at the top of Sugarloaf mountain you will see the captivating beauty of Rio from a different angle. To your left you can see Copacabana beach stretching out into the distance, and on the horizon the faint outlines of Two Brothers and Gávea mountains. Below you is the intimate Red Beach, while to your right you can see across Guanabara Bay to Niterói and, nearer by,  Botafogo and central neighborhoods, with the unmistakable silhouette of Christ the Redeemer casting its eternal gaze over the city. From this point we gain a different perspective on Rio, and can truly appreciate its beauty. After descending the mountain by cable car, you will head into the Historical Center with its colonial architecture including many old churches still in use. The cobbled streets and bright colors are a stark contrast to the whitewashed, sunsoaked streets of Ipanema but in many ways are part of the authentic, nearly-forgotten historical Rio, and one can almost feel the hustle and bustle of hundreds of years ago when these streets were filled with merchants and citizens of the Portuguese Empire, locals, immigrants etc",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0032",
+            "textSha256": "2fb0e80f9ad9c77c244022fb28ae3683a55e5c5e8789722a072a3d6d28beaa88"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+      "text": "Rio de Janeiro",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0031",
+            "textSha256": "a2459ab6e9ea9c7c90500d8de76d373bbf4355137f4b06dfa4cf5b4074f44cf0"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the confirmed city name from the Day 2 heading for the standalone place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:07172fd6ca3b791b",
+      "field": "media.alt",
+      "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+      "text": "Panoramic view of Rio de Janeiro, Brazil, with the bay, Sugarloaf Mountain and city buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-20261107",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Day 2 Word passage describes what visitors see from Sugarloaf but has no photo caption for this wider view showing the mountain itself, the bay and buildings."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:bec8b04e2a6eaf4a",
+      "field": "media.hover",
+      "sourceTextSha256": "cf9a5d9c41bfb5378d2e3d8934d1d6217c675086e2c220d85dfacde8f4dda177",
+      "text": "Rio de Janeiro: the bay and Sugarloaf Mountain amid the city’s neighbourhoods",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-amanda-20261107",
+        "model": "GPT-6",
+        "wordAbsenceReason": "The Day 2 Word text gives sightseeing details, but does not provide the photo caption that identifies Sugarloaf and the bay among the urban districts."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "c59d2e190fd1114180dcba145fa37eebfbaa3e64f05b62e0867c7957fa8e7ba5",
+      "text": "Corcovado, Christ the Redeemer and the City of Samba",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0035",
+            "textSha256": "dcb447dcc3604ea261da8ddbc9bb7fc7a1fedc887364b51d3c1fc29229a78fcd"
+          },
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "b50fba605485f521c705060992bbe0dd588202d662501f7742c63417b2ad7389"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combine the Word subheading for Corcovado and Christ the Redeemer with the City of Samba stop later in the same day's itinerary."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "b32c3ad40404db72d7883b7615083b7a00c123fc3470f83e50b2f023299b3bb9",
+      "text": "After breakfast we set off on a tour through the city. Arriving at the station, where the environmentally friendly train will take us through the jungle to the top of Corcovado. On either side of the railway you will have spectacular views from Tijuca forest, inhabited by monkeys and other exotic animals and birds. At the top of Corcovado, at an altitude of 700 m above sea level, stands the symbol of Rio - Statue of Christ the Savior (38m), which was built in 1931. A breathtaking panorama view of the metropolis and its surroundings: the Niteroi Bridge, Guanabara Bay, the Botanical Garden, the world's largest Maracana stadium, Sugar Loaf, and more is possible from the top of Corcovado.\n\nAfter we will have an experience the creation of Rio de Janeiro’s Carnival from an insider’s perspective: visit the City of Samba, enter the Grande Rio’s Samba Factory, learn about the history of Samba and Carnival parades, understand the production of floats and costumes, and feel the samba fever with an authentic carnival costume, a samba class, and a Brazilian welcome drink!",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1-UUELDDWEhO6LBoo_2tGus_nTi_0Tf1l",
+        "documentSha256": "b64ae6a364b913fe47ca42f0ae42f05044bca654607c03a9a9a5df8e094df9ba",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0036",
+            "textSha256": "1cc77e3135ede64b3bc7c9a94c41aff78472cef3ef74392a4f4fc3d1c50667d4"
+          },
+          {
+            "ref": "word/document.xml#p0037",
+            "textSha256": "b50fba605485f521c705060992bbe0dd588202d662501f7742c63417b2ad7389"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_source_pantanal_za_5_dnej:b005",
+  "stableId": "tour_source_pantanal_za_5_dnej",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "0d076965a031616facd079bafeba17748728a1c2fd47281fe88911d54b7ce297",
+  "blocks": [
+    {
+      "blockId": "tour:media_alt:7f6f749a23f2421a",
+      "field": "media.alt",
+      "sourceTextSha256": "a080759b6eda5e2afaddaafecaab27b3368e3230c201306273035f8d3aa37693",
+      "text": "People in brightly coloured inner tubes in the white foam of a rushing river, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word Day 4 describes the lodge safari programme but contains no alt text for the whitewater tubing photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:f2a2ce8e4ff008e2",
+      "field": "media.hover",
+      "sourceTextSha256": "752948b39dbdc8a79820b30098a9b514227f20fb5eed72205779a1d1bdb9ef66",
+      "text": "Whitewater tubing",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The 2026 Word programme has no separate hover caption for the whitewater tubing photograph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "sourceTextSha256": "088cf9bad41fbab7f21b007e01c644cb1a36c08e7346c4499c839c65640af28d",
+      "text": "Farewell",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0056",
+            "textSha256": "0d349983648046277339d8a9f0501ee132f6b5fa8b881b96eb533323d8080825"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "The website renders the day number separately, so use the exact Word heading without its day marker."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "sourceTextSha256": "a52830cfccd9762ad952f6c396ad66a759d4236ba867939e4f0a30550a45894c",
+      "text": "In the morning, after breakfast, the transfer will take you to the International Airport along with your luggage to take a flight back home.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0057",
+            "textSha256": "d4aa83570a7356b40c2e248c8a46a6c9156b62e91ba81cfcff75f6c3ba8cfad3"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bc47ae56b2b635fc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "003624868c48a9a143ea5907d16aac07d92a3f96879e396117426dea3f1b05d3",
+      "text": "Pantanal",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0000",
+            "textSha256": "eca839902f399e2e9e2adbc13160863157f6728c9da453f7408f248cd152a0f7"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:5337ebcdc1c31e0d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "dcb174c70b7928f7f6ae57e80db974a01226a7afcda2e7eea2c5de67d6276324",
+      "text": "Campo Grande",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1dTQ_zzb3Tl-NeMeKs0RNAeoBEjjeRFNk",
+        "documentSha256": "135d0fe3cb578569c97623e3624099e8058d9f550a6ef16f6ea7a0d2ab760352",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0019",
+            "textSha256": "e80144ad43f5ea420bd343b5c9d22d6f60934858372dd1da000ab888ca9af5f6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The Word arrival paragraph names Campo Grande as the airport city; the itinerary stores that name as a separate place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:7c55097e91f3c89e",
+      "field": "media.alt",
+      "sourceTextSha256": "e4d71441d0294be1ee1d4b07fb9caec76efa841f6c33d6ec825d20a2f06c67d2",
+      "text": "Cars on an avenue in Campo Grande, Brazil, lined with palms and city buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "Word names Campo Grande's airport but supplies no alt text for the city avenue photograph."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:7b151678ca390229",
+      "field": "media.hover",
+      "sourceTextSha256": "9ea3eeb2041653ae7cce6a6be4cc0fbd84eb297c3077af553d1c9c544ec33be9",
+      "text": "Campo Grande: a broad palm-lined street on a sunny day",
+      "provenance": {
+        "kind": "ai_translation",
+        "runId": "ada-en-mw6e7106-nqjx0crsykwe-amanda",
+        "model": "GPT-6.1",
+        "wordAbsenceReason": "The Word programme has no hover caption for the Campo Grande street photograph."
+      }
+    }
+  ]
+}

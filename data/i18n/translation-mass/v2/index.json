@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 660,
-    "leased": 1,
-    "review": 3278,
+    "leased": 0,
+    "review": 3279,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 660,
-      "leased": 1,
-      "review": 461,
+      "leased": 0,
+      "review": 462,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -968,8 +968,8 @@
         "ai_only": {
           "held": 0,
           "queued": 11,
-          "leased": 1,
-          "review": 22,
+          "leased": 0,
+          "review": 23,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -977,7 +977,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T13:15:29.855Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0d": {
@@ -1341,14 +1341,7 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {
-    "ada-en-worker-mw96kqoe-lg4q4klwz6": {
-      "jobId": "en:bulk:tour:tour_source_na_mototsiklakh_po_brazilii:b008",
-      "token": "lease-mw96kqoe-lg4q4klwz6-qvo8d16a1n",
-      "expiresAt": "2026-11-09T13:15:29.855Z",
-      "generation": 1
-    }
-  },
+  "activeOwners": {},
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11325,7 +11318,8 @@
         "en:bulk:tour:tour_source_krasivaya_boliviya:b006",
         "en:bulk:tour:tour_source_meksika_treugolnik_solntsa:b006",
         "en:bulk:tour:tour_source_priroda_i_kultura_venesuely_bolivii:b002",
-        "en:bulk:tour:tour_source_manyashchaya_kolumbiya_baru:b003"
+        "en:bulk:tour:tour_source_manyashchaya_kolumbiya_baru:b003",
+        "en:bulk:tour:tour_source_na_mototsiklakh_po_brazilii:b008"
       ]
     },
     "ada-en-mw96kyp4-8b4psxk3": {
@@ -11384,5 +11378,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T11:45:29.855Z"
+  "updatedAt": "2026-11-09T11:45:47.779Z"
 }

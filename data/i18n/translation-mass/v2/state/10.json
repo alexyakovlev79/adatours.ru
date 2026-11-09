@@ -653,11 +653,16 @@
     {
       "jobId": "en:bulk:tour:tour_source_amazoniya:b002",
       "stage": "ai_only",
-      "status": "queued",
+      "status": "leased",
       "sourceFingerprint": "cf22d35124b6edee6cb677cf4b2be99292ef6d83551962859acba08345b39a56",
-      "generation": 0,
+      "generation": 1,
       "attempts": 0,
-      "lease": null,
+      "lease": {
+        "ownerId": "ada-en-worker-mw9gatwi",
+        "token": "ada-en-ft629bdcoaxuiv08eofkd",
+        "claimedAt": "2026-11-09T16:05:58.300Z",
+        "expiresAt": "2026-11-09T17:35:58.300Z"
+      },
       "checkpoint": null,
       "submission": null,
       "review": null,

@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 759,
-    "leased": 1,
-    "review": 3179,
+    "leased": 0,
+    "review": 3180,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 759,
-      "leased": 1,
-      "review": 362,
+      "leased": 0,
+      "review": 363,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -1168,8 +1168,8 @@
         "ai_only": {
           "held": 0,
           "queued": 15,
-          "leased": 1,
-          "review": 19,
+          "leased": 0,
+          "review": 20,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1177,7 +1177,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T08:50:06.396Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1c": {
@@ -1341,14 +1341,7 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {
-    "ada-en-20261109-mw8xljay-hrdwq6": {
-      "jobId": "en:bulk:tour:tour_source_manyashchij_peru_kolumbiya:b008",
-      "token": "ada-en-20261109-mw8xljay-hrdwq6-lease",
-      "expiresAt": "2026-11-09T08:50:06.396Z",
-      "generation": 1
-    }
-  },
+  "activeOwners": {},
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11118,9 +11111,11 @@
       "jobIds": [
         "en:bulk:tour:tour_source_manyashchij_peru_kolumbiya:b008"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_manyashchij_peru_kolumbiya:b008"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T07:20:06.396Z"
+  "updatedAt": "2026-11-09T07:20:32.557Z"
 }

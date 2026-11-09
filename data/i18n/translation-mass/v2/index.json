@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 676,
-    "leased": 4,
-    "review": 3259,
+    "leased": 3,
+    "review": 3260,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 676,
-      "leased": 4,
-      "review": 442,
+      "leased": 3,
+      "review": 443,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -368,8 +368,8 @@
         "ai_only": {
           "held": 0,
           "queued": 15,
-          "leased": 1,
-          "review": 15,
+          "leased": 0,
+          "review": 16,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T13:02:12.255Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "18": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-worker-mw96kqoe-lg4q4klwz6": {
-      "jobId": "en:bulk:tour:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy:b014",
-      "token": "lease-mw96kqoe-lg4q4klwz6-qvo8d16a1n",
-      "expiresAt": "2026-11-09T13:02:12.255Z",
-      "generation": 1
-    },
     "ada-en-mw96knej-0c36k4xy7k": {
       "jobId": "en:bulk:tour:tour_source_luchshee_v_salvadore:b004",
       "token": "ada-en-token-mw96knej-0c36k4xy7k-wn36ef2vac",
@@ -11320,7 +11314,8 @@
         "en:bulk:tour:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy:b014"
       ],
       "completedJobIds": [
-        "en:bulk:tour:tour_source_stolitsy_latinskoj_ameriki:b013"
+        "en:bulk:tour:tour_source_stolitsy_latinskoj_ameriki:b013",
+        "en:bulk:tour:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy:b014"
       ]
     },
     "ada-en-mw96kyp4-8b4psxk3": {
@@ -11367,5 +11362,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T11:40:31.300Z"
+  "updatedAt": "2026-11-09T11:40:37.440Z"
 }

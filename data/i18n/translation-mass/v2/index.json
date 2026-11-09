@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 761,
-    "leased": 0,
+    "queued": 760,
+    "leased": 1,
     "review": 3178,
     "ready": 50,
     "retryable": 0,
@@ -49,8 +49,8 @@
     },
     "ai_only": {
       "held": 0,
-      "queued": 761,
-      "leased": 0,
+      "queued": 760,
+      "leased": 1,
       "review": 361,
       "ready": 0,
       "retryable": 0,
@@ -727,8 +727,8 @@
         },
         "ai_only": {
           "held": 0,
-          "queued": 21,
-          "leased": 0,
+          "queued": 20,
+          "leased": 1,
           "review": 10,
           "ready": 0,
           "retryable": 0,
@@ -737,7 +737,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-09T08:13:11.697Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-20261109-mw8vu04w": {
+      "jobId": "en:bulk:tour:tour_source_argentina_puteshestvie_v_doistoricheskij_mir:b007",
+      "token": "ada-en-20261109-mw8vu04w-zgq0ys4izy",
+      "expiresAt": "2026-11-09T08:13:11.697Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11063,7 +11070,8 @@
         "en:bulk:tour:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy:b012",
         "en:bulk:tour:tour_source_aktivnyj_ekvador:b010",
         "en:bulk:tour:tour_source_braziliya_i_peru_na_novyj_god:b014",
-        "en:bulk:tour:tour_source_ekvador_aktivnyj_tur_s_galapagossom:b002"
+        "en:bulk:tour:tour_source_ekvador_aktivnyj_tur_s_galapagossom:b002",
+        "en:bulk:tour:tour_source_argentina_puteshestvie_v_doistoricheskij_mir:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_gvatemala_kosta_rika:b001",
@@ -11106,5 +11114,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T06:43:03.974Z"
+  "updatedAt": "2026-11-09T06:43:11.697Z"
 }

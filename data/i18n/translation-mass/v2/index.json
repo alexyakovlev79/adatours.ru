@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 745,
-    "leased": 5,
-    "review": 3189,
+    "leased": 4,
+    "review": 3190,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 745,
-      "leased": 5,
-      "review": 372,
+      "leased": 4,
+      "review": 373,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -888,8 +888,8 @@
         "ai_only": {
           "held": 0,
           "queued": 13,
-          "leased": 1,
-          "review": 16,
+          "leased": 0,
+          "review": 17,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -897,7 +897,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T08:51:41.135Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0b": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw8xmc1z-c3czq7aboap843vk2r4442": {
-      "jobId": "en:bulk:tour:tour_source_krasivaya_boliviya:b008",
-      "token": "lease-mw8xmc1z-lm2e20hdn9dxi9spvlz4",
-      "expiresAt": "2026-11-09T08:51:41.135Z",
-      "generation": 1
-    },
     "ada-en-mw8xm7mg-7cp5ig": {
       "jobId": "en:bulk:tour:tour_central_america_eight_countries_26_days:b001",
       "token": "ada-en-mw8xm7mg-7cp5ig-n9wiwbmvkisfnfgduixhr5",
@@ -11184,7 +11178,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_krasivaya_boliviya:b008"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_krasivaya_boliviya:b008"
+      ]
     },
     "ada-en-mw8xmmzc-4ws6bwp2vxe": {
       "token": "lease-mw8xmmzc-rrrrd08qwn",
@@ -11198,5 +11194,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T07:23:52.935Z"
+  "updatedAt": "2026-11-09T07:24:01.664Z"
 }

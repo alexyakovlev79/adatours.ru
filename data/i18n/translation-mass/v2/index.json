@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 601,
-    "leased": 0,
+    "queued": 600,
+    "leased": 1,
     "review": 3338,
     "ready": 50,
     "retryable": 0,
@@ -49,8 +49,8 @@
     },
     "ai_only": {
       "held": 0,
-      "queued": 601,
-      "leased": 0,
+      "queued": 600,
+      "leased": 1,
       "review": 521,
       "ready": 0,
       "retryable": 0,
@@ -1047,8 +1047,8 @@
         },
         "ai_only": {
           "held": 0,
-          "queued": 20,
-          "leased": 0,
+          "queued": 19,
+          "leased": 1,
           "review": 9,
           "ready": 0,
           "retryable": 0,
@@ -1057,7 +1057,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-09T17:52:02.821Z",
       "earliestRetryAt": null
     },
     "0f": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-mw9gazv7-ubl7s2pl6r": {
+      "jobId": "en:bulk:tour:tour_source_chili_i_argentina_vip:b019",
+      "token": "tok-jltvz44g1zrvmayn8ph7z",
+      "expiresAt": "2026-11-09T17:52:02.821Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11522,7 +11529,8 @@
         "en:bulk:tour:tour_source_na_mototsiklakh_po_brazilii:b007",
         "en:bulk:tour:tour_peru_bolivia_uyuni_lakes_15_days:b012",
         "en:bulk:tour:tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu:b001",
-        "en:bulk:tour:tour_source_cancun_palenque_cenot:b001"
+        "en:bulk:tour:tour_source_cancun_palenque_cenot:b001",
+        "en:bulk:tour:tour_source_chili_i_argentina_vip:b019"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_kolumbiya_bogota_ekhe_kafetero_kartakhena:b003",
@@ -11538,5 +11546,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T16:21:55.862Z"
+  "updatedAt": "2026-11-09T16:22:02.821Z"
 }

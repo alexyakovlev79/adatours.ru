@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 758,
-    "leased": 0,
+    "queued": 757,
+    "leased": 1,
     "review": 3181,
     "ready": 50,
     "retryable": 0,
@@ -49,8 +49,8 @@
     },
     "ai_only": {
       "held": 0,
-      "queued": 758,
-      "leased": 0,
+      "queued": 757,
+      "leased": 1,
       "review": 364,
       "ready": 0,
       "retryable": 0,
@@ -1287,8 +1287,8 @@
         },
         "ai_only": {
           "held": 0,
-          "queued": 16,
-          "leased": 0,
+          "queued": 15,
+          "leased": 1,
           "review": 20,
           "ready": 0,
           "retryable": 0,
@@ -1297,7 +1297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-09T08:50:56.101Z",
       "earliestRetryAt": null
     },
     "1f": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-20261109-mw8xljay-hrdwq6": {
+      "jobId": "en:bulk:tour:tour_source_priroda_i_kultura_venesuely_bolivii:b005",
+      "token": "ada-en-20261109-mw8xljay-hrdwq6-lease",
+      "expiresAt": "2026-11-09T08:50:56.101Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11110,7 +11117,8 @@
       "token": "ada-en-20261109-mw8xljay-hrdwq6-lease",
       "jobIds": [
         "en:bulk:tour:tour_source_manyashchij_peru_kolumbiya:b008",
-        "en:bulk:tour:tour_source_puteshestvie_k_raduzhnoj_reke_kolumbii:b002"
+        "en:bulk:tour:tour_source_puteshestvie_k_raduzhnoj_reke_kolumbii:b002",
+        "en:bulk:tour:tour_source_priroda_i_kultura_venesuely_bolivii:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_manyashchij_peru_kolumbiya:b008",
@@ -11119,5 +11127,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T07:20:48.808Z"
+  "updatedAt": "2026-11-09T07:20:56.101Z"
 }

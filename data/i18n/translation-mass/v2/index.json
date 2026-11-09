@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 808,
-    "leased": 2,
-    "review": 3129,
+    "leased": 1,
+    "review": 3130,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 808,
-      "leased": 2,
-      "review": 312,
+      "leased": 1,
+      "review": 313,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -1248,8 +1248,8 @@
         "ai_only": {
           "held": 0,
           "queued": 20,
-          "leased": 1,
-          "review": 12,
+          "leased": 0,
+          "review": 13,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T07:59:31.171Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1e": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw8vshb5-enc7ju": {
-      "jobId": "en:bulk:tour:tour_source_ekonomichnaya_kosta_rika:b007",
-      "token": "lease-mw8vshb5-enc7ju-2zal0qzddvw",
-      "expiresAt": "2026-11-09T07:59:31.171Z",
-      "generation": 2
-    },
     "ada-en-work-e805e5042bc7": {
       "jobId": "en:bulk:tour:tour_source_ekvador_krasota_i_priroda:b007",
       "token": "ada-en-session-e805e5042bc7-v1",
@@ -10989,7 +10983,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_ekonomichnaya_kosta_rika:b007"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_ekonomichnaya_kosta_rika:b007"
+      ]
     },
     "ada-en-work-e805e5042bc7": {
       "token": "ada-en-session-e805e5042bc7-v1",
@@ -11000,5 +10996,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T06:29:38.222Z"
+  "updatedAt": "2026-11-09T06:29:46.520Z"
 }

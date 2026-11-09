@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 758,
-    "leased": 1,
-    "review": 3180,
+    "leased": 0,
+    "review": 3181,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 758,
-      "leased": 1,
-      "review": 363,
+      "leased": 0,
+      "review": 364,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -1248,8 +1248,8 @@
         "ai_only": {
           "held": 0,
           "queued": 15,
-          "leased": 1,
-          "review": 17,
+          "leased": 0,
+          "review": 18,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1257,7 +1257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T08:50:39.673Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "1e": {
@@ -1341,14 +1341,7 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {
-    "ada-en-20261109-mw8xljay-hrdwq6": {
-      "jobId": "en:bulk:tour:tour_source_puteshestvie_k_raduzhnoj_reke_kolumbii:b002",
-      "token": "ada-en-20261109-mw8xljay-hrdwq6-lease",
-      "expiresAt": "2026-11-09T08:50:39.673Z",
-      "generation": 1
-    }
-  },
+  "activeOwners": {},
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11120,10 +11113,11 @@
         "en:bulk:tour:tour_source_puteshestvie_k_raduzhnoj_reke_kolumbii:b002"
       ],
       "completedJobIds": [
-        "en:bulk:tour:tour_source_manyashchij_peru_kolumbiya:b008"
+        "en:bulk:tour:tour_source_manyashchij_peru_kolumbiya:b008",
+        "en:bulk:tour:tour_source_puteshestvie_k_raduzhnoj_reke_kolumbii:b002"
       ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T07:20:39.673Z"
+  "updatedAt": "2026-11-09T07:20:48.808Z"
 }

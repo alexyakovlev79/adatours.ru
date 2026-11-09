@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 521,
-    "leased": 6,
-    "review": 3412,
+    "leased": 5,
+    "review": 3413,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 521,
-      "leased": 6,
-      "review": 595,
+      "leased": 5,
+      "review": 596,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -88,8 +88,8 @@
         "ai_only": {
           "held": 0,
           "queued": 23,
-          "leased": 1,
-          "review": 16,
+          "leased": 0,
+          "review": 17,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -97,7 +97,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T19:57:11.852Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "11": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261109-a769ac8379f2d25c8c252a41": {
-      "jobId": "en:bulk:tour:tour_source_chili_i_argentina_vip:b013",
-      "token": "d802520e8e7a6e976583fa2f95eb3c5154867a354b948dfb",
-      "expiresAt": "2026-11-09T19:57:11.852Z",
-      "generation": 1
-    },
     "ada-en-3d74c885-ec18-44c9-816e-dfc3b1075fc2": {
       "jobId": "en:bulk:tour:tour_peru_bolivia_uyuni_lakes_15_days:b023",
       "token": "54220fc9-7002-4f32-92ca-73acd3dfe8da",
@@ -11796,7 +11790,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_chili_i_argentina_vip:b013"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_chili_i_argentina_vip:b013"
+      ]
     },
     "ada-en-20261109-mw9la9dr-5gsd40eg": {
       "token": "tok-liru2vyuj1-7c837c3ozas",
@@ -11812,5 +11808,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T18:29:37.914Z"
+  "updatedAt": "2026-11-09T18:29:45.220Z"
 }

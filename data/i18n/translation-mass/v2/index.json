@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 688,
-    "leased": 5,
-    "review": 3246,
+    "leased": 4,
+    "review": 3247,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 688,
-      "leased": 5,
-      "review": 429,
+      "leased": 4,
+      "review": 430,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -288,8 +288,8 @@
         "ai_only": {
           "held": 0,
           "queued": 32,
-          "leased": 1,
-          "review": 4,
+          "leased": 0,
+          "review": 5,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -297,7 +297,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T13:01:57.094Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "16": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw96kyp4-8b4psxk3": {
-      "jobId": "en:bulk:tour:tour_ecuador_colombia_galapagos_12_days:b004",
-      "token": "lease-h1r69tc8tg4h4iwg4fh7k",
-      "expiresAt": "2026-11-09T13:01:57.094Z",
-      "generation": 1
-    },
     "ada-en-worker-mw96kqoe-lg4q4klwz6": {
       "jobId": "en:bulk:tour:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy:b014",
       "token": "lease-mw96kqoe-lg4q4klwz6-qvo8d16a1n",
@@ -11327,7 +11321,9 @@
       "jobIds": [
         "en:bulk:tour:tour_ecuador_colombia_galapagos_12_days:b004"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_ecuador_colombia_galapagos_12_days:b004"
+      ]
     },
     "ada-en-mw96l01v-myqa6co0d78doi5ozugapb": {
       "token": "lease-mw96l01v-myqa6co0d78doi5ozugapb-3ruyq39fken",
@@ -11347,5 +11343,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T11:36:53.184Z"
+  "updatedAt": "2026-11-09T11:37:02.089Z"
 }

@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 662,
-    "leased": 1,
-    "review": 3276,
+    "leased": 0,
+    "review": 3277,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 662,
-      "leased": 1,
-      "review": 459,
+      "leased": 0,
+      "review": 460,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -368,8 +368,8 @@
         "ai_only": {
           "held": 0,
           "queued": 12,
-          "leased": 1,
-          "review": 18,
+          "leased": 0,
+          "review": 19,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T13:14:15.108Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "18": {
@@ -1341,14 +1341,7 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {
-    "ada-en-worker-mw96kqoe-lg4q4klwz6": {
-      "jobId": "en:bulk:tour:tour_source_priroda_i_kultura_venesuely_bolivii:b002",
-      "token": "lease-mw96kqoe-lg4q4klwz6-qvo8d16a1n",
-      "expiresAt": "2026-11-09T13:14:15.108Z",
-      "generation": 1
-    }
-  },
+  "activeOwners": {},
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11321,7 +11314,8 @@
         "en:bulk:tour:tour_source_kostarikanskie_sokrovishcha:b005",
         "en:bulk:tour:tour_source_priklyucheniya_v_bolivii:b010",
         "en:bulk:tour:tour_source_krasivaya_boliviya:b006",
-        "en:bulk:tour:tour_source_meksika_treugolnik_solntsa:b006"
+        "en:bulk:tour:tour_source_meksika_treugolnik_solntsa:b006",
+        "en:bulk:tour:tour_source_priroda_i_kultura_venesuely_bolivii:b002"
       ]
     },
     "ada-en-mw96kyp4-8b4psxk3": {
@@ -11380,5 +11374,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T11:44:47.477Z"
+  "updatedAt": "2026-11-09T11:45:01.606Z"
 }

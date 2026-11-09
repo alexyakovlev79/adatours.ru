@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 704,
-    "leased": 4,
-    "review": 3231,
+    "leased": 3,
+    "review": 3232,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 704,
-      "leased": 4,
-      "review": 414,
+      "leased": 3,
+      "review": 415,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -448,8 +448,8 @@
         "ai_only": {
           "held": 0,
           "queued": 20,
-          "leased": 1,
-          "review": 10,
+          "leased": 0,
+          "review": 11,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -457,7 +457,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T13:01:21.598Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "00": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw96knej-0c36k4xy7k": {
-      "jobId": "en:bulk:tour:tour_source_argentina_puteshestvie_v_doistoricheskij_mir:b006",
-      "token": "ada-en-token-mw96knej-0c36k4xy7k-wn36ef2vac",
-      "expiresAt": "2026-11-09T13:01:21.598Z",
-      "generation": 1
-    },
     "ada-en-mw96khaf-1a0l7x": {
       "jobId": "en:bulk:tour:tour_source_braziliya_i_peru_na_novyj_god:b016",
       "token": "lease-qkjsbsmiiz6sfsfm94bh2",
@@ -11281,7 +11275,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_argentina_puteshestvie_v_doistoricheskij_mir:b006"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_argentina_puteshestvie_v_doistoricheskij_mir:b006"
+      ]
     },
     "ada-en-worker-mw96kqoe-lg4q4klwz6": {
       "token": "lease-mw96kqoe-lg4q4klwz6-qvo8d16a1n",
@@ -11302,5 +11298,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T11:32:12.255Z"
+  "updatedAt": "2026-11-09T11:32:21.534Z"
 }

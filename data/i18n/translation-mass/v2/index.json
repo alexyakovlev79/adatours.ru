@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 360,
-    "leased": 7,
+    "queued": 359,
+    "leased": 8,
     "review": 3572,
     "ready": 50,
     "retryable": 0,
@@ -49,8 +49,8 @@
     },
     "ai_only": {
       "held": 0,
-      "queued": 360,
-      "leased": 7,
+      "queued": 359,
+      "leased": 8,
       "review": 755,
       "ready": 0,
       "retryable": 0,
@@ -527,8 +527,8 @@
         },
         "ai_only": {
           "held": 0,
-          "queued": 8,
-          "leased": 0,
+          "queued": 7,
+          "leased": 1,
           "review": 23,
           "ready": 0,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-09T21:29:03.795Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1382,6 +1382,12 @@
       "jobId": "en:bulk:tour:tour_source_meksika_treugolnik_solntsa:b007",
       "token": "2b95d225a8564132978cb7816d7bf279",
       "expiresAt": "2026-11-09T21:28:42.180Z",
+      "generation": 1
+    },
+    "ada-en-46f95238a290459398b4283e1f15ccba": {
+      "jobId": "en:bulk:tour:tour_source_venesuela_prirodnye_kontrasty_tropikov:b006",
+      "token": "lease-9f386dfbf7ce48a189ae0c5b4efcfc5b",
+      "expiresAt": "2026-11-09T21:29:03.795Z",
       "generation": 1
     }
   },
@@ -12232,7 +12238,8 @@
       "token": "lease-9f386dfbf7ce48a189ae0c5b4efcfc5b",
       "jobIds": [
         "en:bulk:tour:tour_source_pybalka_v_kosta_rike:b004",
-        "en:bulk:tour:tour_source_rio_de_zhanejro:b002"
+        "en:bulk:tour:tour_source_rio_de_zhanejro:b002",
+        "en:bulk:tour:tour_source_venesuela_prirodnye_kontrasty_tropikov:b006"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_pybalka_v_kosta_rike:b004",
@@ -12258,5 +12265,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T19:58:55.857Z"
+  "updatedAt": "2026-11-09T19:59:03.795Z"
 }

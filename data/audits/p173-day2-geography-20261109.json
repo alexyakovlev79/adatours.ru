@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "programKey": "P173",
+  "testedMain": "dd2f7ca36562540651f154d30d87e21e55778de0",
+  "baselineRef": "c7dffb624835530c19dd91f7929880b2e8582217",
+  "stage": "day2_named_geography_dry_run_verified",
+  "canonicalRecordsWritten": 0,
+  "source": {
+    "driveFileId": "1IUHuVTM4Bio3cPst7PeY1EZJTASnqsOe",
+    "sourceReadback": "prior exact Word snapshot retained; original raw Drive 404 on 09.11",
+    "preparedBundle": "data/audits/p173-prepared-content-20261105.json",
+    "wordSnapshotPath": "data/source-index/materials/tour_source_argentina_ot_lda_k_vodopadam-word-p173-20261104.md",
+    "wordSnapshotSha256": "23a5a5128bb9d8b97cd61deebea618055d20966a274265014aacf3c351ab5404"
+  },
+  "dryRun": {
+    "ok": true,
+    "changed": true,
+    "written": false,
+    "results": [
+      {
+        "outcome": "reserved",
+        "destination": {
+          "id": "destination_argentina_retiro",
+          "name": "Ретиро",
+          "slug": "retiro",
+          "countryId": "country_argentina",
+          "countrySlug": "argentina",
+          "url": "/argentina/place/retiro/",
+          "sourceUrl": null,
+          "destinationType": "district",
+          "navigationRole": "hub",
+          "aliases": [
+            "Retiro"
+          ]
+        },
+        "status": "needs_content"
+      },
+      {
+        "outcome": "reserved",
+        "destination": {
+          "id": "destination_argentina_teatro_colon",
+          "name": "Театр Колон",
+          "slug": "teatro-colon",
+          "countryId": "country_argentina",
+          "countrySlug": "argentina",
+          "url": "/argentina/place/teatro-colon/",
+          "sourceUrl": null,
+          "destinationType": "building",
+          "navigationRole": "sight",
+          "aliases": [
+            "Teatro Colón"
+          ]
+        },
+        "status": "needs_content"
+      },
+      {
+        "outcome": "reserved",
+        "destination": {
+          "id": "destination_argentina_avenida_de_mayo",
+          "name": "Авенида-де-Майо",
+          "slug": "avenida-de-mayo",
+          "countryId": "country_argentina",
+          "countrySlug": "argentina",
+          "url": "/argentina/place/avenida-de-mayo/",
+          "sourceUrl": null,
+          "destinationType": "route_cluster",
+          "navigationRole": "sight",
+          "aliases": [
+            "Avenida de Mayo",
+            "Майский проспект"
+          ]
+        },
+        "status": "needs_content"
+      }
+    ]
+  },
+  "requests": [
+    {
+      "countryId": "country_argentina",
+      "name": "Ретиро",
+      "slug": "retiro",
+      "aliases": [
+        "Retiro"
+      ],
+      "destinationType": "district",
+      "navigationRole": "hub",
+      "discoveredIn": {
+        "entityType": "tour",
+        "entityId": "tour_source_argentina_ot_lda_k_vodopadam",
+        "sourceUrl": "https://drive.google.com/file/d/1IUHuVTM4Bio3cPst7PeY1EZJTASnqsOe/view",
+        "evidence": "P173 Word, day 2: Retiro district explicitly named on half-day Buenos Aires tour."
+      }
+    },
+    {
+      "countryId": "country_argentina",
+      "name": "Театр Колон",
+      "slug": "teatro-colon",
+      "aliases": [
+        "Teatro Colón"
+      ],
+      "destinationType": "building",
+      "navigationRole": "sight",
+      "discoveredIn": {
+        "entityType": "tour",
+        "entityId": "tour_source_argentina_ot_lda_k_vodopadam",
+        "sourceUrl": "https://drive.google.com/file/d/1IUHuVTM4Bio3cPst7PeY1EZJTASnqsOe/view",
+        "evidence": "P173 Word, day 2: named city sightseeing landmark, no admission or performance guaranteed."
+      }
+    },
+    {
+      "countryId": "country_argentina",
+      "name": "Авенида-де-Майо",
+      "slug": "avenida-de-mayo",
+      "aliases": [
+        "Avenida de Mayo",
+        "Майский проспект"
+      ],
+      "destinationType": "route_cluster",
+      "navigationRole": "sight",
+      "discoveredIn": {
+        "entityType": "tour",
+        "entityId": "tour_source_argentina_ot_lda_k_vodopadam",
+        "sourceUrl": "https://drive.google.com/file/d/1IUHuVTM4Bio3cPst7PeY1EZJTASnqsOe/view",
+        "evidence": "P173 Word, day 2: May Avenue is named separately from May Square; do not conflate."
+      }
+    }
+  ],
+  "scope": {
+    "tourMdPath": "src/content/tours/argentina-ot-lda-k-vodopadam.md",
+    "tourDraftSha256": "f5a6d062f53e10368f2a9cb929477a5ed14da048d91edbd12529ac4269f0c621",
+    "entryPath": "data/source-index/entries/tour_source_argentina_ot_lda_k_vodopadam.json",
+    "entryDraftSha256": "091c0a4ba2c24455023783e0f44a5a3476b3f5850d7ee9e535c2a3b89acc9e1d",
+    "tourDestinationIdsCandidate": [
+      "destination_argentina_buenos_aires",
+      "destination_argentina_el_calafate",
+      "destination_brazil_iguacu",
+      "destination_uruguay_montevideo",
+      "destination_argentina_puerto_iguasu",
+      "destination_argentina_lednik_perito_moreno",
+      "destination_argentina_nacionalnyj_park_los_glasyares",
+      "destination_argentina_san_isidro_buenos_ajres",
+      "destination_argentina_tigre",
+      "destination_argentina_recoleta",
+      "destination_argentina_recoleta_cemetery",
+      "destination_argentina_la_boca",
+      "destination_argentina_san_telmo",
+      "destination_argentina_puerto_madero",
+      "destination_argentina_plaza_de_mayo",
+      "destination_argentina_retiro",
+      "destination_argentina_teatro_colon",
+      "destination_argentina_avenida_de_mayo",
+      "destination_argentina_plaza_del_congreso",
+      "destination_argentina_ozero_argentino",
+      "destination_argentina_garganta_del_diablo",
+      "destination_brazil_parque_das_aves",
+      "destination_uruguay_montevideo_port",
+      "destination_uruguay_montevideo_independence_square",
+      "destination_uruguay_montevideo_old_town",
+      "destination_uruguay_montevideo_cathedral"
+    ],
+    "tourRouteDestinationIdsCandidate": [
+      "destination_argentina_buenos_aires",
+      "destination_argentina_el_calafate",
+      "destination_brazil_iguacu",
+      "destination_argentina_puerto_iguasu",
+      "destination_argentina_lednik_perito_moreno",
+      "destination_argentina_nacionalnyj_park_los_glasyares",
+      "destination_argentina_recoleta",
+      "destination_argentina_recoleta_cemetery",
+      "destination_argentina_la_boca",
+      "destination_argentina_san_telmo",
+      "destination_argentina_puerto_madero",
+      "destination_argentina_plaza_de_mayo",
+      "destination_argentina_retiro",
+      "destination_argentina_teatro_colon",
+      "destination_argentina_avenida_de_mayo",
+      "destination_argentina_plaza_del_congreso",
+      "destination_argentina_ozero_argentino",
+      "destination_argentina_garganta_del_diablo"
+    ],
+    "applyNote": "Три места — ориентиры обязательной обзорной экскурсии второго дня, не обещать вход. Старую запись площади Конгресса в двух массивах не утверждать до разрешения ниже. Обновить compact и пересчитать вариант экскурсии по точному итоговому MD hash."
+  },
+  "draftMaterials": [
+    {
+      "id": "destination_argentina_retiro",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/atractivo/retiro",
+      "primaryThemes": [
+        "theme_culture"
+      ],
+      "summary": "Район Буэнос-Айреса вокруг площади Сан-Мартина, где особняки соседствуют с современными офисными зданиями.",
+      "body": "Ретиро вырос за пределами ранней городской застройки. В конце XIX века район стал одним из направлений переселения состоятельных семей из южной части города. В прогулке по Ретиро удобно начать с площади Сан-Мартина и улицы Флорида: за несколько кварталов меняются архитектура и характер улиц."
+    },
+    {
+      "id": "destination_argentina_teatro_colon",
+      "sourceUrl": "https://teatrocolon.org.ar/el-teatro/",
+      "primaryThemes": [
+        "theme_culture"
+      ],
+      "summary": "Оперный театр Буэнос-Айреса, чьё нынешнее здание открылось в 1908 году.",
+      "body": "Главный зал нынешнего здания открыли 25 мая 1908 года. Сегодня театр остаётся одной из главных площадок Аргентины для оперы, балета и академической музыки. В обзорной программе знакомимся с театром как с городским ориентиром; спектакль и посещение зала уточняются отдельно."
+    },
+    {
+      "id": "destination_argentina_avenida_de_mayo",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/avenida-de-mayo",
+      "primaryThemes": [
+        "theme_culture"
+      ],
+      "summary": "Исторический проспект, соединяющий Майскую площадь и район Национального конгресса.",
+      "body": "Авенида-де-Майо открылась в июле 1894 года. В облике проспекта заметны французские и испанские архитектурные влияния. На нём сохранились исторические кафе, гостиницы и театры, а сам проспект связывает правительственный центр города с Национальным конгрессом."
+    }
+  ],
+  "stillReview": [
+    {
+      "day": 2,
+      "subject": "Конгресс",
+      "decision": "В Word назван Конгресс. Дворец и площадь — разные объекты; не выдавать существующий ID площади за дворец и не обещать вход или обязательную остановку. До выбора точной связи оставить REVIEW.",
+      "reference": "https://turismo.buenosaires.gob.ar/es/article/13-paradas-para-disfrutar-de-la-avenida-de-mayo"
+    },
+    {
+      "day": 7,
+      "subject": "Gran Aventura / остров Сан-Мартин",
+      "decision": "Длительность 75 минут и высадка не подтверждены действующим описанием оператора; не продвигать остров в гарантированный маршрут."
+    }
+  ],
+  "siteChanges": 0,
+  "mediaCreated": 0
+}

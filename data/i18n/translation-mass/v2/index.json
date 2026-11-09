@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 549,
-    "leased": 1,
-    "review": 3389,
+    "leased": 0,
+    "review": 3390,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 549,
-      "leased": 1,
-      "review": 572,
+      "leased": 0,
+      "review": 573,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -608,8 +608,8 @@
         "ai_only": {
           "held": 0,
           "queued": 32,
-          "leased": 1,
-          "review": 7,
+          "leased": 0,
+          "review": 8,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -617,7 +617,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T19:52:10.263Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "04": {
@@ -1341,14 +1341,7 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {
-    "ada-en-20261109-15p2nra73sw1g2": {
-      "jobId": "en:bulk:tour:tour_latin_america_six_countries_20_days_2026:b021",
-      "token": "ada-hzvj15vxlr70ngduk8lswia",
-      "expiresAt": "2026-11-09T19:52:10.263Z",
-      "generation": 1
-    }
-  },
+  "activeOwners": {},
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11685,9 +11678,11 @@
       "jobIds": [
         "en:bulk:tour:tour_latin_america_six_countries_20_days_2026:b021"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_latin_america_six_countries_20_days_2026:b021"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T18:22:10.263Z"
+  "updatedAt": "2026-11-09T18:22:32.041Z"
 }

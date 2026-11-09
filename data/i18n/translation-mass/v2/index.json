@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 587,
-    "leased": 5,
-    "review": 3347,
+    "leased": 4,
+    "review": 3348,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 587,
-      "leased": 5,
-      "review": 530,
+      "leased": 4,
+      "review": 531,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -848,8 +848,8 @@
         "ai_only": {
           "held": 0,
           "queued": 22,
-          "leased": 1,
-          "review": 18,
+          "leased": 0,
+          "review": 19,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T18:02:27.731Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0a": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261109-d1461c91bf6a": {
-      "jobId": "en:bulk:tour:tour_source_krasivaya_kosta_rika:b002",
-      "token": "lease-1dd5d3c586205f6485f7d9c945b20389",
-      "expiresAt": "2026-11-09T18:02:27.731Z",
-      "generation": 1
-    },
     "ada-en-20261109-32of1ztisn": {
       "jobId": "en:bulk:tour:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy:b003",
       "token": "t-xlxikz92y7r-m0yjudkpgi",
@@ -11596,7 +11590,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_krasivaya_kosta_rika:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_krasivaya_kosta_rika:b002"
+      ]
     },
     "ada-en-20261109-32of1ztisn": {
       "token": "t-xlxikz92y7r-m0yjudkpgi",
@@ -11626,5 +11622,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T16:35:13.107Z"
+  "updatedAt": "2026-11-09T16:35:22.787Z"
 }

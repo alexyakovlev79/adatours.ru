@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 763,
-    "leased": 0,
+    "queued": 762,
+    "leased": 1,
     "review": 3176,
     "ready": 50,
     "retryable": 0,
@@ -49,8 +49,8 @@
     },
     "ai_only": {
       "held": 0,
-      "queued": 763,
-      "leased": 0,
+      "queued": 762,
+      "leased": 1,
       "review": 359,
       "ready": 0,
       "retryable": 0,
@@ -487,8 +487,8 @@
         },
         "ai_only": {
           "held": 0,
-          "queued": 21,
-          "leased": 0,
+          "queued": 20,
+          "leased": 1,
           "review": 13,
           "ready": 0,
           "retryable": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-09T08:12:26.644Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-20261109-mw8vu04w": {
+      "jobId": "en:bulk:tour:tour_source_braziliya_i_peru_na_novyj_god:b014",
+      "token": "ada-en-20261109-mw8vu04w-zgq0ys4izy",
+      "expiresAt": "2026-11-09T08:12:26.644Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -11061,7 +11068,8 @@
         "en:bulk:tour:tour_source_argentina_2024:b001",
         "en:bulk:tour:tour_source_gvatemala_gonduras_el_salvador_beliz:b004",
         "en:bulk:tour:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy:b012",
-        "en:bulk:tour:tour_source_aktivnyj_ekvador:b010"
+        "en:bulk:tour:tour_source_aktivnyj_ekvador:b010",
+        "en:bulk:tour:tour_source_braziliya_i_peru_na_novyj_god:b014"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_gvatemala_kosta_rika:b001",
@@ -11102,5 +11110,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T06:42:19.116Z"
+  "updatedAt": "2026-11-09T06:42:26.644Z"
 }

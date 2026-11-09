@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 546,
-    "leased": 2,
-    "review": 3391,
+    "leased": 1,
+    "review": 3392,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 546,
-      "leased": 2,
-      "review": 574,
+      "leased": 1,
+      "review": 575,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -1048,8 +1048,8 @@
         "ai_only": {
           "held": 0,
           "queued": 18,
-          "leased": 1,
-          "review": 10,
+          "leased": 0,
+          "review": 11,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1057,7 +1057,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T19:52:52.576Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0f": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261109-5d356bbaac960a07": {
-      "jobId": "en:bulk:tour:tour_source_ekvador_krasota_i_priroda:b003",
-      "token": "lease-1cecf0bf71e62d5fff09241bfd249f03acc273dd",
-      "expiresAt": "2026-11-09T19:52:52.576Z",
-      "generation": 1
-    },
     "ada-en-20261109-15p2nra73sw1g2": {
       "jobId": "en:bulk:tour:tour_peru_bolivia_enchanted_10_days:b017",
       "token": "ada-hzvj15vxlr70ngduk8lswia",
@@ -11703,9 +11697,11 @@
       "jobIds": [
         "en:bulk:tour:tour_source_ekvador_krasota_i_priroda:b003"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_ekvador_krasota_i_priroda:b003"
+      ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T18:23:12.606Z"
+  "updatedAt": "2026-11-09T18:23:24.213Z"
 }

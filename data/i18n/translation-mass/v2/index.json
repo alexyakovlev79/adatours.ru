@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 596,
-    "leased": 4,
-    "review": 3339,
+    "leased": 3,
+    "review": 3340,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 596,
-      "leased": 4,
-      "review": 522,
+      "leased": 3,
+      "review": 523,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -488,8 +488,8 @@
         "ai_only": {
           "held": 0,
           "queued": 4,
-          "leased": 1,
-          "review": 29,
+          "leased": 0,
+          "review": 30,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -497,7 +497,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T18:02:05.836Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "01": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw9hbefe-362nkabfd1": {
-      "jobId": "en:bulk:tour:tour_source_udivitelnyj_gastronomicheskij_tur_po_meksike_2024:b011",
-      "token": "lease-mw9hbefe-jk28jyhavh-mw9hbefe-jr37f7wz5a",
-      "expiresAt": "2026-11-09T18:02:05.836Z",
-      "generation": 1
-    },
     "ada-en-20261109-ddf5eabec8e2": {
       "jobId": "en:bulk:tour:tour_source_peru_strana_inkov:b001",
       "token": "39902432f5f2e8938cd5c5e002a5f4ee54fbe0f9e35859b95da6ab7da7a6ab99",
@@ -11568,7 +11562,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_udivitelnyj_gastronomicheskij_tur_po_meksike_2024:b011"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_udivitelnyj_gastronomicheskij_tur_po_meksike_2024:b011"
+      ]
     },
     "ada-en-20261109-ddf5eabec8e2": {
       "token": "39902432f5f2e8938cd5c5e002a5f4ee54fbe0f9e35859b95da6ab7da7a6ab99",
@@ -11593,5 +11589,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T16:32:36.604Z"
+  "updatedAt": "2026-11-09T16:32:43.889Z"
 }

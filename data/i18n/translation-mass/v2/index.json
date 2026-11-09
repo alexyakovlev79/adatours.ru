@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 703,
-    "leased": 4,
-    "review": 3232,
+    "leased": 3,
+    "review": 3233,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 703,
-      "leased": 4,
-      "review": 415,
+      "leased": 3,
+      "review": 416,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -728,8 +728,8 @@
         "ai_only": {
           "held": 0,
           "queued": 19,
-          "leased": 1,
-          "review": 11,
+          "leased": 0,
+          "review": 12,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -737,7 +737,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-09T13:01:49.313Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "07": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-mw96khaf-1a0l7x": {
-      "jobId": "en:bulk:tour:tour_source_braziliya_i_peru_na_novyj_god:b016",
-      "token": "lease-qkjsbsmiiz6sfsfm94bh2",
-      "expiresAt": "2026-11-09T13:01:49.313Z",
-      "generation": 1
-    },
     "ada-en-mw96kyp4-8b4psxk3": {
       "jobId": "en:bulk:tour:tour_ecuador_colombia_galapagos_12_days:b004",
       "token": "lease-h1r69tc8tg4h4iwg4fh7k",
@@ -11273,7 +11267,8 @@
         "en:bulk:tour:tour_source_braziliya_i_peru_na_novyj_god:b016"
       ],
       "completedJobIds": [
-        "en:bulk:tour:tour_source_costa_rica:b001"
+        "en:bulk:tour:tour_source_costa_rica:b001",
+        "en:bulk:tour:tour_source_braziliya_i_peru_na_novyj_god:b016"
       ]
     },
     "ada-en-mw96knej-0c36k4xy7k": {
@@ -11305,5 +11300,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-09T11:32:29.338Z"
+  "updatedAt": "2026-11-09T11:32:35.980Z"
 }

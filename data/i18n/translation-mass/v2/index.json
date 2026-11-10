@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 5,
-    "leased": 0,
+    "queued": 4,
+    "leased": 1,
     "review": 3951,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 3,
-      "leased": 0,
+      "queued": 2,
+      "leased": 1,
       "review": 2358,
       "ready": 50,
       "retryable": 0,
@@ -1305,8 +1305,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 1,
-          "leased": 0,
+          "queued": 0,
+          "leased": 1,
           "review": 70,
           "ready": 0,
           "retryable": 0,
@@ -1337,11 +1337,18 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-10T11:51:42.289Z",
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-resolve-20261110-a": {
+      "jobId": "en:bulk:tour:tour_source_mir_majya:b007",
+      "token": "tok-ada-en-resolve-20261110-a",
+      "expiresAt": "2026-11-10T11:51:42.289Z",
+      "generation": 3
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -13266,7 +13273,8 @@
         "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b009",
         "en:bulk:tour:tour_source_mir_majya:b001",
         "en:bulk:tour:tour_source_mir_majya:b004",
-        "en:bulk:tour:tour_source_mir_majya:b006"
+        "en:bulk:tour:tour_source_mir_majya:b006",
+        "en:bulk:tour:tour_source_mir_majya:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_meksika_lindo:b008",
@@ -13280,7 +13288,7 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T10:21:06.200Z",
+  "updatedAt": "2026-11-10T10:21:42.289Z",
   "sourceRevisions": [
     {
       "id": "maya-20261110-feee4047",

@@ -56,7 +56,7 @@ export async function runEnFulltextSwarm(tools,core,a={}){
   const n=action==="claim"?choice.number:
    action==="reap"?Object.values(c.activeByOwner||{}).find(x=>Date.parse(x.expiresAt)<=Date.parse(now))?.number:
    (a.number||c.activeByOwner?.[a.ownerId]?.number);
-  if(choice&&["exhausted","busy","retry_pending"].includes(choice.mode))
+  if(choice&&["exhausted","busy","retry_pending","chat_limit"].includes(choice.mode))
    return {status:choice.mode,head:h};
   if(action==="reap"&&!n)return {status:"nothing_expired",head:h};
   if(!Number.isInteger(n)||n<1||n>m.packets)throw Error("Invalid packet number");

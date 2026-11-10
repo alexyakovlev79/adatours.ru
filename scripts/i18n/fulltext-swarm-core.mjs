@@ -12,7 +12,7 @@ export function fulltextDefinitionPath(n){return "definitions/"+String(Math.floo
 export function fulltextValidateDefinition(def,n,manifest){
  ok(def?.schemaVersion===1&&Array.isArray(def.packets),"definition format");
  const p=def.packets.find(x=>x.number===n);ok(p?.id===fulltextPacketId(n),"packet definition absent");
- ok(p.sourceMainSha===manifest.sourceMainSha&&p.items.length>0&&p.items.length<=5,"source version or packet size");
+ ok(p.sourceMainSha===manifest.sourceMainSha&&p.items.length===(n===manifest.packets?((manifest.items-1)%5+1):5),"source version or packet size");
  const nums=p.items.map(x=>x.number);
  ok(nums.every((x,i)=>x===(n-1)*5+i+1),"non-contiguous text numbers");
  ok(p.items.every(x=>x.packet===n&&/^[0-9a-f]{40}$/.test(x.sha)&&x.path.endsWith(".md")),"source identity");
@@ -25,6 +25,7 @@ export function fulltextPick(control,ownerId,token,now){
    ok(mine.token===token,"owner has a live lease with different token");
    return {mode:"resumed",number:mine.number};
  }
+ if((control.completedByOwner?.[ownerId]||0)>=10)return {mode:"chat_limit"};
  const retry=(control.retryQueue||[]).find(x=>at(x.nextAttemptAt)<=at(now));
  if(retry)return {mode:"retry",number:retry.number};
  const expired=Object.values(control.activeByOwner||{}).find(x=>at(x.expiresAt)<=at(now));
@@ -90,6 +91,7 @@ export function fulltextSubmit(control,shard,n,args){
   submissionId:args.submissionId,resultBlobSha:args.resultBlobSha,resultPath:args.resultPath,savedAt:args.now,
   sourceMainSha:args.sourceMainSha};
  delete c.activeByOwner[args.ownerId];c.leased--;c.saved++;
+ c.completedByOwner??={};c.completedByOwner[args.ownerId]=(c.completedByOwner[args.ownerId]||0)+1;
  return {control:c,shard:s,result:s.packets[String(n)]};
 }
 export function fulltextRelease(control,shard,n,args){

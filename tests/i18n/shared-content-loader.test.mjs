@@ -165,6 +165,26 @@ test('missing or unapproved slots remain Russian and absent translations preserv
   assert.equal(projectSharedEnglishEntry(source,'tours',{...prepared,stale:true,reason:'canonical_source_changed'}).entry,source);
 });
 
+
+test('empty or whitespace-only Markdown body does not invalidate EN fields if Astro omits the body',()=>{
+  for(const rawBody of ['', '\n', '\n\n']) {
+    const canonical=fixture();canonical.body=rawBody;
+    const prepared={...approved(canonical),canonicalBody:rawBody};
+    const astroEntry={...canonical,body:undefined};
+    const result=projectSharedEnglishEntry(astroEntry,'tours',prepared);
+    assert.notEqual(result.status,'stale','blank canonical body must not hide valid EN fields');
+    assert.ok(result.applied>0,'EN frontmatter fields should be applied');
+    assert.equal(result.entry.data.title,'4 Days in Rio de Janeiro');
+    assert.equal(result.entry.data.priceFrom,canonical.data.priceFrom);
+    const corrupt=projectSharedEnglishEntry({...astroEntry,body:'Другой текст'},'tours',prepared);
+    assert.equal(corrupt.status,'stale');
+    assert.equal(corrupt.reason,'canonical_body_store_mismatch');
+  }
+  const nonEmpty=fixture(),prep={...approved(nonEmpty),canonicalBody:nonEmpty.body};
+  const rejected=projectSharedEnglishEntry({...nonEmpty,body:undefined},'tours',prep);
+  assert.equal(rejected.status,'stale','actual missing body stays blocked');
+});
+
 test('geography projection never imports pilot hrefs, images, identities or commercial facts',()=>{
   const source={id:'ru:country_brazil',data:{id:'country_brazil',locale:'ru',slug:'brazil',status:'approved',
     name:'Бразилия',summary:'Описание',regions:['Рио'],languages:['Португальский'],bestTime:'Круглый год',

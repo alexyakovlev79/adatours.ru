@@ -233,7 +233,11 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   // historical snapshot. Accept only Astro's documented boundary trim; any
   // substantive store/file disagreement must not inherit the file's evidence.
   const canonicalBody=prepared.canonicalBody;
-  if(typeof canonicalBody==='string' && entry.body!==canonicalBody && entry.body!==canonicalBody.trim())
+  // Astro can omit entry.body when a Markdown file contains only blank lines
+  // after frontmatter. Do not reject approved text fields for this parser-only
+  // representation difference; the raw source and each block hash are still checked.
+  const storedBody=entry.body??'';
+  if(typeof canonicalBody==='string' && storedBody!==canonicalBody && storedBody!==canonicalBody.trim())
     return {entry,applied:0,status:'stale',sourceId,sourceFingerprint,reason:'canonical_body_store_mismatch'};
   const sourceEntry=typeof canonicalBody==='string'?{...entry,body:canonicalBody}:entry;
   const root=structuredClone({...sourceEntry.data,__body:sourceEntry.body??''});

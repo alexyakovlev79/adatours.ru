@@ -1,0 +1,127 @@
+{
+  "jobId": "en:bulk:tour:tour_source_mir_majya:b003",
+  "stableId": "tour_source_mir_majya",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "1e3d0f14c918c4f3ddc095cee55e96bc0651e5cb4a26efcd01c22fffa4be67d0",
+  "blocks": [
+    {
+      "blockId": "tour:note:7273202bd58ef807",
+      "field": "note",
+      "sourceTextSha256": "aa0f517a69bb6125a62d76fac63158be14b2160fe554ff21bdc819b78bf2bf7f",
+      "text": "Ada Tours may substitute the listed hotels with hotels of the same category.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-recover-20261110-maya",
+        "wordAbsenceReason": "The verified Word 2027 does not specify a right to substitute hotels; this condition exists in the current RU notes."
+      }
+    },
+    {
+      "blockId": "tour:note:aad34780a245497e",
+      "field": "note",
+      "sourceTextSha256": "fa944f9d9af8080ca5fdf39ccce5fea505c0b5eaaa385862de1e68d643d97a5b",
+      "text": "The order of excursions may change, while the tour itinerary and its included activities remain the same.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-recover-20261110-maya",
+        "wordAbsenceReason": "The selected Word 2027 does not state the sequence-change condition from the current RU notes."
+      }
+    },
+    {
+      "blockId": "tour:note:6c13b15087f93106",
+      "field": "note",
+      "sourceTextSha256": "adebdb32e24870fec5874c46c45f555f9f71a036cb5ae677d9361123605870e4",
+      "text": "Ada Tours is not responsible for breakfasts missed because of early check-out for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-recover-20261110-maya",
+        "wordAbsenceReason": "The selected Word 2027 omits the policy on breakfasts missed due to early departures."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "6ce1ca2c74889f576654efa5e9de094b1546528478f0267c6889db48e7304c2d",
+      "text": "Guatemala City – Antigua",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13yI6PCQliXLOv6YvBPAoR-WER8TzFTsg",
+        "documentSha256": "feee4047b625c770dd098485cb76eacebe3fe5958c8355f97b7f3154d3d22a15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route and place label are normalized from the exact verified Word 2027 arrival passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "fddb38bc1940d3013f3a17cc727efc8042789480f9bd666678732e0b2f81b6bc",
+      "text": "Arrival at La Aurora International Airport, where you will be met and transferred to Antigua. The distance is about 40 km, with a travel time of approximately one hour. You will receive an introduction to the upcoming itinerary.\\n\\n**Hotel:** Villa Colonial.\\nOvernight in Antigua.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-recover-20261110-maya",
+        "wordAbsenceReason": "The Word 2027 arrival paragraph omits the 40 km distance and orientation briefing; the complete current RU day is translated without added claims."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3a44e89961d0ffdf",
+      "field": "itinerary.label",
+      "sourceTextSha256": "c4487ded86c59c5a5a35f2eb03cf6f8fe9bdc4e5fd50c082ae37ac54eab748db",
+      "text": "Guatemala City",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13yI6PCQliXLOv6YvBPAoR-WER8TzFTsg",
+        "documentSha256": "feee4047b625c770dd098485cb76eacebe3fe5958c8355f97b7f3154d3d22a15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route and place label are normalized from the exact verified Word 2027 arrival passage."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:89b31d56eb18a399",
+      "field": "itinerary.label",
+      "sourceTextSha256": "0f9c9cf3126a3243a817cc833027300d5896a9ce52642e2f57cbda1dcd59efa7",
+      "text": "Antigua Guatemala",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "13yI6PCQliXLOv6YvBPAoR-WER8TzFTsg",
+        "documentSha256": "feee4047b625c770dd098485cb76eacebe3fe5958c8355f97b7f3154d3d22a15",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0066",
+            "textSha256": "2a8c46d8e659d688ef3919367d6f6e54264cd548ef70fca08baf1c8784bfa629"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "The route and place label are normalized from the exact verified Word 2027 arrival passage."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:f3fe65469d40eb6d",
+      "field": "media.alt",
+      "sourceTextSha256": "ff85724e22be42c0797f2aa66d20f09c64f3997393410dd77d42cde095f97462",
+      "text": "Old stone walls and a narrow water channel beside a yacht-filled harbour and palm trees.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-recover-20261110-maya",
+        "wordAbsenceReason": "The selected Word itinerary has no caption for this specific yacht-harbour photograph."
+      }
+    }
+  ]
+}

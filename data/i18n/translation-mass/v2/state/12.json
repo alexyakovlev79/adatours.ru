@@ -191,135 +191,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b009",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "71c254e229c555308034ca3df857a039aa98196a03f9074f7491f8a0efef98a4",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-resolve-20261110-a",
-        "token": "tok-ada-en-resolve-20261110-a",
-        "claimedAt": "2026-11-10T10:14:32.317Z",
-        "expiresAt": "2026-11-10T11:44:32.317Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-0912f3ac-b004-source-blocker",
-        "format": "inline-v1",
-        "ownerId": "ada-en-0912f3ac98f14197",
-        "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b009",
-          "stableId": "tour_brazil_peru_argentina_group_15_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "71c254e229c555308034ca3df857a039aa98196a03f9074f7491f8a0efef98a4",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:6197f36499fa21ca",
-              "field": "media.alt",
-              "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
-              "text": "Iguazu Falls and a rainbow above the river, surrounded by tropical forest, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-0912f3ac98f14197",
-                "wordAbsenceReason": "The verified DOCX has no equivalent website image alt/hover caption for this photograph; translated the current immutable RU media description while preserving the photograph and its location."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:4f4a7b27050e95ad",
-              "field": "media.hover",
-              "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
-              "text": "Iguazu in Brazil: cascading waterfalls, a rainbow and green riverbanks",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-0912f3ac98f14197",
-                "wordAbsenceReason": "The verified DOCX has no equivalent website image alt/hover caption for this photograph; translated the current immutable RU media description while preserving the photograph and its location."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:24e94aa81b249521",
-              "field": "media.alt",
-              "sourceTextSha256": "6f5e2e13ca03d7a9db0f6aaf75867354ad17f87cded378ce76cb2db724f9573e",
-              "text": "Visitors on a viewing walkway among the Iguazu Falls",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-0912f3ac98f14197",
-                "wordAbsenceReason": "The verified DOCX has no equivalent website image alt/hover caption for this photograph; translated the current immutable RU media description while preserving the photograph and its location."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:44c1f8d832fa241a",
-              "field": "media.hover",
-              "sourceTextSha256": "96c290069d9ae49afbd0a974217c19fa142fe7659861ed13feffc6677bf46cbf",
-              "text": "Iguazu: a viewing walkway above cascades of falling water",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-0912f3ac98f14197",
-                "wordAbsenceReason": "The verified DOCX has no equivalent website image alt/hover caption for this photograph; translated the current immutable RU media description while preserving the photograph and its location."
-              }
-            }
-          ],
-          "sourceIssues": [
-            {
-              "kind": "edition_mismatch",
-              "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-              "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-              "selectedYearFolder": 2027,
-              "manifestEditionYear": null,
-              "paragraphs": [
-                {
-                  "ref": "word/document.xml#p2",
-                  "text": "           Group 10-20pax - 2026",
-                  "textSha256": "f65752ff23261c73ce35214e1ccf55a2ce7d2443cca3f19d3a15b0917dd675f8"
-                },
-                {
-                  "ref": "word/document.xml#p97",
-                  "text": "Brazil, Peru & Argentina 10-20 PAX 2024",
-                  "textSha256": "e9b64067b8f66b9740446a84bb27e565b4dee45423f603b051e5d56a76d03753"
-                }
-              ]
-            },
-            {
-              "kind": "confirmed_fact_conflict",
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceRuTextSha256": "f8abdfa7e3be42580eb7c06903ed3ad05a6ef370794ea71032d49a571ce1032e",
-              "wordParagraph": {
-                "ref": "word/document.xml#p32",
-                "text": "It all starts with a wonderful track by the Iguazú National Park. A walk six miles through the fully motorized Yacaratiá Sendero, which will take you from a subtropical vegetation, where flora and fauna coexist in harmony. Multilingual guides pass information about the curiosities of the jungle.",
-                "textSha256": "0eb84f888d1c1555aa312fe62214dbfbd0e4440432ffde5777f0bf47a882f8e2"
-              },
-              "approvedRuFact": "About 6 km along the Yacaratiá trail; the current Tour also identifies Great Adventure as on the Argentine side.",
-              "evidence": {
-                "mainSha": "31b11f1ba36460fc0eac99f6546b958f5a6a24d5",
-                "materialPath": "data/source-index/materials/tour_brazil_peru_argentina_group_15_days.md",
-                "materialBlobSha": "3b34619129a43465bdc2689eb1fca41cfc1d7df3",
-                "sourceIndexPath": "data/source-index/entries/tour_brazil_peru_argentina_group_15_days.json",
-                "sourceIndexBlobSha": "b8847a3c32402c306d08919fb0831b1ff2cf0b89",
-                "originCommit": "6a3d958e6680c1f52155ce6c9d56f7b44b168e5e",
-                "verifiedAt": "2026-10-10",
-                "method": "fresh_anna_docx_full_program_and_price_table",
-                "sourceDocxId": "1EhJfFowYPCXzDd-TML5lKRjvl2G0Kk0E",
-                "modifiedTime": "2026-10-02T12:45:00.279Z",
-                "docxSha256": "ade3ed9f723a3f306251f292a9237fd3daec67e9aca328fd4c4711f64b44c63c"
-              },
-              "rule": "03-translation-editorial.md §7: Word priority does not transfer contradictory facts; confirmed Anna corrections retain their decision record. §6 editorial Word changes require explicit master permission; do not relabel a conflicting existing passage as an AI absence.",
-              "requiredResolution": "Confirm the designated EN source edition and authorize exact editorial treatment/provenance for the 6 km fact, preserving the approved RU Word correction. No rematching, Word modification or tariff change was performed."
-            }
-          ],
-          "unresolvedConflicts": [
-            "Assigned EN Word has legacy 2026/2024 edition labels despite selected yearFolder 2027.",
-            "EN Word p32 says six miles; approved Anna RU Word 2027 and current frozen RU block say about 6 km. Editorial amendment authorization/provenance is required."
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:16:32.243Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ada-en-resolve-20261110-bpa-b009",
+        "blobSha": "fa19bf1f263ba93b3feea25c0b831a53eadc99c7",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_peru_argentina_group_15_days_b009/sub-ada-en-resolve-20261110-bpa-b009.json",
+        "at": "2026-11-10T10:15:23.199Z"
+      },
       "review": null,
       "nextAttemptAt": null,
       "lastFailure": {

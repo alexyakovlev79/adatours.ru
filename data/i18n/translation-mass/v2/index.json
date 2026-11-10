@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 5,
-    "leased": 2,
-    "review": 3943,
+    "leased": 1,
+    "review": 3944,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 6,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 0,
-      "leased": 1,
-      "review": 1121,
+      "leased": 0,
+      "review": 1122,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -248,8 +248,8 @@
         "ai_only": {
           "held": 0,
           "queued": 0,
-          "leased": 1,
-          "review": 40,
+          "leased": 0,
+          "review": 41,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -257,7 +257,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-10T11:20:35.004Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "15": {
@@ -1341,14 +1341,7 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {
-    "ada-en-work-2bda1994364945d0aab0487027d8b48f": {
-      "jobId": "en:bulk:tour:tour_south_america_luxury_33_days:b008",
-      "token": "0a00124fafe34f689d03f75548cc6e0b",
-      "expiresAt": "2026-11-10T11:20:35.004Z",
-      "generation": 2
-    }
-  },
+  "activeOwners": {},
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -13251,7 +13244,9 @@
       "jobIds": [
         "en:bulk:tour:tour_south_america_luxury_33_days:b008"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_south_america_luxury_33_days:b008"
+      ]
     },
     "ada-en-1794304245100-1qzs75l0asd": {
       "token": "en-cm4183b3nkcphoxls1d5uo",
@@ -13264,7 +13259,7 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T09:51:20.998Z",
+  "updatedAt": "2026-11-10T09:51:50.400Z",
   "sourceRevisions": [
     {
       "id": "maya-20261110-feee4047",

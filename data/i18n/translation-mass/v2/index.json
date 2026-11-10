@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 56,
-    "leased": 5,
-    "review": 3878,
+    "leased": 4,
+    "review": 3879,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 56,
-      "leased": 5,
-      "review": 1061,
+      "leased": 4,
+      "review": 1062,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -808,8 +808,8 @@
         "ai_only": {
           "held": 0,
           "queued": 14,
-          "leased": 1,
-          "review": 26,
+          "leased": 0,
+          "review": 27,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -817,7 +817,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-10T06:57:01.814Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "09": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261110-b2486d223306-4fppdtbllan": {
-      "jobId": "en:bulk:tour:tour_source_priklyucheniya_v_bolivii:b002",
-      "token": "lease-ywj1px6545-yuyssmjh7za",
-      "expiresAt": "2026-11-10T06:57:01.814Z",
-      "generation": 1
-    },
     "ada-en-chat-202611100526-00e424b1aafd": {
       "jobId": "en:bulk:tour:tour_source_vivat_kolumbiya:b007",
       "token": "ada-en-80bb5f133fbb8cd7355cd0579913392b",
@@ -13097,7 +13091,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_priklyucheniya_v_bolivii:b002"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_priklyucheniya_v_bolivii:b002"
+      ]
     },
     "ada-en-chat-202611100526-00e424b1aafd": {
       "token": "ada-en-80bb5f133fbb8cd7355cd0579913392b",
@@ -13108,5 +13104,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T05:28:44.053Z"
+  "updatedAt": "2026-11-10T05:28:52.756Z"
 }

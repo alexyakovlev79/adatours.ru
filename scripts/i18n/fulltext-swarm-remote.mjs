@@ -113,9 +113,9 @@ export async function runEnFulltextSwarm(tools,core,a={}){
   if(action==="claim"){
    p=await def(tools,core,h,n,m);
    moved=core.fulltextClaim(c,s,choice,{ownerId:a.ownerId,token:a.token,now});
-  }else if(action==="renew")moved=core.fulltextRenew(c,s,n,a);
-  else if(action==="release")moved=core.fulltextRelease(c,s,n,a);
-  else if(action==="fail")moved=core.fulltextFail(c,s,n,a);
+  }else if(action==="renew")moved=core.fulltextRenew(c,s,n,{...a,now});
+  else if(action==="release")moved=core.fulltextRelease(c,s,n,{...a,now});
+  else if(action==="fail")moved=core.fulltextFail(c,s,n,{...a,now});
   else moved=core.fulltextReap(c,s,n,now);
   try{
    const commit=await writeCAS(tools,h,{[addr("control.json")]:clean(moved.control),

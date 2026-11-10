@@ -1615,11 +1615,16 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b011",
       "stage": "word_2027",
-      "status": "queued",
+      "status": "leased",
       "sourceFingerprint": "e93510cab1f6e74f073d90fd07e10f72a65288e28d97216685adbc34f657efc2",
-      "generation": 1,
+      "generation": 2,
       "attempts": 0,
-      "lease": null,
+      "lease": {
+        "ownerId": "ada-en-recover-20261110-maya",
+        "token": "recovery-20261110-maya-7e21c8fa",
+        "claimedAt": "2026-11-10T06:47:03.663Z",
+        "expiresAt": "2026-11-10T08:17:03.663Z"
+      },
       "checkpoint": null,
       "submission": null,
       "review": null,

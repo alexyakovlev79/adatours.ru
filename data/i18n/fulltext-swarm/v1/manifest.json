@@ -59,13 +59,25 @@
     "pilot": 18,
     "archive": 6
   },
-  "enabled": false,
-  "reason": "Exact one-owner real five-text submit pilot; general queue remains closed until immutable receipt and idempotent retry verified.",
+  "enabled": true,
+  "reason": "Enabled after real five-document CAS submit, unchanged-SHA idempotent replay, two-owner claim test and independent scheduled reaper wiring. First post-change Actions schedule run to be observed separately.",
   "writesToMain": false,
   "publication": "existing noindex EN staging only",
   "independentSemanticQA": false,
-  "pilotEnabled": true,
-  "pilotOwnerIds": [
-    "adaen-real-pilot-20261110"
-  ]
+  "pilotEnabled": false,
+  "pilotOwnerIds": [],
+  "recovery": {
+    "workflow": ".github/workflows/i18n-mass-reaper.yml",
+    "mainCommit": "ba324834717e95642eb729b23e138cae83b6b8dc",
+    "script": "scripts/i18n/reap-fulltext-swarm.mjs",
+    "scheduleMinutes": "11,26,41,56",
+    "requiresFirstRunConfirmation": true
+  },
+  "pilot": {
+    "packetId": "ADAEN-P00001",
+    "texts": 5,
+    "commit": "10c19f1a0ae3005ee84540f765752f4dc4187fdd",
+    "resultBlobSha": "767e8f7e536ca3ad5cd89fe9e76c06f3e67d565d",
+    "duplicateSubmit": "already_saved"
+  }
 }

@@ -1,5 +1,18 @@
 # EN source blockers — address-specific review, 10 November 2026
 
+## UPDATE — owner-approved rematch against revised Maya Word (10 Nov 2026)
+
+On owner's explicit instruction to treat a modified English Word as a **new matching version**, the current DOCX `13yI6PCQliXLOv6YvBPAoR-WER8TzFTsg` was read again and matched to the same `tour_source_mir_majya`: Guatemala and Honduras, 10 days/9 nights, same itinerary days and hotels, RU blob unchanged. New DOCX SHA-256: `feee4047b625c770dd098485cb76eacebe3fe5958c8355f97b7f3154d3d22a15`. Old source checksum/receipt preserved.
+
+**Confirmed matching revision:** `i18n/matching-staging` commit `75181607a9881190520293e8201b08e89764f0a5`. The new edition contains no numeric tariff amounts; former USD 5390/6037 price amendments are historical and were not carried forward. RU price has not been touched.
+
+**Translation rebaseline confirmed:** 11 Maya packets `b001–b011` changed from `blocked_external` to **`queued`**, with new per-job sourceFingerprint and `source.selectedWord.sha256`, in 3 commits: `ac60b529ee7aca3c52d060f0ff75000ad9f91f0e`, `43e826785bd809d76ee9bf7782a967111f1b854a`, `db9bbc085de616f2808f1ba03788767cbd4a7ce7`. Prior frozen manifest remains immutable; old/new fingerprints are tracked in `data/i18n/translation-mass/v2/revisions/maya-20261110-feee4047-part{1,2,3}.json`, and original Git history remains.
+
+**Unresolved:** 6 blocked packets across the other five tours below; commercial contradictions still require exact decisions. 0 stale_source. These 11 Maya packets are **not yet translated**: current index.stage is `ai_only`; after its outstanding jobs finish, the dispatcher stage must be explicitly switched back to `word_2027` for the queued Maya packets (without rewriting other workers' active leases). Successful `review`/historical `ready` results continue to be eligible for technical noindex EN Pages.
+
+---
+
+
 **No publication, translation or price/RU/media edits.** Queue: `i18n/translation-mass-staging`. Initially 16 `blocked_external` and 1 `stale_source`. This audit reclassifies only the latter because its Russian Git blob is again identical to its frozen source. No `review` or `ready` status has been fabricated.
 
 | Tour | Affected packets | Proven blocker | Required resolution |

@@ -4,8 +4,8 @@
   "sourceCommit": "3c3f1f873d56a7bad8bfd5f8e01363083ec2a824",
   "matchingCommit": "8bf093244e6032056f6a78a99c31031e5c95ed99",
   "pilotCommit": "db15586c3c488954fe12924384fc2540c93c0778",
-  "stage": "ai_only",
-  "status": "ACTIVE_AI_ONLY",
+  "stage": "word_2027",
+  "status": "ACTIVE_WORD_2027_RESIDUAL_RECOVERY",
   "dispatcherEnabled": true,
   "translationMassLaunchAllowed": true,
   "publicationEnabled": false,
@@ -15,35 +15,35 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 5,
-    "leased": 1,
+    "queued": 12,
+    "leased": 0,
     "review": 3944,
     "ready": 50,
     "retryable": 0,
-    "blocked_external": 6,
+    "blocked_external": 0,
     "stale_source": 0,
     "failed_final": 0
   },
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 5,
-      "leased": 1,
+      "queued": 10,
+      "leased": 0,
       "review": 2351,
       "ready": 50,
       "retryable": 0,
-      "blocked_external": 4,
+      "blocked_external": 0,
       "stale_source": 0,
       "failed_final": 0
     },
     "word_2026": {
       "held": 0,
-      "queued": 0,
+      "queued": 2,
       "leased": 0,
       "review": 471,
       "ready": 0,
       "retryable": 0,
-      "blocked_external": 2,
+      "blocked_external": 0,
       "stale_source": 0,
       "failed_final": 0
     },
@@ -145,12 +145,12 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 1,
+          "queued": 2,
           "leased": 0,
           "review": 75,
           "ready": 1,
           "retryable": 0,
-          "blocked_external": 1,
+          "blocked_external": 0,
           "stale_source": 0,
           "failed_final": 0
         },
@@ -516,12 +516,12 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 0,
+          "queued": 1,
           "leased": 0,
           "review": 17,
           "ready": 0,
           "retryable": 0,
-          "blocked_external": 1,
+          "blocked_external": 0,
           "stale_source": 0,
           "failed_final": 0
         },
@@ -585,12 +585,12 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 0,
+          "queued": 1,
           "leased": 0,
           "review": 71,
           "ready": 1,
           "retryable": 0,
-          "blocked_external": 1,
+          "blocked_external": 0,
           "stale_source": 0,
           "failed_final": 0
         },
@@ -905,12 +905,12 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 0,
+          "queued": 1,
           "leased": 0,
           "review": 62,
           "ready": 2,
           "retryable": 0,
-          "blocked_external": 1,
+          "blocked_external": 0,
           "stale_source": 0,
           "failed_final": 0
         },
@@ -1036,12 +1036,12 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 0,
+          "queued": 1,
           "leased": 0,
           "review": 15,
           "ready": 0,
           "retryable": 0,
-          "blocked_external": 1,
+          "blocked_external": 0,
           "stale_source": 0,
           "failed_final": 0
         },
@@ -1305,12 +1305,12 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 0,
-          "leased": 1,
+          "queued": 2,
+          "leased": 0,
           "review": 69,
           "ready": 0,
           "retryable": 0,
-          "blocked_external": 1,
+          "blocked_external": 0,
           "stale_source": 0,
           "failed_final": 0
         },
@@ -1337,7 +1337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-10T08:20:02.930Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     }
   },
@@ -13259,7 +13259,7 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T09:51:50.400Z",
+  "updatedAt": "2026-11-10T10:05:20.146Z",
   "sourceRevisions": [
     {
       "id": "maya-20261110-feee4047",
@@ -13299,5 +13299,12 @@
         "en:bulk:tour:tour_source_mir_majya:b011"
       ]
     }
-  ]
+  ],
+  "recovery": {
+    "kind": "owner_authorized_residual_source_recovery",
+    "authorizedAt": "2026-11-10T10:05:20.146Z",
+    "priorStage": "ai_only",
+    "priorStatus": "ACTIVE_AI_ONLY",
+    "description": "Work only on 12 residual Tour EN packets, no publication."
+  }
 }

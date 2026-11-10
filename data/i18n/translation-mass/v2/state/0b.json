@@ -1261,7 +1261,7 @@
     {
       "jobId": "en:bulk:tour:tour_source_meksika_lindo:b008",
       "stage": "word_2027",
-      "status": "blocked_external",
+      "status": "queued",
       "sourceFingerprint": "d8b1537715b0ea2d30a2c1e647db569e6980ac056600c1b79a9a59c41e332759",
       "generation": 1,
       "attempts": 1,
@@ -1276,6 +1276,13 @@
         "generation": 1,
         "failureStatus": "blocked_external",
         "at": "2026-11-05T00:31:56.758Z"
+      },
+      "sourceResolution": {
+        "decision": "owner_probability_override_20261110",
+        "resolvedAt": "2026-11-10T10:05:20.146Z",
+        "why": "Exact 2027 EN Word accessible; translate only assigned RU body and media fields, preserve source facts.",
+        "wordAccessConfirmed": true,
+        "ruAndPricesUnchanged": true
       }
     },
     {

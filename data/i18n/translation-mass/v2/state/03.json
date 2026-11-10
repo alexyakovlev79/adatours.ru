@@ -2289,7 +2289,7 @@
     {
       "jobId": "en:bulk:tour:tour_source_ves_ekvador_i_gorbatye_kity:b003",
       "stage": "word_2027",
-      "status": "blocked_external",
+      "status": "queued",
       "sourceFingerprint": "df5ad1392f38f10acaf4860aafc8955c30f81ea2f1b25287ac938bdb2d8a7edb",
       "generation": 1,
       "attempts": 1,
@@ -2304,6 +2304,13 @@
         "generation": 1,
         "failureStatus": "blocked_external",
         "at": "2026-11-05T12:56:54.808Z"
+      },
+      "sourceResolution": {
+        "decision": "owner_probability_override_20261110",
+        "resolvedAt": "2026-11-10T10:05:20.146Z",
+        "why": "2027 EN Word is accessible; prefer existing RU USD 575 over conflicting EN USD 515. Do not alter canonical price; translate selected source field.",
+        "wordAccessConfirmed": true,
+        "ruAndPricesUnchanged": true
       }
     },
     {

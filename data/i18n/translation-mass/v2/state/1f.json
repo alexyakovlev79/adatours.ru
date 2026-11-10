@@ -1399,7 +1399,7 @@
     {
       "jobId": "en:bulk:tour:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru:b002",
       "stage": "word_2027",
-      "status": "blocked_external",
+      "status": "queued",
       "sourceFingerprint": "67d953be75c289e3c8b6ae4106863ea3810458f41922e38ebee07b39d6e2048b",
       "generation": 1,
       "attempts": 1,
@@ -1414,6 +1414,13 @@
         "generation": 1,
         "failureStatus": "blocked_external",
         "at": "2026-11-05T00:59:04.650Z"
+      },
+      "sourceResolution": {
+        "decision": "owner_probability_override_20261110",
+        "resolvedAt": "2026-11-10T10:05:20.146Z",
+        "why": "2027-folder EN Word carries legacy 2025 title and contradicts RU domestic flight inclusions. Preserve current RU prices/inclusions as source of truth until a separate commercial correction.",
+        "wordAccessConfirmed": true,
+        "ruAndPricesUnchanged": true
       }
     },
     {
@@ -1473,16 +1480,11 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b007",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "queued",
       "sourceFingerprint": "06b9e7b89e3f9adbd1d6cf80d27f0df72fe43b5de2805b23b08f55e2b2bba257",
       "generation": 2,
-      "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-recover-20261110-maya",
-        "token": "recovery-20261110-maya-7e21c8fa",
-        "claimedAt": "2026-11-10T06:50:02.930Z",
-        "expiresAt": "2026-11-10T08:20:02.930Z"
-      },
+      "attempts": 1,
+      "lease": null,
       "checkpoint": null,
       "submission": null,
       "review": null,

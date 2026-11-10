@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 3,
-    "leased": 0,
+    "queued": 2,
+    "leased": 1,
     "review": 3953,
     "ready": 50,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 1,
-      "leased": 0,
+      "queued": 0,
+      "leased": 1,
       "review": 2360,
       "ready": 50,
       "retryable": 0,
@@ -105,8 +105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 1,
-          "leased": 0,
+          "queued": 0,
+          "leased": 1,
           "review": 61,
           "ready": 0,
           "retryable": 0,
@@ -137,7 +137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-10T11:54:40.816Z",
       "earliestRetryAt": null
     },
     "12": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-resolve-20261110-a": {
+      "jobId": "en:bulk:tour:tour_source_mir_majya:b009",
+      "token": "tok-ada-en-resolve-20261110-a",
+      "expiresAt": "2026-11-10T11:54:40.816Z",
+      "generation": 2
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -13268,7 +13275,8 @@
         "en:bulk:tour:tour_source_mir_majya:b004",
         "en:bulk:tour:tour_source_mir_majya:b006",
         "en:bulk:tour:tour_source_mir_majya:b007",
-        "en:bulk:tour:tour_source_mir_majya:b008"
+        "en:bulk:tour:tour_source_mir_majya:b008",
+        "en:bulk:tour:tour_source_mir_majya:b009"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_meksika_lindo:b008",
@@ -13284,7 +13292,7 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T10:24:04.219Z",
+  "updatedAt": "2026-11-10T10:24:40.816Z",
   "sourceRevisions": [
     {
       "id": "maya-20261110-feee4047",

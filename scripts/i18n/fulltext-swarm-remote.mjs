@@ -36,7 +36,7 @@ function answer(status,p,lease,sha){
   source:p.items,lease,commit:sha};
 }
 export async function runEnFulltextSwarm(tools,core,a={}){
- const action=a.action||"status",now=a.now||new Date().toISOString();
+ const action=a.action||"status",now=new Date().toISOString(); // trusted dispatcher clock, never worker-provided
  if(!["status","claim","renew","submit","release","fail","reap"].includes(action))throw Error("Unknown action");
  if(!["status","reap"].includes(action)&&!valid(a.ownerId))throw Error("Missing ownerId");
  if(["claim","renew","submit","release","fail"].includes(action)&&!valid(a.token))throw Error("Missing token");

@@ -1563,7 +1563,7 @@
     {
       "jobId": "en:bulk:tour:tour_source_mir_majya:b005",
       "stage": "word_2027",
-      "status": "stale_source",
+      "status": "blocked_external",
       "sourceFingerprint": "e8ae8129c365686ca45dd91d0cfbf580778bc2bf9de1209a1b4c1c9da5316240",
       "generation": 1,
       "attempts": 1,
@@ -1578,6 +1578,16 @@
         "generation": 1,
         "failureStatus": "stale_source",
         "at": "2026-11-05T04:12:27.967Z"
+      },
+      "sourceReconciliation": {
+        "at": "2026-11-10T05:34:57.885Z",
+        "previousStatus": "stale_source",
+        "currentRuBlobSha": "b2d16d5945384cb44c26d49ada360ccb92f91f69",
+        "expectedRuBlobSha": "b2d16d5945384cb44c26d49ada360ccb92f91f69",
+        "wordFileId": "13yI6PCQliXLOv6YvBPAoR-WER8TzFTsg",
+        "frozenWordSha256": "792b9b95f860084bfef2e378f880b65a776c40ba8bac054dd685e860aab8ca2b",
+        "currentWordModifiedAt": "2026-10-30T13:21:37.586Z",
+        "resolution": "The RU Git blob now matches; old pinned Word bytes are unavailable after a Word update; rebaseline with a new source revision or restore old bytes."
       }
     },
     {

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 0,
-    "queued": 1,
-    "leased": 0,
+    "queued": 0,
+    "leased": 1,
     "review": 3955,
     "ready": 50,
     "retryable": 0,
@@ -38,8 +38,8 @@
     },
     "word_2026": {
       "held": 0,
-      "queued": 1,
-      "leased": 0,
+      "queued": 0,
+      "leased": 1,
       "review": 472,
       "ready": 0,
       "retryable": 0,
@@ -516,8 +516,8 @@
         },
         "word_2026": {
           "held": 0,
-          "queued": 1,
-          "leased": 0,
+          "queued": 0,
+          "leased": 1,
           "review": 17,
           "ready": 0,
           "retryable": 0,
@@ -537,7 +537,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-10T11:58:56.667Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -1341,7 +1341,14 @@
       "earliestRetryAt": null
     }
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-en-resolve-20261110-b": {
+      "jobId": "en:bulk:tour:tour_source_venesuela_novye_konkistadory:b003",
+      "token": "tok-ada-en-resolve-20261110-b",
+      "expiresAt": "2026-11-10T11:58:56.667Z",
+      "generation": 2
+    }
+  },
   "ownerAssignments": {
     "en-smoke-amanda-A-20261102": {
       "token": "en-smoke-token-A-20261102",
@@ -13287,7 +13294,8 @@
     "ada-en-resolve-20261110-b": {
       "token": "tok-ada-en-resolve-20261110-b",
       "jobIds": [
-        "en:bulk:tour:tour_source_venesuela_novye_konkistadory:b002"
+        "en:bulk:tour:tour_source_venesuela_novye_konkistadory:b002",
+        "en:bulk:tour:tour_source_venesuela_novye_konkistadory:b003"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_venesuela_novye_konkistadory:b002"
@@ -13295,7 +13303,7 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T10:28:15.720Z",
+  "updatedAt": "2026-11-10T10:28:56.667Z",
   "sourceRevisions": [
     {
       "id": "maya-20261110-feee4047",

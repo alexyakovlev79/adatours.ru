@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 17,
-    "leased": 4,
-    "review": 3929,
+    "leased": 3,
+    "review": 3930,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 6,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 6,
-      "leased": 4,
-      "review": 1112,
+      "leased": 3,
+      "review": 1113,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -568,8 +568,8 @@
         "ai_only": {
           "held": 0,
           "queued": 1,
-          "leased": 1,
-          "review": 34,
+          "leased": 0,
+          "review": 35,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -577,7 +577,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-10T07:24:22.091Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "03": {
@@ -1358,12 +1358,6 @@
       "jobId": "en:bulk:tour:tour_source_vivat_kolumbiya:b003",
       "token": "lease-1de9975e-dd44-4643-b26b-8fd10dce8681",
       "expiresAt": "2026-11-10T07:09:52.241Z",
-      "generation": 1
-    },
-    "ada-en-mwa9rwm2-pd4q4no92n": {
-      "jobId": "en:bulk:tour:tour_south_america_eight_countries_32_days_2026:b003",
-      "token": "adaen-lease-mwa9rwm2-88e9yizrmn",
-      "expiresAt": "2026-11-10T07:24:22.091Z",
       "generation": 1
     }
   },
@@ -13221,12 +13215,13 @@
         "en:bulk:tour:tour_south_america_eight_countries_32_days_2026:b003"
       ],
       "completedJobIds": [
-        "en:bulk:tour:tour_source_vip_tur_v_peru:b003"
+        "en:bulk:tour:tour_source_vip_tur_v_peru:b003",
+        "en:bulk:tour:tour_south_america_eight_countries_32_days_2026:b003"
       ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T05:54:22.091Z",
+  "updatedAt": "2026-11-10T05:55:12.815Z",
   "sourceRevisions": [
     {
       "id": "maya-20261110-feee4047",

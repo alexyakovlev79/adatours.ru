@@ -51,7 +51,8 @@ export async function runEnFulltextSwarm(tools,core,a={}){
     nextPacket:c.nextPacket,active:c.activeByOwner,
     expired:Object.values(c.activeByOwner||{}).filter(x=>Date.parse(x.expiresAt)<=Date.parse(now)).map(x=>x.number)};
   }
-  if(!m.enabled&&action!=="reap")return {status:"disabled",reason:m.reason,head:h};
+  const pilotAllowed=m.pilotEnabled===true&&Array.isArray(m.pilotOwnerIds)&&m.pilotOwnerIds.includes(a.ownerId);
+  if(!m.enabled&&!pilotAllowed&&action!=="reap")return {status:"disabled",reason:m.reason,head:h};
   const choice=action==="claim"?core.fulltextPick(c,a.ownerId,a.token,now):null;
   const n=action==="claim"?choice.number:
    action==="reap"?Object.values(c.activeByOwner||{}).find(x=>Date.parse(x.expiresAt)<=Date.parse(now))?.number:

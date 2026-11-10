@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 8,
-    "leased": 4,
-    "review": 3938,
+    "leased": 3,
+    "review": 3939,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 6,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 8,
-      "leased": 1,
-      "review": 2348,
+      "leased": 0,
+      "review": 2349,
       "ready": 50,
       "retryable": 0,
       "blocked_external": 4,
@@ -666,8 +666,8 @@
         "word_2027": {
           "held": 0,
           "queued": 0,
-          "leased": 1,
-          "review": 80,
+          "leased": 0,
+          "review": 81,
           "ready": 1,
           "retryable": 0,
           "blocked_external": 0,
@@ -697,7 +697,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-10T08:11:59.175Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "06": {
@@ -1359,12 +1359,6 @@
       "token": "lease-1de9975e-dd44-4643-b26b-8fd10dce8681",
       "expiresAt": "2026-11-10T07:09:52.241Z",
       "generation": 1
-    },
-    "ada-en-recover-20261110-maya": {
-      "jobId": "en:bulk:tour:tour_source_mir_majya:b005",
-      "token": "recovery-20261110-maya-7e21c8fa",
-      "generation": 2,
-      "expiresAt": "2026-11-10T08:11:59.175Z"
     }
   },
   "ownerAssignments": {
@@ -13246,12 +13240,13 @@
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_source_mir_majya:b002",
-        "en:bulk:tour:tour_source_mir_majya:b003"
+        "en:bulk:tour:tour_source_mir_majya:b003",
+        "en:bulk:tour:tour_source_mir_majya:b005"
       ]
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T06:41:59.175Z",
+  "updatedAt": "2026-11-10T06:43:18.692Z",
   "sourceRevisions": [
     {
       "id": "maya-20261110-feee4047",

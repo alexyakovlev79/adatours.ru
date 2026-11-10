@@ -105,5 +105,7 @@ jobs:
     steps:
       - name: Publish English routes only — never the Russian site
         id: pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        with:
+          timeout: 1200000
 

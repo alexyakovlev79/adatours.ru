@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 59,
-    "leased": 5,
-    "review": 3875,
+    "leased": 4,
+    "review": 3876,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 59,
-      "leased": 5,
-      "review": 1058,
+      "leased": 4,
+      "review": 1059,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -328,8 +328,8 @@
         "ai_only": {
           "held": 0,
           "queued": 13,
-          "leased": 1,
-          "review": 29,
+          "leased": 0,
+          "review": 30,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -337,7 +337,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-10T06:55:51.288Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "17": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-20261110-fu6s4admm3": {
-      "jobId": "en:bulk:tour:tour_source_ostrova_san_blas_na_yakhte_lyuks_klassa:b003",
-      "token": "zdn809f5wxd3dbk8o620c4kczvnrcu78e",
-      "expiresAt": "2026-11-10T06:55:51.288Z",
-      "generation": 1
-    },
     "ada-en-20261110-b2486d223306-4fppdtbllan": {
       "jobId": "en:bulk:tour:tour_source_priklyucheniya_v_bolivii:b002",
       "token": "lease-ywj1px6545-yuyssmjh7za",
@@ -13073,7 +13067,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_ostrova_san_blas_na_yakhte_lyuks_klassa:b003"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_ostrova_san_blas_na_yakhte_lyuks_klassa:b003"
+      ]
     },
     "ada-en-20261110-51o02k29bbyeytxstzb7f4": {
       "token": "tok-e3sp370xnimupdu8pw2mgm-3i8kop1hm3zpeidv2p8ln",
@@ -13101,5 +13097,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T05:28:00.035Z"
+  "updatedAt": "2026-11-10T05:28:08.115Z"
 }

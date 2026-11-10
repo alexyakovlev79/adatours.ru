@@ -26,7 +26,7 @@ export function fulltextPick(control,ownerId,token,now){
    return {mode:"resumed",number:mine.number};
  }
  if((control.completedByOwner?.[ownerId]||0)>=10)return {mode:"chat_limit"};
- const retry=(control.retryQueue||[]).find(x=>at(x.nextAttemptAt)<=at(now));
+ const retry=(control.retryQueue||[]).filter(x=>at(x.nextAttemptAt)<=at(now)).sort((a,b)=>a.number-b.number)[0];
  if(retry)return {mode:"retry",number:retry.number};
  const expired=Object.values(control.activeByOwner||{}).find(x=>at(x.expiresAt)<=at(now));
  if(expired)return {mode:"expired",number:expired.number};

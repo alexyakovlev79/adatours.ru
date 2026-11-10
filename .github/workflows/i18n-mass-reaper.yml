@@ -57,3 +57,55 @@ jobs:
           done
           echo "Three bounded non-fast-forward retries exhausted; next scheduled run can retry."
           exit 1
+
+  recover-fulltext:
+    # Completely independent of the previous Tour bulk queue and its recovery result.
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/translation-mass-staging
+          sparse-checkout: |
+            /scripts/i18n/fulltext-swarm-core.mjs
+            /scripts/i18n/reap-fulltext-swarm.mjs
+            /tests/i18n-fulltext-swarm.test.mjs
+            /tests/i18n-fulltext-reaper.test.mjs
+            /data/i18n/fulltext-swarm/v1/manifest.json
+            /data/i18n/fulltext-swarm/v1/control.json
+            /data/i18n/fulltext-swarm/v1/state/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Verify five-text lease and independent reaper invariants
+        run: node --test tests/i18n-fulltext-swarm.test.mjs tests/i18n-fulltext-reaper.test.mjs
+      - name: Restore only expired fulltext leases with bounded non-force retry
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch='i18n/translation-mass-staging'
+          for attempt in 1 2 3; do
+            git fetch --no-tags origin "refs/heads/$branch"
+            git reset --hard FETCH_HEAD
+            node scripts/i18n/reap-fulltext-swarm.mjs data/i18n/fulltext-swarm/v1 --write
+            git add data/i18n/fulltext-swarm/v1/control.json data/i18n/fulltext-swarm/v1/state/
+            if git diff --cached --quiet; then
+              echo "No fulltext leases have expired. No commit."
+              exit 0
+            fi
+            git -c user.name='ada-en-fulltext-reaper' \
+              -c user.email='ada-en-fulltext-reaper@users.noreply.github.com' \
+              commit -m 'i18n: reclaim expired five-text leases [skip ci]'
+            if push_output="$(git push origin "HEAD:refs/heads/$branch" 2>&1)"; then
+              printf '%s\n' "$push_output"
+              exit 0
+            fi
+            printf '%s\n' "$push_output"
+            if ! printf '%s\n' "$push_output" | grep -Eqi 'non-fast-forward|fetch first|stale info'; then
+              echo "Fulltext recovery push failed for a reason other than concurrency."
+              exit 1
+            fi
+          done
+          echo "Fulltext CAS retries exhausted; the next scheduled run may retry."
+          exit 1

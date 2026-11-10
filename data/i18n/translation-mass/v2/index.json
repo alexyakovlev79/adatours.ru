@@ -16,8 +16,8 @@
   "counts": {
     "held": 0,
     "queued": 105,
-    "leased": 3,
-    "review": 3831,
+    "leased": 2,
+    "review": 3832,
     "ready": 50,
     "retryable": 0,
     "blocked_external": 16,
@@ -50,8 +50,8 @@
     "ai_only": {
       "held": 0,
       "queued": 105,
-      "leased": 3,
-      "review": 1014,
+      "leased": 2,
+      "review": 1015,
       "ready": 0,
       "retryable": 0,
       "blocked_external": 0,
@@ -848,8 +848,8 @@
         "ai_only": {
           "held": 0,
           "queued": 3,
-          "leased": 1,
-          "review": 37,
+          "leased": 0,
+          "review": 38,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -857,7 +857,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-10T05:23:01.952Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0a": {
@@ -1342,12 +1342,6 @@
     }
   },
   "activeOwners": {
-    "ada-en-113a0f7cb039-mwa5n0tf-qk0eyn5ma27": {
-      "jobId": "en:bulk:tour:tour_source_vivat_kolumbiya:b008",
-      "token": "ada-en-token-mwa5n0tf-qk0eyn5ma27",
-      "expiresAt": "2026-11-10T05:23:01.952Z",
-      "generation": 1
-    },
     "ada-en-20261110-mwa5muwazo597oeipo": {
       "jobId": "en:bulk:tour:tour_source_kruiznyj_tur_po_luchshim_mestam_argentiny_chili_i_bolivii:b006",
       "token": "worker-jv1nr2ns5aqduri2ucphr",
@@ -12947,7 +12941,9 @@
       "jobIds": [
         "en:bulk:tour:tour_source_vivat_kolumbiya:b008"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_source_vivat_kolumbiya:b008"
+      ]
     },
     "ada-en-chat-20261110-0451-41d9d0b7bf00": {
       "token": "ada-en-41d9d0b7bf00-1e13e6guk3x01nwthmkxs53",
@@ -12958,5 +12954,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-10T03:53:31.172Z"
+  "updatedAt": "2026-11-10T03:53:37.696Z"
 }

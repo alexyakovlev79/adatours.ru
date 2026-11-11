@@ -3,9 +3,9 @@
   "packets": 1412,
   "nextPacket": 453,
   "queued": 960,
-  "leased": 16,
+  "leased": 15,
   "saved": 435,
-  "retryable": 0,
+  "retryable": 1,
   "blocked_external": 0,
   "stale_source": 1,
   "failed_final": 0,
@@ -45,12 +45,6 @@
       "token": "ada-lease-u6m5f01e6u",
       "generation": 1,
       "expiresAt": "2026-11-11T06:10:18.984Z"
-    },
-    "adaen-ftext-mwbkug68-492v0ua3": {
-      "number": 438,
-      "token": "lease-mwbkug68-6z7m68ud8h",
-      "generation": 1,
-      "expiresAt": "2026-11-11T06:19:07.766Z"
     },
     "adaen-ft-20261111-mwbmbs3j-vsuqcipg": {
       "number": 439,
@@ -107,7 +101,12 @@
       "expiresAt": "2026-11-11T06:24:42.900Z"
     }
   },
-  "retryQueue": [],
+  "retryQueue": [
+    {
+      "number": 438,
+      "nextAttemptAt": "2026-11-11T04:55:14.281Z"
+    }
+  ],
   "sourceMainSha": "16dc9cdb6f029c0d16445966521338cacf353771",
   "completedByOwner": {
     "adaen-real-pilot-20261110": 1,

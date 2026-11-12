@@ -80,8 +80,8 @@ test('double-digit catalogue pages retain page-specific metadata and full counts
   destinations:base.allDestinations,excursions:base.allExcursions,
   themes:base.allThemes,tours,pageSize:1});
  const tenth=meta('/brazil/tour/page/10/',ctx);
- assert.match(tenth.title,/Page 10 \\| Ada Tours$/);
- assert.match(tenth.description,/Page 10: items 10–10 of 14\\./);
+ assert.match(tenth.title,/Page 10 \| Ada Tours$/);
+ assert.match(tenth.description,/Page 10: items 10–10 of 14\./);
 });
 
 test('one confirmed USD price is formatted in English; mixed currencies never yield a fabricated USD price',()=>{

@@ -20,8 +20,8 @@ const plural = (count, singular, multiple) => count + ' ' + (count === 1 ? singu
 const unique = items => [...new Set(items.filter(Boolean))];
 const withBrand = value => clean(value).replace(/\s*\|\s*Ada Tours\s*$/iu, '') + ' | Ada Tours';
 const pathWithoutPage = path => {
-  const match = /^(.*\/)page\/([2-9]\d*)\/$/.exec(path);
-  return match ? { root: match[1], page: Number(match[2]) } : { root: path, page: 1 };
+  const match = /^(.*\/)page\/([1-9]\d*)\/$/.exec(path);
+  return match && Number(match[2]) >= 2 ? { root: match[1], page: Number(match[2]) } : { root: path, page: 1 };
 };
 function safeName(value, fallback='Latin America') {
   const name = clean(value);

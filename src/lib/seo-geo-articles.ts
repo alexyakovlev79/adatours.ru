@@ -25,6 +25,8 @@ const loaders = import.meta.glob('../../data/seo-geo/articles/**/index.md', {
 let dataPromise;
 let processorPromise;
 const cache = new Map();
+const isEnglishBuild = () => process.env.SITE_LOCALE === 'en' && process.env.EN_STAGING_PAGES === '1';
+const enCount = (n: number, singular: string, plural: string) => `${n} ${n === 1 ? singular : plural}`;
 
 async function getData() {
   if (!dataPromise) {
@@ -170,15 +172,18 @@ function tourTableFromScope(ids, scope) {
   }
   const byId = new Map(scope.tours.map((tour) => [tour.data.id, tour.data]));
   const lines = [
-    '| Маршрут | Длительность | Стоимость по программе |',
+    isEnglishBuild() ? '| Itinerary | Duration | Price according to program |' : '| Маршрут | Длительность | Стоимость по программе |',
     '|---|---|---|',
   ];
   for (const id of ids) {
     const tour = byId.get(id);
     if (!tour) throw new Error('SEO/GEO table tour is not in the current active selection: ' + id);
     const duration = Number.isInteger(tour.durationDays)
-      ? seoGeoCount(tour.durationDays, ['день', 'дня', 'дней']) : 'Не указана';
-    const price = vipTourPriceLabel(tour) || 'Не указана';
+      ? (isEnglishBuild() ? enCount(tour.durationDays, 'day', 'days') : seoGeoCount(tour.durationDays, ['день', 'дня', 'дней']))
+      : (isEnglishBuild() ? 'Not specified' : 'Не указана');
+    const basePrice = vipTourPriceLabel(tour);
+    const price = basePrice ? (isEnglishBuild() ? basePrice.replace(/^от\s+/i, 'from ') : basePrice)
+      : (isEnglishBuild() ? 'Not specified' : 'Не указана');
     lines.push('| [' + full(tour.title) + '](' + tourPath(tour) + ') | ' + duration + ' | ' + price + ' |');
   }
   return lines.join('\n');
@@ -198,11 +203,11 @@ export function seoGeoTemplateContext(scope, title) {
     },
     catalog: {
       toursCount: scope.tours.length,
-      toursCountPhrase: seoGeoCount(scope.tours.length, ['тур', 'тура', 'туров']),
+      toursCountPhrase: isEnglishBuild() ? enCount(scope.tours.length, 'tour', 'tours') : seoGeoCount(scope.tours.length, ['тур', 'тура', 'туров']),
       placesCount: scope.places.length,
-      placesCountPhrase: seoGeoCount(scope.places.length, ['место', 'места', 'мест']),
+      placesCountPhrase: isEnglishBuild() ? enCount(scope.places.length, 'place', 'places') : seoGeoCount(scope.places.length, ['место', 'места', 'мест']),
       excursionsCount: scope.excursions.length,
-      excursionsCountPhrase: seoGeoCount(scope.excursions.length, ['экскурсия', 'экскурсии', 'экскурсий']),
+      excursionsCountPhrase: isEnglishBuild() ? enCount(scope.excursions.length, 'excursion', 'excursions') : seoGeoCount(scope.excursions.length, ['экскурсия', 'экскурсии', 'экскурсий']),
       hasTours: scope.tours.length > 0,
       hasPlaces: scope.places.length > 0,
       hasExcursions: scope.excursions.length > 0,

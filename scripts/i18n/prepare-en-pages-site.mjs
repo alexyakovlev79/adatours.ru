@@ -17,6 +17,15 @@ const read=(p)=>path.join(dist,p);
 const sharedContent=sharedEnglishContentEnabled(process.env);
 if(sharedContent ? !fs.existsSync(read('tours/index.html')) : !fs.existsSync(read('en/tours/index.html')))fail('Canonical pages missing');
 const receipt=sharedContent?JSON.parse(fs.readFileSync('.astro/ada-en-shared-content.json','utf8')):null;
+if(sharedContent && process.env.EN_PUBLISH_FULLTEXT==='1'){
+ const file=path.resolve('../en-fulltext-receipt.json');
+ if(!fs.existsSync(file))fail('Fulltext materialization receipt missing');
+ const fulltext=JSON.parse(fs.readFileSync(file,'utf8'));
+ if(fulltext?.expectedPackets!==1412||fulltext.expectedTexts!==7056||
+    fulltext.verifiedPackets!==1412||fulltext.verifiedTexts!==7056)
+   fail('Fulltext inventory receipt incomplete');
+ receipt.fulltext=fulltext;
+}
 if(sharedContent && (!receipt?.counts?.translatedFields || receipt.mode!=='shared-canonical-english'))fail('Shared English projection receipt missing');
 fs.rmSync(output,{recursive:true,force:true});fs.mkdirSync(output,{recursive:true});
 // Publish all routes from the shared Astro site. Its content loader applies

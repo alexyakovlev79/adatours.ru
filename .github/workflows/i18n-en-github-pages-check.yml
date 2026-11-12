@@ -62,6 +62,7 @@ jobs:
       EN_SHARED_CONTENT: '1'
       EN_ACCEPTED_TRANSLATIONS_ROOT: ../translation-preview
       EN_PUBLISH_SUBMITTED_TRANSLATIONS: '1'
+      EN_PUBLISH_FULLTEXT: '1'
       PUBLIC_EN_RELEASE: '0'
       EN_PILOT_PREVIEW: '0'
       MEDIA_CDN_ORIGIN: https://img.adatours.ru
@@ -90,6 +91,11 @@ jobs:
             data/i18n/translation-mass/v2/state/
             data/i18n/translation-mass/v2/jobs/
             data/i18n/translation-mass/v2/results/
+            data/i18n/fulltext-swarm/v1/manifest.json
+            data/i18n/fulltext-swarm/v1/control.json
+            data/i18n/fulltext-swarm/v1/definitions/
+            data/i18n/fulltext-swarm/v1/state/
+            data/i18n/fulltext-swarm/v1/results/
           sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/setup-node@v4
@@ -110,9 +116,11 @@ jobs:
         run: |
           set -euo pipefail
           npm install --no-audit --no-fund
+          node --test tests/i18n/fulltext-materializer.test.mjs
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
           node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs
+          node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
           npx pagefind --site dist --force-language en
           node scripts/dedupe-site-shell.mjs dist --skip-en

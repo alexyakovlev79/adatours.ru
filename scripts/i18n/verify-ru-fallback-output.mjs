@@ -94,7 +94,7 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
     if(!/^https:\/\//.test(ogImage)||ogImage!==twImage||
        ogImage.includes(EN_STAGING_BASE+'media/'))
       fail('Invalid Open Graph/Twitter preview media '+name);
-    const page=route.match(/(?:^|\/)page\/([2-9]\d*)\/$/u);
+    const page=route.match(/(?:^|\/)page\/([1-9]\d*)\/$/u);
     if(page && (!enTitle.includes('Page '+page[1])||
        !enDescription.includes('Page '+page[1])))
       fail('English paginated SEO metadata missing page number '+name);

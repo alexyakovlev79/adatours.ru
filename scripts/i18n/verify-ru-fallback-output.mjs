@@ -98,8 +98,8 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
     if(page && (!enTitle.includes('Page '+page[1])||
        !enDescription.includes('Page '+page[1])))
       fail('English paginated SEO metadata missing page number '+name);
-    if(/Russian-speaking guides?|русскоговорящ|русскоязычн/iu.test(enTitle+enDescription))
-      fail('Unsupported guide-language promise in English SEO '+name);
+    // A specific excursion may genuinely advertise a Russian-language guide.
+    // Generated SEO templates are tested separately not to invent that service.
   }
   if(sharedContent){
     const forms=find(dom,x=>x.tagName==='form'&&attr(x,'data-lead-form')!==null);

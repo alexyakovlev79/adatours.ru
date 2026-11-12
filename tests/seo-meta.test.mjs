@@ -364,6 +364,6 @@ test('all 24 country directions are explicit and agree with the catalogues', asy
  }
  assert.throws(()=>seoCountryDirection('country_unknown'),/Missing country direction/);
  const layout=readFileSync(new URL('../src/layouts/CountryLayout.astro',import.meta.url),'utf8');
- assert.ok(layout.includes('<h2 id="country-tours-title">Туры {countryDirection}</h2>'));
- assert.ok(layout.includes('<h2 id="country-excursions-title">Экскурсии {countryDirection}</h2>'));
+ assert.ok(layout.includes('<h2 id="country-tours-title">') && layout.includes('Tours in ${countryName}') && layout.includes('Туры ${countryDirection}'), 'Country tour heading preserves the Russian directional form and translates EN');
+ assert.ok(layout.includes('<h2 id="country-excursions-title">') && layout.includes('Excursions in ${countryName}') && layout.includes('Экскурсии ${countryDirection}'), 'Country excursion heading preserves the Russian directional form and translates EN');
 });

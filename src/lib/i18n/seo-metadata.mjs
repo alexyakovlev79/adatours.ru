@@ -305,3 +305,10 @@ export function englishSeoMetadata({path='/', title='', description='', date=new
   return {title:withBrand(meta.title),description:clean(meta.description),
     page,sourcePath:cleanPath,canonicalPath:cleanPath};
 }
+
+let cachedContext;
+/** One content snapshot per EN build; avoid reloading collections on 6,000+ pages. */
+export function cachedEnglishSeoContext(load) {
+  if (!cachedContext) cachedContext=Promise.resolve().then(load).then(createEnglishSeoContext);
+  return cachedContext;
+}

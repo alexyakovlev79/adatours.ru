@@ -141,7 +141,7 @@ async function main(){
   canonicalSourceSha:process.env.ADA_CANONICAL_SHA||null,
   expectedPackets:manifest.packets,expectedTexts:manifest.items,
   verifiedPackets:0,checkedTexts:0,verifiedTexts:0,applied:0,partial:0,withheld:0,excluded:0,
-  repairedSourceDrifts:0,repairedReceipts:0,repairedSyntax:0,repairedLinks:0,repairedLocale:0,
+  repairedSourceDrifts:0,repairedReceipts:0,repairedSyntax:0,repairedLinks:0,repairedLocale:0,repairedRevisions:0,
   byKind:{},withheldSamples:[],appliedSample:[]};
  for(let n=1;n<=manifest.packets;n++){
   const shard=states[(n-1)%16],row=shard.packets?.[String(n)];
@@ -176,11 +176,28 @@ async function main(){
     const file=srcPath(item.path),raw=await readFile(file),actualSha=sha(raw);
     const auth=authorizeFulltextSource(item.number,item.sha,actualSha,text.sourceBlobSha,repairs);
     summary.verifiedTexts++;
-    const repairedSyntax=repairFulltextEnglishSyntax(text.enMarkdown,item.number,repairs);
+    // Recover the five substantially off-source historical outputs with new
+    // full translations. Old receipts remain immutable; corrected revisions
+    // carry their own exact canonical Git blob SHA and source path.
+    let workingEnglish=text.enMarkdown;
+    if(repairs.complexNeedsRevisions.includes(item.number)){
+      const revisionPath='data/i18n/fulltext-publication-repairs/entries/'+String(item.number).padStart(5,'0')+'.json';
+      const revisionBytes=await readFile(join(sourceRoot,revisionPath));
+      if(sha(revisionBytes)!==repairs.revisionBlobs?.[String(item.number)])
+        throw new Error('Pinned complete English revision checksum mismatch');
+      const revision=JSON.parse(revisionBytes.toString('utf8'));
+      if(revision?.schemaVersion!==1||revision.number!==item.number||
+         revision.path!==item.path||revision.sourceBlobSha!==item.sha||
+         revision.locale!=='en'||revision.status!=='review'||
+         typeof revision.enMarkdown!=='string'||CYR.test(revision.enMarkdown))
+        throw new Error('Fulltext revision identity or language invalid');
+      workingEnglish=revision.enMarkdown;
+    }
+    const repairedSyntax=repairFulltextEnglishSyntax(workingEnglish,item.number,repairs);
     const repairedLinks=repairedFulltextBody(raw.toString('utf8'),repairedSyntax,item.number,repairs);
     const projected=applyFulltextToSource(raw.toString('utf8'),repairedLinks,kind,actualSha,{
      ruLocaleAllowed:repairs.ruLocaleInEnglish.includes(item.number),
-     seoKindAllowed:repairs.seoKindsKeepCanonical.includes(item.number),
+     seoKindAllowed:false,
      textOverrides:auth.compatibleCountry?.textOverrides
     });
     if(projected.status==='excluded'){summary.excluded++;group.excluded++;continue;}
@@ -189,8 +206,9 @@ async function main(){
     summary[projected.status]++;group[projected.status]++;
     if(auth.sourceReconciled)summary.repairedSourceDrifts++;
     if(auth.recoveredReceipt)summary.repairedReceipts++;
-    if(repairedSyntax!==text.enMarkdown)summary.repairedSyntax++;
+    if(repairedSyntax!==workingEnglish)summary.repairedSyntax++;
     if(repairedLinks!==repairedSyntax)summary.repairedLinks++;
+    if(workingEnglish!==text.enMarkdown)summary.repairedRevisions++;
     if(repairs.ruLocaleInEnglish.includes(item.number))summary.repairedLocale++;
     if(summary.appliedSample.length<10)summary.appliedSample.push(item.path);
     if(projected.status==='partial'&&summary.withheldSamples.length<200)

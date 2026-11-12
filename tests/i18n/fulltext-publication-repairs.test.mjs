@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {parseSeoGeoArticle} from '../../src/lib/seo-geo.mjs';
 import {applyFulltextToSource,splitFulltextMarkdown} from '../../scripts/i18n/materialize-fulltext-en.mjs';
 import {authorizeFulltextSource,repairFulltextEnglishSyntax,reconcileFulltextLinks,repairedFulltextBody} from '../../scripts/i18n/fulltext-publication-repairs.mjs';
 const registry=JSON.parse(readFileSync(new URL('../../data/i18n/fulltext-publication-repairs/2026-11-12.json',import.meta.url),'utf8'));
@@ -83,4 +85,30 @@ test('unapproved link changes cannot silently bypass canonical text contract',()
  const src='---\ntargetPath: /foo/\nkind: one\n---\n\n## A\n\n[A](/a/)\n';
  const en='---\ntargetPath: /foo/\nkind: one\n---\n\n## A\n\nB\n';
  assert.equal(repairedFulltextBody(src,en,100,registry),en);
+});
+
+test('five revised Peru articles match exact current source blobs, link targets and content format',()=>{
+ const sha=bytes=>createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
+ const linkTargets=body=>[...body.matchAll(/\]\(([^)]+)\)/g)].map(x=>x[1]).sort();
+ const templates=body=>[...body.matchAll(/\{\{[^}]+\}\}/g)].map(x=>x[0]).sort();
+ for(const num of registry.complexNeedsRevisions){
+  const name=String(num).padStart(5,'0')+'.json';
+  const bytes=readFileSync(new URL('../../data/i18n/fulltext-publication-repairs/entries/'+name,import.meta.url));
+  assert.equal(sha(bytes),registry.revisionBlobs[String(num)]);
+  const revision=JSON.parse(bytes.toString('utf8'));
+  assert.equal(revision.number,num);
+  assert.equal(revision.locale,'en');
+  assert.equal(revision.status,'review');
+  const originalBytes=readFileSync(new URL('../../'+revision.path,import.meta.url));
+  assert.equal(sha(originalBytes),revision.sourceBlobSha);
+  const original=originalBytes.toString('utf8');
+  const src=splitFulltextMarkdown(original),en=splitFulltextMarkdown(revision.enMarkdown);
+  assert.equal(en.data.targetPath,src.data.targetPath);
+  assert.equal(en.data.kind,src.data.kind);
+  assert.equal(en.data.status,src.data.status);
+  assert.deepEqual(linkTargets(en.body),linkTargets(src.body));
+  assert.deepEqual(templates(en.body),templates(src.body));
+  assert.doesNotMatch(revision.enMarkdown,/[\u0400-\u052f]/u);
+  parseSeoGeoArticle(revision.enMarkdown,revision.path);
+ }
 });

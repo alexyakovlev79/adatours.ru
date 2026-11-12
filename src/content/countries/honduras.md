@@ -28,14 +28,17 @@ featureBands:
     title: Копан и наследие майя
     text: Руины Копана позволяют сделать археологию одной из главных частей маршрута и соединить ее с колониальными городами и природными районами западного Гондураса.
     image: /media/countries/honduras/block-058-generated-20261011-dedup-v1.webp
+    href: /honduras/place/copan-ruinas/
   - eyebrow: Карибское море
     title: Роатан, Утила и коралловый риф
     text: Острова залива подходят для пляжного отдыха, снорклинга и дайвинга. Роатан дает более курортный формат, а Утила известна дайвингом и более демократичной атмосферой.
     image: /media/countries/honduras/block-059-generated-20261011-dedup-v1.webp
+    href: /honduras/place/roatan/
   - eyebrow: Озера и водопады
     title: Йоджоа и Пульхапанзак
     text: Район озера Йоджоа можно включить в природную часть поездки с наблюдением за птицами, пешими маршрутами, горячими источниками и поездкой к водопаду Пульхапанзак.
     image: /media/countries/honduras/block-060-generated-20261011-dedup-v1.webp
+    href: /honduras/place/lake-yojoa/
 sourceUrl: https://brasiltours.ru/gonduras-ru
 sourceSnapshot: page_texts_original/gonduras-ru__f10f03e7.md
 updatedAt: 2026-10-02

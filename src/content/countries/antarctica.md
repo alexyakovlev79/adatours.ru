@@ -53,14 +53,17 @@ featureBands:
     title: Айсберги и высадки с воды
     text: Круиз дает возможность проходить среди льда, выходить на берег на лодках Zodiac и наблюдать животных в естественной среде.
     image: /media/tours/antarctica-discovery-learning/antarctic-zodiac-word-20261011-v1-enhanced-20261011-next50-v1.webp
+    href: /antarctica/place/antarctic-peninsula/
   - eyebrow: Живая природа
     title: Пингвины, тюлени и киты
     text: Наблюдение за антарктической фауной становится одной из главных частей маршрута и зависит от конкретного района и условий экспедиции.
     image: /media/countries/antarktida/gallery-7-enhanced-20261001.webp
+    href: /antarctica/place/cuverville-island/
   - eyebrow: Продолжение маршрута
     title: Антарктида и Патагония
     text: Поездку можно соединить с аргентинской или чилийской Патагонией, если добавить несколько дней до или после круиза.
     image: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/hero-enhanced-20261005.webp
+    href: /argentina/place/ushuaia/
 sourceUrl: https://brasiltours.ru/antarktika-ru
 sourceSnapshot: page_texts_original/antarktika-ru__4d2e23af.md
 updatedAt: 2026-10-01

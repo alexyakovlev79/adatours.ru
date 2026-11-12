@@ -37,14 +37,17 @@ featureBands:
     title: Ареналь, Поас и горные районы
     text: Вулканы Ареналь, Поас, Ирасу, Ринкон-де-ла-Вьеха и Турриальба можно соединить с трекингом, горячими источниками и переездами через центральную часть страны.
     image: /media/countries/costa-rica/block-028-generated-20261011-dedup-v1.webp
+    href: /costa-rica/place/la-fortuna-arenal-volcano/
   - eyebrow: Облачные и дождевые леса
     title: Монтеверде, Корковадо и полуостров Оса
     text: Монтеверде известен облачным лесом, а Корковадо и полуостров Оса дают маршруты по тропическому лесу с наблюдением за птицами и животными.
     image: /media/countries/costa-rica/block-029-generated-20261011-dedup-v1.webp
+    href: /costa-rica/place/monteverde-santa-elena/
   - eyebrow: Два побережья
     title: Мануэль-Антонио, Тамариндо и Карибское море
     text: Пляжи Тихого океана можно соединить с Мануэль-Антонио, Тамариндо и Никойей, а на Карибском побережье добавить Пуэрто-Вьехо и Тортугеро.
     image: /media/countries/costa-rica/block-030-generated-20261011-dedup-v1.webp
+    href: /costa-rica/place/manuel-antonio/
 sourceUrl: https://brasiltours.ru/kosta-rika-ru
 sourceSnapshot: page_texts_original/kosta-rika-ru__8195b997.md
 updatedAt: 2026-10-02

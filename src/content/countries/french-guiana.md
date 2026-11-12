@@ -28,14 +28,17 @@ featureBands:
     title: Кайенна
     text: В Кайенне можно соединить креольскую и колониальную архитектуру, площадь Палмист, набережную, рынок, ботанический сад и городскую гастрономию. Столица становится естественной отправной точкой для дальнейших поездок по территории.
     image: /media/countries/french-guiana/block-044-generated-20261011-dedup-v1.webp
+    href: /french-guiana/place/cayenne/
   - eyebrow: Космос и история
     title: Космодром Куру
     text: Куру позволяет добавить к маршруту космический центр и музей, а также продолжить поездку к побережью и островам. Посещение запусков зависит от действующего расписания и доступности.
     image: /media/countries/french-guiana/block-045-generated-20261011-dedup-v1.webp
+    href: /french-guiana/place/guiana-space-centre/
   - eyebrow: Тропические леса
     title: Гвианская Амазония
     text: В природной части маршрута можно сделать акцент на тропических лесах, реках, каноэ и заповедных территориях. Поездки в удалённые районы требуют более тщательной организации и могут зависеть от специальных разрешений.
     image: /media/countries/french-guiana/block-046-generated-20261011-dedup-v1.webp
+    href: /french-guiana/place/french-guiana-amazon-rainforest/
 sourceUrl: https://brasiltours.ru/frantsuzskaya-gviana-ru
 sourceSnapshot: page_texts_original/frantsuzskaya-gviana-ru__2c78e967.md
 updatedAt: 2026-10-02

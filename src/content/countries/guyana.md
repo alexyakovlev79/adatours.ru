@@ -26,14 +26,17 @@ featureBands:
     title: Водопад Кайетур и тропический лес
     text: "Кайетур можно сделать главным природным акцентом поездки и соединить его с маршрутами по тропическим лесам, рекам и удаленным районам страны."
     image: /media/countries/guyana/block-055-generated-20261011-dedup-v1.webp
+    href: /guyana/place/kaieteur-national-park/
   - eyebrow: Юго-запад страны
     title: Саванны Рупунуни
     text: "Рупунуни открывает другой ландшафт Гайаны: просторные саванны, небольшие сообщества, верховые маршруты, рыбалку и наблюдение за природой."
     image: /media/countries/guyana/block-056-generated-20261011-dedup-v1.webp
+    href: /guyana/place/rupununi-savannahs/
   - eyebrow: Столица
     title: Джорджтаун и атлантическое побережье
     text: "В Джорджтауне сохранилась деревянная и колониальная архитектура, зеленые улицы, рынки и система каналов и дамб, связанная с прибрежным положением города."
     image: /media/countries/guyana/block-057-generated-20261011-dedup-v1.webp
+    href: /guyana/place/georgetown/
 sourceUrl: https://brasiltours.ru/gajana-ru
 sourceSnapshot: page_texts_original/gajana-ru__efe33980.md
 updatedAt: 2026-10-02

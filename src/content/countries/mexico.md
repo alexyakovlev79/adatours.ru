@@ -45,14 +45,17 @@ featureBands:
     title: Теотиуакан, Чичен-Ица и Паленке
     text: Археологические маршруты можно построить вокруг Теотиуакана, Чичен-Ицы, Паленке и Ушмаля, соединяя памятники древних культур с колониальными городами и природными районами.
     image: /media/countries/mexico/block-061-generated-20261011-dedup-v1.webp
+    href: /mexico/place/chichen-itza/
   - eyebrow: Карибское море
     title: Канкун, Тулум и Косумель
     text: На Юкатане пляжный отдых легко соединить с сенотами и археологией. Канкун, Тулум, Плайя-дель-Кармен и Косумель дают разные варианты отдыха на Карибском море.
     image: /media/countries/mexico/block-062-generated-20261011-dedup-v1.webp
+    href: /mexico/place/tulum/
   - eyebrow: Города и кухня
     title: Оахака и другие города Мексики
     text: Мехико, Оахака, Гвадалахара и другие города добавляют к маршруту архитектуру, рынки, местную кухню и современную городскую жизнь.
     image: /media/countries/mexico/featureBands-3-enhanced-20261002.webp
+    href: /mexico/place/oaxaca/
 sourceUrl: https://brasiltours.ru/meksika-ru
 sourceSnapshot: page_texts_original/meksika-ru__f2ecf68f.md
 updatedAt: 2026-10-02

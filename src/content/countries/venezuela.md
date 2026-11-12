@@ -30,14 +30,17 @@ featureBands:
     title: Водопад Анхель и тепуи
     text: Канайма соединяет лагуны, водопады, тропический лес и столовые горы-тепуи. Один из главных маршрутов ведет к водопаду Анхель у массива Ауян-Тепуй.
     image: /media/countries/venezuela/block-092-generated-20261011-dedup-v1.webp
+    href: /venezuela/place/canaima-and-angel-falls/
   - eyebrow: Карибское море
     title: Лос-Рокес и островной отдых
     text: Архипелаг Лос-Рокес подходит для пляжной части путешествия, снорклинга, дайвинга, рыбалки и других активностей на Карибском море.
     image: /media/countries/venezuela/block-093-generated-20261011-dedup-v1.webp
+    href: /venezuela/place/los-roques/
   - eyebrow: Дикая природа
     title: Дельта Ориноко и саванны
     text: Дельта Ориноко и Лос-Льянос добавляют к маршруту реки, мангровые и тропические ландшафты, саванны и наблюдение за животными и птицами.
     image: /media/countries/venezuela/featureBands-3-enhanced-20261002.webp
+    href: /venezuela/place/orinoco-delta/
 sourceUrl: https://brasiltours.ru/venesuela-ru
 sourceSnapshot: page_texts_original/venesuela-ru__4c0604b5.md
 updatedAt: 2026-10-02

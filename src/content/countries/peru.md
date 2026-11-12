@@ -33,14 +33,17 @@ featureBands:
     title: Куско и Священная долина
     text: Первые дни в Андах лучше оставить спокойнее, чтобы высота не забирала впечатления от Куско и Священной долины.
     image: /media/countries/peru/block-081-generated-20261011-dedup-v1.webp
+    href: /peru/place/cusco/
   - eyebrow: Главный символ
     title: Мачу-Пикчу
     text: Поезд, автобус, время входа и ночевку лучше согласовать заранее как одну часть маршрута.
     image: /media/countries/peru/block-082-generated-20261011-dedup-v1.webp
+    href: /peru/place/machu-picchu/
   - eyebrow: Высокогорье
     title: Озеро Титикака
     text: Пуно и Титикака добавляют в маршрут высокогорье и позволяют продолжить поездку в сторону Боливии.
     image: /media/countries/peru/block-083-generated-20261011-dedup-v1.webp
+    href: /peru/place/puno-and-lake-titicaca/
 sourceUrl: https://brasiltours.ru/peru-ru
 sourceSnapshot: page_texts_original/peru-ru__722f1abd.md
 updatedAt: 2026-09-24

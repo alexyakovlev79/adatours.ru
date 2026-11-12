@@ -27,14 +27,17 @@ featureBands:
     title: Асунсьон
     text: Асунсьон добавляет к маршруту колониальную архитектуру, музеи, ботанический сад и современную городскую жизнь. Здесь же удобно знакомиться с местной кухней и искусством.
     image: /media/countries/paraguay/block-079-generated-20261011-dedup-v1.webp
+    href: /paraguay/place/asuncion/
   - eyebrow: Иезуитское наследие
     title: Энкарнасьон и Тринидад
     text: На юге страны можно включить в маршрут иезуитские миссии Тринидад-де-Парана и Хесус-де-Таваранге, где архитектура колониального барокко соединяется с традициями гуарани.
     image: /media/countries/paraguay/featureBands-2-enhanced-20261002.webp
+    href: /paraguay/place/encarnacion-and-trinidad/
   - eyebrow: Река Парана
     title: Сьюдад-дель-Эсте и Итайпу
     text: Район Сьюдад-дель-Эсте позволяет добавить к поездке реку Парана и плотину Итайпу, а также продолжить маршрут к границе с Бразилией и Аргентиной.
     image: /media/countries/paraguay/block-080-generated-20261011-dedup-v1.webp
+    href: /paraguay/place/itaipu/
 sourceUrl: https://brasiltours.ru/paragvaj-ru
 sourceSnapshot: page_texts_original/paragvaj-ru__b93a6194.md
 updatedAt: 2026-10-02

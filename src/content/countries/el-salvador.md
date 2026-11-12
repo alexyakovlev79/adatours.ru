@@ -28,16 +28,19 @@ featureBands:
     title: Санта-Ана и Лос-Вулканес
     text: Район Санта-Аны подходит для активной части путешествия с вулканами, кратерными озёрами и пешими маршрутами. В исходном материале отдельно выделены вулкан Санта-Ана и национальный парк Лос-Вулканес.
     image: /media/countries/el-salvador/block-040-generated-20261011-dedup-v1.webp
+    href: /el-salvador/place/los-volcanes-national-park/
   - eyebrow: Колониальное наследие
     title: Сучитото и исторические города
     text: Сучитото, Санта-Ана и другие города добавляют к маршруту колониальную архитектуру, церкви, небольшие городские кварталы и более спокойный ритм между природными выездами.
     image: /media/countries/el-salvador/block-041-generated-20261011-dedup-v1.webp
+    href: /el-salvador/place/suchitoto/
   - eyebrow: Столица
     title: Сан-Сальвадор
     text: В столице можно соединить музеи, городскую архитектуру и поездки в ближайшие природные районы, включая Эль-Бокерон и вулканические ландшафты вокруг города.
     image: /media/countries/el-salvador/block-042-generated-20261011-dedup-v1.webp
     imagePosition: 92% center
     imagePositionMobile: 92% center
+    href: /el-salvador/place/san-salvador/
 sourceUrl: https://brasiltours.ru/el-salvador-ru
 sourceSnapshot: page_texts_original/el-salvador-ru__9e7634c2.md
 updatedAt: 2026-10-02

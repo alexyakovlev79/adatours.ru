@@ -30,14 +30,17 @@ featureBands:
     title: Рифы, острова и снорклинг
     text: Белиз позволяет соединить пляжный отдых с дайвингом и снорклингом у коралловых рифов и островов Карибского моря.
     image: /media/countries/belize/featureBands-1-enhanced-20261002.webp
+    href: /belize/place/great-blue-hole/
   - eyebrow: Наследие майя
     title: Руины среди тропических лесов
     text: В материковой части страны маршрут можно строить вокруг археологических центров майя, джунглей, пещер и природных заповедников.
     image: /media/countries/belize/featureBands-2-enhanced-20261002.webp
+    href: /belize/place/caracol/
   - eyebrow: Острова
     title: Амбергрис-Кайе и Кайе-Колкер
     text: Островную часть путешествия можно совместить с Белиз-сити, Кайо, Сан-Игнасио и другими остановками на материке.
     image: /media/countries/belize/block-010-generated-20261011-dedup-v1.webp
+    href: /belize/place/ambergris-caye/
 sourceUrl: https://brasiltours.ru/beliz-ru
 sourceSnapshot: page_texts_original/beliz-ru__d78a69a1.md
 updatedAt: 2026-10-01

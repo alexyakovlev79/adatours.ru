@@ -31,14 +31,17 @@ featureBands:
     title: Буэнос-Айрес
     text: Танго, исторические районы, современная набережная и гастрономия делают город естественной первой точкой маршрута.
     image: /media/countries/argentina/block-006-generated-20261011-dedup-v1.webp
+    href: /argentina/place/buenos-aires/
   - eyebrow: Патагония
-    title: Ледники и юг континента
+    title: Ледник Перито-Морено и Патагония
     text: Эль-Калафате, Ушуайя и другие точки юга требуют отдельного времени на перелеты, погоду и наземную логистику.
     image: /media/countries/argentina/block-007-generated-20261011-dedup-v1.webp
+    href: /argentina/place/perito-moreno-glacier/
   - eyebrow: Вино
     title: Мендоса
     text: Винный регион можно включить как самостоятельный блок или соединить с Буэнос-Айресом и продолжением поездки по Андам.
     image: /media/countries/argentina/block-008-generated-20261011-dedup-v1.webp
+    href: /argentina/place/mendoza/
 sourceUrl: https://brasiltours.ru/argentina-ru
 sourceSnapshot: page_texts_original/argentina-ru__e4db8af4.md
 updatedAt: 2026-09-24

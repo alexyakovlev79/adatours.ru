@@ -31,14 +31,17 @@ featureBands:
     text: >-
       Пустыня Атакама даёт один из самых контрастных участков маршрута: высокогорные ландшафты, лагуны, солончаки, гейзеры и Лунную долину. Этот регион удобно собирать отдельным природным блоком.
     image: /media/countries/chile/block-001-generated-20261011-dedup-v1.webp
+    href: /chile/place/san-pedro-de-atacama/
   - eyebrow: Южная Патагония
     title: Пунта-Аренас и Торрес-дель-Пайне
     text: Южный маршрут можно строить через Пунта-Аренас и Пуэрто-Наталес к Торрес-дель-Пайне, добавляя ледники, круизы, треккинг и природные дороги Патагонии.
     image: /media/countries/chile/story-patagonia-generated-20261011-dedup-v1.webp
+    href: /chile/place/puerto-natales-torres-del-paine/
   - eyebrow: Тихий океан
     title: Остров Пасхи
     text: Рапа-Нуи стоит особняком от материкового маршрута. Сюда едут ради моаи, вулканических ландшафтов и культуры острова, поэтому поездку лучше планировать как самостоятельный блок внутри большого путешествия по Чили.
     image: /media/countries/chile/featureBands-3-enhanced-20261002.webp
+    href: /chile/place/easter-island/
 sourceUrl: https://brasiltours.ru/chili-ru
 sourceSnapshot: page_texts_original/chili-ru__fdbb45f4.md
 updatedAt: 2026-10-02

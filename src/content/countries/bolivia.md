@@ -35,14 +35,17 @@ featureBands:
     title: Солончак Уюни и высокогорные лагуны
     text: Уюни можно включить в джип-маршрут по Альтиплано с соляной равниной, лагунами, вулканическими пейзажами и фламинго.
     image: /media/countries/bolivia/block-015-generated-20261011-dedup-v1.webp
+    href: /bolivia/place/uyuni/
   - eyebrow: Высокогорный город
     title: Ла-Пас и Лунная долина
     text: Ла-Пас добавляет в путешествие высокогорный городской пейзаж, колониальное наследие, рынки и поездки к природным объектам в окрестностях.
     image: /media/countries/bolivia/block-016-generated-20261011-dedup-v1.webp
+    href: /bolivia/place/la-paz/
   - eyebrow: Древняя история
-    title: Тиауанако и культура Альтиплано
+    title: Тиауанаку и культура Альтиплано
     text: Руины Тиауанако позволяют добавить к природному маршруту археологию и историю цивилизаций, существовавших здесь задолго до испанского периода.
     image: /media/countries/bolivia/block-110-generated-20261011-dedup-v1.webp
+    href: /bolivia/place/tiwanaku/
 sourceUrl: https://brasiltours.ru/boliviya-ru
 sourceSnapshot: page_texts_original/boliviya-ru__8e21444b.md
 updatedAt: 2026-10-01

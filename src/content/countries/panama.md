@@ -32,14 +32,17 @@ featureBands:
     title: Панама-Сити и Панамский канал
     text: Панама-Сити дает современную городскую часть маршрута, а Панамский канал — одну из главных инженерных достопримечательностей страны. Отсюда удобно продолжить поездку в природные районы и к обоим побережьям.
     image: /media/countries/panama/block-075-generated-20261011-dedup-v1.webp
+    href: /panama/place/panama-canal/
   - eyebrow: Горы и природа
     title: Бокете и Панамское нагорье
     text: Бокете и горные районы подходят для треккинга, наблюдения за птицами и поездок к вулкану Бару. В программу можно добавить леса, водопады и более прохладные высокогорные районы.
     image: /media/countries/panama/block-076-generated-20261011-dedup-v1.webp
+    href: /panama/place/boquete/
   - eyebrow: Острова и море
     title: Бокас-дель-Торо и Сан-Блас
     text: Архипелаги Бокас-дель-Торо и Сан-Блас позволяют добавить к маршруту пляжи, лодочные поездки, снорклинг и отдых на Карибском море.
     image: /media/countries/panama/block-077-generated-20261011-dedup-v1.webp
+    href: /panama/place/san-blas-islands/
 sourceUrl: https://brasiltours.ru/panama-ru
 sourceSnapshot: page_texts_original/panama-ru__16b2ec4f.md
 updatedAt: 2026-10-02

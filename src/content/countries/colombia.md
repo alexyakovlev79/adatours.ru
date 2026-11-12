@@ -32,14 +32,17 @@ featureBands:
     title: Медельин и окрестности
     text: Медельин можно соединить с городскими прогулками, музеями, Ботаническим садом и поездками в горные районы. Климат и положение среди Анд делают его удобной точкой для нескольких дней в маршруте.
     image: /media/countries/colombia/featureBands-1-enhanced-20261002.webp
+    href: /colombia/place/medellin/
   - eyebrow: Местные рынки и ремесла
     title: Колумбийские города за пределами открытки
     text: В Боготе, Картахене и других крупных городах к архитектуре и музеям легко добавить рынки, ремесла, местные продукты и обычную городскую жизнь.
     image: /media/countries/colombia/featureBands-2-enhanced-20261002.webp
+    href: /colombia/place/cartagena/
   - eyebrow: Кухня и кофе
     title: Гастрономическая часть путешествия
     text: Кофейный регион, рынки и местная кухня позволяют сделать еду отдельной частью маршрута. В разных регионах страны она меняется вместе с климатом, продуктами и культурой побережья или Анд.
     image: /media/countries/colombia/featureBands-3-enhanced-20261002.webp
+    href: /colombia/place/el-ocaso-coffee-farm/
 sourceUrl: https://brasiltours.ru/kolumbiya-ru
 sourceSnapshot: page_texts_original/kolumbiya-ru__7f5e984d.md
 updatedAt: 2026-10-02

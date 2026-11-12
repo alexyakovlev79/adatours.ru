@@ -30,14 +30,17 @@ featureBands:
     title: Пунта-Кана, Баваро и спокойные пляжи
     text: Пунта-Кана и Баваро дают классический пляжный формат с белым песком и бирюзовой водой. Ла-Романа и Хуан-Долио можно добавить для спокойного моря, снорклинга и семейного отдыха.
     image: /media/countries/dominican-republic/block-034-generated-20261011-dedup-v1.webp
+    href: /dominican-republic/place/punta-cana/
   - eyebrow: Природа
     title: Самана и национальный парк Лос-Айтисес
     text: Полуостров Самана и Лос-Айтисес добавляют в маршрут лодочные поездки, мангровые ландшафты, пещеры и наблюдение за горбатыми китами в сезон.
     image: /media/countries/dominican-republic/block-035-generated-20261011-dedup-v1.webp
+    href: /dominican-republic/place/samana/
   - eyebrow: Колониальная история
     title: Санто-Доминго
     text: "Столица дает городскую часть поездки: крепость Озама, музеи и здания колониального периода можно соединить с пляжной программой на юге или востоке страны."
     image: /media/countries/dominican-republic/block-036-generated-20261011-dedup-v1.webp
+    href: /dominican-republic/place/santo-domingo/
 sourceUrl: https://brasiltours.ru/dominikanskaya-respublika-ru
 sourceSnapshot: page_texts_original/dominikanskaya-respublika-ru__b5f4dd8b.md
 updatedAt: 2026-10-02

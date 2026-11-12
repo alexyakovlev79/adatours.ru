@@ -39,14 +39,17 @@ featureBands:
     title: Гавана и кубинские города
     text: Гавану можно соединить с Тринидадом, Сьенфуэгосом, Камагуэем, Сантьяго-де-Куба и другими городами, где колониальная архитектура, музыка и повседневная жизнь дают разный взгляд на страну.
     image: /media/countries/cuba/block-031-generated-20261011-dedup-v1.webp
+    href: /cuba/place/havana/
   - eyebrow: Природа и сельские районы
     title: Пинар-дель-Рио и долина Виньялес
     text: Пинар-дель-Рио и долина Виньялес добавляют к городскому маршруту зеленые долины, холмы и районы, исторически связанные с выращиванием табака.
     image: /media/countries/cuba/block-032-generated-20261011-dedup-v1.webp
+    href: /cuba/place/pinar-del-rio/
   - eyebrow: Карибское море
     title: Варадеро и пляжная Куба
     text: Варадеро можно сделать отдельной пляжной частью поездки или добавить после маршрута по городам. В исходной программе также выделены Кайо-Коко, Кайо-Гильермо, Плайя-Анкон, Плайя-Эсмеральда и другие курорты.
     image: /media/countries/cuba/block-033-generated-20261011-dedup-v1.webp
+    href: /cuba/place/varadero/
 sourceUrl: https://brasiltours.ru/kuba-ru
 sourceSnapshot: page_texts_original/kuba-ru__2b20ff13.md
 updatedAt: 2026-10-02

@@ -43,13 +43,15 @@ featureBands:
     image: /media/countries/brazil/block-020-generated-20261011-dedup-v1.webp
     href: /brazil/place/rio-de-janeiro/
   - eyebrow: Природа
-    title: Ленсойс-Мараньенсис
+    title: Ленсойс-Мараньенсес
     text: Белые дюны и сезонные лагуны. Один из самых необычных природных пейзажей Бразилии.
     image: /media/home/lencois-enhanced-20260930.webp
+    href: /brazil/place/lencois-maranhenses/
   - eyebrow: Амазония
     title: Река, лес и лодж
     text: Амазонии лучше отдать несколько дней и заранее связать перелеты, сезон и формат лоджа.
     image: /media/home/amazon-enhanced-20260930.webp
+    href: /brazil/place/manaus-amazon/
 sourceUrl: https://brasiltours.ru/braziliya
 updatedAt: 2026-09-24
 ---

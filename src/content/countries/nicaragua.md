@@ -32,14 +32,17 @@ featureBands:
     title: Момбачо, Масая и остров Ометепе
     text: Вулканические маршруты можно соединить с Момбачо, Масая и другими вулканами, а остров Ометепе на озере Никарагуа добавить для пеших маршрутов, велосипеда и природных поездок.
     image: /media/countries/nicaragua/block-069-generated-20261011-dedup-v1.webp
+    href: /nicaragua/place/ometepe-island/
   - eyebrow: Колониальные города
     title: Гранада и Леон
     text: Гранада и Леон дают городскую часть путешествия с колониальной архитектурой, рынками, местной кухней и удобным доступом к природным районам.
     image: /media/countries/nicaragua/block-070-generated-20261011-dedup-v1.webp
+    href: /nicaragua/place/granada/
   - eyebrow: Тихий океан
     title: Сан-Хуан-дель-Сур и серфинг
     text: Сан-Хуан-дель-Сур и пляжи тихоокеанского побережья подходят для серфинга, пляжного отдыха и нескольких активных дней. В программу можно добавить и более спокойные пляжи для семейного или уединённого отдыха.
     image: /media/countries/nicaragua/block-071-generated-20261011-dedup-v1.webp
+    href: /nicaragua/place/san-juan-del-sur/
 sourceUrl: https://brasiltours.ru/nikaragua-ru
 sourceSnapshot: page_texts_original/nikaragua-ru__866b0c85.md
 updatedAt: 2026-10-02

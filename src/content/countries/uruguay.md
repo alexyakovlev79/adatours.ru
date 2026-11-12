@@ -26,14 +26,17 @@ featureBands:
     title: Монтевидео
     text: В Монтевидео можно соединить архитектуру, набережную Рамбла, городские рынки, рестораны и пляжи. Столица удобно дополняет как короткую поездку по стране, так и комбинированный маршрут с Аргентиной.
     image: /media/countries/uruguay/block-086-generated-20261011-dedup-v1.webp
+    href: /uruguay/place/montevideo/
   - eyebrow: Исторический город
     title: Колония-дель-Сакраменто
     text: Исторический центр Колонии-дель-Сакраменто позволяет добавить к маршруту архитектуру XVII–XVIII веков, музеи и прогулки по старым кварталам и набережной.
     image: /media/countries/uruguay/block-087-generated-20261011-dedup-v1.webp
+    href: /uruguay/place/colonia-del-sacramento/
   - eyebrow: Атлантическое побережье
     title: Пунта-дель-Эсте
     text: Пунта-дель-Эсте подходит для нескольких дней у океана с пляжами, ресторанами, прогулками и морскими выездами. Побережье можно продолжить через Пириаполис, Кабо-Полонио, Ла-Палому и другие курортные районы.
     image: /media/countries/uruguay/block-088-generated-20261011-dedup-v1.webp
+    href: /uruguay/place/punta-del-este/
 sourceUrl: https://brasiltours.ru/urugvaj-ru
 sourceSnapshot: page_texts_original/urugvaj-ru__d4c9eeb4.md
 updatedAt: 2026-10-02

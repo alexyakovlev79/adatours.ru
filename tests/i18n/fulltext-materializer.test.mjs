@@ -33,3 +33,11 @@ test('reject identity changes and unknown paths',()=>{
  const en='---\nid: other\nlocale: en\nslug: example\nstatus: approved\nname: City\n---\n\nExample';
  assert.throws(()=>applyFulltextToSource(ru,en,'destinations','abc'),/identity/);
 });
+
+test('preserves canonical YAML date values rather than coercing them to empty objects',()=>{
+ const ru='---\nid: destination_example\nlocale: ru\nslug: example\nstatus: approved\nname: Город\nupdatedAt: 2026-10-09\n---\n\nГород';
+ const en='---\nid: destination_example\nlocale: en\nslug: example\nstatus: approved\nname: City\nupdatedAt: 2026-11-12\n---\n\nCity';
+ const p=splitFulltextMarkdown(applyFulltextToSource(ru,en,'destinations','sha').content);
+ assert.equal(p.data.name,'City');
+ assert.equal(p.data.updatedAt.toISOString().slice(0,10),'2026-10-09');
+});

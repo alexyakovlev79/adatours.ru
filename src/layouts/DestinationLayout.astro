@@ -99,6 +99,14 @@ const descriptionHtml = await Astro.slots.render('default');
 const firstHeadingMatch = descriptionHtml.match(/^(\s*(?:<!--[\s\S]*?-->\s*)*<h2\b[^>]*>[\s\S]*?<\/h2>)/i);
 const firstHeadingHtml = firstHeadingMatch?.[1] ?? '';
 const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstHeadingHtml.length) : descriptionHtml;
+// Show this visual handoff only between commercial bands and genuine editorial stories.
+const hasCommercialBands = relatedTours.length > 0 || optionalTours.length > 0 || relatedExcursions.length > 0;
+const hasStoryTransition = hasCommercialBands && d.featureBands.length > 0;
+const isEnglish = (d._i18n?.contentLanguage ?? d.locale) === 'en';
+const storyTransitionLabel = isEnglish ? 'Explore the place' : 'Ближе к месту';
+const storyTransitionAria = isEnglish
+  ? `Continue to the photographs and stories of ${d.name}`
+  : `Перейти к фотографиям и историям места ${d.name}`;
 ---
 
 <BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
@@ -238,8 +246,22 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     </>
   ))}
 
+  {hasStoryTransition && (
+    <div class="destination-story-transition">
+      <a class="destination-story-transition__link" href="#destination-stories" aria-label={storyTransitionAria}>
+        <span class="destination-story-transition__rule" aria-hidden="true"></span>
+        <span class="destination-story-transition__label">{storyTransitionLabel}</span>
+        <svg class="destination-story-transition__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 4v16m-6-6 6 6 6-6" />
+        </svg>
+      </a>
+    </div>
+  )}
+
   {d.featureBands.map((band, index) => (
     <StoryPair
+      id={index === 0 ? 'destination-stories' : undefined}
       eyebrow={band.eyebrow}
       title={band.title}
       text={band.text}
@@ -360,6 +382,48 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 </script>
 
 <style>
+  /* Quiet handoff from linked tour/excursion bands to unlinked photo stories. */
+  .destination-story-transition { background: var(--color-bg); }
+  .destination-story-transition__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(14px, 2vw, 24px);
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    min-height: clamp(64px, 6vw, 82px);
+    margin-inline: auto;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: clamp(.82rem, 1vw, .96rem);
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .destination-story-transition__rule {
+    flex: 0 1 64px;
+    height: 1px;
+    background: color-mix(in srgb, var(--color-ink) 24%, transparent);
+  }
+  .destination-story-transition__label { line-height: 1.3; }
+  .destination-story-transition__arrow {
+    flex: none;
+    transition: transform 200ms ease;
+  }
+  .destination-story-transition__link:hover .destination-story-transition__arrow,
+  .destination-story-transition__link:focus-visible .destination-story-transition__arrow {
+    transform: translateY(4px);
+  }
+  @media (max-width: 600px) {
+    .destination-story-transition__link { justify-content: space-between; gap: 14px; }
+    .destination-story-transition__rule { flex-basis: 36px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .destination-story-transition__arrow { transition: none; }
+    .destination-story-transition__link:hover .destination-story-transition__arrow,
+    .destination-story-transition__link:focus-visible .destination-story-transition__arrow { transform: none; }
+  }
+
   /* On place pages the map is part of “Куда поехать дальше”, not a
      separate editorial section with two accumulated vertical spacings. */
   .destination-next-intro--mapped :global(.statement.section) {

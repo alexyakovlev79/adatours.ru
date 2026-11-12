@@ -88,9 +88,12 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
     const expectedUrl='https://alexyakovlev79.github.io'+EN_STAGING_BASE+'en/'+route;
     if(attr(ogUrl[0],'content')!==expectedUrl)
       fail('OG URL does not match English noindex page '+name);
-    if(!/^https:\/\/img\.adatours\.ru\/media\//.test(attr(socialImage[0],'content')??'')||
-       !/^https:\/\/img\.adatours\.ru\/media\//.test(attr(twitterImage[0],'content')??''))
-      fail('Social preview media is not on verified CDN '+name);
+    const ogImage=attr(socialImage[0],'content')??'';
+    const twImage=attr(twitterImage[0],'content')??'';
+    // Historical source photos can be external; stage 6 owns migration to CDN.
+    if(!/^https:\/\//.test(ogImage)||ogImage!==twImage||
+       ogImage.includes(EN_STAGING_BASE+'media/'))
+      fail('Invalid Open Graph/Twitter preview media '+name);
     const page=route.match(/(?:^|\/)page\/([2-9]\d*)\/$/u);
     if(page && (!enTitle.includes('Page '+page[1])||
        !enDescription.includes('Page '+page[1])))

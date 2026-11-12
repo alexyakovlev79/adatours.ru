@@ -4,6 +4,7 @@ import {
   extendMultiCountrySelection, previousMultiCountrySelection, formatMultiCountryNames,
 } from '../lib/multi-country-combinations.mjs';
 import { translateUiText } from '../lib/i18n/shared-ui-locale.mjs';
+import { uiText } from '../lib/i18n/messages.mjs';
 // Called by SiteHeader after the shared header has been inserted.
 export function initializeMultiCountryMenus() {
 const locale = document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
@@ -43,7 +44,7 @@ for (const menu of menuInstances) {
     const expand = expandTemplate?.content.querySelector('button')?.cloneNode(true) as HTMLButtonElement | undefined;
     if (!expand) continue;
     expand.dataset.mcMenuExpand = slugs.join('_');
-    expand.setAttribute('aria-label', t('Добавить страну к сочетанию ' + (element.querySelector('a')?.textContent?.trim() ?? '')));
+    expand.setAttribute('aria-label', uiText(locale,'multi.addTo',{countries:element.querySelector('a')?.textContent?.trim() ?? ''}));
     element.append(expand);
   }
   let selected: string[] = [];
@@ -108,9 +109,9 @@ for (const menu of menuInstances) {
     links.hidden = level === 0;
     back.hidden = level === 0;
     heading.hidden = level === 0;
-    heading.textContent = t(level === 1 ? 'Добавить вторую страну к ' + (names.get(selected[0]) ?? selected[0])
-      : level === 2 ? 'Добавить третью страну'
-      : level === 3 ? 'Добавить четвертую страну' : '');
+    heading.textContent = level === 1 ? uiText(locale,'multi.addSecond',{country:names.get(selected[0]) ?? selected[0]})
+      : level === 2 ? uiText(locale,'multi.addThird')
+      : level === 3 ? uiText(locale,'multi.addFourth') : '';
     for (const item of combinations) {
       const visible = item.slugs.length === level + 1
         && selected.every((slug) => item.slugs.includes(slug));
@@ -123,7 +124,7 @@ for (const menu of menuInstances) {
       const anchor = item.element.querySelector('a');
       if (anchor) anchor.textContent = label;
       const expand = item.element.querySelector<HTMLButtonElement>('[data-mc-menu-expand]');
-      if (expand) expand.setAttribute('aria-label', t('Добавить страну к сочетанию ' + label));
+      if (expand) expand.setAttribute('aria-label', uiText(locale,'multi.addTo',{countries:label}));
     }
     const scroller = menu.closest<HTMLElement>('.mobile-menu__panel, .desktop-nav__submenu');
     if (scroller) scroller.scrollTop = 0;

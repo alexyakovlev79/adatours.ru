@@ -1,9 +1,11 @@
 ---
 import SearchResult from './SearchResult.astro';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+import {uiText} from '../../lib/i18n/messages.mjs';
 ---
 <div class="search-results" aria-live="polite" aria-busy="false" data-search-results>
   <SearchResult />
-  <p class="search-status" data-search-status>Ищите страну, место, тур или экскурсию.</p>
+  <p class="search-status" data-search-status>{uiText(sharedUiLocale(),'search.start')}</p>
   <div class="search-results__list" data-search-list></div>
 </div>
 <style>

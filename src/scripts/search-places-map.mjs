@@ -4,6 +4,7 @@ import {indexSearchGeoPlaces,searchGeoPoints}
   from '../lib/search-geo-place-matches.mjs';
 import {loadProviderScript} from './geo-map-client.mjs';
 import {translateUiText} from '../lib/i18n/shared-ui-locale.mjs';
+import {uiText} from '../lib/i18n/messages.mjs';
 
 export function createSearchPlacesMap(root) {
   const locale=document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
@@ -68,7 +69,7 @@ export function createSearchPlacesMap(root) {
     const button=document.createElement('button');
     button.type='button';button.className='search-places-map__pin';
     button.textContent=String(point.position);button.title=point.name;
-    button.setAttribute('aria-label',t(point.name+': показать место'));
+    button.setAttribute('aria-label',uiText(locale,'map.showPlace',{place:point.name}));
     button.addEventListener('click',e=>{
       e.preventDefault();e.stopPropagation();onSelect(point);
     });

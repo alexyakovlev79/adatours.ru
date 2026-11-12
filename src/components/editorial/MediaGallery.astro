@@ -2,6 +2,7 @@
 import HeroImage from './HeroImage.astro';
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
+import {sharedUiLocale,translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface MediaItem {
   src: string;
@@ -35,6 +36,7 @@ const {
 } = Astro.props;
 
 // Media QA status is metadata, not a visibility switch.
+const uiLocale=sharedUiLocale()==='en' || locale==='en' ? 'en' : 'ru';
 const visibleItems = items;
 const flush = layout === 'flush';
 const orientation = layout === 'orientation';
@@ -44,8 +46,8 @@ const orientation = layout === 'orientation';
   <section class:list={['media-gallery', 'section', { 'media-gallery--flush': flush, 'media-gallery--orientation': orientation }]} data-image-text-align={imageTextAlign}>
     <div class="container">
       <div class="media-gallery__heading">
-        <p class="eyebrow">{eyebrow}</p>
-        <h2>{title}</h2>
+        <p class="eyebrow">{translateUiText(eyebrow,uiLocale)}</p>
+        <h2>{translateUiText(title,uiLocale)}</h2>
       </div>
     </div>
 

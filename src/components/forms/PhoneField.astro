@@ -2,6 +2,7 @@
 import { PHONE_COUNTRIES } from '../../data/phone-countries';
 import { withBase } from '../../lib/paths';
 import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { uiText } from '../../lib/i18n/messages.mjs';
 
 const DEFAULT_ISO = sharedUiLocale() === 'en' ? 'us' : 'ru';
 const defaultCountry = PHONE_COUNTRIES.find((country) => country.iso2 === DEFAULT_ISO) ?? PHONE_COUNTRIES[0];
@@ -22,7 +23,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       class="phone-field__country-toggle"
       aria-haspopup="listbox"
       aria-expanded="false"
-      aria-label={`Выбрать страну: ${defaultCountry.name} ${defaultCountry.dial}`}
+      aria-label={uiText(sharedUiLocale(),'phone.chooseCountry',{country:defaultCountry.name,dial:defaultCountry.dial})}
     >
       <span class="phone-field__flag-wrap" aria-hidden="true">
         <span class="phone-field__flag-fallback" data-phone-flag-fallback>🌐</span>
@@ -95,6 +96,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
   import { withBase } from '../../lib/paths';
   import { PHONE_COUNTRIES } from '../../data/phone-countries';
   import { findCountryForGeoIp } from '../../lib/i18n/phone-country-detection.mjs';
+  import { uiText } from '../../lib/i18n/messages.mjs';
   const flagUrl = (iso2) => withBase(`/phone-flags/${iso2 === 'mb' ? 'mx' : iso2}.png`);
   const maskParts = (mask, dial) => {
     const rest = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
@@ -204,7 +206,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       input.value = formatNational(input.value, mask, countryDial);
       countryHidden.value = iso2;
       dialHidden.value = countryDial;
-      toggle.setAttribute('aria-label', `Выбрать страну: ${name} ${countryDial}`);
+      toggle.setAttribute('aria-label', uiText(document.documentElement.dataset.adaSharedLocale === 'en' ? 'en' : 'ru', 'phone.chooseCountry', {country:name,dial:countryDial}));
       closeMenu();
 
       if (focusInput) input.focus();

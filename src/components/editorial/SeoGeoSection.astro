@@ -30,6 +30,7 @@ const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Bool
 </section>
 
 <script>
+  import {translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
   function initSeoGeoSections() {
     document.querySelectorAll<HTMLElement>('[data-seo-geo]').forEach((root) => {
       if (root.dataset.seoReady === 'true') return;
@@ -52,7 +53,7 @@ const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Bool
         content.classList.toggle('is-collapsed', long && !expanded);
         button.hidden = !long;
         button.setAttribute('aria-expanded', String(!long || expanded));
-        label.textContent = expanded ? 'Свернуть' : originalLabel;
+        label.textContent = expanded ? translateUiText('Свернуть',document.documentElement.dataset.adaSharedLocale === 'en' ? 'en' : 'ru') : originalLabel;
       };
 
       button.addEventListener('click', () => {

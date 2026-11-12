@@ -3,6 +3,8 @@ import HeroImage from '../editorial/HeroImage.astro';
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+import {uiText} from '../../lib/i18n/messages.mjs';
 
 interface HighlightMedia {
   src: string;
@@ -25,7 +27,7 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
 
 <section class:list={['highlights', 'section', { 'highlights--media': mediaMode }]}>
   <div class:list={['container', { 'highlights__container--media': mediaMode }]}>
-    <p class="eyebrow">Главные впечатления</p>
+    <p class="eyebrow">{uiText(sharedUiLocale(),'tour.highlights')}</p>
 
     <div class:list={['highlights__list', { 'highlights__list--media': mediaMode }]}>
       {items.map((item, index) => {

@@ -1,7 +1,10 @@
 ---
 import { withBase } from '../../lib/paths';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+import {uiText} from '../../lib/i18n/messages.mjs';
 
 const privacyUrl = withBase('/privacy/');
+const uiLocale=sharedUiLocale();
 ---
 
 <div
@@ -10,13 +13,13 @@ const privacyUrl = withBase('/privacy/');
   data-pagefind-ignore
   hidden
   role="status"
-  aria-label="Уведомление об использовании cookie"
+  aria-label={uiText(uiLocale,'cookie.aria')}
 >
   <p>
-    Мы используем cookie, чтобы сайт запоминал ваши настройки.{' '}
-    <a href={privacyUrl}>Подробнее</a>
+    {uiText(uiLocale,'cookie.message')}{' '}
+    <a href={privacyUrl}>{uiText(uiLocale,'cookie.more')}</a>
   </p>
-  <button type="button" data-cookie-accept>Понятно</button>
+  <button type="button" data-cookie-accept>{uiText(uiLocale,'cookie.accept')}</button>
 </div>
 
 <script>

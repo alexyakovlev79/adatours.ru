@@ -2,8 +2,7 @@
 import { withBase } from '../../lib/paths';
 import { countLabel } from '../../lib/interest-model.mjs';
 import { nextMultiCountryOptions } from '../../lib/multi-country-combinations.mjs';
-import { getCollection } from 'astro:content';
-import { sharedUiLocale,translateUiText,sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale,translateUiText,sharedInterestName,sharedCountryName } from '../../lib/i18n/shared-ui-locale.mjs';
 import { uiText,countInEnglish } from '../../lib/i18n/messages.mjs';
 
 import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
@@ -16,10 +15,9 @@ const uiLocale = sharedUiLocale();
 const t = (text: string) => translateUiText(text,uiLocale);
 const index = await getMultiCountryCatalog();
 const { countries: sourceCountries, combinations, interests: sourceInterests, allInterestsHref } = multiCountryPickerOptions(index, selected, themeId);
-const translatedNames = uiLocale === 'en'
-  ? new Map((await getCollection('countries',({data}) => data.locale === 'ru')).map(({data}) => [data.slug,data.name]))
-  : new Map<string,string>();
-const countries = sourceCountries.map(country => ({...country,name:translatedNames.get(country.slug) ?? country.name}));
+const countries = sourceCountries.map(country => ({
+  ...country, name: sharedCountryName(country.slug, country.name, uiLocale),
+}));
 const interests = sourceInterests.map(interest => ({...interest,label:sharedInterestName(interest.id,t(interest.label),uiLocale)}));
 const selectedInterest = interests.find((option) => option.id === themeId);
 const themeSlug = selectedInterest?.slug;
@@ -107,7 +105,7 @@ const descriptions = ['multi.firstCountry','multi.secondCountry','multi.thirdCou
           >{interest.label} · {uiLocale === 'en' ? countInEnglish(interest.count,'tour','tours') : countLabel(interest.count)}</option>
         ))}
       </select>
-      <span class="mc-picker__placeholder-text" aria-hidden="true">{t(selectedInterest?.label ?? 'Выбрать интерес')}</span>
+      <span class="mc-picker__placeholder-text" aria-hidden="true">{selectedInterest?.label ?? uiText(uiLocale,'filter.chooseInterest')}</span>
       <svg class="mc-picker__select-arrow" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
         <path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
       </svg>

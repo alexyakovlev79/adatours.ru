@@ -2,12 +2,16 @@
 import { ADA_REVIEW_RATING, type AdaReview } from '../../data/reviews/ada-tours';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import { withBase } from '../../lib/paths';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { uiText } from '../../lib/i18n/messages.mjs';
 
 interface Props {
   reviews: AdaReview[];
 }
 
 const { reviews } = Astro.props;
+const uiLocale = sharedUiLocale();
+const rating = ADA_REVIEW_RATING.toFixed(1).replace('.',uiLocale === 'en' ? '.' : ',');
 ---
 
 {reviews.length > 0 && (
@@ -15,16 +19,16 @@ const { reviews } = Astro.props;
     <div class="container">
       <div class="reviews-carousel__heading">
         <div>
-          <p class="eyebrow">Опыт наших гостей и партнеров</p>
-          <h2 id="home-reviews-title">Отзывы об Ada Tours</h2>
-          <p class="reviews-carousel__rating">Оценка клиентов: <strong>{ADA_REVIEW_RATING.toFixed(1).replace('.', ',')} из 5</strong> · Отзывов: {reviews.length}</p>
+          <p class="eyebrow">{uiText(uiLocale,'reviews.eyebrow')}</p>
+          <h2 id="home-reviews-title">{uiText(uiLocale,'reviews.title')}</h2>
+          <p class="reviews-carousel__rating">{uiText(uiLocale,'reviews.rating')} <strong>{rating} {uiText(uiLocale,'reviews.outOf')}</strong> · {uiText(uiLocale,'reviews.count',{count:reviews.length})}</p>
         </div>
-        <div class="reviews-carousel__controls" aria-label="Прокрутка отзывов">
-          <button type="button" data-review-prev aria-label="Предыдущие отзывы" aria-controls="home-reviews-track" disabled>←</button>
-          <button type="button" data-review-next aria-label="Следующие отзывы" aria-controls="home-reviews-track">→</button>
+        <div class="reviews-carousel__controls" aria-label={uiText(uiLocale,'reviews.carouselControls')}>
+          <button type="button" data-review-prev aria-label={uiText(uiLocale,'reviews.previous')} aria-controls="home-reviews-track" disabled>←</button>
+          <button type="button" data-review-next aria-label={uiText(uiLocale,'reviews.next')} aria-controls="home-reviews-track">→</button>
         </div>
       </div>
-      <div id="home-reviews-track" class="reviews-carousel__viewport" data-review-track role="region" aria-roledescription="карусель" aria-label="Отзывы клиентов и партнеров" tabindex="0">
+      <div id="home-reviews-track" class="reviews-carousel__viewport" data-review-track role="region" aria-roledescription={uiText(uiLocale,'reviews.carousel')} aria-label={uiText(uiLocale,'reviews.region')} tabindex="0">
         <ol class="reviews-carousel__list">
           {reviews.map((review, index) => (
             <li class="reviews-carousel__item">
@@ -40,14 +44,14 @@ const { reviews } = Astro.props;
                     {review.organization && <span>{review.organization}</span>}
                     {review.route && <span>{review.route}</span>}
                   </div>
-                  <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={`Источник отзыва: ${review.author}`}>Источник ↗</a>
+                  <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={uiText(uiLocale,'reviews.sourceAria',{author:review.author})}>{uiText(uiLocale,'reviews.source')} ↗</a>
                 </div>
               </article>
             </li>
           ))}
         </ol>
       </div>
-      <a class="reviews-carousel__all" href={withBase('/reviews/')}>Читать все отзывы <span aria-hidden="true">↗</span></a>
+      <a class="reviews-carousel__all" href={withBase('/reviews/')}>{uiText(uiLocale,'reviews.readAll')} <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 )}

@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import {translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
 import mobileHeroRegistry from '../../data/media/mobile-hero-registry.json';
 import { createMobileHeroSelector } from '../../lib/mobile-hero-registry.mjs';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
@@ -51,6 +52,7 @@ const style = resolvedImage ? `--band-image: url("${resolvedImage}")${resolvedMo
 const resolvedHref = withBase(href);
 const resolvedAlign = imageTextAlign ?? align;
 const vip = (await getVipTourPaths()).has(href);
+const viewLabel=translateUiText('Смотреть');
 ---
 
 {descriptionBelow ? (
@@ -69,7 +71,7 @@ const vip = (await getVipTourPaths()).has(href);
     {eyebrow && eyebrow !== 'По интересам' && <span class="band-card__eyebrow eyebrow">{eyebrow}</span>}
     <strong class="band-card__title">{title}</strong>
     {text && <span class="band-card__description"><InlineMarkdown text={text} /></span>}
-    <span class="band-card__link">Смотреть <span aria-hidden="true">↗</span></span>
+    <span class="band-card__link">{viewLabel} <span aria-hidden="true">↗</span></span>
   </a>
 ) : video ? (
   <div class:list={['band', 'band--video', `band--${resolvedAlign}`, { 'band--strong-overlay': strongOverlay, 'band--no-overlay': noOverlay }]}
@@ -88,7 +90,7 @@ const vip = (await getVipTourPaths()).has(href);
         {eyebrow && eyebrow !== 'По интересам' && <p class="eyebrow">{eyebrow}</p>}
         <Heading class="band__title">{title}</Heading>
         {text && <p class="band__text"><InlineMarkdown text={text} /></p>}
-        <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
+        <span class="band__link">{viewLabel} <span aria-hidden="true">↗</span></span>
       </div>
     </a>
   </div>
@@ -105,7 +107,7 @@ const vip = (await getVipTourPaths()).has(href);
       {eyebrow && eyebrow !== 'По интересам' && <p class="eyebrow">{eyebrow}</p>}
       <Heading class="band__title">{title}</Heading>
       {text && <p class="band__text"><InlineMarkdown text={text} /></p>}
-      <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
+      <span class="band__link">{viewLabel} <span aria-hidden="true">↗</span></span>
     </div>
   </a>
 )}

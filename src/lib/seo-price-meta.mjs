@@ -16,8 +16,8 @@ function priceOf(record) {
   return amount > 0 ? { id: record.data.id, kind: record.kind, currency, amount } : null;
 }
 
-export function formatSeoMoney(amount, currency) {
-  const number = Math.round(amount).toLocaleString('ru-RU', { maximumFractionDigits: 0 });
+export function formatSeoMoney(amount, currency, locale = 'ru') {
+  const number = Math.round(amount).toLocaleString(locale === 'en' ? 'en-US' : 'ru-RU', { maximumFractionDigits: 0 });
   if (currency === 'RUB') return number + ' ₽';
   return CURRENCY_PREFIX[currency] ? CURRENCY_PREFIX[currency] + number : number + ' ' + currency;
 }

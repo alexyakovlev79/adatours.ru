@@ -62,6 +62,46 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
      find(dom,x=>x.tagName==='link'&&['canonical','alternate'].includes(attr(x,'rel'))).length)
    fail('Staging boundaries or content language '+name);
   if(sharedContent){
+    // Stage 7: full noindex EN HEAD coverage. Social cards and metadata are
+    // English even on pages with intentionally retained RU body fallback.
+    const head=find(dom,x=>x.tagName==='head')[0];
+    const tag=(key,type='name')=>find(head,x=>x.tagName==='meta'&&attr(x,type)===key);
+    const title=find(head,x=>x.tagName==='title');
+    const description=tag('description');
+    const ogTitle=tag('og:title','property'),ogDescription=tag('og:description','property');
+    const twitterTitle=tag('twitter:title'),twitterDescription=tag('twitter:description');
+    const ogUrl=tag('og:url','property'),ogLocale=tag('og:locale','property');
+    const socialImage=tag('og:image','property'),twitterImage=tag('twitter:image');
+    const enTitle=clean(textOf(title[0])),enDescription=attr(description[0],'content')??'';
+    if(title.length!==1||description.length!==1||!enTitle||!enDescription||
+       /[\u0400-\u052f]/u.test(enTitle+enDescription))
+      fail('Non-English SEO title/description '+name);
+    if([ogTitle,ogDescription,twitterTitle,twitterDescription,ogUrl,ogLocale,
+      socialImage,twitterImage].some(entries=>entries.length!==1)||
+      attr(ogTitle[0],'content')!==enTitle||attr(twitterTitle[0],'content')!==enTitle||
+      attr(ogDescription[0],'content')!==enDescription||
+      attr(twitterDescription[0],'content')!==enDescription||
+      attr(ogLocale[0],'content')!=='en_US')
+      fail('Inconsistent English Open Graph/Twitter fields '+name);
+    const logical=path.relative(path.join(root,'en'),name).split(path.sep).join('/');
+    const route=logical==='index.html'?'':logical.replace(/index\.html$/u,'');
+    const expectedUrl='https://alexyakovlev79.github.io'+EN_STAGING_BASE+'en/'+route;
+    if(attr(ogUrl[0],'content')!==expectedUrl)
+      fail('OG URL does not match English noindex page '+name);
+    const ogImage=attr(socialImage[0],'content')??'';
+    const twImage=attr(twitterImage[0],'content')??'';
+    // Historical source photos can be external; stage 6 owns migration to CDN.
+    if(!/^https:\/\//.test(ogImage)||ogImage!==twImage||
+       ogImage.includes(EN_STAGING_BASE+'media/'))
+      fail('Invalid Open Graph/Twitter preview media '+name);
+    const page=route.match(/(?:^|\/)page\/([1-9]\d*)\/$/u);
+    if(page && (!enTitle.includes('Page '+page[1])||
+       !enDescription.includes('Page '+page[1])))
+      fail('English paginated SEO metadata missing page number '+name);
+    // A specific excursion may genuinely advertise a Russian-language guide.
+    // Generated SEO templates are tested separately not to invent that service.
+  }
+  if(sharedContent){
     const forms=find(dom,x=>x.tagName==='form'&&attr(x,'data-lead-form')!==null);
     if(forms.length!==1||find(forms[0],x=>x.tagName==='input'&&attr(x,'name')==='phone_country').length!==1)
       fail('EN lost its one active shared lead form '+name);

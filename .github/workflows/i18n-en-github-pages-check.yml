@@ -6,6 +6,9 @@ on:
       - 'src/pages/en/**'
       - 'src/pages/en-pilot-private/**'
       - 'src/lib/i18n/**'
+      - 'src/lib/seo-price-meta.mjs'
+      - 'scripts/i18n/ru-fallback.mjs'
+      - 'tests/i18n/seo-stage-seven.test.mjs'
       - 'src/lib/page-schema.ts'
       - 'src/lib/structured-data.mjs'
       - 'tests/i18n/schema-stage-eight.test.mjs'
@@ -157,7 +160,7 @@ jobs:
           node --check scripts/i18n/audit-en-media-copy.mjs
           node --check scripts/i18n/audit-en-residuals.mjs
           node --test tests/i18n/stage9-residual-ui.test.mjs
-          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/schema-stage-eight.test.mjs
+          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/schema-stage-eight.test.mjs tests/i18n/seo-stage-seven.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
           npx pagefind --site dist --force-language en

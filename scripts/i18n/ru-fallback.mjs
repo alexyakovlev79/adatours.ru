@@ -53,10 +53,29 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
    !(sharedContent && get(n,'src')?.startsWith(EN_STAGING_BASE+'form-config.js')))||
   (n.tagName==='noscript'&&/mc\.yandex\.ru|googletagmanager/i.test(serialize(n)))||
   (n.tagName==='link'&&['canonical','alternate'].includes((get(n,'rel')||'').toLowerCase()))||
-  (n.tagName==='meta'&&['og:','twitter:'].some(x=>(get(n,'name')||get(n,'property')||'').startsWith(x))));
+  (n.tagName==='meta'&&!sharedContent&&['og:','twitter:'].some(x=>(get(n,'name')||get(n,'property')||'').startsWith(x))));
  const robots=walk(head,n=>n.tagName==='meta'&&get(n,'name')==='robots');
  if(robots.length!==1)fail('Robots meta invalid '+route);
  set(robots[0],'content',ROBOTS);
+ // Social cards for shared EN keep their English metadata. Canonical and
+ // hreflang remain suppressed on this noindex staging host, by design.
+ if(sharedContent){
+  const finalUrl='https://alexyakovlev79.github.io'+EN_STAGING_BASE+'en'+route;
+  for(const meta of walk(head,n=>n.tagName==='meta')){
+   const property=get(meta,'property')||get(meta,'name')||'';
+   if(property==='og:url')set(meta,'content',finalUrl);
+   if(property==='og:locale')set(meta,'content','en_US');
+   if(property==='og:image'||property==='twitter:image'){
+    const original=get(meta,'content')||'';
+    const localPrefix='https://alexyakovlev79.github.io'+EN_STAGING_BASE+'media/';
+    const relativePrefix=EN_STAGING_BASE+'media/';
+    if(original.startsWith(localPrefix))set(meta,'content',
+      'https://img.adatours.ru/media/'+original.slice(localPrefix.length));
+    else if(original.startsWith(relativePrefix))set(meta,'content',
+      'https://img.adatours.ru/media/'+original.slice(relativePrefix.length));
+   }
+  }
+ }
  if(!sharedContent)for(const form of walk(doc,n=>n.tagName==='form')){
   set(form,'inert','');set(form,'aria-disabled','true');
   set(form,'data-ada-staging-inert-form','true');

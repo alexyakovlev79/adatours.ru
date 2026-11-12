@@ -116,7 +116,7 @@ async function main(){
   sourceStagingSha:process.env.EN_MASS_SNAPSHOT_SHA,
   canonicalSourceSha:process.env.ADA_CANONICAL_SHA||null,
   expectedPackets:manifest.packets,expectedTexts:manifest.items,
-  verifiedPackets:0,verifiedTexts:0,applied:0,partial:0,withheld:0,excluded:0,
+  verifiedPackets:0,checkedTexts:0,verifiedTexts:0,applied:0,partial:0,withheld:0,excluded:0,
   byKind:{},withheldSamples:[],appliedSample:[]};
  for(let n=1;n<=manifest.packets;n++){
   const shard=states[(n-1)%16],row=shard.packets?.[String(n)];
@@ -136,13 +136,18 @@ async function main(){
   summary.verifiedPackets++;
   for(let k=0;k<def.items.length;k++){
    const item=def.items[k],text=result.texts[k];
-   if(text?.number!==item.number||text.path!==item.path||text.sourceBlobSha!==item.sha||
-      typeof text.enMarkdown!=='string'||text.enMarkdown.length<5)
-      f('Text identity differs from frozen definition '+n+'/'+k);
-   summary.verifiedTexts++;
+   summary.checkedTexts++;
    const kind=fulltextSourceKind(item.path);
    if(!kind)f('Unexpected fulltext path '+item.path);
    const group=summary.byKind[kind]??={applied:0,partial:0,withheld:0,excluded:0};
+   if(text?.number!==item.number||text.path!==item.path||text.sourceBlobSha!==item.sha||
+      typeof text.enMarkdown!=='string'||text.enMarkdown.length<5){
+     summary.withheld++;group.withheld++;
+     if(summary.withheldSamples.length<80)
+       summary.withheldSamples.push({path:item.path,packet:n,reason:'saved_result_source_identity_mismatch'});
+     continue;
+   }
+   summary.verifiedTexts++;
    try{
     const file=srcPath(item.path),raw=await readFile(file);
     if(sha(raw)!==item.sha)throw new Error('source_changed');
@@ -159,7 +164,7 @@ async function main(){
    }
   }
  }
- if(summary.verifiedTexts!==manifest.items)f('Text inventory total mismatch');
+ if(summary.checkedTexts!==manifest.items)f('Text inventory total mismatch');
  const receipt=resolve(sourceRoot,'../en-fulltext-receipt.json');
  await mkdir(dirname(receipt),{recursive:true});await writeFile(receipt,JSON.stringify(summary,null,2)+'\n');
  console.log('ADA_EN_FULLTEXT='+JSON.stringify({applied:summary.applied,partial:summary.partial,

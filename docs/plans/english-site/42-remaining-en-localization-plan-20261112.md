@@ -118,7 +118,7 @@
 | 5 | not_started | — |
 | 6 | in_progress | 350 EN alt + source-bound media resolver подготовлены; полный EN HTML аудит/CI и подтверждение Pages ожидаются |
 | 7 | committed | [Код EN SEO](https://github.com/alexyakovlev79/adatours.ru/commit/a90163e4a8fe23dbf9748d087ff8d60cff49b25b), исходный срез 245a423; EN preflight и EN Pages deploy ещё не подтверждены |
-| 8 | not_started | — |
+| 8 | committed | [EN Schema-код 04b70cf](https://github.com/alexyakovlev79/adatours.ru/commit/04b70cfc9b4558e305d582731e650e8147e3ddf0), [коррекция теста c55367a](https://github.com/alexyakovlev79/adatours.ru/commit/c55367a8ad99d856d77a714fc0dc4dcab59eaf23). EN noindex JSON-LD отключен; проверка итогового CI ожидается |
 | 9 | not_started | — |
 | 10 | not_started | Отдельная визуальная проверка в Work после этапов 1–9 |
 
@@ -198,6 +198,16 @@
 - [PR #90](https://github.com/alexyakovlev79/adatours.ru/pull/90) объединён в `main`; итоговый commit: [`daada1e399b64e1b6e44056c156a42fa952362c1`](https://github.com/alexyakovlev79/adatours.ru/commit/daada1e399b64e1b6e44056c156a42fa952362c1). Параллельные изменения EN этапов 4–6 сохранены при разрешении конфликтов.
 - [Первый EN preflight #43308826569](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43308826569): `success`, по исходному SHA `637396a755b277522d11d1eac6090ab6f40fabb5` с 6 коммерческими страницами и общим локализатором. [EN preflight итогового main #43311049677](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43311049677) был запущен после merge; его `success` на момент этой записи **не подтверждён**. Дополнительные тесты этапа 3 включены в его workflow вместе с тестами этапов 4 и 6.
 - [RU Pages workflow итогового main #43311049248](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43311049248) также требует подтверждения conclusion. Самостоятельный `adatours-en` Pages релиз этого SHA не выполнялся в этом чате: статус `committed`, не `verified_en_noindex`.
+
+## Журнал этапа 8 — 13.11.2026 (Москва)
+
+- **Область:** английская проекция Schema.org / JSON-LD, отдельно от английского SEO этапа 7 и без публикации графа на noindex EN-сайте. Исходный main: `245a423cd1382b1a71fb93ad3982da9d3b67f1a2`, staging переводов: `1f499f7a2c7634da3c06718c4074beb68f008b04`.
+- **Реализация:** `src/lib/i18n/schema-projection.mjs` вызывает существующий `buildStructuredData` на локализованной проекции общих записей. Использованы утвержденные EN названия стран/интересов, фрагменты текстовых overlays, team и общий UI/редакционный словарь. Англоязычные Service, Organization/TravelAgency, WebPage/CollectionPage, BreadcrumbList, ItemList, TouristTrip/Trip, Offer, FAQPage, Review, Person, Place и DefinedTerm строятся без русского перевода Schema.org-ключей.
+- **Факты и идентичность:** сохранены стабильные `@id`, `@type`, URL, подтвержденные `sameAs`, географические связи, источники и язык независимых внешних публикаций, цены/валюты, правила видимости Offer и сквозные позиции ItemList. Неподтвержденные русские описания в EN-графе не транслитерируются и не выдаются за английские; передача исходных RU-текстов в опубликованный английский Schema.org не разрешена.
+- **Интеграция:** `src/lib/page-schema.ts` получил EN-ветку для будущей разрешенной генерации графа. RU продолжает вызывать исходный `buildStructuredData`, старый GEO/SEO рендерер и русскую ценовую логику без изменений. `BaseLayout.astro` намеренно **не изменялся**: `privatePreview || sharedEnglishContent` возвращает `graph:null`, JSON-LD на EN noindex по-прежнему подавлен. Публичная индексация, `hreflang`, домен, формы, media и цены не переключались.
+- **Тесты:** `tests/i18n/schema-stage-eight.test.mjs`: шесть адресных сценариев для EN TouristTrip, географии, Offer, Service, каталога и пагинации, FAQ/Review/BreadcrumbList, Person, безопасного пропуска неутвержденного текста и блокировки EN JSON-LD. Тест добавлен в EN preflight и `test:schema`. Первоначальный [EN preflight #43318785807](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43318785807) показал 5/6 новых проверок успешными; шестая упала только из-за неправильно экранированного тестового регулярного выражения. Ошибка теста исправлена [c55367a](https://github.com/alexyakovlev79/adatours.ru/commit/c55367a8ad99d856d77a714fc0dc4dcab59eaf23); новая CI-проверка требует отдельного подтверждения.
+- **Code commit:** [04b70cfc9b4558e305d582731e650e8147e3ddf0](https://github.com/alexyakovlev79/adatours.ru/commit/04b70cfc9b4558e305d582731e650e8147e3ddf0); исправление единственного теста `c55367a8ad99d856d77a714fc0dc4dcab59eaf23`.
+- **Статус:** `committed` до успешного итогового EN preflight. Отдельный EN Pages deploy не подтверждался и не требуется для невыводимого тестового графа; `verified_en_noindex` не ставить. Этапы 7 и 9 самостоятельно не запускались.
 
 
 ## Журнал этапа 7 — 13.11.2026 (МСК)

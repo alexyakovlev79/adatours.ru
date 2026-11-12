@@ -116,7 +116,7 @@
 | 3 | in_progress | [PR №90](https://github.com/alexyakovlev79/adatours.ru/pull/90), 463 RU→EN соответствия на шести страницах, 3 IMEX-примера; ожидается итоговый CI и запись в main |
 | 4 | committed | [EN-проекции](https://github.com/alexyakovlev79/adatours.ru/commit/1cfd15cb683a441e7ef71a51ca031129122743e7), [подключение 4dcddb0](https://github.com/alexyakovlev79/adatours.ru/commit/4dcddb05395992082e7d8b006ba7bac8f30258df), [исправление дат d33ac57](https://github.com/alexyakovlev79/adatours.ru/commit/d33ac5714e7c7dfc729d5dc1f67b3a4720f077db), [CI-настройка 7c918cc](https://github.com/alexyakovlev79/adatours.ru/commit/7c918ccd08b7356d0ec0dc2991f66a83ea9ec89b); [EN preflight #43308872510](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43308872510) запущен, результат пока не подтверждён. EN Pages deploy также не подтвержден |
 | 5 | not_started | — |
-| 6 | not_started | — |
+| 6 | in_progress | 350 EN alt + source-bound media resolver подготовлены; полный EN HTML аудит/CI и подтверждение Pages ожидаются |
 | 7 | not_started | — |
 | 8 | not_started | — |
 | 9 | not_started | — |
@@ -170,6 +170,18 @@
 - **Техническая проверка:** добавлен `tests/i18n/authority-stage-four.test.mjs` и включен в EN preflight. [EN preflight #43308872510](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43308872510) запущен. Итоговое `success` и соответствующий EN Pages deploy пока не подтверждены на момент записи; состояние **committed**, а не `verified_en_noindex`. Публикация на indexable EN-домене, reciprocal hreflang и JSON-LD не разрешались.
 - **Границы:** этап 3 и этапы 5–10 здесь не выполнялись; переводческие задания, leases и неизменяемые результаты массовых роев не затронуты; внешние источники заново не публиковались.
 
+
+
+## Журнал этапа 6 — 13.11.2026
+
+- Исходный `main` при начале работы: `47ba987356736c2848b8bc88e3c3a479a38737dd`; исходная ветка переводов `i18n/translation-mass-staging`: `1f499f7a2c7634da3c06718c4074beb68f008b04`. Leases и сохранённые результаты роев не менялись. Переводы Stage 1/2, FULLTEXT и Tour повторно не создавались.
+- По фактическим JSON подтверждены 319 alt сочетаний стран (`multi-country-heroes.json`) и 31 alt каталогов (`catalog-hero-overrides.json`). Подготовлены 350 самостоятельных английских подписей в `src/data/i18n/media-captions.en.json`; ключ — точный общий `/media/...` src, сохранены исходный `sourceAlt` и `sourceKey`. Служебные `scene`, provenance, ссылки, исходные RU alt и сами изображения не изменены.
+- По большим источникам получена предметная инвентаризация, без прямого изменения реестров: `image-captions.json` содержит 6 969 изображений, из них 3 061 с активными использованиями; `image-caption-overrides.json` — 3 612 контекстных override с `alt/hover`, из них 2 973 с активными использованиями по снимку первого реестра. Это *кандидаты* для EN-отображения, не 2 973 заново переведённых подписи. Уже переведённые значения в EN FULLTEXT/Content Collection должны сохраняться.
+- `mobile-hero-registry.json` содержит 5 598 записей мобильных обрезок; русские `focusReason` и `visualQA.notes` — технические сведения, не пользовательские подписи. Они не локализуются и не используются как основание для английских alt.
+- Добавлен точный EN-resolver `src/lib/i18n/media-copy.mjs` и вызов в `scripts/i18n/ru-fallback.mjs` после UI/авторских текстов, только для `sharedContent` noindex. Поддерживаются исходный и отложенный `data-lazy-src`, префикс EN Pages и CDN. Пустые декоративные alt и уже английские поля не перезаписываются. Проверяется источник конкретной картинки; глобальных подстановок по русской фразе нет.
+- Для описаний вне 350 запись может получить существующий EN alt из другого *фактического отображения того же media src* внутри текущей сборки. Противоречивые варианты исключаются; новый перевод из непроверенного имени файла или технического `reason` не придумывается. `MediaGallery.astro` на английском отдаёт приоритет готовому EN alt, а не общему русскому override.
+- Добавлены `tests/i18n/media-captions-stage-six.test.mjs` (350 привязок, RU-изоляция, lazy, decorative, hover, конфликтные подписи) и `scripts/i18n/audit-en-media-copy.mjs`. EN preflight и отдельный EN Pages workflow запускают тест и полный read-only аудит с отчётом о реально оставшихся кириллических alt/figcaption. EN preflight сохраняет отчёт как артефакт; ни этот аудит, ни данный этап не включают индексацию, публичный Schema.org и изменение форм.
+- **Граница выполнения:** написанные 350 переводов и EN-применение — подготовлены; достоверное число оставшихся отображаемых RU alt/hover/figcaption определяется только проверкой скомпилированных EN HTML на конкретном main/staging. До успешного CI и receipt Stage 6 не объявляется `verified_en_noindex` и не заявляется охват всех 2 973 override. Эти остатки станут адресным списком для дальнейшей работы над этапом 6, без повторения первых 350.
 
 ## Журнал этапа 3 — 13.11.2026 (МСК)
 

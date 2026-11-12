@@ -154,6 +154,17 @@ function selectionForPath(path, ctx) {
         matches.some(tour=>themesOf(tour).includes(other.id)))};
     }
   }
+  if((m=/^\/vip\/(?:([^/]+)\/)?interests\/([^/]+)\/$/.exec(path))) {
+    const country=m[1]?countryBySlug.get(m[1]):null;
+    const theme=themeBySlug.get(m[2]);
+    if(theme&&(!m[1]||country)){
+      return {kind:'vip',
+        label:sharedInterestName(theme.id,theme.name,'en')+
+          (country?' in '+countryName(country.id):' in Latin America'),
+        items:vipTours.filter(tour=>themesOf(tour).includes(theme.id)&&
+          (!country||mainCountries(tour).includes(country.id)))};
+    }
+  }
   if((m=/^\/vip\/([^/]+)\/$/.exec(path))) {
     const country=countryBySlug.get(m[1]);
     if(country)return {kind:'vip',label:countryName(country.id),

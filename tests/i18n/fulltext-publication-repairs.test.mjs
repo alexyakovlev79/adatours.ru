@@ -14,7 +14,7 @@ test('repair list is exact, limited to 87 originally nonfull documents',()=>{
  ]);
  assert.equal(nums.size,87);
  assert.equal(registry.countries.length,21);
- assert.equal(registry.ruLocaleInEnglish.length,19);
+ assert.equal(registry.ruLocaleInEnglish.length,30);
  assert.equal(registry.sourceShaReceipts.length,6);
 });
 test('saved RU locale typo in fully-English theme does not change canonical identity',()=>{

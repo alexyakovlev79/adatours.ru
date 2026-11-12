@@ -54,8 +54,8 @@ export function authorityDate(source: AuthoritySource, locale: 'ru' | 'en' = 'ru
   const formats = dateFormats[locale];
   const prefix = !source.startDate && !source.datePublished && source.dateModified
     ? locale === 'en' ? 'Updated ' : 'Обновлено ' : '';
-  const label = /^\\d{4}$/.test(value) ? value
-    : /^\\d{4}-\\d{2}$/.test(value)
+  const label = /^\d{4}$/.test(value) ? value
+    : /^\d{4}-\d{2}$/.test(value)
       ? formats.month.format(new Date(`${value}-01T00:00:00Z`))
       : formats.date.format(new Date(value));
   return { value, label: `${prefix}${label}` };

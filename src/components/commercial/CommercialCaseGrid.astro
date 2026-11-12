@@ -1,4 +1,8 @@
 ---
+import {commercialText} from '../../lib/i18n/commercial-copy.mjs';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+const commercialLocale=sharedUiLocale();
+const commercialTr=(value:string)=>commercialText(value,commercialLocale);
 import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { withBase } from '../../lib/paths';
@@ -24,7 +28,7 @@ const entries = caseIds.map(caseId => {
 <section class="commercial-cases section" aria-labelledby={id}>
   <div class="container">
     <header>
-      <p class="eyebrow">{eyebrow}</p>
+      <p class="eyebrow">{commercialTr(eyebrow)}</p>
       <h2 id={id}>{title}</h2>
       {intro && <p class="commercial-cases__intro"><AuthorityInline text={intro} /></p>}
     </header>
@@ -35,10 +39,10 @@ const entries = caseIds.map(caseId => {
             {data.hero?.src && <img src={withBase(data.hero.src)} alt="" width="960" height="640" loading="lazy" decoding="async" />}
           </a>
           <div class="commercial-case__body">
-            <p class="commercial-case__meta">{[data.groupSize, data.year, data.segment].filter(Boolean).join(' · ')}</p>
-            <h3><a href={withBase(`/cases/${data.slug}/`)}>{data.title}</a></h3>
-            <p>{summaries[data.id] ?? data.summary}</p>
-            <a class="commercial-case__link" href={withBase(`/cases/${data.slug}/`)}>Задача и работа команды <span aria-hidden="true">↗</span></a>
+            <p class="commercial-case__meta">{[commercialTr(data.groupSize), data.year, commercialTr(data.segment)].filter(Boolean).join(' · ')}</p>
+            <h3><a href={withBase(`/cases/${data.slug}/`)}>{commercialTr(data.title)}</a></h3>
+            <p>{commercialTr(summaries[data.id] ?? data.summary)}</p>
+            <a class="commercial-case__link" href={withBase(`/cases/${data.slug}/`)}>{commercialTr('Задача и работа команды')} <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       ))}

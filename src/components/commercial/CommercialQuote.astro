@@ -1,4 +1,8 @@
 ---
+import {commercialText} from '../../lib/i18n/commercial-copy.mjs';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+const commercialLocale=sharedUiLocale();
+const commercialTr=(value:string)=>commercialText(value,commercialLocale);
 import { getCollection } from 'astro:content';
 import { withBase } from '../../lib/paths';
 interface Props { caseId: string; title?: string; }
@@ -10,10 +14,10 @@ const { testimonial } = entry.data;
 
 <section class="commercial-quote section" aria-labelledby={`${caseId}-quote-title`}>
   <div class="container commercial-quote__grid">
-    <div><p class="eyebrow">После путешествия</p><h2 id={`${caseId}-quote-title`}>{title}</h2><a href={withBase(`/cases/${entry.data.slug}/`)}>Как была устроена эта поездка <span aria-hidden="true">↗</span></a></div>
+    <div><p class="eyebrow">{commercialTr('После путешествия')}</p><h2 id={`${caseId}-quote-title`}>{commercialTr(title)}</h2><a href={withBase(`/cases/${entry.data.slug}/`)}>{commercialTr('Как была устроена эта поездка')} <span aria-hidden="true">↗</span></a></div>
     <figure>
       <blockquote data-case-quotation={caseId}><p>{testimonial.quote}</p></blockquote>
-      <figcaption>{testimonial.caption}</figcaption>
+      <figcaption>{commercialLocale==='en'?'Guest testimonial · Original in Russian':testimonial.caption}</figcaption>
     </figure>
   </div>
 </section>

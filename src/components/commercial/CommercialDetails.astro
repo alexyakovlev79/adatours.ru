@@ -1,4 +1,8 @@
 ---
+import {commercialText} from '../../lib/i18n/commercial-copy.mjs';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+const commercialLocale=sharedUiLocale();
+const commercialTr=(value:string)=>commercialText(value,commercialLocale);
 import { withBase } from '../../lib/paths';
 import AuthorityInline from '../authority/AuthorityInline.astro';
 
@@ -35,9 +39,9 @@ const symbols = {
 type Symbol = keyof typeof symbols;
 const symbolFor = (heading: string): Symbol => {
   const name = heading.toLowerCase();
-  if (/перевод|гид|язык|участник|гост|команд|клиент|групп/.test(name)) return 'people';
-  if (/цен|тариф|расчет|бюджет|комисси|оплат|стоим|возврат/.test(name)) return 'wallet';
-  if (/ваучер|документ|предложени|содержани|запрос|бриф|результат|подтвержден/.test(name)) return 'document';
+  if (/перевод|гид|язык|участник|гост|команд|клиент|групп|interpreter|guide|language|guest|delegate|team|group|client/.test(name)) return 'people';
+  if (/цен|тариф|расчет|бюджет|комисси|оплат|стоим|возврат|price|rate|budget|commission|payment|refund|quote/.test(name)) return 'wallet';
+  if (/ваучер|документ|предложени|содержани|запрос|бриф|результат|подтвержден|voucher|document|proposal|brief|confirm/.test(name)) return 'document';
   if (/транспорт|автомобил|трансфер|переезд|рейс|перелет|расписани/.test(name)) return 'car';
   if (/даты|срок|планирован|этап|подготовк|программ|разработк/.test(name)) return 'calendar';
   if (/город|страна|географ|маршрут|размещени|отел|локац|площадк/.test(name)) return 'map';
@@ -68,7 +72,7 @@ const symbolFor = (heading: string): Symbol => {
           <div>
             <p><AuthorityInline text={row.text} /></p>
             {row.href && (
-              <a href={withBase(row.href)}>{row.linkLabel ?? 'Подробнее'} <span aria-hidden="true">↗</span></a>
+              <a href={withBase(row.href)}>{commercialTr(row.linkLabel ?? 'Подробнее')} <span aria-hidden="true">↗</span></a>
             )}
           </div>
         </article>

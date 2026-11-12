@@ -5,6 +5,7 @@
 import { seoYearRange } from '../seo-meta.mjs';
 import { formatSeoMoney } from '../seo-price-meta.mjs';
 import { selectVipTours } from '../vip-tours.mjs';
+import { buildInterestHub } from '../interest-model.mjs';
 import { sharedCountryName, sharedInterestName } from './shared-ui-locale.mjs';
 
 const cyrillic = /[\u0400-\u052f]/u;
@@ -112,9 +113,16 @@ export function createEnglishSeoContext({ countries=[], destinations=[], tours=[
   }
   for (const theme of allThemes)detailsByPath.set('/interests/'+theme.slug+'/', {kind:'theme',data:theme});
   const vipTours = selectVipTours(tours.filter(entry => active(dataOf(entry)))).entries.map(dataOf);
+  const interestHubs = new Map();
+  const hubForTheme = id => {
+    if(!interestHubs.has(id)) interestHubs.set(id,buildInterestHub(id,{
+      countries,destinations,tours,excursions,themes,
+    }));
+    return interestHubs.get(id);
+  };
   return { allCountries,activeCountries,allDestinations,activeDestinations,allTours,activeTours,
     allExcursions,activeExcursions,allThemes,activeThemes, countryById,countryBySlug,
-    destinationById,themeBySlug,detailsByPath,vipTours,countryName,nameOf,pageSize };
+    destinationById,themeBySlug,detailsByPath,vipTours,countryName,nameOf,pageSize,hubForTheme };
 }
 
 function selectionForPath(path, ctx) {
@@ -133,25 +141,23 @@ function selectionForPath(path, ctx) {
   let m;
   if((m=/^\/interests\/([^/]+)\/(tours|places|excursions|related)(?:\/([^/]+))?\/$/.exec(path))) {
     const theme=themeBySlug.get(m[1]),country=m[3]&&countryBySlug.get(m[3]);
-    if(theme && (!m[3]||country)) {
-      const matches = tours.filter(tour => themesOf(tour).includes(theme.id) &&
-        (!country || (tour.countries??[]).includes(country.id)));
+    if(theme&&(!m[3]||country)){
+      // The canonical interest model owns the full assortment and weights.
+      // Reusing it avoids false counts for standalone excursions or places.
+      const hub=ctx.hubForTheme(theme.id);
+      const toursForCountry=country
+        ? hub.allCountries.find(row=>dataOf(row.entry).id===country.id)?.tours??[]
+        : hub.allTours;
       const label=sharedInterestName(theme.id,theme.name,'en')+
         (country?' in '+countryName(country.id):'');
-      if(m[2]==='tours')return {kind:'tours',label,items:matches};
-      if(m[2]==='places') {
-        const ids=new Set(matches.flatMap(tour=>tour.destinations??[]));
-        return {kind:'places',label,items:places.filter(place=>ids.has(place.id)&&
-          (place.themes??[]).includes(theme.id))};
-      }
-      if(m[2]==='excursions') {
-        const ids=new Set(matches.flatMap(tour=>(tour.itinerary??[]).flatMap(day=>[
-          day.excursionRef,...(day.contentBlocks??[]).map(block=>block.excursionRef)])));
-        return {kind:'excursions',label,items:excursions.filter(ex=>ids.has(ex.id)&&
-          (ex.themes??[]).includes(theme.id))};
-      }
-      return {kind:'related',label,items:themes.filter(other=>other.id!==theme.id &&
-        matches.some(tour=>themesOf(tour).includes(other.id)))};
+      if(m[2]==='tours')return {kind:'tours',label,items:toursForCountry.map(dataOf)};
+      if(m[2]==='places'||m[2]==='excursions')return {
+        kind:m[2],label,items:hub.allExperiences
+          .filter(row=>row.kind===(m[2]==='places'?'destination':'excursion'))
+          .map(row=>dataOf(row.entry)),
+      };
+      return {kind:'related',label,
+        items:hub.allRelatedThemes.map(row=>dataOf(row.entry))};
     }
   }
   if((m=/^\/vip\/(?:([^/]+)\/)?interests\/([^/]+)\/$/.exec(path))) {
@@ -249,7 +255,7 @@ function detailMetadata(detail,ctx,years) {
         (country?' in '+country:' in Latin America')+'.')};
   }
   const theme=sharedInterestName(data.id,data.name,'en');
-  const count=ctx.activeTours.filter(tour=>themesOf(tour).includes(data.id)).length;
+  const count=ctx.hubForTheme(data.id).allTours.length;
   return {title:theme+' — '+plural(count,'tour','tours')+' in Latin America ('+years+')',
     description:shortEnglish(data.summary,'Explore '+theme.toLowerCase()+
       ' through '+plural(count,'Ada Tours journey','Ada Tours journeys')+' in Latin America.')};

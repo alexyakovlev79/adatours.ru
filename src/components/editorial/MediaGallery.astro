@@ -37,6 +37,14 @@ const {
 
 // Media QA status is metadata, not a visibility switch.
 const uiLocale=sharedUiLocale()==='en' || locale==='en' ? 'en' : 'ru';
+const photoCopy = item => {
+  const source = imageCaption(item.src, item);
+  // Projected EN fields take precedence over Russian registry overrides.
+  return uiLocale === 'en' ? {
+    alt: item.alt ?? source.alt,
+    hover: item.hover ?? (item.alt ? undefined : source.hover),
+  } : source;
+};
 const visibleItems = items;
 const flush = layout === 'flush';
 const orientation = layout === 'orientation';
@@ -68,7 +76,7 @@ const orientation = layout === 'orientation';
                 : undefined
             }
           >
-            <HeroImage fill width={item.sourceWidth} height={item.sourceHeight} src={withBase(item.src)} alt={locale === 'en' ? item.alt : imageCaption(item.src, item).alt} title={locale === 'en' ? item.hover : imageCaption(item.src, item).hover} loading="lazy" />
+            <HeroImage fill width={item.sourceWidth} height={item.sourceHeight} src={withBase(item.src)} alt={photoCopy(item).alt} title={photoCopy(item).hover} loading="lazy" />
             {item.caption && <figcaption>{item.caption}</figcaption>}
           </figure>
         ))}

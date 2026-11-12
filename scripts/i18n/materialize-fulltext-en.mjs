@@ -145,8 +145,8 @@ async function main(){
    if(text?.number!==item.number||text.path!==item.path||text.sourceBlobSha!==item.sha||
       typeof text.enMarkdown!=='string'||text.enMarkdown.length<5){
      summary.withheld++;group.withheld++;
-     if(summary.withheldSamples.length<80)
-       summary.withheldSamples.push({path:item.path,packet:n,reason:'saved_result_source_identity_mismatch'});
+     if(summary.withheldSamples.length<200)
+       summary.withheldSamples.push({path:item.path,number:item.number,packet:n,reason:'saved_result_source_identity_mismatch',expected:item.sha,received:text?.sourceBlobSha});
      continue;
    }
    summary.verifiedTexts++;
@@ -159,15 +159,16 @@ async function main(){
     await writeFile(file,projected.content,'utf8');
     summary[projected.status]++;group[projected.status]++;
     if(summary.appliedSample.length<10)summary.appliedSample.push(item.path);
-    if(projected.status==='partial'&&summary.withheldSamples.length<80)
-     summary.withheldSamples.push({path:item.path,reason:'body_untranslated_or_link_mismatch'});
+    if(projected.status==='partial'&&summary.withheldSamples.length<200)
+     summary.withheldSamples.push({path:item.path,number:item.number,packet:n,reason:'body_untranslated_or_link_mismatch',englishCyrillic:/[\u0400-\u052f]/u.test(text.enMarkdown),bodyCyrillic:/[\u0400-\u052f]/u.test(splitFulltextMarkdown(text.enMarkdown).body),bodyLinksOriginal:(splitFulltextMarkdown(raw.toString('utf8')).body.match(/\]\(([^)]*)\)/g)||[]).length,bodyLinksEN:(splitFulltextMarkdown(text.enMarkdown).body.match(/\]\(([^)]*)\)/g)||[]).length});
    }catch(error){
     summary.withheld++;group.withheld++;
-    if(summary.withheldSamples.length<80)summary.withheldSamples.push({path:item.path,reason:String(error.message).slice(0,150)});
+    if(summary.withheldSamples.length<200)summary.withheldSamples.push({path:item.path,number:item.number,packet:n,reason:String(error.message).slice(0,200)});
    }
   }
  }
  if(summary.checkedTexts!==manifest.items)f('Text inventory total mismatch');
+ console.log('ADA_EN_FULLTEXT_ISSUES='+JSON.stringify(summary.withheldSamples));
  const receipt=resolve(sourceRoot,'../en-fulltext-receipt.json');
  await mkdir(dirname(receipt),{recursive:true});await writeFile(receipt,JSON.stringify(summary,null,2)+'\n');
  console.log('ADA_EN_FULLTEXT='+JSON.stringify({applied:summary.applied,partial:summary.partial,

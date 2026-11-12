@@ -113,7 +113,7 @@
 |---:|---|---|
 | 1 | committed | [Код d1e0713](https://github.com/alexyakovlev79/adatours.ru/commit/d1e071303579f1fb441e9b230c09cafd23f3600f), [EN preflight success #43278999767](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43278999767). Отдельный EN Pages deploy этого SHA ещё не подтверждён |
 | 2 | committed | [Контент 01b3f14](https://github.com/alexyakovlev79/adatours.ru/commit/01b3f14e08c7cd0ab09645d378522bdcf942af10), [проверки f2c2ea3](https://github.com/alexyakovlev79/adatours.ru/commit/f2c2ea3a8149745eea0e964f5f25b35a67984ab0), [исправление EN-теста 96c5d76](https://github.com/alexyakovlev79/adatours.ru/commit/96c5d7602ad1094f20c0aceab143dd4f63ecbdca). [EN preflight #43289546639 — success](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43289546639); отдельный EN Pages deploy этого SHA не подтверждён |
-| 3 | not_started | — |
+| 3 | in_progress | [PR №90](https://github.com/alexyakovlev79/adatours.ru/pull/90), 463 RU→EN соответствия на шести страницах, 3 IMEX-примера; ожидается итоговый CI и запись в main |
 | 4 | not_started | — |
 | 5 | not_started | — |
 | 6 | not_started | — |
@@ -158,3 +158,13 @@
 - Технические тесты EN FULLTEXT repair: `13/13 pass`; остальные EN локализационные тесты, включая этапы 1 и 2: `45/45 pass`. Сборка и verifier подтверждены одним run.
 - Отчёт EN HTML: `6 149` канонических страниц, `1 832` EN со сработавшим переводом, `4 317` с русским резервом, `30 886` применённых текстовых полей; проверено `404 991` внутренних ссылок. Никакого claim, что 6 149 страниц полностью переведены. `noindex` и запреты canonical/JSON-LD для EN preview сохранены.
 - Исходный репозиторий прошёл **только EN preflight без upload**, это не Pages deploy. Последний подтверждённый `adatours-en` workflow на момент этой записи запущен ещё до content-коммита этапа 2, поэтому не подтверждает именно этот EN-код. Статус шага — **`committed`**, не `verified_en_noindex`.
+
+## Журнал этапа 3 — 13.11.2026 (МСК)
+
+- Входной снимок `main`: `47ba987356736c2848b8bc88e3c3a479a38737dd`; чужую рабочую ветку `i18n/translation-mass-staging` не меняли.
+- Переведены шесть коммерческих страниц `/mice/`, `/mice/business-delegations/`, `/mice/programmes/`, `/dmc/`, `/dmc/travel-agencies/`, `/dmc/terms/`. Тексты вынесены в шесть EN-словарей; оригинальные RU-строки и ID остались в тех же Astro-файлах и показываются при `locale=ru`.
+- **463 английских соответствия** из этих шести страниц (81 + 80 + 72 + 76 + 81 + 73); 453 уникальных исходных RU строки, а в рамках 72 соответствий каталога есть 9 значений трёх подтверждённых IMEX-программ. Включены услуги, пределы обещаний, условия нетто/комиссии, бронирование, FAQ, CTA, даты, маршруты, кейсы и ссылки.
+- Добавлен `src/lib/i18n/commercial-copy.mjs` и адресная локализация общих MICE/DMC компонентов (меню, FAQ, карточек кейсов, цитаты-оригинала с пояснением языка, поискового фрагмента). Конкретные имена, цены, маршруты, число участников, опубликованные IMEX URL и оригинальные цитаты не переписывались. Динамический список языков организации отображается по-английски только в EN.
+- Включены `lang={uiLocale}` на всех шести коммерческих страницах, без включения индексации/публичного JSON-LD и без изменения `adatours.ru`. Новая проверка `tests/i18n/commercial-stage-three.test.mjs` подключена к `.github/workflows/i18n-en-github-pages-check.yml`.
+- Код и тесты находятся в [PR №90](https://github.com/alexyakovlev79/adatours.ru/pull/90), последний source commit перед правкой плана: `eee34a7321bbffdd368db15305a7c14af1a46906`. [EN preflight #43308826569](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43308826569) завершился `success` по предшествующему SHA `637396a755b277522d11d1eac6090ab6f40fabb5` **до добавления отдельного нового теста**; это проверка корректности EN-сборки кода, но не доказательство успешного запуска нового теста.
+- **Статус: `in_progress` до CI по итоговому SHA и интеграции в `main`.** После подтверждения поменять на `committed`, указав точный SHA и Actions run. Отдельный `adatours-en` Pages deploy этой версии не подтверждён, поэтому `verified_en_noindex` не использовать. Этап 4 этим изменением не запускается.

@@ -1,5 +1,6 @@
 ---
 import AuthorityInline from './AuthorityInline.astro';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 import { authorityDate, authorityLanguage, type AuthoritySource, type AuthoritySourceCopy } from './content';
 
 interface Props {
@@ -12,6 +13,7 @@ interface Props {
 }
 const { id, title, eyebrow, intro, sources, entries } = Astro.props;
 const sourceMap = new Map(sources.map((source) => [source.id, source]));
+const locale = sharedUiLocale();
 const items = entries.map((copy) => {
   const source = sourceMap.get(copy.sourceId);
   if (!source) throw new Error(`Authority page is missing visible source: ${copy.sourceId}`);
@@ -20,7 +22,7 @@ const items = entries.map((copy) => {
     if (!related) throw new Error(`Authority page is missing related source: ${link.sourceId}`);
     return { ...link, source: related };
   });
-  return { source, copy, relatedLinks, date: authorityDate(source), language: authorityLanguage(source.language) };
+  return { source, copy, relatedLinks, date: authorityDate(source, locale), language: authorityLanguage(source.language, locale) };
 });
 ---
 

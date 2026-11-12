@@ -1,17 +1,19 @@
 ---
 import AuthorityInline from './AuthorityInline.astro';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface Props {
   title: string;
   items: Array<{ question: string; answerMarkdown: string }>;
 }
 const { title, items } = Astro.props;
+const isEnglish = sharedUiLocale() === 'en';
 ---
 
 <section id="faq" class="authority-faq section" aria-labelledby="authority-faq-title">
   <div class="container authority-faq__grid">
     <header>
-      <p class="eyebrow">Вопросы и ответы</p>
+      <p class="eyebrow">{isEnglish ? 'Questions and answers' : 'Вопросы и ответы'}</p>
       <h2 id="authority-faq-title">{title}</h2>
     </header>
     <div class="authority-faq__list">

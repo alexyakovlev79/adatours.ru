@@ -10,7 +10,7 @@ const containsRussian = value => /[А-Яа-яЁё]/u.test(value ?? '');
 const own = (node,key) => node?.attrs?.find(attr => attr.name===key);
 const get = (node,key) => own(node,key)?.value;
 const set = (node,key,value) => {const a=own(node,key);if(a)a.value=value;};
-const actualSrc = src => {
+export const mediaSourceKey = src => {
   if(typeof src!=='string') return null;
   let value=src.trim();
   if(/^https?:\/\//i.test(value)){
@@ -26,36 +26,37 @@ const actualSrc = src => {
   const index=value.indexOf('/media/');
   return index>0 && value.startsWith('/') ? value.slice(index) : null;
 };
-export const mediaEnglishEntry = src => entries.get(actualSrc(src)) ?? null;
+export const mediaEnglishEntry = src => entries.get(mediaSourceKey(src)) ?? null;
 
-export function localizeMediaField(src,value,{locale='en',field='alt',decorative=false}={}) {
+export function localizeMediaField(src,value,{locale='en',field='alt',decorative=false,reusedLabels=null}={}) {
   if(locale!=='en'||decorative||typeof value!=='string'||!value.trim()||!containsRussian(value))return value;
   const entry=mediaEnglishEntry(src);
-  if(!entry)return value;
-  return field==='alt'||field==='hover'||field==='title'||field==='caption' ? entry.alt : value;
+  const translated=entry?.alt ?? reusedLabels?.get(mediaSourceKey(src));
+  if(!translated)return value;
+  return field==='alt'||field==='hover'||field==='title'||field==='caption' ? translated : value;
 }
 
 /** DOM pass is intentionally constrained to captions linked to an actual image.
  * Existing approved EN field translations always win, as does empty decorative alt.
  */
-export function localizeMediaDocument(document,{locale='en'}={}) {
+export function localizeMediaDocument(document,{locale='en',reusedLabels=null}={}) {
   if(locale!=='en')return {attributes:0,captions:0};
   let attributes=0,captions=0;
   const visit=node=>{
     if(!node)return;
     if(node.tagName==='img') {
-      const src=get(node,'src');
-      const entry=mediaEnglishEntry(src);
+      const src=get(node,'data-lazy-src') ?? get(node,'src');
+      const entry=mediaEnglishEntry(src) ?? (reusedLabels?.has(mediaSourceKey(src)) ? {alt:reusedLabels.get(mediaSourceKey(src))} : null);
       const decorative=get(node,'aria-hidden')==='true'||get(node,'role')==='presentation';
       if(entry&&!decorative)for(const field of ['alt','title','aria-label']) {
         const value=get(node,field);
-        const next=localizeMediaField(src,value,{locale,field,decorative});
+        const next=localizeMediaField(src,value,{locale,field,decorative,reusedLabels});
         if(next!==value){set(node,field,next);attributes++;}
       }
     }
     if(node.tagName==='figure'){
       const findImage=n=>n?.tagName==='img'?n:(n?.childNodes??[]).map(findImage).find(Boolean);
-      const img=findImage(node),src=img&&get(img,'src'),entry=mediaEnglishEntry(src);
+      const img=findImage(node),src=img&&(get(img,'data-lazy-src')??get(img,'src')),entry=mediaEnglishEntry(src);
       if(entry)for(const child of node.childNodes??[])if(child.tagName==='figcaption'){
         const textNodes=(child.childNodes??[]).filter(c=>c.nodeName==='#text');
         if(textNodes.length!==1||(child.childNodes??[]).some(c=>c.nodeName!=='#text'))continue;

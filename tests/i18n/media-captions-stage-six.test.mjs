@@ -4,7 +4,7 @@ import {parse, serialize} from 'parse5';
 import coversMulti from '../../src/data/media/multi-country-heroes.json' with {type:'json'};
 import coversCatalog from '../../src/data/media/catalog-hero-overrides.json' with {type:'json'};
 import en from '../../src/data/i18n/media-captions.en.json' with {type:'json'};
-import {localizeMediaField,localizeMediaDocument,mediaEnglishEntry} from '../../src/lib/i18n/media-copy.mjs';
+import {localizeMediaField,localizeMediaDocument,mediaEnglishEntry,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
 
 const originalRows=[
   ...Object.entries(coversMulti.covers).map(([key,value])=>['multi-country-heroes',key,value]),
@@ -62,4 +62,22 @@ test('HTML pass changes only attached visible alt, hover and exact caption',()=>
 test('mobile crop technical registry notes are not localized by media labels',()=>{
   assert.equal(mediaEnglishEntry('/media/hero-mobile-swarm/not-a-source.webp'),null);
   assert.equal(localizeMediaField('/media/hero-mobile-swarm/not-a-source.webp','Обрезка кадра',{locale:'en'}),'Обрезка кадра');
+});
+
+
+test('published English alt can be reused only for the identical media source',()=>{
+  const src='/media/destinations/example/gallery-01.webp';
+  const html='<img data-lazy-src="/adatours-en'+src+'" alt="Lush tropical forest and a winding river">'+
+    '<img src="/adatours-en'+src+'" alt="Lush tropical forest and a winding river">';
+  const labels=unambiguousEnglishMediaLabels(collectRenderedEnglishMediaLabels(html));
+  assert.equal(labels.get(src),'Lush tropical forest and a winding river');
+  const ru='<figure><img src="data:image/svg+xml,placeholder" data-lazy-src="/adatours-en'+src+
+    '" alt="Тропический лес и извилистая река" title="Тропический лес и извилистая река"></figure>';
+  const doc=parse(ru);
+  assert.deepEqual(localizeMediaDocument(doc,{reusedLabels:labels}),{attributes:2,captions:0});
+  assert.match(serialize(doc),/alt="Lush tropical forest and a winding river"/);
+  assert.equal(localizeMediaField(src,'Тропический лес',{locale:'ru',reusedLabels:labels}),'Тропический лес');
+  assert.equal(localizeMediaField('/media/another.webp','Тропический лес',{reusedLabels:labels}),'Тропический лес');
+  const ambiguous=collectRenderedEnglishMediaLabels('<img src="'+src+'" alt="Another tropical forest scene">',collectRenderedEnglishMediaLabels(html));
+  assert.equal(unambiguousEnglishMediaLabels(ambiguous).has(src),false);
 });

@@ -69,6 +69,21 @@ test('pagination is page-specific with complete-selection counts and exact range
  assert.equal(meta('/brazil/tour/',ctx).page,1);
 });
 
+test('double-digit catalogue pages retain page-specific metadata and full counts',()=>{
+ const base=fixture();
+ const tours=Array.from({length:14},(_,i)=>({
+   id:'tour_'+i,slug:'brazil-route-'+i,title:'Brazil route '+i,
+   locale:'ru',status:'approved',countries:['country_brazil'],
+   routeCountries:['country_brazil'],priceFrom:1000+i,currency:'USD',
+ }));
+ const ctx=createEnglishSeoContext({countries:base.allCountries,
+  destinations:base.allDestinations,excursions:base.allExcursions,
+  themes:base.allThemes,tours,pageSize:1});
+ const tenth=meta('/brazil/tour/page/10/',ctx);
+ assert.match(tenth.title,/Page 10 \\| Ada Tours$/);
+ assert.match(tenth.description,/Page 10: items 10–10 of 14\\./);
+});
+
 test('one confirmed USD price is formatted in English; mixed currencies never yield a fabricated USD price',()=>{
  const ctx=fixture();
  assert.equal(formatSeoMoney(12500,'USD','en'),'$12,500');

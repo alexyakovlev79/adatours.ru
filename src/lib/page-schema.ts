@@ -4,6 +4,7 @@ import { SITE } from './site';
 import { countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 import { isActiveEntity, isArchivedEntity } from './archive.mjs';
 import { buildStructuredData, recordId } from './structured-data.mjs';
+import { buildEnglishStructuredData } from './i18n/schema-projection.mjs';
 import { authorityRegistry } from './entity-authority.mjs';
 import { authoritativeEnglishTarget, attachExternalPageSameAs } from './external-page-sameas.mjs';
 import { inspectHtml } from './structured-data-html.mjs';
@@ -96,7 +97,7 @@ export async function pageStructuredData(input: {
       addressLocality: ORG.legal.addressLocality, addressRegion: ORG.legal.addressRegion,
       postalCode: ORG.legal.postalCode, addressCountry: ORG.legal.addressCountry },
   };
-  const graph = buildStructuredData({ root: input.root, organization, records,
+  const graph = (input.lang === 'en' ? buildEnglishStructuredData : buildStructuredData)({ root: input.root, organization, records,
       page: { path: input.path, url: input.url, title: input.title, description: input.description, lang: input.lang, image: input.image },
       document: { ...inspected.facts, editorial }, breadcrumbs: input.breadcrumbs || [],
       extra: [...[input.extra || []].flat(), ...inspected.legacy], geoKnowledge, authority: authorityRegistry });
@@ -107,6 +108,12 @@ export async function pageStructuredData(input: {
     pageUrl: input.url,
     entityId: current ? recordId(current, input.root) : undefined,
   });
+  // The EN graph is prepared for a future indexable release only. English
+  // metadata belongs to its own locale-aware SEO stage, not RU price copy.
+  if (input.lang === 'en') return {
+    html: inspected.html, graph, priceSummaries: [], priceSummary: '',
+    metaTitle: input.title, metaDescription: input.description,
+  };
   const prices = collectSeoPagePrices({
     records, root: input.root, path: input.path,
     groups: inspected.facts.groups, priceVisible: inspected.facts.priceVisible,

@@ -6,6 +6,9 @@ on:
       - 'src/pages/en/**'
       - 'src/pages/en-pilot-private/**'
       - 'src/lib/i18n/**'
+      - 'src/lib/page-schema.ts'
+      - 'src/lib/structured-data.mjs'
+      - 'tests/i18n/schema-stage-eight.test.mjs'
       - 'src/components/i18n/**'
       - 'src/components/global/SiteHeader.astro'
       - 'src/components/global/SiteFooter.astro'
@@ -52,6 +55,9 @@ on:
       - 'scripts/i18n/**'
       - 'tests/i18n/**'
       - 'src/lib/i18n/**'
+      - 'src/lib/page-schema.ts'
+      - 'src/lib/structured-data.mjs'
+      - 'tests/i18n/schema-stage-eight.test.mjs'
       - 'src/components/i18n/**'
       - 'src/data/i18n/authority-*.en.json'
       - 'src/data/authority-pages.json'
@@ -151,7 +157,7 @@ jobs:
           node --check scripts/i18n/audit-en-media-copy.mjs
           node --check scripts/i18n/audit-en-residuals.mjs
           node --test tests/i18n/stage9-residual-ui.test.mjs
-          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs
+          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/schema-stage-eight.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
           npx pagefind --site dist --force-language en
@@ -178,7 +184,7 @@ jobs:
             stage6-media-audit.json
           if-no-files-found: error
 
-      - name: Preserve stage-nine complete residual inventory even when other audits fail
+      - name: Preserve stage-nine residual inventory even if other checks fail
         if: always()
         uses: actions/upload-artifact@v4
         with:

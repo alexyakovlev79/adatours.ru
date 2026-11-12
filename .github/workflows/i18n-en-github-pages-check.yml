@@ -150,6 +150,7 @@ jobs:
           node --check scripts/i18n/prepare-en-pages-site.mjs
           node --check scripts/i18n/audit-en-media-copy.mjs
           node --check scripts/i18n/audit-en-residuals.mjs
+          node --test tests/i18n/stage9-residual-ui.test.mjs
           node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build

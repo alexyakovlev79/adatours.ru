@@ -61,6 +61,8 @@ function classify({stack,field,fallback,route}){
  const head=tags.includes('head'),leaf=tags.at(-1)??'';
  if(head && (leaf==='title'||leaf==='meta'||field==='meta-content'))
   return 'seo_pending_stage7';
+ if(tags.includes('section')&&stack.some(n=>get(n,'class')?.split(/\s+/).includes('pagefind-record')))return 'technical_pagefind_index';
+ if(tags.includes('noscript'))return 'noscript_fallback_markup';
  if(field==='alt'||tags.includes('figcaption'))return 'media_pending_stage6';
  if(field==='js-data')return 'js_state_candidate';
  if(tags.some(t=>t==='nav'||t==='header'||t==='footer'||interactive.has(t))||

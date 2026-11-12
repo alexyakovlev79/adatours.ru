@@ -77,7 +77,7 @@ test('neutralize only the exact prohibited data-colon prose in allowed SEO artic
  const src='---\nkind: destination\n---\n\nDetails from live data:\n\n{{catalog.tourTable:example}}\n';
  const result=repairFulltextEnglishSyntax(src,1687,registry);
  assert.match(result,/information:\n\n\{\{catalog/);
- assert.throws(()=>repairFulltextEnglishSyntax('---\n---\n\nNothing',1687,registry),/marker absent/);
+ assert.throws(()=>repairFulltextEnglishSyntax('---\n---\n\nNothing',1687,registry),/token absent/);
 });
 test('unapproved link changes cannot silently bypass canonical text contract',()=>{
  const src='---\ntargetPath: /foo/\nkind: one\n---\n\n## A\n\n[A](/a/)\n';

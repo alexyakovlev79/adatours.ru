@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "kind": "manual_targeted_requeue",
+  "reason": "Owner requested recovery; original 15 Git blob SHAs match current main, confirmed before requeue; original state retained for audit",
+  "recordedAt": "2026-11-12T17:19:14.008Z",
+  "stagingHeadBefore": "d85a311537984e71d44b7b020a25fb656f43e05d",
+  "mainHeadVerified": "f451de39f413152ad893902c594eaa93ddb47250",
+  "packets": [
+    {
+      "number": 95,
+      "old": {
+        "status": "stale_source",
+        "generation": 3,
+        "attempts": 2,
+        "reason": "Source Git blob changed: src/content/destinations/barakoa.md",
+        "recordedAt": "2026-11-10T21:09:28.096Z"
+      },
+      "new": {
+        "status": "queued",
+        "generation": 4,
+        "attempts": 0
+      }
+    },
+    {
+      "number": 822,
+      "old": {
+        "status": "failed_final",
+        "generation": 6,
+        "attempts": 4,
+        "ownerId": "adaen_chat_20261111_2134_q8v5m2",
+        "token": "adaen_token_20261111_2134_q8v5m2",
+        "claimedAt": "2026-11-11T19:09:29.294Z",
+        "expiresAt": "2026-11-11T20:39:29.294Z",
+        "reason": "Maximum lease attempts exceeded"
+      },
+      "new": {
+        "status": "queued",
+        "generation": 7,
+        "attempts": 0
+      }
+    },
+    {
+      "number": 977,
+      "old": {
+        "status": "failed_final",
+        "generation": 5,
+        "attempts": 4,
+        "reason": "Maximum lease attempts exceeded"
+      },
+      "new": {
+        "status": "queued",
+        "generation": 6,
+        "attempts": 0
+      }
+    }
+  ],
+  "definitionChange": false,
+  "sourceChange": false
+}

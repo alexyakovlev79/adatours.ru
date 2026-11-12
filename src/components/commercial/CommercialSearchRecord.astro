@@ -1,4 +1,8 @@
 ---
+import {commercialText} from '../../lib/i18n/commercial-copy.mjs';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+const commercialLocale=sharedUiLocale();
+const commercialTr=(value:string)=>commercialText(value,commercialLocale);
 import { withBase } from '../../lib/paths';
 
 interface Props {
@@ -13,12 +17,12 @@ const { id, title, description, keywords = [], image, typeLabel = 'Для биз
 ---
 
 <section class="commercial-search-record" data-pagefind-body data-commercial-record={id} aria-hidden="true">
-  <span data-pagefind-meta="title" data-pagefind-filter="search_title">{title}</span>
-  <p data-pagefind-meta="summary">{description}</p>
+  <span data-pagefind-meta="title" data-pagefind-filter="search_title">{commercialTr(title)}</span>
+  <p data-pagefind-meta="summary">{commercialTr(description)}</p>
   <span data-pagefind-meta="entity_type" data-pagefind-filter="entity_type">page</span>
-  <span data-pagefind-meta="type_label">{typeLabel}</span>
-  <span data-pagefind-meta="subtitle">Бразилия и Латинская Америка</span>
-  {keywords.length > 0 && <span data-pagefind-meta="aliases">{[...new Set(keywords)].join(' | ')}</span>}
+  <span data-pagefind-meta="type_label">{commercialTr(typeLabel)}</span>
+  <span data-pagefind-meta="subtitle">{commercialTr('Бразилия и Латинская Америка')}</span>
+  {keywords.length > 0 && <span data-pagefind-meta="aliases">{[...new Set(keywords)].map(commercialTr).join(' | ')}</span>}
   {image && <span data-pagefind-meta="image[data-search-image]" data-search-image={withBase(image)}></span>}
 </section>
 

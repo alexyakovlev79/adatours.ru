@@ -1,4 +1,8 @@
 ---
+import {commercialText} from '../../lib/i18n/commercial-copy.mjs';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+const commercialLocale=sharedUiLocale();
+const commercialTr=(value:string)=>commercialText(value,commercialLocale);
 import AuthorityInline from '../authority/AuthorityInline.astro';
 
 interface Item {
@@ -14,8 +18,8 @@ const { title = 'Вопросы о работе с Ada Tours', items } = Astro.p
 
 <section class="dmc-faq section" aria-labelledby="dmc-faq-title">
   <div class="container">
-    <p class="eyebrow">Вопросы и ответы</p>
-    <h2 id="dmc-faq-title">{title}</h2>
+    <p class="eyebrow">{commercialTr('Вопросы и ответы')}</p>
+    <h2 id="dmc-faq-title">{commercialTr(title)}</h2>
     <div class="dmc-faq__list">
       {items.map((item) => (
         <details>

@@ -1,4 +1,8 @@
 ---
+import {commercialText} from '../../lib/i18n/commercial-copy.mjs';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+const commercialLocale=sharedUiLocale();
+const commercialTr=(value:string)=>commercialText(value,commercialLocale);
 import { DMC_NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 
@@ -8,26 +12,26 @@ const current = DMC_NAV_LINKS.find((link) => link.id === active) ?? DMC_NAV_LINK
 ---
 
 <div class="dmc-nav-shell" data-pagefind-ignore>
-  <nav class="dmc-nav" aria-label="Раздел для агентств">
+  <nav class="dmc-nav" aria-label={commercialTr('Раздел для агентств')}>
     {DMC_NAV_LINKS.map((link) => (
       <a href={withBase(link.href)} aria-current={active === link.id ? 'page' : undefined}>
-        {link.label}
+        {commercialTr(link.label)}
       </a>
     ))}
   </nav>
-  <nav class="dmc-nav-mobile" aria-label="Раздел для агентств">
+  <nav class="dmc-nav-mobile" aria-label={commercialTr('Раздел для агентств')}>
     <details>
       <summary>
         <span class="dmc-nav-mobile__current">
-          <small>Для агентств · Разделы</small>
-          <strong>{current.label}</strong>
+          <small>{commercialTr('Для агентств · Разделы')}</small>
+          <strong>{commercialTr(current.label)}</strong>
         </span>
         <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
       </summary>
       <div class="dmc-nav-mobile__links">
         {DMC_NAV_LINKS.map((link) => (
           <a href={withBase(link.href)} aria-current={active === link.id ? 'page' : undefined}>
-            {link.label}
+            {commercialTr(link.label)}
             {active === link.id && <span aria-hidden="true">✓</span>}
           </a>
         ))}

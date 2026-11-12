@@ -8,6 +8,9 @@ import {resolve, join, dirname, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import yaml from 'js-yaml';
 import {parseSeoGeoArticle} from '../../src/lib/seo-geo.mjs';
+import {
+ authorizeFulltextSource,repairFulltextEnglishSyntax,repairedFulltextBody
+} from './fulltext-publication-repairs.mjs';
 
 const ROOT='data/i18n/fulltext-swarm/v1/';
 const CYR=/[\u0400-\u052f]/u;
@@ -72,17 +75,32 @@ const mergeTexts=(old,translated,counter,path='')=>{
  }
  return old;
 };
-export function applyFulltextToSource(source,english,kind,expectedSha){
+export function applyFulltextToSource(source,english,kind,expectedSha,options={}){
  const original=splitFulltextMarkdown(source),en=splitFulltextMarkdown(english);
  if(kind==='seo_geo_article'){
-  if(en.data.targetPath!==original.data.targetPath || en.data.kind!==original.data.kind ||
+  if(en.data.targetPath!==original.data.targetPath ||
+     (en.data.kind!==original.data.kind&&!options.seoKindAllowed) ||
      en.data.status!==original.data.status)throw new Error('SEO/GEO identity changed');
- }else if(en.data.id!==original.data.id || en.data.locale!=='en' ||
-          original.data.locale!=='ru' || en.data.slug!==original.data.slug)
+ }else if(en.data.id!==original.data.id || original.data.locale!=='ru' ||
+          (en.data.locale!=='en'&&!(options.ruLocaleAllowed&&en.data.locale==='ru'))||
+          en.data.slug!==original.data.slug)
    throw new Error('Content identity or language changed');
  if(original.data.status==='archived'||original.data.status==='draft')return {status:'excluded'};
  if(original.body.trim()&&!en.body.trim())throw new Error('EN body is empty');
  const tally={changed:0},merged=mergeTexts(original.data,en.data,tally);
+ // Only source-verified, reviewed new factual text is allowed to supersede
+ // a changed country feature band. Media, href, IDs and canonical facts remain RU.
+ for(const [pointer,text] of Object.entries(options.textOverrides??{})){
+   if(!/^\/featureBands\/\d+\/(?:title|text)$/.test(pointer))
+     throw new Error('Unapproved country replacement pointer');
+   const segments=pointer.slice(1).split('/');
+   let canonical=original.data,target=merged;
+   for(const key of segments.slice(0,-1)){canonical=canonical?.[key];target=target?.[key];}
+   const last=segments.at(-1);
+   if(!canonical||!target||!safeValue(canonical[last],text)||typeof target[last]!=='string')
+     throw new Error('Changed country field cannot be safely translated');
+   target[last]=text;tally.changed++;
+ }
  let body=original.body,bodyApplied=false;
  if(!CYR.test(en.body)){
   const references=t=>(t.match(/\]\(([^)]*)\)/g)||[]).sort();
@@ -111,6 +129,10 @@ async function main(){
     !manifest.enabled||control.packets!==manifest.packets||control.saved!==manifest.packets||
     control.leased!==0||control.queued!==0||control.failed_final!==0||
     control.sourceMainSha!==manifest.sourceMainSha)f('Full-text queue not wholly saved and idle');
+ const repairs=await json(join(sourceRoot,'data/i18n/fulltext-publication-repairs/2026-11-12.json'));
+ if(repairs?.schemaVersion!==1||repairs.sourceMainSha!==manifest.sourceMainSha||
+    repairs.stagingSha!==process.env.EN_MASS_SNAPSHOT_SHA)
+   f('Pinned fulltext repair authorizations missing or changed');
  const states=await Promise.all(Array.from({length:16},(_,i)=>
   json(snapPath(ROOT+'state/'+i.toString(16).padStart(2,'0')+'.json'))));
  const defs=new Map();
@@ -119,6 +141,7 @@ async function main(){
   canonicalSourceSha:process.env.ADA_CANONICAL_SHA||null,
   expectedPackets:manifest.packets,expectedTexts:manifest.items,
   verifiedPackets:0,checkedTexts:0,verifiedTexts:0,applied:0,partial:0,withheld:0,excluded:0,
+  repairedSourceDrifts:0,repairedReceipts:0,repairedSyntax:0,repairedLinks:0,repairedLocale:0,
   byKind:{},withheldSamples:[],appliedSample:[]};
  for(let n=1;n<=manifest.packets;n++){
   const shard=states[(n-1)%16],row=shard.packets?.[String(n)];
@@ -142,22 +165,33 @@ async function main(){
    const kind=fulltextSourceKind(item.path);
    if(!kind)f('Unexpected fulltext path '+item.path);
    const group=summary.byKind[kind]??={applied:0,partial:0,withheld:0,excluded:0};
-   if(text?.number!==item.number||text.path!==item.path||text.sourceBlobSha!==item.sha||
+   if(text?.number!==item.number||text.path!==item.path||
       typeof text.enMarkdown!=='string'||text.enMarkdown.length<5){
      summary.withheld++;group.withheld++;
      if(summary.withheldSamples.length<200)
        summary.withheldSamples.push({path:item.path,number:item.number,packet:n,reason:'saved_result_source_identity_mismatch',expected:item.sha,received:text?.sourceBlobSha});
      continue;
    }
-   summary.verifiedTexts++;
    try{
-    const file=srcPath(item.path),raw=await readFile(file);
-    if(sha(raw)!==item.sha)throw new Error('source_changed');
-    const projected=applyFulltextToSource(raw.toString('utf8'),text.enMarkdown,kind,item.sha);
+    const file=srcPath(item.path),raw=await readFile(file),actualSha=sha(raw);
+    const auth=authorizeFulltextSource(item.number,item.sha,actualSha,text.sourceBlobSha,repairs);
+    summary.verifiedTexts++;
+    const repairedSyntax=repairFulltextEnglishSyntax(text.enMarkdown,item.number,repairs);
+    const repairedLinks=repairedFulltextBody(raw.toString('utf8'),repairedSyntax,item.number,repairs);
+    const projected=applyFulltextToSource(raw.toString('utf8'),repairedLinks,kind,actualSha,{
+     ruLocaleAllowed:repairs.ruLocaleInEnglish.includes(item.number),
+     seoKindAllowed:repairs.seoKindsKeepCanonical.includes(item.number),
+     textOverrides:auth.compatibleCountry?.textOverrides
+    });
     if(projected.status==='excluded'){summary.excluded++;group.excluded++;continue;}
     if(kind==='seo_geo_article')parseSeoGeoArticle(projected.content,item.path);
     await writeFile(file,projected.content,'utf8');
     summary[projected.status]++;group[projected.status]++;
+    if(auth.sourceReconciled)summary.repairedSourceDrifts++;
+    if(auth.recoveredReceipt)summary.repairedReceipts++;
+    if(repairedSyntax!==text.enMarkdown)summary.repairedSyntax++;
+    if(repairedLinks!==repairedSyntax)summary.repairedLinks++;
+    if(repairs.ruLocaleInEnglish.includes(item.number))summary.repairedLocale++;
     if(summary.appliedSample.length<10)summary.appliedSample.push(item.path);
     if(projected.status==='partial'&&summary.withheldSamples.length<200)
      summary.withheldSamples.push({path:item.path,number:item.number,packet:n,reason:'body_untranslated_or_link_mismatch',englishCyrillic:/[\u0400-\u052f]/u.test(text.enMarkdown),bodyCyrillic:/[\u0400-\u052f]/u.test(splitFulltextMarkdown(text.enMarkdown).body),bodyLinksOriginal:(splitFulltextMarkdown(raw.toString('utf8')).body.match(/\]\(([^)]*)\)/g)||[]).length,bodyLinksEN:(splitFulltextMarkdown(text.enMarkdown).body.match(/\]\(([^)]*)\)/g)||[]).length});

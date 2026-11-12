@@ -1,5 +1,6 @@
 ---
 import AuthorityInline from './AuthorityInline.astro';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 import { authorityDate, type AuthorityPartner, type AuthoritySourceCopy } from './content';
 
 interface Props {
@@ -13,6 +14,7 @@ interface Props {
 }
 const { id, title, eyebrow, intro, paragraphsMarkdown = [], partners, entries } = Astro.props;
 const copyForSource = new Map(entries.map((entry) => [entry.sourceId, entry]));
+const locale = sharedUiLocale();
 ---
 
 <section id={id} class="authority-partners section" aria-labelledby={`${id}-title`}>
@@ -53,7 +55,7 @@ const copyForSource = new Map(entries.map((entry) => [entry.sourceId, entry]));
             <ul class="authority-partners__sources">
               {partner.sources.map((source) => {
                 const copy = copyForSource.get(source.id);
-                const date = authorityDate(source);
+                const date = authorityDate(source, locale);
                 return (
                   <li data-authority-source={source.id}>
                     <a href={source.url} target="_blank" rel="external noopener noreferrer">

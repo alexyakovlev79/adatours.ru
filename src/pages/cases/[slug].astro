@@ -2,6 +2,7 @@
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection, render } from 'astro:content';
 import CaseLayout from '../../layouts/CaseLayout.astro';
+import { caseTestimonialProvenanceNote } from '../../lib/i18n/company-proof.mjs';
 
 export async function getStaticPaths() {
   const entries = await getCollection('cases', ({ data }) =>
@@ -16,6 +17,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const testimonialNote = caseTestimonialProvenanceNote(entry.data.id);
 ---
 
 <CaseLayout entry={entry}>
@@ -27,7 +29,7 @@ const { Content } = await render(entry);
         <blockquote data-case-quotation={entry.data.id}>
           <p>{entry.data.testimonial.quote}</p>
         </blockquote>
-        <figcaption>{entry.data.testimonial.caption}</figcaption>
+        <figcaption>{entry.data.testimonial.caption}{testimonialNote && <small class="case-testimonial__note">{testimonialNote}</small>}</figcaption>
       </figure>
     </section>
   )}
@@ -39,4 +41,5 @@ const { Content } = await render(entry);
   .case-testimonial blockquote { margin: 0; padding: 0 0 0 clamp(18px, 3vw, 32px); border-left: 2px solid var(--color-gold-deep); }
   .case-testimonial blockquote p { margin: 0; white-space: pre-line; }
   .case-testimonial figcaption { margin-top: 20px; color: color-mix(in srgb, var(--color-ink) 65%, transparent); font-size: .9rem; }
+  .case-testimonial__note { display: block; margin-top: 8px; }
 </style>

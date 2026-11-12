@@ -20,6 +20,13 @@ on:
       - 'src/layouts/CountryLayout.astro'
       - 'src/lib/interest-copy.mjs'
       - 'src/data/i18n/page-copy.en.json'
+      - 'src/data/i18n/authority-*.en.json'
+      - 'src/data/authority-pages.json'
+      - 'src/pages/press/**'
+      - 'src/pages/webinars/**'
+      - 'src/pages/partners/**'
+      - 'src/components/authority/**'
+      - 'tests/i18n/authority-stage-four.test.mjs'
       - 'src/pages/country/**'
       - 'src/pages/interests/**'
       - 'src/pages/404.astro'
@@ -46,6 +53,13 @@ on:
       - 'tests/i18n/**'
       - 'src/lib/i18n/**'
       - 'src/components/i18n/**'
+      - 'src/data/i18n/authority-*.en.json'
+      - 'src/data/authority-pages.json'
+      - 'src/pages/press/**'
+      - 'src/pages/webinars/**'
+      - 'src/pages/partners/**'
+      - 'src/components/authority/**'
+      - 'tests/i18n/authority-stage-four.test.mjs'
       - 'src/components/tour/Itinerary.astro'
       - 'src/components/tour/TourPricing.astro'
       - 'src/pages/en/**'
@@ -134,7 +148,7 @@ jobs:
           node --test tests/i18n/fulltext-materializer.test.mjs tests/i18n/fulltext-publication-repairs.test.mjs
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
-          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/commercial-stage-three.test.mjs
+          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/commercial-stage-three.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
           npx pagefind --site dist --force-language en

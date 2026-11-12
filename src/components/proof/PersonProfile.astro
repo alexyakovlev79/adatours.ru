@@ -1,6 +1,7 @@
 ---
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface Props {
   name: string;
@@ -21,7 +22,9 @@ const {
 } = Astro.props;
 
 const resolvedPhoto = photo?.src ? withBase(photo.src) : undefined;
-const photoCaption = photo?.src ? imageCaption(photo.src, { ...photo, alt: photo.alt || name }) : undefined;
+const photoCaption = photo?.src ? (sharedUiLocale() === 'en'
+  ? { alt: photo.alt || name, hover: photo.hover || photo.alt || name }
+  : imageCaption(photo.src, { ...photo, alt: photo.alt || name })) : undefined;
 ---
 
 <section class="person section">

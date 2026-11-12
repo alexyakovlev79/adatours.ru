@@ -1,5 +1,6 @@
 ---
 import AuthorityInline from './AuthorityInline.astro';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
 import type { AuthoritySectionCopy } from './content';
@@ -10,13 +11,16 @@ interface Props {
 }
 const { section, speaker } = Astro.props;
 const photoCaption = imageCaption(speaker.photo, { alt: speaker.photoAlt });
+const isEnglish = sharedUiLocale() === 'en';
+const photoAlt = isEnglish ? speaker.photoAlt : photoCaption.alt;
+const photoTitle = isEnglish ? speaker.photoAlt : photoCaption.hover;
 ---
 
 <section id={section.id} class="authority-speaker section" aria-labelledby={`${section.id}-title`}>
   <div class="container authority-speaker__grid">
     <figure>
       <div class="authority-speaker__photo">
-        <img src={withBase(speaker.photo)} alt={photoCaption.alt} title={photoCaption.hover} width="1254" height="1254" loading="lazy" decoding="async" />
+        <img src={withBase(speaker.photo)} alt={photoAlt} title={photoTitle} width="1254" height="1254" loading="lazy" decoding="async" />
       </div>
       <figcaption><span>{speaker.name}</span><small>{speaker.role}</small></figcaption>
     </figure>

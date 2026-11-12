@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface Props {
   title: string;
@@ -9,13 +10,14 @@ interface Props {
   image?: string;
 }
 const { title, summary, subtitle, aliases = [], image } = Astro.props;
+const isEnglish = sharedUiLocale() === 'en';
 ---
 
 <section class="authority-search-record" data-pagefind-body aria-hidden="true">
   <span data-pagefind-meta="title" data-pagefind-filter="search_title">{title}</span>
   <p data-pagefind-meta="summary">{summary}</p>
   <span data-pagefind-meta="entity_type" data-pagefind-filter="entity_type">page</span>
-  <span data-pagefind-meta="type_label">О компании</span>
+  <span data-pagefind-meta="type_label">{isEnglish ? "Company information" : "О компании"}</span>
   <span data-pagefind-meta="subtitle">{subtitle}</span>
   {aliases.length > 0 && <span data-pagefind-meta="aliases">{[...new Set(aliases)].join(' | ')}</span>}
   {image && <span data-pagefind-meta="image[data-search-image]" data-search-image={withBase(image)}></span>}

@@ -1,6 +1,8 @@
 ---
 import type { AdaReview } from '../../data/reviews/ada-tours';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+import { reviewProvenanceNote } from '../../lib/i18n/company-proof.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface Props {
   review: AdaReview;
@@ -8,6 +10,8 @@ interface Props {
 }
 
 const { review, index = 0 } = Astro.props;
+const uiLocale = sharedUiLocale();
+const sourceNote = reviewProvenanceNote(review, uiLocale);
 ---
 
 <section class="review" id={review.id}>
@@ -30,9 +34,9 @@ const { review, index = 0 } = Astro.props;
       </div>
 
       <div class="review__source">
-        {review.translated && <span>Перевод с английского.</span>}
+        {sourceNote && <span>{sourceNote}</span>}
         <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer">
-          Оригинал, отзыв №{review.sourceReviewNumber} на adatours.com
+          {uiLocale === 'en' ? 'Original source · review No. ' : 'Оригинал · отзыв №'}{review.sourceReviewNumber}
         </a>
       </div>
     </div>

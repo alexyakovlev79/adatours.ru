@@ -22,7 +22,7 @@ if(sharedContent && process.env.EN_PUBLISH_FULLTEXT==='1'){
  if(!fs.existsSync(file))fail('Fulltext materialization receipt missing');
  const fulltext=JSON.parse(fs.readFileSync(file,'utf8'));
  if(fulltext?.expectedPackets!==1412||fulltext.expectedTexts!==7056||
-    fulltext.verifiedPackets!==1412||fulltext.verifiedTexts!==7056)
+    fulltext.verifiedPackets!==1412||fulltext.checkedTexts!==7056)
    fail('Fulltext inventory receipt incomplete');
  receipt.fulltext=fulltext;
 }

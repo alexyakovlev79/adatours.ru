@@ -6,6 +6,7 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
+import { stageFiveText } from '../../lib/i18n/stage-five-copy.mjs';
 
 const cases = (await getCollection('cases', ({ data }) =>
   data.locale === 'ru' && isActiveEntity(data)
@@ -13,8 +14,8 @@ const cases = (await getCollection('cases', ({ data }) =>
 ---
 
 <BaseLayout
-  title="Кейсы Ada Tours: группы, делегации и сложные маршруты"
-  description="Выполненные поездки Ada Tours: корпоративные группы и делегации в Бразилии, индивидуальный маршрут по Перу и Боливии. Задачи, логистика и работа команды."
+  title={stageFiveText("Кейсы Ada Tours: группы, делегации и сложные маршруты")}
+  description={stageFiveText("Выполненные поездки Ada Tours: корпоративные группы и делегации в Бразилии, индивидуальный маршрут по Перу и Боливии. Задачи, логистика и работа команды.")}
   image="/media/home/rio-night-enhanced-20260930.webp"
 >
   <Hero

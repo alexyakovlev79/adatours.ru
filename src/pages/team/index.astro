@@ -7,6 +7,9 @@ import AboutNav from '../../components/commercial/AboutNav.astro';
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
 import team from '../../data/organization/team.json';
+import { localizedTeamMembers } from '../../lib/i18n/company-proof.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { stageFiveText } from '../../lib/i18n/stage-five-copy.mjs';
 
 const teamPhoto = '/media/people/team/team-group-enhanced-20261007.webp';
 const people = await getCollection('people', ({ data }) =>
@@ -19,13 +22,14 @@ const renderedPeople = await Promise.all(
   })
 );
 
-const colleagues = team.members;
+const colleagues = localizedTeamMembers(team.members);
+const stageFiveEnglish = sharedUiLocale() === 'en';
 
 ---
 
 <BaseLayout
-  title="Команда Ada Tours в Бразилии и Латинской Америке"
-  description="Анна Аванесова и команда Ada Tours в Рио-де-Жанейро: менеджеры и координаторы путешествий по Бразилии, Латинской Америке и Карибам."
+  title={stageFiveText("Команда Ada Tours в Бразилии и Латинской Америке")}
+  description={stageFiveText("Анна Аванесова и команда Ada Tours в Рио-де-Жанейро: менеджеры и координаторы путешествий по Бразилии, Латинской Америке и Карибам.")}
   image={teamPhoto}
   headerTheme="dark"
   leadTitle="Обсудим ваше путешествие с командой Ada Tours"
@@ -87,8 +91,8 @@ const colleagues = team.members;
           <img
             class="team-member__photo"
             src={withBase(person.photo.src)}
-            alt={imageCaption(person.photo.src, person.photo).alt}
-            title={imageCaption(person.photo.src, person.photo).hover}
+            alt={stageFiveEnglish ? person.photo.alt : imageCaption(person.photo.src, person.photo).alt}
+            title={stageFiveEnglish ? person.photo.hover : imageCaption(person.photo.src, person.photo).hover}
             width={person.photo.width}
             height={person.photo.height}
             loading="lazy"

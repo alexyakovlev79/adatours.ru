@@ -8,15 +8,18 @@ import EditorialProof from '../../components/proof/EditorialProof.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
 import { ORG } from '../../data/organization/ada-tours';
+import { localizedOrganization } from '../../lib/i18n/company-proof.mjs';
+import { stageFiveText } from '../../lib/i18n/stage-five-copy.mjs';
 import AuthoritySources from '../../components/proof/AuthoritySources.astro';
 
 const people = await getCollection('people', ({ data }) => data.id === 'person_anna' && data.locale === 'ru');
 const anna = people[0];
+const org = localizedOrganization(ORG);
 ---
 
 <BaseLayout leadTitle="Обсудить поездку или партнерство" leadEntityId="about"
-  title="Ada Tours: DMC в Бразилии и Латинской Америке"
-  description="Ada Tours — DMC и принимающий туроператор из Рио-де-Жанейро. Индивидуальные и VIP-путешествия, MICE и multi-country программы по Латинской Америке."
+  title={stageFiveText("Ada Tours: DMC в Бразилии и Латинской Америке")}
+  description={stageFiveText("Ada Tours — DMC и принимающий туроператор из Рио-де-Жанейро. Индивидуальные и VIP-путешествия, MICE и multi-country программы по Латинской Америке.")}
   image="/media/catalog/tury/hero-enhanced-20260930.webp"
 >
   <Hero
@@ -38,9 +41,9 @@ const anna = people[0];
     wideFirst
     facts={[
       { value: 'Рио-де-Жанейро', label: 'база команды Ada Tours' },
-      { value: String(ORG.service.languages.length), label: 'языков коммуникации' },
-      { value: ORG.service.groups.standard.display, label: 'человек в обычной группе' },
-      { value: ORG.service.groups.largeEvents.display, label: 'участников крупных событий' },
+      { value: String(org.service.languages.length), label: 'языков коммуникации' },
+      { value: org.service.groups.standard.display, label: 'человек в обычной группе' },
+      { value: org.service.groups.largeEvents.display, label: 'участников крупных событий' },
     ]}
   />
 
@@ -63,7 +66,7 @@ const anna = people[0];
     text="Ada Tours работает с зарубежными туроператорами и турагентствами, MICE-агентствами, корпоративными группами и делегациями. В Бразилии мы связываем размещение, транспорт, площадки, переводчиков и встречи в одну программу."
     image="/media/home/rio-night-enhanced-20260930.webp"
     facts={[
-      ...ORG.business.b2bPartnerTypes,
+      ...org.business.b2bPartnerTypes,
       'Корпоративные группы и делегации',
     ]}
     reverse

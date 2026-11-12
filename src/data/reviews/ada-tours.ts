@@ -1,3 +1,5 @@
+import { localizedReviews } from '../../lib/i18n/company-proof.mjs';
+
 export interface AdaReview {
   id: string;
   author: string;
@@ -13,7 +15,7 @@ export interface AdaReview {
   text: string;
 }
 
-export const ADA_REVIEWS: AdaReview[] = [
+const RU_ADA_REVIEWS: AdaReview[] = [
   {
     id: 'review_irina_hernandez_02',
     author: 'Ирина Эрнандес Фернандес',
@@ -158,7 +160,11 @@ export const ADA_REVIEWS: AdaReview[] = [
     permission: 'approved_full_publication',
     text: 'Новогодняя поездка стала одним из самых ярких путешествий: праздник на Копакабане, водопады Игуасу, ледники Патагонии и Буэнос-Айрес. Расписание позволило совместить утренние экскурсии и свободное время для отдыха.',
   },
+
 ];
+
+// Canonical RU source is unchanged; EN receives an ID-bound text-only projection.
+export const ADA_REVIEWS: AdaReview[] = localizedReviews(RU_ADA_REVIEWS);
 
 // Confirmed overall company score; individual testimonial star scores are unknown.
 export const ADA_REVIEW_RATING = 5;

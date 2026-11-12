@@ -1,11 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
 import { withBase } from '../../lib/paths';
+import { caseTestimonialProvenanceNote } from '../../lib/i18n/company-proof.mjs';
 interface Props { caseId: string; title?: string; }
 const { caseId, title = 'Поездка, которую хочется повторить' } = Astro.props;
 const entry = (await getCollection('cases')).find(({ data }) => data.id === caseId);
 if (!entry?.data.testimonial) throw new Error(`Case testimonial missing: ${caseId}`);
 const { testimonial } = entry.data;
+const quoteNote = caseTestimonialProvenanceNote(caseId);
 ---
 
 <section class="commercial-quote section" aria-labelledby={`${caseId}-quote-title`}>
@@ -13,7 +15,7 @@ const { testimonial } = entry.data;
     <div><p class="eyebrow">После путешествия</p><h2 id={`${caseId}-quote-title`}>{title}</h2><a href={withBase(`/cases/${entry.data.slug}/`)}>Как была устроена эта поездка <span aria-hidden="true">↗</span></a></div>
     <figure>
       <blockquote data-case-quotation={caseId}><p>{testimonial.quote}</p></blockquote>
-      <figcaption>{testimonial.caption}</figcaption>
+      <figcaption>{testimonial.caption}{quoteNote && <small class="commercial-quote__note">{quoteNote}</small>}</figcaption>
     </figure>
   </div>
 </section>
@@ -27,5 +29,6 @@ const { testimonial } = entry.data;
   blockquote { margin: 0; }
   blockquote p { margin: 0; white-space: pre-line; font-size: clamp(1.04rem, 1.4vw, 1.35rem); line-height: 1.75; }
   figcaption { margin-top: 20px; color: var(--color-text-muted); font-size: .82rem; }
+  .commercial-quote__note { display: block; margin-top: 8px; }
   @media (max-width: 760px) { .commercial-quote__grid { grid-template-columns: 1fr; } figure { padding-left: 20px; } }
 </style>

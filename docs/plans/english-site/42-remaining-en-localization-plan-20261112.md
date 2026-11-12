@@ -119,7 +119,7 @@
 | 6 | in_progress | 350 EN alt + source-bound media resolver подготовлены; полный EN HTML аудит/CI и подтверждение Pages ожидаются |
 | 7 | not_started | — |
 | 8 | committed | [EN Schema-код 04b70cf](https://github.com/alexyakovlev79/adatours.ru/commit/04b70cfc9b4558e305d582731e650e8147e3ddf0), [коррекция теста c55367a](https://github.com/alexyakovlev79/adatours.ru/commit/c55367a8ad99d856d77a714fc0dc4dcab59eaf23). EN noindex JSON-LD отключен; проверка итогового CI ожидается |
-| 9 | not_started | — |
+| 9 | in_progress | [Аудит 6 149 EN страниц и адресные UI-исправления](https://github.com/alexyakovlev79/adatours.ru/pull/91) объединены; [итоговый EN preflight #43319957765](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43319957765) success, 40 855 кириллических вхождений с классификацией и исключениями; остаются этапы 6–8 и интерактивные состояния |
 | 10 | not_started | Отдельная визуальная проверка в Work после этапов 1–9 |
 
 ## Журнал этапа 1 — 12.11.2026
@@ -222,4 +222,13 @@
 **Итоговый машинный отчет:** `scripts/i18n/audit-en-residuals.mjs` формирует раздельные `stage9-residual-audit.json`, `stage9-residual-urls.ndjson` (каждый URL, DOM и значение), `stage9-js-sources.json` (только кандидаты JS исходников); архивирует GitHub Actions `en-stage9-complete-residual-inventory`. Учет `pagefind-record` отделен от действительно видимого UI; JS interactions в реальном браузере этой проверкой **не проверялись**.
 
 **Остаток этапа:** после дополнений повторно получить и сверить полный EN audit report на итоговом SHA. Этап 7 (английский title/description/OG/Twitter для всех каталожных типов) пока не подтвержден завершенным; этап 8 внесен в `main` другими исполнителями в ходе проверки, но это лишь подготовка локализованной Schema.org проекции, публичный JSON-LD по noindex-протоколу подавлен. Без этих зависимостей и без устранения реально неохваченных мультиязычных источников цель «ноль необъясненных UI/SEO» не достигнута. Массовые очереди/leases полностью сохранены без повторных переводов.
+
+
+### Проверенный итог первого прохода этапа 9 (13.11.2026)
+
+- [PR #91](https://github.com/alexyakovlev79/adatours.ru/pull/91) объединен в `main`: [merge commit bc25372b583e2e518cb4d1d3bcb662e494bd1449](https://github.com/alexyakovlev79/adatours.ru/commit/bc25372b583e2e518cb4d1d3bcb662e494bd1449). Ветку перед объединением явно синхронизировали с параллельным кодом этапа 8 без его перезаписи.
+- Итоговый полный EN noindex preflight [#43319957765](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43319957765) **success**, общий PR CI [#43319957575](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43319957575) **success**. Fulltext 7 056/7 056; 6 149 HTML; 1 849 EN / 4 300 RU-fallback; 404 991 проверенная внутренняя ссылка; нарушений noindex/canonical/отключения JSON-LD — 0. Это **preflight** без подтвержденного нового GitHub Pages deploy на `adatours-en`.
+- После локализации повторов и уточнения технических категорий полный аудит по тому же маршруту вернул **40 855** кириллических вхождений, **25 790** групп. Было 52 957, уменьшилось на 12 102; это разница машинных вхождений, **не** количество разных переводов. Остаток разбит: 11 389 допустимых RU body fallback; 3 204 технических Pagefind; 4 671 noscript fallback; 8 117 mixed text/name; 8 557 SEO (stage 7); 1 636 UI-кандидатов; 3 264 media (stage 6); 17 route-heading review.
+- Полная выгрузка с URL, DOM и значениями: GitHub artifact `en-stage9-complete-residual-inventory`, ID `13990536547` (3 файла JSON/NDJSON). Stage 6 media audit: 7 933 кириллических img alt, 1 833 уникальных image src; при этом **ни один** из уже привязанных 350 известных EN alt не показан ошибочно RU. Для остальных alt нет оснований генерировать фиктивные переводы по имени файла.
+- Источники ру-имен туров/мест, оригинальных цитат, отсутствующей переводческой проекции конкретных слотов и интерактивные JS-ветки требуют отдельного предметного разбора; исходный скан сохраняет их, не переписывая массовые immutable translation receipts. **Этап 9 остается in_progress, пока не закрыты подтвержденные пропуски, исходные зависимости этапов 6–8 и не выполнена предусмотренная его контрактом проверка JS состояний.** Статус `verified_en_noindex` и публичная индексация не выставлялись.
 

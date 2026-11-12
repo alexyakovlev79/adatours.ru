@@ -79,7 +79,7 @@ test('English Service, CollectionPage and pagination preserve page-local ItemLis
   const dmc=find(service,'Service')[0];
   assert.equal(dmc.serviceType,'Inbound destination management in Brazil and Latin America');
   assert.equal(dmc.name,'DMC in Brazil and Latin America');
-  assert.ok(dmc.keywords.every(term=>!/[\\u0400-\\u052f]/u.test(term)));
+  assert.ok(dmc.keywords.every(term=>!/[\u0400-\u052f]/u.test(term)));
   assert.equal(dmc.provider['@id'],root+'#organization');
 });
 

@@ -7,6 +7,7 @@ import {readFile, writeFile, mkdir} from 'node:fs/promises';
 import {resolve, join, dirname, sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import yaml from 'js-yaml';
+import {parseSeoGeoArticle} from '../../src/lib/seo-geo.mjs';
 
 const ROOT='data/i18n/fulltext-swarm/v1/';
 const CYR=/[\u0400-\u052f]/u;
@@ -154,6 +155,7 @@ async function main(){
     if(sha(raw)!==item.sha)throw new Error('source_changed');
     const projected=applyFulltextToSource(raw.toString('utf8'),text.enMarkdown,kind,item.sha);
     if(projected.status==='excluded'){summary.excluded++;group.excluded++;continue;}
+    if(kind==='seo_geo_article')parseSeoGeoArticle(projected.content,item.path);
     await writeFile(file,projected.content,'utf8');
     summary[projected.status]++;group[projected.status]++;
     if(summary.appliedSample.length<10)summary.appliedSample.push(item.path);

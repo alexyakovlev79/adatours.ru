@@ -22,7 +22,7 @@ const attrs=tag=>{
   return result;
 };
 const residual=new Map(),samples=[],deferred=new Set(),knownLeaks=new Map();
-let imageTags=0,described=0,english=0,russian=0,unlabelled=0,captionsRu=0,pagesWithRussian=0;
+let imageTags=0,described=0,english=0,russianAlts=0,unlabelled=0,captionsRu=0,pagesWithRussian=0;
 for(const file of files){
   const html=fs.readFileSync(file,'utf8');
   let pageRussian=false;
@@ -35,7 +35,7 @@ for(const file of files){
     if(!alt.trim()){unlabelled++;continue;}
     described++;
     if(russian.test(alt)){
-      russian++;pageRussian=true;
+      russianAlts++;pageRussian=true;
       const current=residual.get(src)??{src,occurrences:0,values:new Set(),pages:0};
       current.occurrences++;
       current.values.add(alt);current.pages++;
@@ -53,7 +53,7 @@ for(const file of files){
 }
 const summary={
   schemaVersion:1,scope:'noindex-EN-media-read-only',pagesScanned:files.length,
-  imageTags,describedImages:described,englishImageAlts:english,russianImageAlts:russian,
+  imageTags,describedImages:described,englishImageAlts:english,russianImageAlts:russianAlts,
   emptyOrDecorativeAlts:unlabelled,uniqueImagesWithRussianAlt:residual.size,
   figuresWithRussianCaption:captionsRu,pagesWithRussianPhotoText:pagesWithRussian,
   translatedKnownMediaStillWithRussianAlt:knownLeaks.size,

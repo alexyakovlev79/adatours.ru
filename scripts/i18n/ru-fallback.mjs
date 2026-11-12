@@ -60,7 +60,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  // Social cards for shared EN keep their English metadata. Canonical and
  // hreflang remain suppressed on this noindex staging host, by design.
  if(sharedContent){
-  const finalUrl='https://alexyakovlev79.github.io'+EN_STAGING_BASE+'en'+route.slice(1);
+  const finalUrl='https://alexyakovlev79.github.io'+EN_STAGING_BASE+'en'+route;
   for(const meta of walk(head,n=>n.tagName==='meta')){
    const property=get(meta,'property')||get(meta,'name')||'';
    if(property==='og:url')set(meta,'content',finalUrl);

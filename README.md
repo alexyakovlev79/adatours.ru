@@ -1,56 +1,44 @@
-# adatours.ru
+# Ada Tours — adatours.ru
 
-**Для ChatGPT, Codex и других агентов:** начни с [AGENTS.md](AGENTS.md). Это актуальный указатель на рабочие инструкции по типу задачи; не ориентируйся на устаревшие копии регламентов.
+Рабочий сайт Ada Tours: https://adatours.ru/ — DMC и принимающий туроператор по Бразилии и Латинской Америке.
 
-Official website of Ada Tours — DMC and tour operator for Brazil and Latin America.
+**ChatGPT, Codex и другим агентам:** начните с [AGENTS.md](AGENTS.md), затем прочитайте профильную инструкцию из актуальной ветки `main`. Исторические локальные файлы и устаревшие копии инструкций не определяют текущую архитектуру.
 
-## Stack
+## Действующая архитектура
 
-- Astro 7
-- Static output
-- GitHub Pages
-- Astro Content Collections
-- CSS-first UI, minimal client JavaScript
+- **Код, текстовый контент и сборка сайта:** Astro 7, GitHub, GitHub Pages.
+- **Все опубликованные фотографии сайта:** Yandex Object Storage, `https://img.adatours.ru/media/...`. Дополнительная CDN сейчас не используется.
+- `/media/...` в Astro/Markdown/JSON — **логический путь к изображению в Yandex Cloud**, а не команда читать или загружать файл через GitHub.
+- В `public/media/` остались исторические файлы времен миграции, которые хранятся в Git как резерв и используются в старых проверках/сборке. **Это не место для новых фотографий и не предпочтительный источник опубликованных изображений.**
+- Новые JPG/WebP/PNG/видео **нельзя сохранять или заменять в `public/media/` и коммитить в Git**. Их загружают напрямую в S3 по утвержденной процедуре, подтверждают SHA-256 и отражают текстовым receipt в `src/data/media/direct-s3-uploads.json`; затем меняют соответствующее поле `/media/...` в контенте.
+- Не следует искать новое пользовательское вложение среди исходников сайта: для замены фотографии использовать файл, который пользователь действительно прикрепил к текущему чату, и безопасную загрузку на Yandex Cloud.
 
-## Preview and production paths
+Рабочие инструкции по медиатеке: [MEDIA_DELIVERY.md](docs/MEDIA_DELIVERY.md), [direct-s3-upload.md](docs/workflows/direct-s3-upload.md); для Анны и других допущенных редакторов — [editor-s3-token-issues.md](docs/workflows/editor-s3-token-issues.md).
 
-GitHub Pages preview uses:
+## Пример: Анна меняет свою фотографию на странице «О компании»
 
-- `SITE_ORIGIN=https://alexyakovlev79.github.io`
-- `SITE_BASE=/adatours.ru`
+На `https://adatours.ru/about/` фотография Анны берется из профиля `person_anna` в `src/content/people/anna-avanesova.md` (поле `photo.src`). Этот путь указывает на S3-изображение после публикации сайта.
 
-Production on the custom domain uses:
+Для новой фотографии из вложения Анны:
 
-- `SITE_ORIGIN=https://adatours.ru/`
-- `SITE_BASE=/`
+1. Открыть текущие инструкции из `AGENTS.md`, `docs/workflows/editor-s3-token-issues.md` и `docs/workflows/direct-s3-upload.md`.
+2. Использовать **ChatGPT Work или Codex** с доступом к фактическому прикрепленному файлу, Node.js, HTTPS и собственному подключенному GitHub Анны.
+3. Получить разрешенный временный **зашифрованный S3-допуск** через GitHub Issue `[ADA-MEDIA-TOKEN]`. В публичный Issue не класть фото, приватный ключ, IAM-токен и другую закрытую информацию.
+4. Загрузить новую версионную фотографию **напрямую в `img.adatours.ru`**, проверить ее повторным чтением из S3 и сохранить receipt.
+5. Отдельно обновить `person_anna.photo.src` и текстовый S3-реестр, затем подтвердить успешный штатный GitHub Pages deploy.
 
-Components resolve internal links and local media through `import.meta.env.BASE_URL`, so the preview subpath does not leak into production URLs.
+Обработчик текстовых запросов `[ADA-EDIT]` **не поддерживает** тип `Person` и замену `photo.src`. Не следует пытаться передавать бинарные изображения через этот обработчик. Обычный ChatGPT без Work-компьютера/локального файла и S3-доступа не может выполнить всю загрузку.
 
-The GitHub Pages preview is marked `noindex,nofollow,noarchive`.
+## Preview и production
 
-## Current prototype
+Предпросмотр GitHub Pages: `SITE_ORIGIN=https://alexyakovlev79.github.io`, `SITE_BASE=/adatours.ru`. Он закрыт от индексации (`noindex,nofollow,noarchive`).
 
-The first visual prototype includes:
+Рабочий сайт: `SITE_ORIGIN=https://adatours.ru/`, `SITE_BASE=/`. Изображения разрешаются на `https://img.adatours.ru` по правилам текущего медиапроцесса.
 
-- Home
-- Brazil country page
-- Rio de Janeiro destination page
-- Luxury Brazil tour detail
-- global header / mobile menu / footer
-- 404
-- core editorial and tour components
-
-Photography under `public/media/prototype/` is provisional and will be reselected before production.
-
-## Local development
+## Разработка
 
 ```bash
 npm install
 npm run dev
-```
-
-## Build
-
-```bash
 npm run build
 ```

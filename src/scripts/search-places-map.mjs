@@ -92,12 +92,12 @@ export function createSearchPlacesMap(root) {
         if(provider==='yandex'){
           const mod=await import('./geo-map-yandex.mjs');
           const map=await mod.renderYandexMap(canvas,data,keys.yandex,select,
-            loadProviderScript,createPin,'ru');
+            loadProviderScript,createPin,locale);
           return {map,redraw:mod.redrawYandexSearchPoints};
         }
         const mod=await import('./geo-map-google.mjs');
         const map=await mod.renderGoogleMap(canvas,data,keys.google,
-          root.dataset.googleMapId||'',select,loadProviderScript,createPin,'ru');
+          root.dataset.googleMapId||'',select,loadProviderScript,createPin,locale);
         return {map,redraw:mod.redrawGoogleSearchPoints};
       }catch(e){error=e;canvas.replaceChildren();}
     }

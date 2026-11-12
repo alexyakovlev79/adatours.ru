@@ -154,6 +154,9 @@ jobs:
           node --test tests/i18n/fulltext-materializer.test.mjs tests/i18n/fulltext-publication-repairs.test.mjs
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
+          node --check scripts/i18n/audit-en-media-copy.mjs
+          node --check scripts/i18n/audit-en-residuals.mjs
+          node --test tests/i18n/stage9-residual-ui.test.mjs
           node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/schema-stage-eight.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
@@ -161,6 +164,7 @@ jobs:
           node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
+          node scripts/i18n/audit-en-residuals.mjs ../en-pages-site ../stage9-residual-audit.json ../stage9-residual-urls.ndjson ../stage9-js-sources.json
           node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022
       - name: Confirm this source repository did not deploy or overwrite RU Pages
@@ -179,3 +183,14 @@ jobs:
             en-pages-site/translation-receipt.json
             stage6-media-audit.json
           if-no-files-found: error
+
+      - name: Preserve stage-nine residual inventory even if other checks fail
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: en-stage9-complete-residual-inventory
+          path: |
+            stage9-residual-audit.json
+            stage9-residual-urls.ndjson
+            stage9-js-sources.json
+          if-no-files-found: warn

@@ -15,6 +15,10 @@
 
 Рабочие инструкции по медиатеке: [MEDIA_DELIVERY.md](docs/MEDIA_DELIVERY.md), [direct-s3-upload.md](docs/workflows/direct-s3-upload.md); для Анны и других допущенных редакторов — [editor-s3-token-issues.md](docs/workflows/editor-s3-token-issues.md).
 
+## Как заменить фотографию впервые
+
+Для **любой** фотографии, включая тур, страну, место, сотрудника или главную страницу, начни с [AGENTS.md → «Замена любой фотографии: быстрый маршрут для агента без контекста»](AGENTS.md). Там описана вся последовательность от определения владельца изображения и проверки полномочий до S3-токена, подтвержденной загрузки, обновления MD/JSON и GitHub Pages. Специфика выпуска токена — в [editor-s3-token-issues.md](docs/workflows/editor-s3-token-issues.md), формат загрузки и receipts — в [direct-s3-upload.md](docs/workflows/direct-s3-upload.md). Редакторский `[ADA-MEDIA-TOKEN]` Issue выдает **только допуск к S3**; он не обновляет сайт сам по себе. При отсутствии Work-компьютера, настоящего исходного файла или разрешенной записи в GitHub агент должен назвать точный блокер.
+
 ## Пример: Анна меняет свою фотографию на странице «О компании»
 
 На `https://adatours.ru/about/` фотография Анны берется из профиля `person_anna` в `src/content/people/anna-avanesova.md` (поле `photo.src`). Этот путь указывает на S3-изображение после публикации сайта.

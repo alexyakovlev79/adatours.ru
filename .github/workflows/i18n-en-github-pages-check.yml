@@ -26,7 +26,7 @@ on:
       - 'src/pages/webinars/**'
       - 'src/pages/partners/**'
       - 'src/components/authority/**'
-      - 'tests/i18n/authority-stage-four.test.mjs'
+      - 'tests/i18n/authority-stage-four.test.mjs tests/i18n/media-captions-stage-six.test.mjs'
       - 'src/pages/country/**'
       - 'src/pages/interests/**'
       - 'src/pages/404.astro'
@@ -155,6 +155,7 @@ jobs:
           node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
+          node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022
       - name: Confirm this source repository did not deploy or overwrite RU Pages
         run: |
@@ -168,5 +169,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: en-shared-translation-receipt
-          path: en-pages-site/translation-receipt.json
+          path: |
+            en-pages-site/translation-receipt.json
+            stage6-media-audit.json
           if-no-files-found: error

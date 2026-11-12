@@ -22,7 +22,7 @@ const description = tr('Принимающий туроператор Ada Tours:
 const heroImage = '/media/home/rio-night-enhanced-20260930.webp';
 ---
 
-<BaseLayout
+<BaseLayout lang={uiLocale}
   leadTitle={tr("Запросить B2B-предложение")}
   leadEntityId="dmc"
   title={title}
@@ -178,7 +178,7 @@ const heroImage = '/media/home/rio-night-enhanced-20260930.webp';
       },
       {
         question: tr('На каких языках можно общаться с Ada Tours?'),
-        answer: tr('Языки общения с партнерами: ') + ORG.service.languages.map((language) => language.toLowerCase()).join(', ') + tr('. Язык сопровождения на маршруте указываем в предложении по поездке.'),
+        answer: tr('Языки общения с партнерами: ') + ORG.service.languages.map((language) => uiLocale==='en'?commercialText(language,uiLocale):language.toLowerCase()).join(', ') + tr('. Язык сопровождения на маршруте указываем в предложении по поездке.'),
       },
       {
         question: tr('Кто координирует изменения во время путешествия?'),

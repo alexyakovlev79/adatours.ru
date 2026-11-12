@@ -7,17 +7,22 @@ import Hero from '../components/editorial/Hero.astro';
 import InterestCard from '../components/editorial/InterestCard.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { interestCopy, interestTourCount, relatedInterestCount } from '../lib/interest-copy.mjs';
+import {sharedUiLocale,sharedCountryName,sharedInterestName,translateUiText} from '../lib/i18n/shared-ui-locale.mjs';
+import {countInEnglish,uiText} from '../lib/i18n/messages.mjs';
 import { destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
 import { withBase } from '../lib/paths';
 import { buildInterestHub, countLabel, interestTourCatalogPath, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath } from '../lib/interest-model.mjs';
 const { entry } = Astro.props;
 const d = entry.data;
-const copy = interestCopy(d.id);
+const uiLocale = sharedUiLocale();
+const t = (text:string) => translateUiText(text,uiLocale);
+const displayThemeName = sharedInterestName(d.id,d.name,uiLocale);
+const copy = interestCopy(d.id,uiLocale);
 const [countries, tours, destinations, excursions, themes] = await Promise.all([
   getCollection('countries'), getCollection('tours'), getCollection('destinations'), getCollection('excursions'), getCollection('themes'),
 ]);
 const hub = buildInterestHub(d.id, { countries, tours, destinations, excursions, themes });
-const countryNames = new Map(countries.map((row) => [row.data.id, row.data.name]));
+const countryNames = new Map(countries.map((row) => [row.data.id, sharedCountryName(row.data.slug,row.data.name,uiLocale)]));
 const excerpt = (text = '', max = 220) => text.length > max ? `${text.slice(0, max).replace(/\s+\S*$/, '')}…` : text;
 const experienceProps = (row) => ({
   entityId: row.id, title: row.entry.data.name ?? row.entry.data.title,
@@ -25,19 +30,19 @@ const experienceProps = (row) => ({
   imageTextAlign: row.entry.data.imageTextAlign,
   href: row.kind === 'destination' ? destinationPath(row.entry.data) : excursionPath(row.entry.data),
   eyebrow: `${row.kind === 'destination' ? 'Место' : 'Экскурсия'} · ${countryNames.get(row.countryId) ?? ''}`,
-  meta: row.tourCount ? interestTourCount(d.id, row.tourCount) : 'Идея для вашей поездки',
+  meta: row.tourCount ? interestTourCount(d.id, row.tourCount,uiLocale) : (uiLocale==='en'?'An idea for your journey':'Идея для вашей поездки'),
 });
 const tourCatalog = interestTourCatalogPath(d);
 const experienceCatalogs = [
-  { kind: 'destination', label: `Все места: ${d.name}`, href: interestDestinationCatalogPath(d) },
-  { kind: 'excursion', label: `Все экскурсии: ${d.name}`, href: interestExcursionCatalogPath(d) },
+  { kind: 'destination', label: uiLocale==='en'?`All places: ${displayThemeName}`:`Все места: ${d.name}`, href: interestDestinationCatalogPath(d) },
+  { kind: 'excursion', label: uiLocale==='en'?`All excursions: ${displayThemeName}`:`Все экскурсии: ${d.name}`, href: interestExcursionCatalogPath(d) },
 ].filter((catalog) => hub.allExperiences.some((row) => row.kind === catalog.kind));
 ---
-<BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id} title={seoThemeHubTitle(d.name,hub.allTours.length)} description={d.summary} image={d.hero?.src}
+<BaseLayout leadTitle={uiLocale==='en'?`Plan a journey: ${displayThemeName}`:`Собрать поездку: ${d.name}`} leadEntityId={d.id} title={seoThemeHubTitle(d.name,hub.allTours.length)} description={d.summary} image={d.hero?.src}
   canonical={themePath(d)} hideCurrentBreadcrumbLabel={true}
-  breadcrumbs={[{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }]}>
-  <Hero contentSized eyebrow="По интересам" title={d.name} intro={d.summary} image={d.hero?.src} video={d.heroVideo} imageTextAlign={d.imageTextAlign}
-    ctaLabel="Собрать поездку" ctaHref={`${themePath(d)}#request`} />
+  breadcrumbs={[{ label: uiText(uiLocale,'nav.interests'), href: '/interests/' }, { label: displayThemeName, href: themePath(d) }]}>
+  <Hero contentSized eyebrow={uiText(uiLocale,'nav.interests')} title={displayThemeName} intro={d.summary} image={d.hero?.src} video={d.heroVideo} imageTextAlign={d.imageTextAlign}
+    ctaLabel={uiLocale==='en'?'Plan your journey':'Собрать поездку'} ctaHref={`${themePath(d)}#request`} />
   <div class="theme-hub" data-interest-hub={d.id} data-interest-total-tours={hub.allTours.length}>
     {hub.stories.length > 0 && <section class="section" data-interest-section="stories">
       <div class="container">
@@ -47,14 +52,14 @@ const experienceCatalogs = [
     </section>}
     <section class="section theme-tours" data-interest-section="tours">
       <div class="container">
-        <header class="theme-heading"><p class="eyebrow">Готовые маршруты · {countLabel(hub.allTours.length)}</p><h2>{copy.toursTitle}</h2>
+        <header class="theme-heading"><p class="eyebrow">Готовые маршруты · {uiLocale==='en'?countInEnglish(hub.allTours.length,'tour','tours'):countLabel(hub.allTours.length)}</p><h2>{copy.toursTitle}</h2>
           <p>{copy.tourIntro}</p></header>
         {hub.tours.length > 0 ? <div class="theme-grid">{hub.tours.map((tour) => <InterestCard
           entityId={tour.data.id} title={tour.data.title} image={tour.data.hero?.src} href={tourPath(tour.data)}
-          eyebrow={d.name}
-          meta={[tour.data.durationDays ? countLabel(tour.data.durationDays, ['день', 'дня', 'дней']) : '', ...(tour.data.routeCountries ?? tour.data.countries).map((id) => countryNames.get(id)).filter(Boolean)].join(' · ')}
+          eyebrow={displayThemeName}
+          meta={[tour.data.durationDays ? uiLocale==='en'?countInEnglish(tour.data.durationDays,'day','days'):countLabel(tour.data.durationDays, ['день', 'дня', 'дней']) : '', ...(tour.data.routeCountries ?? tour.data.countries).map((id) => countryNames.get(id)).filter(Boolean)].join(' · ')}
         />)}</div> : <p class="theme-empty">Готового тура с этим интересом в действующем каталоге пока нет. Расскажите, что для вас важно: подберём программу индивидуально.</p>}
-        {hub.allTours.length > 0 && <a class="theme-more" href={withBase(tourCatalog)}>Все туры: {d.name} <span aria-hidden="true">→</span></a>}
+        {hub.allTours.length > 0 && <a class="theme-more" href={withBase(tourCatalog)}>{uiLocale==='en'?'All tours:':'Все туры:'} {displayThemeName} <span aria-hidden="true">→</span></a>}
       </div>
     </section>
     {hub.countries.length > 0 && <section class="theme-geography" data-interest-section="countries">
@@ -65,8 +70,8 @@ const experienceCatalogs = [
         <DestinationBand
           headingTag="h3"
           title={row.entry.data.name}
-          eyebrow={interestTourCount(d.id, row.tourCount)}
-          text={[row.places.join(' · '), row.optionalCount ? `Дополнительное посещение страны: ${countLabel(row.optionalCount)}` : ''].filter(Boolean).join('. ')}
+          eyebrow={interestTourCount(d.id, row.tourCount,uiLocale)}
+          text={[row.places.join(' · '), row.optionalCount ? uiLocale==='en'?`Optional country visit: ${countInEnglish(row.optionalCount,'tour','tours')}`:`Дополнительное посещение страны: ${countLabel(row.optionalCount)}` : ''].filter(Boolean).join('. ')}
           image={row.coverTour?.data.hero?.src ?? row.entry.data.hero?.src}
           imageTextAlign={row.entry.data.imageTextAlign}
           href={interestTourCatalogPath(d, row.entry.data)}
@@ -95,7 +100,7 @@ const experienceCatalogs = [
             <DestinationBand
               headingTag="h3"
               title={row.entry.data.name}
-              eyebrow={relatedInterestCount(row.tourCount)}
+              eyebrow={relatedInterestCount(row.tourCount,uiLocale)}
               image={row.entry.data.hero?.src}
               imageTextAlign={row.entry.data.imageTextAlign}
               href={themePath(row.entry.data)}
@@ -106,7 +111,7 @@ const experienceCatalogs = [
       </div>
     </section>}
     {hub.allRelatedThemes.length > 0 && <div class="container section--tight">
-      <a class="theme-more" href={withBase(relatedInterestCatalogPath(d))}>Все близкие интересы <span aria-hidden="true">→</span></a>
+      <a class="theme-more" href={withBase(relatedInterestCatalogPath(d))}>{uiLocale==='en'?'All related interests':'Все близкие интересы'} <span aria-hidden="true">→</span></a>
     </div>}
     <section class="section--tight theme-copy"><div class="container prose"><slot /></div></section>
   </div>

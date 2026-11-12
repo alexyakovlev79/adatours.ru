@@ -17,7 +17,7 @@ import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import { countLabel } from '../../lib/interest-model.mjs';
 import { countInEnglish } from '../../lib/i18n/messages.mjs';
-import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale,sharedCountryName } from '../../lib/i18n/shared-ui-locale.mjs';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { countryPath, mainTourCountries, tourPath } from '../../lib/routes';
@@ -103,8 +103,9 @@ const durations = multiCountryTours
 const minDuration = durations.length ? Math.min(...durations) : undefined;
 const maxDuration = durations.length ? Math.max(...durations) : undefined;
 const durationValue = minDuration && maxDuration
-  ? minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`
-  : 'Гибко';
+  ? uiLocale === 'en' ? (minDuration === maxDuration ? countInEnglish(minDuration,'day','days') : `${minDuration}–${maxDuration} days`)
+    : (minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`)
+  : (uiLocale === 'en' ? 'Flexible' : 'Гибко');
 
 const hero = pageHeroTour?.data.hero?.src ?? fallbackHero;
 const proofImage = proofCoverTour?.data.hero?.src ?? fallbackHero;
@@ -175,7 +176,7 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
             const data = entry.data;
             const countryNames = mainTourCountries(data)
               .sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
-              .map((country) => uiLocale === 'en' ? countryEntryById.get(country.id)?.data.name ?? country.name : country.name);
+              .map((country) => uiLocale === 'en' ? sharedCountryName(country.slug,countryEntryById.get(country.id)?.data.name ?? country.name,uiLocale) : country.name);
             const countries = uiLocale === 'en' ? countryNames.join(' + ') : formatMultiCountryNames(countryNames);
             const meta = [
               countries,
@@ -251,8 +252,8 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
       <div data-country-band={country.id} data-cover-tour={coverTourId}>
         <DestinationBand
           headingTag="h3"
-          eyebrow={countLabel(count, ['маршрут', 'маршрута', 'маршрутов'])}
-          title={country.name}
+          eyebrow={uiLocale==='en'?countInEnglish(count,'itinerary','itineraries'):countLabel(count, ['маршрут', 'маршрута', 'маршрутов'])}
+          title={sharedCountryName(country.slug,country.name,uiLocale)}
           image={image}
           imageTextAlign={imageTextAlign}
           href={countryPath(country)}
@@ -275,10 +276,10 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
   </section>
 
   <details class="all-country-combinations container" data-multi-country-link-index>
-    <summary>Все сочетания стран ({allCombinationLinks.length})</summary>
-    <nav aria-label="Полный список сочетаний стран" data-pagefind-ignore="all">
+    <summary>{uiLocale==='en'?'All country combinations':'Все сочетания стран'} ({allCombinationLinks.length})</summary>
+    <nav aria-label={uiLocale==='en'?'Complete list of country combinations':'Полный список сочетаний стран'} data-pagefind-ignore="all">
       {allCombinationLinks.map((row) => (
-        <a href={withBase(row.path)}>{formatMultiCountryNames(row.countries.map((country) => country.name))}</a>
+        <a href={withBase(row.path)}>{uiLocale==='en'?row.countries.map((country)=>sharedCountryName(country.slug,country.name,uiLocale)).join(' + '):formatMultiCountryNames(row.countries.map((country) => country.name))}</a>
       ))}
     </nav>
   </details>

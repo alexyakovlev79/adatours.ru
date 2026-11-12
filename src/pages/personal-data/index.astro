@@ -1,14 +1,17 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
+import {uiText} from '../../lib/i18n/messages.mjs';
+const locale=sharedUiLocale();
 ---
 
-<BaseLayout title="Обработка персональных данных" headerTheme="dark">
+<BaseLayout title={uiText(locale,'footer.personalData')} lang={locale} headerTheme="dark">
   <section class="section">
     <div class="container prose">
       <p class="eyebrow">Legal</p>
-      <h1>Обработка персональных данных</h1>
+      <h1>{uiText(locale,'footer.personalData')}</h1>
       <p>
-        Получатель персональных данных, передаваемых через формы сайта adatours.ru:
+        {locale==='en'?'The recipient of personal data submitted through forms on adatours.ru is:':'Получатель персональных данных, передаваемых через формы сайта adatours.ru:'}
         <strong>ADA TOURS 2007 - OPERADORA DE TURISMO LTDA</strong>,
         CNPJ 08.537.782/0001-04, Avenida Nossa Senhora de Copacabana, 680, Sala 916,
         Copacabana, Rio de Janeiro - RJ, CEP 22050-001, Brasil.

@@ -8,7 +8,7 @@ import { isActiveEntity } from '../lib/archive.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../lib/country-popularity';
 import { buildInterestIndex, countLabel } from '../lib/interest-model.mjs';
 import { countInEnglish } from '../lib/i18n/messages.mjs';
-import { sharedUiLocale } from '../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale,sharedCountryName,sharedInterestName,translateUiText } from '../lib/i18n/shared-ui-locale.mjs';
 import { interestTourCount } from '../lib/interest-copy.mjs';
 import { compareToursBySalesFit } from '../lib/tour-ranking';
 import { countryPath, mainTourCountries, themePath, tourPath } from '../lib/routes';
@@ -49,13 +49,14 @@ const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionE
   getCollection('people', activeRu),
 ]);
 const countryDisplayNames = uiLocale === 'en'
-  ? new Map(countryEntries.map(({ data }) => [data.id, data.name]))
+  ? new Map(countryEntries.map(({ data }) => [data.id, sharedCountryName(data.slug,data.name,uiLocale)]))
   : new Map<string, string>();
 
 const tours = [...tourEntries].sort(compareToursBySalesFit);
 const vipTourPaths = await getVipTourPaths();
 const countryCounts = buildCountryTourCounts(tours);
 const countries = [...countryEntries].sort(compareCountriesByPopularity(countryCounts));
+const countryTourLabel = (count:number) => uiLocale === 'en' ? countInEnglish(count,'tour','tours') : countLabel(count,['тур','тура','туров']);
 const brazil = countries.find((country) => country.data.id === 'country_brazil');
 const leadingCountry = brazil ?? countries[0];
 const otherCountries = countries.filter((country) => country.data.id !== leadingCountry?.data.id).slice(0, 4);
@@ -155,7 +156,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
       </nav>
       <div class="home-start__search">
         <p>Уже знаете название города, места или тура?</p>
-        <SearchTrigger label="Найти на сайте" />
+        <SearchTrigger label={uiLocale==='en'?'Search the site':'Найти на сайте'} />
       </div>
     </div>
   </section>
@@ -171,8 +172,8 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
     {leadingCountry && (
       <DestinationBand
         headingTag="h3"
-        eyebrow={countryCounts.get(leadingCountry.data.id) ? countLabel(countryCounts.get(leadingCountry.data.id)!, ['тур', 'тура', 'туров']) : 'Направление Ada Tours'}
-        title={leadingCountry.data.name}
+        eyebrow={countryCounts.get(leadingCountry.data.id) ? countryTourLabel(countryCounts.get(leadingCountry.data.id)!) : 'Направление Ada Tours'}
+        title={sharedCountryName(leadingCountry.data.slug,leadingCountry.data.name,uiLocale)}
         text={leadingCountry.data.id === 'country_brazil'
           ? 'Рио-де-Жанейро, Игуасу, Амазония, Пантанал и океан. Выберите свой маршрут по Бразилии.'
           : leadingCountry.data.summary}
@@ -187,8 +188,8 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
         {otherCountries.map((country) => (
           <DestinationBand
             headingTag="h3"
-            eyebrow={countLabel(countryCounts.get(country.data.id) ?? 0, ['тур', 'тура', 'туров'])}
-            title={country.data.name}
+            eyebrow={countryTourLabel(countryCounts.get(country.data.id) ?? 0)}
+            title={sharedCountryName(country.data.slug,country.data.name,uiLocale)}
             href={countryPath(country.data)}
             image={country.data.hero?.src}
             mobileCover={mobileCoverFor(country.data.hero?.src)}
@@ -208,7 +209,8 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
     <div class="container">
       <div class="home-heading">
         <div>
-          <p class="eyebrow">{themeEntries.filter(activeRu).length} интересов</p>
+          <p class="eyebrow">{uiLocale==='en'?countInEnglish(themeEntries.filter(activeRu).length,'travel interest','travel interests'):
+            `${themeEntries.filter(activeRu).length} интересов`}</p>
           <h2 id="home-interests-title">Ради чего хочется лететь?</h2>
         </div>
         <p>Выберите, что хочется увидеть или попробовать. Мы покажем страны и маршруты, где это впечатление становится частью путешествия.</p>
@@ -218,8 +220,8 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
         {visualInterests.map(({ entry, tourCount }, index) => (
           <InterestCard
             entityId={entry.data.id}
-            title={entry.data.name}
-            meta={interestTourCount(entry.data.id, tourCount)}
+            title={sharedInterestName(entry.data.id,entry.data.name,uiLocale)}
+            meta={interestTourCount(entry.data.id, tourCount,uiLocale)}
             image={entry.data.hero?.src}
             href={themePath(entry.data)}
             mobileCover={mobileCoverFor(entry.data.hero?.src, index % 3 !== 0)}
@@ -229,7 +231,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
     </div>
     <div class="home-more-strip home-more-strip--next-tours">
       <div class="container">
-        <a class="home-all-link" href={withBase('/interests/')}>Открыть все {themeEntries.filter(activeRu).length} интересов <span aria-hidden="true">↗</span></a>
+        <a class="home-all-link" href={withBase('/interests/')}>{uiLocale==='en'?`Explore all ${themeEntries.filter(activeRu).length} travel interests`:`Открыть все ${themeEntries.filter(activeRu).length} интересов`} <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </section>
@@ -394,7 +396,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
     )}
     <nav class="container home-proof-links" aria-label="Больше об Ada Tours">
       {ABOUT_NAV_LINKS.map((link) => (
-        <a href={withBase(link.href)}>{link.label} <span aria-hidden="true">↗</span></a>
+        <a href={withBase(link.href)}>{translateUiText(link.label,uiLocale)} <span aria-hidden="true">↗</span></a>
       ))}
     </nav>
   </section>

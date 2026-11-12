@@ -13,7 +13,7 @@ import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import { countLabel } from '../../lib/interest-model.mjs';
 import { countInEnglish } from '../../lib/i18n/messages.mjs';
-import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale,sharedCountryName } from '../../lib/i18n/shared-ui-locale.mjs';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { mainTourCountries, tourPath } from '../../lib/routes';
 import { withBase } from '../../lib/paths';
@@ -24,7 +24,7 @@ const uiLocale = sharedUiLocale();
 const allTours = await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
 const allCountries = await getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
 const countryDisplayNames = uiLocale === 'en'
-  ? new Map(allCountries.map(({ data }) => [data.id, data.name]))
+  ? new Map(allCountries.map(({ data }) => [data.id, sharedCountryName(data.slug,data.name,uiLocale)]))
   : new Map<string, string>();
 const vipSelection = selectVipTours(allTours);
 const vipTours = vipSelection.entries;
@@ -64,8 +64,9 @@ const durations = vipTours.map((entry) => entry.data.durationDays)
 const minDuration = durations.length ? Math.min(...durations) : undefined;
 const maxDuration = durations.length ? Math.max(...durations) : undefined;
 const durationValue = minDuration && maxDuration
-  ? minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`
-  : 'Гибко';
+  ? uiLocale === 'en' ? (minDuration === maxDuration ? countInEnglish(minDuration,'day','days') : `${minDuration}–${maxDuration} days`)
+    : (minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`)
+  : (uiLocale === 'en' ? 'Flexible' : 'Гибко');
 
 const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
 const listSchema = {

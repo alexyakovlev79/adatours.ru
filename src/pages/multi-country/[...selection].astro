@@ -17,7 +17,7 @@ import { paginateCatalog } from '../../lib/catalog-pagination';
 import { mainTourCountries, tourPath } from '../../lib/routes';
 import { countLabel } from '../../lib/interest-model.mjs';
 import { countInEnglish } from '../../lib/i18n/messages.mjs';
-import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale,sharedCountryName,sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
 import { withBase } from '../../lib/paths';
 
 export async function getStaticPaths() {
@@ -43,22 +43,23 @@ const {
 } = Astro.props;
 const uiLocale = sharedUiLocale();
 const countryDisplayNames = uiLocale === 'en'
-  ? new Map((await getCollection('countries', ({ data }) => data.locale === 'ru')).map(({ data }) => [data.id, data.name]))
+  ? new Map((await getCollection('countries', ({ data }) => data.locale === 'ru')).map(({ data }) => [data.id,sharedCountryName(data.slug,data.name,uiLocale)]))
   : new Map<string, string>();
-const names = comboCountries.map((country) => country.name);
+const themeName = theme ? sharedInterestName(theme.id,theme.name,uiLocale) : '';
+const names = comboCountries.map((country) => uiLocale==='en'?sharedCountryName(country.slug,country.name,uiLocale):country.name);
 // Page titles always use the canonical alphabetical country order.
-const countriesText = names.length ? formatMultiCountryNames(names) : 'Несколько стран';
-const heading = theme ? theme.name + ': ' + countriesText : 'Туры: ' + countriesText;
+const countriesText = names.length ? (uiLocale==='en'?names.join(' + '):formatMultiCountryNames(names)) : (uiLocale==='en'?'Several countries':'Несколько стран');
+const heading = theme ? themeName + ': ' + countriesText : (uiLocale==='en'?'Tours: ':'Туры: ') + countriesText;
 const parentCombination = multiCountryCatalogPath(slugs);
 const pageBreadcrumbs = [
   { label: 'Главная', href: '/' },
   { label: 'Multi-country', href: '/multi-country/' },
   ...(slugs.length ? [{ label: countriesText, href: parentCombination }] : []),
-  ...(theme ? [{ label: theme.name, href: pagination.rootPath }] : []),
-  ...(pagination.currentPage > 1 ? [{ label: 'Страница ' + pagination.currentPage, href: pagination.canonical }] : []),
+  ...(theme ? [{ label: themeName, href: pagination.rootPath }] : []),
+  ...(pagination.currentPage > 1 ? [{ label: (uiLocale==='en'?'Page ':'Страница ') + pagination.currentPage, href: pagination.canonical }] : []),
 ];
 const baseTitle = seoMeta.title;
-const pageSuffix = pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage + ' из ' + pagination.totalPages : '';
+const pageSuffix = pagination.currentPage > 1 ? (uiLocale==='en'?' — page ':' — страница ') + pagination.currentPage + (uiLocale==='en'?' of ':' из ') + pagination.totalPages : '';
 const matchingTourPhrase = countLabel(pagination.totalItems,
   ['подходящий тур', 'подходящих тура', 'подходящих туров']);
 const matchingTourAgreement = pagination.totalItems % 10 === 1 && pagination.totalItems % 100 !== 11
@@ -82,7 +83,7 @@ const itemList = {
 ---
 
 <BaseLayout
-  leadTitle={'Собрать маршрут: ' + countriesText}
+  leadTitle={(uiLocale==='en'?'Plan an itinerary: ':'Собрать маршрут: ') + countriesText}
   leadEntityId={catalogId}
   title={baseTitle + pageSuffix}
   description={description}
@@ -93,8 +94,10 @@ const itemList = {
 >
   <Hero
     eyebrow="Multi-country"
-    title={heading + (pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage : '')}
-    intro={(theme ? theme.name + '. ' : '') + (slugs.length ? 'Выберите маршрут, включающий страны: ' + countriesText + '. ' : 'Выберите путешествие по нескольким странам. ') + 'Сравните длительность и формат готовых программ.'}
+    title={heading + (pagination.currentPage > 1 ? (uiLocale==='en'?' — page ':' — страница ') + pagination.currentPage : '')}
+    intro={uiLocale==='en'
+      ? (themeName ? themeName + '. ' : '') + (slugs.length ? 'Choose an itinerary visiting ' + countriesText + '. ' : 'Choose a journey across several countries. ') + 'Compare the duration and style of the available programmes.'
+      : (theme ? theme.name + '. ' : '') + (slugs.length ? 'Выберите маршрут, включающий страны: ' + countriesText + '. ' : 'Выберите путешествие по нескольким странам. ') + 'Сравните длительность и формат готовых программ.'}
     image={hero}
     compact
     ctaHref="#request"
@@ -104,15 +107,17 @@ const itemList = {
   <section class="combination-tours section" aria-labelledby="combination-tours-title">
     <div class="container combination-tours__head">
       <p class="eyebrow">Выбрать путешествие</p>
-      <h2 id="combination-tours-title">{theme ? countriesText + ': ' + theme.name : countriesText}</h2>
-      <p>{matchingTourPhrase}, {matchingTourAgreement} {slugs.length ? 'посещение этих стран' : 'несколько стран в одной поездке'}.</p>
+      <h2 id="combination-tours-title">{theme ? countriesText + ': ' + themeName : countriesText}</h2>
+      <p>{uiLocale==='en'
+        ? `${countInEnglish(pagination.totalItems,'matching tour','matching tours')} ${slugs.length?'visiting these countries':'through several countries in one journey'}.`
+        : `${matchingTourPhrase}, ${matchingTourAgreement} ${slugs.length ? 'посещение этих стран' : 'несколько стран в одной поездке'}.`}</p>
     </div>
 
     <MultiCountrySelector selected={slugs} themeId={theme?.id} />
 
     {pagination.currentPage > 1 && (
       <div class="container combination-tours__back">
-        <a href={withBase(pagination.rootPath)}>← На первую страницу этой подборки</a>
+        <a href={withBase(pagination.rootPath)}>{uiLocale==='en'?'← Back to the first page of this selection':'← На первую страницу этой подборки'}</a>
       </div>
     )}
 

@@ -2,24 +2,28 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PrimaryCTA from '../components/global/PrimaryCTA.astro';
 import { withBase } from '../lib/paths';
+import {sharedUiLocale} from '../lib/i18n/shared-ui-locale.mjs';
+import {uiText} from '../lib/i18n/messages.mjs';
+const locale=sharedUiLocale();
 ---
 
 <BaseLayout
-  title="Страница не найдена"
-  description="Страница не найдена. Вернитесь на главную Ada Tours или перейдите к направлениям."
+  title={uiText(locale,'error404.title')}
+  description={uiText(locale,'error404.description')}
   canonical="/404.html"
   headerTheme="dark"
+  lang={locale}
   noindex
 >
   <section class="not-found">
     <div class="not-found__overlay"></div>
     <div class="not-found__content">
       <p class="eyebrow">404</p>
-      <h1>Маршрут изменился</h1>
-      <p>Такой страницы нет. Можно вернуться на главную или выбрать другое направление.</p>
+      <h1>{uiText(locale,'error404.heading')}</h1>
+      <p>{uiText(locale,'error404.body')}</p>
       <div class="not-found__actions">
-        <PrimaryCTA href="/" label="На главную" />
-        <a href={withBase('/country/')}>Смотреть страны ↗</a>
+        <PrimaryCTA href="/" label={uiText(locale,'cta.goHome')} />
+        <a href={withBase('/country/')}>{uiText(locale,'cta.viewCountries')} ↗</a>
       </div>
     </div>
   </section>

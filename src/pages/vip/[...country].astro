@@ -5,33 +5,45 @@ import { paginateCatalog } from '../../lib/catalog-pagination';
 import { countryPath } from '../../lib/routes';
 import { vipFilterDescription } from '../../lib/vip-copy.mjs';
 import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
+import {sharedUiLocale,sharedCountryName,sharedInterestName} from '../../lib/i18n/shared-ui-locale.mjs';
+import {interestCopy} from '../../lib/interest-copy.mjs';
+import {countInEnglish} from '../../lib/i18n/messages.mjs';
 
 export async function getStaticPaths() {
+  const uiLocale=sharedUiLocale();
   const index = await getVipFilterIndex();
   return index.filter((row) => row.countryId || row.themeId).flatMap((row) => {
     const country = row.country?.data;
     const theme = row.theme?.data;
     const overviewImage = country?.gallery?.find((image) => image.src !== country.hero?.src) ?? country?.hero;
     const description = vipFilterDescription(country, theme, row.count);
+    const countryName=country?sharedCountryName(country.slug,country.name,uiLocale):'';
+    const themeName=theme?sharedInterestName(theme.id,theme.name,uiLocale):'';
+    const h1Title=uiLocale==='en'
+      ? `VIP ${themeName?themeName.toLocaleLowerCase('en')+' ':''}tours${countryName?' in '+countryName:''}`
+      : row.title;
+    const introOverride=uiLocale==='en'
+      ? `${countInEnglish(row.count,'VIP itinerary','VIP itineraries')}${countryName?' in '+countryName:''}. ${theme?interestCopy(theme.id,'en').catalogIntro:'Compare the available private itineraries and choose the places and experiences that matter to you.'} We can adapt the dates, pace and arrangements to your preferences.`
+      : undefined;
     const catalogVersion = createHash('sha256').update(JSON.stringify(row.entries.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
     const breadcrumbs = [
-      { label: 'VIP-туры', href: '/vip/' },
-      ...(country && theme ? [{ label: country.name, href: `/vip/${country.slug}/` }] : []),
-      { label: row.title, href: row.href },
+      { label: uiLocale==='en'?'VIP tours':'VIP-туры', href: '/vip/' },
+      ...(country && theme ? [{ label: countryName, href: `/vip/${country.slug}/` }] : []),
+      { label: h1Title, href: row.href },
     ];
     return paginateCatalog(row.entries, row.href).map(({ entries, pagination }) => ({
       params: { country: pagination.canonical.slice('/vip/'.length).replace(/\/$/, '') },
       props: {
         kind: 'tour', entries, pagination, catalogVersion,
-        title: row.title, description, canonical: pagination.canonical,
+        title: row.title, h1Title, introOverride, description, canonical: pagination.canonical,
         hero: theme?.hero?.src ?? country?.hero?.src ?? row.entries[0].data.hero?.src,
         countryContextId: row.countryId, themeContextId: row.themeId,
         variant: 'vip-country-tours',
-        leadTitle: `Собрать VIP-маршрут${country ? `: ${country.name}` : ''}${theme ? ` — ${theme.name}` : ''}`,
+        leadTitle: uiLocale==='en'?`Plan a VIP itinerary${countryName?': '+countryName:''}${themeName?' — '+themeName:''}`:`Собрать VIP-маршрут${country ? `: ${country.name}` : ''}${theme ? ` — ${theme.name}` : ''}`,
         leadEntityId: ['vip', row.countryId, row.themeId].filter(Boolean).join(':'),
         breadcrumbs,
         countryOverview: country ? {
-          name: country.name, href: countryPath(country), image: overviewImage?.src,
+          name: countryName, href: countryPath(country), image: overviewImage?.src,
           imageTextAlign: country.imageTextAlign, mediaStatus: overviewImage?.status,
           replacementReason: overviewImage?.replacementReason,
         } : undefined,

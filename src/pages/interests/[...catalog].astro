@@ -8,7 +8,10 @@ import { tourFilterTitle, tourFilterDescription } from '../../lib/vip-copy.mjs';
 import { countryPath, themePath } from '../../lib/routes';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
+import {sharedUiLocale,sharedCountryName,sharedInterestName} from '../../lib/i18n/shared-ui-locale.mjs';
+import {interestCopy} from '../../lib/interest-copy.mjs';
 export async function getStaticPaths() {
+  const uiLocale=sharedUiLocale();
   const [themes, tours, countries, destinations, excursions] = await Promise.all([
     getCollection('themes'), getCollection('tours'), getCollection('countries'), getCollection('destinations'), getCollection('excursions'),
   ]);
@@ -20,10 +23,12 @@ export async function getStaticPaths() {
   };
   for (const theme of themes.filter((entry) => entry.data.locale === 'ru' && isActiveEntity(entry))) {
     const d = theme.data, hub = buildInterestHub(d.id, { themes, tours, countries, destinations, excursions });
+    const themeName=sharedInterestName(d.id,d.name,uiLocale);
+    const enIntro=uiLocale==='en'?interestCopy(d.id,'en').catalogIntro:undefined;
     const root = interestTourCatalogPath(d);
-    const breadcrumbs = [{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }, { label: 'Все туры', href: root }];
-    add(hub.allTours, root, { kind: 'tour', title: seoThemeCatalogTitle(d.name,hub.allTours.length), h1Title: tourFilterTitle(undefined, d), description: tourFilterDescription(undefined, d, hub.allTours.length), breadcrumbs, hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}`,
-      themeContextId: d.id, navigationLabel: 'Интерес поездки', navigationLinks: [{ label: d.name, href: themePath(d) }] });
+    const breadcrumbs = [{ label: uiLocale==='en'?'Travel interests':'По интересам', href: '/interests/' }, { label: themeName, href: themePath(d) }, { label: uiLocale==='en'?'All tours':'Все туры', href: root }];
+    add(hub.allTours, root, { kind: 'tour', title: seoThemeCatalogTitle(d.name,hub.allTours.length), h1Title: uiLocale==='en'?themeName+' tours':tourFilterTitle(undefined, d), introOverride:enIntro, description: tourFilterDescription(undefined, d, hub.allTours.length), breadcrumbs, hero: d.hero?.src, leadEntityId: d.id, leadTitle: uiLocale==='en'?`Plan a journey: ${themeName}`:`Собрать поездку: ${d.name}`,
+      themeContextId: d.id, navigationLabel: uiLocale==='en'?'Travel interest':'Интерес поездки', navigationLinks: [{ label: themeName, href: themePath(d) }] });
     const sections = [
       { kind: 'destination', label: 'Все места', root: interestDestinationCatalogPath(d), entries: hub.allExperiences.filter((row) => row.kind === 'destination').map((row) => row.entry) },
       { kind: 'excursion', label: 'Все экскурсии', root: interestExcursionCatalogPath(d), entries: hub.allExperiences.filter((row) => row.kind === 'excursion').map((row) => row.entry) },
@@ -31,22 +36,26 @@ export async function getStaticPaths() {
     ];
     for (const section of sections) {
       if (!section.entries.length) continue;
+      const enSection=section.kind==='destination'?'All places':section.kind==='excursion'?'All excursions':'Related interests';
       add(section.entries, section.root, {
         kind: section.kind, title: `${d.name}: ${section.label.toLocaleLowerCase('ru')}`,
+        h1Title: uiLocale==='en'?`${themeName}: ${enSection}`:undefined,
+        introOverride: uiLocale==='en'?`Explore ${enSection.toLocaleLowerCase('en')} connected with ${themeName.toLocaleLowerCase('en')}. Choose what you would like to include in your journey.`:undefined,
         description: `${d.name}: ${section.label.toLocaleLowerCase('ru')} для вашего путешествия с Ada Tours. Выберите идею для поездки и расскажите нам о своих планах.`,
-        breadcrumbs: [breadcrumbs[0], breadcrumbs[1], { label: section.label, href: section.root }],
-        hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}`,
-        navigationLabel: 'Интерес поездки', navigationLinks: [{ label: d.name, href: themePath(d) }],
+        breadcrumbs: [breadcrumbs[0], breadcrumbs[1], { label: uiLocale==='en'?enSection:section.label, href: section.root }],
+        hero: d.hero?.src, leadEntityId: d.id, leadTitle: uiLocale==='en'?`Plan a journey: ${themeName}`:`Собрать поездку: ${d.name}`,
+        navigationLabel: uiLocale==='en'?'Travel interest':'Интерес поездки', navigationLinks: [{ label: themeName, href: themePath(d) }],
       });
     }
     for (const row of hub.allCountries) {
       const country = row.entry.data, countryRoot = interestTourCatalogPath(d, country);
-      add(row.tours, countryRoot, { kind: 'tour', title: seoThemeCatalogTitle(d.name,row.tourCount,country.name), h1Title: tourFilterTitle(country, d), description: tourFilterDescription(country, d, row.tourCount),
-        breadcrumbs: [...breadcrumbs, { label: country.name, href: countryRoot }], hero: d.hero?.src, countryContextId: country.id, themeContextId: d.id, leadEntityId: d.id, leadTitle: `Собрать поездку: ${country.name}`,
-        navigationLabel: 'Страна и интерес', navigationLinks: [
-          { label: `О стране: ${country.name}`, href: countryPath(country) },
-          { label: d.name, href: themePath(d) },
-          { label: `Все туры: ${d.name}`, href: root },
+      const countryName=sharedCountryName(country.slug,country.name,uiLocale);
+      add(row.tours, countryRoot, { kind: 'tour', title: seoThemeCatalogTitle(d.name,row.tourCount,country.name), h1Title: uiLocale==='en'?`${themeName} tours in ${countryName}`:tourFilterTitle(country, d), introOverride: uiLocale==='en'?`${enIntro} Explore itineraries through ${countryName}.`:undefined, description: tourFilterDescription(country, d, row.tourCount),
+        breadcrumbs: [...breadcrumbs, { label: countryName, href: countryRoot }], hero: d.hero?.src, countryContextId: country.id, themeContextId: d.id, leadEntityId: d.id, leadTitle: uiLocale==='en'?`Plan a journey: ${countryName}`:`Собрать поездку: ${country.name}`,
+        navigationLabel: uiLocale==='en'?'Country and travel interest':'Страна и интерес', navigationLinks: [
+          { label: uiLocale==='en'?`About ${countryName}`:`О стране: ${country.name}`, href: countryPath(country) },
+          { label: themeName, href: themePath(d) },
+          { label: uiLocale==='en'?`All tours: ${themeName}`:`Все туры: ${d.name}`, href: root },
         ] });
     }
   }

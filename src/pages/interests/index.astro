@@ -2,6 +2,8 @@
 import { buildInterestIndex, countLabel } from '../../lib/interest-model.mjs';
 import { getCollection } from 'astro:content';
 import { interestTourCount } from '../../lib/interest-copy.mjs';
+import { sharedUiLocale,sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
+import { countInEnglish } from '../../lib/i18n/messages.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { themePath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
@@ -10,6 +12,7 @@ import DestinationBand from '../../components/editorial/DestinationBand.astro';
 
 const [entries, tours] = await Promise.all([getCollection('themes'), getCollection('tours')]);
 const themes = buildInterestIndex(entries, tours);
+const uiLocale=sharedUiLocale();
 
 ---
 
@@ -25,7 +28,7 @@ const themes = buildInterestIndex(entries, tours);
   />
 
   <EditorialStatement
-    eyebrow={countLabel(themes.length, ['интерес', 'интереса', 'интересов'])}
+    eyebrow={uiLocale==='en'?countInEnglish(themes.length,'travel interest','travel interests'):countLabel(themes.length, ['интерес', 'интереса', 'интересов'])}
     text="Одна тема может задать всю поездку или стать ее лучшей частью."
   />
 
@@ -33,8 +36,8 @@ const themes = buildInterestIndex(entries, tours);
   {themes.map(({ entry: theme, tourCount }, index) => (
     <div data-interest-index-item={theme.data.id} data-interest-tour-count={tourCount}>
     <DestinationBand
-      eyebrow={interestTourCount(theme.data.id, tourCount)}
-      title={theme.data.name}
+      eyebrow={interestTourCount(theme.data.id, tourCount,uiLocale)}
+      title={sharedInterestName(theme.data.id,theme.data.name,uiLocale)}
       text={theme.data.summary}
       image={theme.data.hero?.src}
       imageTextAlign={theme.data.imageTextAlign}

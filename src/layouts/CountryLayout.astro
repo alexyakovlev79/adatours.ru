@@ -22,10 +22,14 @@ import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../
 import { compareToursForCountry } from '../lib/tour-ranking';
 import { buildCountryDiscoveryModel } from '../lib/i18n/entity-discovery-model.mjs';
 import { getVipCountryIndex } from '../lib/vip-catalog';
+import {sharedUiLocale,sharedCountryName,sharedInterestName} from '../lib/i18n/shared-ui-locale.mjs';
+import {countInEnglish} from '../lib/i18n/messages.mjs';
 
 const { entry } = Astro.props;
 // Country page: linked destination/tour catalogue for internal linking and discovery.
 const d = entry.data;
+const uiLocale = sharedUiLocale();
+const countryName = sharedCountryName(d.slug,d.name,uiLocale);
 
 // Limit only the rendered previews. Full collections remain available to counts,
 // editorial image settings and the separate, unabridged country catalogues.
@@ -79,7 +83,7 @@ const featureBandImageTextAlign = (href: string) => {
 };
 ---
 
-<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={`Собрать путешествие по стране: ${d.name}`} leadEntityId={d.id}
+<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={uiLocale==='en'?`Plan a journey in ${countryName}`:`Собрать путешествие по стране: ${d.name}`} leadEntityId={d.id}
   title={d._i18n ? d.name : seoCountryTitle(d.name,destinationEntries.length,excursionEntries.length,tourEntries.length)}
   description={d._i18n ? d.summary : seoAttractionsDescription(d.summary,destinationEntries.length,seoCountryCase(d.id,'genitive'))}
   image={d.hero?.src}
@@ -104,7 +108,7 @@ const featureBandImageTextAlign = (href: string) => {
     mobilePhotoLead={d.id === 'country_brazil'}
     imagePositionMobile={d.id === 'country_brazil' ? '62% 54%' : undefined}
     eyebrow="Страна"
-    title={d.name}
+    title={countryName}
     intro={d.summary}
     image={d.hero?.src}
     imageTextAlign={d.imageTextAlign}
@@ -113,7 +117,7 @@ const featureBandImageTextAlign = (href: string) => {
     replacementReason={d.hero?.replacementReason}
     ctaLabel="Подобрать маршрут"
   >
-    {vipCountry && <a slot="actions" class="country-vip-link" href={withBase(vipCountry.href)}>{vipCountry.label} <span aria-hidden="true">↗</span></a>}
+    {vipCountry && <a slot="actions" class="country-vip-link" href={withBase(vipCountry.href)}>{uiLocale==='en'?`VIP tours in ${countryName}`:vipCountry.label} <span aria-hidden="true">↗</span></a>}
   </Hero>
 
   <section class="country-copy section--tight">
@@ -152,7 +156,7 @@ const featureBandImageTextAlign = (href: string) => {
   )}
 
   {destinationEntries.length > 0 && (
-    <section class="country-linked country-linked--destinations" aria-label={`Направления: ${d.name}`}>
+    <section class="country-linked country-linked--destinations" aria-label={uiLocale==='en'?`Places in ${countryName}`:`Направления: ${d.name}`}>
       <div class="country-linked__grid">
           {destinationEntries.slice(0, previewLimits.destinations).map((item, index) => {
             const image = item.data.hero?.src ? withBase(item.data.hero.src) : undefined;
@@ -184,7 +188,7 @@ const featureBandImageTextAlign = (href: string) => {
         <div class:list={['country-more-strip', { 'country-more-strip--next-tours': tourEntries.length > 0 }]}>
           <div class="container country-linked__more">
             <a class="country-catalog-link" href={withBase(destinationCountryPath(d))}>
-              <span>{d.name}: все красоты</span>
+              <span>{uiLocale==='en'?`${countryName}: all places`:`${d.name}: все красоты`}</span>
               <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
             </a>
           </div>
@@ -199,7 +203,7 @@ const featureBandImageTextAlign = (href: string) => {
         <div class="container">
           <div class="country-linked__heading country-linked__heading--tours">
             <p class="eyebrow">Туры</p>
-            <h2 id="country-tours-title">Туры {countryDirection}</h2>
+            <h2 id="country-tours-title">{uiLocale==='en'?`Tours in ${countryName}`:`Туры ${countryDirection}`}</h2>
             <p>Готовый маршрут можно взять за основу и адаптировать под ваши даты, темп и интересы.</p>
           </div>
         </div>
@@ -210,7 +214,7 @@ const featureBandImageTextAlign = (href: string) => {
         {tourEntries.slice(0, previewLimits.tours).map((item, index) => (
           <DestinationBand
             eyebrow={[
-              item.data.durationDays ? `${item.data.durationDays} дней` : '',
+              item.data.durationDays ? uiLocale==='en'?countInEnglish(item.data.durationDays,'day','days'):`${item.data.durationDays} дней` : '',
               item.data._i18n?.formatLabel ?? item.data.format ?? '',
             ].filter(Boolean).join(' · ')}
             title={item.data.title}
@@ -228,7 +232,7 @@ const featureBandImageTextAlign = (href: string) => {
         <div class:list={['country-more-strip', { 'country-more-strip--next-light': excursionEntries.length > 0 || themeEntries.length > 0 }]}>
           <div class="container country-tours__more">
             <a class="country-catalog-link" href={withBase(tourCountryPath(d))}>
-              <span>{d.name}: все туры</span>
+              <span>{uiLocale==='en'?`${countryName}: all tours`:`${d.name}: все туры`}</span>
               <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
             </a>
           </div>
@@ -242,7 +246,7 @@ const featureBandImageTextAlign = (href: string) => {
       <div class="container">
         <div class="country-linked__heading">
           <p class="eyebrow">Экскурсии</p>
-          <h2 id="country-excursions-title">Экскурсии {countryDirection}</h2>
+          <h2 id="country-excursions-title">{uiLocale==='en'?`Excursions in ${countryName}`:`Экскурсии ${countryDirection}`}</h2>
         </div>
       </div>
 
@@ -271,7 +275,7 @@ const featureBandImageTextAlign = (href: string) => {
       {excursionEntries.length > previewLimits.excursions && (
         <div class="container country-linked__more">
             <a class="country-catalog-link" href={withBase(excursionCountryPath(d))}>
-              <span>{d.name}: все экскурсии</span>
+              <span>{uiLocale==='en'?`${countryName}: all excursions`:`${d.name}: все экскурсии`}</span>
               <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
             </a>
         </div>
@@ -295,7 +299,7 @@ const featureBandImageTextAlign = (href: string) => {
         {themeEntries.map((item, index) => (
           <DestinationBand
             eyebrow="По интересам"
-            title={item.data.name}
+            title={sharedInterestName(item.data.id,item.data.name,uiLocale)}
             text={item.data.summary}
             image={item.data.hero?.src}
             imageTextAlign={item.data.imageTextAlign}

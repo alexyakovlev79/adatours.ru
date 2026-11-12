@@ -1,7 +1,8 @@
 ---
 import { destinationTypeLabel } from '../lib/destination-taxonomy.mjs';
 import { uiText, countInEnglish } from '../lib/i18n/messages.mjs';
-import { sharedUiLocale, translateUiText } from '../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale, translateUiText,sharedCountryName } from '../lib/i18n/shared-ui-locale.mjs';
+import {translateAuthoredPageText} from '../lib/i18n/page-copy.mjs';
 import catalogHeroOverrides from '../data/media/catalog-hero-overrides.json';
 import { countLabel, countryMembership } from '../lib/interest-model.mjs';
 import { seoPaginatedTitle } from '../lib/seo-page.mjs';
@@ -27,6 +28,7 @@ interface Props {
   entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'> | CollectionEntry<'themes'>>;
   title: string;
   h1Title?: string;
+  introOverride?: string;
   description: string;
   canonical: string;
   breadcrumbs: BreadcrumbItem[];
@@ -48,11 +50,11 @@ interface Props {
   variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours' | 'vip-country-tours';
 }
 
-const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero: defaultHero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
+const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, introOverride, description, canonical, breadcrumbs, hero: defaultHero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
 const uiLocale = sharedUiLocale();
-const translate = (text: string) => translateUiText(text,uiLocale);
+const translate = (text: string) => translateAuthoredPageText(translateUiText(text,uiLocale),uiLocale);
 const countryDisplayNames = uiLocale === 'en'
-  ? new Map((await getCollection('countries', ({ data }) => data.locale === 'ru')).map(({ data }) => [data.id, data.name]))
+  ? new Map((await getCollection('countries', ({ data }) => data.locale === 'ru')).map(({ data }) => [data.id,sharedCountryName(data.slug,data.name,uiLocale)]))
   : new Map<string, string>();
 const displayCountryName = (country: { id: string; name: string }) => countryDisplayNames.get(country.id) ?? country.name;
 // Catalogue covers are page-specific, including pagination, and never alter card images.
@@ -69,14 +71,14 @@ const multiCountryPageCountries = variant === 'multi-country-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
   : [];
 const multiCountryCountryText = multiCountryPageCountries.length
-  ? `${multiCountryPageCountries.slice(0, 6).map(displayCountryName).join(', ')}${multiCountryPageCountries.length > 6 ? ' и другие' : ''}`
-  : 'Латинская Америка';
+  ? `${multiCountryPageCountries.slice(0, 6).map(displayCountryName).join(', ')}${multiCountryPageCountries.length > 6 ? (uiLocale==='en'?' and others':' и другие') : ''}`
+  : (uiLocale==='en'?'Latin America':'Латинская Америка');
 const vipPageCountries = variant === 'vip-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
   : [];
 const vipCountryText = vipPageCountries.length
-  ? `${vipPageCountries.slice(0, 6).map(displayCountryName).join(', ')}${vipPageCountries.length > 6 ? ' и другие' : ''}`
-  : 'Латинская Америка';
+  ? `${vipPageCountries.slice(0, 6).map(displayCountryName).join(', ')}${vipPageCountries.length > 6 ? (uiLocale==='en'?' and others':' и другие') : ''}`
+  : (uiLocale==='en'?'Latin America':'Латинская Америка');
 const sourceMetaTitle = variant === 'multi-country-tours' || variant === 'vip-tours'
   ? `${title} — страница ${p.currentPage} из ${p.totalPages}`
   : variant === 'vip-country-tours'
@@ -103,13 +105,13 @@ const sourcePresentation = variant === 'global-tours' ? {
   editorial: undefined,
 } : variant === 'multi-country-tours' ? {
   title: 'Multi-country туры по Латинской Америке',
-  intro: `Продолжение каталога: маршруты ${p.from}–${p.to} из ${p.totalItems}. На этой странице: ${multiCountryCountryText}.`,
+  intro: uiLocale==='en'?`More itineraries: ${p.from}–${p.to} of ${p.totalItems}. Countries on this page: ${multiCountryCountryText}.`:`Продолжение каталога: маршруты ${p.from}–${p.to} из ${p.totalItems}. На этой странице: ${multiCountryCountryText}.`,
   editorial: undefined,
 } : variant === 'vip-tours' ? {
   title: 'VIP и Luxury туры по Латинской Америке',
-  intro: `Маршруты ${p.from}–${p.to} из ${p.totalItems}. На этой странице представлены поездки по направлениям: ${vipCountryText}.`,
+  intro: uiLocale==='en'?`Itineraries ${p.from}–${p.to} of ${p.totalItems}. Destinations featured on this page: ${vipCountryText}.`:`Маршруты ${p.from}–${p.to} из ${p.totalItems}. На этой странице представлены поездки по направлениям: ${vipCountryText}.`,
   editorial: undefined,
-} : { title: h1Title, intro: description, editorial: undefined };
+} : { title: h1Title, intro: introOverride ?? description, editorial: undefined };
 const presentation = {
   ...sourcePresentation,
   title: translate(sourcePresentation.title),

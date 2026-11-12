@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {parse,serialize} from 'parse5';
 import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n/shared-ui-html.mjs';
+import {localizeAuthoredPageDocument} from '../../src/lib/i18n/page-copy.mjs';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
 const ROBOTS='noindex,nofollow,noarchive,nosnippet';
 const fail=m=>{throw Error('EN Russian fallback: '+m)};
@@ -40,7 +41,10 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  if(walk(head,n=>n.tagName==='meta'&&get(n,'http-equiv')?.toLowerCase()==='refresh').length)return null;
  if(get(root,'lang')==='ru')set(root,'data-ada-ru-fallback','true');
  else set(root,'data-ada-en-content','true');
- if(sharedContent)localizeSharedUiDocument(doc,{entityLabels});
+ if(sharedContent){
+  localizeSharedUiDocument(doc,{entityLabels});
+  localizeAuthoredPageDocument(doc,{locale:'en'});
+ }
  // Keep search, first-party JS, hero video and all shared editorial components.
  prune(doc,n=>
   (n.tagName==='script' && !get(n,'src')?.startsWith(EN_STAGING_BASE+'_astro/') &&

@@ -28,6 +28,33 @@ export const mediaSourceKey = src => {
 };
 export const mediaEnglishEntry = src => entries.get(mediaSourceKey(src)) ?? null;
 
+/** Reuse an already-rendered English description on another appearance of
+ * the SAME source image, never by matching Russian phrases or file names.
+ * Conflicting descriptions are excluded: no arbitrary scene selection.
+ */
+export function collectRenderedEnglishMediaLabels(html,seen=new Map()) {
+  if(typeof html!=='string')return seen;
+  const russian=/[А-Яа-яЁё]/u, latin=/[A-Za-z]/u;
+  for(const found of html.matchAll(/<img\b[^>]*>/gi)){
+    const attrs=new Map();
+    for(const m of found[0].matchAll(/([:\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g))
+      attrs.set(m[1].toLowerCase(),m[2]??m[3]);
+    if(attrs.get('aria-hidden')==='true'||attrs.get('role')==='presentation')continue;
+    const source=mediaSourceKey(attrs.get('data-lazy-src')??attrs.get('src'));
+    const alt=attrs.get('alt')?.replace(/&amp;/g,'&').replace(/&quot;/g,'"')
+      .replace(/&#39;|&apos;/g,"'").trim();
+    if(!source||!alt||alt.length<16||alt.length>240||!latin.test(alt)||russian.test(alt)||
+      alt.split(/\s+/).length<3)continue;
+    if(!seen.has(source))seen.set(source,alt);
+    else if(seen.get(source)!==alt)seen.set(source,null);
+  }
+  return seen;
+}
+export function unambiguousEnglishMediaLabels(seen){
+  return new Map([...seen].filter(([,label])=>typeof label==='string'&&Boolean(label)));
+}
+
+
 export function localizeMediaField(src,value,{locale='en',field='alt',decorative=false,reusedLabels=null}={}) {
   if(locale!=='en'||decorative||typeof value!=='string'||!value.trim()||!containsRussian(value))return value;
   const entry=mediaEnglishEntry(src);

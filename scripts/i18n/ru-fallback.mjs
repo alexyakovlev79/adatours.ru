@@ -6,7 +6,7 @@ import path from 'node:path';
 import {parse,serialize} from 'parse5';
 import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n/shared-ui-html.mjs';
 import {localizeAuthoredPageDocument} from '../../src/lib/i18n/page-copy.mjs';
-import {localizeMediaDocument} from '../../src/lib/i18n/media-copy.mjs';
+import {localizeMediaDocument,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
 const ROBOTS='noindex,nofollow,noarchive,nosnippet';
 const fail=m=>{throw Error('EN Russian fallback: '+m)};
@@ -32,7 +32,7 @@ export function discoverRussianPages(root){
  return pages.sort((a,b)=>a.route.localeCompare(b.route,'en'));
 }
 /** Build full shared EN pages; legacy nonshared fallback still blocks submissions. */
-export function russianFallbackHtml(source,route,known,{sharedContent=false,entityLabels=new Map()}={}){
+export function russianFallbackHtml(source,route,known,{sharedContent=false,entityLabels=new Map(),reusedLabels=new Map()}={}){
  if(typeof source!=='string'||!source.includes('<html')||!known?.has(route))fail('Unknown source route '+route);
  const doc=parse(source),root=walk(doc,n=>n.tagName==='html')[0],
   head=walk(doc,n=>n.tagName==='head')[0];
@@ -45,7 +45,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  if(sharedContent){
   localizeSharedUiDocument(doc,{entityLabels});
   localizeAuthoredPageDocument(doc,{locale:'en'});
-  localizeMediaDocument(doc,{locale:'en'});
+  localizeMediaDocument(doc,{locale:'en',reusedLabels});
  }
  // Keep search, first-party JS, hero video and all shared editorial components.
  prune(doc,n=>
@@ -133,9 +133,14 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  // Build the link allowlist from renderable pages, not from redirect aliases.
  // Otherwise an old RU alias can lead to an EN URL which was never emitted.
  const aliasRoutes=new Set();
+ const mediaLabelCandidates=new Map();
  for(const row of pages){
-  if(isSourceRedirect(fs.readFileSync(row.file,'utf8')))aliasRoutes.add(row.route);
+  const source=fs.readFileSync(row.file,'utf8');
+  if(isSourceRedirect(source))aliasRoutes.add(row.route);
+  else if(sharedContent)collectRenderedEnglishMediaLabels(source,mediaLabelCandidates);
  }
+ const reusedLabels=unambiguousEnglishMediaLabels(mediaLabelCandidates);
+ localization.reusedLabels=reusedLabels;
  const known=new Set(pages.filter(row=>!aliasRoutes.has(row.route)).map(row=>row.route));
  let added=0,existing=0,redirects=0,bytes=0,englishPages=0;
  for(const row of pages){
@@ -178,6 +183,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  }
  if(bytes>maxBytes)fail('Fallback HTML exceeds Pages budget');
  return {ruSourcePages:pages.length,ruFallbackPages:added+fullCatalogueAlias,
-  englishPrecedence:existing,englishPages,sharedContent,redirectAliases:redirects,fullCatalogueAlias,sharedFragments,bytes};
+  englishPrecedence:existing,englishPages,sharedContent,redirectAliases:redirects,fullCatalogueAlias,sharedFragments,bytes,
+  reusableEnglishImageLabels:reusedLabels.size};
 }
 

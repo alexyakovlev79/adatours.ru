@@ -112,7 +112,7 @@
 | Этап | Статус | Commit / проверка |
 |---:|---|---|
 | 1 | committed | [Код d1e0713](https://github.com/alexyakovlev79/adatours.ru/commit/d1e071303579f1fb441e9b230c09cafd23f3600f), [EN preflight success #43278999767](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43278999767). Отдельный EN Pages deploy этого SHA ещё не подтверждён |
-| 2 | committed | [Контент 01b3f14](https://github.com/alexyakovlev79/adatours.ru/commit/01b3f14e08c7cd0ab09645d378522bdcf942af10), [проверки f2c2ea3](https://github.com/alexyakovlev79/adatours.ru/commit/f2c2ea3a8149745eea0e964f5f25b35a67984ab0), [исправление EN-теста 96c5d76](https://github.com/alexyakovlev79/adatours.ru/commit/96c5d7602ad1094f20c0aceab143dd4f63ecbdca). EN preflight/Pages ещё выполняются, отдельный EN deploy не подтверждён |
+| 2 | committed | [Контент 01b3f14](https://github.com/alexyakovlev79/adatours.ru/commit/01b3f14e08c7cd0ab09645d378522bdcf942af10), [проверки f2c2ea3](https://github.com/alexyakovlev79/adatours.ru/commit/f2c2ea3a8149745eea0e964f5f25b35a67984ab0), [исправление EN-теста 96c5d76](https://github.com/alexyakovlev79/adatours.ru/commit/96c5d7602ad1094f20c0aceab143dd4f63ecbdca). [EN preflight #43289546639 — success](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43289546639); отдельный EN Pages deploy этого SHA не подтверждён |
 | 3 | not_started | — |
 | 4 | not_started | — |
 | 5 | not_started | — |
@@ -151,3 +151,10 @@
 - Первый RU CI [#43288362447](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43288362447) обнаружил два устаревших теста, привязанных к буквальной RU-форме исходников; исправлены в [`f2c2ea3`](https://github.com/alexyakovlev79/adatours.ru/commit/f2c2ea3a8149745eea0e964f5f25b35a67984ab0), со сверкой сохранения RU значения и EN-ветки. Независимо менялся FULLTEXT materializer; один устаревший тест его сообщения адресно исправлен в [`96c5d76`](https://github.com/alexyakovlev79/adatours.ru/commit/96c5d7602ad1094f20c0aceab143dd4f63ecbdca), worker results и RU не менялись.
 - Повторный EN preflight [#43289546639](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43289546639) и RU Pages проверка [#43289546636](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43289546636) по `96c5d76` были ещё не завершены при данной записи. Не утверждать успех до фактического conclusion. Отдельная публикация EN Pages на `adatours-en` также пока не подтверждена.
 
+
+### EN preflight этапа 2 — подтверждённая проверка
+
+- [Run #43289546639](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43289546639) — **success**, исходный SHA `96c5d7602ad1094f20c0aceab143dd4f63ecbdca` (содержит Stage2 `01b3f14` и адресные исправления тестов).
+- Технические тесты EN FULLTEXT repair: `13/13 pass`; остальные EN локализационные тесты, включая этапы 1 и 2: `45/45 pass`. Сборка и verifier подтверждены одним run.
+- Отчёт EN HTML: `6 149` канонических страниц, `1 832` EN со сработавшим переводом, `4 317` с русским резервом, `30 886` применённых текстовых полей; проверено `404 991` внутренних ссылок. Никакого claim, что 6 149 страниц полностью переведены. `noindex` и запреты canonical/JSON-LD для EN preview сохранены.
+- Исходный репозиторий прошёл **только EN preflight без upload**, это не Pages deploy. Последний подтверждённый `adatours-en` workflow на момент этой записи запущен ещё до content-коммита этапа 2, поэтому не подтверждает именно этот EN-код. Статус шага — **`committed`**, не `verified_en_noindex`.

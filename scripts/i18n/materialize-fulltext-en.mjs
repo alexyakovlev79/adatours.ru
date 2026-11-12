@@ -52,6 +52,7 @@ const numbers=s=>(String(s).match(/\d+(?:[.,]\d+)*/g)||[]);
 const safeValue=(old,value)=>typeof value==='string'&&value.trim()!==''
  && !CYR.test(value) && eq(numbers(old),numbers(value));
 const mergeTexts=(old,translated,counter,path='')=>{
+ if(old instanceof Date)return old; // YAML timestamps are canonical facts, not plain maps.
  if(typeof old==='string'){
   if(visible.some(re=>re.test(path))&&safeValue(old,translated)){
    counter.changed++;return translated;

@@ -356,7 +356,7 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   const sourceBoundRepairs=[];
   if(type==='tour'){
     const repair=eligibleTourTitleRepair({
-      sourceId,source:sourceEntry.data,alreadyTranslated:appliedPaths.has('/title'),
+      sourceId,source:{...sourceEntry.data,__body:sourceEntry.body??""},alreadyTranslated:appliedPaths.has('/title'),
     });
     if(repair){
       applyText(root,repair.path,repair.text,metadata);

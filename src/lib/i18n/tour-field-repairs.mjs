@@ -7,7 +7,7 @@ import repairs from '../../data/i18n/tour-field-repairs.en.json' with {type:'jso
 const has=(o,k)=>Object.prototype.hasOwnProperty.call(o??{},k);
 const Cyrillic=/[\u0400-\u052f]/u;
 const hash=text=>createHash('sha256').update(text,'utf8').digest('hex');
-const allowed=path=>/^\/(?:title|lead|priceNote|format|(?:route|included|notIncluded|notes|dates)\/(?:0|[1-9]\d*))$/.test(path);
+const allowed=path=>/^\/(?:title|lead|priceNote|format|__body|hero\/(?:alt|hover)|(?:route|included|notIncluded|notes|dates)\/(?:0|[1-9]\d*)|itinerary\/(?:0|[1-9]\d*)\/(?:title|text|places\/(?:0|[1-9]\d*)|images\/(?:0|[1-9]\d*)\/(?:alt|hover)|image\/(?:alt|hover)))$/.test(path);
 const at=(source,path)=>path.slice(1).split('/').reduce((node,key)=>node?.[key],source);
 
 /** Read-only candidate finder; malformed or stale source rows never apply. */

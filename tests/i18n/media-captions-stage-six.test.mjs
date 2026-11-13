@@ -137,3 +137,15 @@ test('English image labels also replace matching original figcaption and aria-la
  assert.ok(output.includes('<figcaption>'+enLabel+'</figcaption>'),output);
  assert.deepEqual(localizeMediaDocument(doc,{locale:'en'}),{attributes:0,captions:0});
 });
+
+test('stage six includes 37 new source-bound English media captions without altering previous entries',()=>{
+ const rows=Object.entries(en.entries).filter(([,row])=>row.source==='stage6-html-residual-20261113-b7');
+ assert.equal(rows.length,37);
+ for(const [src,row] of rows){
+  assert.equal(row.sourceKey,src);
+  assert.ok(src.startsWith('/media/'));
+  assert.ok(row.alt.length>=12&&!/[А-Яа-яЁё]/u.test(row.alt));
+  assert.equal(localizeMediaField(src,'Русское описание',{locale:'en'}),row.alt);
+ }
+ assert.ok(Object.keys(en.entries).length>=857);
+});

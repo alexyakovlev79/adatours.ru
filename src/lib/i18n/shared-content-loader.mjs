@@ -11,6 +11,7 @@ import {pathToFileURL, fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {enStagingSiteEnabled} from './en-staging-site.mjs';
 import {eligibleTourTitleRepair} from './tour-title-repairs.mjs';
+import {eligibleTourFieldRepairs} from './tour-field-repairs.mjs';
 import {visibleLocalizationSlots, sourceFromContentEntry} from './content-adapter.mjs';
 import {createStableBlockMap} from './block-map.mjs';
 import {assessOverlay} from './content-overlay.mjs';
@@ -363,6 +364,14 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
       const missingAt=missing.indexOf(repair.path);
       if(missingAt>=0)missing.splice(missingAt,1);
       sourceBoundRepairs.push({path:repair.path,sourceTextSha256:repair.sourceTextSha256});
+    }
+    // Apply only missing fields after the immutable Tour/Word results.
+    for(const patch of eligibleTourFieldRepairs({sourceId,source:sourceEntry.data,alreadyTranslated:appliedPaths})){
+      applyText(root,patch.path,patch.text,metadata);
+      appliedPaths.add(patch.path);translated++;
+      const missingAt=missing.indexOf(patch.path);
+      if(missingAt>=0)missing.splice(missingAt,1);
+      sourceBoundRepairs.push({path:patch.path,sourceTextSha256:patch.sourceTextSha256});
     }
   }
   if(!translated)return {entry,applied:0,status:'untranslated',sourceId,sourceFingerprint};

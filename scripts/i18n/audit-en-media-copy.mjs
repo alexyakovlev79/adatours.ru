@@ -36,9 +36,11 @@ for(const file of files){
     described++;
     if(russian.test(alt)){
       russianAlts++;pageRussian=true;
-      const current=residual.get(src)??{src,occurrences:0,values:new Set(),pages:0};
+      const current=residual.get(src)??{src,occurrences:0,values:new Set(),pages:0,samplePages:[]};
       current.occurrences++;
       current.values.add(alt);current.pages++;
+      const page=path.relative(root,file).split(path.sep).join('/');
+      if(current.samplePages.length<5&&!current.samplePages.includes(page))current.samplePages.push(page);
       residual.set(src,current);
       if(samples.length<45&&!samples.some(s=>s.src===src))samples.push({src,alt:alt.slice(0,180),page:path.relative(root,file)});
       if(mediaEnglishEntry(src))knownLeaks.set(src,(knownLeaks.get(src)??0)+1);
@@ -58,6 +60,10 @@ const summary={
   figuresWithRussianCaption:captionsRu,pagesWithRussianPhotoText:pagesWithRussian,
   translatedKnownMediaStillWithRussianAlt:knownLeaks.size,
   knownLeaks:[...knownLeaks].slice(0,20).map(([src,occurrences])=>({src,occurrences})),
+  // Full keyed backlog for resuming stage six without repeating the HTML crawl.
+  // Only user-visible observed alt values and exact media src; never technical registry notes.
+  residualBySrc:[...residual.values()].sort((a,b)=>b.occurrences-a.occurrences||a.src.localeCompare(b.src))
+    .map(row=>({src:row.src,occurrences:row.occurrences,alts:[...row.values],samplePages:row.samplePages})),
   examples:samples,
 };
 fs.writeFileSync(output,JSON.stringify(summary,null,2)+'\n');

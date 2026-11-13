@@ -149,3 +149,24 @@ test('stage six includes 37 new source-bound English media captions without alte
  }
  assert.ok(Object.keys(en.entries).length>=857);
 });
+
+test('stage six continuation keeps source-bound English descriptions for all five batches',()=>{
+ const expected={
+  'stage6-html-residual-20261113-b8':4,
+  'stage6-html-residual-20261113-b9':49,
+  'stage6-html-residual-20261113-b10':56,
+  'stage6-html-residual-20261113-b11':61,
+  'stage6-html-residual-20261113-b12':71
+ };
+ for(const [source,count] of Object.entries(expected)){
+  const rows=Object.entries(en.entries).filter(([,row])=>row.source===source);
+  assert.equal(rows.length,count,source);
+  for(const [src,row] of rows){
+   assert.ok(src.startsWith('/media/'),src);
+   assert.equal(row.sourceKey,src);
+   assert.ok(row.alt.length>=8&&!/[А-Яа-яЁё]/u.test(row.alt),src);
+   assert.equal(mediaEnglishEntry(src),row);
+  }
+ }
+ assert.ok(Object.keys(en.entries).length>=1098);
+});

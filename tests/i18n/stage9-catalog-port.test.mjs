@@ -46,7 +46,7 @@ test('stage9: source-bound dynamic CTA and destination headings use EN without c
 
 test('stage9 source-bound residual paragraphs: exact EN copy without altering RU or invented fallback',async()=>{
   const data=(await import('../../src/data/i18n/stage9-residual-copy.en.json',{with:{type:'json'}})).default;
-  assert.equal(data.messages.length,272);
+  assert.equal(data.messages.length,549);
   for(const row of data.messages){
     assert.equal(translateAuthoredPageText(row.ru,'en'),row.en);
     assert.equal(translateAuthoredPageText(row.ru,'ru'),row.ru);

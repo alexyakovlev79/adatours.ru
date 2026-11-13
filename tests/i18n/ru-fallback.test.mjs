@@ -61,6 +61,7 @@ test('canonical mirror keeps Hero, videos, lazy images, full search and safe vis
 test('complete shared English pages retain one working form, modal CTA and first-party config',()=>{
  const english=source()
   .replace('<html lang="ru"', '<html lang="en" data-ada-shared-locale="en"')
+  .replace('<script type="application/ld+json">{"@type":"TouristTrip"}</script>','')
   .replace('</head>',schemaFixture('/')+'</head>');
  const html=russianFallbackHtml(english,'/',new Set(['/','/brazil/','/tours/','/about/','/multi-country/','/vip/']),{sharedContent:true});
  assert.match(html,/<html lang="en" data-ada-shared-locale="en" data-ada-en-content="true"/);
@@ -123,3 +124,29 @@ test('non-Russian HTML and incomplete source are rejected',()=>{
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
 });
 
+test('native English pages provide verified image labels to RU-fallback views of the same src',()=>{
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ada-native-alt-'));
+ const dist=path.join(dir,'dist'),out=path.join(dir,'out');
+ const media='/media/destinations/example/verified-gallery.webp';
+ const englishAlt='Visitors crossing a wooden bridge over a tropical river';
+ const russianAlt='Туристы переходят деревянный мост через тропическую реку';
+ const frame=(alt,route='/')=>source()
+  .replace('<html lang="ru">','<html lang="en" data-ada-shared-locale="en">')
+  .replace('<script type="application/ld+json">{"@type":"TouristTrip"}</script>','')
+  .replace('</head>',schemaFixture(route)+'</head>')
+  .replace('</body>',`<img src="/adatours-en${media}" alt="${alt}"></body>`);
+ try{
+  fs.mkdirSync(dist,{recursive:true});
+  fs.mkdirSync(path.join(dist,'brazil'),{recursive:true});
+  fs.mkdirSync(path.join(out,'en','brazil'),{recursive:true});
+  fs.writeFileSync(path.join(dist,'index.html'),frame(russianAlt));
+  fs.writeFileSync(path.join(dist,'brazil','index.html'),frame(russianAlt,'/brazil/'));
+  fs.writeFileSync(path.join(out,'en','brazil','index.html'),frame(englishAlt,'/brazil/'));
+  const result=stageRussianFallback({dist,output:out,minPages:1,sharedContent:true});
+  assert.equal(result.englishPrecedence,1);
+  const generated=fs.readFileSync(path.join(out,'en','index.html'),'utf8');
+  assert.ok(generated.includes('alt="'+englishAlt+'"'));
+  assert.ok(!generated.includes('alt="'+russianAlt+'"'));
+  assert.ok(fs.readFileSync(path.join(out,'en','brazil','index.html'),'utf8').includes(englishAlt));
+ }finally{fs.rmSync(dir,{recursive:true,force:true})}
+});

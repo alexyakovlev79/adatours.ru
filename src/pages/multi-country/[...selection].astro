@@ -17,7 +17,7 @@ import { paginateCatalog } from '../../lib/catalog-pagination';
 import { mainTourCountries, tourPath } from '../../lib/routes';
 import { countLabel } from '../../lib/interest-model.mjs';
 import { countInEnglish } from '../../lib/i18n/messages.mjs';
-import { sharedUiLocale,sharedCountryName,sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
+import { sharedUiLocale,sharedCountryName,sharedInterestName,translateUiText } from '../../lib/i18n/shared-ui-locale.mjs';
 import { withBase } from '../../lib/paths';
 
 export async function getStaticPaths() {
@@ -52,7 +52,7 @@ const countriesText = names.length ? (uiLocale==='en'?names.join(' + '):formatMu
 const heading = theme ? themeName + ': ' + countriesText : (uiLocale==='en'?'Tours: ':'Туры: ') + countriesText;
 const parentCombination = multiCountryCatalogPath(slugs);
 const pageBreadcrumbs = [
-  { label: 'Главная', href: '/' },
+  { label: uiLocale==='en'?'Home':'Главная', href: '/' },
   { label: 'Multi-country', href: '/multi-country/' },
   ...(slugs.length ? [{ label: countriesText, href: parentCombination }] : []),
   ...(theme ? [{ label: themeName, href: pagination.rootPath }] : []),
@@ -83,6 +83,7 @@ const itemList = {
 ---
 
 <BaseLayout
+  lang={uiLocale}
   leadTitle={(uiLocale==='en'?'Plan an itinerary: ':'Собрать маршрут: ') + countriesText}
   leadEntityId={catalogId}
   title={baseTitle + pageSuffix}
@@ -101,12 +102,12 @@ const itemList = {
     image={hero}
     compact
     ctaHref="#request"
-    ctaLabel="Собрать свой маршрут"
+    ctaLabel={uiLocale==='en'?'Plan your itinerary':'Собрать свой маршрут'}
   />
 
   <section class="combination-tours section" aria-labelledby="combination-tours-title">
     <div class="container combination-tours__head">
-      <p class="eyebrow">Выбрать путешествие</p>
+      <p class="eyebrow">{uiLocale==='en'?'Choose your journey':'Выбрать путешествие'}</p>
       <h2 id="combination-tours-title">{theme ? countriesText + ': ' + themeName : countriesText}</h2>
       <p>{uiLocale==='en'
         ? `${countInEnglish(pagination.totalItems,'matching tour','matching tours')} ${slugs.length?'visiting these countries':'through several countries in one journey'}.`
@@ -140,7 +141,7 @@ const itemList = {
           const meta = [
             countryLabel,
             data.durationDays ? uiLocale === 'en' ? countInEnglish(data.durationDays, 'day', 'days') : countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
-            data._i18n?.formatLabel ?? data.format,
+            translateUiText(data._i18n?.formatLabel ?? data.format ?? '',uiLocale),
           ].filter(Boolean).join(' · ');
           return (
             <div data-catalog-item={data.id}>

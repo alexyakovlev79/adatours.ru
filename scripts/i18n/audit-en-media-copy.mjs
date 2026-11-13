@@ -21,8 +21,8 @@ const attrs=tag=>{
   for(const m of tag.matchAll(/([:\w-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g))result.set(m[1].toLowerCase(),m[2]??m[3]);
   return result;
 };
-const residual=new Map(),samples=[],deferred=new Set(),knownLeaks=new Map();
-let imageTags=0,described=0,english=0,russianAlts=0,unlabelled=0,captionsRu=0,pagesWithRussian=0;
+const residual=new Map(),hoverResidual=new Map(),samples=[],deferred=new Set(),knownLeaks=new Map();
+let imageTags=0,described=0,english=0,russianAlts=0,russianHovers=0,unlabelled=0,captionsRu=0,pagesWithRussian=0;
 for(const file of files){
   const html=fs.readFileSync(file,'utf8');
   let pageRussian=false;
@@ -31,14 +31,22 @@ for(const file of files){
     if(!src)continue;
     if(a.get('aria-hidden')==='true'||a.get('role')==='presentation')continue;
     imageTags++;
+    const hover=a.get('title')??'';
+    if(russian.test(hover)){
+      russianHovers++;pageRussian=true;
+      const current=hoverResidual.get(src)??{src,occurrences:0,values:new Set()};
+      current.occurrences++;current.values.add(hover);hoverResidual.set(src,current);
+    }
     const alt=a.get('alt')??'';
     if(!alt.trim()){unlabelled++;continue;}
     described++;
     if(russian.test(alt)){
       russianAlts++;pageRussian=true;
-      const current=residual.get(src)??{src,occurrences:0,values:new Set(),pages:0};
+      const current=residual.get(src)??{src,occurrences:0,values:new Set(),pages:0,samplePages:[]};
       current.occurrences++;
       current.values.add(alt);current.pages++;
+      const page=path.relative(root,file).split(path.sep).join('/');
+      if(current.samplePages.length<5&&!current.samplePages.includes(page))current.samplePages.push(page);
       residual.set(src,current);
       if(samples.length<45&&!samples.some(s=>s.src===src))samples.push({src,alt:alt.slice(0,180),page:path.relative(root,file)});
       if(mediaEnglishEntry(src))knownLeaks.set(src,(knownLeaks.get(src)??0)+1);
@@ -55,9 +63,16 @@ const summary={
   schemaVersion:1,scope:'noindex-EN-media-read-only',pagesScanned:files.length,
   imageTags,describedImages:described,englishImageAlts:english,russianImageAlts:russianAlts,
   emptyOrDecorativeAlts:unlabelled,uniqueImagesWithRussianAlt:residual.size,
+  russianImageHoverTitles:russianHovers,uniqueImagesWithRussianHover:hoverResidual.size,
   figuresWithRussianCaption:captionsRu,pagesWithRussianPhotoText:pagesWithRussian,
   translatedKnownMediaStillWithRussianAlt:knownLeaks.size,
   knownLeaks:[...knownLeaks].slice(0,20).map(([src,occurrences])=>({src,occurrences})),
+  // Full keyed backlog for resuming stage six without repeating the HTML crawl.
+  // Only user-visible observed alt values and exact media src; never technical registry notes.
+  residualBySrc:[...residual.values()].sort((a,b)=>b.occurrences-a.occurrences||a.src.localeCompare(b.src))
+    .map(row=>({src:row.src,occurrences:row.occurrences,alts:[...row.values],samplePages:row.samplePages})),
+  residualHoverBySrc:[...hoverResidual.values()].sort((a,b)=>b.occurrences-a.occurrences||a.src.localeCompare(b.src))
+    .map(row=>({src:row.src,occurrences:row.occurrences,titles:[...row.values]})),
   examples:samples,
 };
 fs.writeFileSync(output,JSON.stringify(summary,null,2)+'\n');

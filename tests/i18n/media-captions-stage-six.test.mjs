@@ -14,7 +14,7 @@ const originalRows=[
 test('all 319 multi-country and 31 catalog photo descriptions have exact source-bound English',()=>{
   assert.equal(Object.keys(coversMulti.covers).length,319);
   assert.equal(Object.keys(coversCatalog.covers).length,31);
-  assert.equal(Object.keys(en.entries).length,350);
+  assert.ok(Object.keys(en.entries).length>=350);
   const sources=new Set(),paths=new Set();
   for(const [source,sourceKey,photo] of originalRows){
     const item=en.entries[photo.src];
@@ -80,4 +80,15 @@ test('published English alt can be reused only for the identical media source',(
   assert.equal(localizeMediaField('/media/another.webp','Тропический лес',{reusedLabels:labels}),'Тропический лес');
   const ambiguous=collectRenderedEnglishMediaLabels('<img src="'+src+'" alt="Another tropical forest scene">',collectRenderedEnglishMediaLabels(html));
   assert.equal(unambiguousEnglishMediaLabels(ambiguous).has(src),false);
+});
+
+test('stage-six source-bound extension includes 76 curated descriptions',()=>{
+ const rows=Object.entries(en.entries).filter(([,entry])=>entry.source==='stage6-rendered-en-audit');
+ assert.equal(rows.length,76);
+ for(const [src,row] of rows){
+  assert.ok(src.startsWith('/media/'));
+  assert.equal(row.sourceKey,src);
+  assert.ok(row.alt.length>=15&&!/[А-Яа-яЁё]/u.test(row.alt));
+  assert.equal(mediaEnglishEntry(src),row);
+ }
 });

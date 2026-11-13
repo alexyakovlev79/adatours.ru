@@ -8,7 +8,7 @@ import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n
 import {localizeAuthoredPageDocument} from '../../src/lib/i18n/page-copy.mjs';
 import {localizeMediaDocument,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
-import {safeJsonLd} from '../../src/lib/structured-data.mjs';
+import {safeJsonLd,SCHEMA_VERSION} from '../../src/lib/structured-data.mjs';
 const ROBOTS='noindex,nofollow,noarchive,nosnippet';
 const fail=m=>{throw Error('EN Russian fallback: '+m)};
 const get=(n,k)=>n?.attrs?.find(x=>x.name===k)?.value??null;
@@ -87,29 +87,38 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  prune(doc,n=>
   (n.tagName==='script' && !get(n,'src')?.startsWith(EN_STAGING_BASE+'_astro/') &&
    !(sharedContent && get(n,'src')?.startsWith(EN_STAGING_BASE+'form-config.js')) &&
-   !(sharedContent && get(n,'type')==='application/ld+json' && get(n,'data-schema-version'))) ||
+   !(sharedContent && get(n,'type')==='application/ld+json')) ||
   (n.tagName==='noscript'&&/mc\.yandex\.ru|googletagmanager/i.test(serialize(n)))||
   (n.tagName==='link'&&['canonical','alternate'].includes((get(n,'rel')||'').toLowerCase()))||
   (n.tagName==='meta'&&!sharedContent&&['og:','twitter:'].some(x=>(get(n,'name')||get(n,'property')||'').startsWith(x))));
  const robots=walk(head,n=>n.tagName==='meta'&&get(n,'name')==='robots');
  if(robots.length!==1)fail('Robots meta invalid '+route);
- if(sharedContent){
-  const schemas=walk(head,n=>n.tagName==='script'&&get(n,'type')==='application/ld+json');
-  // The reusable header/search/footer fragment is an HTML transport asset,
-  // not a canonical webpage. Only real EN pages must publish JSON-LD.
-  if(siteShellFragment) {
-   if(schemas.length)fail('A shared site-shell fragment must not emit JSON-LD');
-  } else {
-   if(schemas.length!==1||!get(schemas[0],'data-schema-version'))
-    fail('Expected one inspectable EN Schema.org JSON-LD graph '+route);
+ if(sharedContent && !siteShellFragment){
+  // Astro may retain the document-level JSON-LD in the body on a particular
+  // page template. Only this verified schema graph may be relocated into HEAD.
+  // JSON-LD is not executable JS; all other inline scripts remain removed.
+  const schemas=walk(doc,n=>n.tagName==='script'&&get(n,'type')==='application/ld+json');
+  if(schemas.length!==1) {
+   const scripts=walk(doc,n=>n.tagName==='script').slice(0,8)
+    .map(n=>({type:get(n,'type'),version:get(n,'data-schema-version'),src:get(n,'src')}));
+   fail('Expected one inspectable EN Schema.org JSON-LD graph '+route+
+    ' found='+schemas.length+' scripts='+JSON.stringify(scripts));
   }
   const node=schemas[0];
+  const version=get(node,'data-schema-version');
+  if(version&&version!==SCHEMA_VERSION)fail('Unexpected EN Schema.org graph version '+route+': '+version);
+  set(node,'data-schema-version',SCHEMA_VERSION);
   let graph;
-  if(!siteShellFragment){
   try{graph=JSON.parse((node.childNodes??[]).map(c=>c.value??'').join(''))}
   catch{fail('Invalid EN Schema.org JSON-LD syntax '+route)}
   const transformed=rebaseEnglishSchemaGraph(graph,route,known);
   node.childNodes=[{nodeName:'#text',value:safeJsonLd(transformed),parentNode:node}];
+  if(node.parentNode!==head){
+   const original=node.parentNode;
+   const children=original?.childNodes??[];
+   const index=children.indexOf(node);
+   if(index>=0)children.splice(index,1);
+   head.childNodes??=[];head.childNodes.push(node);node.parentNode=head;
   }
  }
  set(robots[0],'content',ROBOTS);
@@ -212,7 +221,14 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  for(const row of pages){
   const source=fs.readFileSync(row.file,'utf8');
   if(isSourceRedirect(source))aliasRoutes.add(row.route);
-  else if(sharedContent)collectRenderedEnglishMediaLabels(source,mediaLabelCandidates);
+  else if(sharedContent){
+   collectRenderedEnglishMediaLabels(source,mediaLabelCandidates);
+   // Existing native EN pages are the strongest source of approved captions.
+   // Reuse them by exact media src in RU-fallback pages, never by RU phrase.
+   const native=path.join(target,'en',row.route.slice(1),'index.html');
+   if(fs.existsSync(native))
+    collectRenderedEnglishMediaLabels(fs.readFileSync(native,'utf8'),mediaLabelCandidates);
+  }
  }
  const reusedLabels=unambiguousEnglishMediaLabels(mediaLabelCandidates);
  localization.reusedLabels=reusedLabels;

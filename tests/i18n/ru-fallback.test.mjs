@@ -150,3 +150,16 @@ test('native English pages provide verified image labels to RU-fallback views of
   assert.ok(fs.readFileSync(path.join(out,'en','brazil','index.html'),'utf8').includes(englishAlt));
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
 });
+
+test('shared shell fragments remain schema-free while full EN pages require their graph',()=>{
+ const sourceShell=source()
+  .replace('<html lang="ru"', '<html lang="en" data-ada-shared-locale="en"')
+  .replace('<script type="application/ld+json">{"@type":"TouristTrip"}</script>','');
+ const known=new Set(['/']);
+ assert.throws(()=>russianFallbackHtml(sourceShell,'/',known,{sharedContent:true}),/Expected one inspectable EN Schema/);
+ const fragment=russianFallbackHtml(sourceShell,'/',known,{sharedContent:true,sharedFragment:true});
+ assert.match(fragment,/data-ada-en-content="true"/);
+ assert.doesNotMatch(fragment,/data-schema-version=|application.{0,2}ld.{0,2}json/);
+ const withSchema=sourceShell.replace('</head>',schemaFixture('/')+'</head>');
+ assert.throws(()=>russianFallbackHtml(withSchema,'/',known,{sharedContent:true,sharedFragment:true}),/fragment must not contain/);
+});

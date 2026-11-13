@@ -96,6 +96,7 @@ jobs:
           node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/media-captions-stage-six.test.mjs tests/i18n/schema-stage-eight.test.mjs tests/i18n/schema-noindex-publication.test.mjs tests/i18n/derived-catalog-localization.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
+          node -e "const fs=require('node:fs');const html=fs.readFileSync('dist/index.html','utf8');const count=html.split('application/ld+json').length-1;console.log('EN_RAW_SCHEMA_ROOT_COUNT='+count);if(count!==1)throw Error('EN_SCHEMA_RAW_MISSING_OR_DUPLICATED')"
           npx pagefind --site dist --force-language en
           node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site

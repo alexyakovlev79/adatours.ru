@@ -116,7 +116,6 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
   const id=attr(html,'data-ada-entity-id'),item=translated.get(id);
   if(item){
    const heading=find(dom,x=>x.tagName==='h1').map(textOf).map(clean);
-   // Exact approved English title projections are legitimate, source-bound H1s.
    const acceptedTitle=translateAuthoredPageText(item.displayName??'','en');
    if(heading.includes(clean(acceptedTitle))){
     if(!source.includes('class="hero')||!find(dom,x=>x.tagName==='main').length||!find(dom,x=>x.tagName==='footer').length)

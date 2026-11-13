@@ -210,7 +210,7 @@ const metaDescription = schema.metaDescription;
     <noscript><style is:inline>img[data-lazy-src], picture[data-lazy-picture] { display: none !important; }</style></noscript>
     <meta name="theme-color" content="#fffcf8" />
     {!privatePreview && <script is:inline src={withBase('/form-config.js?v=20261022-postbox-1')}></script>}
-    {!privatePreview && schema.graph && <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />}
+    {!privatePreview && schema.graph && <script type="application/ld+json" is:inline data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />}
     <!-- Yandex.Metrika: Ada Tours, counter 113586792 -->
 
   </head>

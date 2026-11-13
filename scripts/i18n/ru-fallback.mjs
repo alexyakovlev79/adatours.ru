@@ -214,7 +214,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,shar
  * All other content, the original images and JSON-LD are left intact.
  */
 export function localizeNativeEnglishMediaHtml(html,{reusedLabels=new Map()}={}){
- if(typeof html!=='string'||!/<img\\b[^>]*[А-Яа-яЁё]/iu.test(html))return html;
+ if(typeof html!=='string'||!/<img\b[^>]*[А-Яа-яЁё]/iu.test(html))return html;
  const doc=parse(html);
  const node=walk(doc,n=>n.tagName==='html')[0];
  if(!node||get(node,'lang')!=='en')fail('Native EN media pass expected html lang=en');

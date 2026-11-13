@@ -123,7 +123,7 @@ try{
   }finally{await context.close();}
  });
  await check('seo-details-toggle',async()=>{
-  const {page,context}=await open('/en/brazil/rio-de-janeiro/corcovado-four-hours/tour/');
+  const {page,context}=await open('/en/brazil/');
   try{
    const btn=page.locator('[data-seo-geo-toggle]:visible').first();
    if(!await btn.count())return {skip:true,reason:'Article is not long enough for a toggle'};
@@ -133,13 +133,16 @@ try{
    return {collapsed:text,expanded:now};
   }finally{await context.close();}
  });
- await check('noindex-form-cannot-submit',async()=>{
+ await check('shared-en-form-field-and-locale-no-send',async()=>{
   const {page,context}=await open('/en/contacts/');
   try{
-   assert.equal(await page.locator('form[data-lead-form]').count(),0);
-   const count=await page.locator('button[type=submit]').count();
-   for(let i=0;i<count;i++)assert.ok(await page.locator('button[type=submit]').nth(i).isDisabled());
-   return {liveForms:0,disabledSubmitButtons:count};
+   const form=page.locator('form[data-lead-form]');
+   assert.equal(await form.count(),1,'Canonical layout should expose one shared form');
+   assert.equal(await form.locator('input[name=locale]').inputValue(),'en');
+   assert.ok(await form.locator('input[name=name]').count());
+   assert.ok(await form.locator('input[name=phone_country]').count());
+   // Do not click a submit control or send personal data in smoke tests.
+   return {formCount:1,locale:'en',submitted:false};
   }finally{await context.close();}
  });
 }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}

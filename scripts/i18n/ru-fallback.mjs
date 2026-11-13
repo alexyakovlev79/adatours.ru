@@ -208,6 +208,20 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,shar
  return out;
 }
 
+/** Apply exact image-bound EN labels also to native EN HTML. The fallback
+ * generator skips existing EN pages, so without this final media-only pass the
+ * same image can still carry its older Russian alt/title in native templates.
+ * All other content, the original images and JSON-LD are left intact.
+ */
+export function localizeNativeEnglishMediaHtml(html,{reusedLabels=new Map()}={}){
+ if(typeof html!=='string'||!/<img\\b[^>]*[А-Яа-яЁё]/iu.test(html))return html;
+ const doc=parse(html);
+ const node=walk(doc,n=>n.tagName==='html')[0];
+ if(!node||get(node,'lang')!=='en')fail('Native EN media pass expected html lang=en');
+ const result=localizeMediaDocument(doc,{locale:'en',reusedLabels});
+ return result.attributes||result.captions?serialize(doc):html;
+}
+
 export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000_000,sharedContent=false,receipt=null}={}){
  const root=path.resolve(dist),target=path.resolve(output);
  if(root===target||target.startsWith(root+path.sep))fail('Unsafe output');
@@ -239,7 +253,16 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  for(const row of pages){
   if(aliasRoutes.has(row.route)){redirects++;continue}
   const filename=path.join(target,'en',row.route.slice(1),'index.html');
-  if(fs.existsSync(filename)){existing++;continue}
+  if(fs.existsSync(filename)){
+   // Source-bound captions apply to native EN as well as generated EN fallback.
+   // Only rewrite pages where an actual image label changes.
+   if(sharedContent){
+    const native=fs.readFileSync(filename,'utf8');
+    const localized=localizeNativeEnglishMediaHtml(native,{reusedLabels});
+    if(localized!==native)fs.writeFileSync(filename,localized);
+   }
+   existing++;continue;
+  }
   const rendered=russianFallbackHtml(fs.readFileSync(row.file,'utf8'),row.route,known,localization);
   if(rendered===null)fail('Unclassified RU redirect alias: '+row.route);
   fs.mkdirSync(path.dirname(filename),{recursive:true});fs.writeFileSync(filename,rendered);

@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {parse} from 'parse5';
-import {russianFallbackHtml,discoverRussianPages,stageRussianFallback} from '../../scripts/i18n/ru-fallback.mjs';
+import {russianFallbackHtml,discoverRussianPages,stageRussianFallback,localizeNativeEnglishMediaHtml} from '../../scripts/i18n/ru-fallback.mjs';
 import {schemaFixture} from './schema-fixture.mjs';
 
 const source=()=>[
@@ -162,4 +162,20 @@ test('shared shell fragments remain schema-free while full EN pages require thei
  assert.doesNotMatch(fragment,/data-schema-version=|application.{0,2}ld.{0,2}json/);
  const withSchema=sourceShell.replace('</head>',schemaFixture('/')+'</head>');
  assert.throws(()=>russianFallbackHtml(withSchema,'/',known,{sharedContent:true,sharedFragment:true}),/fragment must not contain/);
+});
+
+test('native EN media pass applies previously translated source-bound captions without changing other text',()=>{
+ const src='/media/catalog/tury/hero-enhanced-20260930.webp';
+ const russian='Панорама Рио-де-Жанейро с заливом, горой Сахарная Голова и городской застройкой, Бразилия';
+ const html='<html lang="en" data-ada-shared-locale="en"><head></head><body>'+
+  '<figure><img src="https://img.adatours.ru'+src+'" alt="'+russian+'" title="'+russian+'"></figure>'+
+  '<p>EN article remains unchanged</p></body></html>';
+ const out=localizeNativeEnglishMediaHtml(html);
+ assert.match(out,/alt="Panorama of Rio de Janeiro/);
+ assert.match(out,/title="Panorama of Rio de Janeiro/);
+ assert.match(out,/<p>EN article remains unchanged<\\/p>/);
+ assert.doesNotMatch(out,/Панорама Рио/);
+ assert.equal(localizeNativeEnglishMediaHtml(out),out);
+ const decorative=html.replace('alt="'+russian+'"','alt="" aria-hidden="true"');
+ assert.equal(localizeNativeEnglishMediaHtml(decorative),decorative);
 });

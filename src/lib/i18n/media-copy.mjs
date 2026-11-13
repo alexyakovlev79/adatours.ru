@@ -99,3 +99,30 @@ export function localizeMediaDocument(document,{locale='en',reusedLabels=null}={
   visit(document);
   return {attributes,captions};
 }
+
+
+/** Preserve meaningful, source-bound English ALT on real no-JS image fallbacks.
+ * parse5 preserves the nested <img> markup inside <noscript> as raw text.
+ * This narrowly transforms image tags within that element only, not prose,
+ * canonical captions, script data, prices, or registered source identifiers.
+ */
+export function localizeNoscriptMediaHtml(html,{locale='en'}={}) {
+  if(locale!=='en'||typeof html!=='string'||!html.includes('<noscript'))return html;
+  const field=(tag,key)=>{
+    const match=new RegExp('(?:^|\\s)'+key+'\\s*=\\s*(["\\u0027])([\\s\\S]*?)\\1','i').exec(tag);
+    return match?.[2]??null;
+  };
+  const escapeAttr=(value,quote)=>value.replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(quote==='"'?/"/g:/'/g,quote==='"'?'&quot;':'&#39;');
+  return html.replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript\s*>/gi,block=>
+    block.replace(/<img\b[^>]*>/gi,tag=>{
+      const src=field(tag,'data-lazy-src')??field(tag,'src');
+      const altMatch=/(\s+alt\s*=\s*)(["'])([\s\S]*?)\2/i.exec(tag);
+      if(!src||!altMatch)return tag;
+      const translated=localizeMediaField(src,altMatch[3],{locale,field:'alt'});
+      if(translated===altMatch[3])return tag;
+      return tag.slice(0,altMatch.index)+altMatch[1]+altMatch[2]+
+        escapeAttr(translated,altMatch[2])+altMatch[2]+
+        tag.slice(altMatch.index+altMatch[0].length);
+    }));
+}

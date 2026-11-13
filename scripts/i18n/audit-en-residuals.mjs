@@ -66,6 +66,7 @@ function classify({stack,field,fallback,route}){
  if(field==='alt'||tags.includes('figcaption')||(field==='title'&&leaf==='img'))return 'media_pending_stage6';
  if(field==='js-data')return 'js_state_candidate';
  if(stack.some(n=>get(n,'class')?.split(/\s+/u).includes('day__title')))return 'source_itinerary_title_fallback';
+ if(stack.some(n=>get(n,'class')?.split(/\s+/u).includes('highlight__title')))return 'source_highlight_name_fallback';
  if(stack.some(n=>n.tagName==='nav'&&get(n,'class')?.includes('breadcrumbs')))return 'source_breadcrumb_name_fallback';
  if(stack.some(n=>get(n,'class')?.split(/\s+/u).includes('catalog-more__link')))return 'ui_navigation_label';
  if(stack.some(n=>get(n,'class')?.split(/\s+/u).includes('eyebrow')))return 'metadata_label_or_source_fallback';

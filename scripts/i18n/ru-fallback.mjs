@@ -6,7 +6,7 @@ import path from 'node:path';
 import {parse,serialize} from 'parse5';
 import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n/shared-ui-html.mjs';
 import {localizeAuthoredPageDocument} from '../../src/lib/i18n/page-copy.mjs';
-import {localizeMediaDocument,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
+import {localizeMediaDocument,localizeNoscriptMediaHtml,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
 import {safeJsonLd,SCHEMA_VERSION} from '../../src/lib/structured-data.mjs';
 const ROBOTS='noindex,nofollow,noarchive,nosnippet';
@@ -200,7 +200,8 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
    set(n,'data-geo-map-payload',JSON.stringify(payload));
   }
  }
- const out=serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
+ const serialized=serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
+ const out=sharedContent?localizeNoscriptMediaHtml(serialized,{locale:'en'}):serialized;
  if(!(out.includes('data-ada-ru-fallback')||out.includes('data-ada-en-content'))||!out.includes(ROBOTS))fail('Unsafe transformed output');
  if(/data-ada-translation-notice|This page is currently available in Russian/i.test(out))fail('Unrequested translation notice');
  return out;

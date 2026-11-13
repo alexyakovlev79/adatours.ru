@@ -102,3 +102,24 @@ test('stage six retains 67 independently translated second-batch image sources',
   assert.equal(mediaEnglishEntry(src),entry);
  }
 });
+
+test('third through sixth stage-six batches keep 327 exact image-owned translations',()=>{
+ const expected={
+  'stage6-html-residual-20261113-b3':51,
+  'stage6-html-residual-20261113-b4':72,
+  'stage6-html-residual-20261113-b5':91,
+  'stage6-html-residual-20261113-b6':113
+ };
+ for(const [source,count] of Object.entries(expected)){
+  const rows=Object.entries(en.entries).filter(([,record])=>record.source===source);
+  assert.equal(rows.length,count,source+' changed');
+  for(const [src,record] of rows){
+   assert.ok(src.startsWith('/media/'),src);
+   assert.equal(record.sourceKey,src);
+   assert.ok(typeof record.alt==='string'&&record.alt.length>=8&&!/[А-Яа-яЁё]/u.test(record.alt),src);
+   assert.equal(mediaEnglishEntry(src),record);
+   assert.equal(localizeMediaField(src,'Русская подпись',{locale:'en'}),record.alt);
+  }
+ }
+ assert.equal(Object.keys(en.entries).length,820);
+});

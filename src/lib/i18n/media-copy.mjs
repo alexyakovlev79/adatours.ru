@@ -4,8 +4,24 @@
  * unrelated image based on the phrase alone.
  */
 import mediaEn from '../../data/i18n/media-captions.en.json' with {type:'json'};
+import shard1 from '../../data/i18n/stage6-shards/6-1.en.json' with {type:'json'};
+import shard2 from '../../data/i18n/stage6-shards/6-2.en.json' with {type:'json'};
+import shard3 from '../../data/i18n/stage6-shards/6-3.en.json' with {type:'json'};
+import shard4 from '../../data/i18n/stage6-shards/6-4.en.json' with {type:'json'};
+import shard5 from '../../data/i18n/stage6-shards/6-5.en.json' with {type:'json'};
+import shard6 from '../../data/i18n/stage6-shards/6-6.en.json' with {type:'json'};
+import shard7 from '../../data/i18n/stage6-shards/6-7.en.json' with {type:'json'};
+import shard8 from '../../data/i18n/stage6-shards/6-8.en.json' with {type:'json'};
+import shard9 from '../../data/i18n/stage6-shards/6-9.en.json' with {type:'json'};
 
 const entries = new Map(Object.entries(mediaEn.entries));
+for(const [i,shard] of [shard1,shard2,shard3,shard4,shard5,shard6,shard7,shard8,shard9].entries()){
+ if(shard.schemaVersion!==1||shard.stage!=='6.'+(i+1))throw Error('Invalid Stage 6 shard '+(i+1));
+ for(const [src,record] of Object.entries(shard.entries)){
+  if(entries.has(src))throw Error('Conflicting English media caption '+src);
+  entries.set(src,record);
+ }
+}
 const containsRussian = value => /[А-Яа-яЁё]/u.test(value ?? '');
 const own = (node,key) => node?.attrs?.find(attr => attr.name===key);
 const get = (node,key) => own(node,key)?.value;

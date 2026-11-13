@@ -10,9 +10,12 @@ interface Props { article: SeoGeoArticle; }
 
 const { article } = Astro.props;
 const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Boolean).join('-');
+// The article title remains source-bound; the control itself must be English.
+const isEnglish = import.meta.env.SITE_LOCALE === 'en' && process.env.EN_SHARED_CONTENT === '1';
+const toggleLabel = isEnglish ? 'Read more' : article.buttonLabel;
 ---
 
-<section class="seo-geo section--tight" data-seo-geo data-seo-geo-target={article.targetPath} aria-label={article.buttonLabel}>
+<section class="seo-geo section--tight" data-seo-geo data-seo-geo-target={article.targetPath} aria-label={toggleLabel}>
   <div class="container prose seo-geo__container">
     <Fragment set:html={article.headingHtml} />
     <div class="seo-geo__content" id={controlId} data-seo-geo-content>
@@ -21,7 +24,7 @@ const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Bool
     </div>
     <button class="seo-geo__toggle" type="button" aria-controls={controlId} aria-expanded="false"
       data-seo-geo-toggle hidden>
-      <span data-seo-geo-label>{article.buttonLabel}</span>
+      <span data-seo-geo-label>{toggleLabel}</span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
       </svg>

@@ -63,8 +63,12 @@ function classify({stack,field,fallback,route}){
   return 'seo_pending_stage7';
  if(tags.includes('section')&&stack.some(n=>get(n,'class')?.split(/\s+/).includes('pagefind-record')))return 'technical_pagefind_index';
  if(tags.includes('noscript'))return 'noscript_fallback_markup';
- if(field==='alt'||tags.includes('figcaption'))return 'media_pending_stage6';
+ if(field==='alt'||tags.includes('figcaption')||(field==='title'&&leaf==='img'))return 'media_pending_stage6';
  if(field==='js-data')return 'js_state_candidate';
+ if(stack.some(n=>get(n,'class')?.split(/\s+/u).includes('day__title')))return 'source_itinerary_title_fallback';
+ if(stack.some(n=>n.tagName==='nav'&&get(n,'class')?.includes('breadcrumbs')))return 'source_breadcrumb_name_fallback';
+ if(stack.some(n=>get(n,'class')?.split(/\s+/u).includes('catalog-more__link')))return 'ui_navigation_label';
+ if(stack.some(n=>get(n,'class')?.split(/\s+/u).includes('eyebrow')))return 'metadata_label_or_source_fallback';
  if(tags.some(t=>t==='nav'||t==='header'||t==='footer'||interactive.has(t))||
     field==='aria-label'||field==='aria-description'||field==='placeholder'||field==='aria-valuetext')
   return 'ui_localization_gap';

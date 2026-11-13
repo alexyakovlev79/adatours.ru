@@ -92,3 +92,13 @@ test('stage-six source-bound extension includes 76 curated descriptions',()=>{
   assert.equal(mediaEnglishEntry(src),row);
  }
 });
+
+test('stage six retains 67 independently translated second-batch image sources',()=>{
+ const rows=Object.entries(en.entries).filter(([,v])=>v.source==='stage6-rendered-en-audit-b2');
+ assert.equal(rows.length,67);
+ for(const [src,entry] of rows){
+  assert.equal(entry.sourceKey,src);
+  assert.ok(entry.alt.length>=12&&!/[А-Яа-яЁё]/u.test(entry.alt));
+  assert.equal(mediaEnglishEntry(src),entry);
+ }
+});

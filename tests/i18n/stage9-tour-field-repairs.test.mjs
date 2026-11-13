@@ -12,7 +12,7 @@ const changeAt=(obj,path)=>{
  const parent=parts.reduce((node,key)=>node[key],obj);
  parent[last]='INDEPENDENT SOURCE EDIT';
 };
-test('stage 9 repairs: 110 exact fields across sixteen active tour sources',()=>{
+test('stage 9 repairs: 126 exact fields across eighteen active tour sources',()=>{
  let total=0;
  for(const [id,row] of Object.entries(sourcePatches.entries)){
   const file=fs.readFileSync(new URL('../../'+row.sourcePath,import.meta.url),'utf8');
@@ -55,5 +55,5 @@ test('stage 9 repairs: 110 exact fields across sixteen active tour sources',()=>
   assert.deepEqual(entry,previous,'Original RU Tour must not be mutated');
   assert.ok((result.sourceBoundRepairs??[]).every(p=>p.path!=='/title' || !already.has('/title')));
  }
- assert.equal(total,110);
+ assert.equal(total,126);
 });

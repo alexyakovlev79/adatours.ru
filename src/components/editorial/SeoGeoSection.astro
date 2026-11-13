@@ -1,4 +1,5 @@
 ---
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
 interface SeoGeoArticle {
   targetPath: string;
   buttonLabel: string;
@@ -11,7 +12,7 @@ interface Props { article: SeoGeoArticle; }
 const { article } = Astro.props;
 const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Boolean).join('-');
 // The article title remains source-bound; the control itself must be English.
-const isEnglish = import.meta.env.SITE_LOCALE === 'en' && process.env.EN_SHARED_CONTENT === '1';
+const isEnglish = sharedUiLocale() === 'en';
 const toggleLabel = isEnglish ? 'Read more' : article.buttonLabel;
 ---
 

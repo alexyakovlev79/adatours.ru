@@ -149,7 +149,7 @@ const schemaBreadcrumbTrails = breadcrumbs?.length
       return items[0]?.url === rootUrl ? items : [{ name: 'Главная', url: rootUrl }, ...items];
     })
   : [breadcrumbItems];
-const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 || Boolean(breadcrumbs?.length)) ? schemaBreadcrumbTrails.map((trail, trailIndex) => ({
+const breadcrumbSchemas = (!noindex || sharedEnglishContent) && showBreadcrumbs && (segments.length > 0 || Boolean(breadcrumbs?.length)) ? schemaBreadcrumbTrails.map((trail, trailIndex) => ({
   '@type': 'BreadcrumbList',
   '@id': `${canonicalUrl}#breadcrumb${trailIndex ? `-${trailIndex + 1}` : ''}`,
   itemListElement: trail.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: item.url })),
@@ -157,11 +157,15 @@ const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 ||
 
 // Render exactly once. The graph describes this same HTML, including current card slices.
 // Legacy child JSON-LD is consumed and removed, preventing duplicate Person/Trip graphs.
-const schema = privatePreview || sharedEnglishContent
+// Public indexing and JSON-LD are separate controls. The dedicated EN preview
+// stays noindex, but now emits its own translated, inspectable Schema.org graph.
+// Only the closed privatePilot continues to suppress all schema.
+const schema = privatePreview
   ? { metaTitle: fullTitle, metaDescription: localizedDescription, html: renderedBody, graph: null }
   : await pageStructuredData({
       root: rootUrl, html: renderedBody, path: logicalPath,
-      url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
+      url: canonicalUrl, title: fullTitle, description: localizedDescription,
+      lang: sharedEnglishContent ? 'en' : lang, image: ogImageUrl,
       breadcrumbs: breadcrumbSchemas, extra: pageSchema, seoGeoArticle,
     });
 const metaTitle = schema.metaTitle;
@@ -206,7 +210,7 @@ const metaDescription = schema.metaDescription;
     <noscript><style is:inline>img[data-lazy-src], picture[data-lazy-picture] { display: none !important; }</style></noscript>
     <meta name="theme-color" content="#fffcf8" />
     {!privatePreview && <script is:inline src={withBase('/form-config.js?v=20261022-postbox-1')}></script>}
-    {!privatePreview && !sharedEnglishContent && <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />}
+    {!privatePreview && schema.graph && <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />}
     <!-- Yandex.Metrika: Ada Tours, counter 113586792 -->
 
   </head>

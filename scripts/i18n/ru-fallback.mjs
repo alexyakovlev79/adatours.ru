@@ -8,6 +8,7 @@ import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n
 import {localizeAuthoredPageDocument} from '../../src/lib/i18n/page-copy.mjs';
 import {localizeMediaDocument,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
+import {safeJsonLd} from '../../src/lib/structured-data.mjs';
 const ROBOTS='noindex,nofollow,noarchive,nosnippet';
 const fail=m=>{throw Error('EN Russian fallback: '+m)};
 const get=(n,k)=>n?.attrs?.find(x=>x.name===k)?.value??null;
@@ -18,6 +19,41 @@ const prune=(n,p)=>{for(const c of [...(n.childNodes??[])]){if(p(c))n.childNodes
 // Reject an unexpected redirect later in the renderer if this preflight misses one.
 const isSourceRedirect=html=>/<meta\b[^>]*\bhttp-equiv\s*=\s*(?:"refresh"|'refresh'|refresh)(?=[\s/>])/i.test(html);
 const normal=s=>{if(!s||s==='/')return '/';const p=s.split('/').filter(Boolean);if(p.some(x=>x==='.'||x==='..'||x.includes('\\')||x.includes('%')))fail('Unsafe route '+s);return '/'+p.join('/')+'/'};
+const EN_ORIGIN='https://alexyakovlev79.github.io';
+const EN_PREVIEW_ROOT=EN_ORIGIN+EN_STAGING_BASE;
+const EN_PUBLIC_ROOT=EN_PREVIEW_ROOT+'en/';
+// Rebase only this site's own resolvable routes, never external sameAs, the
+// legal Organization URL, content sources, currencies, media identities or IDs.
+export function rebaseEnglishSchemaGraph(graph,route,known){
+ if(!graph||graph['@context']!=='https://schema.org'||!Array.isArray(graph['@graph'])||!graph['@graph'].length)
+  fail('Invalid EN Schema.org graph '+route);
+ const rebase=value=>{
+  if(typeof value!=='string'||!value.startsWith(EN_PREVIEW_ROOT))return value;
+  let url;
+  try{url=new URL(value)}catch{fail('Invalid Schema.org URL '+route)}
+  const relative=url.pathname.slice(EN_STAGING_BASE.length);
+  if(!url.pathname.startsWith(EN_STAGING_BASE))return value;
+  if(relative.startsWith('en/'))return value;
+  if(relative.startsWith('media/'))return 'https://img.adatours.ru/'+relative+url.search+url.hash;
+  if(!known.has(normal(relative)))return value;
+  return EN_PUBLIC_ROOT+(relative?relative.replace(/\/?$/,'/'): '')+url.search+url.hash;
+ };
+ const visit=value=>{
+  if(typeof value==='string')return rebase(value);
+  if(Array.isArray(value))return value.map(visit);
+  if(value&&typeof value==='object')return Object.fromEntries(
+   Object.entries(value).map(([key,part])=>[key,visit(part)]));
+  return value;
+ };
+ const translated=visit(graph);
+ const page=translated['@graph'].find(node=>node['@id']===EN_PUBLIC_ROOT+route.slice(1)+'#webpage');
+ if(!page||page.url!==EN_PUBLIC_ROOT+route.slice(1)||page.inLanguage!=='en')
+  fail('EN Schema.org page URL/language mismatch '+route);
+ const ids=translated['@graph'].map(node=>node['@id']);
+ if(ids.some(id=>typeof id!=='string'||!id)||new Set(ids).size!==ids.length)
+  fail('Duplicate or missing EN Schema.org @id '+route);
+ return translated;
+}
 export function discoverRussianPages(root){
  const pages=[];
  function visit(folder,parts){for(const d of fs.readdirSync(folder,{withFileTypes:true})){
@@ -50,12 +86,24 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  // Keep search, first-party JS, hero video and all shared editorial components.
  prune(doc,n=>
   (n.tagName==='script' && !get(n,'src')?.startsWith(EN_STAGING_BASE+'_astro/') &&
-   !(sharedContent && get(n,'src')?.startsWith(EN_STAGING_BASE+'form-config.js')))||
+   !(sharedContent && get(n,'src')?.startsWith(EN_STAGING_BASE+'form-config.js')) &&
+   !(sharedContent && get(n,'type')==='application/ld+json' && get(n,'data-schema-version'))) ||
   (n.tagName==='noscript'&&/mc\.yandex\.ru|googletagmanager/i.test(serialize(n)))||
   (n.tagName==='link'&&['canonical','alternate'].includes((get(n,'rel')||'').toLowerCase()))||
   (n.tagName==='meta'&&!sharedContent&&['og:','twitter:'].some(x=>(get(n,'name')||get(n,'property')||'').startsWith(x))));
  const robots=walk(head,n=>n.tagName==='meta'&&get(n,'name')==='robots');
  if(robots.length!==1)fail('Robots meta invalid '+route);
+ if(sharedContent){
+  const schemas=walk(head,n=>n.tagName==='script'&&get(n,'type')==='application/ld+json');
+  if(schemas.length!==1||!get(schemas[0],'data-schema-version'))
+   fail('Expected one inspectable EN Schema.org JSON-LD graph '+route);
+  const node=schemas[0];
+  let graph;
+  try{graph=JSON.parse((node.childNodes??[]).map(c=>c.value??'').join(''))}
+  catch{fail('Invalid EN Schema.org JSON-LD syntax '+route)}
+  const transformed=rebaseEnglishSchemaGraph(graph,route,known);
+  node.childNodes=[{nodeName:'#text',value:safeJsonLd(transformed),parentNode:node}];
+ }
  set(robots[0],'content',ROBOTS);
  // Social cards for shared EN keep their English metadata. Canonical and
  // hreflang remain suppressed on this noindex staging host, by design.

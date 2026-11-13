@@ -8,6 +8,9 @@ on:
       - 'src/lib/i18n/**'
       - 'src/lib/seo-price-meta.mjs'
       - 'scripts/i18n/ru-fallback.mjs'
+      - 'scripts/i18n/verify-en-schema-output.mjs'
+      - 'scripts/i18n/verify-ru-fallback-output.mjs'
+      - 'tests/i18n/schema-noindex-publication.test.mjs'
       - 'tests/i18n/seo-stage-seven.test.mjs'
       - 'src/lib/page-schema.ts'
       - 'src/lib/structured-data.mjs'
@@ -160,13 +163,14 @@ jobs:
           node --check scripts/i18n/audit-en-media-copy.mjs
           node --check scripts/i18n/audit-en-residuals.mjs
           node --test tests/i18n/stage9-residual-ui.test.mjs
-          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/schema-stage-eight.test.mjs tests/i18n/seo-stage-seven.test.mjs
+          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/schema-stage-eight.test.mjs tests/i18n/seo-stage-seven.test.mjs tests/i18n/schema-noindex-publication.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
           npx pagefind --site dist --force-language en
           node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
+          node scripts/i18n/verify-en-schema-output.mjs ../en-pages-site
           node scripts/i18n/audit-en-residuals.mjs ../en-pages-site ../stage9-residual-audit.json ../stage9-residual-urls.ndjson ../stage9-js-sources.json
           node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022

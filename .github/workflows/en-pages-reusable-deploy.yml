@@ -93,13 +93,14 @@ jobs:
           node --test tests/i18n/en-staging-site.test.mjs
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
-          node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/media-captions-stage-six.test.mjs
+          node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/media-captions-stage-six.test.mjs tests/i18n/schema-stage-eight.test.mjs tests/i18n/schema-noindex-publication.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build
           npx pagefind --site dist --force-language en
           node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
+          node scripts/i18n/verify-en-schema-output.mjs ../en-pages-site
           node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

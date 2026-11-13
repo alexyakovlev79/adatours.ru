@@ -58,7 +58,8 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
          : attr(x,'data-ada-staging-inert-form')!=='true'||attr(x,'inert')===null||
            attr(x,'data-lead-form')!==null||attr(x,'method')==='post'))||
        x.tagName==='script'&&!attr(x,'src')?.startsWith(EN_STAGING_BASE+'_astro/')&&
-         !(sharedContent && attr(x,'src')?.startsWith(EN_STAGING_BASE+'form-config.js'))).length ||
+         !(sharedContent && attr(x,'src')?.startsWith(EN_STAGING_BASE+'form-config.js')) &&
+         !(sharedContent && attr(x,'type')==='application/ld+json' && attr(x,'data-schema-version'))).length ||
      find(dom,x=>x.tagName==='link'&&['canonical','alternate'].includes(attr(x,'rel'))).length)
    fail('Staging boundaries or content language '+name);
   if(sharedContent){

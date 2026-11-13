@@ -89,14 +89,15 @@ export function selectVipTours(entries, options = {}) {
   return { entries: selected, targetCount, namedCount: named.length, actualShare: selected.length / all.length };
 }
 
-export function vipTourPriceLabel(value) {
+export function vipTourPriceLabel(value, locale = 'ru') {
   const data = dataOf(value);
   const price = priceOf(data);
   if (price === undefined) return '';
-  const amount = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 }).format(price);
+  const amount = new Intl.NumberFormat(locale === 'en' ? 'en-US' : 'ru-RU', { maximumFractionDigits: 0 }).format(price);
   const currency = (data.currency ?? '').trim().toUpperCase();
-  if (currency === 'USD') return `от $${amount}`;
-  if (currency === 'EUR') return `от €${amount}`;
-  if (currency === 'BRL') return `от R$${amount}`;
-  return `от ${amount}${currency ? ` ${currency}` : ''}`;
+  const prefix = locale === 'en' ? 'From' : 'от';
+  if (currency === 'USD') return `${prefix} ${amount}`;
+  if (currency === 'EUR') return `${prefix} €${amount}`;
+  if (currency === 'BRL') return `${prefix} R${amount}`;
+  return `${prefix} ${amount}${currency ? ` ${currency}` : ''}`;
 }

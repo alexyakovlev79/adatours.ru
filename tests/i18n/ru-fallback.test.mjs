@@ -159,7 +159,7 @@ test('shared shell fragments remain schema-free while full EN pages require thei
  assert.throws(()=>russianFallbackHtml(sourceShell,'/',known,{sharedContent:true}),/Expected one inspectable EN Schema/);
  const fragment=russianFallbackHtml(sourceShell,'/',known,{sharedContent:true,sharedFragment:true});
  assert.match(fragment,/data-ada-en-content="true"/);
- assert.doesNotMatch(fragment,/application\\/ld\\+json|data-schema-version=/);
+ assert.doesNotMatch(fragment,/data-schema-version=|application.{0,2}ld.{0,2}json/);
  const withSchema=sourceShell.replace('</head>',schemaFixture('/')+'</head>');
  assert.throws(()=>russianFallbackHtml(withSchema,'/',known,{sharedContent:true,sharedFragment:true}),/fragment must not contain/);
 });

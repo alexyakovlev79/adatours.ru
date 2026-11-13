@@ -170,3 +170,23 @@ test('stage six continuation keeps source-bound English descriptions for all fiv
  }
  assert.ok(Object.keys(en.entries).length>=1098);
 });
+
+test('stage six resumed batches b13 through b16 are exact source-bound English labels',()=>{
+ const expected={
+  'stage6-html-residual-20261113-b13':47,
+  'stage6-html-residual-20261113-b14':21,
+  'stage6-html-residual-20261113-b15':46,
+  'stage6-html-residual-20261113-b16':31
+ };
+ for(const [source,count] of Object.entries(expected)){
+  const matching=Object.entries(en.entries).filter(([,item])=>item.source===source);
+  assert.equal(matching.length,count,source);
+  for(const [src,item] of matching){
+   assert.equal(item.sourceKey,src,source+': '+src);
+   assert.ok(src.startsWith('/media/'),src);
+   assert.ok(item.alt.length>=7&&!/[А-Яа-яЁё]/u.test(item.alt),src);
+   assert.equal(localizeMediaField(src,'Русская подпись',{locale:'en'}),item.alt);
+  }
+ }
+ assert.ok(Object.keys(en.entries).length>=1243);
+});

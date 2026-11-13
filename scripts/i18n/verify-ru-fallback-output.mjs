@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {parse} from 'parse5';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
+import {translateAuthoredPageText} from '../../src/lib/i18n/page-copy.mjs';
 import uiCopy from '../../src/data/i18n/ui-copy.json' with {type:'json'};
 import {primaryEnglishMenuLabels} from './verify-en-primary-navigation.mjs';
 const root=path.resolve(process.argv[2]||'pages-site');
@@ -114,7 +115,10 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
   const id=attr(html,'data-ada-entity-id'),item=translated.get(id);
   if(item){
    const heading=find(dom,x=>x.tagName==='h1').map(textOf).map(clean);
-   if(heading.includes(clean(item.displayName??''))){
+   // An explicitly approved exact-match English title must be accepted as the
+    // canonical display H1; do not loosen checks for other, unapproved text.
+    const expectedHeading=translateAuthoredPageText(item.displayName??'','en');
+    if(heading.includes(clean(expectedHeading))){
     if(!source.includes('class="hero')||!find(dom,x=>x.tagName==='main').length||!find(dom,x=>x.tagName==='footer').length)
      fail('Incomplete shared entity layout '+id);
     verifiedEntities.set(id,path.relative(root,name));

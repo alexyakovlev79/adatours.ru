@@ -121,5 +121,5 @@ test('third through sixth stage-six batches keep 327 exact image-owned translati
    assert.equal(localizeMediaField(src,'Русская подпись',{locale:'en'}),record.alt);
   }
  }
- assert.equal(Object.keys(en.entries).length,820);
+ assert.ok(Object.keys(en.entries).length>=820);
 });

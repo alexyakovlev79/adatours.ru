@@ -36,7 +36,7 @@ function translateMetadataPart(part,locale) {
   if(fixed!==raw)return fixed;
   // A price is already canonical. Only replace its display prefix.
   if(/^от\s+(?=[$€£¥₽]\s*[\d.,]|(?:USD|EUR|BRL)\s*[\d.,])/u.test(raw))
-    return raw.replace(/^от\b/u,'from');
+    return raw.replace(/^от(?=\s)/u,'from');
   const duration=/^(\d+(?:[,.]\d+)?(?:\s*[–-]\s*\d+(?:[,.]\d+)?)?)\s+(?:час(?:а|ов)?|ч)\.?$/u.exec(raw);
   if(duration)return duration[1].replaceAll(',','.')+' '+(duration[1]==='1'?'hour':'hours');
   return raw;

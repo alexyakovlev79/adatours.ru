@@ -19,7 +19,8 @@ test('stage 9 repairs: 110 exact fields across sixteen active tour sources',()=>
   const match=/^---\r?\n([\s\S]*?)\r?\n---/u.exec(file);
   assert.ok(match,id+' must have frontmatter');
   const parsed=yaml.load(match[1]);
-  const canonicalBody=file.slice(match[0].length);
+  // Astro's raw Markdown body begins *after* the closing frontmatter newline.
+  const canonicalBody=file.slice(match[0].length).replace(/^\r?\n/u,'');
   const sourceWithBody={...parsed,__body:canonicalBody};
   assert.equal(parsed.id,id);
   const fields=eligibleTourFieldRepairs({sourceId:id,source:sourceWithBody});

@@ -125,8 +125,10 @@ for(const file of pages){
   const t=tag(node);
   if(skip.has(t))return;
   if(t==='script'){
-   if(get(node,'type')==='application/ld+json')
-    errors.push({url,problem:'schema-gated-but-present'});
+   // The owner authorised test-only JSON-LD on the noindex EN staging site.
+   // Its full structure is validated by verify-en-schema-output.mjs.
+   if(get(node,'type')==='application/ld+json'&&!get(node,'data-schema-version'))
+    errors.push({url,problem:'unversioned-english-schema'});
    return;
   }
   if(node.nodeName==='#text'){
@@ -179,11 +181,11 @@ const report={schemaVersion:1,
  sourceStagingSha:process.env.EN_MASS_SNAPSHOT_SHA??null,
  site:'https://alexyakovlev79.github.io/adatours-en/en/',
  scope:'all canonical EN index.html under /en/; script-literal source inventory is separate',
- policy:'noindex EN, existing RU fallback permitted; public SEO and JSON-LD are not enabled',
+ policy:'noindex EN, RU fallback permitted, test-only JSON-LD enabled 2026-11-13, canonical/hreflang suppressed',
  totalPages:sitePages,englishContentPages:englishPages,ruFallbackPages:fallbackPages,
  pagesWithCyrillic,plainEnglishPages,occurrences,uniqueTextFieldGroups:groups.size,
  byClassification:byClass,seoCyrillicFields:headCyrillic,
- expectedMetaGate:'SEO localization stage 7 not yet complete; Schema.org stage 8 gated',
+ expectedMetaGate:'EN noindex SEO and JSON-LD are independently testable; public indexing and hreflang remain gated',
  jsSourceCandidates:jsSources.length,
  jsRuntimeInteractionsVerified:false,
  structuralProblems:errors,

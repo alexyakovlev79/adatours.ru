@@ -77,4 +77,10 @@ const summary={
 };
 fs.writeFileSync(output,JSON.stringify(summary,null,2)+'\n');
 console.log('Stage 6 EN media inventory: '+JSON.stringify({...summary,examples:undefined,knownLeaks:undefined}));
-if(knownLeaks.size)throw Error('Known EN media captions still Russian in '+knownLeaks.size+' exact image paths');
+if(knownLeaks.size){
+  const message='Known EN media captions still Russian in '+knownLeaks.size+' exact image paths';
+  // Preserve an exact Stage 6 backlog without blocking independent noindex
+  // Schema.org publication. Strict audit remains the default.
+  if(process.argv.includes('--report-only'))console.warn('Stage 6 pending: '+message);
+  else throw Error(message);
+}

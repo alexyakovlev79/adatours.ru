@@ -23,3 +23,8 @@ test('stage9: expedition type is localized with the original RU preserved',()=>{
  assert.equal(translateUiText('Экспедиция','en'),'Expedition');
  assert.equal(translateUiText('Экспедиция','ru'),'Экспедиция');
 });
+
+test('stage9: cruise type label is localized and original stays Russian',()=>{
+ assert.equal(translateUiText('Круиз','en'),'Cruise');
+ assert.equal(translateUiText('Круиз','ru'),'Круиз');
+});

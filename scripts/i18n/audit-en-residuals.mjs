@@ -129,8 +129,39 @@ for(const file of pages){
   const t=tag(node);
   if(skip.has(t))return;
   if(t==='script'){
-   if(get(node,'type')==='application/ld+json')
-    errors.push({url,problem:'schema-gated-but-present'});
+   if(get(node,'type')==='application/ld+json'){
+    const raw=(node.childNodes??[]).map(x=>x.value??'').join('');
+    let graph;
+    try{graph=JSON.parse(raw);}catch{
+     errors.push({url,problem:'invalid-jsonld'});return;
+    }
+    if(!graph || graph['@context']!=='https://schema.org' ||
+       !Array.isArray(graph['@graph']) || !graph['@graph'].length)
+     errors.push({url,problem:'invalid-jsonld-graph'});
+    // Existing EN page-schema output is verified separately. Review only
+    // human-readable fields, never @id, URLs, QIDs, currency codes or hashes.
+    const ignored=new Set(['@context','@id','@type','url','sameAs','identifier',
+      'contentUrl','thumbnailUrl','image','inLanguage','priceCurrency','datePublished',
+      'dateModified','validFrom','validThrough','availability','categoryCode']);
+    const walkSchema=(value,keyPath='')=>{
+     if(typeof value==='string'){
+      if(!cyr.test(value))return;
+      found++;
+      record({url,route,selector:'head > script[type="application/ld+json"]',
+       field:'jsonld:'+keyPath,value:normalized(value).slice(0,950),
+       classification:'schema_text_or_name_review',
+       sourceHint:'src/lib/i18n/schema-projection.mjs / source-bound EN records',
+       pageMode:'structured-data'});
+      return;
+     }
+     if(Array.isArray(value)){value.forEach((v,i)=>walkSchema(v,keyPath+'/'+i));return;}
+     if(value && typeof value==='object')for(const [k,v] of Object.entries(value)){
+      if(ignored.has(k))continue;
+      walkSchema(v,keyPath+'/'+k);
+     }
+    };
+    if(graph)walkSchema(graph);
+   }
    return;
   }
   if(node.nodeName==='#text'){
@@ -183,11 +214,11 @@ const report={schemaVersion:1,
  sourceStagingSha:process.env.EN_MASS_SNAPSHOT_SHA??null,
  site:'https://alexyakovlev79.github.io/adatours-en/en/',
  scope:'all canonical EN index.html under /en/; script-literal source inventory is separate',
- policy:'noindex EN, existing RU fallback permitted; public SEO and JSON-LD are not enabled',
+ policy:'noindex EN, existing RU fallback permitted; JSON-LD on EN preview is enabled by owner decision 2026-11-13, canonical/hreflang remain gated',
  totalPages:sitePages,englishContentPages:englishPages,ruFallbackPages:fallbackPages,
  pagesWithCyrillic,plainEnglishPages,occurrences,uniqueTextFieldGroups:groups.size,
  byClassification:byClass,seoCyrillicFields:headCyrillic,
- expectedMetaGate:'SEO localization stage 7 not yet complete; Schema.org stage 8 gated',
+ expectedMetaGate:'EN SEO localized by stage 7; JSON-LD enabled by stage 8 while noindex remains',
  jsSourceCandidates:jsSources.length,
  jsRuntimeInteractionsVerified:false,
  structuralProblems:errors,

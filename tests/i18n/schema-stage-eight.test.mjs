@@ -126,9 +126,11 @@ test('Unapproved Russian descriptive fields are omitted, never mechanically tran
   assert.equal(place.identifier,'destination_unknown');
   assert.equal(place.containedInPlace['@id'],root+'brazil/#country');
 });
-test('Schema graph remains suppressed in the EN noindex BaseLayout',()=>{
+test('Noindex EN renders its Schema graph; the closed private pilot still suppresses JSON-LD',()=>{
   const layout=readFileSync(new URL('../../src/layouts/BaseLayout.astro',import.meta.url),'utf8');
-  assert.match(layout,/privatePreview\s*\|\|\s*sharedEnglishContent\s*\?\s*\{/u);
+  assert.match(layout,/const schema = privatePreview\s*\?/u);
   assert.match(layout,/graph:\s*null/u);
-  assert.match(layout,/!privatePreview\s*&&\s*!sharedEnglishContent\s*&&\s*<script type="application\/ld\+json"/u);
+  assert.match(layout,/lang: sharedEnglishContent \? 'en' : lang/u);
+  assert.match(layout,/!privatePreview\s*&&\s*schema\.graph\s*&&\s*<script type="application\/ld\+json"/u);
+  assert.match(layout,/\(isPreview \|\| noindex\)/u);
 });

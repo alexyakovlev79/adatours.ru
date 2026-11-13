@@ -1,6 +1,6 @@
 /** English-only Schema.org projection for the shared Ada Tours source graph.
  * Deliberately independent of the EN noindex rendering gate: this module builds
- * a testable future graph but NEVER injects JSON-LD into preview HTML.
+ * a testable graph served on the noindex EN preview without opening indexing.
  * Source IDs, prices, URL identity, verified external links and geographic
  * relations are owned by the canonical site.
  */
@@ -184,11 +184,21 @@ function removeUntranslated(value, key, originalLanguage = false) {
   return value;
 }
 
-function englishGraph(graph, input, projected) {
-  const recordsById = new Map(projected.map(row => [row.data.id,row]));
-  const namesById = new Map(projected.map(row => [recordId(row,input.root),
-    clean(row.data.name || row.data.title)]));
-  const pagePath = input.page.path;
+const projectionCache=new WeakMap();
+function preparedProjection(records,root){
+ let projection=projectionCache.get(records);
+ if(projection?.root===root)return projection;
+ const projected=englishRecords(records);
+ projection={root,projected,
+  byId:new Map(projected.map(row=>[row.data.id,row])),
+  byPath:new Map(projected.map(row=>[row.path,row])),
+  namesById:new Map(projected.map(row=>[recordId(row,root),clean(row.data.name||row.data.title)]))};
+ projectionCache.set(records,projection);
+ return projection;
+}
+function englishGraph(graph,input,projection){
+ const {projected,byId:recordsById,byPath,namesById}=projection;
+ const pagePath=input.page.path;
   for (const node of graph['@graph']) {
     const type = node['@type'];
     if (hasType(node, 'TouristTrip') && node.identifier) {
@@ -256,7 +266,7 @@ function englishGraph(graph, input, projected) {
     if (hasType(node,'BreadcrumbList')) {
       for (const item of node.itemListElement || []) {
         const path = item.item ? logicalPath(item.item,input.root) : '';
-        const record = projected.find(row => row.path === path);
+        const record = byPath.get(path);
         item.name = record ? (record.data.name || record.data.title)
           : PAGE_LABELS[path] || approved(item.name);
       }
@@ -280,14 +290,13 @@ function englishGraph(graph, input, projected) {
   return graph;
 }
 
-/** Build the future English graph from the same factual records and renderer.
- * This is invoked in a unit-testable code path; BaseLayout keeps EN noindex
- * JSON-LD suppressed until the separate indexable release is authorised.
+/** Prepare the EN Schema graph from immutable canonical facts. The same build
+ * uses noindex for EN Pages, independently of this JSON-LD output.
  */
 export function buildEnglishStructuredData(input) {
   if (input?.page?.lang !== 'en') throw new TypeError('English Schema projection requires page.lang=en');
-  const projected = englishRecords(input.records);
-  const organization = localizedOrganization(input.organization);
-  const graph = buildStructuredData({ ...input, organization, records: projected });
-  return englishGraph(graph, input, projected);
+  const projection=preparedProjection(input.records,input.root);
+  const organization=localizedOrganization(input.organization);
+  const graph=buildStructuredData({...input,organization,records:projection.projected});
+  return englishGraph(graph,input,projection);
 }

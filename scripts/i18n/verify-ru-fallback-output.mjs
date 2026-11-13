@@ -59,7 +59,8 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
          : attr(x,'data-ada-staging-inert-form')!=='true'||attr(x,'inert')===null||
            attr(x,'data-lead-form')!==null||attr(x,'method')==='post'))||
        x.tagName==='script'&&!attr(x,'src')?.startsWith(EN_STAGING_BASE+'_astro/')&&
-         !(sharedContent && attr(x,'src')?.startsWith(EN_STAGING_BASE+'form-config.js'))).length ||
+         !(sharedContent && attr(x,'src')?.startsWith(EN_STAGING_BASE+'form-config.js')) &&
+         !(sharedContent && attr(x,'type')==='application/ld+json' && attr(x,'data-schema-version'))).length ||
      find(dom,x=>x.tagName==='link'&&['canonical','alternate'].includes(attr(x,'rel'))).length)
    fail('Staging boundaries or content language '+name);
   if(sharedContent){
@@ -115,10 +116,9 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
   const id=attr(html,'data-ada-entity-id'),item=translated.get(id);
   if(item){
    const heading=find(dom,x=>x.tagName==='h1').map(textOf).map(clean);
-   // An explicitly approved exact-match English title must be accepted as the
-    // canonical display H1; do not loosen checks for other, unapproved text.
-    const expectedHeading=translateAuthoredPageText(item.displayName??'','en');
-    if(heading.includes(clean(expectedHeading))){
+   // Exact approved English title projections are legitimate, source-bound H1s.
+   const acceptedTitle=translateAuthoredPageText(item.displayName??'','en');
+   if(heading.includes(clean(acceptedTitle))){
     if(!source.includes('class="hero')||!find(dom,x=>x.tagName==='main').length||!find(dom,x=>x.tagName==='footer').length)
      fail('Incomplete shared entity layout '+id);
     verifiedEntities.set(id,path.relative(root,name));

@@ -221,7 +221,14 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  for(const row of pages){
   const source=fs.readFileSync(row.file,'utf8');
   if(isSourceRedirect(source))aliasRoutes.add(row.route);
-  else if(sharedContent)collectRenderedEnglishMediaLabels(source,mediaLabelCandidates);
+  else if(sharedContent){
+   collectRenderedEnglishMediaLabels(source,mediaLabelCandidates);
+   // Existing native EN pages are the strongest source of approved captions.
+   // Reuse them by exact media src in RU-fallback pages, never by RU phrase.
+   const native=path.join(target,'en',row.route.slice(1),'index.html');
+   if(fs.existsSync(native))
+    collectRenderedEnglishMediaLabels(fs.readFileSync(native,'utf8'),mediaLabelCandidates);
+  }
  }
  const reusedLabels=unambiguousEnglishMediaLabels(mediaLabelCandidates);
  localization.reusedLabels=reusedLabels;

@@ -68,7 +68,7 @@ export function discoverRussianPages(root){
  return pages.sort((a,b)=>a.route.localeCompare(b.route,'en'));
 }
 /** Build full shared EN pages; legacy nonshared fallback still blocks submissions. */
-export function russianFallbackHtml(source,route,known,{sharedContent=false,entityLabels=new Map(),reusedLabels=new Map()}={}){
+export function russianFallbackHtml(source,route,known,{sharedContent=false,sharedFragment=false,entityLabels=new Map(),reusedLabels=new Map()}={}){
  if(typeof source!=='string'||!source.includes('<html')||!known?.has(route))fail('Unknown source route '+route);
  const doc=parse(source),root=walk(doc,n=>n.tagName==='html')[0],
   head=walk(doc,n=>n.tagName==='head')[0];
@@ -93,7 +93,9 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
   (n.tagName==='meta'&&!sharedContent&&['og:','twitter:'].some(x=>(get(n,'name')||get(n,'property')||'').startsWith(x))));
  const robots=walk(head,n=>n.tagName==='meta'&&get(n,'name')==='robots');
  if(robots.length!==1)fail('Robots meta invalid '+route);
- if(sharedContent){
+ if(sharedContent && sharedFragment && walk(doc,n=>n.tagName==='script'&&get(n,'type')==='application/ld+json').length)
+  fail('Shared shell fragment must not contain a document Schema.org graph '+route);
+ if(sharedContent && !sharedFragment){
   // Astro may retain the document-level JSON-LD in the body on a particular
   // page template. Only this verified schema graph may be relocated into HEAD.
   // JSON-LD is not executable JS; all other inline scripts remain removed.
@@ -254,7 +256,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
   fs.mkdirSync(outShared,{recursive:true});
   for(const item of fs.readdirSync(sourceShared,{withFileTypes:true})){
    if(!item.isFile()||!/^site-shell-[a-f0-9]+\.html$/.test(item.name))continue;
-   const rendered=russianFallbackHtml(fs.readFileSync(path.join(sourceShared,item.name),'utf8'),'/',known,localization);
+   const rendered=russianFallbackHtml(fs.readFileSync(path.join(sourceShared,item.name),'utf8'),'/',known,{...localization,sharedFragment:true});
    if(!rendered)fail('Invalid shared HTML fragment '+item.name);
    fs.writeFileSync(path.join(outShared,item.name),rendered);
    sharedFragments++;bytes+=Buffer.byteLength(rendered);

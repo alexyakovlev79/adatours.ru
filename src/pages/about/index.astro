@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
@@ -14,6 +14,8 @@ import AuthoritySources from '../../components/proof/AuthoritySources.astro';
 
 const people = await getCollection('people', ({ data }) => data.id === 'person_anna' && data.locale === 'ru');
 const anna = people[0];
+const annaContent = anna ? await render(anna) : undefined;
+const AnnaContent = annaContent?.Content;
 const org = localizedOrganization(ORG);
 ---
 
@@ -85,8 +87,9 @@ const org = localizedOrganization(ORG);
       expertise={anna.data.expertise}
       href={`/team/${anna.data.slug}/`}
       eyebrow="Основатель"
+      flowText
     >
-      <p>Анна Аванесова основала Ada Tours. Ее личный опыт путешествий по Латинской Америке сформировал подход компании: маршрут собирается вокруг конкретного человека, его дат, интересов и темпа поездки.</p>
+      {AnnaContent && <AnnaContent />}
     </PersonProfile>
   )}
 

@@ -190,3 +190,16 @@ test('stage six resumed batches b13 through b16 are exact source-bound English l
  }
  assert.ok(Object.keys(en.entries).length>=1243);
 });
+
+
+test('stage 6.1 preserves 100 additional exact-source media captions',()=>{
+ const rows=Object.entries(en.entries).filter(([,row])=>row.source==='stage6-html-residual-20261113-b17');
+ assert.equal(rows.length,100);
+ for(const [src,row] of rows){
+  assert.equal(row.sourceKey,src);
+  assert.ok(src.startsWith('/media/'),src);
+  assert.ok(row.alt.length>=7&&!/[А-Яа-яЁё]/u.test(row.alt),src);
+  assert.equal(localizeMediaField(src,'Русское описание',{locale:'en'}),row.alt);
+ }
+ assert.ok(Object.keys(en.entries).length>=1343);
+});

@@ -170,6 +170,22 @@ jobs:
           node scripts/i18n/audit-en-residuals.mjs ../en-pages-site ../stage9-residual-audit.json ../stage9-residual-urls.ndjson ../stage9-js-sources.json
           node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022
+      - name: Stage 9 actual browser interactions (not visual QA)
+        working-directory: website
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund --no-save --package-lock=false playwright@1.56.1
+          npx playwright install chromium
+          node scripts/i18n/stage9-interaction-smoke.mjs ../en-pages-site ../stage9-interaction-smoke.json
+
+      - name: Preserve stage-nine browser interaction receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: en-stage9-interaction-smoke
+          path: stage9-interaction-smoke.json
+          if-no-files-found: warn
+
       - name: Confirm this source repository did not deploy or overwrite RU Pages
         run: |
           test ! -e en-pages-site/CNAME

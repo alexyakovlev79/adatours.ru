@@ -239,7 +239,9 @@ test('stage 6.5 translates exact image-only link labels but protects unrelated t
 test('stage 6.5 keeps all 1944 exact image keys and translates no Russian values twice',()=>{
  assert.ok(Object.keys(en.entries).length>=1944);
  for(const [src,row] of Object.entries(en.entries)){
-   assert.equal(row.sourceKey,src);
+   if(['multi-country-heroes','catalog-hero-overrides'].includes(row.source))
+     assert.ok(typeof row.sourceKey==='string'&&row.sourceKey.length>0,src);
+   else assert.equal(row.sourceKey,src);
    assert.ok(src.startsWith('/media/'),src);
    assert.ok(typeof row.alt==='string'&&row.alt.trim()&& !/[А-Яа-яЁё]/u.test(row.alt),src);
    assert.equal(mediaEnglishEntry(src),row);

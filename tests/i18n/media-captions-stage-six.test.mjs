@@ -123,3 +123,17 @@ test('third through sixth stage-six batches keep 327 exact image-owned translati
  }
  assert.ok(Object.keys(en.entries).length>=820);
 });
+
+test('English image labels also replace matching original figcaption and aria-label',()=>{
+ const src='/media/multi-country/antarctica_argentina/hero-generated-20261015-v1.webp';
+ const ru='Канал Бигль и антарктический экспедиционный корабль';
+ const enLabel='Beagle Channel and an Antarctic expedition ship';
+ const doc=parse('<html><body><figure><img src="'+src+'" alt="'+ru+'" aria-label="'+ru+'"><figcaption>'+ru+'</figcaption></figure></body></html>');
+ const changed=localizeMediaDocument(doc,{locale:'en'});
+ assert.deepEqual(changed,{attributes:2,captions:1});
+ const output=serialize(doc);
+ assert.ok(output.includes('alt="'+enLabel+'"'),output);
+ assert.ok(output.includes('aria-label="'+enLabel+'"'),output);
+ assert.ok(output.includes('<figcaption>'+enLabel+'</figcaption>'),output);
+ assert.deepEqual(localizeMediaDocument(doc,{locale:'en'}),{attributes:0,captions:0});
+});

@@ -60,7 +60,7 @@ export function localizeMediaField(src,value,{locale='en',field='alt',decorative
   const entry=mediaEnglishEntry(src);
   const translated=entry?.alt ?? reusedLabels?.get(mediaSourceKey(src));
   if(!translated)return value;
-  return field==='alt'||field==='hover'||field==='title'||field==='caption' ? translated : value;
+  return field==='alt'||field==='hover'||field==='title'||field==='aria-label'||field==='caption' ? translated : value;
 }
 
 /** DOM pass is intentionally constrained to captions linked to an actual image.
@@ -90,7 +90,10 @@ export function localizeMediaDocument(document,{locale='en',reusedLabels=null}={
         const value=textNodes[0].value;
         // Figure labels may contain extra editorial facts: only replace the
         // original registered caption verbatim, never an unrelated sentence.
-        if(value?.trim()===entry.sourceAlt){textNodes[0].value=value.replace(entry.sourceAlt,entry.alt);captions++;}
+        if(value?.trim()===entry.sourceAlt || (containsRussian(value) && value?.trim()===get(img,'alt')?.trim())){
+          textNodes[0].value=entry.alt;
+          captions++;
+        }
       }
     }
     for(const child of node.childNodes??[])visit(child);

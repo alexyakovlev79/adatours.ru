@@ -248,3 +248,12 @@ test('stage 6.5 keeps all 1944 exact image keys and translates no Russian values
    assert.equal(localizeMediaField(src,row.alt,{locale:'en'}),row.alt);
  }
 });
+
+
+test('stage 9: Anna Avanesova supplied portrait has an exact English source-bound alt',()=>{
+ const src='/media/people/anna-avanesova/photo-provided-20261009-v1.jpg';
+ const translated='Portrait of Anna Avanesova, founder of Ada Tours';
+ assert.equal(mediaEnglishEntry(src).alt,translated);
+ assert.equal(localizeMediaField(src,'Портрет Анны Аванесовой, основательницы Ada Tours',{locale:'en'}),translated);
+ assert.equal(localizeMediaField(src,'Портрет Анны Аванесовой, основательницы Ada Tours',{locale:'ru'}),'Портрет Анны Аванесовой, основательницы Ada Tours');
+});

@@ -55,6 +55,22 @@ const visible=[
 const numbers=s=>(String(s).match(/\d+(?:[.,]\d+)*/g)||[]);
 const safeValue=(old,value)=>typeof value==='string'&&value.trim()!==''
  && !CYR.test(value) && eq(numbers(old),numbers(value));
+
+// Stage 9: permit only numerical *formatting* changes in an immutable
+// source-bound EN SEO lead, never a change in numeric facts or their order.
+// RU 1050 / EN 1,050 and RU 67,5 / EN 67.5 are equivalent. A differing
+// price, duration, year or a new digit not in the RU source stays fallback.
+const seoNumberPattern=/\d{1,3}(?:[\s\u00a0\u202f,.]\d{3})+(?:[.,]\d+)?|\d+(?:[.,]\d+)?/gu;
+const seoNumberFacts=value=>[...String(value).matchAll(seoNumberPattern)].map(([raw])=>{
+ const n=raw.replace(/[\s\u00a0\u202f]/gu,'');
+ if(/^\d{1,3}(?:[,.]\d{3})+$/u.test(n))return n.replace(/[,.]/gu,'');
+ if(/^\d{1,3}(?:,\d{3})+\.\d+$/u.test(n))return n.replace(/,/gu,'');
+ if(/^\d{1,3}(?:\.\d{3})+,\d+$/u.test(n))return n.replace(/\./gu,'').replace(',','.');
+ return n.replace(/,(\d{1,2})$/u,'.$1');
+});
+const sameSeoLeadNumerals=(old,value)=>typeof value==='string'&&value.trim()!==''
+ && !CYR.test(value)&&eq(seoNumberFacts(old),seoNumberFacts(value));
+
 const mergeTexts=(old,translated,counter,path='')=>{
  if(old instanceof Date)return old; // YAML timestamps are canonical facts, not plain maps.
  if(typeof old==='string'){
@@ -88,6 +104,15 @@ export function applyFulltextToSource(source,english,kind,expectedSha,options={}
  if(original.data.status==='archived'||original.data.status==='draft')return {status:'excluded'};
  if(original.body.trim()&&!en.body.trim())throw new Error('EN body is empty');
  const tally={changed:0},merged=mergeTexts(original.data,en.data,tally);
+ // A previously saved EN lead may have been rejected solely because its
+ // thousands separators or decimal punctuation differ from canonical RU.
+ if(kind==='seo_geo_article' && typeof original.data.lead==='string' &&
+    typeof en.data.lead==='string' && merged.lead===original.data.lead &&
+    sameSeoLeadNumerals(original.data.lead,en.data.lead) &&
+    original.data.lead!==en.data.lead){
+   merged.lead=en.data.lead;tally.changed++;
+ }
+
  // Only source-verified, reviewed new factual text is allowed to supersede
  // a changed country feature band. Media, href, IDs and canonical facts remain RU.
  for(const [pointer,text] of Object.entries(options.textOverrides??{})){

@@ -46,12 +46,25 @@ test('stage9: source-bound dynamic CTA and destination headings use EN without c
 
 test('stage9 source-bound residual paragraphs: exact EN copy without altering RU or invented fallback',async()=>{
   const data=(await import('../../src/data/i18n/stage9-residual-copy.en.json',{with:{type:'json'}})).default;
-  assert.equal(data.messages.length,549);
+  assert.equal(data.messages.length,594);
   for(const row of data.messages){
     assert.equal(translateAuthoredPageText(row.ru,'en'),row.en);
     assert.equal(translateAuthoredPageText(row.ru,'ru'),row.ru);
     assert.doesNotMatch(row.en,/[А-Яа-яЁё]/u);
   }
+});
+
+test('stage9: Anna portrait and noscript image labels are source-bound, RU unchanged',async()=>{
+ const {localizeKnownLegacyPhotoHtml}=await import('../../src/lib/i18n/stage9-legacy-photo.mjs');
+ const src='https://img.adatours.ru/media/people/anna-avanesova/photo-provided-20261009-v1.jpg';
+ const tag='<img src="'+src+'" alt="Портрет Анны Аванесовой, основательницы Ada Tours" title="Анна Аванесова: портрет основательницы Ada Tours">';
+ const original='<figure>'+tag+'<noscript>'+tag+'</noscript></figure>';
+ const en=localizeKnownLegacyPhotoHtml(original,'en');
+ assert.equal(en.includes('Портрет Анны'),false);
+ assert.equal(en.includes('портрет основательницы'),false);
+ assert.equal(en.split('Portrait of Anna Avanesova, founder of Ada Tours').length,3);
+ assert.equal(localizeKnownLegacyPhotoHtml(original,'ru'),original);
+ assert.equal(localizeKnownLegacyPhotoHtml(en,'en'),en);
 });
 
 test('stage9 one legacy photo is localized in EN ordinary and noscript IMG only, RU untouched',async()=>{

@@ -41,3 +41,26 @@ test('preserves canonical YAML date values rather than coercing them to empty ob
  assert.equal(p.data.name,'City');
  assert.equal(p.data.updatedAt.toISOString().slice(0,10),'2026-10-09');
 });
+
+
+test('stage 9: immutable EN SEO lead accepts only equivalent numeric formatting',()=>{
+ const ru='---\ntargetPath: /brazil/tour/\nkind: country_tours\nstatus: approved\nlead: "65 км, высота 1050 м, 67,5 км, цена $150"\n---\n\n## Маршрут\nРусское описание\n';
+ const en='---\ntargetPath: /brazil/tour/\nkind: country_tours\nstatus: approved\nlead: "65 km, elevation 1,050 m, 67.5 km, price $150"\n---\n\n## Itinerary\nEnglish description\n';
+ const projected=splitFulltextMarkdown(applyFulltextToSource(ru,en,'seo_geo_article','x').content);
+ assert.equal(projected.data.lead,'65 km, elevation 1,050 m, 67.5 km, price $150');
+ assert.equal(projected.data.status,'approved');
+ const brokenPrice=en.replace('$150','$151');
+ const blocked=splitFulltextMarkdown(applyFulltextToSource(ru,brokenPrice,'seo_geo_article','x').content);
+ assert.equal(blocked.data.lead,'65 км, высота 1050 м, 67,5 км, цена $150');
+ const extraDigit=en.replace('65 km','65 km in 2028');
+ const blockedExtra=splitFulltextMarkdown(applyFulltextToSource(ru,extraDigit,'seo_geo_article','x').content);
+ assert.equal(blockedExtra.data.lead,'65 км, высота 1050 м, 67,5 км, цена $150');
+});
+
+test('stage 9: grouped thousands in immutable SEO lead do not mutate common source facts',()=>{
+ const ru='---\nid: destination_test\nlocale: ru\nslug: test\nstatus: approved\nname: Место\nsummary: "Высота 4600 м"\n---\n\nТекст';
+ const en='---\nid: destination_test\nlocale: en\nslug: test\nstatus: approved\nname: Place\nsummary: "Altitude 4,600 m"\n---\n\nText';
+ const projected=splitFulltextMarkdown(applyFulltextToSource(ru,en,'destinations','x').content);
+ // The formatting exemption must remain confined to SEO article leads.
+ assert.equal(projected.data.summary,'Высота 4600 м');
+});

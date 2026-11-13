@@ -1,5 +1,9 @@
 # Английская версия Ada Tours
 
+## Актуальное решение 13.11.2026 — английская Schema.org на noindex Pages
+
+**Это уточнение имеет приоритет над историческими запретами ниже.** Владелец отдельно разрешил JSON-LD/Schema.org на EN noindex staging для анализа разметки, **не** открывая индексацию, публичный английский домен, canonical или reciprocal hreflang. Действующий код `src/lib/i18n/schema-projection.mjs`, `src/lib/page-schema.ts` и `BaseLayout.astro` выводит английский граф, а `scripts/i18n/verify-en-schema-output.mjs` проверяет **все** страницы выпуска. Текущая подтвержденная приемка — успешный [EN Pages №43371691049](https://github.com/alexyakovlev79/adatours-en/actions/runs/43371691049): на source SHA `890909bf82ebd9b388ef6f738134b5478ce997ea` опубликовано 6 149 валидных EN JSON-LD-графов (`noindex`, без canonical/hreflang); итог Stage 8 — `verified_en_noindex` в [плане 42](../plans/english-site/42-remaining-en-localization-plan-20261112.md). Оригинальные имена и цитаты независимых внешних публикаций сохраняют язык своего источника; цены, stable IDs, подтвержденные `sameAs` и география не пересоздаются. Историческая фраза «Schema.org не включается автоматически» относится к отсутствию **самовольного публичного индексируемого релиза**, а не к уже разрешённому тестовому EN JSON-LD.
+
 ## Решение владельца 06.11.2026: независимая QA массовых EN-переводов отменена
 
 Единственный штатный цикл: `claim → перевод с проверкой Word/RU, смысла и фактов исполнителем → атомарный submit → техническая проверка и noindex EN Pages`.

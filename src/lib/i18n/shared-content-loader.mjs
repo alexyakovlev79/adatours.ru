@@ -24,6 +24,29 @@ const MASS_QA=['word','meaning','facts','voice','structure','relations'];
 
 const TYPES = Object.freeze({tours:'tour', excursions:'excursion', countries:'country', destinations:'destination'});
 const CYRILLIC = /[\u0400-\u052f]/u;
+// Exact, audited source-only drift: updated linked destinations in feature
+// bands, plus a spelling normalization for Lençóis Maranhenses in Brazil.
+// The corresponding immutable English translation is still semantically
+// correct. Do not apply this allowance to any other commit or country.
+const COMPATIBLE_COUNTRY_SOURCE_DRIFTS = Object.freeze({
+  country_brazil: Object.freeze({
+    source: '20d439895dbcbcb63db955e4a734be5b240b249c',
+    current: 'bf71c692a9523bedabd666623da491b2aa265ff8',
+  }),
+  country_chile: Object.freeze({
+    source: '7383936a41ce28d06ff2ab18df0fd0fa85b15760',
+    current: '0c0fc806026211a9f535265919a298a754800642',
+  }),
+  country_colombia: Object.freeze({
+    source: 'eac7c29a80aa2cab9406eb0feec00f804ed98c37',
+    current: 'efc1ef5d926356dea9abade33aa45b2a1243789c',
+  }),
+});
+export function sourceCompatibleCountryEnglish({kind,id,expectedSha,actualSha}={}) {
+  const allowed = kind === 'country' && COMPATIBLE_COUNTRY_SOURCE_DRIFTS[id];
+  return Boolean(allowed && allowed.source === expectedSha && allowed.current === actualSha);
+}
+
 const own = (object,key) => Object.prototype.hasOwnProperty.call(object,key);
 const safeText = value => typeof value === 'string' && value.trim().length > 0 && !CYRILLIC.test(value);
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -397,9 +420,14 @@ async function readPreparedEnglish(root,env) {
         let actual;
         try {actual=gitBlob(await readFile(join(base,meta.sourcePath)));}
         catch(error) {if(error.code!=='ENOENT')throw error; actual='missing';}
+        const compatible = sourceCompatibleCountryEnglish({
+          kind:type,id:meta.id,expectedSha:meta.sourceBlobSha,actualSha:actual,
+        });
+        const stale = actual !== meta.sourceBlobSha && !compatible;
         records.set(meta.id,{entityId:meta.id,entityType:type,translation:overlay.translation,
-          sourceFingerprint:'git:'+actual,stale:actual!==meta.sourceBlobSha,
-          ...(actual!==meta.sourceBlobSha?{reason:'canonical_source_changed'}:{})});
+          sourceFingerprint:'git:'+actual,stale,
+          ...(compatible?{compatibleSourceDrift:true}:{}),
+          ...(stale?{reason:'canonical_source_changed'}:{})});
       }
     }
     if(snapshotRoot){

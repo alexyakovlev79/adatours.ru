@@ -30,6 +30,7 @@ test('stage9 port: exact editorial titles have EN copy and no RU source mutation
   assert.equal(translateAuthoredPageText('Непереведенный источник','en'),'Непереведенный источник');
 });
 
+// Exact residual-source verification includes preflight 43454165962 artifact 14054220441.
 // Real latest EN HTML residual inventory (preflight 43439260916):
 // 418 enquiry titles + 469 destination excursion headings still had RU prefixes.
 test('stage9: source-bound dynamic CTA and destination headings use EN without changing entity names or RU', async()=>{
@@ -45,7 +46,7 @@ test('stage9: source-bound dynamic CTA and destination headings use EN without c
 
 test('stage9 source-bound residual paragraphs: exact EN copy without altering RU or invented fallback',async()=>{
   const data=(await import('../../src/data/i18n/stage9-residual-copy.en.json',{with:{type:'json'}})).default;
-  assert.equal(data.messages.length,12);
+  assert.equal(data.messages.length,159);
   for(const row of data.messages){
     assert.equal(translateAuthoredPageText(row.ru,'en'),row.en);
     assert.equal(translateAuthoredPageText(row.ru,'ru'),row.ru);

@@ -6,9 +6,13 @@ import sourcePatches from '../../src/data/i18n/tour-field-repairs.en.json' with 
 import {eligibleTourFieldRepairs} from '../../src/lib/i18n/tour-field-repairs.mjs';
 import {projectSharedEnglishEntry} from '../../src/lib/i18n/shared-content-loader.mjs';
 
-const at=(obj,path)=>path.startsWith('/route/')
- ? obj.route[Number(path.slice(7))] : obj[path.slice(1)];
-test('stage 9 repairs: 21 exact fields across three active tour sources',()=>{
+const at=(obj,path)=>path.slice(1).split('/').reduce((node,key)=>node?.[key],obj);
+const changeAt=(obj,path)=>{
+ const parts=path.slice(1).split('/'),last=parts.pop();
+ const parent=parts.reduce((node,key)=>node[key],obj);
+ parent[last]='INDEPENDENT SOURCE EDIT';
+};
+test('stage 9 repairs: 69 exact fields across nine active tour sources',()=>{
  let total=0;
  for(const [id,row] of Object.entries(sourcePatches.entries)){
   const file=fs.readFileSync(new URL('../../'+row.sourcePath,import.meta.url),'utf8');
@@ -27,7 +31,8 @@ test('stage 9 repairs: 21 exact fields across three active tour sources',()=>{
   assert.equal(eligibleTourFieldRepairs({sourceId:id,source:{...parsed,status:'archived'}}).length,0);
   const already=new Set(Object.keys(row.fields));
   assert.equal(eligibleTourFieldRepairs({sourceId:id,source:parsed,alreadyTranslated:already}).length,0);
-  const changed={...parsed,lead:'Changed independently'};
+  const changed=structuredClone(parsed);
+  changeAt(changed,fields[0].path);
   assert.equal(eligibleTourFieldRepairs({sourceId:id,source:changed}).length,fields.length-1);
   const entry={id:'ru:'+id,data:parsed,body:''};
   const previous=structuredClone(entry);
@@ -43,5 +48,5 @@ test('stage 9 repairs: 21 exact fields across three active tour sources',()=>{
   }
   assert.deepEqual(entry,previous,'Original RU Tour must not be mutated');
  }
- assert.equal(total,21);
+ assert.equal(total,69);
 });

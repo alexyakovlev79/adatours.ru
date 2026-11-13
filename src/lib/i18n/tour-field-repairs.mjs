@@ -7,9 +7,8 @@ import repairs from '../../data/i18n/tour-field-repairs.en.json' with {type:'jso
 const has=(o,k)=>Object.prototype.hasOwnProperty.call(o??{},k);
 const Cyrillic=/[\u0400-\u052f]/u;
 const hash=text=>createHash('sha256').update(text,'utf8').digest('hex');
-const allowed=path=>/^\/(?:lead|priceNote|format|route\/(?:0|[1-9]\d*))$/.test(path);
-const at=(source,path)=>path.startsWith('/route/')
- ? source.route?.[Number(path.slice(7))] : source[path.slice(1)];
+const allowed=path=>/^\/(?:lead|priceNote|format|(?:route|included|notIncluded|notes)\/(?:0|[1-9]\d*))$/.test(path);
+const at=(source,path)=>path.slice(1).split('/').reduce((node,key)=>node?.[key],source);
 
 /** Read-only candidate finder; malformed or stale source rows never apply. */
 export function eligibleTourFieldRepairs({sourceId,source,alreadyTranslated=new Set()}={}){

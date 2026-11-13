@@ -1,0 +1,17 @@
+[Unit]
+Description=Ada Tours offsite Yandex Object Storage media backup
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+EnvironmentFile=-/etc/adatours-media-backup/settings.env
+ExecStart=/usr/local/sbin/adatours-media-backup.sh
+TimeoutStartSec=6h
+UMask=0077
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+NoNewPrivileges=true
+PrivateTmp=true

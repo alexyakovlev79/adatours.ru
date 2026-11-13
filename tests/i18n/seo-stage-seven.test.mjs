@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {createEnglishSeoContext,englishSeoMetadata} from '../../src/lib/i18n/seo-metadata.mjs';
 import {formatSeoMoney} from '../../src/lib/seo-price-meta.mjs';
 import {russianFallbackHtml} from '../../scripts/i18n/ru-fallback.mjs';
+import {schemaFixture} from './schema-fixture.mjs';
 
 const fixture=()=>{
  const countries=[
@@ -95,7 +96,7 @@ test('one confirmed USD price is formatted in English; mixed currencies never yi
  assert.match(meta('/brazil/tour/rio-adventure/',mixed).title,/\$2,500/);
 });
 
-test('shared EN staging keeps OG/Twitter but suppresses canonical, schema and indexing',()=>{
+test('EN staging keeps OG/Twitter and valid Schema.org while suppressing canonical and indexing',()=>{
  const head='<meta name="robots" content="noindex, nofollow">'+
   '<link rel="canonical" href="https://alexyakovlev79.github.io/adatours-en/brazil/tour/">'+
   '<meta property="og:locale" content="ru_RU">'+
@@ -104,7 +105,7 @@ test('shared EN staging keeps OG/Twitter but suppresses canonical, schema and in
   '<meta property="og:image" content="https://alexyakovlev79.github.io/adatours-en/media/sample.webp">'+
   '<meta name="twitter:title" content="Brazil tours | Ada Tours">'+
   '<meta name="twitter:image" content="/adatours-en/media/sample.webp">'+
-  '<script type="application/ld+json">{}</script>';
+  schemaFixture('/brazil/tour/');
  const source='<!doctype html><html lang="en" data-ada-shared-locale="en"><head>'+head+
   '</head><body><h1>Brazil tours</h1></body></html>';
  const path='/brazil/tour/';
@@ -115,5 +116,6 @@ test('shared EN staging keeps OG/Twitter but suppresses canonical, schema and in
  assert.match(html,/og:title" content="Brazil tours \| Ada Tours"/);
  assert.match(html,/twitter:title" content="Brazil tours \| Ada Tours"/);
  assert.match(html,/https:\/\/img.adatours.ru\/media\/sample.webp/);
- assert.doesNotMatch(html,/<link rel="canonical"|application\/ld\+json/);
+ assert.doesNotMatch(html,/<link rel="canonical"/);
+ assert.match(html,/application\/ld\+json/);
 });

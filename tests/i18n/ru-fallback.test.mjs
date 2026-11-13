@@ -5,6 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {parse} from 'parse5';
 import {russianFallbackHtml,discoverRussianPages,stageRussianFallback} from '../../scripts/i18n/ru-fallback.mjs';
+import {schemaFixture} from './schema-fixture.mjs';
 
 const source=()=>[
  '<!doctype html><html lang="ru"><head>',
@@ -58,7 +59,9 @@ test('canonical mirror keeps Hero, videos, lazy images, full search and safe vis
  assert.doesNotMatch(html,/data-lead-form|method="post"|application\/ld\+json|<link rel="canonical"|googletagmanager/);
 });
 test('complete shared English pages retain one working form, modal CTA and first-party config',()=>{
- const english=source().replace('<html lang="ru"', '<html lang="en" data-ada-shared-locale="en"');
+ const english=source()
+  .replace('<html lang="ru"', '<html lang="en" data-ada-shared-locale="en"')
+  .replace('</head>',schemaFixture('/')+'</head>');
  const html=russianFallbackHtml(english,'/',new Set(['/','/brazil/','/tours/','/about/','/multi-country/','/vip/']),{sharedContent:true});
  assert.match(html,/<html lang="en" data-ada-shared-locale="en" data-ada-en-content="true"/);
  assert.match(html,/<form data-lead-form="" action="\/live" method="post">/);
@@ -66,7 +69,8 @@ test('complete shared English pages retain one working form, modal CTA and first
  assert.match(html,/href="#request" data-lead-modal="true"/);
  assert.match(html,/\/adatours-en\/form-config\.js\?v=test/);
  assert.doesNotMatch(html,/mailto:info@adatours\.ru|data-ada-staging-inert-form|<form[^>]+inert/);
- assert.doesNotMatch(html,/googletagmanager|application\/ld\+json|rel="canonical"/);
+ assert.doesNotMatch(html,/googletagmanager|rel="canonical"/);
+ assert.equal((html.match(/application\/ld\+json/g)??[]).length,1);
 });
 
 test('route-map popups reuse canonical EN links without cloning or changing geographic data',()=>{

@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Ada Tours media backup (Garik server)
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+RandomizedDelaySec=15m
+Persistent=true
+Unit=adatours-media-backup.service
+
+[Install]
+WantedBy=timers.target

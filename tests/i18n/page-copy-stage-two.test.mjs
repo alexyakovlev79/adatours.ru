@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs';
 import { translateAuthoredPageText,localizeAuthoredPageDocument,authoredPageCopyCount } from '../../src/lib/i18n/page-copy.mjs';
 import { interestCopy,interestTourCount,relatedInterestCount } from '../../src/lib/interest-copy.mjs';
 import { russianFallbackHtml } from '../../scripts/i18n/ru-fallback.mjs';
+import { schemaFixture } from './schema-fixture.mjs';
 
 const ru=JSON.parse(readFileSync('src/data/interest-copy.json','utf8'));
 const en=JSON.parse(readFileSync('src/data/i18n/interest-copy.en.json','utf8'));
@@ -46,11 +47,12 @@ test('curated page translation edits only known body nodes, never head, scripts,
  assert.match(out,/<blockquote>Хочу готовый маршрут<\/blockquote>/);
  assert.match(out,/<script>const s="Хочу готовый маршрут"<\/script>/);
 });
-test('existing EN noindex builder applies page copy without turning on canonical or schema',()=>{
- const src='<!doctype html><html lang="ru" data-ada-shared-locale="en"><head><meta name="robots" content="noindex, nofollow"></head><body><h1>Латинская Америка на ваших условиях</h1><p>Новый текст с русским fallback</p><a href="/country/">Страны</a></body></html>';
+test('EN noindex builder applies page copy while retaining inspectable Schema.org but no canonical',()=>{
+ const src='<!doctype html><html lang="ru" data-ada-shared-locale="en"><head><meta name="robots" content="noindex, nofollow">'+schemaFixture('/')+'</head><body><h1>Латинская Америка на ваших условиях</h1><p>Новый текст с русским fallback</p><a href="/country/">Страны</a></body></html>';
  const result=russianFallbackHtml(src,'/',new Set(['/','/country/']),{sharedContent:true});
  assert.match(result,/Latin America, on your terms/);
  assert.match(result,/Новый текст с русским fallback/);
  assert.match(result,/noindex,nofollow,noarchive,nosnippet/);
- assert.doesNotMatch(result,/rel="canonical"|application\/ld\+json/);
+ assert.doesNotMatch(result,/rel="canonical"/);
+ assert.match(result,/application\/ld\+json/);
 });

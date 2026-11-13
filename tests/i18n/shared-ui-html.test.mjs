@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {parse,serialize} from 'parse5';
 import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n/shared-ui-html.mjs';
 import {russianFallbackHtml} from '../../scripts/i18n/ru-fallback.mjs';
+import {schemaFixture} from './schema-fixture.mjs';
 
 test('shared UI translations keep unknown Russian content and never alter scripts, URLs or media',()=>{
  const doc=parse('<html lang="ru"><head><title>Страны</title></head><body><nav><a href="/brazil/">Бразилия</a><a href="/tours/">Туры</a></nav><p>Этот текст ещё не переведён.</p><p>Играет музыка от моря.</p><img src="/media/shared.webp" alt="Панорама"><input placeholder="Ваше имя"><script>const title="Туры";</script><code>Туры</code><template><span>Поиск</span></template></body></html>');
@@ -31,7 +32,7 @@ test('ambiguous or rejected entity names never become a global translation dicti
 });
 
 test('complete shared English and Russian fallback pages retain their own body language',()=>{
- const source=lang=>`<!doctype html><html lang="${lang}" data-ada-shared-locale="en"><head><meta name="robots" content="noindex, nofollow"></head><body><header><a href="/tours/">Туры</a></header><main><h1>${lang==='en'?'4 Days in Rio':'Непереведённый тур'}</h1><img src="/adatours-en/media/shared.webp"></main><footer>О нас</footer></body></html>`;
+ const source=lang=>`<!doctype html><html lang="${lang}" data-ada-shared-locale="en"><head><meta name="robots" content="noindex, nofollow">${schemaFixture('/')}</head><body><header><a href="/tours/">Туры</a></header><main><h1>${lang==='en'?'4 Days in Rio':'Непереведённый тур'}</h1><img src="/adatours-en/media/shared.webp"></main><footer>О нас</footer></body></html>`;
  const known=new Set(['/','/tours/']);
  for(const lang of ['ru','en']) {
   const html=russianFallbackHtml(source(lang),'/',known,{sharedContent:true});

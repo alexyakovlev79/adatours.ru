@@ -42,3 +42,27 @@ test('stage9: source-bound dynamic CTA and destination headings use EN without c
   assert.equal(destinationExcursionsHeading(place,'ru'),'Экскурсии: '+place);
   assert.equal(excursionEnquiryTitle('Тигре','ru'),'Заказать экскурсию: Тигре');
 });
+
+test('stage9 source-bound residual paragraphs: exact EN copy without altering RU or invented fallback',async()=>{
+  const data=(await import('../../src/data/i18n/stage9-residual-copy.en.json',{with:{type:'json'}})).default;
+  assert.equal(data.messages.length,12);
+  for(const row of data.messages){
+    assert.equal(translateAuthoredPageText(row.ru,'en'),row.en);
+    assert.equal(translateAuthoredPageText(row.ru,'ru'),row.ru);
+    assert.doesNotMatch(row.en,/[А-Яа-яЁё]/u);
+  }
+});
+
+test('stage9 one legacy photo is localized in EN ordinary and noscript IMG only, RU untouched',async()=>{
+  const {localizeKnownLegacyPhotoHtml}=await import('../../src/lib/i18n/stage9-legacy-photo.mjs');
+  const src='https://brasiltours.ru/image/catalog/category/B/N/BN713_10.jpg';
+  const tag='<img src="'+src+'" alt="Двое мальчиков на оживленной улице среди прохожих" title="Уличная сцена: улыбающиеся дети у торговых рядов">';
+  const ru='<html><body>'+tag+'<noscript>'+tag+'</noscript></body></html>';
+  const en=localizeKnownLegacyPhotoHtml(ru,'en');
+  assert.equal(en.includes('Двое мальчиков'),false);
+  assert.equal(en.includes('Уличная сцена'),false);
+  assert.equal(en.split('Two boys on a busy street among pedestrians').length,3);
+  assert.equal(localizeKnownLegacyPhotoHtml(ru,'ru'),ru);
+  assert.equal(localizeKnownLegacyPhotoHtml(en,'en'),en);
+  assert.equal(localizeKnownLegacyPhotoHtml('<img src="https://other.com/other.jpg" alt="Двое мальчиков">','en'),'<img src="https://other.com/other.jpg" alt="Двое мальчиков">');
+});

@@ -4,6 +4,7 @@
  */
 import authored from '../../data/i18n/page-copy.en.json' with { type: 'json' };
 import stageFive from '../../data/i18n/stage-five-page-copy.en.json' with { type: 'json' };
+import stageNine from '../../data/i18n/stage9-residual-copy.en.json' with { type: 'json' };
 import ruInterests from '../../data/interest-copy.json' with { type: 'json' };
 import enInterests from '../../data/i18n/interest-copy.en.json' with { type: 'json' };
 
@@ -22,6 +23,7 @@ function add(ru,en,group) {
 }
 for(const row of authored.messages) add(row.ru,row.en,'page');
 for(const row of stageFive.messages) add(row.ru,row.en,'stage-five');
+for(const row of stageNine.messages) add(row.ru,row.en,'stage-nine-residual');
 const interestFields=['toursTitle','tourIntro','geographyIntro','catalogIntro'];
 for(const [id,ru] of Object.entries(ruInterests)){
   const en=enInterests.entries[id];

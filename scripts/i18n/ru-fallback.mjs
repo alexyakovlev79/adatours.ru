@@ -7,6 +7,7 @@ import {parse,serialize} from 'parse5';
 import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n/shared-ui-html.mjs';
 import {localizeAuthoredPageDocument} from '../../src/lib/i18n/page-copy.mjs';
 import {localizeMediaDocument,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
+import {localizeKnownLegacyPhotoHtml} from '../../src/lib/i18n/stage9-legacy-photo.mjs';
 import {EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
 import {safeJsonLd,SCHEMA_VERSION} from '../../src/lib/structured-data.mjs';
 const ROBOTS='noindex,nofollow,noarchive,nosnippet';
@@ -202,7 +203,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,shar
    set(n,'data-geo-map-payload',JSON.stringify(payload));
   }
  }
- const out=serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
+ const out=sharedContent?localizeKnownLegacyPhotoHtml(serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/')):serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
  if(!(out.includes('data-ada-ru-fallback')||out.includes('data-ada-en-content'))||!out.includes(ROBOTS))fail('Unsafe transformed output');
  if(/data-ada-translation-notice|This page is currently available in Russian/i.test(out))fail('Unrequested translation notice');
  return out;
@@ -219,7 +220,7 @@ export function localizeNativeEnglishMediaHtml(html,{reusedLabels=new Map()}={})
  const node=walk(doc,n=>n.tagName==='html')[0];
  if(!node||get(node,'lang')!=='en')fail('Native EN media pass expected html lang=en');
  const result=localizeMediaDocument(doc,{locale:'en',reusedLabels});
- return result.attributes||result.captions?serialize(doc):html;
+ return localizeKnownLegacyPhotoHtml(result.attributes||result.captions?serialize(doc):html);
 }
 
 export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000_000,sharedContent=false,receipt=null}={}){

@@ -10,6 +10,7 @@ on:
       - 'src/data/i18n/tour-title-repairs.en.json'
       - 'tests/i18n/stage9-source-bound-tour-titles.test.mjs'
       - 'scripts/i18n/audit-en-residuals.mjs'
+      - 'scripts/i18n/stage9-browser-interactions.mjs'
       - 'scripts/i18n/classify-en-residual.mjs'
       - 'tests/i18n/stage9-residual-ui.test.mjs'
       - 'tests/i18n/stage9-residual-classification.test.mjs'
@@ -192,6 +193,20 @@ jobs:
           node scripts/i18n/audit-en-residuals.mjs ../en-pages-site ../stage9-residual-audit.json ../stage9-residual-urls.ndjson ../stage9-js-sources.json
           node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022
+      - name: Run source-SHA-bound browser checks on generated EN pages
+        continue-on-error: true
+        working-directory: website
+        run: |
+          npm install --no-save --no-package-lock playwright-core@1.56.1
+          node scripts/i18n/stage9-browser-interactions.mjs ../en-pages-site ../stage9-browser-interactions.json
+      - name: Preserve experimental Stage 9 browser QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: en-stage9-browser-interactions
+          path: stage9-browser-interactions.json
+          if-no-files-found: warn
+
       - name: Confirm this source repository did not deploy or overwrite RU Pages
         run: |
           test ! -e en-pages-site/CNAME

@@ -20,3 +20,12 @@ test('stage9: real buttons, aria, visible media and noindex rule retain their cl
  assert.equal(classify([node('main'),node('p')],'text',true),'permitted_ru_body_fallback');
  assert.equal(classify([node('nav','breadcrumbs'),node('a')]),'ui_localization_gap');
 });
+
+test('stage9: archive Tour H1 is a separately evidenced source fallback, not an open active heading',()=>{
+ const stack=[node('body'),node('main'),node('h1')];
+ const route='/en/multi-country/tour/brazil-argentina-fun/';
+ assert.equal(classifyEnResidual({stack,field:'text',fallback:true,route,archivedTour:true}),
+  'archived_source_tour_title');
+ assert.equal(classifyEnResidual({stack,field:'text',fallback:true,route,archivedTour:false}),
+  'standard_page_heading_review');
+});

@@ -1,7 +1,7 @@
 /** Stage 9: keep source-bound titles and navigational names separate from
  * actual UI controls. Every hit remains in the per-URL evidence inventory. */
 const attr=(node,key)=>node?.attrs?.find(a=>a.name===key)?.value??null;
-export function classifyEnResidual({stack,field,fallback,route}){
+export function classifyEnResidual({stack,field,fallback,route,archivedTour=false}){
  const tags=stack.map(node=>node.tagName);
  const leaf=tags.at(-1)??'';
  const hasClass=name=>stack.some(node=>(attr(node,'class')??'').split(/\s+/).includes(name));
@@ -25,7 +25,7 @@ export function classifyEnResidual({stack,field,fallback,route}){
  if(tags.includes('blockquote')||tags.includes('q')||tags.includes('cite'))
   return 'source_quote_review';
  if(tags.includes('h1')&&/^\/en\/(?:about|contacts|team|reviews|cases|privacy|personal-data|vip|interests|tours|places|excursions|country|multi-country)(?:\/|$)/.test(route))
-  return 'standard_page_heading_review';
+  return archivedTour ? 'archived_source_tour_title' : 'standard_page_heading_review';
  if(fallback)return 'permitted_ru_body_fallback';
  return 'mixed_content_or_name_review';
 }

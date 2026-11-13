@@ -15,6 +15,11 @@ const root=path.resolve(process.argv[2]??'../en-pages-site');
 const reportPath=path.resolve(process.argv[3]??'../stage9-residual-audit.json');
 const detailsPath=path.resolve(process.argv[4]??'../stage9-residual-urls.ndjson');
 const jsPath=path.resolve(process.argv[5]??'../stage9-js-sources.json');
+const tourCatalogue=JSON.parse(fs.readFileSync(path.resolve('data/source-index/catalogs/tours.json'),'utf8'));
+if(!Array.isArray(tourCatalogue.entries))throw Error('Missing canonical Tour catalog for Stage 9 classification');
+const archivedTourRoutes=new Set(tourCatalogue.entries.filter(row=>row.status==='archived')
+ .map(row=>'/en'+row.url));
+
 const cyr=/[\u0400-\u052f]/u;
 const normalized=value=>String(value??'').replace(/\s+/gu,' ').trim();
 const get=(node,key)=>node?.attrs?.find(x=>x.name===key)?.value??null;
@@ -51,6 +56,7 @@ function sourceHint(route,category){
  if(category==='seo_pending_stage7')return 'src/lib/seo-meta.mjs / src/layouts/BaseLayout.astro';
  if(category==='media_pending_stage6')return 'src/lib/i18n/media-copy.mjs / src/data/media/';
  if(category==='ui_localization_gap')return 'src/data/i18n/ui-copy.json / src/components/';
+ if(category==='archived_source_tour_title')return 'data/source-index/catalogs/tours.json / archived Tour MD';
  if(category==='tour_itinerary_source_review')return 'src/content/tours/ / source-bound Tour translations';
  if(category==='entity_breadcrumb_source_review')return 'src/content/ / localized entity labels and Tour fields';
  if(category==='seo_article_heading_source_review')return 'data/seo-geo/articles/ / EN FULLTEXT source overlay';
@@ -103,7 +109,8 @@ for(const file of pages){
   const trimmed=normalized(value);
   if(!trimmed||!cyr.test(trimmed))return;
   found++;
-  const classification=classifyEnResidual({stack,field,fallback,route});
+  const classification=classifyEnResidual({stack,field,fallback,route,
+     archivedTour:archivedTourRoutes.has(route)});
   record({url,route,selector:selector(stack),field,value:trimmed.slice(0,950),
    classification,sourceHint:sourceHint(route,classification),pageMode:fallback?'RU fallback':'mixed EN'});
  }

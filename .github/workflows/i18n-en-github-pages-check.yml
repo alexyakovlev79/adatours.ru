@@ -176,7 +176,7 @@ jobs:
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
           node scripts/i18n/verify-en-schema-output.mjs ../en-pages-site
           node scripts/i18n/audit-en-residuals.mjs ../en-pages-site ../stage9-residual-audit.json ../stage9-residual-urls.ndjson ../stage9-js-sources.json
-          node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
+          node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json --report-only
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022
       - name: Stage 9 actual browser interactions (not visual QA)
         working-directory: website

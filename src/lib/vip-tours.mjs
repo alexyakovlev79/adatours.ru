@@ -96,8 +96,8 @@ export function vipTourPriceLabel(value, locale = 'ru') {
   const amount = new Intl.NumberFormat(locale === 'en' ? 'en-US' : 'ru-RU', { maximumFractionDigits: 0 }).format(price);
   const currency = (data.currency ?? '').trim().toUpperCase();
   const prefix = locale === 'en' ? 'From' : 'от';
-  if (currency === 'USD') return `${prefix} ${amount}`;
+  if (currency === 'USD') return prefix + ' ' + String.fromCharCode(36) + amount;
   if (currency === 'EUR') return `${prefix} €${amount}`;
-  if (currency === 'BRL') return `${prefix} R${amount}`;
+  if (currency === 'BRL') return prefix + ' R' + String.fromCharCode(36) + amount;
   return `${prefix} ${amount}${currency ? ` ${currency}` : ''}`;
 }

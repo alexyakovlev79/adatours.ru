@@ -25,6 +25,7 @@ import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { compareToursForCountry } from '../lib/tour-ranking';
 import { buildDestinationDiscoveryModel } from '../lib/i18n/entity-discovery-model.mjs';
+import { destinationExcursionsHeading } from '../lib/i18n/stage9-contextual-labels.mjs';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -217,7 +218,7 @@ const storyTransitionLabel = isEnglish ? 'Explore the place' : 'Ближе к м
     <>
   {relatedExcursions.length > 0 && (
     <>
-      <EditorialStatement eyebrow="Экскурсии" text={`Экскурсии: ${d.name}`} />
+      <EditorialStatement eyebrow="Экскурсии" text={destinationExcursionsHeading(d.name, isEnglish ? 'en' : 'ru')} />
       {relatedExcursions.slice(0, previewLimits.excursions).map((excursion, index) => (
         <DestinationBand
           eyebrow={[excursion.data.duration ?? '', excursion.data._i18n?.formatLabel ?? excursion.data.format ?? ''].filter(Boolean).join(' · ')}

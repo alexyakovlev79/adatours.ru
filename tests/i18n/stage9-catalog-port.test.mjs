@@ -29,3 +29,16 @@ test('stage9 port: exact editorial titles have EN copy and no RU source mutation
   assert.equal(translateAuthoredPageText(ru,'ru'),ru);
   assert.equal(translateAuthoredPageText('Непереведенный источник','en'),'Непереведенный источник');
 });
+
+// Real latest EN HTML residual inventory (preflight 43439260916):
+// 418 enquiry titles + 469 destination excursion headings still had RU prefixes.
+test('stage9: source-bound dynamic CTA and destination headings use EN without changing entity names or RU', async()=>{
+  const {excursionEnquiryTitle,destinationExcursionsHeading}=await import('../../src/lib/i18n/stage9-contextual-labels.mjs');
+  const ex='Bariloche: Circuito Chico and Cerro Campanario';
+  const place='Buenos Aires';
+  assert.equal(excursionEnquiryTitle(ex,'en'),'Enquire about this excursion: '+ex);
+  assert.equal(excursionEnquiryTitle(ex,'ru'),'Заказать экскурсию: '+ex);
+  assert.equal(destinationExcursionsHeading(place,'en'),'Excursions: '+place);
+  assert.equal(destinationExcursionsHeading(place,'ru'),'Экскурсии: '+place);
+  assert.equal(excursionEnquiryTitle('Тигре','ru'),'Заказать экскурсию: Тигре');
+});

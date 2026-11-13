@@ -24,6 +24,7 @@ import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsFo
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { compareToursForCountry } from '../lib/tour-ranking';
 import { buildExcursionGeographyModel } from '../lib/i18n/entity-geography-model.mjs';
+import { excursionEnquiryTitle } from '../lib/i18n/stage9-contextual-labels.mjs';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -136,7 +137,7 @@ const firstHeadingHtml = firstHeadingMatch?.[1] ?? '';
 const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstHeadingHtml.length) : descriptionHtml;
 ---
 
-<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={archived ? "Подобрать другую поездку" : `Заказать экскурсию: ${d.title}`} leadEntityId={archived ? "" : d.id}
+<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={archived ? "Подобрать другую поездку" : excursionEnquiryTitle(d.title, d._i18n?.contentLanguage ?? 'ru')} leadEntityId={archived ? "" : d.id}
   headerTheme={archived ? 'dark' : 'light'}
   noindex={archived}
   title={d._i18n ? d.title : seoExcursionTitle(d,geography.country.id,d.destination,destinationName,archived ? undefined : relatedTours.length)}

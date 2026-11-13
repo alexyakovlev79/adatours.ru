@@ -68,6 +68,27 @@ for(const file of files){
     const text=cap[1].replace(/<[^>]*>/g,'').trim();
     if(russian.test(text)){captionsRu++;pageRussian=true;}
   }
+  // A translated image must not retain its original Russian label in a
+  // figcaption or an image-only link. Check exact media ownership, including
+  // markup emitted inside <noscript>, without translating any unrelated text.
+  for(const matched of html.matchAll(/<(figure|a|button)\b([^>]*)>([\s\S]*?)<\/\1>/gi)){
+    const type=matched[1].toLowerCase(),body=matched[3];
+    const images=[...body.matchAll(/<img\b[^>]*>/gi)].map(m=>attrs(m[0]));
+    const sources=[...new Set(images.map(a=>mediaSourceKey(a.get('data-lazy-src')??a.get('src'))).filter(Boolean))];
+    if(sources.length!==1||!mediaEnglishEntry(sources[0]))continue;
+    const src=sources[0],entry=mediaEnglishEntry(src);
+    if(type==='figure'){
+      for(const cap of body.matchAll(/<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/gi))
+        if(russian.test(cap[1].replace(/<[^>]*>/g,'')))recordKnownLeak(src,'figcaption');
+    }else{
+      const a=attrs('<'+type+matched[2]+'>');
+      for(const field of ['title','aria-label']){
+        const value=a.get(field),originals=[entry.sourceAlt,...images.map(image=>image.get('alt'))].filter(Boolean);
+        if(russian.test(value??'')&&originals.some(original=>original.trim()===value.trim()))
+          recordKnownLeak(src,type+'-'+field);
+      }
+    }
+  }
   if(pageRussian)pagesWithRussian++;
 }
 const summary={

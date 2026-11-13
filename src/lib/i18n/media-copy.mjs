@@ -81,18 +81,45 @@ export function localizeMediaDocument(document,{locale='en',reusedLabels=null}={
         if(next!==value){set(node,field,next);attributes++;}
       }
     }
-    if(node.tagName==='figure'){
-      const findImage=n=>n?.tagName==='img'?n:(n?.childNodes??[]).map(findImage).find(Boolean);
-      const img=findImage(node),src=img&&(get(img,'data-lazy-src')??get(img,'src')),entry=mediaEnglishEntry(src);
-      if(entry)for(const child of node.childNodes??[])if(child.tagName==='figcaption'){
-        const textNodes=(child.childNodes??[]).filter(c=>c.nodeName==='#text');
-        if(textNodes.length!==1||(child.childNodes??[]).some(c=>c.nodeName!=='#text'))continue;
-        const value=textNodes[0].value;
-        // Figure labels may contain extra editorial facts: only replace the
-        // original registered caption verbatim, never an unrelated sentence.
-        if(value?.trim()===entry.sourceAlt || (containsRussian(value) && value?.trim()===get(img,'alt')?.trim())){
-          textNodes[0].value=entry.alt;
-          captions++;
+    if(node.tagName==='figure'||node.tagName==='a'||node.tagName==='button'){
+      // Scope the replacement to one exact image source. A parent may contain
+      // both a lazy <img> and an identical <noscript> fallback.
+      const images=[];
+      const gather=n=>{
+        if(n?.tagName==='img')images.push(n);
+        for(const child of n?.childNodes??[])gather(child);
+        if(n?.content)gather(n.content);
+      };
+      gather(node);
+      const sources=[...new Set(images.map(img=>mediaSourceKey(get(img,'data-lazy-src')??get(img,'src'))).filter(Boolean))];
+      if(sources.length===1){
+        const src=sources[0];
+        const entry=mediaEnglishEntry(src);
+        const translated=entry?.alt??reusedLabels?.get(src);
+        const originalAlt=images.map(img=>get(img,'alt')).find(value=>containsRussian(value));
+        const matchesSource=value=>containsRussian(value)&&
+          [entry?.sourceAlt,originalAlt].some(sourceAlt=>sourceAlt&&value?.trim()===sourceAlt.trim());
+        if(translated){
+          // Only a link/button label literally describing this same image is
+          // image copy. Other link destinations and CTA labels stay untouched.
+          if(node.tagName==='a'||node.tagName==='button')for(const field of ['title','aria-label']){
+            const value=get(node,field);
+            if(matchesSource(value)){set(node,field,translated);attributes++;}
+          }
+          if(node.tagName==='figure')for(const child of node.childNodes??[])if(child.tagName==='figcaption'){
+            const leaves=[];
+            const gatherText=n=>{
+              if(n.nodeName==='#text'&&n.value?.trim())leaves.push(n);
+              else for(const sub of n.childNodes??[])gatherText(sub);
+            };
+            gatherText(child);
+            // Preserve inline markup and extra editorial text. Replace only a
+            // single text leaf whose entire meaning matches the original.
+            if(leaves.length===1&&matchesSource(leaves[0].value)){
+              leaves[0].value=translated;
+              captions++;
+            }
+          }
         }
       }
     }

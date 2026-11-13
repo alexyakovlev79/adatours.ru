@@ -203,3 +203,46 @@ test('stage 6.1 preserves 100 additional exact-source media captions',()=>{
  }
  assert.ok(Object.keys(en.entries).length>=1343);
 });
+
+test('stage 6.5 applies known translations inside noscript and inline figcaption markup',()=>{
+ const source=Object.entries(en.entries).find(([,row])=>row.sourceAlt&&/[А-Яа-яЁё]/u.test(row.sourceAlt));
+ assert.ok(source,'Need a real source-bound Russian media caption');
+ const [src,row]=source;
+ const markup='<html><body><figure><img src="'+src+'" alt="'+row.sourceAlt+'" title="'+row.sourceAlt+
+  '" aria-label="'+row.sourceAlt+'"><figcaption><span>'+row.sourceAlt+'</span></figcaption></figure>'+
+  '<noscript><figure><img src="'+src+'" alt="'+row.sourceAlt+'" title="'+row.sourceAlt+
+  '"><figcaption><em>'+row.sourceAlt+'</em></figcaption></figure></noscript></body></html>';
+ const doc=parse(markup,{scriptingEnabled:false});
+ assert.deepEqual(localizeMediaDocument(doc,{locale:'en'}),{attributes:5,captions:2});
+ const output=serialize(doc);
+ assert.ok(output.includes('<figcaption><span>'+row.alt+'</span></figcaption>'));
+ assert.ok(output.includes('<figcaption><em>'+row.alt+'</em></figcaption>'));
+ assert.equal((output.match(/alt="/g)||[]).length,2);
+ assert.ok(!output.includes(row.sourceAlt));
+ assert.deepEqual(localizeMediaDocument(doc,{locale:'en'}),{attributes:0,captions:0});
+});
+
+test('stage 6.5 translates exact image-only link labels but protects unrelated text',()=>{
+ const source=Object.entries(en.entries).find(([,row])=>row.sourceAlt&&/[А-Яа-яЁё]/u.test(row.sourceAlt));
+ const [src,row]=source;
+ const doc=parse('<html><body><a href="/test" title="'+row.sourceAlt+'" aria-label="'+row.sourceAlt+
+  '"><img src="'+src+'" alt="'+row.sourceAlt+'"></a><a href="/other" aria-label="Открыть экскурсию">'+
+  '<img src="'+src+'" alt="'+row.alt+'"></a><p>'+row.sourceAlt+'</p></body></html>');
+ assert.deepEqual(localizeMediaDocument(doc,{locale:'en'}),{attributes:3,captions:0});
+ const output=serialize(doc);
+ assert.ok(output.includes('title="'+row.alt+'" aria-label="'+row.alt+'"'));
+ assert.ok(output.includes('aria-label="Открыть экскурсию"'));
+ assert.ok(output.includes('<p>'+row.sourceAlt+'</p>'));
+ assert.deepEqual(localizeMediaDocument(doc,{locale:'en'}),{attributes:0,captions:0});
+});
+
+test('stage 6.5 keeps all 1944 exact image keys and translates no Russian values twice',()=>{
+ assert.ok(Object.keys(en.entries).length>=1944);
+ for(const [src,row] of Object.entries(en.entries)){
+   assert.equal(row.sourceKey,src);
+   assert.ok(src.startsWith('/media/'),src);
+   assert.ok(typeof row.alt==='string'&&row.alt.trim()&& !/[А-Яа-яЁё]/u.test(row.alt),src);
+   assert.equal(mediaEnglishEntry(src),row);
+   assert.equal(localizeMediaField(src,row.alt,{locale:'en'}),row.alt);
+ }
+});

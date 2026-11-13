@@ -116,6 +116,7 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
 ---
 
 <BaseLayout
+  lang={uiLocale}
   leadTitle="Собрать маршрут по нескольким странам"
   leadEntityId="multi_country"
   title={seoTitle}
@@ -123,14 +124,14 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
   canonical="/multi-country/"
   image={hero}
   breadcrumbs={[
-    { label: 'Главная', href: '/' },
+    { label: uiLocale==='en'?'Home':'Главная', href: '/' },
     { label: 'Multi-country', href: '/multi-country/' },
   ]}
 >
   <Hero
     eyebrow="Multi-country"
-    title="Туры по нескольким странам Латинской Америки"
-    intro="Выберите готовую программу по нескольким странам или возьмите ее за основу. Даты, длительность, отели и состав поездки можно адаптировать под вас."
+    title={uiLocale==='en'?'Multi-country journeys across Latin America':'Туры по нескольким странам Латинской Америки'}
+    intro={uiLocale==='en'?'Choose a multi-country journey or start with an existing itinerary. We can adapt the dates, duration, hotels and travel arrangements to your needs.':'Выберите готовую программу по нескольким странам или возьмите ее за основу. Даты, длительность, отели и состав поездки можно адаптировать под вас.'}
     image={hero}
     ctaHref="#request"
     ctaLabel="Собрать свой маршрут"

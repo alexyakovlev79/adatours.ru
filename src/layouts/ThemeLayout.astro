@@ -38,7 +38,7 @@ const experienceCatalogs = [
   { kind: 'excursion', label: uiLocale==='en'?`All excursions: ${displayThemeName}`:`Все экскурсии: ${d.name}`, href: interestExcursionCatalogPath(d) },
 ].filter((catalog) => hub.allExperiences.some((row) => row.kind === catalog.kind));
 ---
-<BaseLayout leadTitle={uiLocale==='en'?`Plan a journey: ${displayThemeName}`:`Собрать поездку: ${d.name}`} leadEntityId={d.id} title={seoThemeHubTitle(d.name,hub.allTours.length)} description={d.summary} image={d.hero?.src}
+<BaseLayout lang={uiLocale} leadTitle={uiLocale==='en'?`Plan a journey: ${displayThemeName}`:`Собрать поездку: ${d.name}`} leadEntityId={d.id} title={seoThemeHubTitle(d.name,hub.allTours.length)} description={d.summary} image={d.hero?.src}
   canonical={themePath(d)} hideCurrentBreadcrumbLabel={true}
   breadcrumbs={[{ label: uiText(uiLocale,'nav.interests'), href: '/interests/' }, { label: displayThemeName, href: themePath(d) }]}>
   <Hero contentSized eyebrow={uiText(uiLocale,'nav.interests')} title={displayThemeName} intro={d.summary} image={d.hero?.src} video={d.heroVideo} imageTextAlign={d.imageTextAlign}

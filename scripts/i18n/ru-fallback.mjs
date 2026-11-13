@@ -68,7 +68,7 @@ export function discoverRussianPages(root){
  return pages.sort((a,b)=>a.route.localeCompare(b.route,'en'));
 }
 /** Build full shared EN pages; legacy nonshared fallback still blocks submissions. */
-export function russianFallbackHtml(source,route,known,{sharedContent=false,entityLabels=new Map(),reusedLabels=new Map()}={}){
+export function russianFallbackHtml(source,route,known,{sharedContent=false,entityLabels=new Map(),reusedLabels=new Map(),siteShellFragment=false}={}){
  if(typeof source!=='string'||!source.includes('<html')||!known?.has(route))fail('Unknown source route '+route);
  const doc=parse(source),root=walk(doc,n=>n.tagName==='html')[0],
   head=walk(doc,n=>n.tagName==='head')[0];
@@ -95,14 +95,22 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  if(robots.length!==1)fail('Robots meta invalid '+route);
  if(sharedContent){
   const schemas=walk(head,n=>n.tagName==='script'&&get(n,'type')==='application/ld+json');
-  if(schemas.length!==1||!get(schemas[0],'data-schema-version'))
-   fail('Expected one inspectable EN Schema.org JSON-LD graph '+route);
+  // The reusable header/search/footer fragment is an HTML transport asset,
+  // not a canonical webpage. Only real EN pages must publish JSON-LD.
+  if(siteShellFragment) {
+   if(schemas.length)fail('A shared site-shell fragment must not emit JSON-LD');
+  } else {
+   if(schemas.length!==1||!get(schemas[0],'data-schema-version'))
+    fail('Expected one inspectable EN Schema.org JSON-LD graph '+route);
+  }
   const node=schemas[0];
   let graph;
+  if(!siteShellFragment){
   try{graph=JSON.parse((node.childNodes??[]).map(c=>c.value??'').join(''))}
   catch{fail('Invalid EN Schema.org JSON-LD syntax '+route)}
   const transformed=rebaseEnglishSchemaGraph(graph,route,known);
   node.childNodes=[{nodeName:'#text',value:safeJsonLd(transformed),parentNode:node}];
+  }
  }
  set(robots[0],'content',ROBOTS);
  // Social cards for shared EN keep their English metadata. Canonical and
@@ -230,7 +238,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
   fs.mkdirSync(outShared,{recursive:true});
   for(const item of fs.readdirSync(sourceShared,{withFileTypes:true})){
    if(!item.isFile()||!/^site-shell-[a-f0-9]+\.html$/.test(item.name))continue;
-   const rendered=russianFallbackHtml(fs.readFileSync(path.join(sourceShared,item.name),'utf8'),'/',known,localization);
+   const rendered=russianFallbackHtml(fs.readFileSync(path.join(sourceShared,item.name),'utf8'),'/',known,{...localization,siteShellFragment:true});
    if(!rendered)fail('Invalid shared HTML fragment '+item.name);
    fs.writeFileSync(path.join(outShared,item.name),rendered);
    sharedFragments++;bytes+=Buffer.byteLength(rendered);

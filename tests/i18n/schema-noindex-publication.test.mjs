@@ -63,3 +63,17 @@ test('EN schema rebasing never converts external sources or unbuilt routes to in
  assert.equal(graph['@graph'][2]['@id'],origin+'brazil/#webpage');
  assert.throws(()=>rebaseEnglishSchemaGraph({'@context':'https://schema.org','@graph':[]},'/brazil/',new Set(['/'])),/Invalid EN Schema/u);
 });
+
+test('Schema Stage 8: shared site-shell is not a page and has no JSON-LD obligation',()=>{
+ const source='<!doctype html><html lang="en" data-ada-shared-locale="en"><head>'+
+  '<meta name="robots" content="noindex, nofollow"></head>'+
+  '<body><header data-site-shell="header"><a href="/tours/">Tours</a></header></body></html>';
+ const siteShell=russianFallbackHtml(source,'/',new Set(['/','/tours/']),
+  {sharedContent:true,siteShellFragment:true});
+ const dom=parse(siteShell);
+ assert.equal(find(dom,x=>x.tagName==='script'&&attr(x,'type')==='application/ld+json').length,0);
+ assert.match(siteShell,/noindex,nofollow,noarchive,nosnippet/u);
+ assert.match(siteShell,/Tours/);
+ assert.throws(()=>russianFallbackHtml(source,'/',new Set(['/']),
+  {sharedContent:true}),/Expected one inspectable EN Schema.org JSON-LD graph/u);
+});

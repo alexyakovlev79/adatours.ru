@@ -27,7 +27,7 @@ test('stage 9 repairs: 110 exact fields across sixteen active tour sources',()=>
   assert.equal(fields.length,Object.keys(row.fields).length,id);
   total+=fields.length;
   for(const patch of fields){
-   assert.equal(at(parsed,patch.path),row.fields[patch.path].sourceText,id+' '+patch.path);
+   assert.equal(at(sourceWithBody,patch.path),row.fields[patch.path].sourceText,id+' '+patch.path);
    assert.equal(patch.text,row.fields[patch.path].englishText);
    assert.ok(!/[\u0400-\u052f]/u.test(patch.text),patch.path);
   }

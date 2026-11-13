@@ -182,7 +182,7 @@ jobs:
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
           node scripts/i18n/verify-en-schema-output.mjs ../en-pages-site
           node scripts/i18n/audit-en-residuals.mjs ../en-pages-site ../stage9-residual-audit.json ../stage9-residual-urls.ndjson ../stage9-js-sources.json
-          node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json --report-only
+          node scripts/i18n/audit-en-media-copy.mjs ../en-pages-site ../stage6-media-audit.json
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022
       - name: Confirm this source repository did not deploy or overwrite RU Pages
         run: |

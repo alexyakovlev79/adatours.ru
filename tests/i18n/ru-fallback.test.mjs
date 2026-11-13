@@ -179,3 +179,25 @@ test('native EN media pass applies previously translated source-bound captions w
  const decorative=html.replace('alt="'+russian+'"','alt="" aria-hidden="true"');
  assert.equal(localizeNativeEnglishMediaHtml(decorative),decorative);
 });
+
+test('stage 6 translates visible and noscript images by exact media src without touching RU sources',()=>{
+ const src='/media/multi-country/antarctica_argentina/hero-generated-20261015-v1.webp';
+ const russian='Канал Бигль и антарктический экспедиционный корабль';
+ const english='Beagle Channel and an Antarctic expedition ship';
+ const image='<img src="https://img.adatours.ru'+src+'" alt="'+russian+'" title="'+russian+'">';
+ const native='<html lang="en"><head></head><body>'+image+'<noscript>'+image+'</noscript></body></html>';
+ const corrected=localizeNativeEnglishMediaHtml(native);
+ assert.equal((corrected.match(/alt="Beagle Channel and an Antarctic expedition ship"/g)||[]).length,2);
+ assert.equal((corrected.match(/title="Beagle Channel and an Antarctic expedition ship"/g)||[]).length,2);
+ assert.doesNotMatch(corrected,/Канал Бигль/);
+ assert.equal(localizeNativeEnglishMediaHtml(corrected),corrected);
+ const base=source()
+  .replace('<html lang="ru"','<html lang="en" data-ada-shared-locale="en"')
+  .replace('<script type="application/ld+json">{"@type":"TouristTrip"}</script>','')
+  .replace('</head>',schemaFixture('/')+'</head>')
+  .replace('</body>',image+'<noscript>'+image+'</noscript></body>');
+ const fallback=russianFallbackHtml(base,'/',new Set(['/','/brazil/','/tours/','/about/','/multi-country/','/vip/']),{sharedContent:true});
+ assert.equal((fallback.match(/alt="Beagle Channel and an Antarctic expedition ship"/g)||[]).length,2);
+ assert.equal((fallback.match(/title="Beagle Channel and an Antarctic expedition ship"/g)||[]).length,2);
+ assert.doesNotMatch(fallback,/Канал Бигль/);
+});

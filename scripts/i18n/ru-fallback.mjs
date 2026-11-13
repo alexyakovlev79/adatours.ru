@@ -70,7 +70,7 @@ export function discoverRussianPages(root){
 /** Build full shared EN pages; legacy nonshared fallback still blocks submissions. */
 export function russianFallbackHtml(source,route,known,{sharedContent=false,sharedFragment=false,entityLabels=new Map(),reusedLabels=new Map()}={}){
  if(typeof source!=='string'||!source.includes('<html')||!known?.has(route))fail('Unknown source route '+route);
- const doc=parse(source),root=walk(doc,n=>n.tagName==='html')[0],
+ const doc=parse(source,{scriptingEnabled:false}),root=walk(doc,n=>n.tagName==='html')[0],
   head=walk(doc,n=>n.tagName==='head')[0];
  if(!root||!head||(!sharedContent && get(root,'lang')!=='ru')||
    (sharedContent && (!['ru','en'].includes(get(root,'lang')) || get(root,'data-ada-shared-locale')!=='en')))
@@ -215,7 +215,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,shar
  */
 export function localizeNativeEnglishMediaHtml(html,{reusedLabels=new Map()}={}){
  if(typeof html!=='string'||!/<img\b/i.test(html)||!/[А-Яа-яЁё]/u.test(html))return html;
- const doc=parse(html);
+ const doc=parse(html,{scriptingEnabled:false});
  const node=walk(doc,n=>n.tagName==='html')[0];
  if(!node||get(node,'lang')!=='en')fail('Native EN media pass expected html lang=en');
  const result=localizeMediaDocument(doc,{locale:'en',reusedLabels});

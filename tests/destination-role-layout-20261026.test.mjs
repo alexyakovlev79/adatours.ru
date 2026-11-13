@@ -25,9 +25,12 @@ test('linked place recommendations hand off to unlinked editorial photo stories'
   assert.ok(layout.includes('const hasCommercialBands = relatedTours.length > 0 || optionalTours.length > 0 || relatedExcursions.length > 0'));
   assert.ok(layout.includes('const hasStoryTransition = hasCommercialBands && d.featureBands.length > 0'));
   assert.ok(layout.includes('{hasStoryTransition && ('));
-  assert.ok(layout.includes('href="#destination-stories"'));
-  assert.ok(layout.includes("id={index === 0 ? 'destination-stories' : undefined}"));
-  assert.ok(story.includes('id={id}'));
+  assert.ok(layout.includes('<p class="destination-story-transition__label">{storyTransitionLabel}</p>'));
   assert.ok(layout.includes("const storyTransitionLabel = isEnglish ? 'Explore the place' : 'Ближе к месту'"));
+  assert.ok(!layout.includes('href="#destination-stories"'));
+  assert.ok(!layout.includes('id={index === 0 ? \'destination-stories\' : undefined}'));
+  assert.ok(!layout.includes('destination-story-transition__arrow'));
+  assert.ok(!layout.includes('destination-story-transition__rule'));
+  assert.ok(!story.includes('id={id}'));
   assert.ok(!story.includes('href={'));
 });

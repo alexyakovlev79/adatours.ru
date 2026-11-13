@@ -4,7 +4,6 @@ import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
-  id?: string;
   eyebrow?: string;
   title: string;
   text: string;
@@ -17,13 +16,12 @@ interface Props {
   imagePositionMobile?: string;
 }
 
-const { id, eyebrow, title, text, image, reverse = false, imageTextAlign, mediaStatus, replacementReason, imagePosition, imagePositionMobile } = Astro.props;
+const { eyebrow, title, text, image, reverse = false, imageTextAlign, mediaStatus, replacementReason, imagePosition, imagePositionMobile } = Astro.props;
 const align = imageTextAlign ?? (reverse ? 'right' : 'left');
 const resolvedImage = image ? withBase(image) : undefined;
 ---
 
 <section
-  id={id}
   class:list={['story', `story--${align}`]}
   data-video-surface
   data-image-text-align={imageTextAlign}
@@ -58,7 +56,6 @@ const resolvedImage = image ? withBase(image) : undefined;
     color: #fff;
     background: #171815;
   }
-  .story[id] { scroll-margin-top: 76px; }
   .story__media {
     position: absolute;
     inset: 0;

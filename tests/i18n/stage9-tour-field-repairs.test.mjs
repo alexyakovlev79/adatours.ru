@@ -38,11 +38,14 @@ test('stage 9 repairs: 93 exact fields across twelve active tour sources',()=>{
   const previous=structuredClone(entry);
   const result=projectSharedEnglishEntry(entry,'tours',{entityId:id,entityType:'tour',
     translation:{title:'Previously approved English title'},sourceFingerprint:'sha256:test'});
-  assert.equal(result.sourceBoundRepairs?.length,fields.length,id);
+  // The fixture explicitly supplies an already-approved /title. Its absence
+  // from the repair receipt proves the existing EN translation wins.
+  const expectedRepairs=fields.filter(p=>p.path!=='/title');
+  assert.equal(result.sourceBoundRepairs?.length,expectedRepairs.length,id);
   assert.equal(result.entry.data.priceFrom,parsed.priceFrom);
   assert.equal(result.entry.data.currency,parsed.currency);
   assert.equal(result.entry.data.title,'Previously approved English title');
-  for(const patch of fields){
+  for(const patch of expectedRepairs){
     const actual=patch.path==='/format'?result.entry.data._i18n?.formatLabel:at(result.entry.data,patch.path);
     assert.equal(actual,patch.text,id+' '+patch.path);
   }

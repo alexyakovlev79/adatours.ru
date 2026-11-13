@@ -71,3 +71,11 @@ test('stage9: source-bound EN presentation fixes in shared templates',()=>{
  }
  assert.equal(translateUiText('Неизвестная сущность для перевода','en'),'Неизвестная сущность для перевода');
 });
+
+test('Stage 9 SEO disclosure buttons: exact EN labels and unchanged RU',()=>{
+ const cases=[["Как спланировать 4 дня в Рио","How to plan 4 days in Rio"],["Подробнее о 6-дневном маршруте по Чили","More about the 6-day Chile itinerary"],["Подробнее о 6-часовой экскурсии по Кито","More about the 6-hour Quito excursion"],["Подробнее о VIP-туре в Амазонию на 3 дня","More about the 3-day VIP Amazon tour"],["Подробнее о Карнавале и Игуасу за 8 дней","More about Carnival and Iguazú in 8 days"],["Подробнее о маршруте по Бразилии на 9 дней","More about the 9-day Brazil itinerary"],["Подробнее о недельном туре Рио и Игуасу","More about the week-long Rio and Iguazú tour"],["Подробнее о поездке по 5 странам за 18 дней","More about the 18-day trip through 5 countries"],["Подробнее о поездке по Коста-Рике на 5 дней","More about the 5-day Costa Rica trip"],["Подробнее о природном туре по Бразилии на 8 дней","More about the 8-day nature tour in Brazil"],["Подробнее о путешествии Рио — Игуасу на 8 дней","More about the 8-day Rio–Iguazú journey"],["Подробнее о путешествии по 8 странам","More about the journey through 8 countries"],["Подробнее о турах с 4-часовой экскурсией по Сан-Луису","More about tours including a 4-hour São Luís excursion"],["Подробнее о турах с 6-часовой экскурсией по Кито","More about tours including a 6-hour Quito excursion"],["Подробнее о турах с 8-часовой экскурсией по Кито","More about tours including an 8-hour Quito excursion"],["Подробнее о туре Рио и Бузиос на 8 дней","More about the 8-day Rio and Búzios tour"],["Подробнее о туре по 5 странам","More about the 5-country tour"],["Подробнее об экскурсии по Боготе на 6 часов","More about the 6-hour Bogotá excursion"],["Туры с экскурсией на Корковаду на 4 часа","Tours including a 4-hour Corcovado excursion"],["Туры с экскурсией на Сахарную голову за 4 часа","Tours including a 4-hour Sugarloaf Mountain excursion"]];
+ for(const [ru,en] of cases){
+  assert.equal(translateUiText(ru,'en'),en,ru);
+  assert.equal(translateUiText(ru,'ru'),ru,ru);
+ }
+});

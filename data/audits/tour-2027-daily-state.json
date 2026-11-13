@@ -6,9 +6,9 @@
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
   "lastAttempt": {
     "id": "daily-word-2027-20261113-20261113005837",
-    "at": "2026-11-13T01:24:04.811Z",
+    "at": "2026-11-13T01:32:30.661Z",
     "startedAt": "2026-11-13T00:58:37.637Z",
-    "finishedAt": "2026-11-13T01:24:04.811Z",
+    "finishedAt": "2026-11-13T01:32:30.661Z",
     "scanStatus": "complete",
     "status": "Полный обход без новых и изменённых исходников. Продвинуты P155, P174 и P175. Content deploy отсутствует.",
     "foldersScanned": 33,
@@ -7150,9 +7150,9 @@
       "driveFileId": "1ifM8bcqBlEUq3x8HiUyZtjE9tmkQN0xb",
       "fileName": "Vip_Carnaval_Rio_Iguacu_Kenoa_11d10n_2027__20__RUS_.docx",
       "status": "PENDING",
-      "stage": "candidate_mirrors_and_s3_verified_final_seo_and_predeploy_pending",
+      "stage": "targeted_html_and_media_verified_lifecycle_predeploy_pending",
       "detectedAt": "2026-11-07T01:15:50Z",
-      "lastCheckedAt": "2026-11-13T01:24:04.811Z",
+      "lastCheckedAt": "2026-11-13T01:32:30.661Z",
       "sourceModifiedTime": "2026-11-11T19:23:43.092Z",
       "sourceSnapshotPath": "data/audits/tour-2027-sources-20261112/part-05.json",
       "readableTextSha256": "f55a50535801d7a08825259ff9c63d4b43848e430dfaf9400c4fa08acbbab82f",
@@ -7163,8 +7163,7 @@
       "classification": "confirmed_existing_tour_substantive_word_revision",
       "publicationStatus": "not_published",
       "remaining": [
-        "P155: окончательный HTML для точных финальных байтов и машинная предпубликационная проверка lifecycle остаются открыты. В HTML предварительной сборки новые каталоги ещё не подключили финальные статьи и мобильные обрезки, добавленные после старта сборки.",
-        "P155: после штатного Pages необходимы catalog-registries, адресные GEO для тура и трёх мест, проверка всех затронутых Sheets."
+        "P155: финальные SEO-блоки и обложки подтверждены в адресной сборке семи страниц; остаётся составить и прогнать машинный предпубликационный lifecycle на полном наборе зависимостей и окончательных хешах. После этого штатный Pages и catalog-registries, GEO для тура и трёх мест, все затронутые Sheets."
       ],
       "lastMetadataCheckedAt": "2026-11-13T01:24:04.811Z",
       "currentSourcePresence": "present",
@@ -7191,7 +7190,8 @@
       "reason": "Word подтверждает русскоговорящих гидов и трансферы, включая Kenoa. В кандидате уточнены 11 дней, условия, восемь вставок, три места и три производных каталога.",
       "previousPreparedContentPath": "data/audits/p155-word-revision-prepared-20261112.json",
       "mediaEvidencePath": "data/audits/p155-rio-media-20261113.json",
-      "currentCandidateBaselineRef": "9aa446036b4d63ab456eed71a4d91eba7eb22bf2"
+      "currentCandidateBaselineRef": "9aa446036b4d63ab456eed71a4d91eba7eb22bf2",
+      "predeployEvidencePath": "data/audits/p155-predeploy-checks-20261113.json"
     },
     {
       "driveFileId": "1hfMR8iTnwtALRYUs4p0ncQLnLpAaeBID",
@@ -13575,9 +13575,9 @@
     },
     {
       "id": "daily-word-2027-20261113-20261113005837",
-      "at": "2026-11-13T01:24:04.811Z",
+      "at": "2026-11-13T01:32:30.661Z",
       "startedAt": "2026-11-13T00:58:37.637Z",
-      "finishedAt": "2026-11-13T01:24:04.811Z",
+      "finishedAt": "2026-11-13T01:32:30.661Z",
       "scanStatus": "complete",
       "wordComparisonStatus": "Drive folder listings do not expose numeric version. Exact file IDs, parents, sizes and modified times matched the previous complete snapshot. Prior verified Word text and embedded-media hashes and known revision IDs were retained. No changed metadata candidates required re-download.",
       "outcome": "Полный обход без новых и изменённых исходников. Продвинуты P155, P174 и P175. Content deploy отсутствует.",
@@ -13653,16 +13653,19 @@
         "historicalP172Preserved": true,
         "predeployComplete": false,
         "seoLinksChecked": 14,
-        "seoLinkErrors": 0
+        "seoLinkErrors": 0,
+        "targetedHtmlVerifiedPages": 7,
+        "mediaReadbackVerified": 31,
+        "predeployEvidencePath": "data/audits/p155-predeploy-checks-20261113.json"
       },
       "blockers": [
-        "P155: окончательный HTML для точных финальных байтов и машинная предпубликационная проверка lifecycle остаются открыты. В HTML предварительной сборки новые каталоги ещё не подключили финальные статьи и мобильные обрезки, добавленные после старта сборки.",
-        "P155: после штатного Pages необходимы catalog-registries, адресные GEO для тура и трёх мест, проверка всех затронутых Sheets.",
+        "P155: финальные SEO-блоки и обложки подтверждены в адресной сборке семи страниц; остаётся составить и прогнать машинный предпубликационный lifecycle на полном наборе зависимостей и окончательных хешах. После этого штатный Pages и catalog-registries, GEO для тура и трёх мест, все затронутые Sheets.",
         "P174/P175: точная сборка маршрутов, экскурсий и оставшиеся медиа. Для собора Сан-Паулу и Avenida Paulista сохранены проверенные комплекты.",
         "P163: конфликт языков/дат и сопоставление Rio/Paraty остаются REVIEW. P068/P069: остаются REVIEW условия гида и архивное соответствие."
       ],
       "errors": [],
-      "nextStep": "Resume from byte-verified candidate and scoped SEO/lifecycle gates. Reuse all recorded receipts and mobile mappings. Then Pages/catalog-registries, addressable GEO and exact Sheets readback."
+      "nextStep": "Resume P155 from verified final target HTML, exact article hashes and all 31 media byte checks; finish machine-verifiable predeploy lifecycle before content release. Reuse confirmed upload receipts.",
+      "runCheckpointCommit": "ce43fbead302977ae7c316b00172f2619e60919f"
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",

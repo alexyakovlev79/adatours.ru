@@ -10,6 +10,7 @@ import {resolve, join, dirname} from 'node:path';
 import {pathToFileURL, fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {enStagingSiteEnabled} from './en-staging-site.mjs';
+import {eligibleTourTitleRepair} from './tour-title-repairs.mjs';
 import {visibleLocalizationSlots, sourceFromContentEntry} from './content-adapter.mjs';
 import {createStableBlockMap} from './block-map.mjs';
 import {assessOverlay} from './content-overlay.mjs';
@@ -348,6 +349,22 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
       previewMass.push({...packet.receipt,appliedBlocks,changedTexts});
     }
   }
+  // Stage 9 repairs are last: existing approved/immutable worker fields win.
+  // Only one literal title, matching the current RU field SHA-256, may be
+  // applied to an active Tour that still lacks a valid translation.
+  const sourceBoundRepairs=[];
+  if(type==='tour'){
+    const repair=eligibleTourTitleRepair({
+      sourceId,source:sourceEntry.data,alreadyTranslated:appliedPaths.has('/title'),
+    });
+    if(repair){
+      applyText(root,repair.path,repair.text,metadata);
+      appliedPaths.add(repair.path);translated++;
+      const missingAt=missing.indexOf(repair.path);
+      if(missingAt>=0)missing.splice(missingAt,1);
+      sourceBoundRepairs.push({path:repair.path,sourceTextSha256:repair.sourceTextSha256});
+    }
+  }
   if(!translated)return {entry,applied:0,status:'untranslated',sourceId,sourceFingerprint};
   const body=root.__body; delete root.__body;
   metadata.translatedFields=translated;
@@ -357,7 +374,8 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   // entry.id, data.id, slug, locale, relationships and every nontext value stay
   // canonical. The old demo materializers must not rewrite featureBand hrefs.
   return {entry:{...entry,data:root,body},applied:translated,status:missing.length?'partial':'translated',
-    sourceId,sourceFingerprint,sourceKind,missing,...(acceptedMass.length?{acceptedMass}:{}),
+    sourceId,sourceFingerprint,sourceKind,missing,...(sourceBoundRepairs.length?{sourceBoundRepairs}:{}),
+    ...(acceptedMass.length?{acceptedMass}:{}),
     ...(previewMass.length?{previewMass}:{})};
 }
 
@@ -485,6 +503,7 @@ export function withSharedEnglishContent(loader,collection,{env=process.env,root
         sourceFingerprint:result.sourceFingerprint??translation.sourceFingerprint,
         ...(result.acceptedMass?{acceptedMass:result.acceptedMass}:{}),
         ...(result.previewMass?{previewMass:result.previewMass}:{}),
+        ...(result.sourceBoundRepairs?{sourceBoundRepairs:result.sourceBoundRepairs}:{}),
         ...(result.reason?{reason:result.reason}:{}),...(result.missing?.length?{fallbackFields:result.missing}:{})});
       if(!result.applied)continue;
       const projected=result.entry;

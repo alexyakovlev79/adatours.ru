@@ -112,3 +112,19 @@ test('five revised Peru articles match exact current source blobs, link targets 
   parseSeoGeoArticle(revision.enMarkdown,revision.path);
  }
 });
+
+
+test('Anna changed FULLTEXT source is allowed only with exact current blob and appended sentence',()=>{
+ const item=registry.personAppendOnly?.find(x=>x.number===7056);
+ assert.ok(item);
+ assert.equal(item.path,'src/content/people/anna-avanesova.md');
+ const bytes=readFileSync(new URL('../../'+item.path,import.meta.url));
+ const actual=createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
+ assert.equal(actual,item.approvedCurrentSha);
+ assert.ok(bytes.toString('utf8').endsWith('\n\n'+item.originalSuffix+'\n'));
+ const auth=authorizeFulltextSource(item.number,item.frozenSha,item.approvedCurrentSha,item.frozenSha,registry);
+ assert.equal(auth.compatiblePerson?.englishSuffix,'Anna enjoys sport.');
+ assert.equal(auth.sourceReconciled,true);
+ assert.throws(()=>authorizeFulltextSource(item.number,item.frozenSha,'a'.repeat(40),item.frozenSha,registry),/source_changed/);
+ assert.throws(()=>authorizeFulltextSource(item.number,item.frozenSha,item.approvedCurrentSha,'a'.repeat(40),registry),/source_changed/);
+});

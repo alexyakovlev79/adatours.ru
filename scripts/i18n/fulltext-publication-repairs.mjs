@@ -95,9 +95,14 @@ export function repairFulltextEnglishSyntax(enMarkdown,number,registry){
 export function authorizeFulltextSource(number,canonicalExpectedSha,canonicalActualSha,reportedSha,registry){
  if(canonicalExpectedSha!==canonicalActualSha){
   const c=registry.countries.find(x=>x.number===number);
-  if(!c||c.frozenSha!==canonicalExpectedSha||c.approvedCurrentSha!==canonicalActualSha||
-    c.bodyUnchanged!==true)throw new Error('source_changed');
-  return {compatibleCountry:c,sourceReconciled:true};
+  if(c&&c.frozenSha===canonicalExpectedSha&&c.approvedCurrentSha===canonicalActualSha&&c.bodyUnchanged===true)
+    return {compatibleCountry:c,sourceReconciled:true};
+  // Only an exact pinned source revision may append an approved English sentence.
+  const p=(registry.personAppendOnly??[]).find(x=>x.number===number);
+  if(!p||p.frozenSha!==canonicalExpectedSha||
+    p.approvedCurrentSha!==canonicalActualSha||reportedSha!==canonicalExpectedSha)
+    throw new Error('source_changed');
+  return {compatiblePerson:p,sourceReconciled:true};
  }
  if(reportedSha!==canonicalExpectedSha){
   const r=registry.sourceShaReceipts.find(x=>x.number===number);

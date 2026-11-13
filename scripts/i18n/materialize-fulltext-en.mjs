@@ -205,6 +205,17 @@ async function main(){
     // full translations. Old receipts remain immutable; corrected revisions
     // carry their own exact canonical Git blob SHA and source path.
     let workingEnglish=text.enMarkdown;
+    if(auth.compatiblePerson){
+      const revision=auth.compatiblePerson;
+      const russian=splitFulltextMarkdown(raw.toString('utf8'));
+      const translated=splitFulltextMarkdown(workingEnglish);
+      if(revision.path!==item.path||
+         !russian.body.trimEnd().endsWith('\n\n'+revision.originalSuffix)||
+         translated.body.includes(revision.englishSuffix)||
+         /[\u0400-\u052f]/u.test(revision.englishSuffix))
+        throw new Error('Unverified person appended sentence');
+      workingEnglish=workingEnglish.trimEnd()+'\n\n'+revision.englishSuffix+'\n';
+    }
     if(repairs.complexNeedsRevisions.includes(item.number)){
       const revisionPath='data/i18n/fulltext-publication-repairs/entries/'+String(item.number).padStart(5,'0')+'.json';
       const revisionBytes=await readFile(join(sourceRoot,revisionPath));

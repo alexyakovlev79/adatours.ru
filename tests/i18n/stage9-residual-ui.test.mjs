@@ -57,6 +57,7 @@ test('stage9: source-bound EN presentation fixes in shared templates',()=>{
   '1,5–2 часа':'1.5–2 hours',
   '2,5–3 часа':'2.5–3 hours',
   'Рассчитать программу для нашей группы':'Request a programme for our group',
+  'Подробнее о круизе по фьордам Огненной Земли на 5 дней':'More about the five-day cruise through the fjords of Tierra del Fuego',
   'Городок':'Town',
   'Остров':'Island',
   'Маршрут и окрестности':'Route and surroundings',

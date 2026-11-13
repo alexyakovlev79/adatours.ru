@@ -9,6 +9,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {parse} from 'parse5';
+import {classifyEnResidual} from './classify-en-residual.mjs';
 
 const root=path.resolve(process.argv[2]??'../en-pages-site');
 const reportPath=path.resolve(process.argv[3]??'../stage9-residual-audit.json');
@@ -50,31 +51,16 @@ function sourceHint(route,category){
  if(category==='seo_pending_stage7')return 'src/lib/seo-meta.mjs / src/layouts/BaseLayout.astro';
  if(category==='media_pending_stage6')return 'src/lib/i18n/media-copy.mjs / src/data/media/';
  if(category==='ui_localization_gap')return 'src/data/i18n/ui-copy.json / src/components/';
+ if(category==='tour_itinerary_source_review')return 'src/content/tours/ / source-bound Tour translations';
+ if(category==='entity_breadcrumb_source_review')return 'src/content/ / localized entity labels and Tour fields';
+ if(category==='seo_article_heading_source_review')return 'data/seo-geo/articles/ / EN FULLTEXT source overlay';
  if(route.includes('/press/')||route.includes('/webinars/')||route.includes('/partners/'))
   return 'src/data/i18n/authority-pages.*.en.json / src/pages/';
  if(route.includes('/mice/')||route.includes('/dmc/'))
   return 'src/lib/i18n/commercial-copy.mjs / src/pages/';
  return 'src/content/ (RU fallback) or src/pages/ (check route owner)';
 }
-function classify({stack,field,fallback,route}){
- const tags=stack.map(x=>x.tagName);
- const head=tags.includes('head'),leaf=tags.at(-1)??'';
- if(head && (leaf==='title'||leaf==='meta'||field==='meta-content'))
-  return 'seo_pending_stage7';
- if(tags.includes('section')&&stack.some(n=>get(n,'class')?.split(/\s+/).includes('pagefind-record')))return 'technical_pagefind_index';
- if(tags.includes('noscript'))return 'noscript_fallback_markup';
- if(field==='alt'||tags.includes('figcaption'))return 'media_pending_stage6';
- if(field==='js-data')return 'js_state_candidate';
- if(tags.some(t=>t==='nav'||t==='header'||t==='footer'||interactive.has(t))||
-    field==='aria-label'||field==='aria-description'||field==='placeholder'||field==='aria-valuetext')
-  return 'ui_localization_gap';
- if(tags.includes('blockquote')||tags.includes('q')||tags.includes('cite'))
-  return 'source_quote_review';
- if(tags.includes('h1') && /^\/en\/(?:about|contacts|team|reviews|cases|privacy|personal-data|vip|interests|tours|places|excursions|country|multi-country)(?:\/|$)/.test(route))
-  return 'standard_page_heading_review';
- if(fallback)return 'permitted_ru_body_fallback';
- return 'mixed_content_or_name_review';
-}
+
 function record(item){
  occurrences++;byClass[item.classification]=(byClass[item.classification]??0)+1;
  if(item.classification==='seo_pending_stage7')headCyrillic++;
@@ -117,7 +103,7 @@ for(const file of pages){
   const trimmed=normalized(value);
   if(!trimmed||!cyr.test(trimmed))return;
   found++;
-  const classification=classify({stack,field,fallback,route});
+  const classification=classifyEnResidual({stack,field,fallback,route});
   record({url,route,selector:selector(stack),field,value:trimmed.slice(0,950),
    classification,sourceHint:sourceHint(route,classification),pageMode:fallback?'RU fallback':'mixed EN'});
  }

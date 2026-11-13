@@ -22,7 +22,12 @@ const attrs=tag=>{
   return result;
 };
 const residual=new Map(),hoverResidual=new Map(),samples=[],deferred=new Set(),knownLeaks=new Map();
-let imageTags=0,described=0,english=0,russianAlts=0,russianHovers=0,unlabelled=0,captionsRu=0,pagesWithRussian=0;
+const recordKnownLeak=(src,field)=>{
+ const row=knownLeaks.get(src)??{src,occurrences:0,fields:{}};
+ row.occurrences++;row.fields[field]=(row.fields[field]??0)+1;
+ knownLeaks.set(src,row);
+};
+let imageTags=0,described=0,english=0,russianAlts=0,russianHovers=0,russianAriaLabels=0,unlabelled=0,captionsRu=0,pagesWithRussian=0;
 for(const file of files){
   const html=fs.readFileSync(file,'utf8');
   let pageRussian=false;
@@ -36,6 +41,12 @@ for(const file of files){
       russianHovers++;pageRussian=true;
       const current=hoverResidual.get(src)??{src,occurrences:0,values:new Set()};
       current.occurrences++;current.values.add(hover);hoverResidual.set(src,current);
+      if(mediaEnglishEntry(src))recordKnownLeak(src,'title');
+    }
+    const aria=a.get('aria-label')??'';
+    if(russian.test(aria)){
+      russianAriaLabels++;pageRussian=true;
+      if(mediaEnglishEntry(src))recordKnownLeak(src,'aria-label');
     }
     const alt=a.get('alt')??'';
     if(!alt.trim()){unlabelled++;continue;}
@@ -49,7 +60,7 @@ for(const file of files){
       if(current.samplePages.length<5&&!current.samplePages.includes(page))current.samplePages.push(page);
       residual.set(src,current);
       if(samples.length<45&&!samples.some(s=>s.src===src))samples.push({src,alt:alt.slice(0,180),page:path.relative(root,file)});
-      if(mediaEnglishEntry(src))knownLeaks.set(src,(knownLeaks.get(src)??0)+1);
+      if(mediaEnglishEntry(src))recordKnownLeak(src,'alt');
     } else if(lat.test(alt))english++;
   }
   const captions=[...html.matchAll(/<figcaption\b[^>]*>([\s\S]*?)<\/figcaption>/gi)];
@@ -64,9 +75,10 @@ const summary={
   imageTags,describedImages:described,englishImageAlts:english,russianImageAlts:russianAlts,
   emptyOrDecorativeAlts:unlabelled,uniqueImagesWithRussianAlt:residual.size,
   russianImageHoverTitles:russianHovers,uniqueImagesWithRussianHover:hoverResidual.size,
+  russianImageAriaLabels:russianAriaLabels,
   figuresWithRussianCaption:captionsRu,pagesWithRussianPhotoText:pagesWithRussian,
   translatedKnownMediaStillWithRussianAlt:knownLeaks.size,
-  knownLeaks:[...knownLeaks].slice(0,20).map(([src,occurrences])=>({src,occurrences})),
+  knownLeaks:[...knownLeaks.values()].slice(0,20),
   // Full keyed backlog for resuming stage six without repeating the HTML crawl.
   // Only user-visible observed alt values and exact media src; never technical registry notes.
   residualBySrc:[...residual.values()].sort((a,b)=>b.occurrences-a.occurrences||a.src.localeCompare(b.src))
@@ -78,7 +90,7 @@ const summary={
 fs.writeFileSync(output,JSON.stringify(summary,null,2)+'\n');
 console.log('Stage 6 EN media inventory: '+JSON.stringify({...summary,examples:undefined,knownLeaks:undefined}));
 if(knownLeaks.size){
-  const message='Known EN media captions still Russian in '+knownLeaks.size+' exact image paths';
+  const message='Already-translated EN media alt/title/aria labels still Russian in '+knownLeaks.size+' exact image paths';
   // Preserve an exact Stage 6 backlog without blocking independent noindex
   // Schema.org publication. Strict audit remains the default.
   if(process.argv.includes('--report-only'))console.warn('Stage 6 pending: '+message);

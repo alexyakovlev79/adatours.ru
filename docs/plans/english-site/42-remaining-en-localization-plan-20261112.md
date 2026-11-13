@@ -429,3 +429,10 @@ Helper принимает только перечисленные поля ак�
 - Источник отбора: [успешный EN preflight 43389162613](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43389162613) и artifact `14020357409`, его `stage6-media-audit.json/residualBySrc`; снимок до внесения этих изменений. Источник подписи — фактически показываемый RU alt каждого exact `/media/tours/...`.
 - Обработано 100 подписей, 100 новых source-bound переводов сохранено; 0 существующих записей пропущено без перезаписи. Словарь: 1554 → 1654. Source provenance: `stage6-2-html-residual-201-300`.
 - Изображения, RU тексты, идентификаторы, тарифы, URL, FULLTEXT и массовые очереди не изменены; EN noindex без публичного открытия. До нового успешного EN preflight и Pages receipt этап остается `in_progress`.
+
+
+### Этап 6.2 — еще 100 EN подписей изображений, позиции 301–400 (13.11.2026)
+
+- Источник: полный read-only `stage6-media-audit.json` artifact `14020357409` из [EN preflight №43389162613](https://github.com/alexyakovlev79/adatours.ru/actions/runs/43389162613), исходные описания `residualBySrc` по exact media src, не предположения из имен файлов.
+- Переведено 100 подписей. Новых подтвержденных ключей 100, сохраненных ранее и пропущенных без перезаписи 0; общее число EN ключей 1654 → 1754. Source marker `stage6-2-html-residual-301-400`.
+- Изменены только EN display словарь и журнал этапа; RU изображения, исходные атрибуты, цены, URL и независимые очереди не менялись. Фактический deployed EN noindex остаток требует отдельного CI/Pages подтверждения; `in_progress`.

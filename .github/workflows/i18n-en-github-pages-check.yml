@@ -6,6 +6,11 @@ on:
       - 'src/pages/en/**'
       - 'src/pages/en-pilot-private/**'
       - 'src/lib/i18n/**'
+      - 'src/data/i18n/ui-copy.json'
+      - 'scripts/i18n/audit-en-residuals.mjs'
+      - 'scripts/i18n/classify-en-residual.mjs'
+      - 'tests/i18n/stage9-residual-ui.test.mjs'
+      - 'tests/i18n/stage9-residual-classification.test.mjs'
       - 'src/lib/vip-tours.mjs'
       - 'tests/i18n/derived-catalog-localization.test.mjs'
       - 'src/lib/seo-price-meta.mjs'
@@ -67,6 +72,7 @@ on:
     paths:
       - 'scripts/i18n/**'
       - 'tests/i18n/**'
+      - 'src/data/i18n/ui-copy.json'
       - 'src/lib/i18n/**'
       - 'src/lib/page-schema.ts'
       - 'src/lib/structured-data.mjs'
@@ -171,7 +177,7 @@ jobs:
           node --check scripts/i18n/prepare-en-pages-site.mjs
           node --check scripts/i18n/audit-en-media-copy.mjs
           node --check scripts/i18n/audit-en-residuals.mjs
-          node --test tests/i18n/stage9-residual-ui.test.mjs
+          node --test tests/i18n/stage9-residual-ui.test.mjs tests/i18n/stage9-residual-classification.test.mjs
           node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs tests/i18n/page-copy-stage-two.test.mjs tests/i18n/remaining-ui-stage-one.test.mjs tests/i18n/media-captions-stage-six.test.mjs tests/i18n/authority-stage-four.test.mjs tests/i18n/schema-stage-eight.test.mjs tests/i18n/seo-stage-seven.test.mjs tests/i18n/schema-noindex-publication.test.mjs tests/i18n/derived-catalog-localization.test.mjs
           node scripts/i18n/materialize-fulltext-en.mjs
           npx astro build

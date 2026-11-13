@@ -173,7 +173,7 @@ test('native EN media pass applies previously translated source-bound captions w
  const out=localizeNativeEnglishMediaHtml(html);
  assert.match(out,/alt="Panorama of Rio de Janeiro/);
  assert.match(out,/title="Panorama of Rio de Janeiro/);
- assert.match(out,/<p>EN article remains unchanged<\\/p>/);
+ assert.ok(out.includes('<p>EN article remains unchanged</p>'));
  assert.doesNotMatch(out,/Панорама Рио/);
  assert.equal(localizeNativeEnglishMediaHtml(out),out);
  const decorative=html.replace('alt="'+russian+'"','alt="" aria-hidden="true"');

@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-11-13T01:11:06.107Z",
+  "cathedral": {
+    "entityId": "destination_brazil_sao_paulo_cathedral",
+    "receiptVerified": true,
+    "mapping": {
+      "pagePath": "/brazil/place/sao-paulo-cathedral/",
+      "source": "/media/destinations/sao-paulo-cathedral/hero-gpt-image-20261112-v1.webp",
+      "sourceSha256": "c96a9bea5e272ed8993d47af7403b12174ec9f2639e2edf5033095fd5ee8c166",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "sourceBytes": 278534,
+      "profile": "content-sized",
+      "crop": {
+        "left": 483,
+        "top": 0,
+        "width": 705,
+        "height": 940
+      },
+      "objectPosition": "center",
+      "variants": [
+        {
+          "key": "media/destinations/sao-paulo-cathedral/hero-mobile-480-20261112-v1.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 40256,
+          "sha256": "9ec149ed58a586627c1df6961c2487ef8b9e1a5517b83e5a9be43d810d567bf0",
+          "contentType": "image/webp"
+        },
+        {
+          "key": "media/destinations/sao-paulo-cathedral/hero-mobile-705-20261112-v1.webp",
+          "width": 705,
+          "height": 940,
+          "bytes": 71502,
+          "sha256": "72028a336f07f475bd2efcb82bd5145e224abc0163afadb41a55280ffa4a754f",
+          "contentType": "image/webp"
+        }
+      ],
+      "status": "READY",
+      "manualObjectPosition": null,
+      "originalObjectPosition": "center",
+      "focusReason": "Две симметричные башни, роза и портал в центре; боковые пальмы допускают обрезку.",
+      "visualQA": {
+        "sourceViewed": true,
+        "previewsViewed": true,
+        "notes": "Центральная рамка охватывает обе башни и вход на трёх мобильных размерах; широкий cover сохраняет силуэт башен и розу фасада, часть нижней площади скрыта."
+      },
+      "geometry": {
+        "fit": "cover",
+        "widthCss": "100%",
+        "heightCss": "clamp(460px, 125vw, 560px)",
+        "minimumHeightOnly": true,
+        "mobileCssMaxWidth": 720,
+        "cropSourceMaxWidth": 479
+      }
+    },
+    "sourceAudit": "data/audits/p174-p175-sao-paulo-cathedral-media-20261112.json"
+  },
+  "avenida": {
+    "entityId": "destination_brazil_avenida_paulista",
+    "reusedGptImage": true,
+    "sourceViewed": true,
+    "existingCropsViewed": true,
+    "sourceAudit": "src/data/media/photo-enhancements.json",
+    "mapping": {
+      "pagePath": "/brazil/place/avenida-paulista/",
+      "source": "/media/excursions/sao-paulo-paulista-four-hours/hero-generated-20261026-dedup-v1.webp",
+      "profile": "content-sized",
+      "status": "READY",
+      "sourceSha256": "dc1e75d600e791c52214d05026aadac026737683039340d639a5eb98b7b107b6",
+      "sourceWidth": 1536,
+      "sourceHeight": 864,
+      "crop": {
+        "left": 444,
+        "top": 0,
+        "width": 648,
+        "height": 864
+      },
+      "objectPosition": "center bottom",
+      "manualObjectPosition": null,
+      "originalObjectPosition": "center",
+      "variants": [
+        {
+          "key": "media/excursions/sao-paulo-paulista-four-hours/hero-generated-20261026-dedup-v1-mobile-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 67384,
+          "sha256": "87b24343ad4212601f571d08df1353ca3ed9a7461d4a1d4de06f8cdfe408c092",
+          "contentType": "image/webp"
+        },
+        {
+          "key": "media/excursions/sao-paulo-paulista-four-hours/hero-generated-20261026-dedup-v1-mobile-648.webp",
+          "width": 648,
+          "height": 864,
+          "bytes": 106730,
+          "sha256": "395a37346a9d655db01c62967d19d34abdc3853b5bacd9a7c274d6f440c6df44",
+          "contentType": "image/webp"
+        }
+      ],
+      "focusReason": "Фокус выбран визуально на новом отдельном кадре; головы и лица приоритетны.",
+      "visualQA": {
+        "sourceViewed": true,
+        "previewsViewed": true,
+        "covers": [
+          "320x700",
+          "412x556",
+          "479x400"
+        ],
+        "result": "accepted"
+      }
+    },
+    "production": false
+  }
+}

@@ -214,3 +214,25 @@ test('stage9 source-bound numeral equivalence covers jeep 4×4, historic centuri
   ['Из аэропорта едем в город.','We travel from the airport in a 4x4.']
  ])assert.equal(sameSeoLeadNumerals(ru,en),false,ru);
 });
+
+test('generic source-change refresh uses only a pinned and complete EN revision',()=>{
+ const frozen='a'.repeat(40),latest='b'.repeat(40);
+ const row={
+  number:7056,path:'src/content/people/anna-avanesova.md',
+  frozenSha:frozen,approvedCurrentSha:latest,
+  enMarkdown:'---\nid: person_anna\nlocale: en\nslug: anna-avanesova\nstatus: approved\nname: Anna Avanesova\n---\n\nThe fully translated biography.\n'
+ };
+ const config={sourceFullRevisions:[row],countries:[],seoArticleFullRevisions:[],
+  personFullRevisions:[],personAppendOnly:[],sourceShaReceipts:[]};
+ const result=authorizeFulltextSource(7056,frozen,latest,frozen,config);
+ assert.equal(result.compatibleSourceComplete,row);
+ assert.equal(result.sourceReconciled,true);
+ assert.throws(()=>authorizeFulltextSource(7056,frozen,latest,'c'.repeat(40),config),/source_changed/);
+ assert.throws(()=>authorizeFulltextSource(7056,frozen,'d'.repeat(40),frozen,config),/source_changed/);
+ assert.throws(()=>authorizeFulltextSource(7056,frozen,latest,frozen,{...config,sourceFullRevisions:[row,row]}),/ambiguous/);
+ const ru='---\nid: person_anna\nlocale: ru\nslug: anna-avanesova\nstatus: approved\nname: Анна Аванесова\n---\n\nПолностью новая биография.\n';
+ const projected=applyFulltextToSource(ru,row.enMarkdown,'people',latest);
+ assert.equal(projected.status,'applied');
+ assert.match(projected.content,/The fully translated biography/);
+ assert.match(projected.content,/name: Anna Avanesova/);
+});

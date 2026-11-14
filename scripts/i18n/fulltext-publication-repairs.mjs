@@ -94,6 +94,14 @@ export function repairFulltextEnglishSyntax(enMarkdown,number,registry){
 }
 export function authorizeFulltextSource(number,canonicalExpectedSha,canonicalActualSha,reportedSha,registry){
  if(canonicalExpectedSha!==canonicalActualSha){
+  // Source-bound full English revisions are append-only. A changed RU blob
+  // must never silently reuse English written for the frozen source.
+  const matching=(registry.sourceFullRevisions??[]).filter(r=>
+    r.number===number&&r.frozenSha===canonicalExpectedSha&&
+    r.approvedCurrentSha===canonicalActualSha);
+  if(matching.length>1)throw new Error('source_revision_ambiguous');
+  if(matching.length===1&&reportedSha===canonicalExpectedSha)
+    return {compatibleSourceComplete:matching[0],sourceReconciled:true};
   const c=registry.countries.find(x=>x.number===number);
   if(c&&c.frozenSha===canonicalExpectedSha&&c.approvedCurrentSha===canonicalActualSha&&c.bodyUnchanged===true)
     return {compatibleCountry:c,sourceReconciled:true};

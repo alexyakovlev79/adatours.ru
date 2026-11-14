@@ -291,6 +291,13 @@ async function main(){
     // full translations. Old receipts remain immutable; corrected revisions
     // carry their own exact canonical Git blob SHA and source path.
     let workingEnglish=text.enMarkdown;
+    if(auth.compatibleSourceComplete){
+      const revision=auth.compatibleSourceComplete;
+      if(revision.path!==item.path||revision.number!==item.number||
+         typeof revision.enMarkdown!=='string'||CYR.test(revision.enMarkdown))
+        throw new Error('Unverified source-bound EN revision');
+      workingEnglish=revision.enMarkdown;
+    }
     if(auth.compatibleSeoComplete){
       const revision=auth.compatibleSeoComplete;
       if(revision.path!==item.path||revision.number!==item.number||
@@ -337,6 +344,8 @@ async function main(){
      textOverrides:auth.compatibleCountry?.textOverrides
     });
     if(projected.status==='excluded'){summary.excluded++;group.excluded++;continue;}
+    if(auth.compatibleSourceComplete&&projected.status!=='applied')
+      throw new Error('Revised EN page body not fully translated or link-safe');
     if(kind==='seo_geo_article')parseSeoGeoArticle(projected.content,item.path);
     await writeFile(file,projected.content,'utf8');
     summary[projected.status]++;group[projected.status]++;

@@ -11,6 +11,7 @@ import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
 import GeoRouteMap from '../components/maps/GeoRouteMap.astro';
+import {sharedUiLocale} from '../lib/i18n/shared-ui-locale.mjs';
 import TourPricing from '../components/tour/TourPricing.astro';
 import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
@@ -216,7 +217,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     />
   ))}
 
-  {geoMapData && <GeoRouteMap data={geoMapData} title="Экскурсия на карте" locale="ru" entityType="excursion" />}
+  {geoMapData && <GeoRouteMap data={geoMapData} title="Экскурсия на карте" locale={sharedUiLocale()} entityType="excursion" />}
 
   {d.gallery.length > 0 && (
     <MediaGallery

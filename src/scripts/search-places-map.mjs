@@ -5,6 +5,7 @@ import {indexSearchGeoPlaces,searchGeoPoints}
 import {loadProviderScript} from './geo-map-client.mjs';
 import {translateUiText} from '../lib/i18n/shared-ui-locale.mjs';
 import {uiText} from '../lib/i18n/messages.mjs';
+import {geoMapProviderOrder} from '../lib/geo-map-provider.mjs';
 
 export function createSearchPlacesMap(root) {
   const locale=document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
@@ -86,7 +87,7 @@ export function createSearchPlacesMap(root) {
   const mount=async()=>{
     let error;
     const data={points:[],route:[],center:DEFAULT_CENTER,zoom:3};
-    for(const provider of ['yandex','google']){
+    for(const provider of geoMapProviderOrder(locale)){
       if(!keys[provider])continue;
       try{
         if(provider==='yandex'){

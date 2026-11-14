@@ -14,6 +14,7 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
 import GeoRouteMap from '../components/maps/GeoRouteMap.astro';
+import {sharedUiLocale} from '../lib/i18n/shared-ui-locale.mjs';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
 import {
@@ -274,7 +275,7 @@ const storyTransitionLabel = isEnglish ? 'Explore the place' : 'Ближе к м
   )}
 
   {geoMapData && relatedDestinations.length === 0 && (
-    <GeoRouteMap data={geoMapData} title="Место на карте" locale="ru" entityType="destination" />
+    <GeoRouteMap data={geoMapData} title="Место на карте" locale={sharedUiLocale()} entityType="destination" />
   )}
 
   {relatedDestinations.length > 0 && (
@@ -283,7 +284,7 @@ const storyTransitionLabel = isEnglish ? 'Explore the place' : 'Ближе к м
         <EditorialStatement eyebrow="Продолжить маршрут" text="Куда поехать дальше" />
         {geoMapData && (
           <GeoRouteMap data={geoMapData} title="Место и куда поехать дальше"
-            locale="ru" entityType="destination" showHeading={false} />
+            locale={sharedUiLocale()} entityType="destination" showHeading={false} />
         )}
       </div>
       {relatedDestinations.map((item, index) => {

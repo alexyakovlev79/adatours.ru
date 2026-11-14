@@ -1,15 +1,17 @@
 ---
 import {withBase} from '../../lib/paths';
 import {sharedUiLocale,translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
+import {geoMapProvider} from '../../lib/geo-map-provider.mjs';
 const uiLocale=sharedUiLocale();
 const t=(text: string)=>translateUiText(text,uiLocale);
-const yandexKey=import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY||'';
-const googleKey=import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY||'';
-const googleMapId=import.meta.env.PUBLIC_GOOGLE_MAP_ID||'';
+const provider=geoMapProvider(uiLocale);
+const yandexKey=provider==='yandex'?(import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY||''):'';
+const googleKey=provider==='google'?(import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY||''):'';
+const googleMapId=provider==='google'?(import.meta.env.PUBLIC_GOOGLE_MAP_ID||''):'';
 const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN||'https://img.adatours.ru';
 ---
 <section class="search-places-map" aria-label={t('Найденные места на карте')}
-  data-search-places-map data-yandex-key={yandexKey}
+  data-search-places-map data-provider={provider} data-yandex-key={yandexKey}
   data-google-key={googleKey} data-google-map-id={googleMapId}
   data-geo-url={withBase('/search-geo-places.json')}
   data-media-origin={mediaOrigin} hidden>

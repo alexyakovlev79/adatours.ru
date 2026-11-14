@@ -237,7 +237,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 
 
   {d.itinerary.length > 0 && <Itinerary days={d.itinerary} />}
-  {geoMapData && <GeoRouteMap data={geoMapData} title="Маршрут путешествия" locale="ru" />}
+  {geoMapData && <GeoRouteMap data={geoMapData} title="Маршрут путешествия" locale={uiLocale} />}
 
   {lastStory && (
     <StoryPair

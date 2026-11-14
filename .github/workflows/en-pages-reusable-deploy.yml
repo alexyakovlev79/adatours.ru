@@ -86,6 +86,8 @@ jobs:
           PUBLIC_EN_RELEASE: '0'
           EN_PILOT_PREVIEW: '0'
           MEDIA_CDN_ORIGIN: https://img.adatours.ru
+          PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_JS_API_KEY }}
+          PUBLIC_GOOGLE_MAP_ID: ${{ vars.GOOGLE_MAPS_MAP_ID }}
         run: |
           set -euo pipefail
           npm install --no-audit --no-fund

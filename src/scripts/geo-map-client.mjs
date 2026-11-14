@@ -2,6 +2,7 @@
 import {canMountGeoMap, isMapVisible, movedDown, nearViewport} from '../lib/geo-map-lazy.mjs';
 import {translateUiText} from '../lib/i18n/shared-ui-locale.mjs';
 import {uiText} from '../lib/i18n/messages.mjs';
+import {geoMapProviderOrder} from '../lib/geo-map-provider.mjs';
 const uiLocale = () => document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
 const t = text => translateUiText(text,uiLocale());
 const scriptLoads = new Map();
@@ -126,8 +127,8 @@ async function mount(root) {
   }
   if (!payload.points?.length) return;
 
-  const preference = root.dataset.provider === 'google'
-    ? ['google', 'yandex'] : ['yandex', 'google'];
+  // Never fall back to Yandex on the English site.
+  const preference = geoMapProviderOrder(root.dataset.locale);
   const keys = {yandex: root.dataset.yandexKey, google: root.dataset.googleKey};
   const select = point => openCard(root, point);
   let lastError = null;

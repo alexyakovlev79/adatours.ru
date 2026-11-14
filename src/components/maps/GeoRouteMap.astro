@@ -1,6 +1,7 @@
 ---
 import {withBase} from '../../lib/paths';
 import {sharedUiLocale,translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
+import {geoMapProvider} from '../../lib/geo-map-provider.mjs';
 
 interface Props {
   data: any;
@@ -9,14 +10,16 @@ interface Props {
   entityType?: 'tour' | 'excursion' | 'destination';
   showHeading?: boolean;
 }
-const {data, title = 'Маршрут на карте', locale = 'ru', entityType = 'tour', showHeading = true} = Astro.props;
+const {data, title = 'Маршрут на карте', locale: requestedLocale = 'ru', entityType = 'tour', showHeading = true} = Astro.props;
 const uiLocale = sharedUiLocale();
-const t = (text: string) => translateUiText(text,uiLocale);
-const yandexKey = import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY || '';
-const googleKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '';
-const googleMapId = import.meta.env.PUBLIC_GOOGLE_MAP_ID || '';
-const configured = Boolean(yandexKey || googleKey);
-const provider = locale === 'ru' ? 'yandex' : 'google';
+// English Pages reuses Russian source records. Use the visible site language.
+const locale = uiLocale === 'en' ? 'en' : requestedLocale;
+const t = (text: string) => translateUiText(text,locale);
+const provider = geoMapProvider(locale);
+const yandexKey = provider === 'yandex' ? (import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY || '') : '';
+const googleKey = provider === 'google' ? (import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '') : '';
+const googleMapId = provider === 'google' ? (import.meta.env.PUBLIC_GOOGLE_MAP_ID || '') : '';
+const configured = Boolean(provider === 'google' ? googleKey : yandexKey);
 const imageUrl = (src: string) => {
   if (!src) return '';
   if (src.startsWith('/media/')) {

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_rio_municipal_theatre",
+  "stableId": "destination_brazil_rio_municipal_theatre",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/rio-municipal-theatre/",
+  "sourceFingerprint": "535bfec25cc53f38a7df3cd66f2b587a4129b65931d6fcdc70f56b9973b14e4a",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://theatromunicipal.rj.gov.br/wp-content/uploads/2025/12/Carta-de-Servicos-2025.pdf",
+      "note": "Официальный документ театра идентифицирует здание на Praça Floriano и организацию.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://theatromunicipal.rj.gov.br/wp-content/uploads/2025/12/Carta-de-Servicos-2025.pdf",
+      "note": "Официальный документ театра идентифицирует здание на Praça Floriano и организацию.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://theatromunicipal.rj.gov.br/wp-content/uploads/2025/12/Carta-de-Servicos-2025.pdf",
+      "note": "Официальный документ театра идентифицирует здание на Praça Floriano и организацию.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://theatromunicipal.rj.gov.br/wp-content/uploads/2025/12/Carta-de-Servicos-2025.pdf",
+      "note": "Издатель и организация в собственном документе театра совпадают с официальным сайтом.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1968538",
+      "checkedAt": "2026-11-14T01:29:37.511Z",
+      "note": "Точный именованный объект Рио-де-Жанейро, согласуется с названиями и местом на муниципальном/официальном источнике."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Официальный документ театра идентифицирует здание на Praça Floriano и организацию."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "reason": "Официальный документ театра идентифицирует здание на Praça Floriano и организацию."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 99,
+      "reason": "Официальный документ театра идентифицирует здание на Praça Floriano и организацию."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "reason": "Издатель и организация в собственном документе театра совпадают с официальным сайтом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1968538",
+      "reason": "Точный именованный объект Рио-де-Жанейро, согласуется с названиями и местом на муниципальном/официальном источнике."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_brazil_rio"
+    }
+  ],
+  "alternateNames": [
+    "Theatro Municipal do Rio de Janeiro"
+  ],
+  "external": {
+    "officialUrl": "https://theatromunicipal.rj.gov.br/",
+    "wikidataQid": "Q1968538"
+  }
+}

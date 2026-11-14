@@ -97,6 +97,12 @@ export function authorizeFulltextSource(number,canonicalExpectedSha,canonicalAct
   const c=registry.countries.find(x=>x.number===number);
   if(c&&c.frozenSha===canonicalExpectedSha&&c.approvedCurrentSha===canonicalActualSha&&c.bodyUnchanged===true)
     return {compatibleCountry:c,sourceReconciled:true};
+  // An entirely revised biography requires its own complete, pinned EN text.
+  // Preserve the older append-only revision as historical evidence.
+  const full=(registry.personFullRevisions??[]).find(x=>x.number===number);
+  if(full&&full.frozenSha===canonicalExpectedSha&&
+     full.approvedCurrentSha===canonicalActualSha&&reportedSha===canonicalExpectedSha)
+    return {compatiblePersonComplete:full,sourceReconciled:true};
   // Only an exact pinned source revision may append an approved English sentence.
   const p=(registry.personAppendOnly??[]).find(x=>x.number===number);
   if(!p||p.frozenSha!==canonicalExpectedSha||

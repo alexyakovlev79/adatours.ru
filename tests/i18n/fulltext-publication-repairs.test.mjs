@@ -118,13 +118,41 @@ test('Anna changed FULLTEXT source is allowed only with exact current blob and a
  const item=registry.personAppendOnly?.find(x=>x.number===7056);
  assert.ok(item);
  assert.equal(item.path,'src/content/people/anna-avanesova.md');
- const bytes=readFileSync(new URL('../../'+item.path,import.meta.url));
- const actual=createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
- assert.equal(actual,item.approvedCurrentSha);
- assert.ok(bytes.toString('utf8').endsWith('\n\n'+item.originalSuffix+'\n'));
+ // The original appended version remains a valid historic pinned revision.
+ // It must not fail the whole EN build when the RU biography is rewritten later.
  const auth=authorizeFulltextSource(item.number,item.frozenSha,item.approvedCurrentSha,item.frozenSha,registry);
  assert.equal(auth.compatiblePerson?.englishSuffix,'Anna enjoys sport.');
  assert.equal(auth.sourceReconciled,true);
  assert.throws(()=>authorizeFulltextSource(item.number,item.frozenSha,'a'.repeat(40),item.frozenSha,registry),/source_changed/);
  assert.throws(()=>authorizeFulltextSource(item.number,item.frozenSha,item.approvedCurrentSha,'a'.repeat(40),registry),/source_changed/);
+});
+
+test('fully rewritten Anna biography has a separate exact source-bound EN translation',()=>{
+ const entry=registry.personFullRevisions?.find(x=>x.number===7056);
+ assert.ok(entry);
+ assert.equal(entry.path,'src/content/people/anna-avanesova.md');
+ assert.notEqual(entry.approvedCurrentSha,registry.personAppendOnly.find(x=>x.number===7056).approvedCurrentSha);
+ const en=splitFulltextMarkdown(entry.enMarkdown);
+ assert.equal(en.data.id,'person_anna');
+ assert.equal(en.data.locale,'en');
+ assert.equal(en.data.slug,'anna-avanesova');
+ assert.doesNotMatch(entry.enMarkdown,/[\u0400-\u052f]/u);
+ assert.match(en.body,/300 tropical islands/);
+ assert.match(en.body,/7 languages/);
+ const auth=authorizeFulltextSource(entry.number,entry.frozenSha,entry.approvedCurrentSha,entry.frozenSha,registry);
+ assert.equal(auth.compatiblePersonComplete?.path,entry.path);
+ assert.throws(()=>authorizeFulltextSource(entry.number,entry.frozenSha,'a'.repeat(40),entry.frozenSha,registry),/source_changed/);
+ assert.throws(()=>authorizeFulltextSource(entry.number,entry.frozenSha,entry.approvedCurrentSha,'a'.repeat(40),registry),/source_changed/);
+ const bytes=readFileSync(new URL('../../'+entry.path,import.meta.url));
+ const current=createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
+ if(current===entry.approvedCurrentSha){
+   const result=applyFulltextToSource(bytes.toString('utf8'),entry.enMarkdown,'people',current);
+   assert.equal(result.status,'applied');
+   const projected=splitFulltextMarkdown(result.content);
+   assert.equal(projected.data.name,'Anna Avanesova');
+   assert.match(projected.body,/Your dream, made real/);
+ }else{
+   // A later legitimate RU edit must be withheld, not break the EN deployment.
+   assert.throws(()=>authorizeFulltextSource(entry.number,entry.frozenSha,current,entry.frozenSha,registry),/source_changed/);
+ }
 });

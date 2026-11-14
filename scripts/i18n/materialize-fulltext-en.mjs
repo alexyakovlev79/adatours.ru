@@ -205,6 +205,13 @@ async function main(){
     // full translations. Old receipts remain immutable; corrected revisions
     // carry their own exact canonical Git blob SHA and source path.
     let workingEnglish=text.enMarkdown;
+    if(auth.compatiblePersonComplete){
+      const revision=auth.compatiblePersonComplete;
+      if(revision.path!==item.path||revision.number!==item.number||
+         typeof revision.enMarkdown!=='string'||CYR.test(revision.enMarkdown))
+        throw new Error('Unverified complete person revision');
+      workingEnglish=revision.enMarkdown;
+    }
     if(auth.compatiblePerson){
       const revision=auth.compatiblePerson;
       const russian=splitFulltextMarkdown(raw.toString('utf8'));

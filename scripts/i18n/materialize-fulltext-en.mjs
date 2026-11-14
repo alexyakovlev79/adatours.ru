@@ -138,10 +138,8 @@ export function seoNumberSemanticFacts(value,language){
  return hits.sort((a,b)=>a.at-b.at).map(x=>String(x.n));
 }
 export const sameSeoLeadNumerals=(old,value)=>typeof value==='string'&&value.trim()!==''
- && !CYR.test(value)&&(
-   eq(seoNumberFacts(old),seoNumberFacts(value))||
-   eq(seoNumberSemanticFacts(old,'ru'),seoNumberSemanticFacts(value,'en'))
- );
+ && !CYR.test(value)&&
+   eq(seoNumberSemanticFacts(old,'ru'),seoNumberSemanticFacts(value,'en'));
 
 const mergeTexts=(old,translated,counter,path='')=>{
  if(old instanceof Date)return old; // YAML timestamps are canonical facts, not plain maps.

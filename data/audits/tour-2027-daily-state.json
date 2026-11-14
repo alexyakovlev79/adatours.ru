@@ -7106,7 +7106,7 @@
       "driveFileId": "1ifM8bcqBlEUq3x8HiUyZtjE9tmkQN0xb",
       "fileName": "Vip_Carnaval_Rio_Iguacu_Kenoa_11d10n_2027__20__RUS_.docx",
       "status": "PENDING",
-      "stage": "predeploy_verified_content_release_pending",
+      "stage": "production_pages_in_progress",
       "detectedAt": "2026-11-07T01:15:50Z",
       "lastCheckedAt": "2026-11-14T01:21:21.576Z",
       "sourceModifiedTime": "2026-11-11T19:23:43.092Z",
@@ -7119,7 +7119,7 @@
       "classification": "confirmed_existing_tour_substantive_word_revision",
       "publicationStatus": "not_published",
       "remaining": [
-        "Пакет прошёл 9/9 предпубликационных стадий. Ожидается подтверждение production Pages по SHA, затем адресные SEO, GEO и сверка Sheets."
+        "Дождаться результата текущего Pages и catalog-registries, затем применить адресные GEO и Sheets. Повторно пакет не выпускать."
       ],
       "lastMetadataCheckedAt": "2026-11-13T01:24:04.811Z",
       "currentSourcePresence": "present",
@@ -7148,7 +7148,9 @@
       "mediaEvidencePath": "data/audits/p155-rio-media-20261113.json",
       "currentCandidateBaselineRef": "9aa446036b4d63ab456eed71a4d91eba7eb22bf2",
       "predeployEvidencePath": "data/audits/p155-predeploy-checks-20261113.json",
-      "lifecyclePath": "data/audits/tour-lifecycle/P155-e2a8db25a415d95e210a1d31cb86577d6014191f712af5f972a861ba0826528f.json"
+      "lifecyclePath": "data/audits/tour-lifecycle/P155-e2a8db25a415d95e210a1d31cb86577d6014191f712af5f972a861ba0826528f.json",
+      "contentCommit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
+      "deployRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498"
     },
     {
       "driveFileId": "1hfMR8iTnwtALRYUs4p0ncQLnLpAaeBID",
@@ -13847,8 +13849,8 @@
       "openQueueCount": 267,
       "reviewCount": 263,
       "pendingCount": 4,
-      "contentCommit": null,
-      "deployRun": null,
+      "contentCommit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
+      "deployRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498",
       "siteChanges": {
         "newTours": 0,
         "updatedTours": 0,
@@ -13862,11 +13864,30 @@
       },
       "s3Uploads": 0,
       "newImages": 0,
-      "actions": [],
+      "actions": [
+        {
+          "kind": "content_pages",
+          "commit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
+          "runId": 43540129498,
+          "url": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498",
+          "status": "in_progress"
+        },
+        {
+          "kind": "media_verification",
+          "runId": 43540129498,
+          "jobId": 132278495271,
+          "conclusion": "success"
+        },
+        {
+          "kind": "tour_inventory",
+          "runId": 43540129561,
+          "conclusion": "success"
+        }
+      ],
       "sheetStatus": "pending_production",
       "emailStatus": "not_required_no_confirmed_site_changes",
       "blockers": [
-        "Пакет прошёл 9/9 предпубликационных стадий. Ожидается подтверждение production Pages по SHA, затем адресные SEO, GEO и сверка Sheets.",
+        "Дождаться результата текущего Pages и catalog-registries, затем применить адресные GEO и Sheets. Повторно пакет не выпускать.",
         "Проверить, какие прежние факультативные услуги сняты из продукта, а какие исключены только из новой брошюры. В Word добавлены Macuco, Парк птиц и «Рио ночью» по запросу. Подготовить полный пакет тура, SEO, GEO и Sheets.",
         "Связать годовую версию Word с действующим фиксированным заездом 28.02–11.03.2027 до смены тарифа. Word не подтверждает прежние $700 за частные экскурсии и $300 за Мартильо, а язык группового гида в Ушуайе в новом тексте прямо не назван."
       ],

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_selaron_steps",
+  "stableId": "destination_brazil_selaron_steps",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/selaron-steps/",
+  "sourceFingerprint": "b75591b8e8fd0cac7f6757f5006b70f19deff1c54a09964a5e9cfa69fec27a29",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://riotur.rio/que_fazer/escadariaselaron/",
+      "note": "Riotur указывает лестницу Жоржи Селарона между Лапой и Санта-Терезой.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://riotur.rio/que_fazer/escadariaselaron/",
+      "note": "Riotur указывает лестницу Жоржи Селарона между Лапой и Санта-Терезой.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://riotur.rio/que_fazer/escadariaselaron/",
+      "note": "Riotur указывает лестницу Жоржи Селарона между Лапой и Санта-Терезой.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2200939",
+      "checkedAt": "2026-11-14T01:29:37.511Z",
+      "note": "Точный именованный объект Рио-де-Жанейро, согласуется с названиями и местом на муниципальном/официальном источнике."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Riotur указывает лестницу Жоржи Селарона между Лапой и Санта-Терезой."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "reason": "Riotur указывает лестницу Жоржи Селарона между Лапой и Санта-Терезой."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 99,
+      "reason": "Riotur указывает лестницу Жоржи Селарона между Лапой и Санта-Терезой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2200939",
+      "reason": "Точный именованный объект Рио-де-Жанейро, согласуется с названиями и местом на муниципальном/официальном источнике."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_brazil_rio"
+    }
+  ],
+  "alternateNames": [
+    "Escadaria Selarón"
+  ],
+  "external": {
+    "wikidataQid": "Q2200939"
+  }
+}

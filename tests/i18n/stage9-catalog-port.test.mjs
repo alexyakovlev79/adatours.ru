@@ -46,7 +46,7 @@ test('stage9: source-bound dynamic CTA and destination headings use EN without c
 
 test('stage9 source-bound residual paragraphs: exact EN copy without altering RU or invented fallback',async()=>{
   const data=(await import('../../src/data/i18n/stage9-residual-copy.en.json',{with:{type:'json'}})).default;
-  assert.equal(data.messages.length,594);
+  assert.equal(data.messages.length,597);
   for(const row of data.messages){
     assert.equal(translateAuthoredPageText(row.ru,'en'),row.en);
     assert.equal(translateAuthoredPageText(row.ru,'ru'),row.ru);
@@ -79,4 +79,17 @@ test('stage9 one legacy photo is localized in EN ordinary and noscript IMG only,
   assert.equal(localizeKnownLegacyPhotoHtml(ru,'ru'),ru);
   assert.equal(localizeKnownLegacyPhotoHtml(en,'en'),en);
   assert.equal(localizeKnownLegacyPhotoHtml('<img src="https://other.com/other.jpg" alt="Двое мальчиков">','en'),'<img src="https://other.com/other.jpg" alt="Двое мальчиков">');
+});
+
+test('stage9: three verified Rio place names translate as whole source-bound labels only',()=>{
+ const examples=[
+ ['Арки Лапы','Arcos da Lapa'],
+ ['Муниципальный театр (Рио-де-Жанейро)','Municipal Theatre of Rio de Janeiro'],
+ ['Лестница Селарона','Selarón Steps']
+ ];
+ for(const [ru,en] of examples){
+  assert.equal(translateAuthoredPageText(ru,'en'),en);
+  assert.equal(translateAuthoredPageText(ru,'ru'),ru);
+  assert.equal(translateAuthoredPageText('Были '+ru,'en'),'Были '+ru);
+ }
 });

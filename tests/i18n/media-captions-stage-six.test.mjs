@@ -257,3 +257,24 @@ test('stage 9: Anna Avanesova supplied portrait has an exact English source-boun
  assert.equal(localizeMediaField(src,'Портрет Анны Аванесовой, основательницы Ada Tours',{locale:'en'}),translated);
  assert.equal(localizeMediaField(src,'Портрет Анны Аванесовой, основательницы Ada Tours',{locale:'ru'}),'Портрет Анны Аванесовой, основательницы Ada Tours');
 });
+
+test('P155 Carnival Alagoas media uses only two exact source-bound EN alts and noscript duplicates',()=>{
+ const rows=[
+  ['/media/destinations/destination_brazil_alagoas/destination_brazil_alagoas-generated-20261008.webp','Светлый пляж с пальмами и прозрачным мелководьем в Алагоасе, Бразилия','Bright beach with palm trees and clear shallow water in Alagoas, Brazil'],
+  ['/media/destinations/destination_brazil_masejo/destination_brazil_masejo-generated-20261008.webp','Пляж Масейо с пальмами и высотными домами у прозрачного моря, Бразилия','Maceió beach with palm trees and high-rise buildings beside clear water, Brazil']
+ ];
+ for(const [src,ru,enAlt] of rows){
+  const record=mediaEnglishEntry(src);
+  assert.equal(record.source,'stage9-p155-word-tour-media-20261114');
+  assert.equal(record.sourceAlt,ru);
+  assert.equal(record.alt,enAlt);
+  const tag='<img src="https://img.adatours.ru'+src+'" alt="'+ru+'" title="'+ru+'">';
+  const html='<html><body><figure>'+tag+'<noscript>'+tag+'</noscript></figure></body></html>';
+  const doc=parse(html,{scriptingEnabled:false});
+  const count=localizeMediaDocument(doc,{locale:'en'});
+  assert.ok(count.attributes>=4,src);
+  const serialized=serialize(doc);
+  assert.equal(serialized.includes('alt="'+ru+'"'),false);
+  assert.equal(serialized.split('alt="'+enAlt+'"').length,3);
+ }
+});

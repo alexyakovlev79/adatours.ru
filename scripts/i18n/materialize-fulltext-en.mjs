@@ -81,6 +81,11 @@ const ruNumbers=new Map([
  ['пять',5],['пяти',5],['шесть',6],['шести',6],['семь',7],['семи',7],
  ['восемь',8],['восьми',8],['девять',9],['девяти',9],['десять',10],['десяти',10],
  ['одиннадцать',11],['одиннадцати',11],['двенадцать',12],['двенадцати',12],
+ ['седьмой',7],['седьмого',7],['седьмом',7],['седьмую',7],['седьмая',7],['седьмые',7],
+ ['шестой',6],['шестого',6],['шестую',6],['пятый',5],['пятого',5],
+ ['восьмой',8],['восьмого',8],['девятый',9],['девятого',9],
+ ['десятый',10],['десятого',10],['первую',1],['второму',2],
+ ['третьего',3],['третьем',3],['четвертый',4],['четвертого',4],
  ['тринадцать',13],['тринадцати',13],['четырнадцать',14],['четырнадцати',14],
  ['пятнадцать',15],['пятнадцати',15],['шестнадцать',16],['шестнадцати',16],
  ['семнадцать',17],['семнадцати',17],['восемнадцать',18],['восемнадцати',18],
@@ -91,7 +96,7 @@ const ruNumbers=new Map([
 const ruCompoundRoots=[
  ['девятнадцати',19],['восемнадцати',18],['семнадцати',17],
  ['шестнадцати',16],['пятнадцати',15],['четырнадцати',14],
- ['тринадцати',13],['двенадцати',12],['одиннадцати',11],
+ ['тринадцати',13],['двенадцати',12],['одиннадцати',11],['тридцати',30],['сорока',40],['пятидесяти',50],
  ['двадцати',20],['десяти',10],['девяти',9],['восьми',8],
  ['семи',7],['шести',6],['пяти',5],['четырёх',4],['четырех',4],
  ['трёх',3],['трех',3],['двух',2],['одно',1]
@@ -102,6 +107,9 @@ const enNumbers=new Map([
  ['seven',7],['seventh',7],['eight',8],['eighth',8],['nine',9],['ninth',9],
  ['ten',10],['tenth',10],['eleven',11],['twelfth',12],['twelve',12],
  ['thirteen',13],['fourteen',14],['fifteen',15],['sixteen',16],
+ ['eleventh',11],['thirteenth',13],['fourteenth',14],['fifteenth',15],
+ ['sixteenth',16],['seventeenth',17],['eighteenth',18],['nineteenth',19],
+ ['twentieth',20],
  ['seventeen',17],['eighteen',18],['nineteen',19],['twenty',20],
  ['thirty',30],['forty',40],['fifty',50],['hundred',100]
 ]);
@@ -137,9 +145,17 @@ export function seoNumberSemanticFacts(value,language){
  }
  return hits.sort((a,b)=>a.at-b.at).map(x=>String(x.n));
 }
-export const sameSeoLeadNumerals=(old,value)=>typeof value==='string'&&value.trim()!==''
- && !CYR.test(value)&&
-   eq(seoNumberSemanticFacts(old,'ru'),seoNumberSemanticFacts(value,'en'));
+// 4×4 and 4WD are vehicle classes, not a count of four vehicles.
+ // Normalize only when the Russian source explicitly describes off-road driving.
+ // All other numerals, including dates, money and duration, still match exactly.
+export const sameSeoLeadNumerals=(old,value)=>{
+ if(typeof value!=='string'||!value.trim()||CYR.test(value))return false;
+ const offRoad=/внедорож|джип|полнопривод/iu.test(old);
+ const normalized=offRoad
+   ? value.replace(/\b4\s*(?:×|x|X)\s*4\b|\b4WD\b/gu,'SUV')
+   : value;
+ return eq(seoNumberSemanticFacts(old,'ru'),seoNumberSemanticFacts(normalized,'en'));
+};
 
 const mergeTexts=(old,translated,counter,path='')=>{
  if(old instanceof Date)return old; // YAML timestamps are canonical facts, not plain maps.
@@ -275,6 +291,13 @@ async function main(){
     // full translations. Old receipts remain immutable; corrected revisions
     // carry their own exact canonical Git blob SHA and source path.
     let workingEnglish=text.enMarkdown;
+    if(auth.compatibleSeoComplete){
+      const revision=auth.compatibleSeoComplete;
+      if(revision.path!==item.path||revision.number!==item.number||
+         typeof revision.enMarkdown!=='string'||CYR.test(revision.enMarkdown))
+        throw new Error('Unverified complete SEO source revision');
+      workingEnglish=revision.enMarkdown;
+    }
     if(auth.compatiblePersonComplete){
       const revision=auth.compatiblePersonComplete;
       if(revision.path!==item.path||revision.number!==item.number||

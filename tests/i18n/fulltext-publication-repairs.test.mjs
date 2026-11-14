@@ -175,3 +175,42 @@ test('stage9 numeric equivalence accepts Russian word durations only for the sam
  ])assert.equal(sameSeoLeadNumerals(ru,en),false,ru);
  assert.deepEqual(seoNumberSemanticFacts('XIX век и трехдневный тур','ru'),['19','3']);
 });
+
+test('2027 Carnival SEO Word revision is source-bound and preserves exact terms',()=>{
+ const row=registry.seoArticleFullRevisions?.find(x=>x.number===2635);
+ assert.ok(row);
+ const bytes=readFileSync(new URL('../../'+row.path,import.meta.url));
+ const actual=createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
+ assert.equal(actual,row.approvedCurrentSha);
+ const src=splitFulltextMarkdown(bytes.toString('utf8'));
+ const en=splitFulltextMarkdown(row.enMarkdown);
+ assert.equal(en.data.targetPath,src.data.targetPath);
+ assert.equal(en.data.kind,src.data.kind);
+ assert.equal(en.data.status,src.data.status);
+ assert.equal(sameSeoLeadNumerals(src.data.lead,en.data.lead),true);
+ assert.doesNotMatch(row.enMarkdown,/[\u0400-\u052f]/u);
+ assert.match(en.body,/USD 60,700 for two people/);
+ assert.match(en.body,/USD 850 per person/);
+ assert.match(en.body,/5–15 February 2027/);
+ const links=s=>[...s.matchAll(/\]\(([^)]+)\)/g)].map(m=>m[1]).sort();
+ assert.deepEqual(links(en.body),links(src.body));
+ assert.equal(applyFulltextToSource(bytes.toString('utf8'),row.enMarkdown,'seo_geo_article',actual).status,'applied');
+ const auth=authorizeFulltextSource(row.number,row.frozenSha,row.approvedCurrentSha,row.frozenSha,registry);
+ assert.equal(auth.compatibleSeoComplete?.approvedCurrentSha,row.approvedCurrentSha);
+ assert.throws(()=>authorizeFulltextSource(row.number,row.frozenSha,'a'.repeat(40),row.frozenSha,registry),/source_changed/);
+ assert.throws(()=>authorizeFulltextSource(row.number,row.frozenSha,row.approvedCurrentSha,'a'.repeat(40),registry),/source_changed/);
+});
+
+test('stage9 source-bound numeral equivalence covers jeep 4×4, historic centuries and ordinal days',()=>{
+ for(const [ru,en] of [
+  ['На джип-маршруте по Альтиплано.','On a 4×4 route across the Altiplano.'],
+  ['Пересечь солончак на внедорожнике.','Cross the salt flats in a 4x4.'],
+  ['Историческая фазенда XIX века на седьмой день.','A nineteenth-century estate on day 7.'],
+  ['Двенадцатидневный тур.','A twelve-day itinerary.']
+ ])assert.equal(sameSeoLeadNumerals(ru,en),true,ru);
+ for(const [ru,en] of [
+  ['Семь дней на маршруте.','An eight-day journey.'],
+  ['Полет длится 15 минут.','The flight lasts 20 minutes.'],
+  ['Из аэропорта едем в город.','We travel from the airport in a 4x4.']
+ ])assert.equal(sameSeoLeadNumerals(ru,en),false,ru);
+});

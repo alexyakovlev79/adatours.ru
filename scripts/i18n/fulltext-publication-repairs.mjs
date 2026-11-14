@@ -97,6 +97,12 @@ export function authorizeFulltextSource(number,canonicalExpectedSha,canonicalAct
   const c=registry.countries.find(x=>x.number===number);
   if(c&&c.frozenSha===canonicalExpectedSha&&c.approvedCurrentSha===canonicalActualSha&&c.bodyUnchanged===true)
     return {compatibleCountry:c,sourceReconciled:true};
+  // Materially revised tour SEO articles require an exact complete translation,
+  // never the saved text for the superseded programme.
+  const seo=(registry.seoArticleFullRevisions??[]).find(x=>x.number===number);
+  if(seo&&seo.frozenSha===canonicalExpectedSha&&
+     seo.approvedCurrentSha===canonicalActualSha&&reportedSha===canonicalExpectedSha)
+    return {compatibleSeoComplete:seo,sourceReconciled:true};
   // An entirely revised biography requires its own complete, pinned EN text.
   // Preserve the older append-only revision as historical evidence.
   const full=(registry.personFullRevisions??[]).find(x=>x.number===number);

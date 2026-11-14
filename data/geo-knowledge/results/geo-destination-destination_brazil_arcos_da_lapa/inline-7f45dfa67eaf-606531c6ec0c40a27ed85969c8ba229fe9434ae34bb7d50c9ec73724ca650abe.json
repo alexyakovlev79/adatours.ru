@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_arcos_da_lapa",
+  "stableId": "destination_brazil_arcos_da_lapa",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/arcos-da-lapa/",
+  "sourceFingerprint": "bcdf787e5f8e766017656e01e962d4dd95d5c61093f9d6bf6a0571cad3fb6cbb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://riotur.rio/que_fazer/arcosdalapa/",
+      "note": "Муниципальный туристический портал идентифицирует арки в Лапе как бывший акведук Кариока.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://riotur.rio/que_fazer/arcosdalapa/",
+      "note": "Муниципальный туристический портал идентифицирует арки в Лапе как бывший акведук Кариока.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://riotur.rio/que_fazer/arcosdalapa/",
+      "note": "Муниципальный туристический портал идентифицирует арки в Лапе как бывший акведук Кариока.",
+      "checkedAt": "2026-11-14T01:23:14.599Z"
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1579892",
+      "checkedAt": "2026-11-14T01:29:37.511Z",
+      "note": "Точный именованный объект Рио-де-Жанейро, согласуется с названиями и местом на муниципальном/официальном источнике."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Муниципальный туристический портал идентифицирует арки в Лапе как бывший акведук Кариока."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "reason": "Муниципальный туристический портал идентифицирует арки в Лапе как бывший акведук Кариока."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 99,
+      "reason": "Муниципальный туристический портал идентифицирует арки в Лапе как бывший акведук Кариока."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1579892",
+      "reason": "Точный именованный объект Рио-де-Жанейро, согласуется с названиями и местом на муниципальном/официальном источнике."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_brazil_rio"
+    }
+  ],
+  "alternateNames": [
+    "Arcos da Lapa",
+    "Aqueduto da Carioca"
+  ],
+  "external": {
+    "wikidataQid": "Q1579892"
+  }
+}

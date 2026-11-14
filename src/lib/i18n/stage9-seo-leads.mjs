@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 import translations from '../../data/i18n/stage9-seo-leads.en.json' with {type:'json'};
 const byRoute=new Map();
 for(const item of translations.entries){
- if(!/^\/(?:[a-z0-9-]+\/)+$/.test(item.targetPath)||
+ if(!/^\/(?:[a-z0-9_-]+\/)+$/.test(item.targetPath)||
     !/^[a-f0-9]{64}$/.test(item.sourceTextSha256)||
     typeof item.en!=='string'||!item.en.trim()||/[\u0400-\u052f]/u.test(item.en)||
     byRoute.has(item.targetPath))throw Error('Invalid source-bound SEO lead '+item.targetPath);

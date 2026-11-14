@@ -7106,7 +7106,7 @@
       "driveFileId": "1ifM8bcqBlEUq3x8HiUyZtjE9tmkQN0xb",
       "fileName": "Vip_Carnaval_Rio_Iguacu_Kenoa_11d10n_2027__20__RUS_.docx",
       "status": "PENDING",
-      "stage": "production_pages_in_progress",
+      "stage": "production_deployed_geo_and_sheets_pending",
       "detectedAt": "2026-11-07T01:15:50Z",
       "lastCheckedAt": "2026-11-14T01:21:21.576Z",
       "sourceModifiedTime": "2026-11-11T19:23:43.092Z",
@@ -7117,9 +7117,9 @@
       "embeddedMediaSha256": "9fb702a6f896abd907b544f139ab459f0edbdc8658de6b705c6a56cdc4a51ff3",
       "duplicateDriveFileIds": [],
       "classification": "confirmed_existing_tour_substantive_word_revision",
-      "publicationStatus": "not_published",
+      "publicationStatus": "published",
       "remaining": [
-        "Дождаться результата текущего Pages и catalog-registries, затем применить адресные GEO и Sheets. Повторно пакет не выпускать."
+        "Дождаться catalog-registries и адресного GEO-релиза. Проверить SEO и фактические зеркала Google Sheets."
       ],
       "lastMetadataCheckedAt": "2026-11-13T01:24:04.811Z",
       "currentSourcePresence": "present",
@@ -7150,7 +7150,8 @@
       "predeployEvidencePath": "data/audits/p155-predeploy-checks-20261113.json",
       "lifecyclePath": "data/audits/tour-lifecycle/P155-e2a8db25a415d95e210a1d31cb86577d6014191f712af5f972a861ba0826528f.json",
       "contentCommit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
-      "deployRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498"
+      "deployRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498",
+      "publishedAt": "2026-11-14T01:33:06Z"
     },
     {
       "driveFileId": "1hfMR8iTnwtALRYUs4p0ncQLnLpAaeBID",
@@ -13853,14 +13854,17 @@
       "deployRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498",
       "siteChanges": {
         "newTours": 0,
-        "updatedTours": 0,
-        "newDestinations": 0,
+        "updatedTours": 1,
+        "newDestinations": 3,
         "updatedDestinations": 0,
         "newExcursions": 0,
         "updatedExcursions": 0,
         "newPhotos": 0,
-        "updatedPhotos": 0,
-        "otherPublicEntities": 0
+        "updatedPhotos": 2,
+        "removedPhotoSlots": 1,
+        "newPlacePhotoUses": 3,
+        "firstPublishedMobileDerivatives": 4,
+        "otherPublicEntities": 3
       },
       "s3Uploads": 0,
       "newImages": 0,
@@ -13870,7 +13874,9 @@
           "commit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
           "runId": 43540129498,
           "url": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498",
-          "status": "in_progress"
+          "status": "completed",
+          "conclusion": "success",
+          "productionCompletedAt": "2026-11-14T01:33:06Z"
         },
         {
           "kind": "media_verification",
@@ -13885,14 +13891,23 @@
         }
       ],
       "sheetStatus": "pending_production",
-      "emailStatus": "not_required_no_confirmed_site_changes",
+      "emailStatus": "sent",
       "blockers": [
-        "Дождаться результата текущего Pages и catalog-registries, затем применить адресные GEO и Sheets. Повторно пакет не выпускать.",
+        "Дождаться catalog-registries и адресного GEO-релиза. Проверить SEO и фактические зеркала Google Sheets.",
         "Проверить, какие прежние факультативные услуги сняты из продукта, а какие исключены только из новой брошюры. В Word добавлены Macuco, Парк птиц и «Рио ночью» по запросу. Подготовить полный пакет тура, SEO, GEO и Sheets.",
         "Связать годовую версию Word с действующим фиксированным заездом 28.02–11.03.2027 до смены тарифа. Word не подтверждает прежние $700 за частные экскурсии и $300 за Мартильо, а язык группового гида в Ушуайе в новом тексте прямо не назван."
       ],
       "errors": [],
-      "outcome": "Полный обход завершён. Две содержательные редакции действующих туров и две точные копии. P155 прошёл предпубликационные проверки."
+      "outcome": "Полный обход завершён. Две содержательные редакции действующих туров и две точные копии. P155 прошёл предпубликационные проверки.",
+      "emailReceipt": {
+        "status": "sent",
+        "messageId": "1a1d7b0055093e34",
+        "reportKey": "2027-word:2026-11-14:7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
+        "recipient": "ya@gaeo.ru",
+        "contentCommit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
+        "sentAt": "2026-11-14T01:33:19.713Z",
+        "runUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498"
+      }
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",

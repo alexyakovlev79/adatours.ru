@@ -7106,7 +7106,7 @@
       "driveFileId": "1ifM8bcqBlEUq3x8HiUyZtjE9tmkQN0xb",
       "fileName": "Vip_Carnaval_Rio_Iguacu_Kenoa_11d10n_2027__20__RUS_.docx",
       "status": "PENDING",
-      "stage": "production_deployed_geo_and_sheets_pending",
+      "stage": "geo_deploy_in_progress",
       "detectedAt": "2026-11-07T01:15:50Z",
       "lastCheckedAt": "2026-11-14T01:21:21.576Z",
       "sourceModifiedTime": "2026-11-11T19:23:43.092Z",
@@ -7119,7 +7119,7 @@
       "classification": "confirmed_existing_tour_substantive_word_revision",
       "publicationStatus": "published",
       "remaining": [
-        "Дождаться catalog-registries и адресного GEO-релиза. Проверить SEO и фактические зеркала Google Sheets."
+        "Подтвердить уже запущенный GEO Pages 43541574065, сверить три GEO-листа после публикации и закрыть lifecycle."
       ],
       "lastMetadataCheckedAt": "2026-11-13T01:24:04.811Z",
       "currentSourcePresence": "present",
@@ -13888,12 +13888,24 @@
           "kind": "tour_inventory",
           "runId": 43540129561,
           "conclusion": "success"
+        },
+        {
+          "kind": "catalog_registries",
+          "runId": 43540129498,
+          "jobId": 132282108912,
+          "conclusion": "success"
+        },
+        {
+          "kind": "addressed_geo_pages",
+          "runId": 43541574065,
+          "commit": "394686fff8fba7b544b269ebb14c33e8523443af",
+          "status": "in_progress"
         }
       ],
-      "sheetStatus": "pending_production",
+      "sheetStatus": "content_sheets_read_back_geo_release_pending",
       "emailStatus": "sent",
       "blockers": [
-        "Дождаться catalog-registries и адресного GEO-релиза. Проверить SEO и фактические зеркала Google Sheets.",
+        "Подтвердить уже запущенный GEO Pages 43541574065, сверить три GEO-листа после публикации и закрыть lifecycle.",
         "Проверить, какие прежние факультативные услуги сняты из продукта, а какие исключены только из новой брошюры. В Word добавлены Macuco, Парк птиц и «Рио ночью» по запросу. Подготовить полный пакет тура, SEO, GEO и Sheets.",
         "Связать годовую версию Word с действующим фиксированным заездом 28.02–11.03.2027 до смены тарифа. Word не подтверждает прежние $700 за частные экскурсии и $300 за Мартильо, а язык группового гида в Ушуайе в новом тексте прямо не назван."
       ],
@@ -13907,6 +13919,274 @@
         "contentCommit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
         "sentAt": "2026-11-14T01:33:19.713Z",
         "runUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/43540129498"
+      },
+      "geo": {
+        "status": "queued_for_github_actions",
+        "batchId": "geo-word-P155-20261114",
+        "ownerId": "geo-word-master-P155",
+        "jobs": 4,
+        "stagingCommit": "bd902fafa7c99c01bb7e5e0b7979c87e5b1434a4",
+        "jobIds": [
+          "geo-destination-destination_brazil_arcos_da_lapa",
+          "geo-destination-destination_brazil_rio_municipal_theatre",
+          "geo-destination-destination_brazil_selaron_steps",
+          "geo-tour-tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas"
+        ],
+        "contentCommit": "7f45dfa67eaf8af66a0da00e1a5b1300f4444037",
+        "note": "GitHub Actions publishes all locked results in one main commit and dispatches one Pages deploy",
+        "contentDeployExactRows": [
+          {
+            "jobId": "geo-tour-tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+            "hash": "7c17a76949c939d54208b0c929f41ec762ab5772323d7309a4797953e36560a4",
+            "immutablePath": "data/geo-knowledge/results/geo-tour-tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas/word-7f45dfa67eaf-7c17a76949c939d54208b0c929f41ec762ab5772323d7309a4797953e36560a4.json",
+            "readback": {
+              "indices": [
+                1063,
+                1163
+              ],
+              "ranges": [
+                "A1064:Q1064",
+                "A1164:J1164"
+              ],
+              "comparisons": [
+                true,
+                true
+              ],
+              "hashes": [
+                "9acf9e75b5d7030bb103f4b116323632ecfe287aa13a6a61d67b80cf96272745",
+                "0ae008e69ed607af623c30dabbdd506b46e421ffa21defe30880813afe77c4f5"
+              ]
+            },
+            "ack": {
+              "status": "synced",
+              "stagingCommit": "6eb1fd41f916cbe249006bd54405e597ebd8f97f"
+            }
+          },
+          {
+            "jobId": "geo-destination-destination_brazil_arcos_da_lapa",
+            "hash": "606531c6ec0c40a27ed85969c8ba229fe9434ae34bb7d50c9ec73724ca650abe",
+            "immutablePath": "data/geo-knowledge/results/geo-destination-destination_brazil_arcos_da_lapa/inline-7f45dfa67eaf-606531c6ec0c40a27ed85969c8ba229fe9434ae34bb7d50c9ec73724ca650abe.json",
+            "readback": {
+              "indices": [
+                1886,
+                1164
+              ],
+              "ranges": [
+                "A1887:Q1887",
+                "A1165:J1165"
+              ],
+              "comparisons": [
+                true,
+                true
+              ],
+              "hashes": [
+                "bfab7b042e4f97e71bf233c331da158a72ebb3bfb752820277c51bf863b975bd",
+                "1c56000cc0783531695483c01f51ddebe7a9f56b2e117ad2134e2272509ef6a3"
+              ]
+            },
+            "ack": {
+              "status": "synced",
+              "stagingCommit": "3a2400bc10798c3c42cf286d086334ecee911a92"
+            }
+          },
+          {
+            "jobId": "geo-destination-destination_brazil_selaron_steps",
+            "hash": "81d9d1cb27c55b38b2aa38b389f3c5b2f3a5affccc529bb8e691f12ac0b59914",
+            "immutablePath": "data/geo-knowledge/results/geo-destination-destination_brazil_selaron_steps/inline-7f45dfa67eaf-81d9d1cb27c55b38b2aa38b389f3c5b2f3a5affccc529bb8e691f12ac0b59914.json",
+            "readback": {
+              "indices": [
+                1887,
+                1165
+              ],
+              "ranges": [
+                "A1888:Q1888",
+                "A1166:J1166"
+              ],
+              "comparisons": [
+                true,
+                true
+              ],
+              "hashes": [
+                "d14bceb43b7205900001149de3ca8d4e2f897b0d71940ac0f4e53dc606766681",
+                "1fec0ba7fb8809e595c35f9395b4a076739009fb9edbadc330a70e0106171649"
+              ]
+            },
+            "ack": {
+              "status": "synced",
+              "stagingCommit": "b17638c9cca622527d63025b965b9f76bf3785dc"
+            }
+          },
+          {
+            "jobId": "geo-destination-destination_brazil_rio_municipal_theatre",
+            "hash": "87baacab4bab19949605dbe8a2d1100d4296beed61cd3d2914dff4dfa20fc645",
+            "immutablePath": "data/geo-knowledge/results/geo-destination-destination_brazil_rio_municipal_theatre/inline-7f45dfa67eaf-87baacab4bab19949605dbe8a2d1100d4296beed61cd3d2914dff4dfa20fc645.json",
+            "readback": {
+              "indices": [
+                1888,
+                1166
+              ],
+              "ranges": [
+                "A1889:Q1889",
+                "A1167:J1167"
+              ],
+              "comparisons": [
+                true,
+                true
+              ],
+              "hashes": [
+                "258ac469b8aadcf2f6bae83239a16dcedc49e0d18891ec01cc25a6c69b100b5d",
+                "8dbab4dcebd70df8c9f9bca29172cfb82d44858b7b0f42a4aba19514e0f833b7"
+              ]
+            },
+            "ack": {
+              "status": "synced",
+              "stagingCommit": "6df926ee40a859b46b3fec29d42b3eadaf93ce21"
+            }
+          }
+        ],
+        "releaseCommit": "394686fff8fba7b544b269ebb14c33e8523443af",
+        "deployRunId": 43541574065
+      },
+      "sheets": {
+        "ranges": [
+          {
+            "sheet": "Страницы",
+            "range": "A384:T384",
+            "protectedFieldsPreserved": true
+          },
+          {
+            "sheet": "SEO-GEO тексты",
+            "range": "A3425:M3425",
+            "protectedFieldsPreserved": true
+          },
+          {
+            "sheet": "Фото",
+            "range": "A2683:AB2683",
+            "protectedFieldsPreserved": true
+          },
+          {
+            "sheet": "Фото",
+            "range": "A2674:AB2674",
+            "protectedFieldsPreserved": true
+          },
+          {
+            "sheet": "Фото",
+            "range": "A811:AB811",
+            "protectedFieldsPreserved": true
+          },
+          {
+            "sheet": "Страницы",
+            "range": "A3488:T3493",
+            "keys": [
+              "/brazil/place/arcos-da-lapa/",
+              "/brazil/place/selaron-steps/",
+              "/brazil/place/rio-municipal-theatre/",
+              "/brazil/place/arcos-da-lapa/tour/",
+              "/brazil/place/selaron-steps/tour/",
+              "/brazil/place/rio-municipal-theatre/tour/"
+            ]
+          },
+          {
+            "sheet": "SEO-GEO тексты",
+            "range": "A5637:M5642",
+            "keys": [
+              "https://adatours.ru/brazil/place/arcos-da-lapa/",
+              "https://adatours.ru/brazil/place/arcos-da-lapa/tour/",
+              "https://adatours.ru/brazil/place/rio-municipal-theatre/",
+              "https://adatours.ru/brazil/place/rio-municipal-theatre/tour/",
+              "https://adatours.ru/brazil/place/selaron-steps/",
+              "https://adatours.ru/brazil/place/selaron-steps/tour/"
+            ]
+          },
+          {
+            "sheet": "Фото",
+            "range": "A7896:AB7916",
+            "keys": [
+              "destination_brazil_arcos_da_lapa__hero",
+              "destination_brazil_arcos_da_lapa__hero_mobile_480",
+              "destination_brazil_arcos_da_lapa__hero_mobile_813",
+              "destination_brazil_selaron_steps__hero",
+              "destination_brazil_selaron_steps__hero_mobile_480",
+              "destination_brazil_selaron_steps__hero_mobile_813",
+              "destination_brazil_rio_municipal_theatre__hero",
+              "destination_brazil_rio_municipal_theatre__hero_mobile_480",
+              "destination_brazil_rio_municipal_theatre__hero_mobile_648",
+              "destination_tours:destination_brazil_arcos_da_lapa__hero",
+              "destination_tours:destination_brazil_arcos_da_lapa__hero_mobile_480",
+              "destination_tours:destination_brazil_arcos_da_lapa__hero_mobile_720",
+              "destination_tours:destination_brazil_arcos_da_lapa__hero_mobile_768",
+              "destination_tours:destination_brazil_selaron_steps__hero",
+              "destination_tours:destination_brazil_selaron_steps__hero_mobile_480",
+              "destination_tours:destination_brazil_selaron_steps__hero_mobile_720",
+              "destination_tours:destination_brazil_selaron_steps__hero_mobile_768",
+              "destination_tours:destination_brazil_rio_municipal_theatre__hero",
+              "destination_tours:destination_brazil_rio_municipal_theatre__hero_mobile_480",
+              "destination_tours:destination_brazil_rio_municipal_theatre__hero_mobile_720",
+              "destination_tours:destination_brazil_rio_municipal_theatre__hero_mobile_768"
+            ]
+          },
+          {
+            "sheet": "Места",
+            "range": "A830:H832",
+            "keys": [
+              "destination_brazil_arcos_da_lapa",
+              "destination_brazil_selaron_steps",
+              "destination_brazil_rio_municipal_theatre"
+            ]
+          },
+          {
+            "sheet": "Сводка",
+            "range": "A9:F11"
+          }
+        ],
+        "multiCountry": {
+          "fingerprint": "b53034ac8132165a02202cebb29e92c951c4ed354582415dd62b05555c874908",
+          "verifiedPageKeys": 1422,
+          "verifiedSEOKeys": 1422,
+          "updatedSEOOrder": 172,
+          "values": [
+            [
+              "b53034ac8132165a02202cebb29e92c951c4ed354582415dd62b05555c874908",
+              null,
+              "b53034ac8132165a02202cebb29e92c951c4ed354582415dd62b05555c874908"
+            ],
+            [
+              "b53034ac8132165a02202cebb29e92c951c4ed354582415dd62b05555c874908",
+              null,
+              "Дата синхронизации редактируемых листов"
+            ],
+            [
+              "b53034ac8132165a02202cebb29e92c951c4ed354582415dd62b05555c874908",
+              null,
+              "2026-11-14T01:40:55.331Z"
+            ]
+          ],
+          "range": "I2:K4"
+        }
+      },
+      "seo": {
+        "main": {
+          "sha": "8fff3ac726533a665f9256582190ece131424420",
+          "confirmed": 7,
+          "held": []
+        },
+        "staging": {
+          "sha": "25414f56ae0bef3145f297c378ad9d03aa8754fb",
+          "confirmed": 7,
+          "held": []
+        },
+        "proofs": [
+          {
+            "branch": "main",
+            "passed": true,
+            "n": 7
+          },
+          {
+            "branch": "staging",
+            "passed": true,
+            "n": 7
+          }
+        ]
       }
     }
   ],

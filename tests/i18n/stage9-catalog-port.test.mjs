@@ -46,7 +46,7 @@ test('stage9: source-bound dynamic CTA and destination headings use EN without c
 
 test('stage9 source-bound residual paragraphs: exact EN copy without altering RU or invented fallback',async()=>{
   const data=(await import('../../src/data/i18n/stage9-residual-copy.en.json',{with:{type:'json'}})).default;
-  assert.equal(data.messages.length,597);
+  assert.equal(data.messages.length,621);
   for(const row of data.messages){
     assert.equal(translateAuthoredPageText(row.ru,'en'),row.en);
     assert.equal(translateAuthoredPageText(row.ru,'ru'),row.ru);
@@ -91,5 +91,23 @@ test('stage9: three verified Rio place names translate as whole source-bound lab
   assert.equal(translateAuthoredPageText(ru,'en'),en);
   assert.equal(translateAuthoredPageText(ru,'ru'),ru);
   assert.equal(translateAuthoredPageText('Были '+ru,'en'),'Были '+ru);
+ }
+});
+
+test('stage9 P155 exact text leaves translate all 3 new Rio SEO articles and place previews',()=>{
+ const source=[
+  ['Арки Лапы в маршруте по Рио','Arcos da Lapa on the Rio itinerary'],
+  ['Муниципальный театр в маршруте по Рио','Municipal Theatre on the Rio itinerary'],
+  ['Лестница Селарона в маршруте по Рио','Selarón Steps on the Rio itinerary'],
+  ['Арки старого акведука Кариока в районе Лапа.',"Arches of the former Carioca Aqueduct in Rio's Lapa district."],
+  ['Мозаичная лестница между Лапой и Санта-Терезой.','Mosaic staircase between Lapa and Santa Teresa.'],
+  ['Исторический театр на площади Флориану в центре Рио.','Historic theatre on Floriano Square in central Rio.'],
+  ['наш 11-дневный VIP-тур на Карнавал','our 11-day VIP Rio Carnival tour'],
+  ['. Даты поездки — 5–15 февраля 2027 года.','. The travel dates are 5–15 February 2027.']
+ ];
+ for(const [ru,en] of source){
+  assert.equal(translateAuthoredPageText(ru,'en'),en);
+  assert.equal(translateAuthoredPageText(ru,'ru'),ru);
+  assert.equal(translateAuthoredPageText('Недругая '+ru,'en'),'Недругая '+ru);
  }
 });

@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {parse,serialize} from 'parse5';
+import {localizeSourceBoundSeoLead} from '../../src/lib/i18n/stage9-seo-leads.mjs';
 import {localizeSharedUiDocument,localizedEntityLabels} from '../../src/lib/i18n/shared-ui-html.mjs';
 import {localizeAuthoredPageDocument} from '../../src/lib/i18n/page-copy.mjs';
 import {localizeMediaDocument,collectRenderedEnglishMediaLabels,unambiguousEnglishMediaLabels} from '../../src/lib/i18n/media-copy.mjs';
@@ -82,6 +83,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,shar
  if(sharedContent){
   localizeSharedUiDocument(doc,{entityLabels});
   localizeAuthoredPageDocument(doc,{locale:'en'});
+  localizeSourceBoundSeoLead(doc,route);
   localizeMediaDocument(doc,{locale:'en',reusedLabels});
  }
  // Keep search, first-party JS, hero video and all shared editorial components.
@@ -214,13 +216,14 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,shar
  * same image can still carry its older Russian alt/title in native templates.
  * All other content, the original images and JSON-LD are left intact.
  */
-export function localizeNativeEnglishMediaHtml(html,{reusedLabels=new Map()}={}){
- if(typeof html!=='string'||!/<img\b/i.test(html)||!/[А-Яа-яЁё]/u.test(html))return html;
+export function localizeNativeEnglishMediaHtml(html,{reusedLabels=new Map(),route=null}={}){
+ if(typeof html!=='string'||!/[А-Яа-яЁё]/u.test(html)||(!/<img\b/i.test(html)&&!route))return html;
  const doc=parse(html,{scriptingEnabled:false});
  const node=walk(doc,n=>n.tagName==='html')[0];
  if(!node||get(node,'lang')!=='en')fail('Native EN media pass expected html lang=en');
- const result=localizeMediaDocument(doc,{locale:'en',reusedLabels});
- return localizeKnownLegacyPhotoHtml(result.attributes||result.captions?serialize(doc):html);
+ const result=/<img\b/i.test(html)?localizeMediaDocument(doc,{locale:'en',reusedLabels}):{attributes:0,captions:0};
+ const seoFixed=route?localizeSourceBoundSeoLead(doc,route):0;
+ return localizeKnownLegacyPhotoHtml(seoFixed||result.attributes||result.captions?serialize(doc):html);
 }
 
 export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000_000,sharedContent=false,receipt=null}={}){
@@ -259,7 +262,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
    // Only rewrite pages where an actual image label changes.
    if(sharedContent){
     const native=fs.readFileSync(filename,'utf8');
-    const localized=localizeNativeEnglishMediaHtml(native,{reusedLabels});
+    const localized=localizeNativeEnglishMediaHtml(native,{reusedLabels,route:row.route});
     if(localized!==native)fs.writeFileSync(filename,localized);
    }
    existing++;continue;

@@ -1,7 +1,7 @@
 ---
 import {withBase} from '../../lib/paths';
 import {sharedUiLocale,translateUiText} from '../../lib/i18n/shared-ui-locale.mjs';
-import {geoMapProvider} from '../../lib/geo-map-provider.mjs';
+import {geoMapProvider,googleMapsIframeUrl,googleMapsPlaceUrl} from '../../lib/geo-map-provider.mjs';
 
 interface Props {
   data: any;
@@ -19,7 +19,9 @@ const provider = geoMapProvider(locale);
 const yandexKey = provider === 'yandex' ? (import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY || '') : '';
 const googleKey = provider === 'google' ? (import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '') : '';
 const googleMapId = provider === 'google' ? (import.meta.env.PUBLIC_GOOGLE_MAP_ID || '') : '';
-const configured = Boolean(provider === 'google' ? googleKey : yandexKey);
+const usesGoogleEmbed = provider === 'google' && !googleKey;
+// Always provide a real Google map on EN even before the JavaScript API key is installed.
+const configured = Boolean(usesGoogleEmbed || (provider === 'google' ? googleKey : yandexKey));
 const imageUrl = (src: string) => {
   if (!src) return '';
   if (src.startsWith('/media/')) {
@@ -35,10 +37,11 @@ const payload = data ? {
     description: String(p.description || '').slice(0, 260),
   })),
 } : null;
+const googleEmbedUrl = usesGoogleEmbed && payload ? googleMapsIframeUrl(payload.points[0],payload.zoom) : '';
 ---
 
 {configured && payload && payload.points.length > 0 && (
-  <section class="geo-map container" data-geo-map
+  <section class="geo-map container" data-geo-map={!usesGoogleEmbed ? true : undefined}
     data-provider={provider}
     data-locale={locale}
     data-yandex-key={yandexKey}
@@ -53,8 +56,12 @@ const payload = data ? {
       </div>
     )}
     <div class="geo-map__viewport">
-      <div class="geo-map__canvas" data-geo-map-canvas aria-label={t('Интерактивная карта')}></div>
-      <p class="geo-map__status" data-geo-map-status aria-live="polite">{t('Карта загрузится, когда появится на экране.')}</p>
+      <div class="geo-map__canvas" data-geo-map-canvas aria-label={t('Интерактивная карта')}>
+        {googleEmbedUrl && <iframe class="geo-map__embed" data-google-embed-fallback
+          src={googleEmbedUrl} title="Google Maps location" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
+      </div>
+      <p class="geo-map__status" data-geo-map-status aria-live="polite" hidden={usesGoogleEmbed}>{t('Карта загрузится, когда появится на экране.')}</p>
       <button class="geo-map__retry" data-geo-map-retry type="button" hidden>{t('Повторить загрузку')}</button>
       <article class="geo-map__card" data-geo-card hidden>
         <button class="geo-map__card-close" data-geo-card-close type="button" aria-label={t('Закрыть описание')}>×</button>
@@ -66,6 +73,12 @@ const payload = data ? {
         </div>
       </article>
     </div>
+    {googleEmbedUrl && (
+      <p class="geo-map__fallback-note">
+        {payload.points.length > 1 ? 'Google Maps displays the first stop. All other locations are listed below.' : 'Location on Google Maps.'}
+        <a href={googleMapsPlaceUrl(payload.points[0])} target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+      </p>
+    )}
     <details class="geo-map__legend">
       <summary>{t(entityType === 'excursion' ? 'Все точки экскурсии' : entityType === 'destination' ? 'Места на карте' : 'Все точки маршрута')} ({payload.points.length})</summary>
       <ol>
@@ -75,6 +88,7 @@ const payload = data ? {
               ? <strong aria-current="page">{point.name}</strong>
               : <a href={point.href}>{point.name}</a>}
             {point.days?.length > 0 && <small>{point.days.length === 1 ? t('День') : t('Дни')}: {point.days.join(', ')}</small>}
+            {googleEmbedUrl && <small><a href={googleMapsPlaceUrl(point)} target="_blank" rel="noopener noreferrer">Google Maps</a></small>}
           </li>
         ))}
       </ol>
@@ -92,6 +106,9 @@ const payload = data ? {
   .geo-map__heading h2 { font-size: clamp(2rem,4.6vw,3.9rem); line-height: 1.08; margin: 0 0 1.5rem; }
   .geo-map__viewport { height: min(42vw,560px); min-height: 410px; position: relative; isolation: isolate; background: #EFEDE8; overflow: hidden; }
   .geo-map__canvas { position:absolute; inset:0; z-index:0; }
+  .geo-map__embed { width:100%; height:100%; border:0; display:block; }
+  .geo-map__fallback-note { font-size:.9rem; margin:12px 0 0; color:#555; }
+  .geo-map__fallback-note a { text-decoration:underline; margin-left:.5em; }
   .geo-map__route-overlay { position:absolute; inset:0; z-index:2; width:100%; height:100%; display:block; overflow:hidden; pointer-events:none; }
   .geo-map__status { position:absolute; inset:0; margin:0; display:grid; place-items:center; color:#555; background:#F8F5EF; font-size:1rem; }
   .geo-map__status[hidden] { display:none; }

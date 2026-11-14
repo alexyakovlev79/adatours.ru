@@ -5,7 +5,7 @@ import {indexSearchGeoPlaces,searchGeoPoints}
 import {loadProviderScript} from './geo-map-client.mjs';
 import {translateUiText} from '../lib/i18n/shared-ui-locale.mjs';
 import {uiText} from '../lib/i18n/messages.mjs';
-import {geoMapProviderOrder} from '../lib/geo-map-provider.mjs';
+import {geoMapProviderOrder,googleMapsIframeUrl} from '../lib/geo-map-provider.mjs';
 
 export function createSearchPlacesMap(root) {
   const locale=document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
@@ -87,6 +87,24 @@ export function createSearchPlacesMap(root) {
   const mount=async()=>{
     let error;
     const data={points:[],route:[],center:DEFAULT_CENTER,zoom:3};
+    if(locale==='en' && !keys.google){
+      // A keyless Google Maps iframe can show the first matching location.
+      // The search results list still gives access to every individual place.
+      return {map:null,redraw:(_map,element,selection)=>{
+        element.replaceChildren();
+        const src=googleMapsIframeUrl(selection.points?.[0],10);
+        if(!src)return;
+        const frame=document.createElement('iframe');
+        frame.src=src;
+        frame.title='Google Maps — first matching place';
+        frame.setAttribute('data-google-embed-fallback','');
+        frame.setAttribute('loading','lazy');
+        frame.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+        frame.setAttribute('allowfullscreen','');
+        frame.style.cssText='width:100%;height:100%;border:0;display:block';
+        element.appendChild(frame);
+      }};
+    }
     for(const provider of geoMapProviderOrder(locale)){
       if(!keys[provider])continue;
       try{

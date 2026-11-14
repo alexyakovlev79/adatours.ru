@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {parseSeoGeoArticle} from '../../src/lib/seo-geo.mjs';
-import {applyFulltextToSource,splitFulltextMarkdown} from '../../scripts/i18n/materialize-fulltext-en.mjs';
+import {applyFulltextToSource,splitFulltextMarkdown,sameSeoLeadNumerals,seoNumberSemanticFacts} from '../../scripts/i18n/materialize-fulltext-en.mjs';
 import {authorizeFulltextSource,repairFulltextEnglishSyntax,reconcileFulltextLinks,repairedFulltextBody} from '../../scripts/i18n/fulltext-publication-repairs.mjs';
 const registry=JSON.parse(readFileSync(new URL('../../data/i18n/fulltext-publication-repairs/2026-11-12.json',import.meta.url),'utf8'));
 test('repair list is exact, limited to 87 originally nonfull documents',()=>{
@@ -155,4 +155,23 @@ test('fully rewritten Anna biography has a separate exact source-bound EN transl
    // A later legitimate RU edit must be withheld, not break the EN deployment.
    assert.throws(()=>authorizeFulltextSource(entry.number,entry.frozenSha,current,entry.frozenSha,registry),/source_changed/);
  }
+});
+
+test('stage9 numeric equivalence accepts Russian word durations only for the same English facts',()=>{
+ const pairs=[
+  ['Сравните дневной вариант и 2 поездки с ночевкой.','Compare a day trip and two overnight options.'],
+  ['Четырнадцатидневную программу можно сравнить с прогулкой.','Compare the 14-day itinerary with an excursion.'],
+  ['Фасад XVIII века и трехчасовую программу.','An 18th-century facade and a three-hour programme.'],
+  ['В шестидневную программу входит экскурсия.','The excursion forms part of a 6-day itinerary.'],
+  ['Шестичасовая поездка стоит $150 на человека.','A 6-hour trip costs $150 per person.'],
+  ['32-дневный тур по восьми странам.','A 32-day tour through eight countries.']
+ ];
+ for(const [ru,en] of pairs)assert.equal(sameSeoLeadNumerals(ru,en),true,ru);
+ for(const [ru,en] of [
+   ['Шестичасовая поездка стоит $150.','A 7-hour trip costs $150.'],
+   ['32-дневный тур по восьми странам.','A 32-day tour through seven countries.'],
+   ['Поездка стоит $150.','The trip costs $180.'],
+   ['В 2 поездках.','In two trips, using a 4x4.'],
+ ])assert.equal(sameSeoLeadNumerals(ru,en),false,ru);
+ assert.deepEqual(seoNumberSemanticFacts('XIX век и трехдневный тур','ru'),['19','3']);
 });

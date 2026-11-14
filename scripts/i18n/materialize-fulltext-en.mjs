@@ -68,8 +68,80 @@ const seoNumberFacts=value=>[...String(value).matchAll(seoNumberPattern)].map(([
  if(/^\d{1,3}(?:\.\d{3})+,\d+$/u.test(n))return n.replace(/\./gu,'').replace(',','.');
  return n.replace(/,(\d{1,2})$/u,'.$1');
 });
-const sameSeoLeadNumerals=(old,value)=>typeof value==='string'&&value.trim()!==''
- && !CYR.test(value)&&eq(seoNumberFacts(old),seoNumberFacts(value));
+// An approved, source-bound translation may spell a number differently:
+ // Russian 'четырнадцатидневный' and English '14-day' refer to the same fact.
+ // Recognise only known numeral tokens and duration compounds. Any added,
+ // missing, reordered or genuinely changed numerical fact still falls back.
+const ruNumbers=new Map([
+ ['один',1],['одна',1],['одно',1],['одного',1],['одной',1],['одну',1],['одним',1],
+ ['первый',1],['первого',1],['первой',1],['первом',1],['первую',1],
+ ['два',2],['две',2],['двух',2],['двумя',2],['второй',2],['второго',2],['вторую',2],
+ ['три',3],['трех',3],['трёх',3],['тремя',3],['третий',3],['третьей',3],
+ ['четыре',4],['четырех',4],['четырёх',4],['четырьмя',4],
+ ['пять',5],['пяти',5],['шесть',6],['шести',6],['семь',7],['семи',7],
+ ['восемь',8],['восьми',8],['девять',9],['девяти',9],['десять',10],['десяти',10],
+ ['одиннадцать',11],['одиннадцати',11],['двенадцать',12],['двенадцати',12],
+ ['тринадцать',13],['тринадцати',13],['четырнадцать',14],['четырнадцати',14],
+ ['пятнадцать',15],['пятнадцати',15],['шестнадцать',16],['шестнадцати',16],
+ ['семнадцать',17],['семнадцати',17],['восемнадцать',18],['восемнадцати',18],
+ ['девятнадцать',19],['девятнадцати',19],['двадцать',20],['двадцати',20],
+ ['тридцать',30],['тридцати',30],['сорок',40],['пятьдесят',50],
+ ['сто',100],['сотни',100]
+]);
+const ruCompoundRoots=[
+ ['девятнадцати',19],['восемнадцати',18],['семнадцати',17],
+ ['шестнадцати',16],['пятнадцати',15],['четырнадцати',14],
+ ['тринадцати',13],['двенадцати',12],['одиннадцати',11],
+ ['двадцати',20],['десяти',10],['девяти',9],['восьми',8],
+ ['семи',7],['шести',6],['пяти',5],['четырёх',4],['четырех',4],
+ ['трёх',3],['трех',3],['двух',2],['одно',1]
+];
+const enNumbers=new Map([
+ ['one',1],['first',1],['two',2],['second',2],['three',3],['third',3],
+ ['four',4],['fourth',4],['five',5],['fifth',5],['six',6],['sixth',6],
+ ['seven',7],['seventh',7],['eight',8],['eighth',8],['nine',9],['ninth',9],
+ ['ten',10],['tenth',10],['eleven',11],['twelfth',12],['twelve',12],
+ ['thirteen',13],['fourteen',14],['fifteen',15],['sixteen',16],
+ ['seventeen',17],['eighteen',18],['nineteen',19],['twenty',20],
+ ['thirty',30],['forty',40],['fifty',50],['hundred',100]
+]);
+function romanCentury(token){
+ if(!/^[IVXLCDM]{2,8}$/u.test(token))return null;
+ const values={I:1,V:5,X:10,L:50,C:100,D:500,M:1000};
+ let sum=0;
+ for(let i=0;i<token.length;i++)sum+=values[token[i]]<(values[token[i+1]]??0)?-values[token[i]]:values[token[i]];
+ return sum>=2&&sum<=250?sum:null;
+}
+export function seoNumberSemanticFacts(value,language){
+ const hits=[];
+ for(const match of String(value).matchAll(seoNumberPattern)){
+   const number=seoNumberFacts(match[0])[0];
+   hits.push({at:match.index,n:number});
+ }
+ for(const match of String(value).matchAll(/[a-zA-Z]+|[а-яёА-ЯЁ]+/gu)){
+   const raw=match[0],token=raw.toLocaleLowerCase(language==='ru'?'ru':'en');
+   let n=null;
+   if(language==='ru'){
+     n=ruNumbers.get(token)??romanCentury(raw);
+     if(n===null){
+       for(const [root,num] of ruCompoundRoots){
+         if(token.startsWith(root)&&/^(?:днев|час|недель|летн|месяч)/u.test(token.slice(root.length))){
+           n=num;break;
+         }
+       }
+     }
+   }else{
+     n=enNumbers.get(token)??romanCentury(raw);
+   }
+   if(n!==null)hits.push({at:match.index,n:String(n)});
+ }
+ return hits.sort((a,b)=>a.at-b.at).map(x=>String(x.n));
+}
+export const sameSeoLeadNumerals=(old,value)=>typeof value==='string'&&value.trim()!==''
+ && !CYR.test(value)&&(
+   eq(seoNumberFacts(old),seoNumberFacts(value))||
+   eq(seoNumberSemanticFacts(old,'ru'),seoNumberSemanticFacts(value,'en'))
+ );
 
 const mergeTexts=(old,translated,counter,path='')=>{
  if(old instanceof Date)return old; // YAML timestamps are canonical facts, not plain maps.
